@@ -1,65 +1,323 @@
-import Image from "next/image";
+import Link from "next/link";
+import {
+  Sparkles,
+  Scan,
+  Palette,
+  Upload,
+  CheckCircle2,
+  ChevronDown,
+} from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="relative overflow-hidden py-20 sm:py-32">
+        <div className="mx-auto max-w-6xl px-4 text-center">
+          <h1 className="mx-auto max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            Restore Your Old Photos in Seconds with AI
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+            Free online AI photo restoration tool. Enhance faces, fix
+            scratches, and colorize black &amp; white photos instantly. No
+            signup required.
+          </p>
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/old-photo-restoration"
+              className="inline-flex h-12 items-center gap-2 rounded-full bg-primary px-8 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              <Upload className="h-5 w-5" />
+              Upload Your Photo
+            </Link>
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1">
+              <CheckCircle2 className="h-4 w-4 text-green-600" />
+              Free to try
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle2 className="h-4 w-4 text-green-600" />
+              No signup required
+            </span>
+            <span className="flex items-center gap-1">
+              <CheckCircle2 className="h-4 w-4 text-green-600" />
+              720p download free
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Examples */}
+      <section className="border-t bg-muted/50 py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-center text-3xl font-bold tracking-tight">
+            See the Difference
+          </h2>
+          <p className="mt-3 text-center text-muted-foreground">
+            Real results from our AI photo restoration
+          </p>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ExampleCard
+              title="Face Restoration"
+              description="Damaged portrait restored with enhanced facial details"
+            />
+            <ExampleCard
+              title="Old Family Photo"
+              description="Faded family photo brought back to life with vivid clarity"
+            />
+            <ExampleCard
+              title="Black & White Colorized"
+              description="Classic B&W photo colorized with natural, realistic colors"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="border-t py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-center text-3xl font-bold tracking-tight">
+            What Our AI Can Do
+          </h2>
+          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+            <FeatureCard
+              icon={<Scan className="h-8 w-8" />}
+              title="Face Enhancement"
+              description="Restore facial details, fix blur and damage using GFPGAN AI model."
+            />
+            <FeatureCard
+              icon={<Sparkles className="h-8 w-8" />}
+              title="Super Resolution"
+              description="Upscale to 4x resolution with AI sharpening for crystal-clear results."
+            />
+            <FeatureCard
+              icon={<Palette className="h-8 w-8" />}
+              title="Auto Colorize"
+              description="Add natural colors to black & white photos with one click."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="border-t bg-muted/50 py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-center text-3xl font-bold tracking-tight">
+            How It Works
+          </h2>
+          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+            <StepCard step={1} title="Upload" description="Drop your old photo or click to upload. JPG, PNG, WEBP supported." />
+            <StepCard step={2} title="AI Restores" description="Our AI enhances faces, fixes damage, and upscales resolution automatically." />
+            <StepCard step={3} title="Download" description="Preview before/after comparison and download your restored photo." />
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section id="pricing" className="border-t py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-center text-3xl font-bold tracking-tight">
+            Simple Pricing
+          </h2>
+          <div className="mx-auto mt-12 grid max-w-3xl gap-8 sm:grid-cols-2">
+            {/* Free */}
+            <div className="rounded-xl border p-8">
+              <h3 className="text-xl font-semibold">Free</h3>
+              <p className="mt-2 text-3xl font-bold">$0</p>
+              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 3
+                  photos/day
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 720p
+                  download
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Small
+                  watermark
+                </li>
+              </ul>
+              <Link
+                href="/old-photo-restoration"
+                className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border font-medium transition-colors hover:bg-muted"
+              >
+                Try Free Now
+              </Link>
+            </div>
+            {/* Pro */}
+            <div className="relative rounded-xl border-2 border-primary p-8">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-0.5 text-xs font-medium text-primary-foreground">
+                Most Popular
+              </span>
+              <h3 className="text-xl font-semibold">Pro</h3>
+              <p className="mt-2 text-3xl font-bold">
+                $9.9<span className="text-base font-normal text-muted-foreground">/month</span>
+              </p>
+              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 100
+                  credits/month
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Original
+                  quality
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> No
+                  watermark
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Priority
+                  processing
+                </li>
+              </ul>
+              <button className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg bg-primary font-medium text-primary-foreground transition-colors hover:bg-primary/90">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <p className="mt-6 text-center text-xs text-muted-foreground">
+            Secure payment &middot; Cancel anytime &middot; 14-day refund
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t bg-muted/50 py-20">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-center text-3xl font-bold tracking-tight">
+            Frequently Asked Questions
+          </h2>
+          <div className="mt-12 space-y-4">
+            <FaqItem
+              question="What image formats are supported?"
+              answer="We support JPG, PNG, and WEBP formats, up to 20MB per file."
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <FaqItem
+              question="How long does processing take?"
+              answer="Most photos are processed in 15-30 seconds. Larger images may take slightly longer."
+            />
+            <FaqItem
+              question="Is my photo data safe?"
+              answer="Yes. All uploaded photos are automatically deleted after 24 hours. We do not store or share your images."
+            />
+            <FaqItem
+              question="What's the difference between Free and Pro?"
+              answer="Free gives you 720p downloads with a small watermark (3/day). Pro gives you original quality without watermark, with 100 credits per month."
+            />
+            <FaqItem
+              question="Can I cancel my subscription?"
+              answer="Yes, you can cancel anytime. We also offer a 14-day money-back guarantee."
+            />
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Final CTA */}
+      <section className="border-t py-20">
+        <div className="mx-auto max-w-6xl px-4 text-center">
+          <h2 className="text-3xl font-bold tracking-tight">
+            Ready to Restore Your Photos?
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Try it free. No signup required.
+          </p>
+          <Link
+            href="/old-photo-restoration"
+            className="mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-primary px-8 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            <Upload className="h-5 w-5" />
+            Upload Your Photo Now
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function FeatureCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="rounded-xl border p-6 text-center">
+      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-lg bg-muted">
+        {icon}
+      </div>
+      <h3 className="mt-4 text-lg font-semibold">{title}</h3>
+      <p className="mt-2 text-sm text-muted-foreground">{description}</p>
     </div>
+  );
+}
+
+function StepCard({
+  step,
+  title,
+  description,
+}: {
+  step: number;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="text-center">
+      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary text-lg font-bold text-primary-foreground">
+        {step}
+      </div>
+      <h3 className="mt-4 text-lg font-semibold">{title}</h3>
+      <p className="mt-2 text-sm text-muted-foreground">{description}</p>
+    </div>
+  );
+}
+
+function ExampleCard({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="overflow-hidden rounded-xl border">
+      <div className="flex aspect-[4/3] items-center justify-center bg-muted">
+        <div className="grid w-full grid-cols-2 gap-px">
+          <div className="flex aspect-square items-center justify-center bg-muted-foreground/10 text-xs text-muted-foreground">
+            Before
+          </div>
+          <div className="flex aspect-square items-center justify-center bg-muted-foreground/5 text-xs text-muted-foreground">
+            After
+          </div>
+        </div>
+      </div>
+      <div className="p-4">
+        <h3 className="font-semibold">{title}</h3>
+        <p className="mt-1 text-sm text-muted-foreground">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+function FaqItem({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) {
+  return (
+    <details className="group rounded-lg border bg-background p-4">
+      <summary className="flex cursor-pointer items-center justify-between font-medium">
+        {question}
+        <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
+      </summary>
+      <p className="mt-3 text-sm text-muted-foreground">{answer}</p>
+    </details>
   );
 }
