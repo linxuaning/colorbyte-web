@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://artimagehub.com"),
   title: {
     default:
-      "AI Photo Tools | Restore, Enhance & Colorize Photos Online Free - ColorByte",
-    template: "%s - ColorByte",
+      "AI Photo Tools | Restore, Enhance & Colorize Photos Online Free - ArtImageHub",
+    template: "%s - ArtImageHub",
   },
   description:
     "Free AI-powered photo tools. Restore old photos, enhance image quality, and colorize black & white pictures online. No signup required.",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    siteName: "ColorByte",
+    siteName: "ArtImageHub",
     title: "AI Photo Tools | Restore, Enhance & Colorize Photos Online Free",
     description:
       "Free AI-powered photo tools. Restore old photos, enhance image quality, and colorize black & white pictures online.",
@@ -60,7 +60,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <a href="/" className="text-lg font-semibold tracking-tight">
-          ColorByte
+          ArtImageHub
         </a>
         <nav className="flex items-center gap-6 text-sm">
           <a
@@ -91,7 +91,7 @@ function Footer() {
   return (
     <footer className="border-t py-8 text-center text-sm text-muted-foreground">
       <div className="mx-auto max-w-6xl px-4">
-        <p>&copy; {new Date().getFullYear()} ColorByte. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} ArtImageHub. All rights reserved.</p>
         <div className="mt-2 flex justify-center gap-4">
           <a href="/blog" className="hover:text-foreground">
             Blog

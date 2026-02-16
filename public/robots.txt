@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://colorbyte-web.vercel.app/sitemap.xml
+Sitemap: https://artimagehub.com/sitemap.xml
