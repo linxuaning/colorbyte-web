@@ -23,19 +23,28 @@ export default function HomePage() {
             scratches, and colorize black &amp; white photos instantly. No
             signup required.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-8 flex flex-col items-center gap-4">
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-12 items-center gap-2 rounded-full bg-primary px-8 text-base font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
               <Upload className="h-5 w-5" />
-              Upload Your Photo
+              Upload Your Photo — Free
             </Link>
+            <p className="text-sm text-muted-foreground">
+              Want unlimited?{" "}
+              <a
+                href="/#pricing"
+                className="font-medium text-primary hover:underline"
+              >
+                Start your free 7-day trial &rarr;
+              </a>
+            </p>
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-1">
               <CheckCircle2 className="h-4 w-4 text-green-600" />
-              Free to try
+              3 free downloads/day (720p)
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 className="h-4 w-4 text-green-600" />
@@ -43,7 +52,7 @@ export default function HomePage() {
             </span>
             <span className="flex items-center gap-1">
               <CheckCircle2 className="h-4 w-4 text-green-600" />
-              720p download free
+              Try 7-day unlimited trial — Cancel anytime
             </span>
           </div>
         </div>

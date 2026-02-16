@@ -11,6 +11,8 @@ import {
   CheckCircle2,
   GripVertical,
   Crown,
+  XCircle,
+  Check,
 } from "lucide-react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -38,6 +40,7 @@ export default function RestoreClient() {
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [remaining, setRemaining] = useState(3);
   const [limitReached, setLimitReached] = useState(false);
+  const [showLimitModal, setShowLimitModal] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Check subscription status and download limit on mount
@@ -311,48 +314,100 @@ export default function RestoreClient() {
             )}
           </div>
 
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          {/* Download Options Card */}
+          <div className="mx-auto max-w-md rounded-xl border bg-card p-6">
+            <h3 className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+              Download Options
+            </h3>
+
             {isSubscriber ? (
+              /* State C: Subscriber */
               <a
                 href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
                 download
-                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                className="flex w-full flex-col items-center gap-1 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
               >
-                <Download className="h-4 w-4" />
-                Download Original Quality
+                <span className="flex items-center gap-2">
+                  <Crown className="h-4 w-4" />
+                  Download Original Quality
+                </span>
+                <span className="text-xs opacity-80">PRO Member — Unlimited downloads</span>
               </a>
-            ) : limitReached ? (
-              <Link
-                href="/#pricing"
-                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                <Crown className="h-4 w-4" />
-                Start Free Trial — Unlimited Downloads
-              </Link>
             ) : (
-              <a
-                href={resultUrl}
-                download
-                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                <Download className="h-4 w-4" />
-                Download 720p ({remaining}/3 remaining)
-              </a>
+              <div className="space-y-3">
+                {/* Free Download */}
+                {remaining > 0 ? (
+                  <a
+                    href={resultUrl}
+                    download
+                    onClick={() => {
+                      const next = remaining - 1;
+                      setRemaining(next);
+                      if (next <= 0) setLimitReached(true);
+                    }}
+                    className="flex w-full flex-col items-center gap-1 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Download className="h-4 w-4" />
+                      Download 720p — FREE
+                    </span>
+                    <span className="text-xs opacity-80">
+                      {remaining} download{remaining !== 1 ? "s" : ""} remaining today
+                    </span>
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => setShowLimitModal(true)}
+                    className="flex w-full cursor-not-allowed flex-col items-center gap-1 rounded-lg bg-muted px-6 py-3 text-sm font-medium text-muted-foreground"
+                  >
+                    <span className="flex items-center gap-2">
+                      <XCircle className="h-4 w-4" />
+                      Daily Limit Reached (0/3)
+                    </span>
+                    <span className="text-xs">Resets at midnight UTC</span>
+                  </button>
+                )}
+
+                {/* Trial CTA */}
+                <Link
+                  href="/#pricing"
+                  className={`flex w-full flex-col items-center gap-1 rounded-lg px-6 py-3 text-sm font-medium transition-opacity hover:opacity-90 ${
+                    remaining === 0
+                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+                      : "border-2 border-primary text-primary hover:bg-primary/10"
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <Crown className="h-4 w-4" />
+                    {remaining === 0
+                      ? "Start 7-Day Free Trial — Unlimited Downloads"
+                      : "Start 7-Day Free Trial"}
+                  </span>
+                  <span className={`text-xs ${remaining === 0 ? "opacity-80" : "text-muted-foreground"}`}>
+                    {remaining === 0
+                      ? "\u2713 No watermark  \u2713 Original quality  \u2713 $0 today"
+                      : "Get original quality, no watermark, unlimited"}
+                  </span>
+                </Link>
+              </div>
             )}
-            {!isSubscriber && !limitReached && (
-              <Link
-                href="/#pricing"
-                className="inline-flex h-10 items-center gap-2 rounded-lg border border-primary px-6 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
-              >
-                <Crown className="h-4 w-4" />
-                Get Original — Start Free Trial
-              </Link>
+
+            {!isSubscriber && (
+              <p className="mt-4 text-center text-xs text-muted-foreground">
+                Your trial starts free. Card required, $9.9/mo after 7 days. Cancel anytime.
+              </p>
             )}
           </div>
-          {limitReached && !isSubscriber && (
-            <p className="text-center text-sm text-muted-foreground">
-              You&apos;ve used all 3 free downloads today. Start a free trial for unlimited original-quality downloads.
-            </p>
+
+          {/* Limit Reached Modal */}
+          {showLimitModal && (
+            <LimitReachedModal
+              onClose={() => setShowLimitModal(false)}
+              onStartTrial={() => {
+                setShowLimitModal(false);
+                window.location.href = "/#pricing";
+              }}
+            />
           )}
 
           <div className="flex justify-center">
@@ -420,6 +475,124 @@ export default function RestoreClient() {
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+// --- Daily Limit Reached Modal (Touchpoint 2) ---
+function LimitReachedModal({
+  onClose,
+  onStartTrial,
+}: {
+  onClose: () => void;
+  onStartTrial: () => void;
+}) {
+  const [timeToReset, setTimeToReset] = useState("");
+
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = new Date();
+      const midnight = new Date(now);
+      midnight.setUTCHours(24, 0, 0, 0);
+
+      const diff = midnight.getTime() - now.getTime();
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      if (hours > 0) {
+        setTimeToReset(`${hours} hour${hours !== 1 ? "s" : ""} ${minutes} minute${minutes !== 1 ? "s" : ""}`);
+      } else {
+        setTimeToReset(`${minutes} minute${minutes !== 1 ? "s" : ""}`);
+      }
+    };
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* Overlay */}
+      <div
+        className="absolute inset-0 bg-black/50"
+        onClick={onClose}
+      />
+
+      {/* Modal */}
+      <div className="relative z-10 w-full max-w-md rounded-2xl bg-background p-6 shadow-xl">
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"
+        >
+          <XCircle className="h-5 w-5" />
+        </button>
+
+        <div className="text-center">
+          {/* Icon */}
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
+            <XCircle className="h-6 w-6 text-red-600" />
+          </div>
+
+          <h2 className="text-2xl font-bold">Daily Limit Reached</h2>
+          <p className="mt-2 text-muted-foreground">
+            You&apos;ve used all 3 free downloads for today.
+            <br />
+            Your limit resets in {timeToReset}.
+          </p>
+
+          {/* Trial Benefits Card */}
+          <div className="mt-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 p-6 dark:from-blue-950/30 dark:to-purple-950/30">
+            <h3 className="text-lg font-semibold">Start Your 7-Day Free Trial</h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Get unlimited downloads immediately:
+            </p>
+
+            <div className="mt-4 space-y-2 text-left text-sm">
+              <div className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Unlimited downloads (no daily limit)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Original quality (full resolution)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>No watermark</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-green-600" />
+                <span>Priority processing</span>
+              </div>
+            </div>
+
+            <button
+              onClick={onStartTrial}
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            >
+              <Crown className="h-4 w-4" />
+              Start Free Trial — $0 Today
+            </button>
+
+            <p className="mt-3 text-xs text-muted-foreground">
+              $9.9/month after trial. Cancel anytime in 1 click.
+            </p>
+          </div>
+
+          {/* Secondary Option */}
+          <div className="mt-4 rounded-lg bg-muted/50 p-4">
+            <p className="text-sm text-muted-foreground">Or wait for limit reset</p>
+            <button
+              onClick={onClose}
+              className="mt-1 text-sm text-muted-foreground hover:text-foreground"
+            >
+              Come Back Later
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
