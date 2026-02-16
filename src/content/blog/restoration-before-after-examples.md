@@ -1,11 +1,15 @@
 ---
 title: "10 Photos I Restored That Made People Cry—Real Stories Behind the Before/After"
 description: "Not just before/after comparisons—the real stories behind photo restorations that reconnected families with lost relatives, solved mysteries, and preserved legacies."
-publishedAt: "2026-02-16"
-author: "Carlos Martinez, Professional Photo Restorer"
+publishedAt: "2026-02-14"
+author: "Carlos Martinez"
+authorRole: "Professional Photo Restorer"
+authorBio: "Carlos has been restoring photos for 12 years, first manually in Photoshop, now with AI-assisted workflows. He's restored over 4,500 family photos and believes every faded image contains a story waiting to be told."
 category: "Showcase"
 tags: ["Before After", "Examples", "Case Studies", "Real Stories", "Emotional"]
 image: "/blog/restoration-before-after.jpg"
+coverColor: "from-violet-600 via-purple-700 to-indigo-800"
+coverEmoji: "💧"
 ---
 
 # 10 Photos I Restored That Made People Cry—Real Stories Behind the Before/After

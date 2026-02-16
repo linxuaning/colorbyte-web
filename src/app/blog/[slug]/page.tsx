@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -19,9 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPostBySlug(slug);
 
   if (!post) {
-    return {
-      title: "Post Not Found",
-    };
+    return { title: "Post Not Found" };
   }
 
   return {
@@ -35,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt,
       authors: [post.author],
       tags: post.tags,
     },
@@ -49,89 +48,268 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const relatedPosts = await getRelatedPosts(slug, post.category);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt || post.publishedAt,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      jobTitle: post.authorRole,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "ArtImageHub",
+      url: "https://artimagehub.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://artimagehub.com/blog/${slug}`,
+    },
+    articleSection: post.category,
+    keywords: post.tags.join(", "),
+    wordCount: post.content.split(/\s+/).length,
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/blog" className="text-blue-600 hover:text-blue-700 text-sm font-medium mb-4 inline-block">
-            ← Back to Blog
-          </Link>
-          <div className="mb-6">
-            <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded text-sm font-medium">
-              {post.category}
-            </span>
-          </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
-          <div className="flex items-center gap-4 text-gray-600 text-sm">
-            <time dateTime={post.publishedAt}>
-              {new Date(post.publishedAt).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            <span>•</span>
-            <span>{post.readingTime} min read</span>
-            <span>•</span>
-            <span>By {post.author}</span>
-          </div>
-        </div>
-      </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
-      {/* Content */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div
-          className="prose prose-lg prose-blue max-w-none
-            prose-headings:font-bold prose-headings:text-gray-900
-            prose-p:text-gray-700 prose-p:leading-relaxed
-            prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-gray-900 prose-strong:font-semibold
-            prose-ul:my-6 prose-ol:my-6
-            prose-li:text-gray-700 prose-li:my-2
-            prose-code:text-blue-600 prose-code:bg-blue-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-            prose-pre:bg-gray-900 prose-pre:text-gray-100
-            prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:pl-4 prose-blockquote:italic
-            prose-table:border prose-table:border-gray-300
-            prose-th:bg-gray-100 prose-th:p-2 prose-th:border prose-th:border-gray-300
-            prose-td:p-2 prose-td:border prose-td:border-gray-300"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+      <article className="min-h-screen">
+        {/* ─── Hero Cover ─── */}
+        <header
+          className={`relative bg-gradient-to-br ${post.coverColor} overflow-hidden`}
+        >
+          {/* Decorative layers */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent" />
 
-        {/* Tags */}
-        {post.tags.length > 0 && (
-          <div className="mt-12 pt-8 border-t">
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">Tags</h3>
-            <div className="flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
-                >
-                  {tag}
-                </span>
-              ))}
+          <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-16 sm:pb-20">
+            {/* Breadcrumb */}
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 text-white/70 hover:text-white text-sm font-medium transition-colors mb-8"
+            >
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              Back to Blog
+            </Link>
+
+            {/* Category + Reading Time */}
+            <div className="flex items-center gap-3 mb-6">
+              <span className="inline-flex items-center rounded-full bg-white/20 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/30">
+                {post.category}
+              </span>
+              <span className="text-white/60 text-sm">
+                {post.readingTime} min read
+              </span>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6 tracking-tight max-w-3xl">
+              {post.title}
+            </h1>
+
+            {/* Description */}
+            <p className="text-lg text-white/70 max-w-2xl leading-relaxed mb-8">
+              {post.description}
+            </p>
+
+            {/* Author + Date */}
+            <div className="flex items-center gap-4">
+              <div className="h-11 w-11 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-lg font-bold text-white ring-2 ring-white/30">
+                {post.author.charAt(0)}
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-white">
+                  {post.author}
+                </p>
+                <div className="flex items-center gap-2 text-xs text-white/60">
+                  {post.authorRole && <span>{post.authorRole}</span>}
+                  {post.authorRole && <span>·</span>}
+                  <time dateTime={post.publishedAt}>
+                    {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                  {post.updatedAt && (
+                    <>
+                      <span>·</span>
+                      <span>
+                        Updated{" "}
+                        {new Date(post.updatedAt).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                        })}
+                      </span>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
-        )}
+        </header>
 
-        {/* CTA */}
-        <div className="mt-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Ready to Restore Your Old Photos?
-          </h3>
-          <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Try ArtImageHub's AI-powered photo restoration. Bring faded, damaged family photos back to
-            life in seconds.
-          </p>
-          <Link
-            href="/old-photo-restoration"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            Restore Photos Now →
-          </Link>
+        {/* ─── Content Area ─── */}
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_240px] gap-12 lg:gap-16">
+            {/* Main Content */}
+            <div className="min-w-0">
+              {/* Article Body */}
+              <div
+                className="blog-content"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+
+              {/* Tags */}
+              {post.tags.length > 0 && (
+                <div className="mt-12 pt-8 border-t border-gray-200">
+                  <div className="flex flex-wrap gap-2">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600 hover:bg-gray-200 transition-colors"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Author Bio */}
+              {post.authorBio && (
+                <div className="mt-10 rounded-xl bg-gray-50 border border-gray-200 p-6 sm:p-8">
+                  <div className="flex items-start gap-4">
+                    <div className="h-14 w-14 shrink-0 rounded-full bg-gray-200 flex items-center justify-center text-xl font-bold text-gray-600">
+                      {post.author.charAt(0)}
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-1">
+                        About the Author
+                      </p>
+                      <p className="font-bold text-gray-900 text-lg">
+                        {post.author}
+                      </p>
+                      {post.authorRole && (
+                        <p className="text-sm text-gray-500 mb-3">
+                          {post.authorRole}
+                        </p>
+                      )}
+                      <p className="text-gray-600 leading-relaxed text-sm">
+                        {post.authorBio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* CTA */}
+              <div className="mt-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-8 sm:p-10 text-center">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+                  Ready to Restore Your Old Photos?
+                </h3>
+                <p className="text-blue-100 mb-6 max-w-lg mx-auto leading-relaxed">
+                  Try ArtImageHub&apos;s AI-powered photo restoration. Bring
+                  faded, damaged family photos back to life in seconds.
+                </p>
+                <Link
+                  href="/old-photo-restoration"
+                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
+                >
+                  Restore Photos Free
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* ─── Sidebar: Table of Contents ─── */}
+            {post.headings.length > 0 && (
+              <aside className="hidden lg:block">
+                <div className="sticky top-20">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">
+                    On this page
+                  </p>
+                  <nav className="space-y-1">
+                    {post.headings
+                      .filter((h) => h.level === 2)
+                      .slice(0, 12)
+                      .map((heading) => (
+                        <a
+                          key={heading.id}
+                          href={`#${heading.id}`}
+                          className="block text-sm text-gray-500 hover:text-gray-900 transition-colors py-1 leading-snug border-l-2 border-transparent hover:border-gray-400 pl-3 -ml-px"
+                        >
+                          {heading.text.length > 50
+                            ? heading.text.slice(0, 50) + "..."
+                            : heading.text}
+                        </a>
+                      ))}
+                  </nav>
+                </div>
+              </aside>
+            )}
+          </div>
         </div>
+
+        {/* ─── Related Posts ─── */}
+        {relatedPosts.length > 0 && (
+          <section className="border-t bg-gray-50">
+            <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">
+                Related Articles
+              </h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {relatedPosts.map((rp) => (
+                  <Link
+                    key={rp.slug}
+                    href={`/blog/${rp.slug}`}
+                    className="group block rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-all"
+                  >
+                    <div
+                      className={`aspect-[2.5/1] bg-gradient-to-br ${rp.coverColor} flex items-center justify-center`}
+                    >
+                      <span className="text-4xl opacity-70 group-hover:scale-110 transition-transform">
+                        {rp.coverEmoji || "📸"}
+                      </span>
+                    </div>
+                    <div className="p-5">
+                      <p className="text-xs text-gray-400 mb-2">
+                        {rp.readingTime} min read
+                      </p>
+                      <h3 className="font-bold text-gray-900 group-hover:text-blue-700 transition-colors leading-snug line-clamp-2">
+                        {rp.title}
+                      </h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </article>
-    </div>
+    </>
   );
 }

@@ -1,11 +1,15 @@
 ---
 title: "I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026"
 description: "Real workflow, real results. A practical guide to digitizing and restoring old family photos, from a basement full of moldy prints to a preserved digital archive."
-publishedAt: "2026-02-16"
-author: "Sarah Martinez, Family Historian"
+publishedAt: "2026-02-12"
+author: "Sarah Martinez"
+authorRole: "Family Historian & Genealogy Researcher"
+authorBio: "Sarah is a genealogy researcher who accidentally became a photo restoration evangelist after tackling her grandmother's 847-photo archive. She now helps families across the US digitize and preserve their visual history."
 category: "Guides"
 tags: ["Photo Restoration", "Tutorial", "Family Photos", "Digitization", "Preservation"]
 image: "/blog/restoration-guide.jpg"
+coverColor: "from-emerald-600 via-teal-700 to-cyan-800"
+coverEmoji: "📦"
 ---
 
 # I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026

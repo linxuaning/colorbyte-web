@@ -1,11 +1,16 @@
 ---
 title: "I Tested 6 AI Photo Tools on 100 Family Photos—Here's What Actually Works (ArtImageHub vs Remini Included)"
 description: "Real test results from 100 old family photos. Detailed comparison of ArtImageHub, Remini, MyHeritage, and others with actual before/after examples, pricing breakdowns, and honest limitations."
-publishedAt: "2026-02-16"
-author: "David Park, Photography Workflow Consultant"
+publishedAt: "2026-01-28"
+updatedAt: "2026-02-14"
+author: "David Park"
+authorRole: "Photography Workflow Consultant"
+authorBio: "David consults for photography studios and archival institutions on digital workflows. He's tested every major AI photo tool since 2023 and maintains a database of 500+ before/after comparisons."
 category: "Comparisons"
 tags: ["Comparison", "Remini", "AI Tools", "Photo Enhancement", "Testing"]
 image: "/blog/artimagehub-vs-remini.jpg"
+coverColor: "from-orange-500 via-amber-600 to-yellow-700"
+coverEmoji: "⚖️"
 ---
 
 # I Tested 6 AI Photo Tools on 100 Family Photos—Here's What Actually Works

@@ -1,11 +1,16 @@
 ---
 title: "How AI Photo Restoration Actually Works: What Happens When You Upload That Faded 1970s Print"
 description: "Ever wonder what's happening behind the scenes when AI restores your grandmother's wedding photo? A technical deep-dive into the neural networks, training processes, and real-world challenges of modern photo restoration."
-publishedAt: "2026-02-16"
-author: "Michael Chen, Photo Restoration Specialist"
+publishedAt: "2026-01-15"
+updatedAt: "2026-02-10"
+author: "Michael Chen"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Michael has spent 8 years working with AI imaging systems, from research labs at Stanford to building production restoration pipelines. He's processed over 12,000 historical photos and still gets excited when a 1940s face emerges from chemical haze."
 category: "Technology"
 tags: ["AI", "Photo Restoration", "Deep Learning", "GFPGAN", "Computer Vision"]
 image: "/blog/ai-restoration-technology.jpg"
+coverColor: "from-blue-600 via-indigo-700 to-purple-800"
+coverEmoji: "🧠"
 ---
 
 # How AI Photo Restoration Actually Works: What Happens When You Upload That Faded 1970s Print

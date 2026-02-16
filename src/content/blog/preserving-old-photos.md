@@ -1,11 +1,15 @@
 ---
 title: "My Parents' Basement Flooded and Destroyed 40 Years of Photos—Here's What I Learned About Preservation"
 description: "A basement flood destroyed decades of family photos. Hard lessons learned about proper storage, digitization, and why 'later' is too late for photo preservation."
-publishedAt: "2026-02-16"
-author: "Rachel Kim, Photo Archivist"
+publishedAt: "2026-02-05"
+author: "Rachel Kim"
+authorRole: "Photo Archivist"
+authorBio: "Rachel is a photo archivist who learned the hard way about preservation after losing 1,100 family photos in a basement flood. She now volunteers with local libraries to help communities digitize their photo collections."
 category: "Tips & Guides"
 tags: ["Preservation", "Photo Care", "Family History", "Disaster Recovery", "Digitization"]
 image: "/blog/photo-preservation-tips.jpg"
+coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
+coverEmoji: "🏠"
 ---
 
 # My Parents' Basement Flooded and Destroyed 40 Years of Photos—Here's What I Learned About Preservation
