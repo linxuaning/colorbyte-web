@@ -36,16 +36,30 @@ export default function RestoreClient() {
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
+  const [remaining, setRemaining] = useState(3);
+  const [limitReached, setLimitReached] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Check subscription status on mount
+  // Check subscription status and download limit on mount
   useEffect(() => {
     const email = localStorage.getItem("artimagehub_email");
-    if (!email) return;
-    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
+    if (email) {
+      fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.is_active) setIsSubscriber(true);
+        })
+        .catch(() => {});
+    }
+    // Check download limit
+    const limitUrl = email
+      ? `${API_BASE}/api/download/check-limit?email=${encodeURIComponent(email)}`
+      : `${API_BASE}/api/download/check-limit`;
+    fetch(limitUrl)
       .then((res) => res.json())
       .then((data) => {
-        if (data.is_active) setIsSubscriber(true);
+        if (data.remaining >= 0) setRemaining(data.remaining);
+        if (!data.allowed && !data.is_subscriber) setLimitReached(true);
       })
       .catch(() => {});
   }, []);
@@ -298,24 +312,34 @@ export default function RestoreClient() {
           </div>
 
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <a
-              href={resultUrl}
-              download
-              className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <Download className="h-4 w-4" />
-              Download 720p — FREE
-            </a>
             {isSubscriber ? (
               <a
                 href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
                 download
-                className="inline-flex h-10 items-center gap-2 rounded-lg border border-primary px-6 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
-                <Crown className="h-4 w-4" />
+                <Download className="h-4 w-4" />
                 Download Original Quality
               </a>
+            ) : limitReached ? (
+              <Link
+                href="/#pricing"
+                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Crown className="h-4 w-4" />
+                Start Free Trial — Unlimited Downloads
+              </Link>
             ) : (
+              <a
+                href={resultUrl}
+                download
+                className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Download className="h-4 w-4" />
+                Download 720p ({remaining}/3 remaining)
+              </a>
+            )}
+            {!isSubscriber && !limitReached && (
               <Link
                 href="/#pricing"
                 className="inline-flex h-10 items-center gap-2 rounded-lg border border-primary px-6 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
@@ -325,6 +349,11 @@ export default function RestoreClient() {
               </Link>
             )}
           </div>
+          {limitReached && !isSubscriber && (
+            <p className="text-center text-sm text-muted-foreground">
+              You&apos;ve used all 3 free downloads today. Start a free trial for unlimited original-quality downloads.
+            </p>
+          )}
 
           <div className="flex justify-center">
             <button
