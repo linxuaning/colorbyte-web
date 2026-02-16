@@ -70,6 +70,12 @@ function Header() {
             Restore
           </a>
           <a
+            href="/blog"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Blog
+          </a>
+          <a
             href="#pricing"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
@@ -87,6 +93,9 @@ function Footer() {
       <div className="mx-auto max-w-6xl px-4">
         <p>&copy; {new Date().getFullYear()} ColorByte. All rights reserved.</p>
         <div className="mt-2 flex justify-center gap-4">
+          <a href="/blog" className="hover:text-foreground">
+            Blog
+          </a>
           <a href="/privacy" className="hover:text-foreground">
             Privacy
           </a>
