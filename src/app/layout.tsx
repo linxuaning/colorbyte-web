@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://colorbyte.vercel.app"),
+  metadataBase: new URL("https://colorbyte-web.vercel.app"),
   title: {
     default:
       "AI Photo Tools | Restore, Enhance & Colorize Photos Online Free - ColorByte",
