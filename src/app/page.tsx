@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   ChevronDown,
 } from "lucide-react";
+import PricingSection from "./pricing-section";
 
 export default function HomePage() {
   return (
@@ -115,74 +116,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="border-t py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold tracking-tight">
-            Simple Pricing
-          </h2>
-          <div className="mx-auto mt-12 grid max-w-3xl gap-8 sm:grid-cols-2">
-            {/* Free */}
-            <div className="rounded-xl border p-8">
-              <h3 className="text-xl font-semibold">Free</h3>
-              <p className="mt-2 text-3xl font-bold">$0</p>
-              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 3
-                  photos/day
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 720p
-                  download
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Small
-                  watermark
-                </li>
-              </ul>
-              <Link
-                href="/old-photo-restoration"
-                className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border font-medium transition-colors hover:bg-muted"
-              >
-                Try Free Now
-              </Link>
-            </div>
-            {/* Pro */}
-            <div className="relative rounded-xl border-2 border-primary p-8">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-0.5 text-xs font-medium text-primary-foreground">
-                Most Popular
-              </span>
-              <h3 className="text-xl font-semibold">Pro</h3>
-              <p className="mt-2 text-3xl font-bold">
-                $9.9<span className="text-base font-normal text-muted-foreground">/month</span>
-              </p>
-              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> 100
-                  credits/month
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Original
-                  quality
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> No
-                  watermark
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-600" /> Priority
-                  processing
-                </li>
-              </ul>
-              <button className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg bg-primary font-medium text-primary-foreground transition-colors hover:bg-primary/90">
-                Get Started
-              </button>
-            </div>
-          </div>
-          <p className="mt-6 text-center text-xs text-muted-foreground">
-            Secure payment &middot; Cancel anytime &middot; 14-day refund
-          </p>
-        </div>
-      </section>
+      <PricingSection />
 
       {/* FAQ */}
       <section className="border-t bg-muted/50 py-20">
@@ -205,11 +139,11 @@ export default function HomePage() {
             />
             <FaqItem
               question="What's the difference between Free and Pro?"
-              answer="Free gives you 720p downloads with a small watermark (3/day). Pro gives you original quality without watermark, with 100 credits per month."
+              answer="Free gives you 720p downloads with a small watermark (3/day). Pro gives you unlimited original quality downloads without watermark. Start with a 7-day free trial."
             />
             <FaqItem
-              question="Can I cancel my subscription?"
-              answer="Yes, you can cancel anytime. We also offer a 14-day money-back guarantee."
+              question="How does the free trial work?"
+              answer="Start your 7-day free trial by entering your email and card. You won't be charged during the trial. After 7 days, it's $9.90/month. Cancel anytime."
             />
           </div>
         </div>

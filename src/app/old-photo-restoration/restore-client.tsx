@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback, useEffect } from "react";
+import Link from "next/link";
 import {
   Upload,
   Loader2,
@@ -9,6 +10,7 @@ import {
   AlertCircle,
   CheckCircle2,
   GripVertical,
+  Crown,
 } from "lucide-react";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -33,7 +35,20 @@ export default function RestoreClient() {
   const [colorize, setColorize] = useState(false);
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
+  const [isSubscriber, setIsSubscriber] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Check subscription status on mount
+  useEffect(() => {
+    const email = localStorage.getItem("artimagehub_email");
+    if (!email) return;
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.is_active) setIsSubscriber(true);
+      })
+      .catch(() => {});
+  }, []);
 
   // --- Upload ---
   const handleFile = useCallback(
@@ -291,14 +306,24 @@ export default function RestoreClient() {
               <Download className="h-4 w-4" />
               Download 720p — FREE
             </a>
-            <button
-              disabled
-              className="inline-flex h-10 items-center gap-2 rounded-lg border px-6 text-sm font-medium text-muted-foreground opacity-60"
-              title="Coming soon with Pro subscription"
-            >
-              <Download className="h-4 w-4" />
-              Download Original — 1 Credit
-            </button>
+            {isSubscriber ? (
+              <a
+                href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
+                download
+                className="inline-flex h-10 items-center gap-2 rounded-lg border border-primary px-6 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+              >
+                <Crown className="h-4 w-4" />
+                Download Original Quality
+              </a>
+            ) : (
+              <Link
+                href="/#pricing"
+                className="inline-flex h-10 items-center gap-2 rounded-lg border border-primary px-6 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+              >
+                <Crown className="h-4 w-4" />
+                Get Original — Start Free Trial
+              </Link>
+            )}
           </div>
 
           <div className="flex justify-center">

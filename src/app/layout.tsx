@@ -76,10 +76,16 @@ function Header() {
             Blog
           </a>
           <a
-            href="#pricing"
+            href="/#pricing"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             Pricing
+          </a>
+          <a
+            href="/subscription"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Account
           </a>
         </nav>
       </div>
