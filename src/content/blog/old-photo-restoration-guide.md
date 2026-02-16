@@ -119,6 +119,8 @@ I paid a conservator $380 to properly clean and separate 12 high-value family ph
 
 ## AI Restoration: What Works (and What Doesn't)
 
+After all that physical prep work, this is where things get exciting. I was honestly skeptical — my friend kept telling me "just upload them to an AI thing" and I kept thinking it would look fake. I was wrong about that, mostly.
+
 I tested three AI tools on the same 50-photo sample:
 
 ### ArtImageHub (Free tier, then $9/month)
@@ -151,9 +153,11 @@ Used this for 15 historical photos from the 1920s–1940s where color accuracy m
 
 ### Real-World Results
 
+These are three actual photos from my project. I'm sharing specifics because I spent weeks looking for this kind of honest comparison and couldn't find it anywhere.
+
 **Photo #237: 1947 wedding portrait, severe silver mirroring**
 - Manual restoration estimate: $250, 6–8 hours
-- AI restoration (ArtImageHub): 47 seconds, $0 (free tier)
+- AI restoration ([ArtImageHub](/old-photo-restoration)): 47 seconds, $0 (free tier)
 - Result: 90% as good as professional work
 - Time spent on manual touch-ups: 20 minutes (fixing one artifact near veil)
 - **Verdict:** AI worth it, saved $250 and 5+ hours
@@ -168,6 +172,8 @@ Used this for 15 historical photos from the 1920s–1940s where color accuracy m
 - Scanning: 1200 DPI due to small size (3×4 inches)
 - AI restoration: Perfect result in 52 seconds
 - **Verdict:** Worth the conservator cost for a photo that would've been destroyed by DIY separation
+
+If you want to try AI restoration on your own photos before committing to a full project, [ArtImageHub's free tier](/old-photo-restoration) lets you test a few — I'd recommend uploading your most damaged photo first to see what's possible.
 
 ## The Manual Touch-Up Reality
 
@@ -368,6 +374,30 @@ You'll never regret preserving your family's visual history. But you might regre
 
 ---
 
+## Frequently Asked Questions
+
+**How long does it take to restore old family photos?**
+**Short answer:** AI restoration takes 30-90 seconds per photo. The real time investment is in scanning and organizing.
+
+For my 847-photo project, the total was 61 hours over 6 months: 28 hours scanning, 12 hours sorting, 6 hours AI restoration, 15 hours manual touch-ups. If you have a shoebox of 100 photos, expect 7-10 hours total. The scanning is the bottleneck, not the restoration.
+
+**What's the best scanner for old photos?**
+For most people, the Epson V600 ($220) hits the sweet spot — 600 DPI scans that are good enough for AI restoration and large reprints. If you have 500+ photos, consider the Epson FastFoto FF-680W ($549) which scans one photo per second. For fewer than 50 photos, a smartphone with Google PhotoScan app works surprisingly well for non-critical snapshots.
+
+**How much does it cost to restore old photos?**
+It depends on your approach. My 847-photo project cost $1,255 total ($1.48/photo) including scanner, professional conservator for 12 stuck photos, AI subscriptions, storage, and a printed photo book. For a 100-photo project skipping the conservator, expect $400-600. AI-only restoration (no scanning equipment) is essentially free with most tools' free tiers.
+
+**Should I separate stuck photos myself?**
+For photos that are truly valuable — no. I destroyed two irreplaceable photos of my great-grandfather trying to peel them apart. A professional conservator charges $50-75 to properly separate stuck photos. For less important duplicates, try the freeze method: seal in a plastic bag, freeze 2-3 hours, then gently lift with a thin plastic spatula. Work slowly — 5 minutes per photo is normal.
+
+**Is AI restoration good enough, or do I need professional help?**
+For 80-85% of family photos, AI delivers results that are indistinguishable from professional work to non-experts. Save professional restoration ($75-600/photo) for: photos older than 1900, daguerreotypes/tintypes, photos with more than 60% image loss, and any photo that's the only copy of a specific person. My rule: AI everything first, then manually review and flag the 5% that need a human touch.
+
+**What's the best way to organize restored photos?**
+I use a decade-based folder structure: `01_Originals_NEVER_EDIT/`, `02_AI_Restored/`, `03_Manual_Touchups/`, and `04_Best_Of/`. Name files with date, event, people, and location. Embed metadata (dates, people tags, locations) using Lightroom or any photo manager. This took me 8 extra hours, but it's the thing I'm most grateful I did — six months later, I can find any photo in seconds.
+
+---
+
 **Tools I Actually Use:**
 - **Scanner:** Epson V600 ([Amazon](https://amazon.com/))
 - **AI Restoration:** [ArtImageHub](/old-photo-restoration) (free tier → $9/month)
@@ -377,5 +407,5 @@ You'll never regret preserving your family's visual history. But you might regre
 
 **Related Reading:**
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
-- [Comparing AI Photo Tools: Real Tests with Damaged Photos](/blog/artimagehub-vs-remini)
-- [Photo Preservation 101: Long-Term Digital Storage](/blog/preserving-old-photos)
+- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
+- [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
