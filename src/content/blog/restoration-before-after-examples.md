@@ -529,7 +529,7 @@ Restoration doesn't just fix damage. It reveals stories.
 **Want to restore your family's photos?**
 
 - [Start with ArtImageHub](/old-photo-restoration) (free tier: 3 photos/day)
-- For complex cases requiring research: Email me at carlos.martinez@photorestoration.com
+- For complex cases requiring manual work, consider a [professional photo restoration service](/blog/old-photo-restoration-guide)
 
 **My restoration principles:**
 1. Accuracy over artistry
@@ -547,15 +547,23 @@ Restoration doesn't just fix damage. It reveals stories.
 In my experience, simple restorations (fading, minor scratches) take 1-2 hours and run $80-120. Moderate damage (water stains, significant scratches, missing corners) takes 3-4 hours at $150-200. Complex cases like Case #1 (severe damage, multiple techniques, research) can take 6+ hours and cost $250+. For most family photos, an AI tool like [ArtImageHub](/old-photo-restoration) at $0-9/month gets you 80-90% of the way there — save professional restoration for the 2-3 photos that truly matter most.
 
 **Can AI restore photos that are almost completely faded?**
+**Short answer:** Often yes — even near-blank Polaroids can reveal clear faces and details. The key is scanning at 600+ DPI, because AI needs some underlying information to work with.
+
 Often, yes — surprisingly well. Case #5 was a 1976 Polaroid so faded it looked nearly blank, and AI revealed clear faces and background details. The key is scanning at high resolution (600+ DPI) before restoration, because AI needs *some* underlying information to work with. If you hold the photo up to strong light and can see even faint shapes, there's a good chance AI can enhance what's there. If the emulsion has completely dissolved (the image surface feels smooth where it should be textured), recovery is unlikely.
 
 **Should I restore old photos myself or hire someone?**
+**Short answer:** DIY with AI tools works for 90% of family photos. Hire a professional ($100+) only for severe physical damage, irreplaceable one-of-a-kind images, or when historical accuracy matters.
+
 For 90% of family photos, DIY with AI tools is perfectly sufficient. Upload to [ArtImageHub](/old-photo-restoration) or similar — you'll get results in under a minute that would've cost $100+ five years ago. Hire a professional for: photos with severe physical damage (tears, missing sections), the only copy of an irreplaceable image, or when historical accuracy matters (like identifying uniform insignia in Case #4). My rule: AI first, then decide if it's worth the $100+ for professional refinement.
 
 **What's the most damaged photo you've ever successfully restored?**
+**Short answer:** A 1×1.5 inch wallet photo with 50% water damage and emulsion transfer. Required infrared scanning, multiple AI passes, and 6 hours of manual work — but the result was clear enough to see individual facial features.
+
 Case #1 — Jennifer's father's wallet photo. Only 50% of the image survived, the emulsion had transferred to cardboard, and the face was roughly 80×100 pixels. It required infrared scanning, multiple AI passes, and manual blending over 6 hours. The result wasn't perfect, but it was clear enough for Jennifer to see her father's face for the first time in 41 years. That said, when more than 70% of an image is truly gone, even professional restoration has limits.
 
 **Do you ever discover unexpected things in restored photos?**
+**Short answer:** About 1 in 20 restorations reveals something the client didn't know was there — background details, readable text, or expressions that change the story.
+
 More often than you'd think. About 1 in 20 restorations reveals something the client didn't know was there — a background detail, readable text, a person's expression that changes the story. Case #4 (the WWII "pilot" who was actually a mechanic) and Case #6 (the restaurant menu) are dramatic examples, but smaller discoveries happen regularly. That's why I always tell clients: look at the *whole* restored image carefully, not just the faces.
 
 ---

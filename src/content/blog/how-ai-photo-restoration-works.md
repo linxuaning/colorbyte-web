@@ -93,7 +93,7 @@ OK, let me take you through what actually happens when you upload a photo to a t
 
 The system first does what I'd do if you handed me a physical print: it assesses the situation.
 
-- **Format check**: Is this a JPEG? TIFF? How big is it? (Dolores's scan was 4200×3100 pixels at 600 DPI — good girl, she listened to whoever told her to scan at high resolution)
+- **Format check**: Is this a JPEG? TIFF? How big is it? (Dolores's scan was 4200×3100 pixels at 600 DPI — she listened to whoever told her to scan at high resolution — smart move)
 - **Damage detection**: The AI classifies damage types. Dolores's photo had three: silver mirroring (bottom 40%), water stain (upper right corner), and cracking (throughout). Each needs a different treatment approach
 - **Face detection**: A model called RetinaFace locates facial regions. Found two faces — bride and groom — both damaged but detectable
 
@@ -225,18 +225,28 @@ That's worth 47 seconds of anyone's time.
 Most AI tools offer free tiers (3-10 photos). Paid plans range from $5-15/month for unlimited use. Manual professional restoration runs $75-600 per photo depending on damage severity. For most family photos, AI gives 80-95% of professional quality at a fraction of the cost.
 
 **Can AI restore a photo that's been torn in half?**
+**Short answer:** Partially — if one piece has the main subject, AI can reconstruct a surprisingly complete image. Missing entire people will be hallucinated, not accurate.
+
 It depends on how much of the image survives. If one piece has the full face and the other has background, the AI can often reconstruct a surprisingly complete image. But if you're missing an entire person, the AI will hallucinate — it'll generate a plausible face, but not *your* relative's face. For severe physical damage, consider a professional restoration artist.
 
 **Will AI change how my relatives look?**
+**Short answer:** Modern models preserve identity 92-97% of the time, but review results carefully — especially for non-Western faces.
+
 Modern face restoration models (GFPGAN, CodeFormer) include "identity preservation" in their training, meaning they're penalized for changing facial identity. In my testing, identity is preserved 92-97% of the time. But it's not perfect — review the results carefully, especially for non-Western faces where training data may be less representative.
 
 **What resolution should I scan old photos at?**
+**Short answer:** 600 DPI for standard 4×6 prints, 1200 DPI for wallet-size or smaller. Always scan in color mode, even for B&W photos.
+
 600 DPI for standard 4×6 prints, 1200 DPI for wallet-size or smaller. Scan in color mode even for black-and-white photos — the color scan captures degradation information (yellowing, stains) that helps the AI restore more accurately. Save as TIFF for archival masters, PNG for working copies.
 
 **Is AI restoration good enough for printing and framing?**
+**Short answer:** Yes, for most photos with minor to moderate damage. AI-restored images at 600+ DPI input print beautifully at 8×10 or larger.
+
 For most photos with minor to moderate damage — yes. AI-restored images at 600+ DPI input produce results that print beautifully at 8×10 or larger. For severely damaged originals, the AI result may look excellent on screen but show artifacts at large print sizes. Test-print before ordering a big canvas.
 
 **How is ArtImageHub different from Remini or MyHeritage?**
+**Short answer:** ArtImageHub is optimized for old photo restoration specifically; Remini is strongest on face enhancement; MyHeritage has the best colorization.
+
 All three use similar underlying technology (GFPGAN/Real-ESRGAN family of models). ArtImageHub is optimized for old photo restoration specifically — scratch removal, fading correction, and face enhancement in a single pipeline. Remini is strongest on face enhancement alone. MyHeritage has good colorization. For a full comparison with real test photos, see our [detailed comparison article](/blog/artimagehub-vs-remini).
 
 ---
