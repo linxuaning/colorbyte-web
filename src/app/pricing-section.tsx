@@ -30,7 +30,7 @@ export default function PricingSection() {
       const data = await res.json();
 
       if (res.ok && data.checkout_url) {
-        // Save email and redirect to Stripe Checkout
+        // Save email and redirect to LemonSqueezy Checkout
         localStorage.setItem("artimagehub_email", email);
         window.location.href = data.checkout_url;
       } else if (res.status === 409) {
@@ -137,7 +137,7 @@ export default function PricingSection() {
           </div>
         </div>
         <p className="mt-6 text-center text-xs text-muted-foreground">
-          No charge during trial &middot; Cancel anytime &middot; Secure payment via Stripe
+          No charge during trial &middot; Cancel anytime &middot; Secure payment via LemonSqueezy
         </p>
       </div>
     </section>

@@ -179,7 +179,7 @@ export default function SubscriptionPage() {
               )}
             </div>
 
-            {sub.status === "trialing" && sub.trial_end && (
+            {sub.status === "on_trial" && sub.trial_end && (
               <div className="mt-4 rounded-lg bg-muted/50 p-3">
                 <p className="text-sm">
                   <strong>Free trial</strong> until {formatDate(sub.trial_end)}
@@ -220,7 +220,7 @@ export default function SubscriptionPage() {
                 className="inline-flex h-10 items-center rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
               >
                 {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-                Manage in Stripe Portal
+                Manage Subscription
               </button>
             )}
 
