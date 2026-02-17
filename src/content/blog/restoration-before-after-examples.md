@@ -7,7 +7,7 @@ authorRole: "Professional Photo Restorer"
 authorBio: "Carlos has been restoring photos for 12 years, first manually in Photoshop, now with AI-assisted workflows. He's restored over 4,500 family photos and believes every faded image contains a story waiting to be told."
 category: "Showcase"
 tags: ["Before After", "Examples", "Case Studies", "Real Stories", "Emotional"]
-image: "/blog/restoration-before-after.jpg"
+image: "/blog/before-after-examples.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "💧"
 ---

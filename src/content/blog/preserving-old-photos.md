@@ -7,7 +7,7 @@ authorRole: "Photo Archivist"
 authorBio: "Rachel is a photo archivist who learned the hard way about preservation after losing 1,100 family photos in a basement flood. She now volunteers with local libraries to help communities digitize their photo collections."
 category: "Tips & Guides"
 tags: ["Preservation", "Photo Care", "Family History", "Disaster Recovery", "Digitization"]
-image: "/blog/photo-preservation-tips.jpg"
+image: "/blog/preserving-photos.jpg"
 coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
 coverEmoji: "🏠"
 ---

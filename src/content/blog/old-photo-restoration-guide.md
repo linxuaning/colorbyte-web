@@ -7,7 +7,7 @@ authorRole: "Family Historian & Genealogy Researcher"
 authorBio: "Sarah is a genealogy researcher who accidentally became a photo restoration evangelist after tackling her grandmother's 847-photo archive. She now helps families across the US digitize and preserve their visual history."
 category: "Guides"
 tags: ["Photo Restoration", "Tutorial", "Family Photos", "Digitization", "Preservation"]
-image: "/blog/restoration-guide.jpg"
+image: "/blog/old-photo-guide.jpg"
 coverColor: "from-emerald-600 via-teal-700 to-cyan-800"
 coverEmoji: "📦"
 ---
