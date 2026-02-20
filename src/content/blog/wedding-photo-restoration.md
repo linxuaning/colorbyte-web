@@ -314,3 +314,51 @@ Follow the 3-2-1 backup rule: three copies of all files, two different storage t
 - [How to Fix Blurry Old Photos: The Complete 2026 Guide](/blog/fix-blurry-old-photos)
 - [I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026](/blog/old-photo-restoration-guide)
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore old wedding photos professionally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional manual restoration by an artist costs $50–$600 per photograph depending on damage severity and the artist's rates. AI restoration with a tool like ArtImageHub costs a fraction of this—typically a few dollars or less per photo with a monthly subscription—with results that are very good for most types of damage. For a full wedding album, AI restoration is dramatically more accessible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI restore severely damaged wedding photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For mild to moderate damage—fading, color shifts, light scratches, minor water stains—AI restoration produces excellent results. For severe damage (large tears with significant image loss, extensive mold damage, photos that are more than 50% destroyed), AI can still improve things but won't achieve a miracle. Some severely damaged photographs may benefit from professional restoration for the areas AI couldn't recover."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I restore the physical album or just scan the photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most families, scanning the photos and restoring them digitally is the right approach. Physical album restoration is expensive and irreversible if done incorrectly. However, if the album itself has historical or sentimental value—or if the photos are stuck to pages and can't be safely removed—consult a professional conservator before doing anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't know what colors the photos should be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For colorization of black-and-white wedding photos, the AI produces plausible colors based on context and its training data. These won't be verified accurate, but they're typically reasonable and often beautiful. Where you have specific knowledge (a family member remembers the dress was blue, not lavender), that information is more valuable than the AI's guess—keep notes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I preserve restored photos long-term?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Follow the 3-2-1 backup rule: three copies of all files, two different storage types (external drives, NAS, etc.), one offsite (cloud backup). For display, use UV-protective glass in frames and keep photos out of direct sunlight. Print archival copies on professional lab paper rather than home inkjet."
+      }
+    }
+  ]
+}
+</script>

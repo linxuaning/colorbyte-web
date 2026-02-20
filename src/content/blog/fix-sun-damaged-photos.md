@@ -543,3 +543,51 @@ The key is starting with the best possible scan, working methodically through ex
 Ready to fix sun damaged photos and bring your faded memories back to life? Our [old photo restoration](/old-photo-restoration) service combines cutting-edge AI technology with expert human refinement to rescue even severely sun damaged images. Our specialists understand the specific challenges of UV damage, color shifts, and extreme fading—and we'll work with you to achieve the best possible restoration of your precious photographs.
 
 Don't let sun damage erase your memories. Start your restoration today and preserve your family's visual history for future generations to treasure.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can severely sun damaged photos be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even severely faded photos can often be restored to recognizable condition through digital techniques. Success depends on how much information remains in the original print. Photos that have completely faded to white in large areas may require reconstruction rather than true restoration, but most sun damaged photos retain enough detail for significant improvement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to fix sun damaged photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DIY restoration takes 30 minutes to 4 hours per photo depending on damage severity and your skill level. AI-powered tools process photos in minutes but may need manual refinement. Professional services typically take 1-2 weeks including consultation and approval stages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best software to fix sun damaged photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adobe Photoshop offers the most comprehensive tools, but Affinity Photo provides similar capabilities at a one-time $50 cost versus Photoshop's subscription. For AI-powered quick fixes, specialized restoration platforms can process sun damage in minutes. The best choice depends on your budget, skill level, and time available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some photos turn pink when sun damaged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pink or magenta cast results from cyan dye fading faster than magenta and yellow dyes in chromogenic (traditional color) prints. This differential fading leaves an excess of magenta, creating the characteristic pink appearance. It's one of the most common sun damage patterns and fortunately one of the easier to correct digitally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I frame restored photos or keep originals stored away?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideally, both. Keep original sun damaged photos in archival storage as historical artifacts. Display high-quality prints of your restored digital versions in UV-protective frames with museum glass. This gives you the joy of displaying images without risking further damage to irreplaceable originals."
+      }
+    }
+  ]
+}
+</script>

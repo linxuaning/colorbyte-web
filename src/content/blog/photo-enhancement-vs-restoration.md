@@ -568,3 +568,51 @@ Whether you choose DIY with software and AI tools or professional services, clea
 Ready to restore and enhance your precious photographs? Our [old photo restoration](/old-photo-restoration) service provides both expert restoration to repair damage and professional enhancement to optimize your images for modern viewing and sharing. We understand the crucial difference between recovering what was lost and improving what remains, and we'll work with you to determine exactly what your photographs need.
 
 Preserve your memories with services that respect both history and quality—start your photo restoration and enhancement project today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the main difference between photo enhancement and restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photo restoration repairs damage and returns photos to their original condition, addressing issues like tears, fading, and scratches. Photo enhancement improves photos beyond their original state, making them sharper, better-colored, or compositionally stronger. Restoration recovers; enhancement improves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I do both restoration and enhancement on the same photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and this is common for old damaged photos. Typically, restoration happens first to repair damage and recover the original image, then enhancement optimizes the restored photo for modern viewing, printing, or sharing. This combination provides both historical accuracy and contemporary quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is photo restoration more expensive than enhancement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally yes, especially for significantly damaged photos. Restoration requires careful analysis, period-appropriate reconstruction, and meticulous repair work that's time-intensive. Enhancement, while requiring skill, often involves more straightforward improvements. However, costs vary based on specific requirements, with complex enhancement potentially exceeding simple restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should old family photos be enhanced or just restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on your goals. For historical preservation, restoration alone maintains authenticity. For display and sharing, restoration followed by selective enhancement (sharpening, optimization for output) provides the best of both worlds. Avoid heavy enhancement that erases the photo's period character, but reasonable improvements for viewing are generally appropriate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI do photo restoration as well as photo enhancement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI currently performs better at enhancement than restoration. AI excels at upscaling, color correction, and optimization, but struggles with historically accurate restoration of damaged areas. Restoration benefits from AI for repetitive tasks but still requires human oversight for quality and accuracy. Enhancement can often be handled well by AI with minimal human intervention."
+      }
+    }
+  ]
+}
+</script>

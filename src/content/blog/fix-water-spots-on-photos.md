@@ -188,3 +188,51 @@ The key is acting promptly—water-damaged photos often continue deteriorating o
 Don't let water-damaged photos remain hidden away because of unsightly stains and spots. Start your restoration project today with [ArtImageHub's AI-powered restoration service](/old-photo-restoration). In minutes, you can transform water-stained, tide-marked photographs into clear, clean images free from moisture damage—worthy of display and sharing with family.
 
 Every water-damaged photograph contains a clear image waiting to be revealed. Modern restoration technology makes removing decades of water damage simple, fast, and remarkably effective. Restore your water-damaged photos today and rediscover precious memories obscured by moisture deterioration.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can water stains be completely removed from old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, water stains can typically be removed completely or reduced to invisibility through AI restoration. The technology analyzes water stain characteristics including color (usually brown, yellow, or gray), pattern (tide marks, spots, overall discoloration), and intensity, then applies precise correction to neutralize staining while preserving the photograph underneath. Photos with light to moderate water staining usually restore to excellent quality with no visible traces of water damage remaining. Photos with severe, heavy staining typically show dramatic improvement, though faint traces may sometimes remain in the most heavily damaged areas. Upload your water-stained photo to ArtImageHub to see immediate results—most users are pleasantly surprised by how completely water damage can be removed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if my photos got wet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If photos are currently wet, take immediate action to minimize damage. Gently separate stuck photos by carefully working a thin plastic spatula between them—never pull or force separation. Rinse photos in clean distilled water to remove contaminants that will stain as they dry. Air dry photos laid flat on clean absorbent paper or photo-drying screens, changing absorbent material regularly. Keep air circulating with fans but avoid direct heat. Never attempt to wipe or rub wet emulsion surfaces as this will cause irreversible damage. Once dry, scan photos at high resolution (1200+ dpi) and upload for AI restoration to remove water stains, tide marks, and damage that occurred despite proper drying. Quick action and proper drying technique can prevent some water damage, but restoration can address damage that does develop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI fix photos damaged by mold from water exposure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, AI restoration effectively removes mold damage from water-exposed photographs. The technology identifies mold spots and staining through pattern and color recognition, removes dark mold spots using intelligent interpolation from surrounding undamaged areas, eliminates overall haziness or discoloration from mold growth, and recovers image detail obscured by mold. Surface mold damage typically removes almost completely with excellent results. Deep mold penetration may leave some faint traces but still shows dramatic improvement. For photos with active mold growth, prioritize scanning and digital restoration immediately before deterioration progresses further. The restored digital version will be mold-free and preserved permanently, while you can address the moldy original separately through proper storage or conservation if needed for the physical artifact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove tide marks from vintage photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tide marks—the distinctive lines showing where water levels stood during drying—remove effectively through AI restoration. The technology detects the characteristic linear or curved patterns of tide marks, analyzes the color and tonal shift they create (typically darker lines or bands), applies graduated correction to neutralize the discoloration, and blends the repair seamlessly into surrounding areas. Simply scan your tide-marked photograph at high resolution (1200 dpi recommended), upload to restoration software like ArtImageHub, and let the AI remove the tide marks automatically. The process takes seconds to minutes, and results typically show complete or near-complete tide mark removal. Even photographs with multiple severe tide marks crossing important image areas usually restore beautifully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan water-damaged photos or will it cause more damage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanning water-damaged photos is generally safe if done carefully and is essential for preservation through restoration. Ensure photos are completely dry before scanning—wet photos should never contact scanner glass. Clean scanner glass thoroughly before and after scanning water-damaged photos to prevent residue transfer. Place photos carefully on scanner bed avoiding dragging or sliding that might damage fragile emulsion. Close scanner lid gently to avoid shifting or damaging fragile photos. For extremely fragile photos or those with severe emulsion damage, photograph with a high-quality camera instead of using contact scanning. The digital capture is your preservation priority—once scanned at high quality, the image information is saved even if the original continues deteriorating. AI restoration can then remove water damage from the digital scan, creating a perfect restored version."
+      }
+    }
+  ]
+}
+</script>

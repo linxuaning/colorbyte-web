@@ -786,3 +786,51 @@ Antique family portraits are irreplaceable treasures connecting us to ancestors 
 10. Pass knowledge to next generation
 
 These antique portraits represent the beginning of your family's photographic record—the first time ancestors' actual faces were captured for future generations. Don't let age, damage, or deterioration keep these faces hidden. Begin your antique portrait restoration project today and bring your earliest photographed ancestors back into clear focus, preserving their memory for all the generations to come.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can daguerreotypes and tintypes be safely scanned on a flatbed scanner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with caution. Daguerreotypes and tintypes can be scanned on flatbed scanners, but their reflective metal surfaces create challenges. Place face-down carefully, use black backing, and understand that glare may still occur. Often, photographing with a digital camera yields better results for metal photographs. Never force the scanner lid closed or apply pressure—damage to these antique photos is irreversible. For extremely valuable daguerreotypes, professional scanning is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove antique photos from their original cases or mounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no. Original cases and mounts are part of the photograph's history and have preservation value. Daguerreotypes and ambrotypes should never be removed from cases without professional assistance—they're sealed units that protect the delicate image. Cabinet cards can remain on their mounts unless the mount is actively damaging the photo. Scan or photograph in their original presentation, then digitally separate if desired. Removal risks irreversible damage to irreplaceable photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I restore an antique photo that's almost completely faded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Even severely faded antique photos often retain recoverable information invisible to the naked eye. High-resolution scanning (2400-4800 DPI) captures subtle remaining detail. Modern AI restoration like ArtImageHub specializes in recovering severely faded images, often revealing faces and details that appear completely lost. Aggressive digital enhancement—extreme level adjustments, channel separation, and contrast—can reveal hidden information. While perfect restoration may be impossible, recognizable images can often be recovered from seemingly blank photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it historically appropriate to colorize antique black and white portraits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a matter of personal preference and intended use. For archival and historical documentation, preserve original monochrome or period-tinted versions. However, colorization can make antique ancestors feel more immediate and relatable to modern family members, especially children. If colorizing, research period-appropriate colors for historical accuracy. Consider creating both restored monochrome and colorized versions—preserve history while making it accessible. Always clearly label colorized versions as such to maintain historical integrity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do with antique photos when I don't know who the people are?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Preserve and digitize them anyway. Unknown ancestors are still family history, and future research or relatives may identify them. Scan at high resolution, document physical characteristics (clothing era, studio location, any writing), research studio information to narrow time and place, share with extended family for identification help, and post in genealogy communities. Even unidentified antique photos have historical value showing period clothing, photographic techniques, and family material culture. Some may be identified years later through genealogy research."
+      }
+    }
+  ]
+}
+</script>

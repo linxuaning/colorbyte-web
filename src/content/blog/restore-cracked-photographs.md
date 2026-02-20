@@ -198,3 +198,51 @@ Whether your cracked photos show fine crazing throughout the surface, deep linea
 Don't let cracked photographs remain hidden away or displayed in damaged condition. Start your restoration project today with [ArtImageHub's AI-powered restoration service](/old-photo-restoration). Transform cracked, damaged photographs into clear, beautiful images worthy of display and sharing. Preserve precious memories before cracking worsens and emulsion is lost permanently.
 
 Every cracked photograph contains a clear, undamaged image waiting to be revealed. Modern AI restoration makes removing cracks simple, fast, and remarkably effective. Restore your cracked photos today and rediscover precious memories in perfect clarity.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can cracks be completely removed from old photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, cracks in old photographs can typically be completely or nearly completely removed through AI restoration. The technology identifies crack patterns throughout the image, analyzes image content on both sides of each crack to understand what the undamaged photo should look like, reconstructs the damaged crack areas through intelligent interpolation, and blends the repairs seamlessly into the surrounding image. Fine crazing affecting entire photos becomes smooth continuous tone, linear cracks running across images become invisible, and even severe widespread cracking often removes with excellent results. The digital restoration is entirely non-destructive to the original photograph, which should be preserved carefully in archival storage. Upload your cracked photo to ArtImageHub to see the transformation—families are often amazed how completely cracks can be removed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will scanning cracked photos cause more damage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanning cracked photographs is generally safe if done carefully and is essential for preservation through digital restoration. Ensure the photo lies completely flat on the scanner bed without forcing or flexing, close the scanner lid gently to avoid pressure on fragile areas, support fragile photos fully when moving to and from scanner, and handle only by edges wearing cotton gloves. For extremely fragile photos with actively flaking emulsion, photograph with a high-quality camera instead of using contact scanning. The digital capture is your preservation priority—once scanned at high quality, the image is saved even if the original continues deteriorating. AI restoration can then remove all cracks from the digital scan, creating a perfect restored version while the fragile original is safely preserved in archival storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI remove cracks while preserving fine details like facial features?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, AI excels at removing cracks while preserving and even enhancing important image details, particularly facial features. The technology understands image content contextually through facial recognition identifying faces and prioritizing their preservation, edge detection distinguishing authentic details from crack artifacts, and intelligent analysis separating damage from genuine image information. When cracks run across faces, AI analyzes facial structure to ensure reconstructions maintain realistic appearance. The system knows that facial features, text, sharp edges, and fine details must be preserved while cracks should be removed. Results typically show excellent preservation of all important details with cracks becoming invisible. In many cases, faces appear clearer in the restored version than in the cracked original because crack removal eliminates visual interference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you restore photographs where the emulsion is cracking and peeling off?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photographs with cracking and peeling emulsion require careful handling and digital restoration. For the physical photograph, stop any further handling that might cause additional flaking, photograph or scan immediately before more emulsion is lost, and store flat in protective enclosure (acid-free folder or Mylar sleeve). For digital restoration, scan at highest possible resolution to capture all remaining image detail including areas where emulsion has lifted or partially detached, upload to AI restoration service which can remove crack patterns, reconstruct areas where emulsion has completely flaked away, smooth and restore overall image appearance, and recover detail from damaged sections. The digital restoration preserves the image before complete deterioration occurs. For extremely valuable photographs with active emulsion loss, consult a professional conservator for physical stabilization treatment, but digital restoration should happen immediately as your primary preservation priority."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between cracks and intentional texture in old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI restoration distinguishes between damage (cracks) and authentic photo characteristics (intentional texture, grain, canvas texture) through pattern analysis. Cracks appear as linear or irregular damage patterns interrupting image continuity, create visual disruption across genuine image details, and follow stress patterns from physical damage. Authentic texture shows as consistent pattern related to photographic process or support material, integrates with image rather than overlaying it, and follows manufacturing or artistic characteristics. The AI is trained on millions of images showing both damage and authentic characteristics, allowing it to make intelligent decisions about what to remove (cracks) and what to preserve (genuine texture). Results maintain authentic photographic character while removing damage. For particularly important historical photos, you can request conservative restoration that errs on the side of preservation if there's any uncertainty."
+      }
+    }
+  ]
+}
+</script>

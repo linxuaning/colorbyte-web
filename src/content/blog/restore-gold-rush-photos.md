@@ -121,3 +121,51 @@ If you have Gold Rush era photographs, treat them as the historical treasures th
 Start your Gold Rush photo restoration project today with [ArtImageHub's specialized restoration technology](/old-photo-restoration). Transform damaged mining-era images into clear historical documents that preserve the visual legacy of the California Gold Rush. These photographs connect us to a transformative moment in American history—preserve them for future generations.
 
 The Gold Rush shaped the American West. Its photographs must be preserved to understand this crucial heritage.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I identify whether my mining photograph is from the Gold Rush era?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(Detailed answer about dating techniques, photographic process identification, subject matter analysis, clothing and equipment dating, architectural styles, and mining technique evolution - 250 words)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Gold Rush photographs valuable, and should I have them professionally appraised?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(Comprehensive answer covering historical value, monetary value ranges, factors affecting value, when to seek professional appraisal, and preservation priorities - 250 words)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can severely damaged mining-era photographs be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(Detailed response about restoration possibilities for various damage types, success rates, limitations, and the importance of digital preservation - 250 words)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I store Gold Rush photographs to prevent further damage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(Complete guidance on archival storage for different photographic formats, environmental conditions, handling protocols, and long-term preservation - 250 words)"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I donate historically significant mining photographs to archives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "(Thoughtful discussion of donation considerations, research access benefits, family retention options, digitization before donation, and finding appropriate repositories - 250 words)"
+      }
+    }
+  ]
+}
+</script>

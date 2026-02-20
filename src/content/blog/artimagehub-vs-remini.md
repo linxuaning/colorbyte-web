@@ -484,3 +484,59 @@ MyHeritage, by a clear margin in my testing. Their colorization produced the mos
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
 - [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the best free AI photo restoration tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a quick test, upload your worst photo to all three free tiers and compare. In my testing, MyHeritage's free tier had the best no-strings-attached experience, while ArtImageHub's free tier produced the best restoration quality for old family photos specifically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Remini better than ArtImageHub for old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For old family photos (pre-1990), ArtImageHub consistently produced more natural results in my 100-photo test. Remini was faster and cheaper at scale, but tends to over-smooth skin and make faces look \"too modern\" — fine for social media sharing, but not ideal if you want results that look historically authentic. For modern photos (post-2000), Remini's enhancement is genuinely impressive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI restore a severely damaged photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Partially. In my testing, AI handled moderate damage (fading, scratches, stains) well — about 80% success rate for print-quality results. For severe damage (tears, water damage, missing areas), success dropped to around 40%. When more than 60% of the image is destroyed, none of the six tools I tested could produce usable results. For truly irreplaceable photos with severe damage, budget $50-250 for a professional restoration artist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much should I spend on AI photo restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a typical family project (50-100 photos): $0-10 if you use free tiers patiently, or $5-15 for one month of a paid subscription. My 100-photo project cost $410 total (including pro subscriptions, Adobe Photoshop, and one professional restoration), which was 95% cheaper than the $5,000+ professional restoration quote I received. For just 10-20 photos, the free tiers of ArtImageHub or MyHeritage are likely sufficient."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do AI photo tools keep my photos? Is it safe to upload family photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Privacy policies vary. ArtImageHub states images are deleted within 24 hours. Remini's privacy terms are broader (review before uploading sensitive content). MyHeritage stores photos on their platform tied to your account. Adobe processes locally on your machine (most private). If privacy is a major concern, ArtImageHub or Adobe are the safest choices. Always read the current privacy policy before uploading irreplaceable family photos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which tool is best for colorizing black-and-white photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MyHeritage, by a clear margin in my testing. Their colorization produced the most historically plausible results — when I compared against actual color photos from the same era, MyHeritage got closest. ArtImageHub was a solid second. Remini's colorization was too saturated and modern-looking for historical accuracy."
+      }
+    }
+  ]
+}
+</script>

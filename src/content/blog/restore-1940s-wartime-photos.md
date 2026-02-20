@@ -561,3 +561,51 @@ Writing on the back of photos should generally be preserved—it provides invalu
 7. Properly store originals in archival materials
 
 These photographs document not just family history, but American history. Whether showing service overseas, work on the home front, or precious family moments during wartime, each photo tells an irreplaceable story. Don't let time and deterioration steal these memories. Begin your restoration project today and ensure the Greatest Generation's legacy remains vivid for the generations to come.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are 1940s wartime photos more difficult to restore than photos from other eras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1940s wartime photos present specific challenges due to material shortages during the war years, which affected photo quality, and the simple fact of 80+ years of aging. However, they're not necessarily more difficult than other severely aged photos. The main differences are the characteristic fading patterns, yellowing, and often heavy handling damage. Modern AI restoration tools like ArtImageHub handle these period-specific issues well, having been trained on thousands of 1940s photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize black and white wartime photos or keep them as originally taken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal choice with no wrong answer. Colorization can make photos feel more immediate and relatable, especially for younger generations. However, period black and white photography has its own artistic integrity and historical authenticity. A good compromise: create both colorized and restored black and white versions. Keep the B&W for historical accuracy, use colorized versions for engagement and emotional connection. Always preserve the original scans unchanged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I identify the military unit or location in a wartime photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research military insignia, patches, and uniforms visible in photos. The National Archives, service branch historical centers, and online military history communities can help identify units. Cross-reference with family service records if available. Even partial information helps—service branch, approximate date, and theater of operations. Local VFW posts often have members knowledgeable about WWII uniforms and insignia who enjoy helping families identify details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth restoring severely faded wartime photos where barely anything is visible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Modern AI restoration can recover images from photos that appear nearly blank to the naked eye. Even photos that seem hopelessly faded often retain enough information for significant recovery. ArtImageHub specializes in extreme fading recovery and regularly restores photos that families assumed were beyond saving. Always scan severely faded photos at highest resolution—you may be surprised what can be recovered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove handwritten dates and notes from the backs of wartime photos during restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Writing on the back of photos should generally be preserved—it provides invaluable historical context, identifies people and places, and records family history. When scanning, create separate scans of photo fronts and backs. The front writing (if bleeding through) can be removed during digital restoration while preserving the actual historical note on the back. Never erase or remove original handwriting from physical photos—it's part of the photo's provenance and historical value."
+      }
+    }
+  ]
+}
+</script>

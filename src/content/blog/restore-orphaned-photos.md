@@ -161,3 +161,51 @@ Whether you collect orphaned photographs intentionally or inherited them acciden
 If you have orphaned photographs, restore them beautifully with [ArtImageHub](/old-photo-restoration), research what you can discover, and share them where descendants might see them. Even if identity remains mysterious, you've preserved visual history and honored lives that deserved to be remembered.
 
 Every orphaned photograph was once treasured by someone. Through your care, it can be treasured again.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it worth restoring orphaned photographs if I don't know who they are?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely yes, for several compelling reasons. First, restoration dramatically increases identification chances because clear faces are far more recognizable than damaged or faded images, enhanced details provide clues for research (visible text, distinctive features, background elements), and better-quality photographs get more attention when posted online. Second, restoration preserves historical value regardless of identification because images document period clothing, architecture, photographic processes, and social history even for unknown subjects. Third, restoration honors the subjects as real people whose lives mattered, shows respect for photography as historical documentation, and preserves visual heritage that might otherwise be completely lost. Finally, restoration enables better archival placement because museums and historical societies prefer high-quality images and restored photographs have greater research and exhibition value. Even if subjects are never identified, restored orphaned photographs contribute to historical understanding and visual documentation of the past. The relatively small time and cost investment in restoration creates value far exceeding the effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if someone claims an orphaned photo but I'm uncertain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When someone claims identification of an orphaned photograph but you're not certain they're correct, verify carefully before accepting the identification. Request additional evidence supporting their claim including other photographs of the same person for visual comparison, family documents (letters, Bible records) mentioning the person, genealogical research showing the person lived in the right place and time for the photograph, and family history details consistent with photograph context. Compare claimed identity with photograph evidence by checking if approximate age matches date/photographic format, location aligns with photographer or background clues, and family resemblance visible to other identified family photographs. Consult knowledgeable third parties like local historical society staff, genealogists familiar with the family or region, or photography historians who can assess photographic dating. If verification supports the claim, provide high-resolution restored files to family and document the identification story. If verification raises doubts, explain concerns politely and request additional supporting evidence. Maintain healthy skepticism while being respectful—people are sometimes mistaken in good faith, but wrong identifications harm rather than help historical accuracy. When uncertain, it's better to note \"possible identification pending verification\" rather than accepting unproven claims as fact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I keep or sell orphaned photographs I've restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The ethics and legality of keeping or selling orphaned photographs are complex. Legally, if you purchased orphaned photographs legitimately from antique stores, estate sales, or similar sources, you own the physical objects and generally can keep or sell them. However, ethical considerations complicate this simple legal answer. Many collectors and restorers follow an informal ethical code: Make genuine effort to identify and locate family descendants before selling valuable or historically significant photographs. Offer return of photographs to identified families (though you can ask for compensation for your restoration work and research time). If keeping photographs, maintain them properly and make them available to researchers and potential family. Share restored digital versions online to aid genealogy and historical research. Consider donation to appropriate archives for historically significant images if family can't be found. Price modestly if selling, recognizing ethical dimension of profiting from family photographs. Some people make exceptions for common mass-produced photographs (like standard studio portraits with no special significance), while treating unusual, historically important, or personal family photographs with greater care about reunion versus commerce. There's no universal rule, but thoughtful engagement with these ethical questions distinguishes respectful handling of orphaned photographs from pure commercial exploitation. Many restorers find satisfaction in reuniting photographs with families outweighs any commercial value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should I try to identify an orphaned photo before giving up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no required timeframe for identification efforts, and \"giving up\" doesn't mean ceasing all efforts. Practical approach involves initial intensive research period (1-2 weeks) conducting your initial research, posting to relevant platforms, and responding to initial suggestions. If no clear leads emerge, transition to periodic updates (every 3-6 months) reposting to new or active platforms, sharing to newly discovered relevant groups, and updating posts with any new research findings. Some orphaned photographs get identified years or even decades after initial posting because new genealogy researchers enter the field constantly, more historical records become digitized and searchable, improved AI tools enable better photograph comparison, and family members who didn't know about searches discover older posts. Rather than \"giving up,\" maintain accessible online postings while reducing active effort. Meanwhile, properly store physical photographs, create high-quality restorations that maximize identification potential, and donate historically significant photographs to appropriate archives where they remain available for research. Even unidentified photographs have historical value and deserve preservation. Many photographs are eventually identified through patient long-term availability rather than quick results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I return orphaned photographs to identified families or keep them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This ethical question has no single right answer—it depends on multiple factors. Arguments for returning to families include that these are family heirlooms that morally belong with descendants, families may have searched unsuccessfully for these exact images, return honors the subjects and their memory, and families can properly preserve photographs within family history context. Arguments for keeping (with family permission) include that you invested time, money, and expertise in acquisition and restoration, you may maintain better archival preservation than family would, you provide access to researchers while family might restrict it, and families sometimes don't actually want physical photographs if they have digital copies. Balanced approach that many collectors use is to contact identified families and explain the situation, offer high-resolution restored digital files freely, offer return of physical photographs, or offer to keep photographs in trust (properly stored and accessible) if family doesn't want them. Ask family preference—they may deeply want the photograph or be happy you're preserving it. Negotiate appropriate compensation for your restoration work and research time if family wants physical return. Consider donating to archives if family doesn't want photograph but you don't want to keep it. The key is transparent communication with families, prioritizing their wishes while also valuing your work, and ensuring photographs are preserved regardless of who physically possesses them."
+      }
+    }
+  ]
+}
+</script>

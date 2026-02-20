@@ -499,3 +499,51 @@ Glass plate negatives contain extraordinary historical detail and represent irre
 Ready to preserve your glass plate negative collection before physical deterioration claims these historical treasures? Visit our [old photo restoration](/old-photo-restoration) service to see how our specialists carefully digitize and restore glass negatives, handling these fragile artifacts with the expertise they deserve while delivering professionally restored images that showcase the extraordinary quality of glass plate photography.
 
 Our team understands the unique challenges of wet collodion plates, dry gelatin negatives, and lantern slides. We provide careful digitization, expert digital restoration, and guidance on proper physical preservation. Start your restoration journey today and ensure these remarkable photographic artifacts survive for generations to come.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you digitize old glass plate negatives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digitize old glass plate negatives by placing them emulsion-side DOWN on a flatbed scanner with transparency adapter (scan at 2400-4800 DPI in 48-bit color) or by photographing them on a light table using a digital camera with macro lens, both methods capturing the negative image which must then be digitally inverted to create a positive image. Photography often produces superior results to scanning for glass negatives. Handle plates by edges only wearing cotton gloves, support fully during all movement, and digitize immediately to preserve images before further physical deterioration occurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can broken glass negatives be restored digitally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, broken glass negatives can be digitally restored by digitizing each fragment separately (photography or scanning), importing all fragments into photo editing software on separate layers, aligning them precisely using visible details, and blending seams with clone stamp and healing tools. Even severely shattered plates with dozens of fragments can be reconstructed digitally if most pieces are present. This requires 3-8 hours for complex breaks. Keep all physical fragments together in protective housing. For extremely valuable plates or complex breaks, professional conservation services can physically stabilize fragments before digitization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between wet plate and dry plate glass negatives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wet plate collodion negatives (1851-1880s) required coating, sensitizing, exposing, and developing while the plate was still wet—used immediately in a portable darkroom—producing extremely sharp images but with characteristic irregularities and very fragile emulsion. Dry gelatin plates (1871-1920s) came pre-coated, could be stored before use, and had more stable emulsion, making them the professional standard. When restoring, wet plates typically show more unique flaws and emulsion instability requiring gentler handling, while dry plates generally preserve better but still face glass breakage and silver fading issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you store glass photographic plates safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Store glass photographic plates vertically in four-flap acid-free paper enclosures with archival dividers in protective boxes, at 30-40% humidity and 65-70°F temperature in dark storage, never stacked flat. Each plate needs individual housing (never direct contact between plates), vertical storage prevents weight damage to emulsion, and proper environmental control prevents further deterioration. Handle only by edges with cotton gloves, support fully during movement, and digitize immediately as insurance against breakage. Never use PVC, magnetic albums, or regular cardboard. Monitor condition annually for new damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are glass plate negatives worth restoring professionally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Glass plate negatives are worth professional restoration when they contain irreplaceable historical images, document significant events or people, represent work of notable photographers, or have genealogical/legal importance. Professional conservation costs $200-2000+ per plate but provides expert stabilization, fragment reassembly, mold remediation, and proper archival housing. For family collections, DIY digitization ($0-500 for equipment) followed by digital restoration ($50-200 per image if hiring professionals, or your time if DIY) provides better value. Consult professionals for: broken plates, active deterioration, emulsion lifting, or museum-quality needs."
+      }
+    }
+  ]
+}
+</script>

@@ -600,3 +600,51 @@ When you restore tintype images, you're not just removing rust and damage—you'
 Ready to restore your precious tintype photographs with technology that understands their unique characteristics? Visit our [old photo restoration](/old-photo-restoration) service to see how AI-powered restoration combined with expert knowledge of historical processes can bring your tintypes back to life—removing rust, correcting varnish yellowing, and enhancing detail while preserving their authentic 19th-century appearance.
 
 Our specialists have extensive experience with tintypes, ferrotypes, and other early photographic formats. We understand the unique challenges of metal-based photographs and can help preserve your family's Civil War era images, Victorian portraits, and other tintype treasures for generations to come. Start your restoration journey today and give these remarkable survivors the care and attention they deserve.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you restore tintype images without damaging them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Restore tintype images digitally rather than physically cleaning the original. Never attempt physical cleaning—emulsion is fragile and any wiping or scrubbing causes irreversible damage. Instead, digitize the tintype at high resolution (1200+ DPI) using scanning or cross-polarized photography, then perform all restoration work on the digital file. This preserves the physical tintype in its current condition while creating a cleaned, enhanced version. Professional physical conservation should only be attempted for extremely valuable tintypes by trained conservators."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do tintypes have a dark background?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tintypes appear dark because they're created on thin iron sheets coated with black japan varnish or dark enamel paint before applying the photographic emulsion. This dark background is essential to the tintype process—it provides contrast for the light-colored silver image in the collodion emulsion. When viewing a tintype, you're seeing a negative image (where more light hit creates lighter areas) over a dark base, creating a positive appearance. This dark background distinguishes tintypes from ambrotypes (glass) or daguerreotypes (mirrored silver)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can rusted tintypes be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, rusted tintypes can be digitally restored even with significant rust damage. Light to moderate surface rust (orange-brown spots) can be removed through color correction and selective desaturation techniques. Heavy rust that has destroyed image detail requires reconstruction using clone stamping and content-aware fill. Physical rust removal from the actual tintype should never be attempted at home—it requires professional conservation. For most people, digital restoration provides excellent results while preserving the physical tintype as-is. Expect 3-8 hours restoration time depending on rust severity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can you tell if a photograph is a tintype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identify a tintype by checking these characteristics: it's on thin metal (iron) that attracts a magnet; the image appears dark when held against dark backgrounds and lighter against light backgrounds; it's usually 1/4 inch thick or less; edges may show rust; the surface has a dark, varnished appearance; and the image is reversed (mirror image). Tintypes are often in small paper cases or cardboard mounts. Compare to daguerreotypes (mirror-like, in fancy cases, much more expensive) and ambrotypes (glass, not magnetic, in cases with dark backing)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to digitize old tintypes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The best way to digitize tintypes is using cross-polarized photography rather than flatbed scanning. Position the tintype vertically, use two polarized lights at 45-degree angles, attach a polarizing filter to your camera, and rotate filters until reflections disappear. Shoot in RAW format at highest resolution. If scanning, use 1200-2400 DPI, leave the scanner lid open, cover with black cloth, and disable all auto-corrections. For curved or warped tintypes, photography is essential. Always handle by edges with cotton gloves and never apply pressure to the emulsion surface."
+      }
+    }
+  ]
+}
+</script>

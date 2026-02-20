@@ -118,3 +118,51 @@ Don't let mold destroy irreplaceable family memories. If you have mold-damaged p
 Start your mold damage restoration project with [ArtImageHub](/old-photo-restoration). Transform mold-contaminated photographs into clean, clear images that preserve family history despite biological damage. Every day of delay allows more damage—act now to save your photographs.
 
 Mold may attack your photographs, but digital restoration defeats it completely.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can mold-damaged photographs be fully restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration can remove visible mold damage very effectively, creating clear viewable images even from severely mold-damaged photographs. Success depends on damage severity—light to moderate mold damage (scattered spots, some staining) removes 90-95% successfully, heavy mold damage (extensive spots, significant staining) achieves 75-90% restoration, and severe damage with actual emulsion loss reaches 60-80% recovery. Even catastrophically mold-damaged photographs showing almost complete coverage can often be partially restored, recovering at least some image information. The key is digitizing immediately before mold causes additional damage. Once digitized, AI restoration removes mold spots, eliminates staining and discoloration, and recovers obscured details to create the best possible version of the damaged photograph. While physical mold removal from original photographs requires professional conservation expertise, digital restoration of scanned mold-damaged images is highly effective and safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan mold-damaged photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanning mold-damaged photographs is safe if proper precautions are followed. Wear an N95 mask to avoid inhaling mold spores released during handling. Use disposable gloves to avoid skin contact with mold. Work in well-ventilated area to disperse spores. Place mold-damaged photos in sealed plastic bags immediately after scanning to prevent spore spread. Thoroughly clean scanner glass and surrounding area with appropriate cleaning solution after scanning mold-damaged images. Never blow on photographs or use compressed air, which disperses spores into the air you're breathing. Handle mold-damaged photographs gently as mold may have weakened materials. Despite these precautions being necessary, scanning is urgent because mold damage progresses daily—every day of delay means more image information lost to active mold growth. Scan immediately to preserve maximum image detail, then store original photographs properly (dry, stable environment) to halt further mold activity while you work with restored digital copies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will mold come back after I restore the digital image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration removes mold damage from digital copies but doesn't affect mold in the original physical photograph. If mold was actively growing on the original when you scanned it, spores and growth may remain on the physical photograph. To prevent continued damage to originals: move them to dry environment (under 60% relative humidity) where mold cannot grow actively, store in proper archival materials away from contamination sources, consider having valuable originals professionally treated by photograph conservator to physically remove mold, and maintain digital restored versions as your working copies while protecting originals. Mold will not affect your digital restored images—once digitally restored, the images are perfectly clean with all mold damage removed. The digital files can be copied, printed, and shared infinitely without any mold issues. Your concern should be protecting original physical photographs from further mold growth through proper storage conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I remove mold from photographs myself before scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical mold removal from photographs should generally be left to professional photograph conservators because improper removal can cause severe additional damage, mold spores create health hazards requiring proper safety equipment, and different photographic formats require different specialized treatment approaches. However, if you must handle mold-contaminated photographs, follow these safety guidelines: wear N95 mask and disposable gloves, work outdoors or in well-ventilated area, never use water or cleaning solutions which spread mold and damage photographs, very gently brush visible surface mold with soft brush (outdoors only) to remove loose growth before scanning, immediately place photographs in clean polyester sleeves after any handling, and dispose of gloves and clean work area thoroughly. The safer and more effective approach is to scan mold-damaged photographs as they are (following safety precautions), digitally restore the scanned images to remove all visible mold damage, then store original photographs in proper dry conditions to halt mold growth. This preserves image information without risking additional physical damage from amateur mold removal attempts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I tell if mold damage is active or old?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Active mold shows fuzzy or powdery growth on photograph surfaces, may have musty odor, appears on photographs stored in humid conditions (basement, attic), and actively spreads to adjacent photographs if not isolated. Old dormant mold appears as staining and spots without fuzzy growth, occurs in photographs moved to dry storage, has no musty odor, and doesn't actively spread to other photographs. Even if mold appears dormant, digitize urgently because spores may reactivate if humidity increases. Active or dormant, all mold-damaged photographs need immediate digitization before additional deterioration occurs, proper dry storage to prevent recurrence (below 60% RH), and digital restoration to remove visible damage from scanned copies. Don't wait to determine if mold is active or dormant—treat all mold contamination seriously and act quickly to preserve image information through digitization and restoration."
+      }
+    }
+  ]
+}
+</script>

@@ -570,3 +570,51 @@ Digital restoration is better for 90% of family photos because it's safer (doesn
 - [How to Restore Old Photos at Home: Complete DIY Guide](/blog/how-to-restore-old-photos-at-home)
 - [Fix Water Damaged Photos: Emergency Response and Restoration](/blog/how-to-fix-water-damaged-photos)
 - [Best Photo Restoration Software 2026: Comprehensive Comparison](/blog/best-photo-restoration-software-2026)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you fix a photo that's torn in half?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, photos torn in half are among the easiest to repair digitally. Scan both halves carefully aligned on a flatbed scanner at 600 DPI or higher. Use AI restoration tools like ArtImageHub to automatically remove the tear line, or manually repair in free software like GIMP using the Healing Brush tool. Most straight tears across the middle can be made completely invisible in 30-60 minutes. Physical repair with archival tape is also possible but the tear remains visible on close inspection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tape is safe for torn photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only archival document repair tape specifically designed for photo conservation is safe. Brands like Lineco, 3M Scotch #415, or Conservation Resources make acid-free, lignin-free repair tape that won't yellow or damage photos over time. Never use regular Scotch tape, packing tape, or masking tape—they contain acids that permanently stain and deteriorate photographs. Archival tape costs $15-25 per roll from conservation supply stores. However, digital restoration is safer than any physical tape repair."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do professionals fix torn photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional photo restorers primarily use digital restoration: they high-resolution scan torn pieces, digitally align them in Photoshop, remove tear lines using Clone Stamp and Healing Brush tools, reconstruct any missing fragments, and enhance the overall image. For physically valuable artifacts, conservators may also use reversible wheat starch paste and Japanese tissue to mend the original. Professional digital restoration of a torn photo typically costs $75-400 depending on complexity, while physical conservation repair runs $150-600."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI fix torn photographs automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern AI restoration tools like ArtImageHub can automatically fix simple straight tears in 60-120 seconds with 70-80% success rate. The AI treats the tear like a large scratch and removes it during processing. However, complex tears crossing through faces, photos torn into multiple pieces, or tears with missing fragments usually require manual digital repair in Photoshop or GIMP. Upload a test photo to ArtImageHub's free tier to see if AI handles your specific tear—if not, manual restoration takes 30 minutes to 3 hours depending on damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I physically repair or digitally restore a torn photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration is better for 90% of family photos because it's safer (doesn't risk damaging the fragile original), produces perfect visual results (tear becomes completely invisible), allows unlimited reprints, and is faster (30 minutes to 2 hours vs. physical repair taking 3-8 hours). Physical repair with archival materials is only recommended when the original artifact has historical value beyond the image itself, or for museum/archive requirements. For irreplaceable family photos, do both: digitally restore for a perfect display copy, and physically preserve the original safely stored."
+      }
+    }
+  ]
+}
+</script>

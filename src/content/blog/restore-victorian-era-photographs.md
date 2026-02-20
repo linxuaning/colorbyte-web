@@ -405,3 +405,51 @@ The techniques outlined in this guide provide a foundation for restoration work,
 Ready to bring your Victorian family photographs back to life? Visit our [old photo restoration](/old-photo-restoration) service to see how modern AI technology combined with expert human oversight can restore your precious 19th-century images while maintaining their historical integrity and authenticity. Our specialists understand the unique challenges of Victorian photography and can help preserve your family's visual legacy for generations to come.
 
 Start your restoration journey today and give your Victorian ancestors the clarity and presence they deserve in your family's ongoing story.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore Victorian era photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DIY restoration costs $10-50 monthly for software plus initial scanner investment ($100-400). Professional restoration ranges from $50 for basic work to $2000+ for museum-quality restoration of severely damaged images. The cost depends on damage extent, photograph size, and desired quality level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can severely damaged Victorian photographs be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even heavily damaged Victorian photographs can often be restored through digital techniques. Missing sections can be reconstructed using reference materials from the same era, though results depend on how much original detail remains. Photographs with at least 50-60% of the original image intact generally restore well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize Victorian black and white photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize, research Victorian era clothing, studio practices, and demographics for accuracy. Many experts recommend keeping Victorian photographs in their original sepia or black-and-white presentation to maintain historical authenticity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I identify what type of Victorian photograph I have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Examine the physical characteristics: Daguerreotypes are on metal with mirror-like surfaces in cases; ambrotypes are glass-based in cases; tintypes are on iron sheets; cabinet cards and cartes de visite are paper photos mounted on cardboard. The backing, case style, and photographer marks also help identification and dating."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to scan Victorian photographs for restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a flatbed scanner at 600-1200 DPI in color mode, even for sepia images. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and multiple angles to minimize glare. Always handle photographs by edges only, using cotton gloves, and never remove cased photographs from their cases."
+      }
+    }
+  ]
+}
+</script>

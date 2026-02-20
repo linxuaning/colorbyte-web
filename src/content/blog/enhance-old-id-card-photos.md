@@ -616,3 +616,51 @@ Whether you're restoring a grandparent's immigration photo, preserving a decease
 **Ready to enhance your old ID card photos?** Visit [ArtImageHub's photo restoration service](/old-photo-restoration) to access AI technology specifically trained for facial enhancement and small image recovery. Upload your scanned ID photos and watch as advanced algorithms bring clarity, detail, and quality to these challenging but precious images.
 
 Every face in every old ID photo tells a story worth preserving. Start your enhancement project today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can extremely faded ID photos be enhanced?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes, to a surprising degree. Modern AI can amplify very low contrast signals and recover detail that appears invisible to the naked eye. However, completely faded images (where chemical deterioration has destroyed all image information) cannot be recovered. The key is having any remaining image information, even if barely visible. Scan at very high resolution and try AI enhancement—results often exceed expectations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will enhanced ID photos work for official identification purposes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Enhanced photos are for personal, historical, and genealogical purposes only. Official identification requires official processes and original documents. Using enhanced or altered photos for official ID purposes would be fraudulent. Keep enhanced images clearly separate from any official documentation needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I enhance an ID photo that's still embedded in a laminated card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan or photograph the card at very high resolution. The enhancement process can digitally correct the yellowing, cloudiness, and other lamination issues. You're creating an enhanced digital copy, not physically altering the original card. The original card remains unchanged. This is the safest approach and preserves the original document."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI make a blurry ID photo sharp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI can significantly improve apparent sharpness of moderately blurry photos through detail enhancement and upscaling. However, there are limits—if the original is severely out of focus, AI can improve it but cannot create detail that was never captured. For ID photos, AI facial enhancement works particularly well because it's trained on millions of faces and can plausibly reconstruct likely facial details. Results are usually very good even with challenging sources."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I enhance old ID photos of deceased relatives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal and family decision. For family history purposes, enhancement is generally appropriate and valuable. It preserves the image in clearer form for future generations and makes it more suitable for memorial uses. Be respectful in how you enhance and share, maintain the person's dignity, and consider family wishes. Clear, enhanced photos can be meaningful for family members and genealogical records."
+      }
+    }
+  ]
+}
+</script>

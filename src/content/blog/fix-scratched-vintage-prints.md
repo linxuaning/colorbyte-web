@@ -577,3 +577,51 @@ Scratched vintage photographs don't have to remain damaged. With today's restora
 6. Share restored photos with family—protect originals in archival storage
 
 Don't let scratches prevent you from enjoying and sharing precious family photographs. Whether you choose professional AI restoration, manual editing, or a combination approach, the important thing is taking action to preserve these irreplaceable memories. Start your scratch removal project today and rediscover the beauty hidden beneath decades of damage.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can all scratches be removed from vintage photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most scratches can be significantly reduced or eliminated through digital restoration. Surface scratches respond particularly well to treatment. Deep scratches that penetrate to the paper base or remove emulsion entirely may always show slight evidence, though typically reduced to barely noticeable levels. The key is realistic expectations—aim for dramatic improvement rather than absolute perfection. Modern AI tools like ArtImageHub handle even severe scratches remarkably well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to try physical scratch removal methods on old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical methods carry risks and should only be attempted on photos you're comfortable potentially damaging further. Always create high-resolution scans before attempting any physical restoration. For valuable, rare, or irreplaceable photographs, skip physical methods entirely and proceed directly to digital restoration. Test any physical technique on expendable photos first. When in doubt, digital restoration is always the safer choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does manual scratch removal take in Photoshop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manual scratch removal time varies dramatically based on scratch severity and your skill level. A single simple scratch might take 2-5 minutes. A photo with dozens of scratches could require 1-4 hours. Complex scratches across detailed areas (faces, text) take longer than scratches in simple backgrounds. Expect a learning curve—your first restorations will take longer as you develop technique. Many people find AI-powered automatic removal (ArtImageHub) saves significant time while achieving professional results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do scratch removal apps work as well as manual restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern AI-powered scratch removal apps often match or exceed manual restoration quality, especially for straightforward scratches. Apps like ArtImageHub use algorithms trained on millions of scratched photos, recognizing patterns humans might miss. However, manual restoration provides more control for unusual situations or when you want specific artistic choices. The best approach often combines automatic AI removal with manual refinement of challenging areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove all scratches or leave some for authenticity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story. A good compromise: create fully restored versions for display and sharing, but maintain archival scans showing original condition. This preserves both the cleaned memory and historical authenticity."
+      }
+    }
+  ]
+}
+</script>

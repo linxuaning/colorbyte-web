@@ -668,3 +668,51 @@ Whether you have one special photo needing correction or boxes full of red-eyed 
 Stop letting red eye ruin your precious family photographs. Visit [ArtImageHub's photo restoration service](/old-photo-restoration) today and upload your red-eye affected photos. Our AI-powered restoration automatically detects and corrects red eye while enhancing overall photo quality, bringing natural appearance back to your family memories.
 
 Join thousands of families who have rescued their flash photography memories from the red-eye curse. Your photos deserve to show the real eyes, the real expressions, the real moments. Start fixing red eye today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can red eye be completely removed from old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, red eye can be completely removed from virtually all old photos, regardless of severity. Modern AI tools like ArtImageHub can automatically detect and correct red eye in seconds, replacing the red glow with natural dark pupils while preserving eye detail. Even photos with severe red eye affecting multiple people can be restored to natural appearance. The key is starting with a quality scan (600+ DPI) to provide enough resolution for precise correction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some people have red eye in photos while others don't?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Red eye occurrence depends on several factors: pupil size (varies by person and lighting), eye angle relative to camera, iris color (lighter eyes often show more red eye), distance from camera, and flash angle. In group photos, people facing the camera directly with dilated pupils show the most red eye, while those at angles or with naturally smaller pupils may show less or none. This variation is completely normal and affects different people differently in the same photo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does red eye correction damage the original photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital red eye correction never damages the original physical photo because all work is done on scanned copies. The original photograph remains untouched and should be stored safely in archival conditions. Digital correction is non-destructive, meaning you can always return to the original scan if you're unsatisfied with corrections. This is why scanning your old photos before restoration is crucial—it preserves the original while allowing unlimited digital enhancement attempts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix red eye in very small eyes from group photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but small eyes (from group photos or distance shots) require high-resolution scanning. Scan at minimum 1200 DPI for photos where eyes are very small. AI tools can handle small eyes well, but manual correction of tiny eyes requires extreme zoom and patience. For eyes smaller than 30-40 pixels across, AI correction often outperforms manual methods. Accept that extremely tiny eyes (yearbook photos, large group shots) may not achieve perfect correction but can still be significantly improved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to use AI or manual correction for red eye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI correction works best for 90%+ of red eye cases, providing fast, consistent, natural results. Use AI first, then manually refine only if needed. Manual correction is better for: unusual eye angles AI doesn't recognize, extremely small eyes needing precision, artistic control preferences, or cases where AI over-corrects or under-corrects. The hybrid approach (AI first, manual refinement if needed) combines speed with quality for optimal results."
+      }
+    }
+  ]
+}
+</script>

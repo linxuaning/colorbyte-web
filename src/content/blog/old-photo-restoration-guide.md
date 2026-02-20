@@ -419,3 +419,59 @@ I use a decade-based folder structure: `01_Originals_NEVER_EDIT/`, `02_AI_Restor
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
 - [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
 - [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to restore old family photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For my 847-photo project, the total was 61 hours over 6 months: 28 hours scanning, 12 hours sorting, 6 hours AI restoration, 15 hours manual touch-ups. If you have a shoebox of 100 photos, expect 7-10 hours total. The scanning is the bottleneck, not the restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best scanner for old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most people, the Epson V600 ($220) hits the sweet spot — 600 DPI scans that are good enough for AI restoration and large reprints. If you have 500+ photos, consider the Epson FastFoto FF-680W ($549) which scans one photo per second. For fewer than 50 photos, a smartphone with Google PhotoScan app works surprisingly well for non-critical snapshots."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your approach. My 847-photo project cost $1,255 total ($1.48/photo) including scanner, professional conservator for 12 stuck photos, AI subscriptions, storage, and a printed photo book. For a 100-photo project skipping the conservator, expect $400-600. AI-only restoration (no scanning equipment) is essentially free with most tools' free tiers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I separate stuck photos myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For photos that are truly valuable — no. I destroyed two irreplaceable photos of my great-grandfather trying to peel them apart. A professional conservator charges $50-75 to properly separate stuck photos. For less important duplicates, try the freeze method: seal in a plastic bag, freeze 2-3 hours, then gently lift with a thin plastic spatula. Work slowly — 5 minutes per photo is normal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AI restoration good enough, or do I need professional help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For 80-85% of family photos, AI delivers results that are indistinguishable from professional work to non-experts. Save professional restoration ($75-600/photo) for: photos older than 1900, daguerreotypes/tintypes, photos with more than 60% image loss, and any photo that's the only copy of a specific person. My rule: AI everything first, then manually review and flag the 5% that need a human touch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to organize restored photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I use a decade-based folder structure: 01_Originals_NEVER_EDIT/, 02_AI_Restored/, 03_Manual_Touchups/, and 04_Best_Of/. Name files with date, event, people, and location. Embed metadata (dates, people tags, locations) using Lightroom or any photo manager. This took me 8 extra hours, but it's the thing I'm most grateful I did — six months later, I can find any photo in seconds."
+      }
+    }
+  ]
+}
+</script>

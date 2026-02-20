@@ -665,3 +665,51 @@ Interview oldest living relatives immediately—this is time-sensitive. Schedule
 - [How to Restore Old Photos at Home: Complete DIY Guide](/blog/how-to-restore-old-photos-at-home)
 - [Photo Restoration Before and After: 50 Stunning Examples](/blog/photo-restoration-before-after)
 - [Preserve Family Photo Albums: Complete Archival Guide](/blog/preserve-family-photo-albums)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore grandfather's old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Restoring grandfather's photos costs $0-690 depending on approach. DIY using free AI tools (ArtImageHub free tier: 10 photos/month) costs $0. For a complete project like mine (43 photos), expect: $9 AI subscription, $45 archival supplies, $140 hard drive backup, optional $80 photo book = $274 for restoration and basic preservation. Add $200-600 for professional restoration of 2-3 severely damaged irreplaceable photos. This is infinitely cheaper than professional restoration of all photos ($75-300 each = $3,225-12,900 for 43 photos)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to restore old family photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical grandfather photo collection (30-50 photos) takes 30-50 hours spread over 1-3 months: 6-8 hours finding and gathering photos, 4-6 hours scanning, 2-4 hours AI restoration, 10-15 hours manual touch-ups for photos AI struggles with, 6-8 hours organizing and adding metadata, 4-6 hours creating photo books or prints. Work at your own pace—I restored 2-3 photos every weekend over 2 months. AI restoration itself takes 30-90 seconds per photo; the time investment is mostly preparation and organization."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can severely faded grandfather photos be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in most cases. Modern AI restoration tools like ArtImageHub successfully restore 85-90% of severely faded photos to displayable quality in 30-90 seconds. I restored my grandfather's 1943 military portrait that was faded yellow-brown to crisp, detailed color photo. For the 10-15% where AI struggles (extreme fading with emulsion loss), manual Photoshop work or professional restoration ($150-300 per photo) can still achieve 60-80% improvement. Only photos with complete emulsion loss (image data literally gone) can't be restored—but this is rare, under 5% of typical collections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I restore grandfather's photos myself or hire a professional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Restore 85-90% yourself using AI tools, hire professionals for 2-5 most damaged/important photos. DIY restoration with ArtImageHub or similar AI tools achieves 8-9/10 quality results on typical fading, scratches, and color shifts for $0-9/month. Professional restoration costs $75-300 per photo but is worthwhile for: photos torn into many pieces, photos with large missing sections, extremely rare one-of-a-kind photos, or photos older than 1900 with unusual chemistry. My hybrid approach: DIY restored 41 of 43 photos ($9), professional restoration for 2 severely damaged photos ($320) = $329 total vs. $3,225-12,900 for all-professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I identify people in grandfather's old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interview oldest living relatives immediately—this is time-sensitive. Schedule video calls with grandmother (if living), grandfather's siblings, aunts/uncles who knew him, and elderly family friends. Show photos on screen, record their responses (with permission). Ask: \"Who is this? When/where was this taken? What's the story?\" Create shared Google Photos album and invite family—crowd-sourced identification works remarkably well. I identified 31 of 43 photos this way. For remaining unknowns, try Facebook posts in family groups, Ancestry.com connections, or reverse image search to find duplicates with captions in other family members' collections."
+      }
+    }
+  ]
+}
+</script>

@@ -672,3 +672,51 @@ The key is acting quickly when you discover mold, properly stabilizing the physi
 Ready to restore your fungus-damaged family photographs with professional AI-powered technology? Visit our [old photo restoration](/old-photo-restoration) service to see how we combine advanced AI algorithms with expert human oversight to remove foxing, eliminate fungal staining, and reconstruct damaged areas while preserving your photograph's authentic character.
 
 Our specialists have extensive experience with mold-damaged photographs and understand the unique challenges of fungal restoration. We can help save your precious family memories from biological damage and preserve them digitally for generations to come. Start your restoration journey today and rescue those irreplaceable images from further deterioration.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can fungus-damaged photos be fully restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most fungus-damaged photos can be significantly restored through digital techniques, even with extensive foxing or staining. The restoration success depends on damage severity—photographs with light to moderate foxing (under 50% coverage) restore excellently, while severe damage (over 70% coverage or emulsion loss) may require complex reconstruction. Professional digital restoration can fix fungus damaged photos by removing stains, reconstructing missing areas, and recovering lost detail, though the original physical damage remains on the actual photograph."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop mold from spreading on old photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stop mold spread immediately by isolating affected photographs from others, reducing humidity below 60% (ideally 30-40%), and improving air circulation. Remove photographs from contaminated albums or storage, place each in individual acid-free paper envelopes (never plastic), and store in a cool, dry location. If you see active fuzzy growth, consult a professional conservator before attempting cleaning. Never store moldy photos with unaffected images—fungal spores spread rapidly through contact and shared air."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes brown spots (foxing) on old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper. Once foxing appears, it's permanent physical damage that can only be corrected through digital restoration—it cannot be physically removed without destroying the photograph."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan moldy photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's safe to scan photographs with dormant, dry mold if you take precautions: wear an N95 respirator, line the scanner bed with disposable acetate sheets, and clean the scanner with 70% isopropyl alcohol afterward. Never scan photographs with active fuzzy growth—this contaminates your equipment and risks spreading spores. If the photograph is tacky, sticky, or has visible active mold, consult a professional conservator for treatment before scanning. Always work in a well-ventilated area and keep moldy photos isolated from clean photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore fungus-damaged photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DIY digital restoration to fix fungus damaged photos costs $0-100 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99 one-time) plus scanning equipment ($200-500). Time investment ranges from 2-4 hours for light foxing to 8-15 hours for severe damage. Professional restoration costs $75-150 for basic foxing removal, $200-400 for moderate damage, and $500-1000+ for severe damage with reconstruction. Physical fungal treatment and conservation before restoration adds $200-500+ per photograph."
+      }
+    }
+  ]
+}
+</script>

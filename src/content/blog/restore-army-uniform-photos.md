@@ -635,3 +635,51 @@ The combination of restoration skill and historical knowledge required for milit
 Ready to restore your family's military photographs? Our [old photo restoration](/old-photo-restoration) service specializes in military photo restoration, combining expert restoration techniques with thorough historical research to ensure your service member's uniform, rank, and insignia are accurately preserved. We understand that these aren't just photos—they're visual records of service and sacrifice that deserve the highest level of care and respect.
 
 Honor their service with restoration that gets every detail right. Start your military photo restoration project today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I identify the rank insignia in a damaged military photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identify rank by examining the location (collar, shoulder, sleeve), color (brass, silver, gold), and any visible portions of the insignia. Cross-reference with military rank charts from the appropriate era and branch. Service records, if available, confirm rank at specific dates. When uncertain, consult military history experts or veterans organizations for identification assistance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add medals to a military photo that were earned but not shown in the original photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal decision, but transparency is essential. The photograph documents that specific moment in time, and adding medals not physically present changes the historical record. If you choose to add medals verified from service records, clearly label the image as enhanced rather than simply restored, and maintain an unaltered version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does military photo restoration cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Basic military photo restoration costs $50-150 for minor damage and straightforward repairs. Moderate restoration with uniform detail reconstruction ranges from $150-300. Complex restoration requiring extensive research, severe damage repair, and detailed insignia reconstruction can cost $300-500 or more. Costs reflect the specialized knowledge required for historically accurate military photo restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize a black and white military photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colorization is a personal choice with both benefits and considerations. Benefits include bringing the image to life and showing accurate uniform colors. Considerations include maintaining historical authenticity and the fact that original black and white photos have period character. If you colorize, research uniform colors thoroughly for accuracy, and always maintain both the colorized version and the restored black and white version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I find out more about the uniform and insignia in an old military photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Resources include the Institute of Heraldry (official U.S. military insignia), National Archives military records, branch-specific military museums, military uniform collector forums, and veterans organizations. Many online communities have experts who can identify uniforms, insignia, and units from photos. Consider also consulting military history books specific to the era and conflict."
+      }
+    }
+  ]
+}
+</script>

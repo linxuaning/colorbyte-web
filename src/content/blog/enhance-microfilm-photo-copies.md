@@ -691,3 +691,51 @@ Your ancestors and their stories deserve to be discovered through clear, legible
 Stop struggling with poor-quality microfilm photocopies. Visit [ArtImageHub's photo restoration service](/old-photo-restoration) today and upload your frustrating microfilm copies. Our AI-powered enhancement tools will straighten curved text, optimize contrast, remove artifacts, and create clear, readable documents from your research materials.
 
 Join thousands of genealogists and historians who use ArtImageHub to enhance their research documents. Your family history deserves clarity. Start enhancing your microfilm copies now.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I fix curved text from microfilm reader distortion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Curved text can be straightened using AI restoration tools or manual perspective/warp adjustments in photo editing software. ArtImageHub's AI automatically detects and corrects text curvature common in microfilm copies. For manual correction, use warp or perspective transformation tools to align text baselines horizontally. Severe curvature may require section-by-section correction for best results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are microfilm photocopies such poor quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Microfilm photocopies are poor quality due to multiple generation copying (original to microfilm to reader screen to print), microfilm reader screen curvature creating distortion, high contrast settings losing grey tones, dust and scratches on old microfilm, aging microfilm quality, and often poorly maintained microfilm reader equipment. Each stage of reproduction adds quality loss and artifacts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I make microfilm copies good enough for legal purposes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enhanced microfilm copies can be made clearer and more legible, but legal acceptance depends on jurisdiction and purpose. For official legal use, contact the issuing authority for certified copies rather than relying on microfilm reproductions. Enhanced microfilm copies are excellent for research, family history, and reference, but may not meet legal standards for court documents, passport applications, or official certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to scan microfilm photocopies for enhancement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan microfilm photocopies at minimum 600 DPI in grayscale mode (not black and white) using TIFF or PNG format. Higher resolution (1200 DPI) is better for very poor quality originals or small text. Grayscale preserves tonal information that pure black and white mode loses, providing better results during enhancement. Disable all automatic corrections and sharpening in scanner settings for maximum control during editing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI remove all artifacts from microfilm copies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI can remove most common microfilm artifacts including dust spots, scratches, background noise, and uneven illumination. However, some artifacts may be too severe for complete automatic removal, particularly if they obscure text. ArtImageHub's AI handles typical microfilm issues very effectively, with manual touch-up available for stubborn artifacts. Start with AI enhancement, then manually address any remaining problems."
+      }
+    }
+  ]
+}
+</script>

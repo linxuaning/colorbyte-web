@@ -672,3 +672,51 @@ Start with your most important or deteriorating photographs, develop an efficien
 Already have scans, or need help with photos too delicate to handle yourself? Our [old photo restoration](/old-photo-restoration) service can work with your scans or professionally digitize fragile photographs for you, combining expert scanning with advanced restoration to bring your precious memories back to life. We understand that proper digitization is the foundation of successful restoration, and we're here to help preserve your family's irreplaceable photographs.
 
 Start your photo preservation journey today—your future family will thank you for capturing these precious memories properly.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What DPI should I scan old photos at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most old family photos, scan at 1200 DPI in TIFF format. This provides sufficient detail for restoration and large prints while maintaining manageable file sizes. For extremely small photos or those requiring significant enlargement, use 2400 DPI. Minimum acceptable is 600 DPI, but this limits future options for restoration and printing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I scan photos in color or black and white?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you cannot add color information to grayscale scans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my phone to scan old photos instead of a scanner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smartphones can create acceptable digital copies, particularly using specialized apps like Google PhotoScan. However, dedicated flatbed scanners produce better quality with higher resolution, better color accuracy, and more consistent results. Use smartphone scanning for convenience or quick projects, but invest in a scanner for important family photo preservation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file format should I use when scanning old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always scan to TIFF format for master archival files. TIFF uses lossless compression, preserves maximum quality, and supports 16-bit color depth. Create JPEG copies from your TIFF masters for sharing and web use, but never use JPEG for original scans as it's a lossy format that discards data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to scan old photos properly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At recommended settings (1200 DPI, TIFF format), expect 2-4 minutes per photo including positioning, scanning, verification, and file management. A collection of 100 photos requires approximately 4-7 hours. Batch scanning similar-sized photos and developing an efficient workflow reduces time significantly."
+      }
+    }
+  ]
+}
+</script>

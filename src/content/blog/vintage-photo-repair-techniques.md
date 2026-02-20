@@ -694,3 +694,51 @@ Professional vintage photo restoration costs vary by damage severity and photo t
 - [How to Restore Old Photos at Home: Complete DIY Guide](/blog/how-to-restore-old-photos-at-home)
 - [Restore Photos from 1800s: Daguerreotype and Tintype Guide](/blog/restore-photos-from-1800s)
 - [Fix Water Damaged Photos: Emergency Response and Restoration](/blog/how-to-fix-water-damaged-photos)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between vintage photo restoration and modern photo restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vintage photo restoration (pre-1970s) requires understanding historical photographic processes like daguerreotypes, albumen prints, and early color film, each with unique chemistry and specific damage patterns. Modern AI tools work well on 1920s-1960s gelatin silver and early color photos (85-90% success rate), but photos from 1840s-1900s often need manual restoration due to emulsion cracking, silver mirroring, and foxing that AI struggles with. Physical handling is also more critical—vintage photos are more fragile and may require professional conservation for physical repairs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI restore daguerreotypes and tintypes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI cannot physically restore daguerreotypes and tintypes (physical conservation requires professional conservators at $300-1,500), but AI can enhance digital photographs or scans of these images. Photograph your daguerreotype carefully with diffused lighting, then use ArtImageHub or similar tools to reduce visible tarnishing, enhance faded details, and improve overall clarity. This creates a displayable digital version while preserving the fragile original untouched. Success rate for digital enhancement: 60-75% depending on tarnish severity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove yellowing from old albumen prints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For digital restoration, scan the yellowed albumen print at 1200-2400 DPI in color mode, then use AI color correction (ArtImageHub auto mode, 60 seconds) which removes yellowing 80-85% of the time. For manual correction, use Hue/Saturation adjustment in Photoshop/GIMP to desaturate yellow tones, then adjust levels to restore contrast. Never attempt physical chemical cleaning yourself—albumen prints require professional paper conservators ($150-400). Physical cleaning can permanently damage the fragile egg-white emulsion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What resolution should I scan vintage photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan vintage photos at 1200-2400 DPI minimum. Small photos like cabinet cards (2.5×4 inches): 2400 DPI allows enlargement to 8×10+ prints. Standard vintage prints (4×6 inches): 1200-1600 DPI captures fine detail and allows moderate enlargement. Slides and negatives: 3600-4800 DPI to capture maximum detail from small originals. Always scan in 48-bit color (or 16-bit grayscale) even for B&W photos—this captures subtle tonal information crucial for restoration. Save as uncompressed TIFF for archival masters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does professional vintage photo restoration cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional vintage photo restoration costs vary by damage severity and photo type: simple digital restoration of gelatin silver prints $75-150, complex restoration (torn, severe fading, multi-damage) $200-400, physical conservation of daguerreotypes/ambrotypes $300-1,500, museum-quality archival treatment $500-2,000 per photo. DIY digital restoration costs $0-9/month using AI tools like ArtImageHub (free tier or $79/year), plus your time (30 minutes to 4 hours per photo). Hybrid approach recommended: DIY restore most photos, professional help for 5-10% most damaged or valuable."
+      }
+    }
+  ]
+}
+</script>

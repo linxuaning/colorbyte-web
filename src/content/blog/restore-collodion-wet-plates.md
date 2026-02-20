@@ -530,3 +530,51 @@ Whether you're preserving family heirlooms, building a historical photograph col
 **Ready to restore your collodion wet plates?** Visit [ArtImageHub's specialized restoration service](/old-photo-restoration) to access AI tools trained on 19th-century photography. Upload your digitized wet plates and experience historically-informed restoration that removes damage while preserving authentic period characteristics.
 
 These remarkable images represent our photographic heritage. Preserve them with the care and expertise they deserve.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I tell if I have a collodion wet plate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ambrotypes are unique images on glass that appear positive when backed with black material (case often includes dark backing). Tintypes are on thin metal (magnetic, despite name \"tin\"). Both date from 1850s-1880s. Images have characteristic soft quality, limited tonal range, and hand-colored details are common. Cases are often leather-covered wood or Union cases (molded thermoplastic). If you're uncertain, consult a photograph conservator or specialist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can broken wet plate glass be physically restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional conservators can sometimes reassemble broken glass plates, but it's delicate work requiring specialized skills and materials. For most purposes, digital restoration is safer, more effective, and less expensive. Physical reassembly risks further damage and doesn't actually repair the breaks (just stabilizes the pieces). Digital restoration can completely remove break lines while preserving the fragile original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove an ambrotype from its case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no, unless you have conservation training. Cases protect fragile plates and are part of the historical artifact. Opening cases requires understanding the specific construction and can cause damage if done incorrectly. Sealed cases should never be opened without professional guidance. If you need to digitize a cased ambrotype, photograph it through the glass in the case."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are wet plate collodion images valuable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Value varies enormously based on subject, condition, photographer, and historical significance. Common ambrotype portraits: $20-100. Tintypes: $5-50. High-quality, identified subjects: $100-500. Civil War military: $200-2000+. Famous photographers or historically significant images: thousands to tens of thousands. Rare outdoor scenes, occupational images, or exceptional quality can be very valuable. Have significant plates appraised by specialists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI really restore severely damaged wet plates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI excels at this type of restoration. Trained on thousands of 19th-century photographs, modern AI understands wet plate characteristics and typical damage patterns. It can remove cracks, correct oxidation, neutralize varnish yellowing, and reconstruct missing areas with remarkable accuracy. Results often exceed manual restoration methods, especially for complex damage like multiple glass cracks or severe oxidation. The key is high-quality digitization as the foundation."
+      }
+    }
+  ]
+}
+</script>

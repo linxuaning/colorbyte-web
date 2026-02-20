@@ -918,3 +918,51 @@ Always wear cotton gloves ($8 for a pack that lasts for hundreds of photos) to p
 - [Complete Guide to Digitizing Old Photos: Equipment, Settings & Workflow](/blog/digitize-old-photos)
 - [Fix Blurry Old Photos: AI Enhancement vs Manual Techniques](/blog/fix-blurry-old-photos)
 - [How to Colorize Black and White Photos: AI Tools Compared](/blog/colorize-black-white-photos)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does it take to restore old photos at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a typical home collection of 50 photos, expect 6-9 hours total spread over a few weekends: a couple hours scanning, an hour or two for AI restoration, another hour or two for manual touch-ups, and an hour for organization. The actual AI restoration is fast (30-90 seconds per photo), but scanning is the time bottleneck at roughly 2 minutes per photo on a flatbed scanner. If you have more than 200 photos, consider a faster scanner like the Epson FastFoto FF-680W which scans photos in seconds with auto-feed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What equipment do I need to restore photos at home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For collections under 30 photos, just your smartphone with Google PhotoScan app (free) works fine. For 30-500 photos, invest in a flatbed scanner (Epson V600 at $220 is the standard), cotton gloves ($8), and an external hard drive ($80). You'll also need AI restoration software—ArtImageHub offers free restoration for 10 photos/month, then $9/month unlimited. Total startup cost ranges from $0 for small projects to $350-400 for serious home restoration setups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I really restore photos without Photoshop experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. In 2026, AI-powered restoration tools like ArtImageHub handle most typical damage automatically with no manual editing required. You upload your scanned photo, select basic options (face enhancement, scratch removal, colorization), and get professional-quality results in 30-90 seconds. The small percentage of photos that need manual work can be fixed with free tools like GIMP or Photopea using simple techniques like clone stamp (5-10 minutes to learn). I regularly teach grandparents with zero Photoshop experience to restore their family photos successfully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I try to separate stuck photos myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not if they're truly irreplaceable. Professional conservators charge $50-75 per photo to safely separate stuck photos, and it's worth every penny for one-of-a-kind family photos. I destroyed two irreplaceable photos of my great-grandfather trying DIY separation before I learned this lesson—don't make the same mistake. For less valuable duplicates or casual snapshots, you can try the freeze method: seal the photos in a plastic bag, freeze for a few hours, then gently lift corners with a thin plastic spatula. If you feel any resistance, stop immediately and consider professional help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I prevent damage while handling old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always wear cotton gloves ($8 for a pack that lasts for hundreds of photos) to prevent oil from your fingers causing permanent stains. Handle photos by edges only, never touching the image surface. Work on a clean, flat surface away from food and drinks. Don't stack photos directly on each other—use acid-free paper between them. Never force stuck photos apart. Use an anti-static brush for light cleaning, working from center to edges. For mold, work outdoors with an N95 mask. These simple handling rules prevent 95% of damage that occurs during home restoration projects."
+      }
+    }
+  ]
+}
+</script>

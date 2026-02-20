@@ -605,3 +605,51 @@ When you fix brittle old photographs through careful digitization and expert dig
 Ready to rescue your brittle family photographs before they deteriorate further? Visit our [old photo restoration](/old-photo-restoration) service to see how our specialists combine careful digitization techniques with professional digital restoration to save even severely brittle photographs. We understand the unique challenges of extremely fragile images and use proven methods to preserve your family's visual legacy safely.
 
 Don't wait until it's too late. Those brittle photographs are more fragile today than yesterday and will be worse tomorrow. Start your restoration journey now and ensure these irreplaceable memories survive for future generations. Every day matters when photographs are this fragile.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you fix brittle old photographs without damaging them further?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fix brittle old photographs through digital restoration, not physical repair. Never attempt to flatten, bend, or physically repair brittle photos yourself—this causes further damage. Instead, digitize carefully (using photography or scanning with no lid pressure), then perform all restoration work digitally on the scan. Support brittle photos on rigid boards during handling, use two-hand support, move slowly, and scan at 1200+ DPI. Physical conservation should only be attempted by trained professionals. Digital restoration allows you to repair cracks, reconstruct missing pieces, and restore image quality without touching the fragile original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you reverse brittleness in old photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you cannot reverse brittleness in old photographs—the chemical deterioration (acid breakdown of cellulose fibers) is permanent and irreversible. Professional deacidification treatment can neutralize remaining acids and slow future deterioration, but cannot restore flexibility to already-brittle paper. The best approach is digitizing immediately to preserve the image before further deterioration, storing properly to prevent additional damage (30-40% humidity, 65-70°F, acid-free materials), and consulting professional conservators for valuable photographs. Focus on preservation and digital restoration rather than attempting to restore physical flexibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do old photographs crack and become brittle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Old photographs crack and become brittle primarily from acid deterioration—acids in wood pulp paper and photographic chemicals break down cellulose fibers over decades, destroying paper strength. Environmental factors accelerate this: humidity fluctuations stress fibers, heat speeds chemical reactions, and light creates photo-oxidation. Photographs from 1850s-1890s with albumen coating deteriorate especially fast as egg-white proteins break down into sulfur compounds. Poor storage (acidic albums, wooden shelves, basements/attics) worsens brittleness. Once paper becomes brittle, the photographic emulsion cracks as it can't flex with the rigid base, leading to flaking and image loss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to scan brittle photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it's safe to scan brittle photographs if you take proper precautions: leave the scanner lid open (never close it on brittle photos), support the photograph on a rigid board during transport, place it gently on the scanner bed without forcing it flat, cover with black cloth instead of closing lid, and remove immediately after scanning. Scan at high resolution (1200-2400 DPI) so you only need to scan once. For severely brittle photos (Level 3-4), photographic reproduction is safer than scanning as it eliminates all contact and pressure. Never scan if the photo is so brittle it might shatter—consult professionals for critical-condition photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you store brittle photographs safely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Store brittle photographs in individual acid-free enclosures (polyester sleeves or buffered paper envelopes) in archival boxes, at 30-40% humidity and 65-70°F with stable conditions. Support brittle photos on acid-free mat board cut to size, place in polyester sleeves to prevent handling damage, store flat (never upright), and label boxes to minimize opening. Never use magnetic albums, PVC sleeves, or regular cardboard boxes. Keep in dark, dry location (closet or drawer, not basement/attic). Handle only with clean cotton gloves using two-hand support. Most importantly, digitize immediately—storage only slows deterioration, doesn't stop it."
+      }
+    }
+  ]
+}
+</script>

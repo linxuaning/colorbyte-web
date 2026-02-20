@@ -565,3 +565,51 @@ Proper photo scanning creates a lasting digital archive that preserves family hi
 Don't let your family photo collection remain vulnerable to loss, damage, or deterioration. Begin your scanning project today using these best practices, and create a digital archive that preserves these irreplaceable memories for future generations. Every photo scanned is a memory protected—start building your family's digital legacy now.
 
 For photos needing restoration after scanning, [ArtImageHub](/old-photo-restoration) provides professional-quality enhancement and repair to make your newly digitized collection look its absolute best.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What DPI should I use for scanning old family photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most family photos, scan at 600-1200 DPI. Small photos (wallet size) benefit from higher resolution (1200-2400 DPI) to enable larger prints. Very large photos (8x10\"+) can be scanned at 600 DPI. For archival purposes or maximum restoration potential, err on the higher side. Remember: you can always reduce resolution later, but you can't add detail that wasn't captured initially."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I scan photos in color even if they're black and white?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, always scan black and white photos using color mode (48-bit color). This captures yellowing, sepia toning, and subtle color casts that contain valuable information for restoration. You can convert to true grayscale later if desired, but you can't recover color information if you scan in grayscale mode. Color scans provide maximum flexibility for future enhancement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to scan photos myself or use a scanning service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on your collection size, budget, time, and quality requirements. DIY scanning gives you control, saves money for large collections (500+ photos), and allows immediate access. Professional services save time, provide consistent quality, and make sense for small collections (under 100 photos) or if you lack equipment. Consider a hybrid approach: scan priority photos yourself, send remainder to service. Never send irreplaceable photos without adequate insurance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to scan a photo collection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scanning speed varies based on equipment, resolution, and workflow. Budget 2-3 minutes per photo including handling, positioning, scanning, and verification. At 600 DPI, scanning alone takes 30-60 seconds per photo. For large collections, expect 20-30 photos per hour initially, improving to 40-50 with practice. A collection of 500 photos might take 15-25 hours spread over several weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do with original photos after scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always keep original photographs. Even after high-quality scanning, originals have historical value and may be needed for future re-scanning as technology improves. Store originals properly: individual archival sleeves, acid-free boxes, climate-controlled environment (65-70°F, 30-40% humidity), dark storage. Treat scans as backups of originals, not replacements. For very damaged photos, consider professional conservation after scanning to preserve what remains."
+      }
+    }
+  ]
+}
+</script>

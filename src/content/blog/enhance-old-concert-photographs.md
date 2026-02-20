@@ -598,3 +598,51 @@ The key is balancing technical enhancement with respect for the authentic concer
 **Ready to enhance your old concert photographs?** Visit [ArtImageHub's photo restoration service](/old-photo-restoration) to bring your vintage music memories back to life. Upload your concert photos and experience AI-powered enhancement specifically designed for the unique challenges of low-light, high-energy music photography.
 
 Your concert memories are worth preserving—start enhancing them today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you enhance extremely blurry concert photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the type and severity of blur. Motion blur from slow shutter speeds can be partially reduced using AI deblurring technology, especially if the subject is the primary blurred element. Camera shake blur is more difficult. Out-of-focus blur cannot be truly corrected—you can't create detail that was never captured—but strategic sharpening and enhancement can improve apparent sharpness to some degree. Set realistic expectations: severely blurred photos can be improved but won't become tack-sharp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you balance enhancement with maintaining authentic concert atmosphere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is the critical artistic judgment in concert photo enhancement. The goal is to improve technical quality (reduce excessive grain, correct exposure, remove damage) while preserving the mood and aesthetic that make concert photos special. Maintain dramatic lighting contrasts, preserve intentional grain that contributes to the gritty feel, and don't over-sharpen to modern clinical standards. Think \"cleaned up vintage\" rather than \"made to look like shot yesterday.\""
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize black-and-white concert photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you can research accurate period colors. Colorization can add context and vibrancy, but inaccurate colors compromise historical authenticity. For well-documented artists and venues, research can provide confident color information. For obscure shows or unknown variables, black-and-white preservation may be more honest. ArtImageHub's AI colorization uses period-trained models, but always verify colors against historical sources when possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to scan concert photos that are very dark?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use your scanner's exposure compensation features to lighten the scan, or make multiple scans at different exposure levels and combine the best parts later. Some scanners have \"backlight\" or \"dark original\" modes that help. If scanning prints from negatives, consider re-scanning the negatives directly if available—they contain more information than darkened prints. Modern AI can also extract detail from very dark scans that appears invisible to the eye."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI really enhance photos from disposable cameras or early phone cameras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI can improve these low-quality sources, but can't overcome fundamental resolution and quality limitations. Disposable camera photos often have acceptable quality after grain reduction and color correction. Early phone camera photos (pre-2010) are extremely challenging due to tiny sensors and poor lenses—expect limited results. The AI can clean them up, but they'll never match the quality of proper film or modern digital cameras. That said, even modest improvement can make memories viewable and shareable."
+      }
+    }
+  ]
+}
+</script>

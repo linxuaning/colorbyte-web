@@ -642,3 +642,51 @@ Most importantly, digital restoration preserves the original photograph while cr
 Ready to rescue your yellowed family photographs? Our [old photo restoration](/old-photo-restoration) service specializes in removing yellow discoloration from photographs of all ages and types. We combine advanced color correction techniques with careful attention to period-appropriate aesthetics, removing age-yellowing while preserving any intentional historic toning. Our experts understand the chemistry behind yellowing and how to reverse it digitally for stunning results.
 
 Don't let yellowing hide your precious memories—start your restoration today and see your family photographs return to their original clarity and beauty.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can yellowed photographs be completely restored to original appearance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in most cases digital restoration can completely remove yellowing and return photographs to their original appearance. The key is high-quality scanning (1200 DPI, 48-bit color) to capture subtle remaining color information, then carefully correcting the yellow cast while preserving detail. Even severely yellowed photos usually contain enough information for excellent restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some black and white photos turn yellow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Black and white photographs yellow primarily due to lignin degradation in the paper base. Lignin, a component of wood pulp paper, breaks down over time when exposed to light, oxygen, and pollutants, creating yellow-brown compounds. The photograph itself (silver image) is stable, but the paper yellows. This is why proper scanning and digital restoration can remove the yellow while preserving the black and white image."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will removing yellowing damage the original photograph?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration doesn't touch the physical photograph—all work is done on scanned digital copies. The original photograph remains unchanged. This is the safest restoration approach. Physical chemical treatments to remove yellowing from the actual paper are risky and often damage the photograph further. Always use digital restoration for yellowing correction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if yellowing is from aging or intentional sepia tone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compare the yellow to period-appropriate sepia tones by examining other photos from the same era. Sepia toning is warm brown with purplish undertones, evenly applied, and common in 1880s-1930s photos. Age-yellowing is more greenish-yellow, often uneven, and continues to darken. Protected areas (under mats) showing original color also help distinguish. When uncertain, create both a fully corrected black-and-white version and a period-appropriate sepia-toned version."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I prevent my restored digital files from yellowing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital files don't yellow—that's a chemical process affecting physical paper. Once scanned and restored digitally, your images are permanently protected from further yellowing. Store digital files properly (multiple backups, reliable media, verified regularly) and they'll remain in perfect condition indefinitely. This is why scanning yellowed photos before they deteriorate further is so important."
+      }
+    }
+  ]
+}
+</script>

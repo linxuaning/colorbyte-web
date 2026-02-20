@@ -255,3 +255,51 @@ The key to platinum print restoration lies in understanding and respecting the p
 If you have platinum prints showing damage, deterioration, or improper historical mounting, don't let these conditions continue threatening these photographic treasures. Create high-quality digital captures now, while the prints can still be safely digitized. Use [ArtImageHub's advanced restoration technology](/old-photo-restoration) to remove damage and deterioration while preserving authentic platinum print character. For valuable prints, combine digital restoration with professional conservation of the physical originals.
 
 Platinum prints were created to last centuries. With proper care, digitization, and thoughtful restoration, these photographic masterworks can continue to be appreciated for generations to come, sharing their unique beauty and the artistic vision of the photographers who created them.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I tell if my photograph is a valuable platinum print?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Several factors indicate potentially valuable platinum prints. Original works by notable photographers (Stieglitz, Weston, Steichen, etc.) can be extremely valuable ($10,000-$500,000+ for major works). Gallery or museum provenance suggests significance and value. Photographer signatures or estate stamps add value and authenticity. Early dates (1890s-1920s) coincide with platinum printing's artistic peak. Fine art subject matter (pictorialist imagery, notable portraits, recognized landscapes) indicates artistic intent. The print's condition affects value—pristine prints command premium prices. For potentially valuable prints, seek professional authentication and appraisal from photography galleries or auction houses specializing in fine art photographs. Even unsigned platinum prints from this era may have collector value if in excellent condition and compelling images."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can faded platinum prints be restored to original density?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Platinum print fading is rare but can occur from improper processing or extreme environmental exposure. Digital restoration can often recover significant density and tonal range from faded platinum prints by analyzing remaining tonal variations to reconstruct original relationships, adjusting curves and levels to expand compressed tonal range, and selectively enhancing different areas to recover detail. Success depends on how much original information remains—if the print has faded uniformly to very light tones, full recovery may not be possible. However, many seemingly hopeless faded platinum prints retain enough tonal information for substantial digital recovery. Physical treatment by conservators is generally not effective for fading—digital restoration offers the best approach for accessibility while preserving the original in its current state."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove platinum prints from old mounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Never remove platinum prints from mounts yourself unless you have conservation training. Historical mounting may be affecting the print's condition, but improper removal can cause catastrophic damage including tearing the print, leaving adhesive residue, damaging the platinum image, or destroying the print entirely. For valuable platinum prints, consult a professional conservator about safe removal and remounting. For prints of moderate value, leave them in original mounts and digitize carefully, addressing mounting issues digitally. The original mount, even if problematic, may have historical value or may contain valuable information on the reverse. Removal should only be attempted by qualified professionals who can assess risks and use appropriate techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I frame and display platinum prints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Proper framing preserves platinum prints while allowing enjoyment of their beauty. Use conservation-standard materials exclusively including UV-protective glazing (museum-quality glass or acrylic blocking 99% of UV light), acid-free mat board in neutral colors, window mats that don't contact the print surface, and backing that allows air circulation. Never mount by adhering to backing—prints should be hinged at top corners only using conservation hinges. Display away from direct sunlight, heat sources (radiators, fireplaces), and high humidity areas (bathrooms, kitchens). Consider consulting a professional framer experienced with fine art photography. For very valuable platinum prints, consider displaying high-quality reproductions instead of originals, keeping originals in archival storage for preservation while making enhanced digital prints for daily viewing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to digitally restore valuable platinum prints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration is completely safe for original platinum prints because it works from scans or photographs of the print, creating enhanced digital copies while leaving the original untouched and preserved in archival storage. This approach offers multiple benefits including no risk to the irreplaceable original, creation of viewable copies for study and enjoyment, ability to share and display without handling fragile originals, and preservation of the original exactly as it is for historical authenticity. The only caution is ensuring digitization itself is done safely using gentle scanning techniques or contactless photography. Once you have digital copies, restoration work poses zero risk to the physical platinum print. Create enhanced digital versions for viewing while storing pristine originals safely—the ideal approach for valuable photographic art."
+      }
+    }
+  ]
+}
+</script>

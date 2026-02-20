@@ -291,3 +291,43 @@ Yes. Sharpening increases edge contrast to create the *perception* of sharpness.
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
 - [AI Photo Colorization in 2026: Bring Your Black & White Photos to Life](/blog/colorize-black-white-photos)
 - [Restore Your Wedding Photos: How AI is Saving Precious Memories in 2026](/blog/wedding-photo-restoration)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI completely fix a blurry photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the severity of the blur. For mild to moderate blur, modern AI tools like ArtImageHub can produce results that look dramatically sharper and more detailed. For severely blurry photos, AI will improve things but can't perform miracles—if 80% of the image information was lost to motion blur, no software can fully reconstruct it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need Photoshop to fix blurry old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not anymore. AI restoration tools have made Photoshop skills optional for most family photo restoration. Photoshop is still useful for targeted manual touch-ups after AI processing, but the AI does the heavy lifting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my old photo look blurry after scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often this is scan-induced blur rather than a problem with the original photo. Check that your scanner glass is clean, your photo lies flat, and you're scanning at sufficient resolution (600 DPI minimum for 4×6 prints). Also try scanning at maximum optical resolution and see if detail improves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a difference between sharpening and deblurring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Sharpening increases edge contrast to create the perception of sharpness. Deblurring attempts to mathematically reconstruct the original image by reversing the blur process. Modern AI restoration does both simultaneously, which is why it outperforms traditional Photoshop sharpening."
+      }
+    }
+  ]
+}
+</script>

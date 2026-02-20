@@ -365,3 +365,51 @@ Whether you choose DIY restoration or professional services like [ArtImageHub's 
 Start by assessing your collection today, implementing proper storage practices, and creating digital backups. If water damage does occur, you'll be prepared with the knowledge and supplies needed to save your irreplaceable memories.
 
 Don't let water damage steal your family history—take control and restore those precious photographs today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long can water damaged photos remain wet before permanent damage occurs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The critical window is a couple days. Within this time, you must either dry the photographs or freeze them to prevent permanent damage. After that, mold growth becomes likely, and emulsion deterioration accelerates. However, even photographs wet for over a week can sometimes be salvaged with professional techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a hair dryer to speed up drying water damaged photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, avoid using hair dryers or any heat source. Heat causes photographs to curl, crack, and can make the emulsion sticky, leading to permanent adhesion. Heat also accelerates chemical deterioration. Always use ambient temperature air drying or freeze-drying methods instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will water damaged photographs always show stains even after drying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. If you act quickly and dry photographs properly, many will show minimal to no visible water damage. However, photographs that were wet for extended periods, exposed to dirty water, or have mineral deposits may show staining. These stains can usually be removed or minimized through digital restoration techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to separate stuck photographs that have dried together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but with caution. Never force stuck photographs apart. Use the steam method or soaking method described above to soften the adhesion first. Attempting to pull apart stuck photographs without proper preparation will tear the emulsion layer and destroy both images. If you're dealing with valuable photographs, consider consulting a professional conservator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can moldy photographs be saved, or should they be discarded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moldy photographs can often be saved, but require careful handling. First, isolate moldy photographs to prevent spore spread. Once dry, mold can be gently brushed away outdoors (wearing a mask). The remaining stains can be minimized through digital restoration. However, if mold has penetrated deep into the paper base or caused emulsion separation, professional restoration may be needed."
+      }
+    }
+  ]
+}
+</script>

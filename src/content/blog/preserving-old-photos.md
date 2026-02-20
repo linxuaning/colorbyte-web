@@ -499,3 +499,59 @@ Spend 1 hour today: find your 20 most irreplaceable photos, put them in Ziploc b
 - American Institute for Conservation: [Find a Conservator](https://www.culturalheritage.org/about-conservation/find-a-conservator)
 - Library of Congress: [Preservation Guidelines](https://www.loc.gov/preservation/)
 - Image Permanence Institute: [Storage Environment Research](https://www.imagepermanenceinstitute.org/)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the first thing I should do if my photos get water damaged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Remove photos from frames right away (moisture behind glass accelerates mold). Use box fans on low for air circulation, but don't point directly at photos. If photos are stuck together, freeze them in sealed bags for 2-3 hours before attempting separation. For truly valuable photos, call a professional conservator within 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is the best place to store old photos in my house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interior closets and under-bed storage on temperature-controlled floors. I tested temperature/humidity in 5 locations over 3 months: basements (68% humidity — terrible), attics (105°F in summer — terrible), garages (huge swings), versus a main-floor bedroom closet (72°F, 42% humidity — perfect). Photos need 30-50% humidity and stable temperatures. Add silica gel packets for extra moisture control."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to digitize old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Equipment route: $220-549 for a scanner plus $99/year for cloud backup. Professional scanning services: $0.35-1.50 per photo. My post-flood setup (Epson FastFoto scanner + Backblaze backup) costs $0.67 per photo amortized. For small collections (under 50 photos), a smartphone with the free Google PhotoScan app is honestly good enough for backup purposes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can water-damaged photos be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many can, yes. Of my 350 water-damaged-but-salvageable photos, AI tools successfully restored 250 (71%) to print quality, 80 more were usable for digital albums, and only 20 were too damaged for AI (those went to a professional). The key factor is whether the image layer (emulsion) is still intact — if you can see the image, there's a good chance AI can improve it. If the emulsion has dissolved or peeled away entirely, recovery is unlikely even with professional help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is cloud backup really necessary for photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After losing 1,100 photos to a basement flood, my answer is an emphatic yes. The 87 photos we had digital backups of were pure luck — random scans from earlier projects. If I'd followed the 3-2-1 rule (3 copies, 2 media types, 1 offsite), I'd have lost zero photos. Google Photos is free for \"high quality\" uploads. Backblaze is $99/year for unlimited. The cost of prevention ($424 total) was 1,700% cheaper than my disaster recovery ($7,212)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do RIGHT NOW to protect my photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spend 1 hour today: find your 20 most irreplaceable photos, put them in Ziploc bags, move them off the floor and away from basements/attics, then scan all 20 with your phone using the free Google PhotoScan app and upload to Google Photos. That's it — 1 hour, $0, and your 20 most important memories now have digital backups. Schedule next weekend to do 50 more."
+      }
+    }
+  ]
+}
+</script>

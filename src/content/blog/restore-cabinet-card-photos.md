@@ -193,3 +193,51 @@ This is partly personal preference, though consider the photograph's purpose and
 ### What information on the back of cabinet cards should be preserved?
 
 Preserve all information from cabinet card backs as it has significant historical and genealogical value. Studio name and location help identify where ancestors lived or visited, studio operational dates help date undated portraits, decorative designs and studio card styles help narrow dating when other information is missing, handwritten names, dates, and notes provide vital genealogical data, and addresses and contact information show historical business locations. Scan cabinet card backs at high resolution to capture all printed and handwritten information, photograph if scanning might damage fragile mounts, transcribe all text in your digital catalog or metadata, and research studio information for additional historical context. This back information sometimes provides the only clues to identifying unknown portrait subjects or dating images. Enhanced back scans should be stored with enhanced front portraits as complete records of the cabinet card.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can severely faded cabinet cards from the 1800s be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even severely faded cabinet cards from over 100 years ago can often be restored remarkably well. AI restoration analyzes the faint remaining image information (no matter how yellowed or faded), removes characteristic albumen yellowing returning photos to neutral or subtly warm tones, reconstructs original tonal relationships from minimal remaining data, and enhances facial features and details that have become indistinct over time. Cabinet cards faded to pale brown or cream with barely visible portraits often restore to clear, detailed images with recognizable faces and visible clothing and background details. The technology excels at this type of restoration because Victorian-era albumen prints follow predictable fading patterns that AI systems are trained to reverse. Upload your faded cabinet card to ArtImageHub to see what can be recovered—families are often amazed to see ancestor's faces clearly for the first time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you remove yellowing from old cabinet card photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The characteristic yellowing of cabinet cards (particularly albumen prints) can be completely or nearly completely removed through digital restoration. AI analyzes the yellow-brown cast affecting the entire image, determines the color shift characteristics specific to albumen deterioration, applies precise opposite color correction to neutralize the yellowing, and restores neutral black-and-white tones or subtle authentic warm tones typical of original albumen prints. This yellowing removal dramatically improves image clarity and detail visibility by increasing contrast between light and dark areas, revealing facial features obscured by yellowing, and bringing out clothing and background details. The process is entirely digital and doesn't affect the original cabinet card, which should be preserved in archival storage. The restored digital version becomes your access and sharing copy with yellowing removed and detail enhanced."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you restore cabinet cards that have cracked or are peeling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, cabinet cards with cracked albumen emulsion or peeling/separated photos can be digitally restored effectively. For cracked emulsion (characteristic fine crack patterns in albumen prints), AI identifies the crack pattern throughout the image, removes cracks while preserving underlying image detail, and recreates smooth surface appearance. For photos separating or peeling from mounts, scan the photo carefully in its current position (or separate pieces individually if fully detached), upload for digital restoration that addresses both separation and any damage it caused, and digitally repair any tears or damage from separation. The restored digital image will show no traces of cracks or separation. For the original cabinet card, store carefully in archival materials to prevent further deterioration, but avoid attempting physical repairs with adhesives which cause additional damage. The digital restoration preserves the image perfectly while the physical artifact remains as a historical object."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should cabinet card restoration preserve the brown/yellow tone or make it black and white?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is partly personal preference, though consider the photograph's purpose and significance. For strict historical accuracy, subtle warm toning approximates original albumen print appearance when new (they were never purely neutral). For maximum clarity and modern aesthetic, neutral black and white often provides clearest view of faces and details and works well for identification and genealogical purposes. For artistic or nostalgic appeal, enhanced sepia or warm toning creates attractive Victorian character while being clearer than deteriorated yellowing. Many restoration services allow you to choose, or you can create multiple versions. Consider creating both neutral (for research and identification) and warm-toned (for display and sharing) versions. The key distinction is removing unwanted deterioration yellowing (which obscures detail) while optionally preserving or enhancing intentional toning (which adds aesthetic character)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information on the back of cabinet cards should be preserved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Preserve all information from cabinet card backs as it has significant historical and genealogical value. Studio name and location help identify where ancestors lived or visited, studio operational dates help date undated portraits, decorative designs and studio card styles help narrow dating when other information is missing, handwritten names, dates, and notes provide vital genealogical data, and addresses and contact information show historical business locations. Scan cabinet card backs at high resolution to capture all printed and handwritten information, photograph if scanning might damage fragile mounts, transcribe all text in your digital catalog or metadata, and research studio information for additional historical context. This back information sometimes provides the only clues to identifying unknown portrait subjects or dating images. Enhanced back scans should be stored with enhanced front portraits as complete records of the cabinet card."
+      }
+    }
+  ]
+}
+</script>

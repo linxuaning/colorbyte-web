@@ -155,3 +155,51 @@ Start your preservation project today. Assess your collection, prioritize most v
 Every photograph preserved is a family story saved. Every photograph lost to preventable deterioration is history erased forever. Choose preservation—your descendants will thank you.
 
 Your photographs are worth protecting. Preserve them now while you still can.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long will properly stored photographs last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Properly stored photographs can survive centuries in excellent condition. Black-and-white silver photographs are inherently stable—well-processed examples stored in proper archival conditions can last 200-300+ years. Color photographs are less stable due to organic dye deterioration, but proper storage extends life dramatically—professional archival storage (cold, dark, dry) can extend color photograph life to 100+ years, while typical good home storage (cool, dark, moderate humidity) provides 50-100 years for modern color photos. Photographs stored in poor conditions (heat, humidity, light, acidic materials) deteriorate in 10-30 years. The single most important factor is light exposure—photographs stored in complete darkness last far longer than those exposed to even moderate light. Digital preservation provides additional insurance—once photographs are digitized at high quality, image information survives indefinitely regardless of original photograph deterioration. The combination of proper physical storage and digital backup ensures family photographs survive for many future generations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove old photographs from albums?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on the album type and photograph condition. Definitely remove from: magnetic albums with sticky pages and plastic overlays (extremely acidic and destructive), albums with pages showing obvious deterioration (brittleness, discoloration, mold), albums where photographs are showing damage (staining, adhesive residue, emulsion deterioration), and \"peel-back\" or pressure-sensitive pages releasing adhesive. Consider carefully before removing from: vintage albums from before 1930s that may have historical value themselves, albums where photographs are extensively annotated with period information, albums assembled by historically significant family members as artifacts in themselves, and albums where removal might damage photographs more than leaving in place. Safe to leave in: modern archival-quality albums with proper sleeves, albums with photographs in corner mounts (not glued), albums in stable condition with photographs showing no deterioration, and albums stored in good environmental conditions. The decision requires balancing preservation benefits of removal against historical value of original albums and risk of removal damage. When in doubt, digitize photographs while still in albums, then consult photograph conservator about whether removal is advisable. For valuable albums, professional conservators can remove photographs safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I store photographs in plastic containers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plastic containers are acceptable for photograph storage if you choose the right plastic and use them properly. Safe plastics for photograph storage: Polyester (PET, PETE)—excellent for sleeves and enclosures, Polypropylene (PP)—good for sleeves and boxes, and Polyethylene (LDPE, HDPE)—acceptable for outer containers. Unsafe plastics to avoid: PVC (polyvinyl chloride)—emits harmful plasticizers that damage photographs, Polystyrene—can emit harmful chemicals, and cellulose acetate—unstable and can release acids. Check plastic containers for recycling codes: codes 1 (PET), 2 (HDPE), 4 (LDPE), and 5 (PP) are generally safe, while code 3 (PVC) should never contact photographs. Use plastic containers as outer protection while housing individual photographs in archival-quality sleeves or folders inside the container. Ensure containers allow some air circulation—avoid completely air-tight containers in humid conditions that might trap moisture. Traditional archival-quality cardboard boxes often work better than plastic for primary storage because they buffer humidity fluctuations and allow air circulation. Use plastic containers mainly for transport or additional protection in humid environments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I preserve photographs if I can't afford archival supplies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While professional archival supplies are ideal, you can make significant preservation improvements with minimal cost by prioritizing properly. Free or low-cost preservation actions: Move photographs from hostile environments (damp basements, hot attics) to stable climate-controlled living spaces, remove photographs from definitely harmful storage (magnetic albums, PVC sleeves, deteriorating old albums), store in darkness in closed boxes to prevent light fading, and handle properly (by edges, clean hands) to prevent additional damage. Budget-friendly supplies: Plain white copy paper or computer paper (not perfect but better than acidic old albums) can separate photographs temporarily, plain white envelopes provide basic protection, and simple cardboard boxes from office supply stores offer better storage than plastic bags or deteriorating albums (though not as good as archival boxes). Highest priority investment: If you can afford only one preservation expense, buy polyester or polypropylene sleeves for your most valuable photographs—this provides excellent protection at reasonable cost ($20-40 for 100 sleeves). Digital preservation is cost-effective: Scan photographs yourself using a flatbed scanner, creating digital backups that survive regardless of original deterioration, at minimal cost beyond scanner purchase. The most important preservation action is free: storing photographs in darkness at stable temperature and humidity. Even basic improvements dramatically extend photograph life versus continued poor storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I write information on the backs of photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recording identification information on photographs is crucial for preserving family knowledge, but method matters enormously. Safe identification methods: Use archival-quality pencils specifically designed for photograph marking (available from archival suppliers). Write gently on photograph backs, never pressing hard enough to indent through to image side. Write along edges or borders, not across important image areas on the reverse. If photographs are in archival sleeves, write on the sleeve instead of the photograph itself. For very valuable or fragile photographs, store separately with written notes rather than writing directly on photographs. Never use: Regular pens or markers—ink can bleed through and stain image side, ballpoint pens—pressure indents image surface permanently, felt-tip markers—solvents damage photographs, adhesive labels or tape—adhesive damages photographs and may not be removable, or rubber stamps and ink pads—inks and pressure cause damage. Information to record: Subject names and relationships, date or approximate timeframe, location where taken, photographer if known, and any family stories or historical context. Record this information now while family knowledge still exists—once older relatives pass away, photo identification becomes nearly impossible. If you're unsure whether writing is safe, digitize first, record information in digital metadata, and store photographs with separate paper notes rather than writing on photographs themselves."
+      }
+    }
+  ]
+}
+</script>

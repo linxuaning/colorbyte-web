@@ -203,3 +203,51 @@ Don't let irreplaceable photos remain vulnerable to deterioration and loss. Star
 Once digitized, enhance and restore your photos using [ArtImageHub's AI restoration service](/old-photo-restoration) to remove damage, correct fading, and create beautiful versions worthy of display and sharing.
 
 Every photo digitized properly is a memory preserved forever. Begin your digitization journey today and secure your family's visual history for all time.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What resolution should I scan old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most old family photos, scan at 1200 dpi for archival-quality preservation. This resolution captures excellent detail, allows enlargement beyond original size, provides ample information for restoration if needed, and creates files of manageable size (~50 MB TIFF for 4x6 photo). For quick reference or casual sharing, 600 dpi suffices with good quality for most uses and smaller file sizes (~12 MB TIFF). For small photos (wallet size, tiny vintage photos) or severely damaged photos requiring restoration, use 2400 dpi to capture maximum detail. The general principle: scan at high enough resolution to capture at least 3000-4000 pixels on the longest edge, ensuring detail for various uses. When in doubt, scan at higher resolution—you can always downsample later, but you can't add detail after scanning at insufficient resolution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I scan photos in color or grayscale mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration. Grayscale scans of black-and-white photos discard this information, limiting restoration potential. Color scans can always be converted to grayscale later if desired, but grayscale scans cannot be converted to color. The slight increase in file size from color vs. grayscale scans is minimal and worth the preservation of all image information. Use 24-bit color minimum, 48-bit color if your scanner supports it for archival masters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file format is best for archiving scanned photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TIFF (Tagged Image File Format) is the best format for archival master files because it uses lossless compression preserving all image data without quality loss, supports high bit depths (16-bit per channel), is widely supported and likely to remain accessible long-term, and serves as industry standard for archival imaging. Save master scans as TIFF using LZW compression (reduces file size without quality loss). For working copies and sharing, create JPEG files from TIFF masters at high quality settings (10-12 out of 12), accepting the lossy compression for much smaller file sizes. Always maintain the TIFF masters separately—never save only JPEG files as archives since each save/edit degrades quality further. PNG offers a lossless alternative with smaller files than TIFF, suitable for archival use if TIFF files are impractically large."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my smartphone to digitize old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smartphones can digitize photos acceptably for casual purposes but have limitations for archival-quality preservation. Modern smartphone cameras provide very high resolution potentially exceeding flatbed scanners, convenience without additional equipment, and instant processing and organization. However, challenges include difficulty achieving consistent even lighting, ensuring camera alignment perfectly parallel to photo, preventing glare and reflections, and maintaining consistent quality across many photos. Smartphone scanning apps (Google PhotoScan, Photomyne, etc.) help address these issues but still produce lower quality than dedicated scanners for archival purposes. Use smartphones for quick sharing and casual documentation, but use a proper scanner for archival-quality preservation of valuable photos. If smartphone scanning is your only option, use tripod or stabilization, even diffuse lighting, and highest resolution settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I organize and back up digitized photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Implement systematic organization and backup for digitized photos. Organization involves creating clear folder structure by date, event, person, or category, using consistent file naming (Date_Subject_Number format works well), adding metadata (captions, dates, locations, people), and maintaining catalog or spreadsheet documenting collection. Backup follows 3-2-1 rule: 3 copies on 2 different media types with 1 off-site. Specific implementation uses primary copy on computer hard drive, first backup on external hard drive stored at home, and second backup on cloud storage (Google Drive, Dropbox, etc.) for off-site protection. Verify backups regularly and plan long-term preservation through periodic migration to new storage media every 5-10 years, monitoring for file format obsolescence, and maintaining multiple generations of backups. Never rely on a single copy—digital files can be lost in seconds to drive failure, but proper backup ensures permanent preservation."
+      }
+    }
+  ]
+}
+</script>

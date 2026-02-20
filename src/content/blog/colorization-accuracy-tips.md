@@ -681,3 +681,51 @@ Whether colorizing treasured family photographs or historical images, accuracy h
 Ready to colorize your family's historical photographs with accuracy and respect? Our [old photo restoration](/old-photo-restoration) service includes expert colorization based on thorough historical research. We combine advanced AI capabilities with manual refinement by specialists who understand period color palettes, historical fashion, and era-specific accuracy requirements. Your family's photographs deserve colorization that honors their history with authentic, researched colors.
 
 Bring your family's black and white memories to life—with colors that truly represent their era and story.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I ensure historically accurate colors when colorizing old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research is essential: date the photograph precisely, study period fashion and color availability, examine verified color photographs from the same era, and consult historical resources (fashion magazines, catalogs, museum collections). Create reference boards before colorizing. When uncertain, conservative, historically plausible colors are better than vivid guesses. Always respect the original photograph's tonal values as your guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use AI colorization or manual colorization for accuracy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For maximum accuracy, use AI as a starting point, then manually refine based on historical research. AI is fast but lacks historical knowledge and often applies modern colors to period photos. Manual colorization allows incorporating specific research (exact uniform regulations, verified automobile colors, period fashion palettes). Professional or family-legacy photos deserve manual accuracy; casual projects can rely more on AI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I colorize skin tones accurately in old photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reference period portraits from the same era, as photographic processes rendered skin differently over time. Use appropriate undertones for ethnicity and individual variation. Build up color gradually with subtle variations—skin isn't uniform. Consider lighting (warm or cool affects appearance). Avoid over-saturation. Early photography (pre-1930s orthochromatic film) rendered red tones darker, affecting how you interpret tonal values."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the most common colorization mistakes that destroy accuracy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over-saturation (colors too vivid for the era), wrong skin tones (orange or pink faces), ignoring historical research (modern colors on Victorian photos), violating tonal values (dark colors where tones are light), anachronistic colors (shades not available in that period), and uniform application (no natural variation). The solution is thorough research, respect for tonal values, and period-appropriate color palettes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know what colors to use if there are no color references from that exact photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research the era thoroughly: study period fashion catalogs, examine verified color photographs from the same timeframe, consult museum collections, and reference paint company historical palettes. For specific items (automobiles, military uniforms), use manufacturer specifications or regulations. Build a reference board of verified era-appropriate colors. When truly uncertain, conservative colors matching the tonal values are better than guesses."
+      }
+    }
+  ]
+}
+</script>

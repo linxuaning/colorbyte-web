@@ -760,3 +760,51 @@ Whether you choose professional restoration services or embark on DIY restoratio
 Ready to bring your Victorian family photographs back to life with modern AI-powered restoration technology? Visit our [old photo restoration](/old-photo-restoration) service to see how we combine cutting-edge AI with expert human oversight to restore your precious 19th-century images while maintaining their historical integrity and authenticity.
 
 Our specialists understand the unique challenges of Victorian photography formats—from daguerreotypes to cabinet cards—and can help preserve your family's visual legacy for generations to come. Start your restoration journey today and give your Victorian ancestors the clarity and presence they deserve in your family's ongoing story.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore Victorian photos professionally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional restoration to restore Victorian photos ranges from $75-150 for basic damage repair to $2000+ for museum-quality restoration of severely damaged images. The cost depends on damage extent, photograph rarity, research requirements, and turnaround time. DIY restoration costs $500-2000 in initial equipment and software, plus 3-15 hours per photograph."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I restore Victorian photos that are severely damaged or torn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, severely damaged Victorian photographs can often be restored through digital techniques, even with significant portions missing. Photographs with at least 40-50% of the original image intact generally restore well. Missing areas can be reconstructed using period-appropriate reference materials, though this requires historical research to maintain accuracy. Extremely fragile originals should be professionally digitized before attempting restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between restoring daguerreotypes and cabinet cards?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daguerreotypes and cabinet cards require completely different restoration approaches. Daguerreotypes are metal-based with reflective surfaces that need special digitization techniques (photographing from multiple angles with polarizing filters), while cabinet cards are paper prints that scan traditionally. Daguerreotypes suffer from silver mirroring and tarnish; cabinet cards from yellowing, foxing, and mount deterioration. Never remove daguerreotypes from their protective cases, while cabinet cards can be safely handled with gloves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize Victorian black and white photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize Victorian photos, extensive research is essential—Victorian fashion, fabric dyes, and studio practices followed specific conventions. Use muted, period-appropriate colors rather than saturated modern hues. Many historians recommend preserving Victorian photographs in their original sepia or black-and-white presentation to maintain historical authenticity and avoid introducing inaccuracies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I scan Victorian photographs without damaging them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan Victorian photographs safely by handling only the edges with clean cotton gloves, using a flatbed scanner with the lid open (to avoid pressure), and scanning at 600-1200 DPI in 48-bit color mode with all automatic corrections disabled. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and a polarizing filter. Never remove cased photographs from their protective cases, never flex or bend any Victorian photograph, and always work on a clean, soft surface."
+      }
+    }
+  ]
+}
+</script>

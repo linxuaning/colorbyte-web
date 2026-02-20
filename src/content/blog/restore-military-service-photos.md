@@ -674,3 +674,51 @@ Key principles for restoring military service photos:
 **Ready to restore military service photographs?** Visit [ArtImageHub's photo restoration service](/old-photo-restoration) to access professional-grade AI restoration specifically capable of handling military photographs. Upload your service photos and let advanced technology automatically repair damage, enhance uniform details, and restore fading while maintaining historical authenticity and period character. Honor your veteran's service with beautifully restored photographs.
 
 Whether preserving family military heritage, supporting veterans organizations, or maintaining historical military archives, proper restoration ensures these photographs of service and sacrifice remain vivid testaments to courage and dedication for all future generations to honor and remember.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I identify the unit or division from a military photograph?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for shoulder patches, collar insignia, and distinctive unit markings. Shoulder patches (shoulder sleeve insignia) are usually the most visible identifier. Research using military insignia guides, online databases, and military history forums. Consider the era (uniform style), visible equipment, and any background details. Service records (if available) confirm unit assignments. Many online communities specialize in military photograph identification and can help. Document all visible details clearly when seeking help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to restore faded color military photos from Vietnam era?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vietnam-era color photos typically show magenta shift or overall fading. Scan at high resolution (1200+ DPI) in 48-bit color. Use color correction tools to remove magenta casts and restore fading. Research period-appropriate uniform colors (olive green fatigues, jungle boots, specific shades changed during the war). AI tools like ArtImageHub automatically detect and correct typical fading patterns. For manual work, use Curves adjustments in individual color channels. Preserve period character—don't make them look too modern. Reference period color photographs and military uniform specifications for accuracy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I restore damage that occurred during combat or deployment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on the type of damage and family wishes. Physical wear from service (creases from wallet carry, exposure from field conditions) can be considered part of the photograph's history and story. However, water damage, severe fading, or deterioration that obscures the image doesn't honor the service and should be corrected. Discuss with family—some prefer preservation of \"honest wear\" while others want clean, clear images. For historical archives, preserve both restored and original-state versions. When uncertain, restore damage but document what was original condition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I ensure historically accurate uniform colors when restoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research is essential. Consult military uniform regulations for the specific era and branch (colors were precisely specified). Reference period color photographs and films. Use military uniform guidebooks and collector references. Federal Standard 595 color system specifies many military colors. Contact military museums or historical societies. Check with reenactor communities who research authenticity extensively. For some cases, slight variation is acceptable (lighting, dye lot variation existed). Document your color sources and decisions. When uncertain, note the approximation rather than guessing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are military service photographs more valuable and should I get professional help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Military photographs often have high historical, genealogical, and emotional value regardless of monetary worth. For typical service portraits and personal photographs, DIY restoration using proper methods and tools like ArtImageHub is appropriate and achievable. For historically significant photographs (high-ranking officers, important events, rare units, Civil War era), professional conservator assessment is wise. For extremely rare or valuable items, professional help ensures historically appropriate treatment and documentation. Most family military photos can be successfully restored using AI tools and careful technique, preserving originals safely while creating beautiful restored versions."
+      }
+    }
+  ]
+}
+</script>

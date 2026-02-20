@@ -704,3 +704,51 @@ The characteristic pink cast and fading of these prints might seem discouraging,
 Ready to restore your family's 1950s Kodak prints? Our [old photo restoration](/old-photo-restoration) service specializes in mid-century photograph restoration, with deep understanding of Kodak's color processes and the characteristic aging patterns of 1950s prints. We combine advanced color correction techniques with period-appropriate aesthetic knowledge to bring your family's 1950s memories back to vibrant life while maintaining authentic mid-century photographic character.
 
 Preserve your family's 1950s memories—start your restoration project today and bring those faded pink prints back to their original Kodak glory.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do 1950s Kodak prints turn pink?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pink or magenta cast results from differential dye fading in chromogenic prints. Cyan dyes (responsible for blues and greens) fade faster than magenta and yellow dyes. When cyan fades while magenta remains, the overall image shifts pink. This is the most common aging pattern in mid-century color photographs and it's completely correctable with proper digital restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can severely faded 1950s Kodak prints be fully restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even severely faded prints usually retain enough information for successful restoration. The key is scanning at high resolution (1200+ DPI) in 48-bit color to capture subtle remaining color data. Protected areas under frames often preserve original colors, providing perfect reference points. Professional restoration can return most faded 1950s Kodak prints to near-original appearance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove 1950s photos from old albums before scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If photos are in non-damaging albums (corner-mount style), they can be scanned in place, then carefully removed later. Photos in magnetic or adhesive albums should be removed carefully to prevent further damage, though this is delicate work. For valuable photos in damaging albums, consider professional removal and scanning to minimize risk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know what colors to restore if the photo is almost completely faded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use multiple reference sources: any protected areas showing original colors, other photos from the same event or roll, family member recollections, period-appropriate color palettes for clothing and automobiles, and historical references. When uncertain, conservative restoration maintaining subtle colors is better than guessing at specific vibrant hues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to restore or colorize badly faded 1950s Kodak prints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If any color information remains (even faint), restoration is better as it recovers actual original colors. Only colorize when prints have faded to essentially black-and-white or sepia. Even then, creating both a restored version from remaining color data and a researched colorization provides options. Always maintain multiple versions rather than choosing only one approach."
+      }
+    }
+  ]
+}
+</script>

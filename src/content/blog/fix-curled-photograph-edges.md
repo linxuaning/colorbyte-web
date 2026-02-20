@@ -588,3 +588,51 @@ The key principles:
 **Ready to digitally restore photographs with curled edges?** Visit [ArtImageHub's photo restoration service](/old-photo-restoration) to access AI-powered edge repair and reconstruction. Upload your scans and let advanced technology remove edge damage, shadows from curl, and perspective distortions—creating perfectly flat, restored images in minutes.
 
 Whether you flatten physically, correct digitally, or combine both approaches, your curled photographs can be saved, shared, and preserved for future generations.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can all curled photographs be safely flattened?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Very brittle prints, those with cracked or lifting emulsion, and certain historical processes should not be physically flattened. When in doubt, digital correction is safer. Any print that makes cracking sounds when gently flexed should not be flattened physically. For valuable photographs, consult a professional conservator before attempting physical flattening."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to fix curled photograph edges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical flattening typically requires 3-7 days for safe, controlled humidity treatment. Quick methods exist but carry higher risks. Digital correction can be accomplished in minutes to hours depending on the severity of curl and associated damage. Don't rush physical flattening—patience prevents damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will flattened photographs curl again?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can, especially if stored in poor conditions. Proper storage at stable humidity (30-40% RH) and temperature prevents recurrence. RC prints resist re-curling better than fiber-based prints. Some prints with \"memory\" of being curled for decades may show slight curl tendency even with perfect storage. Periodic inspection and light re-weighting may be necessary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to iron photographs to flatten them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, never iron photographs. Heat can destroy the emulsion, cause permanent discoloration, and make paper brittle. Even with protective layers, irons apply too much heat and pressure. The risks far outweigh any potential benefits. Use humidity-based flattening methods instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix curled edges on Polaroids and instant photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical flattening of Polaroids is risky due to their complex chemical structure and sensitivity to moisture. Digital correction is much safer and more effective for Polaroids. Scan or photograph them while gently held flat (using glass if necessary) and correct any edge issues digitally."
+      }
+    }
+  ]
+}
+</script>

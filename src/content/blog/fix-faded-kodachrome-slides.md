@@ -670,3 +670,51 @@ Kodachrome and vintage color slides represent a remarkable photographic era—vi
 8. Share restored images with family through prints, books, or digital albums
 
 Don't let your family's color slide collection continue fading in storage. Every year that passes means more color loss and deterioration. Begin your slide restoration project today and rediscover the vibrant colors and precious memories captured in those small transparencies. Your future family will thank you for preserving this irreplaceable photographic heritage.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are Kodachrome slides really better preserved than other slide films?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Kodachrome is exceptionally stable when properly stored. Dark-stored Kodachrome slides from the 1950s-1960s often retain vibrant colors nearly as good as when processed. However, light exposure and heat affect even Kodachrome—projected slides fade dramatically. Ektachrome and other E-6 films show more fading even in good storage conditions. That said, condition depends heavily on individual storage history, so assessment must be made slide-by-slide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I throw away moldy slides or can they be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't discard moldy slides without attempting restoration. While mold damages the emulsion permanently, the image can often be recovered through careful scanning and digital restoration. If mold is active (fuzzy growth), isolate the slides to prevent spread and consider professional cleaning. Inactive mold (staining and etching) can be scanned and digitally restored. The physical slide may be compromised, but the image can usually be saved digitally. Always prioritize digitization over cleaning for severely affected slides."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to scan thousands of family slides?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For large collections, consider these approaches: 1) Use scanning service (professional slide scanning services charge $0.30-$1.00 per slide), 2) Purchase or rent dedicated slide scanner for DIY (investment pays off for 500+ slides), 3) Hybrid approach—scan priority slides yourself, send remainder to service. Budget 2-3 minutes per slide for DIY scanning including handling time. Professional services typically return scans in 2-6 weeks. For best results with DIY, scan in batches and establish consistent workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can modern scanning and AI restore slides that were heavily damaged by projection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern AI restoration can achieve remarkable results even with severely projection-damaged slides. While perfect restoration of extreme damage isn't possible, tools like ArtImageHub can recover recognizable images from slides that appear nearly destroyed. The AI analyzes remaining color information (often preserved at edges) and intelligently reconstructs faded areas. Success depends on how much information remains, but it's always worth attempting restoration. Even partial recovery preserves memories that would otherwise be lost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth digitizing slides if I don't plan to print them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Digital preservation is critical regardless of print plans. Slides continue to deteriorate even in good storage—digitization captures current state before further damage occurs. Digital files enable easy sharing with family via email, cloud albums, or social media. You can view on large screens, create slideshows, and incorporate into family history projects. Storage requirements are minimal—a 4000 DPI scan is only 30-50MB. Digital preservation ensures these memories survive even if physical slides eventually deteriorate beyond recovery."
+      }
+    }
+  ]
+}
+</script>

@@ -736,3 +736,51 @@ Don't let these irreplaceable photographs of your Victorian ancestors continue t
 Visit [ArtImageHub's photo restoration service](/old-photo-restoration) today and upload your Victorian cabinet cards. Our AI-powered restoration tools will remove yellowing, repair albumen cracks, enhance faded details, and bring your ancestors' formal portraits back to their original elegance.
 
 Join thousands of genealogists and family historians who trust ArtImageHub to preserve their Victorian photographic heritage. Your cabinet cards deserve expert restoration. Start preserving your photographic history today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a cabinet card and a carte de visite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cabinet cards (1870s-1900s) measure approximately 4.5 x 6.5 inches, while cartes de visite (1860s-1880s) are smaller at about 2.5 x 4 inches. Cabinet cards became popular because the larger size showed more detail and was better for display. Both use similar albumen print technology and mounting on decorated cardstock. For more on restoring cartes de visite, see our dedicated guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the yellowing of albumen prints be reversed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical chemical reversal of albumen yellowing is possible but requires professional conservation and carries risks of damaging the photograph. Digital restoration through AI technology safely removes the appearance of yellowing without touching the original photograph, which should be preserved in its current state. This allows you to enjoy a restored version while protecting the irreplaceable original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I tell if my old photograph is a cabinet card?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cabinet cards are characterized by: (1) Photograph mounted on thick cardstock backing, (2) Size around 4.5 x 6.5 inches, (3) Photographer's studio information printed or embossed on the mount, (4) Dates from approximately 1870-1920, (5) Decorative borders or designs on the mounting card, (6) Usually sepia or brown-toned photographs. If your photograph matches these characteristics, it's likely a cabinet card."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove the photograph from the mounting board?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, never separate the photograph from its mounting board. The two are considered a single artifact, and the mounting board provides historical context through the photographer's information and decorative elements. Additionally, attempting removal risks tearing or otherwise damaging the photograph. If the mount is severely damaged, scan or photograph the entire card and restore digitally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are cabinet card photographs valuable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Value varies widely based on several factors: subject matter (celebrities, unusual occupations, post-mortem), photographer (famous studios), condition, and historical significance. Common family cabinet cards have sentimental value but limited monetary value ($5-20). Notable subjects or famous photographers can be worth $50-500+. Rare or historically significant cards may be worth more. Regardless of monetary value, family cabinet cards are irreplaceable historical treasures."
+      }
+    }
+  ]
+}
+</script>

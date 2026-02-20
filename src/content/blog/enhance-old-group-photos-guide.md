@@ -686,3 +686,51 @@ Whether it's a faded school class photo with dozens of students, a cherished fam
 Ready to bring your old group photographs back to life? Visit our [old photo restoration](/old-photo-restoration) service to see how AI-powered technology combined with expert human enhancement can restore your group photos—improving clarity for every face, balancing exposure across the entire group, and preserving these irreplaceable memories of the people who mattered most.
 
 Our specialists have extensive experience with group photo challenges, from small family gatherings to large class photos with dozens of faces. We can help ensure every person in your cherished group photograph receives the attention and enhancement they deserve. Start your restoration journey today and preserve these community memories for generations to come.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you enhance old group photos with many people?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To enhance old group photos with multiple people, start with global corrections (alignment, exposure, color balance) that improve the entire image, then work face-by-face with selective adjustments for each person. Scan at high resolution (1200+ DPI), create separate adjustment layers for different rows or individuals, and apply varying levels of sharpening based on distance from camera. Expect 6-20 hours depending on group size and damage severity. Professional software like Photoshop or Affinity Photo provides essential tools for selective enhancement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you sharpen faces in the back row of old class photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Back row faces in old class photos can be improved but have limitations. Faces smaller than 50 pixels wide (even after high-resolution scanning) won't sharpen dramatically due to insufficient image data. Use moderate sharpening (50-80% strength) at smaller radius (0.4-0.8 pixels) and reduced opacity (60-80%) for back rows. Focus on improving contrast and clarity rather than forcing artificial sharpness. AI enhancement tools can help recover some detail, but overly small or out-of-focus faces in the original won't become crystal clear."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do old group photos fade unevenly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Old group photos fade unevenly due to differential light exposure during display (centers receive more light than edges), handling wear (frequently touched areas deteriorate faster), original lighting variations (studio lights weren't perfectly even), and storage conditions (areas touching album pages or frames age differently). Chemical composition also varies slightly across large prints, causing uneven aging rates. When you enhance old group photos, address this uneven fading with selective brightness adjustments using graduated masks and individual face corrections rather than global adjustments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore an old class photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional restoration of old class photos costs $200-600 for medium-sized groups (10-20 people) with basic to moderate damage, and $600-2000+ for large classes (30+ students) or severe damage requiring extensive reconstruction. DIY restoration costs $70-550 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99) plus scanning equipment ($200-500), but requires 12-20 hours for typical class photos. Large format class photos may need professional scanning ($20-50) if they exceed standard scanner bed size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can damaged faces in group photos be reconstructed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, damaged faces in group photos can often be reconstructed through digital restoration techniques, though results vary based on damage extent. If 40-50% of facial features remain visible, reconstruction typically succeeds using clone stamping, content-aware fill, and reference photos of the same person. Completely obliterated faces are more challenging and may require family input for accuracy. AI-powered tools can hallucinate missing features but should be reviewed carefully for accuracy. Professional restorers can achieve better results for severely damaged faces, especially with historical or genealogical importance."
+      }
+    }
+  ]
+}
+</script>

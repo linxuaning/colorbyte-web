@@ -577,3 +577,51 @@ Old portrait photographs are our most personal connection to family history—th
 8. Properly preserve both originals and digital files
 
 Every portrait tells a story—not just of an individual, but of a time, a family, a heritage. Don't let fading and damage obscure these faces and the stories they tell. Begin your portrait enhancement project today and bring your ancestors' faces back into clear focus, preserving them for the generations yet to come.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I enhance facial features that are completely faded or missing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When facial features have faded to the point of being invisible, options are limited. Modern AI tools like ArtImageHub can sometimes recover details invisible to the naked eye by analyzing subtle remaining tonal variations. If features are completely gone, you can attempt reconstruction using other photos of the same person or facial symmetry (copying from the opposite side), but results will be approximate. For historically important portraits with complete feature loss, consider professional restoration conservators who have specialized techniques."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I smooth wrinkles and blemishes in old portrait photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal choice. For archival and historical purposes, preserve the person as they appeared—wrinkles, blemishes, and all. These features are part of who they were. However, you can remove damage-related blemishes (scratches across the face) while preserving natural features. Some families prefer slight enhancement for display copies while keeping unretouched versions for archival. The key is respecting the individual's dignity while preserving their authentic appearance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI enhancement change how someone looked or alter their features inappropriately?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reputable AI enhancement tools like ArtImageHub are designed to enhance clarity and repair damage without changing facial structure or features. They sharpen details, recover faded areas, and improve overall quality while preserving the person's actual appearance. However, aggressive enhancement or inappropriate use of beautification filters can alter features. Always compare enhanced versions to originals and ensure the person remains recognizable. For family archival purposes, subtle enhancement that preserves likeness is always preferable to dramatic changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between enhancing a portrait and restoring it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enhancement focuses on improving image quality—sharpness, contrast, color, and clarity—to make the portrait look its best. Restoration addresses damage—removing scratches, tears, stains, and fading—to return the photo to its original condition. Most portrait work involves both: restoring damage first, then enhancing quality. For archival purposes, minimal intervention is often preferred. For display and sharing, more aggressive enhancement may be appropriate. Consider creating multiple versions: minimal restoration for archival, enhanced versions for display."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I maintain a natural look when enhancing very old, poor-quality portraits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The key to natural enhancement is restraint and understanding limitations. Work subtly with low opacity adjustments that build up gradually. Don't try to make a poor-quality portrait look like modern digital photography—respect its era and original quality. Focus on the most important elements (eyes, face) while keeping backgrounds soft. Preserve photo grain and texture rather than over-smoothing. Compare frequently to the original and step back to view overall effect. When in doubt, enhance less rather than more."
+      }
+    }
+  ]
+}
+</script>

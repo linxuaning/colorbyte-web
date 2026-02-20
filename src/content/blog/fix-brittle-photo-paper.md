@@ -222,3 +222,51 @@ Every brittle photograph successfully digitized and restored represents rescued 
 Don't let brittle paper condemn your family photographs to continued deterioration and eventual loss. Start your preservation project today, working carefully to digitize these fragile treasures. Upload your scans to [ArtImageHub's advanced restoration service](/old-photo-restoration) to remove brittleness damage, cracks, discoloration, and deterioration, creating beautiful restored images that honor your family's visual heritage.
 
 The photographs may be brittle, but the memories they contain are priceless. With proper technique and modern technology, those memories can survive and thrive for generations to come, long after the original paper has turned to dust.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can brittle photo paper be restored to flexibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physical restoration of brittle paper requires professional conservation treatment and is rarely attempted for photographic materials. Conservators can sometimes humidify brittle paper in controlled environments to temporarily restore flexibility for specific treatment purposes, but this doesn't permanently reverse the chemical degradation causing brittleness. The paper will return to a brittle state after treatment unless stored in extremely controlled conditions. For most purposes, digital restoration provides the best solution—creating perfect digital copies while leaving the physical photograph in its current state in protective storage. The digital restoration removes all visual evidence of brittleness (cracks, chips, discoloration) without risking damage to the irreplaceable original through physical treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I scan a photo that's too brittle to lay flat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For photos too brittle or curved to safely flatten for scanning, photographic reproduction offers the best solution. Set up a camera on a tripod, positioning it parallel to the photograph at the optimal angle for the photo's current shape. Use even, diffuse lighting to avoid glare and shadows. Photograph the image at the highest resolution your camera supports, shooting in RAW format for maximum image data. If the photograph is severely curved or warped, take multiple overlapping photos from different angles and use photo stitching software to create a complete image. Import the resulting photograph into editing software and use perspective correction tools to straighten and correct any distortion. Upload this corrected image to ArtImageHub's restoration service, which will remove any remaining evidence of warping or curvature along with other damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes edges of old photos to crumble?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Edge crumbling is a common symptom of severe paper brittleness. Photograph edges show the most deterioration because they're exposed to more environmental stress including direct contact with storage enclosures, easier moisture absorption from the air, more handling stress from picking up photos by edges, and less structural support than the middle of the photograph. The acidic paper deterioration that causes brittleness affects edges first and most severely. Combined with the mechanical stress of handling over decades, this causes edges to crack, chip, and eventually crumble. Digital restoration can completely rebuild crumbled edges by extending image content naturally, reconstructing missing corners, and creating clean, even borders from damaged edges. This is one area where AI restoration excels, as algorithms can analyze the image and generate contextually appropriate edge reconstruction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I try to flatten curled brittle photos before scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Never attempt to forcibly flatten brittle photographs. The stress of flattening can cause catastrophic cracking, breaking, or shattering of embrittled paper. Even gentle pressure or weighting can damage fragile photographs beyond repair. Instead, scan or photograph curled photos in their current state and address the curvature digitally. Photographic reproduction works well for curled photos—photograph them at the optimal angle and use perspective correction software to straighten the resulting image. For photos with mild curling that won't fit in a scanner, you might try supporting them gently from underneath while scanning, but never force them flat. Professional conservators have specialized humidification techniques that can sometimes safely relax curled photographs, but this should only be attempted by trained experts with appropriate equipment and knowledge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I store brittle photos in plastic sleeves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but choose the right type of plastic. Use only archival-quality polyester (Mylar, Melinex) or polypropylene sleeves specifically sold for archival photograph storage. Never use PVC (polyvinyl chloride) sleeves, which off-gas chemicals that accelerate photograph deterioration. Avoid \"magnetic\" photo albums entirely, as the adhesive damages photographs. Archival polyester sleeves offer several advantages for brittle photos including complete support preventing further mechanical damage, visibility without handling, protection from environmental contaminants and handling damage, and inert materials that won't contribute to further deterioration. Ensure sleeves are the proper size—too large and the photo slides around; too small and insertion becomes risky. For very brittle photos, consider polyester encapsulation where the photo is sealed between two sheets of polyester, providing maximum protection and support."
+      }
+    }
+  ]
+}
+</script>

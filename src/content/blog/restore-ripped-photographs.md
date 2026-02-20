@@ -670,3 +670,51 @@ A torn photograph doesn't mean a lost memory. With modern digital restoration te
 8. Share restored photos with family
 
 Don't let tears keep precious memories fragmented. Whether a single tear or a photo torn into dozens of pieces, restoration is possible. Begin your torn photo repair project today and make those damaged photographs whole again, preserving family memories that once seemed lost forever.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a photo torn into many small pieces be fully restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even photographs torn into dozens of pieces can often be fully restored digitally. The key is collecting all pieces, scanning them at high resolution, and carefully aligning them digitally. Modern AI tools like ArtImageHub can intelligently fill gaps where pieces are missing. The process is time-intensive but results can be remarkable. Success depends on having most pieces and enough visual information for reconstruction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I physically tape torn photos back together before scanning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only use removable tape on the back side (never the front) and only temporarily for scanning purposes. Remove tape immediately after scanning. Never use permanent adhesives as they damage photos further and make future restoration harder. Physical repairs often create additional problems (misalignment, adhesive damage, trapped dirt). Digital restoration is safer and more effective than physical repair for torn photographs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I repair a tear across someone's face?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Facial tears require extra care due to high visibility. Scan at highest resolution possible (1200-2400 DPI). Use clone stamp to carefully repair along the tear, sampling skin texture from the same facial area. Ensure facial features align perfectly—even slight misalignment is very noticeable. Use symmetry when possible (copy from opposite side). For critical family photos, consider professional restoration as faces are unforgiving of mistakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I do if pieces of the torn photo are completely missing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For small missing areas, use clone stamp to extend surrounding areas into the gap. For larger missing sections, AI-powered reconstruction (ArtImageHub) can intelligently fill areas based on context. If photo is symmetrical (portrait faces, buildings), copy and flip from the opposite side. For irreplaceable photos with significant loss, professional conservators have specialized techniques. Accept that some missing areas may not be perfectly reconstructible—focus on making the best plausible reconstruction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it possible to repair photos that have been torn for decades and the pieces are deteriorated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the timeline of the tear doesn't significantly affect digital restoration difficulty. Whether torn yesterday or 50 years ago, the same techniques apply. However, pieces may have deteriorated differently (varied fading, damage), requiring additional color and tone matching during repair. The main challenge is whether all pieces were preserved. If pieces were lost over the years, reconstruction must fill those gaps. Always attempt restoration—even very old tears can often be repaired successfully."
+      }
+    }
+  ]
+}
+</script>

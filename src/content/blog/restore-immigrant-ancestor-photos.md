@@ -564,3 +564,51 @@ Start your restoration journey today. Those faded, damaged immigrant photos hold
 Visit [ArtImageHub's photo restoration service](/old-photo-restoration) today and upload your precious immigrant photos. Our AI-powered restoration tools will analyze your images, repair damage, and enhance details—all while maintaining the historical authenticity that makes these photos irreplaceable.
 
 Join thousands of families who have already preserved their immigration heritage through ArtImageHub. Your ancestors' stories deserve to be seen clearly. Start restoring today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore immigrant ancestor photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Professional restoration typically costs $75-300 per photo depending on damage severity. ArtImageHub offers AI-powered restoration starting at just $9.99 per photo, with subscription plans available for multiple photos. For families with numerous immigrant photos to restore, the AI approach offers exceptional value while maintaining professional quality results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can severely damaged immigrant photos be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, modern AI restoration can repair even severely damaged immigrant ancestor photos. ArtImageHub's technology can fix tears, water damage, extreme fading, missing sections, and mold damage. However, the best results come from high-quality scans of the original. For photos with physical damage, scan at 1200 DPI or higher before attempting restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize my immigrant ancestor photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Colorization is a personal choice. Consider these factors: Do you know the accurate colors? Will it help younger family members connect? Are you preserving the original black and white version? For immigrant photos with cultural significance, research period-appropriate colors for clothing and consult family members who may remember details before colorizing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my immigrant photo is too damaged to restore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very few photos are beyond restoration with modern AI technology. Even photos with severe damage, fading, or missing sections can often be successfully restored. Upload your photo to ArtImageHub for a free damage assessment. The AI will analyze the damage and show you a preview of potential results before you commit to the restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to share restored immigrant photos with family?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create multiple sharing options: print high-quality copies on archival paper for framing, create digital galleries for online sharing, compile photo books telling the immigration story, and provide high-resolution digital files family members can use for their own purposes. Consider both older relatives who prefer prints and younger generations who engage with digital media."
+      }
+    }
+  ]
+}
+</script>

@@ -678,3 +678,51 @@ Don't let your sports heritage fade away. Those team photos from your playing da
 Stop letting your athletic memories fade. Visit [ArtImageHub's photo restoration service](/old-photo-restoration) today and upload your old sports team photos. Our AI-powered enhancement tools will restore faces, clarify uniform details, repair damage, and bring your team back to life.
 
 Join thousands of families and teams who have preserved their sports heritage through ArtImageHub. Your championship moments deserve to shine. Start enhancing your team photos today.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI really enhance faces in large group sports team photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, modern AI technology like ArtImageHub can detect and individually enhance every face in team photos with 50+ people. The AI identifies each face, applies appropriate restoration, and maintains natural appearance while improving clarity. Results are particularly impressive for photos where faces have faded into shadows or backgrounds, making team members clearly identifiable again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I restore uniform numbers that have completely faded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If uniform numbers are partially visible, AI enhancement can often recover them by maximizing contrast and sharpening edges. For completely faded numbers, research team rosters from the year to identify players, then reconstruct numbers using the same font style visible elsewhere in the photo. Always document which numbers are original versus reconstructed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I enhance old sports team photos in color or keep them black and white?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep originally black and white photos in black and white for historical authenticity. However, if you want to create a colorized version for younger family members or modern displays, use ArtImageHub's AI colorization after completing the enhancement. Research period-appropriate team colors and create both versions—black and white for archival, color for engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can motion blur in action sports photos be fixed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Motion blur in action shots can be reduced but not completely eliminated without creating artificial-looking results. Use selective sharpening to enhance faces and key details while maintaining some blur to preserve the sense of motion. AI tools can intelligently sharpen static elements (faces, clear equipment) while respecting intentional motion blur areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to share enhanced team photos with former teammates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create high-resolution digital files and share through private online galleries, email, or cloud storage links. For team reunions, provide printed copies in matching frames. Use social media to connect with former teammates you've lost touch with, sharing the enhanced photos to generate interest in reunions and ongoing connection."
+      }
+    }
+  ]
+}
+</script>

@@ -609,3 +609,51 @@ The unique challenges of tintype restoration—reflective surfaces, rust damage,
 Ready to restore your family's tintype photographs? Our [old photo restoration](/old-photo-restoration) service specializes in historical photograph formats including tintypes. Our experts understand the unique characteristics of ferrotype images, use specialized digitization techniques for reflective metal surfaces, and apply period-appropriate restoration that honors these artifacts' historical significance. We combine advanced digital restoration with deep respect for 19th-century photographic processes.
 
 Preserve your tintype treasures—restore these unique windows into the past and ensure your family's Victorian-era history survives for future generations.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I tell if my photograph is a tintype?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Test with a small magnet—tintypes are magnetic due to iron base. They're metal (heavier than paper), reflective, typically show dark backing around edges, and create a positive image (right-reading). If you can see your reflection in the surface and it's attracted to a magnet, it's likely a tintype. Glass ambrotypes won't be magnetic, and daguerreotypes have a distinctive mirror-bright surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I clean rust off a tintype photograph myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, don't attempt physical rust removal. Physical cleaning can permanently damage the delicate collodion emulsion or accelerate deterioration. Digital restoration can remove rust appearance in scanned/photographed copies while leaving the original untouched. For valuable tintypes with active rust, consult a professional conservator who can stabilize the object."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best way to digitize a tintype without glare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photograph rather than scan tintypes. Use two diffused light sources at 45-degree angles, position your camera perpendicular to the tintype, and use a polarizing filter to reduce glare. Take multiple exposures from slightly different angles to find the best glare-free position. Ensure lighting is even and indirect rather than direct harsh light."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are tintypes valuable enough to warrant professional restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tintypes vary widely in value. Common portrait tintypes from the 1870s-1880s have modest monetary value but immense family historical value. Civil War soldier tintypes, identified individuals, or unusual subjects can be quite valuable. Regardless of monetary value, tintypes are unique, irreplaceable artifacts of your family history warranting proper preservation through professional digitization and digital restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can bent or creased tintypes be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Physically bent tintypes should not be forcibly flattened—this risks cracking the emulsion. Digital restoration can correct perspective distortion from bending and repair emulsion cracks that resulted from the crease. The digital result can look as if the tintype were never bent, while the physical original is preserved in its current state without further damage."
+      }
+    }
+  ]
+}
+</script>

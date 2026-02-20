@@ -284,3 +284,43 @@ Not necessarily. Some black-and-white photographs have a distinctive aesthetic t
 - [Restore Your Wedding Photos: How AI is Saving Precious Memories in 2026](/blog/wedding-photo-restoration)
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
 - [I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026](/blog/old-photo-restoration-guide)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is AI colorization accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI colorization produces historically and visually plausible colors—not verified accurate colors. The AI makes educated guesses based on context (outdoor vs. indoor, period details, clothing types, etc.), but it cannot know for certain what specific colors looked like in a given photo. Always label AI-colorized photos as such and preserve the original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does AI photo colorization take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With modern tools like ArtImageHub, colorization takes 30–90 seconds per photo. Compare this to many hours for manual colorization by a professional artist. For most family photos, AI produces results that're quite good—honestly, pretty close to professional manual work in a fraction of the time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI colorize very old (Victorian era) photographs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with some caveats. Victorian-era photographs often have less tonal information due to age and damage, which makes colorization more challenging. AI tools still produce plausible results, but the uncertainty about accurate colors is higher the older the photograph."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I colorize all my black and white photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Some black-and-white photographs have a distinctive aesthetic that colorization can diminish—highly artistic portraits, dramatic landscape photographs, certain documentary images. It's worth keeping both versions, which ArtImageHub makes easy."
+      }
+    }
+  ]
+}
+</script>

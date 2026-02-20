@@ -181,3 +181,51 @@ The decision depends on your collection size and budget, though AI enhancement i
 ### Can you remove yellow color casts from old baby photos?
 
 Absolutely—yellow color casts affecting old baby photos can be completely removed through AI restoration. This yellowing occurs in aged color prints when magenta dyes fade leaving yellow behind, in Polaroid and instant film through characteristic dye deterioration, and in photos stored in contact with acidic materials. AI identifies the yellow cast characteristics, applies precise opposite color correction (adding blue-purple tones to neutralize yellow), restores natural skin tones from yellow-shifted appearance, and balances overall color for realistic appearance. Baby photos with severe yellow or orange casts transform to natural peachy skin tones, proper color balance throughout, and vibrant accurate colors. The transformation is often dramatic—yellowish photos that made babies look jaundiced or sickly emerge with healthy, natural coloring families remember.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can faded baby photos from the 1970s be restored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, baby photos from the 1970s can almost always be restored beautifully despite severe fading. Photos from this era typically show extreme color shifts (magenta casts, yellow-orange tints) and overall fading, but AI restoration excels at reversing these characteristic deterioration patterns. The technology analyzes faint remaining color information, identifies the specific fading pattern (cyan loss creating pink cast, for example), applies precise corrections to restore natural colors, and enhances facial features to reveal baby's appearance clearly. Even Polaroid baby photos faded to pale cream or orange tones typically restore to natural peachy baby skin tones and proper color balance. Upload your faded 1970s baby photo to ArtImageHub to see the transformation—families are often amazed to see vibrant colors they haven't seen in 40+ years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I fix baby photos stuck in magnetic albums?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Magnetic albums are notorious for trapping precious baby photos, but most can be recovered and restored. Never forcibly peel photos from pages as this will likely destroy the image surface. Instead, gently work a thin plastic spatula or credit card edge under one corner, proceeding slowly and stopping if you feel significant resistance. Dental floss slid carefully under the photo edge sometimes works better. If the photo won't separate safely, scan or photograph it while still attached to the page—place white card behind transparent pages to improve contrast. Upload this scan to AI restoration, which can often remove adhesive residue, repair partial removal damage, restore overall image quality, and even remove visible album page backgrounds in many cases. The digital restoration succeeds even if physical removal proves impossible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI enhance blurry baby photos from poor hospital lighting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI can significantly improve baby photos with focus or lighting issues, though results depend on problem severity. For mildly soft or underexposed hospital photos, AI provides excellent improvement through sharpening facial features and details, correcting exposure to reveal baby's features clearly, reducing grain or noise from underexposure, and optimizing contrast for maximum clarity. For moderately out-of-focus or poorly lit photos, AI produces good improvement suitable for display and sharing, though some softness may remain. For severely blurred photos, AI maximizes whatever information exists while being realistic about fundamental limits. Hospital baby photos often look worse than they actually are—AI frequently reveals surprising detail and clarity. Even photos that appear disappointingly blurred or dark often enhance well enough to create satisfying keepsakes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I enhance all my baby photos or just select special ones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The decision depends on your collection size and budget, though AI enhancement is affordable enough to make enhancing all meaningful baby photos practical. Consider enhancing all first photos from hospital (irreplaceable first moments), milestone photos (first smile, steps, birthday), photos showing baby with family members (grandparents, siblings, parents), unique or special occasion photos, and any photos you'd want to share, display, or include in photo books. For large collections of similar photos, you might enhance representative examples. However, at $5-20 per photo, comprehensively enhancing 20-50 baby photos costs $100-1,000—reasonable investment to permanently preserve all precious first-year memories. Many families report that even photos they initially considered unimportant become treasured after enhancement reveals details and colors they'd forgotten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you remove yellow color casts from old baby photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely—yellow color casts affecting old baby photos can be completely removed through AI restoration. This yellowing occurs in aged color prints when magenta dyes fade leaving yellow behind, in Polaroid and instant film through characteristic dye deterioration, and in photos stored in contact with acidic materials. AI identifies the yellow cast characteristics, applies precise opposite color correction (adding blue-purple tones to neutralize yellow), restores natural skin tones from yellow-shifted appearance, and balances overall color for realistic appearance. Baby photos with severe yellow or orange casts transform to natural peachy skin tones, proper color balance throughout, and vibrant accurate colors. The transformation is often dramatic—yellowish photos that made babies look jaundiced or sickly emerge with healthy, natural coloring families remember."
+      }
+    }
+  ]
+}
+</script>

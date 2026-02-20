@@ -586,3 +586,51 @@ Old school photos document our journey from childhood through young adulthood, c
 8. Preserve both original scans and enhanced versions
 
 Whether preparing for a class reunion, creating a graduation gift, or simply preserving memories for your own family, enhanced school photos connect us to important chapters in our lives. Don't let fading and damage erase these formative moments. Begin your school photo restoration project today and rediscover the faces, places, and friendships that shaped who you've become.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can severely faded 1970s school photos be restored to look good?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, even severely faded 1970s school photos can be dramatically improved. This era is particularly challenging due to color fading and chemical degradation, but modern AI restoration tools like ArtImageHub are specifically trained on 1970s photo deterioration patterns. While it may not be possible to perfectly recreate original colors (since those records don't exist), restoration can produce natural-looking, clear photos that preserve memories effectively."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I remove classmate signatures from school photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This depends on the photo's purpose. Signatures add personal and historical value—they document friendships and show who was important to you. For archival and sentimental purposes, preserve signatures. However, creating a clean version without signatures can be useful for formal display or presentations. The best approach: create two versions—one with original signatures intact, another with signatures removed. Always preserve original scans unchanged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to enhance individual school photos or extract them from yearbook pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have original individual photos (8x10s, wallet-sized), always use those for enhancement—they'll provide better quality than yearbook reproductions. However, yearbook pages are often the only remaining record, especially for classmates' photos or if individual photos are lost. When scanning from yearbooks, expect limitations due to halftone printing and lower quality, but modern restoration can still produce surprisingly good results, especially for digital display."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I identify myself in old group class photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strategies for finding yourself: count rows and positions if you remember placement, compare clothing to other photos from same era, look for characteristic hairstyles or features you remember, ask family members or classmates to help identify, check yearbook pages for the same year (usually list names in order), and compare to individual photo from same year. Enhancement can help by making faded faces clearer, allowing better identification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I modernize old school photos or keep the vintage look?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is a personal choice based on your goals. For historical preservation, maintain period authenticity—keep slight softness, period color characteristics, and vintage qualities. For display and sharing, some modernization (sharpness, color correction, damage removal) improves visual appeal without losing character. The best approach often balances restoration (removing damage and deterioration) with preservation (maintaining period characteristics). Avoid making 1970s photos look like they were taken yesterday—respect the era while improving quality."
+      }
+    }
+  ]
+}
+</script>

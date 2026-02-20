@@ -218,3 +218,51 @@ Don't let damaged, faded family portraits remain hidden in albums or boxes, dete
 Start your family portrait restoration project today with [ArtImageHub's specialized portrait enhancement technology](/old-photo-restoration). Transform damaged, faded heritage portraits into beautiful, clear images worthy of your family legacy. Every restored portrait becomes a family heirloom that will be treasured for generations, connecting past and future through the timeless power of photography.
 
 Your ancestors deserve to be remembered clearly and beautifully. Restored family portraits make that possible, preserving your heritage and ensuring that family connections remain strong across the generations.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI accurately restore faces in damaged family portraits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI restoration is remarkably effective at restoring faces in damaged portraits, with some important qualifications. For minor to moderate facial damage (scratches, spots, slight fading), AI produces excellent results that accurately preserve individual appearance. The technology analyzes intact facial features and uses understanding of human facial structure to repair damaged areas naturally and convincingly. For more extensive damage (large tears across faces, severe fading, or missing sections), AI can reconstruct plausible facial features but accuracy depends on how much original information remains. The system uses facial symmetry, analyzing one side to inform reconstruction of the other, surrounding context to understand lighting and form, and learned patterns of typical facial features. Results are usually convincing and natural-looking, though significant reconstruction may not perfectly capture subtle individual characteristics. For family portraits where absolutely accurate facial representation is critical, extensive damage may require human expert review of AI-reconstructed features."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I identify people in old family portraits with no labels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identifying unlabeled family portrait subjects requires detective work combining multiple research approaches. Interview older relatives who may recognize faces or remember family stories about portraits. Compare faces with labeled portraits looking for family resemblance and matching individuals appearing in multiple photos at different ages. Research family genealogy to establish who lived when and where, narrowing possible identities. Examine clothing, hairstyles, and photographic styles to date portraits within specific periods. Look for photographer marks or studio locations on portraits or their backs, then correlate with family residence history. Use photo dating services or consult experts in historical photography to narrow timeframes. Once you've restored portraits for maximum clarity, facial features may become identifiable to family members who couldn't recognize them in damaged condition. Consider sharing restored portraits in family groups or on genealogy sites where distant relatives might recognize ancestors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I restore old family portraits to black and white or keep sepia tones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This decision depends on the portrait's original characteristics and your personal preferences. For originally black and white portraits that have yellowed or browned over time, you can restore to neutral black and white for a clean, modern appearance, or preserve period-appropriate warm sepia or brown toning for vintage character. For originally sepia-toned portraits where sepia was an intentional artistic choice, preserving or restoring the sepia maintains historical authenticity. For hand-tinted portraits, maintain the hand-tinting as part of the portrait's original character, or remove tinting to create clean black and white if tinting has deteriorated badly. Many people create both versions—a neutrally toned version for modern aesthetic and a warm-toned version that evokes period character. Both approaches have merit. Consider your intended use and personal preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I enlarge small antique portraits like carte-de-visite for printing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, small antique portraits can be enlarged successfully for modern printing with appropriate techniques. Scan small portraits at very high resolution (1200-2400 dpi or higher) to capture maximum available detail. Use AI restoration which simultaneously enhances detail while repairing damage. Apply AI upscaling technology specifically designed to increase image resolution while maintaining or enhancing quality. The combination of high-resolution scanning, restoration, and intelligent upscaling can transform tiny 2.5 x 4 inch carte-de-visite portraits into sharp, clear 8x10 or even larger prints. Results depend on the original portrait's quality and condition—sharply focused originals enlarge better than soft or blurred ones. ArtImageHub's restoration service includes enhancement that improves enlargement potential, making small antique portraits suitable for modern display printing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it okay to remove damage from historical family portraits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Digital restoration that removes damage from family portraits is entirely appropriate and doesn't affect the original photograph, which remains preserved in its current state. You're creating enhanced digital copies while keeping originals safe in archival storage. This approach offers several advantages including preserving originals exactly as they are for historical authenticity, creating enhanced versions that allow clear viewing of faces and details, maintaining both damaged originals and restored copies for different purposes, and making enhanced versions accessible for sharing while protecting fragile originals from handling. Some people worry that restoration somehow dishonors the photographs or their history, but the opposite is true—restoration makes portraits viewable and appreciable while protecting originals from the additional damage that would occur from continued handling. Think of restoration as respectful preservation that allows future generations to see their ancestors clearly rather than through a veil of damage and deterioration."
+      }
+    }
+  ]
+}
+</script>
