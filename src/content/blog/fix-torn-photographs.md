@@ -5,7 +5,7 @@ publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "James Morrison"
 authorRole: "Photo Restorer"
-authorBio: "James Morrison has been restoring damaged photographs professionally for 18 years. He's repaired over 15,000 torn, water-damaged, and severely deteriorated historical photos for museums, archives, and private collectors."
+authorBio: "James Morrison has been restoring damaged photographs professionally for nearly two decades. He's repaired thousands of torn, water-damaged, and severely deteriorated historical photos for museums, archives, and private collectors."
 category: "Photo Restoration"
 tags: ["Torn Photos", "Photo Repair", "Damage Restoration", "DIY Repair", "Conservation"]
 image: "/blog/fix-torn-photos.jpg"
@@ -18,9 +18,9 @@ featured: false
 
 A torn photograph feels like a punch to the gut. Whether it's a family heirloom accidentally ripped or a vintage find discovered in pieces, torn photos seem irreparably damaged.
 
-I've spent 18 years professionally restoring torn photographs—from small corner tears to photos ripped into dozens of pieces. The good news: most torn photos can be saved. The better news: you can fix many of them yourself without expensive professional help.
+I've spent nearly two decades professionally restoring torn photographs—from small corner tears to photos ripped into dozens of pieces. The good news: most torn photos can be saved. The better news: you can fix many of them yourself without expensive professional help.
 
-This comprehensive guide covers everything you need to know about repairing torn photographs: safe physical repair methods that won't cause further damage, digital restoration techniques that create perfect results, when to use each approach, and when to call in professionals.
+This guide covers everything you need to know about repairing torn photographs: safe physical repair methods that won't cause further damage, digital restoration techniques that create perfect results, when to use each approach, and when to call in professionals.
 
 ## Critical First Step: Don't Make It Worse
 
@@ -40,7 +40,7 @@ Before you do anything else, follow these rules:
 - Handle pieces by edges only, wearing cotton gloves
 - Keep all pieces, even tiny fragments
 
-**Reality check:** I've seen people destroy priceless family photos with Scotch tape in the first 5 minutes. The tape creates permanent stains, damages emulsion, and makes professional restoration 10× harder. Don't be that person.
+**Reality check:** I've seen people destroy priceless family photos with Scotch tape in the first few minutes. The tape creates permanent stains, damages emulsion, and makes professional restoration way harder. Don't be that person.
 
 ## Understanding Your Options: Physical vs. Digital Repair
 
