@@ -83,7 +83,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="google8e2b5b4aafc8a040" />
+        <meta name="google-site-verification" content="98cqS97bUFFlYj8cBj00nRpliOpGGgjNoC1gGNmSpoo" />
       </head>
       <body
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}
