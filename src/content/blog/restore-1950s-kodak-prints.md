@@ -111,12 +111,12 @@ As cyan dyes fade preferentially:
 - Blues appear slightly purple
 - Still recognizable colors
 
-**Moderate (30-40 years)**
+**Moderate (several decades)**
 - Obvious pink cast throughout
 - Greens appear yellowish-brown
 - Blues barely visible
 
-**Severe (50-70 years)**
+**Severe (many decades)**
 - Extreme magenta shift
 - Nearly all blues and greens gone
 - Image appears almost monochrome pink
@@ -677,7 +677,7 @@ Even after restoration, preserve originals:
 
 ### Why do 1950s Kodak prints turn pink?
 
-The pink or magenta cast results from differential dye fading in chromogenic prints. Cyan dyes (responsible for blues and greens) fade faster than magenta and yellow dyes. When cyan fades while magenta remains, the overall image shifts pink. This is the most common aging pattern in mid-century color photographs and is completely correctable with proper digital restoration.
+The pink or magenta cast results from differential dye fading in chromogenic prints. Cyan dyes (responsible for blues and greens) fade faster than magenta and yellow dyes. When cyan fades while magenta remains, the overall image shifts pink. This is the most common aging pattern in mid-century color photographs and it's completely correctable with proper digital restoration.
 
 ### Can severely faded 1950s Kodak prints be fully restored?
 

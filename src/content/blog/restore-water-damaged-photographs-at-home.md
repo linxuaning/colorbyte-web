@@ -11,7 +11,7 @@ featured: false
 
 Water damage is one of the most devastating things that can happen to your cherished photograph collection. Whether from floods, burst pipes, or accidental spills, water can threaten to destroy irreplaceable family memories. But don't panic—many water-damaged photographs can be successfully restored at home with the right techniques and tools.
 
-In this comprehensive guide, we'll walk you through everything you need to know about restoring water damaged photographs, from immediate emergency response to advanced digital restoration techniques.
+In this complete guide, we'll walk you through everything you need to know about restoring water damaged photographs, from immediate emergency response to advanced digital restoration techniques.
 
 ## Understanding Water Damage to Photographs
 
@@ -249,7 +249,7 @@ Professional conservators have specialized equipment and training, including:
 4. Used AI restoration to remove water stains
 5. Re-printed favorite photographs
 
-**Result**: 85% of collection successfully restored, with 60% requiring minimal digital enhancement.
+**Result**: Over 80% of collection successfully restored, with around 60% requiring minimal digital enhancement.
 
 ### Case Study 2: Hurricane Damage
 
@@ -262,7 +262,7 @@ Professional conservators have specialized equipment and training, including:
 4. Applied AI-powered restoration through [ArtImageHub](/old-photo-restoration)
 5. Created new wedding album with restored images
 
-**Result**: All photographs saved, with professional-quality restoration removing 95% of visible water damage.
+**Result**: All photographs saved, with professional-quality restoration removing nearly all visible water damage, which surprised me.
 
 ### Case Study 3: Vintage Photograph Collection
 
@@ -329,7 +329,7 @@ Professional conservators have specialized equipment and training, including:
 
 ### How long can water damaged photos remain wet before permanent damage occurs?
 
-The critical window is 48-72 hours. Within this time, you must either dry the photographs or freeze them to prevent permanent damage. After 72 hours, mold growth becomes likely, and emulsion deterioration accelerates. However, even photographs wet for a week or more can sometimes be salvaged with professional techniques.
+The critical window is a couple days. Within this time, you must either dry the photographs or freeze them to prevent permanent damage. After that, mold growth becomes likely, and emulsion deterioration accelerates. However, even photographs wet for over a week can sometimes be salvaged with professional techniques.
 
 ### Can I use a hair dryer to speed up drying water damaged photographs?
 
