@@ -135,7 +135,7 @@ Restore.photos is completely free with no limits—you can restore hundreds of p
 
 **Severe fading:** Photos that were extremely faded (barely visible) often came out still faded, just slightly better.
 
-**Color accuracy:** Less sophisticated than ArtImageHub. Colors were improved but sometimes off. A 1970s photo with heavy magenta cast came out with overcorrected cyan cast.
+**Color accuracy:** Not as advanced as ArtImageHub. Colors were improved but sometimes off. A 1970s photo with heavy magenta cast came out with overcorrected cyan cast.
 
 **Face enhancement:** Minimal face-specific processing. Faces improved along with overall image but not targeted enhancement.
 
@@ -396,7 +396,7 @@ Photopea is a browser-based Photoshop clone that's shockingly capable. It can ev
 Same workflow as Pixlr (see above), but with more advanced tools available:
 - Adjustment layers (non-destructive editing)
 - Layer masks (selective adjustments)
-- More sophisticated healing tools
+- More powerful healing tools
 - Better color correction options
 
 #### Best For
