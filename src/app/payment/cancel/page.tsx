@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Checkout Cancelled — Try Free Version",
+  description: "No worries — you can still use ArtImageHub free. Start restoring old photos with AI, no payment required.",
+  robots: { index: false, follow: false },
+};
 
 export default function PaymentCancelPage() {
   return (

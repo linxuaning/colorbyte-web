@@ -221,31 +221,49 @@ export default function RestoreClient() {
         <div
           onDragOver={(e) => e.preventDefault()}
           onDrop={onDrop}
-          className="flex flex-col items-center gap-4 rounded-xl border-2 border-dashed p-12 text-center transition-colors hover:border-primary/50 hover:bg-muted/50"
+          onClick={() => fileInputRef.current?.click()}
+          className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
         >
-          <Upload className="h-12 w-12 text-muted-foreground" />
-          <p className="text-lg font-medium">Drop your photo here</p>
-          <p className="text-sm text-muted-foreground">
-            or click to upload &middot; JPG, PNG, WEBP &middot; Max 20MB
-          </p>
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => fileInputRef.current?.click()}
-              className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <Upload className="h-4 w-4" />
-              Upload Photo
-            </button>
+          {/* Upload icon */}
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
+            <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
           </div>
-          <label className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-            <input
-              type="checkbox"
-              checked={colorize}
-              onChange={(e) => setColorize(e.target.checked)}
-              className="rounded"
-            />
+
+          {/* Text */}
+          <div>
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
+            <p className="mt-1.5 text-[14px] text-[#6e6e73]">
+              or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+            </p>
+          </div>
+
+          {/* CTA button */}
+          <button
+            onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+          >
+            <Upload className="h-4 w-4" />
+            Choose Photo
+          </button>
+
+          {/* Colorize toggle */}
+          <label
+            className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span className="relative inline-flex h-5 w-9 items-center">
+              <input
+                type="checkbox"
+                checked={colorize}
+                onChange={(e) => setColorize(e.target.checked)}
+                className="peer sr-only"
+              />
+              <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
+              <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
+            </span>
             Colorize black &amp; white photo
           </label>
+
           <input
             ref={fileInputRef}
             type="file"
@@ -256,7 +274,7 @@ export default function RestoreClient() {
               if (file) handleFile(file);
             }}
           />
-          <p className="mt-2 text-xs text-muted-foreground">
+          <p className="text-[12px] text-[#6e6e73]/70">
             You can also paste an image with Ctrl+V
           </p>
         </div>
@@ -264,41 +282,40 @@ export default function RestoreClient() {
 
       {/* --- UPLOADING / PROCESSING --- */}
       {(stage === "uploading" || stage === "processing") && (
-        <div className="flex flex-col items-center gap-6 rounded-xl border p-12 text-center">
+        <div className="flex flex-col items-center gap-7 rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-12 text-center">
           {preview && (
             <img
               src={preview}
               alt="Uploaded photo being processed"
-              className="h-48 w-auto rounded-lg object-contain"
+              className="h-48 w-auto rounded-xl object-contain shadow-sm"
             />
           )}
           <div className="w-full max-w-sm">
-            <div className="relative h-3 overflow-hidden rounded-full bg-muted">
+            <div className="relative h-1.5 overflow-hidden rounded-full bg-[#d2d2d7]/60">
               <div
-                className="h-full rounded-full bg-primary transition-all duration-500"
+                className="h-full rounded-full bg-[#0071e3] transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <p className="mt-3 text-sm font-medium">
-              {progressText || "Processing..."} {progress > 0 && `${progress}%`}
+            <p className="mt-3 text-[14px] font-medium text-[#1d1d1f]">
+              {progressText || "Processing..."}{progress > 0 && ` — ${progress}%`}
             </p>
             {stage === "processing" && progress < 30 && (
-              <p className="mt-1 text-xs text-muted-foreground">
-                First processing may take longer while the AI warms up. Please
-                wait...
+              <p className="mt-1.5 text-[12px] text-[#6e6e73]">
+                First processing may take a moment while the AI warms up.
               </p>
             )}
           </div>
-          <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+          <Loader2 className="h-5 w-5 animate-spin text-[#6e6e73]" />
         </div>
       )}
 
       {/* --- DONE: Before/After comparison --- */}
       {stage === "done" && resultUrl && (
         <div className="space-y-6">
-          <div className="flex items-center justify-center gap-2 text-lg font-semibold">
-            <CheckCircle2 className="h-5 w-5 text-green-600" />
-            Photo Restored!
+          <div className="flex items-center justify-center gap-2 text-[17px] font-semibold text-[#1d1d1f]">
+            <CheckCircle2 className="h-5 w-5 text-green-500" />
+            Photo Restored
           </div>
 
           <BeforeAfterSlider
@@ -306,17 +323,17 @@ export default function RestoreClient() {
             afterSrc={resultUrl}
           />
 
-          <div className="flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground">
-            <span className="rounded-full bg-muted px-3 py-1">Face Enhancement</span>
-            <span className="rounded-full bg-muted px-3 py-1">Super Resolution</span>
-            {colorize && (
-              <span className="rounded-full bg-muted px-3 py-1">Colorized</span>
-            )}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            {["Face Enhancement", "Super Resolution", ...(colorize ? ["Colorized"] : [])].map((tag) => (
+              <span key={tag} className="rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/40 px-3 py-1 text-[13px] text-[#6e6e73]">
+                {tag}
+              </span>
+            ))}
           </div>
 
           {/* Download Options Card */}
-          <div className="mx-auto max-w-md rounded-xl border bg-card p-6">
-            <h3 className="mb-4 text-center text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+          <div className="mx-auto max-w-md rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-7">
+            <h3 className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">
               Download Options
             </h3>
 
@@ -325,16 +342,16 @@ export default function RestoreClient() {
               <a
                 href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
                 download
-                className="flex w-full flex-col items-center gap-1 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
               >
                 <span className="flex items-center gap-2">
                   <Crown className="h-4 w-4" />
                   Download Original Quality
                 </span>
-                <span className="text-xs opacity-80">PRO Member — Unlimited downloads</span>
+                <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
               </a>
             ) : (
-              <div className="space-y-3">
+              <div className="space-y-2.5">
                 {/* Free Download */}
                 {remaining > 0 ? (
                   <a
@@ -345,36 +362,36 @@ export default function RestoreClient() {
                       setRemaining(next);
                       if (next <= 0) setLimitReached(true);
                     }}
-                    className="flex w-full flex-col items-center gap-1 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                    className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
                   >
                     <span className="flex items-center gap-2">
                       <Download className="h-4 w-4" />
                       Download 720p — FREE
                     </span>
-                    <span className="text-xs opacity-80">
+                    <span className="text-[11px] opacity-70 font-normal">
                       {remaining} download{remaining !== 1 ? "s" : ""} remaining today
                     </span>
                   </a>
                 ) : (
                   <button
                     onClick={() => setShowLimitModal(true)}
-                    className="flex w-full cursor-not-allowed flex-col items-center gap-1 rounded-lg bg-muted px-6 py-3 text-sm font-medium text-muted-foreground"
+                    className="flex w-full cursor-not-allowed flex-col items-center gap-1 rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/60 px-6 py-3.5 text-[14px] font-medium text-[#6e6e73]"
                   >
                     <span className="flex items-center gap-2">
                       <XCircle className="h-4 w-4" />
                       Daily Limit Reached (0/3)
                     </span>
-                    <span className="text-xs">Resets at midnight UTC</span>
+                    <span className="text-[11px]">Resets at midnight UTC</span>
                   </button>
                 )}
 
                 {/* Trial CTA */}
                 <Link
                   href="/#pricing"
-                  className={`flex w-full flex-col items-center gap-1 rounded-lg px-6 py-3 text-sm font-medium transition-opacity hover:opacity-90 ${
+                  className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
                     remaining === 0
-                      ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
-                      : "border-2 border-primary text-primary hover:bg-primary/10"
+                      ? "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
+                      : "border border-[#0071e3] text-[#0071e3] hover:bg-[#0071e3]/5"
                   }`}
                 >
                   <span className="flex items-center gap-2">
@@ -383,18 +400,18 @@ export default function RestoreClient() {
                       ? "Start 7-Day Free Trial — Unlimited Downloads"
                       : "Start 7-Day Free Trial"}
                   </span>
-                  <span className={`text-xs ${remaining === 0 ? "opacity-80" : "text-muted-foreground"}`}>
+                  <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
                     {remaining === 0
-                      ? "\u2713 No watermark  \u2713 Original quality  \u2713 $0 today"
-                      : "Get original quality, no watermark, unlimited"}
+                      ? "No watermark  ·  Original quality  ·  $0 today"
+                      : "Original quality · No watermark · Unlimited"}
                   </span>
                 </Link>
               </div>
             )}
 
             {!isSubscriber && (
-              <p className="mt-4 text-center text-xs text-muted-foreground">
-                Your trial starts free. Card required, $9.9/mo after 7 days. Cancel anytime.
+              <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
+                Trial is free. Card required, $9.9/mo after 7 days. Cancel anytime.
               </p>
             )}
           </div>
@@ -413,9 +430,9 @@ export default function RestoreClient() {
           <div className="flex justify-center">
             <button
               onClick={reset}
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+              className="inline-flex items-center gap-2 text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
             >
-              <RotateCcw className="h-4 w-4" />
+              <RotateCcw className="h-3.5 w-3.5" />
               Restore Another Photo
             </button>
           </div>
@@ -424,54 +441,44 @@ export default function RestoreClient() {
 
       {/* --- ERROR --- */}
       {stage === "error" && (
-        <div className="flex flex-col items-center gap-4 rounded-xl border border-destructive/20 bg-destructive/5 p-12 text-center">
-          <AlertCircle className="h-10 w-10 text-destructive" />
-          <p className="text-lg font-medium">Oops, Something Went Wrong</p>
-          <p className="max-w-md text-sm text-muted-foreground">{errorMsg}</p>
-          <div className="flex gap-3">
-            <button
-              onClick={reset}
-              className="inline-flex h-10 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              <RotateCcw className="h-4 w-4" />
-              Try Again
-            </button>
+        <div className="flex flex-col items-center gap-5 rounded-2xl border border-red-100 bg-red-50/50 p-12 text-center">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white border border-red-100 shadow-sm">
+            <AlertCircle className="h-7 w-7 text-red-500" />
           </div>
+          <div>
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
+            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
+          </div>
+          <button
+            onClick={reset}
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
+          >
+            <RotateCcw className="h-4 w-4" />
+            Try Again
+          </button>
         </div>
       )}
 
       {/* --- How It Works (below fold) --- */}
       {stage === "idle" && (
-        <div className="mt-16">
-          <h2 className="text-center text-xl font-semibold">How It Works</h2>
-          <div className="mt-8 grid gap-6 text-center sm:grid-cols-3">
-            <div>
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
-                1
+        <div className="mt-16 border-t border-[#d2d2d7]/40 pt-12">
+          <p className="text-center text-[13px] font-semibold uppercase tracking-[0.08em] text-[#6e6e73] mb-8">
+            How It Works
+          </p>
+          <div className="grid gap-5 text-center sm:grid-cols-3">
+            {[
+              { n: "1", title: "Upload", desc: "Drop or select your old photo" },
+              { n: "2", title: "AI Restores", desc: "Face enhancement + super resolution" },
+              { n: "3", title: "Download", desc: "Compare before/after and download" },
+            ].map((s) => (
+              <div key={s.n} className="rounded-2xl bg-[#f5f5f7] p-6">
+                <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-[#0071e3] text-[13px] font-bold text-white">
+                  {s.n}
+                </div>
+                <p className="mt-3 text-[15px] font-semibold text-[#1d1d1f]">{s.title}</p>
+                <p className="mt-1 text-[13px] text-[#6e6e73]">{s.desc}</p>
               </div>
-              <p className="mt-2 text-sm font-medium">Upload</p>
-              <p className="text-xs text-muted-foreground">
-                Drop or select your old photo
-              </p>
-            </div>
-            <div>
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
-                2
-              </div>
-              <p className="mt-2 text-sm font-medium">AI Restores</p>
-              <p className="text-xs text-muted-foreground">
-                Face enhancement + super resolution
-              </p>
-            </div>
-            <div>
-              <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
-                3
-              </div>
-              <p className="mt-2 text-sm font-medium">Download</p>
-              <p className="text-xs text-muted-foreground">
-                Compare before/after and download
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       )}
@@ -520,75 +527,71 @@ function LimitReachedModal({
       />
 
       {/* Modal */}
-      <div className="relative z-10 w-full max-w-md rounded-2xl bg-background p-6 shadow-xl">
+      <div className="relative z-10 w-full max-w-md rounded-2xl bg-white p-7 shadow-2xl border border-[#d2d2d7]/40">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-muted-foreground hover:text-foreground"
+          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#f5f5f7] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
         >
-          <XCircle className="h-5 w-5" />
+          <XCircle className="h-4 w-4" />
         </button>
 
         <div className="text-center">
           {/* Icon */}
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
-            <XCircle className="h-6 w-6 text-red-600" />
+          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#fff2f2] border border-red-100">
+            <XCircle className="h-7 w-7 text-red-500" />
           </div>
 
-          <h2 className="text-2xl font-bold">Daily Limit Reached</h2>
-          <p className="mt-2 text-muted-foreground">
+          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Daily Limit Reached</h2>
+          <p className="mt-2 text-[14px] text-[#6e6e73] leading-[1.6]">
             You&apos;ve used all 3 free downloads for today.
             <br />
             Your limit resets in {timeToReset}.
           </p>
 
           {/* Trial Benefits Card */}
-          <div className="mt-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 p-6 dark:from-blue-950/30 dark:to-purple-950/30">
-            <h3 className="text-lg font-semibold">Start Your 7-Day Free Trial</h3>
-            <p className="mt-1 text-sm text-muted-foreground">
+          <div className="mt-6 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]/40 p-6 text-left">
+            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Start Your 7-Day Free Trial</h3>
+            <p className="text-[13px] text-[#6e6e73] mb-4">
               Get unlimited downloads immediately:
             </p>
 
-            <div className="mt-4 space-y-2 text-left text-sm">
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-600" />
-                <span>Unlimited downloads (no daily limit)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-600" />
-                <span>Original quality (full resolution)</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-600" />
-                <span>No watermark</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-600" />
-                <span>Priority processing</span>
-              </div>
+            <div className="space-y-2.5 text-[14px]">
+              {[
+                "Unlimited downloads (no daily limit)",
+                "Original quality (full resolution)",
+                "No watermark",
+                "Priority processing",
+              ].map((benefit) => (
+                <div key={benefit} className="flex items-center gap-2.5">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/10">
+                    <Check className="h-3 w-3 text-[#0071e3]" />
+                  </div>
+                  <span className="text-[#1d1d1f]">{benefit}</span>
+                </div>
+              ))}
             </div>
 
             <button
               onClick={onStartTrial}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
             >
               <Crown className="h-4 w-4" />
               Start Free Trial — $0 Today
             </button>
 
-            <p className="mt-3 text-xs text-muted-foreground">
+            <p className="mt-3 text-center text-[12px] text-[#6e6e73]">
               $9.9/month after trial. Cancel anytime in 1 click.
             </p>
           </div>
 
           {/* Secondary Option */}
-          <div className="mt-4 rounded-lg bg-muted/50 p-4">
-            <p className="text-sm text-muted-foreground">Or wait for limit reset</p>
+          <div className="mt-4">
             <button
               onClick={onClose}
-              className="mt-1 text-sm text-muted-foreground hover:text-foreground"
+              className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
             >
-              Come Back Later
+              Come back later
             </button>
           </div>
         </div>
@@ -640,7 +643,7 @@ function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative mx-auto aspect-[4/3] max-w-2xl cursor-col-resize select-none overflow-hidden rounded-xl border"
+      className="relative mx-auto aspect-[4/3] max-w-2xl cursor-col-resize select-none overflow-hidden rounded-2xl border border-[#d2d2d7]/50 shadow-sm"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -670,18 +673,18 @@ function BeforeAfterSlider({
       </div>
       {/* Slider line */}
       <div
-        className="absolute top-0 bottom-0 z-10 w-0.5 bg-white shadow-lg"
+        className="absolute top-0 bottom-0 z-10 w-0.5 bg-white/90 shadow-[0_0_12px_rgba(255,255,255,0.6)]"
         style={{ left: `${sliderPos}%` }}
       >
-        <div className="absolute top-1/2 left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-black/50 text-white">
+        <div className="absolute top-1/2 left-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-white/20 backdrop-blur-sm shadow-md text-white">
           <GripVertical className="h-4 w-4" />
         </div>
       </div>
       {/* Labels */}
-      <span className="absolute top-3 left-3 rounded bg-black/50 px-2 py-0.5 text-xs font-medium text-white">
+      <span className="absolute bottom-3 left-3 rounded-full bg-black/55 backdrop-blur-sm px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-white/90">
         Before
       </span>
-      <span className="absolute top-3 right-3 rounded bg-black/50 px-2 py-0.5 text-xs font-medium text-white">
+      <span className="absolute bottom-3 right-3 rounded-full bg-[#0071e3]/80 backdrop-blur-sm px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-white">
         After
       </span>
     </div>

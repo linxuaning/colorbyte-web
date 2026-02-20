@@ -1,4 +1,24 @@
+# ArtImageHub — robots.txt
+# https://artimagehub.com
+
 User-agent: *
 Allow: /
 
+# Block utility/system pages from crawling
+Disallow: /payment/
+Disallow: /subscription
+Disallow: /api/
+
+# Allow key static assets (CSS/JS needed for rendering)
+Allow: /_next/static/
+Allow: /blog/
+Allow: /old-photo-restoration
+Allow: /resources
+Allow: /privacy
+Allow: /terms
+
+# Crawl delay (be kind to our servers; 1 second between requests)
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://artimagehub.com/sitemap.xml

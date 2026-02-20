@@ -140,7 +140,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
-    const processedContent = await remark().use(html).process(content);
+    const processedContent = await remark().use(html, { allowDangerousHtml: true }).process(content);
     let contentHtml = processedContent.toString();
 
     const headings = extractHeadings(contentHtml);

@@ -1,0 +1,51 @@
+# ArtImageHub — AI Photo Restoration
+
+> ArtImageHub is an AI-powered photo restoration platform that fixes old, damaged, and faded photos in seconds. No design skills required.
+
+## What We Do
+
+ArtImageHub uses state-of-the-art AI models (GFPGAN face enhancement, Real-ESRGAN super resolution) to:
+- Restore old, scratched, and damaged photographs
+- Enhance facial details in vintage portraits
+- Upscale photo resolution up to 4× original size
+- Colorize black and white photographs
+- Remove fading, water damage, and chemical degradation
+
+## Who Uses It
+
+- People with old family photos (35–65 years old)
+- Genealogy researchers preserving family history
+- Photographers working with historical archives
+- Anyone with damaged or faded photo prints
+
+## Key Facts
+
+- Free tier: 3 restorations per day, 720p output, small watermark
+- Pro plan: $9.90/month — unlimited restorations, original quality, no watermark
+- 7-day free trial — no charge until trial ends, cancel anytime
+- Processing time: 15–30 seconds per photo
+- Supported formats: JPG, PNG, WEBP up to 20MB
+- Privacy: all photos deleted after 24 hours, never shared or trained on
+- No account required to use free tier
+
+## Competitive Position
+
+- vs Remini: ArtImageHub works on desktop and handles entire photo archives
+- vs MyHeritage: standalone tool, faster processing, lower price
+- vs Photoshop: zero skill required, results in 30 seconds vs hours
+
+## Content & Resources
+
+- Blog: /blog — expert guides on photo restoration, preservation, and family history
+- Key guides:
+  - How AI photo restoration works
+  - How to restore old photos step-by-step
+  - How to preserve old photos at home
+  - Colorizing black and white photos
+  - Fixing blurry old photos
+
+## Contact & Legal
+
+- Website: https://artimagehub.com
+- Privacy Policy: https://artimagehub.com/privacy
+- Terms of Service: https://artimagehub.com/terms
