@@ -307,6 +307,47 @@ I'll be upfront: I went in skeptical. I've spent years shooting and editing prof
 
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI enhance a photo that's extremely blurry or tiny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on how much information survives. Small but sharp originals respond well to AI upscaling. Blurry originals are harder. The practical threshold: if the main subject (especially a face) is at least 128×128 pixels, modern face enhancement models have enough to work with. For tiny prints, scan at 1200 DPI to give the AI more pixels to analyze."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will AI enhancement change how my relatives look in old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern tools are designed to preserve identity, but it's imperfect. Face restoration models include identity preservation in their training objectives. In practice, results are accurate 90-95% of the time. Always compare the output to the original and flag anything that looks 'not quite right' about the person."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a difference between AI upscaling and AI enhancement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Upscaling makes an image bigger. Enhancement improves image quality by repairing damage, reducing noise, sharpening, or correcting color. The best tools do both, but they're different processes. For old scanned photos, you typically want both — enhancement to repair damage and upscaling to produce a print-ready file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do AI image enhancers cost, and is the paid version worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free tiers are worth trying before committing. Most tools offer 3-10 photos per day free. For anything beyond casual use, paid plans at $9-20/month pay for themselves quickly. A single month's subscription to ArtImageHub at $9.90 gets unlimited photos — a box of 200 scanned prints costs about five cents each."
+      }
+    }
+  ]
+}
+</script>
+
 The grandfather's fishing photo is on my mom's wall now. Eight by ten, framed, the crease completely gone and his expression clear enough to show the smirk my brother and I apparently inherited. She cried when she opened it. My brother got full credit — which is fine.
 
 The right AI tool for old photos exists. [Start with a free test on ArtImageHub](/old-photo-restoration) and see for yourself what's possible with the photos you've been meaning to fix for years.

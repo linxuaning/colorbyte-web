@@ -225,6 +225,47 @@ Chemical damage: Test carefully before committing. AI may over-correct; manual w
 <h3>I only have a phone photo of the scratched print. Will restoration still work?</h3>
 <p>It will work, with caveats. A phone photo introduces its own complications: perspective distortion, uneven lighting that creates false shadows across scratches, lens sharpening that interferes with AI analysis. If you must use a phone photo, shoot in a well-lit room with indirect natural light (direct sun creates glare), hold the phone directly parallel to the print (not at an angle), and use the camera app rather than a "document scanner" app. Even a decent phone capture of a scratched print will produce a better AI restoration result than no digitization at all. But if you have access to a flatbed scanner — many libraries offer free scanning days — it's worth making the trip for irreplaceable photographs.</p>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you remove scratches from a photo without Photoshop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — AI tools like ArtImageHub handle scratch removal without any Photoshop knowledge required. For minor surface scratches, even Lightroom's healing brush tool works well. For most family photographs, an AI pipeline produces excellent results without manual editing software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will scratch removal make the photo look fake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 'fake' look comes from over-processing or AI hallucination. For scratch-only damage on a good photo, use targeted removal rather than a full restoration pipeline. Always compare the result to the original and look for anything that doesn't belong."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a scratch and a crack in an old photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cracks (craquelure) are a network of fine breaks in the emulsion distributed across the whole image. Scratches are single linear damage events. Both appear as lines in a scan, but cracks are finer, more numerous, and follow branching patterns. AI restoration handles both well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I only have a phone photo of the scratched print. Will restoration still work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It will work, with caveats. A phone photo introduces perspective distortion, uneven lighting, and lens sharpening issues. Shoot in indirect natural light, hold the phone parallel to the print, and use the camera app. Even a decent phone capture will produce better AI results than no digitization at all."
+      }
+    }
+  ]
+}
+</script>
+
 <hr />
 
 <p>David's grandfather's portrait now lives in a frame on David's wall. The scratch is gone. The face is clear — formal, serious, young. You can see the rank insignia on the shoulder. There's a slight imprecision in the jaw reconstruction where the emulsion scratch was deepest, visible at very close range, but at normal viewing distance the photograph tells its story without interruption.</p>

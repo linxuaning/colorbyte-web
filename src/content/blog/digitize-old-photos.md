@@ -217,6 +217,47 @@ Here is everything I know about digitizing old photographs.
 <h3>How do I organize thousands of digitized photos?</h3>
 <p>Start with chronological folder organization: a top-level folder per decade, subfolders per year or event. Apply a consistent file naming convention immediately on import — not later, because "later" rarely comes. Include at minimum the approximate date and a brief description in the filename. For family identification metadata (who's in the photo), digiKam and Apple Photos both support face tagging that can help you organize a large collection over time. The most important principle: organize as you scan, not after. It takes maybe 15 extra seconds per photo to give it a useful filename while you still know the context. Doing it later, when you're staring at 400 files called "scan001.jpg," is an entirely different and much more discouraging project.</p>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best resolution to scan old photos for restoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "600 DPI for standard 4×6 and 5×7 prints; 1200 DPI for wallet-size and smaller prints; 1200 DPI for any print you plan to enlarge significantly. Save as TIFF for archival masters. For AI restoration tools, 600 DPI is the practical minimum for face restoration algorithms to work well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth paying for a professional scanning service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For collections under 100 photos, do it yourself with a flatbed scanner. For 200-500 photos, professional services at $0.08-$0.20 per photo are worth considering. For over 500 photos or collections with film negatives and slides, professional services or auto-feed scanners become genuinely practical. The most expensive mistake is leaving a large collection undigitized indefinitely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my iPhone to scan old photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with caveats. iPhone cameras can produce usable scans, especially with apps like Google PhotoScan. The quality won't match a flatbed scanner, but for capturing photos in one location, a good phone photo is far better than nothing. Use the stock camera app, shoot in indirect natural light, and hold the phone parallel to the print."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I organize thousands of digitized photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with chronological folder organization: top-level folder per decade, subfolders per year or event. Apply a consistent file naming convention immediately on import. Include the approximate date and brief description in the filename. The most important principle: organize as you scan, not after."
+      }
+    }
+  ]
+}
+</script>
+
 <hr />
 
 <p>I finished scanning my parents' box of photographs over three weekends. Roughly 290 prints, all scanned at 600 DPI, saved as TIFF, backed up in three places. Then I ran the most important ones through <a href="/old-photo-restoration">ArtImageHub's restoration tool</a> — particularly the oldest prints from the 1940s and 1950s, which had developed the cyan fading and slight silver mirroring I was worried about. The results were dramatic. My grandfather at twenty-something, in a portrait I'd never been able to quite read because of the fading, came back clear: a young man I didn't know but could now see.</p>

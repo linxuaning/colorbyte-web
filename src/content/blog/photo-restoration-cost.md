@@ -310,6 +310,47 @@ That's what this article is about: making an informed choice. Because the range 
 
 <p>The honest framing: AI restoration has commoditized the routine work. What used to cost $100 and three weeks now costs $0.20 and ninety seconds, and for most old family photos the quality difference is not meaningful. The photos where professional restoration is still worth it are the genuinely irreplaceable ones — and in a typical family collection, those number in the single digits, not the hundreds. Spend AI budget on the bulk, professional budget on what truly matters.</p>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to restore one old photo professionally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "$50–$150 for standard damage; $150–$500 for complex or severe damage. Prices vary significantly between studios and individual artists. Ask for a detailed quote based on the actual photo, not a generic price list."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are AI photo restoration tools really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, within limits. ArtImageHub offers 3 photos per day free with no account required. Paid plans at $9.90/month remove limits entirely. Free tiers are genuinely useful for small projects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can photo restoration be done from a phone photo of a print?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but quality will be noticeably lower than from a proper scan. Phone photos introduce distortion, glare, and uneven lighting. For important photos, a proper flatbed scan at 600 DPI is worth the effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth paying for professional restoration when AI tools exist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most photos, no — AI delivers 80–95% of professional quality for a fraction of the cost. For the most important photos in a collection, professional restoration is still worth it. In a typical family collection, those photos number in the single digits, not the hundreds."
+      }
+    }
+  ]
+}
+</script>
+
 ---
 
 The clearest sign of how much has changed: Sandra paid $0 for a result that would have cost her $400 two years ago. The money she saved went toward the professionally done memorial piece that she actually needed a professional for — the hand-painted version for the family memorial display, done with care and time and artistry that AI doesn't replicate.

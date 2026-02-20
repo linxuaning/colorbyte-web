@@ -295,6 +295,47 @@ Here's what I found.
 <h3>What's the best free tool for enhancing old photos specifically?</h3>
 <p>Based on my 200-photo test, <a href="/old-photo-restoration">ArtImageHub</a> consistently produced the best results on photographs from the 1920s through 1970s — the era where specialized damage handling matters most. MyHeritage was a strong second for photos with significant facial damage. If you need to process a very large batch without daily limits, combine Upscayl (unlimited local upscaling) with ArtImageHub's daily free credits for the key photos that need face restoration. That combination gives you most of what you'd get from a paid plan.</p>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are free photo enhancers actually free, or do they add watermarks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The top tools — ArtImageHub, Upscayl, and Remini on Android — all offer genuinely watermark-free free tiers with daily or monthly limits. Upscayl is fully free and open-source with no watermarks ever. Always download and zoom to 100% before considering the job done to check for watermarks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many photos can I enhance for free per day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies by tool. ArtImageHub allows 5 photos per day on the free tier. Remini gives 5 credits per day. Upscayl (desktop app) is completely unlimited since it runs locally. For large batches, use Upscayl for bulk upscaling, then use ArtImageHub's daily credits on the most important photos needing face restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will enhancing a photo make it look fake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 'fake' or 'plastic' look comes from over-processing and face hallucination. Both are manageable. For modern photos, use 'light' enhancement settings. For old photos, use dedicated restoration pipelines. Always compare the result to the original — your eye will catch anything that looks wrong."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best free tool for enhancing old photos specifically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Based on 200-photo testing, ArtImageHub consistently produced the best results on photographs from the 1920s through 1970s. MyHeritage was a strong second for photos with significant facial damage. For large batches, combine Upscayl with ArtImageHub's daily free credits for key photos."
+      }
+    }
+  ]
+}
+</script>
+
 <hr />
 
 <p>Renata sent me photos of her mother's birthday party a few weeks later. The grandmother's portrait was framed on the wall, enlarged to 8×10, faces clear enough to show a resemblance to Renata's teenage daughter that none of them had noticed before. The AI didn't do something magical. It did something practical — removed 70 years of damage from a photograph that had already survived the journey across an ocean. That's a reasonable ask of a free tool, and the best ones are now genuinely up to it.</p>
