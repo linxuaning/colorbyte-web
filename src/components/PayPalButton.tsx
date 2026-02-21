@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { trackPaymentClick, trackPaymentSuccess } from "@/lib/analytics";
 
 declare global {
   interface Window {
@@ -53,6 +54,9 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
       .Buttons({
         createOrder: async () => {
           try {
+            // Track payment button click
+            trackPaymentClick('Pro Lifetime - $29.9');
+
             const response = await fetch(
               "https://colorbyte-api.onrender.com/api/payment/paypal-create-order",
               {
@@ -101,6 +105,9 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             const result = await response.json();
 
             if (result.success) {
+              // Track successful payment
+              trackPaymentSuccess(29.9);
+
               if (onSuccess) {
                 onSuccess(data.orderID);
               } else {

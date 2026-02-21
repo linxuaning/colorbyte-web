@@ -14,6 +14,7 @@ import {
   XCircle,
   Check,
 } from "lucide-react";
+import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -116,6 +117,10 @@ export default function RestoreClient() {
             setTaskId(data.task_id);
             setStage("processing");
             setProgressText("Processing started...");
+
+            // Track successful upload
+            trackPhotoUpload();
+
             lastError = null;
             break;
           } catch (err) {
@@ -342,6 +347,7 @@ export default function RestoreClient() {
               <a
                 href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
                 download
+                onClick={() => trackPhotoDownload('pro')}
                 className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
               >
                 <span className="flex items-center gap-2">
@@ -358,6 +364,7 @@ export default function RestoreClient() {
                     href={resultUrl}
                     download
                     onClick={() => {
+                      trackPhotoDownload('free');
                       const next = remaining - 1;
                       setRemaining(next);
                       if (next <= 0) setLimitReached(true);
@@ -388,6 +395,7 @@ export default function RestoreClient() {
                 {/* Trial CTA */}
                 <Link
                   href="/#pricing"
+                  onClick={() => trackCTAClick('restore-page')}
                   className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
                     remaining === 0
                       ? "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
