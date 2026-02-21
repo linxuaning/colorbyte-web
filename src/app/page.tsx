@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PricingSection from "./pricing-section";
+import UserCounter from "@/components/UserCounter";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
@@ -166,25 +167,40 @@ export default function HomePage() {
                 Upload a damaged, faded, or black&#160;&amp;&#160;white photo — our AI restores it to stunning clarity in seconds. Free to try, no account needed.
               </p>
 
+              {/* User Counter */}
+              <div className="mt-8">
+                <UserCounter />
+              </div>
+
               {/* CTAs */}
-              <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="mt-8 flex flex-col items-start gap-3">
                 <Link
                   href="/old-photo-restoration"
-                  className="inline-flex h-13 items-center rounded-full bg-[#8B5E3C] px-8 font-lora text-[16px] font-600 text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.97] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/25"
+                  className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
                 >
-                  Restore a Photo — Free
-                </Link>
-                <Link
-                  href="/#how-it-works"
-                  className="inline-flex h-13 items-center gap-2 px-2 font-lora text-[15px] font-500 text-[#6b5344] hover:text-[#8B5E3C] transition-colors group"
-                >
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#d4bc91] group-hover:border-[#8B5E3C] transition-colors">
-                    <svg className="h-3.5 w-3.5 translate-x-px" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                      <path d="M4 9L8 6L4 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <span className="relative z-10 flex items-center gap-2">
+                    Restore Your Photo Free — Takes 30 Seconds
+                    <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
-                  See How It Works
+                  {/* Shimmer effect */}
+                  <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
                 </Link>
+
+                {/* No signup emphasis */}
+                <div className="flex flex-wrap items-center gap-4 text-[13px] text-[#6b5344] pl-2">
+                  {[
+                    { icon: "✓", text: "No signup" },
+                    { icon: "✓", text: "No download" },
+                    { icon: "✓", text: "Instant results" },
+                  ].map((item) => (
+                    <span key={item.text} className="flex items-center gap-1.5 font-lora font-500">
+                      <span className="text-[#8B5E3C] text-[16px] font-700">{item.icon}</span>
+                      {item.text}
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {/* Trust signals */}
@@ -618,9 +634,15 @@ export default function HomePage() {
           <div className="mt-12 pt-12 border-t border-[#d4bc91]/40 text-center">
             <Link
               href="/old-photo-restoration"
-              className="inline-flex h-13 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[16px] font-600 text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.97] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/20"
+              className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
             >
-              Try It Now — Free
+              <span className="relative z-10 flex items-center gap-2">
+                Restore Your Photo Free — Takes 30 Seconds
+                <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
             </Link>
           </div>
         </div>
@@ -722,13 +744,19 @@ export default function HomePage() {
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/old-photo-restoration"
-                className="inline-flex h-13 items-center rounded-full bg-[#D4A96A] px-9 font-lora text-[16px] font-600 text-[#2c2416] hover:bg-[#c49a5a] active:scale-[0.97] transition-all duration-200 shadow-xl shadow-[#D4A96A]/20"
+                className="group inline-flex h-14 items-center rounded-full bg-[#D4A96A] px-9 font-lora text-[17px] font-600 text-[#2c2416] hover:bg-[#c49a5a] hover:shadow-2xl active:scale-[0.97] transition-all duration-300 shadow-xl shadow-[#D4A96A]/20 hover:shadow-[#D4A96A]/40 relative overflow-hidden"
               >
-                Restore Your Photo — Free
+                <span className="relative z-10 flex items-center gap-2">
+                  Restore Your Photo Free — Takes 30 Seconds
+                  <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
               </Link>
               <Link
                 href="/#pricing"
-                className="inline-flex h-13 items-center rounded-full border border-[#d4bc91]/40 px-9 font-lora text-[15px] font-500 text-[#d4bc91] hover:bg-white/5 hover:border-[#d4bc91]/70 active:scale-[0.97] transition-all duration-200"
+                className="inline-flex h-14 items-center rounded-full border border-[#d4bc91]/40 px-9 font-lora text-[15px] font-500 text-[#d4bc91] hover:bg-white/5 hover:border-[#d4bc91]/70 active:scale-[0.97] transition-all duration-200"
               >
                 View Pricing
               </Link>
