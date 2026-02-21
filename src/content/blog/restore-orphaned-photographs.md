@@ -13,7 +13,7 @@ Orphaned photographs—images separated from their original context with no iden
 
 Whether you've inherited a collection of unidentified family photos, purchased fascinating historical images at an estate sale, or discovered abandoned photographs in an old house, learning to restore orphaned photographs preserves these fragments of history and sometimes enables remarkable rediscoveries of their origins.
 
-This comprehensive guide covers restoring orphaned photographs—from assessment and research to digital restoration and ethical considerations around preserving images of unknown subjects.
+This guide covers restoring orphaned photographs—from assessment and research to digital restoration and ethical considerations around preserving images of unknown subjects.
 
 ## Understanding Orphaned Photographs
 
@@ -115,7 +115,7 @@ Good research versions balance enhancement with authentic appearance.
 
 ### Step 5: Archival Documentation
 
-Document orphaned photographs comprehensively. Record all available information (where/when acquired, any accompanying materials, observable details). Assign unique identification numbers to each photo in collections. Create metadata files documenting restoration work performed. Photograph or scan photo backs, mats, frames, or cases. Note photographic process, approximate date range, and condition assessment.
+Document orphaned photographs together. Record all available information (where/when acquired, any accompanying materials, observable details). Assign unique identification numbers to each photo in collections. Create metadata files documenting restoration work performed. Photograph or scan photo backs, mats, frames, or cases. Note photographic process, approximate date range, and condition assessment.
 
 This documentation creates invaluable context even without subject identification.
 

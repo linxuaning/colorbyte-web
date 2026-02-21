@@ -86,11 +86,11 @@ Despite its confusing name, Unsharp Mask sharpens images. It works by detecting 
 
 **Best for:** Mildly soft scans, slight focus blur where the subject information is mostly there.
 
-**Limitations:** Creates halos at high settings. Can amplify grain and noise. Cannot recover information that isn't there—it enhances edges that exist, not edges that were lost.
+**Limitations:** Creates halos at high settings. Can amplify grain and noise. Can't recover information that isn't there—it enhances edges that exist, not edges that were lost.
 
 ### Smart Sharpen
 
-Photoshop's Smart Sharpen (Filter > Sharpen > Smart Sharpen) is more sophisticated than USM. It lets you specify the blur type (Gaussian, Lens, or Motion) and can reduce the sharpening applied to shadows and highlights separately.
+Photoshop's Smart Sharpen (Filter > Sharpen > Smart Sharpen) is more advanced than USM. It lets you specify the blur type (Gaussian, Lens, or Motion) and can reduce the sharpening applied to shadows and highlights separately.
 
 **Best for:** Motion blur with a known direction. If you can identify the direction of camera shake, Smart Sharpen can partially reverse it.
 
@@ -118,7 +118,7 @@ The high pass filter (Filter > Other > High Pass, then set layer blend mode to O
 
 ### The Hard Truth About Manual Methods
 
-Manual sharpening techniques share a fundamental limitation: **they can enhance detail that's already there, but they cannot create detail that was lost.**
+Manual sharpening techniques share a fundamental limitation: **they can enhance detail that's already there, but they can't create detail that was lost.**
 
 When a face is blurry because someone moved during a 1-second exposure in 1952, the facial features are genuinely absent from the image file. Photoshop can make the blur look slightly less bad, but it can't reconstruct what the eyes looked like or bring back the texture of the hair.
 

@@ -753,7 +753,7 @@ Scan Victorian photographs safely by handling only the edges with clean cotton g
 
 ## Start Restoring Your Victorian Family Photographs Today
 
-Victorian photographs connect us to our family's past in ways that written records cannot match. When you restore Victorian photos, you're not just improving old images—you're preserving visual history and bringing your ancestors into vivid focus for future generations.
+Victorian photographs connect us to our family's past in ways that written records can't match. When you restore Victorian photos, you're not just improving old images—you're preserving visual history and bringing your ancestors into vivid focus for future generations.
 
 Whether you choose professional restoration services or embark on DIY restoration, the key is approaching these precious artifacts with respect, patience, and historical awareness. Each Victorian photograph tells a story that deserves to be preserved with accuracy and care.
 

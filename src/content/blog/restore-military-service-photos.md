@@ -11,7 +11,7 @@ featured: false
 
 Military service photographs hold profound significance far beyond typical family snapshots. These images document sacrifice, service, and crucial moments in history. Whether a formal portrait of a Civil War soldier, a candid World War II snapshot, a Vietnam-era service photo, or modern deployment images, military photographs deserve special care and respectful restoration that honors both the technical challenges and the emotional weight they carry.
 
-In this comprehensive guide, I'll share professional techniques to restore military service photos from all eras, addressing the unique characteristics of service photography, common damage patterns, historically accurate restoration approaches, and the special considerations these meaningful images require.
+In this guide, I'll share professional techniques to restore military service photos from all eras, addressing the unique characteristics of service photography, common damage patterns, historically accurate restoration approaches, and the special considerations these meaningful images require.
 
 ## Understanding Military Service Photography
 

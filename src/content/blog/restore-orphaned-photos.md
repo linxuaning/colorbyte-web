@@ -15,7 +15,7 @@ Every orphaned photograph tells a story, even if that story has been lost. The w
 
 Restoring orphaned photographs serves multiple worthy purposes. Enhanced, clear images are far more likely to be recognized and claimed by descendants searching genealogy databases. Well-restored photographs have greater historical value for archives and museums. The act of restoration itself honors the subjects even if they're never identified. And the process of researching and sharing these images sometimes leads to remarkable reunions between lost photographs and grateful families.
 
-This comprehensive guide will teach you how to restore orphaned photographs, research their origins, and share them effectively to maximize the chance of reunion with descendants.
+This guide will teach you how to restore orphaned photographs, research their origins, and share them effectively to maximize the chance of reunion with descendants.
 
 ## Understanding Orphaned Photographs
 
@@ -71,7 +71,7 @@ Before restoration, document thoroughly and research what you can.
 
 ### Step 3: AI-Powered Restoration
 
-Upload digitized orphaned photographs to [ArtImageHub](/old-photo-restoration) for comprehensive restoration.
+Upload digitized orphaned photographs to [ArtImageHub](/old-photo-restoration) for full restoration.
 
 **Damage Removal** creates viewable images. All typical damage (tears, stains, fading, scratches) is removed. This dramatically increases identification potential—faces obscured by damage become recognizable. Details important for research emerge from beneath deterioration.
 

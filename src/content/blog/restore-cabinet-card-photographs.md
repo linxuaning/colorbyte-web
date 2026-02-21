@@ -13,7 +13,7 @@ The elegant cabinet card photograph in your hand represents Victorian photograph
 
 But time has not been kind to this treasured heirloom. The albumen print surface has yellowed and cracked, the mounting board has warped, and the image itself has faded to barely visible. If you want to restore cabinet card photographs, you're working with one of the most historically significant but chemically unstable photographic formats ever created.
 
-This comprehensive guide will teach you everything you need to know about cabinet card photograph restoration, from understanding their unique construction to using modern AI technology to bring these Victorian treasures back to their original glory.
+This guide will teach you everything you need to know about cabinet card photograph restoration, from understanding their unique construction to using modern AI technology to bring these Victorian treasures back to their original glory.
 
 ## Understanding Cabinet Card Photographs
 
@@ -571,7 +571,7 @@ For more on wedding photo restoration, see our guide on [wedding photo restorati
 
 **Digital Archival**
 
-Create comprehensive digital archive:
+Create thorough digital archive:
 
 - Save master restoration as 16-bit TIFF
 - Create high-resolution JPEG for sharing (90%+ quality)

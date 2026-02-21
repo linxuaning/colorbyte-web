@@ -273,7 +273,7 @@ Once you're set up, here's the efficient workflow:
 
 This is the transformation step. A yellowed, scratched 80-year-old photo becomes vibrant and clear in under a minute.
 
-In 2026, AI photo restoration has reached the point where it handles 80-90% of typical damage without any manual work. But you need to understand what AI can and cannot do.
+In 2026, AI photo restoration has reached the point where it handles 80-90% of typical damage without any manual work. But you need to understand what AI can and can't do.
 
 ### What AI Restoration Does Well
 

@@ -56,7 +56,7 @@ Here is everything I know about digitizing old photographs.
 
 <h3>What Resolution to Use</h3>
 
-<p>Resolution is the most important scanning decision you'll make, and it's also the one that most people get wrong. Too low and you've captured a permanently limited file; you cannot add resolution later. Too high and you create unmanageably large files for no practical benefit.</p>
+<p>Resolution is the most important scanning decision you'll make, and it's also the one that most people get wrong. Too low and you've captured a permanently limited file; you can't add resolution later. Too high and you create unmanageably large files for no practical benefit.</p>
 
 <p>My recommendations:</p>
 
@@ -67,7 +67,7 @@ Here is everything I know about digitizing old photographs.
   <li><strong>2×2 and smaller: 1200–2400 DPI.</strong> Very small prints deserve very high resolution. At 2400 DPI, a 2×2 print produces a 4800×4800 pixel file — workable for large-format printing after AI upscaling.</li>
 </ul>
 
-<p>One thing I tell everyone at my workshops: <strong>scan your most important photos at double the resolution you think you need.</strong> Storage is cheap. You cannot go back and rescan a photo that's deteriorated further by the time you realize you wanted more resolution.</p>
+<p>One thing I tell everyone at my workshops: <strong>scan your most important photos at double the resolution you think you need.</strong> Storage is cheap. You can't go back and rescan a photo that's deteriorated further by the time you realize you wanted more resolution.</p>
 
 <h3>Which Scanner to Buy</h3>
 
@@ -179,7 +179,7 @@ Here is everything I know about digitizing old photographs.
 
 <h3>Scanning at Too Low a Resolution</h3>
 
-<p>This is the irreversible mistake. You cannot add resolution to an existing scan — you can only rescan the original. I've had families contact me asking if something could be done to "sharpen" their scans, and when I see 150 DPI files from 4×6 prints, the answer is: not meaningfully. The AI can upscale, but upscaling a 150 DPI scan produces a larger blurry image, not a larger sharp one.</p>
+<p>This is the irreversible mistake. You can't add resolution to an existing scan — you can only rescan the original. I've had families contact me asking if something could be done to "sharpen" their scans, and when I see 150 DPI files from 4×6 prints, the answer is: not meaningfully. The AI can upscale, but upscaling a 150 DPI scan produces a larger blurry image, not a larger sharp one.</p>
 
 <p>If you're in doubt, scan higher. 600 DPI for standard prints is my minimum recommendation, not my target. I personally scan everything at 600 DPI and my most important photos at 1200 DPI.</p>
 

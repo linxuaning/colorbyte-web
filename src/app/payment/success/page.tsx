@@ -1,138 +1,122 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { CheckCircle2, Loader2 } from "lucide-react";
-
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 export default function PaymentSuccessPage() {
-  return (
-    <Suspense
-      fallback={
-        <div className="flex min-h-[60vh] items-center justify-center">
-          <div className="text-center">
-            <Loader2 className="mx-auto h-8 w-8 animate-spin text-primary" />
-            <p className="mt-4 text-muted-foreground">Verifying your payment...</p>
-          </div>
-        </div>
-      }
-    >
-      <SuccessContent />
-    </Suspense>
-  );
-}
-
-function SuccessContent() {
   const searchParams = useSearchParams();
-  const sessionId = searchParams.get("session_id");
-  const [status, setStatus] = useState<"loading" | "success" | "error">("loading");
-  const [data, setData] = useState<{
-    email: string;
-    subscription_status: string;
-    trial_end: string | null;
-  } | null>(null);
+  const [email, setEmail] = useState<string | null>(null);
+  const [orderId, setOrderId] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!sessionId) {
-      setStatus("error");
-      return;
-    }
+    const emailParam = searchParams.get("email");
+    const orderIdParam = searchParams.get("order_id");
 
-    fetch(`${API_BASE}/api/payment/verify-session/${sessionId}`)
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.status === "success") {
-          setData(result);
-          setStatus("success");
-          // Save email to localStorage for later use
-          if (result.email) {
-            localStorage.setItem("artimagehub_email", result.email);
-          }
-        } else {
-          setStatus("error");
-        }
-      })
-      .catch(() => setStatus("error"));
-  }, [sessionId]);
-
-  if (status === "loading") {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="mx-auto h-8 w-8 animate-spin text-primary" />
-          <p className="mt-4 text-muted-foreground">Verifying your payment...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (status === "error") {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center">
-        <div className="mx-auto max-w-md text-center">
-          <h1 className="text-2xl font-bold">Something went wrong</h1>
-          <p className="mt-2 text-muted-foreground">
-            We couldn&apos;t verify your payment. If you were charged, please contact support.
-          </p>
-          <Link
-            href="/"
-            className="mt-6 inline-flex h-10 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground"
-          >
-            Go Home
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  const trialEndDate = data?.trial_end
-    ? new Date(data.trial_end).toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      })
-    : null;
+    setEmail(emailParam);
+    setOrderId(orderIdParam);
+  }, [searchParams]);
 
   return (
-    <div className="flex min-h-[60vh] items-center justify-center">
-      <div className="mx-auto max-w-md text-center">
-        <CheckCircle2 className="mx-auto h-16 w-16 text-green-600" />
-        <h1 className="mt-4 text-3xl font-bold">Welcome to ArtImageHub Pro!</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
-          Your 7-day free trial has started.
-        </p>
-
-        {trialEndDate && (
-          <div className="mt-6 rounded-lg border bg-muted/50 p-4">
-            <p className="text-sm text-muted-foreground">Trial ends on</p>
-            <p className="text-lg font-semibold">{trialEndDate}</p>
-            <p className="mt-1 text-xs text-muted-foreground">
-              You won&apos;t be charged until your trial ends. Cancel anytime.
-            </p>
+    <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
+      <div className="max-w-md w-full">
+        <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+          {/* Success Icon */}
+          <div className="mx-auto w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+            <svg
+              className="w-10 h-10 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
           </div>
-        )}
 
-        <div className="mt-6 space-y-3">
-          <p className="text-sm text-muted-foreground">
-            Signed in as <strong>{data?.email}</strong>
+          {/* Success Message */}
+          <h1 className="text-[28px] font-bold text-[#1d1d1f] mb-3">
+            Payment Successful! 🎉
+          </h1>
+
+          <p className="text-[15px] text-[#6e6e73] mb-6">
+            Your Pro Lifetime access has been activated.
           </p>
-        </div>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          {/* Order Details */}
+          {email && (
+            <div className="bg-[#f5f5f7] rounded-xl p-5 mb-6 text-left">
+              <div className="space-y-2">
+                <div className="flex justify-between text-[13px]">
+                  <span className="text-[#6e6e73]">Email:</span>
+                  <span className="font-medium text-[#1d1d1f]">{email}</span>
+                </div>
+                {orderId && (
+                  <div className="flex justify-between text-[13px]">
+                    <span className="text-[#6e6e73]">Order ID:</span>
+                    <span className="font-mono text-[11px] text-[#1d1d1f]">
+                      {orderId.slice(0, 20)}...
+                    </span>
+                  </div>
+                )}
+                <div className="flex justify-between text-[13px]">
+                  <span className="text-[#6e6e73]">Plan:</span>
+                  <span className="font-medium text-[#1d1d1f]">Pro Lifetime</span>
+                </div>
+                <div className="flex justify-between text-[13px]">
+                  <span className="text-[#6e6e73]">Amount:</span>
+                  <span className="font-medium text-[#1d1d1f]">$29.90</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Benefits */}
+          <div className="bg-blue-50 rounded-xl p-5 mb-8 text-left">
+            <p className="text-[13px] font-semibold text-[#0071e3] mb-3">
+              ✨ What you get:
+            </p>
+            <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>Unlimited photo restorations</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>Original quality downloads</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>No watermarks</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>Lifetime access to all future features</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* CTA Button */}
           <Link
             href="/old-photo-restoration"
-            className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
             Start Restoring Photos
           </Link>
-          <Link
-            href="/subscription"
-            className="inline-flex h-10 items-center justify-center rounded-lg border px-6 text-sm font-medium transition-colors hover:bg-muted"
-          >
-            Manage Subscription
-          </Link>
+
+          <p className="mt-4 text-[12px] text-[#86868b]">
+            Questions?{" "}
+            <a
+              href="mailto:support@artimagehub.com"
+              className="text-[#0071e3] hover:underline"
+            >
+              Contact Support
+            </a>
+          </p>
         </div>
       </div>
     </div>

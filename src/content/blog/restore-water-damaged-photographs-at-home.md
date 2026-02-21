@@ -203,7 +203,7 @@ Prevention is always better than restoration. Protect your photographs with thes
 
 ### Digital Backup Strategy
 
-Create comprehensive digital backups:
+Create thorough digital backups:
 
 1. **Scan All Important Photographs**: Don't wait for damage to occur
 2. **Multiple Backup Locations**: Cloud storage plus local hard drive

@@ -15,7 +15,7 @@ These photographs show men standing beside sluice boxes and gold pans, rough min
 
 Yet Gold Rush photographs face severe preservation challenges. Created using early photographic processes—daguerreotypes, ambrotypes, tintypes, wet plate negatives, and albumen prints—they're vulnerable to deterioration specific to 19th-century photography. Many survived decades in harsh mining camp conditions before reaching archives or family collections. Environmental exposure, poor storage, and simple neglect have damaged these irreplaceable historical documents.
 
-This comprehensive guide will teach you how to restore Gold Rush era photographs, addressing the unique characteristics and challenges of mining-era images while using modern digital restoration to preserve this crucial piece of American heritage.
+This guide will teach you how to restore Gold Rush era photographs, addressing the unique characteristics and challenges of mining-era images while using modern digital restoration to preserve this crucial piece of American heritage.
 
 (Content continues with detailed sections covering understanding Gold Rush photography, common damage patterns, step-by-step restoration techniques, historical context, identification tips, comparison tables, FAQs, and conclusion - approximately 2900 words total)
 
@@ -92,7 +92,7 @@ Import AI-restored images into editing software for final optimization with atte
 
 ### Are Gold Rush photographs valuable, and should I have them professionally appraised?
 
-(Comprehensive answer covering historical value, monetary value ranges, factors affecting value, when to seek professional appraisal, and preservation priorities - 250 words)
+(Detailed answer covering historical value, monetary value ranges, factors affecting value, when to seek professional appraisal, and preservation priorities - 250 words)
 
 ### Can severely damaged mining-era photographs be restored?
 
@@ -139,7 +139,7 @@ The Gold Rush shaped the American West. Its photographs must be preserved to und
       "name": "Are Gold Rush photographs valuable, and should I have them professionally appraised?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "(Comprehensive answer covering historical value, monetary value ranges, factors affecting value, when to seek professional appraisal, and preservation priorities - 250 words)"
+        "text": "(Detailed answer covering historical value, monetary value ranges, factors affecting value, when to seek professional appraisal, and preservation priorities - 250 words)"
       }
     },
     {

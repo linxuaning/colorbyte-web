@@ -121,7 +121,7 @@ That's what this article is about: making an informed choice. Because the range 
 
 <p>This is the realm of serious damage: photos with more than 40% of the image surface destroyed, fire and smoke damage, major structural deterioration of the print material, or cases where the output needs to meet archival or museum standards. Professional time is 8–20+ hours.</p>
 
-<p>What professionals can do that AI genuinely cannot:</p>
+<p>What professionals can do that AI genuinely can't:</p>
 
 <ul>
   <li><strong>Cross-reference reconstruction:</strong> A professional can look at other photos of the same person or location, consult historical records, and make informed reconstruction decisions. AI can only guess from the damaged image itself.</li>
@@ -146,7 +146,7 @@ That's what this article is about: making an informed choice. Because the range 
   <li><strong>Professional high-res scanning:</strong> For large prints, fragile originals, or negatives and slides, professional archival scanning runs $5–$25 per item. Negatives and slides require specialized equipment (film scanners) and produce much higher quality than flatbed scans of prints from negatives.</li>
 </ul>
 
-<p>One point I cannot stress enough: scan quality is the single biggest determinant of restoration quality. A photo scanned at 300 DPI on a phone camera will produce mediocre results from any AI tool. The same photo scanned at 600 DPI on a flatbed scanner will produce dramatically better results. The scanner investment pays for itself on the first batch of photos.</p>
+<p>One point I can't stress enough: scan quality is the single biggest determinant of restoration quality. A photo scanned at 300 DPI on a phone camera will produce mediocre results from any AI tool. The same photo scanned at 600 DPI on a flatbed scanner will produce dramatically better results. The scanner investment pays for itself on the first batch of photos.</p>
 
 <h3>Printing Costs After Restoration</h3>
 

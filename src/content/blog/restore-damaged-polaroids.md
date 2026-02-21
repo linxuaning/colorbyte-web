@@ -13,7 +13,7 @@ Polaroid and instant photographs hold a special place in our photo collectionsâ€
 
 But there's hope. With proper techniques and modern restoration tools, even severely damaged instant photos can be restored, preserving these irreplaceable memories for future generations.
 
-This comprehensive guide covers everything you need to know about restoring damaged Polaroids and instant photos, from understanding their unique chemistry to mastering both physical and digital restoration techniques.
+This guide covers everything you need to know about restoring damaged Polaroids and instant photos, from understanding their unique chemistry to mastering both physical and digital restoration techniques.
 
 ## Understanding Instant Photo Technology
 
@@ -144,7 +144,7 @@ Understanding the chemistry helps explain damage patterns.
 - Appears as white or light marks
 - Often at edges where chemicals pooled
 - May expand over time
-- Cannot be removed physically
+- Can't be removed physically
 
 **Color Blotches**:
 - Uneven color distribution

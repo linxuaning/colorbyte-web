@@ -11,7 +11,7 @@ featured: false
 
 Old school photographs capture formative moments in our lives—first day of kindergarten, senior portraits, team photos, graduation day. These images document not just how we looked, but who we were becoming. Unfortunately, school photos often suffer from poor storage, cheap materials, and decades of handling, leaving them faded, damaged, or barely visible.
 
-This comprehensive guide covers everything you need to know about enhancing old school photos, from kindergarten through college, addressing the unique challenges of yearbook pictures, class photos, team photos, and individual portraits.
+This guide covers everything you need to know about enhancing old school photos, from kindergarten through college, addressing the unique challenges of yearbook pictures, class photos, team photos, and individual portraits.
 
 ## Understanding School Photo Deterioration
 

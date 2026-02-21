@@ -691,7 +691,7 @@ The 50 before-and-after examples in this guide represent real photos I've restor
 - Results are often shocking even to professionals
 - Photos you thought were "ruined" are usually restorable
 
-**AI has revolutionized restoration:**
+**AI has transformed restoration:**
 - What took 6 hours manually now takes 60 seconds
 - Quality is comparable to professional manual work for common damage
 - Cost has dropped from $75-300 per photo to $0-9/month unlimited

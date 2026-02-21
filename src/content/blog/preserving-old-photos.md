@@ -89,7 +89,7 @@ The 87 photos we had digital copies of? Pure luck. I'd scanned them for:
 - Old social media posts (15 photos)
 - Random scanning when I borrowed my cousin's scanner (31 photos)
 
-There was no system. No comprehensive backup. Just random digitization over the years.
+There was no system. No complete backup. Just random digitization over the years.
 
 **If I'd followed the 3-2-1 rule:**
 - **3 copies** (original + 2 backups)

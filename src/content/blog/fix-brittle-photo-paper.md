@@ -99,9 +99,9 @@ For photographs too fragile for scanner contact, photographic reproduction offer
 
 This approach completely avoids physical stress on the photograph while still capturing high-quality digital images suitable for restoration.
 
-### Handling Photos That Cannot Be Laid Flat
+### Handling Photos That Can't Be Laid Flat
 
-Some brittle photographs have curled, warped, or folded into shapes they cannot be safely flattened from. For these challenging items, work with the photo in its current state. Photograph it from the optimal angle, using perspective correction software to straighten the image digitally. For severely curled photos, consider taking multiple overlapping images from different angles and stitching them together digitally. If the photo is folded or creased and cannot be safely opened, photograph both sides separately and restore them as separate images.
+Some brittle photographs have curled, warped, or folded into shapes they can't be safely flattened from. For these challenging items, work with the photo in its current state. Photograph it from the optimal angle, using perspective correction software to straighten the image digitally. For severely curled photos, consider taking multiple overlapping images from different angles and stitching them together digitally. If the photo is folded or creased and can't be safely opened, photograph both sides separately and restore them as separate images.
 
 Never use force, weights, or pressure to flatten brittle photographs. The risk of catastrophic damage far outweighs any benefit from having a flat image to scan.
 
@@ -173,7 +173,7 @@ Consider consulting a photograph conservator if your brittle photo is actively f
 
 ### What Professional Conservators Can Do
 
-Professional photograph conservators offer services including humidification and flattening using controlled techniques that safely relax brittle paper, tear repair using archival materials and reversible methods, mold treatment and removal, consolidation of flaking or lifting emulsion, custom housing for odd-sized or especially fragile items, and comprehensive condition assessment and treatment recommendations.
+Professional photograph conservators offer services including humidification and flattening using controlled techniques that safely relax brittle paper, tear repair using archival materials and reversible methods, mold treatment and removal, consolidation of flaking or lifting emulsion, custom housing for odd-sized or especially fragile items, and thorough condition assessment and treatment recommendations.
 
 These physical treatments stabilize deteriorating photographs, making them safer to store long-term and sometimes making digitization possible when it would otherwise be too risky.
 

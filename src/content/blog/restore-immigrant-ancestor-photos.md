@@ -11,7 +11,7 @@ featured: false
 
 The weathered photograph in your hand tells a story of courage, sacrifice, and hope. Your immigrant ancestors stared into the camera lens generations ago, capturing a moment in time that connected their old world to their new life. These precious images often survived treacherous journeys across oceans, passed down through generations, and now sit before you—faded, damaged, but irreplaceable.
 
-If you're looking to restore immigrant ancestor photos, you're not just fixing an old picture. You're preserving a vital piece of your family's heritage and honoring the journey that made your life possible. This comprehensive guide will walk you through everything you need to know about restoring these priceless historical treasures.
+If you're looking to restore immigrant ancestor photos, you're not just fixing an old picture. You're preserving a vital piece of your family's heritage and honoring the journey that made your life possible. This guide will walk you through everything you need to know about restoring these priceless historical treasures.
 
 ## Understanding the Unique Challenges of Immigrant Ancestor Photographs
 
@@ -111,7 +111,7 @@ Create a detailed assessment of what needs repair:
 
 ### Step 3: AI-Powered Restoration with ArtImageHub
 
-Modern AI technology has revolutionized how we restore immigrant ancestor photos. Here's how to use [ArtImageHub's restoration tools](/old-photo-restoration) effectively:
+Modern AI technology has transformed how we restore immigrant ancestor photos. Here's how to use [ArtImageHub's restoration tools](/old-photo-restoration) effectively:
 
 **Initial Upload and Analysis**
 

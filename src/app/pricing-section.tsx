@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-
-const BMC_PAGE_URL = "https://buymeacoffee.com/artimagehub";
+import PayPalButton from "@/components/PayPalButton";
 
 export default function PricingSection() {
 
@@ -83,19 +82,12 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <a
-              href={BMC_PAGE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 flex h-10 items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors"
-            >
-              Get Lifetime Access
-            </a>
+            <PayPalButton />
           </div>
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          One-time payment · No subscription · Secure payment via Buy Me a Coffee
+          One-time payment · No subscription · Secure payment via PayPal
         </p>
       </div>
     </section>

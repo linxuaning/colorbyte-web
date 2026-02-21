@@ -11,7 +11,7 @@ featured: false
 
 Stains are among the most common and frustrating types of photograph damage. A beautiful family portrait marred by brown water stains, a vintage photograph yellowed by adhesive, or treasured memories obscured by mysterious discoloration—these scenarios break hearts and challenge even experienced restorers. Unlike tears or scratches that affect specific areas, stains often spread across entire photographs, altering colors, obscuring details, and sometimes causing ongoing chemical damage.
 
-In this comprehensive guide, I'll share professional techniques to fix stained photographs, covering identification of different stain types, safe physical treatment when appropriate, and digital restoration methods that can dramatically improve even severely stained images.
+In this guide, I'll share professional techniques to fix stained photographs, covering identification of different stain types, safe physical treatment when appropriate, and digital restoration methods that can dramatically improve even severely stained images.
 
 ## Understanding Photograph Stains
 
@@ -137,7 +137,7 @@ Before attempting to fix stained photographs, identifying the stain type guides 
 
 ## Physical Treatment of Stained Photographs
 
-Some stains can be physically reduced; many cannot.
+Some stains can be physically reduced; many can't.
 
 ### When Physical Treatment is Appropriate
 
@@ -510,7 +510,7 @@ For maximum control or special cases.
 - Spots, usually brown or purple
 - May be numerous small spots or larger patches
 - Permanent dye or gelatin damage
-- Cannot be physically removed
+- Can't be physically removed
 
 **Digital Approach**:
 

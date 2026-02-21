@@ -11,7 +11,7 @@ featured: false
 
 After restoring thousands of photographs over two decades, I've seen every mistake imaginable—and made many of them myself early in my career. Photo restoration mistakes can range from minor aesthetic issues to catastrophic damage to irreplaceable originals. Some mistakes are immediately obvious, while others only appear months or years later as photographs continue to deteriorate from improper treatment.
 
-In this comprehensive guide, I'll share the most common photo restoration mistakes I encounter, both in physical handling and digital work, and teach you how to avoid these pitfalls. Whether you're a beginner tackling family photos or an aspiring professional, understanding these common errors will save you time, money, and heartbreak.
+In this guide, I'll share the most common photo restoration mistakes I encounter, both in physical handling and digital work, and teach you how to avoid these pitfalls. Whether you're a beginner tackling family photos or an aspiring professional, understanding these common errors will save you time, money, and heartbreak.
 
 ## Critical Mistakes with Physical Photographs
 
@@ -115,7 +115,7 @@ The most serious mistakes occur when handling original photographs.
 - Acid migration from adjacent materials
 
 **Long-Term Consequences**:
-- Sticky residue from PVC (cannot be removed)
+- Sticky residue from PVC (can't be removed)
 - Yellow or brown staining
 - Emulsion softening and sticking
 - Mold growth from humidity
@@ -158,7 +158,7 @@ The most serious mistakes occur when handling original photographs.
 - Heat from ironing destroys image
 - Sudden flattening breaks paper fibers
 - "Crack" sound indicates permanent damage
-- Once cracked, cannot be repaired
+- Once cracked, can't be repaired
 
 **Warning Signs to Stop**:
 - Any crackling or snapping sounds
@@ -240,7 +240,7 @@ Digital work has its own pitfalls.
 - No preservation of unedited master
 
 **Why It's Problematic**:
-- Cannot return to original if mistakes made
+- Can'treturn to original if mistakes made
 - Lose option to try different approaches
 - Permanent loss if file corrupted
 - Generational loss from multiple saves
@@ -368,8 +368,8 @@ Digital work has its own pitfalls.
 - Discarding original after low-quality scan
 
 **Why It's Limiting**:
-- Cannot enlarge for prints
-- Lost detail cannot be recovered
+- Can'tenlarge for prints
+- Lost detail can't be recovered
 - Must re-scan if higher quality needed later
 - Limited enhancement possibilities
 - Poor quality results
@@ -495,7 +495,7 @@ Digital work has its own pitfalls.
 
 **Why Documentation Matters**:
 - Historical value of information
-- Cannot recreate research if lost
+- Can'trecreate research if lost
 - Helps identify similar photos
 - Essential for archives and museums
 - Genealogical research requires documentation
@@ -504,7 +504,7 @@ Digital work has its own pitfalls.
 - Names and dates forgotten
 - Historical context lost
 - Unable to verify restoration accuracy
-- Cannot replicate successful techniques
+- Can'treplicate successful techniques
 - Family history information disappears
 
 **The Right Approach**:
@@ -543,7 +543,7 @@ Digital work has its own pitfalls.
 - JPEG compression is lossy (permanent data loss)
 - Each save degrades quality further
 - Compression artifacts increase
-- Cannot recover lost information
+- Can'trecover lost information
 - Generational degradation
 
 **Visual Degradation**:
@@ -703,7 +703,7 @@ Never apply tape, glue, or adhesives to photographs. This causes permanent, ofte
 
 ### Can photo restoration mistakes be fixed?
 
-It depends on the type and severity. Physical damage to originals (adhesive damage, heat damage, chemical damage) is usually permanent and irreversible. Some stabilization may be possible but original condition cannot be recovered. Digital restoration mistakes are fully reversible if you preserved the original scan and worked non-destructively. This is why proper workflow with backups and non-destructive editing is crucial. Always keep unedited master scans, use layers, and save work separately from originals.
+It depends on the type and severity. Physical damage to originals (adhesive damage, heat damage, chemical damage) is usually permanent and irreversible. Some stabilization may be possible but original condition can't be recovered. Digital restoration mistakes are fully reversible if you preserved the original scan and worked non-destructively. This is why proper workflow with backups and non-destructive editing is crucial. Always keep unedited master scans, use layers, and save work separately from originals.
 
 ### How do I know if I should attempt restoration myself or hire a professional?
 
@@ -751,7 +751,7 @@ Whether you're preserving family history or working professionally, avoiding com
       "name": "Can photo restoration mistakes be fixed?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on the type and severity. Physical damage to originals (adhesive damage, heat damage, chemical damage) is usually permanent and irreversible. Some stabilization may be possible but original condition cannot be recovered. Digital restoration mistakes are fully reversible if you preserved the original scan and worked non-destructively. This is why proper workflow with backups and non-destructive editing is crucial. Always keep unedited master scans, use layers, and save work separately from originals."
+        "text": "It depends on the type and severity. Physical damage to originals (adhesive damage, heat damage, chemical damage) is usually permanent and irreversible. Some stabilization may be possible but original condition can't be recovered. Digital restoration mistakes are fully reversible if you preserved the original scan and worked non-destructively. This is why proper workflow with backups and non-destructive editing is crucial. Always keep unedited master scans, use layers, and save work separately from originals."
       }
     },
     {

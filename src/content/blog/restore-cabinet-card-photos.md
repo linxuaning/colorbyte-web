@@ -11,7 +11,7 @@ featured: false
 
 Cabinet cards represent some of the most historically significant photographs in family collections—formal Victorian-era portraits of ancestors from the 1870s through early 1900s. These distinctive mounted photographs, typically measuring 4.25 x 6.5 inches, provide our most direct visual connection to 19th-century family members. Yet after 100-150 years, cabinet cards face severe deterioration including faded images, damaged mounting boards, yellowing and discoloration, physical tears and creases, and loss of fine detail in faces and clothing. Modern AI restoration technology offers unprecedented capability for recovering these precious historical portraits while preserving their authentic Victorian character.
 
-This comprehensive guide explains cabinet card photography and construction, common damage patterns after a century or more, step-by-step restoration techniques, and strategies for preserving both originals and restored digital versions of these irreplaceable family heirlooms.
+This guide explains cabinet card photography and construction, common damage patterns after a century or more, step-by-step restoration techniques, and strategies for preserving both originals and restored digital versions of these irreplaceable family heirlooms.
 
 ## Understanding Cabinet Card Photographs
 
@@ -145,7 +145,7 @@ The AI can remove yellowing from the mount background while enhancing legibility
 |-------------------|---------------|----------------------|-----------------|---------------------------|
 | Light Yellowing | Minimal fading, good detail | Color correction, minor enhancement | Excellent | All original detail visible |
 | Moderate Fading | Yellow-brown tone, some detail loss | Color + tone restoration, face enhancement | Very Good-Excellent | Faces clear, clothing visible |
-| Severe Fading | Heavy yellowing, significant detail loss | Comprehensive restoration, reconstruction | Good-Very Good | Faces recognizable, context preserved |
+| Severe Fading | Heavy yellowing, significant detail loss | Full restoration, reconstruction | Good-Very Good | Faces recognizable, context preserved |
 | Cracked Albumen | Crack patterns throughout | Crack removal, tone restoration | Very Good | Cracks invisible, detail recovered |
 | Physical Damage | Tears, missing pieces | Damage repair, reconstruction | Good-Excellent | Depends on damage extent |
 | Water Damaged | Stains, possible mold | Stain removal, tone correction | Good-Very Good | Most detail recoverable |
@@ -168,7 +168,7 @@ Include detailed metadata with restored images including all known information (
 
 ### Creating Archival Records
 
-For historically significant cabinet cards, consider creating comprehensive archival records including high-resolution restoration for maximum detail preservation, faithful reproduction maintaining authentic appearance, detailed documentation of restoration process and decisions, and preservation of both front and back information.
+For historically significant cabinet cards, consider creating complete archival records including high-resolution restoration for maximum detail preservation, faithful reproduction maintaining authentic appearance, detailed documentation of restoration process and decisions, and preservation of both front and back information.
 
 These archival records ensure future generations can access and understand these important historical photographs.
 

@@ -11,7 +11,7 @@ featured: false
 
 Few things diminish the impact of treasured family photographs more than yellowing. That wedding portrait that was crisp black-and-white now looks muddy and sepia. Your parents' baby pictures have taken on an unpleasant yellow-brown cast. The vibrant color photos from the 1970s now appear as if viewed through amber glass. If you need to fix yellowed photograph paper, you're addressing one of the most common forms of photographic deterioration—and fortunately, one of the most correctable through digital restoration.
 
-This comprehensive guide explains why photographs yellow, how to assess the damage, and proven techniques for removing yellow discoloration while preserving image quality and detail.
+This guide explains why photographs yellow, how to assess the damage, and proven techniques for removing yellow discoloration while preserving image quality and detail.
 
 ## Understanding Why Photographs Yellow
 

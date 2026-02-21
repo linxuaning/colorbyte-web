@@ -13,7 +13,7 @@ The beatnik movement of the late 1950s and 1960s represented a profound cultural
 
 If you have beatnik-era photographs—whether documenting family members who were part of the scene, historical images of famous beat poets and musicians, or your own collection of counterculture memorabilia—these images represent unique cultural history that deserves careful preservation and restoration.
 
-In this comprehensive guide, I'll show you how to restore 1960s beatnik photos, addressing the unique technical challenges of this era's photography while respecting the authentic aesthetic that defined beat culture.
+In this guide, I'll show you how to restore 1960s beatnik photos, addressing the unique technical challenges of this era's photography while respecting the authentic aesthetic that defined beat culture.
 
 ## Understanding 1960s Beatnik Photography
 

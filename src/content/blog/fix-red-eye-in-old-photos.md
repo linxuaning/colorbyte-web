@@ -13,7 +13,7 @@ You've found the perfect family photo from 1985—everyone's smiling, the compos
 
 Red eye plagued film photography from the 1960s through the early 2000s, particularly affecting flash photos taken indoors or at night. If you're looking to fix red eye in old photos, you're dealing with a common problem that affected millions of vintage photographs. The good news? Modern restoration techniques can completely eliminate red eye while maintaining the natural appearance of eyes and preserving precious photo details.
 
-This comprehensive guide will show you exactly how to fix red eye in old photos, from understanding what causes this phenomenon to using both manual techniques and AI-powered tools that make red eye correction fast, easy, and remarkably effective.
+This guide will show you exactly how to fix red eye in old photos, from understanding what causes this phenomenon to using both manual techniques and AI-powered tools that make red eye correction fast, easy, and remarkably effective.
 
 ## Understanding Red Eye in Vintage Photography
 

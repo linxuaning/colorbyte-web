@@ -11,7 +11,7 @@ featured: false
 
 Kodachrome slides represent the golden age of color photography—vibrant, saturated colors that were unmatched by any other film format. From the 1930s through 2009, Kodachrome captured family vacations, special events, and everyday moments in stunning color. But after decades in storage, even legendary Kodachrome can fade, shift colors, or accumulate damage.
 
-This comprehensive guide covers everything you need to know about restoring faded Kodachrome and other vintage color slides, from understanding slide film chemistry to mastering scanning techniques and digital color correction.
+This guide covers everything you need to know about restoring faded Kodachrome and other vintage color slides, from understanding slide film chemistry to mastering scanning techniques and digital color correction.
 
 ## Understanding Color Slide Film
 

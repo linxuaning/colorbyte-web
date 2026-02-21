@@ -11,7 +11,7 @@ featured: false
 
 Autochrome photographs represent a magical moment in photographic history—the first commercially successful color photography process. Created using dyed potato starch grains on glass plates, these extraordinary images captured the world in color from 1907 until the mid-1930s. If you're fortunate enough to have autochrome plates in your collection, or if you're working with digitized versions, you're preserving some of the rarest and most historically significant photographs in existence.
 
-In this comprehensive guide, I'll share everything you need to know to restore autochrome color photos, from understanding the unique technology behind these remarkable images to using modern AI tools to preserve their distinctive aesthetic while repairing damage.
+In this guide, I'll share everything you need to know to restore autochrome color photos, from understanding the unique technology behind these remarkable images to using modern AI tools to preserve their distinctive aesthetic while repairing damage.
 
 ## Understanding Autochrome Photography: A Revolutionary Color Process
 

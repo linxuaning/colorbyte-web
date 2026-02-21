@@ -11,7 +11,7 @@ featured: false
 
 Tintype photographs represent a fascinating chapter in photographic history—durable metal images that survived Civil War battlefields, frontier settlements, and over a century of storage. These distinctive photographs on thin iron sheets (despite the name "tintype") present unique restoration challenges quite different from paper photographs. If you need to restore tintype photographs, understanding their construction, characteristic damage patterns, and specialized digitization techniques ensures successful preservation of these irreplaceable historical artifacts.
 
-This comprehensive guide covers everything you need to know about restoring tintypes, from identifying them correctly to digitizing their reflective surfaces and repairing era-specific damage while maintaining historical authenticity.
+This guide covers everything you need to know about restoring tintypes, from identifying them correctly to digitizing their reflective surfaces and repairing era-specific damage while maintaining historical authenticity.
 
 ## Understanding Tintype Photographs
 
@@ -124,7 +124,7 @@ Iron base leads to characteristic rust:
 Metal surface scratches differently than paper:
 - Linear scratches through emulsion to metal
 - Visible as dark lines (exposed dark lacquer)
-- Cannot be physically repaired
+- Can't be physically repaired
 - Can be digitally restored
 - Often from improper storage or handling
 
@@ -135,7 +135,7 @@ Collodion emulsion flakes or peels:
 - Creates missing image areas
 - Exposes dark lacquer underneath
 - Often related to rust or bending
-- Cannot be physically replaced
+- Can't be physically replaced
 
 ### Structural Damage
 

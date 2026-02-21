@@ -9,7 +9,7 @@ category: "Photo Restoration"
 featured: false
 ---
 
-Military photographs hold profound significance—they document service, sacrifice, and family heritage. When you restore army uniform photos, you're not just repairing an old image; you're preserving a visual record of someone's service to their country. These photographs deserve special care because the details matter: rank insignia, unit patches, medals, and uniform specifics tell stories that words alone cannot capture.
+Military photographs hold profound significance—they document service, sacrifice, and family heritage. When you restore army uniform photos, you're not just repairing an old image; you're preserving a visual record of someone's service to their country. These photographs deserve special care because the details matter: rank insignia, unit patches, medals, and uniform specifics tell stories that words alone can't capture.
 
 Whether you're working with a faded WWI portrait, a damaged WWII service photo, or a deteriorating Vietnam-era military picture, understanding both restoration techniques and military uniform history ensures accurate, respectful preservation of these important images.
 
@@ -628,7 +628,7 @@ Resources include the Institute of Heraldry (official U.S. military insignia), N
 
 ## Honoring Service Through Restoration
 
-When you restore army uniform photos, you're doing more than repairing old photographs—you're honoring service, preserving history, and ensuring that future generations can see the faces of those who served. These images document sacrifice, duty, and family heritage in ways that words alone cannot capture.
+When you restore army uniform photos, you're doing more than repairing old photographs—you're honoring service, preserving history, and ensuring that future generations can see the faces of those who served. These images document sacrifice, duty, and family heritage in ways that words alone can't capture.
 
 The combination of restoration skill and historical knowledge required for military photo work means these projects deserve special care and attention. Whether you're restoring a great-grandfather's WWI portrait, a grandparent's WWII service photo, or a parent's Vietnam-era image, the result is a preserved piece of family and national history.
 

@@ -11,7 +11,7 @@ featured: false
 
 Antique family portraits from the 1800s and early 1900s are precious windows into family history, capturing ancestors in their finest attire and most dignified poses. These early photographs—daguerreotypes, ambrotypes, tintypes, and cabinet cards—represent not just family heritage but also photographic history. After a century or more, however, these treasures often suffer from deterioration, damage, and aging that obscure the faces of our earliest photographed ancestors.
 
-This comprehensive guide covers everything you need to know about restoring antique family portraits, from understanding historical photographic processes to applying specialized restoration techniques that preserve both image and historical authenticity.
+This guide covers everything you need to know about restoring antique family portraits, from understanding historical photographic processes to applying specialized restoration techniques that preserve both image and historical authenticity.
 
 ## Understanding Antique Photographic Processes
 
@@ -611,7 +611,7 @@ Instead of full colorization, consider subtle period-appropriate tinting:
 **Unique Challenges**:
 - Mirror-like surface difficult to scan
 - Tarnish varies across image
-- Cannot physically clean without professional
+- Can't physically clean without professional
 - Often most valuable antique photos
 
 **Best Practices**:

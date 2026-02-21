@@ -9,7 +9,7 @@ category: "Photo Restoration"
 featured: false
 ---
 
-Discovering fungus on treasured family photographs is devastating. Those brown spots, white fuzzy growth, or mysterious discoloration across irreplaceable images signal active biological damage that continues to worsen with time. If you need to fix fungus damaged photos, you're facing both immediate preservation challenges and complex restoration work. This comprehensive guide will walk you through the complete process of stopping fungal growth, safely digitizing affected photographs, and digitally restoring images back to their original clarity.
+Discovering fungus on treasured family photographs is devastating. Those brown spots, white fuzzy growth, or mysterious discoloration across irreplaceable images signal active biological damage that continues to worsen with time. If you need to fix fungus damaged photos, you're facing both immediate preservation challenges and complex restoration work. This guide will walk you through the complete process of stopping fungal growth, safely digitizing affected photographs, and digitally restoring images back to their original clarity.
 
 ## Understanding Fungus Damage in Photographs
 
@@ -653,7 +653,7 @@ Stop mold spread immediately by isolating affected photographs from others, redu
 
 ### What causes brown spots (foxing) on old photos?
 
-Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper. Once foxing appears, it's permanent physical damage that can only be corrected through digital restoration—it cannot be physically removed without destroying the photograph.
+Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper. Once foxing appears, it's permanent physical damage that can only be corrected through digital restoration—it can't be physically removed without destroying the photograph.
 
 ### Is it safe to scan moldy photographs?
 
@@ -698,7 +698,7 @@ Our specialists have extensive experience with mold-damaged photographs and unde
       "name": "What causes brown spots (foxing) on old photos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper. Once foxing appears, it's permanent physical damage that can only be corrected through digital restoration—it cannot be physically removed without destroying the photograph."
+        "text": "Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper. Once foxing appears, it's permanent physical damage that can only be corrected through digital restoration—it can't be physically removed without destroying the photograph."
       }
     },
     {

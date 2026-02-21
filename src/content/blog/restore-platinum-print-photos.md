@@ -13,7 +13,7 @@ Platinum prints represent the pinnacle of fine art photography, prized for their
 
 If you own or have inherited platinum print photographs, you possess rare and potentially valuable works of photographic art. While platinum prints are among the most stable photographic processes ever developed, they're not immune to damage from improper handling, storage, or environmental conditions. Understanding how to properly care for, digitize, and if necessary restore these exceptional photographs ensures they continue to be appreciated for generations to come.
 
-This comprehensive guide explores platinum print photography—its characteristics, common issues, and appropriate restoration approaches that preserve both the image and its value as a fine art object.
+This guide explores platinum print photography—its characteristics, common issues, and appropriate restoration approaches that preserve both the image and its value as a fine art object.
 
 ## Understanding Platinum Print Photography
 
@@ -207,7 +207,7 @@ Consider professional consultation for platinum prints that are original works b
 
 ### What Conservators Can Offer
 
-Professional photograph conservators provide services beyond digital restoration including physical stabilization of deteriorating prints, proper deacidification and treatment of paper degradation, expert remounting using conservation-standard materials and techniques, proper housing and storage recommendations, authentication and condition documentation for insurance or sale, and comprehensive treatment that preserves both artistic and monetary value.
+Professional photograph conservators provide services beyond digital restoration including physical stabilization of deteriorating prints, proper deacidification and treatment of paper degradation, expert remounting using conservation-standard materials and techniques, proper housing and storage recommendations, authentication and condition documentation for insurance or sale, and full treatment that preserves both artistic and monetary value.
 
 ### Finding Qualified Conservators
 

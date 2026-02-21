@@ -11,7 +11,7 @@ featured: false
 
 Edge curling is one of the most common problems affecting old photographs. Walk into any attic, open an old album, or sort through a box of family photos, and you'll inevitably find prints with edges that curl upward, downward, or even roll completely. This damage isn't just aesthetic—curled edges make scanning difficult, increase handling damage risk, and can lead to cracking or permanent deformation.
 
-In this comprehensive guide, I'll share professional techniques to fix curled photograph edges, including both safe physical flattening methods for valuable originals and digital restoration approaches for photographs that can't or shouldn't be physically manipulated.
+In this guide, I'll share professional techniques to fix curled photograph edges, including both safe physical flattening methods for valuable originals and digital restoration approaches for photographs that can't or shouldn't be physically manipulated.
 
 ## Understanding Why Photograph Edges Curl
 

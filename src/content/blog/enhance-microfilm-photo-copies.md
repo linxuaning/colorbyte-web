@@ -13,7 +13,7 @@ The microfilm photocopy in your hand represents hours of genealogy research at t
 
 If you need to enhance microfilm photo copies, you're facing challenges that frustrate researchers daily. Microfilm was designed for long-term archival preservation, not for creating high-quality copies. The process of converting documents to microfilm and then printing copies from microfilm readers introduces multiple opportunities for degradation, distortion, and quality loss.
 
-This comprehensive guide will show you exactly how to enhance microfilm photo copies, transforming frustrating, barely legible photocopies into clear, readable documents suitable for research, preservation, and sharing with family members.
+This guide will show you exactly how to enhance microfilm photo copies, transforming frustrating, barely legible photocopies into clear, readable documents suitable for research, preservation, and sharing with family members.
 
 ## Understanding Microfilm and Why Copies Are Problematic
 

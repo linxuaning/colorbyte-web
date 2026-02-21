@@ -15,7 +15,7 @@ These questions matter because photographs serve as historical documents and evi
 
 Photo restoration ethics isn't about rigid rules that apply universally to every situation. Rather, it's about understanding principles that help you make thoughtful decisions appropriate to each photograph's purpose, significance, and condition. A treasured family portrait may warrant different treatment than a historically significant documentary photograph. Personal memories have different ethical considerations than scholarly research materials.
 
-This comprehensive guide will help you navigate the ethical dimensions of photo restoration, providing principles, guidelines, and practical frameworks for making restoration decisions that respect both historical authenticity and human needs for connection with the past.
+This guide will help you navigate the ethical dimensions of photo restoration, providing principles, guidelines, and practical frameworks for making restoration decisions that respect both historical authenticity and human needs for connection with the past.
 
 ## Core Ethical Principles in Photo Restoration
 
@@ -73,7 +73,7 @@ The ethical justification for more extensive restoration of family photos is tha
 
 **Documentation of Original State** balances this generosity. Before restoration, create archival scans showing current condition. Note what damage was repaired and what content was reconstructed. Maintain both original-state and restored versions. This documentation preserves historical authenticity while allowing enhanced versions for family enjoyment.
 
-**Respecting Family Wishes** matters when restoring photos for others. Discuss restoration extent with family members—some prefer minimal intervention while others want comprehensive enhancement. Consider cultural factors that may influence restoration preferences. Honor specific requests about family members' appearance or image treatment.
+**Respecting Family Wishes** matters when restoring photos for others. Discuss restoration extent with family members—some prefer minimal intervention while others want full enhancement. Consider cultural factors that may influence restoration preferences. Honor specific requests about family members' appearance or image treatment.
 
 ### Historical and Documentary Photographs: Evidence and Truth
 

@@ -11,7 +11,7 @@ featured: false
 
 Old portrait photographs capture the faces of our ancestors, preserving family resemblances and personal characteristics across generations. Whether formal studio portraits or casual snapshots, these images connect us to family history in the most personal way possible. When age, damage, or poor original quality obscure these faces, professional enhancement can restore clarity and detail, bringing your ancestors' faces back into sharp focus.
 
-This comprehensive guide covers everything you need to know about enhancing old portrait photos, from understanding portrait-specific damage to applying advanced techniques that preserve facial features while dramatically improving image quality.
+This guide covers everything you need to know about enhancing old portrait photos, from understanding portrait-specific damage to applying advanced techniques that preserve facial features while dramatically improving image quality.
 
 ## Understanding Portrait Photography Through the Decades
 

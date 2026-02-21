@@ -100,7 +100,7 @@ Before you try to enhance a low quality image, it helps to figure out exactly wh
 - Severe compression damage
 - Extreme noise in dark areas
 
-**Cannot Be Fixed**:
+**Can't Be Fixed**:
 - Detail that was never captured
 - Completely destroyed data from extreme compression
 - Faces too small to recognize

@@ -11,7 +11,7 @@ featured: false
 
 Collodion wet plate photography represents one of the most fascinating and historically significant photographic processes ever developed. Used primarily from the 1850s through the 1880s, this process captured some of history's most important images: Civil War battlefields, Victorian portraits, Western frontier expansion, and the daily lives of our ancestors during a transformative period.
 
-If you have collodion wet plates in your collection—whether ambrotypes in cases, loose tintype portraits, or glass plate negatives—you possess rare historical artifacts that require specialized knowledge to restore properly. In this comprehensive guide, I'll share professional techniques to restore collodion wet plates using both traditional conservation approaches and modern digital restoration technology.
+If you have collodion wet plates in your collection—whether ambrotypes in cases, loose tintype portraits, or glass plate negatives—you possess rare historical artifacts that require specialized knowledge to restore properly. In this guide, I'll share professional techniques to restore collodion wet plates using both traditional conservation approaches and modern digital restoration technology.
 
 ## Understanding Collodion Wet Plate Photography
 

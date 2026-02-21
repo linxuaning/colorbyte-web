@@ -51,7 +51,7 @@ If the photograph is too fragile for scanning, use a high-quality camera with a 
 
 ### Step 3: Basic Restoration Using AI Photo Restoration
 
-Modern AI photo restoration technology has revolutionized the restoration of historical photographs, making professional-quality results accessible to family historians and amateur archivists.
+Modern AI photo restoration technology has transformed the restoration of historical photographs, making professional-quality results accessible to family historians and amateur archivists.
 
 Begin by uploading your scanned Ellis Island photo to [ArtImageHub's old photo restoration tool](/old-photo-restoration). The AI system will automatically analyze the image, identifying areas of damage, assessing the overall condition, and determining the most appropriate restoration approach.
 

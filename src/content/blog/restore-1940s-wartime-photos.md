@@ -11,7 +11,7 @@ featured: false
 
 1940s wartime photographs hold extraordinary historical and emotional significance. Whether capturing military service during World War II, the home front experience, or precious moments during a tumultuous era, these photos connect us to the Greatest Generation. After 80+ years, however, these irreplaceable images often suffer from severe deterioration.
 
-This comprehensive guide addresses the unique challenges of restoring 1940s wartime photographs, from understanding period-specific damage patterns to applying specialized restoration techniques that preserve both the image and its historical authenticity.
+This guide addresses the unique challenges of restoring 1940s wartime photographs, from understanding period-specific damage patterns to applying specialized restoration techniques that preserve both the image and its historical authenticity.
 
 ## Understanding 1940s Wartime Photography
 
@@ -170,7 +170,7 @@ Proper digitization is crucial for successful restoration.
 3. **Separating Stuck Photos**:
    - Never force stuck photos apart
    - Use humidity chamber or freeze method
-   - Consider scanning through protective sleeve if cannot separate
+   - Consider scanning through protective sleeve if can't separate
    - Professional conservator for very valuable photos
 
 ### Optimal Scanning Settings

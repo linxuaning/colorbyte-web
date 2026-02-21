@@ -13,7 +13,7 @@ The box of old film negatives in your attic represents decades of family memorie
 
 If you want to restore damaged photo negatives, you're working with the master copies of your family's photographic history. While prints can fade or be lost, negatives were meant to create unlimited new prints. Unfortunately, film negatives are fragile, chemically unstable, and prone to deterioration that can make them unusable if not addressed promptly.
 
-This comprehensive guide will teach you how to restore damaged photo negatives, from safe handling and proper scanning to using AI technology to repair scratches, correct color shifts, and rescue deteriorating film before these irreplaceable originals are lost forever.
+This guide will teach you how to restore damaged photo negatives, from safe handling and proper scanning to using AI technology to repair scratches, correct color shifts, and rescue deteriorating film before these irreplaceable originals are lost forever.
 
 ## Understanding Film Negatives and Their Deterioration
 
@@ -478,7 +478,7 @@ For more on slide restoration, see our guide on [enhancing faded slide photograp
 
 **Digital Archiving:**
 
-Create comprehensive backup:
+Create complete backup:
 
 - Save master scans uncompressed (TIFF)
 - Create working copies (high-quality JPEG)

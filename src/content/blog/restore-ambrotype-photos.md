@@ -13,7 +13,7 @@ Ambrotype photographs represent one of the most fascinating and delicate forms o
 
 When you hold an ambrotype in your hands, you're experiencing photography much as your great-great-grandparents did—viewing a unique, one-of-a-kind image that has no negative, no duplicate, no backup. This singularity makes ambrotypes both precious and vulnerable. Damage to an ambrotype means damage to an irreplaceable historical artifact.
 
-This comprehensive guide will teach you everything you need to know about restoring ambrotype photographs, from understanding their unique construction and characteristics to using modern digital restoration techniques that bring these glass plate images back to life without risking the fragile originals.
+This guide will teach you everything you need to know about restoring ambrotype photographs, from understanding their unique construction and characteristics to using modern digital restoration techniques that bring these glass plate images back to life without risking the fragile originals.
 
 ## Understanding Ambrotype Photography
 
@@ -69,7 +69,7 @@ Capturing a high-quality digital image of your ambrotype requires careful techni
 
 **Scanning Approach** works well for ambrotypes that can be safely removed from their cases by a professional. Place the ambrotype image-side down on a flatbed scanner with a clean, lint-free barrier (like archival tissue) protecting the collodion surface. Scan at very high resolution (1200-2400 dpi minimum) to capture fine detail. Scan in color mode even though the image is monochrome, as this captures subtle color information in deteriorated backing or tinting. Make multiple scans at different exposure settings to capture both shadow and highlight detail.
 
-**Photographic Digitization** suits ambrotypes that should remain in their cases or cannot be safely scanned. Set up your camera on a tripod directly above the ambrotype, positioned parallel to the glass to avoid keystoning. Use diffuse, even lighting from both sides at 45-degree angles to minimize reflections and glare. Avoid direct light that creates hot spots or reflections in the glass. Use a polarizing filter if necessary to reduce glare from the glass surface. Photograph at the highest resolution your camera allows. Bracket exposures to ensure you capture all detail in both bright and dark areas.
+**Photographic Digitization** suits ambrotypes that should remain in their cases or can't be safely scanned. Set up your camera on a tripod directly above the ambrotype, positioned parallel to the glass to avoid keystoning. Use diffuse, even lighting from both sides at 45-degree angles to minimize reflections and glare. Avoid direct light that creates hot spots or reflections in the glass. Use a polarizing filter if necessary to reduce glare from the glass surface. Photograph at the highest resolution your camera allows. Bracket exposures to ensure you capture all detail in both bright and dark areas.
 
 **Lighting Considerations** dramatically affect results. Too much light washes out the delicate tonal gradations characteristic of ambrotypes. Too little light loses shadow detail and creates noise. Even, balanced lighting from both sides prevents directional shadows while revealing maximum detail. Experiment with light placement to minimize reflections while maximizing detail visibility.
 
