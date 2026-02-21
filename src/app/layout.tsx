@@ -22,13 +22,13 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "ArtImageHub",
-  url: "https://artimagehub.com",
+  url: "https://colorbyte.vercel.app",
   description: "AI-powered photo restoration, enhancement, and colorization. Restore old photos in 30 seconds — free.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://artimagehub.com/blog?q={search_term_string}",
+      urlTemplate: "https://colorbyte.vercel.app/blog?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -38,10 +38,10 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "ArtImageHub",
-  url: "https://artimagehub.com",
+  url: "https://colorbyte.vercel.app",
   logo: {
     "@type": "ImageObject",
-    url: "https://artimagehub.com/favicon.ico",
+    url: "https://colorbyte.vercel.app/favicon.ico",
     width: 32,
     height: 32,
   },
@@ -52,13 +52,13 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
-    email: "support@artimagehub.com",
+    email: "support@colorbyte.vercel.app",
     availableLanguage: "English",
   },
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artimagehub.com"),
+  metadataBase: new URL("https://colorbyte.vercel.app"),
   title: {
     default: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
     template: "%s | ArtImageHub",

@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">1. Overview</h2>
             <p>
-              ArtImageHub (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the AI photo restoration service at artimagehub.com.
+              ArtImageHub (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the AI photo restoration service at colorbyte.vercel.app.
               This Privacy Policy explains how we collect, use, and protect your information when you use our service.
             </p>
             <p className="mt-4">
@@ -138,8 +138,8 @@ export default function PrivacyPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">11. Contact</h2>
             <p>
               Questions about this Privacy Policy? Contact us at:{" "}
-              <a href="mailto:privacy@artimagehub.com" className="text-[#8B5E3C] underline">
-                privacy@artimagehub.com
+              <a href="mailto:privacy@colorbyte.vercel.app" className="text-[#8B5E3C] underline">
+                privacy@colorbyte.vercel.app
               </a>
             </p>
           </section>

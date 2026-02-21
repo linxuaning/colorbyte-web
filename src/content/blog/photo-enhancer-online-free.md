@@ -36,7 +36,7 @@ Here's what I found.
 <p>The 11 tools I tested:</p>
 
 <ol>
-  <li>ArtImageHub (artimagehub.com)</li>
+  <li>ArtImageHub (colorbyte.vercel.app)</li>
   <li>Remini</li>
   <li>MyHeritage Photo Enhancer</li>
   <li>Fotor AI Photo Enhancer</li>
