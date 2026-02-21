@@ -1,5 +1,5 @@
-# ArtImageHub — robots.txt
-# https://artimagehub.com
+# ColorByte — robots.txt
+# https://colorbyte.vercel.app
 
 User-agent: *
 Allow: /
@@ -19,8 +19,5 @@ Allow: /terms
 Allow: /about
 Allow: /sitemap-html
 
-# Crawl delay (be kind to our servers; 1 second between requests)
-Crawl-delay: 1
-
 # Sitemap location
-Sitemap: https://artimagehub.com/sitemap.xml
+Sitemap: https://colorbyte.vercel.app/sitemap.xml

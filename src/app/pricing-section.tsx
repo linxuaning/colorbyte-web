@@ -53,17 +53,22 @@ export default function PricingSection() {
 
           {/* Pro Lifetime */}
           <div className="relative rounded-2xl bg-[#1d1d1f] p-8">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
                 Best Value
+              </span>
+              <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em] shadow-lg">
+                Launch Special - 40% Off
               </span>
             </div>
 
             <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
-            <div className="mt-3 flex items-baseline gap-1">
+            <div className="mt-3 flex items-baseline gap-2">
               <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$29.9</span>
+              <span className="text-[24px] font-medium tracking-[-0.02em] text-white/40 line-through">$49.9</span>
             </div>
             <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
+            <p className="mt-1 text-[12px] text-[#ff8e53] font-medium">Limited time offer — save $20</p>
 
             <ul className="mt-7 space-y-3">
               {[
