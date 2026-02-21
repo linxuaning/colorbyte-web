@@ -45,7 +45,7 @@ Before diving into techniques, it's important to understand what colorization is
 - Machine learning trained on millions of color photos
 - Automatic colorization in seconds
 - Continually improving accuracy
-- Democratized access to colorization
+- Made colorization accessible to everyone
 
 ### When to Colorize Photos
 

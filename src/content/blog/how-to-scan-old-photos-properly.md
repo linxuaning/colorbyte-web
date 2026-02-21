@@ -11,7 +11,7 @@ featured: false
 
 The first step in preserving precious family photographs is creating high-quality digital copies. However, many people scan old photos improperly, creating digital files that look worse than the originals or lack the resolution needed for restoration and printing. Learning how to scan old photos properly ensures you capture maximum detail, create archival-quality digital files, and provide the best foundation for any future restoration work.
 
-This comprehensive guide covers everything from choosing scanning equipment to optimal settings, handling techniques, and organization strategies that professional archivists use to digitize historical photographs.
+I'll walk you through everything from choosing the right scanner to getting your settings dialed in, handling fragile photos safely, and organizing your files—the same techniques professional archivists use when digitizing historical collections.
 
 ## Why Proper Scanning Matters
 
@@ -642,7 +642,7 @@ For most old family photos, scan at 1200 DPI in TIFF format. This provides suffi
 
 ### Should I scan photos in color or black and white?
 
-Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you cannot add color information to grayscale scans.
+Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you can't add color information to grayscale scans.
 
 ### Can I use my phone to scan old photos instead of a scanner?
 
@@ -690,7 +690,7 @@ Start your photo preservation journey today—your future family will thank you 
       "name": "Should I scan photos in color or black and white?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you cannot add color information to grayscale scans."
+        "text": "Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you can't add color information to grayscale scans."
       }
     },
     {

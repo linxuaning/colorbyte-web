@@ -11,7 +11,7 @@ featured: true
 
 Photo digitization transforms fragile physical photographs into permanent digital formats that never deteriorate, fade, or suffer physical damage. Proper digitization preserves irreplaceable family memories for future generations while creating easily shareable, printable copies for current enjoyment. Yet the difference between excellent and poor digitization can mean the difference between capturing all image information or losing critical details forever. Whether you're digitizing a few special photos or tackling an entire family collection, understanding proper scanning techniques, optimal settings, file format choices, and workflow organization ensures you create the highest-quality digital archives possible.
 
-This comprehensive guide explains everything you need to know about photo digitization, from choosing equipment through organizing and backing up your digital collection, with step-by-step instructions for achieving professional-quality results.
+Here's everything you need to know about photo digitization, from picking the right equipment through organizing and backing up your digital collection, with step-by-step instructions for getting professional-quality results.
 
 ## Understanding Photo Digitization
 
@@ -178,7 +178,7 @@ For most old family photos, scan at 1200 dpi for archival-quality preservation. 
 
 ### Should I scan photos in color or grayscale mode?
 
-Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration. Grayscale scans of black-and-white photos discard this information, limiting restoration potential. Color scans can always be converted to grayscale later if desired, but grayscale scans cannot be converted to color. The slight increase in file size from color vs. grayscale scans is minimal and worth the preservation of all image information. Use 24-bit color minimum, 48-bit color if your scanner supports it for archival masters.
+Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration. Grayscale scans of black-and-white photos discard this information, limiting restoration potential. Color scans can always be converted to grayscale later if desired, but grayscale scans can't be converted to color. The slight increase in file size from color vs. grayscale scans is minimal and worth the preservation of all image information. Use 24-bit color minimum, 48-bit color if your scanner supports it for archival masters.
 
 ### What file format is best for archiving scanned photos?
 
@@ -221,7 +221,7 @@ Every photo digitized properly is a memory preserved forever. Begin your digitiz
       "name": "Should I scan photos in color or grayscale mode?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration. Grayscale scans of black-and-white photos discard this information, limiting restoration potential. Color scans can always be converted to grayscale later if desired, but grayscale scans cannot be converted to color. The slight increase in file size from color vs. grayscale scans is minimal and worth the preservation of all image information. Use 24-bit color minimum, 48-bit color if your scanner supports it for archival masters."
+        "text": "Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration. Grayscale scans of black-and-white photos discard this information, limiting restoration potential. Color scans can always be converted to grayscale later if desired, but grayscale scans can't be converted to color. The slight increase in file size from color vs. grayscale scans is minimal and worth the preservation of all image information. Use 24-bit color minimum, 48-bit color if your scanner supports it for archival masters."
       }
     },
     {

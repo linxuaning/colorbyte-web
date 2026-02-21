@@ -11,7 +11,7 @@ featured: false
 
 Scratches are among the most common and frustrating types of damage found on vintage photographs. Whether from decades of handling, improper storage, or contact with other objects, scratches can mar precious family memories and seem impossible to fix. The good news? With modern restoration techniques, even severely scratched vintage prints can be restored to beautiful condition.
 
-This comprehensive guide covers everything you need to know about fixing scratched vintage prints, from understanding different scratch types to mastering both physical and digital restoration techniques.
+I'll cover everything you need to know about fixing scratched vintage prints, from understanding different scratch types to getting the most out of both physical and digital restoration techniques.
 
 ## Understanding Scratches on Vintage Photographs
 
@@ -31,7 +31,7 @@ Not all scratches are the same—identifying the type helps you choose the most 
 - Visible as white or dark lines
 - Expose paper base beneath
 - Require digital restoration
-- Cannot be physically repaired
+- Can't be physically repaired
 
 **Base Scratches**:
 - Damage to paper backing

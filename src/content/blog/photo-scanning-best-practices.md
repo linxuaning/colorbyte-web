@@ -11,7 +11,7 @@ featured: false
 
 Digitizing your photograph collection is one of the most important preservation steps you can take. Proper scanning creates high-quality digital archives that protect against physical deterioration, damage, and loss while making photos easily shareable with family. However, scanning quality varies dramatically based on equipment, settings, and technique.
 
-This comprehensive guide covers everything you need to know about scanning photographs like a professional, from choosing equipment to mastering optimal settings and establishing efficient workflows.
+Here's everything you need to know about scanning photos like a pro—from picking the right equipment to dialing in your settings and building a workflow that doesn't waste your time.
 
 ## Why Proper Scanning Matters
 
