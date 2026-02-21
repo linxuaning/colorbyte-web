@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Lora } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Link from "next/link";
 
@@ -80,6 +81,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="en">
       <head>
@@ -99,6 +102,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );
