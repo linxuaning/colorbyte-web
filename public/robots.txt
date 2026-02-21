@@ -16,6 +16,8 @@ Allow: /old-photo-restoration
 Allow: /resources
 Allow: /privacy
 Allow: /terms
+Allow: /about
+Allow: /sitemap-html
 
 # Crawl delay (be kind to our servers; 1 second between requests)
 Crawl-delay: 1

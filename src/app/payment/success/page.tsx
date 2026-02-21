@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function PaymentSuccessPage() {
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const [email, setEmail] = useState<string | null>(null);
   const [orderId, setOrderId] = useState<string | null>(null);
@@ -40,7 +40,7 @@ export default function PaymentSuccessPage() {
 
           {/* Success Message */}
           <h1 className="text-[28px] font-bold text-[#1d1d1f] mb-3">
-            Payment Successful! 🎉
+            Payment Successful!
           </h1>
 
           <p className="text-[15px] text-[#6e6e73] mb-6">
@@ -78,7 +78,7 @@ export default function PaymentSuccessPage() {
           {/* Benefits */}
           <div className="bg-blue-50 rounded-xl p-5 mb-8 text-left">
             <p className="text-[13px] font-semibold text-[#0071e3] mb-3">
-              ✨ What you get:
+              What you get:
             </p>
             <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
               <li className="flex items-start gap-2">
@@ -120,5 +120,29 @@ export default function PaymentSuccessPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
+      <div className="max-w-md w-full">
+        <div className="bg-white rounded-3xl shadow-xl p-10 text-center">
+          <div className="animate-pulse">
+            <div className="mx-auto w-20 h-20 bg-gray-200 rounded-full mb-6"></div>
+            <div className="h-8 bg-gray-200 rounded mb-3"></div>
+            <div className="h-4 bg-gray-200 rounded w-3/4 mx-auto"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function PaymentSuccessPage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <PaymentSuccessContent />
+    </Suspense>
   );
 }
