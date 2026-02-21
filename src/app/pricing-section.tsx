@@ -1,45 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const BMC_PAGE_URL = "https://buymeacoffee.com/artimagehub";
 
 export default function PricingSection() {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-
-  async function handleStartTrial() {
-    if (!email) {
-      setError("Please enter your email address.");
-      return;
-    }
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch(`${API_BASE}/api/payment/start-trial`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (res.ok && data.checkout_url) {
-        localStorage.setItem("artimagehub_email", email);
-        window.location.href = data.checkout_url;
-      } else if (res.status === 409) {
-        setError("You already have an active subscription.");
-      } else if (res.status === 503) {
-        setError("Payment system is being set up. Please try again soon.");
-      } else {
-        setError(data.detail || "Something went wrong. Please try again.");
-      }
-    } catch {
-      setError("Could not connect to payment service. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  }
 
   return (
     <section id="pricing" className="bg-white py-20 sm:py-28">
@@ -98,10 +63,10 @@ export default function PricingSection() {
 
             <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro</p>
             <div className="mt-3 flex items-baseline gap-1">
-              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$9.9</span>
+              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$5</span>
               <span className="text-[15px] text-white/50">/ month</span>
             </div>
-            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">7-day free trial included</p>
+            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">Support us on Buy Me a Coffee</p>
 
             <ul className="mt-7 space-y-3">
               {[
@@ -120,34 +85,20 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            {/* Email + CTA */}
-            <div className="mt-8 space-y-2">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => { setEmail(e.target.value); setError(""); }}
-                onKeyDown={(e) => e.key === "Enter" && handleStartTrial()}
-                placeholder="Enter your email"
-                className="h-10 w-full rounded-xl bg-white/10 px-4 text-[14px] text-white placeholder-white/30 outline-none focus:ring-2 focus:ring-[#0071e3] transition"
-              />
-              <button
-                onClick={handleStartTrial}
-                disabled={loading}
-                className="flex h-10 w-full items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors disabled:opacity-60"
-              >
-                {loading ? (
-                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                ) : (
-                  "Start Free Trial"
-                )}
-              </button>
-              {error && <p className="text-[12px] text-red-400">{error}</p>}
-            </div>
+            {/* BMC CTA */}
+            <a
+              href={BMC_PAGE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 flex h-10 items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors"
+            >
+              Subscribe Now
+            </a>
           </div>
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          No charge during trial · Cancel anytime · Secure payment via LemonSqueezy
+          Cancel anytime · Secure payment via Buy Me a Coffee
         </p>
       </div>
     </section>
