@@ -19,22 +19,23 @@ export default function PricingSection() {
           Start free. Upgrade when you need more.
         </p>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-3 max-w-5xl mx-auto">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
           {/* Free */}
-          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8">
             <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free</p>
             <div className="mt-3 flex items-baseline gap-1">
               <span className="text-[44px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
             </div>
             <p className="mt-2 text-[13px] text-[#6e6e73]">Try it out</p>
 
-            <ul className="mt-6 space-y-2.5">
+            <ul className="mt-7 space-y-3">
               {[
-                "3 per day",
-                "720p quality",
+                "3 restorations per day",
+                "720p download quality",
                 "Small watermark",
+                "All AI features",
               ].map((f) => (
-                <li key={f} className="flex items-center gap-2 text-[13px] text-[#1d1d1f]">
+                <li key={f} className="flex items-center gap-2.5 text-[14px] text-[#1d1d1f]">
                   <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -45,69 +46,35 @@ export default function PricingSection() {
 
             <Link
               href="/old-photo-restoration"
-              className="mt-6 flex h-10 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[14px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
+              className="mt-8 flex h-10 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[14px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
             >
-              Get Started
+              Get Started Free
             </Link>
           </div>
 
-          {/* Pro Monthly */}
-          <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
+          {/* Pro Lifetime */}
+          <div className="relative rounded-2xl bg-[#1d1d1f] p-8">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
-                Most Popular
+                Best Value
               </span>
             </div>
 
-            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Monthly</p>
+            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
             <div className="mt-3 flex items-baseline gap-1">
-              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$9.9</span>
-              <span className="text-[15px] text-white/50">/ month</span>
+              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$29.9</span>
             </div>
-            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">Cancel anytime</p>
+            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
 
-            <ul className="mt-6 space-y-2.5">
+            <ul className="mt-7 space-y-3">
               {[
                 "Unlimited restorations",
-                "Original quality",
-                "No watermark",
-                "Priority processing",
-              ].map((f) => (
-                <li key={f} className="flex items-center gap-2 text-[13px] text-white">
-                  <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {f}
-                </li>
-              ))}
-            </ul>
-
-            <a
-              href={BMC_PAGE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 flex h-10 items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors"
-            >
-              Subscribe Monthly
-            </a>
-          </div>
-
-          {/* Pro Lifetime */}
-          <div className="rounded-2xl border-2 border-[#0071e3] bg-white p-6">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Pro Lifetime</p>
-            <div className="mt-3 flex items-baseline gap-1">
-              <span className="text-[44px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$29.9</span>
-            </div>
-            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment</p>
-
-            <ul className="mt-6 space-y-2.5">
-              {[
-                "Unlimited restorations",
-                "Original quality",
+                "Original quality download",
                 "No watermark",
                 "Lifetime access",
+                "All future features",
               ].map((f) => (
-                <li key={f} className="flex items-center gap-2 text-[13px] text-[#1d1d1f]">
+                <li key={f} className="flex items-center gap-2.5 text-[14px] text-white">
                   <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
@@ -120,15 +87,15 @@ export default function PricingSection() {
               href={BMC_PAGE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 flex h-10 items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors"
+              className="mt-8 flex h-10 items-center justify-center rounded-full bg-[#0071e3] text-[14px] font-medium text-white hover:bg-[#0077ed] transition-colors"
             >
-              Buy Lifetime
+              Get Lifetime Access
             </a>
           </div>
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          Cancel anytime · Secure payment via Buy Me a Coffee
+          One-time payment · No subscription · Secure payment via Buy Me a Coffee
         </p>
       </div>
     </section>
