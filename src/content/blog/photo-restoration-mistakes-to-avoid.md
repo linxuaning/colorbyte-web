@@ -695,6 +695,15 @@ The photograph was severely damaged, with multiple layers of new damage on top o
 | **Digital Editing** | Save over original scan | Keep master, work on copy with layers |
 | **Sharpening** | Heavy Unsharp Mask | Conservative sharpening on layer, selective |
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### What's the single most important mistake to avoid?

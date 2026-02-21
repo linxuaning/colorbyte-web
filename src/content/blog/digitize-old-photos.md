@@ -269,3 +269,12 @@ Here is everything I know about digitizing old photographs.
 <p>Start with the box you have. Scan what matters most. The rest will follow.</p>
 
 <p>When you're ready to restore and enhance your newly digitized photos, <a href="/old-photo-restoration">ArtImageHub's free restoration tool</a> is the next step — upload your scan and see what the AI can recover from even heavily damaged originals.</p>
+
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)

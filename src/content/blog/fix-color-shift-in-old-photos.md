@@ -168,6 +168,15 @@ Different photo types show characteristic color shift patterns.
 | Brown/Muddy | All dyes fading unevenly | Moderate-Hard | 80-90% | Multi-channel curves adjustment |
 | Uneven/Multiple Casts | Variable fading | Hard | 70-85% | Local selective adjustments |
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### Can severely color-shifted photos be restored to natural colors?

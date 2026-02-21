@@ -497,6 +497,15 @@ A client inherited a broken sixth-plate ambrotype of their great-great-grandfath
 - Museum conservation departments
 - Specialized photograph conservators
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### How can I tell if I have a collodion wet plate?

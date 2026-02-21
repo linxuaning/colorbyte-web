@@ -176,6 +176,15 @@ If you can capture the image both with and without the mat, use the mat-covered 
 6. **Reconstruct Backing**: Invert if necessary, create proper positive appearance
 7. **Create Outputs**: Save archival TIFF, generate print and sharing versions
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### What's the difference between ambrotypes, daguerreotypes, and tintypes?

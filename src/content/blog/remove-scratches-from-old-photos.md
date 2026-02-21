@@ -273,3 +273,12 @@ Chemical damage: Test carefully before committing. AI may over-correct; manual w
 <p>That's what scratch removal is ultimately about: removing the damage so the person in the photograph can be present again. The methods have changed dramatically in the years I've been doing this work. The goal hasn't.</p>
 
 <p>If you have a scratched photograph waiting, start with <a href="/old-photo-restoration">ArtImageHub's free restoration tool</a>. Upload it, run the restoration, and compare the result. For most photographs, you'll have your answer in under two minutes. For the complicated cases — the deep emulsion damage, the only surviving portrait — you now know exactly what's involved and where to start.</p>
+
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)

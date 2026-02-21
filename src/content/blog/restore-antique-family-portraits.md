@@ -736,6 +736,15 @@ Common in Victorian era:
 - Framed prints for display
 - Maintain digital archive access
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### Can daguerreotypes and tintypes be safely scanned on a flatbed scanner?

@@ -673,6 +673,15 @@ Even after restoration, preserve originals:
 - What were their circumstances (economic, social)?
 - This informs color choices (clothing, cars, etc.)
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### Why do 1950s Kodak prints turn pink?

@@ -470,6 +470,15 @@ Glass negatives often require expert intervention.
 - Complex restoration: $600-2000+ per plate
 - Depends on damage severity and treatment needs
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### How do you digitize old glass plate negatives?

@@ -170,6 +170,15 @@ Slides and negatives need specialized scanning. Use scanner with transparency ad
 
 Scan slides and negatives at high resolution (2400-4000 dpi minimum) as these small formats require high resolution to capture all detail.
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### What resolution should I scan old photos?

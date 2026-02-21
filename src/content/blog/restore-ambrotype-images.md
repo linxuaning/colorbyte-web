@@ -196,6 +196,15 @@ Professional conservators can stabilize damaged plates, repair or replace backin
 | Fading/low contrast | Moderate | Excellent | Limited help | AI restoration |
 | Broken into pieces | N/A | Good (from scan of pieces) | Excellent (reassembly) | Conservation for original + AI for restoration |
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### How can I tell if my old photograph is an ambrotype?

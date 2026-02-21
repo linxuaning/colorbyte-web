@@ -122,6 +122,15 @@ Before beginning physical preservation work, create digital insurance.
 
 Professional archival suppliers like Gaylord Archival, University Products, or Conservation Resources offer tested, reliable materials. Look for products that pass the Photographic Activity Test (PAT). Avoid craft or office supply stores where products may not be archival-quality despite "acid-free" claims.
 
+
+---
+
+## Related Articles
+
+- [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
+- [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
+- [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+
 ## Frequently Asked Questions
 
 ### How long will properly stored photographs last?
