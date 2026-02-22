@@ -6,7 +6,6 @@ Allow: /
 
 # Block utility/system pages from crawling
 Disallow: /payment/
-Disallow: /subscription
 Disallow: /api/
 
 # Allow key static assets (CSS/JS needed for rendering)
