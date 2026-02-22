@@ -40,25 +40,25 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">2. Description of Service</h2>
             <p>
-              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. We offer a free tier (3 restorations per day, 720p output, watermark) and a paid Pro subscription (unlimited restorations, original quality, no watermark).
+              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. We offer a free trial (3 photos to test quality) and a paid Pro Lifetime plan (unlimited restorations with a one-time payment).
             </p>
           </section>
 
           <section>
-            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Free Tier</h2>
+            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Free Trial</h2>
             <p>
-              The free tier allows 3 photo restorations per day without requiring an account. Free tier output includes a small watermark and is limited to 720p resolution. We reserve the right to modify free tier limits at any time.
+              The free trial allows you to restore 3 photos to test the AI quality before purchasing. No account or credit card required for the trial. Trial photos may include a watermark. We reserve the right to modify trial limits at any time.
             </p>
           </section>
 
           <section>
-            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. Pro Subscription</h2>
+            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. Pro Lifetime Plan</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-[#2c2416]">Price:</strong> $9.90/month after a 7-day free trial.</li>
-              <li><strong className="text-[#2c2416]">Trial:</strong> Your card is charged only after the 7-day trial period ends. Cancel any time before the trial ends and you will not be charged.</li>
-              <li><strong className="text-[#2c2416]">Billing:</strong> Subscriptions renew automatically on a monthly basis.</li>
-              <li><strong className="text-[#2c2416]">Cancellation:</strong> Cancel at any time through your account dashboard or by contacting support. Access continues until the end of the current billing period.</li>
-              <li><strong className="text-[#2c2416]">Refunds:</strong> We offer a 7-day money-back guarantee after your first charge. Contact support within 7 days of being charged.</li>
+              <li><strong className="text-[#2c2416]">Price:</strong> $29.9 one-time payment for lifetime access.</li>
+              <li><strong className="text-[#2c2416]">Payment:</strong> One-time charge. No recurring subscription, no monthly fees.</li>
+              <li><strong className="text-[#2c2416]">Features:</strong> Unlimited photo restorations, original quality downloads, no watermark, lifetime access to all current and future features.</li>
+              <li><strong className="text-[#2c2416]">Refunds:</strong> We offer a 30-day money-back guarantee. Contact support within 30 days of purchase for a full refund.</li>
+              <li><strong className="text-[#2c2416]">Lifetime Definition:</strong> "Lifetime" means as long as the service operates. We reserve the right to discontinue the service with 90 days notice.</li>
             </ul>
           </section>
 

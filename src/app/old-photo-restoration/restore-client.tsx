@@ -406,8 +406,8 @@ export default function RestoreClient() {
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
                     {remaining === 0
-                      ? "Start 7-Day Free Trial — Unlimited Downloads"
-                      : "Start 7-Day Free Trial"}
+                      ? "Get Pro Lifetime — Unlimited Forever"
+                      : "Get Pro Lifetime"}
                   </span>
                   <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
                     {remaining === 0
@@ -420,7 +420,7 @@ export default function RestoreClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                Trial is free. Card required, $9.9/mo after 7 days. Cancel anytime.
+                $29.9 one-time payment. No subscription, unlimited forever.
               </p>
             )}
           </div>
@@ -558,11 +558,11 @@ function LimitReachedModal({
             Your limit resets in {timeToReset}.
           </p>
 
-          {/* Trial Benefits Card */}
+          {/* Pro Lifetime Benefits Card */}
           <div className="mt-6 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]/40 p-6 text-left">
-            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Start Your 7-Day Free Trial</h3>
+            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Get Pro Lifetime — $29.9 Once</h3>
             <p className="text-[13px] text-[#6e6e73] mb-4">
-              Get unlimited downloads immediately:
+              Unlimited forever with one-time payment:
             </p>
 
             <div className="space-y-2.5 text-[14px]">

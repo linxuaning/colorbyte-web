@@ -13,7 +13,7 @@ export default function PaymentCancelPage() {
       <div className="mx-auto max-w-md text-center">
         <h1 className="text-2xl font-bold">No worries!</h1>
         <p className="mt-2 text-muted-foreground">
-          You can start your free trial anytime. No credit card is charged during the 7-day trial period.
+          You can try 3 photos free anytime, no credit card needed. Upgrade to Pro Lifetime when ready for unlimited access.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <Link

@@ -15,20 +15,20 @@ export default function PricingSection() {
         </p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
-          {/* Free */}
+          {/* Free Trial */}
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free</p>
+            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free Trial</p>
             <div className="mt-3 flex items-baseline gap-1">
               <span className="text-[44px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
             </div>
-            <p className="mt-2 text-[13px] text-[#6e6e73]">Try it out</p>
+            <p className="mt-2 text-[13px] text-[#6e6e73]">Test before you buy</p>
 
             <ul className="mt-7 space-y-3">
               {[
-                "3 restorations per day",
-                "720p download quality",
-                "Small watermark",
-                "All AI features",
+                "3 photos to try",
+                "See full AI quality",
+                "No signup required",
+                "All AI features included",
               ].map((f) => (
                 <li key={f} className="flex items-center gap-2.5 text-[14px] text-[#1d1d1f]">
                   <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
@@ -99,7 +99,7 @@ export default function PricingSection() {
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          Start with free plan · Upgrade when you need unlimited downloads
+          Try 3 photos free · Upgrade for unlimited lifetime access · No subscription required
         </p>
       </div>
     </section>

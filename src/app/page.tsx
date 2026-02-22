@@ -82,18 +82,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is the difference between Free and Pro plans?",
+      name: "What is the difference between Free Trial and Pro Lifetime?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Free gives you 3 downloads per day at 720p with a watermark. Pro gives unlimited original-quality downloads with no watermark. Start with a 7-day free trial.",
+        text: "Free Trial gives you 3 photos to test the AI quality before buying. Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever — no subscription, no recurring charges.",
       },
     },
     {
       "@type": "Question",
-      name: "How does the free trial work?",
+      name: "How does the pricing work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Enter your email and card — no charge for 7 days. Then $9.90 per month. Cancel anytime before the trial ends.",
+        text: "Try 3 photos completely free to test the quality. If you like the results, upgrade to Pro Lifetime for $29.9 (one-time payment) and restore unlimited photos forever. No monthly subscription, no hidden fees.",
       },
     },
   ],
@@ -206,9 +206,9 @@ export default function HomePage() {
               {/* Trust signals */}
               <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#8B7355]">
                 {[
-                  "No signup required",
+                  "Try 3 photos free",
                   "Results in 30 seconds",
-                  "7-day free trial",
+                  "One-time payment, no subscription",
                 ].map((t) => (
                   <span key={t} className="flex items-center gap-2">
                     <svg className="h-3.5 w-3.5 text-[#8B5E3C]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
@@ -585,12 +585,12 @@ export default function HomePage() {
                   a: "Yes. All uploaded photos are automatically deleted after 24 hours. We never store, share, or train models on your images.",
                 },
                 {
-                  q: "What is the difference between Free and Pro?",
-                  a: "Free gives you 3 downloads per day at 720p with a small watermark. Pro gives unlimited original-quality downloads with no watermark. Start with a 7-day free trial.",
+                  q: "What is the difference between Free Trial and Pro Lifetime?",
+                  a: "Free Trial gives you 3 photos to test quality (no signup required). Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever with original quality and no watermark.",
                 },
                 {
-                  q: "How does the free trial work?",
-                  a: "Enter your email and card — no charge for 7 days. Then $9.90/month. Cancel anytime before the trial ends.",
+                  q: "How does pricing work?",
+                  a: "Try 3 photos completely free to test the quality. If you like the results, upgrade to Pro Lifetime for $29.9 (one-time payment) and restore unlimited photos forever. No monthly subscription, no hidden fees.",
                 },
               ].map((item) => (
                 <details
