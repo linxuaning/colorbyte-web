@@ -22,6 +22,8 @@ function buildUrlList() {
   const urls = [
     '/',
     '/old-photo-restoration',
+    '/photo-colorizer',
+    '/photo-enhancer',
     '/blog',
     '/about',
     '/resources',
