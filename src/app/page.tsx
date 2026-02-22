@@ -29,7 +29,7 @@ const softwareAppSchema = {
   name: "ArtImageHub AI Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://artimagehub.com/old-photo-restoration",
+  url: "https://www.artimagehub.com/old-photo-restoration",
   description:
     "AI-powered photo restoration tool that fixes damaged photos, enhances faces, increases resolution up to 4×, and colorizes black & white images in seconds.",
   offers: {

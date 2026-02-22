@@ -23,13 +23,13 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "ArtImageHub",
-  url: "https://artimagehub.com",
+  url: "https://www.artimagehub.com",
   description: "AI-powered photo restoration, enhancement, and colorization. Restore old photos in 30 seconds — free.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://artimagehub.com/blog?q={search_term_string}",
+      urlTemplate: "https://www.artimagehub.com/blog?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -39,10 +39,10 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "ArtImageHub",
-  url: "https://artimagehub.com",
+  url: "https://www.artimagehub.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://artimagehub.com/favicon.ico",
+    url: "https://www.artimagehub.com/favicon.ico",
     width: 32,
     height: 32,
   },
@@ -59,7 +59,7 @@ const organizationSchema = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artimagehub.com"),
+  metadataBase: new URL("https://www.artimagehub.com"),
   title: {
     default: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
     template: "%s | ArtImageHub",

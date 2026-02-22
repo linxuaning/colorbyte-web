@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const INDEXNOW_KEY = process.env.INDEXNOW_API_KEY || '7f8b9c2d4e5a6f1b3c8d9e0a1b2c3d4e';
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://artimagehub.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.artimagehub.com';
 
 export async function POST(request: Request) {
   try {

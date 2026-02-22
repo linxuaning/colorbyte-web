@@ -1,5 +1,5 @@
 # ArtImageHub — robots.txt
-# https://artimagehub.com
+# https://www.artimagehub.com
 
 User-agent: *
 Allow: /
@@ -19,4 +19,4 @@ Allow: /about
 Allow: /sitemap-html
 
 # Sitemap location
-Sitemap: https://artimagehub.com/sitemap.xml
+Sitemap: https://www.artimagehub.com/sitemap.xml
