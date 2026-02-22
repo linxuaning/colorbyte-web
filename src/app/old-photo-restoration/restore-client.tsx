@@ -407,12 +407,16 @@ export default function RestoreClient() {
                     <Crown className="h-4 w-4" />
                     {remaining === 0
                       ? "Get Pro Lifetime — Unlimited Forever"
-                      : "Get Pro Lifetime"}
+                      : remaining <= 1
+                      ? "Unlock Unlimited — Save $20 Today"
+                      : "Get Pro Lifetime — $29.9 Once"}
                   </span>
                   <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
                     {remaining === 0
-                      ? "No watermark  ·  Original quality  ·  $0 today"
-                      : "Original quality · No watermark · Unlimited"}
+                      ? "No watermark  ·  Original quality  ·  $29.9 once"
+                      : remaining === 1
+                      ? "Last free download used · Upgrade for unlimited"
+                      : "Original quality · No watermark · Pay once, use forever"}
                   </span>
                 </Link>
               </div>
@@ -559,38 +563,59 @@ function LimitReachedModal({
           </p>
 
           {/* Pro Lifetime Benefits Card */}
-          <div className="mt-6 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]/40 p-6 text-left">
-            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Get Pro Lifetime — $29.9 Once</h3>
-            <p className="text-[13px] text-[#6e6e73] mb-4">
-              Unlimited forever with one-time payment:
+          <div className="mt-6 rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] border border-[#0071e3]/20 p-6 text-left relative overflow-hidden">
+            {/* Launch Special Badge */}
+            <div className="absolute top-3 right-3">
+              <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-lg">
+                Save $20
+              </span>
+            </div>
+
+            <h3 className="text-[18px] font-bold text-white mb-1">Get Pro Lifetime — $29.9 Once</h3>
+            <p className="text-[13px] text-white/70 mb-1">
+              <span className="line-through text-white/40">$49.9</span> <span className="text-[#0071e3] font-semibold">$29.9 one-time</span>
+            </p>
+            <p className="text-[12px] text-white/60 mb-4">
+              Pay once, use forever. No monthly bills.
             </p>
 
-            <div className="space-y-2.5 text-[14px]">
+            <div className="space-y-2.5 text-[13px]">
               {[
-                "Unlimited downloads (no daily limit)",
+                "Unlimited downloads forever",
                 "Original quality (full resolution)",
                 "No watermark",
-                "Priority processing",
+                "All future features included",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-2.5">
-                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/10">
+                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/20">
                     <Check className="h-3 w-3 text-[#0071e3]" />
                   </div>
-                  <span className="text-[#1d1d1f]">{benefit}</span>
+                  <span className="text-white">{benefit}</span>
                 </div>
               ))}
             </div>
 
+            {/* Value Comparison */}
+            <div className="mt-4 rounded-lg bg-white/5 border border-white/10 p-3 text-[11px]">
+              <p className="text-white/60 mb-1">💡 Smart choice:</p>
+              <p className="text-white">
+                <span className="text-red-400">Wait until tomorrow</span>: Reset in {timeToReset}, still limited to 3/day
+              </p>
+              <p className="text-white mt-1">
+                <span className="text-green-400">Upgrade now</span>: Unlimited forever, save $20 today
+              </p>
+            </div>
+
             <button
               onClick={onStartTrial}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
+              className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-bold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-lg shadow-[#0071e3]/25"
             >
               <Crown className="h-4 w-4" />
-              Start Free Trial — $0 Today
+              Unlock Unlimited Access — Save $20
             </button>
 
-            <p className="mt-3 text-center text-[12px] text-[#6e6e73]">
-              $9.9/month after trial. Cancel anytime in 1 click.
+            <p className="mt-3 text-center text-[11px] text-white/50">
+              30-day money-back guarantee · Secure payment
             </p>
           </div>
 
