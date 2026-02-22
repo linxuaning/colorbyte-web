@@ -395,7 +395,7 @@ export default function RestoreClient() {
 
                 {/* Trial CTA */}
                 <Link
-                  href="/#pricing"
+                  href="/subscription"
                   onClick={() => trackCTAClick('restore-page')}
                   className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
                     remaining === 0
@@ -431,7 +431,7 @@ export default function RestoreClient() {
               onClose={() => setShowLimitModal(false)}
               onStartTrial={() => {
                 setShowLimitModal(false);
-                window.location.href = "/#pricing";
+                window.location.href = "/subscription";
               }}
             />
           )}
