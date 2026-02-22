@@ -1,10 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import PayPalButton from "@/components/PayPalButton";
 
 export default function PricingSection() {
-
   return (
     <section id="pricing" className="bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-5xl px-5">
@@ -87,12 +83,23 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <PayPalButton />
+            <Link
+              href="/subscription"
+              className="mt-8 flex h-10 items-center justify-center gap-2 rounded-full bg-[#0071e3] text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
+              </svg>
+              Get Pro Lifetime — Try Free First
+            </Link>
+            <p className="mt-3 text-center text-[11px] text-white/40">
+              Try free, then upgrade anytime
+            </p>
           </div>
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          One-time payment · No subscription · Secure payment via PayPal
+          Start with free plan · Upgrade when you need unlimited downloads
         </p>
       </div>
     </section>
