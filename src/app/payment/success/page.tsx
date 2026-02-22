@@ -111,7 +111,7 @@ function PaymentSuccessContent() {
           <p className="mt-4 text-[12px] text-[#86868b]">
             Questions?{" "}
             <a
-              href="mailto:support@colorbyte.vercel.app"
+              href="mailto:support@artimagehub.com"
               className="text-[#0071e3] hover:underline"
             >
               Contact Support

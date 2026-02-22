@@ -1,5 +1,5 @@
-# ColorByte — robots.txt
-# https://colorbyte.vercel.app
+# ArtImageHub — robots.txt
+# https://artimagehub.com
 
 User-agent: *
 Allow: /
@@ -19,4 +19,4 @@ Allow: /about
 Allow: /sitemap-html
 
 # Sitemap location
-Sitemap: https://colorbyte.vercel.app/sitemap.xml
+Sitemap: https://artimagehub.com/sitemap.xml

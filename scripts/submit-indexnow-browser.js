@@ -1,8 +1,8 @@
 // IndexNow 批量提交脚本 - 浏览器版本
-// 在 https://colorbyte.vercel.app 的浏览器 Console 中执行
+// 在 https://artimagehub.com 的浏览器 Console 中执行
 
 (async function submitToIndexNow() {
-  const SITE_URL = 'https://colorbyte.vercel.app';
+  const SITE_URL = 'https://artimagehub.com';
   const API_ENDPOINT = '/api/indexnow';
 
   // 所有博客文章的 slug（122篇）

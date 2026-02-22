@@ -34,7 +34,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your photo",
       text: "Click the upload area and select your old or damaged photo. Supported formats: JPG, PNG, WEBP up to 20MB.",
-      image: "https://colorbyte.vercel.app/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 4,
       name: "Download your restored photo",
       text: "Preview the before/after result and download your restored photo in high resolution. Free users get 720p; Pro users get original resolution.",
-      image: "https://colorbyte.vercel.app/blog/after-1.jpg",
+      image: "https://artimagehub.com/blog/after-1.jpg",
     },
   ],
 };

@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://colorbyte.vercel.app';
+const SITE_URL = 'https://artimagehub.com';
 const API_ENDPOINT = `${SITE_URL}/api/indexnow`;
 
 // Get all blog post slugs

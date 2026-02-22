@@ -8,7 +8,7 @@
 
 **步骤：**
 
-1. 打开浏览器，访问 https://colorbyte.vercel.app
+1. 打开浏览器，访问 https://artimagehub.com
 2. 打开开发者工具（F12 或 Cmd+Option+I）
 3. 切换到 Console 标签
 4. 复制 `scripts/submit-indexnow-browser.js` 的全部内容
@@ -18,7 +18,7 @@
 **预期输出：**
 ```
 📊 Preparing to submit 130 URLs to IndexNow...
-📍 Site: https://colorbyte.vercel.app
+📍 Site: https://artimagehub.com
 
 📦 Split into 2 batch(es)
 
@@ -97,7 +97,7 @@ node submit-indexnow.js
 
 2. **Site命令检查**:
    ```
-   site:colorbyte.vercel.app
+   site:artimagehub.com
    ```
    在Bing搜索引擎中查看已索引页面数量
 

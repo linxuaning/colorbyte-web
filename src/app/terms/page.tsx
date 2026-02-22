@@ -32,7 +32,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing or using ArtImageHub (&quot;Service&quot;) at colorbyte.vercel.app, you agree to be bound by these Terms of Service.
+              By accessing or using ArtImageHub (&quot;Service&quot;) at artimagehub.com, you agree to be bound by these Terms of Service.
               If you do not agree, do not use the Service.
             </p>
           </section>
@@ -121,8 +121,8 @@ export default function TermsPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">11. Contact</h2>
             <p>
               Questions? Contact us at:{" "}
-              <a href="mailto:support@colorbyte.vercel.app" className="text-[#8B5E3C] underline">
-                support@colorbyte.vercel.app
+              <a href="mailto:support@artimagehub.com" className="text-[#8B5E3C] underline">
+                support@artimagehub.com
               </a>
             </p>
           </section>

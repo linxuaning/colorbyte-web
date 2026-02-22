@@ -73,20 +73,20 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "ArtImageHub",
-      url: "https://colorbyte.vercel.app",
+      url: "https://artimagehub.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://colorbyte.vercel.app/favicon.ico",
+        url: "https://artimagehub.com/favicon.ico",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://colorbyte.vercel.app/blog/${slug}`,
+      "@id": `https://artimagehub.com/blog/${slug}`,
     },
     articleSection: post.category,
     keywords: post.tags.join(", "),
     wordCount: post.content.split(/\s+/).length,
-    image: post.image ? `https://colorbyte.vercel.app${post.image}` : undefined,
+    image: post.image ? `https://artimagehub.com${post.image}` : undefined,
   };
 
   const breadcrumbLd = {
@@ -97,19 +97,19 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://colorbyte.vercel.app",
+        item: "https://artimagehub.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Journal",
-        item: "https://colorbyte.vercel.app/blog",
+        item: "https://artimagehub.com/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `https://colorbyte.vercel.app/blog/${slug}`,
+        item: `https://artimagehub.com/blog/${slug}`,
       },
     ],
   };
@@ -273,7 +273,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <p className="text-sm font-semibold text-gray-500 mb-4">Share this article</p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://colorbyte.vercel.app/blog/${slug}`)}&via=artimagehub`}
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}&via=artimagehub`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
@@ -282,7 +282,7 @@ export default async function BlogPostPage({ params }: Props) {
                     Share on X
                   </a>
                   <a
-                    href={`https://www.reddit.com/submit?url=${encodeURIComponent(`https://colorbyte.vercel.app/blog/${slug}`)}&title=${encodeURIComponent(post.title)}`}
+                    href={`https://www.reddit.com/submit?url=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}&title=${encodeURIComponent(post.title)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
@@ -291,7 +291,7 @@ export default async function BlogPostPage({ params }: Props) {
                     Share on Reddit
                   </a>
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://colorbyte.vercel.app/blog/${slug}`)}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
