@@ -49,11 +49,11 @@ ArtImageHub uses AI to fix it all in 30 seconds.
 • Auto colorization - Add natural color to black & white photos
 
 💰 Pricing:
-• Free: 3 photos/day (no signup required)
-• Pro: Unlimited photos ($9.90/month, 7-day free trial)
+• Free: Test drive (3 photos to try before buying)
+• Pro Lifetime: Unlimited photos forever ($29.9 one-time payment)
 
 🚀 Why it's different:
-• Actually free tier (most tools require $30-$50/month)
+• One-time payment, not subscription (pay once, restore forever)
 • One-click workflow (no Photoshop skills needed)
 • Natural results (faces don't look plastic/AI-weird)
 • Privacy-first (photos auto-delete after 24 hours)
@@ -81,19 +81,19 @@ Last Thanksgiving, my dad showed me a box of his parents' photos. 200+ photos sp
 Professional restoration costs $50-$600 per photo. For 200 photos, that's $10,000-$120,000. Completely out of reach for most families.
 
 Existing AI tools either:
-• Cost $30-$50/month (Topaz, Remini, etc.)
+• Cost $30-$50/month on recurring subscriptions (Topaz, Remini, etc.)
 • Have terrible UX (complicated workflows, weird outputs)
 • Make faces look plastic and AI-generated
 • Don't actually work on severe damage
 
-So I built what I wish existed: Upload → Wait 30 seconds → Download. That's it.
+So I built what I wish existed: Pay once ($29.9), restore unlimited photos forever. Upload → Wait 30 seconds → Download. That's it.
 
 **What makes ArtImageHub different:**
 
-1. **Free tier that actually works**
-   • 3 photos/day, forever
-   • No credit card, no signup
-   • Full quality downloads
+1. **One-time payment, not subscription**
+   • Pay $29.9 once, restore unlimited photos forever
+   • Free trial: 3 photos to test quality first
+   • No recurring charges (most competitors charge $30-50/month)
 
 2. **Natural face enhancement**
    • Uses GFPGAN + CodeFormer neural nets
@@ -139,16 +139,16 @@ Happy to answer any questions! What old photos do you have that need restoration
 ```
 Great question! Main differences:
 
-**Remini:** $30/month, mobile-only, aggressive face smoothing (looks plastic)
+**Remini:** $30/month subscription, mobile-only, aggressive face smoothing (looks plastic)
 **Topaz Photo AI:** $199 one-time, desktop-only, steep learning curve
-**ArtImageHub:** $9.90/month (or free 3/day), web-based, natural results
+**ArtImageHub:** $29.9 one-time (pay once, restore forever), web-based, natural results
 
 We optimized for:
-• Actually usable free tier (most tools are basically demos)
+• One-time payment instead of monthly subscription (pay once, own forever)
 • Browser-based (works on any device)
 • Natural face enhancement (doesn't over-smooth)
 
-Trade-off: We don't offer as many manual controls as Topaz. If you're a pro photographer who wants pixel-level control, Topaz is better. If you just want to restore grandma's photos, we're faster and cheaper.
+Trade-off: We don't offer as many manual controls as Topaz. If you're a pro photographer who wants pixel-level control, Topaz is better. If you just want to restore grandma's photos, we're faster and more affordable long-term.
 ```
 
 ### Q: "What AI models do you use?"
@@ -165,25 +165,30 @@ All served through Replicate's API with FastAPI backend + Next.js frontend.
 We're open about our tech stack - built to be fast, affordable, and privacy-respecting.
 ```
 
-### Q: "How do you make money with free tier?"
+### Q: "Why one-time payment instead of subscription?"
 
 **Answer:**
 ```
 Business model:
 
-**Free tier (80% of users):**
-• 3 photos/day
+**Free trial (test drive):**
+• 3 photos to try before buying
 • Drives word-of-mouth growth
-• Some users upgrade when they hit limits
+• Low friction to test the quality
 
-**Pro tier ($9.90/month):**
-• Unlimited photos
-• No watermark
+**Pro Lifetime ($29.9 one-time):**
+• Unlimited photos forever
+• No recurring charges
 • Priority processing
 
-Target customers: Genealogists, professional organizers, photo scanning services - people who need to restore dozens/hundreds of photos.
+We chose one-time payment because:
+• Families restoring old photos is a one-time project (not ongoing need)
+• People hate subscriptions for occasional-use tools
+• More honest pricing (pay once vs $30/month forever)
 
-Free tier is genuinely free forever (not a bait-and-switch). We can afford it because AI costs have dropped 90% in the last 2 years.
+Target customers: Families with boxes of old photos, genealogists digitizing archives, anyone who wants to restore 10-200 photos without breaking the bank.
+
+We can afford one-time pricing because AI costs have dropped 90% in the last 2 years.
 ```
 
 ### Q: "Can it restore photos with 50%+ missing?"
@@ -217,12 +222,12 @@ Just launched ArtImageHub on @ProductHunt! 🚀
 
 Restore faded family photos in 30 seconds with AI.
 
-Free tier: 3 photos/day (no signup)
-Pro tier: Unlimited ($9.90/mo)
+💰 Pricing: $29.9 one-time (pay once, restore forever)
+🆓 Try free: 3 photos to test quality first
 
 We've restored 10,000+ photos in 3 months.
 
-Try it free: artimagehub.com
+Try it: artimagehub.com
 
 Upvote: [Product Hunt link]
 
@@ -235,14 +240,16 @@ Excited to share what I've been building: ArtImageHub - AI photo restoration for
 
 The problem: Professional photo restoration costs $50-$600 per photo. For families with boxes of old photos, that's prohibitively expensive.
 
-The solution: AI-powered restoration in 30 seconds for free (3 photos/day) or $9.90/month unlimited.
+The solution: AI-powered restoration in 30 seconds. Pay $29.9 once, restore unlimited photos forever.
+
+No subscriptions. No recurring charges. Just a simple one-time payment that gives you lifetime access.
 
 We've restored 10,000+ photos in 3 months, from 1800s tintypes to 1990s Polaroids.
 
 Just launched on Product Hunt today. Would love your support and feedback:
 [Product Hunt link]
 
-Try it free: artimagehub.com
+Try it: artimagehub.com (3 free photos to test quality)
 
 #ProductLaunch #AI #FamilyHistory #Genealogy
 ```
@@ -261,7 +268,9 @@ Quick favor: I just launched ArtImageHub on Product Hunt today and would love yo
 
 What it is: AI photo restoration tool (restore faded/damaged family photos in 30 seconds)
 
-Why I built it: My dad had 200+ old family photos that were fading away. Professional restoration costs $200+ per photo. I built a free AI tool to fix them.
+Why I built it: My dad had 200+ old family photos that were fading away. Professional restoration costs $200+ per photo. I built an affordable AI tool to fix them.
+
+Pricing: $29.9 one-time payment (pay once, restore unlimited photos forever). No subscriptions, no recurring charges.
 
 Results: 10,000+ photos restored in 3 months. People are using it to preserve family memories, digitize genealogy archives, etc.
 
@@ -269,7 +278,7 @@ Results: 10,000+ photos restored in 3 months. People are using it to preserve fa
 
 (Upvotes in the first 3 hours matter most for ranking)
 
-Also, if you have any old photos that need restoration, try it free: artimagehub.com
+Also, if you have any old photos that need restoration, try it: artimagehub.com (3 free photos to test)
 
 Thanks!
 [Your Name]
