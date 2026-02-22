@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
+import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucide-react";
+import PayPalButton from "@/components/PayPalButton";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -110,11 +111,100 @@ export default function SubscriptionPage() {
   };
 
   return (
-    <div className="mx-auto max-w-lg px-4 py-16">
-      <h1 className="text-2xl font-bold">Manage Subscription</h1>
-
-      {/* Email lookup */}
+    <div className="mx-auto max-w-4xl px-4 py-16">
+      {/* Pro Lifetime Offer - Show before subscription check */}
       {!sub && (
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
+              Upgrade to Pro Lifetime
+            </h1>
+            <p className="mt-3 text-[17px] text-[#6e6e73]">
+              One-time payment. Unlimited restorations forever.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto grid gap-6 sm:grid-cols-2">
+            {/* Free Plan - Reference */}
+            <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
+              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free</p>
+              <div className="mt-2 flex items-baseline gap-1">
+                <span className="text-[32px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
+              </div>
+              <ul className="mt-5 space-y-2.5">
+                {[
+                  "3 restorations per day",
+                  "720p download quality",
+                  "Small watermark",
+                  "All AI features",
+                ].map((f) => (
+                  <li key={f} className="flex items-center gap-2.5 text-[13px] text-[#1d1d1f]">
+                    <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Pro Lifetime - CTA */}
+            <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
+                <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
+                  Best Value
+                </span>
+                <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em] shadow-lg">
+                  40% Off Launch Special
+                </span>
+              </div>
+
+              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
+              <div className="mt-2 flex items-baseline gap-2">
+                <span className="text-[32px] font-bold tracking-[-0.04em] text-white">$29.9</span>
+                <span className="text-[20px] font-medium tracking-[-0.02em] text-white/40 line-through">$49.9</span>
+              </div>
+              <p className="mt-1 text-[12px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
+
+              <ul className="mt-5 space-y-2.5">
+                {[
+                  "Unlimited restorations",
+                  "Original quality download",
+                  "No watermark",
+                  "Lifetime access",
+                  "All future features",
+                ].map((f) => (
+                  <li key={f} className="flex items-center gap-2.5 text-[13px] text-white">
+                    <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <PayPalButton />
+            </div>
+          </div>
+
+          <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
+            One-time payment · No subscription · Secure payment via PayPal
+          </p>
+
+          <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
+            <p className="text-[14px] text-[#6e6e73] mb-3">
+              Already purchased? Check your subscription status below
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Subscription Management */}
+      <div className="max-w-lg mx-auto">
+        <h2 className="text-2xl font-bold">{sub ? "Subscription Details" : "Check Subscription Status"}</h2>
+
+        {/* Email lookup */}
+        {!sub && (
         <div className="mt-6">
           <label className="block text-sm font-medium" htmlFor="email">
             Enter your email to check subscription
@@ -253,6 +343,7 @@ export default function SubscriptionPage() {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 }
