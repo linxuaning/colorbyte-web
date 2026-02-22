@@ -293,6 +293,7 @@ export default function RestoreClient() {
               src={preview}
               alt="Uploaded photo being processed"
               className="h-48 w-auto rounded-xl object-contain shadow-sm"
+              loading="lazy"
             />
           )}
           <div className="w-full max-w-sm">
@@ -661,6 +662,7 @@ function BeforeAfterSlider({
         src={afterSrc}
         alt="Restored photo after AI enhancement"
         className="absolute inset-0 h-full w-full object-contain"
+        loading="lazy"
       />
       {/* Before (clipped) */}
       <div
@@ -671,6 +673,7 @@ function BeforeAfterSlider({
           src={beforeSrc}
           alt="Original old photo before restoration"
           className="h-full w-full object-contain"
+          loading="lazy"
           style={{
             width: containerRef.current
               ? `${containerRef.current.offsetWidth}px`
