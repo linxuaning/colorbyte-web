@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import RestoreClient from "./restore-client";
+import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata: Metadata = {
   title: "Old Photo Restoration Online Free | AI Restore Photos in Seconds",
@@ -99,9 +100,11 @@ export default function OldPhotoRestorationPage() {
       </div>
 
       {/* Main tool */}
-      <div className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
+      <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
         <RestoreClient />
       </div>
+
+      <FloatingCTA />
 
       {/* ─── SEO Content: How It Works ─── */}
       <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">
