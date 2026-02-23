@@ -2,21 +2,39 @@ import type { Metadata } from "next";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Colorizer — Turn Black & White Photos into Color Free",
+  title: "Photo Colorizer: Colorize Black and White Photos with AI Free",
   description:
-    "Colorize black and white photos instantly with AI. Add realistic colors to old family photos, historical images, and vintage pictures. Free online tool, no signup required.",
+    "Best AI photo colorizer to colorize black and white photos online free. Turn old family photos, historical images into vivid color in 30 seconds. No signup, instant results.",
   alternates: { canonical: "/photo-colorizer" },
-  keywords: ["photo colorizer", "colorize black and white photos", "AI colorization", "black and white photo color", "colorize old photos free"],
+  keywords: [
+    "photo colorizer",
+    "colorize black and white photos",
+    "AI photo colorization",
+    "black and white to color",
+    "colorize old photos",
+    "photo colorizer online free",
+    "AI colorizer",
+    "old photo colorizer",
+  ],
   openGraph: {
-    title: "AI Photo Colorizer Free — ArtImageHub",
-    description: "Turn black and white photos into color instantly with AI. Realistic colorization, free, no signup.",
+    title: "Photo Colorizer — Colorize Black & White Photos Free Online",
+    description:
+      "Best AI photo colorizer. Turn black and white photos into vivid color instantly. Free, no signup required.",
     type: "website",
-    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Black and white photo colorization before and after" }],
+    images: [
+      {
+        url: "/blog/before-after-examples.webp",
+        width: 1200,
+        height: 630,
+        alt: "Photo colorizer before and after - black and white to color",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Colorizer — Free Black & White Colorization",
-    description: "Turn black and white photos into color with AI. Free, instant, realistic colors.",
+    title: "Photo Colorizer — Colorize Black & White Photos Free",
+    description:
+      "Best AI photo colorizer. Turn black and white photos into color instantly. Free online tool.",
     images: ["/blog/before-after-examples.webp"],
   },
 };

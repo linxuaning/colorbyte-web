@@ -2,21 +2,40 @@ import type { Metadata } from "next";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
+  title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
   description:
-    "Enhance photo quality instantly with AI. Fix blurry photos, improve resolution, and restore old pictures. Free online photo enhancement tool, no signup required.",
+    "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
   alternates: { canonical: "/photo-enhancer" },
-  keywords: ["photo enhancer", "enhance photo quality", "AI photo enhancement", "improve photo quality", "photo quality enhancer online"],
+  keywords: [
+    "AI photo enhancer",
+    "photo enhancer free",
+    "enhance photo quality",
+    "AI photo enhancement",
+    "improve photo quality online",
+    "photo quality enhancer",
+    "AI image enhancer free",
+    "enhance image quality",
+    "photo upscaler",
+  ],
   openGraph: {
-    title: "AI Photo Enhancer Free — ArtImageHub",
-    description: "Enhance photo quality instantly with AI. Fix blurry photos, improve resolution. Free, no signup.",
+    title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
+    description:
+      "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale. No signup, instant results.",
     type: "website",
-    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Photo enhancement before and after" }],
+    images: [
+      {
+        url: "/blog/before-after-examples.webp",
+        width: 1200,
+        height: 630,
+        alt: "AI photo enhancer before and after comparison",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Enhancer — Free Photo Quality Enhancement",
-    description: "Enhance photo quality with AI. Fix blurry photos, improve resolution. Free, instant results.",
+    title: "AI Photo Enhancer Free — Improve Photo Quality Online",
+    description:
+      "Best AI photo enhancer. Improve quality, fix blur, 4x upscale. Free online, instant results.",
     images: ["/blog/before-after-examples.webp"],
   },
 };

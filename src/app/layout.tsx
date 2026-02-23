@@ -3,6 +3,7 @@ import { Playfair_Display, Lora } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Link from "next/link";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -104,6 +105,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <ExitIntentPopup />
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
