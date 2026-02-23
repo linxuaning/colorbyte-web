@@ -42,6 +42,8 @@ Team photos typically include 10-50+ people, creating restoration challenges:
 - Edges of groups often out of focus
 - Some team members inevitably looking away or blinking
 
+For team photos where faces appear soft or out of focus, you can [fix blurry photos](/fix-blurry-photos) to enhance facial clarity across the entire group.
+
 **Athletic Equipment and Uniforms**
 
 Sports-specific elements need special handling:

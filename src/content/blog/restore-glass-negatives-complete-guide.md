@@ -46,6 +46,8 @@ Positive images on glass for projection:
 - Typically have protective cover glass
 - Valuable historical documents
 
+For comprehensive historical photograph restoration techniques, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ### Common Damage to Glass Plate Negatives
 
 **Physical Damage**

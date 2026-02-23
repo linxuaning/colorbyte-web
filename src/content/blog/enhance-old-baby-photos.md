@@ -53,7 +53,7 @@ Polaroid and instant film baby photos exhibit characteristic fading patterns, ty
 
 The high-touch nature of baby photos results in distinctive physical damage patterns. Creases and fold lines appear from wallet storage or handling, particularly across centers where photos were folded. Torn corners or edges result from removing photos from albums or frames. Surface scratches come from sliding across surfaces or rubbing against other materials in storage. Fingerprint stains, especially visible in light areas, show as cloudy or discolored spots where oils transferred to the photo surface.
 
-Hospital baby photos, often taken through plastic bassinets or in less-than-ideal conditions, may also show focus issues, motion blur, or poor exposure that compounds age-related deterioration.
+Hospital baby photos, often taken through plastic bassinets or in less-than-ideal conditions, may also show focus issues, motion blur, or poor exposure that compounds age-related deterioration. You can [fix blurry photos](/fix-blurry-photos) to recover details lost to camera shake or soft focus.
 
 ### Adhesive and Album Damage
 

@@ -78,6 +78,8 @@ Before attempting restoration, understanding the technology helps guide appropri
 - Silvering in dark areas from silver particles
 - Relatively slow, gradual fading
 
+For more techniques specific to historical photos, explore our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 **Ektachrome Deterioration**:
 - Magenta shift very common (overall pink/purple cast)
 - Yellow and cyan dyes fade before magenta

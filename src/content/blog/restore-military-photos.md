@@ -31,6 +31,8 @@ Military photographs serve multiple purposes beyond personal memories—they're 
 - Location and era evidence
 - Social history records
 
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore military photos instantly.
+
 ## Common Military Photo Types
 
 ### Service Portraits

@@ -27,7 +27,7 @@ Ambrotypes dominated portrait photography during a crucial period in American hi
 
 Civil War ambrotypes are particularly significant, showing soldiers in uniform, family portraits before men went to war, and occasionally images from the battlefield or military camps. Victorian era ambrotypes capture fashion, family structure, and social customs of the period. Occupational ambrotypes show people in work attire with tools of their trades, providing invaluable documentation of 19th-century labor and industry.
 
-These photographs represent not just family history but American history, making their preservation and restoration particularly important.
+These photographs represent not just family history but American history, making their preservation and restoration particularly important. For comprehensive guides to historical photographs, see our [vintage photo restoration](/vintage-photo-restoration) resource.
 
 ### Ambrotype Construction and Characteristics
 

@@ -35,6 +35,8 @@ Photographs become brittle primarily from acid buildup:
 - Air pollution (sulfur dioxide creates sulfuric acid)
 - Improper framing materials
 
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 **Albumen Print Deterioration**
 
 Photographs from 1850s-1890s used egg-white (albumen) coating:

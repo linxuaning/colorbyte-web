@@ -38,6 +38,8 @@ Military photographs span nearly two centuries of photographic history and count
 - Primarily gelatin silver prints
 - Studio portraits common before deployment
 - Some field photographs
+
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore military photos instantly.
 - Postcard format popular for mailing home
 - Generally stable if properly stored
 

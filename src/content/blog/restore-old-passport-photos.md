@@ -37,6 +37,8 @@ Identity photographs have specific characteristics shaped by their official purp
 - Student IDs
 - Military identification
 
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore identity photos instantly.
+
 ### Historical Passport Photo Characteristics
 
 | Era | Format | Characteristics |

@@ -65,6 +65,8 @@ The 1940s presented unique photographic conditions that affect how these photos 
 - Attic and basement storage common (temperature/humidity extremes)
 - Contact with acidic materials caused chemical damage
 
+For more era-specific restoration techniques, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ## Common Damage Patterns in 1940s Wartime Photos
 
 Understanding typical damage helps target restoration efforts.

@@ -39,7 +39,7 @@ These corrections apply consistently across entire images, avoiding the uneven r
 
 For large collections of photographs requiring restoration, AI offers tremendous advantages in processing hundreds or thousands of images with consistent quality, applying learned restoration approaches across similar damage patterns, and completing in hours what might take weeks of manual work.
 
-This consistency and speed make previously impractical restoration projects feasible.
+This consistency and speed make previously impractical restoration projects feasible. Learn more about these capabilities in our [AI photo restoration](/ai-photo-restoration) guide.
 
 ## Current AI Photo Restoration Limitations
 

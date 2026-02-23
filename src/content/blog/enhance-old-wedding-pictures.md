@@ -40,6 +40,8 @@ Understanding the causes of deterioration helps you choose the right restoration
 - Silvering (mirror-like spots on surface)
 - Mold and mildew from moisture exposure
 
+For wedding photos that appear soft or out of focus, you can [fix blurry photos](/fix-blurry-photos) to sharpen faces and recover crucial details.
+
 ### Wedding Photo Age Timeline and Damage Patterns
 
 | Era | Common Photo Type | Typical Damage | Restoration Difficulty |

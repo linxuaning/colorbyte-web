@@ -35,7 +35,7 @@ This guide will teach you how to digitally restore mold-damaged photographs, rem
 4. **Digitize Urgently** at highest resolution before further damage occurs
 5. **Consult Professional Conservator** for valuable photographs with active mold
 
-**Never attempt to physically remove mold yourself** without proper training and safety equipment—mold spores are health hazards.
+**Never attempt to physically remove mold yourself** without proper training and safety equipment—mold spores are health hazards. For more repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ## Step-by-Step Mold Damage Restoration
 

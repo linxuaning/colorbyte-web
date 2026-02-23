@@ -28,6 +28,8 @@ Modern photo restoration relies heavily on artificial intelligence to automatica
 - Enhance detail and sharpness
 - Reconstruct damaged or missing areas
 
+For more on AI restoration technology, see our [AI photo restoration](/ai-photo-restoration) guide.
+
 **User-Friendly Interface**
 Free apps should be accessible to non-experts. Look for:
 

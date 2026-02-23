@@ -37,7 +37,7 @@ The latest 2026 AI restoration technology has achieved remarkable capabilities i
 
 **Advanced Damage Analysis** surpasses human capabilities in some areas. AI can detect subtle damage patterns humans might miss. The system analyzes at pixel level with mathematical precision. Pattern recognition across millions of training examples informs restoration decisions. Neural networks understand relationships between damaged and undamaged areas that guide reconstruction.
 
-**Accessible Expertise** opens up photo restoration to everyone. Advanced restoration capabilities are available to anyone regardless of technical skill. No Photoshop expertise or expensive software required. Immediate results without learning curves or training. This accessibility means family photos no longer languish in damaged condition because restoration seemed too complex or expensive.
+**Accessible Expertise** opens up photo restoration to everyone. Advanced restoration capabilities are available to anyone regardless of technical skill. No Photoshop expertise or expensive software required. Immediate results without learning curves or training. This accessibility means family photos no longer languish in damaged condition because restoration seemed too complex or expensive. For more details on AI capabilities, explore our [AI photo restoration](/ai-photo-restoration) guide.
 
 ### Limitations of AI Restoration
 

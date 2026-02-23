@@ -71,6 +71,8 @@ Before you restore 1960s beatnik photos, understanding the cultural and technica
 - Poor focus in dim conditions
 - High contrast with deep shadows
 
+For broader era-specific approaches, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ## Common Damage Patterns in Beatnik-Era Photos
 
 When you restore 1960s beatnik photos, expect these characteristic problems.

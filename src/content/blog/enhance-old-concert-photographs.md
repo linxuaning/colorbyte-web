@@ -33,6 +33,8 @@ To effectively enhance old concert photographs, you need to understand what make
 - Consumer cameras of the 60s-80s lacked image stabilization
 - Fast-moving performers like rock guitarists or dancers appear ghostly or streaked
 
+If your concert photos suffer from motion blur, you can [fix blurry photos](/fix-blurry-photos) using AI enhancement to recover performer details.
+
 **Flash Limitations**: Early flash technology created problems:
 
 - Limited range meant flash illuminated nearby audience members while the stage remained dark

@@ -72,6 +72,8 @@ Rather than simple fading, colors change entirely:
 - **Brown/sepia appearance**: All color dyes fade, leaving only the base layer
 - **Splotchy discoloration**: Uneven dye degradation across the print
 
+For sun-damaged photos, you can [restore faded photos](/restore-faded-photos) using AI to recover lost colors and detail.
+
 ## Assessing Your Sun Damaged Photos
 
 Before you fix sun damaged photos, evaluate what you're working with.

@@ -46,6 +46,8 @@ Automatic AI colorization first appeared as a credible technology around 2016, w
 
 Early AI colorization tools (including some mobile apps that launched around this time) were fun but often looked "AI-colored"—technically plausible but somehow flat.
 
+For more colorization options, see our guide to [free photo colorization](/colorize-photos-free).
+
 ### Modern AI Colorization (2022–2026)
 
 The gap between what AI and human colorization artists produce has narrowed dramatically. Modern models trained on massive datasets of color photographs are dramatically better at:

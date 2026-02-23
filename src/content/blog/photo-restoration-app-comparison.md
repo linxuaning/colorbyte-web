@@ -24,7 +24,7 @@ Not all restoration apps are created equal—they fall into distinct categories 
 - Minimal manual control
 - Fast processing
 - Best for beginners
-- Examples: Remini, ArtImageHub, VanceAI
+- Examples: Remini, ArtImageHub, VanceAI — Learn more about [AI photo restoration](/ai-photo-restoration)
 
 **Manual Editing Apps**:
 - Professional editing tools

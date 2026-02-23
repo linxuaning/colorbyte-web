@@ -41,7 +41,7 @@ Environmental details include disco balls and mirrored tiles, colorful dance flo
 
 The most universal issue affecting 1970s disco photos is extreme color deterioration. Typical patterns include strong magenta or pink overall casts (most common as cyan fades preferentially), yellow or orange shifts (as magenta begins fading), complete washing out of colors leaving brownish or pinkish monochrome, and uneven fading where some image areas retain color while others fade completely.
 
-Skin tones often appear unnaturally pink, orange, or red. Clothing colors shift wildly from their original hues. Background elements fade to near invisibility. The vibrant, colorful disco era paradoxically becomes muted and discolored in deteriorated photos.
+Skin tones often appear unnaturally pink, orange, or red. Clothing colors shift wildly from their original hues. Background elements fade to near invisibility. The vibrant, colorful disco era paradoxically becomes muted and discolored in deteriorated photos. You can [restore faded photos](/restore-faded-photos) using AI to bring back the original vibrant 1970s colors.
 
 ### Flash-Related Issues
 

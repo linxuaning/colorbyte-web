@@ -29,7 +29,7 @@ Here's what I found.
 
 ## The Tools I Tested
 
-1. **ArtImageHub** (web)
+1. **ArtImageHub** (web) — See our [AI photo restoration](/ai-photo-restoration) guide
 2. **Remini** (mobile app + web)
 3. **MyHeritage Photo Enhancer** (web)
 4. **Adobe Photoshop AI** (desktop)

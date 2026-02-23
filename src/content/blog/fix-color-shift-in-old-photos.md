@@ -47,7 +47,7 @@ Different eras of color photography show characteristic color shift patterns due
 
 Color-shifted photographs typically show one of several characteristic casts. Magenta/pink casts are the most common, resulting from cyan dye fading while magenta and yellow remain. Orange/salmon casts occur when both cyan and magenta dyes have faded, leaving primarily yellow. Yellow/warm casts develop when magenta and cyan dyes fade together. Green/cyan casts result from magenta dye fading (less common than cyan fading). Brown/sepia appearance happens when all three dyes fade but at different rates, creating muddy overall tone.
 
-Understanding which dye layers have faded helps guide the correction approach.
+Understanding which dye layers have faded helps guide the correction approach. For more comprehensive techniques, see our guide to [restore faded photos](/restore-faded-photos) with AI technology.
 
 ## Identifying Color Shift Types
 

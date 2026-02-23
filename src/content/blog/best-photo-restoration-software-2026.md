@@ -60,7 +60,7 @@ Ready to restore your damaged photos? Try our [Old Photo Restoration](/old-photo
 
 Based on weighted scoring across all categories:
 
-1. **ArtImageHub** — 94/100 (Best Overall)
+1. **ArtImageHub** — 94/100 (Best Overall) — Learn more about [AI photo restoration](/ai-photo-restoration)
 2. **Topaz Photo AI** — 91/100 (Best for Professionals)
 3. **Remini** — 87/100 (Best Mobile App)
 4. **MyHeritage** — 85/100 (Best for Genealogy)

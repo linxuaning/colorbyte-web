@@ -42,6 +42,8 @@ Before you begin to restore autochrome color photos, understanding how they were
 - Need backlighting or projection for proper viewing
 - Dimensional depth from the layered structure
 
+For more historical photograph restoration techniques, explore our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ### Who Created Autochromes?
 
 **Professional Photographers**: Major photographers including:

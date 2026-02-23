@@ -77,6 +77,8 @@ AI excels at colorizing:
 - Typical interior décor by decade
 - Standard product colors (Coca-Cola red, etc.)
 
+For comprehensive photo restoration beyond colorization, see our [AI photo restoration](/ai-photo-restoration) guide covering damage repair, enhancement, and more.
+
 ### What AI Guesses or Approximates
 
 **Medium Confidence Areas**

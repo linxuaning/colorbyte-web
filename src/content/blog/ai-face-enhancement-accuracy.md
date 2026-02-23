@@ -54,7 +54,7 @@ Before evaluating accuracy, let's understand how AI face enhancement actually wo
 
 **Damage Assessment**: Analyzes specific issues affecting the face:
 - Missing areas (tears, stains, deterioration)
-- Blurring or lack of sharpness
+- Blurring or lack of sharpness (you can [fix blurry photos](/fix-blurry-photos) with AI)
 - Exposure problems (too dark or washed out)
 - Color shifts or fading
 - Scratches, cracks, or other physical damage
@@ -65,7 +65,7 @@ Before evaluating accuracy, let's understand how AI face enhancement actually wo
 - Texture reconstruction for grain or deterioration
 - Feature refinement for subtle improvements
 
-When combined with a comprehensive [AI photo enhancement platform](/photo-enhancer), facial restoration becomes part of a broader restoration workflow that handles damage, clarity, and detail across entire images.
+When combined with a comprehensive [AI photo enhancement platform](/photo-enhancer), facial restoration becomes part of a broader restoration workflow that handles damage, clarity, and detail across entire images. Learn more about the technology in our [AI photo restoration](/ai-photo-restoration) guide.
 
 ## Measuring AI Face Enhancement Accuracy
 

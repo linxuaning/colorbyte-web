@@ -26,6 +26,8 @@ Before you enhance old ID card photos, understanding what makes them difficult h
 - Poor lens quality compared to professional cameras
 - Limited resolution and sharpness
 
+If your ID photos appear blurry or soft, you can [fix blurry photos](/fix-blurry-photos) using AI enhancement to recover facial clarity.
+
 **Size Constraints**:
 - ID photos are deliberately small (typically 2x2 inches or smaller)
 - Less information captured in smaller format

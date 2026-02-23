@@ -39,6 +39,8 @@ Original photo quality also plays a role—cheaper commercial prints crack more 
 
 **Corner and Edge Cracking:** Concentrated damage at photo edges and corners where handling stress focuses can extend into image areas if severe.
 
+For more damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 **Directional Cracking:** Cracks following stress patterns from rolling, curling, or bending show parallel lines aligned with stress direction.
 
 Understanding crack type helps predict restoration difficulty and guide handling of originals.

@@ -39,7 +39,7 @@ Polaroid and instant film show characteristic yellow-orange fading with distinct
 
 Modern digital prints vary by paper and ink type with dye-based inkjet prints fading severely within 10-20 years while pigment-based archival prints showing minimal fading over 100+ years if stored properly.
 
-Understanding your photo's era and format helps predict the fading pattern and guides restoration approach.
+Understanding your photo's era and format helps predict the fading pattern and guides restoration approach. Our guide to [restore faded photos](/restore-faded-photos) covers additional techniques for severe color deterioration.
 
 ### Color Shifts vs. Complete Fading
 

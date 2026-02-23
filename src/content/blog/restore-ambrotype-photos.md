@@ -25,7 +25,7 @@ Ambrotypes were created using the wet collodion process invented by Frederick Sc
 
 **Visual Characteristics** distinguish ambrotypes from other photographic formats. They show right-reading images (not reversed like daguerreotypes), exhibit soft, dreamy quality with gentle tonal gradations, display excellent detail in well-preserved examples, and appear as negatives when held against light or when backing deteriorates.
 
-**Historical Context** helps date and value ambrotypes. Their peak popularity occurred from 1855-1865, overlapping with daguerreotypes in the 1850s and with tintypes after 1856. They served as less expensive alternatives to daguerreotypes while offering more permanence than paper prints available at the time. The format especially appealed to middle-class families who couldn't afford daguerreotypes but wanted quality portraits.
+**Historical Context** helps date and value ambrotypes. Their peak popularity occurred from 1855-1865, overlapping with daguerreotypes in the 1850s and with tintypes after 1856. They served as less expensive alternatives to daguerreotypes while offering more permanence than paper prints available at the time. The format especially appealed to middle-class families who couldn't afford daguerreotypes but wanted quality portraits. For more historical photograph techniques, see our [vintage photo restoration](/vintage-photo-restoration) guide.
 
 ### Common Ambrotype Damage and Deterioration Patterns
 

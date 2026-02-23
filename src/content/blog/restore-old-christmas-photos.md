@@ -37,6 +37,8 @@ Holiday photographs have unique characteristics that influence restoration appro
 - Caroling and activities
 - Seasonal traditions
 
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore holiday photos instantly.
+
 ### Common Challenges
 
 | Challenge | Description | Restoration Approach |

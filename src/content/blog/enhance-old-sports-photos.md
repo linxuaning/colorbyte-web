@@ -69,7 +69,7 @@ Upload digitized sports photographs to [ArtImageHub's photo restoration tool](/o
 
 **Damage Removal** eliminates deterioration. Yellowing from newsprint or aging is neutralized. Fading from light exposure or age is corrected. Tears, creases, and physical damage are repaired. Stains, spots, and foxing are removed. The AI distinguishes between damage and authentic image content, preserving the actual sports action while removing deterioration.
 
-**Motion Blur Reduction** addresses vintage action photography challenges. Slight motion blur from slow shutter speeds is reduced where possible without creating unnatural appearance. Focus is enhanced to bring out athletes' faces and uniform details. The characteristic period quality is preserved while improving clarity—vintage sports photos should still look like period photography, not modern digital captures.
+**Motion Blur Reduction** addresses vintage action photography challenges. Slight motion blur from slow shutter speeds is reduced where possible without creating unnatural appearance. You can [fix blurry photos](/fix-blurry-photos) to recover clarity in action shots where athletes appear soft or ghosted. Focus is enhanced to bring out athletes' faces and uniform details. The characteristic period quality is preserved while improving clarity—vintage sports photos should still look like period photography, not modern digital captures.
 
 **Face and Detail Enhancement** brings out important elements. Athletes' faces are sharpened and clarified for recognition. Uniform numbers, team names, and identifying details are enhanced. Sports equipment (balls, bats, hockey sticks, etc.) is brought into focus. Background details providing context are improved without competing with main subjects.
 

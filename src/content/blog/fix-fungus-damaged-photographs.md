@@ -37,7 +37,7 @@ Learning to recognize fungus damage helps you assess the severity of contaminati
 
 Active fungal growth appears as white, fuzzy, or powdery material on the photograph surface, sometimes with colored tints depending on the species. This material may appear to spread across the surface in patterns or may concentrate in specific areas.
 
-Inactive fungal damage (after the organism has died) leaves characteristic signatures. Foxing manifests as brown, circular spots typically ranging from 1mm to 5mm in diameter, often appearing in clusters. These spots represent areas where fungi consumed emulsion and left behind oxidized materials. Etched patterns create a network of lines or patches where emulsion has been permanently altered, often visible as a cloudy or milky appearance when light reflects off the surface. Staining produces discolored areas in white, gray, brown, or yellow that can't be wiped away, representing permanent chemical changes in the photographic materials.
+Inactive fungal damage (after the organism has died) leaves characteristic signatures. Foxing manifests as brown, circular spots typically ranging from 1mm to 5mm in diameter, often appearing in clusters. These spots represent areas where fungi consumed emulsion and left behind oxidized materials. Etched patterns create a network of lines or patches where emulsion has been permanently altered, often visible as a cloudy or milky appearance when light reflects off the surface. Staining produces discolored areas in white, gray, brown, or yellow that can't be wiped away, representing permanent chemical changes in the photographic materials. For more repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ### Differentiating Fungus from Other Damage
 

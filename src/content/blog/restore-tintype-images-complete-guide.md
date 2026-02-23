@@ -39,6 +39,8 @@ Tintypes dominated photography from the 1860s through early 1900s because they o
 - **Portability**: Traveling photographers could work anywhere
 - **Uniqueness**: Each tintype was one-of-a-kind (no negative)
 
+For comprehensive historical photograph restoration, explore our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ### Tintype Timeline and Variations
 
 **Civil War Era (1860s)**

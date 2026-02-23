@@ -39,7 +39,7 @@ Cabinet card backs typically contain valuable information including photographer
 
 This information has significant genealogical and historical value beyond the portrait itself, helping date photos when subjects are unknown, locate ancestors in specific cities at specific times, and identify photographers whose records might contain additional information.
 
-Restoration should preserve this back information along with the portrait.
+Restoration should preserve this back information along with the portrait. For comprehensive restoration techniques for historical photographs, see our [vintage photo restoration](/vintage-photo-restoration) guide.
 
 ## Common Damage Patterns in Cabinet Cards
 

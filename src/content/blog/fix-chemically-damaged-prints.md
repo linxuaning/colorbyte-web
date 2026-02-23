@@ -33,6 +33,8 @@ Before you can effectively fix chemically damaged prints, you need to understand
 
 **Dichroic Fog**: A rainbow-like iridescent stain caused by processing errors, particularly in prints developed with contaminated chemistry.
 
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 ### Identifying the Source of Chemical Damage
 
 Proper diagnosis is essential for effective restoration:

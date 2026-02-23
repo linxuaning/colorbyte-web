@@ -47,7 +47,7 @@ Begin by carefully examining each damaged photo to understand the full scope of 
 
 This documentation serves multiple purposes: it creates a record of the photo's condition before restoration, helps you plan your restoration approach, provides information useful for AI restoration algorithms, and preserves any details that might be lost during the restoration process.
 
-Prioritize photos for restoration based on sentimental value and urgency. Focus first on photos with progressive damage requiring immediate attention, unique images with no duplicates, photos needed for specific projects or events, and images with historical or genealogical significance.
+Prioritize photos for restoration based on sentimental value and urgency. Focus first on photos with progressive damage requiring immediate attention, unique images with no duplicates, photos needed for specific projects or events, and images with historical or genealogical significance. For more damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ### Step 2: Physical Stabilization
 

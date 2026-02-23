@@ -36,6 +36,8 @@ More complex and unstable:
 - Acetate base can deteriorate (vinegar syndrome)
 - Common from 1960s-2000s consumer photography
 
+For more damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 **Slide Film/Transparencies (1930s-Present)**
 
 Positive images on film:

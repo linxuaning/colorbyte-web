@@ -48,6 +48,8 @@ Before attempting restoration, it's important to understand what causes creases 
 | White Crease Lines | Moderate | Moderate | Digital color/tone restoration |
 | Emulsion Cracks | Severe | Very Difficult | Professional treatment recommended |
 
+For more physical damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 ### How Creases Affect Different Photo Types
 
 **Modern Color Prints (1990s-Present)**:

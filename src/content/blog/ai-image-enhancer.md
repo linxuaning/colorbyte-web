@@ -63,6 +63,8 @@ I'll be upfront: I went in skeptical. I've spent years shooting and editing prof
 <strong>Paid tier:</strong> $9.90/month, unlimited photos<br>
 <strong>Best for:</strong> Old and damaged photos, face restoration, anyone who wants professional-quality results without professional-level effort</p>
 
+<p>For a deeper dive into AI restoration technology, check out our <a href="/ai-photo-restoration">AI photo restoration</a> guide.</p>
+
 <h3>2. Topaz Photo AI — Professional Grade, Professional Price</h3>
 
 <p>Topaz has been building AI imaging tools longer than almost anyone, and it shows. Topaz Photo AI is a desktop application (Windows and Mac) that combines their Sharpen AI, DeNoise AI, and Gigapixel AI into one interface. The results are genuinely excellent for modern photography — sharp, natural-looking noise reduction, and upscaling that holds up under close inspection.</p>

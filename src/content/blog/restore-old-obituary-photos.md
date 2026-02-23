@@ -37,6 +37,8 @@ Memorial photographs have unique characteristics shaped by their commemorative p
 - Often damaged from display
 - Emotional handling
 
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore memorial photos instantly.
+
 ### Source Quality Challenges
 
 | Source | Quality Issues | Restoration Notes |

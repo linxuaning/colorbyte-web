@@ -45,6 +45,8 @@ These photographs captured Victorian life:
 - Children's portraits (often formal and stiff)
 - Studio novelty poses
 
+For comprehensive historical photo restoration techniques, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 **Famous Photographers**
 
 Many renowned photographers worked in cabinet card format:

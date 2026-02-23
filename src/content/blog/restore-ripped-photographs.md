@@ -38,6 +38,8 @@ Not all tears are alike—understanding the type guides restoration approach.
 - Gaps in image requiring reconstruction
 - Most challenging repair type
 - May need AI assistance or creative reconstruction
+
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 - Common in heavily damaged photos
 
 **Multiple Tears**:

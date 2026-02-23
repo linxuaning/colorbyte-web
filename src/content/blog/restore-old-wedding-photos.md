@@ -38,6 +38,8 @@ Wedding photographs face unique preservation challenges due to how they were sto
 | Overall fading | Light exposure | Easy |
 | Yellow/brown cast | Acidic storage | Easy |
 | White dress yellowing | Chemical reaction | Medium |
+
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore wedding photos instantly.
 | Torn edges | Handling damage | Medium |
 | Missing pieces | Physical damage | Hard |
 

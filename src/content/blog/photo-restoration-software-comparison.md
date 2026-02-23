@@ -74,7 +74,7 @@ Our comprehensive [old photo restoration](/old-photo-restoration), [photo enhanc
 
 **Limitations:** Requires internet connection, per-photo costs can add up for large collections, less manual control than traditional editing software, and privacy-conscious users may prefer local processing.
 
-**Ideal Use Cases:** Family photograph restoration, vintage photo collections, quick turnaround needs, users without photo editing expertise, and historical photograph preservation.
+**Ideal Use Cases:** Family photograph restoration, vintage photo collections, quick turnaround needs, users without photo editing expertise, and historical photograph preservation. For more on AI capabilities, see our [AI photo restoration](/ai-photo-restoration) guide.
 
 **User Experience:** Upload photo, AI processes automatically, download enhanced result—typically completed in 2-5 minutes with professional-quality results requiring no user intervention.
 

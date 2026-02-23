@@ -56,6 +56,8 @@ Before attempting to restore collodion wet plates, understanding the technology 
 - Extremely valuable for image detail and potential for reprinting
 - Fragile glass substrate prone to cracking
 
+For more historical photograph restoration techniques, visit our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ### Historical Significance
 
 **Civil War Documentation**: Matthew Brady, Alexander Gardner, and others documented the conflict using wet plate collodion.

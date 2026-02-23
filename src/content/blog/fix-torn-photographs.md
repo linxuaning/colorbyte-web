@@ -42,7 +42,7 @@ Before you do anything else, follow these rules:
 - Handle pieces by edges only, wearing cotton gloves
 - Keep all pieces, even tiny fragments
 
-**Reality check:** I've seen people destroy priceless family photos with Scotch tape in the first few minutes. The tape creates permanent stains, damages emulsion, and makes professional restoration way harder. Don't be that person.
+**Reality check:** I've seen people destroy priceless family photos with Scotch tape in the first few minutes. The tape creates permanent stains, damages emulsion, and makes professional restoration way harder. Don't be that person. For more repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ## Understanding Your Options: Physical vs. Digital Repair
 

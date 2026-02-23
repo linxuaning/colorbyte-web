@@ -58,6 +58,8 @@ School photos face specific challenges that affect how they age and what restora
 - Wallet-sized photos particularly low quality
 - Less archival stability than professional studio photos
 
+If your school photos appear blurry or soft, you can [fix blurry photos](/fix-blurry-photos) using AI enhancement to sharpen faces and recover detail.
+
 **Poor Storage**:
 - Photos passed around at school (fingerprints, handling)
 - Stored in lockers (temperature/humidity extremes)

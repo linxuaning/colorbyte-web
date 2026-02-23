@@ -57,6 +57,8 @@ Acidic materials in contact with photographs cause yellowing:
 - Often produces uneven yellowing patterns
 - Can eventually destroy the image entirely
 
+For severe yellowing, you can [restore faded photos](/restore-faded-photos) using AI technology to digitally remove yellow discoloration.
+
 **Airborne Pollutants**
 
 Environmental contaminants contribute to yellowing:

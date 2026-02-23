@@ -33,7 +33,7 @@ Photographs stored in hot, dry attics often show severe embrittlement, while tho
 
 Different photographic papers age differently. Early albumen prints (1850s-1890s) are particularly prone to brittleness due to acidic paper bases and natural deterioration of the egg white (albumen) coating. Gelatin silver prints (1880s-present) vary widely in stability depending on manufacturing quality and processing. RC (resin-coated) papers (1970s-present) generally resist brittleness better than fiber-based papers but can suffer from other deterioration modes.
 
-Generally, the older the photograph and the poorer its storage conditions, the more likely it is to exhibit severe paper brittleness.
+Generally, the older the photograph and the poorer its storage conditions, the more likely it is to exhibit severe paper brittleness. For more damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ## Identifying Different Stages of Paper Brittleness
 

@@ -51,6 +51,8 @@ When you restore 1920s flapper photos, you'll encounter damage patterns specific
 
 **Ink Annotations**: Family members often wrote names and dates directly on photographs using fountain pens, causing both physical indentation and chemical damage to the emulsion.
 
+For more era-specific techniques, see our complete [vintage photo restoration](/vintage-photo-restoration) guide.
+
 ## Step-by-Step Guide to Restore 1920s Flapper Photos
 
 Now let's walk through the actual restoration process. Whether you're working with a treasured family photo or building a collection of Jazz Age images, these techniques will help you achieve authentic, respectful restorations.

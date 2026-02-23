@@ -53,7 +53,7 @@ Polaroid and instant film baby photos exhibit characteristic yellowing to pale c
 
 Baby photos taken in hospital settings often have quality issues beyond age-related damage including poor lighting creating underexposed or harshly lit images, focus problems from shooting through bassinet plastic, motion blur from babies moving, color casts from fluorescent hospital lighting, and busy distracting backgrounds.
 
-These original quality problems compound deterioration, creating challenging restoration scenarios.
+These original quality problems compound deterioration, creating challenging restoration scenarios. Fortunately, you can [fix blurry photos](/fix-blurry-photos) using AI technology to recover details lost to motion blur or soft focus.
 
 ### Physical Damage
 

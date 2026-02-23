@@ -54,6 +54,8 @@ Tintypes, properly called ferrotypes, used a unique photographic process:
 - Portable (photographers could make them anywhere)
 - No glass to break (unlike ambrotypes)
 
+For more historical photo restoration techniques, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
 **Dating tintype photographs:**
 
 **1850s-1860s characteristics:**

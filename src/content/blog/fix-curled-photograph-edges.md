@@ -37,6 +37,8 @@ Most traditional photographs consist of multiple layers:
 - The layers pull against each other, creating stress
 - The result is curling as the structure tries to equalize tension
 
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 **Storage Conditions**: Specific conditions promote curling:
 - Low humidity: Emulsion dries and shrinks, curling image side inward
 - High humidity: Emulsion swells excessively, can curl either direction

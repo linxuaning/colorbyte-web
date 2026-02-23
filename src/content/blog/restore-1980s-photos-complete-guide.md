@@ -48,7 +48,7 @@ Chromogenic dyes fade at different rates:
 - Combination with remaining magenta creates orange-pink look
 - Eventually fades too, leaving brown tones
 
-**Result**: The characteristic faded 1980s look with magenta-pink highlights and overall color shift.
+**Result**: The characteristic faded 1980s look with magenta-pink highlights and overall color shift. You can [restore faded photos](/restore-faded-photos) using AI to correct these color shifts and recover vibrant 80s colors.
 
 ### Paper Quality Issues
 

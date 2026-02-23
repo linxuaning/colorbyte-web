@@ -27,7 +27,7 @@ Unlike portraits with a single subject at one distance, group photos typically s
 - **Depth of field limitations**: Period cameras couldn't keep all subjects in perfect focus
 - **Perspective distortion**: Edge subjects appear stretched or compressed
 
-When you enhance old group photos, you must account for these inherent variations rather than forcing uniform sharpness across all faces.
+When you enhance old group photos, you must account for these inherent variations rather than forcing uniform sharpness across all faces. For images where multiple people appear out of focus, you can [fix blurry photos](/fix-blurry-photos) using AI-powered enhancement.
 
 **Lighting Inconsistencies**
 

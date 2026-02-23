@@ -78,6 +78,8 @@ Different slide films have different characteristics and aging patterns.
 - Overall fading more severe than Kodachrome
 - Dark storage still shows moderate fading after 30-40 years
 - Highlight areas fade more than shadows
+
+For slides showing color shifts or fading, you can [restore faded photos](/restore-faded-photos) using AI to recover original Kodachrome vibrancy.
 - Yellow dye layer most stable
 
 **Fading Timeline** (Typical E-6 films):

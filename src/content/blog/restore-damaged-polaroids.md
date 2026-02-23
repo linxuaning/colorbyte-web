@@ -37,6 +37,8 @@ Instant photos differ fundamentally from traditional photographs, affecting how 
 - Impossible Project (2010s, now Polaroid Originals)
 - Modern alternatives (Mint, Lomography)
 
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 ### Instant Photo Chemistry
 
 Understanding the chemistry helps explain damage patterns.

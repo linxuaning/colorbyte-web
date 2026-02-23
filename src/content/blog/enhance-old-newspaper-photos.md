@@ -21,7 +21,7 @@ Newspaper photos aren't true photographs but rather halftone reproductions creat
 
 This halftone process inherently limits image quality with maximum detail determined by screen frequency (typically 65-100 lines per inch for newspapers vs. 150-300 for magazines), visible dot patterns at normal viewing distances, loss of fine detail, and limited tonal range compared to continuous-tone photographs.
 
-Even when new, newspaper photos lack the quality of true photographs. After decades of aging, the limitations become more pronounced.
+Even when new, newspaper photos lack the quality of true photographs. After decades of aging, the limitations become more pronounced. For newsprint images that appear blurry or soft, you can [fix blurry photos](/fix-blurry-photos) using AI to recover detail from the halftone pattern.
 
 ### Newsprint Paper Deterioration
 

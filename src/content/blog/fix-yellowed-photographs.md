@@ -39,7 +39,7 @@ Humidity promotes chemical reactions and encourages mold growth that causes addi
 
 Simple oxidation from exposure to oxygen in air causes gradual yellowing, even in ideal storage conditions. This unavoidable process occurs slowly but continuously, meaning all photographs eventually show some yellowing unless stored in completely oxygen-free environments—impractical for family photos.
 
-The good news: while you can't completely stop oxidation, proper storage dramatically slows the process, and modern restoration technology can effectively remove yellowing regardless of its cause.
+The good news: while you can't completely stop oxidation, proper storage dramatically slows the process, and modern restoration technology can effectively remove yellowing regardless of its cause. You can [restore faded photos](/restore-faded-photos) using AI to remove yellowing and recover original tones.
 
 ## Types of Photo Yellowing
 

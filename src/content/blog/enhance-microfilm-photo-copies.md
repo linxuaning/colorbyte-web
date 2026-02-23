@@ -84,6 +84,8 @@ Harsh black and white:
 - Loss of subtle detail
 - Hard to read fine text or handwriting
 
+For microfilm copies where faces or text appear blurry, you can [fix blurry photos](/fix-blurry-photos) using AI enhancement to recover clarity.
+
 **Dark Spots and Artifacts**
 
 Various defects appear:

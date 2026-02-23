@@ -41,7 +41,7 @@ Paper deterioration occurs as water weakens paper fibers, causes warping and cur
 
 **Moderate Water Damage:** Obvious water stains and marks, visible color changes and discoloration, minor emulsion separation or bubbling, and possible light mold spots. Most moderate damage restores well with AI technology.
 
-**Severe Water Damage:** Heavy staining throughout the image, significant emulsion damage or loss, extensive mold growth, and paper deterioration or extreme fragility. Even severe cases often show surprising recovery potential.
+**Severe Water Damage:** Heavy staining throughout the image, significant emulsion damage or loss, extensive mold growth, and paper deterioration or extreme fragility. Even severe cases often show surprising recovery potential. For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
 
 ## Step-by-Step Guide to Fix Water Spots on Photos
 

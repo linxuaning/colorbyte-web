@@ -46,6 +46,8 @@ Before attempting to fix stained photographs, identifying the stain type guides 
 - Rubber cement creates yellow-brown stains
 - May cause emulsion loss where adhesive removed
 
+For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
 **Mold and Fungus Stains**:
 - Purple, brown, or multi-colored spots
 - Fox marks (foxing): small brown speckles

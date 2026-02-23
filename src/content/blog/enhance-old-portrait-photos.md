@@ -60,6 +60,8 @@ Different eras produced different portrait styles and qualities, affecting how w
 | Retouching deterioration | Pre-1960s | Unnatural appearance | Moderate |
 | Poor focus | Amateur photos | Soft features | Difficult (limited recovery) |
 
+If your portraits suffer from blur or soft focus, you can [fix blurry photos](/fix-blurry-photos) using AI enhancement to recover facial details.
+
 ## Assessing Portrait Photos for Enhancement
 
 ### Evaluation Checklist

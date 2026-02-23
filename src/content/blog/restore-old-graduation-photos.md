@@ -39,6 +39,8 @@ Graduation photographs have specific characteristics that inform restoration app
 - Important for identifying classmates
 - Often have many faces to enhance
 
+Try our [free old photo restoration](/restore-old-photos-free) tool to restore graduation photos instantly.
+
 ### Common Issues by Era
 
 | Decade | Common Problems | Restoration Notes |

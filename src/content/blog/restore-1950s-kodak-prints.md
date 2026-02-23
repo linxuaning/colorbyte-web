@@ -62,7 +62,7 @@ Each dye layer fades at different rates:
 - Magenta dyes moderately stable
 - Yellow dyes most stable
 
-This differential fading creates the characteristic pink/magenta cast seen in aged 1950s Kodak prints.
+This differential fading creates the characteristic pink/magenta cast seen in aged 1950s Kodak prints. You can [restore faded photos](/restore-faded-photos) to correct these color shifts and recover natural tones.
 
 ### Identifying 1950s Kodak Prints
 
