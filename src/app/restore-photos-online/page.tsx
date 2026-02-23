@@ -116,10 +116,9 @@ export default function RestorePhotosOnlinePage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-purple-950">
         {/* Animated Grid Background */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
+          <div className="absolute inset-0 animate-[grid-move_20s_linear_infinite]" style={{
             backgroundImage: 'linear-gradient(cyan 1px, transparent 1px), linear-gradient(90deg, cyan 1px, transparent 1px)',
-            backgroundSize: '50px 50px',
-            animation: 'grid-move 20s linear infinite'
+            backgroundSize: '50px 50px'
           }} />
         </div>
 
@@ -191,13 +190,6 @@ export default function RestorePhotosOnlinePage() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        @keyframes grid-move {
-          0% { transform: translateY(0); }
-          100% { transform: translateY(50px); }
-        }
-      `}</style>
 
       {/* Why Restore Online Section */}
       <section className="px-6 py-20 bg-gradient-to-b from-white to-slate-50">

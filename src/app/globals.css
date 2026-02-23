@@ -430,6 +430,11 @@ details[open] summary .faq-plus {
   100% { background-position: 200% center; }
 }
 
+@keyframes grid-move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(50px); }
+}
+
 /* ─── Warm shimmer effect for loading states ─── */
 .shimmer {
   background: linear-gradient(
@@ -480,4 +485,10 @@ details[open] summary .faq-plus {
 /* ─── Writing mode for vertical text ─── */
 .writing-vertical {
   writing-mode: vertical-rl;
+}
+
+/* ─── Grid move animation for restore-photos-online ─── */
+@keyframes grid-move {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(50px); }
 }
