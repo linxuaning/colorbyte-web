@@ -75,9 +75,9 @@ export default function PricingSection() {
           Start free. Upgrade when you need more.
         </p>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto items-center">
           {/* Free Trial */}
-          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8">
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 transform transition-all hover:shadow-lg">
             <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free Trial</p>
             <div className="mt-3 flex items-baseline gap-1">
               <span className="text-[44px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
@@ -109,7 +109,7 @@ export default function PricingSection() {
           </div>
 
           {/* Pro Lifetime */}
-          <div className="relative rounded-2xl bg-[#1d1d1f] p-8">
+          <div className="relative rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] p-8 transform sm:scale-105 shadow-2xl ring-2 ring-[#0071e3]/30">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
                 Best Value
@@ -150,12 +150,15 @@ export default function PricingSection() {
 
             <Link
               href="/subscription"
-              className="mt-8 flex h-10 items-center justify-center gap-2 rounded-full bg-[#0071e3] text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+              className="mt-8 flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#0071e3] to-[#0084ff] text-[15px] font-bold text-white hover:from-[#0077ed] hover:to-[#0090ff] active:scale-[0.96] transition-all shadow-xl hover:shadow-2xl relative overflow-hidden group"
             >
-              <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
-              </svg>
-              Unlock Lifetime Access — Save $20
+              <span className="relative z-10 flex items-center gap-2">
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
+                </svg>
+                Get Lifetime Access →
+              </span>
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
             </Link>
 
             {/* 30-Day Money-Back Guarantee */}
