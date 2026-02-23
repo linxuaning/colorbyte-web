@@ -53,7 +53,7 @@ I'll be upfront: I went in skeptical. I've spent years shooting and editing prof
 
 <h3>1. ArtImageHub — Best for Old Photos and Face Enhancement</h3>
 
-<p><a href="/old-photo-restoration">ArtImageHub</a> is specifically built for what most people actually want from an AI enhancer: rescuing old, damaged, degraded photos. The pipeline handles the full chain — global damage repair, then face enhancement, then super-resolution upscaling — in a single automated pass. You upload, you wait about 30–90 seconds, you download.</p>
+<p><a href="/old-photo-restoration">ArtImageHub</a> is specifically built for what most people actually want from an AI enhancer: rescuing old, damaged, degraded photos. The pipeline handles the full chain — global damage repair, then face enhancement, then super-resolution upscaling — in a single automated pass. You can also use our dedicated <a href="/photo-enhancer">AI Photo Enhancer</a> for quality improvement and upscaling without restoration. You upload, you wait about 30–90 seconds, you download.</p>
 
 <p>What stood out immediately was how it handled the face work. Most general-purpose enhancers treat faces like any other region of the image. ArtImageHub applies specialized face restoration models (trained on large datasets of high-quality portraits) as a separate, dedicated step. The difference in output quality on old photos is substantial. Where other tools returned faces that looked sharp but slightly plastic, ArtImageHub preserved natural skin texture, individual hair strands, and — critically — the person's actual identity. That last point matters more than it sounds when you're restoring photos of real relatives.</p>
 

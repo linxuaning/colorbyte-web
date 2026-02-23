@@ -15,6 +15,8 @@ But how accurate is AI photo colorization really? Can artificial intelligence tr
 
 This guide examines AI photo colorization accuracy in 2026, comparing leading tools, explaining how the technology works, identifying when it succeeds brilliantly and when it fails, and helping you make informed decisions about colorizing your irreplaceable photographs.
 
+Want to try it yourself? Use our [AI Photo Colorizer](/photo-colorizer) to colorize your first 3 photos free—no signup required.
+
 ## How AI Photo Colorization Works
 
 Understanding the technology helps you evaluate its accuracy and limitations.

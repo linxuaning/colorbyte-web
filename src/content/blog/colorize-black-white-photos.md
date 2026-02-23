@@ -141,7 +141,9 @@ Before getting into the tutorial, let me set realistic expectations based on wha
 
 ## Tutorial: Colorizing Black and White Photos with ArtImageHub
 
-Here's a step-by-step guide to getting excellent colorization results with ArtImageHub.
+Ready to bring your black-and-white photos to life? Visit our [AI Photo Colorizer](/photo-colorizer) to get started with your first 3 photos free—no signup required.
+
+Here's a step-by-step guide to getting excellent colorization results.
 
 ### Step 1: Prepare Your Photo
 
@@ -161,7 +163,7 @@ The quality of your colorization result depends heavily on the quality of the in
 
 ### Step 2: Upload to ArtImageHub
 
-Navigate to [ArtImageHub](https://artimagehub.vercel.app/old-photo-restoration) and upload your black-and-white photo. The tool accepts JPEG, PNG, TIFF, and WebP files.
+Navigate to our [AI Photo Colorizer](/photo-colorizer) and upload your black-and-white photo. The tool accepts JPEG, PNG, TIFF, and WebP files.
 
 ### Step 3: Enable Colorization
 
