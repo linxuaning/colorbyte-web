@@ -11,6 +11,8 @@ featured: false
 
 Few things are more heartbreaking than discovering cherished family photographs ruined by sun exposure. That vibrant wedding portrait now looks washed out and pink. Your children's baby pictures have faded to almost nothing. The vacation photos from twenty years ago are barely recognizable. If you need to fix sun damaged photos, you're not alone—sun damage is one of the most common forms of photograph deterioration, but fortunately, it's also one of the most repairable.
 
+Ready to restore your sun-damaged photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding Sun Damage in Photographs
 
 Before you can effectively fix sun damaged photos, you need to understand what's actually happening to the image at a chemical level.

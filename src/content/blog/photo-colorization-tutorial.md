@@ -13,6 +13,8 @@ Colorizing black and white photographs breathes new life into vintage family pho
 
 This tutorial covers everything you need to know about photo colorization, including automatic AI methods, manual Photoshop techniques, historical research for accuracy, and best practices for natural-looking results.
 
+Ready to colorize your photos? Try our [AI Photo Colorizer](/photo-colorizer)—automatically add color to your vintage photos with no sign-up required.
+
 ## Understanding Photo Colorization
 
 Before diving into techniques, it's important to understand what colorization is and isn't—because there's some confusion about this.

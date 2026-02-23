@@ -22,6 +22,8 @@ And until recently, the choices were grim: pay a professional restoration artist
 
 This is the complete guide to wedding photo restoration in 2026—the problems, the solutions, and exactly how to use modern AI tools to save photographs that matter.
 
+Ready to restore your wedding photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your precious wedding memories instantly with no sign-up required.
+
 ## Why Wedding Photos Are Especially Vulnerable
 
 Wedding photographs occupy a unique place in family history. They are, almost by definition, among the most intentional photographs ever taken of a family—posed, lit, formally composed, representing a moment that everyone understood to be important. For many families, they are the only formal portraits that exist of parents, grandparents, or great-grandparents.

@@ -15,6 +15,8 @@ If you have beatnik-era photographs—whether documenting family members who wer
 
 In this guide, I'll show you how to restore 1960s beatnik photos, addressing the unique technical challenges of this era's photography while respecting the authentic aesthetic that defined beat culture.
 
+Ready to restore your beatnik-era photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding 1960s Beatnik Photography
 
 Before you restore 1960s beatnik photos, understanding the cultural and technical context helps you make authentic restoration decisions.

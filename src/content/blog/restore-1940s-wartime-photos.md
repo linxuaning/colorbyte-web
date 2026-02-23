@@ -13,6 +13,8 @@ featured: false
 
 This guide addresses the unique challenges of restoring 1940s wartime photographs, from understanding period-specific damage patterns to applying specialized restoration techniques that preserve both the image and its historical authenticity.
 
+Ready to restore your wartime photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding 1940s Wartime Photography
 
 The 1940s presented unique photographic conditions that affect how these photos age and how we restore them today.

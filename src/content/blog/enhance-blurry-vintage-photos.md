@@ -13,6 +13,8 @@ Nothing frustrates collectors and family historians more than blurry vintage pho
 
 I'll explain why vintage photos blur, how to figure out what type of blur you're dealing with, the best techniques for enhancing sharpness, and what kind of results you can realistically expect.
 
+Ready to enhance your vintage photos? Try our [AI Photo Enhancer](/photo-enhancer) free—no sign-up required.
+
 ## Understanding Blur in Vintage Photos
 
 ### Camera Focus Issues

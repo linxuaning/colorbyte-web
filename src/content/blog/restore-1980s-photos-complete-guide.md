@@ -11,6 +11,8 @@ featured: false
 
 The 1980s marked a golden age of snapshot photography—Kodak prints, Polaroids, and drugstore processing captured everything from neon-lit parties to family vacations. But if you need to restore 1980s photos today, you're likely facing severe color fading, magenta shifts, yellow discoloration, and print deterioration that's transformed vibrant 80s memories into washed-out, color-shifted shadows of their former glory. This guide addresses the unique challenges of 1980s photograph restoration, from understanding why these relatively recent photos fade so dramatically to professional techniques for recovering original colors and vibrancy.
 
+Ready to restore your 1980s photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Why 1980s Photos Fade So Dramatically
 
 Despite being only 40 years old, many 1980s photos look worse than photographs from the 1940s. Understanding why helps you restore them effectively.

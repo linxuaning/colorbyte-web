@@ -13,6 +13,8 @@ The 1970s disco era created some of the most vibrant, energetic, and memorable p
 
 This guide explains why 1970s photos deteriorate so severely, identifies damage patterns specific to disco-era photography, provides step-by-step restoration techniques, and helps you preserve these unique cultural artifacts for future generations.
 
+Ready to restore your disco-era photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding 1970s Photo Characteristics
 
 ### Color Print Technology of the Disco Era

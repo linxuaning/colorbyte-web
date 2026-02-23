@@ -13,6 +13,8 @@ The 1950s marked a revolutionary period in photography when color photography tr
 
 In this guide, I'll share professional techniques to restore 1950s color photos, addressing the specific challenges of early color processes while preserving the authentic look and feel of mid-century photography.
 
+Ready to restore your 1950s photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding 1950s Color Photography
 
 Before attempting restoration, understanding the technology helps guide appropriate methods.

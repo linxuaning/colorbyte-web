@@ -15,6 +15,8 @@ Color shift occurs when the three dye layers in color photographs—cyan, magent
 
 The good news is that color-shifted photographs can almost always be corrected and restored to natural-looking colors using modern restoration techniques. Whether your old photos have turned pink, orange, yellow, or muddy brown, I'll walk you through how to fix color shift in old photos and recover the true colors of your precious memories.
 
+Ready to fix color shifts in your photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding Color Shift in Photographs
 
 ### How Color Photography Works

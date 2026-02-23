@@ -13,6 +13,8 @@ Stains are among the most common and frustrating types of photograph damage. A b
 
 In this guide, I'll share professional techniques to fix stained photographs, covering identification of different stain types, safe physical treatment when appropriate, and digital restoration methods that can dramatically improve even severely stained images.
 
+Ready to restore your stained photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding Photograph Stains
 
 Before attempting to fix stained photographs, identifying the stain type guides proper treatment.

@@ -22,6 +22,8 @@ I've spent nearly two decades professionally restoring torn photographs—from s
 
 This guide covers everything you need to know about repairing torn photographs: safe physical repair methods that won't cause further damage, digital restoration techniques that create perfect results, when to use each approach, and when to call in professionals.
 
+Ready to restore your torn photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Critical First Step: Don't Make It Worse
 
 Before you do anything else, follow these rules:

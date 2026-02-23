@@ -13,6 +13,8 @@ Color photographs bring the past to life in ways black and white images can't, c
 
 I'll explain why color photos fade, how to spot the different types of color deterioration, the best techniques for restoring vibrant accurate colors, and strategies for preventing future fading.
 
+Ready to restore your faded color photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Understanding Color Photo Fading
 
 ### How Color Photography Works

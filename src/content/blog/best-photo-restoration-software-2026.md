@@ -24,6 +24,8 @@ The most expensive software didn't win. The most popular app had serious limitat
 
 This guide shares my complete findings—with real before/after examples, processing time comparisons, cost analyses, and specific recommendations based on your skill level, budget, and how many photos you're restoring.
 
+Ready to restore your damaged photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
+
 ## Testing Methodology: How I Actually Compared These Tools
 
 **Test photo collection (500 photos):**
