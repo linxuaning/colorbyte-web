@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import RestoreClient from "./restore-client";
 import FloatingCTA from "@/components/FloatingCTA";
+import LiveActivity from "@/components/LiveActivity";
 
 export const metadata: Metadata = {
   title: "Old Photo Restoration Online Free | AI Restore Photos in Seconds",
@@ -96,6 +97,25 @@ export default function OldPhotoRestorationPage() {
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
             Upload your photo and let AI restore it in seconds. Face enhancement, super resolution, and colorization — free.
           </p>
+        </div>
+      </div>
+
+      {/* Social Proof */}
+      <div className="mx-auto max-w-3xl px-5 -mt-2 mb-8">
+        <LiveActivity />
+
+        {/* Trust Badges */}
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-[#6e6e73]">
+          {[
+            { icon: "✓", text: "10,000+ photos restored" },
+            { icon: "✓", text: "4.8★ average rating" },
+            { icon: "✓", text: "Results in 30 seconds" },
+          ].map((badge) => (
+            <span key={badge.text} className="flex items-center gap-1.5">
+              <span className="text-green-600 font-bold">{badge.icon}</span>
+              {badge.text}
+            </span>
+          ))}
         </div>
       </div>
 
