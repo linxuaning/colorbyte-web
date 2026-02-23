@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     type: "website",
     title: "Journal — AI Photo Restoration Guides & Stories",
     description: "Expert guides on AI photo restoration, vintage photo preservation, and family history.",
-    images: [{ url: "/blog/old-photo-guide.jpg", width: 1200, height: 630, alt: "AI photo restoration guides" }],
+    images: [{ url: "/blog/old-photo-guide.webp", width: 1200, height: 630, alt: "AI photo restoration guides" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Journal — AI Photo Restoration Guides",
     description: "Expert guides on restoring and preserving old family photos with AI.",
-    images: ["/blog/old-photo-guide.jpg"],
+    images: ["/blog/old-photo-guide.webp"],
   },
 };
 

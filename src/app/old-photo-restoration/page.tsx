@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     title: "Old Photo Restoration Online Free — ArtImageHub",
     description: "Restore old, damaged photos instantly with AI. Fix scratches, enhance faces, colorize — free, no signup.",
     type: "website",
-    images: [{ url: "/blog/before-after-examples.jpg", width: 1200, height: 630, alt: "Before and after AI photo restoration" }],
+    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Before and after AI photo restoration" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Old Photo Restoration Online Free",
     description: "Restore old, damaged photos instantly with AI. Free, no signup.",
-    images: ["/blog/before-after-examples.jpg"],
+    images: ["/blog/before-after-examples.webp"],
   },
 };
 
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 4,
       name: "Download your restored photo",
       text: "Preview the before/after result and download your restored photo in high resolution. Free users get 720p; Pro users get original resolution.",
-      image: "https://www.artimagehub.com/blog/after-1.jpg",
+      image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
 };

@@ -7,8 +7,9 @@ import Link from "next/link";
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["700", "800", "900"],
   style: ["normal", "italic"],
+  display: "swap",
 });
 
 const lora = Lora({
@@ -16,6 +17,7 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
+  display: "swap",
 });
 
 // Root-level structured data for Google Knowledge Panel + Sitelinks

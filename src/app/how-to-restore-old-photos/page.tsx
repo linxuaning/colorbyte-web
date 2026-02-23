@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/blog/before-after-examples.jpg",
+        url: "/blog/before-after-examples.webp",
         width: 1200,
         height: 630,
         alt: "Before and after photo restoration comparison",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Restore Old Photos: Complete Guide",
     description: "Learn 3 methods to restore old photos: AI, Photoshop, professional. Free guide with examples.",
-    images: ["/blog/before-after-examples.jpg"],
+    images: ["/blog/before-after-examples.webp"],
   },
 };
 
@@ -73,7 +73,7 @@ const howToSchema = {
       position: 4,
       name: "Download and save your restored photo",
       text: "Compare the before and after result. Download the restored photo in high resolution. Always keep both the original scan and the restored version.",
-      image: "https://www.artimagehub.com/blog/after-1.jpg",
+      image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -84,7 +84,7 @@ const articleSchema = {
   headline: "How to Restore Old Photos in 2026: Complete Guide (Free + Paid Methods)",
   description:
     "Comprehensive guide covering AI restoration, Photoshop methods, and professional services for restoring old photos.",
-  image: "https://www.artimagehub.com/blog/before-after-examples.jpg",
+  image: "https://www.artimagehub.com/blog/before-after-examples.webp",
   datePublished: "2026-02-23",
   dateModified: "2026-02-23",
   author: {

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     title: "AI Photo Colorizer Free — ArtImageHub",
     description: "Turn black and white photos into color instantly with AI. Realistic colorization, free, no signup.",
     type: "website",
-    images: [{ url: "/blog/before-after-examples.jpg", width: 1200, height: 630, alt: "Black and white photo colorization before and after" }],
+    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Black and white photo colorization before and after" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Photo Colorizer — Free Black & White Colorization",
     description: "Turn black and white photos into color with AI. Free, instant, realistic colors.",
-    images: ["/blog/before-after-examples.jpg"],
+    images: ["/blog/before-after-examples.webp"],
   },
 };
 
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 4,
       name: "Download your colorized photo",
       text: "Preview the before/after result and download your colorized photo in high resolution. Free users get 720p; Pro users get original resolution.",
-      image: "https://www.artimagehub.com/blog/after-1.jpg",
+      image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
 };

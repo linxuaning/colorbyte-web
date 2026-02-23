@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     title: "AI Photo Enhancer Free — ArtImageHub",
     description: "Enhance photo quality instantly with AI. Fix blurry photos, improve resolution. Free, no signup.",
     type: "website",
-    images: [{ url: "/blog/before-after-examples.jpg", width: 1200, height: 630, alt: "Photo enhancement before and after" }],
+    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Photo enhancement before and after" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Photo Enhancer — Free Photo Quality Enhancement",
     description: "Enhance photo quality with AI. Fix blurry photos, improve resolution. Free, instant results.",
-    images: ["/blog/before-after-examples.jpg"],
+    images: ["/blog/before-after-examples.webp"],
   },
 };
 
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 4,
       name: "Download your enhanced photo",
       text: "Preview the before/after result and download your enhanced photo in high resolution. Free users get 720p; Pro users get original resolution.",
-      image: "https://www.artimagehub.com/blog/after-1.jpg",
+      image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
 };

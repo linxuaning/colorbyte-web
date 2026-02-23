@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration Online Free",
     description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free — no signup required.",
-    images: [{ url: "/blog/before-after-examples.jpg", width: 1200, height: 630, alt: "AI photo restoration before and after comparison" }],
+    images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "AI photo restoration before and after comparison" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ArtImageHub — AI Photo Restoration Free",
     description: "Restore old, damaged photos with AI in seconds. Free online tool.",
-    images: ["/blog/before-after-examples.jpg"],
+    images: ["/blog/before-after-examples.webp"],
   },
 };
 
