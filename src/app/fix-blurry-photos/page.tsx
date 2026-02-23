@@ -310,22 +310,24 @@ export default function FixBlurryPhotosPage() {
         </div>
       </section>
 
-      {/* Related Pages */}
-      <section className="py-12 px-5 bg-[#f5f5f7]">
-        <div className="mx-auto max-w-5xl">
-          <h3 className="text-xl font-bold text-[#1d1d1f] mb-6">Related Photo Tools</h3>
-          <div className="grid sm:grid-cols-3 gap-4">
-            <Link href="/unblur-photo" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-indigo-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">Unblur Photo</h4>
-              <p className="text-[13px] text-[#6e6e73]">Advanced deblurring tools</p>
+      {/* Related Guides */}
+      <section className="py-16 px-4 bg-[#f3ede3]/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-playfair text-3xl font-bold text-[#2c2416] mb-8">
+            Related Guides
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Photos Online</h3>
+              <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
             </Link>
-            <Link href="/old-photo-restoration" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-indigo-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">Photo Restoration</h4>
-              <p className="text-[13px] text-[#6e6e73]">Fix old and damaged photos</p>
+            <Link href="/ai-photo-fixer" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">AI Photo Fixer</h3>
+              <p className="text-sm text-[#6b5344]">AI-powered photo repair</p>
             </Link>
-            <Link href="/ai-photo-upscaler" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-indigo-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">AI Photo Upscaler</h4>
-              <p className="text-[13px] text-[#6e6e73]">Increase resolution with AI</p>
+            <Link href="/damaged-photo-repair" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Damaged Photo Repair</h3>
+              <p className="text-sm text-[#6b5344]">Fix scratches, tears, and damage</p>
             </Link>
           </div>
         </div>

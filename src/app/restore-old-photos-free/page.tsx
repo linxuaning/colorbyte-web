@@ -355,22 +355,72 @@ export default function RestoreOldPhotosFreePage() {
         </div>
       </section>
 
-      {/* Related Pages */}
-      <section className="py-12 px-5 bg-[#f5f5f7]">
-        <div className="mx-auto max-w-5xl">
-          <h3 className="text-xl font-bold text-[#1d1d1f] mb-6">More Photo Restoration Resources</h3>
-          <div className="grid sm:grid-cols-3 gap-4">
-            <Link href="/old-photo-restoration" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-[#0071e3]/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">Old Photo Restoration</h4>
-              <p className="text-[13px] text-[#6e6e73]">AI restoration tool with all features</p>
+      {/* Related Guides */}
+      <section className="py-16 px-4 bg-[#f3ede3]/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-playfair text-3xl font-bold text-[#2c2416] mb-8">
+            Related Guides
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href="/ai-photo-restoration"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                AI Photo Restoration
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Learn how AI restores old photos
+              </p>
             </Link>
-            <Link href="/colorize-photos-free" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-[#0071e3]/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">Colorize Photos Free</h4>
-              <p className="text-[13px] text-[#6e6e73]">Add color to black and white photos</p>
+
+            <Link
+              href="/fix-blurry-photos"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Fix Blurry Photos
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Sharpen blurry images with AI
+              </p>
             </Link>
-            <Link href="/best-photo-restoration-software" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-[#0071e3]/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">Best Photo Restoration Software</h4>
-              <p className="text-[13px] text-[#6e6e73]">Compare top tools in 2026</p>
+
+            <Link
+              href="/restore-faded-photos"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Restore Faded Photos
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Bring back faded colors and detail
+              </p>
+            </Link>
+          </div>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link
+              href="/photo-restoration-service"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Photo Restoration Service
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Professional AI restoration service
+              </p>
+            </Link>
+
+            <Link
+              href="/best-photo-restoration-software"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Best Photo Restoration Software
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Compare top restoration tools 2026
+              </p>
             </Link>
           </div>
         </div>

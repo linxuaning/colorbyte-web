@@ -996,22 +996,32 @@ export default function BestPhotoRestorationSoftwarePage() {
           </div>
         </section>
 
-        {/* Related Pages */}
-        <section className="py-12 px-6 bg-stone-50">
+        {/* Related Guides */}
+        <section className="py-16 px-6 bg-stone-50">
           <div className="max-w-5xl mx-auto">
-            <h3 className="text-xl font-bold text-stone-900 mb-6">Related Articles</h3>
-            <div className="grid md:grid-cols-3 gap-4">
-              <Link href="/how-to-restore-old-photos" className="block p-4 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-md transition-all">
-                <h4 className="font-bold text-stone-900 mb-2">How to Restore Old Photos</h4>
-                <p className="text-sm text-stone-600">Complete step-by-step guide</p>
+            <h3 className="text-2xl font-bold text-stone-900 mb-8">Related Guides</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/restore-photos-online" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
+                <h4 className="font-bold text-stone-900 mb-2">Restore Photos Online</h4>
+                <p className="text-sm text-stone-600">Web-based restoration in 30 seconds</p>
               </Link>
-              <Link href="/photo-restoration-app" className="block p-4 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-md transition-all">
-                <h4 className="font-bold text-stone-900 mb-2">Photo Restoration Apps</h4>
-                <p className="text-sm text-stone-600">Mobile app comparison</p>
+              <Link href="/ai-photo-restoration" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
+                <h4 className="font-bold text-stone-900 mb-2">AI Photo Restoration</h4>
+                <p className="text-sm text-stone-600">How neural networks restore photos</p>
               </Link>
-              <Link href="/old-photo-restoration" className="block p-4 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-md transition-all">
-                <h4 className="font-bold text-stone-900 mb-2">Old Photo Restoration</h4>
-                <p className="text-sm text-stone-600">Try our AI tool free</p>
+              <Link href="/restore-old-photos-free" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
+                <h4 className="font-bold text-stone-900 mb-2">Free Photo Restoration</h4>
+                <p className="text-sm text-stone-600">Try 3 photos completely free</p>
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <Link href="/vintage-photo-restoration" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
+                <h4 className="font-bold text-stone-900 mb-2">Vintage Photo Restoration</h4>
+                <p className="text-sm text-stone-600">Restore photos from any era</p>
+              </Link>
+              <Link href="/damaged-photo-repair" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
+                <h4 className="font-bold text-stone-900 mb-2">Damaged Photo Repair</h4>
+                <p className="text-sm text-stone-600">Fix scratches, tears, and water damage</p>
               </Link>
             </div>
           </div>

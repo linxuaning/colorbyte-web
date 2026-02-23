@@ -401,22 +401,72 @@ export default function AIPhotoRestorationPage() {
         </div>
       </section>
 
-      {/* Related AI Tools */}
-      <section className="py-12 px-5 bg-[#f5f5f7]">
-        <div className="mx-auto max-w-5xl">
-          <h3 className="text-xl font-bold text-[#1d1d1f] mb-6">More AI Tools</h3>
-          <div className="grid sm:grid-cols-3 gap-4">
-            <Link href="/ai-photo-upscaler" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-violet-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">AI Photo Upscaler</h4>
-              <p className="text-[13px] text-[#6e6e73]">Increase resolution with AI</p>
+      {/* Related Guides */}
+      <section className="py-16 px-4 bg-[#f3ede3]/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-playfair text-3xl font-bold text-[#2c2416] mb-8">
+            Related Guides
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href="/restore-photos-online"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Restore Photos Online
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Web-based restoration in 30 seconds
+              </p>
             </Link>
-            <Link href="/colorize-photos-free" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-violet-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">AI Colorization</h4>
-              <p className="text-[13px] text-[#6e6e73]">Add color to B&W photos</p>
+
+            <Link
+              href="/best-photo-restoration-software"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Software Comparison
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Compare top restoration tools
+              </p>
             </Link>
-            <Link href="/enhance-old-photos" className="block p-4 bg-white rounded-lg border border-[#d2d2d7]/60 hover:border-violet-500/40 hover:shadow-sm transition-all">
-              <h4 className="font-semibold text-[#1d1d1f] mb-1">AI Photo Enhancer</h4>
-              <p className="text-[13px] text-[#6e6e73]">Enhance any photo with AI</p>
+
+            <Link
+              href="/restore-old-photos-free"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Free Photo Restoration
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Try 3 photos completely free
+              </p>
+            </Link>
+          </div>
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link
+              href="/vintage-photo-restoration"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Vintage Photo Restoration
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Restore photos from any era
+              </p>
+            </Link>
+
+            <Link
+              href="/fix-blurry-photos"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40"
+            >
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">
+                Fix Blurry Photos
+              </h3>
+              <p className="text-sm text-[#6b5344]">
+                Sharpen blurry images with AI
+              </p>
             </Link>
           </div>
         </div>

@@ -488,6 +488,29 @@ export default function PictureRestorationPage() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="py-16 px-4 bg-slate-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-black text-slate-900 mb-8">
+            Related Guides
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/vintage-photo-restoration" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">Vintage Photo Restoration</h3>
+              <p className="text-sm text-slate-600">Restore photos from any era</p>
+            </Link>
+            <Link href="/damaged-photo-repair" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">Damaged Photo Repair</h3>
+              <p className="text-sm text-slate-600">Fix scratches, tears, and damage</p>
+            </Link>
+            <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">Restore Photos Online</h3>
+              <p className="text-sm text-slate-600">Web-based restoration in 30 seconds</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="px-6 py-20 bg-gradient-to-br from-amber-900 via-orange-900 to-amber-900 text-white">
         <div className="max-w-4xl mx-auto text-center">

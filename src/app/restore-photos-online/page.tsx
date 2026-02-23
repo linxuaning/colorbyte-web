@@ -547,6 +547,52 @@ export default function RestorePhotosOnlinePage() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="py-16 px-4 bg-slate-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-black text-slate-900 mb-8">
+            Related Guides
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href="/ai-photo-restoration"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200"
+            >
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                AI Photo Restoration
+              </h3>
+              <p className="text-sm text-slate-600">
+                Learn how AI restores old photos
+              </p>
+            </Link>
+
+            <Link
+              href="/best-photo-restoration-software"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200"
+            >
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                Best Restoration Software
+              </h3>
+              <p className="text-sm text-slate-600">
+                Compare top restoration tools
+              </p>
+            </Link>
+
+            <Link
+              href="/restore-old-photos-free"
+              className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200"
+            >
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                Restore Photos Free
+              </h3>
+              <p className="text-sm text-slate-600">
+                Try 3 photos completely free
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="px-6 py-20 bg-gradient-to-br from-cyan-950 via-slate-900 to-purple-950 text-white">
         <div className="max-w-4xl mx-auto text-center">
