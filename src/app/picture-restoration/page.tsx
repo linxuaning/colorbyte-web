@@ -80,7 +80,7 @@ const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "ArtImageHub Picture Restoration",
-  applicationCategory": "PhotographyApplication",
+  applicationCategory: "PhotographyApplication",
   operatingSystem: "Web Browser",
   offers: {
     "@type": "Offer",
