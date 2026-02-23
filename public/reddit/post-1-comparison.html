@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit Post #1 - Before/After Comparison</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .comparison-container {
+      width: 1200px;
+      height: 630px;
+      background: white;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .side {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .label {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .before-label {
+      background: rgba(220, 38, 38, 0.9);
+    }
+
+    .after-label {
+      background: rgba(22, 163, 74, 0.9);
+    }
+
+    .divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, #ef4444, #22c55e);
+      transform: translateX(-50%);
+      z-index: 5;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    /* Watermark */
+    .watermark {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #1f2937;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 4px;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .watermark span {
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <div class="comparison-container">
+    <div class="side before">
+      <img src="../blog/before-1.jpg" alt="Before restoration - damaged 1947 wedding photo">
+      <div class="label before-label">BEFORE</div>
+    </div>
+
+    <div class="side after">
+      <img src="../blog/after-1.jpg" alt="After AI restoration">
+      <div class="label after-label">AFTER</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="watermark">
+      Restored with <span>ArtImageHub.com</span>
+    </div>
+  </div>
+
+  <script>
+    // Instructions for user
+    console.log('📸 Screenshot Instructions:');
+    console.log('1. Press Cmd+Shift+4 (Mac) or use Windows Snipping Tool');
+    console.log('2. Capture the comparison image');
+    console.log('3. Save as "reddit-post-1-comparison.png"');
+    console.log('4. Upload to Reddit when posting');
+  </script>
+</body>
+</html>
