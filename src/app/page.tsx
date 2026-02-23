@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PricingSection from "./pricing-section";
 import UserCounter from "@/components/UserCounter";
+import LiveActivity from "@/components/LiveActivity";
+import TodayStats from "@/components/TodayStats";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
@@ -167,9 +169,10 @@ export default function HomePage() {
                 Upload a damaged, faded, or black&#160;&amp;&#160;white photo — our AI restores it to stunning clarity in seconds. Free to try, no account needed.
               </p>
 
-              {/* User Counter */}
-              <div className="mt-8">
+              {/* Social Proof */}
+              <div className="mt-8 flex flex-col sm:flex-row items-start gap-3">
                 <UserCounter />
+                <LiveActivity />
               </div>
 
               {/* CTAs */}
@@ -261,6 +264,9 @@ export default function HomePage() {
                   </span>
                 ))}
               </div>
+
+              {/* Today's activity */}
+              <TodayStats />
             </div>
 
             {/* Right: Decorative side bar — editorial pull stat */}
