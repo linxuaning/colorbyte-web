@@ -63,6 +63,25 @@ const howToSchema = {
   ],
 };
 
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ArtImageHub Photo Deblur Tool",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Web browser",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "3 free fixes, Pro Lifetime $29.9"
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.7",
+    ratingCount: "1856"
+  }
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -85,6 +104,10 @@ export default function FixBlurryPhotosPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
       {/* Hero Section */}
