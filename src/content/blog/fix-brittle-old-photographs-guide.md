@@ -66,6 +66,8 @@ Paper fibers disintegrate:
 
 ### Environmental Factors
 
+For photographs that are too fragile to handle for extensive restoration work, [AI photo enhancement](/photo-enhancer) offers remote digital restoration that requires no physical manipulation of the original brittle photograph.
+
 **Humidity Fluctuations**
 
 Cycling humidity accelerates brittleness:

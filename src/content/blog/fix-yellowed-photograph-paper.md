@@ -218,7 +218,7 @@ Foundation of successful restoration starts with proper scanning.
 
 ### Step 2: Basic Color Correction
 
-Start with global adjustments to remove yellow cast.
+Start with global adjustments to remove yellow cast. For black-and-white photos, this restores neutral tones. For color photos that had their colors altered by yellowing, you may want to use [AI photo colorization](/photo-colorizer) tools to help restore original color after removing the yellow cast.
 
 **Method 1: Auto Color as Starting Point**
 

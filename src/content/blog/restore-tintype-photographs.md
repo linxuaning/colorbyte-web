@@ -311,7 +311,7 @@ Photographing tintypes often produces better results:
 
 ## Digital Restoration of Tintypes
 
-Once digitized, restoration can begin.
+Once digitized, restoration can begin. Many tintypes benefit from more than just damage removal—[AI photo enhancement](/photo-enhancer) can recover lost detail, improve contrast, and bring clarity to faces that have aged over 150+ years.
 
 ### Initial Processing
 

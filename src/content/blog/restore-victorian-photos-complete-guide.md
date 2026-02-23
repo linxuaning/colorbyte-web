@@ -67,7 +67,7 @@ Victorian photographs stored in basements, attics, or old albums often show wate
 
 ## Step-by-Step Process to Restore Victorian Photos
 
-Successful Victorian photo restoration follows a methodical approach that respects the photograph's historical integrity while leveraging modern technology.
+Successful Victorian photo restoration follows a methodical approach that respects the photograph's historical integrity while leveraging modern technology. AI-assisted [photo restoration services](/old-photo-restoration) can accelerate damage repair while maintaining period authenticity.
 
 ### Step 1: Assessment and Documentation
 

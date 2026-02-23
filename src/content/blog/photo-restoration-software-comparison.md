@@ -59,6 +59,8 @@ Tools like GIMP, Photopea (browser-based), and various smartphone apps offer res
 **Pricing:** Pay-per-photo ($5-20 depending on complexity) or subscription plans
 **Best For:** Family photos, historical images, general restoration needs
 
+Our comprehensive [old photo restoration](/old-photo-restoration), [photo enhancer](/photo-enhancer), and [photo colorizer](/photo-colorizer) services leverage advanced AI for different restoration needs.
+
 **Key Features:**
 - Advanced AI trained specifically for photo restoration
 - Automatic damage detection and repair (scratches, tears, fading)

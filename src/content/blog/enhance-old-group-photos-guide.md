@@ -680,7 +680,7 @@ Old group photos fade unevenly due to differential light exposure during display
 
 ### How much does it cost to restore an old class photo?
 
-Professional restoration of old class photos costs $200-600 for medium-sized groups (10-20 people) with basic to moderate damage, and $600-2000+ for large classes (30+ students) or severe damage requiring extensive reconstruction. DIY restoration costs $70-550 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99) plus scanning equipment ($200-500), but requires 12-20 hours for typical class photos. Large format class photos may need professional scanning ($20-50) if they exceed standard scanner bed size.
+Professional restoration of old class photos costs $200-600 for medium-sized groups (10-20 people) with basic to moderate damage, and $600-2000+ for large classes (30+ students) or severe damage requiring extensive reconstruction. Using [AI photo enhancement](/photo-enhancer) for group photos can reduce this cost significantly by handling much of the work automatically. DIY restoration costs $70-550 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99) plus scanning equipment ($200-500), but requires 12-20 hours for typical class photos. Large format class photos may need professional scanning ($20-50) if they exceed standard scanner bed size.
 
 ### Can damaged faces in group photos be reconstructed?
 

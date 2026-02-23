@@ -325,6 +325,8 @@ Digital work has its own pitfalls.
 - Sharpening before other adjustments
 - Sharpening noise along with detail
 
+For restoration that balances enhancement with authenticity, AI-powered [photo enhancement tools](/photo-enhancer) can help determine the right amount of sharpening without creating artificial halos or artifacts.
+
 **Visual Results**:
 - White halos around edges
 - Exaggerated grain and noise

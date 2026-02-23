@@ -44,6 +44,8 @@ The 1950s saw explosive growth in family photography thanks to:
 
 ### Chemical Composition and Aging
 
+Modern [photo colorization technology](/photo-colorizer) can help restore color to faded 1950s prints, both complementing manual color corrections and offering an alternative restoration path for severely faded originals.
+
 **1950s Chromogenic Print Process**
 
 Kodak prints from the 1950s used early chromogenic (dye-based) processes:

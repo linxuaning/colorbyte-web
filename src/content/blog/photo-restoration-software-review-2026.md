@@ -58,7 +58,7 @@ We restored identical photographs across all platforms:
 
 ## Professional Desktop Software
 
-Full-featured applications for serious restoration work.
+Full-featured applications for serious restoration work. Alternatively, many users find specialized [AI photo restoration services](/old-photo-restoration) faster and easier than mastering complex desktop software, with no learning curve required.
 
 ### Adobe Photoshop 2026
 

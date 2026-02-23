@@ -47,7 +47,7 @@ Photo restoration is the process of returning a damaged, deteriorated, or degrad
 
 Restoration aims to **recover what was originally there**. It's about undoing damage and deterioration to reveal the photograph as it appeared when first printed. Restoration doesn't improve upon the original—it recovers it.
 
-Think of photo restoration like restoring an antique car: you're removing rust, repairing dents, and bringing it back to factory condition, not upgrading it with modern features.
+Think of photo restoration like restoring an antique car: you're removing rust, repairing dents, and bringing it back to factory condition, not upgrading it with modern features. Learn more about professional [photo restoration services](/old-photo-restoration) that combine damage repair with careful historical accuracy.
 
 ## Defining Photo Enhancement
 

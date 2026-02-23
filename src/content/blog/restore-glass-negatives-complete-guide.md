@@ -219,7 +219,7 @@ Glass negatives must be converted to positive images:
 
 ## Restoring Glass Negative Images Digitally
 
-Once digitized and inverted, restoration techniques recover image quality.
+Once digitized and inverted, restoration techniques recover image quality. For comprehensive restoration combining crack repair, detail recovery, and final enhancement, AI-powered [photo restoration tools](/old-photo-restoration) can significantly speed the process while maintaining historical accuracy.
 
 ### Repairing Cracks and Breaks
 

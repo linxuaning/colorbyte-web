@@ -23,7 +23,7 @@ Old photographs continue to deteriorate. Today's scan may capture details that w
 
 ### Restoration Depends on Scan Quality
 
-Photo restoration can only work with the information captured in the scan. A low-quality scan at 300 DPI lacks the detail needed for significant enlargement or fine restoration work. A high-quality scan at 1200 DPI provides abundant detail for professional-level restoration.
+Photo restoration can only work with the information captured in the scan. A low-quality scan at 300 DPI lacks the detail needed for significant enlargement or fine restoration work. A high-quality scan at 1200 DPI provides abundant detail for professional-level restoration. Combined with [AI photo enhancement](/photo-enhancer), quality scans become the foundation for stunning restoration results.
 
 ### Print Quality Starts with Scan Quality
 

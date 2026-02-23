@@ -65,6 +65,8 @@ Before evaluating accuracy, let's understand how AI face enhancement actually wo
 - Texture reconstruction for grain or deterioration
 - Feature refinement for subtle improvements
 
+When combined with a comprehensive [AI photo enhancement platform](/photo-enhancer), facial restoration becomes part of a broader restoration workflow that handles damage, clarity, and detail across entire images.
+
 ## Measuring AI Face Enhancement Accuracy
 
 How do we actually measure how accurate AI face restoration is?

@@ -39,6 +39,8 @@ Fungal spores arrive from multiple sources:
 
 ### Types of Fungal Damage You'll Encounter
 
+After stabilizing fungal damage physically, [AI photo restoration services](/old-photo-restoration) excel at removing the stains, discoloration, and detail loss that fungal damage causes during the digital restoration phase.
+
 **Foxing**
 
 Brown or rust-colored spots scattered across the photograph surface. Foxing results from fungal growth feeding on iron compounds in the paper sizing. These spots:

@@ -289,6 +289,8 @@ Cloud-based AI upscaling service, web-based platform.
 - Occasional upscaling needs
 - Users without powerful computers
 
+For comprehensive photo enhancement including upscaling, detail recovery, and restoration combined, our [photo enhancer](/photo-enhancer) service provides integrated restoration alongside upscaling for optimal results.
+
 **Overall Rating:** 8.2/10
 
 ### Magnific AI

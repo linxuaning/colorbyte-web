@@ -70,7 +70,7 @@ As other processes improved, tintypes declined but persisted:
 
 ## Common Damage Patterns in Tintype Images
 
-When you restore tintype images, you'll encounter specific deterioration types.
+When you restore tintype images, you'll encounter specific deterioration types. Combined with AI-powered [photo enhancement](/photo-enhancer), digitized tintypes can achieve remarkable clarity and detail recovery.
 
 ### Physical Damage
 

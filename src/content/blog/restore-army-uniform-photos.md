@@ -31,6 +31,8 @@ Getting these details wrong in restoration isn't just aesthetically problematicâ
 
 ### Common Damage Patterns in Military Photos
 
+When military photos are damaged or faded, [professional photo restoration services](/old-photo-restoration) understand the historical importance of preserving uniform details accurately while recovering lost clarity and color.
+
 **Service-Related Wear**
 
 Military photos often traveled with service members:

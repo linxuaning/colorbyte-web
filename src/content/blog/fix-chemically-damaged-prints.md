@@ -132,7 +132,7 @@ With a high-quality scan, analyze the damage digitally:
 
 ### Step 4: AI-Powered Restoration with ArtImageHub
 
-Modern AI technology offers unprecedented capabilities to fix chemically damaged prints.
+Modern AI technology offers unprecedented capabilities to fix chemically damaged prints. Beyond simple chemical stain removal, you can also enhance overall photo quality and detail using [AI photo enhancement tools](/photo-enhancer) that complement restoration work.
 
 **Upload to ArtImageHub**: The platform's specialized algorithms recognize chemical damage patterns that differ from physical damage or normal aging.
 

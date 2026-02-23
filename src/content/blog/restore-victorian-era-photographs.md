@@ -51,7 +51,7 @@ Victorian era photographs suffer from specific types of deterioration that diffe
 
 ## Step-by-Step Victorian Photo Restoration Process
 
-When you restore Victorian era photographs, the approach varies significantly based on the format and condition. Here's a complete workflow for digital restoration.
+When you restore Victorian era photographs, the approach varies significantly based on the format and condition. Modern [AI restoration services](/old-photo-restoration) can handle the complex damage patterns Victorian photos commonly exhibit. Here's a complete workflow for digital restoration combined with AI assistance.
 
 ### Step 1: Proper Digitization
 
