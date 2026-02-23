@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
       },
       // Cache static assets aggressively — improves Core Web Vitals LCP
       {
-        source: "/blog/:path*.jpg",
+        source: "/blog/:path*.(jpg|jpeg|png|webp|avif)",
         headers: [
           {
             key: "Cache-Control",
@@ -62,6 +62,46 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Cache fonts for 1 year
+      {
+        source: "/(.*).woff2",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      // Cache favicons and icons
+      {
+        source: "/(favicon.ico|icon.png|apple-icon.png)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=604800, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      // Sitemap caching (revalidate daily)
+      {
+        source: "/sitemap.xml",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, stale-while-revalidate=3600",
+          },
+        ],
+      },
+      // IndexNow API - no cache
+      {
+        source: "/api/indexnow",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "no-store",
+          },
+        ],
+      },
     ];
   },
 
@@ -70,6 +110,15 @@ const nextConfig: NextConfig = {
 
   // Power headers (tells Google this is a Next.js site)
   poweredByHeader: false,
+
+  // Experimental performance features
+  experimental: {
+    // Optimize package imports for smaller bundles
+    optimizePackageImports: ['lucide-react', '@heroicons/react'],
+  },
+
+  // Empty turbopack config to silence warning (Next.js 16+ default)
+  turbopack: {},
 };
 
 export default nextConfig;
