@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Link from "next/link";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import StickyCTA from "@/components/StickyCTA";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -105,6 +106,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <StickyCTA />
         <ExitIntentPopup />
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
