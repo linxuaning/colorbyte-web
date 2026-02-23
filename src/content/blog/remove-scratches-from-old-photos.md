@@ -24,6 +24,8 @@ Straight across the grandfather's face, from just above the right eye down throu
 
 That question — the short version, delivered flat, from someone trying not to hope too much — is why I've spent twelve years learning every method available for removing scratches from old photographs. This is what I know.
 
+Want quick AI-powered scratch removal? Try our [free scratch remover](/remove-scratches-from-photos)—AI removes scratches instantly, no Photoshop skills required. 3 photos free per day.
+
 <h2>Understanding Photo Scratches: Not All Damage Is the Same</h2>
 
 <p>Before you choose a removal method, you need to understand what you're actually dealing with. I see clients mix these up constantly, and it matters because each type responds differently to treatment.</p>

@@ -11,7 +11,7 @@ featured: false
 
 Grain in old photographs walks a fine line between character and distraction. Sometimes grain adds authentic vintage charm, while other times excessive graininess obscures faces, destroys detail, and makes photographs difficult to view or print. Whether dealing with film grain from high-speed photography, scanning artifacts, digital noise, or age-related degradation, understanding how to selectively reduce grain while preserving image quality transforms unusable grainy pictures into clear, beautiful photographs.
 
-Want to reduce grain instantly? Use our [AI Photo Enhancer](/photo-enhancer) to clarify grainy photos in seconds—try your first 3 photos free.
+Want to reduce grain instantly? Use our [AI photo upscaler](/ai-photo-upscaler) to clarify grainy photos, add sharpness, and enhance detail in seconds—try your first 3 photos free.
 
 I'll walk you through the techniques I use to enhance grainy old pictures—when to reduce grain versus when to keep it, how AI noise reduction works, hands-on manual methods, and how to find that sweet spot between clarity and authentic vintage character.
 

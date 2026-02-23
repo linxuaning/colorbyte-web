@@ -13,7 +13,7 @@ We've all been there: you find an important photograph only to discover it's low
 
 Whether it's a screenshot from social media, an old web image, a compressed email attachment, or a low-res scan, there's a lot you can do to improve low quality images today. I'll walk you through AI upscaling, sharpening methods, noise reduction, and hands-on techniques that can turn unusable images into genuinely good photographs.
 
-Ready to enhance your low-quality images? Try our [AI Photo Enhancer](/photo-enhancer) free—no sign-up required.
+Ready to enhance your low-quality images? Try our [AI photo upscaler](/ai-photo-upscaler)—enlarge photos to 4K without losing quality, add sharpness, and improve detail. Free, no sign-up required.
 
 ## Understanding Image Quality Issues
 

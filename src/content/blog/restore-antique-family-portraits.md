@@ -324,7 +324,7 @@ Understanding your antique portraits adds meaning to restoration.
 
 Modern AI handles antique photographs exceptionally well.
 
-**[ArtImageHub Antique Photo Restoration](/old-photo-restoration)**:
+**[ArtImageHub Family Photo Restoration](/restore-old-family-photos)** — Specialized for family portraits:
 
 Specialized algorithms trained on historical photographs:
 - Understands period-specific deterioration patterns

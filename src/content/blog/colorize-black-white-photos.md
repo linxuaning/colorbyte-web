@@ -22,7 +22,7 @@ Forty seconds later, you can see that his eyes were likely hazel, his uniform th
 
 That's the strange, powerful thing about colorization. It doesn't just add color—it collapses the psychological distance between past and present.
 
-Ready to colorize your black and white photos? Try our [AI Photo Colorizer](/photo-colorizer)—automatically add color to your vintage photos with no sign-up required.
+Ready to colorize your black and white photos? Try our [free photo colorizer](/colorize-photos-free)—automatically add color to your vintage photos with no sign-up required. Get 3 free colorizations per day.
 
 ## The History of Colorization: From Hand-Tinting to Neural Networks
 

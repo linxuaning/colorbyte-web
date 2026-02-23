@@ -27,6 +27,8 @@ Dolores cried. I've been doing this for eight years and that part never gets old
 
 But here's the thing that bugs me: most people think "AI magic" happened in those 47 seconds. It wasn't magic. It was math, training data, and — honestly — a lot of clever engineering by researchers who are way smarter than me. Let me walk you through what actually happens.
 
+Want to try this technology yourself? Our [AI old photo enhancer](/enhance-old-photos) uses these same techniques to sharpen faded details and improve vintage photo quality—free, no signup required.
+
 ## First, Let's Talk About Why Old Photos Are So Hard to Fix
 
 I need to get this out of the way because it explains why AI restoration is actually impressive and not just a fancy Instagram filter.

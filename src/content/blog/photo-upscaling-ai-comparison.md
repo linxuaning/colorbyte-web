@@ -13,6 +13,8 @@ AI photo upscaling has completely changed what's possible with low-resolution im
 
 I've spent the last few months testing every major AI upscaler on the same set of photos: old family snapshots, low-res web images, and vintage prints. Here's how they actually compare on quality, speed, ease of use, and price.
 
+Ready to try AI upscaling? Our [free AI photo upscaler](/ai-photo-upscaler) enlarges images to 4K without quality loss—no signup required, 3 photos free per day.
+
 ## Understanding AI Photo Upscaling
 
 Before comparing tools, understanding the technology helps.

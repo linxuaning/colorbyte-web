@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
@@ -283,6 +284,59 @@ export default function RestoreOldFamilyPhotosPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </section>
+
+          {/* Related Tools Section */}
+          <section className="mb-16">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-6">
+              Related Photo Tools
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link
+                href="/remove-scratches-from-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Remove Scratches
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Fix scratched family photos and repair surface damage on prints.
+                </p>
+              </Link>
+              <Link
+                href="/fix-water-damaged-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Fix Water Damage
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Repair water damaged family photos, remove stains and discoloration.
+                </p>
+              </Link>
+              <Link
+                href="/colorize-photos-free"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Colorize Photos Free
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Add color to black and white family photos with AI colorization.
+                </p>
+              </Link>
+              <Link
+                href="/enhance-old-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Enhance Old Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Sharpen faded details and improve quality of vintage photographs.
+                </p>
+              </Link>
             </div>
           </section>
 

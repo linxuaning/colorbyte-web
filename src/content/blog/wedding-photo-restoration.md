@@ -22,7 +22,7 @@ And until recently, the choices were grim: pay a professional restoration artist
 
 This is the complete guide to wedding photo restoration in 2026—the problems, the solutions, and exactly how to use modern AI tools to save photographs that matter.
 
-Ready to restore your wedding photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your precious wedding memories instantly with no sign-up required.
+Ready to restore your wedding photos? Try our [family photo restoration tool](/restore-old-family-photos)—fix faded wedding portraits, repair damage, and enhance vintage memories instantly with no sign-up required.
 
 ## Why Wedding Photos Are Especially Vulnerable
 

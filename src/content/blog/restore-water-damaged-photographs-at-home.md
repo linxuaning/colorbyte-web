@@ -139,7 +139,7 @@ For photographs with visible water stains:
 
 ## Digital Restoration for Water Damaged Photos
 
-Even after successful physical restoration, water damaged photographs often retain visible imperfections. Digital restoration can return them to near-original condition.
+Even after successful physical restoration, water damaged photographs often retain visible imperfections. Digital restoration can return them to near-original condition. For quick AI-powered water damage repair, try our [free water damage photo fixer](/fix-water-damaged-photos)—removes stains and discoloration in seconds, no signup required.
 
 ### Scanning Water Damaged Photographs
 

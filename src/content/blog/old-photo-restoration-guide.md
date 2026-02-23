@@ -20,6 +20,8 @@ When my mother handed me three cardboard boxes from my grandmother's attic last 
 
 Six months later, I've digitized, restored, and organized the entire collection. Here's what I learned—the hard way—about bringing old photos back to life.
 
+Ready to restore your family photos? Try our [free family photo restoration tool](/restore-old-family-photos)—fix faded grandparent photos, repair damaged family pictures, and enhance vintage portraits in 30 seconds. No signup required.
+
 ## Reality Check: What "Restoring Old Photos" Actually Means
 
 Let's be honest about what you're signing up for:

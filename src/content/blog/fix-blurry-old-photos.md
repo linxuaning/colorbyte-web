@@ -20,7 +20,7 @@ Blurry old photos are one of the most common and most frustrating problems in fa
 
 This guide covers everything: why photos go blurry, what manual methods can do, what AI tools like [ArtImageHub](https://artimagehub.vercel.app/old-photo-restoration) can do that manual methods can't, and an honest comparison so you know which approach to use for which photos.
 
-Ready to sharpen your blurry photos? Try our [AI Photo Enhancer](/photo-enhancer) free—no sign-up required.
+Ready to sharpen your blurry photos? Try our [free unblur photo tool](/unblur-photo)—fix blurry pictures instantly with AI. No sign-up required, 3 free photos per day.
 
 ## Why Do Old Photos Go Blurry? (It's Not Always What You Think)
 

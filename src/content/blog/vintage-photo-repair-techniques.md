@@ -22,6 +22,8 @@ I've spent 18 years specializing in vintage photo restoration, working with ever
 
 This guide covers professional repair techniques for vintage photos across different eras and processes, from delicate 19th-century images to mid-century color prints. Whether you're restoring family heirlooms or building a historical collection, these methods will help you preserve photographic history.
 
+For quick AI-powered vintage photo enhancement, try our [old photo enhancer](/enhance-old-photos)—sharpen faded details and improve quality in seconds. For family portraits specifically, our [family photo restoration tool](/restore-old-family-photos) is optimized for faces.
+
 ## Understanding Vintage Photo Types (1840s-1970s)
 
 Before attempting any restoration, identify your photo type. Each requires specific handling.

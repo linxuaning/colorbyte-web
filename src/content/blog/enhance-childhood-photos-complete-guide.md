@@ -11,7 +11,7 @@ featured: false
 
 Childhood photographs capture fleeting moments that can never be recreated—first steps, birthday parties, school portraits, and everyday moments that define who we become. When you need to enhance childhood photos, you're not just improving old images; you're preserving the visual record of formative years and family bonds. Whether it's faded baby pictures from the 1950s, discolored snapshots from the 1980s, or damaged Polaroids from family gatherings, this guide provides professional techniques for restoring and enhancing precious childhood memories.
 
-Ready to enhance your childhood photos? Try our [AI Photo Enhancer](/photo-enhancer) free—no sign-up required.
+Ready to enhance your childhood photos? Try our [family photo restoration tool](/restore-old-family-photos)—restore faded baby pictures, fix damaged family memories, and enhance vintage portraits in 30 seconds. Free, no sign-up required.
 
 ## Understanding Childhood Photo Formats Across Decades
 

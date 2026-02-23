@@ -49,6 +49,8 @@ Restoration aims to **recover what was originally there**. It's about undoing da
 
 Think of photo restoration like restoring an antique car: you're removing rust, repairing dents, and bringing it back to factory condition, not upgrading it with modern features. Learn more about professional [photo restoration services](/old-photo-restoration) that combine damage repair with careful historical accuracy.
 
+For pure quality improvement without damage repair, try our [AI photo enhancer](/enhance-old-photos)—sharpen faded details, enhance faces, and increase resolution automatically.
+
 ## Defining Photo Enhancement
 
 Photo enhancement is the process of improving an image beyond its original condition, making it better than it was when first captured or printed.

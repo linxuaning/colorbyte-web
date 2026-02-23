@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ColorizeClient from "../photo-colorizer/colorize-client";
 
 export const metadata: Metadata = {
@@ -277,6 +278,59 @@ export default function ColorizePhotosFree() {
                   </span>
                 </li>
               </ul>
+            </div>
+          </section>
+
+          {/* Related Tools Section */}
+          <section className="mb-16">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-6">
+              Related Photo Tools
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link
+                href="/enhance-old-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Enhance Old Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Improve quality of vintage photos with AI enhancement and face restoration.
+                </p>
+              </Link>
+              <Link
+                href="/restore-old-family-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Restore Family Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Fix damaged family photos, repair scratches, and restore old memories.
+                </p>
+              </Link>
+              <Link
+                href="/ai-photo-upscaler"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  AI Photo Upscaler
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Enlarge your colorized photos to 4K for printing without losing quality.
+                </p>
+              </Link>
+              <Link
+                href="/old-photo-restoration"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Old Photo Restoration
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Complete restoration including damage repair, enhancement, and colorization.
+                </p>
+              </Link>
             </div>
           </section>
 

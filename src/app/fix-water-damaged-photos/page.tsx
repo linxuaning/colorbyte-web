@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
@@ -308,6 +309,59 @@ export default function FixWaterDamagedPhotosPage() {
                   </span>
                 </li>
               </ol>
+            </div>
+          </section>
+
+          {/* Related Tools Section */}
+          <section className="mb-16">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-6">
+              Related Photo Tools
+            </h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link
+                href="/restore-old-family-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Restore Family Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Complete restoration for old family photos with face enhancement.
+                </p>
+              </Link>
+              <Link
+                href="/remove-scratches-from-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Remove Scratches
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Fix scratched photos and repair surface damage on prints.
+                </p>
+              </Link>
+              <Link
+                href="/enhance-old-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Enhance Old Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  After water damage repair, enhance quality and sharpen details.
+                </p>
+              </Link>
+              <Link
+                href="/colorize-photos-free"
+                className="group rounded-xl bg-white p-5 border border-[#d2d2d7]/40 hover:border-[#0071e3]/40 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] mb-1.5">
+                  Colorize Photos Free
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Add color to black and white photos with AI colorization.
+                </p>
+              </Link>
             </div>
           </section>
 

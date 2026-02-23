@@ -11,6 +11,8 @@ featured: false
 
 Scratches are among the most common and frustrating types of damage found on vintage photographs. Whether from decades of handling, improper storage, or contact with other objects, scratches can mar precious family memories and seem impossible to fix. The good news? With modern restoration techniques, even severely scratched vintage prints can be restored to beautiful condition.
 
+Want quick results? Try our [AI scratch remover](/remove-scratches-from-photos)—removes scratches from photos instantly, free with no signup required.
+
 I'll cover everything you need to know about fixing scratched vintage prints, from understanding different scratch types to getting the most out of both physical and digital restoration techniques.
 
 ## Understanding Scratches on Vintage Photographs
