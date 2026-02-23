@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtImageHub - Product Hunt Screenshots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0071e3;
+      --text-dark: #1d1d1f;
+      --text-gray: #6e6e73;
+      --bg-light: #f5f5f7;
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .screenshot-container {
+      width: 1200px;
+      padding: 60px;
+      margin: 0 auto;
+    }
+
+    /* Hero Screenshot */
+    .hero-shot {
+      background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+      border-radius: 24px;
+      padding: 80px 60px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--gradient);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #1d1d1f 0%, #424245 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 24px;
+      color: var(--text-gray);
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .feature-card {
+      background: white;
+      border: 1px solid #e5e5e7;
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--gradient);
+      border-radius: 16px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--text-gray);
+    }
+
+    /* Pricing Screenshot */
+    .pricing-shot {
+      background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+      border-radius: 24px;
+      padding: 80px 60px;
+      color: white;
+      margin-top: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-shot::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(0,113,227,0.3) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .pricing-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(255,107,107,0.4);
+    }
+
+    .pricing-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .price-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .price-card.featured {
+      background: rgba(255,255,255,0.08);
+      border: 2px solid #0071e3;
+      position: relative;
+    }
+
+    .price-card.featured::before {
+      content: 'BEST VALUE';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0071e3;
+      padding: 6px 20px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .price-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.7;
+      margin-bottom: 16px;
+    }
+
+    .price-amount {
+      font-size: 56px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .price-period {
+      font-size: 16px;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+
+    .price-features {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .price-features li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 15px;
+    }
+
+    .price-features li:last-child {
+      border: none;
+    }
+
+    .price-cta {
+      display: block;
+      background: #0071e3;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: all 0.2s;
+    }
+
+    .price-cta:hover {
+      background: #0077ed;
+      transform: scale(1.02);
+    }
+
+    /* Before/After Comparison */
+    .comparison-shot {
+      margin-top: 60px;
+      padding: 60px;
+      background: var(--bg-light);
+      border-radius: 24px;
+    }
+
+    .comparison-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .comparison-item {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+    }
+
+    .comparison-header {
+      padding: 20px;
+      background: #1d1d1f;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .comparison-images {
+      position: relative;
+      height: 350px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .before-image, .after-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .before-label, .after-label {
+      position: absolute;
+      top: 16px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .before-label {
+      left: 16px;
+    }
+
+    .after-label {
+      right: 16px;
+    }
+
+    /* Value Proposition */
+    .value-shot {
+      margin-top: 60px;
+      padding: 80px 60px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 24px;
+      color: white;
+      text-align: center;
+    }
+
+    .value-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      font-weight: 800;
+      margin-bottom: 32px;
+      line-height: 1.2;
+    }
+
+    .value-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .value-box {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .value-box.bad {
+      border: 2px solid rgba(255,107,107,0.5);
+    }
+
+    .value-box.good {
+      border: 2px solid rgba(72,207,173,0.5);
+    }
+
+    .value-label {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .value-price {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .value-detail {
+      font-size: 16px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #48cfad;
+      font-weight: 700;
+    }
+
+    /* Utility */
+    .spacer {
+      height: 80px;
+    }
+
+    @media print {
+      .screenshot-container {
+        width: 100%;
+        padding: 0;
+      }
+
+      .spacer {
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Screenshot -->
+<div class="screenshot-container">
+  <div class="hero-shot">
+    <div class="hero-badge">AI-Powered Photo Magic ✨</div>
+    <h1 class="hero-title">Restore Your<br>Family Memories</h1>
+    <p class="hero-subtitle">AI photo restoration, colorization & enhancement in 30 seconds</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <div class="feature-title">Photo Restoration</div>
+        <div class="feature-desc">Remove scratches, tears, and age damage automatically</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-title">AI Colorization</div>
+        <div class="feature-desc">Add realistic color to black & white photos</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Photo Enhancement</div>
+        <div class="feature-desc">4× upscaling with face enhancement</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Pricing Screenshot -->
+<div class="screenshot-container">
+  <div class="pricing-shot">
+    <div class="pricing-header">
+      <div class="pricing-badge">🔥 Launch Special - 40% OFF</div>
+      <h2 class="pricing-title">Pay Once, Use Forever</h2>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="price-card">
+        <div class="price-label">Free Trial</div>
+        <div class="price-amount">$0</div>
+        <div class="price-period">Test before you buy</div>
+        <ul class="price-features">
+          <li>✓ 3 photos to try</li>
+          <li>✓ See full AI quality</li>
+          <li>✓ No signup required</li>
+          <li>✓ All AI features included</li>
+        </ul>
+        <a href="#" class="price-cta" style="background: rgba(255,255,255,0.2);">Start Free Trial</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-label">Pro Lifetime</div>
+        <div class="price-amount">$29.9</div>
+        <div class="price-period">One-time payment • <s style="opacity: 0.5;">$49.9</s></div>
+        <ul class="price-features">
+          <li>✓ Unlimited restorations</li>
+          <li>✓ Original quality download</li>
+          <li>✓ No watermark</li>
+          <li>✓ Lifetime access forever</li>
+          <li>✓ All future features</li>
+        </ul>
+        <a href="#" class="price-cta">Unlock Lifetime Access</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Value Proposition Screenshot -->
+<div class="screenshot-container">
+  <div class="value-shot">
+    <h2 class="value-title">Why Pro Lifetime<br>Saves You Money</h2>
+
+    <div class="value-comparison">
+      <div class="value-box bad">
+        <div class="value-label">❌ Other Tools</div>
+        <div class="value-price">$119.88</div>
+        <div class="value-detail">
+          Remini: $9.99/month<br>
+          = <strong>$599.40</strong> over 5 years
+        </div>
+      </div>
+
+      <div class="value-box good">
+        <div class="value-label">✅ ArtImageHub</div>
+        <div class="value-price">$29.9</div>
+        <div class="value-detail">
+          One-time payment<br>
+          = <span class="highlight">$29.9 forever</span><br>
+          <strong>Save $569.50!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
