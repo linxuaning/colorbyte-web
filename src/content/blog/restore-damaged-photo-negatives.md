@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Damaged Photo Negatives: Complete Guide to Negative Repair and Digitization"
+title: "Restore Damaged Photo Negatives: Repair & Digitization Guide"
 description: "Restore damaged photo negatives with expert techniques. Fix scratches, color shifts, and deterioration in film negatives. Digitize and preserve before it's too late."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

@@ -1,5 +1,5 @@
 ---
-title: "Best Free Online Photo Enhancer in 2026 (I Tested 11 Tools on 200 Photos)"
+title: "Best Free Online Photo Enhancer 2026: 11 Tools Tested"
 description: "I spent 3 weeks testing every major free online photo enhancer. Here's what actually works for old family photos — with real before/after results and honest limitations."
 publishedAt: "2026-02-16"
 author: "Sarah Chen"

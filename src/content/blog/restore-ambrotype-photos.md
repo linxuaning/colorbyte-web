@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Ambrotype Photos: Complete Guide to Glass Plate Photography"
+title: "Restore Ambrotype Photos: Glass Plate Guide"
 description: "Expert guide to restoring and preserving ambrotype photographs. Learn professional techniques for enhancing these rare 19th-century glass plate images."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

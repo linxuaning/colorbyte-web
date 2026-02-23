@@ -1,5 +1,5 @@
 ---
-title: "How to Restore 1920s Flapper Photos: A Complete Guide to Jazz Age Photography"
+title: "Restore 1920s Flapper Photos: Jazz Age Guide"
 description: "Discover expert techniques to restore 1920s flapper photos. Learn about authentic colorization, damage repair, and preserving Jazz Age memories with AI technology."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

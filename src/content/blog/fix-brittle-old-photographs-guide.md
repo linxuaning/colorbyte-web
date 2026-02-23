@@ -1,6 +1,6 @@
 ---
-title: "How to Fix Brittle Old Photographs: Complete Guide to Handling and Restoring Fragile Photos"
-description: "Expert guide to fix brittle old photographs safely. Learn professional techniques for handling, digitizing, and digitally restoring fragile, cracking, and deteriorating vintage photographs without causing further damage."
+title: "Fix Brittle Old Photographs: Safe Handling Guide"
+description: "Expert guide to fix brittle old photographs safely. Learn techniques for handling, digitizing, and restoring fragile vintage photos."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "Sarah Chen"

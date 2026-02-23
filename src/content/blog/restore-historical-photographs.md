@@ -1,6 +1,6 @@
 ---
-title: "How to Restore Historical Photographs: Complete Guide to Preserving History"
-description: "Learn professional techniques to restore historical photographs from different eras. Includes authentication, preservation methods, and digital restoration for archival-quality results."
+title: "Restore Historical Photographs: Preservation Guide"
+description: "Professional techniques to restore historical photographs. Includes authentication, preservation, and digital restoration for archival results."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "Sarah Chen"

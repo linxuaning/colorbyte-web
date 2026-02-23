@@ -1,6 +1,6 @@
 ---
-title: "How to Fix Fungus Damaged Photos: Complete Restoration Guide for Moldy Pictures"
-description: "Expert guide to fix fungus damaged photos and restore mold-affected photographs. Learn professional techniques to remove fungus stains, prevent further damage, and digitally restore moldy images."
+title: "Fix Fungus Damaged Photos: Mold Restoration Guide"
+description: "Expert guide to fix fungus damaged photos. Remove fungus stains, prevent further damage, and digitally restore moldy photographs."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "David Park"

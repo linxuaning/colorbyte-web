@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Childhood Photos: Expert Guide to Restoring Baby Pictures and Family Memories"
-description: "Complete guide to enhance childhood photos from any era. Learn professional techniques to restore faded baby pictures, improve clarity, fix damage, and preserve precious family memories digitally."
+title: "Enhance Childhood Photos: Baby Picture Restoration Guide"
+description: "Complete guide to enhance childhood photos from any era. Restore faded baby pictures, improve clarity, fix damage, and preserve family memories."
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "Lisa Martinez"

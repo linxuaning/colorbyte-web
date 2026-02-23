@@ -1,5 +1,5 @@
 ---
-title: "Colorization Accuracy Tips: How to Add Color to Black and White Photos Correctly"
+title: "Colorization Accuracy Tips: B&W Photo Color Guide"
 description: "Master photo colorization with expert accuracy tips. Learn historical research, color theory, and techniques for realistic black and white photo colorization."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

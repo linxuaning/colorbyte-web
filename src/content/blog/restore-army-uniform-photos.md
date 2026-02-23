@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Army Uniform Photos: Military Portrait Restoration Guide"
+title: "Restore Army Uniform Photos: Military Portrait Guide"
 description: "Expert guide to restoring military photos and army uniform portraits. Learn techniques for identifying ranks, preserving insignia, and honoring service history."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

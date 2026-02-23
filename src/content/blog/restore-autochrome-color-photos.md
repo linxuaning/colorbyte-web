@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Autochrome Color Photos: Preserving Early Color Photography"
+title: "Restore Autochrome Color Photos: Early Color Guide"
 description: "Expert guide to restore autochrome color photos from 1907-1935. Learn about potato starch color plates, damage patterns, and modern AI restoration techniques."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

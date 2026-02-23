@@ -1,5 +1,5 @@
 ---
-title: "How to Enhance Microfilm Photo Copies: Restore Clarity to Historical Document Images"
+title: "Enhance Microfilm Photo Copies: Historical Document Guide"
 description: "Improve microfilm photocopy quality with expert restoration techniques. Fix distortion, enhance text, remove artifacts from genealogy and historical research photos."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

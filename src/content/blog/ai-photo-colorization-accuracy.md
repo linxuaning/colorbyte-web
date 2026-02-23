@@ -1,5 +1,5 @@
 ---
-title: "AI Photo Colorization Accuracy in 2026: How Precise Is Automated Color Restoration?"
+title: "AI Photo Colorization Accuracy: How Precise Is It?"
 description: "In-depth analysis of AI photo colorization accuracy. Compare leading tools, understand limitations, and learn when AI colorization works best for historical photos."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

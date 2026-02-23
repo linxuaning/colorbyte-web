@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Sun Damaged Photos: Complete Restoration Guide for Faded Images"
+title: "Fix Sun Damaged Photos: Faded Image Restoration"
 description: "Learn how to fix sun damaged photos with expert techniques. Restore faded, discolored images using digital restoration and AI tools."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"

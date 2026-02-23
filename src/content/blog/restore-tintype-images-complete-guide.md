@@ -1,6 +1,6 @@
 ---
-title: "How to Restore Tintype Images: Expert Guide to Restoring 19th Century Metal Photographs"
-description: "Complete guide to restore tintype images and preserve these unique metal photographs from the 1850s-1930s. Learn professional techniques for digitizing, cleaning, and enhancing ferrotype pictures while maintaining historical authenticity."
+title: "Restore Tintype Images: 19th Century Metal Photo Guide"
+description: "Complete guide to restore tintypes from the 1850s-1930s. Learn digitizing, cleaning, and enhancing ferrotype pictures while maintaining authenticity."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"

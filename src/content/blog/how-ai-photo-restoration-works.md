@@ -1,6 +1,6 @@
 ---
-title: "How AI Photo Restoration Actually Works: What Happens When You Upload That Faded 1970s Print"
-description: "A photo restoration specialist breaks down what really happens inside AI restoration tools — the neural networks, the failures, and why your grandmother's wedding photo processes faster than your morning coffee."
+title: "How AI Photo Restoration Works: Inside the Technology"
+description: "A specialist explains what happens inside AI restoration tools - the neural networks, failures, and why your photo processes in seconds."
 publishedAt: "2026-01-15"
 updatedAt: "2026-02-14"
 author: "Michael Chen"

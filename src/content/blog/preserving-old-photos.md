@@ -1,5 +1,5 @@
 ---
-title: "My Parents' Basement Flooded and Destroyed 40 Years of Photos—Here's What I Learned About Preservation"
+title: "Basement Flood Destroyed 40 Years of Photos: Preservation Lessons"
 description: "A basement flood destroyed decades of family photos. Hard lessons learned about proper storage, digitization, and why 'later' is too late for photo preservation."
 publishedAt: "2026-02-05"
 author: "Rachel Kim"

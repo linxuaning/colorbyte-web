@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Collodion Wet Plates: Preserving 1850s-1880s Photography"
+title: "Restore Collodion Wet Plates: 1850s Photography Guide"
 description: "Expert guide to restore collodion wet plates from the Civil War era. Learn about ambrotypes, tintypes, and glass plate restoration with modern AI technology."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"

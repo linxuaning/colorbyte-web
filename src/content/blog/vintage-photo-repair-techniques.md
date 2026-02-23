@@ -1,5 +1,5 @@
 ---
-title: "Vintage Photo Repair Techniques: Professional Methods for Restoring Historical Images"
+title: "Vintage Photo Repair: Professional Restoration Methods"
 description: "Master professional vintage photo repair techniques for photos from 1800s-1970s. Covers daguerreotypes, tintypes, albumen prints, and early color photography."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

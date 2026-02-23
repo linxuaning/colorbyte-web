@@ -1,5 +1,5 @@
 ---
-title: "I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026"
+title: "Family Photo Archive Restoration: What Actually Works"
 description: "Real workflow, real results. A practical guide to digitizing and restoring old family photos, from a basement full of moldy prints to a preserved digital archive."
 publishedAt: "2026-02-12"
 author: "Sarah Martinez"

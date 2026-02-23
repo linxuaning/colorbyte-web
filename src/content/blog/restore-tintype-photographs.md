@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Tintype Photographs: Complete Guide for Metal Plate Photos"
+title: "Restore Tintype Photographs: Metal Plate Photo Guide"
 description: "Expert guide to restoring tintype photographs from the 1800s. Learn digitization techniques, damage repair, and preservation for these historic metal images."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

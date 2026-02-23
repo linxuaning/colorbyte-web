@@ -1,5 +1,5 @@
 ---
-title: "How to Digitize Old Photos in 2026: The Complete Guide (Scanner vs Phone vs Service)"
+title: "Digitize Old Photos 2026: Scanner vs Phone vs Service"
 description: "Before you can restore old photos, you need to digitize them. I compared every method — flatbed scanners, phone apps, and professional services — so you know exactly what to use."
 publishedAt: "2026-02-16"
 author: "Lisa Park"

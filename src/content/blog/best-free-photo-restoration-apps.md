@@ -1,5 +1,5 @@
 ---
-title: "Best Free Photo Restoration Apps in 2026: Complete Review and Comparison"
+title: "Best Free Photo Restoration Apps 2026: Review"
 description: "Discover the best free photo restoration apps for 2026. Compare features, quality, and limitations of top free tools for restoring old photos."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

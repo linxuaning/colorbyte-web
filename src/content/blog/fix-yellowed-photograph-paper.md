@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Yellowed Photograph Paper: Remove Yellow Stains from Old Photos"
+title: "Fix Yellowed Photograph Paper: Remove Yellow Stains"
 description: "Learn how to fix yellowed photograph paper and remove yellow discoloration from old photos. Expert techniques for digital restoration of age-yellowed images."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

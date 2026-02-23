@@ -1,6 +1,6 @@
 ---
-title: "Photo Restoration Cost in 2026: What You'll Actually Pay (AI vs Professional)"
-description: "Professional photo restoration can cost $50–$500 per photo. AI tools like ArtImageHub do it for free or $9.90/month. Here's the full cost breakdown and when each approach makes sense."
+title: "Photo Restoration Cost 2026: AI vs Professional Pricing"
+description: "Professional photo restoration costs $50-$500/photo. AI tools like ArtImageHub are free or $9.90/mo. Full cost breakdown here."
 publishedAt: "2026-02-16"
 author: "Rachel Kim"
 authorRole: "Photo Preservation Consultant"

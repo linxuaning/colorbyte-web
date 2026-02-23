@@ -1,5 +1,5 @@
 ---
-title: "Best Photo Restoration Software 2026: I Tested 17 Tools on 500 Damaged Photos"
+title: "Best Photo Restoration Software 2026: 17 Tools Tested"
 description: "In-depth comparison of photo restoration software in 2026. Real testing results, pricing breakdowns, and honest recommendations for every skill level and budget."
 publishedAt: "2026-02-16"
 updatedAt: "2026-02-16"

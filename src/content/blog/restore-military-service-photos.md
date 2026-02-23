@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Military Service Photos: Complete Guide to Veteran Photography Preservation"
+title: "Restore Military Service Photos: Veteran Preservation Guide"
 description: "Learn professional techniques to restore military service photographs from all eras. Includes uniform identification, damage repair, and respectful restoration of veteran images."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

@@ -1,5 +1,5 @@
 ---
-title: "10 Photos I Restored That Made People Cry—Real Stories Behind the Before/After"
+title: "10 Photo Restorations That Made People Cry"
 description: "Not just before/after comparisons—the real stories behind photo restorations that reconnected families with lost relatives, solved mysteries, and preserved legacies."
 publishedAt: "2026-02-14"
 author: "Carlos Martinez"

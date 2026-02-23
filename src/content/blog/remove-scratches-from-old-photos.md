@@ -1,5 +1,5 @@
 ---
-title: "How to Remove Scratches from Old Photos: AI vs Manual (2026 Complete Guide)"
+title: "Remove Scratches from Old Photos: AI vs Manual Guide"
 description: "Scratched photos don't have to stay scratched. I tested every method — Photoshop, AI tools, and even analog tricks — to find what actually works in 2026."
 publishedAt: "2026-02-16"
 author: "James Morrison"

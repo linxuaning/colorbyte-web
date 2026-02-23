@@ -1,5 +1,5 @@
 ---
-title: "How to Enhance Grainy Old Pictures: Practical Guide to Noise Reduction and Clarity"
+title: "Enhance Grainy Old Pictures: Noise Reduction Guide"
 description: "Learn professional techniques to enhance grainy old pictures including film grain reduction, digital noise removal, and AI-powered clarity enhancement for vintage photographs."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

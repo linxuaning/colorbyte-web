@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Faded Newspaper Clippings: Expert Restoration Guide for Preserving Press History"
+title: "Fix Faded Newspaper Clippings: Restoration Guide"
 description: "Restore faded newspaper clippings with AI technology. Learn professional techniques to repair yellowed newsprint, enhance text, and preserve historical articles."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

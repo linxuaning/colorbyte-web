@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Old Photos at Home: Complete DIY Guide for Beginners (2026)"
+title: "Restore Old Photos at Home: DIY Guide for Beginners"
 description: "Learn professional photo restoration techniques you can do at home. Step-by-step guide covering scanning, AI restoration, and manual touch-ups for damaged family photos."
 publishedAt: "2026-02-16"
 updatedAt: "2026-02-16"

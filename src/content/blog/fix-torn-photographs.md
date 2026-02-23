@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Torn Photographs: Complete Repair Guide for Physical and Digital Restoration"
+title: "Fix Torn Photographs: Physical & Digital Repair Guide"
 description: "Learn professional techniques to fix torn photographs. Step-by-step guide covering physical repair, digital restoration, and when to hire experts."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"

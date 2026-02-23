@@ -1,5 +1,5 @@
 ---
-title: "Photo Restoration Ethics: How Much Should You Change Historical Images?"
+title: "Photo Restoration Ethics: Changing Historical Images"
 description: "Navigate the ethical considerations of photo restoration. Learn professional guidelines for maintaining authenticity while repairing damaged photographs."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"

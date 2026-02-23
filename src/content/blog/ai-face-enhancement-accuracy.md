@@ -1,5 +1,5 @@
 ---
-title: "AI Face Enhancement Accuracy: How Precise Are AI Photo Restoration Tools?"
+title: "AI Face Enhancement Accuracy: How Precise Is It?"
 description: "Discover the truth about AI face enhancement accuracy. Learn how machine learning restores facial features, limitations, and when to trust AI restoration results."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

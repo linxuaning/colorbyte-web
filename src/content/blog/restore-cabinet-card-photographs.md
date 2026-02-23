@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Cabinet Card Photographs: Expert Guide to Victorian Photo Preservation"
+title: "Restore Cabinet Card Photos: Victorian Preservation Guide"
 description: "Learn to restore cabinet card photographs from the 1870s-1900s. Expert techniques for albumen prints, studio backdrops, and ornate Victorian photo cards."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

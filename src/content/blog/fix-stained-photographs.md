@@ -1,6 +1,6 @@
 ---
-title: "How to Fix Stained Photographs: Complete Guide to Stain Removal and Restoration"
-description: "Learn professional techniques to fix stained photographs including water stains, chemical stains, adhesive damage, and discoloration. Includes both physical care and digital restoration methods."
+title: "Fix Stained Photographs: Stain Removal Guide"
+description: "Professional techniques to fix stained photographs including water stains, chemical damage, and adhesive discoloration with digital restoration."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Rachel Kim"

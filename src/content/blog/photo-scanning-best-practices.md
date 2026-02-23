@@ -1,5 +1,5 @@
 ---
-title: "Photo Scanning Best Practices 2026: Complete Guide to Digitizing Photos"
+title: "Photo Scanning Best Practices 2026: Digitizing Guide"
 description: "Master photo scanning with expert best practices. Learn optimal settings, techniques, and workflows for high-quality digital preservation of photographs."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

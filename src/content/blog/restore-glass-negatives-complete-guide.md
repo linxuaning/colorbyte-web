@@ -1,6 +1,6 @@
 ---
-title: "How to Restore Glass Negatives: Complete Guide to Glass Plate Negative Restoration"
-description: "Expert guide to restore glass negatives from the 1850s-1920s. Learn safe handling, digitization, and restoration techniques for wet plate collodion, dry plate, and antique glass plate negatives."
+title: "Restore Glass Negatives: Glass Plate Restoration Guide"
+description: "Expert guide to restore glass negatives from 1850s-1920s. Safe handling, digitization, and restoration for wet plate collodion and dry plate negatives."
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Rachel Kim"

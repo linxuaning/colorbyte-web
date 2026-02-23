@@ -1,5 +1,5 @@
 ---
-title: "How to Restore 1950s Color Photos: Complete Guide to Mid-Century Color Restoration"
+title: "Restore 1950s Color Photos: Mid-Century Restoration Guide"
 description: "Learn professional techniques to restore 1950s color photographs including Kodachrome, Ektachrome, and early color prints. Fix fading, color shifts, and vintage color damage."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

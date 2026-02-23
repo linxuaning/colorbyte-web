@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Victorian Photos: Expert Guide to Preserving 1800s Photographs"
+title: "Restore Victorian Photos: 1800s Preservation Guide"
 description: "Complete guide to restore Victorian photos from the 1800s. Learn professional techniques for daguerreotypes, cabinet cards, and antique family portraits with AI-powered tools."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

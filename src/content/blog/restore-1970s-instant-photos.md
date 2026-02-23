@@ -1,5 +1,5 @@
 ---
-title: "How to Restore 1970s Instant Photos: Complete Guide to Polaroid and Instant Film Restoration"
+title: "Restore 1970s Polaroid Photos: Instant Film Guide"
 description: "Restore faded 1970s instant photos from Polaroid, Kodak Instant, and other formats. Fix color shifts, chemical degradation, and preserve priceless instant memories."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

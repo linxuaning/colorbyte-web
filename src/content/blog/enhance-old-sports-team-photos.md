@@ -1,5 +1,5 @@
 ---
-title: "How to Enhance Old Sports Team Photos: Complete Guide to Restoring Athletic Memories"
+title: "Enhance Old Sports Team Photos: Athletic Memory Guide"
 description: "Restore faded sports team photos with expert techniques. Enhance faces, fix bleachers, repair uniforms, and preserve athletic history from youth leagues to professional teams."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Immigrant Ancestor Photos: A Complete Guide to Preserving Your Family Heritage"
+title: "Restore Immigrant Ancestor Photos: Complete Heritage Guide"
 description: "Learn expert techniques to restore immigrant ancestor photos from Ellis Island era, ship manifests, and vintage passport images. Preserve your family's immigration story."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

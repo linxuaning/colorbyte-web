@@ -1,6 +1,6 @@
 ---
-title: "Restore Your Wedding Photos: How AI is Saving Precious Memories in 2026"
-description: "Wedding photographs are among the most treasured family heirlooms—and the most vulnerable to damage over time. This guide covers the most common problems that affect wedding photos and how AI restoration tools like ArtImageHub can bring them back to life."
+title: "Wedding Photo Restoration: AI Saves Precious Memories"
+description: "Wedding photos are treasured heirlooms vulnerable to damage. Learn how AI restoration tools like ArtImageHub fix common problems and bring them back to life."
 publishedAt: "2026-02-13"
 author: "Jessica Thompson"
 authorRole: "Wedding Photographer"

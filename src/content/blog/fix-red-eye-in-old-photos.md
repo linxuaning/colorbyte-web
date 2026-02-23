@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Red Eye in Old Photos: Complete Guide to Removing Red Eye From Vintage Images"
+title: "Fix Red Eye in Old Photos: Vintage Image Restoration"
 description: "Remove red eye from old photos with expert techniques. Fix flash reflection in vintage family photos, understand causes, and restore natural eye appearance."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

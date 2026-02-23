@@ -1,6 +1,6 @@
 ---
-title: "AI Photo Colorization in 2026: Bring Your Black & White Photos to Life"
-description: "Modern AI has transformed what's possible in black and white photo colorization. This complete guide explains how AI colorization works, how accurate it is, and how to use ArtImageHub to add stunning, historically plausible color to your family's old photographs."
+title: "AI Photo Colorization: Bring Black & White Photos to Life"
+description: "Learn how AI colorization works and use ArtImageHub to add stunning, historically plausible color to your family's old black and white photographs."
 publishedAt: "2026-02-14"
 author: "Emma Wilson"
 authorRole: "Professional Photographer"

@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Chemical Damage in Photos: Restore Chemically Deteriorated Images"
+title: "Fix Chemical Damage in Photos: Restoration Guide"
 description: "Complete guide to restoring photographs damaged by chemical deterioration, processing errors, and environmental contamination. Recover damaged prints."
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"

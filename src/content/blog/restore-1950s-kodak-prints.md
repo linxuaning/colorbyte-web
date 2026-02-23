@@ -1,5 +1,5 @@
 ---
-title: "How to Restore 1950s Kodak Prints: Complete Guide for Mid-Century Photos"
+title: "Restore 1950s Kodak Prints: Mid-Century Photo Guide"
 description: "Expert guide to restoring 1950s Kodak prints. Learn techniques for correcting fading, color shifts, and damage specific to mid-century photographs."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"

@@ -1,6 +1,6 @@
 ---
-title: "Photo Restoration Software Review 2026: Best Tools for Restoring Old Pictures"
-description: "In-depth review of the best photo restoration software in 2026. Compare Photoshop, Affinity Photo, GIMP, and AI-powered tools with pricing, features, and real-world restoration results."
+title: "Photo Restoration Software Review 2026: Best Tools"
+description: "Review of best photo restoration software in 2026. Compare Photoshop, Affinity, GIMP, and AI tools with pricing and real-world results."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "Rachel Kim"

@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Gold Rush Era Photos: Preserving 1849-1900 Mining Images"
+title: "Restore Gold Rush Photos: 1849-1900 Mining Images"
 description: "Expert guide to restoring Gold Rush photographs from the California mining era. Learn techniques for preserving these rare historical images from 1849-1900."
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"

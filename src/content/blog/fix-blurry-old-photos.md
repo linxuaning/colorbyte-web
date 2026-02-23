@@ -1,6 +1,6 @@
 ---
-title: "How to Fix Blurry Old Photos: The Complete 2026 Guide (AI vs Manual Methods)"
-description: "Blurry old photos don't have to stay that way. This complete guide covers why photos blur over time, which manual Photoshop techniques actually work, and how modern AI tools like ArtImageHub can sharpen and restore even your worst photos in under a minute."
+title: "Fix Blurry Old Photos: 2026 Guide (AI vs Manual)"
+description: "Complete guide covering why photos blur, Photoshop techniques that work, and how AI tools can sharpen and restore blurry photos in under a minute."
 publishedAt: "2026-02-15"
 author: "Michael Chen"
 authorRole: "Digital Photography Expert"

@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Curled Photograph Edges: Complete Flattening & Digital Repair Guide"
+title: "Fix Curled Photograph Edges: Flattening Guide"
 description: "Learn professional techniques to fix curled photograph edges. Includes safe physical flattening methods and digital restoration for permanently curled photos."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

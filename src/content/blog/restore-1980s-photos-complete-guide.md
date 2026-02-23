@@ -1,6 +1,6 @@
 ---
-title: "How to Restore 1980s Photos: Complete Guide to Fixing Faded 80s Snapshots and Prints"
-description: "Expert guide to restore 1980s photos suffering from color fading, magenta shift, and print deterioration. Learn professional techniques to fix faded Kodak prints, Polaroids, and 80s snapshots with digital restoration."
+title: "Restore 1980s Photos: Fix Faded 80s Snapshots Guide"
+description: "Expert guide to restore 1980s photos with color fading and magenta shift. Fix faded Kodak prints, Polaroids with digital restoration."
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "David Park"

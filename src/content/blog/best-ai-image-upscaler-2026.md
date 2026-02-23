@@ -1,5 +1,5 @@
 ---
-title: "Best AI Image Upscaler 2026: Top Tools for Enlarging Photos Without Quality Loss"
+title: "Best AI Image Upscaler 2026: Top Enlarging Tools"
 description: "Compare the best AI image upscalers in 2026. Learn which AI upscaling tools deliver superior results for enlarging old photos, restoring details, and creating prints."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"

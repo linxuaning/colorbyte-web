@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Low Quality Images: Practical Guide to Image Quality Improvement"
-description: "Learn professional techniques to enhance low quality images including low resolution, pixelated, blurry, and poorly compressed photos. Includes AI upscaling and manual enhancement methods."
+title: "Enhance Low Quality Images: Improvement Guide"
+description: "Learn to enhance low quality images including pixelated, blurry, and compressed photos. AI upscaling and manual enhancement methods."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"

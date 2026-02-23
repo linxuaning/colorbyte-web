@@ -1,5 +1,5 @@
 ---
-title: "How to Restore Grandfather's Old Photos: A Complete Family Heritage Guide"
+title: "Restore Grandfather's Old Photos: Family Heritage Guide"
 description: "Step-by-step guide to preserving your grandfather's legacy through photo restoration. From finding hidden photos to creating lasting family heirlooms."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"

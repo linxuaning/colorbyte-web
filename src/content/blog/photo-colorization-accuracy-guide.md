@@ -1,6 +1,6 @@
 ---
-title: "Photo Colorization Accuracy: Complete Guide to AI and Manual Colorization Techniques"
-description: "Expert guide to achieving accurate photo colorization. Compare AI vs manual colorization, learn historical research techniques, and master color accuracy for black and white photograph restoration."
+title: "Photo Colorization Accuracy: AI vs Manual Techniques"
+description: "Expert guide to accurate photo colorization. Compare AI vs manual methods, learn historical research, and master color accuracy for B&W photo restoration."
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "James Morrison"

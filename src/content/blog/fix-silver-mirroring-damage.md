@@ -1,5 +1,5 @@
 ---
-title: "How to Fix Silver Mirroring Damage in Old Photos: Complete Restoration Guide"
+title: "Fix Silver Mirroring Damage: Photo Restoration Guide"
 description: "Expert guide to removing silver mirroring and mirror-like deterioration from vintage photographs. Restore clarity to photos damaged by silver oxidation."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"

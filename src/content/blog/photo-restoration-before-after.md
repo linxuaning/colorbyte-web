@@ -1,5 +1,5 @@
 ---
-title: "Photo Restoration Before and After: 50 Stunning Transformations That Show What's Possible"
+title: "Photo Restoration Before & After: 50 Transformations"
 description: "See dramatic before and after examples of photo restoration. Real results from damaged family photos transformed by AI and manual restoration techniques."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
