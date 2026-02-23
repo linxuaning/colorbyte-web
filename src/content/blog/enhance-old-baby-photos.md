@@ -13,6 +13,8 @@ Few photographs hold as much emotional value as baby photos. Those first moments
 
 Whether you're restoring your own childhood photos to share with your children, recovering damaged pictures of your babies, or preserving grandchildren's images for the future, learning how to enhance old baby photos ensures these irreplaceable memories remain vibrant and clear for years to come.
 
+Ready to restore those precious baby photos? Try our [AI Photo Enhancer](/photo-enhancer) to recover detail and improve quality—your first 3 photos are free.
+
 This guide covers everything you need to know about enhancing old baby photos, from identifying common damage types to using cutting-edge AI restoration technology that makes professional-quality results accessible to everyone.
 
 ## Why Baby Photos Deteriorate Faster

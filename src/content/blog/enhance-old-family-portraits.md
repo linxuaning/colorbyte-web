@@ -13,6 +13,8 @@ Family portraits represent the most treasured photographs in any family collecti
 
 Yet time, handling, and imperfect storage have left many old family portraits faded, damaged, or deteriorating. Faces that should be clear and expressive have become obscured by damage. Details of clothing, settings, and backgrounds that provide historical context have faded or disappeared. The good news is that modern photo restoration technology can breathe new life into these heritage portraits, recovering detail, clarifying faces, and preserving family history for future generations.
 
+Want to restore your family portraits now? Use our [AI Photo Enhancer](/photo-enhancer) to improve quality and recover detail in seconds—try your first 3 photos free.
+
 This guide will teach you how to enhance old family portraits, addressing the unique characteristics and challenges of heritage portrait photography while using both AI-powered restoration and manual techniques to create beautiful, preserved images worthy of your family legacy.
 
 ## Understanding Historical Family Portrait Photography

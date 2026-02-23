@@ -20,6 +20,8 @@ You don't need expensive software or years of Photoshop experience to restore ol
 
 I've been helping families restore their photo collections for nearly a decade, and the technology available today would've seemed like magic even five years ago. But here's what nobody tells you: **the tools are easy, but the workflow matters.**
 
+Ready to start now? Use our [Old Photo Restoration](/old-photo-restoration) tool to restore damaged photos in seconds—try your first 3 photos free.
+
 This guide will walk you through the exact process I use to restore photos at home—from handling fragile originals to creating archival-quality digital restorations you'll treasure for generations.
 
 ## What "Restoring Old Photos at Home" Actually Involves

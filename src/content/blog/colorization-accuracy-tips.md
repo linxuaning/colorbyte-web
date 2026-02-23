@@ -13,6 +13,8 @@ Adding color to black and white photographs can bring historical images to vivid
 
 Whether you're colorizing family photos, historical images, or artistic projects, mastering accuracy ensures results that look natural, period-appropriate, and respectful of the original photograph's era.
 
+Want to try AI colorization yourself? Visit our [AI Photo Colorizer](/photo-colorizer) to add realistic colors to your black and white photos—try 3 photos free.
+
 ## Why Colorization Accuracy Matters
 
 ### Historical Authenticity
