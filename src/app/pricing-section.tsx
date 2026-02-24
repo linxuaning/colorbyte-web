@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 // Countdown timer for Launch Special (ends in 7 days from now)
 function LaunchCountdown() {
-  const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
     // Set end date to 7 days from first visit (stored in localStorage)
@@ -25,11 +25,12 @@ function LaunchCountdown() {
       const diff = end.getTime() - now.getTime();
 
       if (diff <= 0) {
-        return { hours: 0, minutes: 0, seconds: 0 };
+        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
       }
 
       return {
-        hours: Math.floor(diff / (1000 * 60 * 60)),
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((diff % (1000 * 60)) / 1000),
       };
@@ -44,7 +45,7 @@ function LaunchCountdown() {
     return () => clearInterval(timer);
   }, []);
 
-  if (timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0) {
+  if (timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0) {
     return null;
   }
 
@@ -55,7 +56,7 @@ function LaunchCountdown() {
       </svg>
       <span>Offer ends in:</span>
       <span className="font-mono text-white font-semibold">
-        {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
+        {timeLeft.days}d {String(timeLeft.hours).padStart(2, '0')}h {String(timeLeft.minutes).padStart(2, '0')}m
       </span>
     </div>
   );
