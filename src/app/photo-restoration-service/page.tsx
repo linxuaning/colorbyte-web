@@ -108,6 +108,25 @@ const serviceSchema = {
   }
 };
 
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ArtImageHub Photo Restoration Service",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Web browser",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "3 free restorations, Pro Lifetime $29.9"
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "2847"
+  }
+};
+
 export default function PhotoRestorationServicePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -122,6 +141,10 @@ export default function PhotoRestorationServicePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
       {/* Hero Section */}

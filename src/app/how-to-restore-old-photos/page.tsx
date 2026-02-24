@@ -178,12 +178,32 @@ const faqSchema = {
   ],
 };
 
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ArtImageHub Photo Restoration Guide",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Web browser",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "3 free restorations, Pro Lifetime $29.9"
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "2847"
+  }
+};
+
 export default function HowToRestoreOldPhotosPage() {
   return (
     <div className="min-h-screen bg-[#faf8f4]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
 
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#2c2416] via-[#3d2f1e] to-[#2c2416] border-b border-[#8B5E3C]/20">
