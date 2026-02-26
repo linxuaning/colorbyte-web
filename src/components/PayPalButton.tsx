@@ -106,7 +106,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
 
             if (result.success) {
               // Track successful payment
-              trackPaymentSuccess(29.9);
+              trackPaymentSuccess(4.99);
 
               if (onSuccess) {
                 onSuccess(data.orderID);

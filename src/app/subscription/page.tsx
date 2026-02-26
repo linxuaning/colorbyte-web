@@ -124,30 +124,7 @@ export default function SubscriptionPage() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto grid gap-6 sm:grid-cols-2">
-            {/* Free Trial - Reference */}
-            <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
-              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free Trial</p>
-              <div className="mt-2 flex items-baseline gap-1">
-                <span className="text-[32px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
-              </div>
-              <ul className="mt-5 space-y-2.5">
-                {[
-                  "3 photos to try",
-                  "See full AI quality",
-                  "No signup required",
-                  "All AI features",
-                ].map((f) => (
-                  <li key={f} className="flex items-center gap-2.5 text-[13px] text-[#1d1d1f]">
-                    <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          <div className="max-w-md mx-auto">
             {/* Pro Lifetime - CTA */}
             <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">

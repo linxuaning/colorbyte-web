@@ -15,6 +15,12 @@ function PaymentSuccessContent() {
 
     setEmail(emailParam);
     setOrderId(orderIdParam);
+
+    // 🚨 CRITICAL: Save subscription to localStorage so user can access paid features
+    if (emailParam) {
+      localStorage.setItem("artimagehub_email", emailParam);
+      console.log("✅ Subscription saved to localStorage:", emailParam);
+    }
   }, [searchParams]);
 
   return (
@@ -69,7 +75,7 @@ function PaymentSuccessContent() {
                 </div>
                 <div className="flex justify-between text-[13px]">
                   <span className="text-[#6e6e73]">Amount:</span>
-                  <span className="font-medium text-[#1d1d1f]">$4.990</span>
+                  <span className="font-medium text-[#1d1d1f]">$4.99</span>
                 </div>
               </div>
             </div>
