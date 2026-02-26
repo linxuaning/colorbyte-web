@@ -84,10 +84,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is the difference between Free Trial and Pro Lifetime?",
+      name: "What is Pro Lifetime?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Free Trial gives you 3 photos to test the AI quality before buying. Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever — no subscription, no recurring charges.",
+        text: "Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever — no subscription, no recurring charges. Pay once, use forever.",
       },
     },
     {
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "How does the pricing work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Try 3 photos completely free to test the quality. If you like the results, upgrade to Pro Lifetime for $29.9 (one-time payment) and restore unlimited photos forever. No monthly subscription, no hidden fees.",
+        text: "Pro Lifetime is $29.9 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
       },
     },
   ],
@@ -209,7 +209,7 @@ export default function HomePage() {
               {/* Trust signals */}
               <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#8B7355]">
                 {[
-                  "Try 3 photos free",
+                  "Pro quality restoration",
                   "Results in 30 seconds",
                   "One-time payment, no subscription",
                 ].map((t) => (
@@ -591,12 +591,12 @@ export default function HomePage() {
                   a: "Yes. All uploaded photos are automatically deleted after 24 hours. We never store, share, or train models on your images.",
                 },
                 {
-                  q: "What is the difference between Free Trial and Pro Lifetime?",
-                  a: "Free Trial gives you 3 photos to test quality (no signup required). Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever with original quality and no watermark.",
+                  q: "What is Pro Lifetime?",
+                  a: "Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever with original quality and no watermark. Pay once, use forever.",
                 },
                 {
                   q: "How does pricing work?",
-                  a: "Try 3 photos completely free to test the quality. If you like the results, upgrade to Pro Lifetime for $29.9 (one-time payment) and restore unlimited photos forever. No monthly subscription, no hidden fees.",
+                  a: "Pro Lifetime is $29.9 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
                 },
               ].map((item) => (
                 <details
@@ -665,7 +665,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-7 font-lora text-[13px] text-[#6b5344]">
-              No signup required · Results in 30 seconds · Free forever for 3 photos/day
+              Results in 30 seconds · One-time payment · Unlimited lifetime access
             </p>
           </div>
         </div>

@@ -128,8 +128,8 @@ export default function ExitIntentPopup() {
 
           {/* Heading */}
           <h2 className="font-playfair text-[24px] font-800 text-center text-[#2c2416] leading-tight mb-2">
-            Wait! Your <span className="text-[#8B5E3C]">3 free photos</span><br />
-            are waiting
+            Wait! <span className="text-[#8B5E3C]">Pro restoration</span><br />
+            is one click away
           </h2>
 
           {/* Social Proof */}
@@ -139,15 +139,15 @@ export default function ExitIntentPopup() {
 
           {/* Description */}
           <p className="font-lora text-[14px] text-center text-[#6b5344] leading-relaxed mb-5">
-            See why thousands trust us with their precious memories. No signup, no credit card — just results in 30 seconds.
+            See why thousands trust us with their precious memories. Pay once, use forever — results in 30 seconds.
           </p>
 
           {/* Benefits */}
           <div className="mb-6 space-y-2">
             {[
-              "3 free photos to test quality",
+              "Professional AI restoration",
               "Results in 30 seconds",
-              "No signup or download required",
+              "One-time payment, lifetime access",
             ].map((benefit) => (
               <div key={benefit} className="flex items-center gap-3">
                 <svg className="h-5 w-5 text-[#8B5E3C] shrink-0" fill="currentColor" viewBox="0 0 20 20">

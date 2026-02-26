@@ -71,6 +71,12 @@ export default function RestoreClient() {
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
+      // ✅ NEW: Check if user has paid before allowing upload
+      if (!isSubscriber) {
+        setShowLimitModal(true);
+        return;
+      }
+
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
         setErrorMsg("Invalid file type. Please upload JPG, PNG, or WEBP.");
@@ -551,15 +557,15 @@ function LimitReachedModal({
 
         <div className="text-center">
           {/* Icon */}
-          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#fff2f2] border border-red-100">
-            <XCircle className="h-7 w-7 text-red-500" />
+          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#0071e3]/10 border border-[#0071e3]/20">
+            <Crown className="h-7 w-7 text-[#0071e3]" />
           </div>
 
-          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Daily Limit Reached</h2>
+          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Pro Lifetime Required</h2>
           <p className="mt-2 text-[14px] text-[#6e6e73] leading-[1.6]">
-            You&apos;ve used all 3 free downloads for today.
+            Unlock unlimited photo restorations with a one-time payment.
             <br />
-            Your limit resets in {timeToReset}.
+            Pay once, use forever — no subscription.
           </p>
 
           {/* Pro Lifetime Benefits Card */}
@@ -597,12 +603,15 @@ function LimitReachedModal({
 
             {/* Value Comparison */}
             <div className="mt-4 rounded-lg bg-white/5 border border-white/10 p-3 text-[11px]">
-              <p className="text-white/60 mb-1">💡 Smart choice:</p>
+              <p className="text-white/60 mb-1">💡 Why Pro Lifetime?</p>
               <p className="text-white">
-                <span className="text-red-400">Wait until tomorrow</span>: Reset in {timeToReset}, still limited to 3/day
+                Other tools charge <span className="text-red-400">$9.99/month</span> = $119.88/year
               </p>
               <p className="text-white mt-1">
-                <span className="text-green-400">Upgrade now</span>: Unlimited forever, save $20 today
+                ArtImageHub: <span className="text-green-400">$29.9 once</span> = Unlimited forever
+              </p>
+              <p className="text-white/60 mt-1">
+                Save $569.50 over 5 years!
               </p>
             </div>
 
@@ -625,7 +634,7 @@ function LimitReachedModal({
               onClick={onClose}
               className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
             >
-              Come back later
+              Maybe later
             </button>
           </div>
         </div>

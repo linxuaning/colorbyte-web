@@ -70,47 +70,15 @@ export default function PricingSection() {
           Pricing
         </p>
         <h2 className="mt-3 text-center text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-          Simple, honest pricing.
+          Pro Lifetime Access
         </h2>
         <p className="mt-3 text-center text-[17px] text-[#6e6e73]">
-          Start free. Upgrade when you need more.
+          Pay once, use forever. No subscription.
         </p>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto items-center">
-          {/* Free Trial */}
-          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 transform transition-all hover:shadow-lg">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">Free Trial</p>
-            <div className="mt-3 flex items-baseline gap-1">
-              <span className="text-[44px] font-bold tracking-[-0.04em] text-[#1d1d1f]">$0</span>
-            </div>
-            <p className="mt-2 text-[13px] text-[#6e6e73]">Test before you buy</p>
-
-            <ul className="mt-7 space-y-3">
-              {[
-                "3 photos to try",
-                "See full AI quality",
-                "No signup required",
-                "All AI features included",
-              ].map((f) => (
-                <li key={f} className="flex items-center gap-2.5 text-[14px] text-[#1d1d1f]">
-                  <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {f}
-                </li>
-              ))}
-            </ul>
-
-            <Link
-              href="/old-photo-restoration"
-              className="mt-8 flex h-10 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[14px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
-            >
-              Start Free Trial
-            </Link>
-          </div>
-
+        <div className="mt-12 max-w-md mx-auto">
           {/* Pro Lifetime */}
-          <div className="relative rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] p-8 transform sm:scale-105 shadow-2xl ring-2 ring-[#0071e3]/30">
+          <div className="relative rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] p-8 shadow-2xl ring-2 ring-[#0071e3]/30">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
                 Best Value
@@ -197,7 +165,7 @@ export default function PricingSection() {
         </div>
 
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          Try 3 photos free · Upgrade for unlimited lifetime access · No subscription required
+          One-time payment · Unlimited lifetime access · No subscription required
         </p>
       </div>
     </section>
