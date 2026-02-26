@@ -71,11 +71,14 @@ export default function RestoreClient() {
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
-      // ✅ NEW: Check if user has paid before allowing upload
+      // 🚨 CRITICAL: Check if user has paid before allowing upload
+      console.log("🔍 Payment check:", { isSubscriber });
       if (!isSubscriber) {
+        console.log("❌ Not subscribed, showing payment modal");
         setShowLimitModal(true);
         return;
       }
+      console.log("✅ Subscribed, processing upload");
 
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
@@ -198,10 +201,16 @@ export default function RestoreClient() {
   const onDrop = useCallback(
     (e: React.DragEvent) => {
       e.preventDefault();
+      // 🚨 Check payment before allowing file drop
+      if (!isSubscriber) {
+        console.log("❌ Drop blocked: Not subscribed");
+        setShowLimitModal(true);
+        return;
+      }
       const file = e.dataTransfer.files[0];
       if (file) handleFile(file);
     },
-    [handleFile],
+    [handleFile, isSubscriber],
   );
 
   // --- Paste ---
@@ -232,7 +241,15 @@ export default function RestoreClient() {
         <div
           onDragOver={(e) => e.preventDefault()}
           onDrop={onDrop}
-          onClick={() => fileInputRef.current?.click()}
+          onClick={() => {
+            // 🚨 Check payment before allowing file selection
+            if (!isSubscriber) {
+              console.log("❌ Click blocked: Not subscribed");
+              setShowLimitModal(true);
+              return;
+            }
+            fileInputRef.current?.click();
+          }}
           className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
         >
           {/* Upload icon */}
@@ -250,7 +267,16 @@ export default function RestoreClient() {
 
           {/* CTA button */}
           <button
-            onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              // 🚨 Check payment before allowing file selection
+              if (!isSubscriber) {
+                console.log("❌ Button blocked: Not subscribed");
+                setShowLimitModal(true);
+                return;
+              }
+              fileInputRef.current?.click();
+            }}
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
             <Upload className="h-4 w-4" />
