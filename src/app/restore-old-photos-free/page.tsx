@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -87,10 +87,10 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Is this photo restoration really free?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 completely free photo restorations. No signup, no credit card, no hidden fees. Try the full AI quality on your most important photos before deciding if you need more." } },
-    { "@type": "Question", name: "What's the catch with free photo restoration?", acceptedAnswer: { "@type": "Answer", text: "There's no catch. We offer 3 free photos so you can test our AI quality. Free users get 720p downloads. If you love the results and want unlimited restorations in full resolution, Pro Lifetime is a one-time $29.9 payment (not a subscription)." } },
+    { "@type": "Question", name: "What's the catch with free photo restoration?", acceptedAnswer: { "@type": "Answer", text: "There's no catch. We offer 3 free photos so you can test our AI quality. Free users get 720p downloads. If you love the results and want unlimited restorations in full resolution, Pro Lifetime is a one-time $4.99 payment (not a subscription)." } },
     { "@type": "Question", name: "Do I need to create an account for free restoration?", acceptedAnswer: { "@type": "Answer", text: "No. You can restore 3 photos completely free without creating any account. Just upload, wait 30 seconds, and download. We use browser storage to track your free usage." } },
     { "@type": "Question", name: "What quality do I get with free restoration?", acceptedAnswer: { "@type": "Answer", text: "Free users get the same AI quality as paid users — the only difference is download resolution. Free: 720p output. Pro: full original resolution. The AI restoration quality is identical." } },
-    { "@type": "Question", name: "How does free compare to paid photo restoration?", acceptedAnswer: { "@type": "Answer", text: "Free ArtImageHub: 3 photos, 720p output, no signup. Competitors: Remini $9.99/month, VanceAI $19.9/month. Our Pro Lifetime ($29.9 once) gives unlimited full-resolution restorations with no subscription." } },
+    { "@type": "Question", name: "How does free compare to paid photo restoration?", acceptedAnswer: { "@type": "Answer", text: "Free ArtImageHub: 3 photos, 720p output, no signup. Competitors: Remini $9.99/month, VanceAI $19.9/month. Our Pro Lifetime ($4.99 once) gives unlimited full-resolution restorations with no subscription." } },
   ],
 };
 
@@ -227,7 +227,7 @@ export default function RestoreOldPhotosFreePage() {
                     <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Free</span>
                   </th>
                   <th className="py-4 px-4 text-center">
-                    <span className="inline-block px-3 py-1 bg-[#0071e3] text-white rounded-full text-sm font-semibold">Pro Lifetime $29.9</span>
+                    <span className="inline-block px-3 py-1 bg-[#0071e3] text-white rounded-full text-sm font-semibold">Pro Lifetime $4.99</span>
                   </th>
                 </tr>
               </thead>
@@ -270,7 +270,7 @@ export default function RestoreOldPhotosFreePage() {
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">Price</td>
                   <td className="py-4 px-4 text-center text-green-600 font-bold text-lg">$0</td>
-                  <td className="py-4 px-4 text-center text-[#0071e3] font-bold text-lg">$29.9 once</td>
+                  <td className="py-4 px-4 text-center text-[#0071e3] font-bold text-lg">$4.99 once</td>
                 </tr>
               </tbody>
             </table>
@@ -278,7 +278,7 @@ export default function RestoreOldPhotosFreePage() {
 
           <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
             <p className="text-center text-blue-900">
-              <strong>💡 Pro tip:</strong> Use your 3 free photos on your most important family photos first. If you love the results, Pro Lifetime ($29.9) unlocks unlimited restorations forever — no subscription fees.
+              <strong>💡 Pro tip:</strong> Use your 3 free photos on your most important family photos first. If you love the results, Pro Lifetime ($4.99) unlocks unlimited restorations forever — no subscription fees.
             </p>
           </div>
         </div>
@@ -329,7 +329,7 @@ export default function RestoreOldPhotosFreePage() {
               },
               {
                 q: "What's the catch with free photo restoration?",
-                a: "There's no catch. We offer 3 free photos so you can test our AI quality. Free users get 720p downloads. If you love the results and want unlimited restorations in full resolution, Pro Lifetime is a one-time $29.9 payment (not a subscription).",
+                a: "There's no catch. We offer 3 free photos so you can test our AI quality. Free users get 720p downloads. If you love the results and want unlimited restorations in full resolution, Pro Lifetime is a one-time $4.99 payment (not a subscription).",
               },
               {
                 q: "Do I need to create an account for free restoration?",
@@ -345,7 +345,7 @@ export default function RestoreOldPhotosFreePage() {
               },
               {
                 q: "What happens after I use my 3 free photos?",
-                a: "You can either wait (free credits don't reset) or upgrade to Pro Lifetime for $29.9 one-time. Pro gives you unlimited restorations forever at full original resolution — no subscription.",
+                a: "You can either wait (free credits don't reset) or upgrade to Pro Lifetime for $4.99 one-time. Pro gives you unlimited restorations forever at full original resolution — no subscription.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

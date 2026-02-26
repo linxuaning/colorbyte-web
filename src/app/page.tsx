@@ -87,7 +87,7 @@ const faqSchema = {
       name: "What is Pro Lifetime?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever — no subscription, no recurring charges. Pay once, use forever.",
+        text: "Pro Lifetime is a one-time payment of $4.99 for unlimited photo restorations forever — no subscription, no recurring charges. Pay once, use forever.",
       },
     },
     {
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "How does the pricing work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pro Lifetime is $29.9 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
+        text: "Pro Lifetime is $4.99 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
       },
     },
   ],
@@ -592,11 +592,11 @@ export default function HomePage() {
                 },
                 {
                   q: "What is Pro Lifetime?",
-                  a: "Pro Lifetime is a one-time payment of $29.9 for unlimited photo restorations forever with original quality and no watermark. Pay once, use forever.",
+                  a: "Pro Lifetime is a one-time payment of $4.99 for unlimited photo restorations forever with original quality and no watermark. Pay once, use forever.",
                 },
                 {
                   q: "How does pricing work?",
-                  a: "Pro Lifetime is $29.9 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
+                  a: "Pro Lifetime is $4.99 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
                 },
               ].map((item) => (
                 <details

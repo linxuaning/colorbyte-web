@@ -55,7 +55,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
         createOrder: async () => {
           try {
             // Track payment button click
-            trackPaymentClick('Pro Lifetime - $29.9');
+            trackPaymentClick('Pro Lifetime - $4.99');
 
             const response = await fetch(
               "https://colorbyte-api.onrender.com/api/payment/paypal-create-order",

@@ -67,9 +67,9 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How does AI photo restoration compare to traditional services?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration delivers professional-quality results in seconds vs. 1-2 weeks for traditional services. Cost is significantly lower ($29.9 for unlimited vs. $25-100+ per photo), and you don't need to mail your precious originals. AI excels at common restoration needs; traditional services may still be better for severe damage requiring human artistic judgment." } },
+    { "@type": "Question", name: "How does AI photo restoration compare to traditional services?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration delivers professional-quality results in seconds vs. 1-2 weeks for traditional services. Cost is significantly lower ($4.99 for unlimited vs. $25-100+ per photo), and you don't need to mail your precious originals. AI excels at common restoration needs; traditional services may still be better for severe damage requiring human artistic judgment." } },
     { "@type": "Question", name: "Is this a real photo restoration service?", acceptedAnswer: { "@type": "Answer", text: "Yes, this is a real photo restoration service powered by advanced AI instead of manual work. The results are professional-quality — our AI is trained on millions of photos and can fix fading, damage, enhance faces, colorize B&W photos, and more. Over 100,000 photos have been restored using our service." } },
-    { "@type": "Question", name: "How much does the photo restoration service cost?", acceptedAnswer: { "@type": "Answer", text: "Try 3 photos free, no signup required. Pro Lifetime access is $29.9 one-time payment — unlimited restorations forever at full resolution. Compare to traditional services charging $25-100+ per photo with 1-2 week turnaround." } },
+    { "@type": "Question", name: "How much does the photo restoration service cost?", acceptedAnswer: { "@type": "Answer", text: "Try 3 photos free, no signup required. Pro Lifetime access is $4.99 one-time payment — unlimited restorations forever at full resolution. Compare to traditional services charging $25-100+ per photo with 1-2 week turnaround." } },
     { "@type": "Question", name: "Do I need to mail my original photos?", acceptedAnswer: { "@type": "Answer", text: "No! That's the beauty of our digital service. Simply scan or photograph your original and upload it. Your precious original stays safe with you. We only work with digital copies." } },
     { "@type": "Question", name: "What if I'm not satisfied with the restoration?", acceptedAnswer: { "@type": "Answer", text: "Try it free first — 3 photos, no commitment. See your results before paying anything. If Pro results don't meet your expectations, we offer a satisfaction guarantee." } },
   ],
@@ -118,7 +118,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -170,7 +170,7 @@ export default function PhotoRestorationServicePage() {
           <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full text-[13px] text-amber-800">
             <span className="font-semibold">Traditional: $50-100/photo, 1-2 weeks</span>
             <span className="text-amber-400">→</span>
-            <span className="font-semibold text-emerald-700">ArtImageHub: $29.9 unlimited, 30 seconds</span>
+            <span className="font-semibold text-emerald-700">ArtImageHub: $4.99 unlimited, 30 seconds</span>
           </div>
         </div>
       </section>
@@ -228,7 +228,7 @@ export default function PhotoRestorationServicePage() {
                 </tr>
                 <tr>
                   <td className="p-4 text-[14px] text-[#1d1d1f]">Cost Per Photo</td>
-                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">$29.9 unlimited</td>
+                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">$4.99 unlimited</td>
                   <td className="p-4 text-center text-[14px] text-[#6e6e73]">$25-100+ each</td>
                 </tr>
                 <tr>
@@ -363,7 +363,7 @@ export default function PhotoRestorationServicePage() {
             {[
               {
                 q: "How does AI photo restoration compare to traditional services?",
-                a: "AI delivers professional-quality results in 30 seconds vs. 1-2 weeks. Cost is $29.9 for unlimited photos vs. $25-100+ per photo. You don't mail precious originals. AI excels at common restoration needs; traditional services may be better for severe damage requiring human judgment.",
+                a: "AI delivers professional-quality results in 30 seconds vs. 1-2 weeks. Cost is $4.99 for unlimited photos vs. $25-100+ per photo. You don't mail precious originals. AI excels at common restoration needs; traditional services may be better for severe damage requiring human judgment.",
               },
               {
                 q: "Is this a real photo restoration service?",
@@ -371,7 +371,7 @@ export default function PhotoRestorationServicePage() {
               },
               {
                 q: "How much does your photo restoration service cost?",
-                a: "Try 3 photos completely free, no signup required. Pro Lifetime is $29.9 one-time — unlimited restorations forever at full resolution. Compare to traditional services charging $25-100+ per photo.",
+                a: "Try 3 photos completely free, no signup required. Pro Lifetime is $4.99 one-time — unlimited restorations forever at full resolution. Compare to traditional services charging $25-100+ per photo.",
               },
               {
                 q: "Do I need to mail my original photos?",

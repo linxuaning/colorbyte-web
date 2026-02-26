@@ -86,7 +86,7 @@ const faqSchema = {
       name: "Is it really free to colorize black and white photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free photo colorizations per day with no account or credit card required. Free downloads are 720p resolution with no watermark. For unlimited colorizations at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free photo colorizations per day with no account or credit card required. Free downloads are 720p resolution with no watermark. For unlimited colorizations at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -343,7 +343,7 @@ export default function ColorizePhotosFree() {
               {[
                 {
                   q: "Is it really free to colorize black and white photos?",
-                  a: "Yes! ArtImageHub offers 3 free colorizations per day with no account required. Free downloads are 720p resolution. For unlimited colorizations at original resolution, Pro Lifetime is a one-time $29.9 payment (not a subscription).",
+                  a: "Yes! ArtImageHub offers 3 free colorizations per day with no account required. Free downloads are 720p resolution. For unlimited colorizations at original resolution, Pro Lifetime is a one-time $4.99 payment (not a subscription).",
                 },
                 {
                   q: "How accurate is AI photo colorization?",

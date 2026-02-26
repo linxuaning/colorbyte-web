@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo scratch remover free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free scratch removals per day with no account required. Free downloads are 720p resolution. For unlimited scratch removal at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free scratch removals per day with no account required. Free downloads are 720p resolution. For unlimited scratch removal at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -417,7 +417,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "Is the photo scratch remover free?",
-                  a: "Yes, 3 free scratch removals per day with no account. Free downloads are 720p. Pro Lifetime ($29.9 one-time) offers unlimited processing at original resolution.",
+                  a: "Yes, 3 free scratch removals per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited processing at original resolution.",
                 },
                 {
                   q: "What types of scratches can AI remove?",

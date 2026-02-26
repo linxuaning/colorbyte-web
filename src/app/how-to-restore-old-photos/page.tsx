@@ -124,7 +124,7 @@ const faqSchema = {
       name: "Can I restore old photos for free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Many AI photo restoration tools offer free trials. ArtImageHub provides 3 free photo restorations with no signup required. For unlimited restorations, Pro Lifetime costs $29.9 (one-time payment, no subscription).",
+        text: "Yes. Many AI photo restoration tools offer free trials. ArtImageHub provides 3 free photo restorations with no signup required. For unlimited restorations, Pro Lifetime costs $4.99 (one-time payment, no subscription).",
       },
     },
     {
@@ -188,7 +188,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -723,7 +723,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "Can I restore old photos for free?",
-                a: "Yes. Many AI photo restoration tools offer free trials. ArtImageHub provides 3 free photo restorations with no signup required. For unlimited restorations, Pro Lifetime costs $29.9 (one-time payment, no subscription).",
+                a: "Yes. Many AI photo restoration tools offer free trials. ArtImageHub provides 3 free photo restorations with no signup required. For unlimited restorations, Pro Lifetime costs $4.99 (one-time payment, no subscription).",
               },
               {
                 q: "Is AI better than Photoshop for photo restoration?",
@@ -770,7 +770,7 @@ export default function HowToRestoreOldPhotosPage() {
           </h2>
           <p className="text-[18px] text-[#6b5344] font-lora mb-8 leading-[1.7]">
             Try AI restoration with 3 free photos. No signup required. See the results in 30 seconds. If you love the
-            quality, upgrade to Pro Lifetime for $29.9 (one-time) and restore unlimited photos forever.
+            quality, upgrade to Pro Lifetime for $4.99 (one-time) and restore unlimited photos forever.
           </p>
           <Link
             href="/old-photo-restoration"

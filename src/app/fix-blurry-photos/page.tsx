@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free fixes, Pro Lifetime $29.9"
+    description: "3 free fixes, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -88,7 +88,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Can AI really fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Modern AI can fix many types of blur including slight out-of-focus, camera shake, and motion blur. AI works best on photos with moderate blur where some detail is preserved. Extremely blurry photos (severe motion blur or completely out of focus) may have limited improvement." } },
     { "@type": "Question", name: "What types of blur can be fixed?", acceptedAnswer: { "@type": "Answer", text: "AI can fix: 1) Out-of-focus blur - when the camera focused on the wrong area, 2) Camera shake - slight blur from unsteady hands, 3) Motion blur - blur from moving subjects, 4) Low-light blur - softness from slow shutter speeds. Results vary based on blur severity." } },
-    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. Pro Lifetime ($29.9 one-time) gives unlimited fixes at full resolution." } },
+    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited fixes at full resolution." } },
     { "@type": "Question", name: "Will fixing blur make my photo look fake?", acceptedAnswer: { "@type": "Answer", text: "Good AI enhancement preserves natural appearance while adding sharpness. Our AI is trained to avoid over-sharpening artifacts. Always compare before/after to ensure you're happy with the result." } },
     { "@type": "Question", name: "Can I fix blurry faces in photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Face enhancement is one of our AI's strongest features. It can sharpen blurry faces, restore facial detail, and enhance eyes and features while maintaining natural appearance." } },
   ],
@@ -292,7 +292,7 @@ export default function FixBlurryPhotosPage() {
               },
               {
                 q: "Is fixing blurry photos free?",
-                a: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. For unlimited fixes at full resolution, Pro Lifetime is $29.9 one-time (not a subscription).",
+                a: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. For unlimited fixes at full resolution, Pro Lifetime is $4.99 one-time (not a subscription).",
               },
               {
                 q: "Will the fixed photo look fake or over-processed?",

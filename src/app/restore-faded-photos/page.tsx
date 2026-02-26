@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -90,7 +90,7 @@ const faqSchema = {
     { "@type": "Question", name: "Can AI really restore faded colors?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI analyzes remaining color information and uses deep learning models trained on millions of photos to reconstruct original tones. Even severely faded photos often retain enough data for AI to restore surprisingly accurate colors. Results are typically excellent for moderate fading." } },
     { "@type": "Question", name: "Will restoration look natural or over-saturated?", acceptedAnswer: { "@type": "Answer", text: "Our AI is trained to restore natural-looking colors, not artificial oversaturation. The goal is accurate reconstruction of original tones based on the photo's era and subject matter. You can always adjust if you prefer more or less vibrant results." } },
     { "@type": "Question", name: "Can you restore photos that are almost completely faded?", acceptedAnswer: { "@type": "Answer", text: "AI can work with severely faded photos, but results depend on how much color data remains. Photos with visible image detail usually restore well. Completely washed-out photos with no discernible detail have limited restoration potential." } },
-    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 faded photo restorations free, no signup required. See your results instantly. Pro Lifetime ($29.9 one-time) gives unlimited restorations at full resolution." } },
+    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 faded photo restorations free, no signup required. See your results instantly. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution." } },
   ],
 };
 
@@ -348,7 +348,7 @@ export default function RestoreFadedPhotosPage() {
               },
               {
                 q: "Is faded photo restoration free?",
-                a: "Yes! Try 3 restorations free, no signup required. See instant results. Pro Lifetime ($29.9 one-time) gives unlimited full-resolution restorations.",
+                a: "Yes! Try 3 restorations free, no signup required. See instant results. Pro Lifetime ($4.99 one-time) gives unlimited full-resolution restorations.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">

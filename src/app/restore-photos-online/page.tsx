@@ -4,7 +4,7 @@ import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
   title: 'Restore Photos Online Free | AI Photo Restoration in 30 Seconds',
-  description: 'Restore old photos online instantly with AI. No download, no shipping photos. Fix scratches, enhance faces, colorize in 30 seconds. Try 3 photos free, $29.9 lifetime.',
+  description: 'Restore old photos online instantly with AI. No download, no shipping photos. Fix scratches, enhance faces, colorize in 30 seconds. Try 3 photos free, $4.99 lifetime.',
   keywords: [
     'restore photos online',
     'online photo restoration',
@@ -66,13 +66,13 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "How do I restore photos online?", acceptedAnswer: { "@type": "Answer", text: "Upload your photo to ArtImageHub's online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required." } },
-    { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($29.9 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks." } },
+    { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks." } },
     { "@type": "Question", name: "Do I need to download software to restore photos online?", acceptedAnswer: { "@type": "Answer", text: "No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30 seconds." } },
-    { "@type": "Question", name: "Can I restore photos online for free?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $29.9 one-time for unlimited restorations." } },
+    { "@type": "Question", name: "Can I restore photos online for free?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $4.99 one-time for unlimited restorations." } },
     { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
     { "@type": "Question", name: "Is my photo safe when restoring online?", acceptedAnswer: { "@type": "Answer", text: "Yes! Photos are encrypted during upload, processed securely in the cloud, and automatically deleted within 24 hours. We never use your photos for AI training or share them with third parties." } },
     { "@type": "Question", name: "What types of damage can online restoration fix?", acceptedAnswer: { "@type": "Answer", text: "Online AI restoration fixes: scratches and tears, fading and discoloration, blurry faces, water damage stains, creases and cracks, low resolution (upscales to 4K), black & white colorization. It works on 90% of common photo damage types." } },
-    { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub: 3 free, then $29.9 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool." } },
+    { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub: 3 free, then $4.99 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool." } },
   ],
 };
 
@@ -234,11 +234,11 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-5xl mb-4">💰</div>
               <h3 className="text-xl font-black text-slate-900 mb-3">95% Cheaper</h3>
               <p className="text-slate-600 mb-4">
-                $29.9 lifetime unlimited vs $50-150 per photo. Restore hundreds of photos for less than one traditional restoration.
+                $4.99 lifetime unlimited vs $50-150 per photo. Restore hundreds of photos for less than one traditional restoration.
               </p>
               <div className="text-sm text-cyan-600 font-semibold">
                 Traditional: $50-150/photo<br />
-                Online: $29.9 lifetime
+                Online: $4.99 lifetime
               </div>
             </div>
 
@@ -299,7 +299,7 @@ export default function RestorePhotosOnlinePage() {
               <div>
                 <h3 className="text-2xl font-black mb-3">Download Instantly</h3>
                 <p className="text-cyan-100/80 text-lg leading-relaxed">
-                  Preview before/after comparison online. Download your restored photo immediately — no waiting for shipping. Try 3 photos free, then $29.9 one-time for unlimited lifetime access.
+                  Preview before/after comparison online. Download your restored photo immediately — no waiting for shipping. Try 3 photos free, then $4.99 one-time for unlimited lifetime access.
                 </p>
               </div>
             </div>
@@ -343,7 +343,7 @@ export default function RestorePhotosOnlinePage() {
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 font-semibold text-slate-900">Cost per Photo</td>
-                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">$29.9 lifetime unlimited 💰</td>
+                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">$4.99 lifetime unlimited 💰</td>
                   <td className="px-6 py-4 text-slate-600">$50-150 each</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
@@ -425,7 +425,7 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-slate-600">Photos to try before buying</div>
             </div>
             <div>
-              <div className="text-3xl font-black text-cyan-600 mb-2">$29.9</div>
+              <div className="text-3xl font-black text-cyan-600 mb-2">$4.99</div>
               <div className="text-slate-600">One-time for unlimited lifetime</div>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($29.9 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks.
+                Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks.
               </p>
             </details>
 
@@ -476,7 +476,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $29.9 one-time for unlimited restorations.
+                Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $4.99 one-time for unlimited restorations.
               </p>
             </details>
 
@@ -516,7 +516,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                ArtImageHub: 3 free, then $29.9 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool.
+                ArtImageHub: 3 free, then $4.99 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool.
               </p>
             </details>
 
@@ -526,7 +526,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                <strong>Online is better for:</strong> Speed (30 sec vs 2-4 weeks), cost ($29.9 vs $50-150/photo), convenience (no shipping), multiple photos (unlimited for one price).
+                <strong>Online is better for:</strong> Speed (30 sec vs 2-4 weeks), cost ($4.99 vs $50-150/photo), convenience (no shipping), multiple photos (unlimited for one price).
                 <br/><br/>
                 <strong>Mail-in is better for:</strong> Museum-quality single heirloom photos requiring manual artist touch-up.
                 <br/><br/>
@@ -627,7 +627,7 @@ export default function RestorePhotosOnlinePage() {
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>$29.9 lifetime unlimited</span>
+              <span>$4.99 lifetime unlimited</span>
             </div>
           </div>
         </div>

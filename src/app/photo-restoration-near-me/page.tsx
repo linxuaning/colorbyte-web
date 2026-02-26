@@ -144,7 +144,7 @@ export default function PhotoRestorationNearMePage() {
               <div className="space-y-4 mb-6">
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Average Cost</div>
-                  <div className="text-2xl font-black text-amber-600">$29.9<span className="text-base font-normal text-slate-600"> lifetime</span></div>
+                  <div className="text-2xl font-black text-amber-600">$4.99<span className="text-base font-normal text-slate-600"> lifetime</span></div>
                 </div>
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Processing Time</div>
@@ -205,7 +205,7 @@ export default function PhotoRestorationNearMePage() {
               </div>
               <div>
                 <div className="text-sm text-slate-600 mb-2">Online AI</div>
-                <div className="text-3xl font-black text-green-600">$29.90</div>
+                <div className="text-3xl font-black text-green-600">$4.990</div>
                 <div className="text-xs text-slate-500">(one-time, unlimited)</div>
               </div>
               <div>
@@ -282,7 +282,7 @@ export default function PhotoRestorationNearMePage() {
             <p className="text-slate-700 text-sm">
               Local shops often charge $50-150+ per photo. For 10+ photos, this can cost $500-1,500.
               <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline ml-1">
-                Compare with online AI restoration at $29.90 lifetime
+                Compare with online AI restoration at $4.990 lifetime
               </Link>
               before committing to expensive local services.
             </p>
@@ -361,7 +361,7 @@ export default function PhotoRestorationNearMePage() {
             <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
               <h4 className="font-bold text-slate-900 mb-2">💡 Pro Tip: Hybrid Approach</h4>
               <p className="text-slate-700">
-                Many people use <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline">online AI for 90% of their photos</Link> ($29.90 lifetime),
+                Many people use <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline">online AI for 90% of their photos</Link> ($4.990 lifetime),
                 then take only the most precious 1-2 heirlooms to local shops for custom work. This saves $500-2,000 while still getting professional care for special photos.
               </p>
             </div>
@@ -380,7 +380,7 @@ export default function PhotoRestorationNearMePage() {
             {[
               {
                 q: 'How much does local photo restoration cost?',
-                a: 'Local photo restoration shops typically charge $50-150 per photo. High-end studios can charge $200-500 for severely damaged heirlooms. Online AI restoration costs $29.90 for unlimited lifetime use, saving 80-95% compared to local shops.',
+                a: 'Local photo restoration shops typically charge $50-150 per photo. High-end studios can charge $200-500 for severely damaged heirlooms. Online AI restoration costs $4.990 for unlimited lifetime use, saving 80-95% compared to local shops.',
               },
               {
                 q: 'Is online photo restoration as good as local shops?',
@@ -439,7 +439,7 @@ export default function PhotoRestorationNearMePage() {
             Restore Photos Online Now →
           </Link>
           <p className="text-sm text-amber-100 mt-6">
-            3 free photos • 30-second results • $29.9 lifetime for unlimited
+            3 free photos • 30-second results • $4.99 lifetime for unlimited
           </p>
         </div>
       </section>

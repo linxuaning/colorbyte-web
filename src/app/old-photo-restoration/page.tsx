@@ -64,11 +64,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $29.9 for unlimited restorations in original resolution with no watermark, lifetime access." } },
+    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $4.99 for unlimited restorations in original resolution with no watermark, lifetime access." } },
     { "@type": "Question", name: "What image formats are supported for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." } },
     { "@type": "Question", name: "How long does AI photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Most photos restore in 15–30 seconds. Heavily damaged photos or photos processed with multiple enhancements may take up to 60–90 seconds." } },
     { "@type": "Question", name: "Are my photos kept private and secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." } },
-    { "@type": "Question", name: "What is the difference between Free Trial and Pro Lifetime?", acceptedAnswer: { "@type": "Answer", text: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $29.9 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features." } },
+    { "@type": "Question", name: "What is the difference between Free Trial and Pro Lifetime?", acceptedAnswer: { "@type": "Answer", text: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $4.99 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features." } },
   ],
 };
 
@@ -82,7 +82,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -232,7 +232,7 @@ export default function OldPhotoRestorationPage() {
             {[
               {
                 q: "Is AI photo restoration free?",
-                a: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $29.9 for unlimited restorations in original resolution with no watermark, lifetime access.",
+                a: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $4.99 for unlimited restorations in original resolution with no watermark, lifetime access.",
               },
               {
                 q: "What image formats are supported for photo restoration?",
@@ -256,7 +256,7 @@ export default function OldPhotoRestorationPage() {
               },
               {
                 q: "What is the difference between Free Trial and Pro Lifetime?",
-                a: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $29.9 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features.",
+                a: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $4.99 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

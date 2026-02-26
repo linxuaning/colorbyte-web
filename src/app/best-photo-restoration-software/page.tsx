@@ -110,7 +110,7 @@ const faqSchema = {
       "name": "What is the best photo restoration software in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ArtImageHub is the best overall photo restoration software for most users in 2026, offering excellent AI restoration quality at a one-time price of $29.9 (no subscription). For mobile users, Remini is excellent but requires a $9.99/month subscription. For professionals, VanceAI offers advanced features at $19.9/month."
+        "text": "ArtImageHub is the best overall photo restoration software for most users in 2026, offering excellent AI restoration quality at a one-time price of $4.99 (no subscription). For mobile users, Remini is excellent but requires a $9.99/month subscription. For professionals, VanceAI offers advanced features at $19.9/month."
       }
     },
     {
@@ -126,7 +126,7 @@ const faqSchema = {
       "name": "What's better: subscription or one-time payment for photo restoration software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "One-time payment is more cost-effective if you have many photos to restore. ArtImageHub's $29.9 lifetime license saves money compared to Remini ($119.88/year) or VanceAI ($238.80/year). Subscriptions make sense only if you need continuous restoration over years or use advanced professional features."
+        "text": "One-time payment is more cost-effective if you have many photos to restore. ArtImageHub's $4.99 lifetime license saves money compared to Remini ($119.88/year) or VanceAI ($238.80/year). Subscriptions make sense only if you need continuous restoration over years or use advanced professional features."
       }
     },
     {
@@ -150,7 +150,7 @@ const faqSchema = {
       "name": "Which photo restoration software is best for genealogy projects?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For genealogy projects, ArtImageHub or MyHeritage are best. ArtImageHub offers better value ($29.9 one-time vs $299/year for MyHeritage) and works well with historical photos. MyHeritage integrates with family tree software but costs significantly more. For bulk genealogy work, choose one-time payment software."
+        "text": "For genealogy projects, ArtImageHub or MyHeritage are best. ArtImageHub offers better value ($4.99 one-time vs $299/year for MyHeritage) and works well with historical photos. MyHeritage integrates with family tree software but costs significantly more. For bulk genealogy work, choose one-time payment software."
       }
     },
     {
@@ -241,7 +241,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                 Quick Recommendation
               </h2>
               <div className="space-y-3 text-stone-700">
-                <p><strong className="text-stone-900">Best Overall:</strong> <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> — $29.9 one-time payment, unlimited restorations, excellent AI quality</p>
+                <p><strong className="text-stone-900">Best Overall:</strong> <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> — $4.99 one-time payment, unlimited restorations, excellent AI quality</p>
                 <p><strong className="text-stone-900">Best Mobile:</strong> Remini — $9.99/month, 100M+ downloads, great for faces</p>
                 <p><strong className="text-stone-900">Best Professional:</strong> VanceAI — $19.9/month, advanced features, batch processing</p>
                 <p><strong className="text-stone-900">Best Free:</strong> ArtImageHub (3 photos free, no signup) or GIMP (open source, manual)</p>
@@ -257,7 +257,7 @@ export default function BestPhotoRestorationSoftwarePage() {
               Old family photos deteriorate over time—fading, yellowing, developing scratches, or suffering water damage. Professional photo restoration costs $50-150 per photo, making it prohibitively expensive for families with dozens or hundreds of damaged photos.
             </p>
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
-              Modern AI-powered photo restoration software has changed this. For as little as $29.9 (one-time payment), you can restore unlimited photos with quality that rivals professional work. But with dozens of tools available, which one is actually worth your money?
+              Modern AI-powered photo restoration software has changed this. For as little as $4.99 (one-time payment), you can restore unlimited photos with quality that rivals professional work. But with dozens of tools available, which one is actually worth your money?
             </p>
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
               We tested 10 leading photo restoration software options on 500+ damaged photos from the 1890s to 1980s. We evaluated AI quality, ease of use, pricing models, and real-world results. Here's what we found.
@@ -293,7 +293,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                       </div>
                     </td>
                     <td className="p-4 text-stone-700">Overall value</td>
-                    <td className="p-4 text-stone-700 font-medium">$29.9 lifetime</td>
+                    <td className="p-4 text-stone-700 font-medium">$4.99 lifetime</td>
                     <td className="p-4 text-center">
                       <div className="text-yellow-500">★★★★★</div>
                       <div className="text-xs text-stone-500">4.8/5</div>
@@ -437,7 +437,7 @@ export default function BestPhotoRestorationSoftwarePage() {
             {/* Pricing Comparison Note */}
             <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-sm text-blue-900">
-                <strong>💡 Cost Analysis:</strong> Processing 100 photos would cost: ArtImageHub $29.9 (one-time) • Remini $119.88/year • VanceAI $238.80/year • Photoshop $659.88/year • GIMP $0 (but requires 50+ hours of manual work)
+                <strong>💡 Cost Analysis:</strong> Processing 100 photos would cost: ArtImageHub $4.99 (one-time) • Remini $119.88/year • VanceAI $238.80/year • Photoshop $659.88/year • GIMP $0 (but requires 50+ hours of manual work)
               </p>
             </div>
           </div>
@@ -462,7 +462,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                     1. ArtImageHub
                   </h3>
                   <p className="text-lg text-amber-700 font-medium mb-4">
-                    Best Overall Value — $29.9 One-Time Payment
+                    Best Overall Value — $4.99 One-Time Payment
                   </p>
                   <div className="flex items-center gap-4 mb-4">
                     <div className="flex items-center gap-1">
@@ -475,7 +475,7 @@ export default function BestPhotoRestorationSoftwarePage() {
 
               <div className="prose prose-stone max-w-none mb-6">
                 <p className="text-lg text-stone-700 leading-relaxed">
-                  <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is our top pick for most users. It offers professional-grade AI photo restoration at a one-time price of $29.9 with unlimited restorations—no monthly subscription required.
+                  <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is our top pick for most users. It offers professional-grade AI photo restoration at a one-time price of $4.99 with unlimited restorations—no monthly subscription required.
                 </p>
                 <p className="text-stone-700 leading-relaxed">
                   We tested ArtImageHub on 200+ damaged photos from the 1890s to 1980s. The AI successfully restored 94% of photos with excellent quality, including severe damage like deep scratches, water stains, and 70+ years of fading. The restoration quality rivals tools costing 10x more.
@@ -494,7 +494,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                   <ul className="space-y-2 text-stone-700">
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
-                      <span>$29.9 one-time payment (no subscription)</span>
+                      <span>$4.99 one-time payment (no subscription)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
@@ -621,7 +621,7 @@ export default function BestPhotoRestorationSoftwarePage() {
 
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <p className="text-sm text-blue-900">
-                  <strong>💡 Cost Comparison:</strong> 1 year of Remini ($119.88) costs 4x more than ArtImageHub's lifetime license ($29.9)
+                  <strong>💡 Cost Comparison:</strong> 1 year of Remini ($119.88) costs 4x more than ArtImageHub's lifetime license ($4.99)
                 </p>
               </div>
             </div>
@@ -793,13 +793,13 @@ export default function BestPhotoRestorationSoftwarePage() {
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-amber-500">
                 <h3 className="text-xl font-bold text-stone-900 mb-3">1. Consider Your Volume</h3>
                 <p className="text-stone-700 mb-2"><strong>1-10 photos:</strong> Use free options (ArtImageHub's 3 free, Inpaint, or GIMP)</p>
-                <p className="text-stone-700 mb-2"><strong>10-100 photos:</strong> One-time payment software (ArtImageHub $29.9) offers best value</p>
+                <p className="text-stone-700 mb-2"><strong>10-100 photos:</strong> One-time payment software (ArtImageHub $4.99) offers best value</p>
                 <p className="text-stone-700"><strong>100+ photos:</strong> Consider batch processing tools (VanceAI, Cutout.pro) or one-time payment unlimited (ArtImageHub)</p>
               </div>
 
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500">
                 <h3 className="text-xl font-bold text-stone-900 mb-3">2. Evaluate Pricing Models</h3>
-                <p className="text-stone-700 mb-2"><strong>One-time payment:</strong> Best for most users. $29.9 once vs $119.88/year subscriptions</p>
+                <p className="text-stone-700 mb-2"><strong>One-time payment:</strong> Best for most users. $4.99 once vs $119.88/year subscriptions</p>
                 <p className="text-stone-700 mb-2"><strong>Monthly subscription:</strong> Only worthwhile if you need continuous restoration for years</p>
                 <p className="text-stone-700"><strong>Credit-based:</strong> Avoid unless you only restore 1-2 photos occasionally</p>
               </div>
@@ -890,7 +890,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                   <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <p className="mt-4 text-stone-700 leading-relaxed">
-                  <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is the best overall photo restoration software for most users in 2026, offering excellent AI restoration quality at a one-time price of $29.9 (no subscription). For mobile users, Remini is excellent but requires a $9.99/month subscription. For professionals, VanceAI offers advanced features at $19.9/month.
+                  <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is the best overall photo restoration software for most users in 2026, offering excellent AI restoration quality at a one-time price of $4.99 (no subscription). For mobile users, Remini is excellent but requires a $9.99/month subscription. For professionals, VanceAI offers advanced features at $19.9/month.
                 </p>
               </details>
 
@@ -910,7 +910,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                   <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <p className="mt-4 text-stone-700 leading-relaxed">
-                  One-time payment is more cost-effective if you have many photos to restore. ArtImageHub's $29.9 lifetime license saves money compared to Remini ($119.88/year) or VanceAI ($238.80/year). Subscriptions make sense only if you need continuous restoration over years or use advanced professional features.
+                  One-time payment is more cost-effective if you have many photos to restore. ArtImageHub's $4.99 lifetime license saves money compared to Remini ($119.88/year) or VanceAI ($238.80/year). Subscriptions make sense only if you need continuous restoration over years or use advanced professional features.
                 </p>
               </details>
 
@@ -940,7 +940,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                   <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <p className="mt-4 text-stone-700 leading-relaxed">
-                  For genealogy projects, <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> or MyHeritage are best. ArtImageHub offers better value ($29.9 one-time vs $299/year for MyHeritage) and works well with historical photos. MyHeritage integrates with family tree software but costs significantly more. For bulk genealogy work, choose one-time payment software.
+                  For genealogy projects, <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> or MyHeritage are best. ArtImageHub offers better value ($4.99 one-time vs $299/year for MyHeritage) and works well with historical photos. MyHeritage integrates with family tree software but costs significantly more. For bulk genealogy work, choose one-time payment software.
                 </p>
               </details>
 
@@ -990,7 +990,7 @@ export default function BestPhotoRestorationSoftwarePage() {
 
             <div className="mt-12 pt-8 border-t border-amber-400/30">
               <p className="text-amber-100 text-sm">
-                <strong className="text-white">Why choose ArtImageHub?</strong> One-time $29.9 payment saves you $90-600/year compared to subscription tools. Unlimited restorations. No recurring fees.
+                <strong className="text-white">Why choose ArtImageHub?</strong> One-time $4.99 payment saves you $90-600/year compared to subscription tools. Unlimited restorations. No recurring fees.
               </p>
             </div>
           </div>

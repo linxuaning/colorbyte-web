@@ -70,7 +70,7 @@ const faqSchema = {
     { "@type": "Question", name: "What is AI photo restoration?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration uses artificial intelligence and neural networks to automatically repair and enhance old or damaged photographs. Unlike manual restoration that requires a skilled artist working hours per photo, AI can analyze damage patterns, reconstruct missing details, enhance faces, and restore colors in seconds." } },
     { "@type": "Question", name: "How does AI restore old photos?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration uses deep learning models trained on millions of images. The neural network learns what photos should look like, then applies that knowledge to identify and fix problems: removing scratches, filling torn areas, sharpening blurry faces, correcting faded colors, and even colorizing black and white photos." } },
     { "@type": "Question", name: "Is AI photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "For most photos, AI produces results comparable to professional restoration — often indistinguishable. AI excels at common issues: fading, scratches, blur, color correction. Professionals may still be better for severe damage requiring artistic judgment, like reconstructing large missing areas." } },
-    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 AI photo restorations completely free, no signup required. See your results instantly. Pro Lifetime ($29.9 one-time) unlocks unlimited restorations at full resolution forever." } },
+    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 AI photo restorations completely free, no signup required. See your results instantly. Pro Lifetime ($4.99 one-time) unlocks unlimited restorations at full resolution forever." } },
     { "@type": "Question", name: "What types of damage can AI fix?", acceptedAnswer: { "@type": "Answer", text: "AI can fix: fading and color degradation, scratches and surface damage, small tears and creases, blur and low resolution, yellowing and age spots, water stains, and can colorize black and white photos. Limitations include large missing sections (over 30% of image) and severe chemical deterioration." } },
   ],
 };
@@ -85,7 +85,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -294,7 +294,7 @@ export default function AIPhotoRestorationPage() {
               <ul className="space-y-3">
                 {[
                   "30 seconds per photo",
-                  "$29.9 for unlimited photos",
+                  "$4.99 for unlimited photos",
                   "Consistent quality every time",
                   "Available 24/7 instantly",
                   "No shipping originals",
@@ -368,7 +368,7 @@ export default function AIPhotoRestorationPage() {
               },
               {
                 q: "Is AI photo restoration free?",
-                a: "Try 3 AI restorations completely free, no signup required. See your results instantly before committing. Pro Lifetime ($29.9 one-time) unlocks unlimited full-resolution restorations forever.",
+                a: "Try 3 AI restorations completely free, no signup required. See your results instantly before committing. Pro Lifetime ($4.99 one-time) unlocks unlimited full-resolution restorations forever.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">

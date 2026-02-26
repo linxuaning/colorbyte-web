@@ -54,7 +54,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. Pro Lifetime Plan</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-[#2c2416]">Price:</strong> $29.9 one-time payment for lifetime access.</li>
+              <li><strong className="text-[#2c2416]">Price:</strong> $4.99 one-time payment for lifetime access.</li>
               <li><strong className="text-[#2c2416]">Payment:</strong> One-time charge. No recurring subscription, no monthly fees.</li>
               <li><strong className="text-[#2c2416]">Features:</strong> Unlimited photo restorations, original quality downloads, no watermark, lifetime access to all current and future features.</li>
               <li><strong className="text-[#2c2416]">Refunds:</strong> We offer a 30-day money-back guarantee. Contact support within 30 days of purchase for a full refund.</li>

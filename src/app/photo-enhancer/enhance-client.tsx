@@ -420,7 +420,7 @@ export default function EnhanceClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                $29.9 one-time payment. No subscription, unlimited forever.
+                $4.99 one-time payment. No subscription, unlimited forever.
               </p>
             )}
           </div>
@@ -560,7 +560,7 @@ function LimitReachedModal({
 
           {/* Pro Lifetime Benefits Card */}
           <div className="mt-6 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]/40 p-6 text-left">
-            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Get Pro Lifetime — $29.9 Once</h3>
+            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Get Pro Lifetime — $4.99 Once</h3>
             <p className="text-[13px] text-[#6e6e73] mb-4">
               Unlimited forever with one-time payment:
             </p>
@@ -586,7 +586,7 @@ function LimitReachedModal({
               className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
             >
               <Crown className="h-4 w-4" />
-              Get Pro Lifetime — $29.9 Once
+              Get Pro Lifetime — $4.99 Once
             </button>
 
             <p className="mt-3 text-center text-[12px] text-[#6e6e73]">

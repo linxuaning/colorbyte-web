@@ -67,10 +67,10 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is photo restoration really free?", acceptedAnswer: { "@type": "Answer", text: "Yes, genuinely free! You get 3 photo restorations at 720p resolution completely free, no signup or credit card required. We show you real results before asking for anything. Pro upgrade ($29.9 lifetime) is optional for unlimited full-resolution downloads." } },
+    { "@type": "Question", name: "Is photo restoration really free?", acceptedAnswer: { "@type": "Answer", text: "Yes, genuinely free! You get 3 photo restorations at 720p resolution completely free, no signup or credit card required. We show you real results before asking for anything. Pro upgrade ($4.99 lifetime) is optional for unlimited full-resolution downloads." } },
     { "@type": "Question", name: "Do I need to create an account?", acceptedAnswer: { "@type": "Answer", text: "No account required for free restorations. Just upload your photo and get results immediately. Creating an account is only needed if you want to upgrade to Pro for unlimited high-resolution downloads." } },
     { "@type": "Question", name: "What's the catch with free photo restoration?", acceptedAnswer: { "@type": "Answer", text: "No catch! Free tier gives you 3 restorations at 720p resolution. We make money from Pro users who want unlimited full-resolution downloads. Free users help us improve our AI. It's a win-win." } },
-    { "@type": "Question", name: "What's the difference between Free and Pro?", acceptedAnswer: { "@type": "Answer", text: "Free: 3 photos, 720p resolution, full AI restoration. Pro ($29.9 one-time): unlimited photos, full original resolution, priority processing. Both get the same AI quality — Pro just has higher resolution and no limits." } },
+    { "@type": "Question", name: "What's the difference between Free and Pro?", acceptedAnswer: { "@type": "Answer", text: "Free: 3 photos, 720p resolution, full AI restoration. Pro ($4.99 one-time): unlimited photos, full original resolution, priority processing. Both get the same AI quality — Pro just has higher resolution and no limits." } },
     { "@type": "Question", name: "Why is this free when others charge $25+ per photo?", acceptedAnswer: { "@type": "Answer", text: "AI automation. Traditional restoration requires skilled artists spending hours per photo. Our AI processes photos in seconds at near-zero cost. We pass those savings to you with a free tier, and Pro users fund development." } },
   ],
 };
@@ -85,7 +85,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -227,7 +227,7 @@ export default function FreePhotoRestorationPage() {
               </div>
               <div className="mt-2">
                 <h3 className="text-2xl font-bold text-[#1d1d1f] mb-2">Pro Lifetime</h3>
-                <p className="text-4xl font-black text-[#1d1d1f] mb-1">$29.9</p>
+                <p className="text-4xl font-black text-[#1d1d1f] mb-1">$4.99</p>
                 <p className="text-sm text-[#6e6e73] mb-6">one-time, forever</p>
                 <ul className="space-y-3">
                   {[
@@ -282,7 +282,7 @@ export default function FreePhotoRestorationPage() {
                 📈
               </div>
               <h3 className="font-semibold text-[#1d1d1f] mb-2">Pro Users Fund Free</h3>
-              <p className="text-[14px] text-[#6e6e73]">Power users who need unlimited high-res downloads pay $29.9 once. That funds free access for everyone else.</p>
+              <p className="text-[14px] text-[#6e6e73]">Power users who need unlimited high-res downloads pay $4.99 once. That funds free access for everyone else.</p>
             </div>
             <div className="text-center p-6">
               <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-100 text-green-700 mb-4 text-2xl">
@@ -342,7 +342,7 @@ export default function FreePhotoRestorationPage() {
               },
               {
                 q: "What's the difference between Free and Pro?",
-                a: "Free: 3 photos, 720p resolution, full AI restoration. Pro ($29.9 one-time): unlimited photos, full original resolution, priority processing. Same AI quality for both.",
+                a: "Free: 3 photos, 720p resolution, full AI restoration. Pro ($4.99 one-time): unlimited photos, full original resolution, priority processing. Same AI quality for both.",
               },
               {
                 q: "Why is this free when others charge $25+ per photo?",

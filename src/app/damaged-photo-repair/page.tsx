@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free repairs, Pro Lifetime $29.9"
+    description: "3 free repairs, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -89,7 +89,7 @@ const faqSchema = {
     { "@type": "Question", name: "What types of photo damage can AI repair?", acceptedAnswer: { "@type": "Answer", text: "AI can repair: scratches, small tears, water stains, fading, yellowing, foxing spots, creases, and moderate physical damage. For photos with large missing sections (over 30% of image), results may be limited." } },
     { "@type": "Question", name: "Can AI repair a torn photo?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can repair torn photos if you scan both pieces together aligned properly. For clean tears, results are excellent. For tears with missing pieces, AI will attempt to reconstruct based on surrounding context." } },
     { "@type": "Question", name: "How should I scan a damaged photo?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum. For torn photos, align pieces as closely as possible on the scanner. Don't tape the original - tape damages photos. Just position the pieces carefully for scanning." } },
-    { "@type": "Question", name: "Is damaged photo repair free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($29.9 one-time) gives unlimited repairs at full resolution." } },
+    { "@type": "Question", name: "Is damaged photo repair free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited repairs at full resolution." } },
     { "@type": "Question", name: "Can AI repair water-damaged photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can remove water stains, reduce warping artifacts, and restore colors affected by water damage. Severe water damage with emulsion loss has limited repair options." } },
   ],
 };
@@ -304,7 +304,7 @@ export default function DamagedPhotoRepairPage() {
               },
               {
                 q: "Is damaged photo repair free?",
-                a: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($29.9 one-time) gives unlimited repairs at full resolution.",
+                a: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited repairs at full resolution.",
               },
               {
                 q: "Should I repair the physical photo or just restore digitally?",

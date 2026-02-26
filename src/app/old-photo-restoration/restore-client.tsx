@@ -443,12 +443,12 @@ export default function RestoreClient() {
                     {remaining === 0
                       ? "Get Pro Lifetime — Unlimited Forever"
                       : remaining <= 1
-                      ? "Unlock Unlimited — Save $20 Today"
-                      : "Get Pro Lifetime — $29.9 Once"}
+                      ? "Unlock Unlimited — Save $5 Today"
+                      : "Get Pro Lifetime — $4.99 Once"}
                   </span>
                   <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
                     {remaining === 0
-                      ? "No watermark  ·  Original quality  ·  $29.9 once"
+                      ? "No watermark  ·  Original quality  ·  $4.99 once"
                       : remaining === 1
                       ? "Last free download used · Upgrade for unlimited"
                       : "Original quality · No watermark · Pay once, use forever"}
@@ -459,7 +459,7 @@ export default function RestoreClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                $29.9 one-time payment. No subscription, unlimited forever.
+                $4.99 one-time payment. No subscription, unlimited forever.
               </p>
             )}
           </div>
@@ -602,13 +602,13 @@ function LimitReachedModal({
             {/* Launch Special Badge */}
             <div className="absolute top-3 right-3">
               <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-lg">
-                Save $20
+                Save $5
               </span>
             </div>
 
-            <h3 className="text-[18px] font-bold text-white mb-1">Get Pro Lifetime — $29.9 Once</h3>
+            <h3 className="text-[18px] font-bold text-white mb-1">Get Pro Lifetime — $4.99 Once</h3>
             <p className="text-[13px] text-white/70 mb-1">
-              <span className="line-through text-white/40">$49.9</span> <span className="text-[#0071e3] font-semibold">$29.9 one-time</span>
+              <span className="line-through text-white/40">$9.99</span> <span className="text-[#0071e3] font-semibold">$4.99 one-time</span>
             </p>
             <p className="text-[12px] text-white/60 mb-4">
               Pay once, use forever. No monthly bills.
@@ -637,7 +637,7 @@ function LimitReachedModal({
                 Other tools charge <span className="text-red-400">$9.99/month</span> = $119.88/year
               </p>
               <p className="text-white mt-1">
-                ArtImageHub: <span className="text-green-400">$29.9 once</span> = Unlimited forever
+                ArtImageHub: <span className="text-green-400">$4.99 once</span> = Unlimited forever
               </p>
               <p className="text-white/60 mt-1">
                 Save $569.50 over 5 years!
@@ -649,7 +649,7 @@ function LimitReachedModal({
               className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-bold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-lg shadow-[#0071e3]/25"
             >
               <Crown className="h-4 w-4" />
-              Unlock Unlimited Access — Save $20
+              Unlock Unlimited Access — Save $5
             </button>
 
             <p className="mt-3 text-center text-[11px] text-white/50">

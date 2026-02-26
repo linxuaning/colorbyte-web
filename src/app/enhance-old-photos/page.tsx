@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Is the old photo enhancer free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free old photo enhancements per day with no account required. Free downloads are 720p resolution. For unlimited enhancements at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free old photo enhancements per day with no account required. Free downloads are 720p resolution. For unlimited enhancements at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -395,7 +395,7 @@ export default function EnhanceOldPhotosPage() {
                 },
                 {
                   q: "Is the old photo enhancer free?",
-                  a: "Yes, 3 free enhancements per day with no account. Free downloads are 720p. Pro Lifetime ($29.9 one-time) offers unlimited enhancements at original resolution.",
+                  a: "Yes, 3 free enhancements per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited enhancements at original resolution.",
                 },
                 {
                   q: "Can AI enhance very old photos from the 1800s?",

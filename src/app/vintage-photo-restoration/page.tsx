@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -90,7 +90,7 @@ const faqSchema = {
     { "@type": "Question", name: "Will AI restoration remove the vintage look?", acceptedAnswer: { "@type": "Answer", text: "No — our AI preserves the authentic vintage character by default. It repairs damage without removing the natural aging that gives vintage photos their charm. You can optionally colorize, but the sepia/B&W aesthetic is preserved unless you choose otherwise." } },
     { "@type": "Question", name: "How should I scan vintage photos for best results?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum (1200 DPI for small prints). Use a flatbed scanner, not a phone camera. Save as PNG or TIFF to avoid compression artifacts. Clean the scanner glass and handle photos with cotton gloves." } },
     { "@type": "Question", name: "Can AI restore photos on old photo paper that's deteriorating?", acceptedAnswer: { "@type": "Answer", text: "AI restoration works on the digital scan, not the physical photo. The digital restoration can remove signs of paper deterioration (yellowing, foxing, silvering) from the image. For physical preservation, consult an archivist." } },
-    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($29.9 one-time) gives unlimited restorations at full resolution." } },
+    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution." } },
   ],
 };
 
@@ -318,7 +318,7 @@ export default function VintagePhotoRestorationPage() {
               },
               {
                 q: "Is vintage photo restoration free?",
-                a: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($29.9 one-time) gives unlimited restorations at full resolution.",
+                a: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

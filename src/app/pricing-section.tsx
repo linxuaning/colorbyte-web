@@ -90,8 +90,8 @@ export default function PricingSection() {
 
             <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
             <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$29.9</span>
-              <span className="text-[24px] font-medium tracking-[-0.02em] text-white/40 line-through">$49.9</span>
+              <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$4.99</span>
+              <span className="text-[24px] font-medium tracking-[-0.02em] text-white/40 line-through">$9.99</span>
             </div>
             <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
 
@@ -154,8 +154,8 @@ export default function PricingSection() {
             </div>
             <div className="bg-gradient-to-br from-[#0071e3]/5 to-green-50 rounded-lg p-4 border border-[#0071e3]/20">
               <p className="font-semibold text-[#0071e3] mb-2">ArtImageHub (One-Time)</p>
-              <p className="text-[#1d1d1f] font-bold">$29.9 once</p>
-              <p className="text-green-600 font-bold mt-1">= $29.9 forever ✓</p>
+              <p className="text-[#1d1d1f] font-bold">$4.99 once</p>
+              <p className="text-green-600 font-bold mt-1">= $4.99 forever ✓</p>
               <p className="text-green-600 font-bold mt-1">Save $569.50 over 5 years!</p>
             </div>
           </div>

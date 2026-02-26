@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Is the AI photo upscaler free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free upscales per day with no account required. Free downloads are 720p resolution. For unlimited upscaling at full 4x resolution output, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free upscales per day with no account required. Free downloads are 720p resolution. For unlimited upscaling at full 4x resolution output, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -403,7 +403,7 @@ export default function AIPhotoUpscalerPage() {
                 },
                 {
                   q: "Is the AI photo upscaler free?",
-                  a: "Yes, 3 free upscales per day with no account. Free downloads are 720p. Pro Lifetime ($29.9 one-time) offers unlimited upscaling at full 4x resolution.",
+                  a: "Yes, 3 free upscales per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited upscaling at full 4x resolution.",
                 },
                 {
                   q: "How much can AI upscale my photo?",

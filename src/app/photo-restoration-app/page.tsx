@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is the best photo restoration app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $29.9 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $4.99 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Are photo restoration apps free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$29.9/month (subscription) or $29.9 one-time (ArtImageHub).",
+        text: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$4.99/month (subscription) or $4.99 one-time (ArtImageHub).",
       },
     },
     {
@@ -95,7 +95,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $29.9"
+    description: "3 free restorations, Pro Lifetime $4.99"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -159,7 +159,7 @@ export default function PhotoRestorationAppPage() {
                   </td>
                   <td className="py-5 px-5 text-[14px] text-[#6b5344]">Web + Mobile</td>
                   <td className="py-5 px-5">
-                    <div className="font-semibold text-[#2c2416]">$29.9 once</div>
+                    <div className="font-semibold text-[#2c2416]">$4.99 once</div>
                     <div className="text-[13px] text-[#6b5344]">Lifetime access</div>
                   </td>
                   <td className="py-5 px-5 text-[14px] text-[#6b5344]">3 photos free</td>
@@ -296,7 +296,7 @@ export default function PhotoRestorationAppPage() {
                   <ul className="space-y-2 text-[15px] text-[#6b5344] font-lora">
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>One-time payment $29.9 (vs $120/year subscriptions)</span>
+                      <span>One-time payment $4.99 (vs $120/year subscriptions)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
@@ -488,11 +488,11 @@ export default function PhotoRestorationAppPage() {
             {[
               {
                 q: "What is the best photo restoration app?",
-                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $29.9 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $4.99 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
               },
               {
                 q: "Are photo restoration apps free?",
-                a: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$29.9/month (subscription) or $29.9 one-time (ArtImageHub).",
+                a: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$4.99/month (subscription) or $4.99 one-time (ArtImageHub).",
               },
               {
                 q: "Can I restore photos on my phone?",

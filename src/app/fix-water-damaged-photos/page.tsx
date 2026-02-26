@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Is water damage photo repair free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free water damage repairs per day with no account required. Free downloads are 720p resolution. For unlimited repairs at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free water damage repairs per day with no account required. Free downloads are 720p resolution. For unlimited repairs at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -378,7 +378,7 @@ export default function FixWaterDamagedPhotosPage() {
                 },
                 {
                   q: "Is water damage photo repair free?",
-                  a: "Yes, 3 free repairs per day with no account. Free downloads are 720p. Pro Lifetime ($29.9 one-time) offers unlimited repairs at original resolution.",
+                  a: "Yes, 3 free repairs per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited repairs at original resolution.",
                 },
                 {
                   q: "What types of water damage can AI fix?",

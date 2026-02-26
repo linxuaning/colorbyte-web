@@ -161,8 +161,8 @@ export default function SubscriptionPage() {
 
               <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
               <div className="mt-2 flex items-baseline gap-2">
-                <span className="text-[32px] font-bold tracking-[-0.04em] text-white">$29.9</span>
-                <span className="text-[20px] font-medium tracking-[-0.02em] text-white/40 line-through">$49.9</span>
+                <span className="text-[32px] font-bold tracking-[-0.04em] text-white">$4.99</span>
+                <span className="text-[20px] font-medium tracking-[-0.02em] text-white/40 line-through">$9.99</span>
               </div>
               <p className="mt-1 text-[12px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
 
@@ -286,7 +286,7 @@ export default function SubscriptionPage() {
                   <strong>Next billing date:</strong> {formatDate(sub.current_period_end)}
                 </p>
                 <p className="text-sm">
-                  <strong>Plan:</strong> Pro Lifetime ($29.9 one-time payment)
+                  <strong>Plan:</strong> Pro Lifetime ($4.99 one-time payment)
                 </p>
               </div>
             )}

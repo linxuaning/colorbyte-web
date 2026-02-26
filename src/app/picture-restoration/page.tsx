@@ -4,7 +4,7 @@ import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
   title: 'Picture Restoration | Restore Old Pictures with AI in 30 Seconds',
-  description: 'Restore old pictures automatically with AI. Fix damaged family pictures, enhance faded memories, repair torn photos. Try 3 pictures free, no signup. $29.9 lifetime.',
+  description: 'Restore old pictures automatically with AI. Fix damaged family pictures, enhance faded memories, repair torn photos. Try 3 pictures free, no signup. $4.99 lifetime.',
   keywords: [
     'picture restoration',
     'restore old pictures',
@@ -67,12 +67,12 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "How do I restore old pictures?", acceptedAnswer: { "@type": "Answer", text: "Upload your picture to ArtImageHub's AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30 seconds. Download the restored picture — no editing skills required." } },
     { "@type": "Question", name: "Can AI restore badly damaged pictures?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI picture restoration works on: scratched pictures, torn or ripped pictures, water-damaged pictures, faded color pictures, blurry pictures, fire/smoke damaged pictures. Best results on pictures with 10-80% damage. Very heavily damaged pictures (>80%) may need manual artist restoration." } },
-    { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub: Try 3 pictures free, then $29.9 one-time for unlimited lifetime restoration. Traditional restoration services: $50-150 per picture. We're 95% cheaper than traditional picture restoration shops." } },
+    { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub: Try 3 pictures free, then $4.99 one-time for unlimited lifetime restoration. Traditional restoration services: $50-150 per picture. We're 95% cheaper than traditional picture restoration shops." } },
     { "@type": "Question", name: "What's the difference between photo and picture restoration?", acceptedAnswer: { "@type": "Answer", text: "No technical difference — 'photo restoration' and 'picture restoration' mean the same thing. Some people search 'photo', others search 'picture'. ArtImageHub restores both equally well using the same AI technology." } },
     { "@type": "Question", name: "How long does picture restoration take?", acceptedAnswer: { "@type": "Answer", text: "AI picture restoration takes 15-30 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
     { "@type": "Question", name: "Can I restore family pictures for free?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 completely free picture restorations. No signup, no credit card, no hidden fees. Perfect for testing quality on your most important family pictures before deciding to upgrade." } },
     { "@type": "Question", name: "What types of pictures can AI restore?", acceptedAnswer: { "@type": "Answer", text: "AI restores: family pictures (portraits, group photos), vintage pictures (1800s-1990s), black & white pictures, color pictures, Polaroid pictures, scanned pictures, damaged pictures (scratches, tears, fading), blurry pictures. Works on any picture type." } },
-    { "@type": "Question", name: "Is picture restoration worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, especially for irreplaceable family memories. At $29.9 lifetime unlimited (vs $50-150 per picture traditionally), you can restore hundreds of family pictures for less than the cost of one traditional restoration. Preserving memories = priceless." } },
+    { "@type": "Question", name: "Is picture restoration worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, especially for irreplaceable family memories. At $4.99 lifetime unlimited (vs $50-150 per picture traditionally), you can restore hundreds of family pictures for less than the cost of one traditional restoration. Preserving memories = priceless." } },
   ],
 };
 
@@ -174,7 +174,7 @@ export default function PictureRestorationPage() {
               <svg className="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">$29.9 lifetime unlimited</span>
+              <span className="font-medium">$4.99 lifetime unlimited</span>
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@ export default function PictureRestorationPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Download Restored Picture</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  Preview before/after. Download your restored picture instantly. Share with family, print for framing, or save digitally. Try 3 pictures free — if you love the results, $29.9 gives lifetime unlimited restoration.
+                  Preview before/after. Download your restored picture instantly. Share with family, print for framing, or save digitally. Try 3 pictures free — if you love the results, $4.99 gives lifetime unlimited restoration.
                 </p>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function PictureRestorationPage() {
               <div className="text-slate-700">Pictures to try before buying</div>
             </div>
             <div>
-              <div className="text-4xl font-black text-amber-600 mb-2">$29.9</div>
+              <div className="text-4xl font-black text-amber-600 mb-2">$4.99</div>
               <div className="text-slate-700">One-time for unlimited lifetime</div>
             </div>
           </div>
@@ -431,7 +431,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                ArtImageHub: Try 3 pictures free, then $29.9 one-time for unlimited lifetime restoration. Traditional restoration services: $50-150 per picture. We're 95% cheaper than traditional picture restoration shops.
+                ArtImageHub: Try 3 pictures free, then $4.99 one-time for unlimited lifetime restoration. Traditional restoration services: $50-150 per picture. We're 95% cheaper than traditional picture restoration shops.
               </p>
             </details>
 
@@ -481,7 +481,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Yes, especially for irreplaceable family memories. At $29.9 lifetime unlimited (vs $50-150 per picture traditionally), you can restore hundreds of family pictures for less than the cost of one traditional restoration. Preserving memories = priceless.
+                Yes, especially for irreplaceable family memories. At $4.99 lifetime unlimited (vs $50-150 per picture traditionally), you can restore hundreds of family pictures for less than the cost of one traditional restoration. Preserving memories = priceless.
               </p>
             </details>
           </div>
@@ -545,7 +545,7 @@ export default function PictureRestorationPage() {
               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>$29.9 lifetime unlimited</span>
+              <span>$4.99 lifetime unlimited</span>
             </div>
           </div>
         </div>

@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is it really free to restore family photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free family photo restorations per day with no account required. Free downloads are 720p resolution. For unlimited restorations at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free family photo restorations per day with no account required. Free downloads are 720p resolution. For unlimited restorations at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -353,7 +353,7 @@ export default function RestoreOldFamilyPhotosPage() {
                 },
                 {
                   q: "Is it really free to restore family photos?",
-                  a: "Yes, 3 free restorations per day with no account. Free downloads are 720p. Pro Lifetime ($29.9 one-time) offers unlimited restorations at original resolution.",
+                  a: "Yes, 3 free restorations per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited restorations at original resolution.",
                 },
                 {
                   q: "Will restoration change how my family members look?",

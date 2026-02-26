@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo unblur tool free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. For unlimited unblurring at original resolution, Pro Lifetime costs $29.9 one-time (not a subscription).",
+        text: "Yes, ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. For unlimited unblurring at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
       },
     },
     {
@@ -424,7 +424,7 @@ export default function UnblurPhotoPage() {
                 },
                 {
                   q: "Is the photo unblur tool free?",
-                  a: "Yes! ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. Pro Lifetime ($29.9 one-time) offers unlimited unblurring at original resolution.",
+                  a: "Yes! ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. Pro Lifetime ($4.99 one-time) offers unlimited unblurring at original resolution.",
                 },
                 {
                   q: "What types of blur can AI fix?",

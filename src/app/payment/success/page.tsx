@@ -69,7 +69,7 @@ function PaymentSuccessContent() {
                 </div>
                 <div className="flex justify-between text-[13px]">
                   <span className="text-[#6e6e73]">Amount:</span>
-                  <span className="font-medium text-[#1d1d1f]">$29.90</span>
+                  <span className="font-medium text-[#1d1d1f]">$4.990</span>
                 </div>
               </div>
             </div>
