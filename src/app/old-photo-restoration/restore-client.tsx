@@ -68,13 +68,25 @@ export default function RestoreClient() {
       .catch(() => {});
   }, []);
 
+  // Handle click on upload area - check payment first
+  const handleUploadClick = useCallback(() => {
+    console.log("🔍 Upload area clicked, isSubscriber:", isSubscriber);
+    if (!isSubscriber) {
+      console.log("❌ Not subscribed, showing payment modal");
+      setShowLimitModal(true);
+      return;
+    }
+    console.log("✅ Opening file selector");
+    fileInputRef.current?.click();
+  }, [isSubscriber]);
+
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
       // 🚨 CRITICAL: Check if user has paid before allowing upload
-      console.log("🔍 Payment check:", { isSubscriber });
+      console.log("🔍 Payment check in handleFile:", { isSubscriber });
       if (!isSubscriber) {
-        console.log("❌ Not subscribed, showing payment modal");
+        console.log("❌ Not subscribed in handleFile, showing payment modal");
         setShowLimitModal(true);
         return;
       }
@@ -241,15 +253,7 @@ export default function RestoreClient() {
         <div
           onDragOver={(e) => e.preventDefault()}
           onDrop={onDrop}
-          onClick={() => {
-            // 🚨 Check payment before allowing file selection
-            if (!isSubscriber) {
-              console.log("❌ Click blocked: Not subscribed");
-              setShowLimitModal(true);
-              return;
-            }
-            fileInputRef.current?.click();
-          }}
+          onClick={handleUploadClick}
           className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
         >
           {/* Upload icon */}
@@ -269,13 +273,7 @@ export default function RestoreClient() {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              // 🚨 Check payment before allowing file selection
-              if (!isSubscriber) {
-                console.log("❌ Button blocked: Not subscribed");
-                setShowLimitModal(true);
-                return;
-              }
-              fileInputRef.current?.click();
+              handleUploadClick();
             }}
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
