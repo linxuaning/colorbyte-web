@@ -41,7 +41,6 @@ export default function RestoreClient() {
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [remaining, setRemaining] = useState(3);
   const [limitReached, setLimitReached] = useState(false);
-  const [showLimitModal, setShowLimitModal] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Check subscription status and download limit on mount
@@ -72,18 +71,14 @@ export default function RestoreClient() {
   const handleUploadClick = useCallback(() => {
     console.log("🔍 Upload area clicked, isSubscriber:", isSubscriber);
     if (!isSubscriber) {
-      console.log("❌ Not subscribed, showing payment modal");
-      console.log("Before setShowLimitModal, current value:", showLimitModal);
-      setShowLimitModal(true);
-      // 强制确认modal会显示
-      setTimeout(() => {
-        console.log("After setShowLimitModal, current value:", showLimitModal);
-      }, 100);
+      console.log("❌ Not subscribed, redirecting to payment page");
+      // Direct redirect - bypasses modal issues
+      window.location.href = '/subscription';
       return;
     }
     console.log("✅ Opening file selector");
     fileInputRef.current?.click();
-  }, [isSubscriber, showLimitModal]);
+  }, [isSubscriber]);
 
   // --- Upload ---
   const handleFile = useCallback(
@@ -91,8 +86,8 @@ export default function RestoreClient() {
       // 🚨 CRITICAL: Check if user has paid before allowing upload
       console.log("🔍 Payment check in handleFile:", { isSubscriber });
       if (!isSubscriber) {
-        console.log("❌ Not subscribed in handleFile, showing payment modal");
-        setShowLimitModal(true);
+        console.log("❌ Not subscribed in handleFile, redirecting to payment");
+        window.location.href = '/subscription';
         return;
       }
       console.log("✅ Subscribed, processing upload");
@@ -220,8 +215,8 @@ export default function RestoreClient() {
       e.preventDefault();
       // 🚨 Check payment before allowing file drop
       if (!isSubscriber) {
-        console.log("❌ Drop blocked: Not subscribed");
-        setShowLimitModal(true);
+        console.log("❌ Drop blocked: Not subscribed, redirecting");
+        window.location.href = '/subscription';
         return;
       }
       const file = e.dataTransfer.files[0];
@@ -251,46 +246,8 @@ export default function RestoreClient() {
     setOriginalUrl(null);
   };
 
-  // 🔍 诊断：在每次渲染时打印状态
-  console.log("🔍 RestoreClient render - isSubscriber:", isSubscriber, "showLimitModal:", showLimitModal);
-
   return (
     <div className="mt-10">
-      {/* 🔍 诊断信息面板 */}
-      <div style={{
-        position: 'fixed',
-        top: '10px',
-        right: '10px',
-        background: 'black',
-        color: 'white',
-        padding: '15px',
-        borderRadius: '10px',
-        zIndex: 999999,
-        fontSize: '12px',
-        fontFamily: 'monospace'
-      }}>
-        <div>isSubscriber: {isSubscriber ? '✅ true' : '❌ false'}</div>
-        <div>showLimitModal: {showLimitModal ? '✅ true' : '❌ false'}</div>
-        <button
-          onClick={() => {
-            console.log("🔘 Test button clicked!");
-            setShowLimitModal(true);
-          }}
-          style={{
-            marginTop: '10px',
-            background: '#0071e3',
-            color: 'white',
-            border: 'none',
-            padding: '8px 15px',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            width: '100%'
-          }}
-        >
-          强制显示 Modal
-        </button>
-      </div>
-
       {/* --- IDLE: Upload area --- */}
       {stage === "idle" && (
         <div
@@ -501,75 +458,6 @@ export default function RestoreClient() {
               </p>
             )}
           </div>
-
-          {/* Limit Reached Modal - 强制测试版本 */}
-          {(() => {
-            console.log("🔍 Modal render check - showLimitModal:", showLimitModal);
-            return showLimitModal;
-          })() && (
-            <div
-              style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundColor: 'rgba(0,0,0,0.8)',
-                zIndex: 99999,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-              onClick={() => setShowLimitModal(false)}
-            >
-              <div
-                style={{
-                  backgroundColor: 'white',
-                  padding: '40px',
-                  borderRadius: '20px',
-                  maxWidth: '500px',
-                  textAlign: 'center'
-                }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <h2 style={{ fontSize: '24px', marginBottom: '20px', color: '#000' }}>
-                  🎯 支付弹窗测试
-                </h2>
-                <p style={{ fontSize: '16px', marginBottom: '30px', color: '#666' }}>
-                  如果你看到这个，说明Modal可以显示！
-                </p>
-                <button
-                  onClick={() => window.location.href = "/subscription"}
-                  style={{
-                    backgroundColor: '#0071e3',
-                    color: 'white',
-                    padding: '15px 30px',
-                    borderRadius: '10px',
-                    border: 'none',
-                    fontSize: '16px',
-                    cursor: 'pointer',
-                    marginRight: '10px'
-                  }}
-                >
-                  去支付 $4.99
-                </button>
-                <button
-                  onClick={() => setShowLimitModal(false)}
-                  style={{
-                    backgroundColor: '#ccc',
-                    color: '#333',
-                    padding: '15px 30px',
-                    borderRadius: '10px',
-                    border: 'none',
-                    fontSize: '16px',
-                    cursor: 'pointer'
-                  }}
-                >
-                  关闭
-                </button>
-              </div>
-            </div>
-          )}
 
           <div className="flex justify-center">
             <button
