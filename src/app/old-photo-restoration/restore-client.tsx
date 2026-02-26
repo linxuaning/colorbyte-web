@@ -464,15 +464,70 @@ export default function RestoreClient() {
             )}
           </div>
 
-          {/* Limit Reached Modal */}
+          {/* Limit Reached Modal - 强制测试版本 */}
           {showLimitModal && (
-            <LimitReachedModal
-              onClose={() => setShowLimitModal(false)}
-              onStartTrial={() => {
-                setShowLimitModal(false);
-                window.location.href = "/subscription";
+            <div
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: 'rgba(0,0,0,0.8)',
+                zIndex: 99999,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
               }}
-            />
+              onClick={() => setShowLimitModal(false)}
+            >
+              <div
+                style={{
+                  backgroundColor: 'white',
+                  padding: '40px',
+                  borderRadius: '20px',
+                  maxWidth: '500px',
+                  textAlign: 'center'
+                }}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <h2 style={{ fontSize: '24px', marginBottom: '20px', color: '#000' }}>
+                  🎯 支付弹窗测试
+                </h2>
+                <p style={{ fontSize: '16px', marginBottom: '30px', color: '#666' }}>
+                  如果你看到这个，说明Modal可以显示！
+                </p>
+                <button
+                  onClick={() => window.location.href = "/subscription"}
+                  style={{
+                    backgroundColor: '#0071e3',
+                    color: 'white',
+                    padding: '15px 30px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    fontSize: '16px',
+                    cursor: 'pointer',
+                    marginRight: '10px'
+                  }}
+                >
+                  去支付 $4.99
+                </button>
+                <button
+                  onClick={() => setShowLimitModal(false)}
+                  style={{
+                    backgroundColor: '#ccc',
+                    color: '#333',
+                    padding: '15px 30px',
+                    borderRadius: '10px',
+                    border: 'none',
+                    fontSize: '16px',
+                    cursor: 'pointer'
+                  }}
+                >
+                  关闭
+                </button>
+              </div>
+            </div>
           )}
 
           <div className="flex justify-center">
