@@ -70,17 +70,20 @@ export default function RestoreClient() {
 
   // Handle click on upload area - check payment first
   const handleUploadClick = useCallback(() => {
-    // 强制测试 - 确保点击事件触发
-    alert("点击触发了！isSubscriber=" + isSubscriber);
     console.log("🔍 Upload area clicked, isSubscriber:", isSubscriber);
     if (!isSubscriber) {
       console.log("❌ Not subscribed, showing payment modal");
+      console.log("Before setShowLimitModal, current value:", showLimitModal);
       setShowLimitModal(true);
+      // 强制确认modal会显示
+      setTimeout(() => {
+        console.log("After setShowLimitModal, current value:", showLimitModal);
+      }, 100);
       return;
     }
     console.log("✅ Opening file selector");
     fileInputRef.current?.click();
-  }, [isSubscriber]);
+  }, [isSubscriber, showLimitModal]);
 
   // --- Upload ---
   const handleFile = useCallback(
