@@ -251,8 +251,46 @@ export default function RestoreClient() {
     setOriginalUrl(null);
   };
 
+  // 🔍 诊断：在每次渲染时打印状态
+  console.log("🔍 RestoreClient render - isSubscriber:", isSubscriber, "showLimitModal:", showLimitModal);
+
   return (
     <div className="mt-10">
+      {/* 🔍 诊断信息面板 */}
+      <div style={{
+        position: 'fixed',
+        top: '10px',
+        right: '10px',
+        background: 'black',
+        color: 'white',
+        padding: '15px',
+        borderRadius: '10px',
+        zIndex: 999999,
+        fontSize: '12px',
+        fontFamily: 'monospace'
+      }}>
+        <div>isSubscriber: {isSubscriber ? '✅ true' : '❌ false'}</div>
+        <div>showLimitModal: {showLimitModal ? '✅ true' : '❌ false'}</div>
+        <button
+          onClick={() => {
+            console.log("🔘 Test button clicked!");
+            setShowLimitModal(true);
+          }}
+          style={{
+            marginTop: '10px',
+            background: '#0071e3',
+            color: 'white',
+            border: 'none',
+            padding: '8px 15px',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            width: '100%'
+          }}
+        >
+          强制显示 Modal
+        </button>
+      </div>
+
       {/* --- IDLE: Upload area --- */}
       {stage === "idle" && (
         <div
@@ -465,7 +503,10 @@ export default function RestoreClient() {
           </div>
 
           {/* Limit Reached Modal - 强制测试版本 */}
-          {showLimitModal && (
+          {(() => {
+            console.log("🔍 Modal render check - showLimitModal:", showLimitModal);
+            return showLimitModal;
+          })() && (
             <div
               style={{
                 position: 'fixed',
