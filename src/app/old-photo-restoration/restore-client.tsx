@@ -70,6 +70,8 @@ export default function RestoreClient() {
 
   // Handle click on upload area - check payment first
   const handleUploadClick = useCallback(() => {
+    // 强制测试 - 确保点击事件触发
+    alert("点击触发了！isSubscriber=" + isSubscriber);
     console.log("🔍 Upload area clicked, isSubscriber:", isSubscriber);
     if (!isSubscriber) {
       console.log("❌ Not subscribed, showing payment modal");
