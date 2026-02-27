@@ -412,14 +412,14 @@ export default function RestoreClient() {
                   </a>
                 ) : (
                   <button
-                    onClick={() => setShowLimitModal(true)}
-                    className="flex w-full cursor-not-allowed flex-col items-center gap-1 rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/60 px-6 py-3.5 text-[14px] font-medium text-[#6e6e73]"
+                    onClick={() => window.location.href = '/subscription'}
+                    className="flex w-full cursor-pointer flex-col items-center gap-1 rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/60 px-6 py-3.5 text-[14px] font-medium text-[#6e6e73] hover:border-[#0071e3]/40 transition-colors"
                   >
                     <span className="flex items-center gap-2">
                       <XCircle className="h-4 w-4" />
                       Daily Limit Reached (0/3)
                     </span>
-                    <span className="text-[11px]">Resets at midnight UTC</span>
+                    <span className="text-[11px]">Upgrade to Pro for unlimited downloads</span>
                   </button>
                 )}
 
