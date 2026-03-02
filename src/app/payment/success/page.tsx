@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 function PaymentSuccessContent() {
+  const PRO_PRICE_TEXT = "$29.90";
   const searchParams = useSearchParams();
   const [email, setEmail] = useState<string | null>(null);
   const [orderId, setOrderId] = useState<string | null>(null);
@@ -75,7 +76,7 @@ function PaymentSuccessContent() {
                 </div>
                 <div className="flex justify-between text-[13px]">
                   <span className="text-[#6e6e73]">Amount:</span>
-                  <span className="font-medium text-[#1d1d1f]">$4.99</span>
+                  <span className="font-medium text-[#1d1d1f]">{PRO_PRICE_TEXT}</span>
                 </div>
               </div>
             </div>

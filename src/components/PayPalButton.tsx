@@ -4,17 +4,41 @@ import { useEffect, useState } from "react";
 import { trackPaymentClick, trackPaymentSuccess } from "@/lib/analytics";
 
 declare global {
+  interface PayPalApproveData {
+    orderID: string;
+  }
+
+  interface PayPalButtonsConfig {
+    createOrder: () => Promise<string>;
+    onApprove: (data: PayPalApproveData) => Promise<void>;
+    onError: (error: unknown) => void;
+    style: {
+      color: string;
+      shape: string;
+      label: string;
+      height: number;
+    };
+  }
+
+  interface PayPalNamespace {
+    Buttons: (
+      config: PayPalButtonsConfig,
+    ) => { render: (selector: string) => Promise<void> | void };
+  }
+
   interface Window {
-    paypal?: any;
+    paypal?: PayPalNamespace;
   }
 }
 
-const PAYPAL_CLIENT_ID =
-  "AUvrJOLI-3fFmi6NqnpLfrYMatI8Soq0INYBgrNZgf33CwWFooIuXKYFla781UexEYaOfbqBkRpkiaEr";
+const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+const API_BASE = process.env.NEXT_PUBLIC_API_URL;
+const PRO_PRICE_USD = 29.9;
+const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
 
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
-  onError?: (error: any) => void;
+  onError?: (error: unknown) => void;
 }
 
 export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) {
@@ -22,6 +46,16 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!API_BASE) {
+      setError("API is not configured");
+      return;
+    }
+
+    if (!PAYPAL_CLIENT_ID) {
+      setError("PayPal is not configured");
+      return;
+    }
+
     // Load PayPal SDK
     if (window.paypal) {
       setLoaded(true);
@@ -55,20 +89,20 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
         createOrder: async () => {
           try {
             // Track payment button click
-            trackPaymentClick('Pro Lifetime - $4.99');
+            trackPaymentClick(PRO_PLAN_LABEL);
 
-            const response = await fetch(
-              "https://colorbyte-api.onrender.com/api/payment/paypal-create-order",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  email: "user@example.com", // Will be updated to collect email
-                }),
-              }
-            );
+            const checkoutEmail =
+              localStorage.getItem("artimagehub_email") || "user@example.com";
+
+            const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: checkoutEmail,
+              }),
+            });
 
             if (!response.ok) {
               throw new Error("Failed to create order");
@@ -83,20 +117,17 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             throw err;
           }
         },
-        onApprove: async (data: any) => {
+        onApprove: async (data: PayPalApproveData) => {
           try {
-            const response = await fetch(
-              "https://colorbyte-api.onrender.com/api/payment/paypal-capture-payment",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  order_id: data.orderID,
-                }),
-              }
-            );
+            const response = await fetch(`${API_BASE}/api/payment/paypal-capture-payment`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                order_id: data.orderID,
+              }),
+            });
 
             if (!response.ok) {
               throw new Error("Failed to capture payment");
@@ -106,7 +137,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
 
             if (result.success) {
               // Track successful payment
-              trackPaymentSuccess(4.99);
+              trackPaymentSuccess(PRO_PRICE_USD);
 
               if (onSuccess) {
                 onSuccess(data.orderID);
@@ -123,7 +154,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             if (onError) onError(err);
           }
         },
-        onError: (err: any) => {
+        onError: (err: unknown) => {
           console.error("PayPal error:", err);
           setError("Payment failed");
           if (onError) onError(err);

@@ -6,6 +6,7 @@ import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucid
 import PayPalButton from "@/components/PayPalButton";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const PRO_PRICE_TEXT = "$29.90";
 
 interface SubscriptionData {
   email: string;
@@ -138,8 +139,7 @@ export default function SubscriptionPage() {
 
               <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
               <div className="mt-2 flex items-baseline gap-2">
-                <span className="text-[32px] font-bold tracking-[-0.04em] text-white">$4.99</span>
-                <span className="text-[20px] font-medium tracking-[-0.02em] text-white/40 line-through">$9.99</span>
+                <span className="text-[32px] font-bold tracking-[-0.04em] text-white">{PRO_PRICE_TEXT}</span>
               </div>
               <p className="mt-1 text-[12px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
 
@@ -165,7 +165,7 @@ export default function SubscriptionPage() {
           </div>
 
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-            One-time payment · No subscription · Secure payment via PayPal
+            One-time payment ({PRO_PRICE_TEXT}) · No subscription · Secure payment via PayPal
           </p>
 
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">

@@ -17,6 +17,7 @@ import {
 import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const PRO_PRICE_TEXT = "$29.90";
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -155,7 +156,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [colorize],
+    [colorize, isSubscriber],
   );
 
   // --- Poll task status ---
@@ -439,14 +440,14 @@ export default function RestoreClient() {
                       ? "Get Pro Lifetime — Unlimited Forever"
                       : remaining <= 1
                       ? "Unlock Unlimited — Save $5 Today"
-                      : "Get Pro Lifetime — $4.99 Once"}
+                      : `Get Pro Lifetime — ${PRO_PRICE_TEXT} Once`}
                   </span>
                   <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
                     {remaining === 0
-                      ? "No watermark  ·  Original quality  ·  $4.99 once"
+                      ? `No watermark  ·  Original quality  ·  ${PRO_PRICE_TEXT} once`
                       : remaining === 1
                       ? "Last free download used · Upgrade for unlimited"
-                      : "Original quality · No watermark · Pay once, use forever"}
+                      : `Original quality · No watermark · ${PRO_PRICE_TEXT} once`}
                   </span>
                 </Link>
               </div>
@@ -454,7 +455,7 @@ export default function RestoreClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                $4.99 one-time payment. No subscription, unlimited forever.
+                {PRO_PRICE_TEXT} one-time payment. No subscription, unlimited forever.
               </p>
             )}
           </div>
