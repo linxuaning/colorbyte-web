@@ -35,6 +35,7 @@ const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 const API_BASE = process.env.NEXT_PUBLIC_API_URL;
 const PRO_PRICE_USD = 29.9;
 const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
@@ -91,8 +92,10 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             // Track payment button click
             trackPaymentClick(PRO_PLAN_LABEL);
 
-            const checkoutEmail =
-              localStorage.getItem("artimagehub_email") || "user@example.com";
+            const checkoutEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase();
+            if (!checkoutEmail || !EMAIL_REGEX.test(checkoutEmail)) {
+              throw new Error("Email is required before checkout");
+            }
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
               method: "POST",
@@ -112,7 +115,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             return data.order_id;
           } catch (err) {
             console.error("Create order error:", err);
-            setError("Failed to create order");
+            setError(err instanceof Error ? err.message : "Failed to create order");
             if (onError) onError(err);
             throw err;
           }
