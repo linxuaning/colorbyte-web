@@ -14,10 +14,18 @@ import {
   XCircle,
   Check,
 } from "lucide-react";
-import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
+import {
+  trackPhotoUpload,
+  trackPhotoDownload,
+  trackCTAClick,
+  trackPaymentEmailEntry,
+} from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const PRO_PRICE_TEXT = "$4.99";
+const EMAIL_PAYMENT_ENTRY_ENABLED =
+  process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -42,6 +50,8 @@ export default function RestoreClient() {
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [remaining, setRemaining] = useState(3);
   const [limitReached, setLimitReached] = useState(false);
+  const [emailEntry, setEmailEntry] = useState("");
+  const [emailEntryHint, setEmailEntryHint] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Check subscription status and download limit on mount
@@ -245,6 +255,27 @@ export default function RestoreClient() {
     setErrorMsg("");
     setResultUrl(null);
     setOriginalUrl(null);
+    setEmailEntry("");
+    setEmailEntryHint("");
+  };
+
+  const handleSendPaymentLinkEmail = () => {
+    const fallbackEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+    const targetEmail = (emailEntry || fallbackEmail).trim().toLowerCase();
+    if (!EMAIL_REGEX.test(targetEmail)) {
+      setEmailEntryHint("Enter a valid email first.");
+      return;
+    }
+
+    localStorage.setItem("artimagehub_email", targetEmail);
+    const paymentUrl = `${window.location.origin}/subscription?email=${encodeURIComponent(targetEmail)}`;
+    const subject = encodeURIComponent("Your ColorByte payment link");
+    const body = encodeURIComponent(
+      `Your photo is ready.\n\nUpgrade to Pro Lifetime (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal payment link for original-quality download.\n`
+    );
+    trackPaymentEmailEntry("restore_done", "manual");
+    setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
+    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -454,9 +485,37 @@ export default function RestoreClient() {
             )}
 
             {!isSubscriber && (
-              <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                {PRO_PRICE_TEXT} one-time payment. No subscription, unlimited forever.
-              </p>
+              <div className="mt-4 space-y-3">
+                <p className="text-center text-[12px] text-[#6e6e73]">
+                  {PRO_PRICE_TEXT} one-time payment. No subscription, unlimited forever.
+                </p>
+                {EMAIL_PAYMENT_ENTRY_ENABLED && (
+                  <div className="rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
+                    <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
+                      Email me the payment link
+                    </p>
+                    <div className="mt-2 flex gap-2">
+                      <input
+                        type="email"
+                        value={emailEntry}
+                        onChange={(e) => setEmailEntry(e.target.value)}
+                        placeholder="you@example.com"
+                        className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                      />
+                      <button
+                        type="button"
+                        onClick={handleSendPaymentLinkEmail}
+                        className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f]"
+                      >
+                        Send
+                      </button>
+                    </div>
+                    <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
+                      {emailEntryHint || "Opens your mail app with the payment link prefilled."}
+                    </p>
+                  </div>
+                )}
+              </div>
             )}
           </div>
 

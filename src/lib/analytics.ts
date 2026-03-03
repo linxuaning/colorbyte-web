@@ -104,6 +104,10 @@ export const trackPaymentCancel = (source: string) => {
   trackPaymentFunnelEvent('payment_cancel', { source });
 };
 
+export const trackPaymentEmailEntry = (source: string, mode: 'manual' | 'auto' = 'manual') => {
+  trackPaymentFunnelEvent('payment_email_entry', { source, mode });
+};
+
 export const trackPaymentSuccess = (amount: number, transactionId?: string) => {
   event({
     action: 'purchase',
