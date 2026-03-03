@@ -4,9 +4,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucide-react";
 import PayPalButton from "@/components/PayPalButton";
+import { trackPaymentEmailEntry } from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const PRO_PRICE_TEXT = "$4.99";
+const EMAIL_PAYMENT_ENTRY_ENABLED =
+  process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 interface SubscriptionData {
   email: string;
@@ -24,6 +28,7 @@ export default function SubscriptionPage() {
   const [canceling, setCanceling] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
+  const [emailEntryHint, setEmailEntryHint] = useState("");
 
   // Pre-fill email from localStorage
   useEffect(() => {
@@ -111,6 +116,24 @@ export default function SubscriptionPage() {
     });
   };
 
+  const handleSendPaymentLinkEmail = () => {
+    const targetEmail = email.trim().toLowerCase();
+    if (!EMAIL_REGEX.test(targetEmail)) {
+      setEmailEntryHint("Enter a valid email first.");
+      return;
+    }
+
+    localStorage.setItem("artimagehub_email", targetEmail);
+    const paymentUrl = `${window.location.origin}/subscription?email=${encodeURIComponent(targetEmail)}`;
+    const subject = encodeURIComponent("Your ColorByte payment link");
+    const body = encodeURIComponent(
+      `Use this payment link to unlock Pro Lifetime (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
+    );
+    trackPaymentEmailEntry("subscription_page", "manual");
+    setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
+    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
       {/* Pro Lifetime Offer - Show before subscription check */}
@@ -167,6 +190,33 @@ export default function SubscriptionPage() {
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
             One-time payment ({PRO_PRICE_TEXT}) · No subscription · Secure payment via PayPal
           </p>
+
+          {EMAIL_PAYMENT_ENTRY_ENABLED && (
+            <div className="mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
+              <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
+                Email me the payment link
+              </p>
+              <div className="mt-2 flex gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="you@example.com"
+                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                />
+                <button
+                  type="button"
+                  onClick={handleSendPaymentLinkEmail}
+                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f]"
+                >
+                  Send
+                </button>
+              </div>
+              <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
+                {emailEntryHint || "Opens your mail app with the payment link prefilled."}
+              </p>
+            </div>
+          )}
 
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-3">
