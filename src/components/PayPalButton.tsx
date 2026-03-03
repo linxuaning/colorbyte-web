@@ -31,7 +31,9 @@ declare global {
   }
 }
 
-const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
+const PAYPAL_CLIENT_ID =
+  process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ||
+  "AUvrJOLI-3fFmi6NqnpLfrYMatI8Soq0INYBgrNZgf33CwWFooIuXKYFla781UexEYaOfbqBkRpkiaEr";
 const API_BASE = process.env.NEXT_PUBLIC_API_URL;
 const PRO_PRICE_USD = 29.9;
 const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
