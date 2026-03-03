@@ -35,7 +35,7 @@ const PAYPAL_CLIENT_ID =
   process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ||
   "AUvrJOLI-3fFmi6NqnpLfrYMatI8Soq0INYBgrNZgf33CwWFooIuXKYFla781UexEYaOfbqBkRpkiaEr";
 const API_BASE = process.env.NEXT_PUBLIC_API_URL;
-const PRO_PRICE_USD = 29.9;
+const PRO_PRICE_USD = 4.99;
 const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -203,7 +203,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
     const savedEmail = localStorage.getItem("artimagehub_email")?.trim() || "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(
-      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime ($29.90)\n\nPlease send me a valid payment link.\n\nThanks.`
+      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime ($4.99)\n\nPlease send me a valid payment link.\n\nThanks.`
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };

@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 function PaymentSuccessContent() {
-  const PRO_PRICE_TEXT = "$29.90";
+  const PRO_PRICE_TEXT = "$4.99";
   const searchParams = useSearchParams();
   const [email, setEmail] = useState<string | null>(null);
   const [orderId, setOrderId] = useState<string | null>(null);
