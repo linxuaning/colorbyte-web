@@ -84,7 +84,7 @@ const softwareSchema = {
   operatingSystem: "Web Browser",
   offers: {
     "@type": "Offer",
-    price: "29.9",
+    price: "4.99",
     priceCurrency: "USD",
     description: "Lifetime unlimited access"
   },

@@ -101,7 +101,7 @@ const serviceSchema = {
         "@type": "Offer",
         name: "Pro Lifetime",
         description: "Unlimited photo restorations at full resolution",
-        price: "29.9",
+        price: "4.99",
         priceCurrency: "USD"
       }
     ]

@@ -99,7 +99,7 @@ const softwareSchema = {
   description: "AI-powered photo enhancement tool that improves photo quality, fixes blurry photos, and enhances resolution in seconds. Free online tool for enhancing selfies, old photos, product images, and any picture.",
   offers: {
     "@type": "Offer",
-    price: "29.9",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },

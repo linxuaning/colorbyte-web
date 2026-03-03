@@ -98,7 +98,7 @@ const softwareSchema = {
   description: "AI-powered photo colorization tool that adds realistic colors to black and white photos in seconds. Free online tool for colorizing old family photos, historical images, and vintage pictures.",
   offers: {
     "@type": "Offer",
-    price: "29.9",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },

@@ -17,7 +17,7 @@ import {
 import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
-const PRO_PRICE_TEXT = "$29.90";
+const PRO_PRICE_TEXT = "$4.99";
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
