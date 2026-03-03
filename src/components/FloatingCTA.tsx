@@ -25,13 +25,8 @@ export default function FloatingCTA() {
 
   if (!isVisible) return null;
 
-  const scrollToUpload = () => {
-    const uploadSection = document.getElementById("upload");
-    if (uploadSection) {
-      uploadSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+  const openSubscription = () => {
+    window.location.href = "/subscription";
   };
 
   return (
@@ -50,7 +45,7 @@ export default function FloatingCTA() {
       </div>
 
       <button
-        onClick={scrollToUpload}
+        onClick={openSubscription}
         className="block w-full text-center py-3.5 bg-white text-amber-700 font-bold rounded-xl text-[16px] shadow-lg active:scale-[0.97] transition-transform"
       >
         <span className="flex items-center justify-center gap-2">

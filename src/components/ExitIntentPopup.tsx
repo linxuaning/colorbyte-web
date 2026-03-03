@@ -160,7 +160,7 @@ export default function ExitIntentPopup() {
 
           {/* CTA */}
           <Link
-            href="/old-photo-restoration"
+            href="/subscription"
             onClick={handleClose}
             className="group relative inline-flex w-full h-12 items-center justify-center rounded-full bg-gradient-to-r from-[#8B5E3C] to-[#a67c52] px-6 font-lora text-[15px] font-600 text-[#faf8f4] hover:from-[#7a5234] hover:to-[#956d45] hover:shadow-xl active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30 overflow-hidden"
           >

@@ -66,7 +66,7 @@ export default function StickyCTA() {
 
             {/* Right: CTA */}
             <Link
-              href="/old-photo-restoration"
+              href="/subscription"
               className="group relative inline-flex h-11 items-center rounded-full bg-gradient-to-r from-[#8B5E3C] to-[#a67c52] px-7 font-lora text-[15px] font-600 text-[#faf8f4] hover:from-[#7a5234] hover:to-[#956d45] hover:shadow-xl active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/25 whitespace-nowrap overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
