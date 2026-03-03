@@ -92,9 +92,14 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             // Track payment button click
             trackPaymentClick(PRO_PLAN_LABEL);
 
-            const checkoutEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase();
+            let checkoutEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase();
             if (!checkoutEmail || !EMAIL_REGEX.test(checkoutEmail)) {
-              throw new Error("Email is required before checkout");
+              const input = window.prompt("Enter your email for payment receipt and activation:")?.trim().toLowerCase();
+              if (!input || !EMAIL_REGEX.test(input)) {
+                throw new Error("A valid email is required before checkout");
+              }
+              checkoutEmail = input;
+              localStorage.setItem("artimagehub_email", checkoutEmail);
             }
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
