@@ -45,8 +45,18 @@ interface PayPalButtonProps {
 export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [retryNonce, setRetryNonce] = useState(0);
+  const manualSupportEmail = "support@artimagehub.com";
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("payment_debug_fail") === "1") {
+        setError("Debug forced failure state");
+        return;
+      }
+    }
+
     if (!API_BASE) {
       setError("API is not configured");
       return;
@@ -82,7 +92,12 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
   }, []);
 
   useEffect(() => {
-    if (!loaded || !window.paypal) return;
+    if (!loaded || !window.paypal || error) return;
+
+    const container = document.getElementById("paypal-button-container");
+    if (container) {
+      container.innerHTML = "";
+    }
 
     // Render PayPal button
     window.paypal
@@ -175,12 +190,48 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
         },
       })
       .render("#paypal-button-container");
-  }, [loaded, onSuccess, onError]);
+  }, [loaded, onSuccess, onError, retryNonce, error]);
+
+  const handleRetryPayment = () => {
+    setError(null);
+    setRetryNonce((v) => v + 1);
+  };
+
+  const handleManualCheckoutSupport = () => {
+    const savedEmail = localStorage.getItem("artimagehub_email")?.trim() || "unknown";
+    const subject = encodeURIComponent("Manual Checkout Support Needed");
+    const body = encodeURIComponent(
+      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime ($29.90)\n\nPlease send me a valid payment link.\n\nThanks.`
+    );
+    window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
+  };
 
   if (error) {
     return (
-      <div className="text-center text-red-500 text-sm">
-        {error}
+      <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-center">
+        <p className="text-sm font-medium text-red-700">
+          Sorry—PayPal is temporarily unavailable and your payment was not charged.
+        </p>
+        <p className="mt-1 text-xs text-red-600">
+          Please try `Retry Payment` first. If it still fails, use `Manual Checkout Support`.
+        </p>
+        <p className="mt-2 text-xs text-red-600">Technical detail: {error}</p>
+        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <button
+            type="button"
+            onClick={handleRetryPayment}
+            className="inline-flex items-center justify-center rounded-full bg-[#0071e3] px-4 py-2 text-sm font-medium text-white hover:bg-[#005bb5]"
+          >
+            Retry Payment
+          </button>
+          <button
+            type="button"
+            onClick={handleManualCheckoutSupport}
+            className="inline-flex items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-sm font-medium text-[#1d1d1f] hover:bg-[#f5f5f7]"
+          >
+            Manual Checkout Support
+          </button>
+        </div>
       </div>
     );
   }
