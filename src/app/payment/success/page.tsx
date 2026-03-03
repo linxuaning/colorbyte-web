@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { trackPaymentSuccess } from "@/lib/analytics";
 
 function PaymentSuccessContent() {
   const PRO_PRICE_TEXT = "$4.99";
@@ -21,6 +22,14 @@ function PaymentSuccessContent() {
     if (emailParam) {
       localStorage.setItem("artimagehub_email", emailParam);
       console.log("✅ Subscription saved to localStorage:", emailParam);
+    }
+
+    if (orderIdParam) {
+      const dedupeKey = `payment_success_tracked_${orderIdParam}`;
+      if (!sessionStorage.getItem(dedupeKey)) {
+        trackPaymentSuccess(4.99, orderIdParam);
+        sessionStorage.setItem(dedupeKey, "1");
+      }
     }
   }, [searchParams]);
 

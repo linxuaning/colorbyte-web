@@ -1,7 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { trackPaymentClick, trackPaymentSuccess } from "@/lib/analytics";
+import {
+  trackCreateOrderResult,
+  trackPaymentCancel,
+  trackPaymentClick,
+  trackPaymentStarted,
+  trackPaymentSuccess,
+} from "@/lib/analytics";
 
 declare global {
   interface PayPalApproveData {
@@ -108,6 +114,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
           try {
             // Track payment button click
             trackPaymentClick(PRO_PLAN_LABEL);
+            trackPaymentStarted(PRO_PLAN_LABEL);
 
             let checkoutEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase();
             if (!checkoutEmail || !EMAIL_REGEX.test(checkoutEmail)) {
@@ -130,13 +137,16 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             });
 
             if (!response.ok) {
+              trackCreateOrderResult(false, `http_${response.status}`);
               throw new Error("Failed to create order");
             }
 
             const data = await response.json();
+            trackCreateOrderResult(true, data.order_id);
             return data.order_id;
           } catch (err) {
             console.error("Create order error:", err);
+            trackCreateOrderResult(false, err instanceof Error ? err.message : "unknown_error");
             setError(err instanceof Error ? err.message : "Failed to create order");
             if (onError) onError(err);
             throw err;
@@ -162,7 +172,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
 
             if (result.success) {
               // Track successful payment
-              trackPaymentSuccess(PRO_PRICE_USD);
+              trackPaymentSuccess(PRO_PRICE_USD, data.orderID);
 
               if (onSuccess) {
                 onSuccess(data.orderID);
@@ -175,12 +185,14 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             }
           } catch (err) {
             console.error("Capture payment error:", err);
+            trackPaymentCancel("capture_error");
             setError("Payment failed");
             if (onError) onError(err);
           }
         },
         onError: (err: unknown) => {
           console.error("PayPal error:", err);
+          trackPaymentCancel("paypal_sdk_error");
           setError("Payment failed");
           if (onError) onError(err);
         },
@@ -195,11 +207,13 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
   }, [loaded, onSuccess, onError, retryNonce, error]);
 
   const handleRetryPayment = () => {
+    trackPaymentCancel("retry_payment");
     setError(null);
     setRetryNonce((v) => v + 1);
   };
 
   const handleManualCheckoutSupport = () => {
+    trackPaymentCancel("manual_checkout_support");
     const savedEmail = localStorage.getItem("artimagehub_email")?.trim() || "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(

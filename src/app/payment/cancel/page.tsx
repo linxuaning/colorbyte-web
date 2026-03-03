@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PaymentCancelTracker from "./tracker";
 
 export const metadata: Metadata = {
   title: "Checkout Cancelled — Try Free Version",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function PaymentCancelPage() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center">
+      <PaymentCancelTracker />
       <div className="mx-auto max-w-md text-center">
         <h1 className="text-2xl font-bold">No worries!</h1>
         <p className="mt-2 text-muted-foreground">

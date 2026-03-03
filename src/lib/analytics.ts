@@ -67,12 +67,54 @@ export const trackPaymentClick = (plan: string) => {
   });
 };
 
-export const trackPaymentSuccess = (amount: number) => {
+const trackPaymentFunnelEvent = (
+  action: string,
+  payload: Record<string, string | number | boolean | null | undefined>
+) => {
+  const utc = new Date().toISOString();
+
+  // Keep a console evidence trail for operational debugging and screenshots.
+  console.info(`[payment_funnel] ${action}`, { ...payload, utc });
+
+  if (!window.gtag) return;
+
+  window.gtag('event', action, {
+    event_category: 'payment_funnel',
+    ...payload,
+    utc,
+  });
+};
+
+export const trackPaymentStarted = (plan: string) => {
+  trackPaymentFunnelEvent('payment_started', {
+    plan,
+  });
+};
+
+export const trackCreateOrderResult = (success: boolean, detail?: string) => {
+  trackPaymentFunnelEvent(
+    success ? 'payment_create_order_success' : 'payment_create_order_fail',
+    {
+      detail: detail || null,
+    }
+  );
+};
+
+export const trackPaymentCancel = (source: string) => {
+  trackPaymentFunnelEvent('payment_cancel', { source });
+};
+
+export const trackPaymentSuccess = (amount: number, transactionId?: string) => {
   event({
     action: 'purchase',
     category: 'conversion',
     label: 'Payment completed',
     value: amount,
+  });
+
+  trackPaymentFunnelEvent('payment_success', {
+    amount,
+    transaction_id: transactionId || null,
   });
 
   // Also track as conversion
@@ -81,7 +123,7 @@ export const trackPaymentSuccess = (amount: number) => {
       send_to: GA_MEASUREMENT_ID,
       value: amount,
       currency: 'USD',
-      transaction_id: `${Date.now()}`,
+      transaction_id: transactionId || `${Date.now()}`,
     });
   }
 };
