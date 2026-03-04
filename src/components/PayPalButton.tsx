@@ -61,7 +61,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
-      if (params.get("payment_debug_fail") === "1") {
+      if (params.get("payment_debug_fail") === "1" && retryNonce === 0) {
         setError("Debug forced failure state");
         return;
       }
@@ -103,7 +103,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
         document.body.removeChild(existingScript);
       }
     };
-  }, []);
+  }, [retryNonce]);
 
   useEffect(() => {
     if (!loaded || !window.paypal || error) return;
