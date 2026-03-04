@@ -21,8 +21,12 @@ import {
   trackPaymentEmailEntry,
 } from "@/lib/analytics";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
-const PRO_PRICE_TEXT = "$4.99";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
+const parsedPrice = Number.parseFloat(
+  process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
+);
+const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
+const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -56,6 +60,11 @@ export default function RestoreClient() {
 
   // Check subscription status and download limit on mount
   useEffect(() => {
+    if (!API_BASE) {
+      setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
+      setStage("error");
+      return;
+    }
     const email = localStorage.getItem("artimagehub_email");
     if (email) {
       fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)

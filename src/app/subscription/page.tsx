@@ -6,8 +6,12 @@ import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucid
 import PayPalButton from "@/components/PayPalButton";
 import { trackPaymentEmailEntry } from "@/lib/analytics";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
-const PRO_PRICE_TEXT = "$4.99";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
+const parsedPrice = Number.parseFloat(
+  process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
+);
+const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
+const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -32,6 +36,10 @@ export default function SubscriptionPage() {
 
   // Pre-fill email from localStorage
   useEffect(() => {
+    if (!API_BASE) {
+      setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
+      return;
+    }
     const saved = localStorage.getItem("artimagehub_email");
     if (saved) {
       setEmail(saved);
@@ -40,6 +48,10 @@ export default function SubscriptionPage() {
   }, []);
 
   async function checkSubscription(emailToCheck?: string) {
+    if (!API_BASE) {
+      setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
+      return;
+    }
     const e = (emailToCheck || email).toLowerCase().trim();
     if (!e) return;
 
@@ -58,6 +70,10 @@ export default function SubscriptionPage() {
   }
 
   async function handleCancel() {
+    if (!API_BASE) {
+      setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
+      return;
+    }
     if (!sub?.email || !confirm("Are you sure you want to cancel? You'll keep access until the end of your current period.")) {
       return;
     }
@@ -86,6 +102,10 @@ export default function SubscriptionPage() {
   }
 
   async function handleManagePortal() {
+    if (!API_BASE) {
+      setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
+      return;
+    }
     if (!sub?.email) return;
     setLoading(true);
     try {

@@ -37,11 +37,13 @@ declare global {
   }
 }
 
-const PAYPAL_CLIENT_ID =
-  process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID ||
-  "AUvrJOLI-3fFmi6NqnpLfrYMatI8Soq0INYBgrNZgf33CwWFooIuXKYFla781UexEYaOfbqBkRpkiaEr";
-const API_BASE = process.env.NEXT_PUBLIC_API_URL;
-const PRO_PRICE_USD = 4.99;
+const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID?.trim() || "";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
+const parsedPrice = Number.parseFloat(
+  process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
+);
+const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
+const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -66,12 +68,16 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
     }
 
     if (!API_BASE) {
-      setError("API is not configured");
+      setError(
+        "Missing NEXT_PUBLIC_API_URL: payment endpoint is not configured."
+      );
       return;
     }
 
     if (!PAYPAL_CLIENT_ID) {
-      setError("PayPal is not configured");
+      setError(
+        "Missing NEXT_PUBLIC_PAYPAL_CLIENT_ID: PayPal checkout is not configured."
+      );
       return;
     }
 
@@ -142,6 +148,12 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
             }
 
             const data = await response.json();
+            const backendAmount = Number.parseFloat(String(data.amount ?? ""));
+            if (Number.isFinite(backendAmount) && Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001) {
+              throw new Error(
+                `Price mismatch: UI ${PRO_PRICE_TEXT} vs order $${backendAmount.toFixed(2)}`
+              );
+            }
             trackCreateOrderResult(true, data.order_id);
             return data.order_id;
           } catch (err) {
@@ -217,7 +229,7 @@ export default function PayPalButton({ onSuccess, onError }: PayPalButtonProps) 
     const savedEmail = localStorage.getItem("artimagehub_email")?.trim() || "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(
-      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime ($4.99)\n\nPlease send me a valid payment link.\n\nThanks.`
+      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime (${PRO_PRICE_TEXT})\n\nPlease send me a valid payment link.\n\nThanks.`
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };

@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -46,6 +46,11 @@ export default function EnhanceClient() {
 
   // Check subscription status and download limit on mount
   useEffect(() => {
+    if (!API_BASE) {
+      setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
+      setStage("error");
+      return;
+    }
     const email = localStorage.getItem("artimagehub_email");
     if (email) {
       fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
