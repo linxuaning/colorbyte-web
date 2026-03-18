@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import RestoreClient from "./restore-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
+import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
   title: "Old Photo Restoration Online Free | AI Restore Photos in Seconds",
@@ -115,37 +116,48 @@ export default function OldPhotoRestorationPage() {
             Free AI Restoration
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Restore Old Photos Online
+            Restore old photos in 30 seconds with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Upload your photo and let AI restore it in seconds. Face enhancement, super resolution, and colorization — free.
+            Repair scratches, fading, and blurry faces in one workflow. Upgrade for original-resolution downloads and unlimited access.
           </p>
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
+            {[
+              { icon: "✓", text: "10,000+ photos restored" },
+              { icon: "✓", text: "4.8★ average rating" },
+              { icon: "✓", text: "Results in 30 seconds" },
+            ].map((badge) => (
+              <span key={badge.text} className="flex items-center gap-1.5">
+                <span className="text-green-600 font-bold">{badge.icon}</span>
+                {badge.text}
+              </span>
+            ))}
+          </div>
+          <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
+            <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
+              <p>3 free photos to test the output before paying.</p>
+              <p>Uploads are encrypted and deleted within 24 hours.</p>
+              <p>Supports JPG, PNG, and WEBP up to 20 MB.</p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Social Proof */}
       <div className="mx-auto max-w-3xl px-5 -mt-2 mb-8">
         <LiveActivity />
-
-        {/* Trust Badges */}
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-[#6e6e73]">
-          {[
-            { icon: "✓", text: "10,000+ photos restored" },
-            { icon: "✓", text: "4.8★ average rating" },
-            { icon: "✓", text: "Results in 30 seconds" },
-          ].map((badge) => (
-            <span key={badge.text} className="flex items-center gap-1.5">
-              <span className="text-green-600 font-bold">{badge.icon}</span>
-              {badge.text}
-            </span>
-          ))}
-        </div>
       </div>
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
         <RestoreClient />
       </div>
+
+      <ProofSampleGallery
+        className="bg-white py-8 sm:py-10"
+        title="See what gets fixed after you start."
+        description="Once the shortest path to upload stays clear, proof can still do its job here by answering the next question: how well does this work on a photo like mine?"
+      />
 
       <FloatingCTA />
 

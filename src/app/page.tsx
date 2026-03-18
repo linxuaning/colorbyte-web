@@ -4,6 +4,7 @@ import PricingSection from "./pricing-section";
 import UserCounter from "@/components/UserCounter";
 import LiveActivity from "@/components/LiveActivity";
 import TodayStats from "@/components/TodayStats";
+import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
@@ -204,6 +205,21 @@ export default function HomePage() {
                     </span>
                   ))}
                 </div>
+
+                <div className="rounded-2xl border border-[#d4bc91]/45 bg-white/78 px-4 py-3 text-left shadow-sm">
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-[#6b5344]">
+                    {[
+                      "3 free photos to test quality",
+                      "Deleted from servers within 24 hours",
+                      "JPG, PNG, WEBP up to 20 MB",
+                    ].map((item) => (
+                      <span key={item} className="flex items-center gap-2">
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#8B5E3C]" aria-hidden="true" />
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
 
               {/* Trust signals */}
@@ -290,6 +306,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <ProofSampleGallery className="bg-white py-20 sm:py-24" />
 
       {/* ── Features ── */}
       <section className="bg-[#faf8f4] py-20 sm:py-28" aria-labelledby="features-heading">
@@ -474,7 +492,7 @@ export default function HomePage() {
 
                 {/* Quote */}
                 <p className="font-lora text-[15px] leading-[1.65] text-[#d4bc91] italic mb-5">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
                 {/* Author */}
@@ -550,6 +568,84 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Comparison Intent ── */}
+      <section className="border-t border-[#d4bc91]/40 bg-white py-20 sm:py-24" aria-labelledby="compare-heading">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <div className="max-w-2xl">
+            <div className="mb-3 flex items-center gap-3">
+              <div className="h-px w-8 bg-[#8B5E3C]" aria-hidden="true" />
+              <span className="font-lora text-[12px] uppercase tracking-[0.14em] text-[#8B5E3C]">Compare Before You Choose</span>
+            </div>
+            <h2 id="compare-heading" className="font-playfair text-[38px] sm:text-[48px] font-800 leading-[1.05] tracking-[-0.02em] text-[#2c2416]">
+              Start with the highest-intent questions.
+            </h2>
+            <p className="mt-5 font-lora text-[16px] leading-[1.7] text-[#6b5344]">
+              Buyers who are already comparing tools are closer to action than generic visitors. We route that intent into direct head-to-head pages and then into the restoration flow.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {[
+              {
+                href: "/vs-remini?landing_page=%2F&cta_slot=homepage_compare_remini&entry_variant=comparison_intent_block",
+                title: "ArtImageHub vs Remini",
+                desc: "Best for users deciding between AI enhancers and looking for the better old-family-photo workflow.",
+                points: [
+                  "Compare restoration quality, pricing, and artifact control",
+                  "See which tool is better for faded portraits and damaged prints",
+                  "Jump directly into our restore flow after the comparison",
+                ],
+                cta: "Read the Remini Comparison",
+              },
+              {
+                href: "/vs-photoshop-restoration?landing_page=%2F&cta_slot=homepage_compare_photoshop&entry_variant=comparison_intent_block",
+                title: "AI Restoration vs Photoshop",
+                desc: "Best for users weighing speed, effort, and output quality before committing to manual editing.",
+                points: [
+                  "Compare total effort, turnaround speed, and realism",
+                  "Clarify when manual editing is overkill for family-photo recovery",
+                  "Move straight from evaluation into a live AI restore",
+                ],
+                cta: "Read the Photoshop Comparison",
+              },
+            ].map((item) => (
+              <article
+                key={item.href}
+                className="rounded-[28px] border border-[#d4bc91]/40 bg-[#faf8f4] p-8 shadow-[0_18px_45px_rgba(44,36,22,0.05)]"
+              >
+                <p className="font-lora text-[12px] uppercase tracking-[0.14em] text-[#8B5E3C]">High-intent landing page</p>
+                <h3 className="mt-3 font-playfair text-[28px] font-800 leading-[1.1] text-[#2c2416]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 font-lora text-[15px] leading-[1.7] text-[#6b5344]">{item.desc}</p>
+                <ul className="mt-6 space-y-3">
+                  {item.points.map((point) => (
+                    <li key={point} className="flex items-start gap-3 font-lora text-[14px] leading-[1.65] text-[#6b5344]">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-[#D4A96A]" aria-hidden="true" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link
+                    href={item.href}
+                    className="inline-flex h-11 items-center rounded-full bg-[#2c2416] px-5 font-lora text-[14px] font-600 text-[#faf8f4] hover:bg-[#3a2f1f] transition-colors"
+                  >
+                    {item.cta}
+                  </Link>
+                  <Link
+                    href="/old-photo-restoration?landing_page=%2F&cta_slot=homepage_compare_direct_restore&entry_variant=comparison_intent_block"
+                    className="inline-flex h-11 items-center rounded-full border border-[#d4bc91]/70 px-5 font-lora text-[14px] font-600 text-[#8B5E3C] hover:bg-white transition-colors"
+                  >
+                    Go Straight to Restore
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Pricing ── */}
       <PricingSection />
 
@@ -568,9 +664,9 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 font-lora text-[15px] text-[#6b5344] leading-[1.7]">
                 Everything you need to know before you begin. Can&rsquo;t find an answer?{" "}
-                <a href="/blog" className="text-[#8B5E3C] underline underline-offset-2 hover:no-underline">
+                <Link href="/blog" className="text-[#8B5E3C] underline underline-offset-2 hover:no-underline">
                   Visit our journal
-                </a>
+                </Link>
                 .
               </p>
             </div>
