@@ -1,37 +1,36 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { trackPaymentSuccess } from "@/lib/analytics";
+import { buildPaymentFunnelQuery, readPaymentFunnelSource } from "@/lib/payment-funnel";
 
 function PaymentSuccessContent() {
   const PRO_PRICE_TEXT = "$4.99";
   const searchParams = useSearchParams();
-  const [email, setEmail] = useState<string | null>(null);
-  const [orderId, setOrderId] = useState<string | null>(null);
+  const email = searchParams.get("email");
+  const orderId = searchParams.get("order_id");
 
   useEffect(() => {
-    const emailParam = searchParams.get("email");
-    const orderIdParam = searchParams.get("order_id");
-
-    setEmail(emailParam);
-    setOrderId(orderIdParam);
+    const funnelSource = readPaymentFunnelSource(searchParams);
 
     // 🚨 CRITICAL: Save subscription to localStorage so user can access paid features
-    if (emailParam) {
-      localStorage.setItem("artimagehub_email", emailParam);
-      console.log("✅ Subscription saved to localStorage:", emailParam);
+    if (email) {
+      localStorage.setItem("artimagehub_email", email);
+      console.log("✅ Subscription saved to localStorage:", email);
     }
 
-    if (orderIdParam) {
-      const dedupeKey = `payment_success_tracked_${orderIdParam}`;
+    if (orderId) {
+      const dedupeKey = `payment_success_tracked_${orderId}`;
       if (!sessionStorage.getItem(dedupeKey)) {
-        trackPaymentSuccess(4.99, orderIdParam);
+        trackPaymentSuccess(4.99, orderId, funnelSource);
         sessionStorage.setItem(dedupeKey, "1");
       }
     }
-  }, [searchParams]);
+  }, [email, orderId, searchParams]);
+
+  const restartQuery = buildPaymentFunnelQuery(readPaymentFunnelSource(searchParams));
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
@@ -62,6 +61,15 @@ function PaymentSuccessContent() {
           <p className="text-[15px] text-[#6e6e73] mb-6">
             Your Pro Lifetime access has been activated.
           </p>
+
+          <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-left">
+            <p className="text-[13px] font-semibold text-green-800">Do this next</p>
+            <ul className="mt-2 space-y-1.5 text-[13px] text-green-900">
+              <li>1. Go back to your restore flow</li>
+              <li>2. Download in original quality with no watermark</li>
+              <li>3. Keep using the same email for future Pro restores</li>
+            </ul>
+          </div>
 
           {/* Order Details */}
           {email && (
@@ -118,10 +126,17 @@ function PaymentSuccessContent() {
 
           {/* CTA Button */}
           <Link
-            href="/old-photo-restoration"
+            href={restartQuery ? `/old-photo-restoration?${restartQuery}` : "/old-photo-restoration"}
             className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
-            Start Restoring Photos
+            Return to Your Restore
+          </Link>
+
+          <Link
+            href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
+            className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
+          >
+            Open My Pro Access
           </Link>
 
           <p className="mt-4 text-[12px] text-[#86868b]">

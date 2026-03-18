@@ -2,9 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 import PayPalButton from "@/components/PayPalButton";
 import { trackPaymentEmailEntry } from "@/lib/analytics";
+import {
+  buildPaymentFunnelQuery,
+  readPaymentFunnelSource,
+} from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -26,6 +31,7 @@ interface SubscriptionData {
 }
 
 export default function SubscriptionPage() {
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [sub, setSub] = useState<SubscriptionData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -40,12 +46,29 @@ export default function SubscriptionPage() {
       setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
       return;
     }
-    const saved = localStorage.getItem("artimagehub_email");
-    if (saved) {
-      setEmail(saved);
-      checkSubscription(saved);
+    const emailFromQuery = searchParams.get("email")?.trim().toLowerCase() || "";
+    const saved = localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+    const initialEmail = emailFromQuery || saved;
+    if (initialEmail) {
+      setEmail(initialEmail);
+      void (async () => {
+        setLoading(true);
+        setError("");
+        try {
+          const res = await fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(initialEmail)}`);
+          const data = await res.json();
+          setSub(data);
+          localStorage.setItem("artimagehub_email", initialEmail);
+        } catch {
+          setError("Could not check subscription status. Please try again.");
+        } finally {
+          setLoading(false);
+        }
+      })();
     }
-  }, []);
+  }, [searchParams]);
+
+  const funnelSource = readPaymentFunnelSource(searchParams);
 
   async function checkSubscription(emailToCheck?: string) {
     if (!API_BASE) {
@@ -144,12 +167,19 @@ export default function SubscriptionPage() {
     }
 
     localStorage.setItem("artimagehub_email", targetEmail);
-    const paymentUrl = `${window.location.origin}/subscription?email=${encodeURIComponent(targetEmail)}`;
+    const paymentParams = new URLSearchParams({ email: targetEmail });
+    const funnelQuery = buildPaymentFunnelQuery(funnelSource);
+    if (funnelQuery) {
+      new URLSearchParams(funnelQuery).forEach((value, key) => {
+        paymentParams.set(key, value);
+      });
+    }
+    const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
       `Use this payment link to unlock Pro Lifetime (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
     );
-    trackPaymentEmailEntry("subscription_page", "manual");
+    trackPaymentEmailEntry("subscription_page", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
     window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   };
@@ -166,6 +196,18 @@ export default function SubscriptionPage() {
             <p className="mt-3 text-[17px] text-[#6e6e73]">
               One-time payment. Unlimited restorations forever.
             </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
+              {[
+                "Unlock original-quality downloads immediately",
+                "No watermark on paid exports",
+                "One payment, no renewal surprise",
+              ].map((item) => (
+                <span key={item} className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3]" aria-hidden="true" />
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="max-w-md mx-auto">
@@ -185,6 +227,9 @@ export default function SubscriptionPage() {
                 <span className="text-[32px] font-bold tracking-[-0.04em] text-white">{PRO_PRICE_TEXT}</span>
               </div>
               <p className="mt-1 text-[12px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
+              <p className="mt-3 rounded-xl bg-white/5 px-3 py-2 text-[12px] leading-[1.6] text-white/80">
+                Best for people restoring family archives, memorial photos, or anything they want to print, keep, or share without a watermark.
+              </p>
 
               <ul className="mt-5 space-y-2.5">
                 {[
@@ -204,6 +249,15 @@ export default function SubscriptionPage() {
               </ul>
 
               <PayPalButton />
+
+              <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
+                <p className="font-medium text-white">What happens after payment</p>
+                <ul className="mt-2 space-y-1.5">
+                  <li>1. Pro access activates on your email immediately</li>
+                  <li>2. You return to restoration with original-quality download unlocked</li>
+                  <li>3. Future restores stay available under the same email</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -237,6 +291,28 @@ export default function SubscriptionPage() {
               </p>
             </div>
           )}
+
+          <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
+            {[
+              {
+                title: "Restore more than one photo",
+                desc: "Made for users with albums, family boxes, and repeated restoration jobs.",
+              },
+              {
+                title: "Download-ready output",
+                desc: "Best fit when you want the clean original-quality file for print or archive.",
+              },
+              {
+                title: "No recurring charge pressure",
+                desc: "One payment closes the decision now instead of adding another subscription.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-4">
+                <p className="text-[13px] font-semibold text-[#1d1d1f]">{item.title}</p>
+                <p className="mt-1.5 text-[12px] leading-[1.6] text-[#6e6e73]">{item.desc}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-3">
