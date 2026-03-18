@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import packageJson from "../../../package.json";
 
 export const metadata: Metadata = {
   title: "About ArtImageHub — AI Photo Restoration",
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const appVersion = packageJson.version;
+
   return (
     <div className="min-h-screen bg-[#faf8f4]">
       {/* Hero */}
@@ -170,6 +173,14 @@ export default function AboutPage() {
               Read Our Journal
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-[#d4bc91]/40 bg-[#241d12] py-6">
+        <div className="mx-auto flex max-w-4xl items-center justify-center px-6 lg:px-10">
+          <p className="font-lora text-[12px] uppercase tracking-[0.16em] text-[#a8967e]">
+            Version {appVersion}
+          </p>
         </div>
       </section>
     </div>
