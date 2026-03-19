@@ -1,3 +1,91 @@
+export interface PaymentFunnelSource {
+  landingPage?: string;
+  ctaSlot?: string;
+  entryVariant?: string;
+  checkoutSource?: string;
+}
+
+const PAYMENT_FUNNEL_QUERY_KEYS = {
+  landingPage: "landing_page",
+  ctaSlot: "cta_slot",
+  entryVariant: "entry_variant",
+  checkoutSource: "checkout_source",
+} as const;
+
+const LOCKED_LANDING_PAGES = new Set([
+  "/old-photo-restoration",
+  "/vs-remini",
+  "/vs-photoshop-restoration",
+  "/best-photo-restoration-software",
+  "/photo-restoration-app",
+]);
+
+const readPaymentFunnelValue = (params: URLSearchParams, key: string) => {
+  const value = params.get(key)?.trim();
+  return value || undefined;
+};
+
+export const readPaymentFunnelSource = (
+  params: URLSearchParams
+): PaymentFunnelSource => {
+  const landingPage = readPaymentFunnelValue(
+    params,
+    PAYMENT_FUNNEL_QUERY_KEYS.landingPage
+  );
+
+  return {
+    landingPage:
+      landingPage && LOCKED_LANDING_PAGES.has(landingPage)
+        ? landingPage
+        : undefined,
+    ctaSlot: readPaymentFunnelValue(params, PAYMENT_FUNNEL_QUERY_KEYS.ctaSlot),
+    entryVariant: readPaymentFunnelValue(
+      params,
+      PAYMENT_FUNNEL_QUERY_KEYS.entryVariant
+    ),
+    checkoutSource: readPaymentFunnelValue(
+      params,
+      PAYMENT_FUNNEL_QUERY_KEYS.checkoutSource
+    ),
+  };
+};
+
+export const buildPaymentFunnelQuery = (
+  source: PaymentFunnelSource
+): string => {
+  const params = new URLSearchParams();
+
+  for (const [field, key] of Object.entries(
+    PAYMENT_FUNNEL_QUERY_KEYS
+  ) as Array<[keyof PaymentFunnelSource, string]>) {
+    const value = source[field]?.trim();
+    if (value) {
+      params.set(key, value);
+    }
+  }
+
+  return params.toString();
+};
+
+export const mergePaymentFunnelSource = (
+  base: PaymentFunnelSource,
+  overrides: PaymentFunnelSource
+): PaymentFunnelSource => ({
+  landingPage: overrides.landingPage || base.landingPage,
+  ctaSlot: overrides.ctaSlot || base.ctaSlot,
+  entryVariant: overrides.entryVariant || base.entryVariant,
+  checkoutSource: overrides.checkoutSource || base.checkoutSource,
+});
+
+export const paymentFunnelPayload = (
+  source: PaymentFunnelSource
+): Record<string, string | null> => ({
+  landing_page: source.landingPage || null,
+  cta_slot: source.ctaSlot || null,
+  entry_variant: source.entryVariant || null,
+  checkout_source: source.checkoutSource || null,
+});
+
 // Google Analytics 4 event tracking utilities
 
 declare global {
@@ -51,6 +139,34 @@ export const trackPhotoUpload = () => {
   });
 };
 
+export const trackProcessingComplete = ({
+  taskId,
+  tool,
+  processingTimeMs,
+  source,
+}: {
+  taskId: string;
+  tool: "restore" | "enhance" | "colorize";
+  processingTimeMs: number;
+  source?: PaymentFunnelSource;
+}) => {
+  const payload = {
+    task_id: taskId,
+    tool,
+    processing_time_ms: Math.max(0, Math.round(processingTimeMs)),
+    ...paymentFunnelPayload(source || {}),
+  };
+
+  console.info("[processing_complete]", payload);
+
+  if (!window.gtag) return;
+
+  window.gtag("event", "processing_complete", {
+    event_category: "conversion",
+    ...payload,
+  });
+};
+
 export const trackPhotoDownload = (quality: 'free' | 'pro') => {
   event({
     action: 'photo_download',
@@ -85,30 +201,57 @@ const trackPaymentFunnelEvent = (
   });
 };
 
-export const trackPaymentStarted = (plan: string) => {
+export const trackPaymentStarted = (
+  plan: string,
+  source?: PaymentFunnelSource
+) => {
   trackPaymentFunnelEvent('payment_started', {
     plan,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
-export const trackCreateOrderResult = (success: boolean, detail?: string) => {
+export const trackCreateOrderResult = (
+  success: boolean,
+  detail?: string,
+  source?: PaymentFunnelSource
+) => {
   trackPaymentFunnelEvent(
     success ? 'payment_create_order_success' : 'payment_create_order_fail',
     {
       detail: detail || null,
+      ...paymentFunnelPayload(source || {}),
     }
   );
 };
 
-export const trackPaymentCancel = (source: string) => {
-  trackPaymentFunnelEvent('payment_cancel', { source });
+export const trackPaymentCancel = (
+  source: string,
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent('payment_cancel', {
+    source,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
 };
 
-export const trackPaymentEmailEntry = (source: string, mode: 'manual' | 'auto' = 'manual') => {
-  trackPaymentFunnelEvent('payment_email_entry', { source, mode });
+export const trackPaymentEmailEntry = (
+  source: string,
+  mode: 'manual' | 'auto' = 'manual',
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent('payment_email_entry', {
+    source,
+    mode,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
 };
 
-export const trackPaymentSuccess = (amount: number, transactionId?: string) => {
+export const trackPaymentSuccess = (
+  amount: number,
+  transactionId?: string,
+  source?: PaymentFunnelSource
+) => {
   event({
     action: 'purchase',
     category: 'conversion',
@@ -119,6 +262,7 @@ export const trackPaymentSuccess = (amount: number, transactionId?: string) => {
   trackPaymentFunnelEvent('payment_success', {
     amount,
     transaction_id: transactionId || null,
+    ...paymentFunnelPayload(source || {}),
   });
 
   // Also track as conversion

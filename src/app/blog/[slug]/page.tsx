@@ -1,11 +1,83 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 
 interface Props {
   params: Promise<{ slug: string }>;
 }
+
+const comparisonCtaBySlug = {
+  "artimagehub-vs-remini": {
+    href: "/vs-remini?entry_variant=blog_compare_cta",
+    label: "Compare with Remini",
+    description: "Use the fastest buyer-intent page before you restore.",
+  },
+  "photo-restoration-app-comparison": {
+    href: "/photo-restoration-app?entry_variant=blog_compare_cta",
+    label: "Compare restoration apps",
+    description: "Review the app-first shortlist, then come back to restore.",
+  },
+  "best-free-photo-restoration-apps": {
+    href: "/photo-restoration-app?entry_variant=blog_compare_cta",
+    label: "Compare restoration apps",
+    description: "See the strongest app options before you start restoring.",
+  },
+  "photo-restoration-software-comparison": {
+    href: "/best-photo-restoration-software?entry_variant=blog_compare_cta",
+    label: "Compare restoration software",
+    description: "Use the buyer guide first if the visitor is still deciding.",
+  },
+  "photo-restoration-software-review-2026": {
+    href: "/best-photo-restoration-software?entry_variant=blog_compare_cta",
+    label: "Compare restoration software",
+    description: "See the ranked shortlist before you jump into the tool.",
+  },
+  "photo-restoration-cost-comparison": {
+    href: "/best-photo-restoration-software?entry_variant=blog_compare_cta",
+    label: "Compare restoration software",
+    description: "Compare workflow fit, not just sticker price.",
+  },
+  "photo-restoration-cost": {
+    href: "/vs-photoshop-restoration?entry_variant=blog_compare_cta",
+    label: "Compare AI vs Photoshop",
+    description: "Check the cost and workflow tradeoffs before you restore.",
+  },
+  "how-ai-photo-restoration-works": {
+    href: "/best-photo-restoration-software?entry_variant=blog_compare_cta",
+    label: "Compare restoration software",
+    description: "Go from understanding the tech to choosing the right tool.",
+  },
+} as const;
+
+const checkoutCtaBySlug = {
+  "photo-restoration-app-comparison": {
+    href: "/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=blog_pay_first&entry_variant=blog_app_comparison&checkout_source=blog_direct",
+    label: "Unlock one-time access",
+    description: "If this visitor is already comparing apps, send them straight into checkout and keep the restore flow as the preview step.",
+  },
+  "best-free-photo-restoration-apps": {
+    href: "/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=blog_pay_first&entry_variant=blog_app_comparison&checkout_source=blog_direct",
+    label: "Unlock one-time access",
+    description: "Use a direct checkout CTA here because the intent is already app evaluation, not casual browsing.",
+  },
+  "photo-restoration-software-comparison": {
+    href: "/subscription?landing_page=%2Fbest-photo-restoration-software&cta_slot=blog_pay_first&entry_variant=blog_buyer_guide&checkout_source=blog_direct",
+    label: "Unlock one-time access",
+    description: "This software-comparison intent is close to purchase, so the main CTA should be checkout, not another generic tool hop.",
+  },
+  "photo-restoration-software-review-2026": {
+    href: "/subscription?landing_page=%2Fbest-photo-restoration-software&cta_slot=blog_pay_first&entry_variant=blog_buyer_guide&checkout_source=blog_direct",
+    label: "Unlock one-time access",
+    description: "This review intent is already commercial, so let the user go straight from content to checkout.",
+  },
+  "photo-restoration-cost-comparison": {
+    href: "/subscription?landing_page=%2Fbest-photo-restoration-software&cta_slot=blog_pay_first&entry_variant=blog_cost_compare&checkout_source=blog_direct",
+    label: "Unlock one-time access",
+    description: "Cost-comparison readers are already evaluating price and value, so the shortest next step is direct checkout.",
+  },
+} as const;
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
@@ -56,6 +128,12 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   const relatedPosts = await getRelatedPosts(slug, post.category);
+  const comparisonCta = comparisonCtaBySlug[slug as keyof typeof comparisonCtaBySlug] || null;
+  const checkoutCta = checkoutCtaBySlug[slug as keyof typeof checkoutCtaBySlug] || null;
+  const restoreCtaHref =
+    checkoutCta
+      ? "/old-photo-restoration?cta_slot=blog_preview_restore&entry_variant=blog_template"
+      : "/old-photo-restoration?cta_slot=blog_primary_restore&entry_variant=blog_template";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -127,13 +205,20 @@ export default async function BlogPostPage({ params }: Props) {
 
       <article className="min-h-screen">
         {/* ─── Hero Cover ─── */}
-        <header
-          className={`relative bg-gradient-to-br ${post.coverColor} overflow-hidden`}
-        >
-          {/* Decorative layers */}
+        <header className="relative overflow-hidden">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className={`absolute inset-0 bg-gradient-to-br ${post.coverColor} mix-blend-multiply`} />
+          <div className="absolute inset-0 bg-black/35" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.1),transparent_50%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/25 to-transparent" />
 
           <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-16 sm:pb-20">
             {/* Breadcrumb */}
@@ -308,16 +393,46 @@ export default async function BlogPostPage({ params }: Props) {
                   Ready to Restore Your Old Photos?
                 </h3>
                 <p className="text-blue-100 mb-6 max-w-lg mx-auto leading-relaxed">
-                  Try ArtImageHub&apos;s AI-powered photo restoration. Bring
-                  faded, damaged family photos back to life in seconds.
+                  {checkoutCta
+                    ? "If you're already comparing cost, software, or app options, go straight to checkout and keep the restore flow as the preview step."
+                    : "Try ArtImageHub&apos;s AI-powered photo restoration. Bring faded, damaged family photos back to life in seconds."}
                 </p>
-                <Link
-                  href="/old-photo-restoration"
-                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
-                >
-                  Restore Photos Free
-                  <span aria-hidden="true">→</span>
-                </Link>
+                <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+                  {checkoutCta && (
+                    <Link
+                      href={checkoutCta.href}
+                      className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-3 font-semibold text-blue-700 shadow-lg transition-colors hover:bg-blue-50"
+                    >
+                      {checkoutCta.label}
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  )}
+                  {comparisonCta && (
+                    <Link
+                      href={comparisonCta.href}
+                      className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/20"
+                    >
+                      {comparisonCta.label}
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  )}
+                  <Link
+                    href={restoreCtaHref}
+                    className={`inline-flex items-center gap-2 rounded-lg px-8 py-3 font-semibold transition-colors ${
+                      checkoutCta
+                        ? "border border-white/30 bg-white/10 text-white hover:bg-white/20"
+                        : "bg-white text-blue-700 shadow-lg hover:bg-blue-50"
+                    }`}
+                  >
+                    {checkoutCta ? "Preview the restore workflow" : "Restore Photos Free"}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
+                {(checkoutCta || comparisonCta) && (
+                  <p className="mt-4 text-sm text-blue-100/90">
+                    {checkoutCta?.description || comparisonCta?.description}
+                  </p>
+                )}
               </div>
             </div>
 

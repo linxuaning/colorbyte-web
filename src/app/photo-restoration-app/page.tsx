@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Photo Restoration App: Best AI Tools Compared (2026 Guide)",
   description:
-    "Compare the best photo restoration apps for iOS and Android. AI-powered tools to fix damaged, faded, and old photos. Free trials available. Updated 2026.",
+    "Compare the best photo restoration apps for iOS and Android. AI-powered tools to fix damaged, faded, and old photos with pricing, workflow, and results compared. Updated 2026.",
   alternates: { canonical: "/photo-restoration-app" },
   keywords: [
     "photo restoration app",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Photo Restoration Apps 2026",
-    description: "Compare AI photo restoration apps. Free trials, pricing, and features compared.",
+    description: "Compare AI photo restoration apps by pricing, workflow, and features.",
     images: ["/blog/before-after-examples.jpg"],
   },
 };
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is the best photo restoration app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $4.99 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with one-time $4.99 access instead of another recurring subscription. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Are photo restoration apps free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$4.99/month (subscription) or $4.99 one-time (ArtImageHub).",
+        text: "Many photo restoration apps offer limited free trials. ArtImageHub currently uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing and then moves users into subscription pricing.",
       },
     },
     {
@@ -93,9 +93,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $4.99"
+    description: "One-time Pro access for photo restoration"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -146,7 +146,7 @@ export default function PhotoRestorationAppPage() {
                   <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">App</th>
                   <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Platform</th>
                   <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Pricing</th>
-                  <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Free Trial</th>
+                  <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Entry</th>
                   <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Best For</th>
                   <th className="py-4 px-5 text-[14px] font-bold uppercase tracking-wide">Rating</th>
                 </tr>
@@ -162,7 +162,7 @@ export default function PhotoRestorationAppPage() {
                     <div className="font-semibold text-[#2c2416]">$4.99 once</div>
                     <div className="text-[13px] text-[#6b5344]">Lifetime access</div>
                   </td>
-                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">3 photos free</td>
+                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">One-time checkout</td>
                   <td className="py-5 px-5 text-[14px] text-[#6b5344] font-lora">One-time payment, no subscription</td>
                   <td className="py-5 px-5">
                     <div className="flex items-center gap-1">
@@ -248,16 +248,24 @@ export default function PhotoRestorationAppPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link
-              href="/old-photo-restoration"
-              className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
-            >
-              Try ArtImageHub Free (3 Photos)
-              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">No signup · No credit card · 30-second results</p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=table_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
+                className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
+              >
+                Unlock ArtImageHub for $4.99
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+              <Link
+                href="/old-photo-restoration?landing_page=%2Fphoto-restoration-app&cta_slot=table_preview_restore&entry_variant=app_comparison"
+                className="inline-flex items-center gap-2 rounded-full border border-[#8B5E3C]/30 bg-white px-8 py-4 text-[16px] font-semibold text-[#2c2416] hover:bg-[#faf8f4] transition-all duration-200"
+              >
+                Preview the restore workflow
+              </Link>
+            </div>
+            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">One-time payment · No subscription · Original-quality downloads</p>
           </div>
         </div>
       </section>
@@ -300,7 +308,7 @@ export default function PhotoRestorationAppPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>3 free photos to test before buying</span>
+                      <span>One-time checkout instead of another subscription</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
@@ -342,10 +350,10 @@ export default function PhotoRestorationAppPage() {
 
               <div className="mt-6 text-center">
                 <Link
-                  href="/old-photo-restoration"
+                  href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=review_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
                   className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-7 py-3 text-[15px] font-semibold text-white hover:bg-[#7a5234] transition-colors"
                 >
-                  Try ArtImageHub Free
+                  Unlock one-time access
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -519,22 +527,29 @@ export default function PhotoRestorationAppPage() {
       <section className="py-16 sm:py-20 bg-white border-t border-[#d4bc91]/40">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="font-playfair text-[32px] sm:text-[40px] font-800 text-[#2c2416] mb-4">
-            Try the Best Photo Restoration App Free
+            Pick the App, Then Unlock the Restore
           </h2>
           <p className="text-[18px] text-[#6b5344] font-lora mb-8 leading-[1.7]">
-            Start with 3 free photos on ArtImageHub. No app install, no signup, no credit card. See the AI quality for
-            yourself in 30 seconds.
+            Pay $4.99 once on ArtImageHub to unlock original-quality downloads without another subscription. If you want to see the workflow first, preview the restore tool before checkout.
           </p>
-          <Link
-            href="/old-photo-restoration"
-            className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-white hover:bg-[#7a5234] active:scale-[0.98] transition-all shadow-lg shadow-[#8B5E3C]/30"
-          >
-            Start Free Trial Now
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-          <p className="mt-4 text-[14px] text-[#6b5344]/80 font-lora">Works on any device · Results in 30 seconds</p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=final_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
+              className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-white hover:bg-[#7a5234] active:scale-[0.98] transition-all shadow-lg shadow-[#8B5E3C]/30"
+            >
+              Unlock Pro for $4.99
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <Link
+              href="/old-photo-restoration?landing_page=%2Fphoto-restoration-app&cta_slot=final_preview_restore&entry_variant=app_comparison"
+              className="inline-flex items-center gap-2 rounded-full border border-[#8B5E3C]/30 bg-white px-8 py-4 text-[16px] font-semibold text-[#2c2416] hover:bg-[#faf8f4] transition-all"
+            >
+              Preview the restore workflow
+            </Link>
+          </div>
+          <p className="mt-4 text-[14px] text-[#6b5344]/80 font-lora">Works on any device · One email keeps your access linked after checkout</p>
         </div>
       </section>
     </div>

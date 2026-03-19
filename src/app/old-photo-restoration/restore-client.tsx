@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
@@ -15,7 +16,11 @@ import {
   Check,
 } from "lucide-react";
 import {
+  buildPaymentFunnelQuery,
+  mergePaymentFunnelSource,
+  readPaymentFunnelSource,
   trackPhotoUpload,
+  trackProcessingComplete,
   trackPhotoDownload,
   trackCTAClick,
   trackPaymentEmailEntry,
@@ -42,6 +47,7 @@ interface TaskStatus {
 }
 
 export default function RestoreClient() {
+  const searchParams = useSearchParams();
   const [stage, setStage] = useState<Stage>("idle");
   const [preview, setPreview] = useState<string | null>(null);
   const [taskId, setTaskId] = useState<string | null>(null);
@@ -52,65 +58,113 @@ export default function RestoreClient() {
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
+  const [checkingAccess, setCheckingAccess] = useState(true);
   const [remaining, setRemaining] = useState(3);
   const [limitReached, setLimitReached] = useState(false);
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const processingStartedAtRef = useRef<number | null>(null);
+  const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
+  const funnelSource = useMemo(
+    () =>
+      typeof window === "undefined"
+        ? { landingPage: "/old-photo-restoration" }
+        : mergePaymentFunnelSource(
+            { landingPage: "/old-photo-restoration" },
+            readPaymentFunnelSource(new URLSearchParams(window.location.search))
+          ),
+    []
+  );
 
-  // Check subscription status and download limit on mount
+  const redirectToSubscription = useCallback(
+    (overrides?: {
+      ctaSlot?: string;
+      entryVariant?: string;
+      checkoutSource?: string;
+    }) => {
+      const params = buildPaymentFunnelQuery(
+        mergePaymentFunnelSource(funnelSource, {
+          ctaSlot: funnelSource.ctaSlot || overrides?.ctaSlot,
+          entryVariant: funnelSource.entryVariant || overrides?.entryVariant,
+          checkoutSource: overrides?.checkoutSource || "subscription_page",
+        })
+      );
+      window.location.href = params ? `/subscription?${params}` : "/subscription";
+    },
+    [funnelSource]
+  );
+
+  // Check subscription status on mount
   useEffect(() => {
     if (!API_BASE) {
       setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
       setStage("error");
+      setCheckingAccess(false);
       return;
     }
-    const email = localStorage.getItem("artimagehub_email");
-    if (email) {
-      fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.is_active) setIsSubscriber(true);
-        })
-        .catch(() => {});
+    const email =
+      localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+
+    if (!email) {
+      setCheckingAccess(false);
+      return;
     }
-    // Check download limit
-    const limitUrl = email
-      ? `${API_BASE}/api/download/check-limit?email=${encodeURIComponent(email)}`
-      : `${API_BASE}/api/download/check-limit`;
-    fetch(limitUrl)
+
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.remaining >= 0) setRemaining(data.remaining);
-        if (!data.allowed && !data.is_subscriber) setLimitReached(true);
+        if (data.is_active) {
+          setIsSubscriber(true);
+        }
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => {
+        setCheckingAccess(false);
+      });
   }, []);
 
-  // Handle click on upload area - check payment first
-  const handleUploadClick = useCallback(() => {
-    console.log("🔍 Upload area clicked, isSubscriber:", isSubscriber);
-    if (!isSubscriber) {
-      console.log("❌ Not subscribed, redirecting to payment page");
-      // Direct redirect - bypasses modal issues
-      window.location.href = '/subscription';
+  useEffect(() => {
+    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess || !isSubscriber) {
       return;
     }
-    console.log("✅ Opening file selector");
+
+    setTaskId(resumeTaskId);
+    setResultUrl(`${API_BASE}/api/download/${resumeTaskId}`);
+    setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
+    setProgress(100);
+    setProgressText("");
+    setErrorMsg("");
+    setStage("done");
+  }, [API_BASE, checkingAccess, isSubscriber, resumeTaskId, stage]);
+
+  // Handle click on upload area
+  const handleUploadClick = useCallback(() => {
+    if (!isSubscriber) {
+      redirectToSubscription({
+        ctaSlot: "upload_gate",
+        entryVariant: "pay_first",
+        checkoutSource: "subscription_page",
+      });
+      return;
+    }
+
     fileInputRef.current?.click();
-  }, [isSubscriber]);
+  }, [isSubscriber, redirectToSubscription]);
 
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
-      // 🚨 CRITICAL: Check if user has paid before allowing upload
-      console.log("🔍 Payment check in handleFile:", { isSubscriber });
-      if (!isSubscriber) {
-        console.log("❌ Not subscribed in handleFile, redirecting to payment");
-        window.location.href = '/subscription';
+      const checkoutEmail =
+        localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+      if (!EMAIL_REGEX.test(checkoutEmail)) {
+        redirectToSubscription({
+          ctaSlot: "upload_gate",
+          entryVariant: "pay_first",
+          checkoutSource: "subscription_page",
+        });
         return;
       }
-      console.log("✅ Subscribed, processing upload");
 
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
@@ -134,6 +188,7 @@ export default function RestoreClient() {
         const form = new FormData();
         form.append("file", file);
         form.append("colorize", String(colorize));
+        form.append("email", checkoutEmail);
 
         // Upload with retry (3 attempts, exponential backoff)
         let lastError: Error | null = null;
@@ -149,6 +204,15 @@ export default function RestoreClient() {
               body: form,
             });
 
+            if (res.status === 403) {
+              redirectToSubscription({
+                ctaSlot: "upload_gate",
+                entryVariant: "pay_first",
+                checkoutSource: "subscription_page",
+              });
+              return;
+            }
+
             if (!res.ok) {
               const data = await res.json().catch(() => null);
               throw new Error(data?.detail || `Upload failed (${res.status})`);
@@ -156,6 +220,7 @@ export default function RestoreClient() {
 
             const data = await res.json();
             setTaskId(data.task_id);
+            processingStartedAtRef.current = Date.now();
             setStage("processing");
             setProgressText("Processing started...");
 
@@ -175,7 +240,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [colorize, isSubscriber],
+    [colorize, redirectToSubscription],
   );
 
   // --- Poll task status ---
@@ -205,6 +270,13 @@ export default function RestoreClient() {
           setProgressText(data.stage || "Processing...");
 
           if (data.status === "completed") {
+            const startedAt = processingStartedAtRef.current ?? Date.now();
+            trackProcessingComplete({
+              taskId,
+              tool: colorize ? "colorize" : "restore",
+              processingTimeMs: Date.now() - startedAt,
+              source: funnelSource,
+            });
             setResultUrl(`${API_BASE}/api/download/${taskId}`);
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
@@ -233,16 +305,10 @@ export default function RestoreClient() {
   const onDrop = useCallback(
     (e: React.DragEvent) => {
       e.preventDefault();
-      // 🚨 Check payment before allowing file drop
-      if (!isSubscriber) {
-        console.log("❌ Drop blocked: Not subscribed, redirecting");
-        window.location.href = '/subscription';
-        return;
-      }
       const file = e.dataTransfer.files[0];
       if (file) handleFile(file);
     },
-    [handleFile, isSubscriber],
+    [handleFile],
   );
 
   // --- Paste ---
@@ -264,6 +330,7 @@ export default function RestoreClient() {
     setErrorMsg("");
     setResultUrl(null);
     setOriginalUrl(null);
+    processingStartedAtRef.current = null;
     setEmailEntry("");
     setEmailEntryHint("");
   };
@@ -277,12 +344,26 @@ export default function RestoreClient() {
     }
 
     localStorage.setItem("artimagehub_email", targetEmail);
-    const paymentUrl = `${window.location.origin}/subscription?email=${encodeURIComponent(targetEmail)}`;
+    const paymentParams = new URLSearchParams({ email: targetEmail });
+    const funnelQuery = buildPaymentFunnelQuery(
+      mergePaymentFunnelSource(funnelSource, {
+        ctaSlot: "email_entry",
+        entryVariant: "restore_done",
+        checkoutSource: "email_payment_link",
+      })
+    );
+    new URLSearchParams(funnelQuery).forEach((value, key) => {
+      paymentParams.set(key, value);
+    });
+    if (taskId) {
+      paymentParams.set("resume_task_id", taskId);
+    }
+    const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
       `Your photo is ready.\n\nUpgrade to Pro Lifetime (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal payment link for original-quality download.\n`
     );
-    trackPaymentEmailEntry("restore_done", "manual");
+    trackPaymentEmailEntry("restore_done", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
     window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   };
@@ -291,69 +372,106 @@ export default function RestoreClient() {
     <div className="mt-10">
       {/* --- IDLE: Upload area --- */}
       {stage === "idle" && (
-        <div
-          onDragOver={(e) => e.preventDefault()}
-          onDrop={onDrop}
-          onClick={handleUploadClick}
-          className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
-        >
-          {/* Upload icon */}
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
-            <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
-          </div>
-
-          {/* Text */}
-          <div>
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
-            <p className="mt-1.5 text-[14px] text-[#6e6e73]">
-              or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+        checkingAccess ? (
+          <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
+            <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking your Pro access</p>
+            <p className="max-w-md text-[14px] leading-[1.6] text-[#6e6e73]">
+              We&apos;ll unlock the restoration workspace as soon as your purchase email is confirmed.
             </p>
           </div>
-
-          {/* CTA button */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              handleUploadClick();
-            }}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+        ) : !isSubscriber ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 text-center">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#0071e3]/10">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-4 text-[22px] font-semibold text-[#1d1d1f]">
+              Pro access is required before processing
+            </h3>
+            <p className="mx-auto mt-3 max-w-md text-[14px] leading-[1.7] text-[#6e6e73]">
+              This workspace is now pay-first. Unlock Pro Lifetime once, then restore, colorize, and download in original quality with the same email.
+            </p>
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <button
+                type="button"
+                onClick={() =>
+                  redirectToSubscription({
+                    ctaSlot: "upload_gate",
+                    entryVariant: "pay_first",
+                    checkoutSource: "subscription_page",
+                  })
+                }
+                className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+              >
+                <Crown className="h-4 w-4" />
+                Unlock Pro Lifetime — {PRO_PRICE_TEXT}
+              </button>
+              <p className="text-[12px] text-[#6e6e73]">
+                One-time payment · No subscription · Uses your purchase email to unlock the tool
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={onDrop}
+            onClick={handleUploadClick}
+            className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
           >
-            <Upload className="h-4 w-4" />
-            Choose Photo
-          </button>
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
+              <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
+            </div>
 
-          {/* Colorize toggle */}
-          <label
-            className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span className="relative inline-flex h-5 w-9 items-center">
-              <input
-                type="checkbox"
-                checked={colorize}
-                onChange={(e) => setColorize(e.target.checked)}
-                className="peer sr-only"
-              />
-              <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
-              <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
-            </span>
-            Colorize black &amp; white photo
-          </label>
+            <div>
+              <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
+              <p className="mt-1.5 text-[14px] text-[#6e6e73]">
+                or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+              </p>
+            </div>
 
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/png,image/webp"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (file) handleFile(file);
-            }}
-          />
-          <p className="text-[12px] text-[#6e6e73]/70">
-            You can also paste an image with Ctrl+V
-          </p>
-        </div>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleUploadClick();
+              }}
+              className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Upload className="h-4 w-4" />
+              Start Restoring
+            </button>
+
+            <label
+              className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <span className="relative inline-flex h-5 w-9 items-center">
+                <input
+                  type="checkbox"
+                  checked={colorize}
+                  onChange={(e) => setColorize(e.target.checked)}
+                  className="peer sr-only"
+                />
+                <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
+                <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
+              </span>
+              Colorize black &amp; white photo
+            </label>
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) handleFile(file);
+              }}
+            />
+            <p className="text-[12px] text-[#6e6e73]/70">
+              You can also paste an image with Ctrl+V
+            </p>
+          </div>
+        )
       )}
 
       {/* --- UPLOADING / PROCESSING --- */}
@@ -430,64 +548,33 @@ export default function RestoreClient() {
               </a>
             ) : (
               <div className="space-y-2.5">
-                {/* Free Download */}
-                {remaining > 0 ? (
-                  <a
-                    href={resultUrl}
-                    download
-                    onClick={() => {
-                      trackPhotoDownload('free');
-                      const next = remaining - 1;
-                      setRemaining(next);
-                      if (next <= 0) setLimitReached(true);
-                    }}
-                    className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-                  >
-                    <span className="flex items-center gap-2">
-                      <Download className="h-4 w-4" />
-                      Download 720p — FREE
-                    </span>
-                    <span className="text-[11px] opacity-70 font-normal">
-                      {remaining} download{remaining !== 1 ? "s" : ""} remaining today
-                    </span>
-                  </a>
-                ) : (
-                  <button
-                    onClick={() => window.location.href = '/subscription'}
-                    className="flex w-full cursor-pointer flex-col items-center gap-1 rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/60 px-6 py-3.5 text-[14px] font-medium text-[#6e6e73] hover:border-[#0071e3]/40 transition-colors"
-                  >
-                    <span className="flex items-center gap-2">
-                      <XCircle className="h-4 w-4" />
-                      Daily Limit Reached (0/3)
-                    </span>
-                    <span className="text-[11px]">Upgrade to Pro for unlimited downloads</span>
-                  </button>
-                )}
-
-                {/* Trial CTA */}
                 <Link
-                  href="/subscription"
+                  href={`/subscription?${(() => {
+                    const params = new URLSearchParams(
+                      buildPaymentFunnelQuery(
+                        mergePaymentFunnelSource(funnelSource, {
+                          ctaSlot: "restore_done_cta",
+                          entryVariant: "restore_done",
+                          checkoutSource: "download_intercept",
+                        })
+                      )
+                    );
+                    if (taskId) {
+                      params.set("resume_task_id", taskId);
+                    }
+                    return params.toString();
+                  })()}`}
                   onClick={() => trackCTAClick('restore-page')}
                   className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
-                    remaining === 0
-                      ? "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
-                      : "border border-[#0071e3] text-[#0071e3] hover:bg-[#0071e3]/5"
+                    "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
                   }`}
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-                    {remaining === 0
-                      ? "Get Pro Lifetime — Unlimited Forever"
-                      : remaining <= 1
-                      ? "Unlock Unlimited — Save $5 Today"
-                      : `Get Pro Lifetime — ${PRO_PRICE_TEXT} Once`}
+                    Unlock Pro to Download
                   </span>
-                  <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
-                    {remaining === 0
-                      ? `No watermark  ·  Original quality  ·  ${PRO_PRICE_TEXT} once`
-                      : remaining === 1
-                      ? "Last free download used · Upgrade for unlimited"
-                      : `Original quality · No watermark · ${PRO_PRICE_TEXT} once`}
+                  <span className="text-[11px] font-normal opacity-60">
+                    Pay-first access · Original quality · {PRO_PRICE_TEXT} once
                   </span>
                 </Link>
               </div>
@@ -652,17 +739,13 @@ function LimitReachedModal({
 
           {/* Pro Lifetime Benefits Card */}
           <div className="mt-6 rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] border border-[#0071e3]/20 p-6 text-left relative overflow-hidden">
-            {/* Launch Special Badge */}
             <div className="absolute top-3 right-3">
-              <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider shadow-lg">
-                Save $5
+              <span className="rounded-full bg-[#0071e3] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider">
+                One-time access
               </span>
             </div>
 
             <h3 className="text-[18px] font-bold text-white mb-1">Get Pro Lifetime — $4.99 Once</h3>
-            <p className="text-[13px] text-white/70 mb-1">
-              <span className="line-through text-white/40">$9.99</span> <span className="text-[#0071e3] font-semibold">$4.99 one-time</span>
-            </p>
             <p className="text-[12px] text-white/60 mb-4">
               Pay once, use forever. No monthly bills.
             </p>
@@ -672,7 +755,7 @@ function LimitReachedModal({
                 "Unlimited downloads forever",
                 "Original quality (full resolution)",
                 "No watermark",
-                "All future features included",
+                "Use the same email when you return",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-2.5">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/20">
@@ -683,18 +766,10 @@ function LimitReachedModal({
               ))}
             </div>
 
-            {/* Value Comparison */}
             <div className="mt-4 rounded-lg bg-white/5 border border-white/10 p-3 text-[11px]">
-              <p className="text-white/60 mb-1">💡 Why Pro Lifetime?</p>
-              <p className="text-white">
-                Other tools charge <span className="text-red-400">$9.99/month</span> = $119.88/year
-              </p>
-              <p className="text-white mt-1">
-                ArtImageHub: <span className="text-green-400">$4.99 once</span> = Unlimited forever
-              </p>
-              <p className="text-white/60 mt-1">
-                Save $569.50 over 5 years!
-              </p>
+              <p className="text-white/60 mb-1">What changes after payment</p>
+              <p className="text-white">Your current email unlocks original-quality downloads immediately.</p>
+              <p className="text-white mt-1">You can return later with the same email and keep using Pro access.</p>
             </div>
 
             <button
@@ -702,7 +777,7 @@ function LimitReachedModal({
               className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-bold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-lg shadow-[#0071e3]/25"
             >
               <Crown className="h-4 w-4" />
-              Unlock Unlimited Access — Save $5
+              Unlock Pro Lifetime
             </button>
 
             <p className="mt-3 text-center text-[11px] text-white/50">
@@ -788,14 +863,8 @@ function BeforeAfterSlider({
         <img
           src={beforeSrc}
           alt="Original old photo before restoration"
-          className="h-full w-full object-contain"
+          className="absolute inset-0 h-full w-full object-contain"
           loading="lazy"
-          style={{
-            width: containerRef.current
-              ? `${containerRef.current.offsetWidth}px`
-              : "100%",
-            maxWidth: "none",
-          }}
         />
       </div>
       {/* Slider line */}

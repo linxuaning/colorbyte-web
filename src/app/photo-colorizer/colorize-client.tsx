@@ -1,22 +1,35 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Link from "next/link";
 import {
   Upload,
   Loader2,
-  Download,
   RotateCcw,
   AlertCircle,
   CheckCircle2,
   GripVertical,
   Crown,
-  XCircle,
-  Check,
 } from "lucide-react";
-import { trackPhotoUpload, trackPhotoDownload, trackCTAClick } from "@/lib/analytics";
+import {
+  trackPhotoUpload,
+  trackProcessingComplete,
+  trackPhotoDownload,
+  trackCTAClick,
+} from "@/lib/analytics";
+import {
+  buildPaymentFunnelQuery,
+  mergePaymentFunnelSource,
+  readPaymentFunnelSource,
+} from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
+const parsedPrice = Number.parseFloat(
+  process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
+);
+const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
+const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -38,46 +51,87 @@ export default function ColorizeClient() {
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
-  const [remaining, setRemaining] = useState(3);
-  const [limitReached, setLimitReached] = useState(false);
-  const [showLimitModal, setShowLimitModal] = useState(false);
+  const [checkingAccess, setCheckingAccess] = useState(true);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const processingStartedAtRef = useRef<number | null>(null);
+  const funnelSource = useMemo(
+    () =>
+      typeof window === "undefined"
+        ? { landingPage: "/photo-colorizer" }
+        : mergePaymentFunnelSource(
+            { landingPage: "/photo-colorizer" },
+            readPaymentFunnelSource(new URLSearchParams(window.location.search))
+          ),
+    []
+  );
 
   // Colorization is always enabled on this page
   const colorize = true;
 
-  // Check subscription status and download limit on mount
+  const buildSubscriptionHref = useCallback(
+    (ctaSlot: string, checkoutSource: string, entryVariant = "pay_first") => {
+      const params = buildPaymentFunnelQuery(
+        mergePaymentFunnelSource(funnelSource, {
+          ctaSlot,
+          entryVariant,
+          checkoutSource,
+        })
+      );
+      return params ? `/subscription?${params}` : "/subscription";
+    },
+    [funnelSource]
+  );
+
+  const redirectToSubscription = useCallback(
+    (
+      ctaSlot = "upload_gate",
+      checkoutSource = "subscription_page",
+      entryVariant = "pay_first"
+    ) => {
+      window.location.href = buildSubscriptionHref(
+        ctaSlot,
+        checkoutSource,
+        entryVariant
+      );
+    },
+    [buildSubscriptionHref]
+  );
+
+  // Check subscription status on mount
   useEffect(() => {
     if (!API_BASE) {
       setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
       setStage("error");
+      setCheckingAccess(false);
       return;
     }
-    const email = localStorage.getItem("artimagehub_email");
-    if (email) {
-      fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.is_active) setIsSubscriber(true);
-        })
-        .catch(() => {});
+    const email =
+      localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+    if (!email) {
+      setCheckingAccess(false);
+      return;
     }
-    // Check download limit
-    const limitUrl = email
-      ? `${API_BASE}/api/download/check-limit?email=${encodeURIComponent(email)}`
-      : `${API_BASE}/api/download/check-limit`;
-    fetch(limitUrl)
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.remaining >= 0) setRemaining(data.remaining);
-        if (!data.allowed && !data.is_subscriber) setLimitReached(true);
+        if (data.is_active) setIsSubscriber(true);
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => {
+        setCheckingAccess(false);
+      });
   }, []);
 
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
+      const checkoutEmail =
+        localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+      if (!EMAIL_REGEX.test(checkoutEmail)) {
+        redirectToSubscription();
+        return;
+      }
+
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
         setErrorMsg("Invalid file type. Please upload JPG, PNG, or WEBP.");
@@ -100,6 +154,7 @@ export default function ColorizeClient() {
         const form = new FormData();
         form.append("file", file);
         form.append("colorize", String(colorize));
+        form.append("email", checkoutEmail);
 
         // Upload with retry (3 attempts, exponential backoff)
         let lastError: Error | null = null;
@@ -115,6 +170,11 @@ export default function ColorizeClient() {
               body: form,
             });
 
+            if (res.status === 403) {
+              redirectToSubscription();
+              return;
+            }
+
             if (!res.ok) {
               const data = await res.json().catch(() => null);
               throw new Error(data?.detail || `Upload failed (${res.status})`);
@@ -122,6 +182,7 @@ export default function ColorizeClient() {
 
             const data = await res.json();
             setTaskId(data.task_id);
+            processingStartedAtRef.current = Date.now();
             setStage("processing");
             setProgressText("Processing started...");
 
@@ -141,7 +202,7 @@ export default function ColorizeClient() {
         setStage("error");
       }
     },
-    [colorize],
+    [colorize, redirectToSubscription],
   );
 
   // --- Poll task status ---
@@ -171,6 +232,12 @@ export default function ColorizeClient() {
           setProgressText(data.stage || "Processing...");
 
           if (data.status === "completed") {
+            const startedAt = processingStartedAtRef.current ?? Date.now();
+            trackProcessingComplete({
+              taskId,
+              tool: "colorize",
+              processingTimeMs: Date.now() - startedAt,
+            });
             setResultUrl(`${API_BASE}/api/download/${taskId}`);
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
@@ -224,54 +291,79 @@ export default function ColorizeClient() {
     setErrorMsg("");
     setResultUrl(null);
     setOriginalUrl(null);
+    processingStartedAtRef.current = null;
   };
 
   return (
     <div className="mt-10">
       {/* --- IDLE: Upload area --- */}
       {stage === "idle" && (
-        <div
-          onDragOver={(e) => e.preventDefault()}
-          onDrop={onDrop}
-          onClick={() => fileInputRef.current?.click()}
-          className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
-        >
-          {/* Upload icon */}
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
-            <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
+        checkingAccess ? (
+          <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
+            <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking your Pro access</p>
           </div>
+        ) : !isSubscriber ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 text-center">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#0071e3]/10">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-4 text-[22px] font-semibold text-[#1d1d1f]">
+              Pro access is required before colorizing
+            </h3>
+            <p className="mx-auto mt-3 max-w-md text-[14px] leading-[1.7] text-[#6e6e73]">
+              Unlock Pro Lifetime once, then colorize with the same purchase email and download in original quality.
+            </p>
+            <button
+              type="button"
+              onClick={() => redirectToSubscription()}
+              className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Crown className="h-4 w-4" />
+              Unlock Pro Lifetime — {PRO_PRICE_TEXT}
+            </button>
+          </div>
+        ) : (
+          <div
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={onDrop}
+            onClick={() => fileInputRef.current?.click()}
+            className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
+          >
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
+              <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
+            </div>
 
-          {/* Text */}
-          <div>
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your black & white photo here</p>
-            <p className="mt-1.5 text-[14px] text-[#6e6e73]">
-              or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+            <div>
+              <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your black & white photo here</p>
+              <p className="mt-1.5 text-[14px] text-[#6e6e73]">
+                or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+              </p>
+            </div>
+
+            <button
+              onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
+              className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Upload className="h-4 w-4" />
+              Start Colorizing
+            </button>
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) handleFile(file);
+              }}
+            />
+            <p className="text-[12px] text-[#6e6e73]/70">
+              You can also paste an image with Ctrl+V
             </p>
           </div>
-
-          {/* CTA button */}
-          <button
-            onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
-          >
-            <Upload className="h-4 w-4" />
-            Choose Photo to Colorize
-          </button>
-
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/png,image/webp"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (file) handleFile(file);
-            }}
-          />
-          <p className="text-[12px] text-[#6e6e73]/70">
-            You can also paste an image with Ctrl+V
-          </p>
-        </div>
+        )
       )}
 
       {/* --- UPLOADING / PROCESSING --- */}
@@ -347,61 +439,30 @@ export default function ColorizeClient() {
                 <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
               </a>
             ) : (
-              <div className="space-y-2.5">
-                {/* Free Download */}
-                {remaining > 0 ? (
-                  <a
-                    href={resultUrl}
-                    download
-                    onClick={() => {
-                      trackPhotoDownload('free');
-                      const next = remaining - 1;
-                      setRemaining(next);
-                      if (next <= 0) setLimitReached(true);
-                    }}
-                    className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-                  >
-                    <span className="flex items-center gap-2">
-                      <Download className="h-4 w-4" />
-                      Download 720p — FREE
-                    </span>
-                    <span className="text-[11px] opacity-70 font-normal">
-                      {remaining} download{remaining !== 1 ? "s" : ""} remaining today
-                    </span>
-                  </a>
-                ) : (
-                  <button
-                    onClick={() => setShowLimitModal(true)}
-                    className="flex w-full cursor-not-allowed flex-col items-center gap-1 rounded-full bg-[#f5f5f7] border border-[#d2d2d7]/60 px-6 py-3.5 text-[14px] font-medium text-[#6e6e73]"
-                  >
-                    <span className="flex items-center gap-2">
-                      <XCircle className="h-4 w-4" />
-                      Daily Limit Reached (0/3)
-                    </span>
-                    <span className="text-[11px]">Resets at midnight UTC</span>
-                  </button>
-                )}
-
-                {/* Trial CTA */}
+              <div className="space-y-3">
+                <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
+                  <p className="text-[14px] font-semibold text-[#1d1d1f]">
+                    This colorized photo is ready for Pro download.
+                  </p>
+                  <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
+                    This page now uses the pay-first path. Unlock once to download this image in original quality and keep the same email linked for future colorization exports.
+                  </p>
+                </div>
                 <Link
-                  href="/subscription"
-                  onClick={() => trackCTAClick('colorizer-page')}
-                  className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
-                    remaining === 0
-                      ? "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
-                      : "border border-[#0071e3] text-[#0071e3] hover:bg-[#0071e3]/5"
-                  }`}
+                  href={buildSubscriptionHref(
+                    "result_unlock",
+                    "download_intercept",
+                    "result_paywall"
+                  )}
+                  onClick={() => trackCTAClick("colorizer-result-paywall")}
+                  className="flex w-full flex-col items-center gap-1 rounded-full bg-[#1d1d1f] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#2d2d2f] active:scale-[0.98]"
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-                    {remaining === 0
-                      ? "Get Pro Lifetime — Unlimited Forever"
-                      : "Get Pro Lifetime"}
+                    Unlock Pro to Download This Photo
                   </span>
-                  <span className={`text-[11px] font-normal ${remaining === 0 ? "opacity-60" : "opacity-70"}`}>
-                    {remaining === 0
-                      ? "No watermark  ·  Original quality  ·  $0 today"
-                      : "Original quality · No watermark · Unlimited"}
+                  <span className="text-[11px] font-normal opacity-70">
+                    Original quality  ·  No watermark  ·  {PRO_PRICE_TEXT} once
                   </span>
                 </Link>
               </div>
@@ -409,21 +470,10 @@ export default function ColorizeClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                $4.99 one-time payment. No subscription, unlimited forever.
+                {PRO_PRICE_TEXT} one-time payment. No subscription. Original-quality download unlocks immediately after checkout.
               </p>
             )}
           </div>
-
-          {/* Limit Reached Modal */}
-          {showLimitModal && (
-            <LimitReachedModal
-              onClose={() => setShowLimitModal(false)}
-              onStartTrial={() => {
-                setShowLimitModal(false);
-                window.location.href = "/subscription";
-              }}
-            />
-          )}
 
           <div className="flex justify-center">
             <button
@@ -484,119 +534,6 @@ export default function ColorizeClient() {
   );
 }
 
-// --- Daily Limit Reached Modal (Touchpoint 2) ---
-function LimitReachedModal({
-  onClose,
-  onStartTrial,
-}: {
-  onClose: () => void;
-  onStartTrial: () => void;
-}) {
-  const [timeToReset, setTimeToReset] = useState("");
-
-  useEffect(() => {
-    const updateCountdown = () => {
-      const now = new Date();
-      const midnight = new Date(now);
-      midnight.setUTCHours(24, 0, 0, 0);
-
-      const diff = midnight.getTime() - now.getTime();
-      const hours = Math.floor(diff / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-      if (hours > 0) {
-        setTimeToReset(`${hours} hour${hours !== 1 ? "s" : ""} ${minutes} minute${minutes !== 1 ? "s" : ""}`);
-      } else {
-        setTimeToReset(`${minutes} minute${minutes !== 1 ? "s" : ""}`);
-      }
-    };
-
-    updateCountdown();
-    const interval = setInterval(updateCountdown, 60000);
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Overlay */}
-      <div
-        className="absolute inset-0 bg-black/50"
-        onClick={onClose}
-      />
-
-      {/* Modal */}
-      <div className="relative z-10 w-full max-w-md rounded-2xl bg-white p-7 shadow-2xl border border-[#d2d2d7]/40">
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#f5f5f7] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
-        >
-          <XCircle className="h-4 w-4" />
-        </button>
-
-        <div className="text-center">
-          {/* Icon */}
-          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#fff2f2] border border-red-100">
-            <XCircle className="h-7 w-7 text-red-500" />
-          </div>
-
-          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Daily Limit Reached</h2>
-          <p className="mt-2 text-[14px] text-[#6e6e73] leading-[1.6]">
-            You&apos;ve used all 3 free downloads for today.
-            <br />
-            Your limit resets in {timeToReset}.
-          </p>
-
-          {/* Pro Lifetime Benefits Card */}
-          <div className="mt-6 rounded-2xl bg-[#f5f5f7] border border-[#d2d2d7]/40 p-6 text-left">
-            <h3 className="text-[16px] font-semibold text-[#1d1d1f] mb-1">Get Pro Lifetime — $4.99 Once</h3>
-            <p className="text-[13px] text-[#6e6e73] mb-4">
-              Unlimited forever with one-time payment:
-            </p>
-
-            <div className="space-y-2.5 text-[14px]">
-              {[
-                "Unlimited downloads (no daily limit)",
-                "Original quality (full resolution)",
-                "No watermark",
-                "Priority processing",
-              ].map((benefit) => (
-                <div key={benefit} className="flex items-center gap-2.5">
-                  <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/10">
-                    <Check className="h-3 w-3 text-[#0071e3]" />
-                  </div>
-                  <span className="text-[#1d1d1f]">{benefit}</span>
-                </div>
-              ))}
-            </div>
-
-            <button
-              onClick={onStartTrial}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-            >
-              <Crown className="h-4 w-4" />
-              Get Pro Lifetime — $4.99 Once
-            </button>
-
-            <p className="mt-3 text-center text-[12px] text-[#6e6e73]">
-              No subscription. Unlimited forever.
-            </p>
-          </div>
-
-          {/* Secondary Option */}
-          <div className="mt-4">
-            <button
-              onClick={onClose}
-              className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
-            >
-              Come back later
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 // --- Before/After Slider Component ---
 function BeforeAfterSlider({
@@ -661,14 +598,8 @@ function BeforeAfterSlider({
         <img
           src={beforeSrc}
           alt="Original black and white photo before colorization"
-          className="h-full w-full object-contain"
+          className="absolute inset-0 h-full w-full object-contain"
           loading="lazy"
-          style={{
-            width: containerRef.current
-              ? `${containerRef.current.offsetWidth}px`
-              : "100%",
-            maxWidth: "none",
-          }}
         />
       </div>
       {/* Slider line */}

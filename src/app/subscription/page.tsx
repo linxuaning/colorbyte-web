@@ -2,9 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Loader2, CheckCircle2, XCircle, AlertCircle, Crown, Check } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 import PayPalButton from "@/components/PayPalButton";
-import { trackPaymentEmailEntry } from "@/lib/analytics";
+import {
+  buildPaymentFunnelQuery,
+  readPaymentFunnelSource,
+  trackPaymentEmailEntry,
+} from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -16,6 +21,23 @@ const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+const getStatusLabel = (status: string) => {
+  switch (status) {
+    case "none":
+      return "No Pro Access";
+    case "on_trial":
+      return "Active Access";
+    case "active":
+      return "Active Access";
+    case "past_due":
+      return "Billing Issue";
+    case "canceled":
+      return "Canceled";
+    default:
+      return status;
+  }
+};
+
 interface SubscriptionData {
   email: string;
   is_active: boolean;
@@ -26,6 +48,8 @@ interface SubscriptionData {
 }
 
 export default function SubscriptionPage() {
+  const searchParams = useSearchParams();
+  const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const [email, setEmail] = useState("");
   const [sub, setSub] = useState<SubscriptionData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -40,12 +64,38 @@ export default function SubscriptionPage() {
       setError("Missing NEXT_PUBLIC_API_URL. Subscription service is unavailable.");
       return;
     }
-    const saved = localStorage.getItem("artimagehub_email");
-    if (saved) {
-      setEmail(saved);
-      checkSubscription(saved);
+    const emailFromQuery = searchParams.get("email")?.trim().toLowerCase() || "";
+    const saved = localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+    const initialEmail = emailFromQuery || saved;
+    if (initialEmail) {
+      setEmail(initialEmail);
+      void (async () => {
+        setLoading(true);
+        setError("");
+        try {
+          const res = await fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(initialEmail)}`);
+          const data = await res.json();
+          setSub(data);
+          localStorage.setItem("artimagehub_email", initialEmail);
+        } catch {
+          setError("Could not check subscription status. Please try again.");
+        } finally {
+          setLoading(false);
+        }
+      })();
     }
-  }, []);
+  }, [searchParams]);
+
+  const funnelSource = readPaymentFunnelSource(searchParams);
+  const normalizedEmail = email.trim().toLowerCase();
+  const hasValidCheckoutEmail = EMAIL_REGEX.test(normalizedEmail);
+  const shouldShowOffer =
+    !sub || sub.status === "none" || sub.status === "canceled";
+
+  useEffect(() => {
+    if (!hasValidCheckoutEmail) return;
+    localStorage.setItem("artimagehub_email", normalizedEmail);
+  }, [hasValidCheckoutEmail, normalizedEmail]);
 
   async function checkSubscription(emailToCheck?: string) {
     if (!API_BASE) {
@@ -144,12 +194,19 @@ export default function SubscriptionPage() {
     }
 
     localStorage.setItem("artimagehub_email", targetEmail);
-    const paymentUrl = `${window.location.origin}/subscription?email=${encodeURIComponent(targetEmail)}`;
+    const paymentParams = new URLSearchParams({ email: targetEmail });
+    const funnelQuery = buildPaymentFunnelQuery(funnelSource);
+    if (funnelQuery) {
+      new URLSearchParams(funnelQuery).forEach((value, key) => {
+        paymentParams.set(key, value);
+      });
+    }
+    const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
       `Use this payment link to unlock Pro Lifetime (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
     );
-    trackPaymentEmailEntry("subscription_page", "manual");
+    trackPaymentEmailEntry("subscription_page", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
     window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   };
@@ -157,26 +214,35 @@ export default function SubscriptionPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
       {/* Pro Lifetime Offer - Show before subscription check */}
-      {!sub && (
-        <div className="mb-12">
+      {shouldShowOffer && (
+        <div id="checkout-offer" className="mb-12 scroll-mt-24">
           <div className="text-center mb-8">
             <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
               Upgrade to Pro Lifetime
             </h1>
             <p className="mt-3 text-[17px] text-[#6e6e73]">
-              One-time payment. Unlimited restorations forever.
+              One payment for original-quality restores and downloads.
             </p>
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
+              {[
+                "Unlock original-quality downloads immediately",
+                "No watermark on paid exports",
+                "One payment, no renewal surprise",
+              ].map((item) => (
+                <span key={item} className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3]" aria-hidden="true" />
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="max-w-md mx-auto">
             {/* Pro Lifetime - CTA */}
             <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
-                  Best Value
-                </span>
-                <span className="rounded-full bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em] shadow-lg">
-                  40% Off Launch Special
+                  One-time access
                 </span>
               </div>
 
@@ -184,15 +250,17 @@ export default function SubscriptionPage() {
               <div className="mt-2 flex items-baseline gap-2">
                 <span className="text-[32px] font-bold tracking-[-0.04em] text-white">{PRO_PRICE_TEXT}</span>
               </div>
-              <p className="mt-1 text-[12px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
+              <p className="mt-1 text-[12px] text-[#0071e3] font-medium">Single payment. No subscription.</p>
+              <p className="mt-3 rounded-xl bg-white/5 px-3 py-2 text-[12px] leading-[1.6] text-white/80">
+                Best for people restoring family archives, memorial photos, or anything they want to print, keep, or share without a watermark.
+              </p>
 
               <ul className="mt-5 space-y-2.5">
                 {[
                   "Unlimited restorations",
                   "Original quality download",
                   "No watermark",
-                  "Lifetime access",
-                  "All future features",
+                  "Use the same email for future Pro sessions",
                 ].map((f) => (
                   <li key={f} className="flex items-center gap-2.5 text-[13px] text-white">
                     <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
@@ -203,7 +271,42 @@ export default function SubscriptionPage() {
                 ))}
               </ul>
 
-              <PayPalButton />
+              <div className="mt-5 rounded-xl bg-white/5 p-4 text-left">
+                <label
+                  htmlFor="checkout-email"
+                  className="block text-[12px] font-semibold uppercase tracking-[0.06em] text-white/70"
+                >
+                  Email for activation and receipt
+                </label>
+                <input
+                  id="checkout-email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="you@example.com"
+                  autoComplete="email"
+                  className="mt-2 h-11 w-full rounded-xl border border-white/15 bg-white px-3 text-[14px] text-[#1d1d1f] outline-none transition focus:border-[#0071e3]"
+                />
+                <p className="mt-2 text-[12px] leading-[1.5] text-white/70">
+                  {hasValidCheckoutEmail
+                    ? "This email unlocks Pro immediately after payment and stays linked to future restores."
+                    : "Enter a valid email first. PayPal checkout stays locked until we know where to activate Pro."}
+                </p>
+              </div>
+
+              <PayPalButton
+                checkoutEmail={email}
+                resumeTaskId={resumeTaskId || undefined}
+              />
+
+              <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
+                <p className="font-medium text-white">What happens after payment</p>
+                <ul className="mt-2 space-y-1.5">
+                  <li>1. Pro access activates on your email immediately</li>
+                  <li>2. You return to restoration with original-quality download unlocked</li>
+                  <li>3. Future restores stay available under the same email</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -214,7 +317,7 @@ export default function SubscriptionPage() {
           {EMAIL_PAYMENT_ENTRY_ENABLED && (
             <div className="mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
               <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
-                Email me the payment link
+                Send this checkout link to yourself
               </p>
               <div className="mt-2 flex gap-2">
                 <input
@@ -233,10 +336,32 @@ export default function SubscriptionPage() {
                 </button>
               </div>
               <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
-                {emailEntryHint || "Opens your mail app with the payment link prefilled."}
+                {emailEntryHint || "Useful if you want to finish payment on another device later."}
               </p>
             </div>
           )}
+
+          <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
+            {[
+              {
+                title: "Restore more than one photo",
+                desc: "Made for users with albums, family boxes, and repeated restoration jobs.",
+              },
+              {
+                title: "Download-ready output",
+                desc: "Best fit when you want the clean original-quality file for print or archive.",
+              },
+              {
+                title: "No recurring charge pressure",
+                desc: "One payment closes the decision now instead of adding another subscription.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-4">
+                <p className="text-[13px] font-semibold text-[#1d1d1f]">{item.title}</p>
+                <p className="mt-1.5 text-[12px] leading-[1.6] text-[#6e6e73]">{item.desc}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-3">
@@ -248,7 +373,7 @@ export default function SubscriptionPage() {
 
       {/* Subscription Management */}
       <div className="max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold">{sub ? "Subscription Details" : "Check Subscription Status"}</h2>
+        <h2 className="text-2xl font-bold">{sub ? "Pro Access Details" : "Check Pro Access Status"}</h2>
 
         {/* Email lookup */}
         {!sub && (
@@ -305,7 +430,7 @@ export default function SubscriptionPage() {
                     <XCircle className="h-5 w-5 text-muted-foreground" />
                   )}
                   <span className="text-lg font-semibold capitalize">
-                    {sub.status === "none" ? "No Subscription" : sub.status}
+                    {getStatusLabel(sub.status)}
                   </span>
                 </div>
               </div>
@@ -319,10 +444,10 @@ export default function SubscriptionPage() {
             {sub.status === "on_trial" && sub.trial_end && (
               <div className="mt-4 rounded-lg bg-muted/50 p-3">
                 <p className="text-sm">
-                  <strong>Free trial</strong> until {formatDate(sub.trial_end)}
+                  <strong>Legacy access window</strong> until {formatDate(sub.trial_end)}
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  You won&apos;t be charged until your trial ends.
+                  This account still has active access, but new purchases are pay-first.
                 </p>
               </div>
             )}
@@ -330,7 +455,7 @@ export default function SubscriptionPage() {
             {sub.status === "active" && sub.current_period_end && (
               <div className="mt-4 rounded-lg bg-muted/50 p-3">
                 <p className="text-sm">
-                  <strong>Next billing date:</strong> {formatDate(sub.current_period_end)}
+                  <strong>Access valid until:</strong> {formatDate(sub.current_period_end)}
                 </p>
                 <p className="text-sm">
                   <strong>Plan:</strong> Pro Lifetime ($4.99 one-time payment)
@@ -341,7 +466,7 @@ export default function SubscriptionPage() {
             {sub.cancel_at_period_end && (
               <div className="mt-4 rounded-lg border border-yellow-200 bg-yellow-50 p-3">
                 <p className="text-sm text-yellow-800">
-                  Your subscription will end on {formatDate(sub.current_period_end || sub.trial_end)}.
+                  Your access will end on {formatDate(sub.current_period_end || sub.trial_end)}.
                   You&apos;ll keep access until then.
                 </p>
               </div>
@@ -374,10 +499,10 @@ export default function SubscriptionPage() {
 
             {sub.status === "none" || sub.status === "canceled" ? (
               <Link
-                href="/#pricing"
+                href="#checkout-offer"
                 className="inline-flex h-10 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground"
               >
-                Start Free Trial
+                Buy Pro Now
               </Link>
             ) : null}
 
