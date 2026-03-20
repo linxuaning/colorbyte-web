@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '10 Best Photo Restoration Software in 2026 (Free & Paid)',
+  title: '10 Best Photo Restoration Software in 2026 (Tested & Compared)',
   description: 'We tested 10 photo restoration tools. Compare features, pricing, and results. See which software is best for your needs. ArtImageHub rated #1 for value.',
   keywords: [
     'best photo restoration software',
@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "Is there free photo restoration software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, several options exist: ArtImageHub offers 3 free photo restorations with no signup required. GIMP is completely free and open-source but requires manual editing skills. Photo Restoration by Inpaint offers limited free features. However, AI-powered restoration tools typically require payment for best results."
+        "text": "Yes, several options exist: GIMP is completely free and open-source but requires manual editing skills, and Photo Restoration by Inpaint offers limited free features. ArtImageHub now uses a one-time pay-first workflow at $4.99, which is often cheaper than ongoing subscriptions if you care about original-quality output."
       }
     },
     {
@@ -518,7 +518,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
-                      <span>3 free photos to test quality (no signup)</span>
+                      <span>One-time $4.99 unlock (no subscription)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
@@ -831,7 +831,7 @@ export default function BestPhotoRestorationSoftwarePage() {
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-500">
                 <h3 className="text-xl font-bold text-stone-900 mb-3">4. Test Before Committing</h3>
                 <p className="text-stone-700">
-                  Always test free trials on your most important photo before purchasing. ArtImageHub offers 3 free photos with no signup, making it easy to test quality. Compare results from 2-3 tools before deciding.
+                  Compare the workflow, output quality, and total cost on your most important photo before committing. ArtImageHub now uses a one-time $4.99 checkout, while other tools still lean on subscriptions or limited free previews.
                 </p>
               </div>
             </div>

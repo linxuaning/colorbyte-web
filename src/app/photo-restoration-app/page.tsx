@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Are photo restoration apps free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Many photo restoration apps offer limited free trials. ArtImageHub currently uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing and then moves users into subscription pricing.",
+        text: "Many photo restoration apps offer limited previews. ArtImageHub currently uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing and then moves users into subscription pricing.",
       },
     },
     {
@@ -496,11 +496,11 @@ export default function PhotoRestorationAppPage() {
             {[
               {
                 q: "What is the best photo restoration app?",
-                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile, with 3 free photos and a one-time $4.99 payment (vs $120/year subscriptions). Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with one-time $4.99 access instead of another recurring subscription. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
               },
               {
                 q: "Are photo restoration apps free?",
-                a: "Most photo restoration apps offer free trials. ArtImageHub provides 3 free restorations. Remini offers limited free processing. For unlimited use, apps charge $9.99-$4.99/month (subscription) or $4.99 one-time (ArtImageHub).",
+                a: "Most photo restoration apps offer limited previews or feature-locked free tiers. ArtImageHub now uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing before pushing users into subscription pricing.",
               },
               {
                 q: "Can I restore photos on my phone?",

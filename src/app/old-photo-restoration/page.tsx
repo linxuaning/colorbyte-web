@@ -5,21 +5,21 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "Old Photo Restoration Online Free | AI Restore Photos in Seconds",
+  title: "Old Photo Restoration Online | AI Restore Photos in Seconds",
   description:
-    "Restore old, damaged, or faded photos instantly with AI. Fix scratches, enhance faces, and bring your memories back to life. Free online tool, no signup required.",
+    "Restore old, damaged, or faded photos instantly with AI. Fix scratches, enhance faces, and bring your memories back to life with one-time Pro access.",
   alternates: { canonical: "/old-photo-restoration" },
-  keywords: ["old photo restoration", "restore old photos online free", "photo restoration AI", "fix damaged photos", "photo enhancer online"],
+  keywords: ["old photo restoration", "restore old photos online", "photo restoration AI", "fix damaged photos", "photo enhancer online"],
   openGraph: {
-    title: "Old Photo Restoration Online Free — ArtImageHub",
-    description: "Restore old, damaged photos instantly with AI. Fix scratches, enhance faces, colorize — free, no signup.",
+    title: "Old Photo Restoration Online — ArtImageHub",
+    description: "Restore old, damaged photos instantly with AI. Fix scratches, enhance faces, colorize — one-time Pro access.",
     type: "website",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Before and after AI photo restoration" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Old Photo Restoration Online Free",
-    description: "Restore old, damaged photos instantly with AI. Free, no signup.",
+    title: "Old Photo Restoration Online",
+    description: "Restore old, damaged photos instantly with AI. One-time Pro access.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -28,7 +28,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Old Photos Online with AI",
-  description: "Restore damaged, faded, or old photographs using AI photo restoration — free, no signup required, results in 30 seconds.",
+  description: "Restore damaged, faded, or old photographs using AI photo restoration after unlocking one-time Pro access.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
   step: [
@@ -55,7 +55,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your restored photo",
-      text: "Preview the before/after result and download your restored photo in high resolution. Free users get 720p; Pro users get original resolution.",
+      text: "Preview the before/after result and download your restored photo in original resolution after purchase is confirmed.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -65,11 +65,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $4.99 for unlimited restorations in original resolution with no watermark, lifetime access." } },
+    { "@type": "Question", name: "Do I need Pro access before restoring?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub is now a pay-first workflow. Pro Lifetime is a one-time $4.99 payment that unlocks restoration, original-resolution downloads, and lifetime access with no subscription." } },
     { "@type": "Question", name: "What image formats are supported for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." } },
     { "@type": "Question", name: "How long does AI photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Most photos restore in 15–30 seconds. Heavily damaged photos or photos processed with multiple enhancements may take up to 60–90 seconds." } },
     { "@type": "Question", name: "Are my photos kept private and secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." } },
-    { "@type": "Question", name: "What is the difference between Free Trial and Pro Lifetime?", acceptedAnswer: { "@type": "Answer", text: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $4.99 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features." } },
+    { "@type": "Question", name: "How does Pro Lifetime work?", acceptedAnswer: { "@type": "Answer", text: "Pro Lifetime is a one-time $4.99 payment. After checkout, you restore with the same email, download the original-quality file, and keep lifetime access with no recurring subscription." } },
   ],
 };
 
@@ -81,9 +81,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $4.99"
+    description: "One-time Pro Lifetime access"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -113,13 +113,13 @@ export default function OldPhotoRestorationPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Free AI Restoration
+            Pro AI Restoration
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Restore old photos in 30 seconds with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Repair scratches, fading, and blurry faces in one workflow. Upgrade for original-resolution downloads and unlimited access.
+            Repair scratches, fading, and blurry faces in one workflow. Unlock Pro once, then restore and download in original quality.
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
@@ -135,7 +135,7 @@ export default function OldPhotoRestorationPage() {
           </div>
           <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
             <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
-              <p>3 free photos to test the output before paying.</p>
+              <p>Pay once to unlock restoration and download.</p>
               <p>Uploads are encrypted and deleted within 24 hours.</p>
               <p>Supports JPG, PNG, and WEBP up to 20 MB.</p>
             </div>
@@ -188,7 +188,7 @@ export default function OldPhotoRestorationPage() {
               {
                 step: "3",
                 title: "Download the result",
-                desc: "Compare before and after, then download your restored photo. Free users get 720p; Pro users get full original resolution.",
+                desc: "Compare before and after, then download your restored photo in full original resolution after purchase.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -243,8 +243,8 @@ export default function OldPhotoRestorationPage() {
           <dl className="space-y-6">
             {[
               {
-                q: "Is AI photo restoration free?",
-                a: "Yes — ArtImageHub offers a free trial with 3 photos to test the AI quality, no account or credit card required. Pro Lifetime is a one-time payment of $4.99 for unlimited restorations in original resolution with no watermark, lifetime access.",
+                q: "Do I need Pro access before restoring?",
+                a: "Yes. ArtImageHub now uses a pay-first workflow. Pro Lifetime is a one-time $4.99 payment that unlocks restoration, original-resolution downloads, and lifetime access with no recurring subscription.",
               },
               {
                 q: "What image formats are supported for photo restoration?",
@@ -267,8 +267,8 @@ export default function OldPhotoRestorationPage() {
                 a: "Our face enhancement models are trained to preserve identity — they recover sharpness and detail while keeping the person's features as they were. Results are accurate in over 95% of cases. Always compare the output to the original, especially for severely damaged faces.",
               },
               {
-                q: "What is the difference between Free Trial and Pro Lifetime?",
-                a: "Free Trial: 3 photos to test quality, no signup required. Pro Lifetime: One-time payment of $4.99 for unlimited restorations forever, original full resolution output, no watermark, lifetime access to all features.",
+                q: "How does Pro Lifetime work?",
+                a: "Pro Lifetime is a one-time $4.99 payment. After checkout, you restore with the same email, download the original-quality file, and keep lifetime access with no recurring subscription.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

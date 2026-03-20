@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Manage Your Subscription — ArtImageHub Pro",
-  description: "View your ArtImageHub Pro subscription status, billing date, and manage your account. Cancel or upgrade anytime.",
+  title: "Unlock Pro Lifetime — ArtImageHub",
+  description: "Complete the one-time checkout that unlocks original-quality restores, downloads, and future Pro sessions on the same email.",
   alternates: { canonical: "/subscription" },
   robots: { index: false, follow: false },
 };
