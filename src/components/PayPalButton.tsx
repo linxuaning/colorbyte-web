@@ -193,6 +193,9 @@ export default function PayPalButton({
         },
         onApprove: async (data: PayPalApproveData) => {
           try {
+            const captureEmail = requiresInlineEmail
+              ? normalizedCheckoutEmail
+              : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
             const response = await fetch(`${API_BASE}/api/payment/paypal-capture-payment`, {
               method: "POST",
               headers: {
@@ -200,6 +203,7 @@ export default function PayPalButton({
               },
               body: JSON.stringify({
                 order_id: data.orderID,
+                email: captureEmail || undefined,
               }),
             });
 

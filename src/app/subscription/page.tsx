@@ -42,6 +42,7 @@ interface SubscriptionData {
   email: string;
   is_active: boolean;
   status: string;
+  payment_provider: string | null;
   trial_end: string | null;
   current_period_end: string | null;
   cancel_at_period_end: boolean;
@@ -204,7 +205,7 @@ export default function SubscriptionPage() {
     const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
-      `Use this payment link to unlock Pro Lifetime (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
+      `Use this checkout link to download the HD original (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
     );
     trackPaymentEmailEntry("subscription_page", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
@@ -213,15 +214,15 @@ export default function SubscriptionPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
-      {/* Pro Lifetime Offer - Show before subscription check */}
+      {/* HD original offer - show before subscription check */}
       {shouldShowOffer && (
         <div id="checkout-offer" className="mb-12 scroll-mt-24">
           <div className="text-center mb-8">
             <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-              Upgrade to Pro Lifetime
+              Download HD Original — {PRO_PRICE_TEXT}
             </h1>
             <p className="mt-3 text-[17px] text-[#6e6e73]">
-              One payment for original-quality restores and downloads.
+              Restore and preview for free, then pay once for the HD original without a watermark.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
               {[
@@ -238,7 +239,7 @@ export default function SubscriptionPage() {
           </div>
 
           <div className="max-w-md mx-auto">
-            {/* Pro Lifetime - CTA */}
+            {/* HD original checkout */}
             <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
@@ -246,7 +247,7 @@ export default function SubscriptionPage() {
                 </span>
               </div>
 
-              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
+              <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">HD Original</p>
               <div className="mt-2 flex items-baseline gap-2">
                 <span className="text-[32px] font-bold tracking-[-0.04em] text-white">{PRO_PRICE_TEXT}</span>
               </div>
@@ -257,10 +258,9 @@ export default function SubscriptionPage() {
 
               <ul className="mt-5 space-y-2.5">
                 {[
-                  "Unlimited restorations",
-                  "Original quality download",
+                  "HD original download",
                   "No watermark",
-                  "Use the same email for future Pro sessions",
+                  "One-time payment",
                 ].map((f) => (
                   <li key={f} className="flex items-center gap-2.5 text-[13px] text-white">
                     <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
@@ -289,8 +289,8 @@ export default function SubscriptionPage() {
                 />
                 <p className="mt-2 text-[12px] leading-[1.5] text-white/70">
                   {hasValidCheckoutEmail
-                    ? "This email unlocks Pro immediately after payment and stays linked to future restores."
-                    : "Enter a valid email first. PayPal checkout stays locked until we know where to activate Pro."}
+                    ? "This email unlocks the HD original immediately after payment."
+                    : "Enter a valid email first. PayPal checkout stays locked until we know where to send the receipt and unlock the HD original."}
                 </p>
               </div>
 
@@ -302,9 +302,9 @@ export default function SubscriptionPage() {
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
                 <p className="font-medium text-white">What happens after payment</p>
                 <ul className="mt-2 space-y-1.5">
-                  <li>1. Pro access activates on your email immediately</li>
-                  <li>2. You return to restoration with original-quality download unlocked</li>
-                  <li>3. Future restores stay available under the same email</li>
+                  <li>1. The HD original unlocks on your email immediately</li>
+                  <li>2. You return to restoration with the full-resolution download ready</li>
+                  <li>3. Your receipt is sent to the same email</li>
                 </ul>
               </div>
             </div>
@@ -447,7 +447,7 @@ export default function SubscriptionPage() {
                   <strong>Legacy access window</strong> until {formatDate(sub.trial_end)}
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  This account still has active access, but new purchases are pay-first.
+                  This account still has active access, but new purchases use the freemium checkout flow.
                 </p>
               </div>
             )}
@@ -458,7 +458,7 @@ export default function SubscriptionPage() {
                   <strong>Access valid until:</strong> {formatDate(sub.current_period_end)}
                 </p>
                 <p className="text-sm">
-                  <strong>Plan:</strong> Pro Lifetime ($4.99 one-time payment)
+                  <strong>Plan:</strong> HD Original ($4.99 one-time payment)
                 </p>
               </div>
             )}
@@ -475,7 +475,15 @@ export default function SubscriptionPage() {
 
           {/* Actions */}
           <div className="flex flex-wrap gap-3">
-            {sub.is_active && (
+            {sub.is_active && sub.payment_provider === "paypal" && (
+              <div className="w-full rounded-lg bg-green-50 border border-green-200 p-3 text-sm text-green-800">
+                <strong>Paid via PayPal</strong> — One-time payment. No recurring billing.
+                <br />
+                <span className="text-xs text-green-600">Need help? Contact support@artimagehub.com</span>
+              </div>
+            )}
+
+            {sub.is_active && sub.payment_provider !== "paypal" && (
               <button
                 onClick={handleManagePortal}
                 disabled={loading}
@@ -486,7 +494,7 @@ export default function SubscriptionPage() {
               </button>
             )}
 
-            {sub.is_active && !sub.cancel_at_period_end && (
+            {sub.is_active && sub.payment_provider !== "paypal" && !sub.cancel_at_period_end && (
               <button
                 onClick={handleCancel}
                 disabled={canceling}
@@ -502,7 +510,7 @@ export default function SubscriptionPage() {
                 href="#checkout-offer"
                 className="inline-flex h-10 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground"
               >
-                Buy Pro Now
+                Download HD Original
               </Link>
             ) : null}
 

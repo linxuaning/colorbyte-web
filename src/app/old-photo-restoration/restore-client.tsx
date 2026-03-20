@@ -138,33 +138,16 @@ export default function RestoreClient() {
     setStage("done");
   }, [API_BASE, checkingAccess, isSubscriber, resumeTaskId, stage]);
 
-  // Handle click on upload area
+  // Handle click on upload area — open for all users (freemium)
   const handleUploadClick = useCallback(() => {
-    if (!isSubscriber) {
-      redirectToSubscription({
-        ctaSlot: "upload_gate",
-        entryVariant: "pay_first",
-        checkoutSource: "subscription_page",
-      });
-      return;
-    }
-
     fileInputRef.current?.click();
-  }, [isSubscriber, redirectToSubscription]);
+  }, []);
 
-  // --- Upload ---
+  // --- Upload --- (open to all users in freemium model)
   const handleFile = useCallback(
     async (file: File) => {
       const checkoutEmail =
         localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
-      if (!EMAIL_REGEX.test(checkoutEmail)) {
-        redirectToSubscription({
-          ctaSlot: "upload_gate",
-          entryVariant: "pay_first",
-          checkoutSource: "subscription_page",
-        });
-        return;
-      }
 
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
@@ -204,15 +187,6 @@ export default function RestoreClient() {
               body: form,
             });
 
-            if (res.status === 403) {
-              redirectToSubscription({
-                ctaSlot: "upload_gate",
-                entryVariant: "pay_first",
-                checkoutSource: "subscription_page",
-              });
-              return;
-            }
-
             if (!res.ok) {
               const data = await res.json().catch(() => null);
               throw new Error(data?.detail || `Upload failed (${res.status})`);
@@ -240,7 +214,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [colorize, redirectToSubscription],
+    [colorize],
   );
 
   // --- Poll task status ---
@@ -361,7 +335,7 @@ export default function RestoreClient() {
     const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
-      `Your photo is ready.\n\nUpgrade to Pro Lifetime (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal payment link for original-quality download.\n`
+      `Your photo is ready.\n\nDownload the HD original (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal checkout link for the full-resolution download.\n`
     );
     trackPaymentEmailEntry("restore_done", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
@@ -370,46 +344,12 @@ export default function RestoreClient() {
 
   return (
     <div className="mt-10">
-      {/* --- IDLE: Upload area --- */}
+      {/* --- IDLE: Upload area (open to all users) --- */}
       {stage === "idle" && (
         checkingAccess ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
             <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking your Pro access</p>
-            <p className="max-w-md text-[14px] leading-[1.6] text-[#6e6e73]">
-              We&apos;ll unlock the restoration workspace as soon as your purchase email is confirmed.
-            </p>
-          </div>
-        ) : !isSubscriber ? (
-          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 text-center">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#0071e3]/10">
-              <Crown className="h-7 w-7 text-[#0071e3]" />
-            </div>
-            <h3 className="mt-4 text-[22px] font-semibold text-[#1d1d1f]">
-              Pro access is required before processing
-            </h3>
-            <p className="mx-auto mt-3 max-w-md text-[14px] leading-[1.7] text-[#6e6e73]">
-              This workspace is now pay-first. Unlock Pro Lifetime once, then restore, colorize, and download in original quality with the same email.
-            </p>
-            <div className="mt-6 flex flex-col items-center gap-3">
-              <button
-                type="button"
-                onClick={() =>
-                  redirectToSubscription({
-                    ctaSlot: "upload_gate",
-                    entryVariant: "pay_first",
-                    checkoutSource: "subscription_page",
-                  })
-                }
-                className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
-              >
-                <Crown className="h-4 w-4" />
-                Unlock Pro Lifetime — {PRO_PRICE_TEXT}
-              </button>
-              <p className="text-[12px] text-[#6e6e73]">
-                One-time payment · No subscription · Uses your purchase email to unlock the tool
-              </p>
-            </div>
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Loading...</p>
           </div>
         ) : (
           <div
@@ -437,7 +377,7 @@ export default function RestoreClient() {
               className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
             >
               <Upload className="h-4 w-4" />
-              Start Restoring
+              Restore Your Photo Free
             </button>
 
             <label
@@ -542,12 +482,12 @@ export default function RestoreClient() {
               >
                 <span className="flex items-center gap-2">
                   <Crown className="h-4 w-4" />
-                  Download Original Quality
+                  Download HD Original
                 </span>
-                <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
+                <span className="text-[11px] opacity-70 font-normal">Original quality unlocked for this email</span>
               </a>
             ) : (
-              <div className="space-y-2.5">
+              <div className="space-y-3">
                 <Link
                   href={`/subscription?${(() => {
                     const params = new URLSearchParams(
@@ -565,30 +505,43 @@ export default function RestoreClient() {
                     return params.toString();
                   })()}`}
                   onClick={() => trackCTAClick('restore-page')}
-                  className={`flex w-full flex-col items-center gap-1 rounded-full px-6 py-3.5 text-[14px] font-semibold transition-all active:scale-[0.98] ${
-                    "bg-[#1d1d1f] text-white hover:bg-[#2d2d2f]"
-                  }`}
+                  className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-                    Unlock Pro to Download
+                    Download HD Original — {PRO_PRICE_TEXT}
                   </span>
-                  <span className="text-[11px] font-normal opacity-60">
-                    Pay-first access · Original quality · {PRO_PRICE_TEXT} once
+                  <span className="text-[11px] font-normal opacity-70">
+                    One-time payment · Full resolution · No watermark
                   </span>
                 </Link>
+
+                <a
+                  href={resultUrl}
+                  download
+                  onClick={() => trackPhotoDownload('free')}
+                  className="flex w-full flex-col items-center gap-1 rounded-full border border-[#d2d2d7] bg-white px-6 py-3 text-[13px] font-medium text-[#6e6e73] hover:bg-[#f5f5f7] active:scale-[0.98] transition-all"
+                >
+                  <span className="flex items-center gap-2">
+                    <Download className="h-3.5 w-3.5" />
+                    Download Free Preview
+                  </span>
+                  <span className="text-[11px] font-normal opacity-60">
+                    720p · Watermarked
+                  </span>
+                </a>
               </div>
             )}
 
             {!isSubscriber && (
               <div className="mt-4 space-y-3">
                 <p className="text-center text-[12px] text-[#6e6e73]">
-                  {PRO_PRICE_TEXT} one-time payment. No subscription, unlimited forever.
+                  {PRO_PRICE_TEXT} one-time payment. No subscription.
                 </p>
                 {EMAIL_PAYMENT_ENTRY_ENABLED && (
                   <div className="rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
                     <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
-                      Email me the payment link
+                      Email me the checkout link
                     </p>
                     <div className="mt-2 flex gap-2">
                       <input
@@ -607,7 +560,7 @@ export default function RestoreClient() {
                       </button>
                     </div>
                     <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
-                      {emailEntryHint || "Opens your mail app with the payment link prefilled."}
+                      {emailEntryHint || "Opens your mail app with the checkout link prefilled."}
                     </p>
                   </div>
                 )}
@@ -730,14 +683,14 @@ function LimitReachedModal({
             <Crown className="h-7 w-7 text-[#0071e3]" />
           </div>
 
-          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Pro Lifetime Required</h2>
+          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Download HD Original</h2>
           <p className="mt-2 text-[14px] text-[#6e6e73] leading-[1.6]">
-            Unlock unlimited photo restorations with a one-time payment.
+            Your preview is ready.
             <br />
-            Pay once, use forever — no subscription.
+            Pay once to download the HD original without a watermark.
           </p>
 
-          {/* Pro Lifetime Benefits Card */}
+          {/* HD original benefits card */}
           <div className="mt-6 rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] border border-[#0071e3]/20 p-6 text-left relative overflow-hidden">
             <div className="absolute top-3 right-3">
               <span className="rounded-full bg-[#0071e3] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider">
@@ -745,17 +698,17 @@ function LimitReachedModal({
               </span>
             </div>
 
-            <h3 className="text-[18px] font-bold text-white mb-1">Get Pro Lifetime — $4.99 Once</h3>
+            <h3 className="text-[18px] font-bold text-white mb-1">Download HD Original — $4.99</h3>
             <p className="text-[12px] text-white/60 mb-4">
-              Pay once, use forever. No monthly bills.
+              One-time payment. No subscription.
             </p>
 
             <div className="space-y-2.5 text-[13px]">
               {[
-                "Unlimited downloads forever",
-                "Original quality (full resolution)",
+                "HD original file",
+                "Full resolution",
                 "No watermark",
-                "Use the same email when you return",
+                "Secure checkout",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-2.5">
                   <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#0071e3]/20">
@@ -768,8 +721,8 @@ function LimitReachedModal({
 
             <div className="mt-4 rounded-lg bg-white/5 border border-white/10 p-3 text-[11px]">
               <p className="text-white/60 mb-1">What changes after payment</p>
-              <p className="text-white">Your current email unlocks original-quality downloads immediately.</p>
-              <p className="text-white mt-1">You can return later with the same email and keep using Pro access.</p>
+              <p className="text-white">Your current email unlocks the HD original immediately.</p>
+              <p className="text-white mt-1">You return straight to the result after checkout.</p>
             </div>
 
             <button
@@ -777,7 +730,7 @@ function LimitReachedModal({
               className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-bold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-lg shadow-[#0071e3]/25"
             >
               <Crown className="h-4 w-4" />
-              Unlock Pro Lifetime
+              Download HD Original — $4.99
             </button>
 
             <p className="mt-3 text-center text-[11px] text-white/50">
