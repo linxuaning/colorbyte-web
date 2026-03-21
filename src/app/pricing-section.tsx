@@ -70,14 +70,14 @@ export default function PricingSection() {
           Pricing
         </p>
         <h2 className="mt-3 text-center text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-          Pro Lifetime Access
+          HD Original Download
         </h2>
         <p className="mt-3 text-center text-[17px] text-[#6e6e73]">
-          Pay once, use forever. No subscription.
+          Restore and preview for free, then pay once for the HD original.
         </p>
 
         <div className="mt-12 max-w-md mx-auto">
-          {/* Pro Lifetime */}
+          {/* HD original download */}
           <div className="relative rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] p-8 shadow-2xl ring-2 ring-[#0071e3]/30">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
@@ -88,12 +88,12 @@ export default function PricingSection() {
               </span>
             </div>
 
-            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">Pro Lifetime</p>
+            <p className="text-[13px] font-semibold uppercase tracking-[0.06em] text-white/50">HD Original</p>
             <div className="mt-3 flex items-baseline gap-2">
               <span className="text-[44px] font-bold tracking-[-0.04em] text-white">$4.99</span>
               <span className="text-[24px] font-medium tracking-[-0.02em] text-white/40 line-through">$9.99</span>
             </div>
-            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment, lifetime access</p>
+            <p className="mt-2 text-[13px] text-[#0071e3] font-medium">One-time payment. No subscription.</p>
 
             {/* Countdown Timer */}
             <div className="mt-2">
@@ -102,11 +102,11 @@ export default function PricingSection() {
 
             <ul className="mt-7 space-y-3">
               {[
-                "Unlimited restorations",
-                "Original quality download",
-                "No watermark",
-                "Lifetime access — pay once, use forever",
-                "All future features",
+                "Free preview before checkout",
+                "HD original download",
+                "No watermark on paid export",
+                "One-time payment",
+                "Secure PayPal checkout",
               ].map((f) => (
                 <li key={f} className="flex items-center gap-2.5 text-[14px] text-white">
                   <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
@@ -118,14 +118,14 @@ export default function PricingSection() {
             </ul>
 
             <Link
-              href="/subscription"
+              href="/old-photo-restoration"
               className="mt-8 flex h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#0071e3] to-[#0084ff] text-[15px] font-bold text-white hover:from-[#0077ed] hover:to-[#0090ff] active:scale-[0.96] transition-all shadow-xl hover:shadow-2xl relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
                 </svg>
-                Get Lifetime Access →
+                Restore Your Photo Free
               </span>
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent"></span>
             </Link>
@@ -140,32 +140,8 @@ export default function PricingSection() {
           </div>
         </div>
 
-        {/* Value Comparison */}
-        <div className="mt-8 mx-auto max-w-2xl rounded-xl border border-[#d2d2d7]/40 bg-gradient-to-br from-[#f5f5f7] to-white p-6">
-          <h3 className="text-center text-[15px] font-semibold text-[#1d1d1f] mb-4">
-            💰 Why Pro Lifetime Saves You Money
-          </h3>
-          <div className="grid sm:grid-cols-2 gap-4 text-[13px]">
-            <div className="bg-white rounded-lg p-4 border border-red-100">
-              <p className="font-semibold text-red-600 mb-2">Other Tools (Monthly Subscription)</p>
-              <p className="text-[#6e6e73]">Remini: $9.99/month</p>
-              <p className="text-[#6e6e73] mt-1">= <span className="font-bold text-red-600">$119.88/year</span></p>
-              <p className="text-[#6e6e73] mt-1">= <span className="font-bold text-red-600">$599.40/5 years</span></p>
-            </div>
-            <div className="bg-gradient-to-br from-[#0071e3]/5 to-green-50 rounded-lg p-4 border border-[#0071e3]/20">
-              <p className="font-semibold text-[#0071e3] mb-2">ArtImageHub (One-Time)</p>
-              <p className="text-[#1d1d1f] font-bold">$4.99 once</p>
-              <p className="text-green-600 font-bold mt-1">= $4.99 forever ✓</p>
-              <p className="text-green-600 font-bold mt-1">Save $569.50 over 5 years!</p>
-            </div>
-          </div>
-          <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-            Pay once, use forever. No monthly bills, no surprises.
-          </p>
-        </div>
-
         <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-          One-time payment · Unlimited lifetime access · No subscription required
+          Free preview · HD original download $4.99 · No subscription
         </p>
       </div>
     </section>

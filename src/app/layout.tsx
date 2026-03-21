@@ -191,6 +191,24 @@ function Footer() {
             <p className="mt-4 text-[13px] text-[#6b5344] italic font-lora">
               &ldquo;Every photograph is a certificate of presence.&rdquo;
             </p>
+            <div className="mt-6">
+              <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-[#6b5344]">
+                Featured On
+              </p>
+              <a
+                href="https://www.toolpilot.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Featured on ToolPilot"
+                className="inline-flex rounded-xl border border-[#3d3020] bg-[#1f180f] px-3 py-2 transition-colors hover:border-[#5a4530] hover:bg-[#241c12]"
+              >
+                <img
+                  src="https://www.toolpilot.ai/cdn/shop/files/f-w_690x151_crop_center.png?v=1695883028"
+                  alt="Featured on ToolPilot"
+                  className="h-7 w-auto"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Product */}

@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 
+  // 301 permanent redirects for SEO
+  async redirects() {
+    return [
+      {
+        source: "/colorize-photos",
+        destination: "/photo-colorizer",
+        permanent: true,
+      },
+    ];
+  },
+
   // HTTP security & SEO headers
   async headers() {
     return [

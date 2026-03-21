@@ -8,19 +8,19 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
-  description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free online tool — no signup required. Results in 30 seconds.",
+  description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "ArtImageHub",
-    title: "ArtImageHub — AI Photo Restoration Online Free",
-    description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free — no signup required.",
+    title: "ArtImageHub — AI Photo Restoration",
+    description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free preview first, HD original download for $4.99.",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "AI photo restoration before and after comparison" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ArtImageHub — AI Photo Restoration Free",
-    description: "Restore old, damaged photos with AI in seconds. Free online tool.",
+    title: "ArtImageHub — AI Photo Restoration",
+    description: "Restore old, damaged photos with AI in seconds. Free preview first, HD original download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -37,7 +37,7 @@ const softwareAppSchema = {
     "AI-powered photo restoration tool that fixes damaged photos, enhances faces, increases resolution up to 4×, and colorizes black & white images in seconds.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },
@@ -85,18 +85,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What is Pro Lifetime?",
+      name: "How does pricing work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pro Lifetime is a one-time payment of $4.99 for unlimited photo restorations forever — no subscription, no recurring charges. Pay once, use forever.",
+        text: "You can restore and preview your photo for free. If you want the HD original without a watermark, the download is a one-time $4.99 payment.",
       },
     },
     {
       "@type": "Question",
-      name: "How does the pricing work?",
+      name: "Do I need a subscription?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pro Lifetime is $4.99 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
+        text: "No. There is no monthly plan. You restore for free and only pay $4.99 if you want the HD original download.",
       },
     },
   ],
@@ -167,7 +167,7 @@ export default function HomePage() {
 
               {/* Subheadline */}
               <p className="mt-10 max-w-xl font-lora text-[18px] sm:text-[20px] leading-[1.65] text-[#6b5344]">
-                Upload a damaged, faded, or black&#160;&amp;&#160;white photo — our AI restores it to stunning clarity in seconds. Free to try, no account needed.
+                Upload a damaged, faded, or black&#160;&amp;&#160;white photo — our AI restores it to stunning clarity in seconds. Start free, then choose the HD original for $4.99 if you want it.
               </p>
 
               {/* Social Proof */}
@@ -183,7 +183,7 @@ export default function HomePage() {
                   className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-2">
-                    Restore Your Photo Free — Takes 30 Seconds
+                    Restore Your Photo Free
                     <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                       <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -195,8 +195,8 @@ export default function HomePage() {
                 {/* No signup emphasis */}
                 <div className="flex flex-wrap items-center gap-4 text-[13px] text-[#6b5344] pl-2">
                   {[
-                    { icon: "✓", text: "No signup" },
-                    { icon: "✓", text: "No download" },
+                    { icon: "✓", text: "Free preview" },
+                    { icon: "✓", text: "HD original $4.99" },
                     { icon: "✓", text: "Instant results" },
                   ].map((item) => (
                     <span key={item.text} className="flex items-center gap-1.5 font-lora font-500">
@@ -209,7 +209,7 @@ export default function HomePage() {
                 <div className="rounded-2xl border border-[#d4bc91]/45 bg-white/78 px-4 py-3 text-left shadow-sm">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-[#6b5344]">
                     {[
-                      "3 free photos to test quality",
+                      "Free preview before checkout",
                       "Deleted from servers within 24 hours",
                       "JPG, PNG, WEBP up to 20 MB",
                     ].map((item) => (
@@ -557,7 +557,7 @@ export default function HomePage() {
               className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Restore Your Photo Free — Takes 30 Seconds
+                Restore Your Photo Free
                 <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -687,12 +687,12 @@ export default function HomePage() {
                   a: "Yes. All uploaded photos are automatically deleted after 24 hours. We never store, share, or train models on your images.",
                 },
                 {
-                  q: "What is Pro Lifetime?",
-                  a: "Pro Lifetime is a one-time payment of $4.99 for unlimited photo restorations forever with original quality and no watermark. Pay once, use forever.",
+                  q: "How does pricing work?",
+                  a: "Restore and preview your photo for free. If you want the HD original without a watermark, the download is a one-time $4.99 payment.",
                 },
                 {
-                  q: "How does pricing work?",
-                  a: "Pro Lifetime is $4.99 (one-time payment) for unlimited photo restorations forever. No monthly subscription, no hidden fees. Pay once, use forever.",
+                  q: "Do I need a subscription?",
+                  a: "No. There is no monthly plan. You restore for free and only pay $4.99 if you want the HD original download.",
                 },
               ].map((item) => (
                 <details
@@ -732,11 +732,11 @@ export default function HomePage() {
 
             <h2 className="font-playfair text-[44px] sm:text-[60px] lg:text-[72px] font-900 leading-[0.97] tracking-[-0.03em] text-[#faf8f4]">
               Your memories deserve<br />
-              <em className="italic text-[#D4A96A]">to last forever.</em>
+              <em className="italic text-[#D4A96A]">to shine again.</em>
             </h2>
 
             <p className="mt-8 font-lora text-[18px] leading-[1.65] text-[#a8967e] max-w-xl mx-auto">
-              Start restoring today — completely free, no account needed. Bring your family&rsquo;s history back to life.
+              Start restoring for free, then download the HD original for $4.99 if you want to keep it. Bring your family&rsquo;s history back to life.
             </p>
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -745,7 +745,7 @@ export default function HomePage() {
                 className="group inline-flex h-14 items-center rounded-full bg-[#D4A96A] px-9 font-lora text-[17px] font-600 text-[#2c2416] hover:bg-[#c49a5a] hover:shadow-2xl active:scale-[0.97] transition-all duration-300 shadow-xl shadow-[#D4A96A]/20 hover:shadow-[#D4A96A]/40 relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Restore Your Photo Free — Takes 30 Seconds
+                  Restore Your Photo Free
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
@@ -761,7 +761,7 @@ export default function HomePage() {
             </div>
 
             <p className="mt-7 font-lora text-[13px] text-[#6b5344]">
-              Results in 30 seconds · One-time payment · Unlimited lifetime access
+              Results in 30 seconds · Free preview · HD original $4.99
             </p>
           </div>
         </div>

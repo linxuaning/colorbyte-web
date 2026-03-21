@@ -60,7 +60,7 @@ export default function StickyCTA() {
                 Your memories deserve to be restored
               </p>
               <p className="font-lora text-[12px] text-[#6b5344] mt-0.5">
-                <span className="font-600 text-[#8B5E3C]">One-time payment</span> · Unlimited access · AI results in 30 seconds
+                <span className="font-600 text-[#8B5E3C]">One-time payment</span> · $4.99 unlocks HD originals · AI results in 30 seconds
               </p>
             </div>
 
