@@ -159,7 +159,7 @@ export default function OldPhotoRestorationPage() {
         description="Once the shortest path to upload stays clear, proof can still do its job here by answering the next question: how well does this work on a photo like mine?"
       />
 
-      <FloatingCTA />
+      <FloatingCTA landingPage="/old-photo-restoration" />
 
       {/* ─── SEO Content: How It Works ─── */}
       <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">

@@ -1,17 +1,41 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+import {
+  buildPaymentFunnelQuery,
+  mergePaymentFunnelSource,
+  readPaymentFunnelSource,
+} from "@/lib/payment-funnel";
 
-export default function FloatingCTA() {
+interface FloatingCTAProps {
+  landingPage?: string;
+}
+
+export default function FloatingCTA({ landingPage }: FloatingCTAProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeUsers, setActiveUsers] = useState(0);
+  const [activeUsers] = useState(() => 18 + Math.floor(Math.random() * 12));
+  const checkoutHref = useMemo(() => {
+    if (typeof window === "undefined") {
+      return "/subscription";
+    }
 
-  useEffect(() => {
-    // Generate realistic active user count
-    const base = 18;
-    const variation = Math.floor(Math.random() * 12);
-    setActiveUsers(base + variation);
-  }, []);
+    const resolvedLandingPage = landingPage || window.location.pathname;
+    const baseSource = mergePaymentFunnelSource(
+      { landingPage: resolvedLandingPage },
+      readPaymentFunnelSource(new URLSearchParams(window.location.search))
+    );
+    const params = new URLSearchParams(
+      buildPaymentFunnelQuery({
+        ...baseSource,
+        ctaSlot: "floating_mobile_bar",
+        entryVariant: "sticky_mobile",
+        checkoutSource:
+          baseSource.checkoutSource || "sticky_mobile_direct",
+      })
+    );
+
+    return params.toString() ? `/subscription?${params.toString()}` : "/subscription";
+  }, [landingPage]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +50,7 @@ export default function FloatingCTA() {
   if (!isVisible) return null;
 
   const openSubscription = () => {
-    window.location.href = "/subscription";
+    window.location.href = checkoutHref;
   };
 
   return (
