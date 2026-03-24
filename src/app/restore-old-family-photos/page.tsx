@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Restore Old Family Photos Free Online | AI Photo Restoration",
   description:
-    "Restore old family photos free with AI. Fix faded grandparent photos, repair damaged family pictures, enhance vintage portraits. No signup required, instant results.",
+    "Restore old family photos with AI. Fix faded grandparent photos, repair damaged family pictures, and start with a free preview. Unlock the original-quality download for $4.99.",
   alternates: { canonical: "/restore-old-family-photos" },
   keywords: [
     "restore old family photos",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Restore Old Family Photos Free — AI Photo Restoration",
     description:
-      "Restore old family photos free with AI. Fix faded, damaged family pictures in 30 seconds. No signup required.",
+      "Restore old family photos with AI. Preview the restored result first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Restore Old Family Photos Free Online",
     description:
-      "AI family photo restoration. Fix faded grandparent photos, repair damaged pictures. Free, instant results.",
+      "AI family photo restoration. Start with a free preview, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your restored family photo",
-      text: "Preview the before/after comparison and download your restored family photo. Free users get 3 downloads per day. Share the restored photo with your family!",
+      text: "Preview the before/after comparison first. When you want the original-quality restored family photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is it really free to restore family photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free family photo restorations per day with no account required. Free downloads are 720p resolution. For unlimited restorations at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you preview the restored family photo for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
       },
     },
     {
@@ -119,7 +119,7 @@ const faqSchema = {
       name: "Can I restore multiple family photos at once?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Currently, photos are restored one at a time. Free users can restore 3 photos per day. Pro Lifetime users can restore unlimited photos. For large family photo collections, the process is quick—each photo takes only 30 seconds.",
+        text: "Currently, photos are restored one at a time. For large family photo collections, the process is still quick because each photo usually finishes in about 30 seconds. You can preview each result before deciding whether to unlock the original-quality download.",
       },
     },
   ],
@@ -133,13 +133,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/restore-old-family-photos",
   description:
-    "Free AI-powered tool to restore old family photos. Fix faded grandparent photos, repair damaged family pictures, enhance vintage portraits in 30 seconds. No signup required.",
+    "AI-powered tool to restore old family photos. Fix faded grandparent photos, repair damaged family pictures, and preview the result before unlocking the original-quality download for $4.99.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 family photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -149,7 +149,7 @@ const softwareSchema = {
     worstRating: "1",
   },
   featureList: [
-    "Free Family Photo Restoration (3/day)",
+    "Family Photo Restoration with Free Preview",
     "AI Face Enhancement for Portraits",
     "Fading and Yellowing Correction",
     "Scratch and Damage Repair",
@@ -180,15 +180,16 @@ export default function RestoreOldFamilyPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free — No Signup Required
+            Free Preview — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Restore Old Family Photos Free
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             Bring your family memories back to life. AI restores faded
-            grandparent photos, repairs damaged family pictures, and enhances
-            vintage portraits in 30 seconds.
+            grandparent photos, repairs damaged family pictures, and lets you
+            compare the preview before unlocking the original-quality file for
+            $4.99.
           </p>
         </div>
       </div>
@@ -353,7 +354,7 @@ export default function RestoreOldFamilyPhotosPage() {
                 },
                 {
                   q: "Is it really free to restore family photos?",
-                  a: "Yes, 3 free restorations per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited restorations at original resolution.",
+                  a: "Yes. ArtImageHub lets you preview the restored family photo for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
                 },
                 {
                   q: "Will restoration change how my family members look?",
