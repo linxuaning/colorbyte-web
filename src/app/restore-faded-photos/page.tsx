@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Restore Faded Photos | Bring Back Vibrant Colors with AI',
-  description: 'Restore faded photos to their original vibrancy with AI. Fix sun damage, yellowing, and color degradation in seconds. Free to try, instant results.',
+  description: 'Restore faded photos with AI. Preview the restoration first, then unlock the original-quality download for $4.99. No subscription.',
   keywords: [
     'restore faded photos',
     'fix faded photos',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/restore-faded-photos' },
   openGraph: {
     title: 'Restore Faded Photos | AI Color Recovery',
-    description: 'Bring back vibrant colors to faded photos. AI fixes sun damage and yellowing instantly.',
+    description: 'Bring back vibrant colors to faded photos. Preview first, then unlock the original-quality download for $4.99.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Faded photo restoration before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Restore Faded Photos - AI Powered',
-    description: 'Fix faded, yellowed photos instantly. Free AI restoration.',
+    description: 'Preview the faded photo restoration first, then unlock the original-quality download for $4.99.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Faded Photos",
-  description: "Restore faded photographs to their original colors using AI — fix sun damage, yellowing, and color degradation in seconds.",
+  description: "Restore faded photographs to their original colors using AI. Preview first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Faded Photo Restoration" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your vibrant photo",
-      text: "Preview the color restoration and download. 3 photos free, no signup required.",
+      text: "Preview the color restoration first. If you want the clean original-quality restored photo, unlock the download for $4.99.",
     },
   ],
 };
@@ -71,9 +71,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $4.99"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -90,7 +90,7 @@ const faqSchema = {
     { "@type": "Question", name: "Can AI really restore faded colors?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI analyzes remaining color information and uses deep learning models trained on millions of photos to reconstruct original tones. Even severely faded photos often retain enough data for AI to restore surprisingly accurate colors. Results are typically excellent for moderate fading." } },
     { "@type": "Question", name: "Will restoration look natural or over-saturated?", acceptedAnswer: { "@type": "Answer", text: "Our AI is trained to restore natural-looking colors, not artificial oversaturation. The goal is accurate reconstruction of original tones based on the photo's era and subject matter. You can always adjust if you prefer more or less vibrant results." } },
     { "@type": "Question", name: "Can you restore photos that are almost completely faded?", acceptedAnswer: { "@type": "Answer", text: "AI can work with severely faded photos, but results depend on how much color data remains. Photos with visible image detail usually restore well. Completely washed-out photos with no discernible detail have limited restoration potential." } },
-    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 faded photo restorations free, no signup required. See your results instantly. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution." } },
+    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the faded photo restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription." } },
   ],
 };
 
@@ -126,7 +126,7 @@ export default function RestoreFadedPhotosPage() {
             Restore <span className="text-amber-600">Faded</span> Photos
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Bring back the vibrant colors time has stolen. AI analyzes fading patterns and reconstructs original tones — <strong className="text-[#1d1d1f]">results in 30 seconds</strong>.
+            Bring back the vibrant colors time has stolen. Preview the restoration first, then unlock the original-quality download for $4.99 if the result is worth keeping.
           </p>
 
           {/* Trust indicators */}
@@ -348,7 +348,7 @@ export default function RestoreFadedPhotosPage() {
               },
               {
                 q: "Is faded photo restoration free?",
-                a: "Yes! Try 3 restorations free, no signup required. See instant results. Pro Lifetime ($4.99 one-time) gives unlimited full-resolution restorations.",
+                a: "Yes. ArtImageHub lets you preview the faded photo restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
@@ -373,10 +373,10 @@ export default function RestoreFadedPhotosPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-amber-700 hover:bg-amber-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Restore Faded Photo Free — Try Now
+            Start Free Preview
           </Link>
           <p className="mt-4 text-amber-200 text-[13px]">
-            3 free restorations · No signup · Natural color recovery
+            Free preview · $4.99 original-quality unlock · No subscription
           </p>
         </div>
       </section>
