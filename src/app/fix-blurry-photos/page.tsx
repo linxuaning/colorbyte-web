@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Fix Blurry Photos Online Free | AI Photo Deblur in Seconds',
-  description: 'Fix blurry photos instantly with AI. Sharpen out-of-focus images, enhance faces, remove motion blur. Free online tool - no signup, results in 30 seconds.',
+  description: 'Fix blurry photos instantly with AI. Sharpen out-of-focus images, enhance faces, and start with a free preview. Unlock the original-quality download for $4.99.',
   keywords: [
     'fix blurry photos',
     'fix blurry pictures',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/fix-blurry-photos' },
   openGraph: {
     title: 'Fix Blurry Photos Online Free | AI Photo Sharpening',
-    description: 'Fix blurry photos instantly with AI. Free online tool - results in 30 seconds.',
+    description: 'Fix blurry photos instantly with AI. Preview the sharpened result first, then unlock the original-quality download for $4.99.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after fixing blurry photo' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Fix Blurry Photos Online Free',
-    description: 'Sharpen blurry images with AI. Free, no signup required.',
+    description: 'Sharpen blurry images with AI. Start with a free preview, then unlock the original-quality download for $4.99.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your sharp photo",
-      text: "Preview before/after comparison and download your sharpened photo. 3 photos free, no signup required.",
+      text: "Preview the before/after comparison first. When you want the original-quality sharpened photo, unlock the download for $4.99.",
     },
   ],
 };
@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "3 free fixes, Pro Lifetime $4.99"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -88,7 +88,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Can AI really fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Modern AI can fix many types of blur including slight out-of-focus, camera shake, and motion blur. AI works best on photos with moderate blur where some detail is preserved. Extremely blurry photos (severe motion blur or completely out of focus) may have limited improvement." } },
     { "@type": "Question", name: "What types of blur can be fixed?", acceptedAnswer: { "@type": "Answer", text: "AI can fix: 1) Out-of-focus blur - when the camera focused on the wrong area, 2) Camera shake - slight blur from unsteady hands, 3) Motion blur - blur from moving subjects, 4) Low-light blur - softness from slow shutter speeds. Results vary based on blur severity." } },
-    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited fixes at full resolution." } },
+    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the sharpened result for free with no signup required. When you want the original-quality fixed photo, unlock the download for $4.99." } },
     { "@type": "Question", name: "Will fixing blur make my photo look fake?", acceptedAnswer: { "@type": "Answer", text: "Good AI enhancement preserves natural appearance while adding sharpness. Our AI is trained to avoid over-sharpening artifacts. Always compare before/after to ensure you're happy with the result." } },
     { "@type": "Question", name: "Can I fix blurry faces in photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Face enhancement is one of our AI's strongest features. It can sharpen blurry faces, restore facial detail, and enhance eyes and features while maintaining natural appearance." } },
   ],
@@ -126,7 +126,7 @@ export default function FixBlurryPhotosPage() {
             Fix Blurry Photos <span className="text-indigo-600">Instantly</span>
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Upload your blurry photo and let AI sharpen it in 30 seconds. Fix out-of-focus shots, motion blur, and soft images — <strong className="text-[#1d1d1f]">free to try</strong>.
+            Upload your blurry photo and let AI sharpen it in 30 seconds. Fix out-of-focus shots, motion blur, and soft images — <strong className="text-[#1d1d1f]">start with a free preview</strong>.
           </p>
 
           {/* Trust indicators */}
@@ -224,7 +224,7 @@ export default function FixBlurryPhotosPage() {
           {/* Honesty note */}
           <div className="mt-8 p-5 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-[14px] text-amber-900">
-              <strong>🔍 Realistic expectations:</strong> AI can significantly improve moderately blurry photos but can't perform miracles on extremely blurry images. The best results come from photos where some detail is still visible. Try your photo free to see what's possible.
+              <strong>🔍 Realistic expectations:</strong> AI can significantly improve moderately blurry photos but can&apos;t perform miracles on extremely blurry images. The best results come from photos where some detail is still visible. Use the free preview to see what&apos;s possible before you unlock the final file.
             </p>
           </div>
         </div>
@@ -254,7 +254,7 @@ export default function FixBlurryPhotosPage() {
               {
                 step: "3",
                 title: "Download the result",
-                desc: "Compare before/after and download. Free users get 3 photos at 720p resolution.",
+                desc: "Compare before/after first. When you want the clean original-quality sharpened photo, unlock the download for $4.99.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -292,7 +292,7 @@ export default function FixBlurryPhotosPage() {
               },
               {
                 q: "Is fixing blurry photos free?",
-                a: "Yes! ArtImageHub offers 3 free photo fixes with no signup required. Free users get 720p output. For unlimited fixes at full resolution, Pro Lifetime is $4.99 one-time (not a subscription).",
+                a: "Yes. ArtImageHub lets you preview the sharpened result for free with no signup required. When you want the original-quality fixed photo, unlock the download for $4.99.",
               },
               {
                 q: "Will the fixed photo look fake or over-processed?",
@@ -319,16 +319,16 @@ export default function FixBlurryPhotosPage() {
             Ready to Fix Your Blurry Photos?
           </h2>
           <p className="text-indigo-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Upload your photo and see the AI magic in 30 seconds. No signup, no credit card — just sharp results.
+            Upload your photo and see the AI sharpen it in 30 seconds. No signup, no credit card. Unlock the original-quality file only if the result is worth keeping.
           </p>
           <Link
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-indigo-700 hover:bg-indigo-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Fix Your Photo Free — Try Now
+            Start Free Preview — Try Now
           </Link>
           <p className="mt-4 text-indigo-200 text-[13px]">
-            3 free photos · No signup · Results in 30 seconds
+            Free preview · No signup · Results in 30 seconds
           </p>
         </div>
       </section>
