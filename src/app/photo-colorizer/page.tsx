@@ -4,7 +4,7 @@ import ColorizeClient from "./colorize-client";
 export const metadata: Metadata = {
   title: "Photo Colorizer: Colorize Black and White Photos with AI Free",
   description:
-    "Best AI photo colorizer to colorize black and white photos online free. Turn old family photos, historical images into vivid color in 30 seconds. No signup, instant results.",
+    "Colorize black and white photos with AI. Start with a free preview, then unlock the original-quality download for $4.99. No subscription.",
   alternates: { canonical: "/photo-colorizer" },
   keywords: [
     "photo colorizer",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Photo Colorizer — Colorize Black & White Photos Free Online",
     description:
-      "Best AI photo colorizer. Turn black and white photos into vivid color instantly. Free, no signup required.",
+      "Turn black and white photos into vivid color with AI. Preview first, then unlock the original-quality file for $4.99.",
     type: "website",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Photo Colorizer — Colorize Black & White Photos Free",
     description:
-      "Best AI photo colorizer. Turn black and white photos into color instantly. Free online tool.",
+      "Preview the colorized result first, then unlock the original-quality file for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -43,7 +43,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Colorize Black and White Photos with AI",
-  description: "Add realistic colors to black and white photos using AI colorization — free, no signup required, results in 30 seconds.",
+  description: "Add realistic colors to black and white photos using AI colorization. Preview first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Colorizer" }],
   step: [
@@ -70,7 +70,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your colorized photo",
-      text: "Preview the before/after result and download your colorized photo in high resolution. Free users get 720p; Pro users get original resolution.",
+      text: "Preview the before/after result first. If you want the clean original-quality colorized photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,12 +95,13 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/photo-colorizer",
-  description: "AI-powered photo colorization tool that adds realistic colors to black and white photos in seconds. Free online tool for colorizing old family photos, historical images, and vintage pictures.",
+  description: "AI-powered photo colorization tool that lets you preview the colorized result first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",

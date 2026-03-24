@@ -4,7 +4,7 @@ import EnhanceClient from "./enhance-client";
 export const metadata: Metadata = {
   title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
   description:
-    "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
+    "Enhance photo quality online with AI. Start with a free preview, then unlock the original-quality download for $4.99. No subscription.",
   alternates: { canonical: "/photo-enhancer" },
   keywords: [
     "AI photo enhancer",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
     description:
-      "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale. No signup, instant results.",
+      "Improve photo quality with AI. Preview first, then unlock the original-quality enhanced file for $4.99.",
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI Photo Enhancer Free — Improve Photo Quality Online",
     description:
-      "Best AI photo enhancer. Improve quality, fix blur, 4x upscale. Free online, instant results.",
+      "Preview the enhanced result first, then unlock the original-quality file for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -44,7 +44,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Enhance Photo Quality with AI",
-  description: "Improve photo quality and fix blurry photos using AI photo enhancement — free, no signup required, results in 30 seconds.",
+  description: "Improve photo quality and fix blurry photos using AI photo enhancement. Preview first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancer" }],
   step: [
@@ -71,7 +71,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your enhanced photo",
-      text: "Preview the before/after result and download your enhanced photo in high resolution. Free users get 720p; Pro users get original resolution.",
+      text: "Preview the before/after result first. If you want the clean original-quality enhanced photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -96,12 +96,13 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/photo-enhancer",
-  description: "AI-powered photo enhancement tool that improves photo quality, fixes blurry photos, and enhances resolution in seconds. Free online tool for enhancing selfies, old photos, product images, and any picture.",
+  description: "AI-powered photo enhancement tool that lets you preview the enhanced result first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
