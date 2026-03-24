@@ -21,12 +21,13 @@ function PaymentSuccessContent() {
   const orderId = searchParams.get("order_id");
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = readPaymentFunnelSource(searchParams);
+  const hasResumeTask = resumeTaskId.length > 0;
 
   useEffect(() => {
-    // 🚨 CRITICAL: Save subscription to localStorage so user can access paid features
+    // Save the paid email so the result page can restore download access after checkout.
     if (email) {
       localStorage.setItem("artimagehub_email", email);
-      console.log("✅ Subscription saved to localStorage:", email);
+      console.log("✅ Paid email saved to localStorage:", email);
     }
 
     if (orderId) {
@@ -38,17 +39,18 @@ function PaymentSuccessContent() {
     }
   }, [email, funnelSource, orderId]);
 
-  const restartPath = resumeTaskId
+  const restartPath = hasResumeTask
     ? funnelSource.landingPage || "/old-photo-restoration"
     : "/old-photo-restoration";
   const restartParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
-  if (resumeTaskId) {
+  if (hasResumeTask) {
     restartParams.set("resume_task_id", resumeTaskId);
   }
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
+  const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : "Open the Restore Tool";
   const comparisonReturnHref =
-    !resumeTaskId &&
+    !hasResumeTask &&
     funnelSource.landingPage &&
     funnelSource.landingPage !== "/old-photo-restoration"
       ? (() => {
@@ -83,19 +85,19 @@ function PaymentSuccessContent() {
 
           {/* Success Message */}
           <h1 className="text-[28px] font-bold text-[#1d1d1f] mb-3">
-            Payment Successful!
+            Payment Received
           </h1>
 
           <p className="text-[15px] text-[#6e6e73] mb-6">
-            Your Pro Lifetime access has been activated.
+            Your one-time checkout went through. Return to your result to download the original-quality photo.
           </p>
 
           <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-left">
             <p className="text-[13px] font-semibold text-green-800">Do this next</p>
             <ul className="mt-2 space-y-1.5 text-[13px] text-green-900">
-              <li>1. Go back to your restore flow</li>
-              <li>2. Download in original quality with no watermark</li>
-              <li>3. Keep using the same email for future Pro restores</li>
+              <li>1. Return to your result</li>
+              <li>2. Download the original-quality file with no watermark</li>
+              <li>3. Use the same email if you need to look up access later</li>
             </ul>
           </div>
 
@@ -116,11 +118,11 @@ function PaymentSuccessContent() {
                   </div>
                 )}
                 <div className="flex justify-between text-[13px]">
-                  <span className="text-[#6e6e73]">Plan:</span>
-                  <span className="font-medium text-[#1d1d1f]">Pro Lifetime</span>
+                  <span className="text-[#6e6e73]">Purchase:</span>
+                  <span className="font-medium text-[#1d1d1f]">Original-quality download unlock</span>
                 </div>
                 <div className="flex justify-between text-[13px]">
-                  <span className="text-[#6e6e73]">Amount:</span>
+                  <span className="text-[#6e6e73]">Paid:</span>
                   <span className="font-medium text-[#1d1d1f]">{PRO_PRICE_TEXT}</span>
                 </div>
               </div>
@@ -130,24 +132,24 @@ function PaymentSuccessContent() {
           {/* Benefits */}
           <div className="bg-blue-50 rounded-xl p-5 mb-8 text-left">
             <p className="text-[13px] font-semibold text-[#0071e3] mb-3">
-              What you get:
+              Included now:
             </p>
             <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Unlimited photo restorations</span>
+                <span>Return path back to the result you just unlocked</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Original quality downloads</span>
+                <span>Original-quality download for this paid result</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>No watermarks</span>
+                <span>No watermark on the paid file</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Lifetime access to all future features</span>
+                <span>Email-based access lookup if you come back later</span>
               </li>
             </ul>
           </div>
@@ -157,7 +159,7 @@ function PaymentSuccessContent() {
             href={restartHref}
             className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
-            Return to Your Restore
+            {primaryCtaLabel}
           </Link>
 
           {comparisonReturnHref ? (
@@ -169,12 +171,14 @@ function PaymentSuccessContent() {
             </Link>
           ) : null}
 
-          <Link
-            href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
-            className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
-          >
-            Open My Pro Access
-          </Link>
+          {!hasResumeTask ? (
+            <Link
+              href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
+              className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
+            >
+              Check Download Access
+            </Link>
+          ) : null}
 
           <p className="mt-4 text-[12px] text-[#86868b]">
             Questions?{" "}
