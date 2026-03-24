@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Fix Water Damaged Photos Free | AI Photo Water Damage Repair",
   description:
-    "Fix water damaged photos free with AI. Repair flood damaged pictures, remove water stains, restore photos damaged by moisture. No signup, instant results in 30 seconds.",
+    "Fix water damaged photos with AI. Preview the repair first, then unlock the original-quality download for $4.99. No subscription.",
   alternates: { canonical: "/fix-water-damaged-photos" },
   keywords: [
     "fix water damaged photos",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fix Water Damaged Photos Free — AI Water Damage Repair",
     description:
-      "AI fixes water damaged photos instantly. Repair flood damage, remove water stains, restore moisture damaged pictures. Free, no signup.",
+      "AI fixes water damaged photos instantly. Preview first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fix Water Damaged Photos Free Online",
     description:
-      "AI water damage repair for photos. Fix flood damage, remove stains, restore pictures. Free online tool.",
+      "Preview the water damage repair first, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Fix Water Damaged Photos with AI",
   description:
-    "Repair water damaged photographs using AI restoration — free, no signup required, results in 30 seconds.",
+    "Repair water damaged photographs using AI restoration. Preview the repair first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [
     { "@type": "HowToTool", name: "ArtImageHub Water Damage Photo Repair" },
@@ -74,7 +74,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your restored photo",
-      text: "Preview the before/after comparison showing water damage removed. Download your repaired photo—free users get 3 downloads per day at 720p resolution.",
+      text: "Preview the before/after comparison showing the water damage repair first. If you want the clean original-quality restored photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Is water damage photo repair free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free water damage repairs per day with no account required. Free downloads are 720p resolution. For unlimited repairs at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you preview the water damage repair first with no account required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
       },
     },
     {
@@ -135,13 +135,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/fix-water-damaged-photos",
   description:
-    "Free AI-powered water damage photo repair. Fix flood damaged photos, remove water stains, restore moisture damaged pictures in 30 seconds. No signup required.",
+    "AI-powered water damage photo repair that lets you preview the repair first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -155,7 +155,7 @@ const softwareSchema = {
     "Color Bleeding Correction",
     "Mold/Mildew Stain Repair",
     "Flood Damage Restoration",
-    "Free (3 photos/day)",
+    "Free Preview First",
     "30-Second Processing",
   ],
 };
@@ -182,14 +182,15 @@ export default function FixWaterDamagedPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free — No Signup Required
+            Free Preview First — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Fix Water Damaged Photos Free
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
-            AI repairs water damaged photos instantly. Remove water stains, fix
-            flood damage, restore moisture-affected pictures in 30 seconds.
+            AI repairs water damaged photos instantly. Preview the repair
+            first, then unlock the original-quality download for $4.99 if the
+            result is worth keeping.
           </p>
         </div>
       </div>
@@ -274,7 +275,7 @@ export default function FixWaterDamagedPhotosPage() {
                     1
                   </span>
                   <span>
-                    <strong className="text-[#1d1d1f]">Don't pull apart stuck photos.</strong>{" "}
+	                    <strong className="text-[#1d1d1f]">Don&apos;t pull apart stuck photos.</strong>{" "}
                     Wet photos stick together. Submerge in clean, room-temperature
                     water and gently separate.
                   </span>
@@ -285,7 +286,7 @@ export default function FixWaterDamagedPhotosPage() {
                   </span>
                   <span>
                     <strong className="text-[#1d1d1f]">Rinse with clean water.</strong>{" "}
-                    Gently rinse to remove dirt, mud, or contaminants. Don't rub the
+	                    Gently rinse to remove dirt, mud, or contaminants. Don&apos;t rub the
                     surface.
                   </span>
                 </li>
@@ -378,7 +379,7 @@ export default function FixWaterDamagedPhotosPage() {
                 },
                 {
                   q: "Is water damage photo repair free?",
-                  a: "Yes, 3 free repairs per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited repairs at original resolution.",
+                  a: "Yes. ArtImageHub lets you preview the water damage repair first with no account required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
                 },
                 {
                   q: "What types of water damage can AI fix?",
