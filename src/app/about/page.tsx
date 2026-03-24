@@ -158,14 +158,14 @@ export default function AboutPage() {
             Try it on your own photos.
           </h2>
           <p className="font-lora text-[16px] text-[#a8967e] mb-8 leading-[1.7]">
-            Free to start. No account. Results in 30 seconds.
+            Start with a free preview. No subscription when you unlock. Results in 30 seconds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-12 items-center justify-center rounded-full bg-[#D4A96A] px-8 font-lora text-[15px] font-600 text-[#2c2416] hover:bg-[#c49a5a] transition-colors shadow-lg"
             >
-              Restore Photos Free
+              Start With a Free Preview
             </Link>
             <Link
               href="/blog"

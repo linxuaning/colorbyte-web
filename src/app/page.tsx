@@ -8,19 +8,21 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
-  description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
+  description:
+    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start with a free preview, then unlock the original-quality download for $4.99.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
-    description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free preview first, HD original download for $4.99.",
+    description:
+      "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Preview first, then unlock the original-quality download for $4.99.",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "AI photo restoration before and after comparison" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ArtImageHub — AI Photo Restoration",
-    description: "Restore old, damaged photos with AI in seconds. Free preview first, HD original download for $4.99.",
+    description: "Restore old, damaged photos with AI in seconds. Preview first, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
