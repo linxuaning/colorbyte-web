@@ -23,7 +23,6 @@ import {
   trackProcessingComplete,
   trackPhotoDownload,
   trackCTAClick,
-  trackPaymentEmailEntry,
 } from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
@@ -32,9 +31,6 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
-const EMAIL_PAYMENT_ENTRY_ENABLED =
-  process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
-const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -61,8 +57,6 @@ export default function RestoreClient() {
   const [checkingAccess, setCheckingAccess] = useState(true);
   const [remaining, setRemaining] = useState(3);
   const [limitReached, setLimitReached] = useState(false);
-  const [emailEntry, setEmailEntry] = useState("");
-  const [emailEntryHint, setEmailEntryHint] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -305,41 +299,6 @@ export default function RestoreClient() {
     setResultUrl(null);
     setOriginalUrl(null);
     processingStartedAtRef.current = null;
-    setEmailEntry("");
-    setEmailEntryHint("");
-  };
-
-  const handleSendPaymentLinkEmail = () => {
-    const fallbackEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
-    const targetEmail = (emailEntry || fallbackEmail).trim().toLowerCase();
-    if (!EMAIL_REGEX.test(targetEmail)) {
-      setEmailEntryHint("Enter a valid email first.");
-      return;
-    }
-
-    localStorage.setItem("artimagehub_email", targetEmail);
-    const paymentParams = new URLSearchParams({ email: targetEmail });
-    const funnelQuery = buildPaymentFunnelQuery(
-      mergePaymentFunnelSource(funnelSource, {
-        ctaSlot: "email_entry",
-        entryVariant: "restore_done",
-        checkoutSource: "email_payment_link",
-      })
-    );
-    new URLSearchParams(funnelQuery).forEach((value, key) => {
-      paymentParams.set(key, value);
-    });
-    if (taskId) {
-      paymentParams.set("resume_task_id", taskId);
-    }
-    const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
-    const subject = encodeURIComponent("Your ColorByte payment link");
-    const body = encodeURIComponent(
-      `Your photo is ready.\n\nDownload the HD original (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal checkout link for the full-resolution download.\n`
-    );
-    trackPaymentEmailEntry("restore_done", "manual", funnelSource);
-    setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
-    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -520,50 +479,19 @@ export default function RestoreClient() {
                   href={resultUrl}
                   download
                   onClick={() => trackPhotoDownload('free')}
-                  className="flex w-full flex-col items-center gap-1 rounded-full border border-[#d2d2d7] bg-white px-6 py-3 text-[13px] font-medium text-[#6e6e73] hover:bg-[#f5f5f7] active:scale-[0.98] transition-all"
+                  className="flex items-center justify-center gap-2 px-2 py-1 text-[12px] font-medium text-[#6e6e73] underline decoration-[#d2d2d7] underline-offset-4 hover:text-[#1d1d1f]"
                 >
-                  <span className="flex items-center gap-2">
-                    <Download className="h-3.5 w-3.5" />
-                    Download Free Preview
-                  </span>
-                  <span className="text-[11px] font-normal opacity-60">
-                    720p · Watermarked
-                  </span>
+                  <Download className="h-3.5 w-3.5" />
+                  Download the 720p watermarked preview instead
                 </a>
               </div>
             )}
 
             {!isSubscriber && (
-              <div className="mt-4 space-y-3">
+              <div className="mt-4">
                 <p className="text-center text-[12px] text-[#6e6e73]">
                   {PRO_PRICE_TEXT} one-time payment. No subscription.
                 </p>
-                {EMAIL_PAYMENT_ENTRY_ENABLED && (
-                  <div className="rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
-                    <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
-                      Email me the checkout link
-                    </p>
-                    <div className="mt-2 flex gap-2">
-                      <input
-                        type="email"
-                        value={emailEntry}
-                        onChange={(e) => setEmailEntry(e.target.value)}
-                        placeholder="you@example.com"
-                        className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
-                      />
-                      <button
-                        type="button"
-                        onClick={handleSendPaymentLinkEmail}
-                        className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f]"
-                      >
-                        Send
-                      </button>
-                    </div>
-                    <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
-                      {emailEntryHint || "Opens your mail app with the checkout link prefilled."}
-                    </p>
-                  </div>
-                )}
               </div>
             )}
           </div>
