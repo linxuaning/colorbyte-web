@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const CHECKOUT_TITLE = "Download HD Original — $4.99 | ArtImageHub";
+const CHECKOUT_TITLE = "Download HD Original — $4.99";
 const CHECKOUT_DESCRIPTION =
   "Restore and preview for free, then pay once to unlock the original-quality download on the same email.";
 
