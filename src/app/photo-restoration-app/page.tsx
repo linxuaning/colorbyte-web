@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is the best photo restoration app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with one-time $4.99 access instead of another recurring subscription. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with a free preview first and a $4.99 original-quality unlock when you want to keep the result. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Are photo restoration apps free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Many photo restoration apps offer limited previews. ArtImageHub currently uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing and then moves users into subscription pricing.",
+        text: "Many photo restoration apps offer limited previews. ArtImageHub lets you preview the restore first, then unlock the original-quality download for $4.99 if the result is worth keeping. Remini offers limited free processing and then moves users into subscription pricing.",
       },
     },
     {
@@ -95,7 +95,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "One-time Pro access for photo restoration"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -160,10 +160,10 @@ export default function PhotoRestorationAppPage() {
                   <td className="py-5 px-5 text-[14px] text-[#6b5344]">Web + Mobile</td>
                   <td className="py-5 px-5">
                     <div className="font-semibold text-[#2c2416]">$4.99 once</div>
-                    <div className="text-[13px] text-[#6b5344]">Lifetime access</div>
+                    <div className="text-[13px] text-[#6b5344]">Original-quality unlock</div>
                   </td>
-                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">One-time checkout</td>
-                  <td className="py-5 px-5 text-[14px] text-[#6b5344] font-lora">One-time payment, no subscription</td>
+                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">Preview first</td>
+                  <td className="py-5 px-5 text-[14px] text-[#6b5344] font-lora">Pay once if the result is worth keeping</td>
                   <td className="py-5 px-5">
                     <div className="flex items-center gap-1">
                       <span className="text-yellow-500">★★★★★</span>
@@ -253,7 +253,7 @@ export default function PhotoRestorationAppPage() {
                 href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=table_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
                 className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
               >
-                Unlock ArtImageHub for $4.99
+                Unlock the Original-Quality Download for $4.99
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -265,7 +265,7 @@ export default function PhotoRestorationAppPage() {
                 Preview the restore workflow
               </Link>
             </div>
-            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">One-time payment · No subscription · Original-quality downloads</p>
+            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">Free preview · $4.99 original-quality unlock · No subscription</p>
           </div>
         </div>
       </section>
@@ -304,11 +304,11 @@ export default function PhotoRestorationAppPage() {
                   <ul className="space-y-2 text-[15px] text-[#6b5344] font-lora">
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>One-time payment $4.99 (vs $120/year subscriptions)</span>
+                      <span>Free preview first, then $4.99 if you keep the photo</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>One-time checkout instead of another subscription</span>
+                      <span>No recurring subscription</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
@@ -330,11 +330,11 @@ export default function PhotoRestorationAppPage() {
                   <ul className="space-y-2 text-[15px] text-[#6b5344] font-lora">
                     <li className="flex items-start gap-2">
                       <span className="text-[#6b5344] mt-0.5">✗</span>
-                      <span>Free tier limited to 3 photos total</span>
+                      <span>Web-based (no native mobile app yet)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#6b5344] mt-0.5">✗</span>
-                      <span>Web-based (no native mobile app yet)</span>
+                      <span>Not a full manual editing suite like Photoshop</span>
                     </li>
                   </ul>
                 </div>
@@ -342,9 +342,7 @@ export default function PhotoRestorationAppPage() {
 
               <div className="rounded-xl bg-white border border-[#8B5E3C]/30 p-5">
                 <p className="text-[15px] text-[#6b5344] font-lora leading-[1.7]">
-                  <strong className="text-[#2c2416]">Bottom line:</strong> Best overall value. The one-time payment saves
-                  $90+ per year compared to Remini. Quality is on par with expensive apps. Perfect for restoring a large
-                  family photo collection.
+                  <strong className="text-[#2c2416]">Bottom line:</strong> Best overall value. The preview-first workflow means you do not pay until the restore looks worth keeping, and the $4.99 unlock still saves far more than subscription apps like Remini.
                 </p>
               </div>
 
@@ -353,7 +351,7 @@ export default function PhotoRestorationAppPage() {
                   href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=review_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
                   className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-7 py-3 text-[15px] font-semibold text-white hover:bg-[#7a5234] transition-colors"
                 >
-                  Unlock one-time access
+                  Unlock the Original-Quality Download
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -496,11 +494,11 @@ export default function PhotoRestorationAppPage() {
             {[
               {
                 q: "What is the best photo restoration app?",
-                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with one-time $4.99 access instead of another recurring subscription. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with a free preview first and a $4.99 original-quality unlock when you want to keep the result. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
               },
               {
                 q: "Are photo restoration apps free?",
-                a: "Most photo restoration apps offer limited previews or feature-locked free tiers. ArtImageHub now uses a pay-first one-time checkout at $4.99, while Remini offers limited free processing before pushing users into subscription pricing.",
+                a: "Most photo restoration apps offer limited previews or feature-locked free tiers. ArtImageHub lets you preview the restore first, then unlock the original-quality download for $4.99 if the result is worth keeping. Remini offers limited free processing before pushing users into subscription pricing.",
               },
               {
                 q: "Can I restore photos on my phone?",
@@ -530,14 +528,14 @@ export default function PhotoRestorationAppPage() {
             Pick the App, Then Unlock the Restore
           </h2>
           <p className="text-[18px] text-[#6b5344] font-lora mb-8 leading-[1.7]">
-            Pay $4.99 once on ArtImageHub to unlock original-quality downloads without another subscription. If you want to see the workflow first, preview the restore tool before checkout.
+            Preview the workflow first on ArtImageHub. If the result looks worth keeping, unlock the original-quality download for $4.99 without another subscription.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/subscription?landing_page=%2Fphoto-restoration-app&cta_slot=final_pay_first&entry_variant=app_comparison&checkout_source=app_comparison_direct"
               className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-white hover:bg-[#7a5234] active:scale-[0.98] transition-all shadow-lg shadow-[#8B5E3C]/30"
             >
-              Unlock Pro for $4.99
+              Unlock the Original-Quality Download for $4.99
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
