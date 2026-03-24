@@ -5,7 +5,7 @@ import EnhanceClient from "../photo-enhancer/enhance-client";
 export const metadata: Metadata = {
   title: "Unblur Photo Free Online | AI Fix Blurry Photos Instantly",
   description:
-    "Unblur photos free online with AI. Fix blurry pictures, sharpen images, and restore clarity in 30 seconds. No signup required. Works on selfies, old photos, and any blurry image.",
+    "Unblur photos online with AI. Fix blurry pictures, sharpen images, and start with a free preview. Unlock the original-quality download for $4.99.",
   alternates: { canonical: "/unblur-photo" },
   keywords: [
     "unblur photo",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Unblur Photo Free Online — Fix Blurry Photos with AI",
     description:
-      "Fix blurry photos instantly with AI. Unblur images, sharpen pictures, restore clarity. Free online tool.",
+      "Fix blurry photos instantly with AI. Preview the sharpened result first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Unblur Photo Free Online — AI Fix Blurry Photos",
     description:
-      "Fix blurry photos with AI. Unblur images, sharpen pictures, restore clarity in seconds. Free, no signup.",
+      "Fix blurry photos with AI. Start with a free preview, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your clear photo",
-      text: "Preview the before/after comparison and download your unblurred photo. Free users get 3 downloads per day at 720p. Pro Lifetime offers unlimited downloads at original resolution.",
+      text: "Preview the before/after comparison first. When you want the original-quality unblurred photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo unblur tool free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. For unlimited unblurring at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you preview the unblurred result for free with no signup required. When you want the original-quality photo, unlock the download for $4.99.",
       },
     },
     {
@@ -133,13 +133,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/unblur-photo",
   description:
-    "Free AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. Works on selfies, old photos, and any blurry image. No signup required.",
+    "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. Start with a free preview, then unlock the original-quality download for $4.99.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -149,7 +149,7 @@ const softwareSchema = {
     worstRating: "1",
   },
   featureList: [
-    "AI Photo Unblur (3 free/day)",
+    "AI Photo Unblur with Free Preview",
     "Fix Motion Blur",
     "Fix Soft Focus",
     "Face-Aware Sharpening",
@@ -180,14 +180,15 @@ export default function UnblurPhotoPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free — No Signup Required
+            Free Preview — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Unblur Photo Free Online
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
-            Fix blurry photos instantly with AI. Upload any blurry picture and
-            get a clear, sharp image in 30 seconds. No account needed.
+            Fix blurry photos instantly with AI. Upload any blurry picture,
+            compare the sharpened preview, and unlock the original-quality file
+            for $4.99 only if it is worth keeping.
           </p>
         </div>
       </div>
@@ -424,7 +425,7 @@ export default function UnblurPhotoPage() {
                 },
                 {
                   q: "Is the photo unblur tool free?",
-                  a: "Yes! ArtImageHub offers 3 free photo unblurs per day with no account required. Free downloads are 720p resolution. Pro Lifetime ($4.99 one-time) offers unlimited unblurring at original resolution.",
+                  a: "Yes. ArtImageHub lets you preview the unblurred result for free with no signup required. When you want the original-quality photo, unlock the download for $4.99.",
                 },
                 {
                   q: "What types of blur can AI fix?",
