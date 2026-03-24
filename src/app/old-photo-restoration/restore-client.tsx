@@ -31,6 +31,8 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
+const CHECKOUT_NOISE_DATA_ATTR = "checkoutNoiseSuppressed";
+const CHECKOUT_NOISE_EVENT = "artimagehub:checkout-noise-changed";
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -131,6 +133,25 @@ export default function RestoreClient() {
     setErrorMsg("");
     setStage("done");
   }, [API_BASE, checkingAccess, isSubscriber, resumeTaskId, stage]);
+
+  useEffect(() => {
+    const suppressCheckoutNoise = stage === "done" && !isSubscriber;
+    const { body } = document;
+
+    if (suppressCheckoutNoise) {
+      body.dataset[CHECKOUT_NOISE_DATA_ATTR] = "1";
+    } else {
+      delete body.dataset[CHECKOUT_NOISE_DATA_ATTR];
+    }
+    window.dispatchEvent(new Event(CHECKOUT_NOISE_EVENT));
+
+    return () => {
+      if (body.dataset[CHECKOUT_NOISE_DATA_ATTR] === "1") {
+        delete body.dataset[CHECKOUT_NOISE_DATA_ATTR];
+        window.dispatchEvent(new Event(CHECKOUT_NOISE_EVENT));
+      }
+    };
+  }, [isSubscriber, stage]);
 
   // Handle click on upload area — open for all users (freemium)
   const handleUploadClick = useCallback(() => {

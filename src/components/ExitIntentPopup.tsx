@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+const CHECKOUT_NOISE_DATA_ATTR = "checkoutNoiseSuppressed";
+const CHECKOUT_NOISE_EVENT = "artimagehub:checkout-noise-changed";
+
 // Generate realistic "photos restored today" count
 function getTodayCount(): number {
   const baseCount = 1247;
@@ -16,9 +19,24 @@ export default function ExitIntentPopup() {
   const [hasShown, setHasShown] = useState(false);
   const [todayCount, setTodayCount] = useState(0);
   const [timeLeft, setTimeLeft] = useState({ minutes: 14, seconds: 59 });
+  const [isSuppressed, setIsSuppressed] = useState(false);
 
   useEffect(() => {
     setTodayCount(getTodayCount());
+  }, []);
+
+  useEffect(() => {
+    const syncSuppression = () => {
+      const suppressed = document.body.dataset[CHECKOUT_NOISE_DATA_ATTR] === "1";
+      setIsSuppressed(suppressed);
+      if (suppressed) {
+        setIsVisible(false);
+      }
+    };
+
+    syncSuppression();
+    window.addEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
+    return () => window.removeEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
   }, []);
 
   // Countdown timer for urgency
@@ -40,6 +58,10 @@ export default function ExitIntentPopup() {
   }, [isVisible]);
 
   useEffect(() => {
+    if (isSuppressed) {
+      return;
+    }
+
     // Check if popup was shown in last 24 hours
     const lastShown = localStorage.getItem("exitIntentShown");
     if (lastShown) {
@@ -74,13 +96,13 @@ export default function ExitIntentPopup() {
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [hasShown]);
+  }, [hasShown, isSuppressed]);
 
   const handleClose = () => {
     setIsVisible(false);
   };
 
-  if (!isVisible) return null;
+  if (isSuppressed || !isVisible) return null;
 
   return (
     <>

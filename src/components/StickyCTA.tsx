@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+const CHECKOUT_NOISE_DATA_ATTR = "checkoutNoiseSuppressed";
+const CHECKOUT_NOISE_EVENT = "artimagehub:checkout-noise-changed";
+
 // Generate realistic active user count
 function getActiveUsers(): number {
   const base = 23;
@@ -13,6 +16,7 @@ function getActiveUsers(): number {
 export default function StickyCTA() {
   const [isVisible, setIsVisible] = useState(false);
   const [activeUsers, setActiveUsers] = useState(0);
+  const [isSuppressed, setIsSuppressed] = useState(false);
 
   useEffect(() => {
     setActiveUsers(getActiveUsers());
@@ -26,16 +30,32 @@ export default function StickyCTA() {
   }, []);
 
   useEffect(() => {
+    const syncSuppression = () => {
+      setIsSuppressed(document.body.dataset[CHECKOUT_NOISE_DATA_ATTR] === "1");
+    };
+
+    syncSuppression();
+    window.addEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
+    return () => window.removeEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
+  }, []);
+
+  useEffect(() => {
+    if (isSuppressed) {
+      setIsVisible(false);
+      return;
+    }
+
     const handleScroll = () => {
       // Show sticky CTA after scrolling 600px down (earlier trigger)
       setIsVisible(window.scrollY > 600);
     };
 
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isSuppressed]);
 
-  if (!isVisible) return null;
+  if (isSuppressed || !isVisible) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 animate-in slide-in-from-bottom duration-300">
