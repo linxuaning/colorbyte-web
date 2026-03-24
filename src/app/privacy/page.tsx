@@ -60,7 +60,7 @@ export default function PrivacyPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Information We Collect</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-[#2c2416]">Email address:</strong> Collected when you enter it on the site for checkout or access delivery. Used to send receipts and other transactional emails related to your preview or one-time original-quality unlock.</li>
-              <li><strong className="text-[#2c2416]">Payment information:</strong> Processed by LemonSqueezy. We never see or store your credit card details.</li>
+              <li><strong className="text-[#2c2416]">Payment information:</strong> Processed through PayPal during checkout. ArtImageHub checkout requests use your email and PayPal order identifiers; they do not collect full card details in those requests.</li>
               <li><strong className="text-[#2c2416]">Usage data:</strong> Basic analytics (pages visited, feature usage) to improve the product. No personal identification.</li>
               <li><strong className="text-[#2c2416]">Uploaded images:</strong> Temporarily processed to perform restoration. Deleted within 24 hours (see above).</li>
             </ul>
@@ -82,8 +82,8 @@ export default function PrivacyPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">5. Third-Party Services</h2>
             <p>We use the following trusted third-party services:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
-              <li><strong className="text-[#2c2416]">LemonSqueezy:</strong> Payment processing. Subject to their privacy policy.</li>
-              <li><strong className="text-[#2c2416]">Replicate:</strong> AI model inference. Images sent for processing are subject to Replicate&apos;s data handling policies.</li>
+              <li><strong className="text-[#2c2416]">PayPal:</strong> Payment processing during checkout. Subject to PayPal&apos;s privacy policy.</li>
+              <li><strong className="text-[#2c2416]">Nero AI:</strong> AI model inference for the currently configured processing pipeline. Images sent for processing are subject to Nero AI&apos;s data handling policies.</li>
               <li><strong className="text-[#2c2416]">Vercel:</strong> Website hosting and edge delivery.</li>
               <li><strong className="text-[#2c2416]">Render:</strong> API server hosting.</li>
             </ul>
