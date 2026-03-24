@@ -391,16 +391,16 @@ export default function EnhanceClient() {
                   <Crown className="h-4 w-4" />
                   Download Original Quality
                 </span>
-                <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
+	                <span className="text-[11px] opacity-70 font-normal">Paid access — Original-quality downloads</span>
               </a>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
                   <p className="text-[14px] font-semibold text-[#1d1d1f]">
-                    This enhanced photo is ready for Pro download.
+	                    This enhanced photo is ready for original-quality download.
                   </p>
                   <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
-                    This result path now uses the pay-first handoff. Unlock once to export this image in original quality and keep the same email linked for future enhancements.
+	                    Unlock the original-quality download once to export this image and keep the same email linked for future enhancements.
                   </p>
                 </div>
                 <Link
@@ -414,7 +414,7 @@ export default function EnhanceClient() {
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-                    Unlock Pro to Download This Photo
+	                    Unlock Original-Quality Download
                   </span>
                   <span className="text-[11px] font-normal opacity-70">
                     Original quality  ·  No watermark  ·  {PRO_PRICE_TEXT} once

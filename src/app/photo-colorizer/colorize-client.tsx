@@ -301,7 +301,7 @@ export default function ColorizeClient() {
         checkingAccess ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
             <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking your Pro access</p>
+	            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking your original-quality access</p>
           </div>
         ) : !isSubscriber ? (
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-8 text-center">
@@ -309,10 +309,10 @@ export default function ColorizeClient() {
               <Crown className="h-7 w-7 text-[#0071e3]" />
             </div>
             <h3 className="mt-4 text-[22px] font-semibold text-[#1d1d1f]">
-              Pro access is required before colorizing
+	              Original-quality access is required before colorizing
             </h3>
             <p className="mx-auto mt-3 max-w-md text-[14px] leading-[1.7] text-[#6e6e73]">
-              Unlock Pro Lifetime once, then colorize with the same purchase email and download in original quality.
+	              Unlock access once, then colorize with the same purchase email and download in original quality.
             </p>
             <button
               type="button"
@@ -320,7 +320,7 @@ export default function ColorizeClient() {
               className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
             >
               <Crown className="h-4 w-4" />
-              Unlock Pro Lifetime — {PRO_PRICE_TEXT}
+	              Unlock Original-Quality Access — {PRO_PRICE_TEXT}
             </button>
           </div>
         ) : (
@@ -436,16 +436,16 @@ export default function ColorizeClient() {
                   <Crown className="h-4 w-4" />
                   Download Original Quality
                 </span>
-                <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
+	                <span className="text-[11px] opacity-70 font-normal">Paid access — Original-quality downloads</span>
               </a>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
                   <p className="text-[14px] font-semibold text-[#1d1d1f]">
-                    This colorized photo is ready for Pro download.
+	                    This colorized photo is ready for original-quality download.
                   </p>
                   <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
-                    This page now uses the pay-first path. Unlock once to download this image in original quality and keep the same email linked for future colorization exports.
+	                    Unlock the original-quality download once to export this image and keep the same email linked for future colorization exports.
                   </p>
                 </div>
                 <Link
@@ -459,7 +459,7 @@ export default function ColorizeClient() {
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-                    Unlock Pro to Download This Photo
+	                    Unlock Original-Quality Download
                   </span>
                   <span className="text-[11px] font-normal opacity-70">
                     Original quality  ·  No watermark  ·  {PRO_PRICE_TEXT} once
