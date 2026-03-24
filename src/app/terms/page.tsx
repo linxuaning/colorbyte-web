@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service — ArtImageHub",
-  description: "ArtImageHub terms of service: acceptable use, subscription terms, refund policy, and intellectual property rights for our AI photo restoration service.",
+  description: "ArtImageHub terms of service: acceptable use, preview and one-time download terms, refund policy, and intellectual property rights for our AI photo restoration service.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -40,25 +40,25 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">2. Description of Service</h2>
             <p>
-              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. We offer a free trial (3 photos to test quality) and a paid Pro Lifetime plan (unlimited restorations with a one-time payment).
+              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. We offer a free preview so you can evaluate results before choosing a one-time $4.99 original-quality download unlock.
             </p>
           </section>
 
           <section>
-            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Free Trial</h2>
+            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Free Preview</h2>
             <p>
-              The free trial allows you to restore 3 photos to test the AI quality before purchasing. No account or credit card required for the trial. Trial photos may include a watermark. We reserve the right to modify trial limits at any time.
+              The free preview lets you evaluate the AI result before purchasing the original-quality download unlock. Preview outputs may include a watermark. We reserve the right to modify preview limits or availability at any time.
             </p>
           </section>
 
           <section>
-            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. Pro Lifetime Plan</h2>
+            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. One-Time Original-Quality Unlock</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-[#2c2416]">Price:</strong> $4.99 one-time payment for lifetime access.</li>
-              <li><strong className="text-[#2c2416]">Payment:</strong> One-time charge. No recurring subscription, no monthly fees.</li>
-              <li><strong className="text-[#2c2416]">Features:</strong> Unlimited photo restorations, original quality downloads, no watermark, lifetime access to all current and future features.</li>
+              <li><strong className="text-[#2c2416]">Price:</strong> $4.99 one-time payment for the original-quality download unlock shown at checkout.</li>
+              <li><strong className="text-[#2c2416]">Payment:</strong> One-time charge. No recurring subscription or monthly fees.</li>
+              <li><strong className="text-[#2c2416]">Features:</strong> Original-quality download access for the purchased result, including the no-watermark file described at checkout.</li>
               <li><strong className="text-[#2c2416]">Refunds:</strong> We offer a 30-day money-back guarantee. Contact support within 30 days of purchase for a full refund.</li>
-              <li><strong className="text-[#2c2416]">Lifetime Definition:</strong> "Lifetime" means as long as the service operates. We reserve the right to discontinue the service with 90 days notice.</li>
+              <li><strong className="text-[#2c2416]">Access Scope:</strong> The paid unlock applies to the original-quality download described at checkout. It is not a lifetime membership or recurring plan.</li>
             </ul>
           </section>
 
@@ -113,7 +113,7 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">10. Changes to Terms</h2>
             <p>
-              We may update these Terms at any time. Material changes will be notified to subscribers by email. Continued use after notice constitutes acceptance.
+              We may update these Terms at any time. Material changes may be notified by email when we have a current address on file. Continued use after notice constitutes acceptance.
             </p>
           </section>
 

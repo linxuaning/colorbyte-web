@@ -59,7 +59,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Information We Collect</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong className="text-[#2c2416]">Email address:</strong> Collected when you start a free trial or subscribe. Used to manage your subscription and send transactional emails.</li>
+              <li><strong className="text-[#2c2416]">Email address:</strong> Collected when you enter it on the site for checkout or access delivery. Used to send receipts and other transactional emails related to your preview or one-time original-quality unlock.</li>
               <li><strong className="text-[#2c2416]">Payment information:</strong> Processed by LemonSqueezy. We never see or store your credit card details.</li>
               <li><strong className="text-[#2c2416]">Usage data:</strong> Basic analytics (pages visited, feature usage) to improve the product. No personal identification.</li>
               <li><strong className="text-[#2c2416]">Uploaded images:</strong> Temporarily processed to perform restoration. Deleted within 24 hours (see above).</li>
@@ -70,8 +70,8 @@ export default function PrivacyPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">4. How We Use Your Information</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>To provide and improve the photo restoration service</li>
-              <li>To manage your subscription and billing</li>
-              <li>To send transactional emails (receipt, trial ending notice)</li>
+              <li>To manage checkout, one-time payments, and access delivery</li>
+              <li>To send transactional emails (receipt and access messages)</li>
               <li>To enforce our Terms of Service</li>
               <li>To respond to support requests</li>
             </ul>
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">6. Cookies</h2>
             <p>
-              We use minimal, essential cookies only: session management and your saved email for the subscription portal.
+              We use minimal, essential cookies only: session management and your saved email for checkout or access pages.
               We do not use advertising cookies or cross-site tracking.
             </p>
           </section>
@@ -102,8 +102,7 @@ export default function PrivacyPage() {
             <p>You have the right to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li>Request a copy of the personal data we hold about you</li>
-              <li>Request deletion of your email and account data</li>
-              <li>Cancel your subscription at any time</li>
+              <li>Request deletion of your email and purchase-related data where legally permitted</li>
               <li>Opt out of any non-essential communications</li>
             </ul>
             <p className="mt-4">To exercise these rights, email us at the address below.</p>
@@ -113,7 +112,7 @@ export default function PrivacyPage() {
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">8. Data Retention</h2>
             <p>
               Photos: deleted within 24 hours.<br />
-              Email and subscription data: retained while your account is active, then deleted within 30 days of cancellation upon request.<br />
+              Email and purchase-related data: retained for receipts, access delivery, support, refunds, and required recordkeeping, then deleted on request when legally permitted.<br />
               Anonymous analytics: retained for up to 12 months.
             </p>
           </section>
@@ -129,7 +128,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">10. Changes to This Policy</h2>
             <p>
-              We may update this Privacy Policy periodically. We will notify subscribed users of material changes by email.
+              We may update this Privacy Policy periodically. We may notify users of material changes by email when we have a current address on file.
               Continued use of the service after changes constitutes acceptance.
             </p>
           </section>
