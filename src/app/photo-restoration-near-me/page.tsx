@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Photo Restoration Near Me: Find Local & Online Services (2026)',
-  description: 'Looking for photo restoration near you? Compare local shops vs online AI restoration. Save 80% with instant online restoration. Free trial, no appointment needed.',
+  description: 'Looking for photo restoration near you? Compare local shops vs online AI restoration. Preview first online, then unlock the original-quality download for $4.99.',
   keywords: 'photo restoration near me, photo restoration services, local photo restoration, old photo repair near me, vintage photo restoration',
   openGraph: {
     title: 'Photo Restoration Near Me: Local vs Online Comparison',
-    description: 'Compare local photo restoration shops vs online AI services. Save time and money with instant restoration.',
+    description: 'Compare local photo restoration shops vs online AI services. Preview first online, then unlock the original-quality download for $4.99.',
     type: 'article',
   },
 };
@@ -37,7 +36,7 @@ export default function PhotoRestorationNearMePage() {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-3xl">
-            Comparing local photo restoration shops vs online AI services. Discover which option saves you time and money while delivering professional results.
+            Comparing local photo restoration shops vs online AI services. Discover which option lets you preview first, keep costs low, and still get professional results.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
@@ -45,7 +44,7 @@ export default function PhotoRestorationNearMePage() {
               href="/old-photo-restoration"
               className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-xl"
             >
-              Try Online Restoration Free →
+              Start Free Preview →
             </Link>
             <a
               href="#local-vs-online"
@@ -144,7 +143,7 @@ export default function PhotoRestorationNearMePage() {
               <div className="space-y-4 mb-6">
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Average Cost</div>
-                  <div className="text-2xl font-black text-amber-600">$4.99<span className="text-base font-normal text-slate-600"> lifetime</span></div>
+                  <div className="text-2xl font-black text-amber-600">$4.99<span className="text-base font-normal text-slate-600"> per photo you keep</span></div>
                 </div>
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Processing Time</div>
@@ -171,11 +170,11 @@ export default function PhotoRestorationNearMePage() {
                 </div>
                 <div className="flex items-start gap-2 text-sm">
                   <span className="text-green-600 mt-0.5">✓</span>
-                  <span className="text-slate-700">Unlimited restorations</span>
+                  <span className="text-slate-700">Pay only for photos worth keeping</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm">
                   <span className="text-green-600 mt-0.5">✓</span>
-                  <span className="text-slate-700">Try free before buying</span>
+                  <span className="text-slate-700">Preview first before deciding</span>
                 </div>
                 <div className="flex items-start gap-2 text-sm">
                   <span className="text-green-600 mt-0.5">✓</span>
@@ -188,7 +187,7 @@ export default function PhotoRestorationNearMePage() {
                   href="/old-photo-restoration"
                   className="inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-lg transition-all"
                 >
-                  Try ArtImageHub Free →
+                  Start Free Preview →
                 </Link>
               </div>
             </div>
@@ -196,7 +195,7 @@ export default function PhotoRestorationNearMePage() {
 
           {/* Cost Calculator */}
           <div className="mt-12 p-8 bg-blue-50 border-2 border-blue-200 rounded-xl">
-            <h3 className="text-xl font-bold text-slate-900 mb-4">💰 Cost Comparison: 20 Photos</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-4">💰 Cost Comparison: 20 Photos You Keep</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <div className="text-sm text-slate-600 mb-2">Local Shop</div>
@@ -205,13 +204,13 @@ export default function PhotoRestorationNearMePage() {
               </div>
               <div>
                 <div className="text-sm text-slate-600 mb-2">Online AI</div>
-                <div className="text-3xl font-black text-green-600">$4.990</div>
-                <div className="text-xs text-slate-500">(one-time, unlimited)</div>
+                <div className="text-3xl font-black text-green-600">$99.80</div>
+                <div className="text-xs text-slate-500">(20 original-quality unlocks at $4.99 each)</div>
               </div>
               <div>
                 <div className="text-sm text-slate-600 mb-2">You Save</div>
-                <div className="text-3xl font-black text-amber-600">$970-2,970</div>
-                <div className="text-xs text-slate-500">(97% savings!)</div>
+                <div className="text-3xl font-black text-amber-600">~$900-2,900</div>
+                <div className="text-xs text-slate-500">(after previewing first and paying only for the photos you keep)</div>
               </div>
             </div>
           </div>
@@ -227,7 +226,7 @@ export default function PhotoRestorationNearMePage() {
 
           <div className="prose prose-lg max-w-none mb-12">
             <p className="text-slate-700 leading-relaxed">
-              If you prefer working with a local shop, here's how to find reputable photo restoration services in your area:
+              If you prefer working with a local shop, here&apos;s how to find reputable photo restoration services in your area:
             </p>
           </div>
 
@@ -237,7 +236,7 @@ export default function PhotoRestorationNearMePage() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold">1.</span>
-                  <span className="text-slate-700">Google "photo restoration near me" + your city</span>
+                  <span className="text-slate-700">Google &quot;photo restoration near me&quot; + your city</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 font-bold">2.</span>
@@ -263,7 +262,7 @@ export default function PhotoRestorationNearMePage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600">💰</span>
-                  <span className="text-slate-700">What's the cost per photo?</span>
+                  <span className="text-slate-700">What&apos;s the cost per photo?</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600">🖼️</span>
@@ -282,7 +281,7 @@ export default function PhotoRestorationNearMePage() {
             <p className="text-slate-700 text-sm">
               Local shops often charge $50-150+ per photo. For 10+ photos, this can cost $500-1,500.
               <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline ml-1">
-                Compare with online AI restoration at $4.990 lifetime
+                Compare with online AI restoration that lets you preview first and unlock the original-quality photo for $4.99
               </Link>
               before committing to expensive local services.
             </p>
@@ -327,7 +326,7 @@ export default function PhotoRestorationNearMePage() {
                   href="/old-photo-restoration"
                   className="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-all"
                 >
-                  Try ArtImageHub Free (3 Photos) →
+                  Preview ArtImageHub First →
                 </Link>
               </div>
             </div>
@@ -341,7 +340,7 @@ export default function PhotoRestorationNearMePage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 mt-1">⚡</span>
-                  <span className="text-slate-700">It's a priceless family heirloom (wedding, ancestors)</span>
+                  <span className="text-slate-700">It&apos;s a priceless family heirloom (wedding, ancestors)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-amber-600 mt-1">⚡</span>
@@ -361,7 +360,7 @@ export default function PhotoRestorationNearMePage() {
             <div className="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
               <h4 className="font-bold text-slate-900 mb-2">💡 Pro Tip: Hybrid Approach</h4>
               <p className="text-slate-700">
-                Many people use <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline">online AI for 90% of their photos</Link> ($4.990 lifetime),
+                Many people use <Link href="/old-photo-restoration" className="text-amber-600 hover:text-amber-700 font-medium underline">online AI for 90% of their photos</Link> (preview first, then $4.99 for each original-quality photo they keep),
                 then take only the most precious 1-2 heirlooms to local shops for custom work. This saves $500-2,000 while still getting professional care for special photos.
               </p>
             </div>
@@ -380,7 +379,7 @@ export default function PhotoRestorationNearMePage() {
             {[
               {
                 q: 'How much does local photo restoration cost?',
-                a: 'Local photo restoration shops typically charge $50-150 per photo. High-end studios can charge $200-500 for severely damaged heirlooms. Online AI restoration costs $4.990 for unlimited lifetime use, saving 80-95% compared to local shops.',
+                a: 'Local photo restoration shops typically charge $50-150 per photo. High-end studios can charge $200-500 for severely damaged heirlooms. Online AI restoration lets you preview first and then unlock the original-quality photo for $4.99, which is still far cheaper than local shop pricing.',
               },
               {
                 q: 'Is online photo restoration as good as local shops?',
@@ -396,7 +395,7 @@ export default function PhotoRestorationNearMePage() {
               },
               {
                 q: 'What if I can\'t find photo restoration near me?',
-                a: 'Online AI restoration works from anywhere. Try ArtImageHub free (3 photos, no signup) to see instant results. If you prefer local service, many shops offer mail-in restoration nationwide.',
+                a: 'Online AI restoration works from anywhere. Start with a free preview and unlock the original-quality photo for $4.99 only if the result is worth keeping. If you prefer local service, many shops also offer mail-in restoration nationwide.',
               },
               {
                 q: 'Are local photo restoration shops better for old photos?',
@@ -430,7 +429,7 @@ export default function PhotoRestorationNearMePage() {
             Skip the Wait. Restore Photos Instantly.
           </h2>
           <p className="text-xl text-amber-50 mb-8">
-            No appointment. No waiting. No expensive per-photo fees. Try 3 photos free and see the quality for yourself.
+            No appointment. No waiting. No expensive per-photo quotes. Start with a free preview and unlock the original-quality photo for $4.99 if it is worth keeping.
           </p>
           <Link
             href="/old-photo-restoration"
@@ -439,7 +438,7 @@ export default function PhotoRestorationNearMePage() {
             Restore Photos Online Now →
           </Link>
           <p className="text-sm text-amber-100 mt-6">
-            3 free photos • 30-second results • $4.99 lifetime for unlimited
+            Free preview • 30-second results • $4.99 original-quality unlock
           </p>
         </div>
       </section>
