@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Enhance Old Photos Free | AI Old Photo Enhancer Online",
   description:
-    "Enhance old photos free with AI. Improve quality of vintage pictures, sharpen faded photographs, restore clarity to old family photos. No signup, instant enhancement in 30 seconds.",
+    "Enhance old photos with AI. Improve quality of vintage pictures, sharpen faded photographs, and start with a free preview. Unlock the original-quality download for $4.99.",
   alternates: { canonical: "/enhance-old-photos" },
   keywords: [
     "enhance old photos",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Enhance Old Photos Free — AI Old Photo Enhancer",
     description:
-      "Free AI old photo enhancer. Improve vintage picture quality, sharpen faded photos, restore clarity. No signup required.",
+      "Enhance old photos with AI. Preview the improved result first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Enhance Old Photos Free Online",
     description:
-      "AI old photo enhancer. Improve vintage picture quality, sharpen faded photos. Free, instant results.",
+      "AI old photo enhancer. Start with a free preview, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -73,7 +73,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your enhanced photo",
-      text: "Preview the before/after comparison showing quality improvement. Download your enhanced photo—free users get 3 downloads per day at 720p. Pro users get original resolution.",
+      text: "Preview the before/after comparison first. When you want the original-quality enhanced photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Is the old photo enhancer free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free old photo enhancements per day with no account required. Free downloads are 720p resolution. For unlimited enhancements at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you preview the enhanced result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
       },
     },
     {
@@ -134,13 +134,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/enhance-old-photos",
   description:
-    "Free AI old photo enhancer that improves quality of vintage photographs. Sharpen faded pictures, enhance faces, increase resolution. No signup required, instant results.",
+    "AI old photo enhancer that improves quality of vintage photographs. Sharpen faded pictures, enhance faces, and preview the result before unlocking the original-quality download for $4.99.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -155,7 +155,7 @@ const softwareSchema = {
     "4× Resolution Upscaling",
     "Fading Correction",
     "Automatic Quality Improvement",
-    "Free (3 photos/day)",
+    "Free Preview Before Unlock",
   ],
 };
 
@@ -181,15 +181,15 @@ export default function EnhanceOldPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free — No Signup Required
+            Free Preview — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Enhance Old Photos Free with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             Improve quality of vintage photographs instantly. AI sharpens faded
-            details, enhances faces, and increases resolution—bringing old
-            memories back to life.
+            details, enhances faces, and lets you compare the preview before
+            unlocking the original-quality file for $4.99.
           </p>
         </div>
       </div>
@@ -291,7 +291,7 @@ export default function EnhanceOldPhotosPage() {
           {/* Enhancement vs Restoration */}
           <section className="mb-16">
             <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-6">
-              Enhancement vs Restoration: What's the Difference?
+              Enhancement vs Restoration: What&apos;s the Difference?
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="rounded-xl bg-white p-6 border border-[#d4bc91]/40">
@@ -395,7 +395,7 @@ export default function EnhanceOldPhotosPage() {
                 },
                 {
                   q: "Is the old photo enhancer free?",
-                  a: "Yes, 3 free enhancements per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited enhancements at original resolution.",
+                  a: "Yes. ArtImageHub lets you preview the enhanced result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
                 },
                 {
                   q: "Can AI enhance very old photos from the 1800s?",
