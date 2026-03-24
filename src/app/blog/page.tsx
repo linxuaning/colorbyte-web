@@ -328,7 +328,7 @@ export default async function BlogPage() {
                 href="/old-photo-restoration"
                 className="inline-flex h-13 items-center rounded-full bg-[#D4A96A] px-8 font-lora text-[15px] font-600 text-[#2c2416] hover:bg-[#c49a5a] active:scale-[0.97] transition-all duration-200 shadow-xl shadow-[#D4A96A]/20 whitespace-nowrap"
               >
-                Restore Photos Free
+                Start Free Preview
               </Link>
             </div>
           </div>
