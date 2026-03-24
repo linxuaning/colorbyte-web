@@ -35,7 +35,8 @@ export default function AboutPage() {
             but because restoration used to require expertise, money, and weeks of waiting.
           </p>
           <p className="mt-5 font-lora text-[18px] text-[#6b5344] max-w-2xl leading-[1.75]">
-            We changed that. Today, anyone with an old photograph can restore it in 30 seconds, for free.
+            We changed that. Today, anyone with an old photograph can start with a free preview in 30 seconds,
+            then unlock the original-quality download for $4.99.
           </p>
         </div>
       </header>
@@ -69,7 +70,7 @@ export default function AboutPage() {
                 { number: "10,000+", label: "Photos restored", desc: "Memories saved by ArtImageHub users" },
                 { number: "30 sec", label: "Average processing", desc: "From upload to download" },
                 { number: "4×", label: "Resolution upscaling", desc: "Maximum super resolution increase" },
-                { number: "Free", label: "To get started", desc: "No account required to try" },
+                { number: "$4.99", label: "One-time unlock", desc: "No subscription for the original-quality download" },
               ].map((stat) => (
                 <div key={stat.label} className="rounded-xl border border-[#d4bc91]/50 bg-white p-6">
                   <div className="font-playfair text-[32px] font-800 text-[#2c2416] leading-none mb-1">{stat.number}</div>
@@ -132,7 +133,7 @@ export default function AboutPage() {
               { title: "Photos deleted in 24 hours", desc: "All uploaded photos are automatically and permanently deleted from our servers within 24 hours of upload." },
               { title: "Never used for AI training", desc: "We never use your photos to train AI models. Your images are processed solely to generate your restored output." },
               { title: "Encrypted in transit", desc: "All photo uploads and downloads are protected by HTTPS/TLS encryption." },
-              { title: "No account required", desc: "Use the free tier without creating an account. We never require personal information to use the core service." },
+              { title: "No account required", desc: "Start with a free preview without creating an account. We only ask for an email when you unlock the original-quality download." },
             ].map((item) => (
               <div key={item.title} className="flex gap-4 rounded-xl border border-[#d4bc91]/50 bg-white p-6">
                 <div className="h-6 w-6 shrink-0 rounded-full bg-[#8B5E3C]/10 flex items-center justify-center mt-0.5">

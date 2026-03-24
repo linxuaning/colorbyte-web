@@ -28,7 +28,8 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "ArtImageHub",
   url: "https://www.artimagehub.com",
-  description: "AI-powered photo restoration, enhancement, and colorization. Restore old photos in 30 seconds — free.",
+  description:
+    "AI-powered photo restoration, enhancement, and colorization. Preview first, then unlock the original-quality download for $4.99.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     template: "%s | ArtImageHub",
   },
   description:
-    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Free online tool — no signup required.",
+    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start with a free preview, then unlock the original-quality download for $4.99.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -77,7 +78,7 @@ export const metadata: Metadata = {
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
     description:
-      "Restore old photos, enhance image quality, and colorize black & white pictures with AI.",
+      "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Preview first, then unlock the original-quality download for $4.99.",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -119,7 +120,7 @@ function Header() {
     <header className="sticky top-0 z-50 bg-[#faf8f4]/90 backdrop-blur-xl border-b border-[#d4bc91]/40">
       <div className="mx-auto flex h-[60px] max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2.5 group" aria-label="ArtImageHub home">
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="ArtImageHub home">
           {/* Custom logo mark */}
           <div className="relative flex h-8 w-8 items-center justify-center">
             <svg viewBox="0 0 32 32" fill="none" className="h-8 w-8" aria-hidden="true">
@@ -132,37 +133,37 @@ function Header() {
           <span className="font-playfair text-[18px] font-700 tracking-[-0.01em] text-[#2c2416] group-hover:text-[#8B5E3C] transition-colors duration-200">
             ArtImageHub
           </span>
-        </a>
+        </Link>
 
         {/* Nav */}
         <nav className="hidden md:flex items-center gap-8 text-[14px] font-lora text-[#6b5344]" aria-label="Main navigation">
-          <a href="/old-photo-restoration" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          <Link href="/old-photo-restoration" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Restore
-          </a>
-          <a href="/blog" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          </Link>
+          <Link href="/blog" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Journal
-          </a>
-          <a href="/#pricing" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          </Link>
+          <Link href="/#pricing" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Pricing
-          </a>
-          <a href="/about" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          </Link>
+          <Link href="/about" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             About
-          </a>
-          <a href="/resources" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          </Link>
+          <Link href="/resources" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Resources
-          </a>
-          <a href="/subscription" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+          </Link>
+          <Link href="/subscription" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Account
-          </a>
+          </Link>
         </nav>
 
         {/* CTA */}
-        <a
+        <Link
           href="/old-photo-restoration"
           className="inline-flex h-9 items-center rounded-full bg-[#8B5E3C] px-5 text-[13px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#8B5E3C]/20"
         >
-          Restore Free
-        </a>
+          Start Free Preview
+        </Link>
       </div>
     </header>
   );
@@ -215,9 +216,9 @@ function Footer() {
           <div>
             <h3 className="font-playfair text-[14px] font-600 text-[#d4bc91] uppercase tracking-[0.08em] mb-4">Product</h3>
             <nav className="flex flex-col gap-3 text-[14px]" aria-label="Product links">
-              <a href="/old-photo-restoration" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Photo Restoration</a>
-              <a href="/#pricing" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Pricing</a>
-              <a href="/subscription" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">My Account</a>
+              <Link href="/old-photo-restoration" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Photo Restoration</Link>
+              <Link href="/#pricing" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Pricing</Link>
+              <Link href="/subscription" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">My Account</Link>
             </nav>
           </div>
 
@@ -225,9 +226,9 @@ function Footer() {
           <div>
             <h3 className="font-playfair text-[14px] font-600 text-[#d4bc91] uppercase tracking-[0.08em] mb-4">Learn</h3>
             <nav className="flex flex-col gap-3 text-[14px]" aria-label="Learn links">
-              <a href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Journal</a>
-              <a href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Restoration Guides</a>
-              <a href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Family History Tips</a>
+              <Link href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Journal</Link>
+              <Link href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Restoration Guides</Link>
+              <Link href="/blog" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Family History Tips</Link>
             </nav>
           </div>
 

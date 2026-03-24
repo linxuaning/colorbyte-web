@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Free Photo Restoration Resources & Guides — ArtImageHub",
-  description: "Free guides, tools, and resources for restoring old photos, preserving family history, and getting the most from AI photo restoration. Curated by photo preservation experts.",
+  description: "Guides, tools, and resources for restoring old photos, preserving family history, and getting the most from AI photo restoration. Preview first, then unlock the original-quality download for $4.99 when needed.",
   alternates: { canonical: "/resources" },
   openGraph: {
     title: "Free Photo Restoration Resources & Guides",
-    description: "Free guides and tools for restoring and preserving old family photos.",
+    description: "Guides and tools for restoring and preserving old family photos with a preview-first workflow.",
     type: "website",
   },
 };
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 const tools = [
   {
     name: "AI Photo Restoration Tool",
-    desc: "Restore old, damaged, faded photos in 30 seconds. Free — 3 photos/day, no signup.",
+    desc: "Restore old, damaged, faded photos in 30 seconds. Start with a free preview, then unlock the original-quality download for $4.99.",
     href: "/old-photo-restoration",
-    badge: "Free",
+    badge: "Preview first",
     badgeColor: "bg-green-100 text-green-700",
   },
   {
@@ -247,13 +247,13 @@ export default function ResourcesPage() {
               Ready to restore your first photo?
             </h2>
             <p className="font-lora text-[16px] text-[#a8967e] max-w-md mx-auto leading-[1.7] mb-8">
-              Free to start. No signup required. Results in 30 seconds.
+              Start with a free preview. No subscription when you unlock. Results in 30 seconds.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex items-center gap-2 rounded-full bg-[#D4A96A] px-8 py-3.5 font-lora text-[15px] font-600 text-[#2c2416] hover:bg-[#c49a5a] transition-colors shadow-xl shadow-[#D4A96A]/20"
             >
-              Restore Photos Free
+              Start With a Free Preview
             </Link>
           </div>
         </section>

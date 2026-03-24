@@ -20,13 +20,12 @@ ArtImageHub uses state-of-the-art AI models (GFPGAN face enhancement, Real-ESRGA
 
 ## Key Facts
 
-- Free tier: 3 restorations per day, 720p output, small watermark
-- Pro plan: $9.90/month — unlimited restorations, original quality, no watermark
-- 7-day free trial — no charge until trial ends, cancel anytime
+- Free preview first on the live photo workflow
+- Original-quality download unlock: $4.99 one-time, no subscription
 - Processing time: 15–30 seconds per photo
 - Supported formats: JPG, PNG, WEBP up to 20MB
 - Privacy: all photos deleted after 24 hours, never shared or trained on
-- No account required to use free tier
+- No account required to create a preview
 
 ## Competitive Position
 
