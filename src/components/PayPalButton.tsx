@@ -45,7 +45,7 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
-const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
+const CHECKOUT_ITEM_LABEL = `Original-quality download - $${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 interface PayPalButtonProps {
@@ -144,8 +144,8 @@ export default function PayPalButton({
         createOrder: async () => {
           try {
             // Track payment button click
-            trackPaymentClick(PRO_PLAN_LABEL);
-            trackPaymentStarted(PRO_PLAN_LABEL, funnelSource);
+            trackPaymentClick(CHECKOUT_ITEM_LABEL);
+            trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const payerEmail = requiresInlineEmail
               ? normalizedCheckoutEmail
@@ -293,7 +293,7 @@ export default function PayPalButton({
       "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(
-      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime (${PRO_PRICE_TEXT})\n\nPlease send me a valid payment link.\n\nThanks.`
+      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPurchase: ${CHECKOUT_ITEM_LABEL}\n\nPlease send me a valid payment link.\n\nThanks.`
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };
@@ -305,7 +305,7 @@ export default function PayPalButton({
           Enter your email above to enable PayPal checkout.
         </p>
         <p className="mt-1 text-xs text-white/70">
-          We use that email for activation, receipts, and future Pro access.
+          We use that email for activation, receipts, and access lookup.
         </p>
       </div>
     );

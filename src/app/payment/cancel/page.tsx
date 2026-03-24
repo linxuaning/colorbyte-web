@@ -3,8 +3,8 @@ import Link from "next/link";
 import PaymentCancelTracker from "./tracker";
 
 export const metadata: Metadata = {
-  title: "Checkout Cancelled — Try Free Version",
-  description: "No worries — you can still use ArtImageHub free. Start restoring old photos with AI, no payment required.",
+  title: "Checkout Cancelled — Return When Ready",
+  description: "Your preview is still waiting. Return anytime to unlock the original-quality download for $4.99.",
   robots: { index: false, follow: false },
 };
 
@@ -15,20 +15,20 @@ export default function PaymentCancelPage() {
       <div className="mx-auto max-w-md text-center">
         <h1 className="text-2xl font-bold">No worries!</h1>
         <p className="mt-2 text-muted-foreground">
-          You can try 3 photos free anytime, no credit card needed. Upgrade to Pro Lifetime when ready for unlimited access.
+          Your preview is still there. Return whenever you&apos;re ready to pay once for the original-quality download.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <Link
-            href="/#pricing"
+            href="/subscription"
             className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            View Plans
+            Open Checkout
           </Link>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-10 items-center justify-center rounded-lg border px-6 text-sm font-medium transition-colors hover:bg-muted"
           >
-            Try Free Version
+            Back to Restore Tool
           </Link>
         </div>
       </div>
