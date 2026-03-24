@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Damaged Photo Repair Online | AI Fixes Torn & Scratched Photos',
-  description: 'Repair damaged photos online with AI. Fix torn, scratched, water-damaged, and faded photos in seconds. Free tool - no signup required, results in 30 seconds.',
+  description: 'Repair damaged photos online with AI. Preview the repair first, then unlock the original-quality download for $4.99. No subscription.',
   keywords: [
     'damaged photo repair',
     'repair damaged photos',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/damaged-photo-repair' },
   openGraph: {
     title: 'Damaged Photo Repair | AI Fixes Torn & Scratched Photos',
-    description: 'Repair torn, scratched, and water-damaged photos with AI. Free online tool.',
+    description: 'Repair torn, scratched, and water-damaged photos with AI. Preview first, then unlock the original-quality download for $4.99.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after damaged photo repair' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Damaged Photo Repair - AI Powered',
-    description: 'Fix torn, scratched, and damaged photos online. Free, no signup.',
+    description: 'Preview the repair first, then unlock the original-quality download for $4.99.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Repair Damaged Photos Online",
-  description: "Repair torn, scratched, and damaged photographs using AI — free, no signup required, results in 30 seconds.",
+  description: "Repair torn, scratched, and damaged photographs using AI. Preview the repair first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Damaged Photo Repair" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your repaired photo",
-      text: "Preview the repair and download. 3 photos free, no signup required.",
+      text: "Preview the repair first. If you want the clean original-quality repaired photo, unlock the download for $4.99.",
     },
   ],
 };
@@ -71,9 +71,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "3 free repairs, Pro Lifetime $4.99"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -89,7 +89,7 @@ const faqSchema = {
     { "@type": "Question", name: "What types of photo damage can AI repair?", acceptedAnswer: { "@type": "Answer", text: "AI can repair: scratches, small tears, water stains, fading, yellowing, foxing spots, creases, and moderate physical damage. For photos with large missing sections (over 30% of image), results may be limited." } },
     { "@type": "Question", name: "Can AI repair a torn photo?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can repair torn photos if you scan both pieces together aligned properly. For clean tears, results are excellent. For tears with missing pieces, AI will attempt to reconstruct based on surrounding context." } },
     { "@type": "Question", name: "How should I scan a damaged photo?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum. For torn photos, align pieces as closely as possible on the scanner. Don't tape the original - tape damages photos. Just position the pieces carefully for scanning." } },
-    { "@type": "Question", name: "Is damaged photo repair free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited repairs at full resolution." } },
+    { "@type": "Question", name: "Is damaged photo repair free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the repair first with no signup required. If you want the clean original-quality repaired photo, unlock the download for $4.99. No subscription." } },
     { "@type": "Question", name: "Can AI repair water-damaged photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can remove water stains, reduce warping artifacts, and restore colors affected by water damage. Severe water damage with emulsion loss has limited repair options." } },
   ],
 };
@@ -126,7 +126,7 @@ export default function DamagedPhotoRepairPage() {
             <span className="text-rose-600">Damaged</span> Photo Repair
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            AI repairs torn, scratched, water-damaged, and faded photos in 30 seconds. Don't lose your memories to physical damage — <strong className="text-[#1d1d1f]">restore them today</strong>.
+            AI repairs torn, scratched, water-damaged, and faded photos in 30 seconds. Preview the repair first, then unlock the original-quality download for $4.99 if the result is worth keeping.
           </p>
 
           {/* Trust indicators */}
@@ -253,7 +253,7 @@ export default function DamagedPhotoRepairPage() {
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-700 font-bold">1</div>
               <div>
                 <h3 className="font-semibold text-[#1d1d1f] mb-1">For torn photos: Align pieces carefully</h3>
-                <p className="text-[14px] text-[#6e6e73]">Position torn pieces as close together as possible on the scanner. Don't tape the original photo — tape causes permanent damage. Just position carefully and scan.</p>
+	                <p className="text-[14px] text-[#6e6e73]">Position torn pieces as close together as possible on the scanner. Don&apos;t tape the original photo — tape causes permanent damage. Just position carefully and scan.</p>
               </div>
             </div>
             <div className="flex gap-4 p-5 bg-[#f5f5f7] rounded-xl">
@@ -267,7 +267,7 @@ export default function DamagedPhotoRepairPage() {
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-700 font-bold">3</div>
               <div>
                 <h3 className="font-semibold text-[#1d1d1f] mb-1">For curled/warped photos: Use a heavy book</h3>
-                <p className="text-[14px] text-[#6e6e73]">Gently flatten curled photos under heavy books for a few hours before scanning. Don't force — this can crack brittle photos.</p>
+	                <p className="text-[14px] text-[#6e6e73]">Gently flatten curled photos under heavy books for a few hours before scanning. Don&apos;t force — this can crack brittle photos.</p>
               </div>
             </div>
             <div className="flex gap-4 p-5 bg-[#f5f5f7] rounded-xl">
@@ -304,7 +304,7 @@ export default function DamagedPhotoRepairPage() {
               },
               {
                 q: "Is damaged photo repair free?",
-                a: "Yes! Try 3 damaged photo repairs free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited repairs at full resolution.",
+                a: "Yes. ArtImageHub lets you preview the repair first with no signup required. If you want the clean original-quality repaired photo, unlock the download for $4.99. No subscription.",
               },
               {
                 q: "Should I repair the physical photo or just restore digitally?",
@@ -323,9 +323,9 @@ export default function DamagedPhotoRepairPage() {
       {/* Final CTA */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-rose-600 to-pink-600">
         <div className="mx-auto max-w-3xl px-5 text-center">
-          <h2 className="text-[32px] sm:text-[40px] font-bold text-white mb-4">
-            Don't Let Damage Destroy Your Memories
-          </h2>
+	          <h2 className="text-[32px] sm:text-[40px] font-bold text-white mb-4">
+	            Don&apos;t Let Damage Destroy Your Memories
+	          </h2>
           <p className="text-rose-100 text-[17px] mb-8 max-w-lg mx-auto">
             Every damaged photo is a memory at risk. Repair yours in 30 seconds — before more detail is lost.
           </p>
@@ -333,10 +333,10 @@ export default function DamagedPhotoRepairPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-rose-700 hover:bg-rose-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Repair Your Photo Free — Try Now
+            Start Free Preview
           </Link>
           <p className="mt-4 text-rose-200 text-[13px]">
-            3 free repairs · No signup · Works on most damage types
+            Free preview · $4.99 original-quality unlock · No subscription
           </p>
         </div>
       </section>
