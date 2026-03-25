@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import {
+  clearPendingPaymentFunnelSource,
   readPaymentFunnelSource,
+  storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
   trackPaymentClick,
@@ -162,6 +164,7 @@ export default function PayPalButton({
             }
             setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
+            storePendingPaymentFunnelSource(funnelSource);
             trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
@@ -175,6 +178,7 @@ export default function PayPalButton({
             });
 
             if (!response.ok) {
+              clearPendingPaymentFunnelSource();
               trackCreateOrderResult(false, `http_${response.status}`, funnelSource);
               throw new Error("Failed to create order");
             }
@@ -202,6 +206,7 @@ export default function PayPalButton({
               funnelSource
             );
             if (!isInlineEmailGateError) {
+              clearPendingPaymentFunnelSource();
               setError(err instanceof Error ? err.message : "Failed to create order");
               if (onError) onError(err);
             }
@@ -231,6 +236,7 @@ export default function PayPalButton({
             const result = await response.json();
 
             if (result.success) {
+              clearPendingPaymentFunnelSource();
               trackPaymentSuccessOnce(PRO_PRICE_USD, data.orderID, funnelSource);
 
               if (onSuccess) {
@@ -275,6 +281,7 @@ export default function PayPalButton({
             setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
             return;
           }
+          clearPendingPaymentFunnelSource();
           console.error("PayPal error:", err);
           trackPaymentCancel("paypal_sdk_error", funnelSource);
           setError("Payment failed");

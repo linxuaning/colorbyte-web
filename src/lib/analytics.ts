@@ -5,6 +5,14 @@ export interface PaymentFunnelSource {
   checkoutSource?: string;
 }
 
+const PENDING_PAYMENT_FUNNEL_STORAGE_KEY = "artimagehub_pending_payment_funnel";
+const PENDING_PAYMENT_FUNNEL_MAX_AGE_MS = 2 * 60 * 60 * 1000;
+
+interface PendingPaymentFunnelRecord {
+  createdAt: number;
+  source: PaymentFunnelSource;
+}
+
 const PAYMENT_FUNNEL_QUERY_KEYS = {
   landingPage: "landing_page",
   ctaSlot: "cta_slot",
@@ -85,6 +93,52 @@ export const paymentFunnelPayload = (
   entry_variant: source.entryVariant || null,
   checkout_source: source.checkoutSource || null,
 });
+
+const readPendingPaymentFunnelRecord = (): PendingPaymentFunnelRecord | null => {
+  if (typeof window === "undefined") return null;
+
+  const raw = window.localStorage.getItem(PENDING_PAYMENT_FUNNEL_STORAGE_KEY);
+  if (!raw) return null;
+
+  try {
+    const parsed = JSON.parse(raw) as PendingPaymentFunnelRecord;
+    if (!parsed?.createdAt || !parsed?.source) {
+      return null;
+    }
+    return parsed;
+  } catch {
+    return null;
+  }
+};
+
+export const storePendingPaymentFunnelSource = (source: PaymentFunnelSource) => {
+  if (typeof window === "undefined") return;
+
+  window.localStorage.setItem(
+    PENDING_PAYMENT_FUNNEL_STORAGE_KEY,
+    JSON.stringify({
+      createdAt: Date.now(),
+      source,
+    } satisfies PendingPaymentFunnelRecord)
+  );
+};
+
+export const clearPendingPaymentFunnelSource = () => {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(PENDING_PAYMENT_FUNNEL_STORAGE_KEY);
+};
+
+export const consumePendingPaymentFunnelSource = (): PaymentFunnelSource | undefined => {
+  const record = readPendingPaymentFunnelRecord();
+  clearPendingPaymentFunnelSource();
+
+  if (!record) return undefined;
+  if (Date.now() - record.createdAt > PENDING_PAYMENT_FUNNEL_MAX_AGE_MS) {
+    return undefined;
+  }
+
+  return record.source;
+};
 
 // Google Analytics 4 event tracking utilities
 

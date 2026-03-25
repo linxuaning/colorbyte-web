@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   buildPaymentFunnelQuery,
+  clearPendingPaymentFunnelSource,
   hasTrackedPaymentSuccess,
   markPaymentSuccessTracked,
   readPaymentFunnelSource,
@@ -27,6 +28,8 @@ function PaymentSuccessContent() {
 
   useEffect(() => {
     // Save the paid email so the result page can restore download access after checkout.
+    clearPendingPaymentFunnelSource();
+
     if (email) {
       localStorage.setItem("artimagehub_email", email);
       console.log("✅ Paid email saved to localStorage:", email);
