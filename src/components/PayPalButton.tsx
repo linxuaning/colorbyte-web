@@ -270,6 +270,12 @@ export default function PayPalButton({
           }
         },
         onError: (err: unknown) => {
+          const isInlineEmailGateError =
+            err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
+          if (isInlineEmailGateError) {
+            setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
+            return;
+          }
           console.error("PayPal error:", err);
           trackPaymentCancel("paypal_sdk_error", funnelSource);
           setError("Payment failed");
