@@ -1,0 +1,49 @@
+{
+  "captured_at_utc": "2026-03-25T06:01:41.371Z",
+  "enhance": {
+    "url": "https://www.artimagehub.com/photo-enhancer",
+    "processing_complete_calls": [
+      [
+        "event",
+        "processing_complete",
+        {
+          "event_category": "conversion",
+          "task_id": "photo-enhancer-live-processing-probe",
+          "tool": "enhance",
+          "processing_time_ms": 13,
+          "landing_page": "/photo-enhancer",
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null
+        }
+      ]
+    ],
+    "landing_page": "/photo-enhancer",
+    "tool": "enhance",
+    "landing_page_matches": true,
+    "tool_matches": true
+  },
+  "colorize": {
+    "url": "https://www.artimagehub.com/photo-colorizer",
+    "processing_complete_calls": [
+      [
+        "event",
+        "processing_complete",
+        {
+          "event_category": "conversion",
+          "task_id": "photo-colorizer-live-processing-probe",
+          "tool": "colorize",
+          "processing_time_ms": 10,
+          "landing_page": "/photo-colorizer",
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null
+        }
+      ]
+    ],
+    "landing_page": "/photo-colorizer",
+    "tool": "colorize",
+    "landing_page_matches": true,
+    "tool_matches": true
+  }
+}

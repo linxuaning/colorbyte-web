@@ -1,0 +1,18 @@
+{
+  "captured_at_utc": "2026-03-25T06:52:30.504Z",
+  "url": "https://www.artimagehub.com/photo-enhancer",
+  "cta_click_calls": [
+    [
+      "event",
+      "cta_click",
+      {
+        "event_category": "engagement",
+        "event_label": "CTA clicked - enhancer-result-paywall"
+      }
+    ]
+  ],
+  "cta_payload": {
+    "event_category": "engagement",
+    "event_label": "CTA clicked - enhancer-result-paywall"
+  }
+}

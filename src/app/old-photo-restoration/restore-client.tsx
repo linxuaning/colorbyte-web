@@ -73,6 +73,15 @@ export default function RestoreClient() {
           ),
     []
   );
+  const restoreDoneSource = useMemo(
+    () =>
+      mergePaymentFunnelSource(funnelSource, {
+        ctaSlot: "restore_done_cta",
+        entryVariant: "restore_done",
+        checkoutSource: "download_intercept",
+      }),
+    [funnelSource]
+  );
 
   const redirectToSubscription = useCallback(
     (overrides?: {
@@ -503,20 +512,14 @@ export default function RestoreClient() {
                 <Link
                   href={`/subscription?${(() => {
                     const params = new URLSearchParams(
-                      buildPaymentFunnelQuery(
-                        mergePaymentFunnelSource(funnelSource, {
-                          ctaSlot: "restore_done_cta",
-                          entryVariant: "restore_done",
-                          checkoutSource: "download_intercept",
-                        })
-                      )
+                      buildPaymentFunnelQuery(restoreDoneSource)
                     );
                     if (taskId) {
                       params.set("resume_task_id", taskId);
                     }
                     return params.toString();
                   })()}`}
-                  onClick={() => trackCTAClick('restore-page', funnelSource)}
+                  onClick={() => trackCTAClick('restore-page', restoreDoneSource)}
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
                 >
                   <span className="flex items-center gap-2">

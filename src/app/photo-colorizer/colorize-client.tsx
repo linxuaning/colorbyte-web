@@ -69,6 +69,15 @@ export default function ColorizeClient() {
           ),
     []
   );
+  const resultPaywallSource = useMemo(
+    () =>
+      mergePaymentFunnelSource(funnelSource, {
+        ctaSlot: "result_unlock",
+        entryVariant: "result_paywall",
+        checkoutSource: "download_intercept",
+      }),
+    [funnelSource]
+  );
 
   // Colorization is always enabled on this page
   const colorize = true;
@@ -514,7 +523,7 @@ export default function ColorizeClient() {
                     "result_paywall"
                   )}
                   onClick={() =>
-                    trackCTAClick("colorizer-result-paywall", funnelSource)
+                    trackCTAClick("colorizer-result-paywall", resultPaywallSource)
                   }
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#1d1d1f] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#2d2d2f] active:scale-[0.98]"
                 >

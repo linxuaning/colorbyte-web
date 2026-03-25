@@ -69,6 +69,15 @@ export default function EnhanceClient() {
           ),
     []
   );
+  const resultPaywallSource = useMemo(
+    () =>
+      mergePaymentFunnelSource(funnelSource, {
+        ctaSlot: "result_unlock",
+        entryVariant: "result_paywall",
+        checkoutSource: "download_intercept",
+      }),
+    [funnelSource]
+  );
 
   const buildSubscriptionHref = useCallback(
     (ctaSlot: string, checkoutSource: string, entryVariant = "pay_first") => {
@@ -478,7 +487,7 @@ export default function EnhanceClient() {
                     "result_paywall"
                   )}
                   onClick={() =>
-                    trackCTAClick("enhancer-result-paywall", funnelSource)
+                    trackCTAClick("enhancer-result-paywall", resultPaywallSource)
                   }
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#1d1d1f] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#2d2d2f] active:scale-[0.98]"
                 >
