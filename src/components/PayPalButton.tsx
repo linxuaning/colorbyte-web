@@ -169,7 +169,7 @@ export default function PayPalButton({
             }
             setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
-            trackPaymentClick(CHECKOUT_ITEM_LABEL);
+            trackPaymentClick(CHECKOUT_ITEM_LABEL, funnelSource);
             storePendingPaymentFunnelSource(funnelSource, resumeTaskId);
             trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 

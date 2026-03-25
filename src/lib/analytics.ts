@@ -248,11 +248,16 @@ export const trackPhotoDownload = (
   });
 };
 
-export const trackPaymentClick = (plan: string) => {
-  event({
-    action: 'payment_click',
-    category: 'conversion',
-    label: `Payment initiated - ${plan}`,
+export const trackPaymentClick = (
+  plan: string,
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "payment_click", {
+    event_category: "conversion",
+    event_label: `Payment initiated - ${plan}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
