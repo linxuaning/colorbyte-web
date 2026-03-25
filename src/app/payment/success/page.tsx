@@ -5,6 +5,8 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   buildPaymentFunnelQuery,
+  hasTrackedPaymentSuccess,
+  markPaymentSuccessTracked,
   readPaymentFunnelSource,
   trackPaymentSuccess,
 } from "@/lib/analytics";
@@ -31,10 +33,9 @@ function PaymentSuccessContent() {
     }
 
     if (orderId) {
-      const dedupeKey = `payment_success_tracked_${orderId}`;
-      if (!sessionStorage.getItem(dedupeKey)) {
+      if (!hasTrackedPaymentSuccess(orderId)) {
         trackPaymentSuccess(PRO_PRICE_USD, orderId, funnelSource);
-        sessionStorage.setItem(dedupeKey, "1");
+        markPaymentSuccessTracked(orderId);
       }
     }
   }, [email, funnelSource, orderId]);

@@ -7,7 +7,7 @@ import {
   trackPaymentCancel,
   trackPaymentClick,
   trackPaymentStarted,
-  trackPaymentSuccess,
+  trackPaymentSuccessOnce,
 } from "@/lib/analytics";
 
 declare global {
@@ -231,8 +231,7 @@ export default function PayPalButton({
             const result = await response.json();
 
             if (result.success) {
-              // Track successful payment
-              trackPaymentSuccess(PRO_PRICE_USD, data.orderID, funnelSource);
+              trackPaymentSuccessOnce(PRO_PRICE_USD, data.orderID, funnelSource);
 
               if (onSuccess) {
                 onSuccess(data.orderID);

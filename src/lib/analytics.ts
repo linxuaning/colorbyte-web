@@ -276,6 +276,33 @@ export const trackPaymentSuccess = (
   }
 };
 
+const getPaymentSuccessDedupeKey = (transactionId: string) =>
+  `payment_success_tracked_${transactionId}`;
+
+export const hasTrackedPaymentSuccess = (transactionId: string) => {
+  if (typeof window === "undefined") return false;
+  return sessionStorage.getItem(getPaymentSuccessDedupeKey(transactionId)) === "1";
+};
+
+export const markPaymentSuccessTracked = (transactionId: string) => {
+  if (typeof window === "undefined") return;
+  sessionStorage.setItem(getPaymentSuccessDedupeKey(transactionId), "1");
+};
+
+export const trackPaymentSuccessOnce = (
+  amount: number,
+  transactionId: string,
+  source?: PaymentFunnelSource
+) => {
+  if (hasTrackedPaymentSuccess(transactionId)) {
+    return false;
+  }
+
+  trackPaymentSuccess(amount, transactionId, source);
+  markPaymentSuccessTracked(transactionId);
+  return true;
+};
+
 export const trackCTAClick = (location: string) => {
   event({
     action: 'cta_click',
