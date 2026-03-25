@@ -5,6 +5,7 @@ import "./globals.css";
 import Link from "next/link";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import StickyCTA from "@/components/StickyCTA";
+import RouteChromeGuard from "@/components/RouteChromeGuard";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -96,6 +97,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}
       >
+        <RouteChromeGuard />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -107,8 +109,12 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <StickyCTA />
-        <ExitIntentPopup />
+        <div data-global-sticky-cta>
+          <StickyCTA />
+        </div>
+        <div data-global-exit-popup>
+          <ExitIntentPopup />
+        </div>
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>

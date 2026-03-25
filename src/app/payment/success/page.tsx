@@ -49,18 +49,36 @@ function PaymentSuccessContent() {
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
   const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : "Open the Restore Tool";
-  const comparisonReturnHref =
-    !hasResumeTask &&
-    funnelSource.landingPage &&
-    funnelSource.landingPage !== "/old-photo-restoration"
-      ? (() => {
-          const compareParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
-          const compareQuery = compareParams.toString();
-          return compareQuery
-            ? `${funnelSource.landingPage}?${compareQuery}`
-            : funnelSource.landingPage;
-        })()
-      : "";
+  const successDescription = hasResumeTask
+    ? "Your one-time checkout went through. Return to your result to download the original-quality photo."
+    : "Your HD original unlock is now attached to this email. Open the restore tool and use the same email to access the paid download.";
+  const nextSteps = hasResumeTask
+    ? [
+        "Return to your result",
+        "Download the original-quality file with no watermark",
+        "Use the same email if you need to look up access later",
+      ]
+    : [
+        "Open the restore tool",
+        "Use the same email to access the paid HD download",
+        "Look up access later from the account page if needed",
+      ];
+  const includedNowItems = hasResumeTask
+    ? [
+        "Return path back to the result you just unlocked",
+        "Original-quality download for this paid result",
+        "No watermark on the paid file",
+        "Email-based access lookup if you come back later",
+      ]
+    : [
+        "Paid HD download attached to the checkout email",
+        "No watermark on the paid file",
+        "One-time payment recorded with no renewal",
+        "Email-based access lookup if you come back later",
+      ];
+  const accessLookupHref = email
+    ? `/subscription?email=${encodeURIComponent(email)}`
+    : "/subscription";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
@@ -89,15 +107,17 @@ function PaymentSuccessContent() {
           </h1>
 
           <p className="text-[15px] text-[#6e6e73] mb-6">
-            Your one-time checkout went through. Return to your result to download the original-quality photo.
+            {successDescription}
           </p>
 
           <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-left">
             <p className="text-[13px] font-semibold text-green-800">Do this next</p>
             <ul className="mt-2 space-y-1.5 text-[13px] text-green-900">
-              <li>1. Return to your result</li>
-              <li>2. Download the original-quality file with no watermark</li>
-              <li>3. Use the same email if you need to look up access later</li>
+              {nextSteps.map((step, index) => (
+                <li key={step}>
+                  {index + 1}. {step}
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -135,22 +155,12 @@ function PaymentSuccessContent() {
               Included now:
             </p>
             <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
-              <li className="flex items-start gap-2">
-                <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Return path back to the result you just unlocked</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Original-quality download for this paid result</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>No watermark on the paid file</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Email-based access lookup if you come back later</span>
-              </li>
+              {includedNowItems.map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-[#0071e3] mt-0.5">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -162,22 +172,14 @@ function PaymentSuccessContent() {
             {primaryCtaLabel}
           </Link>
 
-          {comparisonReturnHref ? (
-            <Link
-              href={comparisonReturnHref}
-              className="mt-3 block w-full text-[13px] font-medium text-[#6e6e73] hover:text-[#1d1d1f] hover:underline"
-            >
-              Back to the comparison page
-            </Link>
-          ) : null}
-
           {!hasResumeTask ? (
-            <Link
-              href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
-              className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
-            >
-              Check Download Access
-            </Link>
+            <p className="mt-4 text-[12px] leading-[1.6] text-[#6e6e73]">
+              Need to look this purchase up later?{" "}
+              <Link href={accessLookupHref} className="font-medium text-[#0071e3] hover:underline">
+                Use the same email on the access page
+              </Link>
+              .
+            </p>
           ) : null}
 
           <p className="mt-4 text-[12px] text-[#86868b]">
