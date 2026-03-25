@@ -282,6 +282,7 @@ export default function PayPalButton({
             }
           } catch (err) {
             console.error("Capture payment error:", err);
+            clearPendingPaymentFunnelSource();
             trackPaymentCancel("capture_error", funnelSource);
             setError("Payment failed");
             if (onError) onError(err);
