@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   clearPendingPaymentFunnelSource,
-  readPaymentFunnelSource,
   storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
@@ -12,6 +11,7 @@ import {
   trackPaymentStarted,
   trackPaymentSuccessOnce,
 } from "@/lib/analytics";
+import type { PaymentFunnelSource } from "@/lib/payment-funnel";
 
 declare global {
   interface PayPalApproveData {
@@ -61,6 +61,7 @@ interface PayPalButtonProps {
   onError?: (error: unknown) => void;
   checkoutEmail?: string;
   resumeTaskId?: string;
+  funnelSource?: PaymentFunnelSource;
 }
 
 export default function PayPalButton({
@@ -68,19 +69,13 @@ export default function PayPalButton({
   onError,
   checkoutEmail,
   resumeTaskId,
+  funnelSource = {},
 }: PayPalButtonProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [validationMessage, setValidationMessage] = useState<string | null>(null);
   const [retryNonce, setRetryNonce] = useState(0);
   const manualSupportEmail = "support@artimagehub.com";
-  const funnelSource = useMemo(
-    () =>
-      typeof window === "undefined"
-        ? {}
-        : readPaymentFunnelSource(new URLSearchParams(window.location.search)),
-    []
-  );
   const normalizedCheckoutEmail = checkoutEmail?.trim().toLowerCase() || "";
   const requiresInlineEmail = checkoutEmail !== undefined;
   const hasValidInlineEmail = EMAIL_REGEX.test(normalizedCheckoutEmail);
