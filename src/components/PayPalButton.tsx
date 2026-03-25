@@ -171,7 +171,7 @@ export default function PayPalButton({
             }
             setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
-            storePendingPaymentFunnelSource(funnelSource);
+            storePendingPaymentFunnelSource(funnelSource, resumeTaskId);
             trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {

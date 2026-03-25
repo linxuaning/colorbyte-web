@@ -11,6 +11,7 @@ const PENDING_PAYMENT_FUNNEL_MAX_AGE_MS = 2 * 60 * 60 * 1000;
 interface PendingPaymentFunnelRecord {
   createdAt: number;
   source: PaymentFunnelSource;
+  resumeTaskId?: string;
 }
 
 const PAYMENT_FUNNEL_QUERY_KEYS = {
@@ -113,7 +114,10 @@ const readPendingPaymentFunnelRecord = (): PendingPaymentFunnelRecord | null => 
   }
 };
 
-export const storePendingPaymentFunnelSource = (source: PaymentFunnelSource) => {
+export const storePendingPaymentFunnelSource = (
+  source: PaymentFunnelSource,
+  resumeTaskId?: string
+) => {
   if (typeof window === "undefined") return;
 
   window.localStorage.setItem(
@@ -121,6 +125,7 @@ export const storePendingPaymentFunnelSource = (source: PaymentFunnelSource) => 
     JSON.stringify({
       createdAt: Date.now(),
       source,
+      resumeTaskId,
     } satisfies PendingPaymentFunnelRecord)
   );
 };
@@ -130,7 +135,9 @@ export const clearPendingPaymentFunnelSource = () => {
   window.localStorage.removeItem(PENDING_PAYMENT_FUNNEL_STORAGE_KEY);
 };
 
-export const consumePendingPaymentFunnelSource = (): PaymentFunnelSource | undefined => {
+export const consumePendingPaymentFunnelContext = ():
+  | { source: PaymentFunnelSource; resumeTaskId?: string }
+  | undefined => {
   const record = readPendingPaymentFunnelRecord();
   clearPendingPaymentFunnelSource();
 
@@ -139,7 +146,14 @@ export const consumePendingPaymentFunnelSource = (): PaymentFunnelSource | undef
     return undefined;
   }
 
-  return record.source;
+  return {
+    source: record.source,
+    resumeTaskId: record.resumeTaskId,
+  };
+};
+
+export const consumePendingPaymentFunnelSource = (): PaymentFunnelSource | undefined => {
+  return consumePendingPaymentFunnelContext()?.source;
 };
 
 // Google Analytics 4 event tracking utilities
