@@ -152,7 +152,6 @@ export default function PayPalButton({
           try {
             // Track payment button click
             trackPaymentClick(CHECKOUT_ITEM_LABEL);
-            trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const payerEmail = requiresInlineEmail
               ? normalizedCheckoutEmail
@@ -163,6 +162,7 @@ export default function PayPalButton({
             }
             setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
+            trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
               method: "POST",
