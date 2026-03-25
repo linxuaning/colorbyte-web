@@ -53,7 +53,6 @@ const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
 
 type CreateOrderTrackedError = Error & {
   trackDetail?: string;
-  suppressPayPalOnError?: boolean;
 };
 
 interface PayPalButtonProps {
@@ -152,11 +151,14 @@ export default function PayPalButton({
       container.innerHTML = "";
     }
 
+    let suppressNextPayPalOnError = false;
+
     // Render PayPal button
     window.paypal
       .Buttons({
         createOrder: async () => {
           try {
+            suppressNextPayPalOnError = false;
             // Track payment button click
             trackPaymentClick(CHECKOUT_ITEM_LABEL);
 
@@ -216,7 +218,7 @@ export default function PayPalButton({
               funnelSource
             );
             if (!isInlineEmailGateError) {
-              trackedError.suppressPayPalOnError = true;
+              suppressNextPayPalOnError = true;
               clearPendingPaymentFunnelSource();
               setError(trackedError.message);
               if (onError) onError(trackedError);
@@ -292,10 +294,8 @@ export default function PayPalButton({
             setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
             return;
           }
-          if (
-            err instanceof Error &&
-            (err as CreateOrderTrackedError).suppressPayPalOnError
-          ) {
+          if (suppressNextPayPalOnError) {
+            suppressNextPayPalOnError = false;
             return;
           }
           clearPendingPaymentFunnelSource();
