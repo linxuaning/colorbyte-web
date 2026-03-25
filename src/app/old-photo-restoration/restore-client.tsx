@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
-  Download,
   RotateCcw,
   AlertCircle,
   CheckCircle2,
@@ -135,7 +134,7 @@ export default function RestoreClient() {
   }, [API_BASE, checkingAccess, isSubscriber, resumeTaskId, stage]);
 
   useEffect(() => {
-    const suppressCheckoutNoise = stage === "done" && !isSubscriber;
+    const suppressCheckoutNoise = stage === "done";
     const { body } = document;
 
     if (suppressCheckoutNoise) {
@@ -495,16 +494,9 @@ export default function RestoreClient() {
                     One-time payment · Full resolution · No watermark
                   </span>
                 </Link>
-
-                <a
-                  href={resultUrl}
-                  download
-                  onClick={() => trackPhotoDownload('free')}
-                  className="flex items-center justify-center gap-2 px-2 py-1 text-[12px] font-medium text-[#6e6e73] underline decoration-[#d2d2d7] underline-offset-4 hover:text-[#1d1d1f]"
-                >
-                  <Download className="h-3.5 w-3.5" />
-                  Download the 720p watermarked preview instead
-                </a>
+                <p className="text-center text-[12px] leading-[1.55] text-[#6e6e73]">
+                  Your restored preview is already visible above. Continue to checkout to download the HD original.
+                </p>
               </div>
             )}
 
