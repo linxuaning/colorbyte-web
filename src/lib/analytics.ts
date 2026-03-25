@@ -152,10 +152,6 @@ export const consumePendingPaymentFunnelContext = ():
   };
 };
 
-export const consumePendingPaymentFunnelSource = (): PaymentFunnelSource | undefined => {
-  return consumePendingPaymentFunnelContext()?.source;
-};
-
 // Google Analytics 4 event tracking utilities
 
 declare global {
