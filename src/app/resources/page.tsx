@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Free Photo Restoration Resources & Guides — ArtImageHub",
+  title: "Photo Restoration Resources & Guides — ArtImageHub",
   description: "Guides, tools, and resources for restoring old photos, preserving family history, and getting the most from AI photo restoration. Preview first, then unlock the original-quality download for $4.99 when needed.",
   alternates: { canonical: "/resources" },
   openGraph: {
-    title: "Free Photo Restoration Resources & Guides",
+    title: "Photo Restoration Resources & Guides",
     description: "Guides and tools for restoring and preserving old family photos with a preview-first workflow.",
     type: "website",
   },
@@ -24,21 +24,21 @@ const tools = [
     name: "Colorization",
     desc: "Add natural color to black and white photographs using AI trained on historical images.",
     href: "/old-photo-restoration",
-    badge: "Free",
+    badge: "Preview first",
     badgeColor: "bg-green-100 text-green-700",
   },
   {
     name: "Face Enhancement",
     desc: "Restore clarity and detail to faces in old photographs using GFPGAN-based AI.",
     href: "/old-photo-restoration",
-    badge: "Free",
+    badge: "Preview first",
     badgeColor: "bg-green-100 text-green-700",
   },
   {
     name: "4× Super Resolution",
     desc: "Upscale low-resolution scans to print-ready quality without losing natural texture.",
     href: "/old-photo-restoration",
-    badge: "Free",
+    badge: "Preview first",
     badgeColor: "bg-green-100 text-green-700",
   },
 ];
@@ -133,7 +133,7 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-5xl px-6 lg:px-10">
           <div className="mb-4 flex items-center gap-3">
             <div className="h-px w-8 bg-[#8B5E3C]" aria-hidden="true" />
-            <span className="font-lora text-[12px] uppercase tracking-[0.14em] text-[#8B5E3C]">Free Resources</span>
+            <span className="font-lora text-[12px] uppercase tracking-[0.14em] text-[#8B5E3C]">Resources</span>
           </div>
           <h1 className="font-playfair text-[44px] sm:text-[60px] font-900 leading-[0.95] tracking-[-0.03em] text-[#2c2416]">
             Photo Restoration<br />
@@ -141,17 +141,17 @@ export default function ResourcesPage() {
           </h1>
           <p className="mt-6 font-lora text-[17px] text-[#6b5344] max-w-2xl leading-[1.7]">
             Everything you need to restore, preserve, and digitize your family&rsquo;s photo collection.
-            Free tools, expert guides, and curated external resources — all in one place.
+            Preview-first tools, expert guides, and curated external resources — all in one place.
           </p>
         </div>
       </header>
 
       <div className="mx-auto max-w-5xl px-6 lg:px-10 py-14 sm:py-20 space-y-20">
-        {/* Free Tools */}
+        {/* Tools */}
         <section>
           <div className="mb-8 flex items-center gap-4">
             <div className="h-px w-8 bg-[#8B5E3C]" aria-hidden="true" />
-            <h2 className="font-playfair text-[24px] font-700 text-[#2c2416]">Free AI Tools</h2>
+            <h2 className="font-playfair text-[24px] font-700 text-[#2c2416]">Preview-First AI Tools</h2>
             <div className="flex-1 h-px bg-[#d4bc91]/40" aria-hidden="true" />
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
