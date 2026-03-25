@@ -159,9 +159,6 @@ export default function PayPalButton({
         createOrder: async () => {
           try {
             suppressNextPayPalOnError = false;
-            // Track payment button click
-            trackPaymentClick(CHECKOUT_ITEM_LABEL);
-
             const payerEmail = requiresInlineEmail
               ? normalizedCheckoutEmail
               : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
@@ -171,6 +168,7 @@ export default function PayPalButton({
             }
             setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
+            trackPaymentClick(CHECKOUT_ITEM_LABEL);
             storePendingPaymentFunnelSource(funnelSource, resumeTaskId);
             trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 

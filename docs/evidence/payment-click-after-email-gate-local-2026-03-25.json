@@ -1,0 +1,97 @@
+{
+  "before_fix_local_probe": {
+    "captured_at_utc": "2026-03-25T04:27:03.310Z",
+    "payment_click_calls": [
+      [
+        "event",
+        "payment_click",
+        {
+          "event_category": "conversion",
+          "event_label": "Payment initiated - Original-quality download - $4.99"
+        }
+      ]
+    ],
+    "payment_started_calls": [],
+    "payment_create_order_fail_calls": [
+      [
+        "event",
+        "payment_create_order_fail",
+        {
+          "event_category": "payment_funnel",
+          "detail": "inline_email_gate",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:27:03.306Z"
+        }
+      ]
+    ],
+    "error": "Enter a valid email before checkout"
+  },
+  "after_fix_local_probe_no_email": {
+    "captured_at_utc": "2026-03-25T04:28:19.666Z",
+    "payment_click_calls": [],
+    "payment_started_calls": [],
+    "payment_create_order_fail_calls": [
+      [
+        "event",
+        "payment_create_order_fail",
+        {
+          "event_category": "payment_funnel",
+          "detail": "inline_email_gate",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:28:19.663Z"
+        }
+      ]
+    ],
+    "error": "Enter a valid email before checkout"
+  },
+  "after_fix_local_probe_valid_email": {
+    "captured_at_utc": "2026-03-25T04:28:20.030Z",
+    "order_id": "ORDER_CLICK_VALID",
+    "payment_click_calls": [
+      [
+        "event",
+        "payment_click",
+        {
+          "event_category": "conversion",
+          "event_label": "Payment initiated - Original-quality download - $4.99"
+        }
+      ]
+    ],
+    "payment_started_calls": [
+      [
+        "event",
+        "payment_started",
+        {
+          "event_category": "payment_funnel",
+          "plan": "Original-quality download - $4.99",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:28:20.023Z"
+        }
+      ]
+    ],
+    "payment_create_order_success_calls": [
+      [
+        "event",
+        "payment_create_order_success",
+        {
+          "event_category": "payment_funnel",
+          "detail": "ORDER_CLICK_VALID",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:28:20.027Z"
+        }
+      ]
+    ]
+  }
+}
