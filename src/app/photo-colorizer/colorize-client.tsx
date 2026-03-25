@@ -283,6 +283,7 @@ export default function ColorizeClient() {
               taskId,
               tool: "colorize",
               processingTimeMs: Date.now() - startedAt,
+              source: funnelSource,
             });
             setResultUrl(`${API_BASE}/api/download/${taskId}`);
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
@@ -306,7 +307,7 @@ export default function ColorizeClient() {
       cancelled = true;
       clearTimeout(timeout);
     };
-  }, [stage, taskId]);
+  }, [funnelSource, stage, taskId]);
 
   // --- Drag & drop ---
   const onDrop = useCallback(
