@@ -115,7 +115,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="mt-10 font-lora text-[15px] text-[#8B7355] leading-[1.7] border-t border-[#d4bc91]/40 pt-8">
-            Our AI pipeline is powered by state-of-the-art open-source models via Replicate, served through a FastAPI backend
+            Our AI pipeline is powered by state-of-the-art restoration, enhancement, and colorization models, served through a FastAPI backend
             and delivered through a Next.js frontend optimized for speed and accessibility.
             All uploaded photos are automatically deleted within 24 hours — your memories are yours, not ours.
           </p>
