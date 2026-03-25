@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
@@ -42,6 +43,7 @@ interface TaskStatus {
 }
 
 export default function ColorizeClient() {
+  const searchParams = useSearchParams();
   const [stage, setStage] = useState<Stage>("idle");
   const [preview, setPreview] = useState<string | null>(null);
   const [taskId, setTaskId] = useState<string | null>(null);
@@ -54,6 +56,7 @@ export default function ColorizeClient() {
   const [checkingAccess, setCheckingAccess] = useState(true);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
+  const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
     () =>
       typeof window === "undefined"
@@ -70,16 +73,22 @@ export default function ColorizeClient() {
 
   const buildSubscriptionHref = useCallback(
     (ctaSlot: string, checkoutSource: string, entryVariant = "pay_first") => {
-      const params = buildPaymentFunnelQuery(
+      const params = new URLSearchParams(
+        buildPaymentFunnelQuery(
         mergePaymentFunnelSource(funnelSource, {
           ctaSlot,
           entryVariant,
           checkoutSource,
         })
+        )
       );
-      return params ? `/subscription?${params}` : "/subscription";
+      if (taskId) {
+        params.set("resume_task_id", taskId);
+      }
+      const query = params.toString();
+      return query ? `/subscription?${query}` : "/subscription";
     },
-    [funnelSource]
+    [funnelSource, taskId]
   );
 
   const redirectToSubscription = useCallback(
@@ -121,6 +130,20 @@ export default function ColorizeClient() {
         setCheckingAccess(false);
       });
   }, []);
+
+  useEffect(() => {
+    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess || !isSubscriber) {
+      return;
+    }
+
+    setTaskId(resumeTaskId);
+    setResultUrl(`${API_BASE}/api/download/${resumeTaskId}`);
+    setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
+    setProgress(100);
+    setProgressText("");
+    setErrorMsg("");
+    setStage("done");
+  }, [checkingAccess, isSubscriber, resumeTaskId, stage]);
 
   // --- Upload ---
   const handleFile = useCallback(

@@ -18,6 +18,29 @@ const parsedPrice = Number.parseFloat(
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 
+const getToolEntryPath = (landingPage?: string) => {
+  if (
+    landingPage === "/photo-enhancer" ||
+    landingPage === "/photo-colorizer" ||
+    landingPage === "/old-photo-restoration"
+  ) {
+    return landingPage;
+  }
+
+  return "/old-photo-restoration";
+};
+
+const getToolLabel = (path: string) => {
+  switch (path) {
+    case "/photo-enhancer":
+      return "Photo Enhancer";
+    case "/photo-colorizer":
+      return "Photo Colorizer";
+    default:
+      return "Restore Tool";
+  }
+};
+
 function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
@@ -25,6 +48,8 @@ function PaymentSuccessContent() {
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = readPaymentFunnelSource(searchParams);
   const hasResumeTask = resumeTaskId.length > 0;
+  const toolEntryPath = getToolEntryPath(funnelSource.landingPage);
+  const toolLabel = getToolLabel(toolEntryPath);
 
   useEffect(() => {
     // Save the paid email so the result page can restore download access after checkout.
@@ -43,19 +68,17 @@ function PaymentSuccessContent() {
     }
   }, [email, funnelSource, orderId]);
 
-  const restartPath = hasResumeTask
-    ? funnelSource.landingPage || "/old-photo-restoration"
-    : "/old-photo-restoration";
+  const restartPath = toolEntryPath;
   const restartParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
   if (hasResumeTask) {
     restartParams.set("resume_task_id", resumeTaskId);
   }
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
-  const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : "Open the Restore Tool";
+  const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : `Open the ${toolLabel}`;
   const successDescription = hasResumeTask
     ? "Your one-time checkout went through. Return to your result to download the original-quality photo."
-    : "Your HD original unlock is now attached to this email. Open the restore tool and use the same email to access the paid download.";
+    : `Your HD original unlock is now attached to this email. Open the ${toolLabel.toLowerCase()} and use the same email to access the paid download.`;
   const nextSteps = hasResumeTask
     ? [
         "Return to your result",
@@ -63,7 +86,7 @@ function PaymentSuccessContent() {
         "Use the same email if you need to look up access later",
       ]
     : [
-        "Open the restore tool",
+        `Open the ${toolLabel.toLowerCase()}`,
         "Use the same email to access the paid HD download",
         "Look up access later from the account page if needed",
       ];

@@ -14,6 +14,8 @@ const QUERY_KEY_MAP = {
 
 export const LOCKED_LANDING_PAGES = new Set([
   "/old-photo-restoration",
+  "/photo-enhancer",
+  "/photo-colorizer",
   "/vs-remini",
   "/vs-photoshop-restoration",
   "/best-photo-restoration-software",

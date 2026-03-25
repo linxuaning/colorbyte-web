@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
@@ -41,6 +42,7 @@ interface TaskStatus {
 }
 
 export default function EnhanceClient() {
+  const searchParams = useSearchParams();
   const [stage, setStage] = useState<Stage>("idle");
   const [preview, setPreview] = useState<string | null>(null);
   const [taskId, setTaskId] = useState<string | null>(null);
@@ -51,8 +53,10 @@ export default function EnhanceClient() {
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
+  const [checkingAccess, setCheckingAccess] = useState(true);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
+  const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
     () =>
       typeof window === "undefined"
@@ -66,16 +70,22 @@ export default function EnhanceClient() {
 
   const buildSubscriptionHref = useCallback(
     (ctaSlot: string, checkoutSource: string, entryVariant = "pay_first") => {
-      const params = buildPaymentFunnelQuery(
+      const params = new URLSearchParams(
+        buildPaymentFunnelQuery(
         mergePaymentFunnelSource(funnelSource, {
           ctaSlot,
           entryVariant,
           checkoutSource,
         })
+        )
       );
-      return params ? `/subscription?${params}` : "/subscription";
+      if (taskId) {
+        params.set("resume_task_id", taskId);
+      }
+      const query = params.toString();
+      return query ? `/subscription?${query}` : "/subscription";
     },
-    [funnelSource]
+    [funnelSource, taskId]
   );
 
   // Check subscription status and download limit on mount
@@ -83,18 +93,40 @@ export default function EnhanceClient() {
     if (!API_BASE) {
       setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
       setStage("error");
+      setCheckingAccess(false);
       return;
     }
-    const email = localStorage.getItem("artimagehub_email");
-    if (email) {
-      fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.is_active) setIsSubscriber(true);
-        })
-        .catch(() => {});
+    const email =
+      localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+    if (!email) {
+      setCheckingAccess(false);
+      return;
     }
+
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.is_active) setIsSubscriber(true);
+      })
+      .catch(() => {})
+      .finally(() => {
+        setCheckingAccess(false);
+      });
   }, []);
+
+  useEffect(() => {
+    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess || !isSubscriber) {
+      return;
+    }
+
+    setTaskId(resumeTaskId);
+    setResultUrl(`${API_BASE}/api/download/${resumeTaskId}`);
+    setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
+    setProgress(100);
+    setProgressText("");
+    setErrorMsg("");
+    setStage("done");
+  }, [checkingAccess, isSubscriber, resumeTaskId, stage]);
 
   // --- Upload ---
   const handleFile = useCallback(
