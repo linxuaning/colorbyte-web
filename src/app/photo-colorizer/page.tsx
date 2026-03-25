@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
-  title: "Photo Colorizer: Colorize Black and White Photos with AI Free",
+  title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
   description:
-    "Colorize black and white photos with AI. Start with a free preview, then unlock the original-quality download for $4.99. No subscription.",
+    "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   alternates: { canonical: "/photo-colorizer" },
   keywords: [
     "photo colorizer",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "old photo colorizer",
   ],
   openGraph: {
-    title: "Photo Colorizer — Colorize Black & White Photos Free Online",
+    title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
     description:
-      "Turn black and white photos into vivid color with AI. Preview first, then unlock the original-quality file for $4.99.",
+      "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
     type: "website",
     images: [
       {
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Photo Colorizer — Colorize Black & White Photos Free",
+    title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
     description:
-      "Preview the colorized result first, then unlock the original-quality file for $4.99.",
+      "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -43,15 +43,15 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Colorize Black and White Photos with AI",
-  description: "Add realistic colors to black and white photos using AI colorization. Preview first, then unlock the original-quality download for $4.99.",
+  description: "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Colorizer" }],
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your black and white photo",
-      text: "Click the upload area and select your black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB.",
+      name: "Unlock colorization access",
+      text: "Payment activates upload and processing access on this email before you enter the colorization flow.",
       image: "https://www.artimagehub.com/blog/before-1.jpg",
     },
     {
@@ -63,14 +63,14 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for colorization",
-      text: "The AI processes your photo and applies natural-looking colors. Most colorizations complete in 15–30 seconds.",
+      name: "Start processing",
+      text: "Live processing is still being re-verified, so immediate or guaranteed successful output is not promised yet.",
     },
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Download your colorized photo",
-      text: "Preview the before/after result first. If you want the clean original-quality colorized photo, unlock the download for $4.99.",
+      name: "Download if processing succeeds",
+      text: "If processing succeeds, the same paid email unlocks the original-quality download.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -80,10 +80,10 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo colorization free?", acceptedAnswer: { "@type": "Answer", text: "Yes — you can create a free preview first with ArtImageHub. When you want the clean original-quality colorized photo, pay $4.99 once to unlock the download on the same email." } },
+    { "@type": "Question", name: "Do I need paid access before colorizing?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
     { "@type": "Question", name: "How accurate is AI photo colorization?", acceptedAnswer: { "@type": "Answer", text: "AI colorization predicts colors based on patterns learned from millions of photos. While it's often very accurate for common objects (sky=blue, grass=green), it guesses colors for specific items like clothing or eyes. Results are artistic interpretation, not historical fact. For best accuracy, AI works well on clear photos with recognizable subjects." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Both grayscale and black & white photos work. For best results, use high-resolution scans (600 DPI or higher)." } },
-    { "@type": "Question", name: "How long does colorization take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are colorized in 15–30 seconds. Very large or complex images may take up to 60 seconds." } },
+    { "@type": "Question", name: "How long does colorization take?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
     { "@type": "Question", name: "Can I colorize old family photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub is perfect for colorizing old family photos, vintage pictures, historical images, and any black & white photographs. The AI works well on portraits, landscapes, and everyday scenes from any era." } },
   ],
 };
@@ -95,13 +95,12 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/photo-colorizer",
-  description: "AI-powered photo colorization tool that lets you preview the colorized result first, then unlock the original-quality download for $4.99 when you want to keep it.",
+  description: "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -113,7 +112,7 @@ const softwareSchema = {
     "Realistic Color Prediction",
     "Face-Aware Colorization",
     "High Resolution Output",
-    "Instant Results in 30 Seconds",
+    "Paid Access Before Upload",
   ],
 };
 
@@ -139,13 +138,13 @@ export default function PhotoColorizerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Free AI Colorization
+            Paid Access Before Colorization
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Turn Black & White Photos into Color
+            Photo Colorizer
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Upload your photo and let AI add realistic colors in seconds. Perfect for old family photos, historical images, and vintage pictures — free.
+            Unlock paid access on this email, then upload a black-and-white photo for colorization. Best for family portraits, historical images, and archive scans.
           </p>
         </div>
       </div>

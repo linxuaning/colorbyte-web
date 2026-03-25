@@ -15,9 +15,9 @@ import {
 import {
   trackPhotoUpload,
   trackProcessingComplete,
+  trackPhotoDownload,
   trackCTAClick,
 } from "@/lib/analytics";
-import { downloadProResult } from "@/lib/download";
 import {
   buildPaymentFunnelQuery,
   mergePaymentFunnelSource,
@@ -30,6 +30,7 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -50,12 +51,10 @@ export default function EnhanceClient() {
   const [progressText, setProgressText] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const [colorize, setColorize] = useState(false);
-  const [resultUrl, setResultUrl] = useState<string | null>(null);
+  const [resultPreviewUrl, setResultPreviewUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
-  const [downloadError, setDownloadError] = useState("");
-  const [isDownloading, setIsDownloading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -69,57 +68,28 @@ export default function EnhanceClient() {
           ),
     []
   );
-  const resultPaywallSource = useMemo(
-    () =>
-      mergePaymentFunnelSource(funnelSource, {
-        ctaSlot: "result_unlock",
-        entryVariant: "result_paywall",
-        checkoutSource: "download_intercept",
-      }),
-    [funnelSource]
-  );
-
-  const buildSubscriptionHref = useCallback(
-    (ctaSlot: string, checkoutSource: string, entryVariant = "pay_first") => {
-      const params = new URLSearchParams(
-        buildPaymentFunnelQuery(
+  const checkoutHref = useMemo(() => {
+    const params = new URLSearchParams(
+      buildPaymentFunnelQuery(
         mergePaymentFunnelSource(funnelSource, {
-          ctaSlot,
-          entryVariant,
-          checkoutSource,
+          ctaSlot: "upload_gate",
+          entryVariant: "pay_first",
+          checkoutSource: "tool_locked",
         })
-        )
-      );
-      if (taskId) {
-        params.set("resume_task_id", taskId);
-      }
-      const query = params.toString();
-      return query ? `/subscription?${query}` : "/subscription";
-    },
-    [funnelSource, taskId]
-  );
+      )
+    );
+    const savedEmail =
+      typeof window === "undefined"
+        ? ""
+        : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
 
-  const handleProDownload = useCallback(async () => {
-    if (!resultUrl) return;
-
-    const email =
-      localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
-
-    setDownloadError("");
-    setIsDownloading(true);
-    try {
-      await downloadProResult(
-        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`,
-        funnelSource
-      );
-    } catch (error) {
-      setDownloadError(
-        error instanceof Error ? error.message : "Download failed"
-      );
-    } finally {
-      setIsDownloading(false);
+    if (EMAIL_REGEX.test(savedEmail)) {
+      params.set("email", savedEmail);
     }
-  }, [funnelSource, resultUrl]);
+
+    return `/subscription?${params.toString()}`;
+  }, [funnelSource]);
+  const canUpload = isSubscriber && !checkingAccess;
 
   // Check subscription status and download limit on mount
   useEffect(() => {
@@ -153,7 +123,7 @@ export default function EnhanceClient() {
     }
 
     setTaskId(resumeTaskId);
-    setResultUrl(`${API_BASE}/api/download/${resumeTaskId}`);
+    setResultPreviewUrl(`${API_BASE}/api/result-preview/${resumeTaskId}`);
     setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
     setProgress(100);
     setProgressText("");
@@ -164,6 +134,12 @@ export default function EnhanceClient() {
   // --- Upload ---
   const handleFile = useCallback(
     async (file: File) => {
+      if (!canUpload) {
+        setErrorMsg("Paid access is required before upload and processing. Complete checkout first.");
+        setStage("error");
+        return;
+      }
+
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
         setErrorMsg("Invalid file type. Please upload JPG, PNG, or WEBP.");
@@ -186,6 +162,11 @@ export default function EnhanceClient() {
         const form = new FormData();
         form.append("file", file);
         form.append("colorize", String(colorize));
+        const checkoutEmail =
+          localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+        if (EMAIL_REGEX.test(checkoutEmail)) {
+          form.append("email", checkoutEmail);
+        }
 
         // Upload with retry (3 attempts, exponential backoff)
         let lastError: Error | null = null;
@@ -213,7 +194,7 @@ export default function EnhanceClient() {
             setProgressText("Processing started...");
 
             // Track successful upload
-            trackPhotoUpload(funnelSource);
+            trackPhotoUpload();
 
             lastError = null;
             break;
@@ -228,7 +209,7 @@ export default function EnhanceClient() {
         setStage("error");
       }
     },
-    [colorize, funnelSource],
+    [canUpload, colorize],
   );
 
   // --- Poll task status ---
@@ -265,7 +246,7 @@ export default function EnhanceClient() {
               processingTimeMs: Date.now() - startedAt,
               source: funnelSource,
             });
-            setResultUrl(`${API_BASE}/api/download/${taskId}`);
+            setResultPreviewUrl(`${API_BASE}/api/result-preview/${taskId}`);
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
             break;
@@ -293,21 +274,23 @@ export default function EnhanceClient() {
   const onDrop = useCallback(
     (e: React.DragEvent) => {
       e.preventDefault();
+      if (!canUpload) return;
       const file = e.dataTransfer.files[0];
       if (file) handleFile(file);
     },
-    [handleFile],
+    [canUpload, handleFile],
   );
 
   // --- Paste ---
   useEffect(() => {
     const handler = (e: ClipboardEvent) => {
+      if (!canUpload || stage !== "idle") return;
       const file = e.clipboardData?.files[0];
-      if (file && stage === "idle") handleFile(file);
+      if (file) handleFile(file);
     };
     document.addEventListener("paste", handler);
     return () => document.removeEventListener("paste", handler);
-  }, [handleFile, stage]);
+  }, [canUpload, handleFile, stage]);
 
   const reset = () => {
     setStage("idle");
@@ -316,7 +299,7 @@ export default function EnhanceClient() {
     setProgress(0);
     setProgressText("");
     setErrorMsg("");
-    setResultUrl(null);
+    setResultPreviewUrl(null);
     setOriginalUrl(null);
     processingStartedAtRef.current = null;
   };
@@ -325,66 +308,106 @@ export default function EnhanceClient() {
     <div className="mt-10">
       {/* --- IDLE: Upload area --- */}
       {stage === "idle" && (
-        <div
-          onDragOver={(e) => e.preventDefault()}
-          onDrop={onDrop}
-          onClick={() => fileInputRef.current?.click()}
-          className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
-        >
-          {/* Upload icon */}
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
-            <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
-          </div>
-
-          {/* Text */}
-          <div>
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
-            <p className="mt-1.5 text-[14px] text-[#6e6e73]">
-              or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+        resumeTaskId && checkingAccess ? (
+          <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
+            <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Restoring your download access</p>
+            <p className="text-[13px] text-[#6e6e73]">
+              Checking the email linked to this result before reopening the paid download.
             </p>
           </div>
-
-          {/* CTA button */}
-          <button
-            onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+        ) : !canUpload ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-5 text-[24px] font-semibold tracking-[-0.03em] text-[#1d1d1f]">
+              Unlock Enhancement Before Upload
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
+              This page now uses a pay-first flow. Complete checkout first, then return with the same email to upload a photo and keep paid download access tied to that purchase.
+            </p>
+            <div className="mx-auto mt-5 max-w-xl rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-left">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.06em] text-amber-800">
+                Current risk boundary
+              </p>
+              <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
+                Payment unlocks upload and processing entry. Processing is still being stabilized, so we do not promise immediate successful output yet.
+              </p>
+            </div>
+            <Link
+              href={checkoutHref}
+              className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Crown className="h-4 w-4" />
+              Unlock Access — {PRO_PRICE_TEXT}
+            </Link>
+            <p className="mt-3 text-[12px] text-[#6e6e73]">
+              After payment, this tool reopens in the allowed pre-upload state.
+            </p>
+          </div>
+        ) : (
+          <div
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={onDrop}
+            onClick={() => fileInputRef.current?.click()}
+            className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
           >
-            <Upload className="h-4 w-4" />
-            Choose Photo to Enhance
-          </button>
+            {/* Upload icon */}
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
+              <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
+            </div>
 
-          {/* Colorize toggle */}
-          <label
-            className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <span className="relative inline-flex h-5 w-9 items-center">
-              <input
-                type="checkbox"
-                checked={colorize}
-                onChange={(e) => setColorize(e.target.checked)}
-                className="peer sr-only"
-              />
-              <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
-              <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
-            </span>
-            Also colorize if black &amp; white
-          </label>
+            {/* Text */}
+            <div>
+              <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
+              <p className="mt-1.5 text-[14px] text-[#6e6e73]">
+                or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+              </p>
+            </div>
 
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/png,image/webp"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              if (file) handleFile(file);
-            }}
-          />
-          <p className="text-[12px] text-[#6e6e73]/70">
-            You can also paste an image with Ctrl+V
-          </p>
-        </div>
+            {/* CTA button */}
+            <button
+              onClick={(e) => { e.stopPropagation(); fileInputRef.current?.click(); }}
+              className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Upload className="h-4 w-4" />
+              Upload Photo to Enhance
+            </button>
+
+            {/* Colorize toggle */}
+            <label
+              className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <span className="relative inline-flex h-5 w-9 items-center">
+                <input
+                  type="checkbox"
+                  checked={colorize}
+                  onChange={(e) => setColorize(e.target.checked)}
+                  className="peer sr-only"
+                />
+                <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
+                <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
+              </span>
+              Also colorize if black &amp; white
+            </label>
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) handleFile(file);
+              }}
+            />
+            <p className="text-[12px] text-[#6e6e73]/70">
+              You can also paste an image with Ctrl+V
+            </p>
+          </div>
+        )
       )}
 
       {/* --- UPLOADING / PROCESSING --- */}
@@ -419,7 +442,7 @@ export default function EnhanceClient() {
       )}
 
       {/* --- DONE: Before/After comparison --- */}
-      {stage === "done" && resultUrl && (
+      {stage === "done" && resultPreviewUrl && (
         <div className="space-y-6">
           <div className="flex items-center justify-center gap-2 text-[17px] font-semibold text-[#1d1d1f]">
             <CheckCircle2 className="h-5 w-5 text-green-500" />
@@ -428,7 +451,7 @@ export default function EnhanceClient() {
 
           <BeforeAfterSlider
             beforeSrc={originalUrl || preview || ""}
-            afterSrc={resultUrl}
+            afterSrc={resultPreviewUrl}
           />
 
           <div className="flex flex-wrap items-center justify-center gap-2">
@@ -442,58 +465,55 @@ export default function EnhanceClient() {
           {/* Download Options Card */}
           <div className="mx-auto max-w-md rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-7">
             <h3 className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">
-              Download Options
+              Result Access
             </h3>
 
             {isSubscriber ? (
               /* State C: Subscriber */
-              <>
-                <button
-                  type="button"
-                  onClick={handleProDownload}
-                  disabled={isDownloading}
-                  className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#0077ed] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
-                >
-                  <span className="flex items-center gap-2">
-                    <Crown className="h-4 w-4" />
-                    {isDownloading
-                      ? "Preparing Download..."
-                      : "Download Original Quality"}
-                  </span>
-                  <span className="text-[11px] font-normal opacity-70">
-                    Paid access - Original-quality downloads
-                  </span>
-                </button>
-                {downloadError && (
-                  <p className="mt-2 text-center text-[12px] text-red-600">
-                    {downloadError}
-                  </p>
-                )}
-              </>
+              <a
+                href={`${API_BASE}/api/download/${taskId}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
+                download
+                onClick={() => trackPhotoDownload('pro')}
+                className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
+              >
+                <span className="flex items-center gap-2">
+                  <Crown className="h-4 w-4" />
+                  Download Original Quality
+                </span>
+                <span className="text-[11px] opacity-70 font-normal">PRO Member — Unlimited downloads</span>
+              </a>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
                   <p className="text-[14px] font-semibold text-[#1d1d1f]">
-	                    This enhanced photo is ready for original-quality download.
+                    This enhanced photo is ready for Pro download.
                   </p>
                   <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
-	                    Unlock the original-quality download once to export this image and keep the same email linked for future enhancements.
+                    This result path now uses the pay-first handoff. Unlock once to export this image in original quality and keep the same email linked for future enhancements.
                   </p>
                 </div>
                 <Link
-                  href={buildSubscriptionHref(
-                    "result_unlock",
-                    "download_intercept",
-                    "result_paywall"
-                  )}
-                  onClick={() =>
-                    trackCTAClick("enhancer-result-paywall", resultPaywallSource)
-                  }
+                  href={(() => {
+                    const params = new URLSearchParams(
+                      buildPaymentFunnelQuery(
+                        mergePaymentFunnelSource(funnelSource, {
+                          ctaSlot: "result_unlock",
+                          entryVariant: "result_paywall",
+                          checkoutSource: "download_intercept",
+                        })
+                      )
+                    );
+                    if (taskId) {
+                      params.set("resume_task_id", taskId);
+                    }
+                    return `/subscription?${params.toString()}`;
+                  })()}
+                  onClick={() => trackCTAClick("enhancer-result-paywall")}
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#1d1d1f] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#2d2d2f] active:scale-[0.98]"
                 >
                   <span className="flex items-center gap-2">
                     <Crown className="h-4 w-4" />
-	                    Unlock Original-Quality Download
+                    Unlock Pro to Download This Photo
                   </span>
                   <span className="text-[11px] font-normal opacity-70">
                     Original quality  ·  No watermark  ·  {PRO_PRICE_TEXT} once
@@ -504,7 +524,7 @@ export default function EnhanceClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                {PRO_PRICE_TEXT} one-time payment. No subscription. Original-quality download unlocks immediately after checkout.
+                {PRO_PRICE_TEXT} one-time payment. No subscription. Preview stays online; download unlocks immediately after checkout.
               </p>
             )}
           </div>
@@ -549,9 +569,9 @@ export default function EnhanceClient() {
           </p>
           <div className="grid gap-5 text-center sm:grid-cols-3">
             {[
-              { n: "1", title: "Upload", desc: "Drop or select any photo to enhance" },
-              { n: "2", title: "AI Enhances", desc: "Face enhancement + super resolution" },
-              { n: "3", title: "Download", desc: "Compare before/after and download" },
+              { n: "1", title: "Pay First", desc: "Unlock upload and enhancement with one payment" },
+              { n: "2", title: "Upload", desc: "Return with the same email and upload your photo" },
+              { n: "3", title: "Process & Download", desc: "If processing completes, the HD download stays on that paid email" },
             ].map((s) => (
               <div key={s.n} className="rounded-2xl bg-[#f5f5f7] p-6">
                 <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-[#0071e3] text-[13px] font-bold text-white">

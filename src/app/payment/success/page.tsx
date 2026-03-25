@@ -5,11 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   buildPaymentFunnelQuery,
-  clearPendingPaymentFunnelSource,
-  hasTrackedPaymentSuccess,
-  markPaymentSuccessTracked,
   readPaymentFunnelSource,
-  trackPaymentPageAction,
   trackPaymentSuccess,
 } from "@/lib/analytics";
 
@@ -19,95 +15,41 @@ const parsedPrice = Number.parseFloat(
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 
-const getToolEntryPath = (landingPage?: string) => {
-  if (
-    landingPage === "/photo-enhancer" ||
-    landingPage === "/photo-colorizer" ||
-    landingPage === "/old-photo-restoration"
-  ) {
-    return landingPage;
-  }
-
-  return "/old-photo-restoration";
-};
-
-const getToolLabel = (path: string) => {
-  switch (path) {
-    case "/photo-enhancer":
-      return "Photo Enhancer";
-    case "/photo-colorizer":
-      return "Photo Colorizer";
-    default:
-      return "Restore Tool";
-  }
-};
-
 function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
   const orderId = searchParams.get("order_id");
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = readPaymentFunnelSource(searchParams);
-  const hasResumeTask = resumeTaskId.length > 0;
-  const toolEntryPath = getToolEntryPath(funnelSource.landingPage);
-  const toolLabel = getToolLabel(toolEntryPath);
 
   useEffect(() => {
-    // Save the paid email so the result page can restore download access after checkout.
-    clearPendingPaymentFunnelSource();
-
+    // Persist the paid-access email so the user can reopen unlocked downloads.
     if (email) {
       localStorage.setItem("artimagehub_email", email);
-      console.log("✅ Paid email saved to localStorage:", email);
+      console.log("Paid access email saved to localStorage:", email);
     }
 
     if (orderId) {
-      if (!hasTrackedPaymentSuccess(orderId)) {
+      const dedupeKey = `payment_success_tracked_${orderId}`;
+      if (!sessionStorage.getItem(dedupeKey)) {
         trackPaymentSuccess(PRO_PRICE_USD, orderId, funnelSource);
-        markPaymentSuccessTracked(orderId);
+        sessionStorage.setItem(dedupeKey, "1");
       }
     }
   }, [email, funnelSource, orderId]);
 
-  const restartPath = toolEntryPath;
+  const restartPath = funnelSource.landingPage || "/old-photo-restoration";
   const restartParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
-  if (hasResumeTask) {
-    restartParams.set("resume_task_id", resumeTaskId);
-  }
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
-  const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : `Open the ${toolLabel}`;
-  const primaryAction = hasResumeTask ? "return_to_result" : "open_tool";
-  const successDescription = hasResumeTask
-    ? "Your one-time checkout went through. Return to your result to download the original-quality photo."
-    : `Your HD original unlock is now attached to this email. Open the ${toolLabel.toLowerCase()} and use the same email to access the paid download.`;
-  const nextSteps = hasResumeTask
-    ? [
-        "Return to your result",
-        "Download the original-quality file with no watermark",
-        "Use the same email if you need to look up access later",
-      ]
-    : [
-        `Open the ${toolLabel.toLowerCase()}`,
-        "Use the same email to access the paid HD download",
-        "Look up access later from the account page if needed",
-      ];
-  const includedNowItems = hasResumeTask
-    ? [
-        "Return path back to the result you just unlocked",
-        "Original-quality download for this paid result",
-        "No watermark on the paid file",
-        "Email-based access lookup if you come back later",
-      ]
-    : [
-        "Paid HD download attached to the checkout email",
-        "No watermark on the paid file",
-        "One-time payment recorded with no renewal",
-        "Email-based access lookup if you come back later",
-      ];
-  const accessLookupHref = email
-    ? `/subscription?email=${encodeURIComponent(email)}`
-    : "/subscription";
+  const legacyResultHref = resumeTaskId
+    ? (() => {
+        const legacyParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
+        legacyParams.set("resume_task_id", resumeTaskId);
+        const legacyQuery = legacyParams.toString();
+        return legacyQuery ? `${restartPath}?${legacyQuery}` : restartPath;
+      })()
+    : "";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
@@ -132,21 +74,19 @@ function PaymentSuccessContent() {
 
           {/* Success Message */}
           <h1 className="text-[28px] font-bold text-[#1d1d1f] mb-3">
-            Payment Received
+            Payment Successful!
           </h1>
 
           <p className="text-[15px] text-[#6e6e73] mb-6">
-            {successDescription}
+            Your paid access is now linked to this email.
           </p>
 
           <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-left">
             <p className="text-[13px] font-semibold text-green-800">Do this next</p>
             <ul className="mt-2 space-y-1.5 text-[13px] text-green-900">
-              {nextSteps.map((step, index) => (
-                <li key={step}>
-                  {index + 1}. {step}
-                </li>
-              ))}
+              <li>1. Return to the tool you came from</li>
+              <li>2. Upload with the same email to start processing</li>
+              <li>3. If processing succeeds, download stays tied to this email</li>
             </ul>
           </div>
 
@@ -167,11 +107,11 @@ function PaymentSuccessContent() {
                   </div>
                 )}
                 <div className="flex justify-between text-[13px]">
-                  <span className="text-[#6e6e73]">Purchase:</span>
-                  <span className="font-medium text-[#1d1d1f]">Original-quality download unlock</span>
+                  <span className="text-[#6e6e73]">Plan:</span>
+                  <span className="font-medium text-[#1d1d1f]">HD Original Access</span>
                 </div>
                 <div className="flex justify-between text-[13px]">
-                  <span className="text-[#6e6e73]">Paid:</span>
+                  <span className="text-[#6e6e73]">Amount:</span>
                   <span className="font-medium text-[#1d1d1f]">{PRO_PRICE_TEXT}</span>
                 </div>
               </div>
@@ -181,40 +121,58 @@ function PaymentSuccessContent() {
           {/* Benefits */}
           <div className="bg-blue-50 rounded-xl p-5 mb-8 text-left">
             <p className="text-[13px] font-semibold text-[#0071e3] mb-3">
-              Included now:
+              What you get:
             </p>
             <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
-              {includedNowItems.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="text-[#0071e3] mt-0.5">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>Upload and processing access on this email</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>No watermark on paid exports</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>Return to the tool in the allowed pre-upload state</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#0071e3] mt-0.5">✓</span>
+                <span>No recurring billing on this purchase</span>
+              </li>
             </ul>
+          </div>
+
+          <div className="mb-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left">
+            <p className="text-[13px] font-semibold text-amber-900">Current processing boundary</p>
+            <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
+              Payment unlocks the right to upload and start processing on this email, but we do not promise immediate or guaranteed successful output until the live processing path is re-verified.
+            </p>
           </div>
 
           {/* CTA Button */}
           <Link
             href={restartHref}
-            onClick={() => trackPaymentPageAction("success", primaryAction, funnelSource)}
             className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
-            {primaryCtaLabel}
+            Open the Tool
           </Link>
 
-          {!hasResumeTask ? (
-            <p className="mt-4 text-[12px] leading-[1.6] text-[#6e6e73]">
-              Need to look this purchase up later?{" "}
-              <Link
-                href={accessLookupHref}
-                onClick={() => trackPaymentPageAction("success", "access_lookup", funnelSource)}
-                className="font-medium text-[#0071e3] hover:underline"
-              >
-                Use the same email on the access page
-              </Link>
-              .
-            </p>
+          {legacyResultHref ? (
+            <Link
+              href={legacyResultHref}
+              className="mt-3 block w-full text-[13px] font-medium text-[#6e6e73] hover:text-[#1d1d1f] hover:underline"
+            >
+              Open the previous paid result instead
+            </Link>
           ) : null}
+
+          <Link
+            href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
+            className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
+          >
+            Check My Paid Access
+          </Link>
 
           <p className="mt-4 text-[12px] text-[#86868b]">
             Questions?{" "}

@@ -1,12 +1,15 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 import PayPalButton from "@/components/PayPalButton";
-import { trackPaymentEmailEntry } from "@/lib/analytics";
-import { readPaymentFunnelSource } from "@/lib/payment-funnel";
+import {
+  buildPaymentFunnelQuery,
+  readPaymentFunnelSource,
+  trackPaymentEmailEntry,
+} from "@/lib/analytics";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -14,27 +17,31 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
+const EMAIL_PAYMENT_ENTRY_ENABLED =
+  process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CHECKOUT_CONTEXT_KEYS = [
-  "resume_task_id",
-  "checkout_source",
-  "cta_slot",
-  "entry_variant",
-  "landing_page",
-] as const;
+const RESTARTABLE_INACTIVE_STATUSES = new Set([
+  "none",
+  "canceled",
+  "cancelled",
+  "expired",
+  "refunded",
+]);
 
 const getStatusLabel = (status: string) => {
   switch (status) {
     case "none":
-      return "No Pro Access";
+      return "No Paid Access";
+    case "trialing":
     case "on_trial":
-      return "Active Access";
+      return "Paid Access Active";
     case "active":
-      return "Active Access";
+      return "Paid Access Active";
     case "past_due":
       return "Billing Issue";
     case "canceled":
-      return "Canceled";
+    case "cancelled":
+      return "Access Ended";
     default:
       return status;
   }
@@ -53,33 +60,13 @@ interface SubscriptionData {
 export default function SubscriptionPage() {
   const searchParams = useSearchParams();
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
-  const hasCheckoutContext = CHECKOUT_CONTEXT_KEYS.some((key) =>
-    Boolean(searchParams.get(key)?.trim())
-  );
-  const funnelSource = useMemo(
-    () => readPaymentFunnelSource(new URLSearchParams(searchParams.toString())),
-    [searchParams]
-  );
   const [email, setEmail] = useState("");
   const [sub, setSub] = useState<SubscriptionData | null>(null);
   const [loading, setLoading] = useState(false);
   const [canceling, setCanceling] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
-  const [showAccessLookup, setShowAccessLookup] = useState(!hasCheckoutContext);
-  const lastTrackedCheckoutEmailRef = useRef("");
-
-  const trackCheckoutEmail = (
-    nextEmail: string,
-    mode: "manual" | "auto"
-  ) => {
-    const normalized = nextEmail.trim().toLowerCase();
-    if (!EMAIL_REGEX.test(normalized)) return;
-    if (lastTrackedCheckoutEmailRef.current === normalized) return;
-
-    lastTrackedCheckoutEmailRef.current = normalized;
-    trackPaymentEmailEntry("checkout_email", mode, funnelSource);
-  };
+  const [emailEntryHint, setEmailEntryHint] = useState("");
 
   // Pre-fill email from localStorage
   useEffect(() => {
@@ -92,15 +79,6 @@ export default function SubscriptionPage() {
     const initialEmail = emailFromQuery || saved;
     if (initialEmail) {
       setEmail(initialEmail);
-      const normalizedInitialEmail = initialEmail.trim().toLowerCase();
-      if (
-        hasCheckoutContext &&
-        EMAIL_REGEX.test(normalizedInitialEmail) &&
-        lastTrackedCheckoutEmailRef.current !== normalizedInitialEmail
-      ) {
-        lastTrackedCheckoutEmailRef.current = normalizedInitialEmail;
-        trackPaymentEmailEntry("checkout_email", "auto", funnelSource);
-      }
       void (async () => {
         setLoading(true);
         setError("");
@@ -116,23 +94,17 @@ export default function SubscriptionPage() {
         }
       })();
     }
-  }, [funnelSource, hasCheckoutContext, searchParams]);
+  }, [searchParams]);
 
+  const funnelSource = readPaymentFunnelSource(searchParams);
   const normalizedEmail = email.trim().toLowerCase();
   const hasValidCheckoutEmail = EMAIL_REGEX.test(normalizedEmail);
-  const shouldShowOffer =
-    !sub || sub.status === "none" || sub.status === "canceled";
+  const shouldShowOffer = !sub || RESTARTABLE_INACTIVE_STATUSES.has(sub.status);
 
   useEffect(() => {
     if (!hasValidCheckoutEmail) return;
     localStorage.setItem("artimagehub_email", normalizedEmail);
   }, [hasValidCheckoutEmail, normalizedEmail]);
-
-  useEffect(() => {
-    if (!hasCheckoutContext) {
-      setShowAccessLookup(true);
-    }
-  }, [hasCheckoutContext]);
 
   async function checkSubscription(emailToCheck?: string) {
     if (!API_BASE) {
@@ -223,6 +195,34 @@ export default function SubscriptionPage() {
     });
   };
 
+  const handleSendPaymentLinkEmail = () => {
+    const targetEmail = email.trim().toLowerCase();
+    if (!EMAIL_REGEX.test(targetEmail)) {
+      setEmailEntryHint("Enter a valid email first.");
+      return;
+    }
+
+    localStorage.setItem("artimagehub_email", targetEmail);
+    const paymentParams = new URLSearchParams({ email: targetEmail });
+    const funnelQuery = buildPaymentFunnelQuery(funnelSource);
+    if (funnelQuery) {
+      new URLSearchParams(funnelQuery).forEach((value, key) => {
+        paymentParams.set(key, value);
+      });
+    }
+    if (resumeTaskId) {
+      paymentParams.set("resume_task_id", resumeTaskId);
+    }
+    const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
+    const subject = encodeURIComponent("Your ColorByte payment link");
+    const body = encodeURIComponent(
+      `Use this checkout link to unlock upload, processing access, and HD download rights (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
+    );
+    trackPaymentEmailEntry("subscription_page", "manual", funnelSource);
+    setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
+    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+  };
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-16">
       {/* HD original offer - show before subscription check */}
@@ -230,29 +230,17 @@ export default function SubscriptionPage() {
         <div id="checkout-offer" className="mb-12 scroll-mt-24">
           <div className="text-center mb-8">
             <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-              {hasCheckoutContext
-                ? `Your restored photo is ready — download the HD original for ${PRO_PRICE_TEXT}`
-                : `Download HD Original — ${PRO_PRICE_TEXT}`}
+              Unlock Upload + HD Access — {PRO_PRICE_TEXT}
             </h1>
             <p className="mt-3 text-[17px] text-[#6e6e73]">
-              {hasCheckoutContext
-                ? "You already have the preview. Pay once and return to this result with the original-quality download unlocked."
-                : "Restore and preview for free, then pay once for the HD original without a watermark."}
+              Pay first, then return to the tool and upload with the same email. While processing is still being stabilized, we do not promise immediate successful output before you upload.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
-              {(
-                hasCheckoutContext
-                  ? [
-                      "Return to this restored result after payment",
-                      "Unlock the HD original on the same email",
-                      "One payment, no renewal surprise",
-                    ]
-                  : [
-                      "Unlock original-quality downloads immediately",
-                      "No watermark on paid exports",
-                      "One payment, no renewal surprise",
-                    ]
-              ).map((item) => (
+              {[
+                "Unlock original-quality downloads immediately",
+                "No watermark on paid exports",
+                "One payment, no renewal surprise",
+              ].map((item) => (
                 <span key={item} className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3]" aria-hidden="true" />
                   {item}
@@ -266,7 +254,7 @@ export default function SubscriptionPage() {
             <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <span className="rounded-full bg-[#0071e3] px-3 py-0.5 text-[11px] font-semibold text-white uppercase tracking-[0.06em]">
-                  {hasCheckoutContext ? "Unlock this result" : "One-time access"}
+                  One-time access
                 </span>
               </div>
 
@@ -280,19 +268,12 @@ export default function SubscriptionPage() {
               </p>
 
               <ul className="mt-5 space-y-2.5">
-                {(
-                  hasCheckoutContext
-                    ? [
-                        "HD original download",
-                        "Return to this restored photo after payment",
-                        "One-time payment",
-                      ]
-                    : [
-                        "HD original download",
-                        "No watermark",
-                        "One-time payment",
-                      ]
-                ).map((f) => (
+                {[
+                  "Upload + processing access",
+                  "HD original download",
+                  "No watermark",
+                  "One-time payment",
+                ].map((f) => (
                   <li key={f} className="flex items-center gap-2.5 text-[13px] text-white">
                     <svg className="h-4 w-4 shrink-0 text-[#0071e3]" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -313,101 +294,104 @@ export default function SubscriptionPage() {
                   id="checkout-email"
                   type="email"
                   value={email}
-                  onChange={(e) => {
-                    const nextEmail = e.target.value;
-                    setEmail(nextEmail);
-                    trackCheckoutEmail(nextEmail, "manual");
-                  }}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.com"
                   autoComplete="email"
                   className="mt-2 h-11 w-full rounded-xl border border-white/15 bg-white px-3 text-[14px] text-[#1d1d1f] outline-none transition focus:border-[#0071e3]"
                 />
                 <p className="mt-2 text-[12px] leading-[1.5] text-white/70">
                   {hasValidCheckoutEmail
-                    ? hasCheckoutContext
-                      ? "This email unlocks the HD original and sends you back to this restored result after payment."
-                      : "This email unlocks the HD original immediately after payment."
-                    : hasCheckoutContext
-                      ? "Choose PayPal whenever you're ready, but add the email that should receive the unlocked HD original before payment completes."
-                      : "Choose PayPal whenever you're ready, but add a valid email before payment completes so we can send the receipt and unlock the HD original."}
+                    ? "This email unlocks upload, processing access, and the paid download path after checkout."
+                    : "Enter a valid email first. PayPal checkout stays locked until we know which email should hold the paid access."}
                 </p>
               </div>
 
               <PayPalButton
                 checkoutEmail={email}
                 resumeTaskId={resumeTaskId || undefined}
-                funnelSource={funnelSource}
               />
 
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
                 <p className="font-medium text-white">What happens after payment</p>
                 <ul className="mt-2 space-y-1.5">
-                  <li>1. The HD original unlocks on your email immediately</li>
-                  <li>2. You return to this restoration result with the full-resolution download ready</li>
-                  <li>3. Your receipt is sent to the same email</li>
+                  <li>1. The same email unlocks upload and processing entry</li>
+                  <li>2. You return to the tool in the allowed pre-upload state</li>
+                  <li>3. If processing succeeds, HD download stays tied to that email</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-            One-time payment ({PRO_PRICE_TEXT}) · No subscription · Secure payment via PayPal
+            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secure payment via PayPal
           </p>
 
-          {!hasCheckoutContext && (
-            <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
-              {[
-                {
-                  title: "Restore more than one photo",
-                  desc: "Made for users with albums, family boxes, and repeated restoration jobs.",
-                },
-                {
-                  title: "Download-ready output",
-                  desc: "Best fit when you want the clean original-quality file for print or archive.",
-                },
-                {
-                  title: "No recurring charge pressure",
-                  desc: "One payment closes the decision now instead of adding another subscription.",
-                },
-              ].map((item) => (
-                <div key={item.title} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-4">
-                  <p className="text-[13px] font-semibold text-[#1d1d1f]">{item.title}</p>
-                  <p className="mt-1.5 text-[12px] leading-[1.6] text-[#6e6e73]">{item.desc}</p>
-                </div>
-              ))}
+          {EMAIL_PAYMENT_ENTRY_ENABLED && (
+            <div className="mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
+              <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
+                Send this checkout link to yourself
+              </p>
+              <div className="mt-2 flex gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="you@example.com"
+                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                />
+                <button
+                  type="button"
+                  onClick={handleSendPaymentLinkEmail}
+                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f]"
+                >
+                  Send
+                </button>
+              </div>
+              <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
+                {emailEntryHint || "Useful if you want to finish payment on another device later."}
+              </p>
             </div>
           )}
 
+          <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
+            {[
+              {
+                title: "Restore more than one photo",
+                desc: "Made for users with albums, family boxes, and repeated restoration jobs.",
+              },
+              {
+                title: "Download-ready output",
+                desc: "Best fit when you want the clean original-quality file for print or archive.",
+              },
+              {
+                title: "No recurring charge pressure",
+                desc: "One payment closes the decision now instead of adding another subscription.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-4">
+                <p className="text-[13px] font-semibold text-[#1d1d1f]">{item.title}</p>
+                <p className="mt-1.5 text-[12px] leading-[1.6] text-[#6e6e73]">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
-            {hasCheckoutContext ? (
-              <button
-                type="button"
-                onClick={() => setShowAccessLookup((value) => !value)}
-                className="text-[14px] font-medium text-[#0071e3] hover:text-[#0077ed]"
-              >
-                {showAccessLookup
-                  ? "Hide paid access lookup"
-                  : "Already paid or using another email? Check download access"}
-              </button>
-            ) : (
-              <p className="text-[14px] text-[#6e6e73] mb-3">
-                Already purchased? Check your subscription status below
-              </p>
-            )}
+            <p className="text-[14px] text-[#6e6e73] mb-3">
+              Already purchased? Check your paid access below
+            </p>
           </div>
         </div>
       )}
 
       {/* Subscription Management */}
-      {showAccessLookup && (
       <div className="max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold">{sub ? "Pro Access Details" : "Check Pro Access Status"}</h2>
+        <h2 className="text-2xl font-bold">{sub ? "Paid Access Details" : "Check Paid Access"}</h2>
 
         {/* Email lookup */}
         {!sub && (
         <div className="mt-6">
           <label className="block text-sm font-medium" htmlFor="email">
-            Enter your email to check subscription
+            Enter your email to check paid access
           </label>
           <div className="mt-2 flex gap-2">
             <input
@@ -475,7 +459,7 @@ export default function SubscriptionPage() {
                   <strong>Legacy access window</strong> until {formatDate(sub.trial_end)}
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  This account still has active access, but new purchases use the freemium checkout flow.
+                  This account still has active access, but new purchases use the pay-first checkout flow.
                 </p>
               </div>
             )}
@@ -533,12 +517,12 @@ export default function SubscriptionPage() {
               </button>
             )}
 
-            {sub.status === "none" || sub.status === "canceled" ? (
+            {RESTARTABLE_INACTIVE_STATUSES.has(sub.status) ? (
               <Link
                 href="#checkout-offer"
                 className="inline-flex h-10 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground"
               >
-                Download HD Original
+                Unlock Upload Access
               </Link>
             ) : null}
 
@@ -552,7 +536,6 @@ export default function SubscriptionPage() {
         </div>
       )}
       </div>
-      )}
     </div>
   );
 }

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
+  title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
   description:
-    "Enhance photo quality online with AI. Start with a free preview, then unlock the original-quality download for $4.99. No subscription.",
+    "Enhance blurry, low-quality, or faded photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   alternates: { canonical: "/photo-enhancer" },
   keywords: [
     "AI photo enhancer",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "photo upscaler",
   ],
   openGraph: {
-    title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
+    title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
     description:
-      "Improve photo quality with AI. Preview first, then unlock the original-quality enhanced file for $4.99.",
+      "Enhance blurry, low-quality, or faded photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
     type: "website",
     images: [
       {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Enhancer Free — Improve Photo Quality Online",
+    title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
     description:
-      "Preview the enhanced result first, then unlock the original-quality file for $4.99.",
+      "Enhance blurry, low-quality, or faded photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -44,15 +44,15 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Enhance Photo Quality with AI",
-  description: "Improve photo quality and fix blurry photos using AI photo enhancement. Preview first, then unlock the original-quality download for $4.99.",
+  description: "Enhance blurry, low-quality, or faded photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancer" }],
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your photo",
-      text: "Click the upload area and select any photo you want to enhance. Works with selfies, old photos, product images, or any picture. Supported formats: JPG, PNG, WEBP up to 20MB.",
+      name: "Unlock enhancement access",
+      text: "Payment activates upload and processing access on this email before you enter the enhancement flow.",
       image: "https://www.artimagehub.com/blog/before-1.jpg",
     },
     {
@@ -64,14 +64,14 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for processing",
-      text: "The AI enhances your photo with face-aware processing and 4× super resolution. Most enhancements complete in 15–30 seconds.",
+      name: "Start processing",
+      text: "Live processing is still being re-verified, so immediate or guaranteed successful output is not promised yet.",
     },
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Download your enhanced photo",
-      text: "Preview the before/after result first. If you want the clean original-quality enhanced photo, unlock the download for $4.99.",
+      name: "Download if processing succeeds",
+      text: "If processing succeeds, the same paid email unlocks the original-quality download.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -81,11 +81,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo enhancement free?", acceptedAnswer: { "@type": "Answer", text: "Yes — you can create a free preview first with ArtImageHub. When you want the clean original-quality enhanced photo, pay $4.99 once to unlock the download on the same email." } },
+    { "@type": "Question", name: "Do I need paid access before enhancement?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
     { "@type": "Question", name: "What does AI photo enhancement do?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement improves photo quality in multiple ways: (1) Face enhancement detects and sharpens faces, fixing eyes, skin, and facial details. (2) Super resolution upscales images 4× without losing quality. (3) Noise reduction removes grain and artifacts. (4) Color correction improves contrast and vibrancy. All automatically in one click." } },
     { "@type": "Question", name: "Can AI fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, to an extent. AI photo enhancement can significantly improve slightly blurry photos by sharpening details and applying super resolution. However, extremely blurry or out-of-focus photos cannot be fully recovered — AI predictions work best when some detail remains in the original image." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Works with any photo: old photos, selfies, portraits, product images, landscapes, and more." } },
-    { "@type": "Question", name: "How long does enhancement take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are enhanced in 15–30 seconds. Very large or complex images may take up to 60 seconds." } },
+    { "@type": "Question", name: "How long does enhancement take?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
   ],
 };
 
@@ -96,13 +96,12 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/photo-enhancer",
-  description: "AI-powered photo enhancement tool that lets you preview the enhanced result first, then unlock the original-quality download for $4.99 when you want to keep it.",
+  description: "Enhance blurry, low-quality, or faded photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -115,7 +114,7 @@ const softwareSchema = {
     "4× Super Resolution Upscaling",
     "Automatic Noise Reduction",
     "Color Correction",
-    "Instant Results in 30 Seconds",
+    "Paid Access Before Upload",
   ],
 };
 
@@ -141,13 +140,13 @@ export default function PhotoEnhancerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Free AI Enhancement
+            Paid Access Before Enhancement
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Enhance Photo Quality with AI
+            AI Photo Enhancer
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Upload any photo and let AI improve quality instantly. Fix blurry images, enhance faces, upscale resolution — free.
+            Unlock paid access on this email, then upload your photo for enhancement, sharpening, and upscale. Best for blur, low resolution, and weak detail.
           </p>
         </div>
       </div>

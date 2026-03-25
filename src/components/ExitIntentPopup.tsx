@@ -3,9 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const CHECKOUT_NOISE_DATA_ATTR = "checkoutNoiseSuppressed";
-const CHECKOUT_NOISE_EVENT = "artimagehub:checkout-noise-changed";
-
 // Generate realistic "photos restored today" count
 function getTodayCount(): number {
   const baseCount = 1247;
@@ -16,33 +13,12 @@ function getTodayCount(): number {
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
-  const [hasShown, setHasShown] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-    const lastShown = window.localStorage.getItem("exitIntentShown");
-    if (!lastShown) {
-      return false;
-    }
-    const timeSince = Date.now() - Number.parseInt(lastShown, 10);
-    return Number.isFinite(timeSince) && timeSince < 24 * 60 * 60 * 1000;
-  });
-  const [todayCount] = useState(() => getTodayCount());
+  const [hasShown, setHasShown] = useState(false);
+  const [todayCount, setTodayCount] = useState(0);
   const [timeLeft, setTimeLeft] = useState({ minutes: 14, seconds: 59 });
-  const [isSuppressed, setIsSuppressed] = useState(false);
 
   useEffect(() => {
-    const syncSuppression = () => {
-      const suppressed = document.body.dataset[CHECKOUT_NOISE_DATA_ATTR] === "1";
-      setIsSuppressed(suppressed);
-      if (suppressed) {
-        setIsVisible(false);
-      }
-    };
-
-    syncSuppression();
-    window.addEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
-    return () => window.removeEventListener(CHECKOUT_NOISE_EVENT, syncSuppression);
+    setTodayCount(getTodayCount());
   }, []);
 
   // Countdown timer for urgency
@@ -64,8 +40,14 @@ export default function ExitIntentPopup() {
   }, [isVisible]);
 
   useEffect(() => {
-    if (isSuppressed) {
-      return;
+    // Check if popup was shown in last 24 hours
+    const lastShown = localStorage.getItem("exitIntentShown");
+    if (lastShown) {
+      const timeSince = Date.now() - parseInt(lastShown);
+      if (timeSince < 24 * 60 * 60 * 1000) {
+        setHasShown(true);
+        return;
+      }
     }
 
     const handleMouseLeave = (e: MouseEvent) => {
@@ -92,13 +74,13 @@ export default function ExitIntentPopup() {
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [hasShown, isSuppressed]);
+  }, [hasShown]);
 
   const handleClose = () => {
     setIsVisible(false);
   };
 
-  if (isSuppressed || !isVisible) return null;
+  if (!isVisible) return null;
 
   return (
     <>
@@ -146,7 +128,7 @@ export default function ExitIntentPopup() {
 
           {/* Heading */}
           <h2 className="font-playfair text-[24px] font-800 text-center text-[#2c2416] leading-tight mb-2">
-            Wait! Your <span className="text-[#8B5E3C]">HD original</span><br />
+            Wait! <span className="text-[#8B5E3C]">Pro restoration</span><br />
             is one click away
           </h2>
 
@@ -157,15 +139,15 @@ export default function ExitIntentPopup() {
 
           {/* Description */}
           <p className="font-lora text-[14px] text-center text-[#6b5344] leading-relaxed mb-5">
-            Preview first, then pay once for the original-quality download. Most results are ready in 30 seconds.
+            See why thousands trust us with their precious memories. Pay once to unlock upload and processing on this email, then continue inside the paid tool flow.
           </p>
 
           {/* Benefits */}
           <div className="mb-6 space-y-2">
             {[
               "Professional AI restoration",
-              "Results in 30 seconds",
-              "$4.99 one-time original download",
+              "Paid access before upload",
+              "One-time payment, no subscription",
             ].map((benefit) => (
               <div key={benefit} className="flex items-center gap-3">
                 <svg className="h-5 w-5 text-[#8B5E3C] shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -186,7 +168,7 @@ export default function ExitIntentPopup() {
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              Unlock HD Original - $4.99
+              Unlock Upload Access Now
               <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
@@ -207,7 +189,7 @@ export default function ExitIntentPopup() {
             onClick={handleClose}
             className="mt-2 w-full font-lora text-[12px] text-[#8B7355] hover:text-[#6b5344] transition-colors"
           >
-            No thanks, I&apos;ll miss this offer
+            No thanks, I'll miss this offer
           </button>
         </div>
       </div>
