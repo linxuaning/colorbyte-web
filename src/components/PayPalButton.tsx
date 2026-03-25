@@ -51,6 +51,8 @@ const CHECKOUT_ITEM_LABEL = `Original-quality download - $${PRO_PRICE_USD.toFixe
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
 
+type CreateOrderTrackedError = Error & { trackDetail?: string };
+
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
   onError?: (error: unknown) => void;
@@ -179,8 +181,9 @@ export default function PayPalButton({
 
             if (!response.ok) {
               clearPendingPaymentFunnelSource();
-              trackCreateOrderResult(false, `http_${response.status}`, funnelSource);
-              throw new Error("Failed to create order");
+              throw Object.assign(new Error("Failed to create order"), {
+                trackDetail: `http_${response.status}`,
+              } satisfies Pick<CreateOrderTrackedError, "trackDetail">);
             }
 
             const data = await response.json();
@@ -201,7 +204,7 @@ export default function PayPalButton({
               isInlineEmailGateError
                 ? "inline_email_gate"
                 : err instanceof Error
-                  ? err.message
+                  ? (err as CreateOrderTrackedError).trackDetail || err.message
                   : "unknown_error",
               funnelSource
             );
