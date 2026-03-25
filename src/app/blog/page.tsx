@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
@@ -104,15 +105,20 @@ export default async function BlogPage() {
               <div className="grid lg:grid-cols-[3fr_2fr] overflow-hidden rounded-2xl border border-[#d4bc91]/40 bg-white shadow-sm hover:shadow-xl transition-shadow duration-400">
                 {/* Cover image/gradient — large and striking */}
                 <div
-                  className={`relative aspect-[4/3] lg:aspect-auto bg-gradient-to-br ${featuredPost.coverColor} flex items-center justify-center overflow-hidden min-h-[320px]`}
+                  className="relative aspect-[4/3] min-h-[320px] overflow-hidden bg-[#efe8dc] lg:aspect-auto"
                 >
-                  {/* Texture overlay */}
+                  <Image
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 58vw, 100vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${featuredPost.coverColor} opacity-35 mix-blend-multiply`} aria-hidden="true" />
+                  <div className="absolute inset-0 bg-black/18" aria-hidden="true" />
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_60%,rgba(255,255,255,0.18),transparent_50%)]" aria-hidden="true" />
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_25%,rgba(0,0,0,0.12),transparent_45%)]" aria-hidden="true" />
-                  {/* Large emoji */}
-                  <span className="text-[120px] relative z-10 drop-shadow-xl opacity-70 group-hover:scale-105 transition-transform duration-500 select-none" role="img" aria-label={featuredPost.title}>
-                    {featuredPost.coverEmoji || "📸"}
-                  </span>
                   {/* Category badge on image */}
                   <div className="absolute top-6 left-6">
                     <span className="rounded-sm bg-white/20 backdrop-blur-md border border-white/30 px-3 py-1 font-lora text-[11px] uppercase tracking-[0.1em] text-white font-600">
@@ -199,11 +205,6 @@ export default async function BlogPage() {
               {remainingPosts.map((post, idx) => {
                 // First article spans wider columns for visual hierarchy
                 const isWide = idx === 0 && remainingPosts.length > 1;
-                const isLast = idx === remainingPosts.length - 1;
-                const hasBorderRight =
-                  !isWide &&
-                  idx % 3 !== 2 &&
-                  idx < remainingPosts.length - 1;
 
                 return (
                   <Link
@@ -218,20 +219,20 @@ export default async function BlogPage() {
                     <article className="h-full">
                       {/* Cover — taller for wide article */}
                       <div
-                        className={`relative bg-gradient-to-br ${post.coverColor} flex items-center justify-center overflow-hidden ${
+                        className={`relative overflow-hidden bg-[#efe8dc] ${
                           isWide ? "aspect-[16/7]" : "aspect-[16/9]"
                         }`}
                       >
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          fill
+                          sizes={isWide ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, 100vw"}
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className={`absolute inset-0 bg-gradient-to-br ${post.coverColor} opacity-30 mix-blend-multiply`} aria-hidden="true" />
+                        <div className="absolute inset-0 bg-black/12" aria-hidden="true" />
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_50%,rgba(255,255,255,0.14),transparent_55%)]" aria-hidden="true" />
-                        <span
-                          className={`relative z-10 drop-shadow-lg opacity-75 group-hover:scale-110 transition-transform duration-500 select-none ${
-                            isWide ? "text-[80px] sm:text-[100px]" : "text-[52px] sm:text-[64px]"
-                          }`}
-                          role="img"
-                          aria-label={post.title}
-                        >
-                          {post.coverEmoji || "📸"}
-                        </span>
                         {/* Category badge */}
                         <div className="absolute top-4 left-4">
                           <span className="rounded-sm bg-white/20 backdrop-blur-sm border border-white/25 px-2.5 py-0.5 font-lora text-[10px] uppercase tracking-[0.1em] text-white font-500">
