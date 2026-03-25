@@ -1,0 +1,72 @@
+{
+  "before_fix_live_probe": {
+    "captured_at_utc": "2026-03-25T04:46:52.217Z",
+    "url": "https://www.artimagehub.com/subscription?payment_debug_fail=1",
+    "retry_payment_cancel_calls": [
+      [
+        "event",
+        "payment_cancel",
+        {
+          "event_category": "payment_funnel",
+          "source": "retry_payment",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:46:51.409Z"
+        }
+      ]
+    ],
+    "support_payment_cancel_calls": [
+      [
+        "event",
+        "payment_cancel",
+        {
+          "event_category": "payment_funnel",
+          "source": "manual_checkout_support",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:46:51.909Z"
+        }
+      ]
+    ]
+  },
+  "after_fix_local_probe": {
+    "captured_at_utc": "2026-03-25T04:48:11.202Z",
+    "url": "http://127.0.0.1:3102/subscription?payment_debug_fail=1",
+    "retry_payment_cancel_calls": [],
+    "retry_payment_recovery_calls": [
+      [
+        "event",
+        "payment_recovery_action",
+        {
+          "event_category": "payment_funnel",
+          "source": "retry_payment",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:48:10.455Z"
+        }
+      ]
+    ],
+    "support_payment_cancel_calls": [],
+    "support_payment_recovery_calls": [
+      [
+        "event",
+        "payment_recovery_action",
+        {
+          "event_category": "payment_funnel",
+          "source": "manual_checkout_support",
+          "landing_page": null,
+          "cta_slot": null,
+          "entry_variant": null,
+          "checkout_source": null,
+          "utc": "2026-03-25T04:48:10.896Z"
+        }
+      ]
+    ]
+  }
+}

@@ -305,6 +305,16 @@ export const trackPaymentCancel = (
   });
 };
 
+export const trackPaymentRecoveryAction = (
+  source: string,
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent('payment_recovery_action', {
+    source,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
+};
+
 export const trackPaymentEmailEntry = (
   source: string,
   mode: 'manual' | 'auto' = 'manual',

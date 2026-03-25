@@ -8,6 +8,7 @@ import {
   trackCreateOrderResult,
   trackPaymentCancel,
   trackPaymentClick,
+  trackPaymentRecoveryAction,
   trackPaymentStarted,
   trackPaymentSuccessOnce,
 } from "@/lib/analytics";
@@ -325,13 +326,13 @@ export default function PayPalButton({
   ]);
 
   const handleRetryPayment = () => {
-    trackPaymentCancel("retry_payment", funnelSource);
+    trackPaymentRecoveryAction("retry_payment", funnelSource);
     setError(null);
     setRetryNonce((v) => v + 1);
   };
 
   const handleManualCheckoutSupport = () => {
-    trackPaymentCancel("manual_checkout_support", funnelSource);
+    trackPaymentRecoveryAction("manual_checkout_support", funnelSource);
     const savedEmail =
       normalizedCheckoutEmail ||
       localStorage.getItem("artimagehub_email")?.trim() ||
