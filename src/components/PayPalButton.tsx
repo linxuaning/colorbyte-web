@@ -51,7 +51,10 @@ const CHECKOUT_ITEM_LABEL = `Original-quality download - $${PRO_PRICE_USD.toFixe
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
 
-type CreateOrderTrackedError = Error & { trackDetail?: string };
+type CreateOrderTrackedError = Error & {
+  trackDetail?: string;
+  suppressPayPalOnError?: boolean;
+};
 
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
@@ -199,21 +202,26 @@ export default function PayPalButton({
             console.error("Create order error:", err);
             const isInlineEmailGateError =
               err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
+            const trackedError =
+              err instanceof Error
+                ? (err as CreateOrderTrackedError)
+                : (Object.assign(new Error("Failed to create order"), {
+                    trackDetail: "unknown_error",
+                  } satisfies Pick<CreateOrderTrackedError, "trackDetail">) as CreateOrderTrackedError);
             trackCreateOrderResult(
               false,
               isInlineEmailGateError
                 ? "inline_email_gate"
-                : err instanceof Error
-                  ? (err as CreateOrderTrackedError).trackDetail || err.message
-                  : "unknown_error",
+                : trackedError.trackDetail || trackedError.message,
               funnelSource
             );
             if (!isInlineEmailGateError) {
+              trackedError.suppressPayPalOnError = true;
               clearPendingPaymentFunnelSource();
-              setError(err instanceof Error ? err.message : "Failed to create order");
-              if (onError) onError(err);
+              setError(trackedError.message);
+              if (onError) onError(trackedError);
             }
-            throw err;
+            throw trackedError;
           }
         },
         onApprove: async (data: PayPalApproveData) => {
@@ -282,6 +290,12 @@ export default function PayPalButton({
             err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
           if (isInlineEmailGateError) {
             setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
+            return;
+          }
+          if (
+            err instanceof Error &&
+            (err as CreateOrderTrackedError).suppressPayPalOnError
+          ) {
             return;
           }
           clearPendingPaymentFunnelSource();
