@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
-  Download,
   RotateCcw,
   AlertCircle,
   CheckCircle2,
@@ -55,12 +54,10 @@ export default function RestoreClient() {
   const [progressText, setProgressText] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const [colorize, setColorize] = useState(false);
-  const [resultUrl, setResultUrl] = useState<string | null>(null);
+  const [resultPreviewUrl, setResultPreviewUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
-  const [remaining, setRemaining] = useState(3);
-  const [limitReached, setLimitReached] = useState(false);
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -76,24 +73,28 @@ export default function RestoreClient() {
           ),
     []
   );
-
-  const redirectToSubscription = useCallback(
-    (overrides?: {
-      ctaSlot?: string;
-      entryVariant?: string;
-      checkoutSource?: string;
-    }) => {
-      const params = buildPaymentFunnelQuery(
+  const checkoutHref = useMemo(() => {
+    const params = new URLSearchParams(
+      buildPaymentFunnelQuery(
         mergePaymentFunnelSource(funnelSource, {
-          ctaSlot: funnelSource.ctaSlot || overrides?.ctaSlot,
-          entryVariant: funnelSource.entryVariant || overrides?.entryVariant,
-          checkoutSource: overrides?.checkoutSource || "subscription_page",
+          ctaSlot: "upload_gate",
+          entryVariant: "pay_first",
+          checkoutSource: "tool_locked",
         })
-      );
-      window.location.href = params ? `/subscription?${params}` : "/subscription";
-    },
-    [funnelSource]
-  );
+      )
+    );
+    const savedEmail =
+      typeof window === "undefined"
+        ? ""
+        : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+
+    if (EMAIL_REGEX.test(savedEmail)) {
+      params.set("email", savedEmail);
+    }
+
+    return `/subscription?${params.toString()}`;
+  }, [funnelSource]);
+  const canUpload = isSubscriber && !checkingAccess;
 
   // Check subscription status on mount
   useEffect(() => {
@@ -130,22 +131,31 @@ export default function RestoreClient() {
     }
 
     setTaskId(resumeTaskId);
-    setResultUrl(`${API_BASE}/api/download/${resumeTaskId}`);
+    setResultPreviewUrl(`${API_BASE}/api/result-preview/${resumeTaskId}`);
     setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
     setProgress(100);
     setProgressText("");
     setErrorMsg("");
     setStage("done");
-  }, [API_BASE, checkingAccess, isSubscriber, resumeTaskId, stage]);
+  }, [checkingAccess, isSubscriber, resumeTaskId, stage]);
 
-  // Handle click on upload area — open for all users (freemium)
+  // Handle click on upload area only after paid access is confirmed.
   const handleUploadClick = useCallback(() => {
+    if (!canUpload) {
+      return;
+    }
     fileInputRef.current?.click();
-  }, []);
+  }, [canUpload]);
 
-  // --- Upload --- (open to all users in freemium model)
+  // --- Upload --- (available only after paid access)
   const handleFile = useCallback(
     async (file: File) => {
+      if (!canUpload) {
+        setErrorMsg("Paid access is required before upload and processing. Complete checkout first.");
+        setStage("error");
+        return;
+      }
+
       const checkoutEmail =
         localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
 
@@ -214,7 +224,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [colorize],
+    [canUpload, colorize],
   );
 
   // --- Poll task status ---
@@ -251,7 +261,7 @@ export default function RestoreClient() {
               processingTimeMs: Date.now() - startedAt,
               source: funnelSource,
             });
-            setResultUrl(`${API_BASE}/api/download/${taskId}`);
+            setResultPreviewUrl(`${API_BASE}/api/result-preview/${taskId}`);
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
             break;
@@ -273,27 +283,29 @@ export default function RestoreClient() {
       cancelled = true;
       clearTimeout(timeout);
     };
-  }, [stage, taskId]);
+  }, [colorize, funnelSource, stage, taskId]);
 
   // --- Drag & drop ---
   const onDrop = useCallback(
     (e: React.DragEvent) => {
       e.preventDefault();
+      if (!canUpload) return;
       const file = e.dataTransfer.files[0];
       if (file) handleFile(file);
     },
-    [handleFile],
+    [canUpload, handleFile],
   );
 
   // --- Paste ---
   useEffect(() => {
     const handler = (e: ClipboardEvent) => {
+      if (!canUpload || stage !== "idle") return;
       const file = e.clipboardData?.files[0];
-      if (file && stage === "idle") handleFile(file);
+      if (file) handleFile(file);
     };
     document.addEventListener("paste", handler);
     return () => document.removeEventListener("paste", handler);
-  }, [handleFile, stage]);
+  }, [canUpload, handleFile, stage]);
 
   const reset = () => {
     setStage("idle");
@@ -302,7 +314,7 @@ export default function RestoreClient() {
     setProgress(0);
     setProgressText("");
     setErrorMsg("");
-    setResultUrl(null);
+    setResultPreviewUrl(null);
     setOriginalUrl(null);
     processingStartedAtRef.current = null;
     setEmailEntry("");
@@ -344,12 +356,42 @@ export default function RestoreClient() {
 
   return (
     <div className="mt-10">
-      {/* --- IDLE: Upload area (open to all users) --- */}
+      {/* --- IDLE: Pay gate or upload area --- */}
       {stage === "idle" && (
         checkingAccess ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
             <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Loading...</p>
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking paid access...</p>
+          </div>
+        ) : !canUpload ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-5 text-[24px] font-semibold tracking-[-0.03em] text-[#1d1d1f]">
+              Unlock Upload + Processing
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
+              This tool is now pay-first. Complete checkout before upload, then return here with the same email to start restoration and keep HD download access linked to that purchase.
+            </p>
+            <div className="mx-auto mt-5 max-w-xl rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-left">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.06em] text-amber-800">
+                Current risk boundary
+              </p>
+              <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
+                Payment unlocks access before processing starts. Processing is still being stabilized, so we do not promise immediate successful output yet.
+              </p>
+            </div>
+            <Link
+              href={checkoutHref}
+              className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Crown className="h-4 w-4" />
+              Unlock Access — {PRO_PRICE_TEXT}
+            </Link>
+            <p className="mt-3 text-[12px] text-[#6e6e73]">
+              After payment, you come back here in the allowed pre-upload state.
+            </p>
           </div>
         ) : (
           <div
@@ -377,7 +419,7 @@ export default function RestoreClient() {
               className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
             >
               <Upload className="h-4 w-4" />
-              Restore Your Photo Free
+              Upload Photo to Restore
             </button>
 
             <label
@@ -446,7 +488,7 @@ export default function RestoreClient() {
       )}
 
       {/* --- DONE: Before/After comparison --- */}
-      {stage === "done" && resultUrl && (
+      {stage === "done" && resultPreviewUrl && (
         <div className="space-y-6">
           <div className="flex items-center justify-center gap-2 text-[17px] font-semibold text-[#1d1d1f]">
             <CheckCircle2 className="h-5 w-5 text-green-500" />
@@ -455,7 +497,7 @@ export default function RestoreClient() {
 
           <BeforeAfterSlider
             beforeSrc={originalUrl || preview || ""}
-            afterSrc={resultUrl}
+            afterSrc={resultPreviewUrl}
           />
 
           <div className="flex flex-wrap items-center justify-center gap-2">
@@ -469,13 +511,13 @@ export default function RestoreClient() {
           {/* Download Options Card */}
           <div className="mx-auto max-w-md rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-7">
             <h3 className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">
-              Download Options
+              Result Access
             </h3>
 
             {isSubscriber ? (
               /* State C: Subscriber */
               <a
-                href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
+                href={`${API_BASE}/api/download/${taskId}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
                 download
                 onClick={() => trackPhotoDownload('pro')}
                 className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
@@ -488,6 +530,14 @@ export default function RestoreClient() {
               </a>
             ) : (
               <div className="space-y-3">
+                <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
+                  <p className="text-[14px] font-semibold text-[#1d1d1f]">
+                    Your restored preview is ready to compare online.
+                  </p>
+                  <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
+                    Download stays locked until payment. Unpaid sessions can preview the result here, but cannot export a file.
+                  </p>
+                </div>
                 <Link
                   href={`/subscription?${(() => {
                     const params = new URLSearchParams(
@@ -515,28 +565,13 @@ export default function RestoreClient() {
                     One-time payment · Full resolution · No watermark
                   </span>
                 </Link>
-
-                <a
-                  href={resultUrl}
-                  download
-                  onClick={() => trackPhotoDownload('free')}
-                  className="flex w-full flex-col items-center gap-1 rounded-full border border-[#d2d2d7] bg-white px-6 py-3 text-[13px] font-medium text-[#6e6e73] hover:bg-[#f5f5f7] active:scale-[0.98] transition-all"
-                >
-                  <span className="flex items-center gap-2">
-                    <Download className="h-3.5 w-3.5" />
-                    Download Free Preview
-                  </span>
-                  <span className="text-[11px] font-normal opacity-60">
-                    720p · Watermarked
-                  </span>
-                </a>
               </div>
             )}
 
             {!isSubscriber && (
               <div className="mt-4 space-y-3">
                 <p className="text-center text-[12px] text-[#6e6e73]">
-                  {PRO_PRICE_TEXT} one-time payment. No subscription.
+                  {PRO_PRICE_TEXT} one-time payment. No subscription. Preview is free to view, not to download.
                 </p>
                 {EMAIL_PAYMENT_ENTRY_ENABLED && (
                   <div className="rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
@@ -608,9 +643,9 @@ export default function RestoreClient() {
           </p>
           <div className="grid gap-5 text-center sm:grid-cols-3">
             {[
-              { n: "1", title: "Upload", desc: "Drop or select your old photo" },
-              { n: "2", title: "AI Restores", desc: "Face enhancement + super resolution" },
-              { n: "3", title: "Download", desc: "Compare before/after and download" },
+              { n: "1", title: "Pay First", desc: "Unlock upload and processing with one payment" },
+              { n: "2", title: "Upload", desc: "Return with the same email and upload your old photo" },
+              { n: "3", title: "Process & Download", desc: "If processing completes, download stays tied to that paid email" },
             ].map((s) => (
               <div key={s.n} className="rounded-2xl bg-[#f5f5f7] p-6">
                 <div className="mx-auto flex h-9 w-9 items-center justify-center rounded-full bg-[#0071e3] text-[13px] font-bold text-white">

@@ -20,19 +20,28 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RESTARTABLE_INACTIVE_STATUSES = new Set([
+  "none",
+  "canceled",
+  "cancelled",
+  "expired",
+  "refunded",
+]);
 
 const getStatusLabel = (status: string) => {
   switch (status) {
     case "none":
-      return "No Pro Access";
+      return "No Paid Access";
+    case "trialing":
     case "on_trial":
-      return "Active Access";
+      return "Paid Access Active";
     case "active":
-      return "Active Access";
+      return "Paid Access Active";
     case "past_due":
       return "Billing Issue";
     case "canceled":
-      return "Canceled";
+    case "cancelled":
+      return "Access Ended";
     default:
       return status;
   }
@@ -90,8 +99,7 @@ export default function SubscriptionPage() {
   const funnelSource = readPaymentFunnelSource(searchParams);
   const normalizedEmail = email.trim().toLowerCase();
   const hasValidCheckoutEmail = EMAIL_REGEX.test(normalizedEmail);
-  const shouldShowOffer =
-    !sub || sub.status === "none" || sub.status === "canceled";
+  const shouldShowOffer = !sub || RESTARTABLE_INACTIVE_STATUSES.has(sub.status);
 
   useEffect(() => {
     if (!hasValidCheckoutEmail) return;
@@ -202,10 +210,13 @@ export default function SubscriptionPage() {
         paymentParams.set(key, value);
       });
     }
+    if (resumeTaskId) {
+      paymentParams.set("resume_task_id", resumeTaskId);
+    }
     const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
     const subject = encodeURIComponent("Your ColorByte payment link");
     const body = encodeURIComponent(
-      `Use this checkout link to download the HD original (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
+      `Use this checkout link to unlock upload, processing access, and HD download rights (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
     );
     trackPaymentEmailEntry("subscription_page", "manual", funnelSource);
     setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
@@ -219,10 +230,10 @@ export default function SubscriptionPage() {
         <div id="checkout-offer" className="mb-12 scroll-mt-24">
           <div className="text-center mb-8">
             <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-              Download HD Original — {PRO_PRICE_TEXT}
+              Unlock Upload + HD Access — {PRO_PRICE_TEXT}
             </h1>
             <p className="mt-3 text-[17px] text-[#6e6e73]">
-              Restore and preview for free, then pay once for the HD original without a watermark.
+              Pay first, then return to the tool and upload with the same email. While processing is still being stabilized, we do not promise immediate successful output before you upload.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
               {[
@@ -258,6 +269,7 @@ export default function SubscriptionPage() {
 
               <ul className="mt-5 space-y-2.5">
                 {[
+                  "Upload + processing access",
                   "HD original download",
                   "No watermark",
                   "One-time payment",
@@ -289,8 +301,8 @@ export default function SubscriptionPage() {
                 />
                 <p className="mt-2 text-[12px] leading-[1.5] text-white/70">
                   {hasValidCheckoutEmail
-                    ? "This email unlocks the HD original immediately after payment."
-                    : "Enter a valid email first. PayPal checkout stays locked until we know where to send the receipt and unlock the HD original."}
+                    ? "This email unlocks upload, processing access, and the paid download path after checkout."
+                    : "Enter a valid email first. PayPal checkout stays locked until we know which email should hold the paid access."}
                 </p>
               </div>
 
@@ -302,16 +314,16 @@ export default function SubscriptionPage() {
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
                 <p className="font-medium text-white">What happens after payment</p>
                 <ul className="mt-2 space-y-1.5">
-                  <li>1. The HD original unlocks on your email immediately</li>
-                  <li>2. You return to restoration with the full-resolution download ready</li>
-                  <li>3. Your receipt is sent to the same email</li>
+                  <li>1. The same email unlocks upload and processing entry</li>
+                  <li>2. You return to the tool in the allowed pre-upload state</li>
+                  <li>3. If processing succeeds, HD download stays tied to that email</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-            One-time payment ({PRO_PRICE_TEXT}) · No subscription · Secure payment via PayPal
+            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secure payment via PayPal
           </p>
 
           {EMAIL_PAYMENT_ENTRY_ENABLED && (
@@ -365,7 +377,7 @@ export default function SubscriptionPage() {
 
           <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-3">
-              Already purchased? Check your subscription status below
+              Already purchased? Check your paid access below
             </p>
           </div>
         </div>
@@ -373,13 +385,13 @@ export default function SubscriptionPage() {
 
       {/* Subscription Management */}
       <div className="max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold">{sub ? "Pro Access Details" : "Check Pro Access Status"}</h2>
+        <h2 className="text-2xl font-bold">{sub ? "Paid Access Details" : "Check Paid Access"}</h2>
 
         {/* Email lookup */}
         {!sub && (
         <div className="mt-6">
           <label className="block text-sm font-medium" htmlFor="email">
-            Enter your email to check subscription
+            Enter your email to check paid access
           </label>
           <div className="mt-2 flex gap-2">
             <input
@@ -447,7 +459,7 @@ export default function SubscriptionPage() {
                   <strong>Legacy access window</strong> until {formatDate(sub.trial_end)}
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  This account still has active access, but new purchases use the freemium checkout flow.
+                  This account still has active access, but new purchases use the pay-first checkout flow.
                 </p>
               </div>
             )}
@@ -505,12 +517,12 @@ export default function SubscriptionPage() {
               </button>
             )}
 
-            {sub.status === "none" || sub.status === "canceled" ? (
+            {RESTARTABLE_INACTIVE_STATUSES.has(sub.status) ? (
               <Link
                 href="#checkout-offer"
                 className="inline-flex h-10 items-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground"
               >
-                Download HD Original
+                Unlock Upload Access
               </Link>
             ) : null}
 

@@ -23,10 +23,10 @@ function PaymentSuccessContent() {
   const funnelSource = readPaymentFunnelSource(searchParams);
 
   useEffect(() => {
-    // 🚨 CRITICAL: Save subscription to localStorage so user can access paid features
+    // Persist the paid-access email so the user can reopen unlocked downloads.
     if (email) {
       localStorage.setItem("artimagehub_email", email);
-      console.log("✅ Subscription saved to localStorage:", email);
+      console.log("Paid access email saved to localStorage:", email);
     }
 
     if (orderId) {
@@ -38,27 +38,18 @@ function PaymentSuccessContent() {
     }
   }, [email, funnelSource, orderId]);
 
-  const restartPath = resumeTaskId
-    ? funnelSource.landingPage || "/old-photo-restoration"
-    : "/old-photo-restoration";
+  const restartPath = funnelSource.landingPage || "/old-photo-restoration";
   const restartParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
-  if (resumeTaskId) {
-    restartParams.set("resume_task_id", resumeTaskId);
-  }
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
-  const comparisonReturnHref =
-    !resumeTaskId &&
-    funnelSource.landingPage &&
-    funnelSource.landingPage !== "/old-photo-restoration"
-      ? (() => {
-          const compareParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
-          const compareQuery = compareParams.toString();
-          return compareQuery
-            ? `${funnelSource.landingPage}?${compareQuery}`
-            : funnelSource.landingPage;
-        })()
-      : "";
+  const legacyResultHref = resumeTaskId
+    ? (() => {
+        const legacyParams = new URLSearchParams(buildPaymentFunnelQuery(funnelSource));
+        legacyParams.set("resume_task_id", resumeTaskId);
+        const legacyQuery = legacyParams.toString();
+        return legacyQuery ? `${restartPath}?${legacyQuery}` : restartPath;
+      })()
+    : "";
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
@@ -87,15 +78,15 @@ function PaymentSuccessContent() {
           </h1>
 
           <p className="text-[15px] text-[#6e6e73] mb-6">
-            Your Pro Lifetime access has been activated.
+            Your paid access is now linked to this email.
           </p>
 
           <div className="mb-6 rounded-xl border border-green-200 bg-green-50 p-4 text-left">
             <p className="text-[13px] font-semibold text-green-800">Do this next</p>
             <ul className="mt-2 space-y-1.5 text-[13px] text-green-900">
-              <li>1. Go back to your restore flow</li>
-              <li>2. Download in original quality with no watermark</li>
-              <li>3. Keep using the same email for future Pro restores</li>
+              <li>1. Return to the tool you came from</li>
+              <li>2. Upload with the same email to start processing</li>
+              <li>3. If processing succeeds, download stays tied to this email</li>
             </ul>
           </div>
 
@@ -117,7 +108,7 @@ function PaymentSuccessContent() {
                 )}
                 <div className="flex justify-between text-[13px]">
                   <span className="text-[#6e6e73]">Plan:</span>
-                  <span className="font-medium text-[#1d1d1f]">Pro Lifetime</span>
+                  <span className="font-medium text-[#1d1d1f]">HD Original Access</span>
                 </div>
                 <div className="flex justify-between text-[13px]">
                   <span className="text-[#6e6e73]">Amount:</span>
@@ -135,21 +126,28 @@ function PaymentSuccessContent() {
             <ul className="space-y-2 text-[13px] text-[#1d1d1f]">
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Unlimited photo restorations</span>
+                <span>Upload and processing access on this email</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Original quality downloads</span>
+                <span>No watermark on paid exports</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>No watermarks</span>
+                <span>Return to the tool in the allowed pre-upload state</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#0071e3] mt-0.5">✓</span>
-                <span>Lifetime access to all future features</span>
+                <span>No recurring billing on this purchase</span>
               </li>
             </ul>
+          </div>
+
+          <div className="mb-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left">
+            <p className="text-[13px] font-semibold text-amber-900">Current processing boundary</p>
+            <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
+              Payment unlocks the right to upload and start processing on this email, but we do not promise immediate or guaranteed successful output until the live processing path is re-verified.
+            </p>
           </div>
 
           {/* CTA Button */}
@@ -157,15 +155,15 @@ function PaymentSuccessContent() {
             href={restartHref}
             className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
-            Return to Your Restore
+            Open the Tool
           </Link>
 
-          {comparisonReturnHref ? (
+          {legacyResultHref ? (
             <Link
-              href={comparisonReturnHref}
+              href={legacyResultHref}
               className="mt-3 block w-full text-[13px] font-medium text-[#6e6e73] hover:text-[#1d1d1f] hover:underline"
             >
-              Back to the comparison page
+              Open the previous paid result instead
             </Link>
           ) : null}
 
@@ -173,7 +171,7 @@ function PaymentSuccessContent() {
             href={email ? `/subscription?email=${encodeURIComponent(email)}` : "/subscription"}
             className="mt-3 block w-full h-11 border border-[#d2d2d7] text-[#1d1d1f] text-[14px] font-medium rounded-full flex items-center justify-center transition-colors hover:bg-[#f5f5f7]"
           >
-            Open My Pro Access
+            Check My Paid Access
           </Link>
 
           <p className="mt-4 text-[12px] text-[#86868b]">
