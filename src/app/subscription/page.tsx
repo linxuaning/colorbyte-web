@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 import PayPalButton from "@/components/PayPalButton";
+import { trackPaymentEmailEntry } from "@/lib/analytics";
+import { readPaymentFunnelSource } from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -54,6 +56,10 @@ export default function SubscriptionPage() {
   const hasCheckoutContext = CHECKOUT_CONTEXT_KEYS.some((key) =>
     Boolean(searchParams.get(key)?.trim())
   );
+  const funnelSource = useMemo(
+    () => readPaymentFunnelSource(new URLSearchParams(searchParams.toString())),
+    [searchParams]
+  );
   const [email, setEmail] = useState("");
   const [sub, setSub] = useState<SubscriptionData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -61,6 +67,19 @@ export default function SubscriptionPage() {
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
   const [showAccessLookup, setShowAccessLookup] = useState(!hasCheckoutContext);
+  const lastTrackedCheckoutEmailRef = useRef("");
+
+  const trackCheckoutEmail = (
+    nextEmail: string,
+    mode: "manual" | "auto"
+  ) => {
+    const normalized = nextEmail.trim().toLowerCase();
+    if (!EMAIL_REGEX.test(normalized)) return;
+    if (lastTrackedCheckoutEmailRef.current === normalized) return;
+
+    lastTrackedCheckoutEmailRef.current = normalized;
+    trackPaymentEmailEntry("checkout_email", mode, funnelSource);
+  };
 
   // Pre-fill email from localStorage
   useEffect(() => {
@@ -73,6 +92,15 @@ export default function SubscriptionPage() {
     const initialEmail = emailFromQuery || saved;
     if (initialEmail) {
       setEmail(initialEmail);
+      const normalizedInitialEmail = initialEmail.trim().toLowerCase();
+      if (
+        hasCheckoutContext &&
+        EMAIL_REGEX.test(normalizedInitialEmail) &&
+        lastTrackedCheckoutEmailRef.current !== normalizedInitialEmail
+      ) {
+        lastTrackedCheckoutEmailRef.current = normalizedInitialEmail;
+        trackPaymentEmailEntry("checkout_email", "auto", funnelSource);
+      }
       void (async () => {
         setLoading(true);
         setError("");
@@ -88,7 +116,7 @@ export default function SubscriptionPage() {
         }
       })();
     }
-  }, [searchParams]);
+  }, [funnelSource, hasCheckoutContext, searchParams]);
 
   const normalizedEmail = email.trim().toLowerCase();
   const hasValidCheckoutEmail = EMAIL_REGEX.test(normalizedEmail);
@@ -285,7 +313,11 @@ export default function SubscriptionPage() {
                   id="checkout-email"
                   type="email"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    const nextEmail = e.target.value;
+                    setEmail(nextEmail);
+                    trackCheckoutEmail(nextEmail, "manual");
+                  }}
                   placeholder="you@example.com"
                   autoComplete="email"
                   className="mt-2 h-11 w-full rounded-xl border border-white/15 bg-white px-3 text-[14px] text-[#1d1d1f] outline-none transition focus:border-[#0071e3]"
