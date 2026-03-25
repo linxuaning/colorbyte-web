@@ -5,6 +5,31 @@ import { remark } from "remark";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "src/content/blog");
+const publicDirectory = path.join(process.cwd(), "public");
+const fallbackBlogImage = "/blog/before-after-examples.webp";
+
+const categoryFallbackImages: Record<string, string> = {
+  "AI Technology": "/blog/ai-restoration-technology.webp",
+  "Best Practices": "/blog/preserving-photos.webp",
+  Comparison: "/blog/artimagehub-vs-remini.webp",
+  Comparisons: "/blog/artimagehub-vs-remini.webp",
+  "Color Restoration": "/blog/before-after-examples.webp",
+  "Era-Specific Restoration": "/blog/old-photo-guide.webp",
+  "Family History": "/blog/preserving-photos.webp",
+  Features: "/blog/ai-restoration-technology.webp",
+  Genealogy: "/blog/preserving-photos.webp",
+  Guides: "/blog/old-photo-guide.webp",
+  "Historical Photography": "/blog/old-photo-guide.webp",
+  "Historical Restoration": "/blog/old-photo-guide.webp",
+  "Photo Damage Repair": "/blog/old-photo-guide.webp",
+  "Photo Enhancement": "/blog/before-after-examples.webp",
+  "Photo Preservation": "/blog/preserving-photos.webp",
+  "Photo Restoration": "/blog/old-photo-guide.webp",
+  Showcase: "/blog/before-after-examples.webp",
+  Technology: "/blog/ai-restoration-technology.webp",
+  "Tips & Guides": "/blog/old-photo-guide.webp",
+  "Use Cases": "/blog/before-after-examples.webp",
+};
 
 export interface BlogPost {
   slug: string;
@@ -93,6 +118,36 @@ const defaultCoverColors: Record<string, string> = {
   Showcase: "from-violet-600 via-purple-700 to-indigo-800",
 };
 
+function assetExists(assetPath: string): boolean {
+  return fs.existsSync(path.join(publicDirectory, assetPath.replace(/^\//, "")));
+}
+
+function resolvePostImage(image: string | undefined, category: string): string {
+  const candidates: string[] = [];
+
+  if (image?.trim()) {
+    const trimmedImage = image.trim();
+    const parsed = path.posix.parse(trimmedImage);
+    candidates.push(trimmedImage);
+
+    for (const ext of [".webp", ".jpg", ".jpeg", ".png"]) {
+      if (ext !== parsed.ext) {
+        candidates.push(path.posix.join(parsed.dir, `${parsed.name}${ext}`));
+      }
+    }
+  }
+
+  candidates.push(categoryFallbackImages[category] || fallbackBlogImage, fallbackBlogImage);
+
+  for (const candidate of candidates) {
+    if (assetExists(candidate)) {
+      return candidate;
+    }
+  }
+
+  return fallbackBlogImage;
+}
+
 export async function getAllPosts(): Promise<BlogPostMeta[]> {
   if (!fs.existsSync(postsDirectory)) {
     return [];
@@ -117,7 +172,7 @@ export async function getAllPosts(): Promise<BlogPostMeta[]> {
         authorRole: data.authorRole,
         category: data.category,
         tags: data.tags || [],
-        image: data.image,
+        image: resolvePostImage(data.image, data.category || ""),
         coverColor:
           data.coverColor ||
           defaultCoverColors[data.category] ||
@@ -157,7 +212,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
       authorBio: data.authorBio,
       category: data.category,
       tags: data.tags || [],
-      image: data.image,
+      image: resolvePostImage(data.image, data.category || ""),
       coverColor:
         data.coverColor ||
         defaultCoverColors[data.category] ||

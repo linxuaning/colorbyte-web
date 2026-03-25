@@ -479,12 +479,16 @@ export default async function BlogPostPage({ params }: Props) {
                     href={`/blog/${rp.slug}`}
                     className="group block rounded-xl border border-gray-200 bg-white overflow-hidden hover:shadow-md transition-all"
                   >
-                    <div
-                      className={`aspect-[2.5/1] bg-gradient-to-br ${rp.coverColor} flex items-center justify-center`}
-                    >
-                      <span className="text-4xl opacity-70 group-hover:scale-110 transition-transform">
-                        {rp.coverEmoji || "📸"}
-                      </span>
+                    <div className="relative aspect-[2.5/1] overflow-hidden bg-[#efe8dc]">
+                      <Image
+                        src={rp.image}
+                        alt={rp.title}
+                        fill
+                        sizes="(min-width: 1024px) 24vw, (min-width: 640px) 48vw, 100vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${rp.coverColor} opacity-30 mix-blend-multiply`} aria-hidden="true" />
+                      <div className="absolute inset-0 bg-black/12" aria-hidden="true" />
                     </div>
                     <div className="p-5">
                       <p className="text-xs text-gray-400 mb-2">
