@@ -296,8 +296,8 @@ export default function SubscriptionPage() {
                       ? "This email unlocks the HD original and sends you back to this restored result after payment."
                       : "This email unlocks the HD original immediately after payment."
                     : hasCheckoutContext
-                      ? "Enter the email that should receive the unlocked HD original. PayPal stays locked until we know where to activate this result."
-                      : "Enter a valid email first. PayPal checkout stays locked until we know where to send the receipt and unlock the HD original."}
+                      ? "Choose PayPal whenever you're ready, but add the email that should receive the unlocked HD original before payment completes."
+                      : "Choose PayPal whenever you're ready, but add a valid email before payment completes so we can send the receipt and unlock the HD original."}
                 </p>
               </div>
 
