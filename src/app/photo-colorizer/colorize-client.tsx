@@ -513,7 +513,9 @@ export default function ColorizeClient() {
                     "download_intercept",
                     "result_paywall"
                   )}
-                  onClick={() => trackCTAClick("colorizer-result-paywall")}
+                  onClick={() =>
+                    trackCTAClick("colorizer-result-paywall", funnelSource)
+                  }
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#1d1d1f] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#2d2d2f] active:scale-[0.98]"
                 >
                   <span className="flex items-center gap-2">

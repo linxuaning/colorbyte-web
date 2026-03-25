@@ -516,7 +516,7 @@ export default function RestoreClient() {
                     }
                     return params.toString();
                   })()}`}
-                  onClick={() => trackCTAClick('restore-page')}
+                  onClick={() => trackCTAClick('restore-page', funnelSource)}
                   className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
                 >
                   <span className="flex items-center gap-2">

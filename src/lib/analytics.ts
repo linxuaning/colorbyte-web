@@ -386,11 +386,16 @@ export const trackPaymentSuccessOnce = (
   return true;
 };
 
-export const trackCTAClick = (location: string) => {
-  event({
-    action: 'cta_click',
-    category: 'engagement',
-    label: `CTA clicked - ${location}`,
+export const trackCTAClick = (
+  location: string,
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "cta_click", {
+    event_category: "engagement",
+    event_label: `CTA clicked - ${location}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
