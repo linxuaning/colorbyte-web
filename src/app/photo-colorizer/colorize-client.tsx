@@ -15,9 +15,9 @@ import {
 import {
   trackPhotoUpload,
   trackProcessingComplete,
-  trackPhotoDownload,
   trackCTAClick,
 } from "@/lib/analytics";
+import { downloadProResult } from "@/lib/download";
 import {
   buildPaymentFunnelQuery,
   mergePaymentFunnelSource,
@@ -54,6 +54,8 @@ export default function ColorizeClient() {
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
+  const [downloadError, setDownloadError] = useState("");
+  const [isDownloading, setIsDownloading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -105,6 +107,27 @@ export default function ColorizeClient() {
     },
     [buildSubscriptionHref]
   );
+
+  const handleProDownload = useCallback(async () => {
+    if (!resultUrl) return;
+
+    const email =
+      localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
+
+    setDownloadError("");
+    setIsDownloading(true);
+    try {
+      await downloadProResult(
+        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`
+      );
+    } catch (error) {
+      setDownloadError(
+        error instanceof Error ? error.message : "Download failed"
+      );
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [resultUrl]);
 
   // Check subscription status on mount
   useEffect(() => {
@@ -449,18 +472,29 @@ export default function ColorizeClient() {
 
             {isSubscriber ? (
               /* State C: Subscriber */
-              <a
-                href={`${resultUrl}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
-                download
-                onClick={() => trackPhotoDownload('pro')}
-                className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-              >
-                <span className="flex items-center gap-2">
-                  <Crown className="h-4 w-4" />
-                  Download Original Quality
-                </span>
-	                <span className="text-[11px] opacity-70 font-normal">Paid access — Original-quality downloads</span>
-              </a>
+              <>
+                <button
+                  type="button"
+                  onClick={handleProDownload}
+                  disabled={isDownloading}
+                  className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white transition-all hover:bg-[#0077ed] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
+                >
+                  <span className="flex items-center gap-2">
+                    <Crown className="h-4 w-4" />
+                    {isDownloading
+                      ? "Preparing Download..."
+                      : "Download Original Quality"}
+                  </span>
+                  <span className="text-[11px] font-normal opacity-70">
+                    Paid access - Original-quality downloads
+                  </span>
+                </button>
+                {downloadError && (
+                  <p className="mt-2 text-center text-[12px] text-red-600">
+                    {downloadError}
+                  </p>
+                )}
+              </>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
