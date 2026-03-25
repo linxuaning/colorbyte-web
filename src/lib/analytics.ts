@@ -367,14 +367,43 @@ export const trackPaymentSuccess = (
 const getPaymentSuccessDedupeKey = (transactionId: string) =>
   `payment_success_tracked_${transactionId}`;
 
+const readBrowserStorage = (
+  storage: Storage,
+  key: string
+) => {
+  try {
+    return storage.getItem(key);
+  } catch {
+    return null;
+  }
+};
+
+const writeBrowserStorage = (
+  storage: Storage,
+  key: string,
+  value: string
+) => {
+  try {
+    storage.setItem(key, value);
+  } catch {
+    // Ignore storage write failures so payment flow analytics never breaks checkout.
+  }
+};
+
 export const hasTrackedPaymentSuccess = (transactionId: string) => {
   if (typeof window === "undefined") return false;
-  return sessionStorage.getItem(getPaymentSuccessDedupeKey(transactionId)) === "1";
+  const key = getPaymentSuccessDedupeKey(transactionId);
+  return (
+    readBrowserStorage(window.sessionStorage, key) === "1" ||
+    readBrowserStorage(window.localStorage, key) === "1"
+  );
 };
 
 export const markPaymentSuccessTracked = (transactionId: string) => {
   if (typeof window === "undefined") return;
-  sessionStorage.setItem(getPaymentSuccessDedupeKey(transactionId), "1");
+  const key = getPaymentSuccessDedupeKey(transactionId);
+  writeBrowserStorage(window.sessionStorage, key, "1");
+  writeBrowserStorage(window.localStorage, key, "1");
 };
 
 export const trackPaymentSuccessOnce = (
