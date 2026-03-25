@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 
-const CHROMELESS_PATHS = new Set(["/payment/success"]);
+const CHROMELESS_PATHS = new Set(["/payment/cancel", "/payment/success"]);
 
 export default function RouteChromeGuard() {
   const pathname = usePathname();
