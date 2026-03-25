@@ -248,6 +248,25 @@ export const trackPhotoDownload = (
   });
 };
 
+export const trackPhotoDownloadFailure = (
+  detail: string,
+  source?: PaymentFunnelSource
+) => {
+  const payload = {
+    detail,
+    ...paymentFunnelPayload(source || {}),
+  };
+
+  console.info("[photo_download_error]", payload);
+
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_download_error", {
+    event_category: "conversion",
+    ...payload,
+  });
+};
+
 export const trackPaymentClick = (
   plan: string,
   source?: PaymentFunnelSource

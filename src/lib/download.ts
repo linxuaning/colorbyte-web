@@ -1,4 +1,8 @@
-import { type PaymentFunnelSource, trackPhotoDownload } from "@/lib/analytics";
+import {
+  type PaymentFunnelSource,
+  trackPhotoDownload,
+  trackPhotoDownloadFailure,
+} from "@/lib/analytics";
 
 const FALLBACK_DOWNLOAD_NAME = "artimagehub-result.jpg";
 
@@ -42,22 +46,40 @@ export const downloadProResult = async (
   url: string,
   source?: PaymentFunnelSource
 ) => {
-  const response = await fetch(url);
+  let hasTrackedFailure = false;
 
-  if (!response.ok) {
-    throw new Error(await getDownloadErrorMessage(response));
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      trackPhotoDownloadFailure(`http_${response.status}`, source);
+      hasTrackedFailure = true;
+      throw new Error(await getDownloadErrorMessage(response));
+    }
+
+    const blob = await response.blob();
+    const objectUrl = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+
+    anchor.href = objectUrl;
+    anchor.download = getDownloadFilename(response);
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+
+    trackPhotoDownload("pro", source);
+  } catch (error) {
+    if (!hasTrackedFailure) {
+      const detail =
+        error instanceof Error && error.name === "AbortError"
+          ? "abort_error"
+          : error instanceof TypeError
+            ? "network_error"
+            : "unexpected_error";
+      trackPhotoDownloadFailure(detail, source);
+    }
+
+    throw error;
   }
-
-  const blob = await response.blob();
-  const objectUrl = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-
-  anchor.href = objectUrl;
-  anchor.download = getDownloadFilename(response);
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
-
-  trackPhotoDownload("pro", source);
 };
