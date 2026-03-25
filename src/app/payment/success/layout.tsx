@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const PAYMENT_SUCCESS_TITLE = "Payment Received — Return to Your Result";
+const PAYMENT_SUCCESS_TITLE = "Paid Access Activated — Return to the Tool";
 const PAYMENT_SUCCESS_DESCRIPTION =
-  "Your one-time checkout succeeded. Return to your result to download the original-quality photo.";
+  "Your one-time checkout succeeded. Return to the tool in the allowed pre-upload state with the same email to start processing.";
 
 export const metadata: Metadata = {
   title: PAYMENT_SUCCESS_TITLE,

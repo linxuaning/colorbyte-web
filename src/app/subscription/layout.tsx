@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
-const CHECKOUT_TITLE = "Download HD Original — $4.99";
+const CHECKOUT_TITLE = "Unlock Upload + HD Access — ArtImageHub";
 const CHECKOUT_DESCRIPTION =
-  "Restore and preview for free, then pay once to unlock the original-quality download on the same email.";
+  "Pay first, then return to the tool and upload with the same email. Live processing is still being re-verified, so immediate successful output is not promised yet.";
 
 export const metadata: Metadata = {
   title: CHECKOUT_TITLE,

@@ -30,7 +30,7 @@ const websiteSchema = {
   name: "ArtImageHub",
   url: "https://www.artimagehub.com",
   description:
-    "AI-powered photo restoration, enhancement, and colorization. Preview first, then unlock the original-quality download for $4.99.",
+    "AI-powered photo restoration, enhancement, and colorization. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     template: "%s | ArtImageHub",
   },
   description:
-    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start with a free preview, then unlock the original-quality download for $4.99.",
+    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
     description:
-      "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Preview first, then unlock the original-quality download for $4.99.",
+      "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -165,10 +165,10 @@ function Header() {
 
         {/* CTA */}
         <Link
-          href="/old-photo-restoration"
+          href="/subscription"
           className="inline-flex h-9 items-center rounded-full bg-[#8B5E3C] px-5 text-[13px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#8B5E3C]/20"
         >
-          Start Free Preview
+          Unlock Upload Access
         </Link>
       </div>
     </header>
