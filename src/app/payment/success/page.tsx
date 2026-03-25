@@ -9,6 +9,7 @@ import {
   hasTrackedPaymentSuccess,
   markPaymentSuccessTracked,
   readPaymentFunnelSource,
+  trackPaymentPageAction,
   trackPaymentSuccess,
 } from "@/lib/analytics";
 
@@ -76,6 +77,7 @@ function PaymentSuccessContent() {
   const restartQuery = restartParams.toString();
   const restartHref = restartQuery ? `${restartPath}?${restartQuery}` : restartPath;
   const primaryCtaLabel = hasResumeTask ? "Return to Your Result" : `Open the ${toolLabel}`;
+  const primaryAction = hasResumeTask ? "return_to_result" : "open_tool";
   const successDescription = hasResumeTask
     ? "Your one-time checkout went through. Return to your result to download the original-quality photo."
     : `Your HD original unlock is now attached to this email. Open the ${toolLabel.toLowerCase()} and use the same email to access the paid download.`;
@@ -194,6 +196,7 @@ function PaymentSuccessContent() {
           {/* CTA Button */}
           <Link
             href={restartHref}
+            onClick={() => trackPaymentPageAction("success", primaryAction, funnelSource)}
             className="block w-full h-12 bg-[#0071e3] hover:bg-[#0077ed] text-white text-[15px] font-medium rounded-full flex items-center justify-center transition-colors"
           >
             {primaryCtaLabel}
@@ -202,7 +205,11 @@ function PaymentSuccessContent() {
           {!hasResumeTask ? (
             <p className="mt-4 text-[12px] leading-[1.6] text-[#6e6e73]">
               Need to look this purchase up later?{" "}
-              <Link href={accessLookupHref} className="font-medium text-[#0071e3] hover:underline">
+              <Link
+                href={accessLookupHref}
+                onClick={() => trackPaymentPageAction("success", "access_lookup", funnelSource)}
+                className="font-medium text-[#0071e3] hover:underline"
+              >
                 Use the same email on the access page
               </Link>
               .

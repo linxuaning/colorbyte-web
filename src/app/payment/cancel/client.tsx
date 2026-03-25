@@ -6,6 +6,7 @@ import {
   consumePendingPaymentFunnelContext,
   type PaymentFunnelSource,
   trackPaymentCancel,
+  trackPaymentPageAction,
 } from "@/lib/analytics";
 import { buildPaymentFunnelQuery } from "@/lib/payment-funnel";
 
@@ -61,6 +62,7 @@ export default function PaymentCancelClient() {
   const returnQuery = returnParams.toString();
   const checkoutHref = returnQuery ? `/subscription?${returnQuery}` : "/subscription";
   const toolHref = returnQuery ? `${toolPath}?${returnQuery}` : toolPath;
+  const secondaryAction = resumeTaskId ? "return_to_result" : "return_to_tool";
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-white to-[#f5f5f7] px-5">
@@ -82,6 +84,7 @@ export default function PaymentCancelClient() {
         <div className="mt-8">
           <Link
             href={checkoutHref}
+            onClick={() => trackPaymentPageAction("cancel", "return_to_checkout", source)}
             className="inline-flex h-12 w-full items-center justify-center rounded-full bg-[#0071e3] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#0077ed]"
           >
             Return to Checkout
@@ -90,7 +93,11 @@ export default function PaymentCancelClient() {
 
         <p className="mt-4 text-[12px] leading-[1.6] text-[#6e6e73]">
           Want to work on another photo first?{" "}
-          <Link href={toolHref} className="font-medium text-[#0071e3] hover:underline">
+          <Link
+            href={toolHref}
+            onClick={() => trackPaymentPageAction("cancel", secondaryAction, source)}
+            className="font-medium text-[#0071e3] hover:underline"
+          >
             Go back to {toolCopy}
           </Link>
           .

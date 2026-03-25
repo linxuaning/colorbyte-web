@@ -342,6 +342,18 @@ export const trackPaymentRecoveryAction = (
   });
 };
 
+export const trackPaymentPageAction = (
+  surface: "cancel" | "success",
+  action: string,
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent("payment_page_action", {
+    surface,
+    action,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
+};
+
 export const trackPaymentEmailEntry = (
   source: string,
   mode: 'manual' | 'auto' = 'manual',
