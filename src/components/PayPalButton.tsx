@@ -47,6 +47,7 @@ const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - $${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
 
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
@@ -63,6 +64,7 @@ export default function PayPalButton({
 }: PayPalButtonProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [validationMessage, setValidationMessage] = useState<string | null>(null);
   const [retryNonce, setRetryNonce] = useState(0);
   const manualSupportEmail = "support@artimagehub.com";
   const funnelSource = useMemo(
@@ -75,6 +77,12 @@ export default function PayPalButton({
   const normalizedCheckoutEmail = checkoutEmail?.trim().toLowerCase() || "";
   const requiresInlineEmail = checkoutEmail !== undefined;
   const hasValidInlineEmail = EMAIL_REGEX.test(normalizedCheckoutEmail);
+
+  useEffect(() => {
+    if (validationMessage && hasValidInlineEmail) {
+      setValidationMessage(null);
+    }
+  }, [hasValidInlineEmail, validationMessage]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -127,8 +135,7 @@ export default function PayPalButton({
     if (
       !loaded ||
       !window.paypal ||
-      error ||
-      (requiresInlineEmail && !hasValidInlineEmail)
+      error
     ) {
       return;
     }
@@ -151,8 +158,10 @@ export default function PayPalButton({
               ? normalizedCheckoutEmail
               : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
             if (!payerEmail || !EMAIL_REGEX.test(payerEmail)) {
-              throw new Error("Enter a valid email before checkout");
+              setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
+              throw new Error(INLINE_EMAIL_GATE_MESSAGE);
             }
+            setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
@@ -181,13 +190,21 @@ export default function PayPalButton({
             return data.order_id;
           } catch (err) {
             console.error("Create order error:", err);
+            const isInlineEmailGateError =
+              err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
             trackCreateOrderResult(
               false,
-              err instanceof Error ? err.message : "unknown_error",
+              isInlineEmailGateError
+                ? "inline_email_gate"
+                : err instanceof Error
+                  ? err.message
+                  : "unknown_error",
               funnelSource
             );
-            setError(err instanceof Error ? err.message : "Failed to create order");
-            if (onError) onError(err);
+            if (!isInlineEmailGateError) {
+              setError(err instanceof Error ? err.message : "Failed to create order");
+              if (onError) onError(err);
+            }
             throw err;
           }
         },
@@ -298,19 +315,6 @@ export default function PayPalButton({
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };
 
-  if (requiresInlineEmail && !hasValidInlineEmail) {
-    return (
-      <div className="mt-8 rounded-xl border border-dashed border-white/15 bg-white/5 p-4 text-center">
-        <p className="text-sm font-medium text-white">
-          Enter your email above to enable PayPal checkout.
-        </p>
-        <p className="mt-1 text-xs text-white/70">
-          We use that email for activation, receipts, and access lookup.
-        </p>
-      </div>
-    );
-  }
-
   if (error) {
     return (
       <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-center">
@@ -349,5 +353,17 @@ export default function PayPalButton({
     );
   }
 
-  return <div id="paypal-button-container" className="mt-8"></div>;
+  return (
+    <>
+      <div id="paypal-button-container" className="mt-8"></div>
+      {validationMessage && (
+        <div className="mt-3 rounded-xl border border-white/15 bg-white/5 p-3 text-center">
+          <p className="text-sm font-medium text-white">{validationMessage}</p>
+          <p className="mt-1 text-xs text-white/70">
+            Add the email that should receive activation, receipt, and HD access, then try PayPal again.
+          </p>
+        </div>
+      )}
+    </>
+  );
 }
