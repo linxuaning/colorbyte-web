@@ -359,12 +359,18 @@ export const trackPaymentSuccess = (
   transactionId?: string,
   source?: PaymentFunnelSource
 ) => {
-  event({
-    action: 'purchase',
-    category: 'conversion',
-    label: 'Payment completed',
-    value: amount,
-  });
+  const analyticsTransactionId = transactionId || `${Date.now()}`;
+
+  if (window.gtag) {
+    window.gtag("event", "purchase", {
+      event_category: "conversion",
+      event_label: "Payment completed",
+      value: amount,
+      currency: "USD",
+      transaction_id: analyticsTransactionId,
+      ...paymentFunnelPayload(source || {}),
+    });
+  }
 
   trackPaymentFunnelEvent('payment_success', {
     amount,
@@ -378,7 +384,7 @@ export const trackPaymentSuccess = (
       send_to: GA_MEASUREMENT_ID,
       value: amount,
       currency: 'USD',
-      transaction_id: transactionId || `${Date.now()}`,
+      transaction_id: analyticsTransactionId,
     });
   }
 };
