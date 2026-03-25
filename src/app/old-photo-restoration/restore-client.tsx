@@ -102,7 +102,8 @@ export default function RestoreClient() {
     setIsDownloading(true);
     try {
       await downloadProResult(
-        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`
+        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`,
+        funnelSource
       );
     } catch (error) {
       setDownloadError(
@@ -111,7 +112,7 @@ export default function RestoreClient() {
     } finally {
       setIsDownloading(false);
     }
-  }, [resultUrl]);
+  }, [funnelSource, resultUrl]);
 
   // Check subscription status on mount
   useEffect(() => {
@@ -236,7 +237,7 @@ export default function RestoreClient() {
             setProgressText("Processing started...");
 
             // Track successful upload
-            trackPhotoUpload();
+            trackPhotoUpload(funnelSource);
 
             lastError = null;
             break;
@@ -251,7 +252,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [colorize],
+    [colorize, funnelSource],
   );
 
   // --- Poll task status ---

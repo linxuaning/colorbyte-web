@@ -118,7 +118,8 @@ export default function ColorizeClient() {
     setIsDownloading(true);
     try {
       await downloadProResult(
-        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`
+        `${resultUrl}?quality=original&email=${encodeURIComponent(email)}`,
+        funnelSource
       );
     } catch (error) {
       setDownloadError(
@@ -127,7 +128,7 @@ export default function ColorizeClient() {
     } finally {
       setIsDownloading(false);
     }
-  }, [resultUrl]);
+  }, [funnelSource, resultUrl]);
 
   // Check subscription status on mount
   useEffect(() => {
@@ -233,7 +234,7 @@ export default function ColorizeClient() {
             setProgressText("Processing started...");
 
             // Track successful upload
-            trackPhotoUpload();
+            trackPhotoUpload(funnelSource);
 
             lastError = null;
             break;
@@ -248,7 +249,7 @@ export default function ColorizeClient() {
         setStage("error");
       }
     },
-    [colorize, redirectToSubscription],
+    [colorize, funnelSource, redirectToSubscription],
   );
 
   // --- Poll task status ---

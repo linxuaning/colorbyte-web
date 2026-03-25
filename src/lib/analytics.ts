@@ -197,11 +197,13 @@ export const event = ({
 };
 
 // Predefined conversion events
-export const trackPhotoUpload = () => {
-  event({
-    action: 'photo_upload',
-    category: 'engagement',
-    label: 'User uploaded a photo',
+export const trackPhotoUpload = (source?: PaymentFunnelSource) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_upload", {
+    event_category: "engagement",
+    event_label: "User uploaded a photo",
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
@@ -233,11 +235,16 @@ export const trackProcessingComplete = ({
   });
 };
 
-export const trackPhotoDownload = (quality: 'free' | 'pro') => {
-  event({
-    action: 'photo_download',
-    category: 'conversion',
-    label: `Download - ${quality}`,
+export const trackPhotoDownload = (
+  quality: "free" | "pro",
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_download", {
+    event_category: "conversion",
+    event_label: `Download - ${quality}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 

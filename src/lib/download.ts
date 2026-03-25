@@ -1,4 +1,4 @@
-import { trackPhotoDownload } from "@/lib/analytics";
+import { type PaymentFunnelSource, trackPhotoDownload } from "@/lib/analytics";
 
 const FALLBACK_DOWNLOAD_NAME = "artimagehub-result.jpg";
 
@@ -38,7 +38,10 @@ const getDownloadErrorMessage = async (response: Response) => {
   return `Download failed (${response.status})`;
 };
 
-export const downloadProResult = async (url: string) => {
+export const downloadProResult = async (
+  url: string,
+  source?: PaymentFunnelSource
+) => {
   const response = await fetch(url);
 
   if (!response.ok) {
@@ -56,5 +59,5 @@ export const downloadProResult = async (url: string) => {
   anchor.remove();
   setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
 
-  trackPhotoDownload("pro");
+  trackPhotoDownload("pro", source);
 };
