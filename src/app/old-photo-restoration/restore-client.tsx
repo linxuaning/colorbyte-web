@@ -374,14 +374,6 @@ export default function RestoreClient() {
             <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
               This tool is now pay-first. Complete checkout before upload, then return here with the same email to start restoration and keep HD download access linked to that purchase.
             </p>
-            <div className="mx-auto mt-5 max-w-xl rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-left">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.06em] text-amber-800">
-                Current risk boundary
-              </p>
-              <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
-                Payment unlocks access before processing starts. Processing is still being stabilized, so we do not promise immediate successful output yet.
-              </p>
-            </div>
             <Link
               href={checkoutHref}
               className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
