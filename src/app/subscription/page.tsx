@@ -233,7 +233,7 @@ export default function SubscriptionPage() {
               Unlock Upload + HD Access — {PRO_PRICE_TEXT}
             </h1>
             <p className="mt-3 text-[17px] text-[#6e6e73]">
-              Pay first, then return to the tool and upload with the same email. While processing is still being stabilized, we do not promise immediate successful output before you upload.
+              Pay first, then return to the tool and upload with the same email so your purchase and HD download access stay connected to that checkout.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
               {[

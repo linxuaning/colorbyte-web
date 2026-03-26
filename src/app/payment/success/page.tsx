@@ -143,12 +143,9 @@ function PaymentSuccessContent() {
             </ul>
           </div>
 
-          <div className="mb-8 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left">
-            <p className="text-[13px] font-semibold text-amber-900">Current processing boundary</p>
-            <p className="mt-1.5 text-[13px] leading-[1.6] text-amber-900">
-              Payment unlocks the right to upload and start processing on this email, but we do not promise immediate or guaranteed successful output until the live processing path is re-verified.
-            </p>
-          </div>
+          <p className="mb-8 text-[13px] leading-[1.6] text-[#6e6e73]">
+            Return to the tool with this email to upload and continue with the access included in your purchase.
+          </p>
 
           {/* CTA Button */}
           <Link

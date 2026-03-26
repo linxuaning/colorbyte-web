@@ -73,7 +73,7 @@ export default function PricingSection() {
           Unlock Upload + HD Access
         </h2>
         <p className="mt-3 text-center text-[17px] text-[#6e6e73]">
-          Pay first, then return to upload with the same email. Live processing is still being re-verified, so we do not promise immediate or guaranteed successful output yet.
+          Pay first, then return to upload with the same email so your purchase and HD download access stay linked to that checkout.
         </p>
 
         <div className="mt-12 max-w-md mx-auto">
