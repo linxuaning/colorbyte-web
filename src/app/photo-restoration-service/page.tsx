@@ -194,7 +194,7 @@ export default function PhotoRestorationServicePage() {
 
       {/* Main Tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-8 sm:py-12">
-        <RestoreClient />
+        <RestoreClient landingPage="/photo-restoration-service" />
       </div>
 
       <FloatingCTA />

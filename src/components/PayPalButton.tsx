@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import {
   clearPendingPaymentFunnelSource,
+  paymentFunnelPayload,
   storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
@@ -175,6 +176,7 @@ export default function PayPalButton({
               },
               body: JSON.stringify({
                 email: payerEmail,
+                ...paymentFunnelPayload(funnelSource),
               }),
             });
 
