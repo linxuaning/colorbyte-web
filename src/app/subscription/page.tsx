@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
-import PayPalButton from "@/components/PayPalButton";
+import DodoCheckoutButton from "@/components/DodoCheckoutButton";
 import {
   buildPaymentFunnelQuery,
   readPaymentFunnelSource,
@@ -302,11 +302,11 @@ export default function SubscriptionPage() {
                 <p className="mt-2 text-[12px] leading-[1.5] text-white/70">
                   {hasValidCheckoutEmail
                     ? "This email unlocks upload, processing access, and the paid download path after checkout."
-                    : "Enter a valid email first. PayPal checkout stays locked until we know which email should hold the paid access."}
+                    : "Enter a valid email first. DodoPayments checkout stays locked until we know which email should hold the paid access."}
                 </p>
               </div>
 
-              <PayPalButton
+              <DodoCheckoutButton
                 checkoutEmail={email}
                 resumeTaskId={resumeTaskId || undefined}
               />
@@ -323,7 +323,7 @@ export default function SubscriptionPage() {
           </div>
 
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secure payment via PayPal
+            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secure payment via DodoPayments
           </p>
 
           {EMAIL_PAYMENT_ENTRY_ENABLED && (
@@ -487,15 +487,15 @@ export default function SubscriptionPage() {
 
           {/* Actions */}
           <div className="flex flex-wrap gap-3">
-            {sub.is_active && sub.payment_provider === "paypal" && (
+            {sub.is_active && sub.payment_provider === "dodo" && (
               <div className="w-full rounded-lg bg-green-50 border border-green-200 p-3 text-sm text-green-800">
-                <strong>Paid via PayPal</strong> — One-time payment. No recurring billing.
+                <strong>Paid via DodoPayments</strong> — One-time payment. No recurring billing.
                 <br />
                 <span className="text-xs text-green-600">Need help? Contact support@artimagehub.com</span>
               </div>
             )}
 
-            {sub.is_active && sub.payment_provider !== "paypal" && (
+            {sub.is_active && sub.payment_provider !== "dodo" && (
               <button
                 onClick={handleManagePortal}
                 disabled={loading}
@@ -506,7 +506,7 @@ export default function SubscriptionPage() {
               </button>
             )}
 
-            {sub.is_active && sub.payment_provider !== "paypal" && !sub.cancel_at_period_end && (
+            {sub.is_active && sub.payment_provider !== "dodo" && !sub.cancel_at_period_end && (
               <button
                 onClick={handleCancel}
                 disabled={canceling}

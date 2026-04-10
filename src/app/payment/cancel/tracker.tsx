@@ -5,7 +5,7 @@ import { trackPaymentCancel } from "@/lib/analytics";
 
 export default function PaymentCancelTracker() {
   useEffect(() => {
-    trackPaymentCancel("paypal_cancel_page");
+    trackPaymentCancel("dodo_cancel_page");
   }, []);
 
   return null;

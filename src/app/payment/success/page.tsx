@@ -18,7 +18,7 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const email = searchParams.get("email");
-  const orderId = searchParams.get("order_id");
+  const orderId = searchParams.get("order_id") || searchParams.get("payment_id");
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = readPaymentFunnelSource(searchParams);
 
