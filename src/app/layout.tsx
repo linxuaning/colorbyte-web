@@ -165,10 +165,10 @@ function Header() {
 
         {/* CTA */}
         <Link
-          href="/subscription"
-          className="inline-flex h-9 items-center rounded-full bg-[#8B5E3C] px-5 text-[13px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#8B5E3C]/20"
+          href="/old-photo-restoration"
+          className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20"
         >
-          Unlock Upload Access
+          Restore Free
         </Link>
       </div>
     </header>

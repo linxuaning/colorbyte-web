@@ -182,11 +182,11 @@ export default function HomePage() {
               {/* CTAs */}
               <div className="mt-8 flex flex-col items-start gap-3">
                 <Link
-                  href="/subscription?landing_page=%2F&cta_slot=homepage_hero&entry_variant=editorial_hero&checkout_source=homepage_direct"
-                  className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
+                  href="/old-photo-restoration"
+                  className="group inline-flex h-14 items-center rounded-full bg-[#0071e3] px-9 font-lora text-[17px] font-600 text-white hover:bg-[#0077ed] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#0071e3]/25 hover:shadow-[#0071e3]/40 relative overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-2">
-                    Restore My Photo — $4.99
+Restore Your Photo Free
                     <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                       <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -556,11 +556,11 @@ export default function HomePage() {
 
           <div className="mt-12 pt-12 border-t border-[#d4bc91]/40 text-center">
             <Link
-              href="/subscription?landing_page=%2F&cta_slot=homepage_flow&entry_variant=how_it_works&checkout_source=homepage_direct"
-              className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
+              href="/old-photo-restoration"
+              className="group inline-flex h-14 items-center rounded-full bg-[#0071e3] px-9 font-lora text-[17px] font-600 text-white hover:bg-[#0077ed] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#0071e3]/25 hover:shadow-[#0071e3]/40 relative overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Restore My Photo — $4.99
+Restore Your Photo Free
                 <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -744,11 +744,11 @@ export default function HomePage() {
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/subscription?landing_page=%2F&cta_slot=homepage_final_cta&entry_variant=final_cta&checkout_source=homepage_direct"
-                className="group inline-flex h-14 items-center rounded-full bg-[#D4A96A] px-9 font-lora text-[17px] font-600 text-[#2c2416] hover:bg-[#c49a5a] hover:shadow-2xl active:scale-[0.97] transition-all duration-300 shadow-xl shadow-[#D4A96A]/20 hover:shadow-[#D4A96A]/40 relative overflow-hidden"
+                href="/old-photo-restoration"
+                className="group inline-flex h-14 items-center rounded-full bg-[#0071e3] px-9 font-lora text-[17px] font-600 text-white hover:bg-[#0077ed] hover:shadow-2xl active:scale-[0.97] transition-all duration-300 shadow-xl shadow-[#0071e3]/20 hover:shadow-[#0071e3]/40 relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Restore My Photo — $4.99
+Restore Your Photo Free
                   <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M6 3l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
