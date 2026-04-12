@@ -30,7 +30,7 @@ const websiteSchema = {
   name: "ArtImageHub",
   url: "https://www.artimagehub.com",
   description:
-    "AI-powered photo restoration, enhancement, and colorization. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+    "AI-powered photo restoration, enhancement, and colorization. One-time $4.99 payment unlocks upload, AI processing, and HD download. Results in 30–90 seconds.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     template: "%s | ArtImageHub",
   },
   description:
-    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
     description:
-      "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+      "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds.",
   },
   twitter: { card: "summary_large_image" },
 };

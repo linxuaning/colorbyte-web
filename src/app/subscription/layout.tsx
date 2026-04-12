@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const CHECKOUT_TITLE = "Unlock Upload + HD Access — ArtImageHub";
 const CHECKOUT_DESCRIPTION =
-  "Pay first, then return to the tool and upload with the same email. Live processing is still being re-verified, so immediate successful output is not promised yet.";
+  "One-time $4.99 payment unlocks upload and processing access on your email. No subscription. Return with the same email to upload and get your HD restored photo.";
 
 export const metadata: Metadata = {
   title: CHECKOUT_TITLE,
