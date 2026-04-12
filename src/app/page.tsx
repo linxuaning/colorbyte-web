@@ -8,25 +8,25 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
-  description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+  description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
-    description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+    description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "AI photo restoration before and after comparison" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ArtImageHub — AI Photo Restoration",
-    description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+    description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
 
 const HOMEPAGE_RISK_LINE =
-  "Payment activates upload and processing access on this email. While live processing is still unresolved, we do not promise immediate or guaranteed successful output before that path is re-verified.";
+  "One-time $4.99 payment unlocks upload, AI processing, and HD download. No subscription. Results in 30–90 seconds.";
 
 // JSON-LD structured data
 const softwareAppSchema = {

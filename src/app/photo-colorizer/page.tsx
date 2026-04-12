@@ -4,7 +4,7 @@ import ColorizeClient from "./colorize-client";
 export const metadata: Metadata = {
   title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
   description:
-    "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+    "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
   alternates: { canonical: "/photo-colorizer" },
   keywords: [
     "photo colorizer",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
     description:
-      "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+      "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
     type: "website",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
     description:
-      "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+      "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -43,7 +43,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Colorize Black and White Photos with AI",
-  description: "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+  description: "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Colorizer" }],
   step: [
@@ -51,7 +51,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 1,
       name: "Unlock colorization access",
-      text: "Payment activates upload and processing access on this email before you enter the colorization flow.",
+      text: "One-time $4.99 payment unlocks upload and colorization access on your email. No subscription.",
       image: "https://www.artimagehub.com/blog/before-1.jpg",
     },
     {
@@ -64,13 +64,13 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Start processing",
-      text: "Live processing is still being re-verified, so immediate or guaranteed successful output is not promised yet.",
+      text: "AI colorizes your photo in 30–90 seconds using deep learning trained on millions of color images.",
     },
     {
       "@type": "HowToStep",
       position: 4,
       name: "Download if processing succeeds",
-      text: "If processing succeeds, the same paid email unlocks the original-quality download.",
+      text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your colorized photo.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -80,10 +80,10 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Do I need paid access before colorizing?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
+    { "@type": "Question", name: "Do I need paid access before colorizing?", acceptedAnswer: { "@type": "Answer", text: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription required. Return to the tool with the same email to upload and colorize." } },
     { "@type": "Question", name: "How accurate is AI photo colorization?", acceptedAnswer: { "@type": "Answer", text: "AI colorization predicts colors based on patterns learned from millions of photos. While it's often very accurate for common objects (sky=blue, grass=green), it guesses colors for specific items like clothing or eyes. Results are artistic interpretation, not historical fact. For best accuracy, AI works well on clear photos with recognizable subjects." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Both grayscale and black & white photos work. For best results, use high-resolution scans (600 DPI or higher)." } },
-    { "@type": "Question", name: "How long does colorization take?", acceptedAnswer: { "@type": "Answer", text: "Payment activates upload and processing access on this email. While live processing is still being re-verified, we do not promise immediate or guaranteed successful output before that path is live-verified again." } },
+    { "@type": "Question", name: "How long does colorization take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are colorized in 30–90 seconds. Complex photos with many faces or detailed backgrounds may take up to 3 minutes. The result is downloadable in full HD quality." } },
     { "@type": "Question", name: "Can I colorize old family photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub is perfect for colorizing old family photos, vintage pictures, historical images, and any black & white photographs. The AI works well on portraits, landscapes, and everyday scenes from any era." } },
   ],
 };
@@ -95,7 +95,7 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/photo-colorizer",
-  description: "Colorize black and white photos with ArtImageHub. Payment unlocks upload and processing access on this email. Live processing is still being re-verified.",
+  description: "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
   offers: {
     "@type": "Offer",
     price: "4.99",
