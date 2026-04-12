@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'photo restoration no signup',
     'free photo enhancer'
   ],
-  alternates: { canonical: '/restore-old-photos-free' },
+  alternates: { canonical: '/free-photo-restoration' },
   openGraph: {
     title: 'Restore Old Photos Free | AI Photo Restoration',
     description: 'Restore old photos free with an AI preview. No signup required. Preview first, then unlock the original-quality download for $4.99.',
