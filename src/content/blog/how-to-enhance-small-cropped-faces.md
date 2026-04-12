@@ -291,3 +291,6 @@ Short answer: Yes, our AI handles photos from all eras—from 1800s to recent di
 ---
 
 Small faces in group photographs no longer need to remain tiny and unrecognizable. Modern AI upscaling technology can intelligently enhance cropped faces while maintaining authenticity and adding realistic detail. Try our [free AI upscaler](/ai-photo-upscaler) to transform small faces into clear, usable portraits.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

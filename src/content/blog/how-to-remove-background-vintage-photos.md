@@ -266,3 +266,6 @@ Short answer: If you work with copies (always recommended), your original remain
 ---
 
 Background removal from vintage photographs requires attention to the unique characteristics of aged images. Proper preparation through restoration, careful technique selection, and quality preservation ensure professional results. Try our [free restoration tool](/restore-old-family-photos) to prepare your vintage photos for successful background removal.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

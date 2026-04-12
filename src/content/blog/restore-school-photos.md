@@ -224,3 +224,6 @@ Short answer: Yes, text in photos is preserved during restoration. The AI focuse
 ---
 
 School photos chronicle our journey from childhood through young adulthood in a way no other photographs capture. Each annual portrait shows growth and change worth preserving. Try our [free restoration tool](/restore-old-family-photos) to restore your school photo collection today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

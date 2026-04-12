@@ -135,3 +135,6 @@ Short answer: For 35mm, scan at minimum 2400 DPI, ideally 4000 DPI. Higher resol
 ---
 
 Your film negatives and slides contain treasure waiting to be revealed. After scanning, try our [free restoration tool](/restore-old-family-photos) to enhance your digitized film photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

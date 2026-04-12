@@ -129,3 +129,6 @@ Short answer: Start with the main class group photo and key individual portraits
 ---
 
 School memories deserve to be seen clearly. Try our [free restoration tool](/restore-old-family-photos) to restore your yearbook and class photos today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

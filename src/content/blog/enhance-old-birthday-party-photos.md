@@ -275,3 +275,6 @@ Short answer: Create a chronological collection for each person showing their bi
 ---
 
 Birthday photographs document the annual celebrations that mark our lives and connect generations. These joyful images deserve restoration to preserve the happiness they capture. Try our [free restoration tool](/restore-old-family-photos) to bring your birthday memories back to celebration-worthy quality.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

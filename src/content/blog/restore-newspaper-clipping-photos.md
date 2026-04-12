@@ -60,3 +60,6 @@ Short answer: Absolutely—they may be the only visual record of certain events.
 ---
 
 Newspaper clippings preserve important family and historical moments. Try our [free restoration tool](/restore-old-family-photos) to enhance your newsprint photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

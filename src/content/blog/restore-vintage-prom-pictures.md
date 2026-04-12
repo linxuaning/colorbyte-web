@@ -272,3 +272,6 @@ Short answer: Check school yearbooks, which often included prom photos. Ask othe
 ---
 
 Prom photographs capture the excitement and style of youth during memorable milestone events. Whether formal portraits or dance floor candids, these images deserve restoration to preserve their magic. Try our [free restoration tool](/restore-old-family-photos) to bring your prom memories back to vibrant life.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

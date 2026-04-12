@@ -226,3 +226,6 @@ Short answer: The musty odor indicates fungal activity. The fungi producing foxi
 ---
 
 Foxing spots don't have to ruin your vintage photographs. While the physical damage may be challenging to treat, digital restoration offers an effective, risk-free solution. Start with our [free AI photo restoration tool](/restore-old-family-photos) to see how easily foxing can be removed from your precious family memories.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

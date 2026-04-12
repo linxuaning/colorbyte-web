@@ -92,3 +92,6 @@ Short answer: AI restoration preserves embossed elements visible in the scan. Th
 ---
 
 Graduation photos represent years of achievement and deserve preservation for future generations. Try our [free restoration tool](/restore-old-family-photos) to restore your academic milestone photos today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

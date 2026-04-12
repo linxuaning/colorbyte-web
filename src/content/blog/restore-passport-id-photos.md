@@ -50,3 +50,6 @@ Short answer: Before affordable photography, official documents were sometimes t
 ---
 
 Even small ID photos contain valuable family history. Try our [free restoration tool](/restore-old-family-photos) to restore your document photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

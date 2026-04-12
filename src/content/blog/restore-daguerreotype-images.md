@@ -286,3 +286,6 @@ Short answer: Values range widely from $100 to tens of thousands of dollars depe
 ---
 
 Daguerreotypes are irreplaceable treasures from photography's earliest years. With proper care and digital restoration, these 160+ year old images can continue to connect us with our ancestors. Try our [free AI restoration tool](/enhance-old-photos) to create beautiful restored versions of your daguerreotype scans.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

@@ -122,3 +122,6 @@ Short answer: Only if the tape is loose and comes off easily. If there's any res
 ---
 
 Tape damage doesn't have to ruin your photos permanently. Try our [free restoration tool](/restore-old-family-photos) to digitally repair adhesive damage today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

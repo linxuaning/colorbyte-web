@@ -119,3 +119,6 @@ Short answer: AI can enhance and repair partially damaged images, sometimes rema
 ---
 
 Water-damaged photos aren't necessarily lost forever. After proper emergency care and drying, try our [free restoration tool](/restore-old-family-photos) to digitally restore your flood-damaged photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
