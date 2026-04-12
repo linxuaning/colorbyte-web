@@ -67,3 +67,6 @@ Short answer: Include the border—it's part of the Polaroid charm. Our restorat
 ---
 
 Polaroid photos hold unique nostalgia worth preserving. Try our [free restoration tool](/restore-old-family-photos) to restore your instant film memories today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

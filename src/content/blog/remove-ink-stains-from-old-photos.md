@@ -261,3 +261,6 @@ Short answer: No—alcohol can dissolve the photo emulsion, causing far worse da
 ---
 
 Ink stains don't have to permanently obscure your family photographs. While physical removal is risky and often impossible, digital restoration offers an effective solution that preserves your originals. Try our [free AI photo restoration tool](/restore-old-family-photos) to see how easily ink marks can be removed from your precious memories.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

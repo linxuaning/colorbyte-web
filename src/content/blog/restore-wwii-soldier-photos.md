@@ -321,3 +321,6 @@ Short answer: Values vary greatly. Common portraits bring $5-30. More valuable: 
 ---
 
 World War II photographs preserve the memory of the "Greatest Generation" and their service. These images deserve careful restoration and preservation to honor those who served. Try our [free restoration tool](/restore-old-family-photos) to bring your WWII soldier photographs back to life for future generations.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

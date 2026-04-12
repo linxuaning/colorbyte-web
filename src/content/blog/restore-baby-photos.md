@@ -237,3 +237,6 @@ Short answer: AI restoration preserves the image content, including any visible 
 ---
 
 Baby photos capture moments that can never be recreated—those precious first days, months, and years that pass so quickly. Restoration ensures these memories remain vivid for the children themselves and generations to come. Try our [free restoration tool](/restore-old-family-photos) to preserve your family's baby photos today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

@@ -289,3 +289,6 @@ Short answer: The gelatin in photo emulsion attracts several insects. Silverfish
 ---
 
 Insect damage to photographs is distressing but rarely means total loss. With proper emergency response, careful physical handling, and powerful AI restoration tools, even significantly eaten photos can often be restored. Try our [free restoration tool](/restore-old-family-photos) to see what's possible with your pest-damaged photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

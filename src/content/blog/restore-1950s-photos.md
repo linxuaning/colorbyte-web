@@ -82,3 +82,6 @@ Short answer: Use a dedicated slide scanner or flatbed with transparency adapter
 ---
 
 1950s photographs capture a distinctive era worth preserving. Try our [free restoration tool](/restore-old-family-photos) to restore your mid-century memories today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

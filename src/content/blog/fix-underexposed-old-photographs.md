@@ -280,3 +280,6 @@ Short answer: 1-2 stops of underexposure can usually be fully corrected. 3-4 sto
 ---
 
 Dark, underexposed photographs often contain far more information than they appear to. Modern AI restoration can reveal faces, details, and memories that seemed lost to shadow. Try our [free restoration tool](/enhance-old-photos) to discover what's hidden in your dark vintage photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

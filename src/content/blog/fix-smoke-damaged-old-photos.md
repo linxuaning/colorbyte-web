@@ -225,3 +225,6 @@ Short answer: For most photos, yes—modern AI tools make DIY restoration access
 ---
 
 Smoke damage doesn't have to mean permanent loss of your precious photographs. With careful assessment, appropriate cleaning techniques, and powerful AI restoration tools, even heavily affected images can be brought back to life. Start with our free restoration tools to see what's possible with your smoke-damaged photos.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

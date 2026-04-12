@@ -113,3 +113,6 @@ Short answer: The original will continue fading if displayed. However, your digi
 ---
 
 Sun damage doesn't have to be permanent. Try our [free restoration tool](/restore-old-family-photos) to restore your faded photographs today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

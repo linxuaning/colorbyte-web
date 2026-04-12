@@ -298,3 +298,6 @@ Short answer: Meaningful improvement is typical; perfect restoration isn't possi
 ---
 
 Severely damaged photographs often contain recoverable images despite appearing hopeless. Modern AI restoration technology can address multiple damage types simultaneously, revealing faces and moments that seemed lost. Try our [free restoration tool](/restore-old-family-photos) to see what can be recovered from your most damaged photographs.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

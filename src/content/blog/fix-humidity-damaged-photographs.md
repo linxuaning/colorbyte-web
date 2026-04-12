@@ -269,3 +269,6 @@ Short answer: Yes, using controlled humidification. Place photos in a sealed con
 ---
 
 Humidity damage doesn't have to mean permanent loss of your photographs. With proper emergency response, careful physical treatment, and powerful digital restoration tools, even severely affected photos can often be saved. Start with our [free AI photo restoration](/restore-old-family-photos) to see what's possible with your humidity-damaged memories.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

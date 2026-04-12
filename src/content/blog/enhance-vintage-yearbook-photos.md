@@ -299,3 +299,6 @@ Short answer: It depends on your purpose. Individual photos work best for sharin
 ---
 
 Yearbook photographs preserve the faces, fashions, and friendships of school days. These educational milestones deserve restoration to keep memories clear for future generations. Try our [free restoration tool](/restore-old-family-photos) to bring your yearbook photos back to their original clarity.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

@@ -85,3 +85,6 @@ Short answer: Daguerreotypes are fragile and valuable—consider professional di
 ---
 
 Victorian photographs connect us to ancestors we can only know through these images. Try our [free restoration tool](/restore-old-family-photos) to restore your 19th century family portraits today.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.

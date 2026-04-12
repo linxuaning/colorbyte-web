@@ -299,3 +299,6 @@ Short answer: No! Even severely damaged photos often contain recoverable image i
 ---
 
 Heat damage can be devastating, but it doesn't have to mean permanent loss of your photographs. From gentle physical flattening to powerful AI restoration, multiple approaches can help recover your precious memories. Start with our [free AI restoration tool](/enhance-old-photos) to see what's possible with your heat-damaged photos.
+
+
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
