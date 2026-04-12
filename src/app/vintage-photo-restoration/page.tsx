@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Vintage Photo Restoration | AI Restores Antique Photos in Seconds',
-  description: 'Restore vintage and antique photos with AI. Fix faded sepia prints, repair daguerreotypes, enhance Victorian portraits. Free online tool - results in 30 seconds.',
+  description: 'Restore vintage and antique photos with AI. Preview the restoration first, then unlock the original-quality download for $4.99. No subscription.',
   keywords: [
     'vintage photo restoration',
     'antique photo restoration',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/vintage-photo-restoration' },
   openGraph: {
     title: 'Vintage Photo Restoration | AI for Antique Photos',
-    description: 'Restore vintage photos with AI. Fix sepia prints, repair antique photographs. Free to try.',
+    description: 'Restore vintage photos with AI. Preview first, then unlock the original-quality download for $4.99.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after vintage photo restoration' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vintage Photo Restoration - AI Powered',
-    description: 'Restore antique and vintage photos in seconds. Free, no signup required.',
+    description: 'Preview the vintage restoration first, then unlock the original-quality download for $4.99.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Vintage Photos with AI",
-  description: "Restore vintage, antique, and heritage photographs using AI restoration — free, no signup required.",
+  description: "Restore vintage, antique, and heritage photographs using AI restoration. Preview first, then unlock the original-quality download for $4.99.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Vintage Photo Restoration" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your restored vintage photo",
-      text: "Preview the restoration and download. Keep the sepia tones or colorize — your choice.",
+      text: "Preview the restoration first. If you want the clean original-quality restored photo, unlock the download for $4.99. You can keep the sepia tones or colorize it.",
     },
   ],
 };
@@ -71,9 +71,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "3 free restorations, Pro Lifetime $4.99"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -90,7 +90,7 @@ const faqSchema = {
     { "@type": "Question", name: "Will AI restoration remove the vintage look?", acceptedAnswer: { "@type": "Answer", text: "No — our AI preserves the authentic vintage character by default. It repairs damage without removing the natural aging that gives vintage photos their charm. You can optionally colorize, but the sepia/B&W aesthetic is preserved unless you choose otherwise." } },
     { "@type": "Question", name: "How should I scan vintage photos for best results?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum (1200 DPI for small prints). Use a flatbed scanner, not a phone camera. Save as PNG or TIFF to avoid compression artifacts. Clean the scanner glass and handle photos with cotton gloves." } },
     { "@type": "Question", name: "Can AI restore photos on old photo paper that's deteriorating?", acceptedAnswer: { "@type": "Answer", text: "AI restoration works on the digital scan, not the physical photo. The digital restoration can remove signs of paper deterioration (yellowing, foxing, silvering) from the image. For physical preservation, consult an archivist." } },
-    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution." } },
+    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the vintage restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription." } },
   ],
 };
 
@@ -126,7 +126,7 @@ export default function VintagePhotoRestorationPage() {
             <span className="text-amber-700">Vintage</span> Photo Restoration
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            AI trained on historical photographs from the 1850s to 1970s. Restore antique portraits, sepia prints, and family heirlooms — <strong className="text-[#1d1d1f]">preserving their authentic character</strong>.
+            AI trained on historical photographs from the 1850s to 1970s. Preview the restoration first, then unlock the original-quality download for $4.99 while <strong className="text-[#1d1d1f]">preserving authentic character</strong>.
           </p>
 
           {/* Trust indicators */}
@@ -282,7 +282,7 @@ export default function VintagePhotoRestorationPage() {
               <div className="flex gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700 font-bold">6</div>
                 <div>
-                  <h3 className="font-semibold text-[#1d1d1f] mb-1">Don't remove from frames</h3>
+                  <h3 className="font-semibold text-[#1d1d1f] mb-1">Don&apos;t remove from frames</h3>
                   <p className="text-[14px] text-[#6e6e73]">Old photos may be stuck to glass. Scan through glass rather than risk damage.</p>
                 </div>
               </div>
@@ -318,7 +318,7 @@ export default function VintagePhotoRestorationPage() {
               },
               {
                 q: "Is vintage photo restoration free?",
-                a: "Yes! Try 3 vintage photo restorations free, no signup required. Free users get 720p output. Pro Lifetime ($4.99 one-time) gives unlimited restorations at full resolution.",
+                a: "Yes. ArtImageHub lets you preview the vintage restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
@@ -343,10 +343,10 @@ export default function VintagePhotoRestorationPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-amber-700 hover:bg-amber-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Restore Your Vintage Photo Free
+            Start Free Preview
           </Link>
           <p className="mt-4 text-amber-200 text-[13px]">
-            3 free photos · No signup · Preserves authenticity
+            Free preview · $4.99 original-quality unlock · No subscription
           </p>
         </div>
       </section>
@@ -364,7 +364,7 @@ export default function VintagePhotoRestorationPage() {
             </Link>
             <Link href="/restore-old-photos-free" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Free Photo Restoration</h3>
-              <p className="text-sm text-[#6b5344]">Try 3 photos completely free</p>
+              <p className="text-sm text-[#6b5344]">Preview the restoration first</p>
             </Link>
             <Link href="/restore-faded-photos" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Faded Photos</h3>

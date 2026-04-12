@@ -5,6 +5,15 @@ export interface PaymentFunnelSource {
   checkoutSource?: string;
 }
 
+const PENDING_PAYMENT_FUNNEL_STORAGE_KEY = "artimagehub_pending_payment_funnel";
+const PENDING_PAYMENT_FUNNEL_MAX_AGE_MS = 2 * 60 * 60 * 1000;
+
+interface PendingPaymentFunnelRecord {
+  createdAt: number;
+  source: PaymentFunnelSource;
+  resumeTaskId?: string;
+}
+
 const PAYMENT_FUNNEL_QUERY_KEYS = {
   landingPage: "landing_page",
   ctaSlot: "cta_slot",
@@ -14,6 +23,7 @@ const PAYMENT_FUNNEL_QUERY_KEYS = {
 
 const LOCKED_LANDING_PAGES = new Set([
   "/old-photo-restoration",
+  "/photo-restoration-service",
   "/vs-remini",
   "/vs-photoshop-restoration",
   "/best-photo-restoration-software",
@@ -86,6 +96,61 @@ export const paymentFunnelPayload = (
   checkout_source: source.checkoutSource || null,
 });
 
+const readPendingPaymentFunnelRecord = (): PendingPaymentFunnelRecord | null => {
+  if (typeof window === "undefined") return null;
+
+  const raw = window.localStorage.getItem(PENDING_PAYMENT_FUNNEL_STORAGE_KEY);
+  if (!raw) return null;
+
+  try {
+    const parsed = JSON.parse(raw) as PendingPaymentFunnelRecord;
+    if (!parsed?.createdAt || !parsed?.source) {
+      return null;
+    }
+    return parsed;
+  } catch {
+    return null;
+  }
+};
+
+export const storePendingPaymentFunnelSource = (
+  source: PaymentFunnelSource,
+  resumeTaskId?: string
+) => {
+  if (typeof window === "undefined") return;
+
+  window.localStorage.setItem(
+    PENDING_PAYMENT_FUNNEL_STORAGE_KEY,
+    JSON.stringify({
+      createdAt: Date.now(),
+      source,
+      resumeTaskId,
+    } satisfies PendingPaymentFunnelRecord)
+  );
+};
+
+export const clearPendingPaymentFunnelSource = () => {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(PENDING_PAYMENT_FUNNEL_STORAGE_KEY);
+};
+
+export const consumePendingPaymentFunnelContext = ():
+  | { source: PaymentFunnelSource; resumeTaskId?: string }
+  | undefined => {
+  const record = readPendingPaymentFunnelRecord();
+  clearPendingPaymentFunnelSource();
+
+  if (!record) return undefined;
+  if (Date.now() - record.createdAt > PENDING_PAYMENT_FUNNEL_MAX_AGE_MS) {
+    return undefined;
+  }
+
+  return {
+    source: record.source,
+    resumeTaskId: record.resumeTaskId,
+  };
+};
+
 // Google Analytics 4 event tracking utilities
 
 declare global {
@@ -131,11 +196,13 @@ export const event = ({
 };
 
 // Predefined conversion events
-export const trackPhotoUpload = () => {
-  event({
-    action: 'photo_upload',
-    category: 'engagement',
-    label: 'User uploaded a photo',
+export const trackPhotoUpload = (source?: PaymentFunnelSource) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_upload", {
+    event_category: "engagement",
+    event_label: "User uploaded a photo",
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
@@ -167,19 +234,48 @@ export const trackProcessingComplete = ({
   });
 };
 
-export const trackPhotoDownload = (quality: 'free' | 'pro') => {
-  event({
-    action: 'photo_download',
-    category: 'conversion',
-    label: `Download - ${quality}`,
+export const trackPhotoDownload = (
+  quality: "free" | "pro",
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_download", {
+    event_category: "conversion",
+    event_label: `Download - ${quality}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
-export const trackPaymentClick = (plan: string) => {
-  event({
-    action: 'payment_click',
-    category: 'conversion',
-    label: `Payment initiated - ${plan}`,
+export const trackPhotoDownloadFailure = (
+  detail: string,
+  source?: PaymentFunnelSource
+) => {
+  const payload = {
+    detail,
+    ...paymentFunnelPayload(source || {}),
+  };
+
+  console.info("[photo_download_error]", payload);
+
+  if (!window.gtag) return;
+
+  window.gtag("event", "photo_download_error", {
+    event_category: "conversion",
+    ...payload,
+  });
+};
+
+export const trackPaymentClick = (
+  plan: string,
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "payment_click", {
+    event_category: "conversion",
+    event_label: `Payment initiated - ${plan}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 
@@ -235,6 +331,28 @@ export const trackPaymentCancel = (
   });
 };
 
+export const trackPaymentRecoveryAction = (
+  source: string,
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent('payment_recovery_action', {
+    source,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
+};
+
+export const trackPaymentPageAction = (
+  surface: "cancel" | "success",
+  action: string,
+  funnelSource?: PaymentFunnelSource
+) => {
+  trackPaymentFunnelEvent("payment_page_action", {
+    surface,
+    action,
+    ...paymentFunnelPayload(funnelSource || {}),
+  });
+};
+
 export const trackPaymentEmailEntry = (
   source: string,
   mode: 'manual' | 'auto' = 'manual',
@@ -252,12 +370,18 @@ export const trackPaymentSuccess = (
   transactionId?: string,
   source?: PaymentFunnelSource
 ) => {
-  event({
-    action: 'purchase',
-    category: 'conversion',
-    label: 'Payment completed',
-    value: amount,
-  });
+  const analyticsTransactionId = transactionId || `${Date.now()}`;
+
+  if (window.gtag) {
+    window.gtag("event", "purchase", {
+      event_category: "conversion",
+      event_label: "Payment completed",
+      value: amount,
+      currency: "USD",
+      transaction_id: analyticsTransactionId,
+      ...paymentFunnelPayload(source || {}),
+    });
+  }
 
   trackPaymentFunnelEvent('payment_success', {
     amount,
@@ -271,16 +395,77 @@ export const trackPaymentSuccess = (
       send_to: GA_MEASUREMENT_ID,
       value: amount,
       currency: 'USD',
-      transaction_id: transactionId || `${Date.now()}`,
+      transaction_id: analyticsTransactionId,
     });
   }
 };
 
-export const trackCTAClick = (location: string) => {
-  event({
-    action: 'cta_click',
-    category: 'engagement',
-    label: `CTA clicked - ${location}`,
+const getPaymentSuccessDedupeKey = (transactionId: string) =>
+  `payment_success_tracked_${transactionId}`;
+
+const readBrowserStorage = (
+  storage: Storage,
+  key: string
+) => {
+  try {
+    return storage.getItem(key);
+  } catch {
+    return null;
+  }
+};
+
+const writeBrowserStorage = (
+  storage: Storage,
+  key: string,
+  value: string
+) => {
+  try {
+    storage.setItem(key, value);
+  } catch {
+    // Ignore storage write failures so payment flow analytics never breaks checkout.
+  }
+};
+
+export const hasTrackedPaymentSuccess = (transactionId: string) => {
+  if (typeof window === "undefined") return false;
+  const key = getPaymentSuccessDedupeKey(transactionId);
+  return (
+    readBrowserStorage(window.sessionStorage, key) === "1" ||
+    readBrowserStorage(window.localStorage, key) === "1"
+  );
+};
+
+export const markPaymentSuccessTracked = (transactionId: string) => {
+  if (typeof window === "undefined") return;
+  const key = getPaymentSuccessDedupeKey(transactionId);
+  writeBrowserStorage(window.sessionStorage, key, "1");
+  writeBrowserStorage(window.localStorage, key, "1");
+};
+
+export const trackPaymentSuccessOnce = (
+  amount: number,
+  transactionId: string,
+  source?: PaymentFunnelSource
+) => {
+  if (hasTrackedPaymentSuccess(transactionId)) {
+    return false;
+  }
+
+  trackPaymentSuccess(amount, transactionId, source);
+  markPaymentSuccessTracked(transactionId);
+  return true;
+};
+
+export const trackCTAClick = (
+  location: string,
+  source?: PaymentFunnelSource
+) => {
+  if (!window.gtag) return;
+
+  window.gtag("event", "cta_click", {
+    event_category: "engagement",
+    event_label: `CTA clicked - ${location}`,
+    ...paymentFunnelPayload(source || {}),
   });
 };
 

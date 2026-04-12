@@ -1,0 +1,100 @@
+{
+  "captured_at_utc": "2026-03-25T07:27:21.244Z",
+  "url": "https://www.artimagehub.com/subscription?landing_page=%2Fphoto-enhancer&cta_slot=result_unlock&entry_variant=result_paywall&checkout_source=download_intercept",
+  "iframe_count": 2,
+  "clicked_frame_index": 0,
+  "payment_click_calls": [
+    [
+      "event",
+      "payment_click",
+      {
+        "event_category": "conversion",
+        "event_label": "Payment initiated - Original-quality download - $4.99",
+        "landing_page": "/photo-enhancer",
+        "cta_slot": "result_unlock",
+        "entry_variant": "result_paywall",
+        "checkout_source": "download_intercept"
+      }
+    ]
+  ],
+  "payment_started_calls": [
+    [
+      "event",
+      "payment_started",
+      {
+        "event_category": "payment_funnel",
+        "plan": "Original-quality download - $4.99",
+        "landing_page": "/photo-enhancer",
+        "cta_slot": "result_unlock",
+        "entry_variant": "result_paywall",
+        "checkout_source": "download_intercept",
+        "utc": "2026-03-25T07:27:17.143Z"
+      }
+    ]
+  ],
+  "payment_create_order_fail_calls": [
+    [
+      "event",
+      "payment_create_order_fail",
+      {
+        "event_category": "payment_funnel",
+        "detail": "http_500",
+        "landing_page": "/photo-enhancer",
+        "cta_slot": "result_unlock",
+        "entry_variant": "result_paywall",
+        "checkout_source": "download_intercept",
+        "utc": "2026-03-25T07:27:17.150Z"
+      }
+    ]
+  ],
+  "intercepted_create_order_requests": [
+    {
+      "url": "https://colorbyte-api.onrender.com/api/payment/paypal-create-order",
+      "method": "POST",
+      "ts": "2026-03-25T07:27:17.148Z"
+    }
+  ],
+  "console_tail": [
+    {
+      "type": "error",
+      "text": "paypal_js_sdk_v5_unhandled_exception {err: Error: Detected container element removed from DOM…_next/static/chunks/1c9669fd87998ca9.js:1:125110), timestamp: 1774423634589, uid: uid_5db7aac151_mdc6mjc6mtq, env: production, clientId: AUvrJOLI-3fFmi6NqnpLfrYMatI8Soq0INYBgrNZgf33CwWFooIuXKYFla781UexEYaOfbqBkRpkiaEr}",
+      "ts": "2026-03-25T07:27:14.590Z"
+    },
+    {
+      "type": "info",
+      "text": "[payment_funnel] payment_started {plan: Original-quality download - $4.99, landing_page: /photo-enhancer, cta_slot: result_unlock, entry_variant: result_paywall, checkout_source: download_intercept}",
+      "ts": "2026-03-25T07:27:17.144Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+      "ts": "2026-03-25T07:27:17.150Z"
+    },
+    {
+      "type": "error",
+      "text": "Create order error: Error: Failed to create order\n    at Object.createOrder (https://www.artimagehub.com/_next/static/chunks/782692acb7b291c4.js:1:8055)",
+      "ts": "2026-03-25T07:27:17.150Z"
+    },
+    {
+      "type": "info",
+      "text": "[payment_funnel] payment_create_order_fail {detail: http_500, landing_page: /photo-enhancer, cta_slot: result_unlock, entry_variant: result_paywall, checkout_source: download_intercept}",
+      "ts": "2026-03-25T07:27:17.150Z"
+    },
+    {
+      "type": "error",
+      "text": "create_order_error {err: Failed to create order, timestamp: 1774423637153, referer: www.paypal.com, sdkCorrelationID: prebuild, sessionID: uid_5db7aac151_mdc6mjc6mtq}",
+      "ts": "2026-03-25T07:27:17.153Z"
+    },
+    {
+      "type": "error",
+      "text": "unhandled_error {err: Error: Failed to create order\n    at Object.create…XKYFla781UexEYaOfbqBkRpkiaEr&currency=USD:3:94871, timestamp: 1774423637159, referer: www.paypal.com, sdkCorrelationID: prebuild, sessionID: uid_5db7aac151_mdc6mjc6mtq}",
+      "ts": "2026-03-25T07:27:17.159Z"
+    },
+    {
+      "type": "warning",
+      "text": "click_initiate_payment_reject {err: Error: Failed to create order\n    at Object.create…XKYFla781UexEYaOfbqBkRpkiaEr&currency=USD:3:94871, timestamp: 1774423637373, referer: www.paypal.com, sdkCorrelationID: prebuild, sessionID: uid_5db7aac151_mdc6mjc6mtq}",
+      "ts": "2026-03-25T07:27:17.374Z"
+    }
+  ],
+  "screenshot_path": "/private/tmp/frontend-resultlane.9YOUSL/docs/evidence/payment-click-source-live-post-2026-03-25.png"
+}

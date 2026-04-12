@@ -1,14 +1,18 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
-  readPaymentFunnelSource,
+  clearPendingPaymentFunnelSource,
+  paymentFunnelPayload,
+  storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
   trackPaymentClick,
+  trackPaymentRecoveryAction,
   trackPaymentStarted,
-  trackPaymentSuccess,
+  trackPaymentSuccessOnce,
 } from "@/lib/analytics";
+import type { PaymentFunnelSource } from "@/lib/payment-funnel";
 
 declare global {
   interface PayPalApproveData {
@@ -45,14 +49,20 @@ const parsedPrice = Number.parseFloat(
 );
 const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
-const PRO_PLAN_LABEL = `Pro Lifetime - $${PRO_PRICE_USD.toFixed(2)}`;
+const CHECKOUT_ITEM_LABEL = `Original-quality download - $${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
+
+type CreateOrderTrackedError = Error & {
+  trackDetail?: string;
+};
 
 interface PayPalButtonProps {
   onSuccess?: (orderId: string) => void;
   onError?: (error: unknown) => void;
   checkoutEmail?: string;
   resumeTaskId?: string;
+  funnelSource?: PaymentFunnelSource;
 }
 
 export default function PayPalButton({
@@ -60,21 +70,22 @@ export default function PayPalButton({
   onError,
   checkoutEmail,
   resumeTaskId,
+  funnelSource = {},
 }: PayPalButtonProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [validationMessage, setValidationMessage] = useState<string | null>(null);
   const [retryNonce, setRetryNonce] = useState(0);
   const manualSupportEmail = "support@artimagehub.com";
-  const funnelSource = useMemo(
-    () =>
-      typeof window === "undefined"
-        ? {}
-        : readPaymentFunnelSource(new URLSearchParams(window.location.search)),
-    []
-  );
   const normalizedCheckoutEmail = checkoutEmail?.trim().toLowerCase() || "";
   const requiresInlineEmail = checkoutEmail !== undefined;
   const hasValidInlineEmail = EMAIL_REGEX.test(normalizedCheckoutEmail);
+
+  useEffect(() => {
+    if (validationMessage && hasValidInlineEmail) {
+      setValidationMessage(null);
+    }
+  }, [hasValidInlineEmail, validationMessage]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -127,8 +138,7 @@ export default function PayPalButton({
     if (
       !loaded ||
       !window.paypal ||
-      error ||
-      (requiresInlineEmail && !hasValidInlineEmail)
+      error
     ) {
       return;
     }
@@ -138,22 +148,26 @@ export default function PayPalButton({
       container.innerHTML = "";
     }
 
+    let suppressNextPayPalOnError = false;
+
     // Render PayPal button
     window.paypal
       .Buttons({
         createOrder: async () => {
           try {
-            // Track payment button click
-            trackPaymentClick(PRO_PLAN_LABEL);
-            trackPaymentStarted(PRO_PLAN_LABEL, funnelSource);
-
+            suppressNextPayPalOnError = false;
             const payerEmail = requiresInlineEmail
               ? normalizedCheckoutEmail
               : localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
             if (!payerEmail || !EMAIL_REGEX.test(payerEmail)) {
-              throw new Error("Enter a valid email before checkout");
+              setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
+              throw new Error(INLINE_EMAIL_GATE_MESSAGE);
             }
+            setValidationMessage(null);
             localStorage.setItem("artimagehub_email", payerEmail);
+            trackPaymentClick(CHECKOUT_ITEM_LABEL, funnelSource);
+            storePendingPaymentFunnelSource(funnelSource, resumeTaskId);
+            trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
 
             const response = await fetch(`${API_BASE}/api/payment/paypal-create-order`, {
               method: "POST",
@@ -162,12 +176,15 @@ export default function PayPalButton({
               },
               body: JSON.stringify({
                 email: payerEmail,
+                ...paymentFunnelPayload(funnelSource),
               }),
             });
 
             if (!response.ok) {
-              trackCreateOrderResult(false, `http_${response.status}`, funnelSource);
-              throw new Error("Failed to create order");
+              clearPendingPaymentFunnelSource();
+              throw Object.assign(new Error("Failed to create order"), {
+                trackDetail: `http_${response.status}`,
+              } satisfies Pick<CreateOrderTrackedError, "trackDetail">);
             }
 
             const data = await response.json();
@@ -181,14 +198,28 @@ export default function PayPalButton({
             return data.order_id;
           } catch (err) {
             console.error("Create order error:", err);
+            const isInlineEmailGateError =
+              err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
+            const trackedError =
+              err instanceof Error
+                ? (err as CreateOrderTrackedError)
+                : (Object.assign(new Error("Failed to create order"), {
+                    trackDetail: "unknown_error",
+                  } satisfies Pick<CreateOrderTrackedError, "trackDetail">) as CreateOrderTrackedError);
             trackCreateOrderResult(
               false,
-              err instanceof Error ? err.message : "unknown_error",
+              isInlineEmailGateError
+                ? "inline_email_gate"
+                : trackedError.trackDetail || trackedError.message,
               funnelSource
             );
-            setError(err instanceof Error ? err.message : "Failed to create order");
-            if (onError) onError(err);
-            throw err;
+            if (!isInlineEmailGateError) {
+              suppressNextPayPalOnError = true;
+              clearPendingPaymentFunnelSource();
+              setError(trackedError.message);
+              if (onError) onError(trackedError);
+            }
+            throw trackedError;
           }
         },
         onApprove: async (data: PayPalApproveData) => {
@@ -214,8 +245,8 @@ export default function PayPalButton({
             const result = await response.json();
 
             if (result.success) {
-              // Track successful payment
-              trackPaymentSuccess(PRO_PRICE_USD, data.orderID, funnelSource);
+              clearPendingPaymentFunnelSource();
+              trackPaymentSuccessOnce(PRO_PRICE_USD, data.orderID, funnelSource);
 
               if (onSuccess) {
                 onSuccess(data.orderID);
@@ -247,12 +278,24 @@ export default function PayPalButton({
             }
           } catch (err) {
             console.error("Capture payment error:", err);
+            clearPendingPaymentFunnelSource();
             trackPaymentCancel("capture_error", funnelSource);
             setError("Payment failed");
             if (onError) onError(err);
           }
         },
         onError: (err: unknown) => {
+          const isInlineEmailGateError =
+            err instanceof Error && err.message === INLINE_EMAIL_GATE_MESSAGE;
+          if (isInlineEmailGateError) {
+            setValidationMessage(INLINE_EMAIL_GATE_MESSAGE);
+            return;
+          }
+          if (suppressNextPayPalOnError) {
+            suppressNextPayPalOnError = false;
+            return;
+          }
+          clearPendingPaymentFunnelSource();
           console.error("PayPal error:", err);
           trackPaymentCancel("paypal_sdk_error", funnelSource);
           setError("Payment failed");
@@ -280,36 +323,23 @@ export default function PayPalButton({
   ]);
 
   const handleRetryPayment = () => {
-    trackPaymentCancel("retry_payment", funnelSource);
+    trackPaymentRecoveryAction("retry_payment", funnelSource);
     setError(null);
     setRetryNonce((v) => v + 1);
   };
 
   const handleManualCheckoutSupport = () => {
-    trackPaymentCancel("manual_checkout_support", funnelSource);
+    trackPaymentRecoveryAction("manual_checkout_support", funnelSource);
     const savedEmail =
       normalizedCheckoutEmail ||
       localStorage.getItem("artimagehub_email")?.trim() ||
       "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(
-      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPlan: Pro Lifetime (${PRO_PRICE_TEXT})\n\nPlease send me a valid payment link.\n\nThanks.`
+      `Hi ColorByte team,\n\nI cannot complete PayPal checkout.\nEmail: ${savedEmail}\nPurchase: ${CHECKOUT_ITEM_LABEL}\n\nPlease send me a valid payment link.\n\nThanks.`
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };
-
-  if (requiresInlineEmail && !hasValidInlineEmail) {
-    return (
-      <div className="mt-8 rounded-xl border border-dashed border-white/15 bg-white/5 p-4 text-center">
-        <p className="text-sm font-medium text-white">
-          Enter your email above to enable PayPal checkout.
-        </p>
-        <p className="mt-1 text-xs text-white/70">
-          We use that email for activation, receipts, and future Pro access.
-        </p>
-      </div>
-    );
-  }
 
   if (error) {
     return (
@@ -349,5 +379,17 @@ export default function PayPalButton({
     );
   }
 
-  return <div id="paypal-button-container" className="mt-8"></div>;
+  return (
+    <>
+      <div id="paypal-button-container" className="mt-8"></div>
+      {validationMessage && (
+        <div className="mt-3 rounded-xl border border-white/15 bg-white/5 p-3 text-center">
+          <p className="text-sm font-medium text-white">{validationMessage}</p>
+          <p className="mt-1 text-xs text-white/70">
+            Add the email that should receive activation, receipt, and HD access, then try PayPal again.
+          </p>
+        </div>
+      )}
+    </>
+  );
 }

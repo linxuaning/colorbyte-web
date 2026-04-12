@@ -1,0 +1,56 @@
+{
+  "captured_at_utc": "2026-03-25T04:08:44.999Z",
+  "before_fix_live_probe": {
+    "captured_at_utc": "2026-03-25T04:07:12.351Z",
+    "url": "https://www.artimagehub.com/subscription?landing_page=%2Fold-photo-restoration&cta_slot=result_unlock&entry_variant=result_paywall&checkout_source=download_intercept&resume_task_id=task_capture_error_probe",
+    "after_create_order": {
+      "orderId": "ORDER_CAPTURE_ERR",
+      "pending": "{\"createdAt\":1774411632339,\"source\":{\"landingPage\":\"/old-photo-restoration\",\"ctaSlot\":\"result_unlock\",\"entryVariant\":\"result_paywall\",\"checkoutSource\":\"download_intercept\"},\"resumeTaskId\":\"task_capture_error_probe\"}"
+    },
+    "after_capture_failure": {
+      "pending": "{\"createdAt\":1774411632339,\"source\":{\"landingPage\":\"/old-photo-restoration\",\"ctaSlot\":\"result_unlock\",\"entryVariant\":\"result_paywall\",\"checkoutSource\":\"download_intercept\"},\"resumeTaskId\":\"task_capture_error_probe\"}",
+      "payment_failed_visible": false,
+      "technical_detail_visible": false
+    }
+  },
+  "after_fix_local_probe": {
+    "captured_at_utc": "2026-03-25T04:08:44.999Z",
+    "url": "http://127.0.0.1:3102/subscription?landing_page=%2Fold-photo-restoration&cta_slot=result_unlock&entry_variant=result_paywall&checkout_source=download_intercept&resume_task_id=task_capture_error_probe",
+    "after_create_order": {
+      "orderId": "ORDER_CAPTURE_ERR",
+      "pending": "{\"createdAt\":1774411724938,\"source\":{\"landingPage\":\"/old-photo-restoration\",\"ctaSlot\":\"result_unlock\",\"entryVariant\":\"result_paywall\",\"checkoutSource\":\"download_intercept\"},\"resumeTaskId\":\"task_capture_error_probe\"}"
+    },
+    "after_capture_failure": {
+      "pending": null,
+      "payment_failed_visible": true,
+      "technical_detail_visible": true
+    }
+  },
+  "after_fix_production_behavior_probe": {
+    "captured_at_utc": "2026-03-25T04:11:27.537Z",
+    "url": "https://www.artimagehub.com/subscription?landing_page=%2Fold-photo-restoration&cta_slot=result_unlock&entry_variant=result_paywall&checkout_source=download_intercept&resume_task_id=task_capture_error_probe",
+    "attempts": [
+      {
+        "attempt": 1,
+        "checked_at_utc": "2026-03-25T04:10:42.201Z",
+        "pending": "{\"createdAt\":1774411842123,\"source\":{\"landingPage\":\"/old-photo-restoration\",\"ctaSlot\":\"result_unlock\",\"entryVariant\":\"result_paywall\",\"checkoutSource\":\"download_intercept\"},\"resumeTaskId\":\"task_capture_error_probe\"}",
+        "payment_failed_visible": true,
+        "technical_detail_visible": true
+      },
+      {
+        "attempt": 2,
+        "checked_at_utc": "2026-03-25T04:11:04.270Z",
+        "pending": "{\"createdAt\":1774411864195,\"source\":{\"landingPage\":\"/old-photo-restoration\",\"ctaSlot\":\"result_unlock\",\"entryVariant\":\"result_paywall\",\"checkoutSource\":\"download_intercept\"},\"resumeTaskId\":\"task_capture_error_probe\"}",
+        "payment_failed_visible": true,
+        "technical_detail_visible": true
+      },
+      {
+        "attempt": 3,
+        "checked_at_utc": "2026-03-25T04:11:27.537Z",
+        "pending": null,
+        "payment_failed_visible": true,
+        "technical_detail_visible": true
+      }
+    ]
+  }
+}

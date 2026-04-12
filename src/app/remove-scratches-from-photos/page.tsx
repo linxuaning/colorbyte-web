@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Remove Scratches from Photos Free | AI Photo Scratch Remover",
   description:
-    "Remove scratches from old photos free with AI. Fix scratched pictures, repair damaged photographs, restore vintage prints. No signup, instant scratch removal in 30 seconds.",
+    "Remove scratches from old photos with AI. Fix scratched pictures, repair damaged photographs, and start with a free preview. Unlock the original-quality download for $4.99.",
   alternates: { canonical: "/remove-scratches-from-photos" },
   keywords: [
     "remove scratches from photos",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Remove Scratches from Photos Free — AI Scratch Remover",
     description:
-      "AI removes scratches from old photos instantly. Fix scratched pictures, repair damaged photographs free. No signup required.",
+      "AI removes scratches from old photos instantly. Preview the repaired result first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Remove Scratches from Photos Free Online",
     description:
-      "AI photo scratch remover. Fix scratched old photos, repair damaged pictures instantly. Free online tool.",
+      "AI photo scratch remover. Start with a free preview, then unlock the original-quality download for $4.99.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your scratch-free photo",
-      text: "Preview the before/after comparison to see scratches removed. Download your repaired photo—free users get 3 downloads per day at 720p resolution.",
+      text: "Preview the before/after comparison first. When you want the original-quality repaired photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo scratch remover free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free scratch removals per day with no account required. Free downloads are 720p resolution. For unlimited scratch removal at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you preview the repaired result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
       },
     },
     {
@@ -133,13 +133,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/remove-scratches-from-photos",
   description:
-    "Free AI-powered photo scratch remover. Remove scratches from old photos, fix damaged pictures, repair vintage prints in 30 seconds. No signup required.",
+    "AI-powered photo scratch remover. Remove scratches from old photos, fix damaged pictures, and preview the repaired result before unlocking the original-quality download for $4.99.",
   offers: {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -152,7 +152,7 @@ const softwareSchema = {
     "AI Scratch Detection & Removal",
     "Surface Damage Repair",
     "Face-Aware Processing",
-    "Free (3 photos/day)",
+    "Free Preview Before Unlock",
     "30-Second Processing",
     "Before/After Comparison",
   ],
@@ -180,15 +180,15 @@ export default function RemoveScratchesFromPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free — No Signup Required
+            Free Preview — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Remove Scratches from Photos Free
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             AI removes scratches from old photos instantly. Fix scratched
-            pictures, repair surface damage, and restore vintage prints in 30
-            seconds.
+            pictures, repair surface damage, and let users compare the preview
+            before unlocking the original-quality file for $4.99.
           </p>
         </div>
       </div>
@@ -417,7 +417,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "Is the photo scratch remover free?",
-                  a: "Yes, 3 free scratch removals per day with no account. Free downloads are 720p. Pro Lifetime ($4.99 one-time) offers unlimited processing at original resolution.",
+                  a: "Yes. ArtImageHub lets you preview the repaired result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
                 },
                 {
                   q: "What types of scratches can AI remove?",

@@ -4,7 +4,7 @@ import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
   title: 'Restore Photos Online Free | AI Photo Restoration in 30 Seconds',
-  description: 'Restore old photos online instantly with AI. No download, no shipping photos. Fix scratches, enhance faces, colorize in 30 seconds. Try 3 photos free, $4.99 lifetime.',
+  description: 'Restore old photos online instantly with AI. No download, no shipping photos. Start with a free preview, then unlock the original-quality download for $4.99.',
   keywords: [
     'restore photos online',
     'online photo restoration',
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/restore-photos-online' },
   openGraph: {
     title: 'Restore Photos Online Free | AI Restoration in 30 Seconds',
-    description: 'Restore old photos online instantly. No download, no shipping. Try 3 photos free.',
+    description: 'Restore old photos online instantly. Preview the result first, then unlock the original-quality download for $4.99.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Online photo restoration before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Restore Photos Online Free - No Download Required',
-    description: 'AI-powered online photo restoration. Fix scratches, enhance faces, colorize. Try 3 photos free.',
+    description: 'AI-powered online photo restoration. Start with a free preview, then unlock the original-quality download for $4.99.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -56,7 +56,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download restored photo",
-      text: "Preview your restored photo online and download instantly. No waiting for mail delivery. Try 3 photos free, no signup required.",
+      text: "Preview your restored photo online first. When you want the original-quality file, unlock the download for $4.99. No waiting for mail delivery.",
     },
   ],
 };
@@ -68,11 +68,11 @@ const faqSchema = {
     { "@type": "Question", name: "How do I restore photos online?", acceptedAnswer: { "@type": "Answer", text: "Upload your photo to ArtImageHub's online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required." } },
     { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks." } },
     { "@type": "Question", name: "Do I need to download software to restore photos online?", acceptedAnswer: { "@type": "Answer", text: "No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30 seconds." } },
-    { "@type": "Question", name: "Can I restore photos online for free?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $4.99 one-time for unlimited restorations." } },
+    { "@type": "Question", name: "Can I restore photos online for free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview your restored photo online for free with no signup required. When you want the original-quality download, unlock it for $4.99." } },
     { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
     { "@type": "Question", name: "Is my photo safe when restoring online?", acceptedAnswer: { "@type": "Answer", text: "Yes! Photos are encrypted during upload, processed securely in the cloud, and automatically deleted within 24 hours. We never use your photos for AI training or share them with third parties." } },
     { "@type": "Question", name: "What types of damage can online restoration fix?", acceptedAnswer: { "@type": "Answer", text: "Online AI restoration fixes: scratches and tears, fading and discoloration, blurry faces, water damage stains, creases and cracks, low resolution (upscales to 4K), black & white colorization. It works on 90% of common photo damage types." } },
-    { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub: 3 free, then $4.99 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool." } },
+    { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub lets you preview the restored result for free, then unlock the original-quality download for $4.99. Traditional mail-in services usually cost $50-150 per photo, and many online tools still push monthly subscriptions." } },
   ],
 };
 
@@ -84,9 +84,9 @@ const softwareSchema = {
   operatingSystem: "Web Browser",
   offers: {
     "@type": "Offer",
-    price: "4.99",
+    price: "0",
     priceCurrency: "USD",
-    description: "Lifetime unlimited access"
+    description: "Free preview first, $4.99 original-quality download unlock"
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -147,7 +147,7 @@ export default function RestorePhotosOnlinePage() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-cyan-100/80 mb-10 max-w-3xl leading-relaxed">
-            AI-powered photo restoration directly in your browser. No software download, no shipping photos, no waiting weeks. Upload → AI restores → Download. <span className="text-cyan-300 font-semibold">Instant results.</span>
+            AI-powered photo restoration directly in your browser. No software download, no shipping photos, no waiting weeks. Upload → AI restores → Preview → unlock the original-quality file only if it is worth keeping. <span className="text-cyan-300 font-semibold">Instant results.</span>
           </p>
 
           {/* CTA Buttons */}
@@ -156,7 +156,7 @@ export default function RestorePhotosOnlinePage() {
               href="/old-photo-restoration"
               className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-bold rounded-lg transition-all shadow-lg shadow-cyan-500/50 hover:shadow-cyan-400/70 hover:scale-105"
             >
-              <span className="relative z-10">Try 3 Photos Free Online →</span>
+              <span className="relative z-10">Start Free Preview Online →</span>
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 opacity-0 group-hover:opacity-100 blur transition-opacity" />
             </Link>
             <a
@@ -234,11 +234,11 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-5xl mb-4">💰</div>
               <h3 className="text-xl font-black text-slate-900 mb-3">95% Cheaper</h3>
               <p className="text-slate-600 mb-4">
-                $4.99 lifetime unlimited vs $50-150 per photo. Restore hundreds of photos for less than one traditional restoration.
+                Preview the result first, then pay $4.99 once for the original-quality download if it is worth keeping. That is still far below the $50-150 per photo that traditional mail-in shops charge.
               </p>
               <div className="text-sm text-cyan-600 font-semibold">
                 Traditional: $50-150/photo<br />
-                Online: $4.99 lifetime
+                Online: Preview first + $4.99 once
               </div>
             </div>
 
@@ -299,7 +299,7 @@ export default function RestorePhotosOnlinePage() {
               <div>
                 <h3 className="text-2xl font-black mb-3">Download Instantly</h3>
                 <p className="text-cyan-100/80 text-lg leading-relaxed">
-                  Preview before/after comparison online. Download your restored photo immediately — no waiting for shipping. Try 3 photos free, then $4.99 one-time for unlimited lifetime access.
+                  Preview before/after comparison online. Download the original-quality restored photo immediately when it is worth $4.99 — no waiting for shipping.
                 </p>
               </div>
             </div>
@@ -343,7 +343,7 @@ export default function RestorePhotosOnlinePage() {
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 font-semibold text-slate-900">Cost per Photo</td>
-                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">$4.99 lifetime unlimited 💰</td>
+                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">$4.99 original-quality unlock 💰</td>
                   <td className="px-6 py-4 text-slate-600">$50-150 each</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
@@ -357,8 +357,8 @@ export default function RestorePhotosOnlinePage() {
                   <td className="px-6 py-4 text-slate-600">N/A</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
-                  <td className="px-6 py-4 font-semibold text-slate-900">Free Trial</td>
-                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">3 photos, no signup ✓</td>
+                  <td className="px-6 py-4 font-semibold text-slate-900">Free Preview</td>
+                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">Preview first, no signup ✓</td>
                   <td className="px-6 py-4 text-slate-600">Usually none</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
@@ -377,9 +377,9 @@ export default function RestorePhotosOnlinePage() {
                   <td className="px-6 py-4 text-slate-600">Extra fee ($30-100)</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
-                  <td className="px-6 py-4 font-semibold text-slate-900">Unlimited Revisions</td>
-                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">Yes (Pro) ✓</td>
-                  <td className="px-6 py-4 text-slate-600">Limited (1-2)</td>
+                  <td className="px-6 py-4 font-semibold text-slate-900">Payment Model</td>
+                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">Pay once if the result is worth keeping ✓</td>
+                  <td className="px-6 py-4 text-slate-600">Pay per restoration</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 font-semibold text-slate-900">Best For</td>
@@ -421,12 +421,12 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-slate-600">Average processing time online</div>
             </div>
             <div>
-              <div className="text-3xl font-black text-cyan-600 mb-2">3 free</div>
-              <div className="text-slate-600">Photos to try before buying</div>
+              <div className="text-3xl font-black text-cyan-600 mb-2">Preview first</div>
+              <div className="text-slate-600">See the result before checkout</div>
             </div>
             <div>
               <div className="text-3xl font-black text-cyan-600 mb-2">$4.99</div>
-              <div className="text-slate-600">One-time for unlimited lifetime</div>
+              <div className="text-slate-600">One-time original-quality unlock</div>
             </div>
           </div>
         </div>
@@ -446,7 +446,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Upload your photo to ArtImageHub's online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required.
+                Upload your photo to ArtImageHub&apos;s online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required.
               </p>
             </details>
 
@@ -476,7 +476,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Yes! ArtImageHub offers 3 completely free online photo restorations. No signup, no credit card required. If you need more, Pro Lifetime is $4.99 one-time for unlimited restorations.
+                Yes. ArtImageHub lets you preview your restored photo online for free with no signup required. When you want the original-quality download, unlock it for $4.99.
               </p>
             </details>
 
@@ -516,17 +516,17 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                ArtImageHub: 3 free, then $4.99 lifetime unlimited. Traditional mail-in services: $50-150 per photo. Other online tools: Remini $9.99/month, VanceAI $19.9/month (subscriptions). ArtImageHub is the only one-time payment online restoration tool.
+                ArtImageHub lets you preview the restored result for free, then unlock the original-quality download for $4.99. Traditional mail-in services usually cost $50-150 per photo. Other online tools often push monthly subscriptions on top of that.
               </p>
             </details>
 
             <details className="bg-white rounded-xl p-6 shadow-md border border-slate-200 group">
               <summary className="font-bold text-lg text-slate-900 cursor-pointer list-none flex justify-between items-center">
-                What's better: online restoration or mail-in service?
+                What&apos;s better: online restoration or mail-in service?
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                <strong>Online is better for:</strong> Speed (30 sec vs 2-4 weeks), cost ($4.99 vs $50-150/photo), convenience (no shipping), multiple photos (unlimited for one price).
+                <strong>Online is better for:</strong> Speed (30 sec vs 2-4 weeks), cost ($4.99 vs $50-150/photo), convenience (no shipping), and seeing the preview before you pay.
                 <br/><br/>
                 <strong>Mail-in is better for:</strong> Museum-quality single heirloom photos requiring manual artist touch-up.
                 <br/><br/>
@@ -540,7 +540,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Yes! ArtImageHub's online restoration works on any device with a web browser — iPhone, iPad, Android phone/tablet, Windows PC, Mac. No app download required. Just open the website and upload your photo.
+                Yes! ArtImageHub&apos;s online restoration works on any device with a web browser — iPhone, iPad, Android phone/tablet, Windows PC, Mac. No app download required. Just open the website and upload your photo.
               </p>
             </details>
           </div>
@@ -586,7 +586,7 @@ export default function RestorePhotosOnlinePage() {
                 Restore Photos Free
               </h3>
               <p className="text-sm text-slate-600">
-                Try 3 photos completely free
+                Start with a free preview
               </p>
             </Link>
           </div>
@@ -600,14 +600,14 @@ export default function RestorePhotosOnlinePage() {
             Ready to Restore Your Photos Online?
           </h2>
           <p className="text-xl text-cyan-100/80 mb-10 max-w-2xl mx-auto">
-            Join thousands who've restored their family memories online. Try 3 photos free — no signup, no download, no credit card.
+            Join thousands who&apos;ve restored their family memories online. Start with a free preview — no signup, no download, no credit card.
           </p>
 
           <Link
             href="/old-photo-restoration"
             className="inline-block px-12 py-6 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white text-xl font-bold rounded-lg transition-all shadow-2xl shadow-cyan-500/50 hover:shadow-cyan-400/70 hover:scale-105"
           >
-            Start Online Restoration Free →
+            Start Free Preview Online →
           </Link>
 
           <div className="mt-10 flex flex-wrap justify-center gap-8 text-cyan-100/70">
@@ -615,7 +615,7 @@ export default function RestorePhotosOnlinePage() {
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>3 photos free</span>
+              <span>Free preview first</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
@@ -627,7 +627,7 @@ export default function RestorePhotosOnlinePage() {
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>$4.99 lifetime unlimited</span>
+              <span>$4.99 original-quality unlock</span>
             </div>
           </div>
         </div>

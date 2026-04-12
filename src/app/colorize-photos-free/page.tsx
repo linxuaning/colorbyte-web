@@ -5,7 +5,7 @@ import ColorizeClient from "../photo-colorizer/colorize-client";
 export const metadata: Metadata = {
   title: "Colorize Black and White Photos Free Online | AI Photo Colorizer",
   description:
-    "Colorize black and white photos free online with AI. Transform old family photos, historical images, and vintage pictures into vivid color in 30 seconds. No signup, no watermark on free tier.",
+    "Colorize black and white photos online with AI. Start with a free preview, then unlock the original-quality colorized download for $4.99. No subscription.",
   alternates: { canonical: "/colorize-photos-free" },
   keywords: [
     "colorize black and white photos free",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Colorize Black and White Photos Free Online — ArtImageHub",
     description:
-      "Transform black and white photos to color for free with AI. No signup required, instant results.",
+      "Upload a black and white photo, preview the colorization first, then unlock the original-quality download for $4.99.",
     type: "website",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Colorize Black and White Photos Free Online",
     description:
-      "Free AI photo colorizer. Transform old black and white photos to vivid color in seconds.",
+      "Free preview first. Unlock the original-quality colorized download for $4.99 when you want to keep it.",
     images: ["/blog/before-after-examples.jpg"],
   },
 };
@@ -44,7 +44,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Colorize Black and White Photos Free Online",
   description:
-    "Transform black and white photos to color for free using AI colorization — no signup required, results in 30 seconds.",
+    "Transform black and white photos to color with AI. Preview first, then unlock the original-quality download for $4.99 when you want to keep it.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Free Photo Colorizer" }],
   step: [
@@ -71,7 +71,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your colorized photo free",
-      text: "Preview the before/after comparison and download your colorized photo. Free users get 3 downloads per day at 720p resolution with no watermark.",
+      text: "Preview the before/after comparison first. If you want the clean original-quality colorized photo, unlock the download for $4.99.",
       image: "https://www.artimagehub.com/blog/after-1.jpg",
     },
   ],
@@ -86,7 +86,7 @@ const faqSchema = {
       name: "Is it really free to colorize black and white photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ArtImageHub offers 3 free photo colorizations per day with no account or credit card required. Free downloads are 720p resolution with no watermark. For unlimited colorizations at original resolution, Pro Lifetime costs $4.99 one-time (not a subscription).",
+        text: "Yes. ArtImageHub lets you create a free preview first with no account or credit card required. If you want the clean original-quality colorized photo, unlock the download for $4.99. No subscription.",
       },
     },
     {
@@ -118,7 +118,7 @@ const faqSchema = {
       name: "Do I need to create an account to colorize photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No account is required. Simply upload your black and white photo and download the colorized result immediately. Creating an account is only needed if you purchase Pro Lifetime for unlimited downloads.",
+        text: "No signup is required to create the preview. If you decide to unlock the original-quality download for $4.99, you only enter an email for access and receipt.",
       },
     },
   ],
@@ -132,13 +132,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://www.artimagehub.com/colorize-photos-free",
   description:
-    "Free online AI photo colorizer that transforms black and white photos into vivid color. Colorize old family photos, historical images, and vintage pictures in 30 seconds with no signup required.",
+    "AI photo colorizer that lets you preview black and white photos in color first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free tier: 3 photos per day at 720p",
+    description: "Free preview first, $4.99 original-quality download unlock",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -148,7 +148,7 @@ const softwareSchema = {
     worstRating: "1",
   },
   featureList: [
-    "Free Photo Colorization (3/day)",
+    "Free Preview First",
     "AI-Powered Realistic Colors",
     "No Signup Required",
     "Face-Aware Colorization",
@@ -179,15 +179,15 @@ export default function ColorizePhotosFree() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            100% Free — No Signup Required
+            Free Preview First — No Signup Required
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Colorize Black and White Photos Free Online
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
-            Transform your old black and white photos into vivid color with AI.
-            Free to use, no account needed. Get realistic colorization in 30
-            seconds.
+            Upload your black and white photo to preview the colorization in 30
+            seconds. If you want the clean original-quality download, unlock it
+            for $4.99.
           </p>
         </div>
       </div>
@@ -256,7 +256,7 @@ export default function ColorizePhotosFree() {
                   <span>
                     <strong className="text-[#1d1d1f]">Faces and skin tones:</strong>{" "}
                     The AI recognizes facial features and applies natural,
-                    realistic skin colors appropriate for the photograph's era
+                    realistic skin colors appropriate for the photograph&apos;s era
                     and context.
                   </span>
                 </li>
@@ -343,7 +343,7 @@ export default function ColorizePhotosFree() {
               {[
                 {
                   q: "Is it really free to colorize black and white photos?",
-                  a: "Yes! ArtImageHub offers 3 free colorizations per day with no account required. Free downloads are 720p resolution. For unlimited colorizations at original resolution, Pro Lifetime is a one-time $4.99 payment (not a subscription).",
+                  a: "Yes. ArtImageHub lets you create a free preview first with no account required. If you want the clean original-quality colorized photo, unlock the download for $4.99. No subscription.",
                 },
                 {
                   q: "How accurate is AI photo colorization?",
@@ -359,7 +359,7 @@ export default function ColorizePhotosFree() {
                 },
                 {
                   q: "Do I need to create an account?",
-                  a: "No account is required for free colorization. Simply upload your photo and download the result. Accounts are only needed for Pro Lifetime purchases.",
+                  a: "No signup is required to create the preview. If you decide to unlock the original-quality download for $4.99, you only enter an email for access and receipt.",
                 },
               ].map((item) => (
                 <details

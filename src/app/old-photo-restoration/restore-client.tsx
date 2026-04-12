@@ -17,6 +17,7 @@ import {
 import {
   buildPaymentFunnelQuery,
   mergePaymentFunnelSource,
+  paymentFunnelPayload,
   readPaymentFunnelSource,
   trackPhotoUpload,
   trackProcessingComplete,
@@ -45,7 +46,11 @@ interface TaskStatus {
   error: string | null;
 }
 
-export default function RestoreClient() {
+interface RestoreClientProps {
+  landingPage?: string;
+}
+
+export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const searchParams = useSearchParams();
   const [stage, setStage] = useState<Stage>("idle");
   const [preview, setPreview] = useState<string | null>(null);
@@ -64,14 +69,28 @@ export default function RestoreClient() {
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
-    () =>
-      typeof window === "undefined"
-        ? { landingPage: "/old-photo-restoration" }
+    () => {
+      const resolvedLandingPage =
+        landingPage?.trim() || "/old-photo-restoration";
+
+      if (typeof window === "undefined") {
+        return { landingPage: resolvedLandingPage };
+      }
+
+      const querySource = readPaymentFunnelSource(
+        new URLSearchParams(window.location.search)
+      );
+
+      return landingPage
+        ? mergePaymentFunnelSource(querySource, {
+            landingPage: resolvedLandingPage,
+          })
         : mergePaymentFunnelSource(
-            { landingPage: "/old-photo-restoration" },
-            readPaymentFunnelSource(new URLSearchParams(window.location.search))
-          ),
-    []
+            { landingPage: resolvedLandingPage },
+            querySource
+          );
+    },
+    [landingPage]
   );
   const checkoutHref = useMemo(() => {
     const params = new URLSearchParams(
@@ -182,6 +201,13 @@ export default function RestoreClient() {
         form.append("file", file);
         form.append("colorize", String(colorize));
         form.append("email", checkoutEmail);
+        Object.entries(paymentFunnelPayload(funnelSource)).forEach(
+          ([key, value]) => {
+            if (value) {
+              form.append(key, value);
+            }
+          }
+        );
 
         // Upload with retry (3 attempts, exponential backoff)
         let lastError: Error | null = null;
@@ -224,7 +250,7 @@ export default function RestoreClient() {
         setStage("error");
       }
     },
-    [canUpload, colorize],
+    [canUpload, colorize, funnelSource],
   );
 
   // --- Poll task status ---
