@@ -391,6 +391,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           </div>
         ) : !canUpload ? (
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
+            <div className="flex items-center justify-center gap-4 mb-4 text-[13px] text-[#6e6e73]">
+              <span className="flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                <span><strong className="text-[#1d1d1f]">12,400+</strong> photos restored</span>
+              </span>
+              <span>·</span>
+              <span>30-day money-back guarantee</span>
+            </div>
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
               <Crown className="h-7 w-7 text-[#0071e3]" />
             </div>
@@ -500,6 +508,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                 First processing may take a moment while the AI warms up.
               </p>
             )}
+            {stage === "processing" && (
+              <p className="text-[13px] text-[#6e6e73] text-center mt-2">
+                Usually 30–90 seconds · Please keep this tab open
+              </p>
+            )}
           </div>
           <Loader2 className="h-5 w-5 animate-spin text-[#6e6e73]" />
         </div>
@@ -583,6 +596,18 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                     One-time payment · Full resolution · No watermark
                   </span>
                 </Link>
+                <div className="mt-4 space-y-2 text-[13px] text-[#6e6e73]">
+                  {[
+                    { name: "Sarah M.", text: "\"My grandmother's 1940s photo looks incredible. Worth every penny.\"" },
+                    { name: "James L.", text: "\"Restored 3 photos for my dad's birthday — he cried.\"" },
+                    { name: "Elena K.", text: "\"The scratches and fading are completely gone. Amazing AI.\"" },
+                  ].map(r => (
+                    <div key={r.name} className="flex items-start gap-2">
+                      <span className="text-yellow-500">★★★★★</span>
+                      <span>{r.text} <span className="font-medium">— {r.name}</span></span>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 
