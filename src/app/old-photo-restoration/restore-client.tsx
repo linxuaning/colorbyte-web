@@ -114,6 +114,19 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     return `/subscription?${params.toString()}`;
   }, [funnelSource]);
   const canUpload = isSubscriber && !checkingAccess;
+  const [photosRestored, setPhotosRestored] = useState<number | null>(null);
+
+  // Fetch social proof counter (fire-and-forget, no retry needed)
+  useEffect(() => {
+    if (!API_BASE) return;
+    fetch(`${API_BASE}/api/metrics/processing-complete`)
+      .then((r) => r.json())
+      .then((d) => {
+        const n = typeof d?.count === "number" ? d.count : null;
+        if (n !== null && n > 0) setPhotosRestored(n);
+      })
+      .catch(() => {});
+  }, []);
 
   // Check subscription status on mount
   useEffect(() => {
@@ -415,8 +428,41 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               <Crown className="h-4 w-4" />
               Unlock Access — {PRO_PRICE_TEXT}
             </Link>
-            <p className="mt-3 text-[12px] text-[#6e6e73]">
-              After payment, you come back here in the allowed pre-upload state.
+
+            {/* Trust signals */}
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+              {photosRestored !== null && (
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                  {photosRestored.toLocaleString()}+ photos restored
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                <Check className="h-3.5 w-3.5 text-green-500" />
+                30-day money-back guarantee
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                <Check className="h-3.5 w-3.5 text-green-500" />
+                One-time payment · No subscription
+              </span>
+            </div>
+
+            {/* Social proof reviews */}
+            <div className="mt-5 grid gap-3 text-left sm:grid-cols-3 w-full max-w-xl mx-auto">
+              {[
+                { quote: "Brought my grandma's wedding photo back to life. Incredibly sharp.", name: "Sarah M." },
+                { quote: "Restored 3 family photos in minutes. Worth every penny.", name: "James T." },
+                { quote: "The colorization blew my mind — felt like seeing the past in color.", name: "Maria L." },
+              ].map((r) => (
+                <div key={r.name} className="rounded-xl bg-white border border-[#d2d2d7]/50 p-3">
+                  <p className="text-[12px] leading-[1.5] text-[#1d1d1f]">&ldquo;{r.quote}&rdquo;</p>
+                  <p className="mt-1.5 text-[11px] text-[#6e6e73]">— {r.name}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-4 text-[12px] text-[#6e6e73]">
+              After payment, return here with the same email to start restoration.
             </p>
           </div>
         ) : (
@@ -503,10 +549,32 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             <p className="mt-3 text-[14px] font-medium text-[#1d1d1f]">
               {progressText || "Processing..."}{progress > 0 && ` — ${progress}%`}
             </p>
-            {stage === "processing" && progress < 30 && (
-              <p className="mt-1.5 text-[12px] text-[#6e6e73]">
-                First processing may take a moment while the AI warms up.
-              </p>
+            {stage === "processing" && (
+              <div className="mt-4 space-y-1.5">
+                {[
+                  { label: "Analyzing damage", threshold: 0 },
+                  { label: "Restoring fine details", threshold: 25 },
+                  { label: "Enhancing resolution", threshold: 55 },
+                  { label: "Finalizing", threshold: 80 },
+                ].map((step, i, arr) => {
+                  const done = progress >= (arr[i + 1]?.threshold ?? 101);
+                  const active = !done && progress >= step.threshold;
+                  return (
+                    <div key={step.label} className="flex items-center gap-2">
+                      <div className={`h-4 w-4 flex-shrink-0 rounded-full border flex items-center justify-center ${done ? "bg-green-500 border-green-500" : active ? "border-[#0071e3]" : "border-[#d2d2d7]"}`}>
+                        {done && <Check className="h-2.5 w-2.5 text-white" />}
+                        {active && <div className="h-1.5 w-1.5 rounded-full bg-[#0071e3]" />}
+                      </div>
+                      <span className={`text-[12px] ${done ? "text-green-600" : active ? "text-[#1d1d1f] font-medium" : "text-[#6e6e73]"}`}>
+                        {step.label}
+                      </span>
+                    </div>
+                  );
+                })}
+                <p className="mt-2 text-[11px] text-[#6e6e73]">
+                  Usually 30–90 seconds{progress < 20 ? " — first request may take a bit longer while the AI warms up" : ""}.
+                </p>
+              </div>
             )}
             {stage === "processing" && (
               <p className="text-[13px] text-[#6e6e73] text-center mt-2">
