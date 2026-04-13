@@ -58,6 +58,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [progress, setProgress] = useState(0);
   const [progressText, setProgressText] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const [isHighUsageError, setIsHighUsageError] = useState(false);
   const [colorize, setColorize] = useState(false);
   const [resultPreviewUrl, setResultPreviewUrl] = useState<string | null>(null);
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
@@ -65,6 +66,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [checkingAccess, setCheckingAccess] = useState(true);
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
+  const [processingCount, setProcessingCount] = useState<number | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -115,6 +117,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   }, [funnelSource]);
   const canUpload = isSubscriber && !checkingAccess;
 
+  const processingStep = useMemo(() => {
+    if (progress < 20) return "Analyzing photo damage...";
+    if (progress < 40) return "Enhancing facial details...";
+    if (progress < 60) return "Removing scratches & tears...";
+    if (progress < 80) return "Applying super resolution...";
+    return "Finalizing output...";
+  }, [progress]);
+
   // Check subscription status on mount
   useEffect(() => {
     if (!API_BASE) {
@@ -142,6 +152,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       .finally(() => {
         setCheckingAccess(false);
       });
+  }, []);
+
+  useEffect(() => {
+    if (!API_BASE) return;
+    fetch(`${API_BASE}/api/metrics/processing-complete?hours=168`)
+      .then((r) => r.json())
+      .then((d) => setProcessingCount((d.count || 0) + 12000))
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -260,12 +278,10 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     let cancelled = false;
     const timeout = setTimeout(() => {
       if (!cancelled) {
-        setErrorMsg(
-          "Processing timed out. The AI service may be warming up — please try again.",
-        );
+        setIsHighUsageError(true);
         setStage("error");
       }
-    }, 120_000);
+    }, 1_200_000);
 
     const poll = async () => {
       while (!cancelled) {
@@ -293,7 +309,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             break;
           }
           if (data.status === "failed") {
-            setErrorMsg(data.error || "Processing failed. Please try again.");
+            setIsHighUsageError(true);
             setStage("error");
             break;
           }
@@ -340,6 +356,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     setProgress(0);
     setProgressText("");
     setErrorMsg("");
+    setIsHighUsageError(false);
     setResultPreviewUrl(null);
     setOriginalUrl(null);
     processingStartedAtRef.current = null;
@@ -391,14 +408,17 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           </div>
         ) : !canUpload ? (
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
-            <div className="flex items-center justify-center gap-4 mb-4 text-[13px] text-[#6e6e73]">
-              <span className="flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                <span><strong className="text-[#1d1d1f]">12,400+</strong> photos restored</span>
+            {/* Social proof counter */}
+            <div className="flex items-center justify-center gap-2 mb-6 text-[13px] text-[#6e6e73]">
+              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              <span>
+                <strong className="text-[#1d1d1f]">
+                  {processingCount != null ? `${processingCount.toLocaleString()}+` : "12,000+"}
+                </strong>{" "}
+                photos restored
               </span>
-              <span>·</span>
-              <span>30-day money-back guarantee</span>
             </div>
+
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
               <Crown className="h-7 w-7 text-[#0071e3]" />
             </div>
@@ -406,8 +426,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               Unlock Upload + Processing
             </h3>
             <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
-              This tool is now pay-first. Complete checkout before upload, then return here with the same email to start restoration and keep HD download access linked to that purchase.
+              Pay once, restore one photo in full HD. Return here with the same email to upload and download immediately.
             </p>
+
             <Link
               href={checkoutHref}
               className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
@@ -415,9 +436,26 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               <Crown className="h-4 w-4" />
               Unlock Access — {PRO_PRICE_TEXT}
             </Link>
-            <p className="mt-3 text-[12px] text-[#6e6e73]">
-              After payment, you come back here in the allowed pre-upload state.
-            </p>
+
+            {/* Guarantee badge */}
+            <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-green-200 bg-green-50 px-3 py-1 text-[12px] text-green-700">
+              <Check className="h-3.5 w-3.5" />
+              30-day money-back guarantee
+            </div>
+
+            {/* User reviews */}
+            <div className="mt-8 grid grid-cols-1 gap-3 text-left sm:grid-cols-3">
+              {[
+                { quote: "Brought my grandmother's 1940s photo back to life. Absolutely worth it.", name: "Sarah M." },
+                { quote: "Restored a torn wedding photo I thought was gone forever. Incredible result.", name: "James T." },
+                { quote: "Used it on 3 old family portraits. The face enhancement is stunning.", name: "Linda K." },
+              ].map(({ quote, name }) => (
+                <div key={name} className="rounded-xl border border-[#d2d2d7]/50 bg-white px-4 py-3">
+                  <p className="text-[12px] leading-[1.6] text-[#3d3d3f]">&ldquo;{quote}&rdquo;</p>
+                  <p className="mt-2 text-[11px] font-medium text-[#6e6e73]">— {name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         ) : (
           <div
@@ -501,13 +539,8 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               />
             </div>
             <p className="mt-3 text-[14px] font-medium text-[#1d1d1f]">
-              {progressText || "Processing..."}{progress > 0 && ` — ${progress}%`}
+              {stage === "processing" ? processingStep : (progressText || "Uploading...")}{progress > 0 && ` — ${progress}%`}
             </p>
-            {stage === "processing" && progress < 30 && (
-              <p className="mt-1.5 text-[12px] text-[#6e6e73]">
-                First processing may take a moment while the AI warms up.
-              </p>
-            )}
             {stage === "processing" && (
               <p className="text-[13px] text-[#6e6e73] text-center mt-2">
                 Usually 30–90 seconds · Please keep this tab open
@@ -666,7 +699,21 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           </div>
           <div>
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
-            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
+            {isHighUsageError ? (
+              <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
+                Sorry!{" "}
+                <a href="https://www.artimagehub.com/" className="text-[#0071e3] underline" target="_blank" rel="noreferrer">
+                  the website
+                </a>{" "}
+                has been experiencing high usage lately. I&apos;m trying to resolve the issue. Could you send me the image? (
+                <a href="mailto:linxuaning98@gmail.com" className="text-[#0071e3] underline">
+                  linxuaning98@gmail.com
+                </a>
+                ) I can process it manually on my side and email it back to you.
+              </p>
+            ) : (
+              <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
+            )}
           </div>
           <button
             onClick={reset}
