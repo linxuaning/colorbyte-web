@@ -96,6 +96,8 @@ For important prints, order one proof at 4×6 before committing to a large forma
 
 ## Making It a Gift
 
+For the complete gift guide—timing, presentation, what to say when she opens it—see [Mother's Day Photo Restoration: The Gift That Brings Tears](/blog/mothers-day-photo-restoration-gift). For a quick step-by-step focused on the restoration process itself, see [How to Restore Old Photos for a Mother's Day Gift](/blog/restore-old-photos-mothers-day-gift). If you're comparing this gift against other options, see [Mother's Day Gift Ideas: Photo Restoration](/blog/mothers-day-gift-ideas-photo-restoration).
+
 If you're restoring her photos as a Mother's Day gift (May 10, 2026—about 26 days away), the presentation matters as much as the restoration itself.
 
 The most effective approach: present the restored print alongside the original damaged photo. The contrast is immediate and legible—she can see what you rescued. Include a simple frame so the restored version goes straight to the wall.

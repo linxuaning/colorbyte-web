@@ -26,6 +26,8 @@ The gifts that land tend to share one quality: they prove you were paying attent
 
 That's the advantage photo restoration has over almost every item you can buy. Her photos already exist. She already cares about them. You're not guessing whether she'll like something new—you're doing something about something she's already mentioned.
 
+For a deeper look at why this gift works and the full step-by-step process, see [Mother's Day Photo Restoration: The Gift That Brings Tears](/blog/mothers-day-photo-restoration-gift) and [How to Restore Old Photos for a Mother's Day Gift](/blog/restore-old-photos-mothers-day-gift).
+
 ## The Case for Photo Restoration as a Mother's Day Gift
 
 Here's what photo restoration as a gift looks like in practice:
@@ -40,6 +42,8 @@ That's a gift. Not an item selected from a list, but an act of attention that co
 ## Other Photo-Based Gift Ideas Worth Considering
 
 If photo restoration fits your situation, here's how to extend the idea:
+
+If you're working through a specific collection of your mom's old photos, [How to Restore Your Mom's Old Photos](/blog/restore-moms-old-photos) covers which damage types restore well and what to realistically expect.
 
 ### Restored Photo + Frame
 

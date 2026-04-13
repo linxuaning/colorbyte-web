@@ -22,11 +22,15 @@ Restoring one of those photos—and giving it back to her as a crisp, vivid prin
 
 ## Why Restored Photos Work as Gifts
 
+If you're looking for broader gift context—how photo restoration compares to other Mother's Day options—see [Mother's Day Gift Ideas: Photo Restoration](/blog/mothers-day-gift-ideas-photo-restoration). For the full experience guide including timing and presentation, see [Mother's Day Photo Restoration: The Gift That Brings Tears](/blog/mothers-day-photo-restoration-gift).
+
 Photo restoration works as a gift for a specific reason: it signals attention. You noticed what she already valued. You did something about it. That combination is harder to replicate with anything purchased.
 
 Compare it to flowers (beautiful, forgotten in two weeks), a gift card (useful, impersonal), or jewelry (expensive, risky). A restored version of the photo she mentions every time the family gathers around old albums says something none of those gifts can.
 
 It's also practical in a way most sentimental gifts aren't. You're handing her something she can frame, duplicate for siblings, and pass down. The photo has already survived decades—the restored version can survive decades more.
+
+For guidance specific to working through your mom's existing photo collection—damage types, which photos scan best, what to expect—see [How to Restore Your Mom's Old Photos](/blog/restore-moms-old-photos).
 
 ## Step 1: Choose the Right Photo
 

@@ -2,7 +2,7 @@
 title: "Mother's Day Photo Restoration: The Gift That Brings Tears (Good Ones)"
 description: "Restore old family photos as a Mother's Day gift in 2026. AI photo restoration turns faded, damaged prints into vivid keepsakes she'll treasure forever—ready in minutes."
 publishedAt: "2026-04-13"
-updatedAt: "2026-04-13"
+updatedAt: "2026-04-14"
 author: "Rachel Kim"
 authorRole: "Family Historian & Gift Expert"
 authorBio: "Rachel Kim helps families preserve memories through photography archiving and meaningful gifting. She's documented over 300 family histories across the US and runs workshops on photo preservation for seniors."
@@ -47,6 +47,8 @@ Almost any photo that would mean something to her is worth attempting. But some 
 **Childhood photos of her—or of you.** Photos she appears in herself, rather than ones she took, are often the most valuable because she may have very few of them. A restored image of her at age 5, or 20, or on her own wedding day, is something she cannot get anywhere else.
 
 **Damaged prints that have been "too bad to do anything with."** Torn corners, water stains, mold spots, tape marks—these look like dealbreakers but often aren't. Modern AI handles partial damage well, and even significantly damaged prints frequently yield usable restorations.
+
+For a detailed walkthrough of the process, see [How to Restore Old Photos for a Mother's Day Gift](/blog/restore-old-photos-mothers-day-gift). For gift presentation ideas beyond the photo itself, see [Mother's Day Gift Ideas: Photo Restoration](/blog/mothers-day-gift-ideas-photo-restoration).
 
 ## Step-by-Step: How to Do It Before Mother's Day
 
@@ -107,6 +109,8 @@ If you don't know the story, the restoration itself is a conversation starter. P
 **1 week out (May 4–9):** Order a digital download, print locally at a CVS, Walgreens, or Costco photo center—same day printing is available at most locations. Buy a frame at the same store. Done.
 
 **Day before/day of:** Print at a local photo center, or give the restoration digitally—show her on your phone, send it to her by text, or frame a screenshot if needed. A restored photo shown for the first time on Mother's Day is meaningful regardless of the medium.
+
+For guidance on which specific photos to start with—especially if you're working through your mom's collection—see [How to Restore Your Mom's Old Photos](/blog/restore-moms-old-photos).
 
 ## Multiple Photos: Building a Restoration Set
 
