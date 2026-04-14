@@ -154,25 +154,27 @@ export default function DodoCheckoutButton({
 
   if (error) {
     return (
-      <div className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 text-center">
-        <p className="text-sm font-medium text-red-700">
-          Sorry-DodoPayments is temporarily unavailable and your payment was not charged.
+      <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-center">
+        <p className="text-sm font-medium text-amber-800">
+          Payment processor temporarily unavailable. Your card was not charged.
         </p>
-        <p className="mt-1 text-xs text-red-600">Technical detail: {error}</p>
+        <p className="mt-1 text-xs text-amber-600">
+          Contact us and we&apos;ll send you a direct payment link within 24 hours.
+        </p>
         <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:justify-center">
           <button
             type="button"
-            onClick={handleRetryPayment}
+            onClick={handleManualCheckoutSupport}
             className="inline-flex items-center justify-center rounded-full bg-[#0071e3] px-4 py-2 text-sm font-medium text-white hover:bg-[#005bb5]"
           >
-            Retry Payment
+            Get a Payment Link
           </button>
           <button
             type="button"
-            onClick={handleManualCheckoutSupport}
+            onClick={handleRetryPayment}
             className="inline-flex items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-sm font-medium text-[#1d1d1f] hover:bg-[#f5f5f7]"
           >
-            Manual Checkout Support
+            Try Again
           </button>
         </div>
       </div>
