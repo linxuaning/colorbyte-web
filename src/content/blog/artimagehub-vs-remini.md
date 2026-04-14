@@ -199,6 +199,8 @@ I needed to process 100 photos. Speed matters.
 
 ## Round 5: Cost Reality Check
 
+> **April 2026 pricing update:** ArtImageHub has moved to a one-time $4.99 payment model — no subscription, no credits, no monthly fee. The tables below reflect the pricing at the time of testing. [Current pricing at ArtImageHub →](/old-photo-restoration)
+
 I'm paying out of pocket. Cost matters.
 
 ### Free Tier Comparison (What You Get for $0)
@@ -402,7 +404,7 @@ After 100 photos, I learned the best approach isn't picking one tool—it's comb
 
 ## What I'd Do Differently Next Time
 
-1. **Start with ArtImageHub Pro ($9) for one month** instead of spreading work over 15 days on free tier. My time is worth more than $9.
+1. **Start with ArtImageHub's one-time $4.99** instead of spreading work over free-tier limits. My time is worth more than $5.
 
 2. **Skip VanceAI and HitPaw entirely**. They weren't better than the top 3, just more expensive.
 
@@ -426,7 +428,7 @@ Compare the results on *your* photos. Family photos vary wildly—1940s formal p
 
 After testing 6 tools on 100 family photos:
 
-**Best overall for old photo restoration:** ArtImageHub ($9/month or free 3/day)
+**Best overall for old photo restoration:** ArtImageHub ($4.99 one-time — [see current pricing](/old-photo-restoration))
 **Best value for volume:** Remini ($4.99/month unlimited)
 **Best for historical photos:** MyHeritage ($99/year)
 **Best for disasters:** Adobe Photoshop ($54.99/month, but cancel after one month)
@@ -442,6 +444,13 @@ Worth every hour and dollar.
 
 
 ---
+
+## Related Comparisons
+
+- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — in-depth head-to-head on face enhancement and privacy
+- [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing for photo restoration
+- [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
+- [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs old photo restoration
 
 ## Related Articles
 
