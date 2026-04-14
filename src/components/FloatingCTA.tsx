@@ -50,6 +50,14 @@ export default function FloatingCTA({ landingPage }: FloatingCTAProps) {
   if (!isVisible) return null;
 
   const openTool = () => {
+    // If already on the restoration page, scroll to upload area instead of navigating
+    if (window.location.pathname === "/old-photo-restoration") {
+      const uploadEl = document.getElementById("upload");
+      if (uploadEl) {
+        uploadEl.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
     window.location.href = "/old-photo-restoration";
   };
 

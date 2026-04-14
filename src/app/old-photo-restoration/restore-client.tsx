@@ -130,6 +130,18 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       .catch(() => {});
   }, []);
 
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+
+  // Elapsed time counter during processing
+  useEffect(() => {
+    if (stage !== "uploading" && stage !== "processing") {
+      setElapsedSeconds(0);
+      return;
+    }
+    const interval = setInterval(() => setElapsedSeconds((s) => s + 1), 1000);
+    return () => clearInterval(interval);
+  }, [stage]);
+
   const processingStep = useMemo(() => {
     if (progress < 20) return "Analyzing photo damage...";
     if (progress < 40) return "Enhancing facial details...";
@@ -415,9 +427,15 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       {/* --- IDLE: Pay gate or upload area --- */}
       {stage === "idle" && (
         checkingAccess ? (
-          <div className="flex flex-col items-center gap-4 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-16 text-center">
-            <Loader2 className="h-6 w-6 animate-spin text-[#0071e3]" />
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Checking paid access...</p>
+          <div className="flex flex-col items-center gap-5 rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center min-h-[320px] justify-center">
+            {/* Skeleton layout matching the upload area to prevent CLS */}
+            <div className="h-16 w-16 rounded-2xl bg-[#d2d2d7]/40 animate-pulse" />
+            <div className="space-y-2 w-48">
+              <div className="h-5 rounded-full bg-[#d2d2d7]/40 animate-pulse" />
+              <div className="h-4 rounded-full bg-[#d2d2d7]/30 animate-pulse mx-4" />
+            </div>
+            <div className="h-11 w-56 rounded-full bg-[#d2d2d7]/40 animate-pulse" />
+            <p className="text-[13px] text-[#6e6e73]">Checking access...</p>
           </div>
         ) : !canUpload ? (
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
@@ -491,7 +509,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             onDragOver={(e) => e.preventDefault()}
             onDrop={onDrop}
             onClick={handleUploadClick}
-            className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-8 py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff]"
+            className="group flex flex-col items-center gap-5 rounded-2xl border-2 border-dashed border-[#d2d2d7] bg-[#f5f5f7] px-6 py-12 sm:px-8 sm:py-16 text-center cursor-pointer transition-all hover:border-[#0071e3]/40 hover:bg-[#f0f6ff] min-h-[280px] justify-center"
           >
             <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white border border-[#d2d2d7]/60 shadow-sm group-hover:border-[#0071e3]/30 group-hover:bg-[#f0f7ff] transition-all">
               <Upload className="h-7 w-7 text-[#6e6e73] group-hover:text-[#0071e3] transition-colors" />
@@ -551,27 +569,46 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
       {/* --- UPLOADING / PROCESSING --- */}
       {(stage === "uploading" || stage === "processing") && (
-        <div className="flex flex-col items-center gap-7 rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-12 text-center">
+        <div className="flex flex-col items-center gap-7 rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-8 sm:p-12 text-center">
           {preview && (
-            <img
-              src={preview}
-              alt="Uploaded photo being processed"
-              className="h-48 w-auto rounded-xl object-contain shadow-sm"
-              loading="lazy"
-            />
+            <div className="relative">
+              <img
+                src={preview}
+                alt="Uploaded photo being processed"
+                className="h-40 sm:h-48 w-auto rounded-xl object-contain shadow-sm"
+              />
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+            </div>
           )}
           <div className="w-full max-w-sm">
-            <div className="relative h-1.5 overflow-hidden rounded-full bg-[#d2d2d7]/60">
+            {/* Progress bar */}
+            <div className="relative h-2 overflow-hidden rounded-full bg-[#d2d2d7]/60">
               <div
                 className="h-full rounded-full bg-[#0071e3] transition-all duration-500"
-                style={{ width: `${progress}%` }}
+                style={{ width: `${Math.max(progress, stage === "uploading" ? 0 : 3)}%` }}
               />
+              {stage === "processing" && progress < 95 && (
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_1.5s_ease-in-out_infinite]" />
+              )}
             </div>
-            <p className="mt-3 text-[14px] font-medium text-[#1d1d1f]">
-              {stage === "processing" ? processingStep : (progressText || "Uploading...")}{progress > 0 && ` — ${progress}%`}
+
+            {/* Status text + elapsed time */}
+            <div className="mt-3 flex items-center justify-center gap-2">
+              <p className="text-[14px] font-medium text-[#1d1d1f]">
+                {stage === "processing" ? processingStep : (progressText || "Uploading...")}
+                {progress > 0 && ` — ${progress}%`}
+              </p>
+            </div>
+            <p className="mt-1 text-[12px] text-[#6e6e73] tabular-nums">
+              {elapsedSeconds > 0 && `${elapsedSeconds}s elapsed`}
+              {stage === "processing" && elapsedSeconds > 8 && progress < 5 && (
+                <span className="ml-1">· AI model warming up, almost ready</span>
+              )}
             </p>
+
+            {/* Step checklist */}
             {stage === "processing" && (
-              <div className="mt-4 space-y-1.5">
+              <div className="mt-5 space-y-2">
                 {[
                   { label: "Analyzing damage", threshold: 0 },
                   { label: "Restoring fine details", threshold: 25 },
@@ -581,29 +618,39 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                   const done = progress >= (arr[i + 1]?.threshold ?? 101);
                   const active = !done && progress >= step.threshold;
                   return (
-                    <div key={step.label} className="flex items-center gap-2">
-                      <div className={`h-4 w-4 flex-shrink-0 rounded-full border flex items-center justify-center ${done ? "bg-green-500 border-green-500" : active ? "border-[#0071e3]" : "border-[#d2d2d7]"}`}>
-                        {done && <Check className="h-2.5 w-2.5 text-white" />}
-                        {active && <div className="h-1.5 w-1.5 rounded-full bg-[#0071e3]" />}
+                    <div key={step.label} className="flex items-center gap-2.5">
+                      <div className={`h-5 w-5 flex-shrink-0 rounded-full border flex items-center justify-center transition-all ${done ? "bg-green-500 border-green-500" : active ? "border-[#0071e3] bg-[#0071e3]/5" : "border-[#d2d2d7]"}`}>
+                        {done && <Check className="h-3 w-3 text-white" />}
+                        {active && <div className="h-2 w-2 rounded-full bg-[#0071e3] animate-pulse" />}
                       </div>
-                      <span className={`text-[12px] ${done ? "text-green-600" : active ? "text-[#1d1d1f] font-medium" : "text-[#6e6e73]"}`}>
+                      <span className={`text-[13px] ${done ? "text-green-600 font-medium" : active ? "text-[#1d1d1f] font-medium" : "text-[#6e6e73]"}`}>
                         {step.label}
+                        {active && <Loader2 className="inline ml-1.5 h-3 w-3 animate-spin text-[#0071e3]" />}
                       </span>
                     </div>
                   );
                 })}
-                <p className="mt-2 text-[11px] text-[#6e6e73]">
-                  Usually 30–90 seconds{progress < 20 ? " — first request may take a bit longer while the AI warms up" : ""}.
+              </div>
+            )}
+
+            {/* Reassurance messaging */}
+            {stage === "processing" && (
+              <div className="mt-5 rounded-xl bg-white border border-[#d2d2d7]/40 px-4 py-3">
+                <p className="text-[12px] text-[#6e6e73] leading-[1.5]">
+                  {elapsedSeconds < 15
+                    ? "AI is analyzing your photo's unique damage patterns..."
+                    : elapsedSeconds < 30
+                    ? "Face enhancement models are reconstructing fine details — eyebrows, skin texture, and expressions."
+                    : elapsedSeconds < 60
+                    ? "Super-resolution is sharpening your photo for print-quality output."
+                    : "Complex restoration taking a bit longer — hang tight, your result is coming."}
+                </p>
+                <p className="mt-1.5 text-[11px] text-[#6e6e73]/70">
+                  Please keep this tab open · Your photo is being processed securely
                 </p>
               </div>
             )}
-            {stage === "processing" && (
-              <p className="text-[13px] text-[#6e6e73] text-center mt-2">
-                Usually 30–90 seconds · Please keep this tab open
-              </p>
-            )}
           </div>
-          <Loader2 className="h-5 w-5 animate-spin text-[#6e6e73]" />
         </div>
       )}
 
@@ -774,7 +821,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             {isHighUsageError ? (
               <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
                 Sorry!{" "}
-                <a href="https://www.artimagehub.com/" className="text-[#0071e3] underline" target="_blank" rel="noreferrer">
+                <a href="https://artimagehub.com/" className="text-[#0071e3] underline" target="_blank" rel="noreferrer">
                   the website
                 </a>{" "}
                 has been experiencing high usage lately. I&apos;m trying to resolve the issue. Could you send me the image? (
