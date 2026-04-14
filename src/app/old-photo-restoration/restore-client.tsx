@@ -628,6 +628,22 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             ))}
           </div>
 
+          {/* Share prompt */}
+          <div className="text-center">
+            <p className="mb-2 text-[13px] text-[#6e6e73]">Happy with the result? Share it.</p>
+            <a
+              href={`https://x.com/intent/tweet?text=${encodeURIComponent("Just restored this old family photo with AI ✨ Free to try at artimagehub.com — you upload, it restores, you decide if it's worth $4.99 to download.")}&url=${encodeURIComponent("https://artimagehub.com/old-photo-restoration")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-[13px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
+            >
+              <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.635 5.903-5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              Share on X
+            </a>
+          </div>
+
           {/* Download Options Card */}
           <div className="mx-auto max-w-md rounded-2xl border border-[#d2d2d7]/50 bg-[#f5f5f7] p-7">
             <h3 className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.06em] text-[#6e6e73]">
