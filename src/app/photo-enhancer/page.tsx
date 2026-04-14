@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Enhancer — Sharpen Faces & Upscale 4x Online (2026)",
+  title: "Free AI Photo Enhancer — Sharpen Faces & Upscale 4x (No Signup)",
   description:
-    "Enhance blurry or low-quality photos with AI. Face sharpening, 4x upscaling, noise reduction in 30 seconds. $4.99 one-time — no subscription, no watermark.",
+    "Upload a blurry photo, AI sharpens faces and upscales 4x in 30 seconds — try free, no signup. See the enhanced result first, then download HD for $4.99. No subscription.",
   alternates: { canonical: "/photo-enhancer" },
   keywords: [
     "AI photo enhancer",

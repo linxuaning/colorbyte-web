@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "Unblur Photo Free Online — AI Sharpens in 30 Seconds (2026)",
+  title: "Free AI Unblur Photo — Fix Blurry Images in 30 Seconds (No Signup)",
   description:
-    "Unblur any photo with AI. Sharpens faces, fixes camera shake, rescues out-of-focus shots. See the sharp result free — HD download $4.99. No app install needed.",
+    "Upload a blurry photo, AI sharpens it in 30 seconds — try free, no signup needed. Fixes camera shake, out-of-focus, and motion blur. HD download $4.99 one-time.",
   alternates: { canonical: "/unblur-photo" },
   keywords: [
     "unblur photo",

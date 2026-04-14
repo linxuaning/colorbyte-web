@@ -5,9 +5,9 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "Old Photo Restoration Online Free — AI Restores in 30 Seconds (2026)",
+  title: "Free AI Photo Restoration — See Your Result Before Paying (No Signup)",
   description:
-    "Upload your old photo, see the AI result free. Fixes scratches, fading, blur, water damage. 12,400+ photos restored, 4.8★ rated. HD download $4.99, no subscription.",
+    "Upload any old or damaged photo, AI restores it in 90 seconds — try free, no signup. See the result first, then download HD for $4.99. Fixes scratches, fading, blur, and water damage.",
   alternates: { canonical: "/old-photo-restoration" },
   keywords: ["old photo restoration", "restore old photos online", "photo restoration AI", "fix damaged photos", "photo enhancer online"],
   openGraph: {

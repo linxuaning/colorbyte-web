@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
-  title: "Photo Colorizer — AI Adds Realistic Color to B&W Photos (2026)",
+  title: "Free AI Photo Colorizer — Turn B&W Photos to Color in 30 Seconds",
   description:
-    "Turn black and white photos into vivid color with AI. Trained on millions of images for accurate skin, sky, and fabric tones. $4.99 one-time — results in 30 seconds.",
+    "Upload a black and white photo, see it in full color instantly — free preview, no signup. AI renders realistic skin, sky, and fabric tones. HD download $4.99 one-time.",
   alternates: { canonical: "/photo-colorizer" },
   keywords: [
     "photo colorizer",
