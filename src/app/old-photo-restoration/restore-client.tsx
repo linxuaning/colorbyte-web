@@ -67,6 +67,8 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
   const [processingCount, setProcessingCount] = useState<number | null>(null);
+  const [backendReady, setBackendReady] = useState(false);
+  const [warmupSeconds, setWarmupSeconds] = useState(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -150,7 +152,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     return "Finalizing output...";
   }, [progress]);
 
-  // Check subscription status on mount
+  // Warmup timer — ticks while waiting for backend during cold start
+  useEffect(() => {
+    if (backendReady || !checkingAccess) return;
+    const interval = setInterval(() => setWarmupSeconds((s) => s + 1), 1000);
+    return () => clearInterval(interval);
+  }, [backendReady, checkingAccess]);
+
+  // Check subscription status on mount (also serves as backend warmup)
   useEffect(() => {
     if (!API_BASE) {
       setErrorMsg("Missing NEXT_PUBLIC_API_URL. Upload and payment are unavailable.");
@@ -162,6 +171,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
 
     if (!email) {
+      // No saved email — user hasn't paid. Fire a /health ping to pre-warm
+      // the backend so upload is fast after they pay and return.
+      fetch(`${API_BASE}/health`)
+        .then(() => setBackendReady(true))
+        .catch(() => {});
       setCheckingAccess(false);
       return;
     }
@@ -172,8 +186,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         if (data.is_active) {
           setIsSubscriber(true);
         }
+        setBackendReady(true);
       })
-      .catch(() => {})
+      .catch(() => {
+        // Backend might be cold-starting — retry with /health as fallback
+        fetch(`${API_BASE}/health`)
+          .then(() => setBackendReady(true))
+          .catch(() => {});
+      })
       .finally(() => {
         setCheckingAccess(false);
       });
@@ -253,18 +273,23 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         );
 
         // Upload with retry (3 attempts, exponential backoff)
+        // 90s timeout accounts for Render free-tier cold start (~30s) + upload time
         let lastError: Error | null = null;
-        const delays = [0, 1000, 2000];
+        const delays = [0, 2000, 4000];
         for (let attempt = 0; attempt < 3; attempt++) {
           if (attempt > 0) {
             setProgressText(`Retrying upload (${attempt + 1}/3)...`);
             await new Promise((r) => setTimeout(r, delays[attempt]));
           }
           try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 90_000);
             const res = await fetch(`${API_BASE}/api/upload`, {
               method: "POST",
               body: form,
+              signal: controller.signal,
             });
+            clearTimeout(timeoutId);
 
             if (!res.ok) {
               const data = await res.json().catch(() => null);
@@ -283,6 +308,10 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             lastError = null;
             break;
           } catch (err) {
+            if (err instanceof DOMException && err.name === "AbortError") {
+              lastError = new Error("Upload timed out — the server may be starting up. Please try again in a moment.");
+              break; // Don't retry on timeout
+            }
             lastError = err instanceof Error ? err : new Error("Upload failed");
           }
         }
@@ -435,7 +464,16 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               <div className="h-4 rounded-full bg-[#d2d2d7]/30 animate-pulse mx-4" />
             </div>
             <div className="h-11 w-56 rounded-full bg-[#d2d2d7]/40 animate-pulse" />
-            <p className="text-[13px] text-[#6e6e73]">Checking access...</p>
+            <p className="text-[13px] text-[#6e6e73]">
+              {warmupSeconds > 5
+                ? "Waking up our AI server — this only takes a moment..."
+                : "Checking access..."}
+            </p>
+            {warmupSeconds > 10 && (
+              <p className="text-[11px] text-[#6e6e73]/70">
+                Server is warming up ({warmupSeconds}s) — almost there
+              </p>
+            )}
           </div>
         ) : !canUpload ? (
           <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
@@ -587,7 +625,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                 className="h-full rounded-full bg-[#0071e3] transition-all duration-500"
                 style={{ width: `${Math.max(progress, stage === "uploading" ? 0 : 3)}%` }}
               />
-              {stage === "processing" && progress < 95 && (
+              {(stage === "uploading" || (stage === "processing" && progress < 95)) && (
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-[shimmer_1.5s_ease-in-out_infinite]" />
               )}
             </div>
@@ -601,6 +639,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             </div>
             <p className="mt-1 text-[12px] text-[#6e6e73] tabular-nums">
               {elapsedSeconds > 0 && `${elapsedSeconds}s elapsed`}
+              {stage === "uploading" && elapsedSeconds > 10 && (
+                <span className="ml-1">· Server waking up, please wait</span>
+              )}
               {stage === "processing" && elapsedSeconds > 8 && progress < 5 && (
                 <span className="ml-1">· AI model warming up, almost ready</span>
               )}
