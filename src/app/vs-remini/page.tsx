@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "ArtImageHub vs Remini (2026): Which Photo Restoration Tool Is Better?",
+  title: "ArtImageHub vs Remini — Full Photo Restore, Not Just Faces (2026)",
   description:
-    "Direct comparison of ArtImageHub vs Remini across quality, pricing, speed, and use cases. See which tool is better for restoring old family photos in 2026.",
+    "Remini sharpens faces; ArtImageHub restores the entire photo — scratches, fading, tears. $4.99 one-time vs $9.99/mo subscription. Side-by-side results compared.",
   alternates: { canonical: "/vs-remini" },
   openGraph: {
     title: "ArtImageHub vs Remini (2026)",
@@ -61,7 +61,7 @@ const articleSchema = {
   datePublished: "2026-03-04",
   dateModified: "2026-03-04",
   author: { "@type": "Organization", name: "ArtImageHub" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.artimagehub.com/vs-remini" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://artimagehub.com/vs-remini" },
 };
 
 export default function VsReminiPage() {

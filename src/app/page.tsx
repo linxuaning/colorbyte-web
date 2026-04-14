@@ -7,8 +7,8 @@ import TodayStats from "@/components/TodayStats";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
-  description: "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
+  title: "ArtImageHub — Restore Old Photos with AI in 30 Seconds (Free Preview)",
+  description: "12,400+ photos restored. AI fixes scratches, fading, blur, and colorizes B&W photos. See your result free — download HD for $4.99. No subscription, no signup.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -35,7 +35,7 @@ const softwareAppSchema = {
   name: "ArtImageHub AI Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/old-photo-restoration",
+  url: "https://artimagehub.com/old-photo-restoration",
   description:
     "AI-powered photo restoration tool that fixes damaged photos, enhances faces, increases resolution up to 4×, and colorizes black & white images after payment unlocks upload and processing access on this email.",
   offers: {

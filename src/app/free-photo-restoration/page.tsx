@@ -5,8 +5,8 @@ import FloatingCTA from '@/components/FloatingCTA';
 import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
-  title: 'Free Photo Restoration | Restore Old Photos Online Free - No Signup',
-  description: 'Free photo restoration online starts with a preview. Restore old, damaged, faded photos with AI, see the result in 30 seconds, then unlock the original-quality download for $4.99.',
+  title: 'Free Photo Restoration Online — See AI Results Before Paying (2026)',
+  description: 'Free photo restoration preview: upload any old photo, AI restores it in 30 seconds. No signup, no credit card for preview. HD download $4.99 if you like the result.',
   keywords: [
     'free photo restoration',
     'photo restoration free',

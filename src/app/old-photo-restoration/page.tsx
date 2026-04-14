@@ -5,9 +5,9 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "Old Photo Restoration Online | Restore Family Photos with AI | ArtImageHub",
+  title: "Old Photo Restoration Online Free — AI Restores in 30 Seconds (2026)",
   description:
-    "Restore old, damaged, or faded family photos with AI. Fix scratches, fading, blur, and water damage. HD original download for $4.99. Results in 30–90 seconds.",
+    "Upload your old photo, see the AI result free. Fixes scratches, fading, blur, water damage. 12,400+ photos restored, 4.8★ rated. HD download $4.99, no subscription.",
   alternates: { canonical: "/old-photo-restoration" },
   keywords: ["old photo restoration", "restore old photos online", "photo restoration AI", "fix damaged photos", "photo enhancer online"],
   openGraph: {
@@ -37,7 +37,7 @@ const howToSchema = {
       position: 1,
       name: "Pay once to unlock access",
       text: "One-time $4.99 payment unlocks upload and processing access. No subscription. Secure PayPal checkout.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -56,7 +56,7 @@ const howToSchema = {
       position: 4,
       name: "Download your HD restored photo",
       text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your restored memory.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };

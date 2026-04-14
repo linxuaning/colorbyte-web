@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Enhance Old Photos Free | AI Old Photo Enhancer Online",
+  title: "Enhance Old Photos Free — AI Sharpens Faces & Upscales 4x (2026)",
   description:
-    "Enhance old photos with AI. Improve quality of vintage pictures, sharpen faded photographs, and start with a free preview. Unlock the original-quality download for $4.99.",
+    "AI enhances old photos in 30 seconds: sharpens blurry faces, upscales to 4x resolution, fixes fading. Preview free. HD download $4.99 one-time. No subscription.",
   alternates: { canonical: "/enhance-old-photos" },
   keywords: [
     "enhance old photos",
@@ -55,7 +55,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your old photo",
       text: "Click upload or drag and drop your old photograph. Works with scanned prints, faded pictures, vintage photos from any era. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -74,7 +74,7 @@ const howToSchema = {
       position: 4,
       name: "Download your enhanced photo",
       text: "Preview the before/after comparison first. When you want the original-quality enhanced photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -132,7 +132,7 @@ const softwareSchema = {
   name: "ArtImageHub Old Photo Enhancer",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/enhance-old-photos",
+  url: "https://artimagehub.com/enhance-old-photos",
   description:
     "AI old photo enhancer that improves quality of vintage photographs. Sharpen faded pictures, enhance faces, and preview the result before unlocking the original-quality download for $4.99.",
   offers: {

@@ -5,9 +5,9 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "Restore Damaged Photos Online | AI Repair for Scratches, Fading & Tears | ArtImageHub",
+  title: "Restore Damaged Photos Online — AI Fixes Scratches & Tears (2026)",
   description:
-    "Restore damaged photos with AI in under 60 seconds. Fix scratches, tears, fading, water damage, and blurry faces. No Photoshop skills needed. Upload and get results instantly.",
+    "Upload a damaged photo, AI repairs scratches, tears, fading, and water damage in 30 seconds. 12,400+ photos restored. $4.99 one-time — no Photoshop needed.",
   alternates: { canonical: "/restore-damaged-photos" },
   keywords: [
     "restore damaged photos",
@@ -48,7 +48,7 @@ const howToSchema = {
       position: 1,
       name: "Unlock access",
       text: "Complete a one-time payment to activate upload and processing access on your email.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -67,7 +67,7 @@ const howToSchema = {
       position: 4,
       name: "Download the restored photo",
       text: "Your paid email unlocks the full-resolution, restored download. Print-ready results at the same dimensions as your original.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };

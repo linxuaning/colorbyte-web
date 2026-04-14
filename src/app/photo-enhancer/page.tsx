@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
+  title: "AI Photo Enhancer — Sharpen Faces & Upscale 4x Online (2026)",
   description:
-    "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
+    "Enhance blurry or low-quality photos with AI. Face sharpening, 4x upscaling, noise reduction in 30 seconds. $4.99 one-time — no subscription, no watermark.",
   alternates: { canonical: "/photo-enhancer" },
   keywords: [
     "AI photo enhancer",
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 1,
       name: "Unlock enhancement access",
       text: "One-time $4.99 payment unlocks upload and enhancement access on your email. No subscription.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -72,7 +72,7 @@ const howToSchema = {
       position: 4,
       name: "Download if processing succeeds",
       text: "Your paid email unlocks the HD enhanced download. Compare before/after and save your improved photo.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -95,7 +95,7 @@ const softwareSchema = {
   name: "ArtImageHub AI Photo Enhancer",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/photo-enhancer",
+  url: "https://artimagehub.com/photo-enhancer",
   description: "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
   offers: {
     "@type": "Offer",

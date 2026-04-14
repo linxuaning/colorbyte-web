@@ -3,9 +3,9 @@ import Link from "next/link";
 import ColorizeClient from "../photo-colorizer/colorize-client";
 
 export const metadata: Metadata = {
-  title: "Colorize Black and White Photos Free Online | AI Photo Colorizer",
+  title: "Colorize Black and White Photos Free — AI Adds Realistic Color (2026)",
   description:
-    "Colorize black and white photos online with AI. Start with a free preview, then unlock the original-quality colorized download for $4.99. No subscription.",
+    "Turn B&W photos to color in 30 seconds with AI. Realistic skin tones, period-accurate colors. Preview the colorized result free. HD download $4.99. No signup.",
   alternates: { canonical: "/colorize-photos-free" },
   keywords: [
     "colorize black and white photos free",
@@ -53,7 +53,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your black and white photo",
       text: "Click the upload area or drag and drop your black and white photo. Supports JPG, PNG, WEBP up to 20MB. No account needed.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -72,7 +72,7 @@ const howToSchema = {
       position: 4,
       name: "Download your colorized photo free",
       text: "Preview the before/after comparison first. If you want the clean original-quality colorized photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.jpg",
+      image: "https://artimagehub.com/blog/after-1.jpg",
     },
   ],
 };
@@ -130,7 +130,7 @@ const softwareSchema = {
   name: "ArtImageHub Free Photo Colorizer",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/colorize-photos-free",
+  url: "https://artimagehub.com/colorize-photos-free",
   description:
     "AI photo colorizer that lets you preview black and white photos in color first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {

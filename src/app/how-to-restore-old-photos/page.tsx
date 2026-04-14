@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Restore Old Photos in 2026: Complete Guide (Free + Paid Methods)",
+  title: "How to Restore Old Photos — 3 Methods Compared, AI Wins (2026)",
   description:
-    "Learn how to restore old photos using AI, Photoshop, or professional services. Step-by-step guide with examples. Preview first, then unlock the original-quality download for $4.99.",
+    "Step-by-step guide: restore old photos with AI in 30 seconds, Photoshop, or pro services. 12,400+ photos restored. Upload free, download from $4.99 — no subscription.",
   alternates: { canonical: "/how-to-restore-old-photos" },
   keywords: [
     "how to restore old photos",
@@ -54,7 +54,7 @@ const howToSchema = {
       position: 1,
       name: "Scan or photograph your old photo",
       text: "Use a flatbed scanner at 600 DPI or higher for best results. If no scanner available, photograph the photo in even lighting with a smartphone camera. Save as high-quality JPG or PNG.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -73,7 +73,7 @@ const howToSchema = {
       position: 4,
       name: "Download and save your restored photo",
       text: "Compare the before and after result. Download the restored photo in high resolution. Always keep both the original scan and the restored version.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -84,26 +84,26 @@ const articleSchema = {
   headline: "How to Restore Old Photos in 2026: Complete Guide (Free + Paid Methods)",
   description:
     "Comprehensive guide covering AI restoration, Photoshop methods, and professional services for restoring old photos.",
-  image: "https://www.artimagehub.com/blog/before-after-examples.webp",
+  image: "https://artimagehub.com/blog/before-after-examples.webp",
   datePublished: "2026-02-23",
   dateModified: "2026-02-23",
   author: {
     "@type": "Organization",
     name: "ArtImageHub",
-    url: "https://www.artimagehub.com",
+    url: "https://artimagehub.com",
   },
   publisher: {
     "@type": "Organization",
     name: "ArtImageHub",
-    url: "https://www.artimagehub.com",
+    url: "https://artimagehub.com",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.artimagehub.com/favicon.ico",
+      url: "https://artimagehub.com/favicon.ico",
     },
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://www.artimagehub.com/how-to-restore-old-photos",
+    "@id": "https://artimagehub.com/how-to-restore-old-photos",
   },
 };
 

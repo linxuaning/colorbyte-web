@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Restore Old Family Photos Free Online | AI Photo Restoration",
+  title: "Restore Old Family Photos Free Online — AI Results in 30 Seconds",
   description:
-    "Restore old family photos with AI. Fix faded grandparent photos, repair damaged family pictures, and start with a free preview. Unlock the original-quality download for $4.99.",
+    "Restore grandparent photos, wedding portraits, and faded family pictures with AI. See the restored result free before paying. HD download $4.99. No subscription needed.",
   alternates: { canonical: "/restore-old-family-photos" },
   keywords: [
     "restore old family photos",
@@ -54,7 +54,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your old family photo",
       text: "Click the upload area or drag and drop your old family photo. Works with scanned prints, faded photographs, and damaged family pictures. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -73,7 +73,7 @@ const howToSchema = {
       position: 4,
       name: "Download your restored family photo",
       text: "Preview the before/after comparison first. When you want the original-quality restored family photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -131,7 +131,7 @@ const softwareSchema = {
   name: "ArtImageHub Family Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/restore-old-family-photos",
+  url: "https://artimagehub.com/restore-old-family-photos",
   description:
     "AI-powered tool to restore old family photos. Fix faded grandparent photos, repair damaged family pictures, and preview the result before unlocking the original-quality download for $4.99.",
   offers: {

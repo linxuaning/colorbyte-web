@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Upscaler Free | Upscale Image to 4K Online",
+  title: "AI Photo Upscaler Free — Upscale to 4K in Seconds (2026)",
   description:
-    "AI photo upscaler to enlarge images to 4K online. Start with a free preview, then unlock the original-quality 4x download for $4.99.",
+    "Upscale photos to 4x resolution with AI. Enlarge small images to 4K without losing quality. Preview free, HD download $4.99. Works on old photos, portraits, landscapes.",
   alternates: { canonical: "/ai-photo-upscaler" },
   keywords: [
     "AI photo upscaler",
@@ -55,7 +55,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your photo to upscale",
       text: "Click upload or drag and drop your photo. Works with any image: low-resolution photos, small thumbnails, old scans, or compressed images. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -74,7 +74,7 @@ const howToSchema = {
       position: 4,
       name: "Download your 4K upscaled photo",
       text: "Preview the before/after comparison first. When you want the original-quality 4x upscaled photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -132,7 +132,7 @@ const softwareSchema = {
   name: "ArtImageHub AI Photo Upscaler",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/ai-photo-upscaler",
+  url: "https://artimagehub.com/ai-photo-upscaler",
   description:
     "AI photo upscaler that enlarges images to 4K without losing quality. Preview the result first, then unlock the original-quality 4x download for $4.99.",
   offers: {

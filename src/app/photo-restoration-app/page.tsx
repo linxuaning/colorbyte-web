@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Photo Restoration App: Best AI Tools Compared (2026 Guide)",
+  title: "Best Photo Restoration App — iOS, Android & Web Compared (2026)",
   description:
-    "Compare the best photo restoration apps for iOS and Android. AI-powered tools to fix damaged, faded, and old photos with pricing, workflow, and results compared. Updated 2026.",
+    "Compare 7 photo restoration apps: ArtImageHub (web, $4.99 one-time), Remini (mobile, $9.99/mo), VanceAI, and more. Real results on the same damaged photo.",
   alternates: { canonical: "/photo-restoration-app" },
   keywords: [
     "photo restoration app",
@@ -34,15 +34,15 @@ const articleSchema = {
   "@type": "Article",
   headline: "Photo Restoration App: Best AI Tools Compared (2026 Guide)",
   description: "Comprehensive comparison of the best photo restoration apps for mobile and web in 2026.",
-  image: "https://www.artimagehub.com/blog/before-after-examples.jpg",
+  image: "https://artimagehub.com/blog/before-after-examples.jpg",
   datePublished: "2026-02-23",
   dateModified: "2026-02-23",
-  author: { "@type": "Organization", name: "ArtImageHub", url: "https://www.artimagehub.com" },
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   publisher: {
     "@type": "Organization",
     name: "ArtImageHub",
-    url: "https://www.artimagehub.com",
-    logo: { "@type": "ImageObject", url: "https://www.artimagehub.com/favicon.ico" },
+    url: "https://artimagehub.com",
+    logo: { "@type": "ImageObject", url: "https://artimagehub.com/favicon.ico" },
   },
 };
 

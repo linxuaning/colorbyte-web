@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Photo Restoration Near Me: Find Local & Online Services (2026)',
-  description: 'Looking for photo restoration near you? Compare local shops vs online AI restoration. Preview first online, then unlock the original-quality download for $4.99.',
+  title: 'Photo Restoration Near Me — Save 80% vs Local Shops (2026)',
+  description: 'Skip the $75–$200 local photo restoration quote. AI restores old photos in 30 seconds online — same quality, $4.99 one-time. 12,400+ photos restored. No appointment needed.',
   keywords: 'photo restoration near me, photo restoration services, local photo restoration, old photo repair near me, vintage photo restoration',
   openGraph: {
     title: 'Photo Restoration Near Me: Local vs Online Comparison',
@@ -452,7 +452,7 @@ export default function PhotoRestorationNearMePage() {
             '@type': 'LocalBusiness',
             name: 'Photo Restoration Services',
             description: 'Find local and online photo restoration services. Compare costs, quality, and turnaround times.',
-            url: 'https://www.artimagehub.com/photo-restoration-near-me',
+            url: 'https://artimagehub.com/photo-restoration-near-me',
           }),
         }}
       />

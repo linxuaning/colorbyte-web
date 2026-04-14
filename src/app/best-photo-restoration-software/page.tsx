@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '10 Best Photo Restoration Software in 2026 (Tested & Compared)',
-  description: 'We tested 10 photo restoration tools. Compare features, pricing, and results. See which software is best for your needs. ArtImageHub rated #1 for value.',
+  title: '10 Best Photo Restoration Software — Tested & Ranked (2026)',
+  description: 'We tested 10 photo restoration tools on the same damaged photo. ArtImageHub rated #1 for value ($4.99 one-time). Full comparison: features, pricing, and real results.',
   alternates: { canonical: '/best-photo-restoration-software' },
   keywords: [
     'best photo restoration software',

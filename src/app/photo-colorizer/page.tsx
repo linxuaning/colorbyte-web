@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
-  title: "Photo Colorizer | Colorize Black and White Photos with AI | ArtImageHub",
+  title: "Photo Colorizer — AI Adds Realistic Color to B&W Photos (2026)",
   description:
-    "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
+    "Turn black and white photos into vivid color with AI. Trained on millions of images for accurate skin, sky, and fabric tones. $4.99 one-time — results in 30 seconds.",
   alternates: { canonical: "/photo-colorizer" },
   keywords: [
     "photo colorizer",
@@ -52,7 +52,7 @@ const howToSchema = {
       position: 1,
       name: "Unlock colorization access",
       text: "One-time $4.99 payment unlocks upload and colorization access on your email. No subscription.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -71,7 +71,7 @@ const howToSchema = {
       position: 4,
       name: "Download if processing succeeds",
       text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your colorized photo.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -94,7 +94,7 @@ const softwareSchema = {
   name: "ArtImageHub AI Photo Colorizer",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/photo-colorizer",
+  url: "https://artimagehub.com/photo-colorizer",
   description: "Colorize black and white photos with AI. One-time $4.99 payment unlocks upload and colorization access. Results in 30–90 seconds.",
   offers: {
     "@type": "Offer",

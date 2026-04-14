@@ -5,8 +5,8 @@ import FloatingCTA from '@/components/FloatingCTA';
 import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
-  title: 'Fix Blurry Photos Online Free | AI Photo Deblur in Seconds',
-  description: 'Fix blurry photos instantly with AI. Sharpen out-of-focus images, enhance faces, and start with a free preview. Unlock the original-quality download for $4.99.',
+  title: 'Fix Blurry Photos Online Free — AI Sharpens Faces & Details (2026)',
+  description: 'Fix blurry photos in 30 seconds with AI. Sharpens out-of-focus faces, fixes camera shake, enhances detail. See the result free — HD download $4.99. No signup.',
   keywords: [
     'fix blurry photos',
     'fix blurry pictures',

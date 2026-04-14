@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Fix Water Damaged Photos Free | AI Photo Water Damage Repair",
+  title: "Fix Water Damaged Photos — AI Removes Stains & Restores (2026)",
   description:
-    "Fix water damaged photos with AI. Preview the repair first, then unlock the original-quality download for $4.99. No subscription.",
+    "AI repairs water-damaged, flood-soaked, and stained photos. Removes watermarks, fixes discoloration, restores detail. Preview free, HD download $4.99.",
   alternates: { canonical: "/fix-water-damaged-photos" },
   keywords: [
     "fix water damaged photos",
@@ -56,7 +56,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your water damaged photo",
       text: "Click upload or drag and drop your water damaged photograph. Works with flood damaged photos, pictures with water stains, and moisture affected prints. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -75,7 +75,7 @@ const howToSchema = {
       position: 4,
       name: "Download your restored photo",
       text: "Preview the before/after comparison showing the water damage repair first. If you want the clean original-quality restored photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -133,7 +133,7 @@ const softwareSchema = {
   name: "ArtImageHub Water Damage Photo Repair",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/fix-water-damaged-photos",
+  url: "https://artimagehub.com/fix-water-damaged-photos",
   description:
     "AI-powered water damage photo repair that lets you preview the repair first, then unlock the original-quality download for $4.99 when you want to keep it.",
   offers: {

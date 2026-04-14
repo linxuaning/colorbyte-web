@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "Unblur Photo Free Online | AI Fix Blurry Photos Instantly",
+  title: "Unblur Photo Free Online — AI Sharpens in 30 Seconds (2026)",
   description:
-    "Unblur photos online with AI. Fix blurry pictures, sharpen images, and start with a free preview. Unlock the original-quality download for $4.99.",
+    "Unblur any photo with AI. Sharpens faces, fixes camera shake, rescues out-of-focus shots. See the sharp result free — HD download $4.99. No app install needed.",
   alternates: { canonical: "/unblur-photo" },
   keywords: [
     "unblur photo",
@@ -54,7 +54,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your blurry photo",
       text: "Click the upload area or drag and drop your blurry photo. Works with any image: selfies, old photos, screenshots, or any blurry picture. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -73,7 +73,7 @@ const howToSchema = {
       position: 4,
       name: "Download your clear photo",
       text: "Preview the before/after comparison first. When you want the original-quality unblurred photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -131,7 +131,7 @@ const softwareSchema = {
   name: "ArtImageHub Photo Unblur Tool",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/unblur-photo",
+  url: "https://artimagehub.com/unblur-photo",
   description:
     "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. Start with a free preview, then unlock the original-quality download for $4.99.",
   offers: {

@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Remove Scratches from Photos Free | AI Photo Scratch Remover",
+  title: "Remove Scratches from Photos Free — AI Repair in 30 Seconds",
   description:
-    "Remove scratches from old photos with AI. Fix scratched pictures, repair damaged photographs, and start with a free preview. Unlock the original-quality download for $4.99.",
+    "AI removes scratches, creases, and tears from old photos automatically. Upload a scan, see the clean result free. HD download $4.99. No Photoshop skills needed.",
   alternates: { canonical: "/remove-scratches-from-photos" },
   keywords: [
     "remove scratches from photos",
@@ -54,7 +54,7 @@ const howToSchema = {
       position: 1,
       name: "Upload your scratched photo",
       text: "Click the upload area or drag and drop your scratched photograph. Works with scanned prints, old photos with surface damage, and vintage pictures with scratches. Supports JPG, PNG, WEBP up to 20MB.",
-      image: "https://www.artimagehub.com/blog/before-1.jpg",
+      image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
@@ -73,7 +73,7 @@ const howToSchema = {
       position: 4,
       name: "Download your scratch-free photo",
       text: "Preview the before/after comparison first. When you want the original-quality repaired photo, unlock the download for $4.99.",
-      image: "https://www.artimagehub.com/blog/after-1.webp",
+      image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
 };
@@ -131,7 +131,7 @@ const softwareSchema = {
   name: "ArtImageHub Photo Scratch Remover",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
-  url: "https://www.artimagehub.com/remove-scratches-from-photos",
+  url: "https://artimagehub.com/remove-scratches-from-photos",
   description:
     "AI-powered photo scratch remover. Remove scratches from old photos, fix damaged pictures, and preview the repaired result before unlocking the original-quality download for $4.99.",
   offers: {
