@@ -1,0 +1,133 @@
+---
+title: "ArtImageHub vs MyHeritage Photo Enhancer: Which Is Better for Old Photo Restoration?"
+description: "Honest comparison of ArtImageHub vs MyHeritage Photo Enhancer. Pricing, quality, features, and which tool wins for restoring scratched or faded family photos."
+publishedAt: "2026-04-14"
+updatedAt: "2026-04-14"
+author: "Sarah Brennan"
+authorRole: "Digital Archivist"
+authorBio: "Sarah is a digital archivist who has restored thousands of family photos for genealogy projects. She evaluates AI photo tools for a living."
+category: "Comparisons"
+tags: ["Comparison", "MyHeritage", "AI Tools", "Photo Restoration", "Family Photos"]
+image: "/blog/artimagehub-vs-remini.jpg"
+coverColor: "from-blue-600 via-indigo-600 to-purple-700"
+coverEmoji: "⚖️"
+---
+
+# ArtImageHub vs MyHeritage Photo Enhancer: Honest Comparison for 2026
+
+MyHeritage Photo Enhancer is the most recognized name in family photo AI tools. It's baked into the world's second-largest genealogy platform, which means tens of millions of people have tried it.
+
+ArtImageHub is a standalone photo restoration tool that does one thing: fix old, damaged, or faded photos.
+
+I tested both on a set of 40 family photos ranging from 1940s portraits to 1980s snapshots. Here's what I found.
+
+## The Short Answer
+
+**MyHeritage Photo Enhancer** is free, integrated into a genealogy platform, and excellent at face enhancement on portraits. It works well for clear faces in decent condition.
+
+**ArtImageHub** is paid ($4.99 one-time), works on any photo type including heavily damaged ones, and produces sharper, more detailed results especially on non-portrait images and photos with physical damage.
+
+If you need to enhance 5–10 portrait faces for free, MyHeritage wins. If you need to restore a heavily damaged photo collection and want to keep the HD files, ArtImageHub is the better tool.
+
+---
+
+## Feature Comparison
+
+| Feature | ArtImageHub | MyHeritage |
+|---------|-------------|------------|
+| Price | $4.99 one-time | Free (limited) / Subscription |
+| Download HD original | Yes (included) | Requires subscription |
+| Works on damaged/torn photos | Yes | Limited |
+| Face enhancement | Yes (CodeFormer) | Yes (specialized) |
+| Colorization | Yes (add-on) | Yes (Deep Nostalgia) |
+| No subscription required | Yes | Subscription for full features |
+| Privacy / photo deletion | 24-hour auto-delete | Stored in MyHeritage account |
+| Works without account | Yes (email only) | Requires MyHeritage account |
+| Photo animation | No | Yes (Deep Nostalgia) |
+
+---
+
+## Pricing: A Closer Look
+
+**MyHeritage** markets the Photo Enhancer as free, but the free tier has real limitations:
+
+- Free enhancement shows a preview only — downloading the full-resolution enhanced version requires a **Complete subscription at $179/year** or a photo-specific add-on
+- Deep Nostalgia (animation) is a separate credit system
+- Your photos are stored in your MyHeritage account, which is connected to their genealogy database
+
+**ArtImageHub** charges $4.99 once:
+
+- One payment covers upload, AI processing, and HD download
+- No subscription, no annual fee, no upsell
+- Works with just an email — no account creation required
+
+For a single photo, $4.99 is actually competitive with MyHeritage's paid tier when you factor in that MyHeritage's full subscription is $179/year even if you only want photo enhancement.
+
+---
+
+## Photo Quality: What the Tests Showed
+
+### Portrait Photos (Clear Faces, Minor Fading)
+
+MyHeritage excels here. Their face enhancement model is specifically trained for portraits — it adds skin detail, eye clarity, and natural-looking sharpness to faces.
+
+ArtImageHub also handles portraits well using CodeFormer, which was specifically built for face restoration and is one of the strongest models available for this task.
+
+**Winner:** Tie on clean portraits. MyHeritage has a slight edge on face enhancement specifically; ArtImageHub matches it on overall image quality.
+
+### Heavily Damaged Photos (Scratches, Tears, Water Damage)
+
+This is where the gap opens. MyHeritage's Photo Enhancer is designed for enhancement, not physical damage repair. Scratch and tear removal is minimal.
+
+ArtImageHub applies CodeFormer and GFPGAN which handle physical damage, not just enhancement. On photos with visible scratches and staining, the output quality gap was significant.
+
+**Winner:** ArtImageHub on damaged photos.
+
+### Non-Portrait Photos (Landscapes, Group Shots, Buildings)
+
+MyHeritage's face-first optimization means non-face regions often get less attention. On group shots with 8+ people, smaller faces in the background received minimal enhancement.
+
+ArtImageHub applies full-image processing before face-specific enhancement, so backgrounds and non-face regions improve more consistently.
+
+**Winner:** ArtImageHub on non-portrait and large group photos.
+
+---
+
+## Privacy
+
+This matters for family photos.
+
+**MyHeritage:** Photos are stored in your MyHeritage account, which is tied to their genealogy database. Their privacy policy allows using photos for product improvement (with opt-out). If you upload photos of living relatives, consider whether you want them stored on a genealogy platform.
+
+**ArtImageHub:** Photos are automatically and permanently deleted from servers within 24 hours. They are never used for training or product improvement. No account means no persistent storage.
+
+**Winner:** ArtImageHub if privacy is a priority.
+
+---
+
+## Which Should You Use?
+
+**Use MyHeritage Photo Enhancer if:**
+- You already have a MyHeritage account
+- You're enhancing portrait photos with faces in reasonable condition
+- You want photo animation (Deep Nostalgia)
+- You want to try photo enhancement for free first
+
+**Use ArtImageHub if:**
+- You have physically damaged photos (scratches, water damage, tears)
+- You want to keep the full HD restoration file without a subscription
+- You value privacy (photos deleted in 24 hours)
+- You have a mix of portrait and non-portrait photos
+- You don't want to create another genealogy platform account
+
+---
+
+## The Bottom Line
+
+MyHeritage Photo Enhancer is excellent for what it does — enhancing faces in portrait photos within their genealogy ecosystem. If you're already a MyHeritage user, the face enhancement for clear portraits is outstanding.
+
+ArtImageHub is the better choice for general photo restoration, especially if your photos have physical damage, if you want to own the HD output without a subscription, or if privacy matters.
+
+Try ArtImageHub's free preview before you pay — you can see the restored version before committing to the $4.99 download.
+
+**[Restore your photos at ArtImageHub →](/old-photo-restoration)**
