@@ -102,7 +102,7 @@ I'll be upfront: I went in skeptical. I've spent years shooting and editing prof
 
 <p>I also found it too aggressive on skin. Several test portraits came back with skin that looked poreless and slightly waxy — the classic beauty filter effect. That's a stylistic choice, not enhancement. On old photos of relatives, it's exactly the wrong choice.</p>
 
-<p><strong>Price:</strong> Free with limits; $9.99/month for premium<br>
+<p><strong>Price:</strong> Free with limits; $4.99 one-time for premium<br>
 <strong>Best for:</strong> Quick face sharpening on phone photos; casual users who want simple, fast results on portraits</p>
 
 <h3>6. Google Photos — Convenient but Basic</h3>

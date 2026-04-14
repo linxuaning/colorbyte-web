@@ -107,7 +107,7 @@ Not all restoration apps are created equal—they fall into distinct categories 
 ### 2. Remini (Mobile)
 
 **Platform**: iOS, Android
-**Price**: Free (5 photos/day with watermark), $9.99/month or $29.99/year premium
+**Price**: Free (5 photos/day with watermark), $4.99 one-time or $29.99/year premium
 
 Remini focuses on AI enhancement with particular strength in portrait photographs and face sharpening.
 
@@ -149,7 +149,7 @@ Remini focuses on AI enhancement with particular strength in portrait photograph
 ### 3. Adobe Photoshop Express (Mobile)
 
 **Platform**: iOS, Android, Web
-**Price**: Free (basic), $9.99/month Creative Cloud (full features)
+**Price**: Free (basic), $4.99 one-time Creative Cloud (full features)
 
 Adobe's mobile offering brings professional editing power to smartphones.
 
@@ -192,7 +192,7 @@ Adobe's mobile offering brings professional editing power to smartphones.
 ### 4. VanceAI Photo Restorer (Web & Desktop)
 
 **Platform**: Web Browser, Windows, Mac
-**Price**: Free trial (3 photos), $9.99/month (100 credits), $19.99/month (200 credits)
+**Price**: Free trial (3 photos), $4.99 one-time (100 credits), $19.99/month (200 credits)
 
 Full AI-powered platform offering multiple restoration and enhancement tools.
 
@@ -316,7 +316,7 @@ Genealogy platform with impressive photo enhancement capabilities.
 ### 7. Luminar AI (Desktop)
 
 **Platform**: Windows, Mac
-**Price**: $79 one-time purchase or $9.99/month
+**Price**: $79 one-time purchase or $4.99 one-time
 
 Desktop software with AI-powered tools and manual editing flexibility.
 

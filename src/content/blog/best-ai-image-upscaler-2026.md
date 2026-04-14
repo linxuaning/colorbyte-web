@@ -144,7 +144,7 @@ Industry-leading standalone upscaling software from Topaz Labs.
 
 **Pricing:**
 - One-time purchase: $199
-- Subscription option: $9.99/month
+- Subscription option: $4.99 one-time
 
 **Best For:**
 - Professional photographers

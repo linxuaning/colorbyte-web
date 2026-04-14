@@ -350,7 +350,7 @@ If you're considering doing the work yourself, the skill requirements differ sig
 
 **Software Needed**:
 
-- Adobe Lightroom ($9.99/month) or free alternatives like Darktable
+- Adobe Lightroom ($4.99 one-time) or free alternatives like Darktable
 - Optional: Photoshop for advanced work
 - AI upscaling tools for resolution enhancement
 

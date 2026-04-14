@@ -152,7 +152,7 @@ Popular mobile-first service with strong AI enhancement capabilities.
 
 **Pricing**:
 - Free: 5 photos per day with watermark
-- Premium: $9.99/month or $29.99/year
+- Premium: $4.99 one-time or $29.99/year
 - Unlimited photos with subscription
 
 **Best For**:
@@ -188,7 +188,7 @@ Full-featured online platform with multiple AI tools.
 
 **Pricing**:
 - Free trial: 3 photos with watermark
-- Basic: $9.99/month (100 credits)
+- Basic: $4.99 one-time (100 credits)
 - Pro: $19.99/month (200 credits)
 - Business: $99/month (unlimited)
 
