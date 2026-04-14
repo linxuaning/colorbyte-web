@@ -147,7 +147,7 @@ export default function DodoCheckoutButton({
       "unknown";
     const subject = encodeURIComponent("Manual Checkout Support Needed");
     const body = encodeURIComponent(
-      `Hi ColorByte team,\n\nI cannot complete DodoPayments checkout.\nEmail: ${savedEmail}\nPurchase: ${CHECKOUT_ITEM_LABEL}\n\nPlease send me a valid payment link.\n\nThanks.`
+      `Hi ArtImageHub team,\n\nI cannot complete DodoPayments checkout.\nEmail: ${savedEmail}\nPurchase: ${CHECKOUT_ITEM_LABEL}\n\nPlease send me a valid payment link.\n\nThanks.`
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };

@@ -214,7 +214,7 @@ export default function SubscriptionPage() {
       paymentParams.set("resume_task_id", resumeTaskId);
     }
     const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
-    const subject = encodeURIComponent("Your ColorByte payment link");
+    const subject = encodeURIComponent("Your ArtImageHub payment link");
     const body = encodeURIComponent(
       `Use this checkout link to unlock upload, processing access, and HD download rights (${PRO_PRICE_TEXT}):\n${paymentUrl}\n`
     );
