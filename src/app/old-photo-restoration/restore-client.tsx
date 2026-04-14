@@ -401,7 +401,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       paymentParams.set("resume_task_id", taskId);
     }
     const paymentUrl = `${window.location.origin}/subscription?${paymentParams.toString()}`;
-    const subject = encodeURIComponent("Your ColorByte payment link");
+    const subject = encodeURIComponent("Your ArtImageHub payment link");
     const body = encodeURIComponent(
       `Your photo is ready.\n\nDownload the HD original (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal checkout link for the full-resolution download.\n`
     );
