@@ -491,7 +491,7 @@ ID photos raise unique ethical questions.
 - Maintain dignity in enhancement and use
 - Be thoughtful about public sharing
 
-For more on these topics, see our [photo restoration ethics guide](/blog/photo-restoration-ethics-guide).
+For more on these topics, see our [photo restoration ethics guide](/blog/photo-restoration-ethics).
 
 ## Case Study: Restoring a 1952 Immigration Document Photo
 

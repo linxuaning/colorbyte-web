@@ -32,8 +32,54 @@ export default async function BlogPage() {
   const featuredPost = posts[0];
   const remainingPosts = posts.slice(1);
 
+  const collectionLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Journal — AI Photo Restoration Guides & Stories",
+    description:
+      "Expert guides on AI photo restoration, vintage photo preservation, and family history.",
+    url: "https://artimagehub.com/blog",
+    mainEntity: {
+      "@type": "Blog",
+      name: "ArtImageHub Journal",
+      blogPost: posts.slice(0, 10).map((p) => ({
+        "@type": "BlogPosting",
+        headline: p.title,
+        url: `https://artimagehub.com/blog/${p.slug}`,
+        datePublished: p.publishedAt,
+      })),
+    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://artimagehub.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Journal",
+        item: "https://artimagehub.com/blog",
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[#faf8f4]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       {/* ── Masthead — editorial magazine header ── */}
       <header className="border-b border-[#d4bc91]/60 bg-[#faf8f4]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">

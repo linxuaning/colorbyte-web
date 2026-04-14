@@ -294,7 +294,7 @@ If you're considering offering restoration services specializing in 1920s photog
 
 **Educational Content**: Share knowledge about the era, building authority and attracting clients interested in authentic restoration.
 
-For those starting a restoration business, check out our guide on [photo restoration business tips](/blog/photo-restoration-business-tips) for detailed strategies.
+
 
 ## Advanced Historical Research for Authentic Restorations
 
@@ -360,7 +360,7 @@ The 1920s was a complex period with both progressive and problematic social atti
 
 **Privacy Considerations**: Even for old photographs, consider whether subjects would have wanted images shared publicly.
 
-For more guidance on these topics, see our [photo restoration ethics guide](/blog/photo-restoration-ethics-guide).
+For more guidance on these topics, see our [photo restoration ethics guide](/blog/photo-restoration-ethics).
 
 ## Troubleshooting Common Flapper Photo Restoration Issues
 

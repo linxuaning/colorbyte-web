@@ -149,7 +149,7 @@ For black and white baby photos from earlier eras, colorization can create compe
 
 AI colorization analyzes image content and applies realistic colors based on understanding of typical baby photo elements—skin tones, common baby clothing colors, typical background elements and props, and period-appropriate color palettes. The results can be remarkably natural, though some manual adjustment may improve accuracy.
 
-When colorizing baby photos, preserve the original black and white version as well—both versions have value and may appeal to different family members. Learn more about the colorization process in our guide on [how to colorize black and white photos](/colorize-black-white-photos).
+When colorizing baby photos, preserve the original black and white version as well—both versions have value and may appeal to different family members. Learn more about the colorization process in our guide on [how to colorize black and white photos](/blog/colorize-black-white-photos).
 
 ## Creating Meaningful Projects with Enhanced Baby Photos
 

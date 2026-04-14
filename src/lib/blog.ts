@@ -230,15 +230,21 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
 export async function getRelatedPosts(
   currentSlug: string,
   category: string,
-  limit: number = 3
+  limit: number = 3,
+  tags: string[] = []
 ): Promise<BlogPostMeta[]> {
   const posts = await getAllPosts();
+  const normCategory = category.toLowerCase().trim();
+  const normTags = new Set(tags.map((t) => t.toLowerCase().trim()));
+
   return posts
     .filter((p) => p.slug !== currentSlug)
-    .sort((a, b) => {
-      const aMatch = a.category === category ? 1 : 0;
-      const bMatch = b.category === category ? 1 : 0;
-      return bMatch - aMatch;
+    .map((p) => {
+      const catMatch = p.category.toLowerCase().trim() === normCategory ? 2 : 0;
+      const tagOverlap = p.tags.filter((t) => normTags.has(t.toLowerCase().trim())).length;
+      return { post: p, score: catMatch + tagOverlap };
     })
-    .slice(0, limit);
+    .sort((a, b) => b.score - a.score || new Date(b.post.publishedAt).getTime() - new Date(a.post.publishedAt).getTime())
+    .slice(0, limit)
+    .map((x) => x.post);
 }

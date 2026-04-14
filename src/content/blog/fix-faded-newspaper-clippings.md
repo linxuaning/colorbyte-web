@@ -526,7 +526,7 @@ Historically significant military records.
 5. Family information
 6. Hometown and other context
 
-Related: See our guide on [restoring WW2 soldier photographs](/blog/restore-ww2-soldier-photographs).
+Related: See our guide on [restoring WW2 soldier photographs](/blog/restore-military-photos).
 
 ## Creating Professional Displays of Restored Newspaper Clippings
 

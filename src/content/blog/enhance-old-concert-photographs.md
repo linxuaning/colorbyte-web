@@ -506,7 +506,7 @@ If you develop expertise in enhancing old concert photographs:
 - Specialize in particular venues or regions
 - Focus on specific time periods
 
-For business strategy guidance, see our [photo restoration business tips](/blog/photo-restoration-business-tips).
+
 
 ## Case Study: Enhancing a 1976 Punk Club Photo
 

@@ -417,7 +417,7 @@ Given the historical significance of Autochromes, ethical considerations are par
 - Respect copyright where applicable (some Autochromes remain under copyright)
 - Be clear about your role as digital restorer vs. original creator
 
-For more on these considerations, see our [photo restoration ethics guide](/blog/photo-restoration-ethics-guide).
+For more on these considerations, see our [photo restoration ethics guide](/blog/photo-restoration-ethics).
 
 ## Comparison: Autochrome vs. Modern Color Processes
 

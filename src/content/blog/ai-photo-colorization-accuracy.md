@@ -316,7 +316,7 @@ Certain photo types benefit from excellent AI colorization accuracy.
 - Skin tones: 80-85%
 - Background: 70-80%
 
-**Example:** A WWII soldier portrait in U.S. Army uniform will have 85-90% accurate colorization since uniform colors were standardized. See our guide on [restoring WW2 soldier photographs](/blog/restore-ww2-soldier-photographs).
+**Example:** A WWII soldier portrait in U.S. Army uniform will have 85-90% accurate colorization since uniform colors were standardized. See our guide on [restoring WW2 soldier photographs](/blog/restore-military-photos).
 
 ### Urban and Street Photography
 

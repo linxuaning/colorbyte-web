@@ -127,7 +127,7 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  const relatedPosts = await getRelatedPosts(slug, post.category);
+  const relatedPosts = await getRelatedPosts(slug, post.category, 3, post.tags);
   const comparisonCta = comparisonCtaBySlug[slug as keyof typeof comparisonCtaBySlug] || null;
   const checkoutCta = checkoutCtaBySlug[slug as keyof typeof checkoutCtaBySlug] || null;
   const restoreCtaHref =
@@ -151,20 +151,27 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "ArtImageHub",
-      url: "https://www.artimagehub.com",
+      url: "https://artimagehub.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.artimagehub.com/favicon.ico",
+        url: "https://artimagehub.com/favicon.ico",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.artimagehub.com/blog/${slug}`,
+      "@id": `https://artimagehub.com/blog/${slug}`,
     },
     articleSection: post.category,
     keywords: post.tags.join(", "),
     wordCount: post.content.split(/\s+/).length,
-    image: post.image ? `https://www.artimagehub.com${post.image}` : undefined,
+    image: post.image
+      ? {
+          "@type": "ImageObject",
+          url: `https://artimagehub.com${post.image}`,
+          width: 1200,
+          height: 630,
+        }
+      : undefined,
   };
 
   const breadcrumbLd = {
@@ -175,19 +182,19 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.artimagehub.com",
+        item: "https://artimagehub.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Journal",
-        item: "https://www.artimagehub.com/blog",
+        item: "https://artimagehub.com/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `https://www.artimagehub.com/blog/${slug}`,
+        item: `https://artimagehub.com/blog/${slug}`,
       },
     ],
   };
@@ -315,12 +322,13 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="mt-12 pt-8 border-t border-gray-200">
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
-                      <span
+                      <Link
                         key={tag}
+                        href={`/blog?category=${encodeURIComponent(tag.toLowerCase())}`}
                         className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600 hover:bg-gray-200 transition-colors"
                       >
                         {tag}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -358,7 +366,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <p className="text-sm font-semibold text-gray-500 mb-4">Share this article</p>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://www.artimagehub.com/blog/${slug}`)}&via=artimagehub`}
+                    href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}&via=artimagehub`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
@@ -367,7 +375,7 @@ export default async function BlogPostPage({ params }: Props) {
                     Share on X
                   </a>
                   <a
-                    href={`https://www.reddit.com/submit?url=${encodeURIComponent(`https://www.artimagehub.com/blog/${slug}`)}&title=${encodeURIComponent(post.title)}`}
+                    href={`https://www.reddit.com/submit?url=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}&title=${encodeURIComponent(post.title)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"
@@ -376,7 +384,7 @@ export default async function BlogPostPage({ params }: Props) {
                     Share on Reddit
                   </a>
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://www.artimagehub.com/blog/${slug}`)}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://artimagehub.com/blog/${slug}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all"

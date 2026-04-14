@@ -704,7 +704,7 @@ Professional vintage photo restoration costs vary by damage severity and photo t
 **Related guides:**
 - [How to Restore Old Photos at Home: Complete DIY Guide](/blog/how-to-restore-old-photos-at-home)
 - [Restore Photos from 1800s: Daguerreotype and Tintype Guide](/blog/restore-photos-from-1800s)
-- [Fix Water Damaged Photos: Emergency Response and Restoration](/blog/how-to-fix-water-damaged-photos)
+- [Fix Water Damaged Photos: Emergency Response and Restoration](/blog/how-to-restore-water-damaged-album)
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
