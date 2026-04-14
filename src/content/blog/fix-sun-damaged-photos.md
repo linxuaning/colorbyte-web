@@ -1,6 +1,6 @@
 ---
-title: "Fix Sun Damaged Photos: Faded Image Restoration"
-description: "Learn how to fix sun damaged photos with expert techniques. Restore faded, discolored images using digital restoration and AI tools."
+title: "Fix Sun Damaged Photos — Restore Faded & Discolored Prints with AI"
+description: "Reverse sun fading, pink discoloration, and washed-out prints. Upload to ArtImageHub and AI restores original colors in 30 seconds. Free preview, $4.99 download."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"

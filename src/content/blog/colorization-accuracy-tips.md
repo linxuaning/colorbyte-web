@@ -1,6 +1,6 @@
 ---
-title: "Colorization Accuracy Tips: B&W Photo Color Guide"
-description: "Master photo colorization with expert accuracy tips. Learn historical research, color theory, and techniques for realistic black and white photo colorization."
+title: "Get Accurate Colors on B&W Photos — 7 Colorization Tips That Work"
+description: "Avoid fake-looking colorization. Learn 7 accuracy tips for realistic skin, fabric, and sky tones on vintage B&W photos. Colorize free on ArtImageHub in 30 seconds."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Sarah Chen"

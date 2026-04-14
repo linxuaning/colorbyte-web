@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Old Concert Photographs: Restore Live Music Memories"
-description: "Expert guide to enhance old concert photographs from the 60s-90s. Fix low-light damage, motion blur, and fading. Restore your vintage music memorabilia today."
+title: "Enhance Old Concert Photos — Fix Low-Light Blur & Fading from 60s–90s Shows"
+description: "Rescue blurry, faded concert photos from the 60s–90s. AI fixes low-light damage, motion blur, and color fading in 30 seconds. Try free on ArtImageHub."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Lisa Martinez"

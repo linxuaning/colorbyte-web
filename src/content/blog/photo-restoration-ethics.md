@@ -1,6 +1,6 @@
 ---
-title: "Photo Restoration Ethics: Changing Historical Images"
-description: "Navigate the ethical considerations of photo restoration. Learn professional guidelines for maintaining authenticity while repairing damaged photographs."
+title: "Photo Restoration Ethics — When Does Fixing a Photo Cross the Line?"
+description: "How much should you change a historical photo? Professional guidelines for authentic restoration vs. falsification. Essential reading before you restore family heirlooms."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "James Morrison"
