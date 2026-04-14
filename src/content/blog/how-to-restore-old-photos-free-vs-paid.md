@@ -17,7 +17,7 @@ coverEmoji: "💡"
 
 The first question most people ask about restoring old family photos: *can I do this for free?*
 
-The honest answer: yes, partially. Some free tools produce real improvement on some photos. But for old photographs with physical damage — scratches, fading, blurry faces — free tools have significant limitations.
+The honest answer: yes, partially. Some free tools produce real improvement on some photos. But for old photographs with physical damage — scratches, fading, blurry faces — free tools have significant limitations. Want to try before deciding? Our [free photo restoration](/free-photo-restoration) tool lets you see the AI result before paying.
 
 Here's what's actually available, what each does well, and where paid AI restoration makes sense.
 

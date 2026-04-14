@@ -15,7 +15,7 @@ coverEmoji: "🔥"
 
 # Restoring Photos Damaged by Fire and Soot
 
-Photographs that survive a house fire often do so in very specific ways: completely sealed in albums or metal boxes may emerge surprisingly intact despite the surrounding destruction; photographs in open storage often show heat curling, soot deposition, and smoke damage; photographs close to the fire's origin may show partial burning. Working with fire-damaged photographs requires understanding these different survival scenarios and applying appropriate physical and digital restoration techniques.
+Photographs that survive a house fire often do so in very specific ways: completely sealed in albums or metal boxes may emerge surprisingly intact despite the surrounding destruction; photographs in open storage often show heat curling, soot deposition, and smoke damage; photographs close to the fire's origin may show partial burning. Working with fire-damaged photographs requires understanding these different survival scenarios and applying appropriate physical and digital restoration techniques. Once scanned, AI can [restore damaged photos](/restore-damaged-photos) — fixing soot marks, heat discoloration, and partial burns digitally.
 
 ## What Saves Photos in a Fire
 

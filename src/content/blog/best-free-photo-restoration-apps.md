@@ -11,7 +11,7 @@ featured: false
 
 Photo restoration no longer requires expensive software or professional expertise, thanks to the emergence of powerful free photo restoration apps. Whether you're looking to repair grandparents' wedding photos, restore faded family portraits, or recover damaged historical images, several excellent free options can deliver impressive results without costing a penny.
 
-I've tested every free photo restoration app I could find in 2026. Here's an honest look at what each one does well, where they fall short, and which ones are actually worth your time.
+I've tested every free photo restoration app I could find in 2026. Here's an honest look at what each one does well, where they fall short, and which ones are actually worth your time. If you're specifically comparing Remini, see our [ArtImageHub vs Remini](/vs-remini) breakdown. For a broader app roundup, check our [best photo restoration app](/photo-restoration-app) guide.
 
 ## What to Look For in Free Photo Restoration Apps
 

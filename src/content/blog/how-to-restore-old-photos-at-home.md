@@ -16,7 +16,7 @@ featured: false
 
 # How to Restore Old Photos at Home: Complete DIY Guide for Beginners (2026)
 
-You don't need expensive software or years of Photoshop experience to restore old photos at home. In 2026, AI-powered restoration tools have changed what was once a highly specialized skill requiring hundreds of hours of training.
+You don't need expensive software or years of Photoshop experience to restore old photos at home. In 2026, AI-powered restoration tools have changed what was once a highly specialized skill requiring hundreds of hours of training. If your photos have scratches, tears, or water damage, our [restore damaged photos](/restore-damaged-photos) tool handles these automatically.
 
 I've been helping families restore their photo collections for nearly a decade, and the technology available today would've seemed like magic even five years ago. But here's what nobody tells you: **the tools are easy, but the workflow matters.**
 

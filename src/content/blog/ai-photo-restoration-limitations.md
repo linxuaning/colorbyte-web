@@ -9,7 +9,7 @@ category: "AI Technology"
 featured: false
 ---
 
-AI photo restoration has transformed how we preserve and recover damaged photographs, making professional-quality results accessible to anyone with a smartphone or computer. However, like all technologies, AI restoration has both remarkable capabilities and important limitations. Understanding what AI can and can't do helps you set realistic expectations, choose the right tools for your specific needs, and know when professional human expertise remains necessary.
+AI photo restoration has transformed how we preserve and recover damaged photographs, making professional-quality results accessible to anyone with a smartphone or computer. However, like all technologies, AI restoration has both remarkable capabilities and important limitations. Understanding what AI can and can't do helps you set realistic expectations, choose the right tools for your specific needs, and know when professional human expertise remains necessary. For blur specifically, try our [unblur photo](/unblur-photo) tool — it handles camera shake and soft focus well, though severe motion blur remains challenging.
 
 This guide takes an honest look at AI photo restoration limitations, examining the technology's impressive strengths alongside its current weaknesses. Whether you're restoring precious family photos, preserving historical documents, or working on professional restoration projects, understanding these limitations ensures you achieve the best possible results.
 

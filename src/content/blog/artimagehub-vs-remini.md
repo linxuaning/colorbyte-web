@@ -17,7 +17,7 @@ coverEmoji: "⚖️"
 
 When my aunt asked me to restore 100 family photos for her father's 85th birthday slideshow, I had three weeks and zero budget for professional restoration (which would've cost $5,000–$15,000).
 
-So I did what any reasonable person with a mild obsession for spreadsheets would do: I tested every major AI photo restoration tool I could find, tracked everything, and built comparison tables that my wife says are "concerning."
+So I did what any reasonable person with a mild obsession for spreadsheets would do: I tested every major AI photo restoration tool I could find, tracked everything, and built comparison tables that my wife says are "concerning." For a quick side-by-side summary, see our [ArtImageHub vs Remini comparison page](/vs-remini).
 
 **The test:**
 - 100 family photos from 1940–1990
