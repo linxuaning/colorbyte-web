@@ -27,12 +27,12 @@ Indian wedding photographs face preservation challenges related to the diverse c
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration). The AI will analyze each image and apply targeted restoration based on the specific damage patterns present. Download the full-resolution result ready for printing or sharing.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [AI photo restoration tool](/old-photo-restoration). The AI will analyze each image and apply targeted restoration based on the specific damage patterns present. Download the full-resolution result ready for printing or sharing.
 
 ## Restore Your Photos Today
 
-Don't let another decade of deterioration rob your family of these visual connections to the past. Visit [PhotoFix](/old-photo-restoration) to upload your photographs and experience AI restoration in seconds.
+Don't let another decade of deterioration rob your family of these visual connections to the past. Visit [AI photo restoration tool](/old-photo-restoration) to upload your photographs and experience AI restoration in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration, no technical skills required.*
+*[AI photo restoration tool](/old-photo-restoration) — professional AI photo restoration, no technical skills required.*

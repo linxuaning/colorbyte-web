@@ -23,9 +23,9 @@ Mold and foxing damage patterns are somewhat regular — the algorithm can ident
 
 ## How AI Helps
 
-PhotoFix biological damage recovery treats mold damage as an overlay pattern that can be separated from the underlying photographic image. The algorithm removes the damage pattern and reconstructs the image content beneath, recovering photos that biological growth had made unviewable.
+ArtImageHub biological damage recovery treats mold damage as an overlay pattern that can be separated from the underlying photographic image. The algorithm removes the damage pattern and reconstructs the image content beneath, recovering photos that biological growth had made unviewable.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [restore old photos online](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

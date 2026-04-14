@@ -27,14 +27,14 @@ To separate wet photos, work one at a time in a tray of clean water. Gently floa
 
 ## Digital Restoration After Water Damage
 
-Water-damaged photos, once dried, typically show tide marks (mineral deposits left as water evaporated), surface texture changes where the emulsion swelled and recontracted, and potential color shift in affected areas. These are exactly the kinds of damage AI restoration tools excel at. Scan your dried photos at the highest resolution possible and upload to PhotoFix. The AI identifies water damage signatures — the ring-like tide marks, the mottled surface texture, the color irregularities — and corrects them while preserving the authentic image content. For photos that were extensively damaged, multiple passes or manual touchup may achieve the best results.
+Water-damaged photos, once dried, typically show tide marks (mineral deposits left as water evaporated), surface texture changes where the emulsion swelled and recontracted, and potential color shift in affected areas. These are exactly the kinds of damage AI restoration tools excel at. Scan your dried photos at the highest resolution possible and upload to ArtImageHub. The AI identifies water damage signatures — the ring-like tide marks, the mottled surface texture, the color irregularities — and corrects them while preserving the authentic image content. For photos that were extensively damaged, multiple passes or manual touchup may achieve the best results.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [ArtImageHub restoration](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

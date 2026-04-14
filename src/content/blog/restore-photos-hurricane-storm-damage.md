@@ -23,9 +23,9 @@ Hurricane floodwater is contaminated with sewage, chemicals, and biological mate
 
 ## How AI Helps
 
-PhotoFix hurricane recovery protocols were developed specifically for Gulf Coast restoration projects following major storm events. The algorithm addresses the specific contamination patterns of storm surge floodwater, recovering photos from damage that general water damage protocols cannot address.
+ArtImageHub hurricane recovery protocols were developed specifically for Gulf Coast restoration projects following major storm events. The algorithm addresses the specific contamination patterns of storm surge floodwater, recovering photos from damage that general water damage protocols cannot address.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [ArtImageHub restoration](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

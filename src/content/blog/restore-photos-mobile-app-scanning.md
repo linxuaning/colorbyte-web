@@ -23,9 +23,9 @@ Mobile scanning has limitations compared to flatbed scanning — the camera opti
 
 ## How AI Helps
 
-PhotoFix accepts uploads from mobile scanning apps, applying professional-grade restoration to smartphone-captured family photos. The platform's restoration algorithms compensate for the optical limitations of mobile capture, recovering quality levels beyond what mobile scanning alone can achieve.
+ArtImageHub accepts uploads from mobile scanning apps, applying professional-grade restoration to smartphone-captured family photos. The platform's restoration algorithms compensate for the optical limitations of mobile capture, recovering quality levels beyond what mobile scanning alone can achieve.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [AI photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

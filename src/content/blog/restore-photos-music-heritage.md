@@ -31,8 +31,8 @@ The photographs of amateur and community music-making — the local symphony orc
 
 ## Take Action Today
 
-Don't wait for photos to deteriorate further. Visit [PhotoFix](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
+Don't wait for photos to deteriorate further. Visit [restore old photos online](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — bringing your most important photographs back to life.*
+*[restore old photos online](/old-photo-restoration) — bringing your most important photographs back to life.*

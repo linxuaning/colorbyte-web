@@ -31,8 +31,8 @@ After the war, Japanese Americans returned to find their farms, businesses, and 
 
 ## Start Restoring Today
 
-Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [PhotoFix](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
+Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [ArtImageHub restoration](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
 
 ---
 
-*Bring your cherished photographs back to life with [PhotoFix's AI restoration tool](/old-photo-restoration) — professional results in seconds.*
+*Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*

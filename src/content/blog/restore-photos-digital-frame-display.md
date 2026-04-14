@@ -23,9 +23,9 @@ Digital frame display requires specific file specifications — moderate resolut
 
 ## How AI Helps
 
-PhotoFix digital frame preparation service optimizes restored photos for specific frame models and display sizes, creating device-optimized collections that display beautifully on digital frames without file size limitations slowing the rotation or reducing display quality.
+ArtImageHub digital frame preparation service optimizes restored photos for specific frame models and display sizes, creating device-optimized collections that display beautifully on digital frames without file size limitations slowing the rotation or reducing display quality.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [restore old photos online](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

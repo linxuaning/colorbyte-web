@@ -23,9 +23,9 @@ Long-term photo storage involves material choices — acid-free enclosures, stab
 
 ## How AI Helps
 
-PhotoFix restoration is most effective when combined with improved storage conditions for the original photos. After digital restoration, the original prints should be stored properly to prevent further deterioration of the source material that might be needed for re-scanning at higher resolution in the future.
+ArtImageHub restoration is most effective when combined with improved storage conditions for the original photos. After digital restoration, the original prints should be stored properly to prevent further deterioration of the source material that might be needed for re-scanning at higher resolution in the future.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [ArtImageHub restoration](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

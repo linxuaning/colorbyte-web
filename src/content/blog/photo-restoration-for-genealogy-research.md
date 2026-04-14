@@ -27,14 +27,14 @@ After restoring a photograph, genealogists often make new discoveries in the rec
 
 ## Building a Shareable Family Photo Archive
 
-Beyond individual research breakthroughs, restored and organized photos become a shareable legacy for the whole family. After restoring photos through PhotoFix, consider adding them to genealogy platforms like Ancestry.com, FamilySearch, or MyHeritage, where they can be linked to family tree profiles and identified by other researchers who may be researching the same family branches. Creating a family photo book with restored images, captions, and biographical notes is a project that many families undertake as a 50th or 100th anniversary tribute, and it transforms a pile of old photos into a lasting historical document.
+Beyond individual research breakthroughs, restored and organized photos become a shareable legacy for the whole family. After restoring photos through ArtImageHub, consider adding them to genealogy platforms like Ancestry.com, FamilySearch, or MyHeritage, where they can be linked to family tree profiles and identified by other researchers who may be researching the same family branches. Creating a family photo book with restored images, captions, and biographical notes is a project that many families undertake as a 50th or 100th anniversary tribute, and it transforms a pile of old photos into a lasting historical document.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [old photo restoration tool](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

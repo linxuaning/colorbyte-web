@@ -23,7 +23,7 @@ Free AI restoration tools — browser-based services or app-based solutions with
 
 ## The Value Proposition of Paid Tools
 
-Paid AI restoration services typically offer: full-resolution output (4 megapixels or higher, suitable for large prints), no watermarks, faster processing, unlimited (or very high-limit) processing volume, and often more sophisticated damage repair algorithms that handle severe damage better than free tools. For families with a significant collection of photos to restore — a parent's lifetime of photographs, a large-scale family history project — the per-photo cost of a paid service often works out to pennies per photo, making the quality improvement a compelling value. PhotoFix's pricing is transparent and includes full-resolution downloads.
+Paid AI restoration services typically offer: full-resolution output (4 megapixels or higher, suitable for large prints), no watermarks, faster processing, unlimited (or very high-limit) processing volume, and often more sophisticated damage repair algorithms that handle severe damage better than free tools. For families with a significant collection of photos to restore — a parent's lifetime of photographs, a large-scale family history project — the per-photo cost of a paid service often works out to pennies per photo, making the quality improvement a compelling value. ArtImageHub's pricing is transparent and includes full-resolution downloads.
 
 ## The Decision Framework
 
@@ -31,8 +31,8 @@ Choose a free tool if: you have 5 or fewer photos, the photos are only mildly da
 
 ## Start Restoring Today
 
-Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [PhotoFix](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
+Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [ArtImageHub restoration](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
 
 ---
 
-*Bring your cherished photographs back to life with [PhotoFix's AI restoration tool](/old-photo-restoration) — professional results in seconds.*
+*Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*

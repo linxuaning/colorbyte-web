@@ -31,8 +31,8 @@ Labor Day weekend, marking the unofficial end of summer, generates a distinctive
 
 ## Ready to Restore?
 
-Upload your photograph to [PhotoFix](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
+Upload your photograph to [ArtImageHub restoration](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
 
 ---
 
-*Experience professional-quality restoration in seconds at [PhotoFix](/old-photo-restoration).*
+*Experience professional-quality restoration in seconds at [ArtImageHub restoration](/old-photo-restoration).*

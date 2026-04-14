@@ -27,14 +27,14 @@ Before restoration, sort the discovered photos into categories: (1) photos in go
 
 ## Processing a Large Collection Efficiently
 
-A typical attic find might yield 100–500 photographs spanning 60–100 years. Processing this many photos doesn't have to be overwhelming. Set up a simple workflow: clean scanning station → batch scan at 600 DPI → upload to PhotoFix in batches → download restored versions → organize by decade or family branch. Most people find they can process 50–100 photos in a focused afternoon session. The resulting digital archive can be shared with the whole family immediately via cloud storage or a shared family album service, allowing relatives across the country to see and identify the recovered photos.
+A typical attic find might yield 100–500 photographs spanning 60–100 years. Processing this many photos doesn't have to be overwhelming. Set up a simple workflow: clean scanning station → batch scan at 600 DPI → upload to ArtImageHub in batches → download restored versions → organize by decade or family branch. Most people find they can process 50–100 photos in a focused afternoon session. The resulting digital archive can be shared with the whole family immediately via cloud storage or a shared family album service, allowing relatives across the country to see and identify the recovered photos.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [ArtImageHub restoration](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

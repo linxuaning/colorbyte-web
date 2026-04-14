@@ -23,9 +23,9 @@ AI facial enhancement uses deep learning models trained on millions of facial im
 
 ## How AI Helps
 
-The boundary between enhancement and invention in facial restoration is the most important technical consideration. PhotoFix facial enhancement recovers detail that the photographic evidence supports — it does not generate artificial facial features. The confidence level of recovered detail is documented in the restoration process.
+The boundary between enhancement and invention in facial restoration is the most important technical consideration. ArtImageHub facial enhancement recovers detail that the photographic evidence supports — it does not generate artificial facial features. The confidence level of recovered detail is documented in the restoration process.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [AI photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

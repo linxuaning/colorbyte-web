@@ -27,12 +27,12 @@ The adoption of 35mm cameras by serious amateurs in the 1930s and its spread to 
 
 ## AI Restoration as the Fourth Wave of Democratization
 
-Each wave of photographic democratization made photography more accessible to ordinary families: affordable cameras, then affordable color film, then digital cameras, and now AI restoration tools that make professional-quality photo restoration accessible without professional expertise or professional budgets. AI restoration tools like PhotoFix continue this democratization: a family with damaged photographs from the 1950s no longer needs to choose between accepting the damage and spending hundreds of dollars per photo for professional restoration. AI makes it possible to restore an entire family collection for a fraction of the cost of a single professional restoration.
+Each wave of photographic democratization made photography more accessible to ordinary families: affordable cameras, then affordable color film, then digital cameras, and now AI restoration tools that make professional-quality photo restoration accessible without professional expertise or professional budgets. AI restoration tools like ArtImageHub continue this democratization: a family with damaged photographs from the 1950s no longer needs to choose between accepting the damage and spending hundreds of dollars per photo for professional restoration. AI makes it possible to restore an entire family collection for a fraction of the cost of a single professional restoration.
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [restore old photos online](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[restore old photos online](/old-photo-restoration) — professional AI photo restoration for everyone.*

@@ -23,7 +23,7 @@ The most common before-and-after format is a side-by-side comparison: the origin
 
 ## Interactive Comparison Sliders
 
-A more dramatic presentation of restoration results uses an interactive comparison slider — a web-based element where the user slides a line left and right to reveal more of the before or after image. This format works particularly well because it allows the viewer to control the reveal themselves, making the transformation feel more personal and interactive. PhotoFix provides built-in before/after comparison views for restored photos. For sharing on social media or family email, screenshot comparisons are more accessible than interactive sliders that require specific apps to view.
+A more dramatic presentation of restoration results uses an interactive comparison slider — a web-based element where the user slides a line left and right to reveal more of the before or after image. This format works particularly well because it allows the viewer to control the reveal themselves, making the transformation feel more personal and interactive. ArtImageHub provides built-in before/after comparison views for restored photos. For sharing on social media or family email, screenshot comparisons are more accessible than interactive sliders that require specific apps to view.
 
 ## Sharing Restorations With the Family
 
@@ -31,8 +31,8 @@ When sharing restoration results with family members — especially older relati
 
 ## Take Action Today
 
-Don't wait for photos to deteriorate further. Visit [PhotoFix](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
+Don't wait for photos to deteriorate further. Visit [old photo restoration tool](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — bringing your most important photographs back to life.*
+*[old photo restoration tool](/old-photo-restoration) — bringing your most important photographs back to life.*

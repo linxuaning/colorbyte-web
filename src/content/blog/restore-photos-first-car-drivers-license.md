@@ -31,8 +31,8 @@ The automobiles visible in family photographs across decades serve as precision 
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [restore old photos online](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[restore old photos online](/old-photo-restoration) — professional AI photo restoration for everyone.*

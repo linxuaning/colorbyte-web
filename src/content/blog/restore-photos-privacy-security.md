@@ -25,14 +25,14 @@ When you upload a photo to an AI restoration service, the service receives: your
 
 If privacy is a concern, you can take several steps before uploading photos to restoration services. Strip EXIF metadata from photos before uploading (this removes GPS coordinates and camera data) using free tools like ExifTool. Crop or mask any documents, text, or identifying information visible in background details of photos if you're concerned about them. For particularly sensitive photographs (those showing minors, or photos with sensitive personal context), review the service's privacy policy before uploading — specifically looking for whether photos are used in AI training datasets.
 
-## PhotoFix's Approach to Privacy
+## ArtImageHub's Approach to Privacy
 
-PhotoFix stores uploaded photos only for the duration of the restoration process and short-term result delivery. Photos are not used for AI model training without explicit consent. The service uses end-to-end encryption for file transfer and does not share user photos or metadata with third parties. For users who want to verify a service's practices, look for privacy policies that explicitly address these points — responsible services are transparent about their data handling in plain language rather than burying these practices in complex legal text.
+ArtImageHub stores uploaded photos only for the duration of the restoration process and short-term result delivery. Photos are not used for AI model training without explicit consent. The service uses end-to-end encryption for file transfer and does not share user photos or metadata with third parties. For users who want to verify a service's practices, look for privacy policies that explicitly address these points — responsible services are transparent about their data handling in plain language rather than burying these practices in complex legal text.
 
 ## Start Restoring Today
 
-Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [PhotoFix](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
+Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [old photo restoration tool](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
 
 ---
 
-*Bring your cherished photographs back to life with [PhotoFix's AI restoration tool](/old-photo-restoration) — professional results in seconds.*
+*Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*

@@ -23,9 +23,9 @@ Documentary video from still photos requires specific technical specifications �
 
 ## How AI Helps
 
-PhotoFix video documentation output prepares restored photos for documentary video production — providing the resolution, color standards, and file formats that professional and amateur video editors need to create compelling family documentary films from restored photo collections.
+ArtImageHub video documentation output prepares restored photos for documentary video production — providing the resolution, color standards, and file formats that professional and amateur video editors need to create compelling family documentary films from restored photo collections.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [fix old photos free](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

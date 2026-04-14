@@ -27,12 +27,12 @@ A specific preservation problem unique to baby and toddler photographs is the re
 
 ## Preserving the First Year for the Next Generation
 
-Baby photographs from the first year serve a function beyond nostalgia — they're the only visual record of a person's earliest existence, images that the person depicted cannot remember but that define something important about their origin. When these children have their own children, the first-year photographs of the grandparent-as-baby become family heirlooms connecting three generations. Restoring baby photos while they can still be recovered — before they deteriorate beyond rescue — preserves this multi-generational connection. Upload to PhotoFix, restore the faded color and surface damage, and save the high-resolution result in a format that will be accessible to the next generation.
+Baby photographs from the first year serve a function beyond nostalgia — they're the only visual record of a person's earliest existence, images that the person depicted cannot remember but that define something important about their origin. When these children have their own children, the first-year photographs of the grandparent-as-baby become family heirlooms connecting three generations. Restoring baby photos while they can still be recovered — before they deteriorate beyond rescue — preserves this multi-generational connection. Upload to ArtImageHub, restore the faded color and surface damage, and save the high-resolution result in a format that will be accessible to the next generation.
 
 ## Start Restoring Today
 
-Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [PhotoFix](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
+Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [ArtImageHub restoration](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
 
 ---
 
-*Bring your cherished photographs back to life with [PhotoFix's AI restoration tool](/old-photo-restoration) — professional results in seconds.*
+*Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*

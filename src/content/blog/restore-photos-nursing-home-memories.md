@@ -31,8 +31,8 @@ When visiting a nursing home resident with restored photographs, use them active
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [ArtImageHub restoration](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[ArtImageHub restoration](/old-photo-restoration) — professional AI photo restoration for everyone.*

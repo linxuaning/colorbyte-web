@@ -23,9 +23,9 @@ Inpainting works by analyzing the surrounding image context to predict what shou
 
 ## How AI Helps
 
-PhotoFix inpainting algorithms were specifically trained on historical family photography to understand the backgrounds, clothing patterns, and setting elements most commonly found in family photos. This domain-specific training produces more realistic results than general-purpose inpainting models.
+ArtImageHub inpainting algorithms were specifically trained on historical family photography to understand the backgrounds, clothing patterns, and setting elements most commonly found in family photos. This domain-specific training produces more realistic results than general-purpose inpainting models.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [restore old photos online](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

@@ -31,8 +31,8 @@ Less documented than the soldier portraits but equally significant are photograp
 
 ## Ready to Restore?
 
-Upload your photograph to [PhotoFix](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
+Upload your photograph to [old photo restoration tool](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
 
 ---
 
-*Experience professional-quality restoration in seconds at [PhotoFix](/old-photo-restoration).*
+*Experience professional-quality restoration in seconds at [old photo restoration tool](/old-photo-restoration).*

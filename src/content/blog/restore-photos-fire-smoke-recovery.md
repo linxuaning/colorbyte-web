@@ -23,9 +23,9 @@ Fire damage to photos exists on a spectrum — photos directly exposed to flame 
 
 ## How AI Helps
 
-PhotoFix fire and smoke damage recovery includes soot removal algorithms that lift surface contamination without damaging the underlying emulsion. Heat damage to emulsion is addressed by texture reconstruction algorithms that recover image content from heat-distorted photographic surfaces.
+ArtImageHub fire and smoke damage recovery includes soot removal algorithms that lift surface contamination without damaging the underlying emulsion. Heat damage to emulsion is addressed by texture reconstruction algorithms that recover image content from heat-distorted photographic surfaces.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [ArtImageHub restoration](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

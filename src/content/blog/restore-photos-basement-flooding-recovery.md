@@ -23,9 +23,9 @@ Emergency flood recovery for photos involves immediate drying to prevent mold gr
 
 ## How AI Helps
 
-PhotoFix flood damage recovery can be applied as soon as photos are dried and stable. The algorithm addresses the combination of water stain, silver migration, and drying damage simultaneously, using the most aggressive available recovery protocols for disaster-damaged photos.
+ArtImageHub flood damage recovery can be applied as soon as photos are dried and stable. The algorithm addresses the combination of water stain, silver migration, and drying damage simultaneously, using the most aggressive available recovery protocols for disaster-damaged photos.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

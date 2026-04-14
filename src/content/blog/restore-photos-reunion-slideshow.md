@@ -23,9 +23,9 @@ Reunion slideshow photography requires consistent file specifications across the
 
 ## How AI Helps
 
-PhotoFix reunion slideshow processing normalizes a family collection for presentation quality — consistent color temperature, unified orientation and cropping for portrait presentation, and delivery in multiple resolution options appropriate for different projection and display environments.
+ArtImageHub reunion slideshow processing normalizes a family collection for presentation quality — consistent color temperature, unified orientation and cropping for portrait presentation, and delivery in multiple resolution options appropriate for different projection and display environments.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [fix old photos free](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

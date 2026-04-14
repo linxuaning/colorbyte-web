@@ -23,9 +23,9 @@ Resolution enhancement works differently from simple digital enlargement — whi
 
 ## How AI Helps
 
-PhotoFix resolution enhancement can enlarge family photos up to 8x while maintaining photographic quality. The algorithm is specifically trained on family portrait photography, ensuring that facial details and period-appropriate clothing textures are rendered realistically at the enlarged scale.
+ArtImageHub resolution enhancement can enlarge family photos up to 8x while maintaining photographic quality. The algorithm is specifically trained on family portrait photography, ensuring that facial details and period-appropriate clothing textures are rendered realistically at the enlarged scale.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

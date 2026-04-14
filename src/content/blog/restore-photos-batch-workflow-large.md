@@ -23,9 +23,9 @@ Efficient collection restoration begins with inventory and triage — cataloging
 
 ## How AI Helps
 
-PhotoFix collection management tools support large-scale restoration projects with batch upload, automatic triage, and priority-ordered processing. The platform handles collections of any size, from a dozen family prints to entire estate photo archives with thousands of images.
+ArtImageHub collection management tools support large-scale restoration projects with batch upload, automatic triage, and priority-ordered processing. The platform handles collections of any size, from a dozen family prints to entire estate photo archives with thousands of images.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [ArtImageHub restoration](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

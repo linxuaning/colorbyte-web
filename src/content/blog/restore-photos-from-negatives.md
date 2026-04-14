@@ -27,14 +27,14 @@ Scanning negatives requires different equipment than scanning prints. A flatbed 
 
 ## Applying AI Restoration to Negative Scans
 
-Once you have a digital scan of a negative (properly inverted to a positive image by your scanning software or manually in an image editor), AI restoration applies just as effectively as to print scans. Common issues with negative-based images that AI addresses well include: grain (which looks like digital noise and can be reduced while preserving sharpness), color cast from uneven dye aging in color negatives, dust and scratch artifacts from the scanning process, and any damage to the physical negative itself — scratches, emulsion loss, or mold. Upload the positive-converted scan to PhotoFix for the same restoration workflow as any other image.
+Once you have a digital scan of a negative (properly inverted to a positive image by your scanning software or manually in an image editor), AI restoration applies just as effectively as to print scans. Common issues with negative-based images that AI addresses well include: grain (which looks like digital noise and can be reduced while preserving sharpness), color cast from uneven dye aging in color negatives, dust and scratch artifacts from the scanning process, and any damage to the physical negative itself — scratches, emulsion loss, or mold. Upload the positive-converted scan to ArtImageHub for the same restoration workflow as any other image.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [fix old photos free](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

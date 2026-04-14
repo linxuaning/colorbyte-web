@@ -27,14 +27,14 @@ There are limits to what any AI can know about color from a black and white imag
 
 ## Combining Colorization with Restoration
 
-The best results come from restoring a black and white photo first (removing damage, improving sharpness and contrast) and then colorizing the clean, restored image. Starting with a damaged, scratched image often causes colorization AI to misread damaged areas as objects and apply incorrect colors. PhotoFix handles both restoration and colorization, allowing you to run restoration first and then apply colorization to the clean result. The finished product — a sharp, colorized image of an ancestor who passed away decades before color photography became commonplace — often moves families to tears.
+The best results come from restoring a black and white photo first (removing damage, improving sharpness and contrast) and then colorizing the clean, restored image. Starting with a damaged, scratched image often causes colorization AI to misread damaged areas as objects and apply incorrect colors. ArtImageHub handles both restoration and colorization, allowing you to run restoration first and then apply colorization to the clean result. The finished product — a sharp, colorized image of an ancestor who passed away decades before color photography became commonplace — often moves families to tears.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [old photo restoration tool](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

@@ -23,9 +23,9 @@ Recent advances in restoration technology include large-scale AI models trained 
 
 ## How AI Helps
 
-PhotoFix continuously integrates the latest AI restoration research into its platform, ensuring users benefit from each technological advance without needing to understand the underlying technology. The platform's commitment to technological excellence means yesterday's difficult restoration cases become tomorrow's standard results.
+ArtImageHub continuously integrates the latest AI restoration research into its platform, ensuring users benefit from each technological advance without needing to understand the underlying technology. The platform's commitment to technological excellence means yesterday's difficult restoration cases become tomorrow's standard results.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [restore old photos online](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

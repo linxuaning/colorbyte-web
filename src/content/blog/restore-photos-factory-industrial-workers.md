@@ -31,8 +31,8 @@ Many working-class family photographs document union membership and identity: th
 
 ## Ready to Restore?
 
-Upload your photograph to [PhotoFix](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
+Upload your photograph to [fix old photos free](/old-photo-restoration) and let AI technology recover the details that time has hidden. Whether your photos are mildly faded or severely damaged, the results are often remarkable.
 
 ---
 
-*Experience professional-quality restoration in seconds at [PhotoFix](/old-photo-restoration).*
+*Experience professional-quality restoration in seconds at [fix old photos free](/old-photo-restoration).*

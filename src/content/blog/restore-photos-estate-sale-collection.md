@@ -23,9 +23,9 @@ Estate sale photo restoration follows the same technical processes as any family
 
 ## How AI Helps
 
-PhotoFix restoration for identification purposes enhances all potentially identifying details simultaneously, creating an enhanced image that maximizes the possibility of connecting estate sale photos with the families of the people photographed.
+ArtImageHub restoration for identification purposes enhances all potentially identifying details simultaneously, creating an enhanced image that maximizes the possibility of connecting estate sale photos with the families of the people photographed.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [AI photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

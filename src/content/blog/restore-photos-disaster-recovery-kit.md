@@ -31,8 +31,8 @@ The most robust disaster protection for photographs is digital duplication: high
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [AI photo restoration tool](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[AI photo restoration tool](/old-photo-restoration) — professional AI photo restoration for everyone.*

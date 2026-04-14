@@ -23,9 +23,9 @@ The urgency of family photo preservation is real — every year without action i
 
 ## How AI Helps
 
-PhotoFix exists precisely for this moment — to make professional-quality restoration accessible to every family while the window is still open. The platform's mission is ensuring that no family's visual history is lost to neglect when the technology to save it is available and affordable.
+ArtImageHub exists precisely for this moment — to make professional-quality restoration accessible to every family while the window is still open. The platform's mission is ensuring that no family's visual history is lost to neglect when the technology to save it is available and affordable.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [ArtImageHub restoration](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

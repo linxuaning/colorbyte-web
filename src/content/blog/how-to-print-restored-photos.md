@@ -19,7 +19,7 @@ Once you've restored an old photograph using AI tools, the natural next step is 
 
 ## Resolution Requirements for Different Print Sizes
 
-The fundamental rule of photo printing is that you need approximately 300 pixels per inch at the final print size for quality results. For a 4×6 inch print, that means your restored file should be at least 1200×1800 pixels. For an 8×10 inch print, you need at least 2400×3000 pixels. For a 16×20 inch poster print, you need 4800×6000 pixels. When you download your restored image from PhotoFix, check the pixel dimensions before ordering — if they don't meet these minimums at your desired print size, request the maximum resolution version. Most AI tools store the full-resolution result and provide it on download.
+The fundamental rule of photo printing is that you need approximately 300 pixels per inch at the final print size for quality results. For a 4×6 inch print, that means your restored file should be at least 1200×1800 pixels. For an 8×10 inch print, you need at least 2400×3000 pixels. For a 16×20 inch poster print, you need 4800×6000 pixels. When you download your restored image from ArtImageHub, check the pixel dimensions before ordering — if they don't meet these minimums at your desired print size, request the maximum resolution version. Most AI tools store the full-resolution result and provide it on download.
 
 ## File Format Considerations
 
@@ -33,8 +33,8 @@ Print services vary significantly in quality and appropriate use cases. For ever
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [ArtImageHub restoration](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

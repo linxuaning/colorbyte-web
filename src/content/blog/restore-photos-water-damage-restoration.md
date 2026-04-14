@@ -23,9 +23,9 @@ Water damage presents different challenges depending on severity — tide marks 
 
 ## How AI Helps
 
-PhotoFix water damage recovery protocols address both stain removal and emulsion reconstruction. The algorithm models the original image beneath water tide marks and reconstructs lifting emulsion sections, recovering images that appear completely destroyed by water damage.
+ArtImageHub water damage recovery protocols address both stain removal and emulsion reconstruction. The algorithm models the original image beneath water tide marks and reconstructs lifting emulsion sections, recovering images that appear completely destroyed by water damage.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [fix old photos free](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

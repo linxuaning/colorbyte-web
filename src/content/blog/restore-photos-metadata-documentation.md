@@ -23,9 +23,9 @@ Photo metadata standards include EXIF (camera data), IPTC (editorial and caption
 
 ## How AI Helps
 
-PhotoFix includes a metadata documentation tool that helps users add names, dates, and locations to restored photos in standardized formats. The documented photos are delivered with embedded metadata that will persist across storage platforms and format conversions.
+ArtImageHub includes a metadata documentation tool that helps users add names, dates, and locations to restored photos in standardized formats. The documented photos are delivered with embedded metadata that will persist across storage platforms and format conversions.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

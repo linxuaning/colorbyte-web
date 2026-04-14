@@ -23,9 +23,9 @@ Exhibition-quality restoration requires specific technical standards — resolut
 
 ## How AI Helps
 
-PhotoFix exhibition-quality processing produces files meeting museum archival standards — full-resolution TIFF delivery with ICC color profiles appropriate for fine-art printing, complete with restoration documentation suitable for exhibition caption text.
+ArtImageHub exhibition-quality processing produces files meeting museum archival standards — full-resolution TIFF delivery with ICC color profiles appropriate for fine-art printing, complete with restoration documentation suitable for exhibition caption text.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [AI photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

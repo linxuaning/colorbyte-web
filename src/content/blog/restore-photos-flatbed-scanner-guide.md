@@ -23,9 +23,9 @@ Optimal flatbed scanning for restoration requires specific settings — 600 DPI 
 
 ## How AI Helps
 
-PhotoFix scanning guidelines provide specific recommendations for each photo type in a typical family collection. The platform's intake process includes file quality assessment that identifies scans that need to be redone before restoration can achieve optimal results.
+ArtImageHub scanning guidelines provide specific recommendations for each photo type in a typical family collection. The platform's intake process includes file quality assessment that identifies scans that need to be redone before restoration can achieve optimal results.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [fix old photos free](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

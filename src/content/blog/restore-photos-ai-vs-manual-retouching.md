@@ -23,9 +23,9 @@ AI restoration excels at consistent, high-quality treatment of large collections
 
 ## How AI Helps
 
-PhotoFix combines AI efficiency with human review options — the AI handles the volume work, while expert human reviewers can provide additional enhancement for the most important photos in a collection. This hybrid approach delivers the best practical outcome for most family photo projects.
+ArtImageHub combines AI efficiency with human review options — the AI handles the volume work, while expert human reviewers can provide additional enhancement for the most important photos in a collection. This hybrid approach delivers the best practical outcome for most family photo projects.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

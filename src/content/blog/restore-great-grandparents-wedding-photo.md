@@ -27,14 +27,14 @@ The most common damage in photos from this era includes silver mirroring (a silv
 
 ## Restoration Approach for Maximum Authenticity
 
-When restoring ancestor wedding portraits, the goal is usually to recover the original tones and detail rather than to make the photo look 'modern.' AI restoration for this era works best when asked to recover the formal, high-contrast studio aesthetic that was original to the image — rich dark tones in black fabric and shadows, luminous whites in the bridal dress, clear rendering of facial features and jewelry. Upload to PhotoFix and review the result carefully; if specific areas (like the face) look over-processed, the tool allows selective adjustment. The finished result, printed and framed, makes a meaningful addition to a family history display.
+When restoring ancestor wedding portraits, the goal is usually to recover the original tones and detail rather than to make the photo look 'modern.' AI restoration for this era works best when asked to recover the formal, high-contrast studio aesthetic that was original to the image — rich dark tones in black fabric and shadows, luminous whites in the bridal dress, clear rendering of facial features and jewelry. Upload to ArtImageHub and review the result carefully; if specific areas (like the face) look over-processed, the tool allows selective adjustment. The finished result, printed and framed, makes a meaningful addition to a family history display.
 
 ## Practical Steps to Get Started
 
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
-Once you have a clean digital copy, visit [PhotoFix](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+Once you have a clean digital copy, visit [AI photo restoration tool](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
 
 ---
 
-*Ready to bring your photograph back to life? Try [PhotoFix's AI restoration tool](/old-photo-restoration) — no technical skills needed, results in seconds.*
+*Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*

@@ -23,9 +23,9 @@ Insurance and legal documentation photography requires specific technical standa
 
 ## How AI Helps
 
-PhotoFix restoration for documentation purposes produces court-admissible quality files with embedded metadata documenting the restoration process. The platform's timestamp records and process documentation satisfy legal standards for photographic evidence.
+ArtImageHub restoration for documentation purposes produces court-admissible quality files with embedded metadata documenting the restoration process. The platform's timestamp records and process documentation satisfy legal standards for photographic evidence.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

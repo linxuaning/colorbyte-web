@@ -31,8 +31,8 @@ Effective photo book design serves the photographs rather than overwhelming them
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [old photo restoration tool](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[old photo restoration tool](/old-photo-restoration) — professional AI photo restoration for everyone.*

@@ -23,9 +23,9 @@ Scratch removal works differently based on scratch orientation and severity. Fin
 
 ## How AI Helps
 
-PhotoFix scratch removal is applied at multiple scales — fine surface scratches are addressed by texture analysis, while major scratches are handled by content-aware inpainting. The multi-scale approach recovers image content from both superficial and deep scratch damage.
+ArtImageHub scratch removal is applied at multiple scales — fine surface scratches are addressed by texture analysis, while major scratches are handled by content-aware inpainting. The multi-scale approach recovers image content from both superficial and deep scratch damage.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [restore old photos online](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

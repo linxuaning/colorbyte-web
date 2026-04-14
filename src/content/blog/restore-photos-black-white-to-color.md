@@ -23,9 +23,9 @@ AI colorization uses contextual understanding to determine likely colors — the
 
 ## How AI Helps
 
-PhotoFix colorization is designed for family heritage photography, with specific training on the fashion, environments, and skin tones of different historical eras and cultural groups. The colorization documentation notes which colors are high-confidence identifications and which are contextual estimates.
+ArtImageHub colorization is designed for family heritage photography, with specific training on the fashion, environments, and skin tones of different historical eras and cultural groups. The colorization documentation notes which colors are high-confidence identifications and which are contextual estimates.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [fix old photos free](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

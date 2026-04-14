@@ -23,9 +23,9 @@ Starting a photo restoration hobby involves building a basic scanning setup, lea
 
 ## How AI Helps
 
-PhotoFix supports the photo restoration hobby through educational resources that help enthusiasts understand photographic technologies, damage types, and restoration approaches. The platform complements DIY efforts by handling the most technically challenging restoration while enthusiasts manage curation and documentation.
+ArtImageHub supports the photo restoration hobby through educational resources that help enthusiasts understand photographic technologies, damage types, and restoration approaches. The platform complements DIY efforts by handling the most technically challenging restoration while enthusiasts manage curation and documentation.
 
 ## Next Steps
 
-Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [PhotoFix](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
+Gather your photographs, scan at the highest resolution available (600 DPI minimum), and visit [old photo restoration tool](/old-photo-restoration) to start the restoration process. AI tools can handle damage that once required expensive professional services, making preservation accessible for every family.
 

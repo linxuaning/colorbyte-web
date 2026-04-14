@@ -19,7 +19,7 @@ AI-powered DIY restoration has dramatically lowered the barrier to entry for pho
 
 ## Cases Where AI Restoration Is Clearly Sufficient
 
-AI restoration is the right choice for: routine fading and color correction, minor to moderate scratch and crease repair, standard foxing and age spot removal, basic clarity and contrast improvement, and processing large volumes of photos where individual attention isn't feasible. For the 90% of family photo restoration needs that fall into these categories, AI tools like PhotoFix deliver results equivalent to what a professional restorer would do in less time and at much lower cost. If the photo has visible detail that's been obscured by age, AI can almost certainly recover it.
+AI restoration is the right choice for: routine fading and color correction, minor to moderate scratch and crease repair, standard foxing and age spot removal, basic clarity and contrast improvement, and processing large volumes of photos where individual attention isn't feasible. For the 90% of family photo restoration needs that fall into these categories, AI tools like ArtImageHub deliver results equivalent to what a professional restorer would do in less time and at much lower cost. If the photo has visible detail that's been obscured by age, AI can almost certainly recover it.
 
 ## When Professional Restoration Adds Value
 
@@ -31,8 +31,8 @@ Many professional restorers now use AI as the first step in their workflow — r
 
 ## Start Restoring Today
 
-Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [PhotoFix](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
+Gather your old photographs, scan them at the highest resolution your equipment allows, and visit [restore old photos online](/old-photo-restoration) to see what AI restoration can recover. The process takes minutes, requires no technical skill, and the results often exceed what families dare to hope for.
 
 ---
 
-*Bring your cherished photographs back to life with [PhotoFix's AI restoration tool](/old-photo-restoration) — professional results in seconds.*
+*Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*

@@ -31,8 +31,8 @@ AI restoration and photo editing software can address the visual impact of surfa
 
 ## Take Action Today
 
-Don't wait for photos to deteriorate further. Visit [PhotoFix](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
+Don't wait for photos to deteriorate further. Visit [fix old photos free](/old-photo-restoration) to restore your photographs with professional AI technology — the process takes minutes and the results last a lifetime.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — bringing your most important photographs back to life.*
+*[fix old photos free](/old-photo-restoration) — bringing your most important photographs back to life.*

@@ -31,8 +31,8 @@ The integration of still frames extracted from home movies with the traditional 
 
 ## Restore Your Photos Today
 
-Every damaged photograph is a recoverable memory. Visit [PhotoFix](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
+Every damaged photograph is a recoverable memory. Visit [fix old photos free](/old-photo-restoration) to upload your photos and see AI restoration results in seconds.
 
 ---
 
-*[PhotoFix](/old-photo-restoration) — professional AI photo restoration for everyone.*
+*[fix old photos free](/old-photo-restoration) — professional AI photo restoration for everyone.*
