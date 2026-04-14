@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Loader2, CheckCircle2, XCircle, AlertCircle } from "lucide-react";
 import DodoCheckoutButton from "@/components/DodoCheckoutButton";
+import PayPalButton from "@/components/PayPalButton";
 import {
   buildPaymentFunnelQuery,
   readPaymentFunnelSource,
@@ -311,6 +312,17 @@ export default function SubscriptionPage() {
                 resumeTaskId={resumeTaskId || undefined}
               />
 
+              <div className="mt-4 flex items-center gap-3">
+                <div className="h-px flex-1 bg-white/10" />
+                <span className="text-[12px] text-white/40">or pay with</span>
+                <div className="h-px flex-1 bg-white/10" />
+              </div>
+
+              <PayPalButton
+                checkoutEmail={email}
+                resumeTaskId={resumeTaskId || undefined}
+              />
+
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
                 <p className="font-medium text-white">What happens after payment</p>
                 <ul className="mt-2 space-y-1.5">
@@ -323,7 +335,7 @@ export default function SubscriptionPage() {
           </div>
 
           <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
-            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secure payment via DodoPayments
+            One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · DodoPayments or PayPal
           </p>
 
           {EMAIL_PAYMENT_ENTRY_ENABLED && (
