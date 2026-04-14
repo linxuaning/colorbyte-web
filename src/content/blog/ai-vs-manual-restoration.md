@@ -15,7 +15,7 @@ Today, in 2026, the landscape's transformed. Advanced AI restoration technology 
 
 Yet manual restoration hasn't become obsolete. Professional restorers still rely on human judgment, artistic skill, and contextual understanding that AI can't fully replicate. The best restoration results often combine AI's speed and consistency with manual refinement's precision and creativity.
 
-This guide'll help you understand when to use AI restoration, when manual techniques are necessary, and how to combine both approaches for optimal results. Whether you're restoring family photos or professionally working with clients' images, understanding these complementary approaches will improve your results and efficiency.
+This guide'll help you understand when to use AI restoration, when manual techniques are necessary, and how to combine both approaches for optimal results. Whether you're restoring family photos or professionally working with clients' images, understanding these complementary approaches will improve your results and efficiency. If you're colorizing photos, our [colorization accuracy tips](/blog/colorization-accuracy-tips) cover how to get realistic results.
 
 ## Understanding AI Photo Restoration Technology
 

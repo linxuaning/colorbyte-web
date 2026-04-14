@@ -9,7 +9,7 @@ category: "Photo Restoration"
 featured: false
 ---
 
-Photos displayed on walls, mantels, and in sunny rooms gradually fade from UV exposure. Years of sunlight can bleach colors, yellow whites, and wash out precious family memories. Digital restoration can recover much of what the sun has taken.
+Photos displayed on walls, mantels, and in sunny rooms gradually fade from UV exposure. Years of sunlight can bleach colors, yellow whites, and wash out precious family memories. Digital restoration can recover much of what the sun has taken. For a deeper dive into techniques and tools, see our complete guide on [fixing sun damaged photos](/blog/fix-sun-damaged-photos).
 
 Have sun-faded photos? Our [AI photo restoration tool](/restore-old-family-photos) reverses UV damage effectively.
 

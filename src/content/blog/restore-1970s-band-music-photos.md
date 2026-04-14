@@ -15,7 +15,7 @@ coverEmoji: "🎸"
 
 # Restoring 1970s Band and Music Photos: Rock Era Memories in Full Color
 
-The band photograph from 1974 has everything: long hair, platform shoes, a van in the background that should have its own story, and four young men who genuinely believed they were going to be famous. One of them was Daniel's father.
+The band photograph from 1974 has everything: long hair, platform shoes, a van in the background that should have its own story, and four young men who genuinely believed they were going to be famous. One of them was Daniel's father. If you have concert photos from this era, see our dedicated guide on [enhancing old concert photographs](/blog/enhance-old-concert-photographs).
 
 ## Understanding the Core Challenge
 

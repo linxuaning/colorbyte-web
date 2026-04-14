@@ -11,7 +11,7 @@ featured: false
 
 Nothing frustrates collectors and family historians more than blurry vintage photos. You've discovered a precious image of ancestors, historic events, or cherished family moments, only to find that the photograph lacks critical sharpness and clarity. Whether the blur results from camera focus issues, subject or camera movement, lens limitations of vintage cameras, or deterioration and aging effects, modern AI enhancement technology can often recover remarkable detail from blurry vintage photographs.
 
-I'll explain why vintage photos blur, how to figure out what type of blur you're dealing with, the best techniques for enhancing sharpness, and what kind of results you can realistically expect.
+I'll explain why vintage photos blur, how to figure out what type of blur you're dealing with, the best techniques for enhancing sharpness, and what kind of results you can realistically expect. If your photos are pixelated rather than blurry, see our guide on [enhancing low quality images](/blog/enhance-low-quality-images).
 
 Ready to fix blurry vintage photos? Try our [free unblur photo tool](/unblur-photo)—AI sharpens soft focus, motion blur, and camera shake instantly. No sign-up required.
 

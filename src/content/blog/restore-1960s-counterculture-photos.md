@@ -17,7 +17,7 @@ coverEmoji: "✌️"
 
 The photographs came in a manila envelope with "DO NOT THROW AWAY" written on it in three different hands, which told me the envelope had survived several close calls with people who didn't understand what they were.
 
-Inside: forty-seven photographs from Berkeley and San Francisco, 1966-1969. Protests, concerts, gatherings in parks. The faces were young and certain in the way that faces are young and certain before history happens to them. Helen had been in some of the photographs. She was 78 now and wanted to see them clearly.
+Inside: forty-seven photographs from Berkeley and San Francisco, 1966-1969. Protests, [concerts](/blog/enhance-old-concert-photographs), gatherings in parks. The faces were young and certain in the way that faces are young and certain before history happens to them. Helen had been in some of the photographs. She was 78 now and wanted to see them clearly.
 
 ## The 1960s as a Photographic Era
 

@@ -15,7 +15,7 @@ coverEmoji: "🎺"
 
 # Restoring 1920s Jazz Age Photographs
 
-The photograph of the orchestra was taken at a speakeasy in Chicago, sometime around 1927. Fourteen musicians on a small stage, the room behind them packed with people who were, technically, committing a federal crime and clearly enjoying it enormously. The photograph had been taken by someone with a good eye and the right equipment — a Graflex Speed Graphic, probably, the press camera of the era.
+The photograph of the orchestra was taken at a speakeasy in Chicago, sometime around 1927. Fourteen musicians on a small stage, the room behind them packed with people who were, technically, committing a federal crime and clearly enjoying it enormously. (For more on restoring live music photography, see our guide to [enhancing old concert photographs](/blog/enhance-old-concert-photographs).) The photograph had been taken by someone with a good eye and the right equipment — a Graflex Speed Graphic, probably, the press camera of the era.
 
 David found it in an estate sale. Nobody knew the musicians' names. Nobody knew the venue. But the photograph was extraordinary: sharp, beautifully lit, full of life — and it needed work.
 
