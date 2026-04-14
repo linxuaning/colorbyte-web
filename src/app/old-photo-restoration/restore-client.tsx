@@ -70,6 +70,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [backendReady, setBackendReady] = useState(false);
   const [warmupSeconds, setWarmupSeconds] = useState(0);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const lastFileRef = useRef<File | null>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
@@ -180,23 +181,44 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       return;
     }
 
-    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.is_active) {
-          setIsSubscriber(true);
+    let cancelled = false;
+    const checkSubscription = async () => {
+      // Retry up to 4 times (initial + 3 retries) to handle webhook delay.
+      // Dodo webhook can arrive a few seconds after payment redirect.
+      const delays = [0, 2000, 4000, 8000];
+      for (let attempt = 0; attempt < delays.length; attempt++) {
+        if (cancelled) return;
+        if (attempt > 0) {
+          await new Promise((r) => setTimeout(r, delays[attempt]));
         }
-        setBackendReady(true);
-      })
-      .catch(() => {
-        // Backend might be cold-starting — retry with /health as fallback
-        fetch(`${API_BASE}/health`)
-          .then(() => setBackendReady(true))
-          .catch(() => {});
-      })
-      .finally(() => {
-        setCheckingAccess(false);
-      });
+        if (cancelled) return;
+        try {
+          const res = await fetch(
+            `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`
+          );
+          const data = await res.json();
+          if (data.is_active) {
+            setIsSubscriber(true);
+            setBackendReady(true);
+            setCheckingAccess(false);
+            return;
+          }
+          // First attempt: mark backend as ready even if not active yet
+          if (attempt === 0) setBackendReady(true);
+        } catch {
+          if (attempt === 0) {
+            // Backend might be cold-starting — fire /health as fallback
+            fetch(`${API_BASE}/health`)
+              .then(() => setBackendReady(true))
+              .catch(() => {});
+          }
+        }
+      }
+      // All retries exhausted — show whatever state we have
+      if (!cancelled) setCheckingAccess(false);
+    };
+    checkSubscription();
+    return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {
@@ -253,7 +275,8 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         return;
       }
 
-      // Show preview
+      // Show preview and keep file ref for retry
+      lastFileRef.current = file;
       setPreview(URL.createObjectURL(file));
       setStage("uploading");
       setProgress(0);
@@ -416,7 +439,25 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     processingStartedAtRef.current = null;
     setEmailEntry("");
     setEmailEntryHint("");
+    lastFileRef.current = null;
   };
+
+  const retryWithLastFile = useCallback(() => {
+    const file = lastFileRef.current;
+    if (file) {
+      setErrorMsg("");
+      setIsHighUsageError(false);
+      setTaskId(null);
+      setProgress(0);
+      setProgressText("");
+      setResultPreviewUrl(null);
+      setOriginalUrl(null);
+      processingStartedAtRef.current = null;
+      handleFile(file);
+    } else {
+      reset();
+    }
+  }, [handleFile]);
 
   const handleSendPaymentLinkEmail = () => {
     const fallbackEmail = localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || "";
@@ -875,13 +916,23 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
             )}
           </div>
-          <button
-            onClick={reset}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-          >
-            <RotateCcw className="h-4 w-4" />
-            Try Again
-          </button>
+          <div className="flex flex-col items-center gap-2">
+            <button
+              onClick={retryWithLastFile}
+              className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
+            >
+              <RotateCcw className="h-4 w-4" />
+              {lastFileRef.current ? "Retry Same Photo" : "Try Again"}
+            </button>
+            {lastFileRef.current && (
+              <button
+                onClick={reset}
+                className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] underline"
+              >
+                Upload a different photo
+              </button>
+            )}
+          </div>
         </div>
       )}
 
