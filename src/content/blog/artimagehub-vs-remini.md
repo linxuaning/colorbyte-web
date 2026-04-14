@@ -221,7 +221,7 @@ I'm paying out of pocket. Cost matters.
 
 | Tool | Monthly Cost | Photos Included | Cost Per Photo | Notes |
 |------|-------------|-----------------|----------------|-------|
-| **ArtImageHub Pro** | $9.00 | 100 credits | **$0.09** | Annual: $90/year |
+| **ArtImageHub** | $4.99 one-time | Unlimited | **$4.99 total** | No subscription |
 | **Remini Pro** | $4.99 | Unlimited | **$0.05** | Best value for volume |
 | **MyHeritage** | $8.25/mo | Unlimited | **$0.08** | $99 annual only |
 | **Adobe Photo** | $54.99 | Unlimited | **$0.55** | Full Photoshop access |
@@ -229,7 +229,7 @@ I'm paying out of pocket. Cost matters.
 | **VanceAI** | $9.90 | 100 credits | **$0.10** | Plus $0.50 per extra |
 
 **Cheapest for 100 photos: Remini** ($4.99 for unlimited)
-**Best value considering quality: ArtImageHub** ($9 for 100 high-quality restorations)
+**Best value considering quality: ArtImageHub** ($4.99 one-time, no recurring charge)
 
 ### My Actual Spending
 
@@ -382,7 +382,7 @@ After 100 photos, I learned the best approach isn't picking one tool—it's comb
 - Best face restoration on vintage photos
 - Most natural results
 - Free tier is actually usable
-- Would I pay $9/month if I had 100+ photos to do quickly? Yes.
+- Would I pay $4.99 one-time if I had 100+ photos to do quickly? Yes.
 
 **For high-volume processing on a budget:** Remini
 - Fastest processing

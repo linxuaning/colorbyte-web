@@ -188,7 +188,7 @@ Download the restored version and compare it to the original at 100% zoom. For m
 |--------|-------------------|------------------|
 | **Time per photo** | 30 min – 3 hours | 30–90 seconds |
 | **Skill required** | Intermediate to advanced | None |
-| **Cost** | Photoshop $22/month | ArtImageHub free tier / $9/month |
+| **Cost** | Photoshop $22/month | ArtImageHub free tier / $4.99 one-time |
 | **Mild blur** | Good results | Excellent results |
 | **Moderate blur** | Mediocre results | Good results |
 | **Severe blur** | Poor results | Moderate results |

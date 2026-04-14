@@ -309,7 +309,7 @@ I've tested every major photo restoration tool released in the past five years w
 
 **[ArtImageHub](/old-photo-restoration) (Recommended for home restoration)**
 
-**Pricing:** Free for 10 photos/month, then $9/month unlimited
+**Pricing:** Free for 10 photos/month, then $4.99 one-time unlimited
 **Best for:** General family photo restoration, faces, batch processing
 **Processing time:** 30-90 seconds per photo
 **Quality:** Excellent for 80-85% of typical home photos
@@ -648,7 +648,7 @@ Use this format: `YYYY-MM-DD_Event_People_Location_Version.jpg`
 **Minimum backup setup ($100):**
 - **Copy 1:** On your computer (primary working location)
 - **Copy 2:** External hard drive ($60-100 for 2TB)
-- **Copy 3:** Free cloud storage (Google Photos, OneDrive, iCloud) or paid (Backblaze $9/month unlimited)
+- **Copy 3:** Free cloud storage (Google Photos, OneDrive, iCloud) or paid (Backblaze $4.99 one-time unlimited)
 
 **Why this matters:** I've watched people lose hundreds of hours of restoration work because their computer died and they had no backup. Hard drives fail. Computers crash. Houses flood. Redundancy ensures your work survives.
 
@@ -907,7 +907,7 @@ For a typical home collection of 50 photos, expect 6-9 hours total spread over a
 
 **What equipment do I need to restore photos at home?**
 
-For collections under 30 photos, just your smartphone with Google PhotoScan app (free) works fine. For 30-500 photos, invest in a flatbed scanner (Epson V600 at $220 is the standard), cotton gloves ($8), and an external hard drive ($80). You'll also need AI restoration software—[ArtImageHub](/old-photo-restoration) offers free restoration for 10 photos/month, then $9/month unlimited. Total startup cost ranges from $0 for small projects to $350-400 for serious home restoration setups.
+For collections under 30 photos, just your smartphone with Google PhotoScan app (free) works fine. For 30-500 photos, invest in a flatbed scanner (Epson V600 at $220 is the standard), cotton gloves ($8), and an external hard drive ($80). You'll also need AI restoration software—[ArtImageHub](/old-photo-restoration) offers free restoration for 10 photos/month, then $4.99 one-time unlimited. Total startup cost ranges from $0 for small projects to $350-400 for serious home restoration setups.
 
 **Can I really restore photos without Photoshop experience?**
 
@@ -947,7 +947,7 @@ Always wear cotton gloves ($8 for a pack that lasts for hundreds of photos) to p
       "name": "What equipment do I need to restore photos at home?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For collections under 30 photos, just your smartphone with Google PhotoScan app (free) works fine. For 30-500 photos, invest in a flatbed scanner (Epson V600 at $220 is the standard), cotton gloves ($8), and an external hard drive ($80). You'll also need AI restoration software—ArtImageHub offers free restoration for 10 photos/month, then $9/month unlimited. Total startup cost ranges from $0 for small projects to $350-400 for serious home restoration setups."
+        "text": "For collections under 30 photos, just your smartphone with Google PhotoScan app (free) works fine. For 30-500 photos, invest in a flatbed scanner (Epson V600 at $220 is the standard), cotton gloves ($8), and an external hard drive ($80). You'll also need AI restoration software—ArtImageHub offers free restoration for 10 photos/month, then $4.99 one-time unlimited. Total startup cost ranges from $0 for small projects to $350-400 for serious home restoration setups."
       }
     },
     {

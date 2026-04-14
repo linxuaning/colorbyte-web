@@ -125,7 +125,7 @@ After all that physical prep work, this is where things get exciting. I was hone
 
 I tested three AI tools on the same 50-photo sample:
 
-### ArtImageHub (Free tier, then $9/month)
+### ArtImageHub (Free tier, then $4.99 one-time)
 **Best for:** General family photos, faces, black-and-white colorization
 **Results:** 82% of photos needed no further editing
 **Speed:** 30–90 seconds per photo
@@ -267,7 +267,7 @@ You've spent 60 hours digitizing and restoring. Now what?
 **My setup:**
 1. **Primary:** 2TB external SSD (fast access for editing)
 2. **Backup 1:** Synology NAS (automatic nightly backups)
-3. **Backup 2:** Backblaze cloud backup ($9/month for unlimited)
+3. **Backup 2:** Backblaze cloud backup ($4.99 one-time for unlimited)
 
 **Why this matters:** Hard drives fail. Houses flood. Cloud services shut down. Redundancy means your 60 hours of work survives.
 
@@ -421,7 +421,7 @@ I use a decade-based folder structure: `01_Originals_NEVER_EDIT/`, `02_AI_Restor
 
 **Tools I Actually Use:**
 - **Scanner:** Epson V600 ([Amazon](https://amazon.com/))
-- **AI Restoration:** [ArtImageHub](/old-photo-restoration) (free tier → $9/month)
+- **AI Restoration:** [ArtImageHub](/old-photo-restoration) (free tier → $4.99 one-time)
 - **Backup:** Backblaze ([backblaze.com](https://www.backblaze.com/))
 - **Sharing:** Google Photos (free for "high quality")
 - **Metadata:** Adobe Lightroom Classic ($10/month)

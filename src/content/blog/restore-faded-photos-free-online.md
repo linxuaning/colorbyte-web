@@ -447,7 +447,7 @@ I tested the same 50 faded photos through free tools and paid versions:
 - Time: under an hour for 50 photos
 - Cost: $0
 
-**Paid tool (ArtImageHub Premium, $9/month):**
+**Paid tool (ArtImageHub Premium, $4.99 one-time):**
 - Success rate: well over 80%
 - Average quality: excellent
 - Time: around 40 minutes for 50 photos

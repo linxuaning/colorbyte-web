@@ -86,7 +86,7 @@ Now let's dive into detailed reviews of the top tools.
 
 **Pricing:**
 - Free: 10 photos/month
-- Premium: $9/month or $79/year (unlimited photos)
+- Premium: $4.99 one-time or $79/year (unlimited photos)
 - Business: $29/month (API access, priority processing)
 
 **Platforms:** Web browser (any device), mobile apps coming Q2 2026
@@ -262,7 +262,7 @@ AI identifies faces, buildings, foliage, sky, and processes each differently. Mo
 
 **2. Expensive upfront cost**
 
-$199 vs. $9/month for ArtImageHub. For casual users restoring 50 photos, ArtImageHub is cheaper ($9 one month). Topaz makes sense if you restore hundreds of photos annually.
+$199 vs. $4.99 one-time for ArtImageHub. For casual users restoring 50 photos, ArtImageHub is cheaper ($9 one month). Topaz makes sense if you restore hundreds of photos annually.
 
 **3. Slower processing**
 
@@ -501,7 +501,7 @@ Buy credits, use them when needed. Credits don't expire. Better than monthly sub
 
 **Example:** Restore 100 photos once a year:
 - VanceAI: $9.90 once = $9.90/year
-- ArtImageHub: $9/month × 2 months = $18/year (assuming you finish in 2 months)
+- ArtImageHub: $4.99 one-time × 2 months = $18/year (assuming you finish in 2 months)
 - Topaz: $199 upfront
 
 For small projects, VanceAI is cheapest.
@@ -770,7 +770,7 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 **Choose: ArtImageHub**
 - Easy to learn (30 minute learning curve)
 - Excellent results (83.6% success rate)
-- Affordable ($9/month or $79/year)
+- Affordable ($4.99 one-time or $79/year)
 - 10 free photos to test
 - Best all-around value
 
@@ -855,7 +855,7 @@ It achieves the best balance of:
 - Quality (83.6% success rate)
 - Ease of use (30-minute learning curve)
 - Speed (30-90 seconds per photo)
-- Price ($79/year or $9/month)
+- Price ($79/year or $4.99 one-time)
 - Versatility (handles all damage types well)
 
 **Topaz Photo AI** is better for professionals who need offline processing and maximum control.

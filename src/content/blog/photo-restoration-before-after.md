@@ -110,7 +110,7 @@ Fading is the most common form of photo damage—and often produces the most dra
 
 **What made this work:** Kodachrome fading follows predictable patterns. AI tools trained on thousands of Kodachrome slides know exactly how to reverse the shift. The image detail was still there—just the wrong colors.
 
-**Cost:** $0 (free tier) or $9/month for unlimited
+**Cost:** $0 (free tier) or $4.99 one-time for unlimited
 
 ### Example 2: 1970s Polaroid (Complete Color Loss)
 
@@ -239,7 +239,7 @@ Scratches seem permanent but modern restoration makes them virtually disappear.
 
 **What made this work:** AI scratch removal has gotten remarkably good. It identifies scratch patterns and fills intelligently from surrounding areas.
 
-**Cost:** $9/month or free tier
+**Cost:** $4.99 one-time or free tier
 
 ### Example 7: 1968 Photo (One Deep Scratch Across Face)
 
@@ -371,7 +371,7 @@ Water damage is one of the hardest to restore—but not impossible.
 
 **What made this work:** Surface water spots (not emulsion damage) are easy for AI to remove. Treats them like large dust specks.
 
-**Cost:** Free tier or $9/month
+**Cost:** Free tier or $4.99 one-time
 
 ## Category 5: Colorization of Black-and-White Photos (12 Examples)
 
@@ -423,7 +423,7 @@ Adding color to B&W photos creates stunning transformations when done well.
 
 **Why not higher:** No way to verify if clothing colors are accurate. AI made plausible guesses. Family loves it anyway.
 
-**Cost:** Free or $9/month
+**Cost:** Free or $4.99 one-time
 
 ## Category 6: Severe Multi-Damage Restoration (10 Examples)
 
@@ -511,7 +511,7 @@ Modern AI face enhancement produces particularly impressive before-afters.
 
 **What made this work:** AI face enhancement in 2026 is remarkably good at recovering detail from blurry faces without creating artificial appearance.
 
-**Cost:** Free or $9/month
+**Cost:** Free or $4.99 one-time
 
 ### Example 17: Small Face in Large Group Photo
 
@@ -533,7 +533,7 @@ Modern AI face enhancement produces particularly impressive before-afters.
 
 **What made this work:** AI upscaling adds plausible detail based on training data. Not perfect, but much better than pixelated original.
 
-**Cost:** Free or $9/month
+**Cost:** Free or $4.99 one-time
 
 ## Category 8: Restoration Time Comparisons
 
@@ -545,7 +545,7 @@ Understanding time investment helps set expectations.
 **Method:** ArtImageHub auto mode
 **Time:** 52 seconds
 **Result:** 9/10
-**Cost:** Free or $9/month
+**Cost:** Free or $4.99 one-time
 
 ### Example 19: Scratches (AI + Minor Manual)
 
@@ -553,7 +553,7 @@ Understanding time investment helps set expectations.
 **Method:** AI (95% removed) + manual clone stamp for 3 deep scratches
 **Time:** AI: 45 sec, Manual: 15 min, Total: 16 minutes
 **Result:** 9/10
-**Cost:** $9/month + free manual tool
+**Cost:** $4.99 one-time + free manual tool
 
 ### Example 20: Torn Photo (Manual Heavy)
 
@@ -561,7 +561,7 @@ Understanding time investment helps set expectations.
 **Method:** Scan alignment + AI tear repair (70%) + manual repair
 **Time:** Scanning: 15 min, AI: 60 sec, Manual: 90 min, Total: 2 hours
 **Result:** 8.5/10
-**Cost:** $9/month + free manual tool
+**Cost:** $4.99 one-time + free manual tool
 
 ### Example 21: Severe Multi-Damage (Professional)
 
@@ -605,7 +605,7 @@ After analyzing 50 before-and-after examples, clear patterns emerge:
 **AI + manual combination needed for:**
 - 25-30% of photos (AI handles bulk, manual fixes AI struggles)
 - Processing time: 20 minutes to 2 hours
-- Cost: $9/month + free manual tools
+- Cost: $4.99 one-time + free manual tools
 
 **Professional restoration required for:**
 - 5-10% of photos (severe/complex damage, historical value)
@@ -727,7 +727,7 @@ You'll be amazed.
 
 **How much does photo restoration cost in 2026?**
 
-DIY photo restoration costs $0-9/month using AI tools like ArtImageHub (free tier: 10 photos/month, premium: $79/year unlimited). Professional restoration ranges from $75-150 for simple damage to $200-600 for complex damage per photo. Based on my 50 before-after examples, 70% of photos can be restored successfully with $9/month AI tools, 25% need manual touch-ups (free software), and only 5% truly require professional help. For a typical 100-photo collection, expect $9-30 total for DIY or $7,500-30,000 for full professional restoration.
+DIY photo restoration costs $0-9/month using AI tools like ArtImageHub (free tier: 10 photos/month, premium: $79/year unlimited). Professional restoration ranges from $75-150 for simple damage to $200-600 for complex damage per photo. Based on my 50 before-after examples, 70% of photos can be restored successfully with $4.99 one-time AI tools, 25% need manual touch-ups (free software), and only 5% truly require professional help. For a typical 100-photo collection, expect $9-30 total for DIY or $7,500-30,000 for full professional restoration.
 
 **Can severely damaged photos be restored?**
 
@@ -763,7 +763,7 @@ For common damage types (fading, scratches, yellowing), 2026 AI restoration achi
       "name": "How much does photo restoration cost in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "DIY photo restoration costs $0-9/month using AI tools like ArtImageHub (free tier: 10 photos/month, premium: $79/year unlimited). Professional restoration ranges from $75-150 for simple damage to $200-600 for complex damage per photo. Based on my 50 before-after examples, 70% of photos can be restored successfully with $9/month AI tools, 25% need manual touch-ups (free software), and only 5% truly require professional help. For a typical 100-photo collection, expect $9-30 total for DIY or $7,500-30,000 for full professional restoration."
+        "text": "DIY photo restoration costs $0-9/month using AI tools like ArtImageHub (free tier: 10 photos/month, premium: $79/year unlimited). Professional restoration ranges from $75-150 for simple damage to $200-600 for complex damage per photo. Based on my 50 before-after examples, 70% of photos can be restored successfully with $4.99 one-time AI tools, 25% need manual touch-ups (free software), and only 5% truly require professional help. For a typical 100-photo collection, expect $9-30 total for DIY or $7,500-30,000 for full professional restoration."
       }
     },
     {

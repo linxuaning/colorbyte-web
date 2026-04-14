@@ -280,7 +280,7 @@ Cloud-based AI upscaling service, web-based platform.
 
 **Pricing:**
 - Free tier: 5 images/month
-- Light: $9/month (100 images)
+- Light: $4.99 one-time (100 images)
 - Pro: $39/month (unlimited)
 
 **Best For:**
