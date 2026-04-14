@@ -559,3 +559,5 @@ MyHeritage, by a clear margin in my testing. Their colorization produced the mos
   ]
 }
 </script>
+- [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — Neural Filters vs AI restoration pipeline
+- [ArtImageHub vs Lightroom](/blog/artimagehub-vs-lightroom) — modern photo editor vs dedicated restoration tool

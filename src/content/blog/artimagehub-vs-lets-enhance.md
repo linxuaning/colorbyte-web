@@ -153,3 +153,5 @@ For old printed photographs with damage and degradation, ArtImageHub's restorati
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair
+- [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — Neural Filters vs AI restoration pipeline
+- [ArtImageHub vs Lightroom](/blog/artimagehub-vs-lightroom) — modern photo editor vs dedicated restoration tool

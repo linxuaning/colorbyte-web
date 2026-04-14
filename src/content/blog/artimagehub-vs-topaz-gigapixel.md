@@ -132,3 +132,5 @@ For typical family photo restoration — a box of old prints that need to look g
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — AI upscaling vs old photo restoration
+- [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — Neural Filters vs AI restoration pipeline
+- [ArtImageHub vs Lightroom](/blog/artimagehub-vs-lightroom) — modern photo editor vs dedicated restoration tool

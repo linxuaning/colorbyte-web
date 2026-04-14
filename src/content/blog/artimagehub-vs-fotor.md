@@ -147,3 +147,5 @@ For old photo restoration specifically, ArtImageHub's focused models produce bet
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — AI upscaling vs old photo restoration
+- [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — Neural Filters vs AI restoration pipeline
+- [ArtImageHub vs Lightroom](/blog/artimagehub-vs-lightroom) — modern photo editor vs dedicated restoration tool
