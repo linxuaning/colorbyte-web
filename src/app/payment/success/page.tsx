@@ -1,7 +1,7 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   buildPaymentFunnelQuery,
@@ -17,10 +17,12 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 
 function PaymentSuccessContent() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const email = searchParams.get("email");
   const orderId = searchParams.get("order_id") || searchParams.get("payment_id");
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = readPaymentFunnelSource(searchParams);
+  const [countdown, setCountdown] = useState(resumeTaskId ? 3 : -1);
 
   useEffect(() => {
     // Persist the paid-access email so the user can reopen unlocked downloads.
@@ -50,6 +52,19 @@ function PaymentSuccessContent() {
         return legacyQuery ? `${restartPath}?${legacyQuery}` : restartPath;
       })()
     : "";
+
+  // Auto-redirect to result when resume_task_id is present (3s countdown)
+  useEffect(() => {
+    if (!legacyResultHref || countdown < 0) return;
+    if (countdown === 0) {
+      router.push(legacyResultHref);
+      return;
+    }
+    const timer = setTimeout(() => {
+      setCountdown((c) => c - 1);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [countdown, legacyResultHref, router]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-[#f5f5f7] flex items-center justify-center px-5">
@@ -156,12 +171,24 @@ function PaymentSuccessContent() {
           </Link>
 
           {legacyResultHref ? (
-            <Link
-              href={legacyResultHref}
-              className="mt-3 block w-full text-[13px] font-medium text-[#6e6e73] hover:text-[#1d1d1f] hover:underline"
-            >
-              Open the previous paid result instead
-            </Link>
+            <div className="mt-3 text-center">
+              <Link
+                href={legacyResultHref}
+                className="block w-full text-[13px] font-medium text-[#0071e3] hover:text-[#0077ed] hover:underline"
+              >
+                {countdown > 0
+                  ? `Opening your result in ${countdown}s...`
+                  : "Open your result now"}
+              </Link>
+              {countdown > 0 && (
+                <button
+                  onClick={() => setCountdown(-1)}
+                  className="mt-1 text-[12px] text-[#86868b] hover:text-[#6e6e73] underline"
+                >
+                  Stay on this page
+                </button>
+              )}
+            </div>
           ) : null}
 
           <Link
