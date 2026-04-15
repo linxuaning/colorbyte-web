@@ -6,6 +6,7 @@ import Link from "next/link";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import StickyCTA from "@/components/StickyCTA";
 import RouteChromeGuard from "@/components/RouteChromeGuard";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -28,14 +29,14 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "ArtImageHub",
-  url: "https://www.artimagehub.com",
+  url: "https://artimagehub.com",
   description:
     "AI-powered photo restoration, enhancement, and colorization. One-time $4.99 payment unlocks upload, AI processing, and HD download. Results in 30–90 seconds.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://www.artimagehub.com/blog?q={search_term_string}",
+      urlTemplate: "https://artimagehub.com/blog?q={search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -45,10 +46,10 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "ArtImageHub",
-  url: "https://www.artimagehub.com",
+  url: "https://artimagehub.com",
   logo: {
     "@type": "ImageObject",
-    url: "https://www.artimagehub.com/favicon.ico",
+    url: "https://artimagehub.com/favicon.ico",
     width: 32,
     height: 32,
   },
@@ -65,7 +66,7 @@ const organizationSchema = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.artimagehub.com"),
+  metadataBase: new URL("https://artimagehub.com"),
   title: {
     default: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
     template: "%s | ArtImageHub",
@@ -163,13 +164,16 @@ function Header() {
           </Link>
         </nav>
 
-        {/* CTA */}
-        <Link
-          href="/old-photo-restoration"
-          className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20"
-        >
-          Restore Free
-        </Link>
+        {/* CTA + Language switcher */}
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <Link
+            href="/old-photo-restoration"
+            className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20"
+          >
+            Restore Free
+          </Link>
+        </div>
       </div>
     </header>
   );
