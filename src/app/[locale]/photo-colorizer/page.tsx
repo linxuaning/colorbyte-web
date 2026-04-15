@@ -71,6 +71,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Colorize Black and White Photos Online with AI",
+  description:
+    "Colorize black and white photos with AI in 3 steps. Free preview — original-quality download for $4.99.",
+  totalTime: "PT2M",
+  tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Colorizer" }],
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Upload your black and white photo",
+      text: "Upload any black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "AI colorizes your photo in seconds",
+      text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30 seconds.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Preview free, download HD with Pro",
+      text: "Preview the colorized result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download.",
+    },
+  ],
+};
+
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -133,6 +163,10 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}

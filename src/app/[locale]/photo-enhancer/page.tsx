@@ -71,6 +71,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Enhance Photo Quality Online with AI",
+  description:
+    "Improve photo quality with AI in 3 steps. Fix blur, upscale resolution, enhance faces. Free preview — original-quality download for $4.99.",
+  totalTime: "PT2M",
+  tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Enhancer" }],
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Upload your photo",
+      text: "Upload any blurry, low-resolution, or low-quality photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "AI enhances your photo in seconds",
+      text: "AI removes blur, upscales resolution up to 4×, and enhances face detail automatically. Results are ready in 30 seconds.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Preview free, download HD with Pro",
+      text: "Preview the enhanced result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download.",
+    },
+  ],
+};
+
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -133,6 +163,10 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
