@@ -5,6 +5,7 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import { routing } from "@/i18n/routing";
 import { getLocaleSEO } from "@/lib/i18n/locale-map";
+import type { FaqItem, HowToStep } from "@/lib/i18n/types";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -71,35 +72,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How to Colorize Black and White Photos Online with AI",
-  description:
-    "Colorize black and white photos with AI in 3 steps. Free preview — original-quality download for $4.99.",
-  totalTime: "PT2M",
-  tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Colorizer" }],
-  step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Upload your black and white photo",
-      text: "Upload any black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "AI colorizes your photo in seconds",
-      text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30 seconds.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Preview free, download HD with Pro",
-      text: "Preview the colorized result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download.",
-    },
-  ],
-};
+const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
+  { name: "Upload your black and white photo", text: "Upload any black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required." },
+  { name: "AI colorizes your photo in seconds", text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30 seconds." },
+  { name: "Preview free, download HD with Pro", text: "Preview the colorized result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download." },
+];
+
+function buildHowToSchema(steps: readonly HowToStep[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Colorize Black and White Photos Online with AI",
+    description: "Colorize black and white photos with AI in 3 steps. Free preview — original-quality download for $4.99.",
+    totalTime: "PT2M",
+    tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Colorizer" }],
+    step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
+  };
+}
 
 const softwareSchema = {
   "@context": "https://schema.org",
@@ -120,36 +109,23 @@ const softwareSchema = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
+const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
+  { q: "Is the photo colorizer free to use?", a: "Yes — colorization preview is free. Download the original quality result requires Pro Lifetime Access ($4.99 one-time). No subscription." },
+  { q: "How long does AI photo colorization take?", a: "Most photos are colorized in 30 seconds. Complex images may take up to 90 seconds." },
+  { q: "Are my photos kept private?", a: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos." },
+];
+
+function buildFaqSchema(items: readonly FaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
       "@type": "Question",
-      name: "Is the photo colorizer free to use?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes — colorization preview is free. Download the original quality result requires Pro Lifetime Access ($4.99 one-time). No subscription.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does AI photo colorization take?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most photos are colorized in 30 seconds. Complex images may take up to 90 seconds.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are my photos kept private?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos.",
-      },
-    },
-  ],
-};
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
 
 export default async function LocalePhotoColorizerPage({ params }: Props) {
   const { locale } = await params;
@@ -160,6 +136,9 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
     d?.subtitle ??
     "Upload your photo. AI adds realistic color in seconds. Free preview — Pro Lifetime Access for $4.99.";
   const badge = d?.badge ?? "Free Preview · No Signup";
+
+  const howToSchema = buildHowToSchema(d?.howToSteps ?? DEFAULT_HOW_TO_STEPS);
+  const faqSchema = buildFaqSchema(d?.faqItems ?? DEFAULT_FAQ_ITEMS);
 
   return (
     <div className="min-h-screen bg-white">

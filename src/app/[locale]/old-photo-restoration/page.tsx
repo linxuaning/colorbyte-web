@@ -5,6 +5,7 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import { routing } from "@/i18n/routing";
 import { getLocaleSEO } from "@/lib/i18n/locale-map";
+import type { FaqItem, HowToStep } from "@/lib/i18n/types";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -73,90 +74,44 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How to Restore Old Photos Online with AI",
-  description:
-    "Restore old, damaged, or faded family photos with AI in 3 steps. Results in 30–90 seconds.",
-  totalTime: "PT2M",
-  tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
-  step: [
-    {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Pay once to unlock access",
-      text: "One-time $4.99 payment unlocks upload and processing access. No subscription. Secure PayPal checkout.",
-      image: "https://artimagehub.com/blog/before-1.jpg",
-    },
-    {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Upload your old photo",
-      text: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo. Supported: JPG, PNG, WEBP up to 20MB.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 3,
-      name: "AI restores your photo in seconds",
-      text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–90 seconds.",
-    },
-    {
-      "@type": "HowToStep",
-      position: 4,
-      name: "Download your HD restored photo",
-      text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your restored memory.",
-      image: "https://artimagehub.com/blog/after-1.webp",
-    },
-  ],
-};
+const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
+  { name: "Pay once to unlock access", text: "One-time $4.99 payment unlocks upload and processing access. No subscription. Secure PayPal checkout." },
+  { name: "Upload your old photo", text: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo. Supported: JPG, PNG, WEBP up to 20MB." },
+  { name: "AI restores your photo in seconds", text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–90 seconds." },
+  { name: "Download your HD restored photo", text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your restored memory." },
+];
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
+const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
+  { q: "Do I need to pay before uploading?", a: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription required. After payment, return to the tool with the same email to upload and restore your photo." },
+  { q: "What image formats are supported for photo restoration?", a: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." },
+  { q: "How long does AI photo restoration take?", a: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass." },
+  { q: "Are my photos kept private and secure?", a: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." },
+  { q: "How does pricing work and is there a refund policy?", a: "One-time $4.99 payment. No subscription. We offer a 30-day money-back guarantee — if you're not satisfied with your restoration, email support@artimagehub.com for a full refund." },
+];
+
+function buildHowToSchema(steps: readonly HowToStep[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Restore Old Photos Online with AI",
+    description: "Restore old, damaged, or faded family photos with AI in 3 steps. Results in 30–90 seconds.",
+    totalTime: "PT2M",
+    tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
+    step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
+  };
+}
+
+function buildFaqSchema(items: readonly FaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
       "@type": "Question",
-      name: "Do I need to pay before uploading?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription required. After payment, return to the tool with the same email to upload and restore your photo.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What image formats are supported for photo restoration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does AI photo restoration take?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are my photos kept private and secure?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How does pricing work and is there a refund policy?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "One-time $4.99 payment. No subscription. We offer a 30-day money-back guarantee — if you're not satisfied with your restoration, email support@artimagehub.com for a full refund.",
-      },
-    },
-  ],
-};
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
 
 const softwareSchema = {
   "@context": "https://schema.org",
@@ -209,6 +164,10 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
   const h1 = d?.h1 ?? "Old Photo Restoration";
   const subtitle = d?.subtitle ?? "AI fixes scratches, fading, blur, and water damage on old family photos. One-time $4.99 unlocks upload, processing, and HD download.";
   const badge = d?.badge ?? "Pay Once · No Subscription";
+
+  const faqItems = d?.faqItems ?? DEFAULT_FAQ_ITEMS;
+  const howToSchema = buildHowToSchema(d?.howToSteps ?? DEFAULT_HOW_TO_STEPS);
+  const faqSchema = buildFaqSchema(faqItems);
 
   return (
     <div className="min-h-screen bg-white">
@@ -499,32 +458,7 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
             Frequently Asked Questions
           </h2>
           <dl className="space-y-6">
-            {[
-              {
-                q: "Do I need to pay before uploading?",
-                a: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription. After payment, return to the tool with the same email to upload and restore your photo.",
-              },
-              {
-                q: "What image formats are supported for photo restoration?",
-                a: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results.",
-              },
-              {
-                q: "How long does AI photo restoration take?",
-                a: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass.",
-              },
-              {
-                q: "Are my photos kept private and secure?",
-                a: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos.",
-              },
-              {
-                q: "Can AI restore a very badly damaged photo?",
-                a: "AI restoration works best when there is some underlying image information to work with. Severe physical damage (large tears, missing sections, heavy mold) limits what AI can reconstruct. For modestly damaged, faded, or scratched photos, results are typically excellent.",
-              },
-              {
-                q: "How does pricing work and is there a refund policy?",
-                a: "One-time $4.99 payment. No subscription. We offer a 30-day money-back guarantee — if you're not satisfied with your restoration, email support@artimagehub.com for a full refund.",
-              },
-            ].map((item) => (
+            {faqItems.map((item) => (
               <div
                 key={item.q}
                 className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6"
