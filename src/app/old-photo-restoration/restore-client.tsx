@@ -784,22 +784,24 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
             {isSubscriber ? (
               /* State C: Subscriber */
-              <a
-                href={`${API_BASE}/api/download/${taskId}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
-                download
-                onClick={() => trackPhotoDownload('pro')}
-                className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
-              >
-                <span className="flex items-center gap-2">
-                  <Crown className="h-4 w-4" />
-                  Download HD Original
-                </span>
-                <span className="text-[11px] opacity-70 font-normal">Original quality unlocked for this email</span>
-              </a>
-              <p className="mt-3 text-center text-[12px] text-amber-600 flex items-center justify-center gap-1">
-                <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                Your restored photo will be deleted in 24 hours
-              </p>
+              <>
+                <a
+                  href={`${API_BASE}/api/download/${taskId}?quality=original&email=${encodeURIComponent(localStorage.getItem("artimagehub_email") || "")}`}
+                  download
+                  onClick={() => trackPhotoDownload('pro')}
+                  className="flex w-full flex-col items-center gap-1 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
+                >
+                  <span className="flex items-center gap-2">
+                    <Crown className="h-4 w-4" />
+                    Download HD Original
+                  </span>
+                  <span className="text-[11px] opacity-70 font-normal">Original quality unlocked for this email</span>
+                </a>
+                <p className="mt-3 text-center text-[12px] text-amber-600 flex items-center justify-center gap-1">
+                  <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                  Your restored photo will be deleted in 24 hours
+                </p>
+              </>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">

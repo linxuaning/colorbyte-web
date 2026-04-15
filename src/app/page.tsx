@@ -6,6 +6,9 @@ import LiveActivity from "@/components/LiveActivity";
 import TodayStats from "@/components/TodayStats";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
+const HOMEPAGE_RISK_LINE =
+  "Your payment unlocks upload and AI processing on this email address. Once processing completes, the same email unlocks the original-quality HD download — no watermarks, no subscription required.";
+
 export const metadata: Metadata = {
   title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
   description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
