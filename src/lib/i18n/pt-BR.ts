@@ -47,6 +47,16 @@ export const ptBR: LocaleSEO = {
     badge: "SEM CADASTRO · RESULTADO EM SEGUNDOS",
     ctaPrimary: "Colorir foto grátis",
     ctaSecondary: "Ver exemplos",
+    faqItems: [
+      { q: "O colorizado de fotos é gratuito?", a: "Sim — a pré-visualização do colorizado é gratuita. Para baixar o resultado em qualidade original, é necessário o Acesso Pro Vitalício ($4,99 único). Sem assinatura." },
+      { q: "Quanto tempo leva o colorizado com IA?", a: "A maioria das fotos é colorizada em 30 segundos. Imagens mais complexas podem levar até 90 segundos." },
+      { q: "Minhas fotos ficam seguras?", a: "Sim. Todas as fotos são transmitidas por HTTPS criptografado e excluídas permanentemente dos nossos servidores em 24 horas. Nunca compartilhamos nem usamos suas fotos para treinar modelos." },
+    ],
+    howToSteps: [
+      { name: "Envie sua foto em preto e branco", text: "Envie qualquer foto em preto e branco ou escala de cinza. Formatos suportados: JPG, PNG, WEBP até 20 MB. Sem cadastro." },
+      { name: "A IA coloriza sua foto em segundos", text: "A IA adiciona automaticamente cores realistas e naturais à sua foto. Resultados prontos em 30 segundos." },
+      { name: "Pré-visualize de graça, baixe em HD com Pro", text: "Veja o resultado colorizado instantaneamente de graça. O Acesso Pro Vitalício ($4,99 único) desbloqueia o download em HD de qualidade original." },
+    ],
   },
   enhancer: {
     title: "Melhorar Qualidade de Fotos Grátis Online — IA para Fotos Desfocadas",
@@ -64,5 +74,15 @@ export const ptBR: LocaleSEO = {
     badge: "SEM CADASTRO · RESULTADO EM SEGUNDOS",
     ctaPrimary: "Melhorar foto grátis",
     ctaSecondary: "Ver exemplos",
+    faqItems: [
+      { q: "O melhoramento de fotos é gratuito?", a: "Sim — a pré-visualização da melhoria é gratuita. Para baixar o resultado em qualidade original, é necessário o Acesso Pro Vitalício ($4,99 único). Sem assinatura." },
+      { q: "Quanto tempo leva a melhoria com IA?", a: "A maioria das fotos é melhorada em 30 segundos. Imagens mais complexas podem levar até 90 segundos." },
+      { q: "Minhas fotos ficam seguras?", a: "Sim. Todas as fotos são transmitidas por HTTPS criptografado e excluídas permanentemente dos nossos servidores em 24 horas. Nunca compartilhamos nem usamos suas fotos para treinar modelos." },
+    ],
+    howToSteps: [
+      { name: "Envie sua foto", text: "Envie qualquer foto desfocada, de baixa resolução ou baixa qualidade. Formatos suportados: JPG, PNG, WEBP até 20 MB. Sem cadastro." },
+      { name: "A IA melhora sua foto em segundos", text: "A IA remove o desfoque, aumenta a resolução em até 4× e melhora os detalhes faciais automaticamente. Resultados prontos em 30 segundos." },
+      { name: "Pré-visualize de graça, baixe em HD com Pro", text: "Veja o resultado melhorado instantaneamente de graça. O Acesso Pro Vitalício ($4,99 único) desbloqueia o download em HD de qualidade original." },
+    ],
   },
 };

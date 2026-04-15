@@ -47,6 +47,16 @@ export const fr: LocaleSEO = {
     badge: "SANS INSCRIPTION · RÉSULTAT EN QUELQUES SECONDES",
     ctaPrimary: "Coloriser ma photo gratuitement",
     ctaSecondary: "Voir des exemples",
+    faqItems: [
+      { q: "La colorisation de photos est-elle gratuite ?", a: "Oui — la prévisualisation de la colorisation est gratuite. Pour télécharger le résultat en qualité originale, un accès Pro à vie ($4,99 unique) est requis. Sans abonnement." },
+      { q: "Combien de temps prend la colorisation avec l'IA ?", a: "La plupart des photos sont colorisées en 30 secondes. Les images complexes peuvent prendre jusqu'à 90 secondes." },
+      { q: "Mes photos sont-elles conservées en sécurité ?", a: "Oui. Toutes les photos sont transmises via HTTPS chiffré et supprimées définitivement de nos serveurs sous 24 heures. Nous ne partageons ni n'utilisons jamais vos photos pour entraîner des modèles." },
+    ],
+    howToSteps: [
+      { name: "Importez votre photo en noir et blanc", text: "Importez n'importe quelle photo en noir et blanc ou en niveaux de gris. Formats acceptés : JPG, PNG, WEBP jusqu'à 20 Mo. Sans inscription." },
+      { name: "L'IA colorise votre photo en quelques secondes", text: "L'IA ajoute automatiquement des couleurs réalistes et naturelles à votre photo. Résultats prêts en 30 secondes." },
+      { name: "Prévisualisation gratuite, téléchargement HD avec Pro", text: "Prévisualisez instantanément le résultat colorisé gratuitement. L'accès Pro à vie ($4,99 unique) débloque le téléchargement HD en qualité originale." },
+    ],
   },
   enhancer: {
     title: "Améliorer la Qualité des Photos Gratuitement — IA pour Photos Floues",
@@ -64,5 +74,15 @@ export const fr: LocaleSEO = {
     badge: "SANS INSCRIPTION · RÉSULTAT EN QUELQUES SECONDES",
     ctaPrimary: "Améliorer ma photo gratuitement",
     ctaSecondary: "Voir des exemples",
+    faqItems: [
+      { q: "L'amélioration de photos est-elle gratuite ?", a: "Oui — la prévisualisation de l'amélioration est gratuite. Pour télécharger le résultat en qualité originale, un accès Pro à vie ($4,99 unique) est requis. Sans abonnement." },
+      { q: "Combien de temps prend l'amélioration avec l'IA ?", a: "La plupart des photos sont améliorées en 30 secondes. Les images complexes peuvent prendre jusqu'à 90 secondes." },
+      { q: "Mes photos sont-elles conservées en sécurité ?", a: "Oui. Toutes les photos sont transmises via HTTPS chiffré et supprimées définitivement de nos serveurs sous 24 heures. Nous ne partageons ni n'utilisons jamais vos photos pour entraîner des modèles." },
+    ],
+    howToSteps: [
+      { name: "Importez votre photo", text: "Importez n'importe quelle photo floue, basse résolution ou de mauvaise qualité. Formats acceptés : JPG, PNG, WEBP jusqu'à 20 Mo. Sans inscription." },
+      { name: "L'IA améliore votre photo en quelques secondes", text: "L'IA supprime le flou, augmente la résolution jusqu'à 4× et améliore les détails des visages automatiquement. Résultats prêts en 30 secondes." },
+      { name: "Prévisualisation gratuite, téléchargement HD avec Pro", text: "Prévisualisez instantanément le résultat amélioré gratuitement. L'accès Pro à vie ($4,99 unique) débloque le téléchargement HD en qualité originale." },
+    ],
   },
 };
