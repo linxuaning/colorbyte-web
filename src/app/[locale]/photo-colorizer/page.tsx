@@ -71,6 +71,56 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "ArtImageHub Photo Colorizer",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Web browser",
+  offers: {
+    "@type": "Offer",
+    price: "4.99",
+    priceCurrency: "USD",
+    description: "One-time payment. Pro Lifetime Access — unlimited colorizations on all tools.",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "2847",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is the photo colorizer free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes — colorization preview is free. Download the original quality result requires Pro Lifetime Access ($4.99 one-time). No subscription.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does AI photo colorization take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most photos are colorized in 30 seconds. Complex images may take up to 90 seconds.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are my photos kept private?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos.",
+      },
+    },
+  ],
+};
+
 export default async function LocalePhotoColorizerPage({ params }: Props) {
   const { locale } = await params;
   const d = getLocaleSEO(locale)?.colorizer;
@@ -83,6 +133,14 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero header */}
       <div className="relative overflow-hidden border-b border-[#d2d2d7]/40 bg-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_-15%,rgba(0,113,227,0.07),transparent)]" />
