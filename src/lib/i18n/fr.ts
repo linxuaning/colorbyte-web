@@ -17,6 +17,19 @@ export const fr: LocaleSEO = {
     badge: "SANS INSCRIPTION · RÉSULTAT EN QUELQUES SECONDES",
     ctaPrimary: "Restaurer ma photo gratuitement",
     ctaSecondary: "Voir des exemples",
+    faqItems: [
+      { q: "Dois-je payer avant d'importer ma photo ?", a: "Oui, un paiement unique est nécessaire pour accéder à l'outil. Une fois payé, vous pouvez restaurer autant de photos que vous le souhaitez." },
+      { q: "Quels formats d'image sont acceptés ?", a: "JPG, PNG et WEBP jusqu'à 20 Mo." },
+      { q: "Combien de temps prend la restauration ?", a: "Généralement entre 10 et 30 secondes, selon la taille et l'état de la photo." },
+      { q: "Quels types de dommages l'IA peut-elle réparer ?", a: "Rayures, taches, décoloration, déchirures et détérioration générale due au temps." },
+      { q: "Ma photo est-elle stockée sur vos serveurs ?", a: "Les photos sont traitées en toute sécurité et ne sont pas stockées de façon permanente sur nos serveurs." },
+    ],
+    howToSteps: [
+      { name: "Payez pour débloquer", text: "Un paiement unique débloque l'accès complet à l'outil de restauration." },
+      { name: "Importez votre vieille photo", text: "Sélectionnez une photo au format JPG, PNG ou WEBP jusqu'à 20 Mo." },
+      { name: "L'IA restaure l'image", text: "Notre IA analyse et répare automatiquement les dommages, rayures et détérioration en quelques secondes." },
+      { name: "Téléchargez le résultat", text: "Téléchargez votre photo restaurée en haute résolution." },
+    ],
   },
   colorizer: {
     title: "Coloriser des Vieilles Photos Gratuitement — IA pour Photos en Noir et Blanc",

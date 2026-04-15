@@ -17,6 +17,19 @@ export const ptBR: LocaleSEO = {
     badge: "SEM CADASTRO · RESULTADO EM SEGUNDOS",
     ctaPrimary: "Restaurar foto grátis",
     ctaSecondary: "Ver exemplos",
+    faqItems: [
+      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim, é necessário um pagamento único para ter acesso. Depois de pagar, você pode restaurar quantas fotos quiser." },
+      { q: "Quais formatos de imagem são aceitos?", a: "JPG, PNG e WEBP de até 20 MB." },
+      { q: "Quanto tempo leva a restauração?", a: "Geralmente entre 10 e 30 segundos, dependendo do tamanho e do estado da foto." },
+      { q: "Que tipos de danos a IA consegue reparar?", a: "Arranhões, manchas, desbotamento de cores, rasgos e deterioração geral causada pelo tempo." },
+      { q: "Minha foto fica armazenada nos seus servidores?", a: "As fotos são processadas com segurança e não ficam armazenadas permanentemente em nossos servidores." },
+    ],
+    howToSteps: [
+      { name: "Pague para desbloquear", text: "Um pagamento único libera acesso completo à ferramenta de restauração." },
+      { name: "Envie sua foto antiga", text: "Selecione uma foto em formato JPG, PNG ou WEBP de até 20 MB." },
+      { name: "A IA restaura a imagem", text: "Nossa IA analisa e repara automaticamente danos, arranhões e deterioração em segundos." },
+      { name: "Baixe o resultado", text: "Baixe sua foto restaurada em alta resolução." },
+    ],
   },
   colorizer: {
     title: "Colorir Fotos Antigas Grátis Online — IA para Fotos em Preto e Branco",
