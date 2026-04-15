@@ -224,7 +224,7 @@ export default function EnhanceClient() {
         );
         setStage("error");
       }
-    }, 120_000);
+    }, 600_000);
 
     const poll = async () => {
       while (!cancelled) {
@@ -366,6 +366,9 @@ export default function EnhanceClient() {
               <Upload className="h-4 w-4" />
               Upload Photo to Enhance
             </button>
+            <p className="text-[12px] text-[#6e6e73]/80">
+              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+            </p>
 
             {/* Colorize toggle */}
             <label
@@ -519,6 +522,10 @@ export default function EnhanceClient() {
                 {PRO_PRICE_TEXT} one-time payment. No subscription. Preview stays online; download unlocks immediately after checkout.
               </p>
             )}
+            <div className="mt-3 flex items-center justify-center gap-1.5 text-[12px] text-amber-600">
+              <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+              ⏱ Your enhanced photo will be deleted in 24 hours
+            </div>
           </div>
 
           <div className="flex justify-center">
@@ -541,7 +548,7 @@ export default function EnhanceClient() {
           </div>
           <div>
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
-            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
+            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">Something went wrong. Please try again — your file is still here.</p>
           </div>
           <button
             onClick={reset}

@@ -7,8 +7,8 @@ import TodayStats from "@/components/TodayStats";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "ArtImageHub — Restore Old Photos with AI in 30 Seconds (Free Preview)",
-  description: "12,400+ photos restored. AI fixes scratches, fading, blur, and colorizes B&W photos. See your result free — download HD for $4.99. No subscription, no signup.",
+  title: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
+  description: "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -25,9 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-const HOMEPAGE_RISK_LINE =
-  "One-time $4.99 payment unlocks upload, AI processing, and HD download. No subscription. Results in 30–90 seconds.";
-
 // JSON-LD structured data
 const softwareAppSchema = {
   "@context": "https://schema.org",
@@ -37,7 +34,7 @@ const softwareAppSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/old-photo-restoration",
   description:
-    "AI-powered photo restoration tool that fixes damaged photos, enhances faces, increases resolution up to 4×, and colorizes black & white images after payment unlocks upload and processing access on this email.",
+    "AI-powered photo restoration tool that fixes damaged photos, enhances faces, increases resolution up to 4×, and colorizes black & white images in seconds.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -54,7 +51,7 @@ const softwareAppSchema = {
     "4× Super Resolution",
     "Black & White Colorization",
     "Scratch & Damage Repair",
-    "Paid Access Before Upload",
+    "Instant Results in 30 Seconds",
   ],
 };
 
@@ -72,10 +69,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What happens after payment?",
+      name: "How long does AI photo restoration take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: HOMEPAGE_RISK_LINE,
+        text: "Most photos are restored in 15–30 seconds. Complex images may take up to a minute.",
       },
     },
     {
@@ -88,10 +85,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How does access work?",
+      name: "How does pricing work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Payment unlocks upload and processing access on this email. If processing succeeds, the same email unlocks the original-quality download.",
+        text: "You can restore and preview your photo for free. If you want the HD original without a watermark, the download is a one-time $4.99 payment.",
       },
     },
     {
@@ -99,7 +96,7 @@ const faqSchema = {
       name: "Do I need a subscription?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. This is a one-time payment that unlocks access on this email. No recurring billing.",
+        text: "No. There is no monthly plan. You restore for free and only pay $4.99 if you want the HD original download.",
       },
     },
   ],
@@ -170,7 +167,7 @@ export default function HomePage() {
 
               {/* Subheadline */}
               <p className="mt-10 max-w-xl font-lora text-[18px] sm:text-[20px] leading-[1.65] text-[#6b5344]">
-                Unlock paid access on this email before upload. Use ArtImageHub for damaged, faded, black&#160;&amp;&#160;white, and low-quality family photos.
+                Upload a damaged, faded, or black&#160;&amp;&#160;white photo — our AI restores it to stunning clarity in seconds. Start free, then choose the HD original for $4.99 if you want it.
               </p>
 
               {/* Social Proof */}
@@ -183,7 +180,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-col items-start gap-3">
                 <Link
                   href="/old-photo-restoration"
-                  className="group inline-flex h-14 items-center rounded-full bg-[#0071e3] px-9 font-lora text-[17px] font-600 text-white hover:bg-[#0077ed] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#0071e3]/25 hover:shadow-[#0071e3]/40 relative overflow-hidden"
+                  className="group inline-flex h-14 items-center rounded-full bg-[#8B5E3C] px-9 font-lora text-[17px] font-600 text-[#faf8f4] hover:bg-[#7a5234] hover:shadow-xl active:scale-[0.97] transition-all duration-300 shadow-lg shadow-[#8B5E3C]/25 hover:shadow-[#8B5E3C]/40 relative overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-2">
 Restore Your Photo Free
@@ -198,9 +195,9 @@ Restore Your Photo Free
                 {/* No signup emphasis */}
                 <div className="flex flex-wrap items-center gap-4 text-[13px] text-[#6b5344] pl-2">
                   {[
-                    { icon: "✓", text: "Paid access on this email" },
-                    { icon: "✓", text: "One-time payment" },
-                    { icon: "✓", text: "No recurring billing" },
+                    { icon: "✓", text: "Free preview" },
+                    { icon: "✓", text: "HD original $4.99" },
+                    { icon: "✓", text: "Instant results" },
                   ].map((item) => (
                     <span key={item.text} className="flex items-center gap-1.5 font-lora font-500">
                       <span className="text-[#8B5E3C] text-[16px] font-700">{item.icon}</span>
@@ -212,7 +209,7 @@ Restore Your Photo Free
                 <div className="rounded-2xl border border-[#d4bc91]/45 bg-white/78 px-4 py-3 text-left shadow-sm">
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-[#6b5344]">
                     {[
-                      "Upload unlocks after payment",
+                      "Free preview before checkout",
                       "Deleted from servers within 24 hours",
                       "JPG, PNG, WEBP up to 20 MB",
                     ].map((item) => (
@@ -229,7 +226,7 @@ Restore Your Photo Free
               <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#8B7355]">
                 {[
                   "Pro quality restoration",
-                  "Upload unlocks after payment",
+                  "Results in 30 seconds",
                   "One-time payment, no subscription",
                 ].map((t) => (
                   <span key={t} className="flex items-center gap-2">
@@ -266,7 +263,7 @@ Restore Your Photo Free
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     ),
-                    text: "24/7 Support",
+                    text: "Deleted in 24h · Download before it expires",
                   },
                   {
                     icon: (
@@ -294,7 +291,7 @@ Restore Your Photo Free
                 Trusted by families worldwide
               </div>
               <div className="flex flex-col gap-2 text-center">
-                <span className="font-playfair text-[44px] font-900 text-[#8B5E3C] leading-none">10K+</span>
+                <span className="font-playfair text-[44px] font-900 text-[#8B5E3C] leading-none">10,000+</span>
                 <span className="font-lora text-[11px] text-[#a8967e]">Memories<br/>restored</span>
               </div>
             </div>

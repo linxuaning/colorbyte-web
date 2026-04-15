@@ -488,8 +488,8 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       `Your photo is ready.\n\nDownload the HD original (${PRO_PRICE_TEXT}) here:\n${paymentUrl}\n\nThis is your personal checkout link for the full-resolution download.\n`
     );
     trackPaymentEmailEntry("restore_done", "manual", funnelSource);
-    setEmailEntryHint(`Prepared in mail app for ${targetEmail}.`);
-    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+    setEmailEntryHint(`Payment link ready for ${targetEmail}.`);
+    window.open(paymentUrl, "_blank");
   };
 
   return (
@@ -611,6 +611,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               <Upload className="h-4 w-4" />
               Upload Photo to Restore
             </button>
+            <p className="text-[12px] text-[#6e6e73]/80">
+              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+            </p>
 
             <label
               className="flex items-center gap-2.5 text-[13px] text-[#6e6e73] cursor-pointer"
@@ -793,15 +796,23 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                 </span>
                 <span className="text-[11px] opacity-70 font-normal">Original quality unlocked for this email</span>
               </a>
+              <p className="mt-3 text-center text-[12px] text-amber-600 flex items-center justify-center gap-1">
+                <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                Your restored photo will be deleted in 24 hours
+              </p>
             ) : (
               <div className="space-y-3">
                 <div className="rounded-xl border border-[#0071e3]/15 bg-white p-4 text-left">
                   <p className="text-[14px] font-semibold text-[#1d1d1f]">
-                    Your restored preview is ready to compare online.
+                    Your restored photo is ready to download.
                   </p>
                   <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
-                    Download stays locked until payment. Unpaid sessions can preview the result here, but cannot export a file.
+                    Preview available for 24 hours. Pay once to download the full HD original without watermarks.
                   </p>
+                  <div className="mt-2 flex items-center gap-1.5 text-[12px] text-amber-600">
+                    <svg className="h-3.5 w-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    Session expires in 24h — download anytime after payment
+                  </div>
                 </div>
                 <Link
                   href={`/subscription?${(() => {
@@ -900,21 +911,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           </div>
           <div>
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
-            {isHighUsageError ? (
-              <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
-                Sorry!{" "}
-                <a href="https://artimagehub.com/" className="text-[#0071e3] underline" target="_blank" rel="noreferrer">
-                  the website
-                </a>{" "}
-                has been experiencing high usage lately. I&apos;m trying to resolve the issue. Could you send me the image? (
-                <a href="mailto:linxuaning98@gmail.com" className="text-[#0071e3] underline">
-                  linxuaning98@gmail.com
-                </a>
-                ) I can process it manually on my side and email it back to you.
-              </p>
-            ) : (
-              <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">{errorMsg}</p>
-            )}
+            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
+              Something went wrong. Please try again — your file is still here.
+            </p>
           </div>
           <div className="flex flex-col items-center gap-2">
             <button

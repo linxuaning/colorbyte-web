@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "Free AI Photo Enhancer — Sharpen Faces & Upscale 4x (No Signup)",
+  title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
   description:
-    "Upload a blurry photo, AI sharpens faces and upscales 4x in 30 seconds — try free, no signup. See the enhanced result first, then download HD for $4.99. No subscription.",
+    "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
   alternates: { canonical: "/photo-enhancer" },
   keywords: [
     "AI photo enhancer",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "photo upscaler",
   ],
   openGraph: {
-    title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
+    title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
     description:
-      "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
+      "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale. No signup, instant results.",
     type: "website",
     images: [
       {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Enhancer | Enhance Photo Quality with AI | ArtImageHub",
+    title: "AI Photo Enhancer Free — Improve Photo Quality Online",
     description:
-      "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
+      "Best AI photo enhancer. Improve quality, fix blur, 4x upscale. Free online, instant results.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -44,15 +44,15 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Enhance Photo Quality with AI",
-  description: "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
+  description: "Improve photo quality and fix blurry photos using AI photo enhancement — free, no signup required, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancer" }],
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Unlock enhancement access",
-      text: "One-time $4.99 payment unlocks upload and enhancement access on your email. No subscription.",
+      name: "Upload your photo",
+      text: "Click the upload area and select any photo you want to enhance. Works with selfies, old photos, product images, or any picture. Supported formats: JPG, PNG, WEBP up to 20MB.",
       image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
@@ -64,14 +64,14 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Start processing",
-      text: "AI enhances your photo in 30–90 seconds — face sharpening, super-resolution, and color correction in one pass.",
+      name: "Wait 30 seconds for processing",
+      text: "The AI enhances your photo with face-aware processing and 4× super resolution. Most enhancements complete in 15–30 seconds.",
     },
     {
       "@type": "HowToStep",
       position: 4,
-      name: "Download if processing succeeds",
-      text: "Your paid email unlocks the HD enhanced download. Compare before/after and save your improved photo.",
+      name: "Download your enhanced photo",
+      text: "Preview the before/after result and download your enhanced photo in high resolution. Free users get a watermarked preview; HD original download is $4.99 one-time.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -81,11 +81,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Do I need paid access before enhancement?", acceptedAnswer: { "@type": "Answer", text: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription. Return to the tool with the same email to upload and enhance your photo." } },
+    { "@type": "Question", name: "Is AI photo enhancement free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub lets you enhance and preview your photo for free, no account or credit card required. If you want the HD original without a watermark, the download is a one-time $4.99 payment." } },
     { "@type": "Question", name: "What does AI photo enhancement do?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement improves photo quality in multiple ways: (1) Face enhancement detects and sharpens faces, fixing eyes, skin, and facial details. (2) Super resolution upscales images 4× without losing quality. (3) Noise reduction removes grain and artifacts. (4) Color correction improves contrast and vibrancy. All automatically in one click." } },
     { "@type": "Question", name: "Can AI fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, to an extent. AI photo enhancement can significantly improve slightly blurry photos by sharpening details and applying super resolution. However, extremely blurry or out-of-focus photos cannot be fully recovered — AI predictions work best when some detail remains in the original image." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Works with any photo: old photos, selfies, portraits, product images, landscapes, and more." } },
-    { "@type": "Question", name: "How long does enhancement take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are enhanced in 30–90 seconds. Complex images with many faces or high-resolution uploads may take up to 3 minutes. The AI applies face sharpening, super-resolution, and color correction in a single pass." } },
+    { "@type": "Question", name: "How long does enhancement take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are enhanced in 15–30 seconds. Very large or complex images may take up to 60 seconds." } },
   ],
 };
 
@@ -96,7 +96,7 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://artimagehub.com/photo-enhancer",
-  description: "Enhance blurry, low-quality, or faded photos with AI. One-time $4.99 payment. Sharper faces, 4× upscaling, noise reduction. Results in 30–90 seconds.",
+  description: "AI-powered photo enhancement tool that improves photo quality, fixes blurry photos, and enhances resolution in seconds. Free online tool for enhancing selfies, old photos, product images, and any picture.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -114,7 +114,7 @@ const softwareSchema = {
     "4× Super Resolution Upscaling",
     "Automatic Noise Reduction",
     "Color Correction",
-    "Paid Access Before Upload",
+    "Instant Results in 30 Seconds",
   ],
 };
 
@@ -140,13 +140,13 @@ export default function PhotoEnhancerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Paid Access Before Enhancement
+            Free AI Enhancement
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            AI Photo Enhancer
+            Enhance Photo Quality with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Unlock paid access on this email, then upload your photo for enhancement, sharpening, and upscale. Best for blur, low resolution, and weak detail.
+            Upload any photo and let AI improve quality instantly. Fix blurry images, enhance faces, upscale resolution — free.
           </p>
         </div>
       </div>
