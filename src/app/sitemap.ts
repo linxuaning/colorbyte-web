@@ -47,12 +47,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Locale pages — /photo-colorizer
+    ...["es", "pt-BR", "fr", "de", "ja", "ko"].map((locale) => ({
+      url: `${baseUrl}/${locale}/photo-colorizer`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
     {
       url: `${baseUrl}/photo-enhancer`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Locale pages — /photo-enhancer
+    ...["es", "pt-BR", "fr", "de", "ja", "ko"].map((locale) => ({
+      url: `${baseUrl}/${locale}/photo-enhancer`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
     // High-value landing pages (138K/month search volume)
     {
       url: `${baseUrl}/how-to-restore-old-photos`,
