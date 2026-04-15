@@ -66,6 +66,8 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [checkingAccess, setCheckingAccess] = useState(true);
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
+  const [paidEmail, setPaidEmail] = useState("");
+  const [paidCheckStatus, setPaidCheckStatus] = useState<"idle" | "checking" | "found" | "notfound">("idle");
   const [processingCount, setProcessingCount] = useState<number | null>(null);
   const [backendReady, setBackendReady] = useState(false);
   const [warmupSeconds, setWarmupSeconds] = useState(0);
@@ -492,6 +494,23 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     window.open(paymentUrl, "_blank");
   };
 
+  const handleAlreadyPaidCheck = useCallback(() => {
+    if (!EMAIL_REGEX.test(paidEmail.trim())) return;
+    setPaidCheckStatus("checking");
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(paidEmail.trim().toLowerCase())}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.is_active) {
+          localStorage.setItem("artimagehub_email", paidEmail.trim().toLowerCase());
+          setIsSubscriber(true);
+          setPaidCheckStatus("found");
+        } else {
+          setPaidCheckStatus("notfound");
+        }
+      })
+      .catch(() => setPaidCheckStatus("notfound"));
+  }, [paidEmail]);
+
   return (
     <div className="mt-10">
       {/* --- IDLE: Pay gate or upload area --- */}
@@ -579,9 +598,33 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               ))}
             </div>
 
-            <p className="mt-4 text-[12px] text-[#6e6e73]">
-              After payment, return here with the same email to start restoration.
-            </p>
+            <div className="mt-6 rounded-xl border border-[#d2d2d7]/60 bg-white p-3 text-center">
+              <p className="text-[12px] font-medium text-[#1d1d1f]">Already paid? Enter your email to restore access</p>
+              <div className="mt-2 flex gap-2">
+                <input
+                  type="email"
+                  value={paidEmail}
+                  onChange={(e) => setPaidEmail(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleAlreadyPaidCheck()}
+                  placeholder="you@example.com"
+                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                />
+                <button
+                  type="button"
+                  onClick={handleAlreadyPaidCheck}
+                  disabled={paidCheckStatus === "checking"}
+                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f] disabled:opacity-50"
+                >
+                  {paidCheckStatus === "checking" ? "…" : "Check"}
+                </button>
+              </div>
+              {paidCheckStatus === "found" && (
+                <p className="mt-1.5 text-[11px] text-green-600">Access restored — you can now upload your photo.</p>
+              )}
+              {paidCheckStatus === "notfound" && (
+                <p className="mt-1.5 text-[11px] text-red-500">No active subscription found for this email.</p>
+              )}
+            </div>
           </div>
         ) : (
           <div
@@ -914,7 +957,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           <div>
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
             <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
-              Something went wrong. Please try again — your file is still here.
+              Something went wrong. Please try again — your file is still here.{" "}
+              Need help?{" "}
+              <a href="mailto:support@artimagehub.com" className="underline hover:text-[#1d1d1f] transition-colors">support@artimagehub.com</a>
             </p>
           </div>
           <div className="flex flex-col items-center gap-2">

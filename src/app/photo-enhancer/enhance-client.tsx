@@ -55,6 +55,8 @@ export default function EnhanceClient() {
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
+  const [paidEmail, setPaidEmail] = useState("");
+  const [paidCheckStatus, setPaidCheckStatus] = useState<"idle" | "checking" | "found" | "notfound">("idle");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
@@ -281,6 +283,23 @@ export default function EnhanceClient() {
     [canUpload, handleFile],
   );
 
+  const handleAlreadyPaidCheck = useCallback(() => {
+    if (!EMAIL_REGEX.test(paidEmail.trim())) return;
+    setPaidCheckStatus("checking");
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(paidEmail.trim().toLowerCase())}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.is_active) {
+          localStorage.setItem("artimagehub_email", paidEmail.trim().toLowerCase());
+          setIsSubscriber(true);
+          setPaidCheckStatus("found");
+        } else {
+          setPaidCheckStatus("notfound");
+        }
+      })
+      .catch(() => setPaidCheckStatus("notfound"));
+  }, [paidEmail]);
+
   // --- Paste ---
   useEffect(() => {
     const handler = (e: ClipboardEvent) => {
@@ -401,6 +420,39 @@ export default function EnhanceClient() {
             <p className="text-[12px] text-[#6e6e73]/70">
               You can also paste an image with Ctrl+V
             </p>
+            {!checkingAccess && !isSubscriber && (
+              <div
+                className="w-full max-w-xs rounded-xl border border-[#d2d2d7]/60 bg-white p-3 text-center"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <p className="text-[12px] font-medium text-[#1d1d1f]">Already paid? Enter your email to restore access</p>
+                <div className="mt-2 flex gap-2">
+                  <input
+                    type="email"
+                    value={paidEmail}
+                    onChange={(e) => setPaidEmail(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleAlreadyPaidCheck()}
+                    placeholder="you@example.com"
+                    onClick={(e) => e.stopPropagation()}
+                    className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                  />
+                  <button
+                    type="button"
+                    onClick={(e) => { e.stopPropagation(); handleAlreadyPaidCheck(); }}
+                    disabled={paidCheckStatus === "checking"}
+                    className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f] disabled:opacity-50"
+                  >
+                    {paidCheckStatus === "checking" ? "…" : "Check"}
+                  </button>
+                </div>
+                {paidCheckStatus === "found" && (
+                  <p className="mt-1.5 text-[11px] text-green-600">Access restored — watermark removed.</p>
+                )}
+                {paidCheckStatus === "notfound" && (
+                  <p className="mt-1.5 text-[11px] text-red-500">No active subscription found for this email.</p>
+                )}
+              </div>
+            )}
           </div>
         )
       )}
@@ -548,7 +600,11 @@ export default function EnhanceClient() {
           </div>
           <div>
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
-            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">Something went wrong. Please try again — your file is still here.</p>
+            <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
+              Something went wrong. Please try again — your file is still here.{" "}
+              Need help?{" "}
+              <a href="mailto:support@artimagehub.com" className="underline hover:text-[#1d1d1f] transition-colors">support@artimagehub.com</a>
+            </p>
           </div>
           <button
             onClick={reset}
