@@ -4,6 +4,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import { routing } from "@/i18n/routing";
+import { getLocaleSEO } from "@/lib/i18n/locale-map";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -16,6 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const d = getLocaleSEO(locale)?.oldPhotoRestoration;
 
   // Build hreflang alternates for all locales
   const languageAlternates: Record<string, string> = {
@@ -30,10 +32,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: "Free AI Photo Restoration — See Your Result Before Paying (No Signup)",
+    title: d?.title ?? "Free AI Photo Restoration — See Your Result Before Paying (No Signup)",
     description:
+      d?.description ??
       "Upload any old or damaged photo, AI restores it in 90 seconds — try free, no signup. See the result first, then download HD for $4.99. Fixes scratches, fading, blur, and water damage.",
-    keywords: [
+    keywords: (d?.keywords as string[] | undefined) ?? [
       "old photo restoration",
       "restore old photos online",
       "photo restoration AI",
@@ -45,8 +48,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: languageAlternates as Record<string, string>,
     },
     openGraph: {
-      title: "Old Photo Restoration Online — ArtImageHub",
+      title: d?.title ?? "Old Photo Restoration Online — ArtImageHub",
       description:
+        d?.description ??
         "Restore old, damaged, or faded family photos with AI. Fix scratches, fading, and blur. HD original download for $4.99.",
       type: "website",
       images: [
@@ -60,8 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Old Photo Restoration Online",
+      title: d?.title ?? "Old Photo Restoration Online",
       description:
+        d?.description ??
         "Restore old, damaged, or faded family photos with AI. Fix scratches, fading, and blur. HD original download for $4.99.",
       images: ["/blog/before-after-examples.webp"],
     },
@@ -197,7 +202,14 @@ const testimonials = [
   },
 ];
 
-export default function LocaleOldPhotoRestorationPage() {
+export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
+  const { locale } = await params;
+  const d = getLocaleSEO(locale)?.oldPhotoRestoration;
+
+  const h1 = d?.h1 ?? "Old Photo Restoration";
+  const subtitle = d?.subtitle ?? "AI fixes scratches, fading, blur, and water damage on old family photos. One-time $4.99 unlocks upload, processing, and HD download.";
+  const badge = d?.badge ?? "Pay Once · No Subscription";
+
   return (
     <div className="min-h-screen bg-white">
       <script
@@ -218,14 +230,13 @@ export default function LocaleOldPhotoRestorationPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Pay Once · No Subscription
+            {badge}
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Old Photo Restoration
+            {h1}
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            AI fixes scratches, fading, blur, and water damage on old family
-            photos. One-time $4.99 unlocks upload, processing, and HD download.
+            {subtitle}
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[

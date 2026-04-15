@@ -497,7 +497,7 @@ export default function ColorizeClient() {
                     Unlock Pro to Download This Photo
                   </span>
                   <span className="text-[11px] font-normal opacity-70">
-                    Original quality  ·  No watermark  ·  {PRO_PRICE_TEXT} once
+                    Unlimited · All tools · {PRO_PRICE_TEXT} lifetime
                   </span>
                 </Link>
               </div>
@@ -505,7 +505,7 @@ export default function ColorizeClient() {
 
             {!isSubscriber && (
               <p className="mt-4 text-center text-[12px] text-[#6e6e73]">
-                {PRO_PRICE_TEXT} one-time payment. No subscription. Preview stays online; download unlocks immediately after checkout.
+                {PRO_PRICE_TEXT} one-time · Pro Lifetime Access · Unlimited restorations on all 3 tools forever.
               </p>
             )}
             <div className="mt-3 flex items-center justify-center gap-1.5 text-[12px] text-amber-600">

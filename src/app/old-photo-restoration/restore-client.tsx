@@ -1018,31 +1018,31 @@ function LimitReachedModal({
             <Crown className="h-7 w-7 text-[#0071e3]" />
           </div>
 
-          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Download HD Original</h2>
+          <h2 className="text-[22px] font-bold tracking-[-0.03em] text-[#1d1d1f]">Unlock Pro Lifetime Access</h2>
           <p className="mt-2 text-[14px] text-[#6e6e73] leading-[1.6]">
             Your preview is ready.
             <br />
-            Pay once to download the HD original without a watermark.
+            One payment unlocks unlimited restorations across all tools — forever.
           </p>
 
-          {/* HD original benefits card */}
+          {/* Pro benefits card */}
           <div className="mt-6 rounded-2xl bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] border border-[#0071e3]/20 p-6 text-left relative overflow-hidden">
             <div className="absolute top-3 right-3">
               <span className="rounded-full bg-[#0071e3] px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider">
-                One-time access
+                Lifetime
               </span>
             </div>
 
-            <h3 className="text-[18px] font-bold text-white mb-1">Download HD Original — $4.99</h3>
+            <h3 className="text-[18px] font-bold text-white mb-1">Pro Lifetime Access — {PRO_PRICE_TEXT}</h3>
             <p className="text-[12px] text-white/60 mb-4">
-              One-time payment. No subscription.
+              One-time payment · Unlimited restorations · All tools
             </p>
 
             <div className="space-y-2.5 text-[13px]">
               {[
-                "HD original file",
-                "Full resolution",
-                "No watermark",
+                "Unlimited restorations forever",
+                "All 3 tools: restore, colorize, enhance",
+                "HD original quality, no watermark",
                 "Secure checkout",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-2.5">
@@ -1056,8 +1056,8 @@ function LimitReachedModal({
 
             <div className="mt-4 rounded-lg bg-white/5 border border-white/10 p-3 text-[11px]">
               <p className="text-white/60 mb-1">What changes after payment</p>
-              <p className="text-white">Your current email unlocks the HD original immediately.</p>
-              <p className="text-white mt-1">You return straight to the result after checkout.</p>
+              <p className="text-white">Your email is tagged as Pro — all tools unlock immediately.</p>
+              <p className="text-white mt-1">You return straight to your result after checkout.</p>
             </div>
 
             <button
@@ -1065,7 +1065,7 @@ function LimitReachedModal({
               className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#0071e3] px-6 py-3.5 text-[14px] font-bold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-lg shadow-[#0071e3]/25"
             >
               <Crown className="h-4 w-4" />
-              Download HD Original — $4.99
+              Get Pro Access — {PRO_PRICE_TEXT}
             </button>
 
             <p className="mt-3 text-center text-[11px] text-white/50">
