@@ -18,17 +18,17 @@ export const fr: LocaleSEO = {
     ctaPrimary: "Restaurer ma photo gratuitement",
     ctaSecondary: "Voir des exemples",
     faqItems: [
-      { q: "Dois-je payer avant d'importer ma photo ?", a: "Oui, un paiement unique est nécessaire pour accéder à l'outil. Une fois payé, vous pouvez restaurer autant de photos que vous le souhaitez." },
+      { q: "L'importation est-elle gratuite ?", a: "Oui, l'importation est entièrement gratuite. Vous verrez un aperçu avec filigrane. Payez $4,99 une fois pour débloquer le téléchargement en haute résolution." },
       { q: "Quels formats d'image sont acceptés ?", a: "JPG, PNG et WEBP jusqu'à 20 Mo." },
       { q: "Combien de temps prend la restauration ?", a: "Généralement entre 10 et 30 secondes, selon la taille et l'état de la photo." },
       { q: "Quels types de dommages l'IA peut-elle réparer ?", a: "Rayures, taches, décoloration, déchirures et détérioration générale due au temps." },
       { q: "Ma photo est-elle stockée sur vos serveurs ?", a: "Les photos sont traitées en toute sécurité et ne sont pas stockées de façon permanente sur nos serveurs." },
     ],
     howToSteps: [
-      { name: "Payez pour débloquer", text: "Un paiement unique débloque l'accès complet à l'outil de restauration." },
-      { name: "Importez votre vieille photo", text: "Sélectionnez une photo au format JPG, PNG ou WEBP jusqu'à 20 Mo." },
+      { name: "Importez votre vieille photo gratuitement", text: "Sélectionnez une photo au format JPG, PNG ou WEBP jusqu'à 20 Mo. Sans inscription, sans paiement préalable." },
       { name: "L'IA restaure l'image", text: "Notre IA analyse et répare automatiquement les dommages, rayures et détérioration en quelques secondes." },
-      { name: "Téléchargez le résultat", text: "Téléchargez votre photo restaurée en haute résolution." },
+      { name: "Aperçu gratuit avec filigrane", text: "Prévisualisez instantanément le résultat restauré gratuitement." },
+      { name: "Payez $4,99 pour télécharger en HD", text: "Un paiement unique de $4,99 débloque le téléchargement en haute résolution sans filigrane." },
     ],
   },
   colorizer: {
