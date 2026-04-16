@@ -47,27 +47,27 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your old photo — free",
-      text: "Click the upload area and select your damaged, faded, or scratched photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup, no payment required to start.",
+      name: "Pay once to unlock access",
+      text: "One-time $4.99 payment unlocks upload and processing access. No subscription. Secure PayPal checkout.",
       image: "https://artimagehub.com/blog/before-1.jpg",
     },
     {
       "@type": "HowToStep",
       position: 2,
+      name: "Upload your old photo",
+      text: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo. Supported: JPG, PNG, WEBP up to 20MB.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
       name: "AI restores your photo in seconds",
       text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–90 seconds.",
     },
     {
       "@type": "HowToStep",
-      position: 3,
-      name: "Preview your restored photo free",
-      text: "See the before/after result instantly with a watermarked preview — no payment required to see your result.",
-    },
-    {
-      "@type": "HowToStep",
       position: 4,
-      name: "Download HD original for $4.99",
-      text: "Happy with the result? One-time $4.99 unlocks the HD original without watermark. No subscription.",
+      name: "Download your HD restored photo",
+      text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your restored memory.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -77,11 +77,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Upload and preview are completely free — no account or credit card required to see your result. A one-time $4.99 payment unlocks the HD original download without watermark. No subscription." } },
+    { "@type": "Question", name: "Do I need to pay before uploading?", acceptedAnswer: { "@type": "Answer", text: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription required. After payment, return to the tool with the same email to upload and restore your photo." } },
     { "@type": "Question", name: "What image formats are supported for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." } },
     { "@type": "Question", name: "How long does AI photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass." } },
     { "@type": "Question", name: "Are my photos kept private and secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." } },
-    { "@type": "Question", name: "How does pricing work?", acceptedAnswer: { "@type": "Answer", text: "Free to upload and preview. One-time $4.99 to download the HD original without watermark. No subscription. Questions? Email support@artimagehub.com." } },
+    { "@type": "Question", name: "How does pricing work?", acceptedAnswer: { "@type": "Answer", text: "One-time $4.99 payment. No subscription. Payment unlocks upload, AI processing, and HD original download access on your email. Questions? Email support@artimagehub.com." } },
   ],
 };
 
@@ -95,7 +95,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "Preview free. One-time $4.99 unlocks HD original download without watermark. No subscription."
+    description: "One-time payment. Unlocks upload, AI processing, and HD original download."
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -149,13 +149,13 @@ export default function OldPhotoRestorationPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview · $4.99 HD Download
+            Pay Once · No Subscription
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Old Photo Restoration
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            AI fixes scratches, fading, blur, and water damage on old family photos. Upload free, preview free — download HD for $4.99 one-time.
+            AI fixes scratches, fading, blur, and water damage on old family photos. One-time $4.99 unlocks upload, processing, and HD download.
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
@@ -171,7 +171,7 @@ export default function OldPhotoRestorationPage() {
           </div>
           <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
             <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
-              <p>Preview free. $4.99 one-time for HD download. No subscription.</p>
+              <p>One-time $4.99 payment. No subscription required.</p>
               <p>Uploads encrypted and deleted within 24 hours.</p>
               <p>Supports JPG, PNG, and WEBP up to 20 MB.</p>
             </div>
@@ -272,7 +272,7 @@ export default function OldPhotoRestorationPage() {
               How AI Photo Restoration Works
             </h2>
             <p className="mt-3 text-[17px] text-[#6e6e73] max-w-xl mx-auto leading-[1.6]">
-              Three steps. Upload free. Pay only if you love the result.
+              Three steps. One-time payment. Your memories restored in under two minutes.
             </p>
           </div>
 
@@ -280,18 +280,18 @@ export default function OldPhotoRestorationPage() {
             {[
               {
                 step: "1",
-                title: "Upload free — no signup",
-                desc: "Select your old, faded, scratched, or damaged photo. JPG, PNG, WEBP up to 20MB. No payment required to start.",
+                title: "Pay once to unlock",
+                desc: "$4.99 one-time payment unlocks upload and processing access on your email. No subscription.",
               },
               {
                 step: "2",
-                title: "AI restores in seconds",
-                desc: "AI repairs scratches, fading, blur, and damage. Face enhancement applied to portraits. Results in 30–90 seconds.",
+                title: "Upload your photo",
+                desc: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo.",
               },
               {
                 step: "3",
-                title: "Preview free, download HD $4.99",
-                desc: "See the before/after result with a free watermark preview. Pay $4.99 once to download the HD original. No subscription.",
+                title: "Download your HD restore",
+                desc: "AI repairs scratches, fading, blur, and damage. Results in 30–90 seconds. Your paid email unlocks HD download.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -346,8 +346,8 @@ export default function OldPhotoRestorationPage() {
           <dl className="space-y-6">
             {[
               {
-                q: "Is photo restoration free?",
-                a: "Upload and preview are completely free — no account or credit card required to see your result. A one-time $4.99 payment unlocks the HD original download without watermark. No subscription.",
+                q: "Do I need to pay before uploading?",
+                a: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription. After payment, return to the tool with the same email to upload and restore your photo.",
               },
               {
                 q: "What image formats are supported for photo restoration?",
@@ -371,7 +371,7 @@ export default function OldPhotoRestorationPage() {
               },
               {
                 q: "How does pricing work?",
-                a: "Free to upload and preview. One-time $4.99 to download the HD original without watermark. No subscription. Questions? Email support@artimagehub.com.",
+                a: "One-time $4.99 payment. No subscription. Payment unlocks upload, AI processing, and HD original download access on your email.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
