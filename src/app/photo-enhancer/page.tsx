@@ -5,7 +5,19 @@ export const metadata: Metadata = {
   title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
   description:
     "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
-  alternates: { canonical: "/photo-enhancer" },
+  alternates: {
+    canonical: "/photo-enhancer",
+    languages: {
+      "x-default": "/photo-enhancer",
+      en: "/photo-enhancer",
+      es: "/es/photo-enhancer",
+      "pt-BR": "/pt-BR/photo-enhancer",
+      fr: "/fr/photo-enhancer",
+      de: "/de/photo-enhancer",
+      ja: "/ja/photo-enhancer",
+      ko: "/ko/photo-enhancer",
+    },
+  },
   keywords: [
     "AI photo enhancer",
     "photo enhancer free",

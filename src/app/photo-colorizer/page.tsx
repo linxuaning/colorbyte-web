@@ -5,7 +5,19 @@ export const metadata: Metadata = {
   title: "Photo Colorizer: Colorize Black and White Photos with AI Free",
   description:
     "Best AI photo colorizer to colorize black and white photos online free. Turn old family photos, historical images into vivid color in 30 seconds. No signup, instant results.",
-  alternates: { canonical: "/photo-colorizer" },
+  alternates: {
+    canonical: "/photo-colorizer",
+    languages: {
+      "x-default": "/photo-colorizer",
+      en: "/photo-colorizer",
+      es: "/es/photo-colorizer",
+      "pt-BR": "/pt-BR/photo-colorizer",
+      fr: "/fr/photo-colorizer",
+      de: "/de/photo-colorizer",
+      ja: "/ja/photo-colorizer",
+      ko: "/ko/photo-colorizer",
+    },
+  },
   keywords: [
     "photo colorizer",
     "colorize black and white photos",

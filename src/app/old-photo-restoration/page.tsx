@@ -8,7 +8,19 @@ export const metadata: Metadata = {
   title: "Free AI Photo Restoration — See Your Result Before Paying (No Signup)",
   description:
     "Upload any old or damaged photo, AI restores it in 90 seconds — try free, no signup. See the result first, then download HD for $4.99. Fixes scratches, fading, blur, and water damage.",
-  alternates: { canonical: "/old-photo-restoration" },
+  alternates: {
+    canonical: "/old-photo-restoration",
+    languages: {
+      "x-default": "/old-photo-restoration",
+      en: "/old-photo-restoration",
+      es: "/es/old-photo-restoration",
+      "pt-BR": "/pt-BR/old-photo-restoration",
+      fr: "/fr/old-photo-restoration",
+      de: "/de/old-photo-restoration",
+      ja: "/ja/old-photo-restoration",
+      ko: "/ko/old-photo-restoration",
+    },
+  },
   keywords: ["old photo restoration", "restore old photos online", "photo restoration AI", "fix damaged photos", "photo enhancer online"],
   openGraph: {
     title: "Old Photo Restoration Online — ArtImageHub",
@@ -69,7 +81,7 @@ const faqSchema = {
     { "@type": "Question", name: "What image formats are supported for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." } },
     { "@type": "Question", name: "How long does AI photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass." } },
     { "@type": "Question", name: "Are my photos kept private and secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." } },
-    { "@type": "Question", name: "How does pricing work?", acceptedAnswer: { "@type": "Answer", text: "One-time $4.99 payment. No subscription. Payment unlocks upload and processing access — if you're not satisfied, we offer a 30-day money-back guarantee. Email support@artimagehub.com." } },
+    { "@type": "Question", name: "How does pricing work?", acceptedAnswer: { "@type": "Answer", text: "One-time $4.99 payment. No subscription. Payment unlocks upload, AI processing, and HD original download access on your email. Questions? Email support@artimagehub.com." } },
   ],
 };
 
@@ -186,8 +198,8 @@ export default function OldPhotoRestorationPage() {
                 <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <div>
-                <p className="text-[14px] font-semibold text-[#1d1d1f]">30-Day Guarantee</p>
-                <p className="text-[12px] text-[#6e6e73]">Full refund, no questions asked</p>
+                <p className="text-[14px] font-semibold text-[#1d1d1f]">One-Time Payment</p>
+                <p className="text-[12px] text-[#6e6e73]">No subscription, no recurring fees</p>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-xl bg-white border border-[#d4bc91]/40 px-5 py-4">
@@ -358,8 +370,8 @@ export default function OldPhotoRestorationPage() {
                 a: "Our face enhancement models are trained to preserve identity — they recover sharpness and detail while keeping the person's features as they were. Results are accurate in over 95% of cases. Always compare the output to the original, especially for severely damaged faces.",
               },
               {
-                q: "How does pricing work and is there a refund policy?",
-                a: "One-time $4.99 payment. No subscription. We offer a 30-day money-back guarantee — if you're not satisfied with your restoration, email support@artimagehub.com for a full refund.",
+                q: "How does pricing work?",
+                a: "One-time $4.99 payment. No subscription. Payment unlocks upload, AI processing, and HD original download access on your email.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
