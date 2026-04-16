@@ -48,14 +48,14 @@ export const es: LocaleSEO = {
     ctaPrimary: "Colorear foto gratis",
     ctaSecondary: "Ver ejemplos",
     faqItems: [
-      { q: "¿Es gratuito el colorizado de fotos?", a: "Sí — la vista previa del colorizado es gratuita. Para descargar el resultado en calidad original se requiere acceso Pro de por vida ($4,99 único). Sin suscripción." },
+      { q: "¿Tengo que pagar antes de subir mi foto?", a: "Sí, se requiere un pago único de $4,99 para acceder. Una vez pagado, puedes colorizar todas las fotos que quieras. Sin suscripción." },
       { q: "¿Cuánto tarda el colorizado con IA?", a: "La mayoría de las fotos se colorizan en 30 segundos. Las imágenes complejas pueden tardar hasta 90 segundos." },
       { q: "¿Se guardan mis fotos de forma segura?", a: "Sí. Todas las fotos se transmiten por HTTPS cifrado y se eliminan permanentemente de nuestros servidores en 24 horas. Nunca compartimos ni usamos tus fotos para entrenar modelos." },
     ],
     howToSteps: [
-      { name: "Sube tu foto en blanco y negro", text: "Sube cualquier foto en blanco y negro o escala de grises. Formatos admitidos: JPG, PNG, WEBP hasta 20 MB. Sin registro." },
-      { name: "La IA coloriza tu foto en segundos", text: "La IA añade automáticamente colores realistas y naturales a tu foto. Resultados listos en 30 segundos." },
-      { name: "Vista previa gratuita, descarga HD con Pro", text: "Previsualiza el resultado coloreado al instante de forma gratuita. El acceso Pro de por vida ($4,99 único) desbloquea la descarga en calidad HD original." },
+      { name: "Paga para desbloquear", text: "Un pago único de $4,99 desbloquea el acceso completo a la herramienta de colorización. Sin suscripción." },
+      { name: "Sube tu foto en blanco y negro", text: "Sube cualquier foto en blanco y negro o escala de grises. Formatos admitidos: JPG, PNG, WEBP hasta 20 MB." },
+      { name: "Descarga tu foto colorizada", text: "La IA añade colores realistas en segundos. Descarga el resultado en calidad original." },
     ],
   },
   enhancer: {
@@ -75,14 +75,14 @@ export const es: LocaleSEO = {
     ctaPrimary: "Mejorar foto gratis",
     ctaSecondary: "Ver ejemplos",
     faqItems: [
-      { q: "¿Es gratuito el mejoramiento de fotos?", a: "Sí — la vista previa de la mejora es gratuita. Para descargar el resultado en calidad original se requiere acceso Pro de por vida ($4,99 único). Sin suscripción." },
+      { q: "¿Tengo que pagar antes de subir mi foto?", a: "Sí, se requiere un pago único de $4,99 para acceder. Una vez pagado, puedes mejorar todas las fotos que quieras. Sin suscripción." },
       { q: "¿Cuánto tarda la mejora con IA?", a: "La mayoría de las fotos se mejoran en 30 segundos. Las imágenes complejas pueden tardar hasta 90 segundos." },
       { q: "¿Se guardan mis fotos de forma segura?", a: "Sí. Todas las fotos se transmiten por HTTPS cifrado y se eliminan permanentemente de nuestros servidores en 24 horas. Nunca compartimos ni usamos tus fotos para entrenar modelos." },
     ],
     howToSteps: [
-      { name: "Sube tu foto", text: "Sube cualquier foto borrosa, de baja resolución o mala calidad. Formatos admitidos: JPG, PNG, WEBP hasta 20 MB. Sin registro." },
-      { name: "La IA mejora tu foto en segundos", text: "La IA elimina el desenfoque, aumenta la resolución hasta 4× y mejora los detalles faciales automáticamente. Resultados listos en 30 segundos." },
-      { name: "Vista previa gratuita, descarga HD con Pro", text: "Previsualiza el resultado mejorado al instante de forma gratuita. El acceso Pro de por vida ($4,99 único) desbloquea la descarga en calidad HD original." },
+      { name: "Paga para desbloquear", text: "Un pago único de $4,99 desbloquea el acceso completo a la herramienta de mejora. Sin suscripción." },
+      { name: "Sube tu foto", text: "Sube cualquier foto borrosa, de baja resolución o mala calidad. Formatos admitidos: JPG, PNG, WEBP hasta 20 MB." },
+      { name: "Descarga tu foto mejorada", text: "La IA elimina el desenfoque y aumenta la resolución hasta 4× en segundos. Descarga el resultado en calidad original." },
     ],
   },
 };

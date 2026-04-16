@@ -48,14 +48,14 @@ export const ptBR: LocaleSEO = {
     ctaPrimary: "Colorir foto grátis",
     ctaSecondary: "Ver exemplos",
     faqItems: [
-      { q: "O colorizado de fotos é gratuito?", a: "Sim — a pré-visualização do colorizado é gratuita. Para baixar o resultado em qualidade original, é necessário o Acesso Pro Vitalício ($4,99 único). Sem assinatura." },
+      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim, é necessário um pagamento único de $4,99 para ter acesso. Depois de pagar, você pode colorizar quantas fotos quiser. Sem assinatura." },
       { q: "Quanto tempo leva o colorizado com IA?", a: "A maioria das fotos é colorizada em 30 segundos. Imagens mais complexas podem levar até 90 segundos." },
       { q: "Minhas fotos ficam seguras?", a: "Sim. Todas as fotos são transmitidas por HTTPS criptografado e excluídas permanentemente dos nossos servidores em 24 horas. Nunca compartilhamos nem usamos suas fotos para treinar modelos." },
     ],
     howToSteps: [
-      { name: "Envie sua foto em preto e branco", text: "Envie qualquer foto em preto e branco ou escala de cinza. Formatos suportados: JPG, PNG, WEBP até 20 MB. Sem cadastro." },
-      { name: "A IA coloriza sua foto em segundos", text: "A IA adiciona automaticamente cores realistas e naturais à sua foto. Resultados prontos em 30 segundos." },
-      { name: "Pré-visualize de graça, baixe em HD com Pro", text: "Veja o resultado colorizado instantaneamente de graça. O Acesso Pro Vitalício ($4,99 único) desbloqueia o download em HD de qualidade original." },
+      { name: "Pague para desbloquear", text: "Um pagamento único de $4,99 libera acesso completo à ferramenta de colorização. Sem assinatura." },
+      { name: "Envie sua foto em preto e branco", text: "Envie qualquer foto em preto e branco ou escala de cinza. Formatos suportados: JPG, PNG, WEBP até 20 MB." },
+      { name: "Baixe sua foto colorizada", text: "A IA adiciona cores realistas em segundos. Baixe o resultado em qualidade original." },
     ],
   },
   enhancer: {
@@ -75,14 +75,14 @@ export const ptBR: LocaleSEO = {
     ctaPrimary: "Melhorar foto grátis",
     ctaSecondary: "Ver exemplos",
     faqItems: [
-      { q: "O melhoramento de fotos é gratuito?", a: "Sim — a pré-visualização da melhoria é gratuita. Para baixar o resultado em qualidade original, é necessário o Acesso Pro Vitalício ($4,99 único). Sem assinatura." },
+      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim, é necessário um pagamento único de $4,99 para ter acesso. Depois de pagar, você pode melhorar quantas fotos quiser. Sem assinatura." },
       { q: "Quanto tempo leva a melhoria com IA?", a: "A maioria das fotos é melhorada em 30 segundos. Imagens mais complexas podem levar até 90 segundos." },
       { q: "Minhas fotos ficam seguras?", a: "Sim. Todas as fotos são transmitidas por HTTPS criptografado e excluídas permanentemente dos nossos servidores em 24 horas. Nunca compartilhamos nem usamos suas fotos para treinar modelos." },
     ],
     howToSteps: [
-      { name: "Envie sua foto", text: "Envie qualquer foto desfocada, de baixa resolução ou baixa qualidade. Formatos suportados: JPG, PNG, WEBP até 20 MB. Sem cadastro." },
-      { name: "A IA melhora sua foto em segundos", text: "A IA remove o desfoque, aumenta a resolução em até 4× e melhora os detalhes faciais automaticamente. Resultados prontos em 30 segundos." },
-      { name: "Pré-visualize de graça, baixe em HD com Pro", text: "Veja o resultado melhorado instantaneamente de graça. O Acesso Pro Vitalício ($4,99 único) desbloqueia o download em HD de qualidade original." },
+      { name: "Pague para desbloquear", text: "Um pagamento único de $4,99 libera acesso completo à ferramenta de melhoria. Sem assinatura." },
+      { name: "Envie sua foto", text: "Envie qualquer foto desfocada, de baixa resolução ou baixa qualidade. Formatos suportados: JPG, PNG, WEBP até 20 MB." },
+      { name: "Baixe sua foto melhorada", text: "A IA remove o desfoque e aumenta a resolução em até 4× em segundos. Baixe o resultado em qualidade original." },
     ],
   },
 };
