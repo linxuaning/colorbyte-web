@@ -120,7 +120,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
     return `/subscription?${params.toString()}`;
   }, [funnelSource]);
-  const canUpload = !checkingAccess;
+  const canUpload = isSubscriber && !checkingAccess;
   const [photosRestored, setPhotosRestored] = useState<number | null>(null);
 
   // Fetch social proof counter (fire-and-forget, no retry needed)
@@ -232,7 +232,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   }, []);
 
   useEffect(() => {
-    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess) {
+    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess || !isSubscriber) {
       return;
     }
 
@@ -527,13 +527,104 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             <p className="text-[13px] text-[#6e6e73]">
               {warmupSeconds > 5
                 ? "Waking up our AI server — this only takes a moment..."
-                : "Loading..."}
+                : "Checking access..."}
             </p>
             {warmupSeconds > 10 && (
               <p className="text-[11px] text-[#6e6e73]/70">
                 Server is warming up ({warmupSeconds}s) — almost there
               </p>
             )}
+          </div>
+        ) : !canUpload ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
+            {/* Social proof counter */}
+            <div className="flex items-center justify-center gap-2 mb-6 text-[13px] text-[#6e6e73]">
+              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              <span>
+                <strong className="text-[#1d1d1f]">
+                  {processingCount != null ? `${processingCount.toLocaleString()}+` : "12,000+"}
+                </strong>{" "}
+                photos restored
+              </span>
+            </div>
+
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-5 text-[24px] font-semibold tracking-[-0.03em] text-[#1d1d1f]">
+              Unlock Upload + Processing
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
+              Pay once, restore one photo in full HD. Return here with the same email to upload and download immediately.
+            </p>
+
+            <Link
+              href={checkoutHref}
+              className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Crown className="h-4 w-4" />
+              Unlock Access — {PRO_PRICE_TEXT}
+            </Link>
+
+            {/* Trust signals */}
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+              {photosRestored !== null && (
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-green-500" />
+                  {photosRestored.toLocaleString()}+ photos restored
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                <Check className="h-3.5 w-3.5 text-green-500" />
+                30-day money-back guarantee
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#d2d2d7]/60 px-3 py-1 text-[12px] text-[#1d1d1f] shadow-sm">
+                <Check className="h-3.5 w-3.5 text-green-500" />
+                One-time payment · No subscription
+              </span>
+            </div>
+
+            {/* Social proof reviews */}
+            <div className="mt-5 grid gap-3 text-left sm:grid-cols-3 w-full max-w-xl mx-auto">
+              {[
+                { quote: "Brought my grandma's wedding photo back to life. Incredibly sharp.", name: "Sarah M." },
+                { quote: "Restored 3 family photos in minutes. Worth every penny.", name: "James T." },
+                { quote: "The colorization blew my mind — felt like seeing the past in color.", name: "Maria L." },
+              ].map((r) => (
+                <div key={r.name} className="rounded-xl bg-white border border-[#d2d2d7]/50 p-3">
+                  <p className="text-[12px] leading-[1.5] text-[#1d1d1f]">&ldquo;{r.quote}&rdquo;</p>
+                  <p className="mt-1.5 text-[11px] text-[#6e6e73]">— {r.name}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 rounded-xl border border-[#d2d2d7]/60 bg-white p-3 text-center">
+              <p className="text-[12px] font-medium text-[#1d1d1f]">Already paid? Enter your email to restore access</p>
+              <div className="mt-2 flex gap-2">
+                <input
+                  type="email"
+                  value={paidEmail}
+                  onChange={(e) => setPaidEmail(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && handleAlreadyPaidCheck()}
+                  placeholder="you@example.com"
+                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                />
+                <button
+                  type="button"
+                  onClick={handleAlreadyPaidCheck}
+                  disabled={paidCheckStatus === "checking"}
+                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f] disabled:opacity-50"
+                >
+                  {paidCheckStatus === "checking" ? "…" : "Check"}
+                </button>
+              </div>
+              {paidCheckStatus === "found" && (
+                <p className="mt-1.5 text-[11px] text-green-600">Access restored — you can now upload your photo.</p>
+              )}
+              {paidCheckStatus === "notfound" && (
+                <p className="mt-1.5 text-[11px] text-red-500">No active subscription found for this email.</p>
+              )}
+            </div>
           </div>
         ) : (
           <div

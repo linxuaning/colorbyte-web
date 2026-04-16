@@ -90,7 +90,7 @@ export default function ColorizeClient() {
 
     return `/subscription?${params.toString()}`;
   }, [funnelSource]);
-  const canUpload = !checkingAccess;
+  const canUpload = isSubscriber && !checkingAccess;
 
   // Colorization is always enabled on this page
   const colorize = true;
@@ -121,7 +121,7 @@ export default function ColorizeClient() {
   }, []);
 
   useEffect(() => {
-    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess) {
+    if (!API_BASE || !resumeTaskId || stage !== "idle" || checkingAccess || !isSubscriber) {
       return;
     }
 
@@ -334,6 +334,28 @@ export default function ColorizeClient() {
             <p className="text-[17px] font-semibold text-[#1d1d1f]">Restoring your download access</p>
             <p className="text-[13px] text-[#6e6e73]">
               Checking the email linked to this result before reopening the paid download.
+            </p>
+          </div>
+        ) : !canUpload ? (
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] px-8 py-14 text-center">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#0071e3]/15 bg-white shadow-sm">
+              <Crown className="h-7 w-7 text-[#0071e3]" />
+            </div>
+            <h3 className="mt-5 text-[24px] font-semibold tracking-[-0.03em] text-[#1d1d1f]">
+              Unlock Colorization Before Upload
+            </h3>
+            <p className="mx-auto mt-3 max-w-xl text-[14px] leading-[1.7] text-[#6e6e73]">
+              This page now runs pay-first. Complete checkout before upload, then return with the same email to start colorization and keep paid download access attached to that purchase.
+            </p>
+            <Link
+              href={checkoutHref}
+              className="mt-6 inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
+            >
+              <Crown className="h-4 w-4" />
+              Unlock Access — {PRO_PRICE_TEXT}
+            </Link>
+            <p className="mt-3 text-[12px] text-[#6e6e73]">
+              After payment, this tool reopens in the allowed pre-upload state.
             </p>
           </div>
         ) : (
