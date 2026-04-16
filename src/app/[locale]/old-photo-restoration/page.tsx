@@ -75,18 +75,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
-  { name: "Pay once to unlock access", text: "One-time $4.99 payment unlocks upload and processing access. No subscription. Secure PayPal checkout." },
-  { name: "Upload your old photo", text: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo. Supported: JPG, PNG, WEBP up to 20MB." },
+  { name: "Upload your old photo — free", text: "Click the upload area and select your damaged, faded, or scratched photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup, no payment required to start." },
   { name: "AI restores your photo in seconds", text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–90 seconds." },
-  { name: "Download your HD restored photo", text: "Your paid email unlocks the original-quality HD download. Compare before/after and save your restored memory." },
+  { name: "Preview your restored photo free", text: "See the before/after result instantly with a watermarked preview — no payment required to see your result." },
+  { name: "Download HD original for $4.99", text: "Happy with the result? One-time $4.99 unlocks the HD original without watermark. No subscription." },
 ];
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
-  { q: "Do I need to pay before uploading?", a: "Yes. A one-time $4.99 payment unlocks upload and processing access on your email. No subscription required. After payment, return to the tool with the same email to upload and restore your photo." },
+  { q: "Is photo restoration free?", a: "Upload and preview are completely free — no account or credit card required to see your result. A one-time $4.99 payment unlocks the HD original download without watermark. No subscription." },
   { q: "What image formats are supported for photo restoration?", a: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. For old scanned photos, we recommend scanning at 600 DPI or higher and uploading as PNG for best results." },
   { q: "How long does AI photo restoration take?", a: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass." },
   { q: "Are my photos kept private and secure?", a: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." },
-  { q: "How does pricing work and is there a refund policy?", a: "One-time $4.99 payment. No subscription. We offer a 30-day money-back guarantee — if you're not satisfied with your restoration, email support@artimagehub.com for a full refund." },
+  { q: "How does pricing work?", a: "Free to upload and preview. One-time $4.99 to download the HD original without watermark. No subscription. Questions? Email support@artimagehub.com." },
 ];
 
 function buildHowToSchema(steps: readonly HowToStep[]) {
@@ -124,7 +124,7 @@ const softwareSchema = {
     price: "4.99",
     priceCurrency: "USD",
     description:
-      "One-time payment. Unlocks upload, AI processing, and HD original download.",
+      "Preview free. One-time $4.99 unlocks HD original download without watermark. No subscription.",
   },
   aggregateRating: {
     "@type": "AggregateRating",
@@ -162,8 +162,8 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
   const d = getLocaleSEO(locale)?.oldPhotoRestoration;
 
   const h1 = d?.h1 ?? "Old Photo Restoration";
-  const subtitle = d?.subtitle ?? "AI fixes scratches, fading, blur, and water damage on old family photos. One-time $4.99 unlocks upload, processing, and HD download.";
-  const badge = d?.badge ?? "Pay Once · No Subscription";
+  const subtitle = d?.subtitle ?? "AI fixes scratches, fading, blur, and water damage on old family photos. Upload free, preview free — download HD for $4.99 one-time.";
+  const badge = d?.badge ?? "Free Preview · $4.99 HD Download";
 
   const faqItems = d?.faqItems ?? DEFAULT_FAQ_ITEMS;
   const howToSchema = buildHowToSchema(d?.howToSteps ?? DEFAULT_HOW_TO_STEPS);
@@ -211,9 +211,9 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
           </div>
           <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
             <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
-              <p>One-time $4.99 payment. No subscription required.</p>
+              <p>Upload free — preview your result instantly.</p>
               <p>Uploads encrypted and deleted within 24 hours.</p>
-              <p>Supports JPG, PNG, and WEBP up to 20 MB.</p>
+              <p>Pay $4.99 once to download the HD original.</p>
             </div>
           </div>
         </div>
@@ -358,26 +358,25 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
               How AI Photo Restoration Works
             </h2>
             <p className="mt-3 text-[17px] text-[#6e6e73] max-w-xl mx-auto leading-[1.6]">
-              Three steps. One-time payment. Your memories restored in under two
-              minutes.
+              Three steps. Upload free. Pay only if you love the result.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-8">
             {[
               {
                 step: "1",
-                title: "Pay once to unlock",
-                desc: "$4.99 one-time payment unlocks upload and processing access on your email. No subscription.",
+                title: "Upload free — no signup",
+                desc: "Select your old, faded, scratched, or damaged photo. JPG, PNG, WEBP up to 20MB. No payment required to start.",
               },
               {
                 step: "2",
-                title: "Upload your photo",
-                desc: "Return to the tool with the same email and upload your old, faded, scratched, or damaged photo.",
+                title: "AI restores in seconds",
+                desc: "AI repairs scratches, fading, blur, and damage. Face enhancement applied to portraits. Results in 30–90 seconds.",
               },
               {
                 step: "3",
-                title: "Download your HD restore",
-                desc: "AI repairs scratches, fading, blur, and damage. Results in 30–90 seconds. Your paid email unlocks HD download.",
+                title: "Preview free, download HD $4.99",
+                desc: "See the before/after result with a free watermark preview. Pay $4.99 once to download the HD original. No subscription.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
