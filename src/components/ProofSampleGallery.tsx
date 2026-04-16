@@ -5,7 +5,7 @@ const proofSamples = [
     title: "1947 wedding portrait",
     damage: "Heavy fading, torn edges, and soft faces from an old print scan.",
     outcome: "Recovered facial clarity, balanced tones, and cleaner texture for reprint.",
-    beforeSrc: "/blog/before-1.jpg",
+    beforeSrc: "/blog/before-1.webp",
     afterSrc: "/blog/after-1.jpg",
   },
   {
