@@ -18,17 +18,17 @@ export const de: LocaleSEO = {
     ctaPrimary: "Foto kostenlos restaurieren",
     ctaSecondary: "Beispiele ansehen",
     faqItems: [
-      { q: "Ist das Hochladen kostenlos?", a: "Ja, das Hochladen ist völlig kostenlos. Sie sehen eine Vorschau mit Wasserzeichen. Zahlen Sie einmalig $4,99, um den HD-Download freizuschalten." },
+      { q: "Muss ich bezahlen, bevor ich mein Foto hochlade?", a: "Ja, ein einmaliger Kauf ist erforderlich, um auf das Tool zuzugreifen. Nach der Zahlung können Sie beliebig viele Fotos restaurieren." },
       { q: "Welche Bildformate werden akzeptiert?", a: "JPG, PNG und WEBP bis zu 20 MB." },
       { q: "Wie lange dauert die Restaurierung?", a: "In der Regel 10 bis 30 Sekunden, je nach Größe und Zustand des Fotos." },
       { q: "Welche Arten von Schäden kann die KI reparieren?", a: "Kratzer, Flecken, Farbverblassung, Risse und allgemeine Alterungsschäden." },
       { q: "Wird mein Foto auf Ihren Servern gespeichert?", a: "Fotos werden sicher verarbeitet und nicht dauerhaft auf unseren Servern gespeichert." },
     ],
     howToSteps: [
-      { name: "Altes Foto kostenlos hochladen", text: "Wählen Sie ein Foto im Format JPG, PNG oder WEBP bis zu 20 MB aus. Ohne Registrierung, ohne Vorkasse." },
+      { name: "Einmalig bezahlen und freischalten", text: "Ein einmaliger Kauf schaltet den vollständigen Zugang zum Restaurierungs-Tool frei." },
+      { name: "Altes Foto hochladen", text: "Wählen Sie ein Foto im Format JPG, PNG oder WEBP bis zu 20 MB aus." },
       { name: "KI restauriert das Bild", text: "Unsere KI analysiert und repariert Schäden, Kratzer und Alterung automatisch in Sekunden." },
-      { name: "Kostenlose Vorschau mit Wasserzeichen", text: "Sehen Sie das restaurierte Ergebnis sofort kostenlos in der Vorschau." },
-      { name: "$4,99 zahlen für HD-Download", text: "Eine einmalige Zahlung von $4,99 schaltet den Download in hoher Auflösung ohne Wasserzeichen frei." },
+      { name: "Ergebnis herunterladen", text: "Laden Sie Ihr restauriertes Foto in hoher Auflösung herunter." },
     ],
   },
   colorizer: {

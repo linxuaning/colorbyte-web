@@ -18,17 +18,17 @@ export const ptBR: LocaleSEO = {
     ctaPrimary: "Restaurar foto grátis",
     ctaSecondary: "Ver exemplos",
     faqItems: [
-      { q: "O envio é gratuito?", a: "Sim, o envio é completamente gratuito. Você verá uma prévia com marca d'água. Pague $4.99 uma vez para desbloquear o download em alta resolução." },
+      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim, é necessário um pagamento único para ter acesso. Depois de pagar, você pode restaurar quantas fotos quiser." },
       { q: "Quais formatos de imagem são aceitos?", a: "JPG, PNG e WEBP de até 20 MB." },
       { q: "Quanto tempo leva a restauração?", a: "Geralmente entre 10 e 30 segundos, dependendo do tamanho e do estado da foto." },
       { q: "Que tipos de danos a IA consegue reparar?", a: "Arranhões, manchas, desbotamento de cores, rasgos e deterioração geral causada pelo tempo." },
       { q: "Minha foto fica armazenada nos seus servidores?", a: "As fotos são processadas com segurança e não ficam armazenadas permanentemente em nossos servidores." },
     ],
     howToSteps: [
-      { name: "Envie sua foto antiga gratuitamente", text: "Selecione uma foto em formato JPG, PNG ou WEBP de até 20 MB. Sem cadastro, sem pagamento prévio." },
+      { name: "Pague para desbloquear", text: "Um pagamento único libera acesso completo à ferramenta de restauração." },
+      { name: "Envie sua foto antiga", text: "Selecione uma foto em formato JPG, PNG ou WEBP de até 20 MB." },
       { name: "A IA restaura a imagem", text: "Nossa IA analisa e repara automaticamente danos, arranhões e deterioração em segundos." },
-      { name: "Prévia gratuita com marca d'água", text: "Veja o resultado restaurado instantaneamente de graça." },
-      { name: "Pague $4.99 para baixar em HD", text: "Um pagamento único de $4.99 desbloqueia o download em alta resolução sem marca d'água." },
+      { name: "Baixe o resultado", text: "Baixe sua foto restaurada em alta resolução." },
     ],
   },
   colorizer: {

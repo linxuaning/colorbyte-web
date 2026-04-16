@@ -18,17 +18,17 @@ export const es: LocaleSEO = {
     ctaPrimary: "Restaurar foto gratis",
     ctaSecondary: "Ver ejemplos",
     faqItems: [
-      { q: "¿Es gratis subir mi foto?", a: "Sí, subir es completamente gratis. Verás una vista previa con marca de agua. Paga $4.99 una vez para desbloquear la descarga en alta resolución." },
+      { q: "¿Tengo que pagar antes de subir mi foto?", a: "Sí, se requiere un pago único para acceder. Una vez pagado, puedes restaurar todas las fotos que quieras." },
       { q: "¿Qué formatos de imagen acepta?", a: "JPG, PNG y WEBP de hasta 20 MB." },
       { q: "¿Cuánto tarda la restauración?", a: "Generalmente entre 10 y 30 segundos, según el tamaño y estado de la foto." },
       { q: "¿Qué tipo de daños puede reparar la IA?", a: "Rayaduras, manchas, desvanecimiento del color, roturas y deterioro general por el paso del tiempo." },
       { q: "¿Se guarda mi foto en vuestros servidores?", a: "Las fotos se procesan de forma segura y no se almacenan permanentemente en nuestros servidores." },
     ],
     howToSteps: [
-      { name: "Sube tu foto antigua gratis", text: "Selecciona una foto en formato JPG, PNG o WEBP de hasta 20 MB. Sin registro, sin pago previo." },
+      { name: "Paga para desbloquear", text: "Un pago único desbloquea el acceso completo a la herramienta de restauración." },
+      { name: "Sube tu foto antigua", text: "Selecciona una foto en formato JPG, PNG o WEBP de hasta 20 MB." },
       { name: "La IA restaura la imagen", text: "Nuestra IA analiza y repara automáticamente los daños, rayaduras y deterioro en segundos." },
-      { name: "Vista previa gratuita con marca de agua", text: "Previsualiza el resultado restaurado al instante de forma gratuita." },
-      { name: "Paga $4.99 para descargar en HD", text: "Un pago único de $4.99 desbloquea la descarga en alta resolución sin marca de agua." },
+      { name: "Descarga el resultado", text: "Descarga tu foto restaurada en alta resolución." },
     ],
   },
   colorizer: {
