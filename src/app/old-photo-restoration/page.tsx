@@ -5,9 +5,9 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 
 export const metadata: Metadata = {
-  title: "Free AI Photo Restoration — See Your Result Before Paying (No Signup)",
+  title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
   description:
-    "Upload any old or damaged photo, AI restores it in 90 seconds — try free, no signup. See the result first, then download HD for $4.99. Fixes scratches, fading, blur, and water damage.",
+    "Restore old, damaged, or faded photos with AI in 30–90 seconds. One-time $4.99 payment. Fixes scratches, fading, blur, and water damage. HD original download included.",
   alternates: {
     canonical: "/old-photo-restoration",
     languages: {
