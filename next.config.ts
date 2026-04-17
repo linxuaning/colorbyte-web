@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { deletedBlogSlugs } from "./src/lib/deleted-blog-slugs";
 
 const nextConfig: NextConfig = {
   // Image optimization
@@ -23,6 +24,13 @@ const nextConfig: NextConfig = {
         destination: "/photo-colorizer",
         permanent: true,
       },
+      // Thin-content cleanup (2026-04-17): 196 template-generated blog posts deleted.
+      // See src/lib/deleted-blog-slugs.ts and docs/THIN-CONTENT-AUDIT.md.
+      ...deletedBlogSlugs.map((slug) => ({
+        source: `/blog/${slug}`,
+        destination: "/blog",
+        permanent: true,
+      })),
     ];
   },
 
