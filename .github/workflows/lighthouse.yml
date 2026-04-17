@@ -1,0 +1,46 @@
+name: Lighthouse CI (production)
+
+# Baseline Core Web Vitals measurement on artimagehub.com.
+# Triggers:
+#   - every push to main (catches regressions from our own commits)
+#   - daily 06:00 UTC (catches regressions from upstream: deps, Vercel edge, etc)
+#   - manual dispatch
+#
+# Uses treosh/lighthouse-ci-action — reports uploaded to temporary public
+# storage so any URL printed in logs stays viewable for ~30 days.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: lighthouse-prod
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wait for Vercel alias to propagate
+        if: github.event_name == 'push'
+        run: sleep 120
+
+      - name: Run Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://artimagehub.com/
+            https://artimagehub.com/old-photo-restoration
+            https://artimagehub.com/photo-colorizer
+            https://artimagehub.com/photo-enhancer
+            https://artimagehub.com/blog
+            https://artimagehub.com/blog/vintage-photo-repair-techniques
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: ./.github/lighthouse/lighthouserc.json
