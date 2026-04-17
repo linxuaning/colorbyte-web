@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const koRestoreClient: ToolClientCopy = {
+  dropHeadline: "여기에 사진을 놓으세요",
+  dropHint: "또는 클릭하여 선택 · JPG, PNG, WEBP · 최대 20 MB",
+  uploadCta: "복원할 사진 업로드",
+  pasteHint: "Ctrl+V로 이미지를 붙여넣을 수도 있습니다",
+  colorizeToggle: "흑백 사진 컬러화",
+
+  uploading: "업로드 중...",
+  retryingUpload: "업로드 재시도 중 ({n}/3)...",
+  processingStarted: "처리 시작됨...",
+  processingDefault: "처리 중...",
+  actionVerbIng: "복원 중",
+  warmupNotice: "첫 복원은 AI가 시작되는 동안 시간이 조금 걸릴 수 있습니다.",
+  elapsedSuffix: "경과",
+  serverWakingUp: "서버를 시작하는 중입니다. 잠시만 기다려 주세요",
+  aiWarmingUp: "AI 모델을 준비 중입니다. 거의 완료되었습니다",
+
+  errorInvalidFileType: "지원하지 않는 파일 형식입니다. JPG, PNG 또는 WEBP를 업로드하세요.",
+  errorFileTooLarge: "파일이 너무 큽니다. 최대 크기는 20MB입니다.",
+  errorUploadFailed: "업로드에 실패했습니다",
+  errorUploadTimeout:
+    "업로드 시간이 초과되었습니다. 서버가 시작 중일 수 있습니다. 잠시 후 다시 시도해 주세요.",
+  errorProcessingTimeout:
+    "처리 시간이 초과되었습니다. AI 서비스가 준비 중일 수 있습니다. 다시 시도해 주세요.",
+  errorProcessingFailed: "처리에 실패했습니다. 다시 시도해 주세요.",
+  errorTitle: "문제가 발생했습니다",
+  errorBody:
+    "문제가 발생했습니다. 다시 시도해 주세요. 파일은 그대로 있습니다. 도움이 필요하신가요?",
+  errorRetrySame: "같은 사진으로 재시도",
+  errorTryAgain: "다시 시도",
+  errorUploadDifferent: "다른 사진 업로드",
+
+  restartAnother: "다른 사진 복원하기",
+};
+
+const koColorizeClient: ToolClientCopy = {
+  ...koRestoreClient,
+  dropHeadline: "여기에 흑백 사진을 놓으세요",
+  uploadCta: "컬러화할 사진 업로드",
+  actionVerbIng: "컬러화 중",
+  warmupNotice: "첫 컬러화는 AI가 시작되는 동안 시간이 조금 걸릴 수 있습니다.",
+  restartAnother: "다른 사진 컬러화하기",
+};
+
+const koEnhanceClient: ToolClientCopy = {
+  ...koRestoreClient,
+  uploadCta: "화질 개선할 사진 업로드",
+  colorizeToggle: "흑백이면 함께 컬러화",
+  actionVerbIng: "화질 개선 중",
+  warmupNotice: "첫 화질 개선은 AI가 시작되는 동안 시간이 조금 걸릴 수 있습니다.",
+  restartAnother: "다른 사진 화질 개선하기",
+};
 
 export const ko: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const ko: LocaleSEO = {
       { name: "사진 업로드", text: "흐릿하거나 저해상도 또는 저품질의 사진을 업로드하세요. 지원 형식: JPG, PNG, WEBP (최대 20MB)." },
       { name: "화질 개선된 사진 다운로드", text: "AI가 흐림을 제거하고 해상도를 최대 4배 높입니다. 원본 품질로 다운로드하세요." },
     ],
+  },
+  toolClient: {
+    restore: koRestoreClient,
+    colorize: koColorizeClient,
+    enhance: koEnhanceClient,
   },
 };

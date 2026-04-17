@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const ptBRRestoreClient: ToolClientCopy = {
+  dropHeadline: "Solte sua foto aqui",
+  dropHint: "ou clique para escolher · JPG, PNG, WEBP · Máx. 20 MB",
+  uploadCta: "Enviar foto para restaurar",
+  pasteHint: "Você também pode colar uma imagem com Ctrl+V",
+  colorizeToggle: "Colorir foto em preto e branco",
+
+  uploading: "Enviando...",
+  retryingUpload: "Tentando novamente ({n}/3)...",
+  processingStarted: "Processamento iniciado...",
+  processingDefault: "Processando...",
+  actionVerbIng: "Restaurando",
+  warmupNotice: "A primeira restauração pode demorar um pouco enquanto a IA inicia.",
+  elapsedSuffix: "decorridos",
+  serverWakingUp: "O servidor está iniciando, aguarde",
+  aiWarmingUp: "O modelo de IA está sendo preparado, quase pronto",
+
+  errorInvalidFileType: "Tipo de arquivo inválido. Envie um arquivo JPG, PNG ou WEBP.",
+  errorFileTooLarge: "Arquivo muito grande. Tamanho máximo: 20 MB.",
+  errorUploadFailed: "Falha no envio",
+  errorUploadTimeout:
+    "Tempo de envio esgotado — o servidor pode estar iniciando. Tente novamente em instantes.",
+  errorProcessingTimeout:
+    "Tempo de processamento esgotado. O serviço de IA pode estar iniciando — tente novamente.",
+  errorProcessingFailed: "Falha no processamento. Tente novamente.",
+  errorTitle: "Algo deu errado",
+  errorBody:
+    "Algo deu errado. Tente novamente — seu arquivo ainda está aqui. Precisa de ajuda?",
+  errorRetrySame: "Tentar a mesma foto novamente",
+  errorTryAgain: "Tentar novamente",
+  errorUploadDifferent: "Enviar outra foto",
+
+  restartAnother: "Restaurar outra foto",
+};
+
+const ptBRColorizeClient: ToolClientCopy = {
+  ...ptBRRestoreClient,
+  dropHeadline: "Solte sua foto em preto e branco aqui",
+  uploadCta: "Enviar foto para colorir",
+  actionVerbIng: "Colorindo",
+  warmupNotice: "A primeira colorização pode demorar um pouco enquanto a IA inicia.",
+  restartAnother: "Colorir outra foto",
+};
+
+const ptBREnhanceClient: ToolClientCopy = {
+  ...ptBRRestoreClient,
+  uploadCta: "Enviar foto para melhorar",
+  colorizeToggle: "Também colorir se for preto e branco",
+  actionVerbIng: "Melhorando",
+  warmupNotice: "A primeira melhoria pode demorar um pouco enquanto a IA inicia.",
+  restartAnother: "Melhorar outra foto",
+};
 
 export const ptBR: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const ptBR: LocaleSEO = {
       { name: "Envie sua foto", text: "Envie qualquer foto desfocada, de baixa resolução ou baixa qualidade. Formatos suportados: JPG, PNG, WEBP até 20 MB." },
       { name: "Baixe sua foto melhorada", text: "A IA remove o desfoque e aumenta a resolução em até 4× em segundos. Baixe o resultado em qualidade original." },
     ],
+  },
+  toolClient: {
+    restore: ptBRRestoreClient,
+    colorize: ptBRColorizeClient,
+    enhance: ptBREnhanceClient,
   },
 };

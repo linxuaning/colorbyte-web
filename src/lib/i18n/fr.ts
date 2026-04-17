@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const frRestoreClient: ToolClientCopy = {
+  dropHeadline: "Déposez votre photo ici",
+  dropHint: "ou cliquez pour parcourir · JPG, PNG, WEBP · Max 20 Mo",
+  uploadCta: "Importer une photo à restaurer",
+  pasteHint: "Vous pouvez aussi coller une image avec Ctrl+V",
+  colorizeToggle: "Coloriser la photo en noir et blanc",
+
+  uploading: "Téléversement...",
+  retryingUpload: "Nouvelle tentative ({n}/3)...",
+  processingStarted: "Traitement démarré...",
+  processingDefault: "Traitement en cours...",
+  actionVerbIng: "Restauration en cours",
+  warmupNotice: "La première restauration peut prendre un instant, le temps que l'IA démarre.",
+  elapsedSuffix: "écoulées",
+  serverWakingUp: "Le serveur démarre, veuillez patienter",
+  aiWarmingUp: "Le modèle IA se prépare, presque prêt",
+
+  errorInvalidFileType: "Type de fichier non valide. Importez un fichier JPG, PNG ou WEBP.",
+  errorFileTooLarge: "Fichier trop volumineux. Taille maximale : 20 Mo.",
+  errorUploadFailed: "Échec du téléversement",
+  errorUploadTimeout:
+    "Délai de téléversement dépassé — le serveur est peut-être en cours de démarrage. Réessayez dans un instant.",
+  errorProcessingTimeout:
+    "Délai de traitement dépassé. Le service IA est peut-être en cours de démarrage — réessayez.",
+  errorProcessingFailed: "Le traitement a échoué. Réessayez.",
+  errorTitle: "Une erreur est survenue",
+  errorBody:
+    "Une erreur est survenue. Réessayez — votre fichier est toujours là. Besoin d'aide ?",
+  errorRetrySame: "Réessayer la même photo",
+  errorTryAgain: "Réessayer",
+  errorUploadDifferent: "Importer une autre photo",
+
+  restartAnother: "Restaurer une autre photo",
+};
+
+const frColorizeClient: ToolClientCopy = {
+  ...frRestoreClient,
+  dropHeadline: "Déposez votre photo noir et blanc ici",
+  uploadCta: "Importer une photo à coloriser",
+  actionVerbIng: "Colorisation en cours",
+  warmupNotice: "La première colorisation peut prendre un instant, le temps que l'IA démarre.",
+  restartAnother: "Coloriser une autre photo",
+};
+
+const frEnhanceClient: ToolClientCopy = {
+  ...frRestoreClient,
+  uploadCta: "Importer une photo à améliorer",
+  colorizeToggle: "Coloriser aussi si la photo est en noir et blanc",
+  actionVerbIng: "Amélioration en cours",
+  warmupNotice: "La première amélioration peut prendre un instant, le temps que l'IA démarre.",
+  restartAnother: "Améliorer une autre photo",
+};
 
 export const fr: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const fr: LocaleSEO = {
       { name: "Importez votre photo", text: "Importez n'importe quelle photo floue, basse résolution ou de mauvaise qualité. Formats acceptés : JPG, PNG, WEBP jusqu'à 20 Mo." },
       { name: "Téléchargez votre photo améliorée", text: "L'IA supprime le flou et augmente la résolution jusqu'à 4× en quelques secondes. Téléchargez le résultat en qualité originale." },
     ],
+  },
+  toolClient: {
+    restore: frRestoreClient,
+    colorize: frColorizeClient,
+    enhance: frEnhanceClient,
   },
 };

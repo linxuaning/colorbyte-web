@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const deRestoreClient: ToolClientCopy = {
+  dropHeadline: "Foto hier ablegen",
+  dropHint: "oder klicken zum Auswählen · JPG, PNG, WEBP · Max. 20 MB",
+  uploadCta: "Foto zum Restaurieren hochladen",
+  pasteHint: "Du kannst auch ein Bild mit Strg+V einfügen",
+  colorizeToggle: "Schwarz-Weiß-Foto kolorieren",
+
+  uploading: "Wird hochgeladen...",
+  retryingUpload: "Upload wird wiederholt ({n}/3)...",
+  processingStarted: "Verarbeitung gestartet...",
+  processingDefault: "Verarbeitung...",
+  actionVerbIng: "Restauriere",
+  warmupNotice: "Die erste Restaurierung kann etwas länger dauern, während die KI hochfährt.",
+  elapsedSuffix: "vergangen",
+  serverWakingUp: "Server startet, bitte warten",
+  aiWarmingUp: "KI-Modell wird vorbereitet, fast fertig",
+
+  errorInvalidFileType: "Ungültiger Dateityp. Bitte lade eine JPG-, PNG- oder WEBP-Datei hoch.",
+  errorFileTooLarge: "Datei zu groß. Maximale Größe ist 20 MB.",
+  errorUploadFailed: "Upload fehlgeschlagen",
+  errorUploadTimeout:
+    "Zeitüberschreitung beim Upload — der Server startet möglicherweise gerade. Bitte in Kürze erneut versuchen.",
+  errorProcessingTimeout:
+    "Zeitüberschreitung bei der Verarbeitung. Der KI-Dienst startet möglicherweise gerade — bitte erneut versuchen.",
+  errorProcessingFailed: "Verarbeitung fehlgeschlagen. Bitte erneut versuchen.",
+  errorTitle: "Etwas ist schiefgelaufen",
+  errorBody:
+    "Etwas ist schiefgelaufen. Bitte versuche es erneut — deine Datei ist noch da. Brauchst du Hilfe?",
+  errorRetrySame: "Gleiches Foto erneut versuchen",
+  errorTryAgain: "Erneut versuchen",
+  errorUploadDifferent: "Ein anderes Foto hochladen",
+
+  restartAnother: "Weiteres Foto restaurieren",
+};
+
+const deColorizeClient: ToolClientCopy = {
+  ...deRestoreClient,
+  dropHeadline: "Schwarz-Weiß-Foto hier ablegen",
+  uploadCta: "Foto zum Kolorieren hochladen",
+  actionVerbIng: "Koloriere",
+  warmupNotice: "Die erste Kolorierung kann etwas länger dauern, während die KI hochfährt.",
+  restartAnother: "Weiteres Foto kolorieren",
+};
+
+const deEnhanceClient: ToolClientCopy = {
+  ...deRestoreClient,
+  uploadCta: "Foto zum Verbessern hochladen",
+  colorizeToggle: "Auch kolorieren, falls Schwarz-Weiß",
+  actionVerbIng: "Verbessere",
+  warmupNotice: "Die erste Verbesserung kann etwas länger dauern, während die KI hochfährt.",
+  restartAnother: "Weiteres Foto verbessern",
+};
 
 export const de: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const de: LocaleSEO = {
       { name: "Foto hochladen", text: "Laden Sie ein beliebiges unscharfes, niedrig aufgelöstes oder qualitativ schlechtes Foto hoch. Unterstützte Formate: JPG, PNG, WEBP bis zu 20 MB." },
       { name: "Verbessertes Foto herunterladen", text: "Die KI entfernt Unschärfe und erhöht die Auflösung bis zu 4× in Sekunden. Laden Sie das Ergebnis in Originalqualität herunter." },
     ],
+  },
+  toolClient: {
+    restore: deRestoreClient,
+    colorize: deColorizeClient,
+    enhance: deEnhanceClient,
   },
 };

@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const esRestoreClient: ToolClientCopy = {
+  dropHeadline: "Arrastra tu foto aquí",
+  dropHint: "o haz clic para elegir · JPG, PNG, WEBP · Máx. 20 MB",
+  uploadCta: "Subir foto para restaurar",
+  pasteHint: "También puedes pegar una imagen con Ctrl+V",
+  colorizeToggle: "Colorear foto en blanco y negro",
+
+  uploading: "Subiendo...",
+  retryingUpload: "Reintentando subida ({n}/3)...",
+  processingStarted: "Procesamiento iniciado...",
+  processingDefault: "Procesando...",
+  actionVerbIng: "Restaurando",
+  warmupNotice: "La primera restauración puede tardar un momento mientras la IA se inicia.",
+  elapsedSuffix: "transcurridos",
+  serverWakingUp: "El servidor se está iniciando, por favor espera",
+  aiWarmingUp: "El modelo de IA se está preparando, casi listo",
+
+  errorInvalidFileType: "Tipo de archivo no válido. Sube un archivo JPG, PNG o WEBP.",
+  errorFileTooLarge: "Archivo demasiado grande. El tamaño máximo es 20 MB.",
+  errorUploadFailed: "Error al subir el archivo",
+  errorUploadTimeout:
+    "Tiempo de subida agotado — el servidor puede estar iniciándose. Inténtalo de nuevo en un momento.",
+  errorProcessingTimeout:
+    "Se agotó el tiempo de procesamiento. Puede que el servicio de IA se esté iniciando — inténtalo de nuevo.",
+  errorProcessingFailed: "Falló el procesamiento. Inténtalo de nuevo.",
+  errorTitle: "Algo salió mal",
+  errorBody:
+    "Algo salió mal. Inténtalo de nuevo — tu archivo sigue aquí. ¿Necesitas ayuda?",
+  errorRetrySame: "Reintentar la misma foto",
+  errorTryAgain: "Intentar de nuevo",
+  errorUploadDifferent: "Subir otra foto",
+
+  restartAnother: "Restaurar otra foto",
+};
+
+const esColorizeClient: ToolClientCopy = {
+  ...esRestoreClient,
+  dropHeadline: "Arrastra tu foto en blanco y negro aquí",
+  uploadCta: "Subir foto para colorear",
+  actionVerbIng: "Coloreando",
+  warmupNotice: "La primera colorización puede tardar un momento mientras la IA se inicia.",
+  restartAnother: "Colorear otra foto",
+};
+
+const esEnhanceClient: ToolClientCopy = {
+  ...esRestoreClient,
+  uploadCta: "Subir foto para mejorar",
+  colorizeToggle: "Colorear también si es en blanco y negro",
+  actionVerbIng: "Mejorando",
+  warmupNotice: "La primera mejora puede tardar un momento mientras la IA se inicia.",
+  restartAnother: "Mejorar otra foto",
+};
 
 export const es: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const es: LocaleSEO = {
       { name: "Sube tu foto", text: "Sube cualquier foto borrosa, de baja resolución o mala calidad. Formatos admitidos: JPG, PNG, WEBP hasta 20 MB." },
       { name: "Descarga tu foto mejorada", text: "La IA elimina el desenfoque y aumenta la resolución hasta 4× en segundos. Descarga el resultado en calidad original." },
     ],
+  },
+  toolClient: {
+    restore: esRestoreClient,
+    colorize: esColorizeClient,
+    enhance: esEnhanceClient,
   },
 };

@@ -1,4 +1,57 @@
-import type { LocaleSEO } from "./types";
+import type { LocaleSEO, ToolClientCopy } from "./types";
+
+const jaRestoreClient: ToolClientCopy = {
+  dropHeadline: "ここに写真をドロップ",
+  dropHint: "またはクリックで選択 · JPG、PNG、WEBP · 最大20 MB",
+  uploadCta: "写真をアップロードして修復",
+  pasteHint: "Ctrl+Vで画像を貼り付けることもできます",
+  colorizeToggle: "白黒写真をカラー化する",
+
+  uploading: "アップロード中...",
+  retryingUpload: "アップロードを再試行中 ({n}/3)...",
+  processingStarted: "処理を開始しました...",
+  processingDefault: "処理中...",
+  actionVerbIng: "修復中",
+  warmupNotice: "最初の修復は、AIの起動に少し時間がかかる場合があります。",
+  elapsedSuffix: "経過",
+  serverWakingUp: "サーバーを起動中です。少々お待ちください",
+  aiWarmingUp: "AIモデルを準備中、もうすぐです",
+
+  errorInvalidFileType: "対応していないファイル形式です。JPG、PNG、WEBPをアップロードしてください。",
+  errorFileTooLarge: "ファイルが大きすぎます。最大サイズは20 MBです。",
+  errorUploadFailed: "アップロードに失敗しました",
+  errorUploadTimeout:
+    "アップロードがタイムアウトしました。サーバーが起動中の可能性があります。少し待ってから再度お試しください。",
+  errorProcessingTimeout:
+    "処理がタイムアウトしました。AIサービスが起動中の可能性があります。もう一度お試しください。",
+  errorProcessingFailed: "処理に失敗しました。もう一度お試しください。",
+  errorTitle: "問題が発生しました",
+  errorBody:
+    "問題が発生しました。もう一度お試しください。ファイルはそのまま残っています。サポートが必要ですか？",
+  errorRetrySame: "同じ写真で再試行",
+  errorTryAgain: "もう一度試す",
+  errorUploadDifferent: "別の写真をアップロード",
+
+  restartAnother: "別の写真を修復する",
+};
+
+const jaColorizeClient: ToolClientCopy = {
+  ...jaRestoreClient,
+  dropHeadline: "ここに白黒写真をドロップ",
+  uploadCta: "写真をアップロードしてカラー化",
+  actionVerbIng: "カラー化中",
+  warmupNotice: "最初のカラー化は、AIの起動に少し時間がかかる場合があります。",
+  restartAnother: "別の写真をカラー化する",
+};
+
+const jaEnhanceClient: ToolClientCopy = {
+  ...jaRestoreClient,
+  uploadCta: "写真をアップロードして高画質化",
+  colorizeToggle: "白黒写真の場合はカラー化も行う",
+  actionVerbIng: "高画質化中",
+  warmupNotice: "最初の高画質化は、AIの起動に少し時間がかかる場合があります。",
+  restartAnother: "別の写真を高画質化する",
+};
 
 export const ja: LocaleSEO = {
   oldPhotoRestoration: {
@@ -84,5 +137,10 @@ export const ja: LocaleSEO = {
       { name: "写真をアップロード", text: "ぼやけた、低解像度、または低品質の写真をアップロードしてください。対応形式：JPG、PNG、WEBP（最大20MB）。" },
       { name: "高画質化された写真をダウンロード", text: "AIがぼやけを除去し、解像度を最大4倍に向上させます。オリジナル品質でダウンロードしてください。" },
     ],
+  },
+  toolClient: {
+    restore: jaRestoreClient,
+    colorize: jaColorizeClient,
+    enhance: jaEnhanceClient,
   },
 };

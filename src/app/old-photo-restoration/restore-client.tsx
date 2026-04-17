@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import {
   Upload,
   Loader2,
@@ -25,6 +25,8 @@ import {
   trackCTAClick,
   trackPaymentEmailEntry,
 } from "@/lib/analytics";
+import { getToolClientCopy } from "@/lib/i18n/locale-map";
+import { detectLocaleFromPath } from "@/lib/i18n/detect";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -52,6 +54,8 @@ interface RestoreClientProps {
 
 export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const t = getToolClientCopy(detectLocaleFromPath(pathname), "restore");
   const [stage, setStage] = useState<Stage>("idle");
   const [preview, setPreview] = useState<string | null>(null);
   const [taskId, setTaskId] = useState<string | null>(null);
@@ -267,12 +271,12 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
       const allowed = ["image/jpeg", "image/png", "image/webp"];
       if (!allowed.includes(file.type)) {
-        setErrorMsg("Invalid file type. Please upload JPG, PNG, or WEBP.");
+        setErrorMsg(t.errorInvalidFileType);
         setStage("error");
         return;
       }
       if (file.size > 20 * 1024 * 1024) {
-        setErrorMsg("File too large. Maximum size is 20MB.");
+        setErrorMsg(t.errorFileTooLarge);
         setStage("error");
         return;
       }
@@ -282,7 +286,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       setPreview(URL.createObjectURL(file));
       setStage("uploading");
       setProgress(0);
-      setProgressText("Uploading...");
+      setProgressText(t.uploading);
 
       try {
         const form = new FormData();
@@ -303,7 +307,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         const delays = [0, 2000, 4000];
         for (let attempt = 0; attempt < 3; attempt++) {
           if (attempt > 0) {
-            setProgressText(`Retrying upload (${attempt + 1}/3)...`);
+            setProgressText(t.retryingUpload.replace("{n}", String(attempt + 1)));
             await new Promise((r) => setTimeout(r, delays[attempt]));
           }
           try {
@@ -318,14 +322,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
             if (!res.ok) {
               const data = await res.json().catch(() => null);
-              throw new Error(data?.detail || `Upload failed (${res.status})`);
+              throw new Error(data?.detail || `${t.errorUploadFailed} (${res.status})`);
             }
 
             const data = await res.json();
             setTaskId(data.task_id);
             processingStartedAtRef.current = Date.now();
             setStage("processing");
-            setProgressText("Processing started...");
+            setProgressText(t.processingStarted);
 
             // Track successful upload
             trackPhotoUpload();
@@ -334,20 +338,20 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             break;
           } catch (err) {
             if (err instanceof DOMException && err.name === "AbortError") {
-              lastError = new Error("Upload timed out — the server may be starting up. Please try again in a moment.");
+              lastError = new Error(t.errorUploadTimeout);
               break; // Don't retry on timeout
             }
-            lastError = err instanceof Error ? err : new Error("Upload failed");
+            lastError = err instanceof Error ? err : new Error(t.errorUploadFailed);
           }
         }
 
         if (lastError) throw lastError;
       } catch (err: unknown) {
-        setErrorMsg(err instanceof Error ? err.message : "Upload failed");
+        setErrorMsg(err instanceof Error ? err.message : t.errorUploadFailed);
         setStage("error");
       }
     },
-    [canUpload, colorize, funnelSource],
+    [canUpload, colorize, funnelSource, t],
   );
 
   // --- Poll task status ---
@@ -372,7 +376,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           if (cancelled) break;
 
           setProgress(data.progress);
-          setProgressText(data.stage || "Processing...");
+          setProgressText(data.stage || t.processingDefault);
 
           if (data.status === "completed") {
             const startedAt = processingStartedAtRef.current ?? Date.now();
@@ -638,9 +642,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             </div>
 
             <div>
-              <p className="text-[17px] font-semibold text-[#1d1d1f]">Drop your photo here</p>
+              <p className="text-[17px] font-semibold text-[#1d1d1f]">{t.dropHeadline}</p>
               <p className="mt-1.5 text-[14px] text-[#6e6e73]">
-                or click to browse &middot; JPG, PNG, WEBP &middot; Max 20 MB
+                {t.dropHint}
               </p>
             </div>
 
@@ -652,7 +656,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
             >
               <Upload className="h-4 w-4" />
-              Upload Photo to Restore
+              {t.uploadCta}
             </button>
             <p className="text-[12px] text-[#6e6e73]/80">
               Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
@@ -672,7 +676,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
                 <span className="h-5 w-9 rounded-full border border-[#d2d2d7] bg-white peer-checked:bg-[#0071e3] peer-checked:border-[#0071e3] transition-colors" />
                 <span className="absolute left-0.5 h-4 w-4 rounded-full bg-[#d2d2d7] peer-checked:bg-white peer-checked:translate-x-4 transition-all shadow-sm" />
               </span>
-              Colorize black &amp; white photo
+              {t.colorizeToggle}
             </label>
 
             <input
@@ -686,7 +690,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               }}
             />
             <p className="text-[12px] text-[#6e6e73]/70">
-              You can also paste an image with Ctrl+V
+              {t.pasteHint}
             </p>
           </div>
         )
@@ -720,17 +724,17 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             {/* Status text + elapsed time */}
             <div className="mt-3 flex items-center justify-center gap-2">
               <p className="text-[14px] font-medium text-[#1d1d1f]">
-                {stage === "processing" ? processingStep : (progressText || "Uploading...")}
+                {stage === "processing" ? processingStep : (progressText || t.uploading)}
                 {progress > 0 && ` — ${progress}%`}
               </p>
             </div>
             <p className="mt-1 text-[12px] text-[#6e6e73] tabular-nums">
-              {elapsedSeconds > 0 && `${elapsedSeconds}s elapsed`}
+              {elapsedSeconds > 0 && `${elapsedSeconds}s ${t.elapsedSuffix}`}
               {stage === "uploading" && elapsedSeconds > 10 && (
-                <span className="ml-1">· Server waking up, please wait</span>
+                <span className="ml-1">· {t.serverWakingUp}</span>
               )}
               {stage === "processing" && elapsedSeconds > 8 && progress < 5 && (
-                <span className="ml-1">· AI model warming up, almost ready</span>
+                <span className="ml-1">· {t.aiWarmingUp}</span>
               )}
             </p>
 
@@ -942,7 +946,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               className="inline-flex items-center gap-2 text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
             >
               <RotateCcw className="h-3.5 w-3.5" />
-              Restore Another Photo
+              {t.restartAnother}
             </button>
           </div>
         </div>
@@ -955,10 +959,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             <AlertCircle className="h-7 w-7 text-red-500" />
           </div>
           <div>
-            <p className="text-[17px] font-semibold text-[#1d1d1f]">Something Went Wrong</p>
+            <p className="text-[17px] font-semibold text-[#1d1d1f]">{t.errorTitle}</p>
             <p className="mt-2 max-w-md text-[14px] text-[#6e6e73] leading-[1.6]">
-              Something went wrong. Please try again — your file is still here.{" "}
-              Need help?{" "}
+              {t.errorBody}{" "}
               <a href="mailto:support@artimagehub.com" className="underline hover:text-[#1d1d1f] transition-colors">support@artimagehub.com</a>
             </p>
           </div>
@@ -968,14 +971,14 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-7 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all"
             >
               <RotateCcw className="h-4 w-4" />
-              {lastFileRef.current ? "Retry Same Photo" : "Try Again"}
+              {lastFileRef.current ? t.errorRetrySame : t.errorTryAgain}
             </button>
             {lastFileRef.current && (
               <button
                 onClick={reset}
                 className="text-[13px] text-[#6e6e73] hover:text-[#1d1d1f] underline"
               >
-                Upload a different photo
+                {t.errorUploadDifferent}
               </button>
             )}
           </div>
