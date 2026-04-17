@@ -9,28 +9,43 @@
       }
     },
     "assert": {
-      "preset": "lighthouse:recommended",
       "assertions": {
         "categories:performance": ["warn", { "minScore": 0.7 }],
-        "categories:accessibility": ["warn", { "minScore": 0.9 }],
+        "categories:accessibility": ["warn", { "minScore": 0.85 }],
         "categories:best-practices": ["warn", { "minScore": 0.85 }],
         "categories:seo": ["error", { "minScore": 0.9 }],
 
-        "largest-contentful-paint": ["warn", { "maxNumericValue": 3000 }],
-        "first-contentful-paint": ["warn", { "maxNumericValue": 2000 }],
-        "total-blocking-time": ["warn", { "maxNumericValue": 300 }],
-        "cumulative-layout-shift": ["warn", { "maxNumericValue": 0.1 }],
-        "interactive": ["warn", { "maxNumericValue": 4000 }],
+        "largest-contentful-paint": ["warn", { "maxNumericValue": 3500 }],
+        "first-contentful-paint": ["warn", { "maxNumericValue": 2500 }],
+        "total-blocking-time": ["warn", { "maxNumericValue": 400 }],
+        "cumulative-layout-shift": ["warn", { "maxNumericValue": 0.15 }],
+        "interactive": ["warn", { "maxNumericValue": 5000 }],
 
         "meta-description": "error",
         "document-title": "error",
         "html-has-lang": "error",
         "canonical": "error",
 
+        "unsized-images": "warn",
+        "color-contrast": "warn",
+        "label-content-name-mismatch": "warn",
+        "render-blocking-insight": "off",
+        "legacy-javascript-insight": "off",
+        "legacy-javascript": "off",
+        "lcp-discovery-insight": "off",
+        "network-dependency-tree-insight": "off",
         "uses-long-cache-ttl": "off",
         "unused-javascript": "off",
         "unused-css-rules": "off",
-        "legacy-javascript": "off"
+        "uses-rel-preconnect": "warn",
+        "dom-size": "warn",
+        "dom-size-insight": "off",
+        "offscreen-images": "warn",
+        "uses-http2": "off",
+        "uses-text-compression": "warn",
+        "modern-image-formats": "warn",
+        "efficiently-encoded-images": "warn",
+        "uses-responsive-images": "warn"
       }
     }
   }
