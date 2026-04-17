@@ -19,7 +19,7 @@ I almost didn't write this article.
 
 Not because the topic is boring — it's genuinely fascinating — but because every time I try to explain how AI restoration works to someone outside the field, their eyes glaze over around the word "convolutional." So I'm going to try a different approach.
 
-Last Tuesday, a woman named Dolores emailed me a scan of her parents' 1947 wedding portrait. The kind of photo you've probably seen before: sepia-toned, formal poses, the bride's veil slightly blurred because someone bumped the camera. Except Dolores's version had 70 years of damage layered on top. Silver mirroring made the bottom half look like aluminum foil. A water stain had eaten through one corner. Cracks in the emulsion ran across both faces like a roadmap.
+Last Tuesday, a woman named Dolores emailed me a scan of her parents' 1947 wedding portrait. The kind of [old wedding picture](/blog/enhance-old-wedding-pictures) you've probably seen before: sepia-toned, formal poses, the bride's veil slightly blurred because someone bumped the camera. Except Dolores's version had 70 years of damage layered on top. Silver mirroring made the bottom half look like aluminum foil. A water stain had eaten through one corner. Cracks in the emulsion ran across both faces like a roadmap.
 
 Five years ago, I would have quoted her $400 and three weeks of my time. Instead, I ran it through our pipeline. Forty-seven seconds. Her mother's face emerged sharp enough to see individual lace flowers on the veil.
 
@@ -43,7 +43,7 @@ The damage I see most often in my work:
 
 **Vinegar syndrome** — if you've ever opened a box of old film and smelled vinegar, that's the acetate base decomposing. It's releasing acetic acid and literally eating itself. Once you smell it, the clock is ticking. I lost a batch of 1960s negatives to this because I waited two weeks to scan them after noticing the smell. Still kicks me.
 
-The point is: by the time most photos reach me, they've lost 30-70% of their original information. The AI isn't just "enhancing" — it's *reconstructing* missing data based on what it's learned about how photos should look.
+The point is: by the time most photos reach me, they've lost 30-70% of their original information. The AI isn't just "enhancing" these [faded memories](/blog/enhance-faded-memories) — it's *reconstructing* missing data based on what it's learned about how photos should look.
 
 ## OK, So How Does the AI Actually Learn This?
 
@@ -69,7 +69,7 @@ The breakthrough — and I remember reading the paper for the first time and fee
 
 ### The Realism Problem (And the Clever Hack That Solved It)
 
-Early AI restoration (around 2017-2018) had an obvious problem: everything came out looking like a bad watercolor painting. The AI would denoise images but lose all the fine texture — skin looked plastic, fabric looked painted, hair looked like a helmet. We called it the "wax figure" effect, and honestly, it made AI restoration a joke in professional circles back then.
+Early AI restoration (around 2017-2018) had an obvious problem: everything came out looking like a bad watercolor painting. The AI would denoise images but lose all the fine texture — skin looked plastic, fabric looked painted, hair looked like a helmet. We called it the "wax figure" effect, and running it on [grainy old pictures](/blog/enhance-grainy-old-pictures) almost always flattened the film grain into mush. It made AI restoration a joke in professional circles back then.
 
 The fix came from an idea by Ian Goodfellow in 2014: **Generative Adversarial Networks (GANs)**. The concept is almost comically simple:
 
@@ -97,7 +97,7 @@ The system first does what I'd do if you handed me a physical print: it assesses
 
 - **Format check**: Is this a JPEG? TIFF? How big is it? (Dolores's scan was 4200×3100 pixels at 600 DPI — she listened to whoever told her to scan at high resolution — smart move)
 - **Damage detection**: The AI classifies damage types. Dolores's photo had three: silver mirroring (bottom 40%), water stain (upper right corner), and cracking (throughout). Each needs a different treatment approach
-- **Face detection**: A model called RetinaFace locates facial regions. Found two faces — bride and groom — both damaged but detectable
+- **Face detection**: A model called RetinaFace locates facial regions. Found two faces — bride and groom — both damaged but detectable. The same stage is what makes [old group photos](/blog/enhance-old-group-photos-guide) viable targets for AI, since every face gets its own pass
 
 This triage step matters because not all damage is equal. A uniform fade across the whole image is basically a curves adjustment. But silver mirroring on top of cracking on top of water damage? Each layer needs to be addressed separately, or they interfere with each other.
 
@@ -107,13 +107,13 @@ Now the system starts working on the overall image — everything outside the fa
 
 **Scratch and crack removal** uses inpainting — the AI looks at the pixels surrounding a crack, predicts what should be there, and fills it in. For Dolores's photo, this meant removing dozens of hairline cracks. Most were clean fills. A few near the veil got confused between "crack" and "lace detail" — this is a known edge case that still trips up AI.
 
-**Tone curve restoration** compensates for fading. The original print probably had rich blacks and clean whites. After 70 years, the blacks are grey and the whites are yellow. The AI maps the current tonal range back to a normal histogram. Think of it like stretching a compressed spring back to its original length.
+**Tone curve restoration** compensates for fading. The original print probably had rich blacks and clean whites. After 70 years, the blacks are grey and the whites are yellow. The AI maps the current tonal range back to a normal histogram. Think of it like stretching a compressed spring back to its original length. This step is what rescues [blurry vintage photos](/blog/enhance-blurry-vintage-photos) whose contrast collapsed from decades of light exposure.
 
-**Color neutralization** removes the yellowing. This is where scanning in color mode (even for B&W photos) pays off — the yellow cast contains information about *how* the photo degraded, which helps the AI reverse it more accurately.
+**Color neutralization** removes the yellowing. This is where scanning in color mode (even for B&W photos) pays off — the yellow cast contains information about *how* the photo degraded, which helps the AI reverse it more accurately. It's also why users trying to enhance [low-quality images](/blog/enhance-low-quality-images) should always scan the original rather than photographing it with a phone.
 
 ### Seconds 15–35: Face Enhancement
 
-This is where GFPGAN or CodeFormer take over. The faces are:
+This is where GFPGAN or CodeFormer take over — it's the same stage that does the heavy lifting on [old portrait photos](/blog/enhance-old-portrait-photos). The faces are:
 
 1. **Extracted** from the image with generous padding (include hair, neck, shoulders — context matters)
 2. **Aligned** to a standardized orientation (the model expects faces at a consistent angle)
@@ -122,13 +122,13 @@ This is where GFPGAN or CodeFormer take over. The faces are:
 
 For Dolores's photo, the bride's face came through beautifully — you could see individual eyelashes. The groom had more damage over his face, and the result was good but slightly softer. I'd say 85% of what manual restoration would achieve. Dolores was thrilled. A professional retoucher might notice the difference. Her family won't.
 
-One thing I should mention: if the original face is tiny — less than about 128×128 pixels in the scan — results get unpredictable. The model just doesn't have enough information to work with. This is why I always tell people: **scan big**. 600 DPI minimum for 4×6 prints. 1200 DPI for wallet-size photos. You can always downscale later, but you can't add pixels that were never captured.
+One thing I should mention: if the original face is tiny — less than about 128×128 pixels in the scan — results get unpredictable. The model just doesn't have enough information to work with. This is why I always tell people: **scan big**. 600 DPI minimum for 4×6 prints. 1200 DPI for wallet-size photos and [old ID card photos](/blog/enhance-old-id-card-photos), where the face may only occupy a postage-stamp area. You can always downscale later, but you can't add pixels that were never captured.
 
 ### Seconds 20–45: Super-Resolution
 
 **Real-ESRGAN** handles upscaling. It takes the restored image and bumps it to 4× resolution — Dolores's 4200×3100 became 8400×6200 (enough to print at poster size).
 
-Here's what I need you to understand about AI upscaling: **it's generating plausible detail, not recovering actual detail.** If the original photo was slightly out of focus, Real-ESRGAN will add sharp-looking texture that makes it *seem* focused. But those details are the AI's educated guess, not reality. For family photos, this is perfectly fine — you want it to look good on the mantle. For forensic or archival work, it's important to know the distinction.
+Here's what I need you to understand about AI upscaling: **it's generating plausible detail, not recovering actual detail.** If the original photo was slightly out of focus, Real-ESRGAN will add sharp-looking texture that makes it *seem* focused. But those details are the AI's educated guess, not reality. For family photos — including casual shots like [old vacation photos](/blog/enhance-old-vacation-photos) where perfect accuracy isn't the goal — this is perfectly fine. You want it to look good on the mantle. For forensic or archival work, it's important to know the distinction.
 
 ### Seconds 30–60: Colorization (If Requested)
 
@@ -153,7 +153,7 @@ This is called hallucination, and it's the #1 thing that keeps me up at night pr
 
 - Add earrings to a woman who never wore earrings
 - Put a window in a background that was originally a blank wall
-- Give a baby teeth (babies don't have teeth, AI, come on)
+- Give a baby teeth (babies don't have teeth, AI, come on) — this is why I urge extra care when restoring [old baby photos](/blog/enhance-old-baby-photos)
 
 It happens because the model is trained to produce "realistic" output, not "accurate" output. There's a difference. When it encounters missing information, it fills the gap with whatever is statistically most likely. Usually it gets away with it. Sometimes it doesn't.
 
@@ -163,11 +163,11 @@ It happens because the model is trained to produce "realistic" output, not "accu
 
 If more than about 60-70% of the image is gone — huge tears, extensive water damage, fire damage — AI can't reconstruct it. There's just not enough surrounding context to make reasonable guesses.
 
-I had a client last year with a fire-damaged photo where only the upper-left quarter survived. The AI tried to "complete" the rest and produced something that looked like a surrealist painting. We ended up going with a professional artist who did a hand-painted reconstruction based on other family photos for reference. Cost $350 but the result was beautiful and honest about what was real versus reconstructed.
+I had a client last year with a fire-damaged photo where only the upper-left quarter survived — it was from a box of [old sports photos](/blog/enhance-old-sports-photos) her late father kept from his college years. The AI tried to "complete" the rest and produced something that looked like a surrealist painting. We ended up going with a professional artist who did a hand-painted reconstruction based on other family photos for reference. Cost $350 but the result was beautiful and honest about what was real versus reconstructed.
 
 ### The Ethnic Bias Problem
 
-I mentioned this earlier but it's worth repeating: most training datasets were built primarily from Western, lighter-skinned faces. The models have improved significantly since 2021, but bias persists. I test every major model update against a diverse benchmark set I maintain (240 photos across 12 ethnic groups), and while the gap has narrowed — we're talking 89% quality parity now versus 71% in 2022 — it's not at 100%.
+I mentioned this earlier but it's worth repeating: most training datasets were built primarily from Western, lighter-skinned faces. The models have improved significantly since 2021, but bias persists. I test every major model update against a diverse benchmark set I maintain — 240 photos across 12 ethnic groups, heavy on [old family portraits](/blog/enhance-old-family-portraits) where identity accuracy matters most — and while the gap has narrowed (we're talking 89% quality parity now versus 71% in 2022) it's not at 100%.
 
 If you're restoring photos from non-Western families, review the output carefully. Pay special attention to skin tone accuracy, eye shape, and nose structure. If something looks "off," trust your instinct — the AI may have nudged features toward its training majority.
 
@@ -185,7 +185,7 @@ After processing over 12,000 photos, here's my honest assessment:
 | **Consistency** | Very high | Depends on artist |
 | **Identity preservation** | 92–97% | 99%+ |
 
-For the vast majority of family photos — the ones sitting in shoeboxes and attic albums — AI gets you 80-95% of the way there in under a minute. For the handful of truly irreplaceable heirloom images, spending $200+ on professional manual work is still worth it.
+For the vast majority of family photos — the ones sitting in shoeboxes and attic albums, from [old school photos](/blog/enhance-old-school-photos) to faded birthdays — AI gets you 80-95% of the way there in under a minute. For the handful of truly irreplaceable heirloom images, spending $200+ on professional manual work is still worth it.
 
 My workflow for clients: AI everything first. Flag the 5-10% that need manual attention. Save your restoration budget for the photos that really matter.
 
@@ -195,7 +195,7 @@ I go to CVPR and SIGGRAPH every year, and the pace of improvement is honestly ha
 
 **Already shipping (2026):** Video restoration. If you have old home movies — VHS tapes, 8mm film — the same technology that restores individual frames is being applied to video. Companies like Topaz and DAIN are already offering this. The quality varies, but it's getting there fast.
 
-**Next 1-2 years:** Multi-image fusion. If you have three damaged photos of the same scene (common in family collections), future tools will combine undamaged areas from each to create one clean composite. I've seen research demos that made my jaw drop.
+**Next 1-2 years:** Multi-image fusion. If you have three damaged photos of the same scene — think [old birthday party photos](/blog/enhance-old-birthday-party-photos) where someone took a whole roll of the same cake — future tools will combine undamaged areas from each to create one clean composite. I've seen research demos that made my jaw drop.
 
 **3-5 years out:** Guided restoration with text prompts. "Enhance the face but preserve the original film grain." "Colorize this, but make the car red because I remember it was red." This combines large language models with image restoration and it's going to be a game-changer for personalized accuracy.
 
@@ -203,7 +203,7 @@ I go to CVPR and SIGGRAPH every year, and the pace of improvement is honestly ha
 
 ## Try It Yourself (With Honest Expectations)
 
-If you've got old photos waiting to be restored, here's what I'd suggest:
+If you've got old photos waiting to be restored — whether it's a full [childhood photos collection](/blog/enhance-childhood-photos-complete-guide) or a single shoebox of loose prints — here's what I'd suggest:
 
 1. **Scan at 600 DPI minimum** — higher for small prints. TIFF or PNG, not JPEG (compression artifacts confuse the AI)
 2. **Try AI restoration first** — [ArtImageHub's free tier](/old-photo-restoration) lets you test a few photos before committing. Remini and MyHeritage are also decent options
