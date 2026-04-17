@@ -1,0 +1,61 @@
+name: Promote latest Vercel deploy to artimagehub.com
+
+# Vercel's native deploy is configured to NOT auto-alias to the production
+# domain (discovered 2026-04-17 after 3 days of stale prod). This workflow
+# fills that gap by explicitly aliasing the latest Ready production deploy
+# to artimagehub.com after every push to main.
+#
+# Inert until secrets are configured. Set in GitHub → Settings → Secrets:
+#   VERCEL_TOKEN       (https://vercel.com/account/tokens — any scope)
+#   VERCEL_ORG_ID      (team_rayvwE5FJJR5JAkR4TpNKRuE)
+#   VERCEL_PROJECT_ID  (prj_wcr5gRwNAkNrVcfPBYE4Pk4SQz24)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Only the latest push to main matters — cancel older alias jobs.
+concurrency:
+  group: vercel-auto-alias
+  cancel-in-progress: true
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Alias latest Ready production deploy to artimagehub.com
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::notice title=Inert::VERCEL_TOKEN secret not set."
+            echo "To enable: Settings → Secrets and variables → Actions →"
+            echo "  add VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID"
+            exit 0
+          fi
+
+          echo "Waiting 90s for Vercel native build to land..."
+          sleep 90
+
+          # Poll up to 10 min for a Ready production deploy
+          for i in $(seq 1 40); do
+            LATEST=$(vercel ls --token "$VERCEL_TOKEN" 2>/dev/null \
+              | awk '/Production.*Ready/ {print $3; exit}')
+            if [ -n "$LATEST" ]; then
+              echo "Aliasing $LATEST → artimagehub.com"
+              vercel alias set "$LATEST" artimagehub.com --token "$VERCEL_TOKEN"
+              exit 0
+            fi
+            echo "No Ready production deploy yet (attempt $i/40), waiting 15s..."
+            sleep 15
+          done
+
+          echo "::error title=Timeout::No Ready production deploy found in 10 min"
+          exit 1
