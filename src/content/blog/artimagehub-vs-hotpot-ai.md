@@ -15,7 +15,7 @@ coverEmoji: "🍲"
 
 # ArtImageHub vs Hotpot AI for Old Photo Restoration
 
-Hotpot AI (hotpot.ai) is an AI toolkit offering multiple image processing tools — including photo restoration, colorization, background removal, and image generation. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare for the specific task of restoring old family photographs.
+Hotpot AI (hotpot.ai) is an AI toolkit offering multiple image processing tools — including photo restoration, colorization, background removal, and image generation. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare for the specific task of restoring old family photographs. Other multi-tool AI suites take a similar approach — see our [Media.io comparison](/blog/artimagehub-vs-media-io) for a parallel breakdown of a general-purpose AI media toolkit.
 
 ---
 
@@ -25,7 +25,7 @@ Hotpot AI provides a range of AI tools:
 
 **Photo Restoration:** One-click AI restoration for old, damaged photographs.
 
-**AI Art:** Text-to-image generation.
+**AI Art:** Text-to-image generation. This is a separate category from restoration — pure generative models like [Flux from Black Forest Labs](/blog/artimagehub-vs-flux) create new imagery but don't rebuild degraded historical prints.
 
 **Colorizer:** AI colorization for black-and-white photos.
 
@@ -41,7 +41,7 @@ Hotpot AI provides a range of AI tools:
 
 ## Hotpot AI's Photo Restoration
 
-Hotpot AI's restoration tool applies AI enhancement to old photographs. The underlying technology for their restoration feature includes face enhancement algorithms.
+Hotpot AI's restoration tool applies AI enhancement to old photographs. The underlying technology for their restoration feature includes face enhancement algorithms — similar in spirit to what selfie-focused apps like [Lensa AI](/blog/artimagehub-vs-lensa) do, though Hotpot is oriented toward general restoration rather than portrait styling.
 
 **Quality assessment:** Hotpot AI's restoration produces reasonable results on lightly-to-moderately damaged photographs. For heavily degraded 1940s–1960s portraits with significant face softening, CodeFormer-based restoration (which ArtImageHub uses) produces better face reconstruction.
 
@@ -68,9 +68,9 @@ Hotpot AI's restoration tool applies AI enhancement to old photographs. The unde
 
 ## When Hotpot AI Makes Sense
 
-**Multi-tool users:** If you need background removal, image generation, and restoration from one platform, Hotpot's toolkit offers convenience.
+**Multi-tool users:** If you need background removal, image generation, and restoration from one platform, Hotpot's toolkit offers convenience. Similar all-in-one appeal is offered by online conversion platforms like [IMG2GO](/blog/artimagehub-vs-img2go), which bundle dozens of file and image utilities in one place.
 
-**Free tier testing:** Hotpot's free credits allow testing restoration quality before paying — useful for evaluating the output.
+**Free tier testing:** Hotpot's free credits allow testing restoration quality before paying — useful for evaluating the output. Creative AI platforms like [Krea AI](/blog/artimagehub-vs-krea-ai) offer similar free-to-try credit models, though they target generative workflows rather than historical restoration.
 
 **Lightly damaged photos:** Hotpot's restoration is adequate for photos with moderate fading where the primary issue is color correction rather than historical face reconstruction.
 

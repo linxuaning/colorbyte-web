@@ -15,7 +15,7 @@ coverEmoji: "🏆"
 
 # Best AI Tools for Old Photo Restoration in 2026
 
-Not all AI photo tools are built for old photographs. Most are designed for modern digital photos — fixing JPEG compression, reducing noise from high-ISO settings, or upscaling clean images.
+Not all AI photo tools are built for old photographs. Most are designed for modern digital photos — fixing JPEG compression, reducing noise from high-ISO settings, or upscaling clean images. Even generative image platforms like [Flux from Black Forest Labs](/blog/artimagehub-vs-flux) produce beautiful new images but aren't engineered to recover detail from a scratched 1950s print.
 
 Old photographs have different problems: fading, chemical degradation, physical damage (scratches, water stains), and most critically — faces that have lost sharpness over decades.
 
@@ -66,7 +66,7 @@ Where Remini falls behind ArtImageHub:
 - **Subscription required:** $4.99/week or $29.99/year vs $4.99 one-time
 - **No colorization**
 
-For portraits without damage — headshots from the 1980s or later that just need sharpening — Remini is competitive. For prints with visible damage, it's second choice.
+For portraits without damage — headshots from the 1980s or later that just need sharpening — Remini is competitive. For prints with visible damage, it's second choice. Selfie-focused apps target a similar face-enhancement niche but struggle on historical prints, as our [Lensa AI test](/blog/artimagehub-vs-lensa) shows.
 
 ---
 
@@ -130,7 +130,7 @@ The credit system becomes confusing for batch projects — prices vary by image 
 
 **Price:** Free tier (with limitations) | Pro: $8.99/month | **Skill required:** Low | **Processing:** Fast
 
-Fotor is a full-featured online photo editor with AI enhancement tools. Its AI enhancer produces good results on modern photos. On old photographs with significant fading or damage, results are more inconsistent — improvement is visible, but the specific models that ArtImageHub uses for old photo degradation patterns aren't in Fotor's pipeline.
+Fotor is a full-featured online photo editor with AI enhancement tools. Its AI enhancer produces good results on modern photos. On old photographs with significant fading or damage, results are more inconsistent — improvement is visible, but the specific models that ArtImageHub uses for old photo degradation patterns aren't in Fotor's pipeline. The same limitation applies to broader AI media toolkits like [Media.io](/blog/artimagehub-vs-media-io) and online converters such as [IMG2GO](/blog/artimagehub-vs-img2go), which offer many features but no CodeFormer-grade face reconstruction.
 
 Colorization is available. Damage repair is basic.
 
@@ -158,7 +158,7 @@ For restoring old family photos — the faded portraits, the scratched vacation 
 
 The specific combination of CodeFormer face restoration, automatic damage repair, integrated colorization, and $4.99 one-time pricing puts it ahead of tools that do some of these things well but not all.
 
-Remini is the best alternative for portrait-only use without physical damage. Photoshop is the ceiling for those with the skills to use it. Everything else fills specific niches.
+Remini is the best alternative for portrait-only use without physical damage. Photoshop is the ceiling for those with the skills to use it. Newer creative AI platforms — see [how Krea AI compares](/blog/artimagehub-vs-krea-ai) — are powerful for generative work but not built for historical restoration. Everything else fills specific niches.
 
 **[Restore your old family photos at ArtImageHub — $4.99 one-time →](/old-photo-restoration)**
 
