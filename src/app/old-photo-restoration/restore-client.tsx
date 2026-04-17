@@ -187,11 +187,20 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       return;
     }
 
+    // Only run the full retry loop when the user is actually returning from
+    // a payment redirect — otherwise every returning visitor waits ~14s for
+    // the retry ladder to exhaust. A single check covers the normal case.
+    const justPaid =
+      searchParams.get("payment") === "success" ||
+      searchParams.get("resume_task_id") !== null ||
+      (typeof window !== "undefined" &&
+        localStorage.getItem("artimagehub_just_paid") === "1");
+
     let cancelled = false;
     const checkSubscription = async () => {
-      // Retry up to 4 times (initial + 3 retries) to handle webhook delay.
-      // Dodo webhook can arrive a few seconds after payment redirect.
-      const delays = [0, 2000, 4000, 8000];
+      // Retry up to 4 times only when returning from payment to handle Dodo
+      // webhook delay. Otherwise do one check and exit fast.
+      const delays: number[] = justPaid ? [0, 2000, 4000, 8000] : [0];
       for (let attempt = 0; attempt < delays.length; attempt++) {
         if (cancelled) return;
         if (attempt > 0) {
@@ -529,11 +538,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             </div>
             <div className="h-11 w-56 rounded-full bg-[#d2d2d7]/40 animate-pulse" />
             <p className="text-[13px] text-[#6e6e73]">
-              {warmupSeconds > 5
-                ? "Waking up our AI server — this only takes a moment..."
+              {warmupSeconds > 15
+                ? "Waking up our AI server — this is taking longer than usual..."
                 : "Checking access..."}
             </p>
-            {warmupSeconds > 10 && (
+            {warmupSeconds > 25 && (
               <p className="text-[11px] text-[#6e6e73]/70">
                 Server is warming up ({warmupSeconds}s) — almost there
               </p>

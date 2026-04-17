@@ -37,6 +37,18 @@ function PaymentSuccessContent() {
     }
   }, [email, funnelSource, orderId]);
 
+  // Signal to tool pages that this visit is a post-payment return so they run
+  // the 4-attempt subscription retry to absorb Dodo webhook delay. Cleared
+  // after 60s so future visits don't still think the user just paid.
+  useEffect(() => {
+    localStorage.setItem("artimagehub_just_paid", "1");
+    const clear = setTimeout(
+      () => localStorage.removeItem("artimagehub_just_paid"),
+      60_000
+    );
+    return () => clearTimeout(clear);
+  }, []);
+
   const restartPath = resumeTaskId
     ? funnelSource.landingPage || "/old-photo-restoration"
     : "/old-photo-restoration";

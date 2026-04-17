@@ -113,15 +113,44 @@ export default function ColorizeClient() {
       setCheckingAccess(false);
       return;
     }
-    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.is_active) setIsSubscriber(true);
-      })
-      .catch(() => {})
-      .finally(() => {
-        setCheckingAccess(false);
-      });
+
+    // Only run the full retry loop when returning from a payment redirect.
+    // Normal revisits do one check and exit fast.
+    const justPaid =
+      searchParams.get("payment") === "success" ||
+      searchParams.get("resume_task_id") !== null ||
+      (typeof window !== "undefined" &&
+        localStorage.getItem("artimagehub_just_paid") === "1");
+
+    let cancelled = false;
+    const checkSubscription = async () => {
+      const delays: number[] = justPaid ? [0, 2000, 4000, 8000] : [0];
+      for (let attempt = 0; attempt < delays.length; attempt++) {
+        if (cancelled) return;
+        if (attempt > 0) {
+          await new Promise((r) => setTimeout(r, delays[attempt]));
+        }
+        if (cancelled) return;
+        try {
+          const res = await fetch(
+            `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`
+          );
+          const data = await res.json();
+          if (data.is_active) {
+            setIsSubscriber(true);
+            setCheckingAccess(false);
+            return;
+          }
+        } catch {
+          // swallow — try next attempt or fall through
+        }
+      }
+      if (!cancelled) setCheckingAccess(false);
+    };
+    checkSubscription();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {
