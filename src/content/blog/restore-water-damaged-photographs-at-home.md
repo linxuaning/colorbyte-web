@@ -19,17 +19,17 @@ Before diving into restoration techniques, it's important to understand how wate
 
 ### Types of Water Damage
 
-**Surface Water Damage**: When water sits on top of the photograph without fully penetrating the emulsion layer. This is the easiest type to address and often reversible.
+**Surface Water Damage**: When water sits on top of the photograph without fully penetrating the emulsion layer. This is the easiest type to address and often reversible—most of what remains afterwards are [stained photographs](/blog/fix-stained-photographs) with tidemarks but intact imagery.
 
-**Emulsion Damage**: Water penetrates the photographic emulsion, causing swelling, softening, and potential separation from the paper base. This requires more delicate handling.
+**Emulsion Damage**: Water penetrates the photographic emulsion, causing swelling, softening, and potential separation from the paper base. This requires more delicate handling. Once the emulsion dries unevenly you'll often see [cracked emulsion](/blog/fix-cracked-emulsion-photos) patterns that need separate digital repair, and the dried paper may become so [brittle](/blog/fix-brittle-old-photographs-guide) it fractures on handling.
 
-**Mold and Mildew**: Extended exposure to moisture creates perfect conditions for biological growth, which can permanently stain photographs.
+**Mold and Mildew**: Extended exposure to moisture creates perfect conditions for biological growth, which can permanently stain photographs—see our dedicated guides on how to [fix mold damage](/blog/fix-mold-damage-pictures) and [fungus-damaged photographs](/blog/fix-fungus-damaged-photographs) for cleanup techniques beyond drying. Leftover spore stains often resemble [foxing spots](/blog/fix-foxing-spots-vintage-photos) that need spot-level retouching.
 
 **Adhesion**: Wet photographs stuck together or to glass, albums, or other surfaces. This is one of the most challenging damage types to reverse.
 
 ### Photograph Types and Water Vulnerability
 
-Different photograph formats react differently to water damage:
+Different photograph formats react differently to water damage. Vintage color prints in particular often suffer compound damage—both water intrusion and pre-existing [color-faded pictures](/blog/fix-color-faded-pictures) that need separate correction after drying, and slide collections frequently need a round of [faded Kodachrome slide recovery](/blog/fix-faded-kodachrome-slides) to rebuild hues the water didn't even touch:
 
 | Photo Type | Water Vulnerability | Recovery Difficulty |
 |------------|-------------------|-------------------|
@@ -87,7 +87,7 @@ Once you've stabilized the immediate situation, you can begin the careful proces
 3. Gently place photographs face-up on the paper
 4. Change the paper underneath every 4-6 hours
 5. Allow 24-48 hours for complete drying
-6. Keep photographs flat during drying to prevent curling
+6. Keep photographs flat during drying to prevent curling—if edges already cupped before you started, see our guide on how to [fix curled photograph edges](/blog/fix-curled-photograph-edges) before they set permanently, and handle [brittle photo paper](/blog/fix-brittle-photo-paper) with cotton gloves to avoid edge fractures
 
 **Interleaving Method** (For Multiple Photos):
 
@@ -145,7 +145,7 @@ Even after successful physical restoration, water damaged photographs often reta
 
 Before beginning digital restoration:
 
-1. **Use High Resolution**: Scan at minimum 600 DPI, preferably 1200 DPI
+1. **Use High Resolution**: Scan at minimum 600 DPI, preferably 1200 DPI — if you need to enlarge a small damaged original, pair this with the [best AI image upscaler for 2026](/blog/best-ai-image-upscaler-2026) to add plausible detail
 2. **Clean the Scanner**: Ensure scanner glass is spotless
 3. **Flatten Photos**: Use scanner lid weight to flatten curled edges
 4. **Scan Negative Space**: Include edges for reference during restoration
@@ -165,7 +165,7 @@ Modern AI-powered tools can dramatically improve water damaged photographs. [Art
 
 For those comfortable with photo editing software:
 
-**Removing Water Stains**:
+**Removing Water Stains** (the same workflow applies to [scratched vintage prints](/blog/fix-scratched-vintage-prints) where you sample adjacent tone, and to [creased family photos](/blog/fix-creased-family-photos) where the fold line needs rebuilding):
 1. Use the clone stamp tool to sample undamaged areas
 2. Apply with low opacity (20-30%) for natural blending
 3. Work in layers to maintain editing flexibility
@@ -177,7 +177,7 @@ For those comfortable with photo editing software:
 3. Adjust colors to match surrounding areas
 4. Add subtle grain to match photograph's original texture
 
-**Color Correction**:
+**Color Correction** (water damage almost always triggers a [color shift in old photos](/blog/fix-color-shift-in-old-photos) as dye layers swell unevenly, and flash-era snapshots may also need you to [fix red-eye in old photos](/blog/fix-red-eye-in-old-photos) during the same editing pass):
 1. Adjust white balance to remove color casts
 2. Recover faded colors using saturation adjustments
 3. Use selective color correction for specific areas
@@ -190,15 +190,15 @@ Prevention is always better than restoration. Protect your photographs with thes
 ### Proper Storage Solutions
 
 **Storage Environment**:
-- Maintain temperature between 65-70°F (18-21°C)
-- Keep humidity between 30-40%
-- Avoid basements, attics, and exterior walls
+- Maintain temperature between 65-70°F (18-21°C) — higher ambient temperatures are the leading cause of [heat-damaged old photos](/blog/fix-heat-damaged-old-photos) in attic storage
+- Keep humidity between 30-40% — sustained higher levels produce a [humidity-damaged photo collection](/blog/fix-humidity-damaged-photo-collection) that's far harder to fix than surface water damage
+- Avoid basements, attics, and exterior walls — these environments also attract silverfish and firebrats that cause [insect-damaged photographs](/blog/fix-insect-damaged-photographs)
 - Store in climate-controlled interior rooms
 
 **Protective Materials**:
 - Use archival-quality albums with acid-free pages
 - Store in polyester or polypropylene sleeves
-- Avoid PVC plastic—it degrades and damages photos
+- Avoid PVC plastic—it degrades and damages photos, creating the same off-gassing that leads to [chemically damaged prints](/blog/fix-chemically-damaged-prints) and subtler [chemical damage](/blog/fix-chemical-damage-photos) over decades
 - Consider fireproof/waterproof document boxes for most valuable items
 
 ### Digital Backup Strategy
