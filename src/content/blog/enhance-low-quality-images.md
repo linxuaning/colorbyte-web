@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Low Quality Images with AI — Fix Pixelated & Blurry Photos"
-description: "Turn pixelated, blurry, or compressed photos into sharp prints. ArtImageHub's AI upscales 4x and sharpens faces in 30 seconds. Free preview, $4.99 HD download."
+title: "Enhance Low Quality Images — AI Unblur & Upscale in 30 Seconds"
+description: "Turn pixelated or blurry photos into sharp, printable prints. AI upscales 4x and sharpens faces in 30 seconds — free preview before you commit."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"

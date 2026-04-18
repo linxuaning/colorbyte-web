@@ -1,6 +1,6 @@
 ---
-title: "Photo Restoration Ethics — When Does Fixing a Photo Cross the Line?"
-description: "How much should you change a historical photo? Professional guidelines for authentic restoration vs. falsification. Essential reading before you restore family heirlooms."
+title: "Photo Restoration Ethics: What to Fix vs Leave Alone (Guide)"
+description: "How much should you change a historical photo? Specialist guidelines for authentic restoration vs falsification — real examples from family-archive work."
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "James Morrison"

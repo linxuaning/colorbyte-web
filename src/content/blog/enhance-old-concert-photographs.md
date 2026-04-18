@@ -1,6 +1,6 @@
 ---
-title: "Enhance Old Concert Photos — Fix Low-Light Blur & Fading from 60s–90s Shows"
-description: "Rescue blurry, faded concert photos from the 60s–90s. AI fixes low-light damage, motion blur, and color fading in 30 seconds. Try free on ArtImageHub."
+title: "Fix Blurry Concert Photos from 60s–90s — AI Recovers Detail"
+description: "Rescue blurry, faded concert photos from the 60s–90s. AI fixes low-light grain, motion blur, and color fading in 30 seconds. Free preview first."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Lisa Martinez"

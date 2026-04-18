@@ -1,6 +1,6 @@
 ---
-title: "Get Accurate Colors on B&W Photos — 7 Colorization Tips That Work"
-description: "Avoid fake-looking colorization. Learn 7 accuracy tips for realistic skin, fabric, and sky tones on vintage B&W photos. Colorize free on ArtImageHub in 30 seconds."
+title: "7 AI Colorization Tips for Realistic B&W Photo Colors (2026)"
+description: "Avoid fake, cartoon-looking colorization. 7 specialist tips for realistic skin, fabric, and sky tones on vintage B&W photos — with concrete examples."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Sarah Chen"

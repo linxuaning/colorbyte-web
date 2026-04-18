@@ -1,6 +1,6 @@
 ---
-title: "Fix Sun Damaged Photos — Restore Faded & Discolored Prints with AI"
-description: "Reverse sun fading, pink discoloration, and washed-out prints. Upload to ArtImageHub and AI restores original colors in 30 seconds. Free preview, $4.99 download."
+title: "Restore Sun-Faded Photos — AI Fixes Yellowing in 30 Seconds"
+description: "Reverse sun fading, pink discoloration, and washed-out vintage prints. AI restores original colors in 30 seconds — free preview before you commit."
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"
