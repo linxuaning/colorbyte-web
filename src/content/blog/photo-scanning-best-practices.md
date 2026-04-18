@@ -1,6 +1,6 @@
 ---
-title: "Photo Scanning Best Practices 2026: Digitizing Guide"
-description: "Master photo scanning with expert best practices. Learn optimal settings, techniques, and workflows for high-quality digital preservation of photographs."
+title: "Photo Scanning Best Practices — DPI, Color, File Format Guide"
+description: "Best DPI, color mode, and file format for scanning old photographs. Archival-grade settings for prints, slides, and negatives explained in practical terms."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"

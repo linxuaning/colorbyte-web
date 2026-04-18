@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Faded Memories: Restore Faded Family Photographs"
-description: "Complete guide to enhancing severely faded family photographs. Bring back lost details and recover faded memories with expert restoration techniques."
+title: "Enhance Faded Family Memories — AI Brings Lost Detail Back"
+description: "Restore severely faded family photographs and bring lost detail back to life. AI recovers faces, textures, and colors in 30 seconds — free preview."
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "David Park"

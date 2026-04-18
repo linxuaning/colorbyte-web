@@ -1,6 +1,6 @@
 ---
-title: "How to Enhance Blurry Vintage Photos: Sharpen Old Images in 2026"
-description: "Complete guide to enhancing blurry vintage photos. Learn advanced techniques to sharpen out-of-focus images, fix motion blur, and restore clarity to old photographs."
+title: "Enhance Blurry Vintage Photos — AI Sharpens Soft Focus in Seconds"
+description: "Sharpen out-of-focus, motion-blurred, and soft-focus vintage photographs with AI. Recover detail even on severe blur — free preview first."
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Lisa Martinez"

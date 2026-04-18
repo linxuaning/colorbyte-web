@@ -1,6 +1,6 @@
 ---
-title: "AI Image Enhancer: 7 Tools Tested in 2026"
-description: "I tested 7 AI image enhancers on portraits, landscapes, old scans, and blurry phone photos. Here's what actually works, what's overhyped, and which tool wins for each use case."
+title: "AI Image Enhancer 2026 — 7 Tools Tested Head-to-Head"
+description: "I tested 7 AI image enhancers on portraits, landscapes, old scans, and blurry phone photos. Here's what actually works, what's overhyped, and winners by use case."
 publishedAt: "2026-02-16"
 author: "David Park"
 authorRole: "Digital Photography Specialist"

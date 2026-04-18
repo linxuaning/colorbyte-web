@@ -1,6 +1,6 @@
 ---
-title: "How to Fix Scratched Vintage Prints: Complete Restoration Guide"
-description: "Learn professional techniques to fix scratched vintage prints. Step-by-step guide for removing scratches from old photographs using modern tools."
+title: "Fix Scratched Vintage Prints — AI Removes Scratches in 30 Seconds"
+description: "Remove deep scratches, surface scuffs, and emulsion damage from vintage prints. AI fills scratches naturally in 30 seconds. Free preview before you commit."
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "Sarah Chen"

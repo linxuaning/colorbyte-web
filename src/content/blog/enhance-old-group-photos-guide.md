@@ -1,6 +1,6 @@
 ---
-title: "Enhance Old Group Photos: Family & Team Picture Guide"
-description: "Guide to enhance old group photos with multiple people. Fix faded faces, balance exposure, restore class photos, wedding parties, and family gatherings."
+title: "Enhance Old Group Photos — Fix Faded Faces in Family & Team Shots"
+description: "Restore old group photos with multiple faces. Balance uneven exposure, sharpen distant faces, and save class photos, wedding parties, and reunion snapshots."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Lisa Martinez"

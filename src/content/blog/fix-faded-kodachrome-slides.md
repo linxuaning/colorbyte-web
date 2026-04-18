@@ -1,6 +1,6 @@
 ---
-title: "Fix Faded Kodachrome Slides: Restore Color to Vintage Transparencies"
-description: "Learn to restore faded Kodachrome and Ektachrome slides. Expert techniques for scanning and digitally enhancing vintage color transparencies."
+title: "Fix Faded Kodachrome Slides — Restore 70s Color in 30 Seconds"
+description: "Restore faded Kodachrome and Ektachrome slides at home. Scan settings, AI color recovery, and why the magenta shift happens — free preview first."
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Rachel Kim"

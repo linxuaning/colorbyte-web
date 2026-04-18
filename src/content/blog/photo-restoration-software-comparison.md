@@ -1,6 +1,6 @@
 ---
-title: "Photo Restoration Software Comparison 2026: Best Tools Reviewed"
-description: "In-depth comparison of photo restoration software. Compare AI-powered tools, traditional editing software, and find the best solution for your needs."
+title: "Best Photo Restoration Software 2026 — 8 AI Tools Compared"
+description: "Side-by-side comparison of 8 photo restoration tools on real damaged images. What each gets right, what's overhyped, and which tool wins for each task."
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
