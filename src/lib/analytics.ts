@@ -65,11 +65,15 @@ export const readPaymentFunnelSource = (
     PAYMENT_FUNNEL_QUERY_KEYS.landingPage
   );
 
+  const resolvedLandingPage = (() => {
+    if (landingPage && LOCKED_LANDING_PAGES.has(landingPage)) return landingPage;
+    if (typeof window === "undefined") return undefined;
+    const pathname = window.location.pathname;
+    return LOCKED_LANDING_PAGES.has(pathname) ? pathname : undefined;
+  })();
+
   return {
-    landingPage:
-      landingPage && LOCKED_LANDING_PAGES.has(landingPage)
-        ? landingPage
-        : undefined,
+    landingPage: resolvedLandingPage,
     ctaSlot: readPaymentFunnelValue(params, PAYMENT_FUNNEL_QUERY_KEYS.ctaSlot),
     entryVariant: readPaymentFunnelValue(
       params,
