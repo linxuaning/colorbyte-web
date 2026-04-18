@@ -25,7 +25,7 @@ Here's how they actually compare when the goal is restoring an old family photo.
 
 ## The Fundamental Difference
 
-**Adobe Photoshop** is a tool for skilled editors. Photoshop can produce exceptional results on old photo restoration — but only if the person using it knows what they're doing. Healing Brush, Clone Stamp, Neural Filters for colorization and face enhancement, frequency separation, curves — all of these can be applied to damaged photos by a trained professional.
+**Adobe Photoshop** is a tool for skilled editors. Photoshop can produce exceptional results on old photo restoration — but only if the person using it knows what they're doing. Healing Brush, Clone Stamp, Neural Filters for colorization and face enhancement, frequency separation, curves — all of these can be applied to damaged photos by a trained professional. Whether you're tackling [a photo torn in quarters](/blog/how-to-fix-photo-torn-in-quarters) or chasing detail in [motion-blurred old prints](/blog/how-to-fix-motion-blur-old-photos), Photoshop gives a skilled operator the full toolkit.
 
 Used well, Photoshop can restore photos that no AI tool can match. Used by someone without those skills — and most people don't have those skills — it produces poor results at high time cost.
 
@@ -80,13 +80,13 @@ Learning to do this well takes months to years of practice. Tutorials exist, but
 
 Photoshop's AI features most relevant to old photo restoration:
 
-**Colorize (Neural Filter):** Good for black-and-white conversion. Results are plausible but can produce flat, uniform colors — especially on skin tones and complex textures. Manual touchup is typically needed for professional results.
+**Colorize (Neural Filter):** Good for black-and-white conversion. Results are plausible but can produce flat, uniform colors — especially on skin tones and complex textures. Manual touchup is typically needed for professional results. If you're working through [how to colorize black-and-white photos](/blog/how-to-colorize-black-and-white-photos) on a specific era — like [1920s studio portraits](/blog/colorize-1920s-black-white-photos) or [1940s wartime photographs](/blog/colorize-1940s-wartime-photos) — you'll need to feed Photoshop era-accurate palette references by hand. For [Civil War-era colorization](/blog/colorize-civil-war-photos), period uniform colors are especially unforgiving of the Neural Filter's default guesses.
 
-**Smart Portrait (Neural Filter):** Can smooth skin and adjust facial features, but is designed for modern portrait enhancement — not for recovering face detail from a 1960s print with soft focus and fading.
+**Smart Portrait (Neural Filter):** Can smooth skin and adjust facial features, but is designed for modern portrait enhancement — not for recovering face detail from a 1960s print with soft focus and fading. This becomes obvious when you try [enhancing small cropped faces](/blog/how-to-enhance-small-cropped-faces) or [sharpening faces in a group photo](/blog/how-to-enhance-group-photo-faces) — Smart Portrait assumes modern sensor detail that simply isn't in the source pixels.
 
 **Content-Aware Fill:** Useful for filling in areas where physical damage (tears, missing corners) has destroyed content. Requires manual selection and can produce inconsistent results depending on the surrounding content.
 
-**Spot Healing Brush:** Excellent for removing scratches and small damage — but requires manual brushwork on each damaged area. On a severely scratched print, this could take hours.
+**Spot Healing Brush:** Excellent for removing scratches and small damage — but requires manual brushwork on each damaged area. On a severely scratched print, this could take hours. The same applies when [fixing out-of-focus old photos](/blog/how-to-fix-out-of-focus-old-photos): Photoshop's sharpen filters can help but won't invent detail the lens never captured.
 
 **Bottom line on Neural Filters:** They're supplementary tools in a skilled editor's workflow, not a push-button restoration solution. They work best on top of extensive manual preparation.
 
@@ -119,7 +119,7 @@ Photoshop's AI features most relevant to old photo restoration:
 
 **Full editorial control.** Every decision is manual and reversible. You can choose exactly how much colorization to apply, which scratches to remove and which to preserve, how far to push face enhancement before it looks artificial.
 
-**Batch automation.** For studios or archives processing large volumes with consistent settings, Photoshop Actions and Bridge can automate workflows at scale.
+**Batch automation.** For studios or archives processing large volumes with consistent settings, Photoshop Actions and Bridge can automate workflows at scale. This matters if you're [digitizing a large photo collection](/blog/how-to-digitize-large-photo-collection) or [digitizing and restoring slides](/blog/how-to-digitize-restore-slides), where consistent per-image treatment across hundreds of files is the bottleneck. Prep steps like [cleaning photos before scanning](/blog/how-to-clean-photo-before-scanning) and [improving photo scan quality](/blog/how-to-improve-photo-scan-quality) happen outside Photoshop, but determine how much manual cleanup the Actions need to do. Archivists also benefit from [identifying old photo formats](/blog/how-to-identify-old-photo-formats) so each batch gets format-appropriate settings.
 
 **Creative flexibility.** Photoshop can do far more than restoration — compositing, color grading, retouching, design work. If you're already using it for other purposes, adding restoration to your workflow costs nothing extra.
 
@@ -178,6 +178,8 @@ For a typical old family photo — a 1960s print with moderate fading, some ligh
 **[Restore your old family photos at ArtImageHub — $4.99 one-time →](/old-photo-restoration)**
 
 *Results in 30–90 seconds · HD download · 30-day guarantee*
+
+Once restored, the next question is usually [how to print restored photos](/blog/how-to-print-restored-photos) at archival quality — the same file that looks great on screen may need sharpening or resampling for print.
 
 ---
 

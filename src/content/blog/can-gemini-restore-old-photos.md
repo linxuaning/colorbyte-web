@@ -31,11 +31,12 @@ Google Gemini (including Gemini Advanced and Gemini 1.5 Pro) can:
 - **Generate new images** using Imagen (Google's image generation model) — but these are new fictional images, not restorations of your existing photo
 
 What Gemini cannot do:
-- **Repair physical damage** (scratches, tears, water staining)
+- **Repair physical damage** (scratches, tears, water staining) — including cases like [a photo torn in quarters](/blog/how-to-fix-photo-torn-in-quarters) where the pieces must be digitally re-aligned and in-painted
 - **Fix fading and yellowing** that has degraded the photographic dye layers
-- **Reconstruct face detail** lost over decades
+- **Reconstruct face detail** lost over decades — it can't help with [enhancing small cropped faces](/blog/how-to-enhance-small-cropped-faces) or [sharpening faces in a group photo](/blog/how-to-enhance-group-photo-faces)
 - **Upscale a low-resolution old scan**
-- **Colorize a black-and-white photo accurately**
+- **Correct [motion blur in old photos](/blog/how-to-fix-motion-blur-old-photos) or [out-of-focus old photos](/blog/how-to-fix-out-of-focus-old-photos)** — these require image-to-image generative models, not a vision-language model
+- **Colorize a black-and-white photo accurately** — full walkthrough at [how to colorize black-and-white photos](/blog/how-to-colorize-black-and-white-photos)
 
 ---
 
@@ -45,7 +46,7 @@ Gemini is a large multimodal language model. It processes images to understand a
 
 The confusion is understandable: Gemini can see your photo, so it seems like it should be able to fix it. But "seeing" an image (running it through a vision encoder to extract semantic meaning) and "restoring" an image (using a generative model trained on degraded photographs to reconstruct lost detail) are entirely different operations.
 
-Even Imagen — Google's image generation model integrated into Gemini — isn't a restoration tool. It generates new images from text descriptions. Asking Gemini to "restore" your old photo using Imagen would produce a new AI-generated image that looks vaguely similar to the description, not an actual restoration of your original.
+Even Imagen — Google's image generation model integrated into Gemini — isn't a restoration tool. It generates new images from text descriptions. Asking Gemini to "restore" your old photo using Imagen would produce a new AI-generated image that looks vaguely similar to the description, not an actual restoration of your original. The same gap shows up in era-specific colorization: [colorizing Civil War photos](/blog/colorize-civil-war-photos), [1920s black-and-white portraits](/blog/colorize-1920s-black-white-photos), and [1940s wartime photographs](/blog/colorize-1940s-wartime-photos) all require a model that conditions on *your* pixels, not a fresh generation.
 
 ---
 
@@ -53,11 +54,11 @@ Even Imagen — Google's image generation model integrated into Gemini — isn't
 
 While Gemini can't restore photographs, it's genuinely useful for adjacent tasks:
 
-**Historical research:** Upload a photo and ask Gemini to identify military insignia, civilian clothing styles, or other period-specific details. "What decade is this photo from based on the clothing?" or "What branch of the military is shown in this uniform?"
+**Historical research:** Upload a photo and ask Gemini to identify military insignia, civilian clothing styles, or other period-specific details. "What decade is this photo from based on the clothing?" or "What branch of the military is shown in this uniform?" This pairs well with [identifying old photo formats](/blog/how-to-identify-old-photo-formats) — daguerreotype, tintype, cabinet card, and silver gelatin prints each carry date ranges Gemini can corroborate.
 
 **Context and description:** Ask Gemini to write a detailed description of the photo — useful for captioning a family archive or for accessibility.
 
-**Getting restoration advice:** Ask "I have a 1940s portrait with significant fading and scratches — what's the best AI tool to restore it?" Gemini can explain the process and recommend tools, even if it can't execute the restoration.
+**Getting restoration advice:** Ask "I have a 1940s portrait with significant fading and scratches — what's the best AI tool to restore it?" Gemini can explain the process and recommend tools, even if it can't execute the restoration. It's also useful for procedural questions before you even upload anywhere — [how to clean a photo before scanning](/blog/how-to-clean-photo-before-scanning) or [how to improve photo scan quality](/blog/how-to-improve-photo-scan-quality) are exactly the kind of prep questions it answers well. If you're facing a bulk project, ask Gemini to sketch a workflow for [digitizing a large photo collection](/blog/how-to-digitize-large-photo-collection) or for [digitizing and restoring slides](/blog/how-to-digitize-restore-slides).
 
 **Transcribing text:** If your old photo has handwriting on the back (date, names, location) and you have a scan of both sides, Gemini can often transcribe or interpret faded handwriting.
 
@@ -106,6 +107,8 @@ Upload the photo. The CodeFormer + GFPGAN + Real-ESRGAN pipeline runs in 30–90
 **[Restore your old family photos at ArtImageHub — $4.99 one-time →](/old-photo-restoration)**
 
 *Results in 30–90 seconds · HD download · 30-day guarantee*
+
+Once the HD file is downloaded, see [how to print restored photos](/blog/how-to-print-restored-photos) for paper, DPI, and sharpening settings that preserve the recovered detail.
 
 ---
 
