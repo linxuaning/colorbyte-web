@@ -116,11 +116,21 @@ export default function ColorizeClient() {
 
     // Only run the full retry loop when returning from a payment redirect.
     // Normal revisits do one check and exit fast.
-    const justPaid =
-      searchParams.get("payment") === "success" ||
-      searchParams.get("resume_task_id") !== null ||
-      (typeof window !== "undefined" &&
-        localStorage.getItem("artimagehub_just_paid") === "1");
+    // Timestamp-based staleness guard for the localStorage flag — a boolean
+    // flag could outlive its setTimeout if the tab closed first.
+    const justPaid = (() => {
+      if (searchParams.get("payment") === "success") return true;
+      if (searchParams.get("resume_task_id") !== null) return true;
+      if (typeof window === "undefined") return false;
+      const raw = localStorage.getItem("artimagehub_just_paid");
+      if (!raw) return false;
+      const ts = Number(raw);
+      if (!Number.isFinite(ts) || Date.now() - ts > 60_000) {
+        localStorage.removeItem("artimagehub_just_paid");
+        return false;
+      }
+      return true;
+    })();
 
     let cancelled = false;
     const checkSubscription = async () => {

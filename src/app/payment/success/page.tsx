@@ -38,15 +38,13 @@ function PaymentSuccessContent() {
   }, [email, funnelSource, orderId]);
 
   // Signal to tool pages that this visit is a post-payment return so they run
-  // the 4-attempt subscription retry to absorb Dodo webhook delay. Cleared
-  // after 60s so future visits don't still think the user just paid.
+  // the 4-attempt subscription retry to absorb Dodo webhook delay. The value
+  // is the millisecond timestamp of when we set it; tool pages treat anything
+  // older than 60s as stale + auto-clear. Storing the timestamp (instead of
+  // "1") means the flag cannot outlive its window even if the tab that ran
+  // this setTimeout was closed early.
   useEffect(() => {
-    localStorage.setItem("artimagehub_just_paid", "1");
-    const clear = setTimeout(
-      () => localStorage.removeItem("artimagehub_just_paid"),
-      60_000
-    );
-    return () => clearTimeout(clear);
+    localStorage.setItem("artimagehub_just_paid", String(Date.now()));
   }, []);
 
   const restartPath = resumeTaskId

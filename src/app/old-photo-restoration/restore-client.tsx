@@ -190,11 +190,22 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     // Only run the full retry loop when the user is actually returning from
     // a payment redirect — otherwise every returning visitor waits ~14s for
     // the retry ladder to exhaust. A single check covers the normal case.
-    const justPaid =
-      searchParams.get("payment") === "success" ||
-      searchParams.get("resume_task_id") !== null ||
-      (typeof window !== "undefined" &&
-        localStorage.getItem("artimagehub_just_paid") === "1");
+    // `artimagehub_just_paid` is stored as a millisecond timestamp; values
+    // older than 60s are stale (happens if the tab that ran the setTimeout
+    // was closed early) and are treated as absent + cleaned up in place.
+    const justPaid = (() => {
+      if (searchParams.get("payment") === "success") return true;
+      if (searchParams.get("resume_task_id") !== null) return true;
+      if (typeof window === "undefined") return false;
+      const raw = localStorage.getItem("artimagehub_just_paid");
+      if (!raw) return false;
+      const ts = Number(raw);
+      if (!Number.isFinite(ts) || Date.now() - ts > 60_000) {
+        localStorage.removeItem("artimagehub_just_paid");
+        return false;
+      }
+      return true;
+    })();
 
     let cancelled = false;
     const checkSubscription = async () => {
