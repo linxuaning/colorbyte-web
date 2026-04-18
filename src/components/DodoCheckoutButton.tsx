@@ -192,6 +192,15 @@ export default function DodoCheckoutButton({
         {loading ? "Redirecting to DodoPayments..." : `Pay ${PRO_PRICE_TEXT} with DodoPayments`}
       </button>
 
+      {/* Expectation-setting line — GA4 shows ~58% of create_order_success
+          visits never complete payment. Surprise at the billing-address form
+          is the most likely cause. Flagging it upfront converts the moment
+          from "wait, what?" to an anticipated step. */}
+      <p className="mt-2 text-center text-[11px] leading-snug text-white/60">
+        Secure checkout — you&rsquo;ll enter name &amp; billing address on the
+        next page (takes ~30 seconds).
+      </p>
+
       {validationMessage && (
         <div className="mt-3 rounded-xl border border-white/15 bg-white/5 p-3 text-center">
           <p className="text-sm font-medium text-white">{validationMessage}</p>
