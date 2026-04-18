@@ -190,7 +190,7 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <ColorizeClient />
+        <ColorizeClient landingPage={`/${locale}/photo-colorizer`} />
       </div>
 
       <ProofSampleGallery
@@ -199,7 +199,7 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
         description="See what AI colorization looks like on real black and white photos."
       />
 
-      <FloatingCTA landingPage="/photo-colorizer" />
+      <FloatingCTA landingPage={`/${locale}/photo-colorizer`} />
     </div>
   );
 }

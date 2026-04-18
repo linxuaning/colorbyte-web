@@ -44,7 +44,11 @@ interface TaskStatus {
   error: string | null;
 }
 
-export default function ColorizeClient() {
+interface ColorizeClientProps {
+  landingPage?: string;
+}
+
+export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const t = getToolClientCopy(detectLocaleFromPath(pathname), "colorize");
@@ -64,14 +68,16 @@ export default function ColorizeClient() {
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
-    () =>
-      typeof window === "undefined"
-        ? { landingPage: "/photo-colorizer" }
+    () => {
+      const resolvedLandingPage = landingPage?.trim() || "/photo-colorizer";
+      return typeof window === "undefined"
+        ? { landingPage: resolvedLandingPage }
         : mergePaymentFunnelSource(
-            { landingPage: "/photo-colorizer" },
+            { landingPage: resolvedLandingPage },
             readPaymentFunnelSource(new URLSearchParams(window.location.search))
-          ),
-    []
+          );
+    },
+    [landingPage]
   );
   const checkoutHref = useMemo(() => {
     const params = new URLSearchParams(

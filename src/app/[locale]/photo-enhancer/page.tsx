@@ -190,7 +190,7 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <EnhanceClient />
+        <EnhanceClient landingPage={`/${locale}/photo-enhancer`} />
       </div>
 
       <ProofSampleGallery
@@ -199,7 +199,7 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
         description="See what AI photo enhancement looks like on real blurry and low-quality photos."
       />
 
-      <FloatingCTA landingPage="/photo-enhancer" />
+      <FloatingCTA landingPage={`/${locale}/photo-enhancer`} />
     </div>
   );
 }

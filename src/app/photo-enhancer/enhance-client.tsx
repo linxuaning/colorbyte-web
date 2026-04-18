@@ -44,7 +44,11 @@ interface TaskStatus {
   error: string | null;
 }
 
-export default function EnhanceClient() {
+interface EnhanceClientProps {
+  landingPage?: string;
+}
+
+export default function EnhanceClient({ landingPage }: EnhanceClientProps = {}) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const t = getToolClientCopy(detectLocaleFromPath(pathname), "enhance");
@@ -65,14 +69,16 @@ export default function EnhanceClient() {
   const processingStartedAtRef = useRef<number | null>(null);
   const resumeTaskId = searchParams.get("resume_task_id")?.trim() || "";
   const funnelSource = useMemo(
-    () =>
-      typeof window === "undefined"
-        ? { landingPage: "/photo-enhancer" }
+    () => {
+      const resolvedLandingPage = landingPage?.trim() || "/photo-enhancer";
+      return typeof window === "undefined"
+        ? { landingPage: resolvedLandingPage }
         : mergePaymentFunnelSource(
-            { landingPage: "/photo-enhancer" },
+            { landingPage: resolvedLandingPage },
             readPaymentFunnelSource(new URLSearchParams(window.location.search))
-          ),
-    []
+          );
+    },
+    [landingPage]
   );
   const checkoutHref = useMemo(() => {
     const params = new URLSearchParams(

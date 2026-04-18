@@ -226,7 +226,7 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <RestoreClient />
+        <RestoreClient landingPage={`/${locale}/old-photo-restoration`} />
       </div>
 
       {/* 30-Day Guarantee + Trust */}
@@ -348,7 +348,7 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
         </div>
       </section>
 
-      <FloatingCTA landingPage="/old-photo-restoration" />
+      <FloatingCTA landingPage={`/${locale}/old-photo-restoration`} />
 
       {/* How It Works */}
       <section className="py-16 sm:py-20">

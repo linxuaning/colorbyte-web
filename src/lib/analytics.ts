@@ -22,12 +22,34 @@ const PAYMENT_FUNNEL_QUERY_KEYS = {
 } as const;
 
 const LOCKED_LANDING_PAGES = new Set([
+  // EN tool + marketing pages
   "/old-photo-restoration",
+  "/photo-colorizer",
+  "/photo-enhancer",
   "/photo-restoration-service",
   "/vs-remini",
   "/vs-photoshop-restoration",
   "/best-photo-restoration-software",
   "/photo-restoration-app",
+  // Locale tool pages: 6 locales × 3 tools (comparison pages are EN-only)
+  "/es/old-photo-restoration",
+  "/es/photo-colorizer",
+  "/es/photo-enhancer",
+  "/pt-BR/old-photo-restoration",
+  "/pt-BR/photo-colorizer",
+  "/pt-BR/photo-enhancer",
+  "/fr/old-photo-restoration",
+  "/fr/photo-colorizer",
+  "/fr/photo-enhancer",
+  "/de/old-photo-restoration",
+  "/de/photo-colorizer",
+  "/de/photo-enhancer",
+  "/ja/old-photo-restoration",
+  "/ja/photo-colorizer",
+  "/ja/photo-enhancer",
+  "/ko/old-photo-restoration",
+  "/ko/photo-colorizer",
+  "/ko/photo-enhancer",
 ]);
 
 const readPaymentFunnelValue = (params: URLSearchParams, key: string) => {
