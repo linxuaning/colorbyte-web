@@ -434,4 +434,5 @@ export const deletedBlogSlugs: readonly string[] = [
   "restore-vacation-photos-1950s-1980s",
   "restore-victorian-mourning-photographs",
   "restore-wwii-home-front-photographs",
+  "restore-ambrotype-images",
 ] as const;
