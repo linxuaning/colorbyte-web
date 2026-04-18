@@ -16,6 +16,23 @@ featured: false
 
 # Fix Torn Photographs with AI: A Restorer's 2026 Repair Guide
 
+## Quick Answer
+
+How to restore torn, creased, or physically damaged photographs using AI reconstruction and traditional techniques.
+
+**In 30 seconds:**
+- Scan every fragment separately at 600 DPI before attempting to align — never glue torn pieces together physically.
+- Align fragments in Photoshop or GIMP on a single canvas before running the AI restoration pass.
+- AI fills gaps up to roughly 5% of the image well — larger missing regions require judgment, not automation.
+- When a tear removes a face or critical detail, stop and accept the loss — AI invention is not reconstruction.
+- Store originals flat in acid-free sleeves after scanning — folding and creasing is preventable damage.
+
+**Best AI tool for this job:** [ArtImageHub](/old-photo-restoration) — one-time $4.99, no subscription. Processes in 30 seconds, no signup, handles tears, crease marks, missing corners, surface scratches, brittle emulsion.
+
+**When to hire a specialist instead:** Photos with missing fragments that include faces, brittle prints that crumble when touched, or unique historical photographs where every decision needs documentation.
+
+---
+
 A torn photograph is the damage type that feels most hopeless to families and is often the easiest for a specialist to recover. The reason is counterintuitive: unlike fading or chemical degradation, a tear preserves 100% of the original image data. The fragments are intact. The problem is mechanical — reuniting the pieces, hiding the seam, and sometimes rebuilding a strip of missing image along the tear line. None of those are lost-information problems. They are reconstruction problems, and reconstruction is what AI restoration models are specifically good at.
 
 I have repaired roughly four thousand torn prints in the last decade. About 70% of them come back indistinguishable from undamaged at typical viewing distance. Another 20% come back with a faint residual seam that is only visible under magnification. The remaining 10% — tears that lost emulsion along the edge, or fragments that went missing entirely — require judgment calls about how much to reconstruct and how much to leave honest. This guide covers all three cases.

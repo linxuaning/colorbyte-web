@@ -16,6 +16,23 @@ featured: false
 
 # Genealogy Photo Restoration: The Complete Family History Guide
 
+## Quick Answer
+
+End-to-end guide to restoring photographs for family history and genealogy projects — digitization, AI restoration, preservation.
+
+**In 30 seconds:**
+- Digitize every photograph at 600 DPI TIFF before restoring — the scan is the permanent archival record.
+- Identify the photo format first (tintype, ambrotype, cabinet card, gelatin silver) — each has distinct handling needs.
+- Use AI restoration in batch for collections of 300+ images — manual work does not scale to family archives.
+- Capture metadata alongside every scan: names, dates, locations, source — unlabeled photos are half-documents.
+- Store TIFF masters on two physical drives plus cloud, with JPEGs for sharing — follow the 3-2-1 backup rule.
+
+**Best AI tool for this job:** [ArtImageHub](/old-photo-restoration) — one-time $4.99, no subscription. Processes in 30 seconds, no signup, handles cracked ambrotypes, faded tintypes, water-stained gelatin silver prints, torn family portraits.
+
+**When to hire a specialist instead:** Daguerreotypes, glass-plate negatives, or one-of-a-kind 19th-century heirlooms that require physical conservation before any digital work.
+
+---
+
 Genealogy work and photo restoration arrived at the same place from two different directions. The family historian wants a name and a date attached to a face. The photo restorer wants a face clear enough to recognize. Put them in the same room and they discover they have been chasing the same object: a photograph that survives long enough and in good enough condition for the next generation to say, "that is Great-Grandma Ida in 1908."
 
 I have worked on roughly eight thousand family-history collections over the last decade, and the honest truth is that the restoration step is not the hard part. The hard part is the decision-making before you ever touch a scanner — what to prioritize, what to keep as an original, what to discard after digitizing, how to annotate things so the archive is still legible to your grandchildren. This guide is how I approach a genealogy collection end-to-end, from the cardboard box somebody hands me to the shareable digital archive that gets distributed to forty cousins at a reunion.

@@ -16,6 +16,23 @@ featured: false
 
 # Water Damage Photo Restoration: The Ultimate 2026 Guide
 
+## Quick Answer
+
+Practical guide to restoring water-damaged photographs at home, from mold removal to mildew stains and emulsion cracks.
+
+**In 30 seconds:**
+- Air-dry flat on absorbent paper face-up within 48 hours — never stack or press wet prints together.
+- Scan every photo at 600 DPI before attempting any physical repair — the scan is your insurance.
+- Wear an N95 mask when handling moldy prints and work in ventilated space — mold spores are a real health risk.
+- Use AI restoration for water stains, dye bleed, and surface discoloration — it cannot rebuild lost emulsion.
+- Stop and call a conservator when prints are fused together, actively flaking, or irreplaceable wedding/vintage originals.
+
+**Best AI tool for this job:** [ArtImageHub](/old-photo-restoration) — one-time $4.99, no subscription. Processes in 30 seconds, no signup, handles water stains, mildew, mold, dye bleed, emulsion cracks.
+
+**When to hire a specialist instead:** Prints fused to glass or each other, emulsion actively detaching from the paper base, or archival-grade family heirlooms with unique historical value.
+
+---
+
 Water is the single worst thing that happens to photographs. Fire leaves ash you can brush away. Fading leaves tone you can correct. Water destroys the emulsion itself — the gelatin layer on the surface of the print swells, sticks to anything it touches, and then, as it dries, either cracks or fuses permanently to glass, to other prints, or to the cardboard album page behind it.
 
 I have pulled family photos out of basement flood bins, bathtub rescues after a burst pipe, and dehumidifier overflow in a storage unit. The single biggest predictor of what I can recover is not how bad the water exposure was. It is how fast somebody stopped the chemistry that water kicked off. This guide is how I triage, stabilize, scan, and digitally rebuild photos after water damage, and where AI belongs in the workflow versus where you should stop and call a human conservator.
