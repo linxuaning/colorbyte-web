@@ -18,5 +18,61 @@ Allow: /terms
 Allow: /about
 Allow: /sitemap-html
 
+# LLM / AI crawler explicit allows (so they can read llms.txt and cite tool pages)
+User-agent: GPTBot
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: CCBot
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /payment/
+Disallow: /api/
+
 # Sitemap location
 Sitemap: https://www.artimagehub.com/sitemap.xml
