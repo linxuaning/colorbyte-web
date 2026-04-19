@@ -49,22 +49,22 @@ Submit #1-5:
 **URL:** https://www.artimagehub.com
 **Email:** support@artimagehub.com
 **Category:** AI Tools / Photo Restoration / Image Enhancement
-**Pricing:** Free (3 photos) / $29.9 Lifetime
+**Pricing:** $4.99 one-time, no subscription, no recurring fees
 
 **Short Tagline:**
-AI photo restoration - fix old photos in 30 seconds
+AI photo restoration · $4.99 one-time, no subscription
 
 **Medium Tagline:**
-Restore old family photos in 30 seconds with AI. Free to try, no signup required.
+Restore old family photos in 30 seconds with AI. $4.99 one-time, no subscription.
 
 **Long Tagline:**
-AI-powered photo restoration that removes scratches, enhances faces, colorizes B&W, and upscales to 4K. 3 free photos, no signup.
+AI photo restoration that fixes scratches, enhances faces, colorizes B&W, and upscales to 4K. $4.99 one-time, unlimited.
 
 **Short Description (50 words):**
-ArtImageHub is a free AI photo restoration tool that repairs old, damaged, and faded photographs in 30 seconds. Restore scratches, enhance faces, colorize black & white photos, and upscale resolution. No signup required. Try 3 photos free.
+ArtImageHub is an AI photo restoration tool that repairs old, damaged, and faded photographs in 30 seconds. Restore scratches, enhance faces, colorize black & white, and upscale resolution. One-time $4.99 unlocks unlimited restorations and HD downloads — no subscription, no monthly fees, 30-day money-back guarantee.
 
 **Long Description (100 words):**
-ArtImageHub is an AI-powered photo restoration platform that brings old family photographs back to life. Our advanced AI technology automatically removes scratches, repairs tears, enhances blurry faces, corrects fading, and colorizes black & white images—all in under 30 seconds. Perfect for genealogy enthusiasts, family historians, and anyone wanting to preserve precious memories. Features include photo restoration, face enhancement, 4K upscaling, and automatic colorization. Try 3 photos completely free with no signup required. Pro Lifetime access ($29.9 one-time) unlocks unlimited restorations forever.
+ArtImageHub is an AI-powered photo restoration platform that brings old family photographs back to life. Our AI automatically removes scratches, repairs tears, enhances blurry faces, corrects fading, and colorizes black & white images — all in 15-30 seconds per photo. Perfect for genealogy enthusiasts, family historians, and anyone preserving precious memories. Features: photo restoration, face enhancement, 4K upscaling, automatic colorization. Pricing is one-time $4.99 for unlimited restorations and HD downloads — no subscription, no monthly fees, no recurring billing. Photos are deleted within 24 hours and never used to train AI. 30-day money-back guarantee.
 
 **Keywords:**
 photo restoration, AI, old photos, family photos, colorize photos, enhance photos, fix old photos, restore damaged photos, genealogy, photo repair, image enhancement, vintage photos, face enhancement, photo upscaling

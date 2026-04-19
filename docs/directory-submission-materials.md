@@ -18,12 +18,12 @@
 
 ### Short Description (50 words)
 ```
-ArtImageHub is a free AI photo restoration tool that repairs old, damaged, and faded photographs in 30 seconds. Restore scratches, enhance faces, colorize black & white photos, and upscale resolution. No signup required. Try 3 photos free.
+ArtImageHub is an AI photo restoration tool that repairs old, damaged, and faded photographs in 30 seconds. Restore scratches, enhance faces, colorize black & white, and upscale resolution. One-time $4.99 unlocks unlimited restorations and HD downloads — no subscription, no monthly fees, 30-day money-back guarantee.
 ```
 
 ### Medium Description (100 words)
 ```
-ArtImageHub is an AI-powered photo restoration platform that brings old family photographs back to life. Our advanced AI technology automatically removes scratches, repairs tears, enhances blurry faces, corrects fading, and colorizes black & white images—all in under 30 seconds. Perfect for genealogy enthusiasts, family historians, and anyone wanting to preserve precious memories. Features include photo restoration, face enhancement, 4K upscaling, and automatic colorization. Try 3 photos completely free with no signup required. Pro Lifetime access ($29.9 one-time) unlocks unlimited restorations forever.
+ArtImageHub is an AI-powered photo restoration platform that brings old family photographs back to life. Our AI automatically removes scratches, repairs tears, enhances blurry faces, corrects fading, and colorizes black & white images — all in 15-30 seconds per photo. Perfect for genealogy enthusiasts, family historians, and anyone preserving precious memories. Features: photo restoration, face enhancement, 4K upscaling, automatic colorization. Pricing is one-time $4.99 for unlimited restorations and HD downloads — no subscription, no monthly fees. Photos deleted within 24 hours, never used to train AI. 30-day money-back guarantee.
 ```
 
 ### Long Description (200 words)
@@ -41,7 +41,7 @@ Key features include:
 
 ArtImageHub serves genealogists, family historians, professional archivists, and anyone wanting to digitize and restore old family photos. Results are delivered in 30 seconds with no technical skills required.
 
-Try 3 photos completely free—no signup, no credit card, no watermarks. For unlimited restorations, Pro Lifetime costs just $29.9 (one-time payment, no subscription). Join thousands of families already preserving their heritage with ArtImageHub.
+Pricing is a single $4.99 one-time payment that unlocks unlimited restorations and original-quality HD downloads — no subscription, no monthly fees, no recurring billing. Uploaded photos are deleted within 24 hours and never used to train AI models. 30-day money-back guarantee. Join thousands of families already preserving their heritage with ArtImageHub.
 ```
 
 ---
@@ -130,12 +130,12 @@ AI tools, free photo tool, online restoration
 
 ## Unique Selling Points (for description variations)
 
-1. **Speed**: Results in 30 seconds
-2. **Free Trial**: 3 photos free, no signup
-3. **Pricing**: $29.9 one-time (no subscription)
-4. **Technology**: Advanced AI face enhancement
-5. **Ease**: No technical skills required
-6. **Quality**: Professional-grade results
+1. **Speed**: Results in 15-30 seconds per photo
+2. **Pricing**: $4.99 one-time, unlimited restorations after unlock — no subscription
+3. **Privacy**: Photos auto-deleted within 24 hours, never used to train AI
+4. **Technology**: GFPGAN face enhancement + Real-ESRGAN super-resolution + AI colorization
+5. **Ease**: Zero technical skills required, browser-based
+6. **Risk-free**: 30-day money-back guarantee
 
 ---
 
