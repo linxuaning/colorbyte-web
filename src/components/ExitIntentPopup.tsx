@@ -11,14 +11,41 @@ function getTodayCount(): number {
   return baseCount + variation;
 }
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "";
+
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasShown, setHasShown] = useState(false);
   const [todayCount, setTodayCount] = useState(0);
   const [timeLeft, setTimeLeft] = useState({ minutes: 14, seconds: 59 });
+  // Suppress popup for users who already paid — checked once on mount.
+  // Pessimistic default (true) avoids a single flash for paid users on slow
+  // networks; flips to false only after we confirm there's no active sub.
+  const [suppressForPaidUser, setSuppressForPaidUser] = useState(true);
 
   useEffect(() => {
     setTodayCount(getTodayCount());
+  }, []);
+
+  useEffect(() => {
+    const email = localStorage.getItem("artimagehub_email")?.trim().toLowerCase();
+    if (!email || !API_BASE) {
+      setSuppressForPaidUser(false);
+      return;
+    }
+    let cancelled = false;
+    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`)
+      .then((r) => r.json())
+      .then((data) => {
+        if (cancelled) return;
+        setSuppressForPaidUser(Boolean(data?.is_active));
+      })
+      .catch(() => {
+        if (!cancelled) setSuppressForPaidUser(false);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   // Countdown timer for urgency
@@ -40,6 +67,8 @@ export default function ExitIntentPopup() {
   }, [isVisible]);
 
   useEffect(() => {
+    if (suppressForPaidUser) return;
+
     // Check if popup was shown in last 24 hours
     const lastShown = localStorage.getItem("exitIntentShown");
     if (lastShown) {
@@ -74,13 +103,13 @@ export default function ExitIntentPopup() {
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
-  }, [hasShown]);
+  }, [hasShown, suppressForPaidUser]);
 
   const handleClose = () => {
     setIsVisible(false);
   };
 
-  if (!isVisible) return null;
+  if (!isVisible || suppressForPaidUser) return null;
 
   return (
     <>
