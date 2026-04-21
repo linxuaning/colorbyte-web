@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
@@ -161,7 +162,9 @@ export default function PhotoColorizerPage() {
         </div>
       </div>
 
-      <ColorizeClient />
+      <Suspense fallback={<div className="min-h-[400px]" />}>
+        <ColorizeClient />
+      </Suspense>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
@@ -163,7 +164,9 @@ export default function PhotoEnhancerPage() {
         </div>
       </div>
 
-      <EnhanceClient />
+      <Suspense fallback={<div className="min-h-[400px]" />}>
+        <EnhanceClient />
+      </Suspense>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import RestoreClient from "@/app/old-photo-restoration/restore-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
@@ -226,7 +227,9 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <RestoreClient landingPage={`/${locale}/old-photo-restoration`} />
+        <Suspense fallback={<div className="min-h-[400px]" />}>
+          <RestoreClient landingPage={`/${locale}/old-photo-restoration`} />
+        </Suspense>
       </div>
 
       {/* 30-Day Guarantee + Trust */}
