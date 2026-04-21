@@ -5,6 +5,11 @@
       "has": [{"type": "host", "value": "www.artimagehub.com"}],
       "destination": "https://artimagehub.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/#pricing",
+      "permanent": true
     }
   ]
 }

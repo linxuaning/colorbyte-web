@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import EnhanceClient from "@/app/photo-enhancer/enhance-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
@@ -190,7 +191,9 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <EnhanceClient landingPage={`/${locale}/photo-enhancer`} />
+        <Suspense fallback={<div className="min-h-[400px]" />}>
+          <EnhanceClient landingPage={`/${locale}/photo-enhancer`} />
+        </Suspense>
       </div>
 
       <ProofSampleGallery

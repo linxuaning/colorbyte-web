@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import ColorizeClient from "@/app/photo-colorizer/colorize-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
@@ -190,7 +191,9 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
 
       {/* Main tool */}
       <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
-        <ColorizeClient landingPage={`/${locale}/photo-colorizer`} />
+        <Suspense fallback={<div className="min-h-[400px]" />}>
+          <ColorizeClient landingPage={`/${locale}/photo-colorizer`} />
+        </Suspense>
       </div>
 
       <ProofSampleGallery
