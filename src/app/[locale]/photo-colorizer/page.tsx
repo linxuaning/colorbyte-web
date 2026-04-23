@@ -103,11 +103,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     description: "One-time payment. Pro Lifetime Access — unlimited colorizations on all tools.",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "2847",
-  },
 };
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [

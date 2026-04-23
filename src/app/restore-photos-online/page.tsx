@@ -88,12 +88,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     description: "Free preview first, $4.99 original-quality download unlock"
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "847",
-    bestRating: "5"
-  }
 };
 
 export default function RestorePhotosOnlinePage() {

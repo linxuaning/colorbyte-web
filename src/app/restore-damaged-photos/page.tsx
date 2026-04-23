@@ -148,11 +148,6 @@ const softwareSchema = {
     description:
       "One-time payment to restore a damaged photo. Unlocks upload, processing, and full-resolution download.",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "2847",
-  },
 };
 
 export default function RestoreDamagedPhotosPage() {

@@ -44,11 +44,6 @@ const softwareAppSchema = {
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "2400",
-  },
   featureList: [
     "AI Face Enhancement",
     "4× Super Resolution",

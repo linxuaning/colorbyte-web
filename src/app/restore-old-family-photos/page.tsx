@@ -141,13 +141,6 @@ const softwareSchema = {
     availability: "https://schema.org/InStock",
     description: "Free preview first, $4.99 original-quality download unlock",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "2400",
-    bestRating: "5",
-    worstRating: "1",
-  },
   featureList: [
     "Family Photo Restoration with Free Preview",
     "AI Face Enhancement for Portraits",

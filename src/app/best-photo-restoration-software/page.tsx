@@ -52,12 +52,6 @@ const reviewSchema = {
           "@type": "Offer",
           "price": "4.99",
           "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "bestRating": "5",
-          "ratingCount": "2847"
         }
       }
     },

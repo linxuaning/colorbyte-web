@@ -148,11 +148,6 @@ const softwareSchema = {
     description:
       "Free colorization preview. Unlock original-quality colorized download for $4.99. One-time payment, no subscription.",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "2847",
-  },
 };
 
 export default function OldPhotoColorizationPage() {
