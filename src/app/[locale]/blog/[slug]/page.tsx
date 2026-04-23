@@ -7,6 +7,10 @@ import { routing } from "@/i18n/routing";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
+// Hard-404 any (locale, slug) pair not emitted by generateStaticParams.
+// Default (true) lets Vercel cache ISR-rendered notFound() pages with HTTP 200 → soft-404.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const out: Array<{ locale: string; slug: string }> = [];
   for (const locale of routing.locales) {
