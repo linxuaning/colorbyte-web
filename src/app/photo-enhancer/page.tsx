@@ -116,11 +116,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "2400",
-  },
   featureList: [
     "AI Photo Quality Enhancement",
     "Face-Aware Enhancement",

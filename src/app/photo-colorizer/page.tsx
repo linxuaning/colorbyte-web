@@ -115,11 +115,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "2400",
-  },
   featureList: [
     "AI Colorization of Black & White Photos",
     "Realistic Color Prediction",

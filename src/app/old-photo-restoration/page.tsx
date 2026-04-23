@@ -98,11 +98,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     description: "One-time payment. Unlocks upload, AI processing, and HD original download."
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    ratingCount: "2847"
-  }
 };
 
 const testimonials = [

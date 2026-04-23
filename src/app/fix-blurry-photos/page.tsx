@@ -75,11 +75,6 @@ const softwareSchema = {
     priceCurrency: "USD",
     description: "Free preview first, $4.99 original-quality download unlock"
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.7",
-    ratingCount: "1856"
-  }
 };
 
 const faqSchema = {
