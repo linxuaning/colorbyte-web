@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getPostBySlug, getAllPosts, getRelatedPosts, type BlogLocale } from "@/lib/blog";
+import {
+  getPostBySlug,
+  getAllPosts,
+  getRelatedPosts,
+  getAvailableLocalesForSlug,
+  type BlogLocale,
+} from "@/lib/blog";
 import { routing } from "@/i18n/routing";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
@@ -29,16 +35,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: "Not Found" };
 
   const canonical = `https://artimagehub.com/${locale}/blog/${post.slug}`;
+  // Use shared helper from lib/blog.ts (existsSync-based; ~1000x cheaper than per-locale
+  // getPostBySlug which would re-parse frontmatter and run remark for every locale check).
   const languages: Record<string, string> = {
     "x-default": `https://artimagehub.com/blog/${post.slug}`,
     en: `https://artimagehub.com/blog/${post.slug}`,
   };
-  for (const loc of routing.locales) {
-    if (loc === routing.defaultLocale) continue;
-    const localePostExists = (await getPostBySlug(slug, loc)) !== null;
-    if (localePostExists) {
-      languages[loc] = `https://artimagehub.com/${loc}/blog/${post.slug}`;
-    }
+  for (const loc of getAvailableLocalesForSlug(slug)) {
+    languages[loc] = `https://artimagehub.com/${loc}/blog/${post.slug}`;
   }
 
   return {
