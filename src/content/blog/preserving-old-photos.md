@@ -12,7 +12,6 @@ coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
 coverEmoji: "🏠"
 ---
 
-# My Parents' Basement Flooded and Destroyed 40 Years of Photos—Here's What I Learned About Preservation
 
 The call came at 2 AM on March 12, 2024: "The basement's flooding. Your grandmother's photos are down there."
 

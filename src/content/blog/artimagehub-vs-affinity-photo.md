@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-sky-700 to-cyan-700"
 coverEmoji: "🔵"
 ---
 
-# ArtImageHub vs Affinity Photo for Old Photo Restoration
 
 Affinity Photo is a professional photo editor from Serif — a capable Photoshop alternative at a one-time purchase price. ArtImageHub is a specialized AI pipeline for old photo restoration. Both are worth considering for old family photo work; they approach the problem differently.
 

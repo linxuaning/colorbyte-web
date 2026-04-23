@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "💰"
 ---
 
-# Free vs. Paid AI Photo Restoration Tools: An Honest Comparison
 
 The landscape of AI photo restoration has expanded dramatically in recent years, with both free and paid options available. Choosing between them depends on how many photos you need to restore, what quality level you require, and what features matter for your specific use case. Here's an honest comparison of what free vs. paid tools typically offer.
 

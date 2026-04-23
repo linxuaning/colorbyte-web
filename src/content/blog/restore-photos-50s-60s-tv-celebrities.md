@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "📺"
 ---
 
-# Restoring 1950s-1960s TV Celebrity and Fan Photos: Early Television Stars
 
 The early television celebrity photograph occupies an unusual position: it was often produced for distribution (promotional photographs) but became personal when families kept them in albums alongside family portraits.
 

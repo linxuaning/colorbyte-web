@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🕊️"
 ---
 
-# Restoring Old Photos for a Funeral or Memorial Service
 
 When a loved one passes away, the task of gathering and preparing photographs for a funeral or memorial service often falls to grieving family members who have little time and emotional bandwidth for complex technical tasks. Old photos — especially those spanning decades of someone's life — are often faded, damaged, or in poor condition. AI restoration tools make it possible to quickly rescue these images and produce beautiful, print-ready tributes even under difficult time constraints.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🚜"
 ---
 
-# Restoring 1950s Farm Equipment and Tractor Photos: Agricultural Pride
 
 The new tractor photograph is a specific document of postwar American agriculture: the farmer standing beside his new John Deere or Farmall, proud of a purchase that represented both significant investment and technological progress. These photographs said: we are modern farmers, we have kept up with the times.
 

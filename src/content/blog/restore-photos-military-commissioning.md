@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "⭐"
 ---
 
-# Restoring Military Commissioning and Officer Ceremony Photos
 
 Military commissioning and promotion ceremonies produce photographs that document the formal progression of a military career. The specific ceremonies, the uniforms, the promoters and witnesses — all carry meaning for military families.
 

@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🥃"
 ---
 
-# Restoring 1920s Prohibition Era Photographs
 
 The 1920s produced a distinctive photographic record of a decade defined by contradictions: the legal Prohibition that tried to eliminate alcohol while making it ubiquitous in underground venues, the Jazz Age cultural explosion that modernized American popular culture, the first generation of women with the vote and with new social freedoms, and the economic boom that preceded the collapse of 1929. Family photographs from this decade capture the specific social landscape of a uniquely dramatic era.
 

@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🎂"
 ---
 
-# Restoring Photos for a Parent's 70th or 80th Birthday
 
 A parent's 70th, 75th, or 80th birthday is one of life's great milestones — an occasion that calls for a celebration of a full, rich life. One of the most meaningful gifts a family can give is a restored photo collection that chronicles the birthday person's entire journey: childhood, school years, early career, marriage, raising children, and the decades of memories that followed. AI restoration makes this project achievable even if the family photos have seen better days.
 

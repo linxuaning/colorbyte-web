@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "☮️"
 ---
 
-# Restoring 1960s Peace Movement and Anti-War Protest Photos: Dissent Documented
 
 The peace movement photographs from the 1960s exist in a complex space between personal and historical. For the participants, these photographs documented their political commitment and community. For historians, they document one of the largest social movements in American history.
 

@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏕️"
 ---
 
-# Restoring Summer Camp Photographs
 
 Summer camp photographs document one of the most significant childhood experiences for many Americans: the first extended time away from home, the intense friendships formed in condensed summer time, the specific activities (swimming, archery, arts and crafts, campfire songs) that define the summer camp experience. These photographs are among the most emotionally charged in family archives for the people who attended sleepaway camp, because camp often represented a specific form of freedom and community unavailable in ordinary life.
 

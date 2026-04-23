@@ -14,7 +14,6 @@ coverEmoji: "🌸"
 featured: false
 ---
 
-# Mother's Day Photo Restoration: The Gift That Brings Tears (Good Ones)
 
 You're scrolling through gift ideas. Flowers she'll arrange and forget. A candle she won't burn. A card she'll read once and file away.
 

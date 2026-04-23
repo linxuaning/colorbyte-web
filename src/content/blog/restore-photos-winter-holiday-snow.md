@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "☃️"
 ---
 
-# Restoring Winter Holiday and Snow Day Photos: Cold Weather Memories
 
 The snow day photograph presents a specific technical challenge that generations of amateur photographers have encountered: snow reflects light so efficiently that automatic exposure systems consistently underexpose the subject, leaving the snow properly exposed but human subjects too dark.
 

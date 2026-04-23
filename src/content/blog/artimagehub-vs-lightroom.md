@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-600 to-red-700"
 coverEmoji: "📸"
 ---
 
-# ArtImageHub vs Adobe Lightroom: Old Photo Restoration Compared
 
 Adobe Lightroom is the go-to tool for modern photo editing and organization. Millions of photographers use it daily for color grading, exposure correction, and library management.
 

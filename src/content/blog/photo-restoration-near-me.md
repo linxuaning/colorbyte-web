@@ -13,7 +13,6 @@ coverColor: "from-amber-700 via-orange-700 to-red-800"
 coverEmoji: "📍"
 ---
 
-# Photo Restoration Near Me: Local Shops vs AI
 
 If you've searched "photo restoration near me," you already know what you're looking for: someone to fix an old, damaged family photo. The question is whether a local shop is the right choice — or whether AI restoration is faster, cheaper, and produces equal or better results.
 

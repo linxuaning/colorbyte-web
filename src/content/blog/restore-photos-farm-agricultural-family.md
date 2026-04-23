@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🌾"
 ---
 
-# Restoring Farm and Agricultural Family Photographs
 
 Farm family photographs document a way of life that has been transformed beyond recognition in the 20th century. A 1920 farm photograph shows a way of working the land that was essentially unchanged from the 19th century; a 1960 farm photograph shows mechanization transforming that tradition; a 2000 farm photograph shows a highly capitalized, technology-intensive enterprise. These photographs document a major transition in American rural life across a single century, and the families that hold them are custodians of an important piece of American agricultural history.
 

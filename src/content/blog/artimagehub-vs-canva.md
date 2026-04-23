@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-600 to-emerald-700"
 coverEmoji: "🎨"
 ---
 
-# ArtImageHub vs Canva for Old Photo Restoration
 
 Canva is one of the most popular design tools in the world. It can do a lot. Old photo restoration — in the sense of repairing fading, scratches, and recovering face detail from aging family photographs — is not one of them.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-sky-700 to-cyan-600"
 coverEmoji: "👨"
 ---
 
-# Photo Restoration as a Father's Day Gift
 
 Photo restoration makes a meaningful Father's Day gift for dads and grandfathers — particularly when the choice of photo reflects something personal about their history. Here's how to execute it.
 

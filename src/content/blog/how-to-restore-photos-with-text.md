@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "✍️"
 ---
 
-# How to Restore Photos with Text: Preserving Handwritten Captions and Labels
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every text restoration is about more than technical quality.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🗽"
 ---
 
-# Restoring the Immigrant Citizenship Journey: From Arrival to Naturalization
 
 The immigrant citizenship journey, documented in photographs, tells one of the most fundamental American stories: the process of becoming American, from the moment of arrival through the accumulating experiences that constitute a new life.
 

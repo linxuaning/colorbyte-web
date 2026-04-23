@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "👨‍👩‍👧‍👦"
 ---
 
-# Restoring Extended Family Reunion Photographs
 
 Extended family reunion photographs capture something unique in the family archive: the simultaneous gathering of all branches of the family, from the eldest generation to the youngest, in a single place and time. These large, complex group photographs attempt the difficult task of documenting an entire family's living membership at a specific moment. When they fade, the loss is felt across all branches of the family simultaneously — everyone who was there has a stake in the restoration.
 

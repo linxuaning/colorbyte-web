@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "💒"
 ---
 
-# Restoring 1970s Church Wedding Photos: A Decade of Ceremony
 
 The 1970s church wedding has a specific visual signature: the particular dress styles of the era (from the hippie-influenced early 1970s to the more formal late 1970s), the photographic conventions of the transitional decade, and the color quality of 1970s consumer film.
 

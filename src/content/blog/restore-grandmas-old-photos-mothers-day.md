@@ -14,7 +14,6 @@ coverEmoji: "👵"
 featured: false
 ---
 
-# Restore Grandma's Old Photos for Mother's Day
 
 The most powerful Mother's Day gift for your mom might not be a photo of her at all. It might be a photo of her mother.
 

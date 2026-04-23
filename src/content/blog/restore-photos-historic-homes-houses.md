@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🏡"
 ---
 
-# Restoring Photographs of Historic Family Homes
 
 The family home — especially the house where a grandparent or great-grandparent lived, perhaps for generations — has a significance in family history that goes beyond architecture. A photograph of the ancestral home connects living family members to a specific physical place that was the setting for decades of family life. When these photographs fade, they risk taking with them visual documentation of places that may no longer exist in the same form or that descendants may never have visited in person.
 

@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🏘️"
 ---
 
-# Restoring Neighborhood and Community Photographs
 
 Neighborhood photographs capture a form of social life that stands between the purely personal family record and the formally documented public record — the block parties, the children playing in the street, the neighbors gathered at backyard fences, the community spaces where everyday social life was lived. These photographs document the social geography of where families grew up and raised their children. As neighborhoods change through gentrification, suburbanization, and demographic shifts, the photographs of how things were become increasingly valuable as historical documentation.
 

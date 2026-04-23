@@ -14,7 +14,6 @@ coverEmoji: "💐"
 featured: false
 ---
 
-# Wedding Photo Restoration: The Complete AI Guide 2026
 
 ## Quick Answer
 

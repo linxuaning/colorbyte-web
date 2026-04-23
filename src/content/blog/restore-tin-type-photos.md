@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🖤"
 ---
 
-# Restoring Tintype Photographs
 
 Tintype photographs — also called ferrotypes — were made by coating a thin iron plate with a dark lacquer and a light-sensitive emulsion. Introduced in the 1850s and popular through the early 1900s, tintypes were the working-class portrait format of the 19th century: cheaper and more durable than paper prints, they could be made quickly by traveling photographers at fairs, carnivals, and markets. Families who have tintype photographs possess visual connections to people from the Civil War era or earlier, and these images deserve careful restoration.
 

@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "👴"
 ---
 
-# Restoring Photos of Great-Great-Grandparents
 
 Photographs of great-great-grandparents occupy a special place in family archives: they're often the oldest images in the collection, made with processes that are now completely obsolete, and they may be the only visual evidence of ancestors who were born before the Civil War. These are rare and extraordinary objects. Approaching their restoration requires understanding both the specific photographic processes used and the unique challenges of images that are 100–150 years old.
 

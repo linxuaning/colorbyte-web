@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "👦"
 ---
 
-# Restoring Photographs of Grandparents as Children
 
 Among the most extraordinary discoveries in family photo archives are photographs of grandparents or great-grandparents as children — images that show a person you know as elderly having once been young. These photographs create a unique temporal vertigo: the 80-year-old grandmother visible as a 7-year-old girl in a Depression-era photograph, wearing a homemade dress and squinting into the sunlight. They collapse time and generations in ways that almost no other form of family documentation can achieve.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🏊"
 ---
 
-# Restoring Swimming Pool and Summer Swimming Photos: Poolside Memories Preserved
 
 The swimming pool photograph has a specific challenge beyond ordinary fading: pool-adjacent photographs were often taken in the harshest possible photographic conditions. Direct overhead sunlight, water reflections amplifying UV exposure, photographs left on pool decks and towels.
 

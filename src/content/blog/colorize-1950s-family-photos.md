@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-teal-700 to-green-800"
 coverEmoji: "🎨"
 ---
 
-# How to Colorize 1950s Family Photos: Bringing Postwar Memories to Life
 
 Colorizing 1950s photographs is both technically interesting and emotionally complex. The 1950s were a transitional era for color photography — Kodacolor existed, but most family documentation was still black-and-white. Colorizing them means making color decisions that can feel definitively right or slightly wrong in ways that are hard to articulate.
 

@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🏆"
 ---
 
-# Best AI Tools for Old Photo Restoration in 2026
 
 Not all AI photo tools are built for old photographs. Most are designed for modern digital photos — fixing JPEG compression, reducing noise from high-ISO settings, or upscaling clean images. Even generative image platforms like [Flux from Black Forest Labs](/blog/artimagehub-vs-flux) produce beautiful new images but aren't engineered to recover detail from a scratched 1950s print.
 

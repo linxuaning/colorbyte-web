@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-emerald-700 to-teal-800"
 coverEmoji: "🎄"
 ---
 
-# Restoring Vintage Family Christmas Photos: Holiday Memories from Past Decades
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every Christmas restoration is about more than technical quality.
 

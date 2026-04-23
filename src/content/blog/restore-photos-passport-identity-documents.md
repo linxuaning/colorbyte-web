@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🪪"
 ---
 
-# Restoring Photographs in Old Passports and Identity Documents
 
 Old passports, immigration papers, alien registration cards, and other identity documents often contain photographs that are the only surviving images of a specific person at a specific age. These photographs — typically small (the standard passport photo is 2x2 inches), formally posed, and taken under institutional conditions — have a specific documentary character different from family photographs. When documents become old and photographs fade, the images in these documents deserve specific restoration attention.
 

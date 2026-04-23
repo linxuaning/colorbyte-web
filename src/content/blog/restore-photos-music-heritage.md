@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎵"
 ---
 
-# Restoring Music and Performance Heritage Photographs
 
 Music-related family photographs capture a dimension of family life that is simultaneously deeply personal and publicly performed. The school band portrait, the garage band snapshot, the family gathered around the piano for a holiday singalong, the formal concert performance photograph — these images document the role that music played in family and community life across generations. When they fade, restoring them recovers documentation of a form of human expression that is central to both individual identity and cultural tradition.
 

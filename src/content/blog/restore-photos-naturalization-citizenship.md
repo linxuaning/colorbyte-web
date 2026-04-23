@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🇺🇸"
 ---
 
-# Restoring Naturalization and Citizenship Ceremony Photographs
 
 Naturalization and citizenship ceremony photographs document one of the most significant legal and personal milestones in an immigrant's life: the moment when a person who was born in another country officially becomes an American citizen. These photographs — often taken at the courthouse or immigration center where the ceremony was held — capture a specific moment of transformation that families treat with pride across generations. When they fade, restoring them recovers documentation of the moment a family's American story officially began.
 

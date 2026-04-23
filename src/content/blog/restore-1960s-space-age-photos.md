@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🚀"
 ---
 
-# Restoring 1960s Space Age Photographs: Watching History From Your Living Room
 
 A specific and peculiar category of 1960s family photographs: photographs taken of television screens showing the moon landing, the space missions, the news events of an extraordinary decade. Parents photographing the television so they would have proof that they were there, in some sense, when history happened.
 

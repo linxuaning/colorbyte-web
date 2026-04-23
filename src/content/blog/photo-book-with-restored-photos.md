@@ -13,7 +13,6 @@ coverColor: "from-amber-700 via-yellow-600 to-orange-500"
 coverEmoji: "📚"
 ---
 
-# How to Make a Photo Book with Restored Old Family Photos
 
 A photo book of restored family photographs is one of the most meaningful family keepsakes you can create — particularly for significant occasions (anniversaries, reunions, memorial gatherings) or as a gift for older family members. Here's how to do it well.
 

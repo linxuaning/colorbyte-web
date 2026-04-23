@@ -13,7 +13,6 @@ coverColor: "from-blue-800 via-sky-700 to-cyan-600"
 coverEmoji: "🖥️"
 ---
 
-# How to Restore Old Photos on Windows PC (2026 Guide)
 
 If you have old family photos on your Windows PC — scanned, photographed, or digitized — here's a complete guide to restoring them using built-in tools, free software, and AI restoration.
 

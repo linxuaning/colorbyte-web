@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📱"
 ---
 
-# How to Scan Old Photos with a Smartphone
 
 Not everyone has a flatbed scanner. Not everyone needs one. For many family photo restoration projects — particularly when dealing with a modest number of photographs or when mobility is a concern — a smartphone camera can produce results good enough for AI restoration.
 

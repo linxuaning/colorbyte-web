@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🏔️"
 ---
 
-# Restoring Alaska Frontier and Gold Rush Era Photos: America's Last Frontier
 
 Alaska photographs from the gold rush era and early settlement period document one of the last chapters of American frontier history. The Klondike Gold Rush (1896-1899), the Nome gold rush, and the subsequent development of Alaska as a territory produced a photographic record of extraordinary historical interest.
 

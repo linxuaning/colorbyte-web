@@ -14,7 +14,6 @@ coverEmoji: "📄"
 featured: false
 ---
 
-# How to Fix Torn Photographs: Complete Repair Guide for Physical and Digital Restoration
 
 A torn photograph feels like a punch to the gut. Whether it's a family heirloom accidentally ripped or a vintage find discovered in pieces, torn photos seem irreparably damaged.
 

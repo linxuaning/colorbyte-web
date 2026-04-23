@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🕹️"
 ---
 
-# Restoring 1980s Video Game Arcade Photos: When Gaming Was Social
 
 The arcade photograph from 1983 shows something that barely exists anymore: a room full of teenagers playing video games together, in public, surrounded by the sound and light of dozens of machines. The social geography of early gaming culture.
 

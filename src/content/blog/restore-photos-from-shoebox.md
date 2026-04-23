@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📦"
 ---
 
-# Restoring Photos from the Shoebox
 
 Every family has one. Sometimes it's an actual shoebox. Sometimes it's a plastic bin, a paper bag, a drawer, a cardboard box that once held Christmas ornaments. Whatever the container, the contents are the same: a lifetime of photographs accumulated without a system, stored without a plan, waiting for someone to deal with them.
 

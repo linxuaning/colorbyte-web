@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🐾"
 ---
 
-# Restoring Family Pet Photographs
 
 Family pets occupy a unique position in family photography: they're constant presences in the family archive, appearing in photographs across decades of family life, yet they're rarely the primary subject — they're always there, in the background or foreground of family moments, as companions to the family story. When a beloved pet has passed away and the photographs that remain are fading, restoring them recovers memories of a companion whose loss may have been deeply felt.
 

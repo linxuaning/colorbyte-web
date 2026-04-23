@@ -12,7 +12,6 @@ coverColor: "from-orange-500 via-amber-600 to-yellow-700"
 coverEmoji: "🖼️"
 ---
 
-# How to Remove Scratches from Old Photos: AI vs Manual (2026 Complete Guide)
 
 My client David didn't say much when he handed me the envelope. He just watched my face as I pulled out the photograph.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🧲"
 ---
 
-# Restoring Photos Damaged by Tape and Adhesive
 
 Tape and adhesive damage is one of the most common types of physical damage in family photo collections. Well-meaning family members throughout the 20th century applied tape to repair torn photographs, rubber cement to mount them in albums, and sticky-backed magnetic album pages that chemically attacked photos over decades. The result is a distinctive set of damage patterns that require specific treatment approaches.
 

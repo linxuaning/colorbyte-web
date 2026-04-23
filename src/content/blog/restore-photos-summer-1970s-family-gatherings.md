@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🌞"
 ---
 
-# Restoring 1970s Summer Family Gathering Photographs
 
 Summer family gathering photographs from the 1970s have a specific aesthetic challenge: the combination of the decade's characteristic color processing with outdoor summer lighting creates images that have aged into the most extreme orange-amber cast of any American photographic era. These photographs — showing families in quintessentially 1970s clothing around backyard pools and barbecue grills — are both richly documentary and, in their current state, almost painfully distorted in color. Restoration can be dramatic for these photos.
 

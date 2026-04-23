@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-emerald-600 to-teal-500"
 coverEmoji: "👨‍👩‍👧‍👦"
 ---
 
-# Photo Restoration for Family Reunions
 
 Family reunions bring together relatives who may not see each other often — and old family photographs connect them to shared ancestors and history. Restored photographs displayed at a reunion or compiled into a family book become permanent keepsakes. Here's how to plan a photo restoration project for a family reunion.
 

@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📚"
 ---
 
-# Restoring Photos Damaged in Books: Bookmark Photos and Pressed Print Recovery
 
 Books are a common storage location for photographs — slipped between pages, tucked in the back cover, used as bookmarks. The storage seems protective, but book paper is often highly acidic, and decades of acid contact affects the photographs.
 

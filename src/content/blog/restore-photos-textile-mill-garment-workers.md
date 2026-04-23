@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🧵"
 ---
 
-# Restoring Textile Mill and Garment Worker Photographs
 
 Textile and garment industry photographs document one of the largest employment sectors in American industrial history — and one dominated by women and immigrant workers. The mill towns of New England, the garment district sweatshops of New York, the textile operations of the Carolinas, and the specialized clothing factories of cities across the country employed millions of women and immigrant workers whose labor clothed the nation. Family photographs from these industries document a form of industrial work that was central to American women's economic history.
 

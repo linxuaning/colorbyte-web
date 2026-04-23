@@ -13,7 +13,6 @@ coverColor: "from-slate-700 via-gray-700 to-zinc-600"
 coverEmoji: "💭"
 ---
 
-# ArtImageHub vs Ideogram for Old Photo Restoration
 
 Ideogram (ideogram.ai) is an AI image generation platform known for its strong text rendering within generated images. ArtImageHub is a specialized AI pipeline for old photo restoration. Like Midjourney and DALL-E, Ideogram is a generative tool — it creates new images. Here's why it can't restore old photographs.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "✉️"
 ---
 
-# Restoring Vietnam War Era Letters and Photos Sent Home: Mail from the Front
 
 The photographs that traveled in letters from Vietnam to American homes occupied a specific category: small snapshot prints sent by soldiers to their families, often with handwriting on the back describing where and when, carrying the weight of separation and uncertainty.
 

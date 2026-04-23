@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "✝️"
 ---
 
-# Restoring Confirmation and First Communion Photographs
 
 First Communion and Confirmation photographs mark a child's formal entry into full membership in their religious community — significant milestones that families document with the same seriousness as graduations or weddings. The formal white dress of First Communion and the specific ceremonial elements of Confirmation create visually distinctive photographs with both personal and religious significance. These images often feature children at their most formally dressed and posed, making them among the most carefully preserved photos in family albums — and yet, inevitably, they age.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🍄"
 ---
 
-# How to Remove Mold from Old Photographs
 
 Discovering mold on old photographs is alarming — the fuzzy white, gray, or green growth that appears on photos stored in damp conditions can destroy the image layer if left untreated. Mold poses both a preservation challenge (the physical photo) and a health concern (mold spores). Knowing how to safely handle mold-affected photos and how to digitally restore the damage they've already caused are two separate but equally important skills.
 

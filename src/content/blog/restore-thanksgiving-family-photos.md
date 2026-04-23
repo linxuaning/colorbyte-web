@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🦃"
 ---
 
-# Restoring Thanksgiving Family Gathering Photos
 
 Thanksgiving is one of the most photographed family occasions in American life — the large table set with the full extended family, the kitchen preparations, the games and conversations before the meal, the obligatory group portrait on the front steps. These annual photographs create a visual record of the extended family that no other occasion produces, often capturing relatives who rarely appear in photographs otherwise. When these photos fade, the loss is particularly significant.
 

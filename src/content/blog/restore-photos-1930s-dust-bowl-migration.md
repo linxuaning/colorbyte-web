@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🛻"
 ---
 
-# Restoring 1930s Dust Bowl Migration Photos: Following the Okies West
 
 The Dust Bowl migration westward — the journey that Steinbeck documented in The Grapes of Wrath — was also photographed by the families who made it. Not the FSA documentary photographers, but the people themselves, carrying their cameras along with everything else they owned.
 

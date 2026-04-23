@@ -13,7 +13,6 @@ coverColor: "from-orange-700 via-amber-700 to-yellow-600"
 coverEmoji: "📦"
 ---
 
-# FedEx/Kinkos Photo Restoration and Printing: What to Expect
 
 FedEx Office (formerly Kinkos) is widely accessible — over 2,000 locations across the US — and many people associate it with document and photo printing. Here's what FedEx Office actually offers for old family photographs, and how to use it as part of a restoration and printing workflow.
 

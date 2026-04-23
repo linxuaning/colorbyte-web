@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🐕"
 ---
 
-# Restoring Family Dog Show and Pet Exhibition Photos: Competitive Heritage
 
 The dog show photograph documents a specific American activity that intersects pet ownership with competitive sport. For families with long show dog traditions, the photographs document generations of breeding and competition.
 

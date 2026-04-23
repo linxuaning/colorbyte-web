@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-blue-700 to-blue-800"
 coverEmoji: "🎖️"
 ---
 
-# Restore Old Military Photos for Memorial Day
 
 Memorial Day is about remembering those who served — and often the most meaningful tribute is a clear, restored photograph of a family member in uniform. Many military service photos from WWII, Korea, and Vietnam are now 50–80 years old, heavily faded, and barely recognizable. AI restoration can bring them back.
 

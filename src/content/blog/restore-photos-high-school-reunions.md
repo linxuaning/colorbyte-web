@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎓"
 ---
 
-# Restoring High School Reunion Photographs
 
 High school reunion photographs document something unique: the same group of people photographed together at multiple points in their adult lives — at the 10th, 20th, 30th, and 40th reunion — showing the unmistakable passage of time written on shared faces. These photographs are simultaneously nostalgic and confrontational in their documentation of aging, and they preserve something no other type of photography captures: the social continuity of a specific cohort of people across the full arc of adult life.
 

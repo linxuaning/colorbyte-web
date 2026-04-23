@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "⚾"
 ---
 
-# Restoring Youth Sports Team Photographs
 
 Youth sports team photographs are a specific American genre: the annual team portrait, taken before the season begins or at the end, with uniformed children arranged in rows before a colorful background. These images document not just the individual children but the teams, coaches, and youth sports culture of specific eras and communities. When they fade, restoring them recovers not just personal memories but documentation of the organizations and community structures that shaped childhood.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🌾"
 ---
 
-# Restoring Homestead Act Era Photos: Claiming Land and Building America
 
 The Homestead Act of 1862 and its successors enabled over 1.6 million homesteaders to claim land across the American West. The photographic record they left — formal portraits, homestead documentation photographs, community gatherings — is among the earliest photographic evidence of many Western communities.
 

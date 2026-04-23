@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🎣"
 ---
 
-# Restoring Hunting and Fishing Heritage Photos: Outdoor Sport Traditions
 
 Hunting and fishing photographs occupy a specific place in American family archives — documentation of outdoor traditions that were often the most significant annual rituals of male family bonding across generations.
 

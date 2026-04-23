@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🎁"
 ---
 
-# Restoring Christmas Morning Tradition Photos: Decades of Gift Opening
 
 The Christmas morning photograph album is one of the most consistent annual photographic traditions in American family life. For families who have photographed every Christmas from the 1950s onward, the resulting archive documents both personal family history and the evolution of American consumer culture.
 

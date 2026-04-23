@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "💑"
 ---
 
-# Photo Restoration as a Wedding Anniversary Gift
 
 A wedding anniversary — especially a milestone like a 25th, 40th, or 50th — is an occasion that calls for a gift that honors the depth of a shared life. Restoring the couple's wedding photographs, and compiling them with photographs from throughout their years together, creates a tribute that is both deeply personal and practically beautiful. For couples whose original wedding photographs have faded or been damaged by time, restoration can feel like a genuine gift of recovery — of the day itself, made newly visible.
 

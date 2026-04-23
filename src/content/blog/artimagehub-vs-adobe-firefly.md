@@ -13,7 +13,6 @@ coverColor: "from-purple-800 via-violet-700 to-indigo-600"
 coverEmoji: "🔥"
 ---
 
-# ArtImageHub vs Adobe Firefly for Old Photo Restoration
 
 Adobe Firefly is Adobe's generative AI platform — available in Photoshop, Adobe Express, and at firefly.adobe.com. ArtImageHub is a specialized AI pipeline for old photo restoration. People researching AI photo tools often encounter both. Here's the honest comparison.
 

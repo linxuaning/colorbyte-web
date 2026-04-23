@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "👨‍💼"
 ---
 
-# Professional Photo Restoration vs DIY: When to Hire a Pro
 
 AI-powered DIY restoration has dramatically lowered the barrier to entry for photo restoration — but it hasn't made professional restorers obsolete. Understanding when AI tools are sufficient and when professional human expertise adds value helps you make smart decisions about your most important photographs.
 

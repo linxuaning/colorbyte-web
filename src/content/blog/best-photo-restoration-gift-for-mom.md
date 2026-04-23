@@ -14,7 +14,6 @@ coverEmoji: "🎁"
 featured: false
 ---
 
-# The Best Photo Restoration Gift for Mom
 
 Every year, the same problem: you want to give your mom something that means something. Not something off a list. Not something you'd give anyone. Something that proves you actually know her.
 

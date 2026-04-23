@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🕊️"
 ---
 
-# Restoring Vietnamese American Refugee Era Photos: 1975 and the Years After
 
 April 1975 created a diaspora — the Vietnamese-American community that formed in refugee camps and then spread across the United States. The photographs they carried or managed to preserve through the chaos of evacuation are the visual foundation of a displaced community's history.
 

@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "📜"
 ---
 
-# Restoring Photos That Document Immigration Challenges
 
 Immigration to America has never been an unqualifiedly welcoming experience for all groups. Photographs that document the specific challenges faced by immigrant communities — the housing conditions of early immigrants, the labor exploitation, the expressions of nativist sentiment, the legal restrictions on specific ethnic groups, the community responses to discrimination — are important primary sources for understanding the full complexity of the immigrant experience. These photographs deserve preservation as historical documentation of a more complete American story.
 

@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🌊"
 ---
 
-# Restoring Photos Covered in Mud and Flood Contamination
 
 When hurricane floods or river flooding inundates a home, photographs don't just get wet — they get covered in the contaminated mixture of silt, sewage, debris, and chemicals that makes up typical floodwater. Photographs recovered from this environment are both physically damaged and potentially biologically contaminated. The recovery process must address both the safety issues and the specific physical damage patterns before digital restoration can begin. Once dried and scanned, our [fix water damaged photos](/fix-water-damaged-photos) tool can restore the digital image.
 

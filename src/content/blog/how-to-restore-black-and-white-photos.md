@@ -13,7 +13,6 @@ coverColor: "from-gray-800 via-slate-700 to-zinc-600"
 coverEmoji: "⬛"
 ---
 
-# How to Restore Black and White Photos with AI
 
 Black and white photographs from the 1930s through 1970s are among the most commonly damaged family photos — decades of aging leaves them faded, scratched, and with faces that have softened beyond recognition. AI restoration handles these well. Here's exactly how to do it.
 

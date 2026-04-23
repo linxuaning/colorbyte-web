@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-pink-700 to-rose-700"
 coverEmoji: "🐠"
 ---
 
-# Snapfish Photo Restoration: What It Does for Old Photos
 
 Snapfish is a popular online photo printing and photo book service. Like Shutterfly, it's a common choice for creating family memory books — including books that feature old family photographs.
 

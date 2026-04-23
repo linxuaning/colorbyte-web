@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🍝"
 ---
 
-# Restoring Italian American Family Photographs
 
 Italian Americans represent one of the largest immigrant groups in American history, with the peak of Italian immigration occurring between 1880 and 1924. The photographs these families kept — formal studio portraits from Italy before departure, arrival documents, first American homes in urban enclaves, church celebrations, and the gradual movement to suburban America — document a multigenerational story of adaptation and cultural preservation. These photographs connect living generations to the Italian towns and villages their ancestors left behind.
 

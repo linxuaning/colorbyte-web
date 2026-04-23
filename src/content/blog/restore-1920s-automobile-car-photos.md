@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🚗"
 ---
 
-# Restoring 1920s Automobile and Car Photos: The Dawn of the Motor Age
 
 The automobile photograph is a specific 1920s genre: the car as proof of arrival, the car as technology, the car as American aspiration made metal. People photographed their first cars with a pride that wouldn't fully make sense to later generations who grew up taking automobile ownership for granted.
 

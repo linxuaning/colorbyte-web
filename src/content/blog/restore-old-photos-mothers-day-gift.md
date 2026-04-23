@@ -14,7 +14,6 @@ coverEmoji: "🌸"
 featured: false
 ---
 
-# How to Restore Old Photos for a Mother's Day Gift
 
 The most meaningful Mother's Day gifts aren't bought—they're made from what's already there. And in almost every family, there's a box of old photographs: faded wedding portraits, crinkled baby pictures, water-stained images of people your mother loved before you were born.
 

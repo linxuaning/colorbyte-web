@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "⏱️"
 ---
 
-# How Long Does AI Photo Restoration Take?
 
 One of the most common questions people have about AI photo restoration is simply: how long does it take? The answer depends on several factors — the complexity of the damage, the resolution of the image, and the tool you're using. But the short version is that AI restoration is dramatically faster than traditional manual methods, with most photos processed in seconds to a few minutes.
 

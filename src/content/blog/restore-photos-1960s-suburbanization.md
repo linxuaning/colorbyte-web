@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🏡"
 ---
 
-# Restoring 1960s New Suburb and Planned Community Photos: Postwar Expansion
 
 The new suburb photograph from the 1960s documents one of the most dramatic landscape transformations in American history: the conversion of farmland and rural areas into planned residential communities at unprecedented scale.
 

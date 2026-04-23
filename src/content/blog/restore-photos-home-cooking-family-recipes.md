@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🍳"
 ---
 
-# Restoring Photographs of Family Cooking and Recipe Heritage
 
 Photographs taken in family kitchens document one of the most intimate and culturally significant forms of family life: the preparation and sharing of food according to recipes and techniques passed down through generations. A grandmother teaching her granddaughter to make the family's traditional pierogies, a family gathered around a Thanksgiving kitchen, the Christmas cookie decorating session — these photographs capture the transmission of culinary tradition in its natural setting. When they fade, restoring them recovers documentation of practices that may be disappearing.
 

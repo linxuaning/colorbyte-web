@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-blue-700 to-indigo-800"
 coverEmoji: "💦"
 ---
 
-# Fixing Humidity Damaged Photo Collections: Prevention and Recovery
 
 Photograph paper breathes. It expands and contracts with changes in relative humidity, absorbing moisture from the air and releasing it. Over decades of this cycling — humid summer, dry winter, humid summer, dry winter — the paper develops a characteristic waviness, sometimes warping severely enough to crack the photographic emulsion on top of it. What Robert brought me had been through thirty cycles of this.
 

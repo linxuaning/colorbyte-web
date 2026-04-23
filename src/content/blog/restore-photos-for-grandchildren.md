@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "👶"
 ---
 
-# Restoring Old Photos to Share With Grandchildren
 
 One of the most meaningful gifts grandparents can give their grandchildren is a tangible connection to family history — not just stories, but visual evidence of where the family came from. Old photographs, when restored and presented thoughtfully, can make abstract ancestors feel real and the passage of time feel palpable. A grandchild who sees a restored photograph of their great-great-grandmother as a young woman holding their grandmother as a baby is encountering history in a way no textbook can replicate.
 

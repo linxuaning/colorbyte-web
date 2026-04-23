@@ -13,7 +13,6 @@ coverColor: "from-slate-700 via-gray-700 to-zinc-800"
 coverEmoji: "🖥️"
 ---
 
-# ArtImageHub vs GIMP for Old Photo Restoration
 
 GIMP is the most powerful free photo editor available. ArtImageHub is an AI restoration tool built specifically for old photographs. Both can address old photo damage — but through completely different approaches, with completely different skill requirements.
 

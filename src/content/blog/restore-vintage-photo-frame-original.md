@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🖼️"
 ---
 
-# Restoring Photos Still in Their Original Vintage Frames
 
 The photograph in its original frame is an artifact twice over: the photograph documents history, and the frame itself is a period object that provides additional historical context. Opening the frame to access the photograph for scanning requires care not to damage either.
 

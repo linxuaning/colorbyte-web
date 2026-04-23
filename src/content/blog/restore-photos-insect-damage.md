@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🐛"
 ---
 
-# Restoring Photographs Damaged by Insects
 
 Insect damage is an underappreciated cause of photographic deterioration in stored collections. Silverfish, bookworms (the larvae of certain beetles), cockroaches, and various other insects feed on the organic materials in photographs: the gelatin emulsion, the paper support, the starch and adhesive in album pages, and the organic compounds in photographic chemistry. The damage they cause is distinctive — irregular eaten areas, surface grazing, and in the case of silverfish, the characteristic patterned surface damage that follows the insect's feeding behavior.
 

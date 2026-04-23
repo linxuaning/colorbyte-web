@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🎵"
 ---
 
-# Restoring 1980s Punk and New Wave Music Photos: Underground Culture Documented
 
 The punk and new wave photographs from the late 1970s and 1980s were taken at shows in small venues, at parties, at the specific street corners and record stores that formed the geography of the scene. Consumer cameras, consumer film, often challenging light.
 

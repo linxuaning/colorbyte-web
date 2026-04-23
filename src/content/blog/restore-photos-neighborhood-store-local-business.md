@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🏪"
 ---
 
-# Restoring Photos of Local Businesses and Neighborhood Stores
 
 Photographs of family-owned businesses and neighborhood stores have a special status in family archives: they document not just where a family worked but often the central economic project of multiple generations — the store that grandfather built, the restaurant that put the children through college, the farm that the family worked for a century. These photographs often show both the physical business premises and the people who made it run. When they fade, restoring them preserves evidence of a family's economic history alongside its personal history.
 

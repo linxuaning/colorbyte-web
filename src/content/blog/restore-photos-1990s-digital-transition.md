@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "💾"
 ---
 
-# Restoring Early Digital Photos from the 1990s: When Pixels Were New
 
 The late 1990s were the transition period from film to digital, and the first-generation consumer digital cameras produced photographs that have aged in unexpected ways. Not chemical aging, but digital degradation: JPEG compression artifacts from cameras with insufficient processing power, low megapixel counts, and color science that hadn't yet been refined.
 

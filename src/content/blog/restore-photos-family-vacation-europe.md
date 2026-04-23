@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "✈️"
 ---
 
-# Restoring Family European Vacation Photos: Postwar Travel Abroad
 
 The family European vacation became possible for middle-class Americans in the postwar period — the combination of affordable transatlantic air travel, a strong dollar, and rising disposable income opened Europe to families who would have found it inaccessible before.
 

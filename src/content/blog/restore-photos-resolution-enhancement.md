@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🔍"
 ---
 
-# Using AI to Enhance the Resolution of Old Photographs
 
 Beyond correcting damage and color shift, AI photo restoration can actually enhance the resolution of photographs — recovering detail that existed in the original scene but was limited by the photographic technology of the era. AI super-resolution is a genuinely remarkable technology that produces results that were impossible with traditional image processing approaches.
 

@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🏔️"
 ---
 
-# Restoring National Park Family Road Trip Photos: The Parks Through Decades
 
 The national park family photograph spans an extraordinary history — from the early days of automobile tourism in the parks through the current era of intense overcrowding. For families who have visited the same parks across generations, the photographs document both the parks' change and the family's.
 

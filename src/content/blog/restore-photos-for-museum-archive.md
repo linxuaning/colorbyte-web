@@ -13,7 +13,6 @@ coverColor: "from-stone-600 via-gray-700 to-zinc-800"
 coverEmoji: "🏛️"
 ---
 
-# Restoring Photos for Museum and Archive: Professional Standards Guide
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every museum restoration is about more than technical quality.
 

@@ -14,7 +14,6 @@ coverEmoji: "⏰"
 featured: false
 ---
 
-# Last-Minute Mother's Day Gift: Photo Restoration
 
 It's the week before Mother's Day—or the day before—and you need something that doesn't look like a panic buy.
 

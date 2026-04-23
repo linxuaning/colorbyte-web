@@ -12,7 +12,6 @@ coverColor: "from-blue-600 via-indigo-700 to-violet-800"
 coverEmoji: "🔍"
 ---
 
-# How to Fix Blurry Old Photos: The Complete 2026 Guide (AI vs Manual Methods)
 
 Your grandfather's face is almost there—you can see the outline of his smile, the suggestion of a military uniform, maybe a faint backdrop of somewhere important. But the blur won't let you in. The image hovers just beyond recognition, a ghost trapped in gelatin and silver.
 

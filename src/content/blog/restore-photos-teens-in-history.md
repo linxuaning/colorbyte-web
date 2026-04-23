@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎸"
 ---
 
-# Restoring Photographs of Teenagers Through the Decades
 
 Photographs of teenagers through the decades document one of the most rapidly evolving social categories in modern American life — the teenager, a recognized social identity that barely existed before the 20th century. Each decade's teenage photographs show not just how individual young people looked but the specific cultural identity markers — clothing, hairstyles, music affiliations, social settings — that defined youth culture in that specific moment. Restoring these photographs recovers a vivid picture of teenage cultural history.
 

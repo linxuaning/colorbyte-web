@@ -13,7 +13,6 @@ coverColor: "from-sky-700 via-blue-700 to-indigo-600"
 coverEmoji: "🧹"
 ---
 
-# ArtImageHub vs Cleanup.pictures for Old Photo Restoration
 
 Cleanup.pictures is a popular AI-powered object removal tool — paint over something in a photo and the AI removes it and fills in the background. ArtImageHub is a specialized AI pipeline for old photo restoration. Both deal with photo "damage" in some sense, but they're solving different problems.
 

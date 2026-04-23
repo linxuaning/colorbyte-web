@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🚒"
 ---
 
-# Restoring Police, Fire, and First Responder Service Photos
 
 First responder photographs document careers dedicated to public safety — the specific uniforms, the apparatus, the stations, and the colleagues who constitute the community of service.
 

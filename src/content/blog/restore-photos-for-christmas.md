@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-red-600 to-green-700"
 coverEmoji: "🎄"
 ---
 
-# Restoring Old Family Photos as a Christmas Gift
 
 Restored old family photographs make a meaningful Christmas gift for parents and grandparents — personal, irreplaceable, and completely different from standard gift options. Here's how to plan and execute a photo restoration gift project for the holidays.
 

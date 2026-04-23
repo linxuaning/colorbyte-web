@@ -13,7 +13,6 @@ coverColor: "from-slate-800 via-gray-800 to-zinc-700"
 coverEmoji: "🔒"
 ---
 
-# Is Your Old Photo Safe with AI Restoration Services? Privacy Guide
 
 When you upload an old family portrait to an AI restoration service, you're sharing an irreplaceable image. Understanding what happens to it matters — especially for photos with faces of living family members or sensitive personal documents.
 

@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "📖"
 ---
 
-# Restoring Photographs Found in Family Bibles and Religious Texts
 
 The family Bible has served as a repository for family records for centuries: births, marriages, and deaths recorded in the blank pages designed for this purpose, and often photographs, newspaper clippings, letters, and other memorabilia tucked between the pages. When a family Bible is opened after years or decades of storage, the materials found inside can include photographs and documents in various states of preservation. Restoring these materials requires both care for the physical objects and attention to the historical information they contain.
 

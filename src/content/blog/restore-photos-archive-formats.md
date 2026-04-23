@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "💾"
 ---
 
-# Archival Photo Storage: TIFF vs JPEG vs PNG for Restoration
 
 Once you've restored a precious family photograph, storing it in the right file format ensures the restoration quality is preserved for the long term. The choice between TIFF, JPEG, and PNG has real consequences for image quality, file size, and long-term archival stability. Here's what each format offers and when to use each.
 

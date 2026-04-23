@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🪡"
 ---
 
-# Restoring Grandmother's Quilt-Making Photos: Textile Heritage Preserved
 
 The quilt-making photograph documents a specific form of practical art that has been central to American domestic life for centuries. Photographs of quilts and their makers — the completed quilt displayed with pride, the work-in-progress at the frame, the group gathered for a quilting bee — are documents of material culture and social history.
 

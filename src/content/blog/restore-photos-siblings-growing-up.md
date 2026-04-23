@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "👫"
 ---
 
-# Restoring Sibling Photographs Through the Years
 
 Photographs of siblings growing up together document a specific form of relationship that is foundational to many people's sense of self: the people who shared your childhood home, who were present for family milestones and ordinary days alike, who knew you before you knew yourself. These photographs, spanning from infancy to adulthood, tell the story of a relationship that evolves over decades while maintaining its essential nature. When they fade, restoring them recovers evidence of bonds that may be among the most enduring of a lifetime.
 

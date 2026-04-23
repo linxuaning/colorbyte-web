@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "💍"
 ---
 
-# Restoring Parents' Wedding Photos as Anniversary Gift: Making It Perfect
 
 The parents' wedding photo restoration has become one of the most common restoration projects I receive — and one of the most consistently meaningful. The photograph of a marriage at its beginning, presented as a celebration of its continuation, carries its own emotional logic.
 

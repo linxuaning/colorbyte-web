@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🌺"
 ---
 
-# Restoring Photographs for Nursing Home Residents
 
 For family members living in nursing homes or assisted living facilities, photographs of family life — especially photographs from many decades of their own life — provide essential emotional anchoring. Regular visits with restored photographs of family members, milestone occasions, and beloved places reconnect residents to their history in ways that conversation alone cannot. Understanding how to use restored photographs therapeutically in this context can meaningfully improve a loved one's quality of life.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-lime-700 to-emerald-800"
 coverEmoji: "🐛"
 ---
 
-# Fixing Photos with Insect and Pest Damage: Silverfish, Rodents, and More
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every insects restoration is about more than technical quality.
 

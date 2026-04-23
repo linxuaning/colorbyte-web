@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎡"
 ---
 
-# Restoring County Fair and State Fair Photos: Annual Traditions Preserved
 
 The county fair photograph is an annual tradition in rural and small-town America. For many families, the fair photograph album spans decades — the same fairgrounds, the same livestock judging arena, the same midway — showing the family changing while the backdrop stays constant.
 

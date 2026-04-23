@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🏘️"
 ---
 
-# Restoring Neighborhood Street Photos: Documenting Places That Have Changed
 
 Neighborhoods change. The corner store becomes a condo. The church becomes a parking lot. The factory becomes a loft complex. Family photographs taken in these neighborhoods before their transformation are often the only visual evidence of what those places looked like.
 

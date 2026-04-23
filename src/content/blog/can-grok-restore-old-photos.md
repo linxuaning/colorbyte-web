@@ -13,7 +13,6 @@ coverColor: "from-slate-800 via-gray-800 to-zinc-700"
 coverEmoji: "🤖"
 ---
 
-# Can Grok (xAI) Restore Old Photos?
 
 Grok is xAI's conversational AI assistant, available through X (formerly Twitter) and as a standalone product. If you're wondering whether Grok can restore old, faded, or damaged family photographs:
 

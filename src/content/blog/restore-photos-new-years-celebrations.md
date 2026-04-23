@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🥂"
 ---
 
-# Restoring New Year's Eve and New Year's Celebration Photographs
 
 New Year's Eve photographs capture a specific quality of threshold-moment emotion: the gathering of people who want to experience the midnight transition together, the mix of nostalgic reflection and hopeful anticipation, the specific traditions (the toasts, the countdown, the midnight kiss) that mark the passage from one year to the next. These photographs, often taken in challenging low-light party conditions, document moments of celebration that become increasingly meaningful as the years they're celebrating recede into memory.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "💑"
 ---
 
-# Restoring Photographs of Parents as Young Adults
 
 One of the most emotionally interesting categories of family photography is photographs of parents as young adults — before they became parents, when they were living lives that their children never witnessed and can barely imagine. These photographs — of a parent at college, at their first job, in their early relationship with a future partner, in the social world of their young adulthood — document dimensions of a parent's identity that parental role-playing often obscures. When they fade, restoring them recovers a picture of who your parents were before they were your parents.
 

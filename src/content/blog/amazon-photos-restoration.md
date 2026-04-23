@@ -13,7 +13,6 @@ coverColor: "from-orange-700 via-amber-600 to-yellow-500"
 coverEmoji: "📦"
 ---
 
-# Amazon Photos and Old Photo Restoration: What to Know
 
 Amazon Photos is Amazon's cloud photo storage service — included free with Amazon Prime membership. Many people store their digitized family photos here. Here's what Amazon Photos does and doesn't do for old, damaged family photographs.
 

@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🥁"
 ---
 
-# Restoring West African Heritage Family Photographs
 
 West African immigration to the United States has grown substantially since the 1965 Immigration Act removed national origin quotas, with Nigerians, Ghanaians, Senegalese, and immigrants from across West Africa establishing communities in major American cities. These families bring photographic traditions from cultures where formal portrait photography has been practiced since the late 19th century, when West African studio photographers created distinctive portrait styles that influenced photography globally. Restoring West African American family photographs connects living generations to a rich visual heritage.
 

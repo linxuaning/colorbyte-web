@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🎩"
 ---
 
-# Restoring 1900s Portraits: What Makes Edwardian-Era Photos So Challenging
 
 My grandmother kept a photograph in a velvet-lined box on her bedside table. The box itself was worn at the corners, the velvet faded from deep burgundy to a dusty pink. Inside, wrapped in tissue paper that crumbled to the touch, was a formal portrait of a man I never knew — my great-great-grandfather, taken sometime around 1903.
 

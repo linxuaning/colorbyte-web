@@ -12,7 +12,6 @@ coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
 coverEmoji: "💒"
 ---
 
-# Restore Your Wedding Photos: How AI is Saving Precious Memories in 2026
 
 I've been photographing weddings for twelve years, and in that time I've heard a version of the same story dozens of times. A couple is cleaning out a parent's house, or going through a grandmother's belongings after she passes, and they find the wedding photos. The album is stiff with age. Some pages are stuck together. The photos inside have turned sepia, or yellow, or they've faded to ghostly near-invisibility. A face that once anchored a family—the person everyone measured time against—looks back through the damage.
 

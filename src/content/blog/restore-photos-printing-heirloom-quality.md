@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🖼️"
 ---
 
-# Creating Heirloom-Quality Prints from Restored Photos
 
 After restoring a family photograph, choosing the right printing approach ensures that the new print will itself become a heirloom — something that the next generation will be able to enjoy without the same deterioration that affected the original. The difference between a drugstore print and a properly archival print is measured in decades of display life: a cheap drugstore print may fade significantly in 20-30 years, while a properly produced archival print should maintain quality for 100+ years.
 

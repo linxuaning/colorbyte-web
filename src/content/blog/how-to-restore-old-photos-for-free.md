@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-emerald-600 to-teal-500"
 coverEmoji: "🆓"
 ---
 
-# How to Restore Old Photos for Free (Honest Guide)
 
 Can you restore old family photographs for free? Yes — with real limits. Here's an honest breakdown of what free options actually deliver, and when spending $4.99 is worth it. For a direct try, see our [free photo restoration](/free-photo-restoration) tool.
 

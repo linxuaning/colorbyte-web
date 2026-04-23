@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "⛏️"
 ---
 
-# Restoring Coal Mining and Mining Community Photographs
 
 Coal mining photographs document some of the most demanding and dangerous work in American industrial history. The men and boys who worked in the coal mines of Appalachia, Pennsylvania, Illinois, and Wyoming extracted the fuel that powered America's industrial expansion, often at terrible cost. Family photographs from mining communities — of miners in their work clothes, of company towns, of the churches and schools that organized community life, of the union halls and labor organizing — document a heritage of hard work and community solidarity that shaped American labor history.
 

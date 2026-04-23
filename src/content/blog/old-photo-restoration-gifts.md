@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-600 to-fuchsia-600"
 coverEmoji: "🎁"
 ---
 
-# Old Photo Restoration as a Gift: A Practical Guide
 
 Restored old family photographs make genuinely meaningful gifts — particularly for parents, grandparents, and family members who grew up before digital photography. Here's a practical guide to doing it well.
 

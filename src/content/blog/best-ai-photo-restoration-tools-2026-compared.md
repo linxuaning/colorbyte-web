@@ -14,7 +14,6 @@ coverEmoji: "🏆"
 featured: false
 ---
 
-# Best AI Photo Restoration Tools 2026: Honest Comparison
 
 ## Quick Answer
 

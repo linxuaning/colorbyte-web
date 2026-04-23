@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🚿"
 ---
 
-# Restoring Photos After a Water Heater Flood
 
 The call came at 6 AM on a Sunday. Robert's water heater had failed sometime overnight, and by the time he woke up, there was standing water throughout his basement. In the basement: four decades of family photographs, stored in plastic bins that had proven less waterproof than advertised.
 

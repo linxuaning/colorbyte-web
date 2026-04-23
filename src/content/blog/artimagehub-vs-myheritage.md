@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-600 to-purple-700"
 coverEmoji: "⚖️"
 ---
 
-# ArtImageHub vs MyHeritage Photo Enhancer: Honest Comparison for 2026
 
 MyHeritage Photo Enhancer is the most recognized name in family photo AI tools. It's baked into the world's second-largest genealogy platform, which means tens of millions of people have tried it.
 

@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🌵"
 ---
 
-# Restoring Southwestern Hispanic Heritage Photos: New Mexico, Texas, and Arizona
 
 Southwestern Hispanic communities have family archives that often predate the Mexican-American War — families whose presence in the Southwest predates United States sovereignty over those territories. Their visual history spans from the earliest photographic era to the present.
 

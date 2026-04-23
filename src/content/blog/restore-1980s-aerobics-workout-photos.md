@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "💪"
 ---
 
-# Restoring 1980s Aerobics and Workout Photos: Leg Warmers and Leotards
 
 The 1980s fitness photograph has a visual signature as specific as any era: the neon leotards, the leg warmers, the sweatbands, the VHS exercise tape in the background. These photographs document a cultural moment when fitness became mass market.
 

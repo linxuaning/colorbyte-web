@@ -13,7 +13,6 @@ coverColor: "from-teal-700 via-emerald-700 to-green-700"
 coverEmoji: "✨"
 ---
 
-# ArtImageHub vs BeFunky for Old Photo Restoration
 
 BeFunky is a popular browser-based photo editor and graphic design tool with a user-friendly interface. ArtImageHub is a specialized AI pipeline for old photo restoration. Here's how they compare for the specific task of fixing old, damaged family photographs.
 

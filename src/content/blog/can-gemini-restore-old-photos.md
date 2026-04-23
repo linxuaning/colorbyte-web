@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-cyan-700 to-teal-700"
 coverEmoji: "✨"
 ---
 
-# Can Google Gemini Restore Old Photos?
 
 If you're wondering whether Google Gemini — Google's AI assistant — can restore old, faded, or damaged family photographs, here's the direct answer:
 

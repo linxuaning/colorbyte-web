@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🏛️"
 ---
 
-# Restoring Greek American Family Photographs
 
 Greek immigration to the United States peaked between 1900 and 1930, with Greek Americans establishing communities in East Coast cities, the Great Lakes region, and smaller concentrations throughout the country. Greek American family photographs document the full arc of this immigrant experience: the formal studio portraits of newly arrived young men (many immigrated as single men to earn money before sending for families), the establishment of Greek Orthodox churches as community anchors, the growth of restaurant and food businesses, and the evolution of Greek American identity across generations.
 

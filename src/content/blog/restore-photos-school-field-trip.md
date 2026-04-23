@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🚌"
 ---
 
-# Restoring School Field Trip and Class Trip Photographs
 
 School field trip photographs document some of the most vivid childhood memories: the first visit to a museum, the trip to the state capital, the science center, the historical site, the performance space. These educational experiences, often photographed by teachers with school cameras or by parent chaperones with personal cameras, create visual documentation of children encountering the world outside their immediate community. When these photographs fade, they take with them documentation of specific formative experiences.
 

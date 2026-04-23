@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🏆"
 ---
 
-# Restoring Sports Achievement and Athletic Milestone Photographs
 
 Sports achievement photographs capture some of the most emotionally intense moments in family life: the winning touchdown, the trophy presentation, the medal ceremony, the state championship team portrait. These photographs document athletic accomplishment in a way that's simultaneously personal (the individual's achievement) and communal (the team's shared victory). When they fade, restoring them recovers documentation of milestones that may represent years of dedication and training.
 

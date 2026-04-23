@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "✊"
 ---
 
-# Restoring 1960s Civil Rights Era and Counterculture Photos
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every 1960s restoration is about more than technical quality.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-800 via-indigo-700 to-violet-700"
 coverEmoji: "🪟"
 ---
 
-# Can Microsoft Copilot Restore Old Photos?
 
 If you're wondering whether Microsoft Copilot — Microsoft's AI assistant built into Windows 11, Edge, and Microsoft 365 — can restore old, faded, or damaged family photos, here's the direct answer:
 

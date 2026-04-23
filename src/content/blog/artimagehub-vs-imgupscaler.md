@@ -13,7 +13,6 @@ coverColor: "from-cyan-700 via-teal-700 to-green-600"
 coverEmoji: "🔎"
 ---
 
-# ArtImageHub vs ImgUpscaler for Old Photo Restoration
 
 ImgUpscaler (imgupscaler.com) is a browser-based AI image upscaling service — upload a photo, get a higher-resolution version. ArtImageHub is a specialized pipeline for old photo restoration. Both process photos online; they address different problems.
 

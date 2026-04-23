@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-emerald-600 to-teal-500"
 coverEmoji: "✂️"
 ---
 
-# ArtImageHub vs Remove.bg for Old Photo Restoration
 
 Remove.bg is one of the most popular AI background removal tools — clean, fast, and focused on one task. ArtImageHub is a specialized pipeline for old photo restoration. People sometimes confuse background removal with restoration; they're different operations that can complement each other.
 

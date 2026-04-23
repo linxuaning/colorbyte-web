@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "📰"
 ---
 
-# Restoring 1950s Newspaper Clipping Photos: Press Photography at Home
 
 Newspaper clippings with photographs were commonly kept in family archives — the birth announcement, the wedding notice, the obituary. These paper clippings stored in contact with photographs or albums transferred their considerable acidity to the adjacent photographs.
 

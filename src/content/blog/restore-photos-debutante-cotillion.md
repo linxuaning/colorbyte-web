@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "👸"
 ---
 
-# Restoring Debutante and Cotillion Photos: Social Tradition Photography
 
 The debutante ball and cotillion photographs document a specific American social tradition — the formal introduction of young women into adult society — that has been practiced in various forms since the colonial era.
 

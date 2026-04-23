@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "✊"
 ---
 
-# Restoring Civil Rights Era Family Photographs
 
 Family photographs from the Civil Rights era capture ordinary families living through one of the most transformative periods in American history. For Black families specifically, photographs from the 1950s and 1960s document daily life in the specific context of a society being challenged and changed: the dignity of family life maintained under segregation, the community gathering places that supported civil rights organizing, and the specific moments of historical change that families witnessed and sometimes participated in. These photographs are both personal family records and primary source documentation of American history.
 

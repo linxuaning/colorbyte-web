@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "⛏️"
 ---
 
-# Restoring Appalachian Coal Country Photos: Mining Family Heritage
 
 The coal country family photograph documents a way of life that has changed dramatically. The company towns, the mine entrances, the company stores — many are gone. The families who lived in these communities are the keepers of a visual record that would otherwise be lost.
 

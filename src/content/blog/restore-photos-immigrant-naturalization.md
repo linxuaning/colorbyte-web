@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🇺🇸"
 ---
 
-# Restoring Immigrant Naturalization and Citizenship Photos: Becoming American
 
 The naturalization photograph captures one of the most consequential moments in an immigrant family's story: the day someone officially became an American. These photographs were taken with the same pride and intention as wedding photographs — they documented something that mattered enormously.
 

@@ -14,7 +14,6 @@ coverEmoji: "🎞️"
 featured: false
 ---
 
-# Vintage Photo Repair Techniques: Professional Methods for Restoring Historical Images
 
 Vintage photographs—those created before 1970—require different restoration approaches than modern photos. The chemistry is different, the substrates are different, and the damage patterns are unique to their era—ranging from [chemical damage](/blog/fix-chemical-damage-photos) caused by residual fixer to biological issues like [fungus damage](/blog/fix-fungus-damaged-photographs) in tropical climates.
 

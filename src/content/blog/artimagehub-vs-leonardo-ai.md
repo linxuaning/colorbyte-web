@@ -13,7 +13,6 @@ coverColor: "from-yellow-700 via-amber-600 to-orange-500"
 coverEmoji: "🦁"
 ---
 
-# ArtImageHub vs Leonardo AI for Old Photo Restoration
 
 Leonardo AI (leonardo.ai) is an AI image generation and editing platform — strong for creative and commercial image creation. ArtImageHub is a specialized AI pipeline for old photo restoration. Both are AI-powered image tools, but they solve completely different problems.
 

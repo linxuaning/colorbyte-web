@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-cyan-800"
 coverEmoji: "🗽"
 ---
 
-# Restoring Ellis Island Immigration Photos: Arrival in the New World
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every Ellis Island restoration is about more than technical quality.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🌳"
 ---
 
-# Restoring Photos for Genealogy Research: Enhancing Faces for Family Tree Identification
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every genealogy restoration is about more than technical quality.
 

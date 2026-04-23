@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "📁"
 ---
 
-# How to Digitize a Large Photo Collection
 
 Five hundred photographs. A thousand. Two thousand. At some point, the scale of a family photo collection changes the problem from "restore some photographs" to "create a systematic archive."
 

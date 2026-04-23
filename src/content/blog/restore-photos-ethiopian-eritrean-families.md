@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "⛪"
 ---
 
-# Restoring Ethiopian and Eritrean American Family Photographs
 
 Ethiopian and Eritrean Americans represent a significant East African diaspora in the United States, with large communities in the Washington DC area, Minnesota, Texas, and California. Ethiopian immigration accelerated after the 1974 Derg revolution, with additional waves following the 1984–1985 famine, the civil war, and subsequent political developments. Eritrean Americans arrived primarily after Eritrean independence in 1993 and subsequent conflicts. Both communities maintain strong cultural identities centered on Orthodox Christian and Muslim religious traditions, extended family bonds, and distinctive cultural practices.
 

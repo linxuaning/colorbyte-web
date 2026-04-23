@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "✊"
 ---
 
-# Restoring Union and Labor Movement Photos: Working Class History Documented
 
 Labor movement photographs document one of the most significant social histories of the 20th century — the organizing that created the American middle class through improved wages, hours, and working conditions.
 

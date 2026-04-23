@@ -13,7 +13,6 @@ coverColor: "from-white-600 via-blue-700 to-indigo-800"
 coverEmoji: "⛪"
 ---
 
-# Restoring First Communion and Baptism Photos: Sacred Family Milestones
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every baptism restoration is about more than technical quality.
 

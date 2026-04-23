@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "📷"
 ---
 
-# Restoring 1990s Photos: Disposable Cameras and Printed Memories
 
 The 1990s was the era of the disposable camera — those plastic single-use cameras that seemed to appear at every birthday party, prom, and wedding reception. Alongside increasingly affordable 35mm point-and-shoot cameras, disposables documented the decade's casual social life in a particular aesthetic: slightly grainy, often underexposed, with harsh built-in flash. The resulting prints have aged uniquely, and restoring them presents specific challenges related to their original low-quality capture.
 

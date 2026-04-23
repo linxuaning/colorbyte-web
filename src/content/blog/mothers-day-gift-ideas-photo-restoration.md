@@ -14,7 +14,6 @@ coverEmoji: "💝"
 featured: false
 ---
 
-# Mother's Day Gift Ideas: Why Photo Restoration Beats Most of the List
 
 Every year the same gift ideas. Flowers, a nice dinner, a candle, a gift card, something from a "best gifts for mom" roundup that applies to approximately no one's actual mother.
 

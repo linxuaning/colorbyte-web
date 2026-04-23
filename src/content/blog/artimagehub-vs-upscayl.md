@@ -13,7 +13,6 @@ coverColor: "from-violet-800 via-purple-700 to-fuchsia-600"
 coverEmoji: "🔭"
 ---
 
-# ArtImageHub vs Upscayl for Old Photo Restoration
 
 Upscayl is a popular free, open-source AI image upscaler for desktop (Windows, Mac, Linux). It uses Real-ESRGAN and other upscaling models under the hood with a clean desktop GUI. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare.
 

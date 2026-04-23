@@ -13,7 +13,6 @@ coverColor: "from-indigo-700 via-violet-700 to-purple-600"
 coverEmoji: "🔬"
 ---
 
-# Photo Restoration vs Photo Enhancement: What's the Difference?
 
 "Photo restoration" and "photo enhancement" are used interchangeably in marketing, but they refer to different operations with different results. Understanding the distinction helps you choose the right tool for old family photographs.
 

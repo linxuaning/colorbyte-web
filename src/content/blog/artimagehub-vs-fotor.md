@@ -13,7 +13,6 @@ coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
 coverEmoji: "📸"
 ---
 
-# ArtImageHub vs Fotor: Which Is Better for Restoring Old Family Photos?
 
 Fotor is a popular all-in-one photo editor with AI enhancement features. It's well-known, widely used, and has a decent free tier.
 

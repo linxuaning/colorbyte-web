@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🌸"
 ---
 
-# Restoring Japanese American Family Photographs
 
 Japanese American family photographs tell a story unique in American immigration history: a community that built successful lives over two to three generations, was forcibly incarcerated during World War II in one of the most significant civil rights violations in American history, and then rebuilt again after the war. Photographs from before, during, and after the incarceration period are precious historical documents that have been the subject of significant archival work by the National Archives, the Japanese American National Museum, and family researchers.
 

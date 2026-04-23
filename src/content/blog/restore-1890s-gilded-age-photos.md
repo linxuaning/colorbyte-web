@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎩"
 ---
 
-# Restoring 1890s Gilded Age Photographs
 
 When Patricia's great-grandmother emigrated from Poland in 1893, she arrived with one photograph: a formal portrait of her parents taken in Warsaw, mounted on thick cardboard with a studio name embossed in gold on the back. That photograph crossed the Atlantic in a coat pocket, survived four New York apartments, two world wars, and a basement flood in 1962. By the time Patricia brought it to me, it had earned every one of its wrinkles.
 

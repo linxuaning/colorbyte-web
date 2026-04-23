@@ -13,7 +13,6 @@ coverColor: "from-gold-600 via-amber-700 to-orange-800"
 coverEmoji: "🎉"
 ---
 
-# Restoring Retirement Party Photos: Celebrating a Career Well Lived
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every retirement restoration is about more than technical quality.
 

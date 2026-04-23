@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎓"
 ---
 
-# Restoring a Childhood Photo for a College Student's Dorm Room
 
 The childhood photograph as a dorm room gift — chosen by a parent, restored, and printed — is a gesture that works on multiple levels. It's practical (the student has a personal photograph for their space), it's emotional (a connection to home), and it's preservationist (it saves a photograph that might otherwise sit unscanned in an album).
 

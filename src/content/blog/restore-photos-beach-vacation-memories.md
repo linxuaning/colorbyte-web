@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🏖️"
 ---
 
-# Restoring Beach and Summer Vacation Photographs
 
 Beach vacation photographs capture a particular quality of summer memory: the informality of swimsuits and sand, the sensory fullness of sun and water, the specific happiness of time away from ordinary life. These photographs are often among the most casually taken in family archives — snapped with a sandy Instamatic camera, quickly developed at the drugstore, stuck in an envelope. Yet they document summers that become more precious in memory. Restoring them recovers specific moments that are impossible to re-create.
 

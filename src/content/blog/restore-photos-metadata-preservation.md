@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🏷️"
 ---
 
-# Preserving Photo Metadata: Names, Dates, and Family Context
 
 A restored photograph is significantly more valuable when it carries its historical context — the names of the people depicted, the date the photograph was taken, the location, and any relevant family history. Embedding this information directly in the image file's metadata ensures it stays with the photograph no matter how many times it's copied, transferred, or shared. Understanding how to add and preserve this metadata is an essential skill for anyone creating a serious family photo archive.
 

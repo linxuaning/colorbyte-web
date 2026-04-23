@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🛍️"
 ---
 
-# Restoring Photos That Were Stored in Plastic Bags
 
 One of the most common — and most preventable — causes of photograph damage is improper storage in plastic bags. Many well-meaning families seal old photos in zipper bags or plastic sleeves thinking they're protecting them from dust and moisture. In reality, plastic can trap humidity, causing condensation on photo surfaces, and off-gassing chemicals from PVC plastic can actually accelerate dye fading. When photos stick to plastic or to each other, attempting to separate them can cause catastrophic emulsion damage.
 

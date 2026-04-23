@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-emerald-700 to-teal-600"
 coverEmoji: "🎨"
 ---
 
-# Can DALL-E Restore Old Photos?
 
 DALL-E 3, OpenAI's image generation model, is capable of producing remarkably detailed and realistic images from text descriptions. If you're wondering whether it can restore old, faded, or damaged family photographs, here's the direct answer:
 

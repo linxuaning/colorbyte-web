@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🐎"
 ---
 
-# Restoring Horse Farm and Equestrian Photos: The Equine Heritage
 
 Horse photographs are among the most evocative family archive photographs — the relationship between horse and rider is one of the oldest human-animal bonds, and photographs of horses and their people carry this antiquity in their emotional resonance.
 

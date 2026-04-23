@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🔬"
 ---
 
-# Why Are Old Photos Brown and Yellow? The Science Explained
 
 If you've ever looked through a box of old family photographs and wondered why they've all turned that characteristic warm brown-yellow tone, you're not imagining things — there's a specific chemistry behind why photographs age the way they do. Understanding what causes this discoloration also explains why AI restoration is so effective at reversing it.
 

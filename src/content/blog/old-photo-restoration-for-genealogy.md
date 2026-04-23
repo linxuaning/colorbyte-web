@@ -13,7 +13,6 @@ coverColor: "from-amber-700 via-orange-700 to-yellow-600"
 coverEmoji: "🌳"
 ---
 
-# Old Photo Restoration for Genealogy Research
 
 Genealogy research depends heavily on photographs — they place names to faces, confirm family relationships, and connect living descendants to ancestors they never met. The problem: most family photographs from before 1980 are in some state of degradation, and many from before 1960 are significantly damaged.
 

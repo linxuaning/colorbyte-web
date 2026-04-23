@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏮"
 ---
 
-# Restoring Chinese American Family Photographs
 
 Chinese American family photographs document one of America's most complex immigration stories. From the earliest Chinese immigrants who came during the Gold Rush and built the transcontinental railroad, through the devastating exclusion era when the Chinese Exclusion Act made immigration virtually impossible for decades, to the post-1965 wave of professional and family immigration — each generation faced unique challenges and created visual records of their lives under those conditions. These photographs deserve careful preservation.
 

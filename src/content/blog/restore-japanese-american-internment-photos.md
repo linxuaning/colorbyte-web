@@ -13,7 +13,6 @@ coverColor: "from-red-600 via-pink-700 to-rose-800"
 coverEmoji: "🌸"
 ---
 
-# Restoring Japanese American WWII-Era Family Photos
 
 The photographs from the Tanaka family archive begin in 1940 and then, for three years, go quiet. When they resume in 1943, the setting has changed: the same family, the same faces, but the background is different — the flat landscape of the internment camp at Manzanar, California. Keiko brought these photographs to me as part of a larger family history project, and the restoration work felt like something more than technical.
 

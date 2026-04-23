@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "📖"
 ---
 
-# Creating a Documentary Family History From Restored Photographs
 
 A documentary family history combines restored photographs with written narrative, genealogical records, and family stories to create a comprehensive account of a family's origins and development. This kind of project — more ambitious than a photo book but potentially more meaningful — transforms the raw material of restored photographs, family documents, and oral history into a cohesive narrative that future generations can use to understand where they came from.
 

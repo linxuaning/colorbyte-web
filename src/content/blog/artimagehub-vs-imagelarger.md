@@ -13,7 +13,6 @@ coverColor: "from-violet-700 via-purple-700 to-fuchsia-600"
 coverEmoji: "🔍"
 ---
 
-# ArtImageHub vs Image Larger for Old Photo Restoration
 
 Image Larger (imagelarger.com) and similar AI upscaling services (BigJPG, AI Image Upscaler) use neural network-based upscaling to enlarge photos while adding synthesized detail. ArtImageHub is a specialized pipeline for old photo restoration. Both can improve old photographs — they address different aspects of the problem. Other online image toolkits such as [IMG2GO](/blog/artimagehub-vs-img2go) bundle upscaling alongside format conversion but face the same limitation: none of them are purpose-built for historical degradation.
 

@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖼️"
 ---
 
-# Creative Framing and Display Ideas for Restored Photographs
 
 Restored photographs deserve more than file storage on a hard drive — they deserve to be seen and appreciated. Thoughtfully framed and displayed, restored family photographs become an integral part of your home's character and a constant, gentle reminder of the family story that the space has grown from. Here are creative approaches for displaying restored photographs that do justice to their content.
 

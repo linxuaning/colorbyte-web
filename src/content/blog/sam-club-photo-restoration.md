@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-sky-600 to-cyan-500"
 coverEmoji: "🏢"
 ---
 
-# Sam's Club Photo Restoration and Printing Guide
 
 Sam's Club (the Walmart membership warehouse) offers photo printing services that compare favorably to Costco in quality and price. Like other photo printing services, Sam's Club prints what you provide — it doesn't restore photographs. Here's what to know.
 

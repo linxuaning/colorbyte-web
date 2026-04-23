@@ -13,7 +13,6 @@ coverColor: "from-silver-600 via-gray-700 to-zinc-800"
 coverEmoji: "🪞"
 ---
 
-# Preserving and Restoring Daguerreotype Photos: The First Photographs
 
 The daguerreotype is the first practical photographic process, introduced in 1839, and it produces a unique kind of image: a direct positive on a silver-coated copper plate. Daguerreotypes are not printed photographs in the conventional sense. Understanding their specific degradation patterns is essential for restoration.
 

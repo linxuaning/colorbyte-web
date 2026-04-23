@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🚗"
 ---
 
-# Restoring Photographs of First Cars and Driving Milestones
 
 The first car holds a special place in American family mythology — the specific vehicle that represented freedom, independence, and the transition to adulthood. Photographs of family members with their first cars, from the proud teenager with the keys to the beat-up 1971 Datsun to the family patriarch with the first new car he could afford to buy, document a relationship between people and machines that is distinctly American. When these photographs fade, restoring them recovers documentation of automotive history alongside personal coming-of-age stories.
 

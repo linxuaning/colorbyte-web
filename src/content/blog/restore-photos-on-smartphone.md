@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "📱"
 ---
 
-# Can You Restore Old Photos on a Smartphone?
 
 Not everyone has access to a flatbed scanner or a desktop computer, but almost everyone has a smartphone with a high-resolution camera. The good news is that modern smartphones can serve as capable digitization tools for old photographs, and AI restoration tools work just as well from mobile devices as from computers. Here's how to make smartphone-based photo restoration work well.
 

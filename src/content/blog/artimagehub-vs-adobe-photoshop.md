@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-indigo-700 to-violet-800"
 coverEmoji: "🎨"
 ---
 
-# ArtImageHub vs Adobe Photoshop: Old Photo Restoration Compared
 
 Adobe Photoshop is the world's most powerful image editing software. It's the industry standard for professional photographers, designers, and restoration artists. Its Neural Filters include AI-powered tools for colorization and face enhancement.
 

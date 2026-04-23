@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🌸"
 ---
 
-# Restoring Cambodian Khmer Family Heritage Photos: Before and After the Genocide
 
 Cambodian family photographs from before 1975 are among the most precious objects in any Cambodian American family's possession. The Khmer Rouge systematically destroyed documents, photographs, and the evidence of the pre-genocide world. What survived came out with the refugees who survived.
 

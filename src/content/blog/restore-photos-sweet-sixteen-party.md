@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎀"
 ---
 
-# Restoring Sweet Sixteen Party Photographs
 
 The Sweet Sixteen celebration has been a significant milestone in American teenage life since at least the 1950s, and the photographs that document these parties have become an important part of family archives. From the elaborate quinceañera-influenced parties of the 1980s and 1990s to the DIY backyard celebrations of earlier decades, Sweet Sixteen photographs capture a girl at the threshold of adulthood — often in her most formal dress outside of graduation or wedding — surrounded by family and friends.
 

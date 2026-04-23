@@ -14,7 +14,6 @@ coverEmoji: "💧"
 featured: false
 ---
 
-# Water Damage Photo Restoration: The Ultimate 2026 Guide
 
 ## Quick Answer
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📖"
 ---
 
-# Restoring the Grandparents' Immigration Story: A Visual Oral History Project
 
 The most valuable use of photo restoration I've encountered isn't preserving a single photograph — it's using restored photographs as the centerpiece of a larger family history project, integrating visual and oral history before the people who can speak are gone.
 

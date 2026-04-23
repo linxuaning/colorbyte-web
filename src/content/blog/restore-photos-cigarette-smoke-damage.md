@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🚬"
 ---
 
-# Restoring Photos Damaged by Cigarette Smoke
 
 For families where someone smoked indoors for decades, photographs displayed on walls or kept in albums throughout the home may show distinctive yellowing and brown discoloration from cigarette smoke deposits. This nicotine and tar staining adds a yellowish-brown cast that can be mistaken for simple age-related fading but has specific characteristics. AI restoration can effectively address this type of damage.
 

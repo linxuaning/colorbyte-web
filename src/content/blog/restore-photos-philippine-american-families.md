@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌺"
 ---
 
-# Restoring Filipino American Family Photos: Heritage from the Islands to America
 
 Filipino American family archives often span two countries and multiple waves of immigration: the first-generation Pensionados and workers of the early 20th century, the WWII-era arrivals, and the post-1965 immigration wave that brought the largest numbers.
 

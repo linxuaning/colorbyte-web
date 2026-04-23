@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🎆"
 ---
 
-# Restoring Labor Day and Memorial Day Family Photographs
 
 Labor Day and Memorial Day photographs document two of America's most significant secular holidays — one honoring the workers who built the nation's prosperity, the other remembering those who died in its service. Family photographs from these holidays capture both the personal (barbecues, family gatherings, parades attended with children) and the community dimension (municipal parades, veterans' ceremonies, community events) of American public life. Restoring them preserves both personal memories and community historical documentation.
 

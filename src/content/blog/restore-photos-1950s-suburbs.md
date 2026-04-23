@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🏡"
 ---
 
-# Restoring 1950s Suburban Life Photographs
 
 The 1950s produced some of the most iconic American family photography: new ranch houses in freshly built subdivisions, station wagons in driveways, children on bicycles, mothers in aprons, fathers in suits coming home from the office. These images carry the cultural weight of post-war optimism and prosperity — the American Dream made visible. They also represent the transition from black-and-white to color photography, creating diverse restoration challenges depending on which medium was used.
 

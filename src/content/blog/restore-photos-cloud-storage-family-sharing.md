@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "☁️"
 ---
 
-# Cloud Storage for Restored Family Photos: Sharing Across Generations
 
 Restored family photographs are most valuable when the whole family can access and appreciate them — not just the person who did the restoration work. Cloud storage and sharing platforms make it possible to create a shared family photo archive that relatives across the country (or across the world) can view, download, and contribute to. Setting up this kind of shared archive transforms a personal restoration project into a family resource.
 

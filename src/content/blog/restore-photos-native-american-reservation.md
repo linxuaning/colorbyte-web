@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🦅"
 ---
 
-# Restoring Native American Reservation and Tribal Community Photos: Self-Determined History
 
 Photographs of Native American communities have a complicated history. Photographs taken by outsiders for outside purposes coexist with photographs taken by community members for themselves. The distinction matters for how we approach restoration and what questions we ask.
 

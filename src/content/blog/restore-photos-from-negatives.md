@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "📽️"
 ---
 
-# Restoring Old Photos from Film Negatives
 
 Many families have boxes of old film negatives alongside their print collections — orange-tinted 35mm strips, larger square negatives from medium-format cameras, or even glass plate negatives from the early 20th century. Negatives often preserve more detail than the prints made from them, because the printing process inevitably lost some of the negative's information. Digitizing and restoring from negatives can yield significantly better results than scanning prints.
 

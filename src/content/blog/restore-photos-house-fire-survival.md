@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🔥"
 ---
 
-# How Photographs Survive House Fires: What Survives and What Doesn't
 
 The physics of house fires are relevant to understanding what photographs survive. Fire temperature, oxygen availability, and the thermal properties of photographic materials all determine survival. Understanding these factors helps set realistic expectations for recovery.
 

@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "✌️"
 ---
 
-# Restoring 1960s Photographs: From Suburbia to Counterculture
 
 No decade's photographs tell a more dramatically changing social story than the 1960s. A photograph from 1962 looks entirely different from one taken in 1968 — different clothing, different settings, different social contexts, different photographic styles. The decade's rapid social transformation is visible in family photographs: the shift from formal studio portraits to documentary-style snapshots, the changing of clothing and hair styles, the appearance of protest signs and peace symbols in backgrounds. Restoring 1960s photos means engaging with this complexity.
 

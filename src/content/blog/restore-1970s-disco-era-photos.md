@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🪩"
 ---
 
-# Restoring 1970s Disco Era Photos: Sequins, Dance Floors, and Faded Film
 
 The disco photograph has a specific challenge: it was often taken in challenging conditions. Nightclub lighting — strobes, colored gels, mirror balls — created photographic conditions that amateur photographers weren't equipped to handle well.
 

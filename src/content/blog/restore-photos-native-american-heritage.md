@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🦅"
 ---
 
-# Restoring Native American Family Photographs
 
 Photographs of Native American families occupy complex historical territory. Some historical photographs of Native Americans were taken by outside photographers with colonial or exploitative intent — images meant to document 'dying cultures' rather than celebrate living communities. But family photographs taken within Native communities tell a different story: they document family bonds, cultural practices, community life, and the resilience of Indigenous peoples through the devastating policies of the 19th and 20th centuries. Restoring these family photographs is an act of cultural affirmation.
 

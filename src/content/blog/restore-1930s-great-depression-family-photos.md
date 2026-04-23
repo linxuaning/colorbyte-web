@@ -13,7 +13,6 @@ coverColor: "from-gray-600 via-slate-700 to-gray-800"
 coverEmoji: "📷"
 ---
 
-# Restoring 1930s Great Depression Family Photos
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every 1930s restoration is about more than technical quality.
 

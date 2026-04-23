@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎬"
 ---
 
-# Converting Home Movie Stills to Restorable Photographs
 
 Family home movies — Super 8 films from the 1960s-1970s, VHS and Beta videotapes from the 1980s-1990s — contain valuable photographic documentation of family life that has never been extractable as still photographs. Modern technology makes it possible to extract high-quality still frames from these moving image sources and then restore them as photographs. This process creates still photographs from moments that were previously only accessible in video format.
 

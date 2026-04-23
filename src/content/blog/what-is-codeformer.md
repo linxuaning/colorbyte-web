@@ -13,7 +13,6 @@ coverColor: "from-violet-800 via-purple-700 to-indigo-600"
 coverEmoji: "🧠"
 ---
 
-# What Is CodeFormer?
 
 CodeFormer is an AI model specifically designed to restore faces in old, low-quality, or damaged photographs. It was developed by researchers at Nanyang Technological University (Singapore) and released in 2022. It has quickly become the best-performing open model for face restoration in historical photographs.
 

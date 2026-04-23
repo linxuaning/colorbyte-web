@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🏠"
 ---
 
-# Restoring Photographs That Document Neighborhood Bonds
 
 Some of the most emotionally resonant photographs in family archives document relationships that exist outside the family circle: the neighbor who became a lifelong friend, the community that formed around a specific block or apartment building, the social bonds created by proximity and shared community life. These photographs of non-family relationships deserve the same preservation attention as family photographs, because the people they document often played roles in family life as significant as many family members.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🎓"
 ---
 
-# Restoring Senior Portrait Photos
 
 The senior portrait is a specific photographic rite of passage. Photographed at the same age, in the same formal context, family members across generations can be compared in ways that casual photography doesn't allow.
 

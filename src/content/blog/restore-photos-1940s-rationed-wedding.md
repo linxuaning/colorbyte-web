@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "💍"
 ---
 
-# Restoring 1940s Wartime Rationed Wedding and Marriage Photos
 
 The wartime wedding was often a matter of days between the deployment orders and the ceremony. No time for elaborate planning, limited fabric for dresses, no guarantee of future. These weddings were photographed quickly, with whatever camera was available.
 

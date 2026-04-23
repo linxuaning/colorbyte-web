@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖨️"
 ---
 
-# Setting Up a DIY Home Scanning Station for Family Photos
 
 If you have a large collection of family photographs to digitize, setting up a dedicated home scanning station makes the process significantly more efficient and the results more consistent than casual, one-at-a-time scanning. A good home scanning station requires some initial setup but dramatically increases throughput and quality for anyone with more than 50-100 photos to process.
 

@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🌺"
 ---
 
-# Restoring Filipino American Family Photographs
 
 Filipino Americans have a uniquely complex relationship with the United States — the Philippines was an American colony from 1898 to 1946, creating a distinctive immigration dynamic quite unlike other immigrant groups. Early Filipino immigrants (Filipinos were American nationals, not aliens, before 1934) came as agricultural laborers in Hawaii and California, as students (pensionados), and as US Navy workers. After Philippine independence and especially after 1965, substantial professional immigration followed. Filipino American family photographs reflect all these phases, often in distinctive visual styles influenced by both Philippine and American photographic traditions.
 

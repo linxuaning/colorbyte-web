@@ -13,7 +13,6 @@ coverColor: "from-olive-600 via-green-700 to-teal-800"
 coverEmoji: "🎨"
 ---
 
-# How to Colorize 1940s WWII Era Photos: Bringing History to Life
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every WWII colorization restoration is about more than technical quality.
 

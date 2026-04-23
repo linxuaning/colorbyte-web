@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "✊"
 ---
 
-# Restoring Civil Rights March and Protest Photographs: History in Black and White
 
 Civil rights march photographs from the 1950s and 1960s occupy a complex position: they are both personal family photographs (family members who participated) and historical documents of public events. Restoration decisions must consider both dimensions.
 

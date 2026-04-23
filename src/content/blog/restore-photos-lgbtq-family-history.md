@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🏳️‍🌸"
 ---
 
-# Preserving LGBTQ Family Photographs and Community History
 
 LGBTQ family photographs carry a distinctive historical weight: for much of American history, the existence of LGBTQ families was invisible in the official photographic record, hidden by necessity, or coded in ways that only those within the community could recognize. Photographs that do survive — the casual snapshot of two men who clearly lived together as a couple in the 1940s, the women who presented as 'roommates' for 50 years, the community photographs of pre-Stonewall gay bars and gathering places — are irreplaceable historical documents of a community that largely had to live without documentation.
 

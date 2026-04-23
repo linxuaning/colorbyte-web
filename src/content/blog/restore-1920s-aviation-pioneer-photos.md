@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "✈️"
 ---
 
-# Restoring 1920s Aviation Pioneer Photos: The Dawn of Flight Era
 
 The aviation photographs of the 1920s document one of the most dramatic decades in human history — the period when flight went from novelty to accessible technology. Barnstormers, early commercial flights, the first transcontinental routes.
 

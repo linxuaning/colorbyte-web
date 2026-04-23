@@ -12,7 +12,6 @@ coverColor: "from-emerald-600 via-teal-700 to-cyan-800"
 coverEmoji: "📦"
 ---
 
-# I Spent 6 Months Restoring My Family's Photo Archive—Here's What Actually Works in 2026
 
 When my mother handed me three cardboard boxes from my grandmother's attic last spring, I had no idea what I was getting into. 847 photos spanning 1920–1995. Half of them stuck together. Many with visible mold. Some so faded you could barely make out faces.
 

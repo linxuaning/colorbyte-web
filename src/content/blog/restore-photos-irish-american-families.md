@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "☘️"
 ---
 
-# Restoring Irish American Family Photographs
 
 Irish American families often trace their American ancestry to the Great Famine immigration of the 1840s and 1850s — one of the most traumatic and consequential mass migrations in history. Photographs from that era are rare (photography was still new in the 1850s and expensive), making later photographs of first-generation Irish immigrants particularly precious. As successive generations moved from tenements to working-class neighborhoods to suburban homes, the photographic record documents both the preservation of Irish identity and the transformation that defines the immigrant American story.
 

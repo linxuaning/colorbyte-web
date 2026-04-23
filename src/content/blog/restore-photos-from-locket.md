@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "💎"
 ---
 
-# Restoring Miniature Photos from Lockets and Jewelry: Tiny Portraits
 
 The locket photograph is among the smallest photographic formats in family archives — often less than an inch in diameter, intended to be kept close. These tiny photographs were made with care; the small format required precision. Restoring them requires dealing with that small size.
 

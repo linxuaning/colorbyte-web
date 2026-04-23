@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🌮"
 ---
 
-# Restoring Mexican American Family Photos: Heritage from Both Sides of the Border
 
 Mexican American family archives often document two geographies — the Mexican side and the American side — connected by family relationships that cross the border. The photographs reflect this dual identity: formal portraits from Mexican studios alongside snapshots from American barrios.
 

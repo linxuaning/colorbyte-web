@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "👴"
 ---
 
-# Restoring Great-Grandparent Portraits: Connecting the Generations
 
 For many families, the great-grandparent photograph is the oldest image in the archive — the furthest back the visual family history goes. It carries enormous weight precisely because of its age: this is where we came from, this face is the origin point of the family that exists today.
 

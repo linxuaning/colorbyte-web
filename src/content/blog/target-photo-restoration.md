@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-red-600 to-rose-500"
 coverEmoji: "🎯"
 ---
 
-# Target Photo Restoration and Printing: What to Expect
 
 Target stores are convenient and widely accessible, and many people assume they offer photo services including restoration. Here's what Target Photo actually provides and how to use it for old family photographs.
 

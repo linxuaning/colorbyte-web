@@ -13,7 +13,6 @@ coverColor: "from-blue-800 via-blue-700 to-indigo-700"
 coverEmoji: "🏬"
 ---
 
-# Costco Photo Restoration: What Costco Photo Center Does
 
 If you're a Costco member wondering whether Costco Photo Center can restore your old family photos, here's the direct answer:
 

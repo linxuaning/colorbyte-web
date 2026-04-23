@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "💾"
 ---
 
-# Restoring Early Digital Camera Photographs
 
 The late 1990s and early 2000s were the era of the first affordable consumer digital cameras, and the photographs they produced have aged in their own way — not through chemical deterioration but through technological obsolescence. A photograph taken with a 1998 Kodak DC215 (about 1 megapixel) or a 2002 Sony Cybershot (3 megapixels) looks visibly inadequate by contemporary standards: small, pixelated when enlarged, noisy in low light, and often poorly exposed due to early automatic exposure systems. AI enhancement can meaningfully improve these early digital photographs.
 

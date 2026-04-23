@@ -13,7 +13,6 @@ coverColor: "from-orange-700 via-amber-700 to-yellow-600"
 coverEmoji: "🤖"
 ---
 
-# Can Claude (Anthropic AI) Restore Old Photos?
 
 Claude is Anthropic's AI assistant — one of the most capable large language models available. People sometimes wonder if Claude can help restore old, faded, or damaged family photographs. Here's the direct answer:
 

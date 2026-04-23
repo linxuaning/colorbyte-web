@@ -13,7 +13,6 @@ coverColor: "from-teal-500 via-cyan-600 to-blue-700"
 coverEmoji: "🔍"
 ---
 
-# ArtImageHub vs VanceAI: Honest 2026 Comparison for Photo Restoration
 
 VanceAI offers a suite of AI image tools — enhancement, upscaling, background removal, and more. It's one of the more feature-complete image AI platforms aimed at professionals and creators.
 

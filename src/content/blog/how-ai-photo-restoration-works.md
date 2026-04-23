@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🧠"
 ---
 
-# How AI Photo Restoration Actually Works: What Happens When You Upload That Faded 1970s Print
 
 I almost didn't write this article.
 

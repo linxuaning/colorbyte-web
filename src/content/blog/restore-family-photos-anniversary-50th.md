@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "💛"
 ---
 
-# Restoring Family Photos for a 50th Anniversary: Creating the Perfect Gift
 
 The request that comes in most often before milestone anniversaries: a family member wants to surprise their parents or grandparents with a restored collection of photographs from their marriage. The photographs exist — somewhere, in varying condition — but they need to be found, scanned, restored, and assembled into something presentable.
 

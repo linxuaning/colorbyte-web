@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🔧"
 ---
 
-# How to Fix a Photo Torn Into Quarters: Reassembling Damaged Photographs
 
 The photograph arrived in four pieces — torn cleanly along vertical and horizontal axes, as if someone had methodically divided it into quarters. It was not vandalism but grief: a divorce, years before, had resulted in someone tearing the wedding photograph and then, years later, someone else gathering the pieces.
 
