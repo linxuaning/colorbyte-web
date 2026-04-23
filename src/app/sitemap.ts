@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { routing } from "@/i18n/routing";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://artimagehub.com";
@@ -20,6 +21,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: isRecent ? 0.8 : 0.7,
     };
   });
+
+  // Locale blog posts — only include if translations exist
+  const localeBlogPosts: MetadataRoute.Sitemap = [];
+  for (const locale of routing.locales) {
+    if (locale === routing.defaultLocale) continue;
+    const localePosts = await getAllPosts(locale);
+    for (const post of localePosts) {
+      const publishedMs = new Date(post.publishedAt).getTime();
+      const isRecent = now - publishedMs < thirtyDays;
+      localeBlogPosts.push({
+        url: `${baseUrl}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.updatedAt || post.publishedAt),
+        changeFrequency: isRecent ? ("weekly" as const) : ("monthly" as const),
+        priority: isRecent ? 0.75 : 0.65,
+      });
+    }
+  }
 
   return [
     {
@@ -177,5 +195,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.3,
     },
     ...blogPosts,
+    ...localeBlogPosts,
   ];
 }
