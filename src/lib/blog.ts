@@ -16,6 +16,27 @@ function localeBlogDir(locale: BlogLocale | string): string {
   return path.join(postsDirectory, locale);
 }
 
+/**
+ * Returns the list of non-EN locales that have a translated variant for the given slug.
+ *
+ * Used by both the EN root post page (to emit hreflang `languages` alternates) and the
+ * locale post page (to emit reciprocal hreflang). Single source of truth — keep callers
+ * pointed at this helper instead of re-implementing the disk walk.
+ *
+ * Returns [] if no translations exist (e.g. before Phase 1a content lands).
+ */
+export function getAvailableLocalesForSlug(slug: string): string[] {
+  const available: string[] = [];
+  for (const loc of SUPPORTED_LOCALES) {
+    if (loc === "en") continue;
+    const candidate = path.join(localeBlogDir(loc), `${slug}.md`);
+    if (fs.existsSync(candidate)) {
+      available.push(loc);
+    }
+  }
+  return available;
+}
+
 const categoryFallbackImages: Record<string, string> = {
   "AI Technology": "/blog/ai-restoration-technology.webp",
   "Best Practices": "/blog/preserving-photos.webp",

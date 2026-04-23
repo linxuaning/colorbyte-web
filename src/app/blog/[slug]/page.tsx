@@ -2,7 +2,12 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
+import {
+  getAllPosts,
+  getPostBySlug,
+  getRelatedPosts,
+  getAvailableLocalesForSlug,
+} from "@/lib/blog";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -94,11 +99,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Post Not Found" };
   }
 
+  // Hreflang alternates: x-default + en at root, plus any locale that has a translated variant.
+  // As Phase 1a translations land in src/content/blog/<locale>/, this list grows automatically
+  // (recomputed at build time). Helper from lib/blog.ts also used by the [locale] route for parity.
+  const availableLocales = getAvailableLocalesForSlug(slug);
+  const languagesMap: Record<string, string> = {
+    "x-default": `/blog/${slug}`,
+    en: `/blog/${slug}`,
+  };
+  for (const loc of availableLocales) {
+    languagesMap[loc] = `/${loc}/blog/${slug}`;
+  }
+
   return {
     title: post.title,
     description: post.description,
     alternates: {
       canonical: `/blog/${slug}`,
+      languages: languagesMap,
     },
     openGraph: {
       title: post.title,
