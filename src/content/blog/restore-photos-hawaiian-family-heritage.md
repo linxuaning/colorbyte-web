@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🌺"
 ---
 
-# Restoring Hawaiian Family Heritage Photos: Island History and Culture
 
 Hawaiian family archives often span multiple cultural and historical periods: the pre-statehood period, the plantation era, the WWII period when Hawaii was a military territory, and the post-statehood years of tourism and development.
 

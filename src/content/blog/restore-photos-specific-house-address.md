@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🏠"
 ---
 
-# Restoring Photos of a Specific House or Address: Creating Property Heritage Records
 
 A family home photographed across decades of occupation tells a story that real estate records alone can't tell: the specific changes made, the garden as it evolved, the neighborhood as it developed around the property.
 

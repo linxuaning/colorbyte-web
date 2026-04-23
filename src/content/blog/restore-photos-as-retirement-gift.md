@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🎉"
 ---
 
-# Restoring Family Photos as a Retirement Gift
 
 A retirement is a milestone that calls for a gift as significant as the occasion — a tribute to decades of work and the relationships built along the way. Restoring and compiling workplace photographs from throughout a career, combined with personal milestone photographs, creates a gift with emotional depth that no purchased item can match. This kind of photo project takes thought and effort, which is exactly what makes it meaningful.
 

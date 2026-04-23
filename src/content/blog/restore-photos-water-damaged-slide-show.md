@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎞️"
 ---
 
-# Restoring a Water-Damaged Slide Show Collection: Mounted 35mm Slides
 
 Water-damaged 35mm slides present a specific recovery challenge. The film itself is reasonably resistant to water; the cardboard or plastic mount is less so. The interaction between wet cardboard mounts and the film can create staining and adhesion problems.
 

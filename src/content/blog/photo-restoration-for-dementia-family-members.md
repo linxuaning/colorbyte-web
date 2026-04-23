@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🧠"
 ---
 
-# How Restored Photos Help Dementia Patients Connect With Memories
 
 Family photographs play a documented role in supporting people with dementia and Alzheimer's disease, helping to trigger long-term memories that may be more accessible than short-term ones. When those photographs are clear, vivid, and properly labeled, they're more effective as memory tools and emotional anchors. Restoring faded family photographs for a loved one with dementia is both a practical therapeutic intervention and an act of care.
 

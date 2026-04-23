@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🌸"
 ---
 
-# Restoring Quinceañera Photos: The Coming of Age Celebration
 
 The quinceañera is one of the most photographed celebrations in Latin American families — the formal dress, the court of honor, the church ceremony, the reception that brings together family and community to celebrate a young woman's 15th birthday.
 

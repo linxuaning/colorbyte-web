@@ -13,7 +13,6 @@ coverColor: "from-pink-700 via-rose-600 to-red-500"
 coverEmoji: "📈"
 ---
 
-# ArtImageHub vs Waifu2x for Old Photo Restoration
 
 Waifu2x is an open-source AI upscaling tool originally developed for anime and illustrated content, later adapted for photographs. It's well-known in technical communities for producing sharp, clean upscaling results. ArtImageHub is a specialized pipeline for old photo restoration. Here's an honest comparison for old family photograph restoration.
 

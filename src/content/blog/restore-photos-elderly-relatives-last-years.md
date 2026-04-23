@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🌻"
 ---
 
-# Restoring Photos of Elderly Relatives: Preserving Their Last Years
 
 The photographs taken of elderly family members in their final years carry a particular intensity of meaning — they may be the last images we have of a person, taken with the unspoken knowledge (or hope) that these moments are being captured for the memories that will outlast them. These photos deserve special attention: the camera was pointed at someone we loved, in their own home or garden or favorite chair, in their final season. When these photographs are damaged or faded, restoring them recovers not just visual information but the presence of a person who is irreplaceable.
 

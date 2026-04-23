@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🎨"
 ---
 
-# How to Restore Faded Color Photos from the 1970s
 
 Color photographs from the 1970s have a distinctive look that's immediately recognizable — not because it was an artistic choice, but because the photographic chemistry of the era was flawed. The dyes in Kodachrome, Ektachrome, and similar films from this period have deteriorated unevenly over 50+ years, creating the characteristic orange-yellow cast that makes 1970s family photos look washed out and strangely warm. Restoring these photos requires correcting these specific chemical decay patterns.
 

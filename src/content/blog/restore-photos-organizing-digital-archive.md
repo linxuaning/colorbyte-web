@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "📁"
 ---
 
-# How to Organize a Digital Photo Archive After Restoration
 
 Once you've invested in restoring family photographs, organizing the resulting digital files into a logical, durable archive ensures they'll be accessible and meaningful for generations. A poorly organized digital archive — files with cryptic names in arbitrary folders — is almost as useless as no archive at all. Good organization requires thinking about who will use the archive, on what timeline, and with what level of familiarity with the family history.
 

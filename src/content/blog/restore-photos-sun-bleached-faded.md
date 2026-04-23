@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "☀️"
 ---
 
-# Restoring Sun-Bleached and Light-Damaged Photographs
 
 Sunlight is one of the most destructive forces in photographic preservation. A photograph displayed on a wall, refrigerator, or bulletin board in a sunny room can show dramatic fading within a few years. UV radiation from sunlight attacks the photographic materials — the silver particles in black-and-white prints and the dye layers in color photographs — causing systematic bleaching that starts at the most exposed areas (the highlights and lighter tones) and progresses toward the shadows. Restoring sun-damaged photographs requires specific techniques for recovering the collapsed tonal scale. For a step-by-step walkthrough, see our guide on [how to fix sun damaged photos](/blog/fix-sun-damaged-photos).
 

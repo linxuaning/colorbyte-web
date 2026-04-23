@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🏔️"
 ---
 
-# Restoring 1960s Rural and Appalachian Heritage Photos: Mountain Communities
 
 Mountain community photographs from Appalachia and rural regions document a cultural tradition that mainstream American photography largely ignored. The families who lived in these communities photographed each other with the same purpose as any American family — to preserve their history.
 

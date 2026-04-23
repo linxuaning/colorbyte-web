@@ -14,7 +14,6 @@ coverEmoji: "🌳"
 featured: false
 ---
 
-# Genealogy Photo Restoration: How to Recover and Preserve Family History Photos with AI
 
 There is a box in almost every family's attic. Inside: photographs that are cracked, faded, stained, and fragile — the only visual records of ancestors most of us will never meet. A great-great-grandmother standing stiffly for a daguerreotype. A grandfather in uniform before shipping out in 1944. A grandmother's wedding day, the image now brown and spotted with foxing.
 

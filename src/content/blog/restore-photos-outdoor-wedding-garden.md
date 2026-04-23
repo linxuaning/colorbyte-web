@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🌸"
 ---
 
-# Restoring Outdoor and Garden Wedding Photos: Informal Ceremony Heritage
 
 The outdoor garden wedding has been an American tradition since weddings moved from purely religious settings to celebration venues. The specific conditions of outdoor wedding photography — natural light, variable weather, informal settings — create photographs with a distinctive quality.
 

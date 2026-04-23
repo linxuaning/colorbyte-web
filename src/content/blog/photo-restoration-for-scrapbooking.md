@@ -13,7 +13,6 @@ coverColor: "from-pink-600 via-rose-500 to-fuchsia-500"
 coverEmoji: "📒"
 ---
 
-# Photo Restoration for Scrapbooking: Using Restored Old Photos
 
 Scrapbooking with old family photographs — especially restored versions — creates family keepsakes that combine visual impact with personal narrative. Here's how to integrate AI-restored old photos into scrapbook projects.
 

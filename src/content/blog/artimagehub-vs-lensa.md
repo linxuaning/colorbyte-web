@@ -13,7 +13,6 @@ coverColor: "from-pink-700 via-fuchsia-700 to-purple-600"
 coverEmoji: "✨"
 ---
 
-# ArtImageHub vs Lensa AI for Old Photo Restoration
 
 Lensa AI went viral for its "Magic Avatars" — AI-generated artistic portraits based on selfies. ArtImageHub is a specialized pipeline for old photo restoration. People searching for AI photo tools sometimes encounter both; they solve completely different problems.
 

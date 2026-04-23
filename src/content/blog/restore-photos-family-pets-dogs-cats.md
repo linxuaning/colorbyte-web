@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🐕"
 ---
 
-# Restoring Family Pet Photos: The Dogs and Cats We've Loved
 
 Family pets occupy a specific place in family archives — documented with the same care as human family members, mourned deeply when they die, and preserved in photographs that capture not just the animal but the relationship between the animal and the people who loved it.
 

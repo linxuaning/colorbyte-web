@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "⛪"
 ---
 
-# Restoring Church Pastor and Ministry Photos: Faith Leadership Heritage
 
 Church leadership photographs document the people who shaped religious communities — the specific ministers, priests, rabbis, and other faith leaders who presided over the ceremonies, provided the counsel, and led the services that structured religious community life.
 

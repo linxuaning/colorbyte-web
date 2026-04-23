@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "⚓"
 ---
 
-# Restoring Scandinavian American Family Photographs
 
 Scandinavian immigration to the United States peaked between 1865 and 1915, with Norwegians, Swedes, Danes, and Finns establishing farming communities in the Upper Midwest (Minnesota, Wisconsin, Iowa, the Dakotas) and the Pacific Northwest. These communities had strong cultural identities built around Lutheran churches, cooperative farming organizations, and Old Country cultural practices. Their photographic records document a distinctive American immigrant experience characterized by frontier farming, close community bonds, and the gradual integration into American life.
 

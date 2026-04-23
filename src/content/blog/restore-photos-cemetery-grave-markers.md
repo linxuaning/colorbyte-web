@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "⚰️"
 ---
 
-# Restoring Cemetery and Grave Marker Photos: Genealogical Heritage Photography
 
 Cemetery photographs serve specific genealogical purposes: documenting grave markers that contain birth and death dates, family relationships, and sometimes biographical information. For genealogists, these photographs are primary source documentation.
 

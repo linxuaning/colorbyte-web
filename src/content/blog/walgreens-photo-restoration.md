@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-rose-700 to-pink-800"
 coverEmoji: "🏪"
 ---
 
-# Walgreens Photo Restoration: What It Does (and Doesn't)
 
 If you're thinking about bringing old family photos to Walgreens for restoration, here's what you need to know:
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📖"
 ---
 
-# Creating a Family History Book with Restored Photos: A Complete Guide
 
 The family history book is one of the most meaningful projects a family can undertake — a documented, illustrated account of where the family came from and how it developed. Restored photographs are the visual core of any good family history book.
 

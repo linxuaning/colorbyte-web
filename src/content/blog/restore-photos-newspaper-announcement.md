@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "📰"
 ---
 
-# Restoring Newspaper Announcement and Clipping Photos: Family News Documented
 
 Families have kept newspaper clippings of family announcements since newspapers began printing them — the birth announcement, the engagement notice, the wedding coverage, the obituary. These clippings, often with associated photographs, are specific documents of family milestones.
 

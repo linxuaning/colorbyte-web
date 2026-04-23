@@ -14,7 +14,6 @@ coverEmoji: "📱"
 featured: false
 ---
 
-# How to Restore Old Photos Using Just Your Phone (2026 Guide)
 
 Most people who want to restore old family photos assume it requires a desktop computer, a scanner, and some complicated software. That assumption is about five years out of date.
 

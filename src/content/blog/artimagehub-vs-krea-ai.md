@@ -13,7 +13,6 @@ coverColor: "from-indigo-700 via-violet-600 to-purple-500"
 coverEmoji: "🎨"
 ---
 
-# ArtImageHub vs Krea AI for Old Photo Restoration
 
 Krea AI (krea.ai) is an AI creative platform offering real-time generation, image editing, and enhancement tools. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare for old family photograph restoration.
 

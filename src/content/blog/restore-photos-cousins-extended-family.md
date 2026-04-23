@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "👨‍👩‍👧‍👦"
 ---
 
-# Restoring Photographs of Cousins and Extended Family Networks
 
 Cousin photographs occupy a distinctive position in family archives: they document the connections between family branches that share ancestry but live separate lives. Unlike immediate family photographs (which show people who live together and interact daily), cousin photographs document the selective moments of family convergence — the reunions, the holidays, the weddings — where branches of the family come together. These photographs preserve evidence of family bonds that might otherwise fade as branches grow more geographically and generationally distant.
 

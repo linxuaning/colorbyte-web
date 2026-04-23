@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🏘️"
 ---
 
-# Restoring Photos of Small-Town America
 
 Photographs of small-town America hold a special place in regional and local history. The family that kept a photo of their town's main street in 1920 preserved evidence of businesses, vehicles, streetscapes, and community life that no municipal record fully documents. These images aren't just personal family memories — they're primary sources for local historians, genealogists, and descendants of the communities they document. Restoring them serves both personal and historical purposes.
 

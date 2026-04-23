@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "✍️"
 ---
 
-# Restoring Photos With Writing on the Front
 
 Old family photographs frequently have handwritten notes, names, dates, or captions written directly on the front (image) surface — a common practice in the days before easy digital captioning. Sometimes these notations are valuable historical information; sometimes they obscure important image detail that the family now wishes was visible. AI restoration can sometimes recover image detail beneath written notations, and understanding the nature of these markings helps set realistic expectations.
 

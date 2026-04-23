@@ -13,7 +13,6 @@ coverColor: "from-blue-800 via-indigo-800 to-violet-700"
 coverEmoji: "💡"
 ---
 
-# ArtImageHub vs Adobe Lightroom for Old Photo Restoration
 
 Adobe Lightroom is the industry-standard tool for photo editing and color grading — used by professional photographers worldwide. ArtImageHub is a specialized AI pipeline for old photo restoration. Both can improve old photographs, but they approach the problem differently and have very different capabilities.
 

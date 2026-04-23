@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🌺"
 ---
 
-# Restoring Ethnic and Cultural Wedding Photos: Marriage Traditions Across Cultures
 
 The culturally specific wedding ceremony preserves traditions that go back generations — the specific rituals, the specific clothing, the specific ceremonial elements that distinguish one community's wedding practice from the mainstream American wedding.
 

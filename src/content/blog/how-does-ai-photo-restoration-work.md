@@ -13,7 +13,6 @@ coverColor: "from-cyan-800 via-blue-800 to-indigo-700"
 coverEmoji: "⚙️"
 ---
 
-# How Does AI Photo Restoration Work? (Plain English)
 
 When you upload an old family photo to ArtImageHub and get back a restored version 90 seconds later, three separate AI models have processed your image. Here's what each one does, and why specialized restoration AI produces results that general photo editors can't.
 

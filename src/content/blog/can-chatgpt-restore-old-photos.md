@@ -13,7 +13,6 @@ coverColor: "from-gray-700 via-slate-700 to-zinc-800"
 coverEmoji: "🤖"
 ---
 
-# Can ChatGPT Restore Old Photos?
 
 If you're looking to restore an old family photo — faded, scratched, or blurry faces — and wondering whether ChatGPT can help, here's the direct answer:
 

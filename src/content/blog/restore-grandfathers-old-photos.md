@@ -14,7 +14,6 @@ coverEmoji: "👴"
 featured: false
 ---
 
-# How to Restore Grandfather's Old Photos: A Complete Family Heritage Guide
 
 My grandfather passed away before I was born. I never heard his voice, never felt his handshake, never saw his smile in person.
 

@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖌️"
 ---
 
-# How AI Reconstructs Missing Backgrounds in Damaged Photos
 
 One of the most impressive capabilities of modern AI photo restoration is inpainting — the ability to intelligently fill in missing or severely damaged areas of a photograph by reasoning about what the surrounding context suggests should be in the missing area. This capability transforms photographs that appear partially destroyed into complete images, though with important caveats about accuracy.
 

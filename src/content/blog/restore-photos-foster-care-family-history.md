@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "📸"
 ---
 
-# Restoring Photos for Foster Care Alumni: Rebuilding a Visual History
 
 For individuals who grew up in foster care, the photographic record of childhood is often fragmentary or nonexistent — photos left behind when moving between placements, photographs that were never taken, visual documentation that the child care system failed to create or preserve. Foster care alumni often have significant gaps in their visual history, sometimes possessing only a few photographs from their entire childhood. Recovering and restoring any available photographs, and using AI tools to salvage even severely damaged images, takes on particular significance for this community.
 

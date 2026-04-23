@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🕯️"
 ---
 
-# Restoring Funeral and Burial Tradition Photos: Honoring the Dead Across Cultures
 
 Funeral and burial photographs exist in every culture, though the conventions of documentation differ significantly. American funeral photography ranges from the post-mortem photography of the Victorian era to the contemporary practice of photographing funerals as memorial documentation.
 

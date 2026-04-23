@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "📰"
 ---
 
-# Restoring Photos Stored With Newspaper
 
 Photographs stored in contact with newspaper, newsprint, or other high-acid paper materials for years or decades develop a characteristic type of damage: brownish-yellow acid staining that migrates from the paper into the photographic materials. This is one of the most common types of improper-storage damage in family photo collections, particularly for photos stored in shoeboxes or drawers with newspaper clippings, or used as padding in boxes.
 

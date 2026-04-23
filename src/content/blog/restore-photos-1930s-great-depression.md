@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🌾"
 ---
 
-# Restoring Photos from the 1930s Great Depression Era
 
 Family photographs from the 1930s carry the weight of one of America's most difficult decades. Whether taken in a small-town studio by a photographer who charged 25 cents for a portrait session, or snapped with a Brownie camera at a family gathering, these images document ordinary people navigating extraordinary hardship. The photographic technology of the era — orthochromatic films that rendered blue tones as darker than they appear to the eye, and affordable printing papers that weren't designed for archival longevity — creates specific restoration challenges.
 

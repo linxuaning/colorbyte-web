@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌸"
 ---
 
-# Restoring 1960s Flower Power and Hippie Era Photos: Peace, Love, and Fading Film
 
 The flower power photograph has a specific aesthetic vocabulary: the hand-sewn clothing, the flowers literally worn in hair, the outdoor settings that ranged from public parks to private communes. These photographs document a cultural movement from the inside.
 

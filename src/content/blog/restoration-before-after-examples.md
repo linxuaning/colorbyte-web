@@ -12,7 +12,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "💧"
 ---
 
-# 10 Photos I Restored That Made People Cry—Real Stories Behind the Before/After
 
 I've been professionally restoring photos for 12 years—first manually in Photoshop, now with AI-assisted workflows. In that time, I've restored over 4,500 family photos.
 

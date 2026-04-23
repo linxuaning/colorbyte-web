@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🏃"
 ---
 
-# Restoring 1970s Marathon and Running Photos: The Jogging Boom Documented
 
 The 1970s running boom was photographed with the enthusiasm of people discovering something new. Amateur runners who had never considered running more than a mile were suddenly running marathons, and they photographed every training run, every race finish line, every proud moment.
 

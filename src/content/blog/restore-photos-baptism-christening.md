@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "⛪"
 ---
 
-# Restoring Baptism and Christening Photographs
 
 Baptism and christening photographs document one of the earliest ceremonial moments in a person's life — for many families, they're the very first formal photographs of a new child, taken in the specific ceremonial context of the child's religious community. The combination of the ceremony's spiritual significance, the presence of multiple family generations, and the formal setting makes these photographs particularly meaningful. When they age and fade, their loss feels profound.
 

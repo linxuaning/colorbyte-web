@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-600 to-indigo-700"
 coverEmoji: "🔬"
 ---
 
-# ArtImageHub vs Topaz Gigapixel AI: Old Photo Restoration Compared
 
 Topaz Gigapixel AI is a professional-grade upscaling tool with a strong reputation among photographers and retouchers. It's known for extraordinary image upscaling — turning low-resolution images into large, print-ready files.
 

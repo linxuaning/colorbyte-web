@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "📋"
 ---
 
-# Restoring Crinkled and Wrinkled Photographs
 
 Severely crinkled or wrinkled photographs present both a physical challenge (the distortion makes scanning difficult) and a digital restoration challenge (the surface creases create shadow patterns that interfere with the image). Photographs can become crinkled from humidity cycling (causing the paper support to expand and contract), from being crushed under heavy objects, or from being carelessly stored in envelopes or boxes without support. Some wrinkled photographs can be carefully flattened; others require digital approaches to address the distortion. If there's also scratch or tear damage, try our [restore damaged photos](/restore-damaged-photos) tool.
 

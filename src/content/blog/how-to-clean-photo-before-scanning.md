@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🧹"
 ---
 
-# How to Clean Old Photos Before Scanning
 
 The photograph arrived in an envelope with two decades of dust on it. That's not unusual — many family photographs have been in storage conditions that accumulated surface contamination over years or decades. Before scanning, some cleaning is often beneficial.
 

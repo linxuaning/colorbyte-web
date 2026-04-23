@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🎎"
 ---
 
-# Restoring Korean American Family Photographs
 
 Korean American immigration has come in distinct waves: early laborers to Hawaii in the 1900s, Korean War-era war brides and orphans in the 1950s, and the large professional and family immigration that followed the 1965 Immigration Act. Korean American family photographs reflect all these different immigration experiences, from the formal portraits of early Hawaiian plantation workers to the documentation of Korean businesses, churches, and community life in American cities. The Korean American community is also notable for its strong emphasis on education and professional achievement, documented extensively in graduation and achievement photographs.
 

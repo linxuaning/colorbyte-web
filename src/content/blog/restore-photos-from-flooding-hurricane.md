@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🌀"
 ---
 
-# Restoring Photos After a Hurricane or Major Flood
 
 In the wake of a hurricane or major flood, families returning to damaged homes often find their photo albums — a lifetime of irreplaceable memories — submerged in water or coated in mud and debris. The physical and emotional challenge of this recovery is enormous, but many photos that look completely destroyed can actually be saved with prompt action and modern restoration technology. This guide covers both the physical rescue operation and the digital restoration that follows.
 

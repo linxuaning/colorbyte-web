@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🎇"
 ---
 
-# Restoring Fourth of July and Independence Day Photographs
 
 Fourth of July photographs document America's most visually spectacular annual celebration — the fireworks, the parades, the flag-decorated homes, the family gatherings in patriotic colors. These photographs range from the technically challenging (fireworks photographed at night) to the informal (backyard barbecues and neighborhood parades) to the formally documented (municipal celebrations and historic events). Each contributes to a family's documentation of how they celebrated the nation's birthday through the years.
 

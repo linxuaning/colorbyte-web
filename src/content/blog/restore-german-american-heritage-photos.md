@@ -13,7 +13,6 @@ coverColor: "from-yellow-600 via-black-700 to-red-800"
 coverEmoji: "🌟"
 ---
 
-# Restoring German American Heritage Photos: Family History from Two Wars
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every German American restoration is about more than technical quality.
 

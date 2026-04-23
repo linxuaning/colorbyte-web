@@ -13,7 +13,6 @@ coverColor: "from-gray-700 via-slate-600 to-zinc-500"
 coverEmoji: "🍎"
 ---
 
-# How to Restore Old Photos on Mac (2026 Guide)
 
 macOS has strong photo management and editing built in. If you have old family photos on your Mac — scanned or photographed — here's what Apple's tools can do, what they can't, and the fastest path to professional AI restoration.
 

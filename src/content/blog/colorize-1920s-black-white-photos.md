@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-yellow-700 to-gold-800"
 coverEmoji: "🎷"
 ---
 
-# How to Colorize 1920s Black and White Photos: Jazz Age in Color
 
 The Roaring Twenties were, photographically, a black-and-white decade. Almost every photograph from the era is monochrome. But the 1920s were also a particularly colorful era visually — Art Deco design, fashion, and nightlife all featured bold, saturated colors. AI colorization of 1920s photographs has to navigate this.
 

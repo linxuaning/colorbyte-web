@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-blue-600 to-sky-500"
 coverEmoji: "🏪"
 ---
 
-# Walmart Photo Restoration: What to Expect
 
 Walmart Photo is one of the most accessible photo printing services in the US — both online and in-store at over 3,000 locations. Many people assume that "photo services" includes restoration. Here's what Walmart Photo actually does.
 

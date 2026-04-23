@@ -13,7 +13,6 @@ coverColor: "from-teal-700 via-cyan-700 to-blue-600"
 coverEmoji: "🔄"
 ---
 
-# ArtImageHub vs Media.io for Old Photo Restoration
 
 Media.io (by Wondershare) is a browser-based AI media toolkit with tools for video, audio, and image editing — including a photo restorer. ArtImageHub is a dedicated old photo restoration pipeline. Both work in the browser and claim AI restoration, but the depth of restoration differs.
 

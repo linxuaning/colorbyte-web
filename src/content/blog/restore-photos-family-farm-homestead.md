@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🚜"
 ---
 
-# Restoring Family Farm and Homestead Photographs
 
 The family farm or homestead holds a special place in American family mythology — the specific piece of land that an ancestor cleared, cultivated, and passed down through generations. Photographs of these homesteads document not just buildings but the entire project of land stewardship that defined many families' relationship to place. When these photographs fade, they risk taking with them visual evidence of the specific landscapes that shaped family identity.
 

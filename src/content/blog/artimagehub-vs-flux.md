@@ -13,7 +13,6 @@ coverColor: "from-gray-800 via-slate-700 to-zinc-600"
 coverEmoji: "⚡"
 ---
 
-# ArtImageHub vs Flux for Old Photo Restoration
 
 Flux (by Black Forest Labs) is one of the newest and most capable AI image generation models — competing with Midjourney and DALL-E in image quality. ArtImageHub is a specialized pipeline for old photo restoration. Like all image generation models, Flux creates new images rather than restoring existing ones.
 

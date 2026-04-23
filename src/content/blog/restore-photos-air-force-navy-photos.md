@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "✈️"
 ---
 
-# Restoring Air Force and Navy Service Photos: The Other Branches of Service
 
 Military service photography encompasses more than army portraits. The Air Force and Navy produced their own photographic traditions — aviators in flight gear, sailors on deck, the specific environments of aviation and naval service.
 

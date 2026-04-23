@@ -13,7 +13,6 @@ coverColor: "from-blue-800 via-sky-700 to-cyan-700"
 coverEmoji: "🎬"
 ---
 
-# ArtImageHub vs Deep Nostalgia (MyHeritage) for Old Photos
 
 Deep Nostalgia is MyHeritage's viral photo animation feature — it makes old portrait photographs appear to move and look around. ArtImageHub is a specialized AI pipeline for old photo restoration. These tools are often searched together by people trying to improve old family photos, but they do fundamentally different things.
 

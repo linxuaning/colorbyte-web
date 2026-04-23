@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🗽"
 ---
 
-# Restoring Immigrant Arrival Photographs: Ellis Island and Beyond
 
 Few moments in family history have the dramatic significance of an ancestor's arrival in America — the moment when someone who lived their entire previous life in another country stepped onto American soil for the first time. Photographs documenting this moment, or the immediate aftermath of arrival, are among the most historically powerful images in immigrant family archives. When they exist at all (many immigrants were not photographed at arrival), they deserve the most careful preservation and restoration.
 

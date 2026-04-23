@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🚗"
 ---
 
-# Restoring Road Trip and Cross-Country Travel Photographs
 
 The family road trip is a quintessentially American experience, documented photographically from the earliest days of automobile travel. The photographs from these trips — in front of landmark signs, at roadside attractions, gathered around the car in the desert heat, documented at national parks and historical markers — create a visual record of both the journey and the family. When these travel photographs fade, restoring them recovers a specific kind of freedom-on-the-road memory that has no substitute.
 

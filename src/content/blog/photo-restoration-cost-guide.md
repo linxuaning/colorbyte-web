@@ -13,7 +13,6 @@ coverColor: "from-green-800 via-emerald-700 to-teal-600"
 coverEmoji: "💰"
 ---
 
-# How Much Does Photo Restoration Cost? (2026 Price Guide)
 
 The price range for photo restoration spans from free to several hundred dollars per photo. Here's what the different tiers actually deliver — and how to match the option to your situation.
 

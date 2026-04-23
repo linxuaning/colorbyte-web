@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "☕"
 ---
 
-# Restoring Garden Party and Tea Party Photos: Gracious Living Documented
 
 The garden party photograph documents a specific form of American social life — the outdoor gathering that celebrates good weather, good company, and the cultivated space of the garden as a social venue.
 

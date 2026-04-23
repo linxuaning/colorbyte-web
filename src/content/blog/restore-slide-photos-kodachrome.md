@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🎞️"
 ---
 
-# Restoring Kodachrome and 35mm Slide Photographs
 
 Kodachrome slides are among the most beautiful and historically significant photographic materials ever made. Introduced in 1935 and discontinued in 2010, Kodachrome produced colors of extraordinary saturation and stability — properly stored Kodachrome slides from the 1950s often look as vivid today as when they were first processed. But slides that were stored improperly, projected repeatedly, or exposed to light show characteristic deterioration that AI restoration can address.
 

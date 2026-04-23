@@ -12,7 +12,6 @@ coverColor: "from-blue-500 via-indigo-600 to-purple-700"
 coverEmoji: "🔬"
 ---
 
-# AI Image Enhancer: 7 Tools Tested in 2026 (With Real Before/After Results)
 
 My brother called me last Thanksgiving with a request I've heard a hundred times: "David, you're the photo guy — can you fix this?"
 

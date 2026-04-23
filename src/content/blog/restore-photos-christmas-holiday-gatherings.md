@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🎄"
 ---
 
-# Restoring Christmas and Holiday Gathering Photographs
 
 Christmas and holiday photographs occupy a special place in family archives — they're taken annually, creating a chronological record of family growth and change that no other type of photograph provides. The 1975 Christmas photo, the 1986 gathering, the 2003 celebration — each represents a moment in an ongoing family story. When these photos fade, restoring them doesn't just recover individual images; it repairs the continuity of a family's most cherished annual tradition.
 

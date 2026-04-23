@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🇺🇸"
 ---
 
-# Restoring American Flag and Holiday Patriotic Photos: National Celebration Heritage
 
 The 4th of July photograph is one of the most consistently taken annual photographs in American family archives — the family in front of the house with flags, the parade, the fireworks (rarely successful with consumer cameras), the backyard celebration.
 

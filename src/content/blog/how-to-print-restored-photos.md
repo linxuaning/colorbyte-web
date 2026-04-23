@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🖼️"
 ---
 
-# How to Print Restored Photos: A Guide to Getting It Right
 
 Once you've restored an old photograph using AI tools, the natural next step is often printing it — for framing, for gifting, for inclusion in a photo book, or to replace a damaged print with a clean new version. Getting the printing right is as important as the restoration itself: a beautiful restoration printed at the wrong resolution or through the wrong service will look disappointing. Here's what you need to know.
 

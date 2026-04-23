@@ -13,7 +13,6 @@ coverColor: "from-rose-400 via-pink-500 to-fuchsia-600"
 coverEmoji: "🌸"
 ---
 
-# The Best Mother's Day Gift 2026: Restore Her Old Family Photos
 
 Mother's Day 2026 is May 11. If you're looking for a gift that actually means something — not another candle, not another spa card — consider giving your mom something irreplaceable.
 

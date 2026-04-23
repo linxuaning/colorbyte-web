@@ -12,7 +12,6 @@ coverColor: "from-slate-600 via-gray-700 to-zinc-800"
 coverEmoji: "💰"
 ---
 
-# Photo Restoration Cost in 2026: What You'll Actually Pay (AI vs Professional)
 
 Sandra found me through a Google search at 11 p.m. on a Tuesday. She'd just gotten a quote from a professional restoration studio — $400 for a single photo — and she wasn't sure if that was normal or if she'd been taken for a ride.
 

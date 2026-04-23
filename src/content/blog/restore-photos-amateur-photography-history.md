@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "📷"
 ---
 
-# Restoring Photographs from the Amateur Photography Revolution
 
 The story of family photography is the story of a technology becoming so affordable and accessible that ordinary families could document their own lives in detail. Before the late 19th century, photographs were rare and expensive — owned only by families prosperous enough to visit commercial studios. The introduction of the Kodak Brownie camera in 1900, the introduction of 35mm film in the 1930s, the development of affordable color film in the 1950s, and the digital revolution of the 2000s successively brought photographic self-documentation within reach of everyone. AI restoration is the next chapter in this democratization.
 

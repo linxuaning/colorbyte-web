@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🎒"
 ---
 
-# Restoring Back-to-School Photos from the 1950s-1980s: First Day Memories
 
 The first-day-of-school photograph is a specific American ritual. The child, newly dressed, stands at the front door or the end of the driveway with a backpack too large for their frame. The parents photograph what they're seeing: the beginning of another year, the passage of time made visible.
 

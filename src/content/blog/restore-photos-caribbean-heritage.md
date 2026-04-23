@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🌊"
 ---
 
-# Restoring Caribbean American Family Photographs
 
 Caribbean American families come from dozens of island nations and territories with distinct histories, cultures, and photographic traditions. Jamaicans, Trinidadians and Tobagonians, Barbadians, Haitians, Guyanese, and immigrants from smaller Eastern Caribbean islands have all built significant communities in the United States, particularly in New York, South Florida, New England, and other coastal cities. Despite their geographic proximity, each Caribbean nation has its own photographic history reflecting its colonial heritage — British, French, Spanish, or Dutch — and its specific social conditions.
 

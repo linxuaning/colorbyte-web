@@ -13,7 +13,6 @@ coverColor: "from-red-800 via-rose-800 to-pink-900"
 coverEmoji: "💊"
 ---
 
-# CVS Photo Restoration: What CVS Can (and Can't) Do
 
 If you're thinking about bringing old family photos to CVS for restoration, here's what you need to know upfront:
 

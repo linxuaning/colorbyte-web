@@ -13,7 +13,6 @@ coverColor: "from-slate-700 via-gray-700 to-zinc-600"
 coverEmoji: "🖨️"
 ---
 
-# How to Digitize Old Photos (Before Restoring Them)
 
 Before AI restoration can work its best, the input scan matters. Here's how to digitize old family photographs properly — covering equipment, settings, free options, and common mistakes.
 

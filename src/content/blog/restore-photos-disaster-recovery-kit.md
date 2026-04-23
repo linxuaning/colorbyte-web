@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🛡️"
 ---
 
-# Creating a Disaster Recovery Plan for Your Photo Collection
 
 Most families don't think about photo disaster recovery until they're confronted with a disaster — the house fire, the flood, the tornado — and suddenly realize that irreplaceable photographs are at risk or already lost. Creating a photo disaster recovery plan before disaster strikes is a straightforward project that provides enormous peace of mind and can make the difference between recovering cherished photographs and losing them permanently.
 

@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "⛺"
 ---
 
-# Restoring Camping and Outdoor Adventure Photographs
 
 Family camping and outdoor adventure photographs capture a specific form of family experience: the shared simplicity of life stripped back to essentials, the beauty of landscapes that provide the setting, and the particular intimacy of families spending uninterrupted time together away from ordinary life. Whether documenting camping trips to national parks, family hiking adventures, or backyard camping, these photographs are among the most treasured in family archives for the memories of freedom and connection they represent.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "⛪"
 ---
 
-# Restoring Church and Congregation Photographs
 
 Church and congregation photographs occupy a unique position in both family and community archives: they document the religious community that in many families provided the social framework for significant life events — baptisms, confirmations, weddings, funerals — while also documenting an important form of community organization and social life. Many churches and religious organizations maintain photographic archives that are poorly preserved; individual families who have copies of congregation photographs may hold the only surviving documentation of specific communities.
 

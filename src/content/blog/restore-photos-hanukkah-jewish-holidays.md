@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🕎"
 ---
 
-# Restoring Hanukkah and Jewish Holiday Family Photos: Festival of Lights Heritage
 
 Jewish holiday photographs document a specific calendar of family gatherings — the Seder table, the Hanukkah menorah, the High Holiday clothing, the family assembled at the table for specific holiday meals.
 

@@ -12,7 +12,6 @@ coverColor: "from-purple-600 via-pink-600 to-rose-700"
 coverEmoji: "🎨"
 ---
 
-# AI Photo Colorization in 2026: Bring Your Black & White Photos to Life
 
 The photograph was taken in 1943. A young man in military dress, maybe 22 years old, stands in front of what looks like a barracks building. He's smiling—one of those slightly awkward smiles people make when they're told to hold still. The photo's been in a box for decades. Nobody who remembers him well enough to describe his hair color or the exact shade of his uniform is still alive.
 

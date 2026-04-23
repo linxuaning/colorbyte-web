@@ -14,7 +14,6 @@ coverEmoji: "🎨"
 featured: false
 ---
 
-# How to Colorize Old Photos: The Complete 2026 Guide
 
 ## Quick Answer
 

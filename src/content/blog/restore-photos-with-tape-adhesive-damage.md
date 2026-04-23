@@ -13,7 +13,6 @@ coverColor: "from-yellow-600 via-lime-700 to-green-800"
 coverEmoji: "📌"
 ---
 
-# Restoring Photos with Tape and Adhesive Damage
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every tape restoration is about more than technical quality.
 

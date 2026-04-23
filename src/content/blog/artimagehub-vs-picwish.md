@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-emerald-700 to-teal-800"
 coverEmoji: "🆚"
 ---
 
-# ArtImageHub vs PicWish for Old Photo Restoration
 
 PicWish is a popular AI photo enhancement tool with a large user base. ArtImageHub is purpose-built for old photo restoration using CodeFormer, GFPGAN, and Real-ESRGAN. Both deal with image quality — but they were built for different primary use cases.
 

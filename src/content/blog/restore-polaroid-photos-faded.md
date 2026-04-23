@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "📷"
 ---
 
-# Restoring Faded Polaroid Photographs
 
 Polaroid photographs occupy a distinctive place in family archives: they're the original instant gratification photographs, produced by the camera in minutes and passed around immediately for viewing. Their distinctive square format (in the classic Polaroid SX-70 style) and the particular color rendering of Polaroid chemistry give them an instantly recognizable aesthetic. But Polaroid photographs are among the least stable of all photographic formats, and many family collections have Polaroids that have faded dramatically over 40-50 years. If your fading is from sun exposure specifically, see our guide on [fixing sun damaged photos](/blog/fix-sun-damaged-photos).
 

@@ -14,7 +14,6 @@ coverEmoji: "🌳"
 featured: false
 ---
 
-# Genealogy Photo Restoration: The Complete Family History Guide
 
 ## Quick Answer
 

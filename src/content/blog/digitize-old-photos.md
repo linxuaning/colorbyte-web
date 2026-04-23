@@ -12,7 +12,6 @@ coverColor: "from-violet-500 via-purple-600 to-indigo-700"
 coverEmoji: "📷"
 ---
 
-# How to Digitize Old Photos in 2026: The Complete Guide (Scanner vs Phone vs Service)
 
 My mother called me on a Sunday afternoon in October to tell me they were selling the house. My parents had lived in that house for 38 years. I drove over that evening, and while my mother made tea and my father watched football in the other room, I started going through the hall closet where, behind the winter coats and the box of mystery cables and the baby shoes she'd never thrown away, I found it.
 

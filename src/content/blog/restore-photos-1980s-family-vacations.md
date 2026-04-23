@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "✈️"
 ---
 
-# Restoring 1980s Family Vacation Photographs
 
 Family vacation photographs from the 1980s document an era of enthusiastic middle-class travel and the specific consumer culture that accompanied it: the Bermuda shorts and polo shirts, the camcorders and point-and-shoot cameras, the hotel chains and theme parks that defined 1980s family tourism. These photographs, now 35-45 years old, show characteristic color degradation that strips the decade of its signature color intensity. Restoration recovers the bold, bright color aesthetic that was intentional and distinctive in the 1980s.
 

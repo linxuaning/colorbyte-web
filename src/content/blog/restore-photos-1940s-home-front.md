@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🏠"
 ---
 
-# Restoring 1940s Home Front Photographs
 
 The home front of World War II produced a distinctive genre of family photographs: families gathered around the radio for war news, women in factory work clothes, children tending victory gardens, front windows displaying service stars. These images capture a moment when every family was touched by the war even if their soldier wasn't home. The photographs document a specific kind of national collective experience that has no modern equivalent.
 

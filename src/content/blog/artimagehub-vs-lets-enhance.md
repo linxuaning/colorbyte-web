@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-600 to-emerald-700"
 coverEmoji: "🔍"
 ---
 
-# ArtImageHub vs Let's Enhance: Old Photo Restoration Compared
 
 Let's Enhance is a well-known AI upscaling and image enhancement tool, popular with photographers and designers who need to increase image resolution. It has a clean interface and produces sharp results on modern photography.
 

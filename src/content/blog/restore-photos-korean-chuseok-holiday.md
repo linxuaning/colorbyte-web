@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🌕"
 ---
 
-# Restoring Korean Chuseok and Seollal Family Photos: Korean Heritage Celebrations
 
 Chuseok and Seollal are the most significant family gathering occasions in the Korean calendar — the harvest festival and lunar new year that traditionally brought extended families together across distances. For Korean American families, these occasions continue in adapted forms.
 

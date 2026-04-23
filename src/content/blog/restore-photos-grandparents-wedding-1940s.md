@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "💒"
 ---
 
-# Restoring Grandparents' 1940s Wedding Photos: A Specific Decade's Beauty
 
 The 1940s grandparents' wedding photographs are among the most requested restoration projects I receive — the combination of historical distance (80 years), personal significance, and the specific aesthetic of 1940s formal photography creates a particularly meaningful restoration challenge.
 

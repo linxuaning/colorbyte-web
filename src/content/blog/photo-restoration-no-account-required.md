@@ -14,7 +14,6 @@ coverEmoji: "🔓"
 featured: false
 ---
 
-# Restore Old Photos Online Without Creating an Account (2026)
 
 Most photo restoration tools want something from you before they'll let you use them. An email address. A phone number. A password. Sometimes a credit card "for verification."
 

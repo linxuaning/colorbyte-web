@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "💧"
 ---
 
-# How to Restore a Water Damaged Photo Album
 
 The album is, in some ways, a worse situation than loose photographs when water damage occurs. The album structure — pages, binding, covers — holds the photographs in sustained contact with moisture and with each other. Photographs that might have dried separately in loose storage are stuck together under the pressure of a swollen album.
 

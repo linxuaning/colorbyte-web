@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🔒"
 ---
 
-# Photo Restoration Privacy: What Happens to Your Photos?
 
 When you upload precious family photographs to a web-based restoration service, you're trusting that service with irreplaceable personal images. Understanding how these services handle your photos — what they store, how long they keep it, whether they use it for training AI models — is a reasonable concern, and one that responsible services address transparently.
 

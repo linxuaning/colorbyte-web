@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "♿"
 ---
 
-# Restoring Photos That Include Family Members With Disabilities
 
 Family photographs often include members who used mobility aids, had visible physical differences, or experienced disabilities that shaped their lives and their visual presence in family images. Historically, family photographs sometimes deliberately excluded or minimized the visibility of disabled family members — a reflection of the stigma and exclusion that disabled people faced throughout much of the 20th century. Restoring and preserving photographs that honestly document disabled family members' full participation in family life is an act of inclusive historical recognition.
 

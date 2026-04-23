@@ -13,7 +13,6 @@ coverColor: "from-slate-700 via-gray-800 to-zinc-900"
 coverEmoji: "🎖️"
 ---
 
-# Memorial Day 2026: Restore Old Military Photos to Honor Veterans
 
 Memorial Day 2026 is May 25.
 

@@ -14,7 +14,6 @@ coverEmoji: "🖼️"
 featured: false
 ---
 
-# How to Give Restored Photos as a Gift
 
 You've done the work: found the damaged photo, scanned it, run it through [AI restoration](/old-photo-restoration), and downloaded a vivid, sharp version that looks better than the original ever did in living memory. Now comes the question most guides skip over.
 

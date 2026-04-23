@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🎄"
 ---
 
-# Restoring 1960s Christmas and Winter Holiday Photographs
 
 Christmas photographs from the 1960s capture one of the most distinctive eras in American holiday aesthetics: the specific mix of mid-century modern and traditional that characterized 1960s home décor, the specific toys and consumer goods of the Kennedy and Johnson eras, and the fashions and hairstyles that immediately evoke the decade. These photographs often feature the transition from black-and-white photography to the early color that increasingly documented family life through the decade.
 

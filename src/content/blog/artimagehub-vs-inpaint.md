@@ -13,7 +13,6 @@ coverColor: "from-amber-700 via-orange-700 to-red-600"
 coverEmoji: "🩹"
 ---
 
-# ArtImageHub vs Inpaint for Old Photo Restoration
 
 Inpaint (Teorex Inpaint) is a dedicated object removal tool — paint over something, and the software fills the area based on surrounding pixels. ArtImageHub is an AI pipeline built specifically for old photo restoration. They overlap in one narrow area (removing visible damage) but differ everywhere else.
 

@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🔩"
 ---
 
-# Restoring Steel Mill and Steelworker Family Photographs
 
 Steel mill photographs document an era of American industrial power and the communities it created. The steel towns of the Monongahela Valley, the iron ranges of Minnesota, the steel districts of Gary and Chicago, the Bethlehem Steel complex in Pennsylvania — these were the physical and social centers of communities that defined the American industrial Midwest and East. For the families who lived and worked in these communities, photographs of the mills and the people who worked them document a heritage that has largely disappeared with the contraction of American steel production.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "✡️"
 ---
 
-# Restoring Jewish Family Heritage Photos: Holocaust Era and Family History
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every Jewish restoration is about more than technical quality.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-cyan-700 to-blue-800"
 coverEmoji: "💧"
 ---
 
-# How to Fix Water Stained Family Photos: DIY and AI Solutions
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every water stains restoration is about more than technical quality.
 

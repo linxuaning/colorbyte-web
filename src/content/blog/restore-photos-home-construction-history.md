@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🏗️"
 ---
 
-# Restoring Photos of the Family Home Being Built
 
 Some families were lucky enough to have their home built and documented photographically — photos of the foundation being poured, the frame going up, the exterior taking shape. These construction documentation photographs have a special status in family archives: they show the house as a process, not just a fixed object, and they document the moment when what would become the setting of decades of family life came into existence. When they age, restoring them is worth the effort.
 

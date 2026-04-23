@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🍔"
 ---
 
-# Restoring Backyard Barbecue and Summer Party Photos: Decades of Summer Memories
 
 The backyard barbecue photograph occupies a specific place in American family archives: informal, genuinely spontaneous, shot by whoever had the camera at the moment, capturing the kind of ordinary joy that formal portrait photography missed entirely.
 

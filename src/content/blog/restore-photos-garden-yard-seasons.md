@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🌻"
 ---
 
-# Restoring Garden and Yard Photographs: Documenting Growing Things
 
 Garden photographs are undervalued in family archives. The vegetable garden, the rose bed, the fruit trees that someone planted and tended for decades — these photographs document care and work and the specific aesthetics of a person's relationship with growing things.
 

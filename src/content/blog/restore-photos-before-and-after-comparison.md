@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🔄"
 ---
 
-# How to Show Before and After Photo Restoration Results
 
 The before-and-after comparison is one of the most effective ways to communicate the value of photo restoration to family members who may be skeptical about the technology. Seeing the original damaged photograph alongside the restored version — often dramatically different in quality — makes the transformation tangible in a way that descriptions cannot. Creating effective before-and-after presentations is itself a skill worth mastering.
 

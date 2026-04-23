@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🎓"
 ---
 
-# Restoring Graduation Day Photographs
 
 Graduation photographs mark one of life's clearest milestones — the visible, ceremonial transition from one stage of life to the next. Whether it's a high school graduation in the gymnasium, a college commencement on the quad, or a professional degree ceremony, these photos document achievement with the particular formality of cap, gown, and diploma. When they fade, restoring them recovers a moment that cannot be re-staged.
 

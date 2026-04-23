@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🎺"
 ---
 
-# Restoring Blues and Jazz Era Photos: The Roots of American Music Documented
 
 Blues and jazz photographs from the 1920s-1960s document the development of the most influential musical traditions in American cultural history. For families with connections to this music — as performers, as community members in the neighborhoods where it flourished — these photographs are personal history and cultural history simultaneously.
 

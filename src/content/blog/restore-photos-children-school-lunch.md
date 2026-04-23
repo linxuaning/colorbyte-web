@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🍎"
 ---
 
-# Restoring School Cafeteria and Lunch Program Photos: Daily School Life
 
 School photographs focus on formal occasions: the class portrait, graduation, sports teams. But everyday school life — the cafeteria, the playground, the classroom during a lesson — was also photographed, usually by teachers or school photographers documenting programs.
 

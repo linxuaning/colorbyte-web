@@ -13,7 +13,6 @@ coverColor: "from-slate-700 via-gray-600 to-zinc-500"
 coverEmoji: "↔️"
 ---
 
-# Old Photo Restoration Before and After: What AI Actually Does
 
 Before-and-after examples of AI photo restoration can look dramatic — but expectations matter. Here's an honest look at what AI restoration actually changes, what types of photos see the biggest improvement, and what can't be recovered.
 

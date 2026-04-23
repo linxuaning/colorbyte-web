@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🏚️"
 ---
 
-# Restoring Photos Found in the Attic: What to Expect
 
 Few discoveries spark more excitement and nostalgia than opening a cardboard box in the attic and finding old family photographs. But attic storage is one of the worst possible environments for photographic materials — the combination of heat (attics can reach 140°F in summer), humidity fluctuations, and dust creates ideal conditions for accelerated deterioration. What you find in that attic box may range from surprisingly well-preserved to severely damaged. Here's what to expect, and what can be done.
 

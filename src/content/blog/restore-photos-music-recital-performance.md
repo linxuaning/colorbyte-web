@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎹"
 ---
 
-# Restoring Music Recital and Performance Photos: The Young Musician Documented
 
 The music recital photograph is a specific milestone in many American childhoods — the first public performance, the annual demonstration of progress, the specific anxiety and pride that the piano recital or school band concert produces.
 

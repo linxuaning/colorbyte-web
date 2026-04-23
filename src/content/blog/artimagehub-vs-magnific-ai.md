@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-700 via-pink-700 to-rose-600"
 coverEmoji: "✨"
 ---
 
-# ArtImageHub vs Magnific AI for Old Photo Restoration
 
 Magnific AI (magnific.ai) is an AI upscaling and "reimagining" tool that went viral in late 2023 for its ability to dramatically enhance and add detail to images. ArtImageHub is a specialized pipeline for old photo restoration. Here's an honest comparison for old family photograph restoration.
 

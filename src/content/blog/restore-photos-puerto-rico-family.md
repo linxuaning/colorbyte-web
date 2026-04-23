@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🌺"
 ---
 
-# Restoring Puerto Rican Family Photos: Island Heritage and Diaspora History
 
 Puerto Rican family archives document two geographies: the island and the mainland. The photographs often cross between these worlds — images from Ponce or San Juan sent to family in New York, photographs from the Bronx or Chicago sent back to relatives who remained.
 

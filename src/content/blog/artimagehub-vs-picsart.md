@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-violet-600 to-indigo-500"
 coverEmoji: "🎭"
 ---
 
-# ArtImageHub vs Picsart for Old Photo Restoration
 
 Picsart is one of the most popular creative photo editing platforms — over 150 million monthly active users across mobile and web. ArtImageHub is a specialized AI pipeline for old photo restoration. Both handle photos; they serve very different purposes.
 

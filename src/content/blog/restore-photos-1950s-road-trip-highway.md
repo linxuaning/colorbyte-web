@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🛣️"
 ---
 
-# Restoring 1950s Road Trip and Highway Photos: The Open Road Generation
 
 The 1950s highway photograph documents the birth of American road culture: the new interstate highways, the motels, the diners, the roadside attractions, and the automobiles — more powerful and comfortable than any generation before had driven.
 

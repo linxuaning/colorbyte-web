@@ -13,7 +13,6 @@ coverColor: "from-purple-700 via-violet-700 to-indigo-600"
 coverEmoji: "💄"
 ---
 
-# ArtImageHub vs Facetune for Old Photo Restoration
 
 Facetune is one of the most popular portrait retouching apps — millions of users use it to enhance selfies and modern portraits. ArtImageHub is a specialized AI pipeline for old photo restoration. Both touch faces and improve photographs; they're built for entirely different problems.
 

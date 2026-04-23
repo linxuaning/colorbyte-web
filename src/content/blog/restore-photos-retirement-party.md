@@ -13,7 +13,6 @@ coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🎈"
 ---
 
-# Restoring Retirement Party and Farewell Photographs
 
 Retirement party photographs capture a specific social world that exists nowhere else: the assembled colleagues, managers, and subordinates who have shared a professional life with the honoree for 20, 30, or 40 years. These photographs document relationships that are not family but have shaped life as profoundly as family — the co-workers who provided daily companionship, challenged professional growth, and witnessed decades of work. When these photos fade, restoring them recovers documentation of a social world that may now exist only in these images.
 

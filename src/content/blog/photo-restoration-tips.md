@@ -13,7 +13,6 @@ coverColor: "from-indigo-700 via-blue-700 to-sky-600"
 coverEmoji: "💡"
 ---
 
-# 10 Photo Restoration Tips for Better Results
 
 AI photo restoration has transformed what's possible for old family photographs, but results vary based on inputs and expectations. These tips will help you get the best possible outcome.
 

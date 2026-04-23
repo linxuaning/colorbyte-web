@@ -13,7 +13,6 @@ coverColor: "from-red-600 via-orange-700 to-amber-800"
 coverEmoji: "🏮"
 ---
 
-# Restoring Chinese Immigrant Family Photos: Preserving a New World Story
 
 The photograph is from Chinatown, San Francisco, circa 1910. A family of six is arranged formally before a photographer's backdrop: the father in Western business dress, the mother in traditional Chinese clothing, the children somewhere in between. The photograph had been kept in the family for over a century, passing through the 1906 earthquake's aftermath, through the Depression, through WWII, to land finally on Michael's dining room table.
 

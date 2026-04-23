@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🎂"
 ---
 
-# Restoring 1970s Children's Birthday Party Photos: Cake, Games, and Kodacolor
 
 The 1970s children's birthday party photograph has a specific aesthetic: the kitchen or living room temporarily transformed, the sheet cake from the grocery store bakery, the streamers hung in ways that physics eventually defeated. And the children — in their earth tones and corduroy, in their polyester and plaid.
 

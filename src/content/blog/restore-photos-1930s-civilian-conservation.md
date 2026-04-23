@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌲"
 ---
 
-# Restoring 1930s Civilian Conservation Corps Photos: New Deal Youth at Work
 
 The Civilian Conservation Corps was one of the New Deal's most successful programs, employing over 3 million young men from 1933 to 1942. The CCC had its own visual record: official program photographs, informal camp photographs, and the personal photographs that corps members kept.
 

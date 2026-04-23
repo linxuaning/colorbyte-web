@@ -13,7 +13,6 @@ coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🎗️"
 ---
 
-# Restoring Military Homecoming Photographs
 
 Military homecoming photographs capture some of the most emotionally intense moments in family life: the moment a service member's spouse and children see them after months or years of separation. These images — often taken in airports or at base welcome-home ceremonies — have a raw emotional quality that distinguishes them from almost any other type of family photograph. The running child, the embrace, the tears, the relief visible on every face in the frame. When these photographs fade or are damaged, restoring them recovers something close to irreplaceable.
 

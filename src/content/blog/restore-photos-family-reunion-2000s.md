@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "💾"
 ---
 
-# Restoring Early 2000s Family Reunion Photos: The Digital Transition
 
 The early 2000s family reunion was documented in a new way: the digital camera was replacing film for many families, and the photographs have a different character than the film photographs they replaced. Lower resolution, JPEG compression, the specific color rendering of early digital sensors.
 

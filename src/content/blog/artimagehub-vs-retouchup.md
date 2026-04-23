@@ -13,7 +13,6 @@ coverColor: "from-purple-700 via-violet-700 to-indigo-800"
 coverEmoji: "⚖️"
 ---
 
-# ArtImageHub vs Retouch Up
 
 Retouch Up is a professional manual photo restoration service — human editors use Photoshop to restore damaged photographs. ArtImageHub uses an AI pipeline (CodeFormer + GFPGAN + Real-ESRGAN) to restore old photos automatically.
 

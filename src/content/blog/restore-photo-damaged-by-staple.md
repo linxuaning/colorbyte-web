@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📎"
 ---
 
-# Restoring Photos Damaged by Staples: Removing Metal Marks and Rust Stains
 
 Staples in photograph albums were a standard practice for decades before archivists understood the damage they cause. A metal staple through a photographic print creates two problems: the physical hole and the rust stain that spreads outward from the metal as it oxidizes.
 

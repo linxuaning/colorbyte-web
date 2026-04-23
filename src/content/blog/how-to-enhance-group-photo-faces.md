@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-cyan-800"
 coverEmoji: "👥"
 ---
 
-# How to Enhance Individual Faces in Group Photos: Targeting Specific People
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every group faces restoration is about more than technical quality.
 

@@ -13,7 +13,6 @@ coverColor: "from-green-700 via-teal-700 to-cyan-600"
 coverEmoji: "🤖"
 ---
 
-# How to Restore Old Photos on Android (2026 Guide)
 
 If you have old family photos — scanned and saved to your Android device, or photographed from physical prints — here's what Android's built-in tools can handle and the fastest path to professional-quality AI restoration.
 

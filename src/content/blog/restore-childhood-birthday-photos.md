@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-pink-700 to-rose-800"
 coverEmoji: "🎈"
 ---
 
-# Restoring Childhood Birthday Photos: Decades of Celebrations Recovered
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every childhood restoration is about more than technical quality.
 

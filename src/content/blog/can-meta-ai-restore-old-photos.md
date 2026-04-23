@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-indigo-700 to-violet-600"
 coverEmoji: "🦙"
 ---
 
-# Can Meta AI Restore Old Photos?
 
 Meta AI is Meta's conversational AI assistant — available across Facebook, Instagram, WhatsApp, and as a standalone product. Built on Llama models. If you're wondering whether it can restore old family photographs:
 

@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "📸"
 ---
 
-# Restoring Medium Format and Large Format Film Photographs
 
 Medium format (120 film) and large format (4x5, 5x7, 8x10 inch sheet film) photographs represent the highest quality available in film photography. Used by professional photographers, serious amateurs, and portrait studios from the 1880s through the present day, these larger film formats capture detail at a resolution that no 35mm film or early digital camera could match. Family photographs made on medium or large format are often the sharpest, most detailed images in the archive — making their restoration particularly rewarding.
 

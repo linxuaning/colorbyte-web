@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎨"
 ---
 
-# How to Colorize Black and White Photos with AI
 
 For many families, the most treasured photographs are also the most alien-looking to modern eyes: black and white images of grandparents as young adults, great-grandparents at work, children playing in a world that exists only in monochrome. AI colorization has transformed the experience of connecting with these images by adding realistic, historically-informed color — turning historical documents into living portraits.
 

@@ -13,7 +13,6 @@ coverColor: "from-amber-700 via-orange-600 to-yellow-500"
 coverEmoji: "🎨"
 ---
 
-# How to Colorize Old Black and White Photos with AI
 
 AI colorization has transformed black-and-white photographs from archival curiosities into vivid family moments. Here's how AI colorization works, what it can and can't know, and how to get the best results.
 

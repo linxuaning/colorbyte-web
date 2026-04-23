@@ -13,7 +13,6 @@ coverColor: "from-orange-700 via-amber-700 to-yellow-700"
 coverEmoji: "📱"
 ---
 
-# ArtImageHub vs Photomyne
 
 Photomyne and ArtImageHub are often compared by people looking to deal with old family photos — but they actually do different things. Understanding the distinction helps you use both correctly, or choose the right one for your specific need.
 

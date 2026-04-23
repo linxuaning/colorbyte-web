@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🌐"
 ---
 
-# Uploading Restored Photos to Genealogy Websites
 
 Genealogy platforms like Ancestry.com, FamilySearch.org, and MyHeritage.com allow users to attach photographs to family tree profiles, creating visual records that connect restored images to the biographical information gathered in genealogical research. Uploading restored photographs to these platforms makes them accessible to other researchers working on the same family lines and preserves them in a way that survives any single family member's hardware or storage failures.
 

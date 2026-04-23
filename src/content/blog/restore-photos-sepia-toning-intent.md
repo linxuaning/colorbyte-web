@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🟤"
 ---
 
-# Understanding Sepia-Toned Photos: Intentional Toning vs. Age-Related Fading
 
 Not every brown photograph started out brown. Some photographs were intentionally toned warm — sepia toning was applied as a preservation treatment, sometimes as an aesthetic choice, by professional photographers from the 1890s through the 1940s. Others have faded to brown through silver migration and paper aging.
 

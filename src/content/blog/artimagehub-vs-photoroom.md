@@ -13,7 +13,6 @@ coverColor: "from-sky-700 via-blue-600 to-indigo-500"
 coverEmoji: "🖼️"
 ---
 
-# ArtImageHub vs PhotoRoom for Old Photo Restoration
 
 PhotoRoom (photoroom.com) is an AI-powered background removal and product photography tool — popular with e-commerce sellers and social media creators. ArtImageHub is a specialized pipeline for old photo restoration. People sometimes encounter both when searching for AI photo tools; they solve very different problems.
 

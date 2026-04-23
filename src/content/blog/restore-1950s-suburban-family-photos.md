@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-cyan-700 to-teal-800"
 coverEmoji: "🏡"
 ---
 
-# Restoring 1950s Suburban Family Photos: Baby Boom Era Guide
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every 1950s restoration is about more than technical quality.
 

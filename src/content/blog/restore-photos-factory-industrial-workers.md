@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🔧"
 ---
 
-# Restoring Photographs of Factory and Industrial Workers
 
 Photographs of factory and industrial workers document a form of American work experience that shaped the 20th century: the steel mills, auto plants, textile factories, coal mines, and manufacturing operations that built American prosperity and created the middle class. These photographs — taken in the specific settings of specific industries — document both the physical conditions of industrial work and the faces and identities of the people who did it. Restoring them honors working-class family heritage that often goes undocumented in mainstream historical narratives.
 

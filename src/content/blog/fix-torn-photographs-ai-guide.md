@@ -14,7 +14,6 @@ coverEmoji: "🩹"
 featured: false
 ---
 
-# Fix Torn Photographs with AI: A Restorer's 2026 Repair Guide
 
 ## Quick Answer
 

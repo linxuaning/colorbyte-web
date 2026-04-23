@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🎊"
 ---
 
-# Restoring V-J Day and Victory Celebration Photos from 1945
 
 The V-J Day photograph from Times Square — Alfred Eisenstaedt's iconic sailor-and-nurse image — is one of the most reproduced photographs of the 20th century. But for every photograph that became famous, thousands more were taken by ordinary people celebrating an extraordinary moment.
 

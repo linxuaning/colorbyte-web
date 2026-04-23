@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "⚾"
 ---
 
-# Restoring 1980s Sports and Little League Photos: Youth Athletics Remembered
 
 The Little League team photograph is a specific genre of American childhood photography: the whole team arranged in rows, coaches at the ends, everyone in their uniforms, squinting into the sun at the same angle. Tens of millions of these photographs were taken between the 1950s and the 1990s.
 

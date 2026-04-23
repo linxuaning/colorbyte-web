@@ -14,7 +14,6 @@ coverEmoji: "💧"
 featured: false
 ---
 
-# How to Restore Water Damaged Photos: Complete Recovery Guide (2026)
 
 It's 2 AM. A pipe burst in the ceiling above the box labeled "Family Photos 1940–1980." By morning, 40 years of irreplaceable prints are soaked, stuck together, and starting to smell like mold.
 

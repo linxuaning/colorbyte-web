@@ -13,7 +13,6 @@ coverColor: "from-red-700 via-rose-700 to-pink-700"
 coverEmoji: "🅰️"
 ---
 
-# ArtImageHub vs Adobe Express for Old Photo Restoration
 
 Adobe Express is Adobe's free, simplified design and photo tool — positioned as an accessible alternative to Photoshop for everyday users. ArtImageHub is a specialized AI pipeline for old photo restoration. Both are browser-based and handle photos; their capabilities for old photograph restoration are very different.
 

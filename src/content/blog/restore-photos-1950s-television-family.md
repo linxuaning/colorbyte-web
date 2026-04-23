@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📺"
 ---
 
-# Restoring 1950s Television and Family Gathering Photos: The New Electronic Hearth
 
 The arrival of the television in American homes in the late 1940s and 1950s was a cultural event, and families photographed it as such. The new TV set appeared in family photographs not just as furniture but as a statement: we have entered the television age.
 

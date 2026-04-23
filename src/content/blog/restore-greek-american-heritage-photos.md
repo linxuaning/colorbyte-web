@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-white-700 to-blue-800"
 coverEmoji: "🏛️"
 ---
 
-# Restoring Greek American Heritage Photos: Mediterranean Family Legacy
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every Greek American restoration is about more than technical quality.
 

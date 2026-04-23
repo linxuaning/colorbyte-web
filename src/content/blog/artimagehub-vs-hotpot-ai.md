@@ -13,7 +13,6 @@ coverColor: "from-red-600 via-orange-600 to-yellow-500"
 coverEmoji: "🍲"
 ---
 
-# ArtImageHub vs Hotpot AI for Old Photo Restoration
 
 Hotpot AI (hotpot.ai) is an AI toolkit offering multiple image processing tools — including photo restoration, colorization, background removal, and image generation. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare for the specific task of restoring old family photographs. Other multi-tool AI suites take a similar approach — see our [Media.io comparison](/blog/artimagehub-vs-media-io) for a parallel breakdown of a general-purpose AI media toolkit.
 

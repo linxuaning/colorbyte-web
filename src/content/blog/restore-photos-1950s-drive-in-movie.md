@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🎬"
 ---
 
-# Restoring 1950s Drive-In Movie Photos: A Uniquely American Evening Out
 
 The drive-in movie theater was one of the great American cultural inventions of the postwar period, and the drive-in photograph has a specific quality: the car in the foreground, the screen in the background, everything bathed in the light that leaked from the projection booth.
 

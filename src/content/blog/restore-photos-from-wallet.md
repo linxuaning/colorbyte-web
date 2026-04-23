@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "👛"
 ---
 
-# Restoring Photos Carried in a Wallet: Recovery from Years of Pocket Life
 
 The wallet photograph is a specific type of damage: the photograph that was kept in a wallet and carried daily for years, sometimes decades. The damage patterns are characteristic — fold lines from wallet creases, compression marks from the wallet's pressure, sweat and moisture damage from body contact.
 

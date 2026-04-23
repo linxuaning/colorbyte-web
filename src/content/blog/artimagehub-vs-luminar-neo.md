@@ -13,7 +13,6 @@ coverColor: "from-violet-700 via-purple-700 to-fuchsia-800"
 coverEmoji: "⚡"
 ---
 
-# ArtImageHub vs Luminar Neo for Old Photo Restoration
 
 Luminar Neo is a modern AI photo editor from Skylum, marketed heavily on its AI features. ArtImageHub is a specialized AI pipeline for old photograph restoration. Both involve AI and photos — but for different use cases.
 

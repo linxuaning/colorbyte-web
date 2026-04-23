@@ -13,7 +13,6 @@ coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🕊️"
 ---
 
-# Photo Restoration in Hospice Care: Creating End-of-Life Legacies
 
 Hospice care invites families to participate in creating a dying person's legacy — the final documentation of a life fully lived. Photographs play a central role in this process: reviewing a lifetime of photographs with a dying family member creates opportunities for life review (a recognized therapeutic process in end-of-life care), allows the dying person to contribute context about their own history that only they can provide, and produces a restored photographic legacy that will outlast the person and serve as a lasting memorial.
 

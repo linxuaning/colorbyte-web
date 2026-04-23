@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🗳️"
 ---
 
-# Restoring Political Campaign and Civic Event Photos: Participation Documented
 
 Political campaign photographs document the specific ways that families engaged with democratic processes — the campaign rally attended, the candidate met, the yard sign in front of the house, the polling place visited on Election Day.
 

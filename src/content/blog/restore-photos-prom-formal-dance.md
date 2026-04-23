@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "💃"
 ---
 
-# Restoring Prom and Formal Dance Photographs
 
 Prom photographs are among the most consistently documented teenage milestones in American culture — the formal dress, the corsage and boutonnière, the couple portrait in front of a decorated backdrop, the group photograph with friends. These images capture a specific moment of teenage life with a formality unusual for photographs of teenagers, making them distinctive within family archives. When they fade, the loss is of both the event documentation and the portrait quality that made them special.
 

@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎈"
 ---
 
-# Restoring 1940s Rationing Era Children's Photos: Growing Up During the War
 
 Children who grew up during WWII experienced the war through its absence: no candy because of sugar rationing, no new toys because of material restrictions, the Victory Garden in the backyard, the parents and older siblings who were gone.
 

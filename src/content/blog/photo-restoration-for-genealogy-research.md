@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🌳"
 ---
 
-# Photo Restoration for Genealogy Research: A Complete Guide
 
 Genealogy research and photo restoration are natural partners. As family historians dig through records, documents, and old photographs searching for evidence of ancestors' lives, they often encounter photos in poor condition that could yield crucial information — a face to match a name, a date written on the back, or a uniform or dress style that narrows a date range. AI restoration tools have become an essential part of the modern genealogist's toolkit.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-900 via-blue-800 to-indigo-700"
 coverEmoji: "🎛️"
 ---
 
-# ArtImageHub vs Photoshop Neural Filters for Old Photo Restoration
 
 Adobe Photoshop's Neural Filters (introduced in 2020 and expanded significantly since) bring AI-powered restoration capabilities directly into Photoshop. For users who already have Photoshop, Neural Filters are worth understanding — and worth comparing honestly to dedicated restoration tools.
 

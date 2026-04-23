@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🦁"
 ---
 
-# Restoring East African Heritage Family Photographs
 
 East African Americans from Kenya, Uganda, Tanzania, Rwanda, Somalia, and other nations represent a diverse community with distinct histories and photographic traditions. Kenyan Americans are among the most numerous, with significant communities in the United States drawn by educational and professional opportunities. Somali Americans represent one of the largest refugee communities in the United States, concentrated especially in the Twin Cities of Minnesota. Each of these communities brings distinct photographic heritage reflecting colonial histories (British in Kenya, Uganda, Tanzania; Italian and British in Somalia), independence-era national identities, and diverse cultural practices.
 

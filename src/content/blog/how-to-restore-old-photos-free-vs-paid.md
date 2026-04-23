@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-600 to-cyan-700"
 coverEmoji: "💡"
 ---
 
-# How to Restore Old Photos: Free Options vs Paid AI
 
 The first question most people ask about restoring old family photos: *can I do this for free?*
 

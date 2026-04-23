@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-white-700 to-red-800"
 coverEmoji: "🍕"
 ---
 
-# Restoring Italian American Heritage Photos: Ellis Island and Beyond
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every Italian American restoration is about more than technical quality.
 

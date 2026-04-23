@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "💧"
 ---
 
-# How to Restore Photos That Were Soaked in Water
 
 A burst pipe, a flooded basement, or a roof leak can leave family photographs fully submerged in water. Acting quickly in the first hours after water exposure is critical — once wet photos dry in a clump, they often stick together permanently and the emulsion layer can be destroyed. This guide covers both the physical emergency response and the digital restoration work that follows. For the digital side, see our tool page on [fixing water damaged photos](/fix-water-damaged-photos).
 

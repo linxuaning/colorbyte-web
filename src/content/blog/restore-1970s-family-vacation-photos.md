@@ -13,7 +13,6 @@ coverColor: "from-orange-600 via-amber-700 to-yellow-800"
 coverEmoji: "🚗"
 ---
 
-# Restoring 1970s Family Vacation Photos: Kodacolor Fading Fix
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every 1970s restoration is about more than technical quality.
 

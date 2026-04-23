@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "👶"
 ---
 
-# Restoring Hospital New Baby and Maternity Ward Photos: The Moment of Arrival
 
 The hospital maternity photograph has a recognizable aesthetic across the decades: fluorescent lighting, institutional backgrounds, exhausted parents, and a newborn who is either sleeping or registering the first confused impressions of being outside.
 

@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🌸"
 ---
 
-# Restoring Vietnamese American Family Photographs
 
 Vietnamese American family photographs span one of the most dramatic historical transitions of the 20th century: from the complex, cosmopolitan society of pre-war Vietnam, through the devastation of the Vietnam War, the fall of Saigon in 1975, the refugee camps of Southeast Asia, and the resettlement in American communities. Each of these phases generated distinctive photographic records — and each presents specific preservation challenges related to the conditions under which photos were created and survived.
 

@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-emerald-800"
 coverEmoji: "📱"
 ---
 
-# Restoring Photos Without a Computer: Smartphone-Only Workflow
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every mobile-only restoration is about more than technical quality.
 

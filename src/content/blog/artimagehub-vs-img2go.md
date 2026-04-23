@@ -13,7 +13,6 @@ coverColor: "from-teal-700 via-cyan-700 to-sky-600"
 coverEmoji: "🔄"
 ---
 
-# ArtImageHub vs IMG2GO for Old Photo Restoration
 
 IMG2GO (img2go.com) is an online image processing toolkit — file conversion, compression, editing, and AI enhancement tools in one browser-based platform. ArtImageHub is a specialized AI pipeline for old photo restoration. Here's how they compare for restoring old family photographs.
 

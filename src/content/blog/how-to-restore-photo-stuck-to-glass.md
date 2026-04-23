@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🪟"
 ---
 
-# How to Restore a Photo Stuck to Frame Glass: Recovery Without Further Damage
 
 It happens when a photograph is framed without an archival mat: over time, humidity causes the photograph to adhere to the glass. Pulling the photograph away from the glass risks tearing the emulsion. Leaving it stuck leaves you with a photograph that can't be scanned.
 

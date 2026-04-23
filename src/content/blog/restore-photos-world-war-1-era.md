@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎖️"
 ---
 
-# Restoring World War I Era Family Photographs
 
 World War I family photographs predate the era of widespread amateur photography, making them rarer and more precious than photographs from later conflicts. The photographs that survive from this period — formal military portraits of doughboys in their uniforms, home front photographs of families left behind, community celebrations of enlistment and return — document a generation that experienced one of the most devastating conflicts in human history. Many of the men photographed in WWI portraits did not return.
 

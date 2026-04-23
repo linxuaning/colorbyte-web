@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🌙"
 ---
 
-# Restoring Eid and Ramadan Family Celebration Photos: Muslim Heritage Photography
 
 Eid family photographs document two of the most significant celebrations in the Islamic calendar — the feasts that mark the end of Ramadan and the completion of Hajj. For Muslim families, these photographs are religious milestone documentation as well as family archives.
 

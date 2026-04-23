@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🔴"
 ---
 
-# How to Restore a Photo with a Hole or Punch Mark
 
 The pushpin hole through the center of the photograph is one of the most common forms of unintentional photograph damage — decades of being tacked to bulletin boards, then removed and saved. A tiny hole through an otherwise undamaged photograph is a clean digital restoration challenge.
 

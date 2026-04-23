@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "📜"
 ---
 
-# Restoring 1910s Photos: The Decade Photography Went to War
 
 There's a photograph in my collection that I didn't find in a family album. I found it at an estate sale, in a shoebox with forty others — all soldiers, all young, none identified.
 

@@ -13,7 +13,6 @@ coverColor: "from-blue-700 via-indigo-700 to-violet-600"
 coverEmoji: "🖌️"
 ---
 
-# ArtImageHub vs Pixelmator Pro for Old Photo Restoration
 
 Pixelmator Pro is a popular Mac-only image editor often compared to Photoshop. ArtImageHub is a specialized AI pipeline for old photo restoration. Both can improve old photos, but the approach and skill requirements are completely different.
 

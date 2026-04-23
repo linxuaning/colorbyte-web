@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "📕"
 ---
 
-# Restoring Photos Stuck to Magnetic Album Pages
 
 The magnetic photo albums popular from the late 1960s through the 1990s — those albums with adhesive-coated pages covered by a clear plastic sheet — are responsible for some of the worst and most widespread damage in American family photo collections. The adhesives used in these albums, particularly early versions using pressure-sensitive adhesive coatings on plastic-backed pages, chemically attack photographs over time. Photographs stored in these albums for 30-50 years often face serious damage.
 

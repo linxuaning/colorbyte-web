@@ -13,7 +13,6 @@ coverColor: "from-orange-700 via-amber-600 to-yellow-600"
 coverEmoji: "📖"
 ---
 
-# Shutterfly Photo Restoration: What It Does (and Doesn't)
 
 Shutterfly is the most popular online photo book and print service in the US. Many people making family photo books include old family photographs — and wonder if Shutterfly can help restore damaged or faded originals.
 

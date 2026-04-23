@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-yellow-700 to-gold-800"
 coverEmoji: "💛"
 ---
 
-# Restoring Golden Anniversary Photos: 50 Years of Marriage Preserved
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every anniversary restoration is about more than technical quality.
 

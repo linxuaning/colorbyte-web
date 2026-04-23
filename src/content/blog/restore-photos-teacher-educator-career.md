@@ -13,7 +13,6 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🍎"
 ---
 
-# Restoring Teacher and Educator Career Photos: The People Who Shaped Lives
 
 The teacher career photograph spans from the formal portrait in the faculty photograph to the informal classroom snapshot to the retirement ceremony. For families of teachers, these photographs document a career of public service.
 

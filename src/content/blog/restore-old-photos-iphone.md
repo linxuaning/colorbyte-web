@@ -13,7 +13,6 @@ coverColor: "from-gray-700 via-slate-600 to-zinc-500"
 coverEmoji: "📱"
 ---
 
-# How to Restore Old Photos on iPhone (2026 Guide)
 
 Your iPhone has photo editing tools that have improved significantly in recent years. If you have old, faded, or damaged family photos — either scanned and in your Camera Roll, or photographed from physical prints — here's what your iPhone can and can't do, and the fastest path to actual restoration.
 

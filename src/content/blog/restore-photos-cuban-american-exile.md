@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🌴"
 ---
 
-# Restoring Cuban American Exile Era Photos: Before and After 1959
 
 Cuban American families often have a photographic archive that divides into two periods: before 1959 and after. The before photographs show Cuba — Havana, the provinces, the life that existed. The after photographs show exile, adjustment, the new life in Florida and New Jersey and New York.
 

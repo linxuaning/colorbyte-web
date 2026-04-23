@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🎭"
 ---
 
-# Restoring School Play and Theatrical Performance Photos
 
 The school play photograph is among the most technically challenging amateur photography — stage lighting designed for the audience's experience, not the photographer's needs, costumes that read as authentic onstage but look theatrical in close-up, and performances that can't be re-staged for a better shot.
 

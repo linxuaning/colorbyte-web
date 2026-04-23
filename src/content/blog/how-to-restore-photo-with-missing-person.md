@@ -13,7 +13,6 @@ coverColor: "from-gray-600 via-zinc-700 to-slate-800"
 coverEmoji: "👤"
 ---
 
-# How to Restore a Photo with a Person Cut Out or Missing
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every missing areas restoration is about more than technical quality.
 

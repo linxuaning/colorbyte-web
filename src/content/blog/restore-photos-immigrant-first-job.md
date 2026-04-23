@@ -13,7 +13,6 @@ coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "💼"
 ---
 
-# Restoring Immigrant First Job and Employment Photos: Starting a New Life
 
 The first-job photograph tells a specific immigrant story: the transition from displaced person to employed American. The clothing might be new and slightly formal for the occasion. The setting might be a restaurant, a factory floor, a construction site, a domestic service position.
 

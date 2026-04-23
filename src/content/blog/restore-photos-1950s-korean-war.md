@@ -13,7 +13,6 @@ coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🎖️"
 ---
 
-# Restoring Korean War Era Service Photos: 1950-1953 Military Photography
 
 The Korean War has been called the Forgotten War — and the photographic record of service families reflects this. Fewer photographs were taken, fewer were preserved as carefully as WWII photographs, and the cultural memory of the conflict is less vivid than the war that preceded it.
 

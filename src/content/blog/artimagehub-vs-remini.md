@@ -13,7 +13,6 @@ coverColor: "from-orange-500 via-amber-600 to-yellow-700"
 coverEmoji: "⚖️"
 ---
 
-# I Tested 6 AI Photo Tools on 100 Family Photos—Here's What Actually Works
 
 When my aunt asked me to restore 100 family photos for her father's 85th birthday slideshow, I had three weeks and zero budget for professional restoration (which would've cost $5,000–$15,000).
 

@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🍄"
 ---
 
-# Restoring Photos Damaged by Mildew and Fungal Growth
 
 Mildew and fungal growth on photographs is one of the most common and frustrating forms of photographic damage, particularly for photos stored in garages, attics, basements, or any space with inconsistent humidity. The characteristic fuzzy growth and the brown or white spotting left after mildew activity are visually distinctive and, in severe cases, can obscure significant portions of the image. Understanding how to safely handle these photos and how AI restoration addresses the resulting damage is essential knowledge for anyone with a family photo archive.
 

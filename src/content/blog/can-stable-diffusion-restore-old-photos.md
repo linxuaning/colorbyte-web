@@ -13,7 +13,6 @@ coverColor: "from-violet-800 via-purple-800 to-indigo-700"
 coverEmoji: "🌀"
 ---
 
-# Can Stable Diffusion Restore Old Photos?
 
 Stable Diffusion is one of the most powerful open-source AI image generation models. It runs locally, it's free, and it's highly customizable. If you're wondering whether it can restore old, faded, or damaged family photographs, here's the direct answer:
 

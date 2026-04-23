@@ -13,7 +13,6 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🌈"
 ---
 
-# Restoring Photos of Mixed-Race and Multicultural Families
 
 Mixed-race and multicultural families have existed throughout American history, though legal prohibitions on interracial marriage in many states meant that these families lived with significant legal and social constraints until the Supreme Court's 1967 Loving v. Virginia decision. Photographs of mixed-race families from before 1967 are particularly historically significant — they document couples and families who maintained their relationships despite legal prohibition and social pressure. Contemporary mixed-race family photographs tell a more positive story of chosen connection across cultural divides.
 

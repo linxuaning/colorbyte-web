@@ -13,7 +13,6 @@ coverColor: "from-green-800 via-emerald-700 to-teal-700"
 coverEmoji: "📲"
 ---
 
-# ArtImageHub vs Snapseed for Old Photo Restoration
 
 Snapseed is Google's free mobile photo editor — one of the most capable free tools available for iOS and Android. ArtImageHub is a specialized AI pipeline for old photo restoration. Understanding what each does well determines which to use for your old family photos.
 

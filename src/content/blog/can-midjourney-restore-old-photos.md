@@ -13,7 +13,6 @@ coverColor: "from-slate-800 via-gray-800 to-zinc-700"
 coverEmoji: "🎨"
 ---
 
-# Can Midjourney Restore Old Photos?
 
 Midjourney is one of the most powerful AI image generation tools available. If you're wondering whether it can restore old, faded, or damaged family photographs, here's the direct answer:
 

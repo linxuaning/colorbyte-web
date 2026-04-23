@@ -13,7 +13,6 @@ coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🥤"
 ---
 
-# Restoring 1950s Diner and Restaurant Photos: America Eats Out
 
 The 1950s diner photograph captures one of the defining aesthetic moments of American visual culture: the chrome and neon, the vinyl booths, the soda fountain counter, the car-hop service. For families who worked in or frequented these establishments, the photographs are personal history and cultural history simultaneously.
 

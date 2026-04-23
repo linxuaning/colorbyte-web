@@ -13,7 +13,6 @@ coverColor: "from-yellow-600 via-amber-700 to-orange-800"
 coverEmoji: "⚡"
 ---
 
-# Batch Photo Restoration: Restoring Hundreds of Photos at Once
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every batch restoration restoration is about more than technical quality.
 

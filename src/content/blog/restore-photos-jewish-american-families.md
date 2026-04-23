@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "✡️"
 ---
 
-# Restoring Jewish American Family Photographs
 
 Jewish American family photographs often span the entire arc of American Jewish history: sepia-toned portraits of newly arrived Eastern European immigrants in the 1890s and 1900s, Depression-era family gatherings in tenement apartments, the profound before/after of families disrupted by the Holocaust, and the post-war expansion into suburban American life. Each of these periods has its own photographic character and its own emotional weight. Restoring these photographs is an act of bearing witness as much as family preservation.
 

@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏫"
 ---
 
-# Restoring Old School Photos and Class Portraits
 
 School photographs occupy a unique place in family archives: they're taken at regular intervals year after year, providing a chronological record of a child's growth that no other type of photograph provides. From the formal class portraits taken in one-room schoolhouses in the early 1900s to the individual school portraits that still arrive each fall in a paper envelope, these images mark the passage of time in a way that's both universal and deeply personal. When these photos fade or deteriorate, restoring them is a straightforward project with meaningful results.
 

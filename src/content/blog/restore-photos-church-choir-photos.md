@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎵"
 ---
 
-# Restoring Church Choir and Religious Music Photos: Voices in History
 
 The choir photograph is a specific sub-genre of church photography: the robed ensemble, arranged in their sections, often photographed before or after a service. These photographs document the musical life of religious communities that might otherwise be invisible in church archives.
 

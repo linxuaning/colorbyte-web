@@ -13,7 +13,6 @@ coverColor: "from-orange-600 via-amber-600 to-yellow-600"
 coverEmoji: "🐵"
 ---
 
-# ArtImageHub vs PicMonkey for Old Photo Restoration
 
 PicMonkey is a popular browser-based photo editor and graphic design tool — known for its accessible interface and portrait touch-up features. ArtImageHub is a specialized AI pipeline for old photo restoration. Here's how they compare for the specific task of restoring old, damaged family photographs.
 

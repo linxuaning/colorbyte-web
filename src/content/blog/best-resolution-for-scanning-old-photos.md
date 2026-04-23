@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🖨️"
 ---
 
-# Best Resolution for Scanning Old Photos: 300, 600, or 1200 DPI?
 
 If you're preparing old photos for AI restoration, the scanning resolution you choose has a significant impact on the quality of results you'll get. Too low a resolution and important detail is lost before the AI even sees the image; unnecessarily high resolution creates huge files that slow down uploads and processing without meaningful quality gain. Here's the practical guide to getting the scanning decision right.
 

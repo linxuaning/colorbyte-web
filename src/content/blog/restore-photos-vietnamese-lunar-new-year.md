@@ -13,7 +13,6 @@ coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🧧"
 ---
 
-# Restoring Lunar New Year and Tet Celebration Photographs
 
 Lunar New Year celebrations across East and Southeast Asian cultures produce some of the richest family photography in Asian American archives: the extended family gathered in their finest traditional or formal dress, the red envelopes distributed to children, the elaborate meal that took days to prepare, the specific decorations and symbols of prosperity and renewal. For Vietnamese, Chinese, Korean, and other Asian American families, these annual photographs document both the continuity of cultural tradition and the adaptations made to celebrate heritage in an American context.
 

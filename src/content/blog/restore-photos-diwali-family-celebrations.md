@@ -13,7 +13,6 @@ coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🪔"
 ---
 
-# Restoring Diwali Family Photos: Festival of Lights Heritage Photography
 
 Diwali photographs capture the Festival of Lights with all its visual richness: the diyas (oil lamps), the rangoli patterns, the traditional clothing, the family gathered in the specific configuration of a celebration that crosses religious and cultural boundaries within the South Asian community.
 

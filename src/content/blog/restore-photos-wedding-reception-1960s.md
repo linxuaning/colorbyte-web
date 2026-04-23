@@ -13,7 +13,6 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "💒"
 ---
 
-# Restoring 1960s Wedding Reception Photos: The Transition to Color Celebrations
 
 The 1960s wedding reception was a photographic threshold moment. Early in the decade, professional wedding photography was still predominantly black-and-white. By the late 1960s, color had become standard. The decade's wedding archives document both traditions.
 

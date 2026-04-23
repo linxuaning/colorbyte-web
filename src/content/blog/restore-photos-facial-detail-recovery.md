@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "👤"
 ---
 
-# How AI Recovers Facial Details in Old Portraits
 
 Recovering facial detail is the single most impactful result of AI photo restoration for most families. When a great-grandmother's portrait that has been blurry and indistinct for decades suddenly shows her specific features — the shape of her eyes, the line of her jaw, the particular expression she wore for the photographer — the emotional impact is extraordinary. Modern AI facial restoration technology has advanced significantly in recent years, enabling recovery that was not possible with previous approaches.
 

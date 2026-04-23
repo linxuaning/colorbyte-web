@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🦅"
 ---
 
-# Restoring Polish American Family Photographs
 
 Polish Americans form one of the largest ethnic groups in the United States, with major immigration waves occurring from the 1880s through World War I and again after World War II. Photographs from Polish American families document the steel mills and coal mines of Pennsylvania, the auto plants of Detroit and Chicago, the Catholic parishes that organized community life, and the gradual movement of families from industrial cities to suburban America. These images are a visual record of working-class immigrant striving that defines much of American history.
 

@@ -13,7 +13,6 @@ coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🌙"
 ---
 
-# Restoring Middle Eastern American Family Photographs
 
 Middle Eastern Americans include Arabic-speaking communities (Lebanese, Syrian, Egyptian, Palestinian, Iraqi, and others), Iranian Americans, Turkish Americans, and other communities from Southwest Asia and North Africa. Lebanese and Syrian immigrants began arriving in significant numbers in the 1880s, establishing communities in industrial cities and becoming known as traveling merchants and later as successful business owners. Later waves of immigration, often driven by political upheaval — the Lebanese Civil War, the Iranian Revolution, the Gulf Wars — have added to a diverse community with complex photographic histories.
 

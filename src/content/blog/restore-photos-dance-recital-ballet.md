@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🩰"
 ---
 
-# Restoring Dance Recital and Ballet Photos: Grace in Still Images
 
 The dance recital photograph attempts something inherently difficult: capturing movement in a still image. The results vary enormously — sometimes the dancer is caught mid-leap with perfect clarity, sometimes the motion blur speaks to the energy of the performance in its own way.
 

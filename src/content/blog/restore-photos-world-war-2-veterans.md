@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🎖️"
 ---
 
-# Restoring Photos of World War II Veterans
 
 World War II ended more than 80 years ago, and the veterans of that conflict are now gone. The photographs they left behind — formal military portraits, candid snapshots from training camps, photos with fellow soldiers, images from Pacific islands or European cities — are the last tangible visual connections to their service. As these photos age alongside the memories of those who knew these veterans personally, restoring them becomes an act of historical preservation as much as family sentiment.
 

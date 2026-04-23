@@ -13,7 +13,6 @@ coverColor: "from-rose-700 via-pink-700 to-fuchsia-700"
 coverEmoji: "🤳"
 ---
 
-# ArtImageHub vs Portrait AI for Old Photo Restoration
 
 Portrait AI (and similar services like Aragon AI, HeadshotPro) are AI headshot generators — upload casual photos, receive professional-looking headshots. ArtImageHub is a specialized AI pipeline for old photo restoration. People searching for old photo improvement sometimes land on Portrait AI tools. Here's the distinction.
 

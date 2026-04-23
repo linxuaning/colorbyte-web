@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎸"
 ---
 
-# Restoring Country Music and Nashville Photos: Honky-Tonk Heritage Preserved
 
 Country music family archives often include photographs from the Nashville recording scene, local honky-tonks, and country radio broadcasts. These photographs document a music industry before the corporate era.
 

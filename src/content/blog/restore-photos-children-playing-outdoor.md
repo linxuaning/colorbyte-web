@@ -13,7 +13,6 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏃"
 ---
 
-# Restoring Photographs of Children Playing Outdoors
 
 Photographs of children playing outdoors document a childhood experience that has changed dramatically in the last 40 years. The children playing freely in the street, climbing trees without supervision, organizing their own pickup baseball games, riding bikes through neighborhoods without helmets — these photographs show an outdoor childhood culture that contemporary parents rarely allow their own children to experience. For adults who grew up in this era, these photographs trigger powerful memories of a specific kind of freedom.
 

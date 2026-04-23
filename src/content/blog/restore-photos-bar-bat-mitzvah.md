@@ -13,7 +13,6 @@ coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "✡️"
 ---
 
-# Restoring Bar and Bat Mitzvah Photos: Jewish Coming of Age Heritage
 
 The bar and bat mitzvah photograph documents one of the most significant milestones in Jewish religious life — the ceremony that marks the transition from child to adult in the religious community. For Jewish families, these photographs are milestone documentation with religious and cultural significance.
 

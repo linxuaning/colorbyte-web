@@ -13,7 +13,6 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🥨"
 ---
 
-# Restoring German American Family Photographs
 
 German Americans are the largest ancestry group in the United States, with over 40 million Americans claiming German heritage. German immigration occurred in multiple waves from the 1840s onward, with German Americans settling predominantly in the Midwest — Pennsylvania, Ohio, Indiana, Illinois, Wisconsin, Minnesota — where they established farming communities, cities, and a distinctive cultural life. The story of German American photography is complicated by the World War I and II eras, when many German American families deliberately minimized their German identity.
 

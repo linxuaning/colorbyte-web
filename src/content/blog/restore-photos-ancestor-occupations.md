@@ -13,7 +13,6 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🔨"
 ---
 
-# Restoring Photographs That Show Ancestor Occupations
 
 Photographs that show ancestors in their work context — at their jobs, with their tools, in their workplace — provide a dimension of historical documentation that formal portraits cannot. Understanding what an ancestor did for a living, and seeing the specific context of that work, humanizes them beyond the biographical data of birth and death dates. Whether it's a blacksmith at his forge, a merchant at his counter, a nurse at the hospital, or a farmer at the harvest, occupation photographs make abstract ancestors concrete and real.
 

@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🏘️"
 ---
 
-# Restoring Neighborhood Block Party Photos: Community Traditions Preserved
 
 The neighborhood block party photograph is a document of American community life at a specific scale — the scale of people who live close enough to know each other's names and share a block of street on a summer afternoon.
 

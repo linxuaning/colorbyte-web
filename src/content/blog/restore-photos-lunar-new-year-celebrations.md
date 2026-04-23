@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🧧"
 ---
 
-# Restoring Lunar New Year and Chinese New Year Family Photos
 
 Lunar New Year celebrations produce a specific category of family photographs: the formal family gatherings, the specific decorations, the traditional clothing that may only appear in photographs from this occasion.
 

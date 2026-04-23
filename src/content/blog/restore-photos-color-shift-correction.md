@@ -13,7 +13,6 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🌈"
 ---
 
-# Understanding and Correcting Color Shift in Old Photographs
 
 Color shift is one of the most universal problems in old color photographs — the departure from the colors that were actually present in the original scene toward the distorted colors produced by decades of chemical aging. Understanding why color shifts happen in specific ways, and how AI restoration corrects each type, helps set appropriate expectations for restoration projects and explains why different photos require different correction approaches.
 

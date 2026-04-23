@@ -13,7 +13,6 @@ coverColor: "from-slate-800 via-gray-700 to-zinc-600"
 coverEmoji: "🕊️"
 ---
 
-# Photo Restoration for Memorial Services and Funerals
 
 When a family member passes away, the photographs that go into memorial displays, funeral programs, and memorial books often haven't been looked at in decades — and they show it. Restoring these photographs quickly, often within 24–48 hours, is something AI restoration now makes possible.
 

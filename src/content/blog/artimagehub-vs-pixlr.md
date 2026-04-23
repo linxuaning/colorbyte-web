@@ -13,7 +13,6 @@ coverColor: "from-indigo-700 via-blue-700 to-sky-600"
 coverEmoji: "🖌️"
 ---
 
-# ArtImageHub vs Pixlr for Old Photo Restoration
 
 Pixlr is a free browser-based photo editor — one of the most popular free Photoshop alternatives available online. ArtImageHub is a specialized AI pipeline for old photo restoration. Both handle photos in a browser; they do very different things.
 

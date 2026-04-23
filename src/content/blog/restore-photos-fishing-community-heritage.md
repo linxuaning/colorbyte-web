@@ -13,7 +13,6 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "⚓"
 ---
 
-# Restoring Fishing Community and Maritime Heritage Photographs
 
 Fishing community photographs document a way of life defined by relationship to water, weather, and the natural abundance of the sea. Whether from New England lobster fishing communities, Pacific Northwest salmon fishing traditions, Gulf Coast shrimping fleets, or Great Lakes commercial fishing operations, these photographs capture a form of working life with a distinctive visual vocabulary: the boats and gear, the harbors and docks, the catches and the people who landed them. For fishing families, these photographs document a heritage as distinctive as any cultural tradition.
 

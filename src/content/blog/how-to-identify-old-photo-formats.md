@@ -13,7 +13,6 @@ coverColor: "from-amber-600 via-yellow-700 to-orange-800"
 coverEmoji: "🔍"
 ---
 
-# How to Identify Old Photo Formats: Daguerreotype vs Tintype vs Albumen
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every formats restoration is about more than technical quality.
 

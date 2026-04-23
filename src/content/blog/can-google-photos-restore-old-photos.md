@@ -13,7 +13,6 @@ coverColor: "from-blue-600 via-indigo-600 to-purple-700"
 coverEmoji: "📷"
 ---
 
-# Can Google Photos Restore Old Photos?
 
 If you've scanned some old family photos and uploaded them to Google Photos, hoping the AI can fix the fading and damage — here's the direct answer:
 

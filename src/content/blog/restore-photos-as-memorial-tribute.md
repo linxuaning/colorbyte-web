@@ -13,7 +13,6 @@ coverColor: "from-purple-600 via-violet-700 to-indigo-800"
 coverEmoji: "🕯️"
 ---
 
-# Restoring Photos as Memorial Tribute: Creating Lasting Legacies
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every memorial restoration is about more than technical quality.
 

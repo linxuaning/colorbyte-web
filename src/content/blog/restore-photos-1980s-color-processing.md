@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "📼"
 ---
 
-# Restoring 1980s Color Photos: Dealing with Fading and Color Casts
 
 The 1980s represents a golden age of amateur photography in one sense — 35mm cameras were affordable, film was widely available, and one-hour photo labs made developing quick and cheap. But the film stocks and processing chemistry of the era were optimized for speed and convenience rather than archival quality. Many 1980s color prints show significant fading and characteristic color casts that make family photos from this decade look distinctly dated in an unflattering way.
 

@@ -13,7 +13,6 @@ coverColor: "from-slate-600 via-gray-700 to-zinc-800"
 coverEmoji: "🎖️"
 ---
 
-# Father's Day Gift Idea 2026: Restore His Old Photos with AI
 
 Father's Day 2026 is June 15. If your dad or grandfather has old photos from military service, his childhood, or early family life — restoring one of those photos is one of the most personal gifts you can give.
 

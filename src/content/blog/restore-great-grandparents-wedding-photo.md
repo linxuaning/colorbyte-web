@@ -13,7 +13,6 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "💍"
 ---
 
-# Restoring a Great-Grandparents' Wedding Photo
 
 Somewhere in most family collections there exists a formal wedding portrait of a great-grandparent or great-great-grandparent — a stiff, posed studio photograph from the late 1800s or early 1900s that captures the formal solemnity of matrimony in an era when photographs were rare and precious. These portraits have often survived 100+ years but show every decade of their age in cracks, foxing, silver mirroring, and overall loss of contrast. Restoring them connects living family members to ancestors they may never have met.
 
