@@ -8,6 +8,14 @@ const postsDirectory = path.join(process.cwd(), "src/content/blog");
 const publicDirectory = path.join(process.cwd(), "public");
 const fallbackBlogImage = "/blog/before-after-examples.webp";
 
+const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
+export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
+
+function localeBlogDir(locale: BlogLocale | string): string {
+  if (!locale || locale === "en") return postsDirectory;
+  return path.join(postsDirectory, locale);
+}
+
 const categoryFallbackImages: Record<string, string> = {
   "AI Technology": "/blog/ai-restoration-technology.webp",
   "Best Practices": "/blog/preserving-photos.webp",
@@ -148,17 +156,18 @@ function resolvePostImage(image: string | undefined, category: string): string {
   return fallbackBlogImage;
 }
 
-export async function getAllPosts(): Promise<BlogPostMeta[]> {
-  if (!fs.existsSync(postsDirectory)) {
+export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<BlogPostMeta[]> {
+  const dir = localeBlogDir(locale);
+  if (!fs.existsSync(dir)) {
     return [];
   }
 
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(dir);
   const posts = fileNames
     .filter((fileName) => fileName.endsWith(".md"))
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(postsDirectory, fileName);
+      const fullPath = path.join(dir, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const { data, content } = matter(fileContents);
 
@@ -189,9 +198,9 @@ export async function getAllPosts(): Promise<BlogPostMeta[]> {
   });
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
+export async function getPostBySlug(slug: string, locale: BlogLocale | string = "en"): Promise<BlogPost | null> {
   try {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
+    const fullPath = path.join(localeBlogDir(locale), `${slug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
@@ -231,9 +240,10 @@ export async function getRelatedPosts(
   currentSlug: string,
   category: string,
   limit: number = 3,
-  tags: string[] = []
+  tags: string[] = [],
+  locale: BlogLocale | string = "en"
 ): Promise<BlogPostMeta[]> {
-  const posts = await getAllPosts();
+  const posts = await getAllPosts(locale);
   const normCategory = category.toLowerCase().trim();
   const normTags = new Set(tags.map((t) => t.toLowerCase().trim()));
 
