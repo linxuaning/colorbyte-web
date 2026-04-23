@@ -3,34 +3,42 @@
 LLM-only translation pipeline per spec v0.3.
 Translates EN blog posts into locale-specific .md files with 4 hard constraints.
 
-Usage:
-    # Sanity check 1 post
-    python scripts/translate_llm_only.py --slug wedding-photo-restoration --locale es
+Two LLM client backends — pick at runtime via `--client`:
 
-    # Batch translate top-N posts per locale
+  --client cli  (default, cost-neutral via Claude Code subscription)
+      subprocess to `claude -p --system-prompt …` from this Mac.
+      No env var needed. Uses Claude Code's bundled auth.
+
+  --client api  (legacy, requires ANTHROPIC_API_KEY)
+      direct Anthropic SDK call. Faster (parallelizable, no subprocess
+      overhead) but billed per token; use only when founder has authorized
+      the spend per memory `feedback_cost_neutral_default`.
+
+Usage:
+    # Sanity check 1 post (default cli client, free via subscription)
+    python scripts/translate_llm_only.py --slug wedding-photo-restoration --locales es
+
+    # Batch translate top-N posts per locale (cli, free)
     python scripts/translate_llm_only.py --slugs-file docs/phase1a-top20-fallback.txt \\
         --locales es,pt-BR
 
     # Full site (long-running; respect --skip-existing)
     python scripts/translate_llm_only.py --all --locales es,pt-BR,fr,de,ja,ko --skip-existing
 
-Requires ANTHROPIC_API_KEY in environment.
+    # API path (only after founder $200 auth)
+    ANTHROPIC_API_KEY=… python scripts/translate_llm_only.py --client api --all --locales es,pt-BR
 """
 from __future__ import annotations
 
 import argparse
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 from pathlib import Path
-from typing import Optional
-
-try:
-    from anthropic import Anthropic
-except ImportError:
-    print("ERROR: anthropic package not installed. Run: pip install anthropic", file=sys.stderr)
-    sys.exit(1)
+from typing import Optional, Protocol
 
 REPO = Path(__file__).resolve().parent.parent
 BLOG_ROOT = REPO / "src" / "content" / "blog"
@@ -129,16 +137,69 @@ def parse_yaml_simple(yaml_text: str) -> dict[str, str]:
     return out
 
 
-def llm_translate(client: Anthropic, text: str, locale: str, model: str = "claude-sonnet-4-6") -> str:
-    """Single LLM call: translate + polish + enforce constraints."""
-    system = SYSTEM_PROMPT.replace("{LOCALE_NAME}", LOCALE_NAME[locale])
-    resp = client.messages.create(
-        model=model,
-        max_tokens=8192,
-        system=system,
-        messages=[{"role": "user", "content": text}],
-    )
-    return resp.content[0].text
+class LLMClient(Protocol):
+    """Adapter interface so the rest of the pipeline doesn't care which backend runs."""
+    def translate(self, text: str, locale: str) -> str: ...
+
+
+class CLIClient:
+    """Cost-neutral default. Subprocess to `claude -p --system-prompt …` using Claude Code subscription auth.
+
+    Throughput observed during 4/23 prototype: ~10s/500-word body (~20s/post avg). Stage A
+    (40 posts) ~13 min; full site (6678 posts × 6 locales) ~37h serial. Sequential only —
+    parallelizing subprocess calls would multiply Claude Code session pressure unpredictably.
+    """
+    def __init__(self, timeout: int = 180):
+        if shutil.which("claude") is None:
+            raise RuntimeError(
+                "`claude` CLI not found in PATH. Install Claude Code or pass --client api with ANTHROPIC_API_KEY."
+            )
+        self._timeout = timeout
+
+    def translate(self, text: str, locale: str) -> str:
+        system = SYSTEM_PROMPT.replace("{LOCALE_NAME}", LOCALE_NAME[locale])
+        try:
+            result = subprocess.run(
+                ["claude", "-p", "--system-prompt", system],
+                input=text,
+                capture_output=True,
+                text=True,
+                timeout=self._timeout,
+                check=True,
+            )
+        except subprocess.TimeoutExpired as e:
+            raise RuntimeError(f"claude CLI timeout after {self._timeout}s for locale={locale}") from e
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(
+                f"claude CLI exit={e.returncode} stderr={(e.stderr or '')[:300]!r}"
+            ) from e
+        return result.stdout.strip()
+
+
+class APIClient:
+    """Legacy direct-billed path. Requires ANTHROPIC_API_KEY + founder authorization."""
+    def __init__(self, api_key: str, model: str = "claude-sonnet-4-6"):
+        try:
+            from anthropic import Anthropic
+        except ImportError as e:
+            raise RuntimeError("anthropic package not installed. Run: pip install anthropic") from e
+        self._client = Anthropic(api_key=api_key)
+        self._model = model
+
+    def translate(self, text: str, locale: str) -> str:
+        system = SYSTEM_PROMPT.replace("{LOCALE_NAME}", LOCALE_NAME[locale])
+        resp = self._client.messages.create(
+            model=self._model,
+            max_tokens=8192,
+            system=system,
+            messages=[{"role": "user", "content": text}],
+        )
+        return resp.content[0].text
+
+
+def llm_translate(client: LLMClient, text: str, locale: str) -> str:
+    """Compatibility wrapper — delegates to whichever backend was wired in main()."""
+    return client.translate(text, locale)
 
 
 def validate_translation(translated: str, original: str) -> list[str]:
@@ -155,7 +216,7 @@ def validate_translation(translated: str, original: str) -> list[str]:
 
 
 def translate_one(
-    client: Anthropic,
+    client: Optional[LLMClient],
     slug: str,
     locale: str,
     *,
@@ -224,19 +285,38 @@ def main() -> int:
     ap.add_argument("--locales", required=True, help="comma-separated locale codes (es,pt-BR,...)")
     ap.add_argument("--skip-existing", action="store_true", default=True, help="skip posts already translated (default: true)")
     ap.add_argument("--force", action="store_true", help="overwrite existing translations")
-    ap.add_argument("--dry-run", action="store_true", help="print what would be translated without calling API")
-    ap.add_argument("--model", default="claude-sonnet-4-6")
+    ap.add_argument("--dry-run", action="store_true", help="print what would be translated without calling LLM")
+    ap.add_argument("--model", default="claude-sonnet-4-6", help="model id (only used when --client api)")
+    ap.add_argument(
+        "--client",
+        choices=["cli", "api"],
+        default="cli",
+        help="cli (default, free via Claude Code subscription) | api (legacy, needs ANTHROPIC_API_KEY)",
+    )
+    ap.add_argument("--cli-timeout", type=int, default=180, help="per-post claude CLI timeout in seconds (--client cli only)")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs_file or args.all):
         ap.error("must specify one of --slug / --slugs-file / --all")
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key and not args.dry_run:
-        print("ERROR: ANTHROPIC_API_KEY not set. Either set it or use --dry-run.", file=sys.stderr)
-        return 1
-
-    client = Anthropic(api_key=api_key) if api_key else None
+    client: Optional[LLMClient] = None
+    if not args.dry_run:
+        if args.client == "cli":
+            try:
+                client = CLIClient(timeout=args.cli_timeout)
+            except RuntimeError as e:
+                print(f"ERROR: {e}", file=sys.stderr)
+                return 1
+        else:  # api
+            api_key = os.environ.get("ANTHROPIC_API_KEY")
+            if not api_key:
+                print("ERROR: --client api requires ANTHROPIC_API_KEY env var.", file=sys.stderr)
+                return 1
+            try:
+                client = APIClient(api_key=api_key, model=args.model)
+            except RuntimeError as e:
+                print(f"ERROR: {e}", file=sys.stderr)
+                return 1
 
     slugs: list[str] = []
     if args.slug:
@@ -274,8 +354,9 @@ def main() -> int:
                     ok += 1
             else:
                 fail += 1
-            # Light rate limit — tune per API tier
-            if not args.dry_run:
+            # Light rate limit — only meaningful when --client api hits Anthropic SDK in tight loop.
+            # CLI mode is naturally throttled by claude subprocess startup (~3-5s) so skip the extra sleep.
+            if not args.dry_run and args.client == "api":
                 time.sleep(0.5)
 
     elapsed = time.time() - start
