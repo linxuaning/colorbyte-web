@@ -387,11 +387,15 @@ export default function OldPhotoRestorationPage() {
           <h2 className="text-[24px] font-bold tracking-[-0.02em] text-[#1d1d1f] mb-8 text-center">
             Learn More About Photo Restoration
           </h2>
-          <div className="grid sm:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { href: "/blog/how-ai-photo-restoration-works", title: "How AI Photo Restoration Works", desc: "The technology behind the magic — explained for non-experts." },
               { href: "/blog/old-photo-restoration-guide", title: "Complete Photo Restoration Guide", desc: "Everything you need to know before you start restoring family photos." },
               { href: "/blog/preserving-old-photos", title: "How to Preserve Old Photos", desc: "Stop damage before it starts with these proven preservation techniques." },
+              { href: "/how-to-restore-old-photos", title: "Step-by-Step Restoration Guide", desc: "The exact workflow for fixing damaged, faded, or torn family photos at home." },
+              { href: "/picture-restoration", title: "Family Picture Restoration", desc: "Revive old pictures, portraits, and heirloom prints with professional-grade AI." },
+              { href: "/old-photo-colorization", title: "Old Photo Colorization", desc: "Add realistic color to black-and-white photos in under a minute — complements restoration." },
+              { href: "/photo-restoration-near-me", title: "Photo Restoration Near You", desc: "No local shop needed — our online service works anywhere with instant results." },
             ].map((link) => (
               <a
                 key={link.href}
