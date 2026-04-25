@@ -299,6 +299,12 @@ Wedding photographs carry the weight of everything that happened after—the chi
 - [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
 - [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
 - [How to Restore Victorian Photos: Expert Guide to Preserving ...](/blog/restore-victorian-photos-complete-guide)
+- [Restore Great-Grandparents' Wedding Photo: Heirloom Recovery Guide](/blog/restore-great-grandparents-wedding-photo)
+- [Restore Old Photos for Funeral or Memorial Service](/blog/restore-old-photos-for-funeral-memorial-service)
+- [Restore Baby Photos from First Year: Save Faded Newborn Memories](/blog/restore-baby-photos-first-year)
+- [Photo Restoration for Family Members with Dementia: Memory Care Photo Workflow](/blog/photo-restoration-for-dementia-family-members)
+- [Photo Restoration for Genealogy Research: AI Tools for Family Tree Work](/blog/photo-restoration-for-genealogy-research)
+- [Restore 1980s Family Vacation Photos: Recovering Travel Memory Albums](/blog/restore-photos-1980s-family-vacations)
 
 ## Frequently Asked Questions
 

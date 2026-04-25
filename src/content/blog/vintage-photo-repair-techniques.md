@@ -674,6 +674,16 @@ You're not just restoring photos—you're rescuing history.
 - [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
 - [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
 - [How to Restore Victorian Photos: Expert Guide to Preserving ...](/blog/restore-victorian-photos-complete-guide)
+- [Restore 1900s Portraits: Complete Guide to Edwardian Photo Recovery](/blog/restore-1900s-portraits-complete-guide)
+- [Restore Photos from the 1930s Great Depression: Era-Specific Workflow](/blog/restore-photos-1930s-great-depression)
+- [Restore 1940s Home Front Photos: WWII Family Documentation Recovery](/blog/restore-photos-1940s-home-front)
+- [Restore 1950s Suburbs Photos: Postwar Family Photography Repair](/blog/restore-photos-1950s-suburbs)
+- [Restore 1960s Counterculture Photos: Documenting an Era](/blog/restore-photos-1960s-counterculture)
+- [Restore Medium Format Film Photos: Large-Negative Restoration Guide](/blog/restore-medium-format-film-photos)
+- [How to Remove Mold from Old Photographs: Step-by-Step Conservation Guide](/blog/how-to-remove-mold-from-old-photographs)
+- [How to Restore Faded Color Photos from the 1970s: Color-Shift Recovery](/blog/how-to-restore-faded-color-photos-1970s)
+- [Restore 1980s Color Processing Photos: Faded Print Era Recovery](/blog/restore-photos-1980s-color-processing)
+- [Restore 1990s Disposable Camera Photos: Single-Use Camera Negative Recovery](/blog/restore-photos-1990s-disposable-cameras)
 
 ## Frequently Asked Questions
 

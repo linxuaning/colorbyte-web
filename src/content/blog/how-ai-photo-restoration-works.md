@@ -226,6 +226,10 @@ That's worth 47 seconds of anyone's time.
 - [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
 - [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
 - [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)
+- [How Long Does AI Photo Restoration Take?](/blog/how-long-does-ai-photo-restoration-take)
+- [AI Photo Restoration vs Photoshop: Honest Comparison](/blog/ai-photo-restoration-vs-photoshop)
+- [Photo Restoration with No Account Required: Privacy-First Workflow](/blog/photo-restoration-no-account-required)
+- [Restore Old Photos from Phone: Mobile-First Restoration Guide](/blog/restore-old-photos-from-phone)
 
 ## Frequently Asked Questions
 
