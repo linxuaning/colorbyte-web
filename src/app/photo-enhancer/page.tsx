@@ -126,6 +126,15 @@ const softwareSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "Photo Enhancer", item: "https://artimagehub.com/photo-enhancer" },
+  ],
+};
+
 export default function PhotoEnhancerPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -140,6 +149,10 @@ export default function PhotoEnhancerPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero header */}

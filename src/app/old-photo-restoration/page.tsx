@@ -124,6 +124,15 @@ const testimonials = [
   },
 ];
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "Old Photo Restoration", item: "https://artimagehub.com/old-photo-restoration" },
+  ],
+};
+
 export default function OldPhotoRestorationPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -138,6 +147,10 @@ export default function OldPhotoRestorationPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {/* Hero header */}
       <div className="relative overflow-hidden border-b border-[#d2d2d7]/40 bg-white">
