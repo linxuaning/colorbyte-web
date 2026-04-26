@@ -151,6 +151,16 @@ const softwareSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "Remove Scratches from Photos", item: "https://artimagehub.com/remove-scratches-from-photos" },
+  ],
+};
+
+
 export default function RemoveScratchesFromPhotosPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -165,6 +175,10 @@ export default function RemoveScratchesFromPhotosPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero Section */}

@@ -104,11 +104,25 @@ const articleSchema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://artimagehub.com/vs-remini" },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "ArtImageHub vs Remini", item: "https://artimagehub.com/vs-remini" },
+  ],
+};
+
+
 export default function VsReminiPage() {
   return (
     <main className="min-h-screen bg-[#faf8f4]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <div className="mx-auto max-w-4xl px-5 py-14">
         {/* Hero */}
