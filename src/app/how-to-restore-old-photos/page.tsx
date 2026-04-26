@@ -192,6 +192,16 @@ const softwareSchema = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "How to Restore Old Photos", item: "https://artimagehub.com/how-to-restore-old-photos" },
+  ],
+};
+
+
 export default function HowToRestoreOldPhotosPage() {
   return (
     <div className="min-h-screen bg-[#faf8f4]">
@@ -199,6 +209,10 @@ export default function HowToRestoreOldPhotosPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#2c2416] via-[#3d2f1e] to-[#2c2416] border-b border-[#8B5E3C]/20">

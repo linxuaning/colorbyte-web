@@ -89,6 +89,16 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://artimagehub.com/" },
+    { "@type": "ListItem", position: 2, name: "Restore Old Photos Free", item: "https://artimagehub.com/restore-old-photos-free" },
+  ],
+};
+
+
 export default function RestoreOldPhotosFreePage() {
   return (
     <div className="min-h-screen bg-white">
@@ -103,6 +113,10 @@ export default function RestoreOldPhotosFreePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero Section */}
