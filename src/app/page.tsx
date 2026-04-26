@@ -100,6 +100,34 @@ const faqSchema = {
   ],
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ArtImageHub",
+  url: "https://artimagehub.com",
+  logo: "https://artimagehub.com/logo.png",
+  description:
+    "AI-powered photo restoration, colorization, and enhancement tool. Restore old, damaged, faded, and black-and-white photographs in 15-30 seconds.",
+  sameAs: [
+    "https://artimagehub.com/about",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ArtImageHub",
+  url: "https://artimagehub.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://artimagehub.com/blog?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function HomePage() {
   return (
     <>
@@ -111,6 +139,14 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
       {/* ── Hero ── */}
