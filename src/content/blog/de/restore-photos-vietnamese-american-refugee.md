@@ -1,9 +1,6 @@
 ---
 title: "Vietnamesisch-amerikanische Fotos aus der Flüchtlingsära restaurieren: 1975 und die Jahre danach"
-description: "# So restaurieren Sie vietnamesisch-amerikanische Fotografien aus der Flüchtlingsära
-
-Bewahren Sie die visuelle Geschichte der vietnamesischen Diaspora und der Wiederansiedlung in Amerika.
-
+description: "Bewahren Sie die visuelle Geschichte der vietnamesischen Diaspora und der Wiederansiedlung in Amerika."
 ---
 
 Die Fotografien aus der Flüchtlingsära der Vietnamesischen Amerikaner erzählen eine der bewegendsten Geschichten des 20. Jahrhunderts. Bilder von Familien an Bord überfüllter Boote, die ersten Tage in Umsiedlungslagern wie Camp Pendleton oder Fort Chaffee, vorsichtige Lächeln in den ersten amerikanischen Wohnungen, Hochzeitsfotos vor improvisierten Hausaltären – all das sind Zeugnisse von Mut, Verlust und Neuanfang. Und doch verblassen genau diese Bilder oft am schnellsten, weil sie unter Bedingungen aufgenommen, getragen und aufbewahrt wurden, die dem Papier wenig Gnade ließen.

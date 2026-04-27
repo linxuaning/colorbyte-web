@@ -256,7 +256,25 @@ def translate_one(
             val = fm[field].strip().strip('"').strip("'")
             if val:
                 translated_val = llm_translate(client, val, locale).strip().strip('"')
-                new_fm[field] = f'"{translated_val}"'
+                # Sanitize: strip leading markdown headings and collapse to single line.
+                # The LLM occasionally outputs a full H1 + paragraph when asked to
+                # translate a short description; that breaks YAML quoting downstream
+                # (multiline content inside double-quoted scalar). Take only the
+                # first non-heading line and cap at 155 chars.
+                lines = [l.strip() for l in translated_val.splitlines() if l.strip()]
+                cleaned = ""
+                for line in lines:
+                    if line.startswith("#"):
+                        continue
+                    cleaned = line
+                    break
+                if not cleaned and lines:
+                    cleaned = lines[0].lstrip("#").strip()
+                # Collapse internal quotes/newlines that would break YAML
+                cleaned = cleaned.replace('"', "'").replace("\n", " ").replace("\r", " ")
+                if len(cleaned) > 155:
+                    cleaned = cleaned[:152].rsplit(" ", 1)[0] + "…"
+                new_fm[field] = f'"{cleaned}"'
     new_fm["language"] = f'"{locale}"'
 
     # Step 1.5: restore LDJSON

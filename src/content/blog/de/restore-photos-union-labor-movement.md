@@ -1,9 +1,6 @@
 ---
 title: "Restaurierung von Fotos aus Gewerkschafts- und Arbeiterbewegung: Dokumentierte Geschichte der Arbeiterklasse"
-description: "# Wie Sie Fotografien von Gewerkschaften, Arbeiterbewegung und Arbeiterrechten restaurieren
-
-Bewahren Sie das visuelle Zeugnis der Organisationsgeschichte der Arbeiterklasse.
-
+description: "Bewahren Sie das visuelle Zeugnis der Organisationsgeschichte der Arbeiterklasse."
 ---
 
 Streikposten im Schneetreiben. Frauen, die Transparente vor Textilfabriken hochhalten. Bergarbeiter, die mit verrußten Gesichtern aus dem Schacht kommen. Sitzstreiks in Automobilwerken. Versammlungen in zugigen Gewerkschaftshallen, wo Männer und Frauen die Hand hoben, um einen Vertrag zu ratifizieren, der ihr Leben verändern würde. Dies sind die Fotografien der Arbeiterbewegung – und sie verblassen.

@@ -1,9 +1,6 @@
 ---
 title: "Restaurer des miniatures photographiques de médaillons et de bijoux : portraits minuscules"
-description: "# Comment restaurer les photographies miniatures retirées de médaillons et de bijoux
-
-Les techniques pour les minuscules photographies de portrait nécessitant des exigences de grossissement extrêmes.
-
+description: "Les techniques pour les minuscules photographies de portrait nécessitant des exigences de grossissement extrêmes."
 ---
 
 Lorsqu'on ouvre un médaillon hérité d'une grand-mère ou d'une arrière-grand-mère, on découvre souvent un trésor d'une fragilité bouleversante : une photographie miniature, parfois pas plus grande qu'un ongle, qui a traversé les décennies blottie contre la peau d'un être aimé. Ces minuscules portraits — souvent un époux disparu à la guerre, un enfant emporté trop jeune, ou un parent dont on ne se séparait jamais — posent un défi de restauration unique. Leur taille extrême, leur usure particulière et leur valeur sentimentale immense exigent une approche méticuleuse.

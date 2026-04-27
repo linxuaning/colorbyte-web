@@ -1,9 +1,6 @@
 ---
 title: "Wiederherstellung von Fotos der Nachbarschafts-Straßenfeste: Bewahrte Gemeinschaftstraditionen"
-description: "# So stellen Sie Fotos von Nachbarschaftsfesten und Gemeinschaftsveranstaltungen wieder her
-
-Bewahren Sie die Tradition amerikanischer Nachbarschaftsveranstaltungen.
-
+description: "Bewahren Sie die Tradition amerikanischer Nachbarschaftsveranstaltungen."
 ---
 
 Es gibt eine ganz bestimmte Art von Foto, die in vielen amerikanischen Familienalben zu finden ist: ein Klapptisch auf der Einfahrt, beladen mit Kartoffelsalat in Tupperware, ein Grill, der im Hintergrund raucht, Kinder mit klebrigen Wassermelonengesichtern, die durch einen Sprinkler rennen, und Nachbarn, die auf Gartenstühlen sitzen und lachen, während die Sonne über den Vorgärten untergeht. Block Partys. Sommerfeste in der Sackgasse. Straßensperren am 4. Juli. Nachbarschaftspotlucks. Eishockeyturniere auf der Einfahrt. Halloween-Umzüge. Diese Fotos halten etwas fest, das schwer zu benennen ist – das Gefühl, einen Ort zu kennen, weil man die Menschen kennt, die dort wohnen.

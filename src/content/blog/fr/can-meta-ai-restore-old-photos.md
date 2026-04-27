@@ -1,14 +1,6 @@
 ---
 title: "Meta AI peut-il restaurer de vieilles photos ? (Réponse honnête)"
-description: "I notice your message asks a question rather than providing English content to translate. Per my instructions, I'm a translator producing French localizations of ArtImageHub content — I don't generate new editorial content.
-
-If you intended to share source content for translation into French, please paste the full English passage you want translated. I'll then return the French version while preserving:
-
-- Brand names (ArtImageHub, PhotoFix, Old Photo Restoration, Photo Colorizer, Photo Enhancer)
-- Schema.org JSON-LD vocabulary
-- The literal "$4.99" price
-- Any pay-first messaging
-- Markdown structure, links, image paths, and `[[LDJSON_N]]` placeholders"
+description: "I notice your message asks a question rather than providing English content to translate. Per my instructions, I'm a translator producing French…"
 publishedAt: "2026-04-14"
 updatedAt: "2026-04-14"
 author: "Thomas Hale"

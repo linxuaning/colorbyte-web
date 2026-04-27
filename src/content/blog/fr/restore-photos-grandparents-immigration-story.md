@@ -1,9 +1,6 @@
 ---
 title: "Restaurer l'histoire d'immigration des grands-parents : un projet d'histoire orale visuelle"
-description: "# Comment utiliser la restauration de photos dans un projet d'histoire orale visuelle pour préserver les récits d'immigration de vos grands-parents
-
-Intégrer les photographies aux mémoires enregistrées
-
+description: "Intégrer les photographies aux mémoires enregistrées"
 ---
 
 Il y a quelque chose d'irremplaçable dans la voix d'une grand-mère décrivant le bateau qui l'a amenée ici à dix-sept ans, ou dans le rire d'un grand-père lorsqu'il évoque le premier hiver qu'il a passé dans un pays dont il ne parlait pas encore la langue. Et lorsque cette voix s'accompagne de la photographie même qu'elle décrit — restaurée, claire, vivante — quelque chose de magique se produit. Le passé cesse d'être lointain. Il devient présent.
