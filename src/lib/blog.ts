@@ -179,6 +179,19 @@ function resolvePostImage(image: string | undefined, category: string): string {
   return fallbackBlogImage;
 }
 
+// Some autoship-translated locale posts ship with broken frontmatter
+// (e.g. missing the closing `---` so the body bleeds into the YAML and
+// title/publishedAt/category never populate). Treat any such post as
+// data-broken and exclude it — otherwise sitemap.xml prerender hits
+// `new Date(undefined).toISOString()` (Invalid Date) and getRelatedPosts
+// hits `undefined.toLowerCase()` from the locale sibling iteration.
+function isUsablePost(data: { title?: unknown; publishedAt?: unknown }): boolean {
+  if (typeof data.title !== "string" || data.title.trim() === "") return false;
+  if (typeof data.publishedAt !== "string") return false;
+  const ts = new Date(data.publishedAt);
+  return !Number.isNaN(ts.getTime());
+}
+
 export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<BlogPostMeta[]> {
   const dir = localeBlogDir(locale);
   if (!fs.existsSync(dir)) {
@@ -186,34 +199,36 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
   }
 
   const fileNames = fs.readdirSync(dir);
-  const posts = fileNames
-    .filter((fileName) => fileName.endsWith(".md"))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(dir, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data, content } = matter(fileContents);
+  const posts: BlogPostMeta[] = [];
+  for (const fileName of fileNames) {
+    if (!fileName.endsWith(".md")) continue;
+    const slug = fileName.replace(/\.md$/, "");
+    const fullPath = path.join(dir, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data, content } = matter(fileContents);
 
-      return {
-        slug,
-        title: data.title,
-        description: data.description,
-        publishedAt: data.publishedAt,
-        updatedAt: data.updatedAt,
-        author: data.author,
-        authorRole: data.authorRole,
-        category: data.category,
-        tags: data.tags || [],
-        image: resolvePostImage(data.image, data.category || ""),
-        coverColor:
-          data.coverColor ||
-          defaultCoverColors[data.category] ||
-          "from-gray-700 to-gray-900",
-        coverEmoji: data.coverEmoji,
-        readingTime: calculateReadingTime(content),
-        noIndex: data.noIndex === true,
-      };
+    if (!isUsablePost(data)) continue;
+
+    posts.push({
+      slug,
+      title: data.title,
+      description: data.description,
+      publishedAt: data.publishedAt,
+      updatedAt: data.updatedAt,
+      author: data.author,
+      authorRole: data.authorRole,
+      category: data.category,
+      tags: data.tags || [],
+      image: resolvePostImage(data.image, data.category || ""),
+      coverColor:
+        data.coverColor ||
+        defaultCoverColors[data.category] ||
+        "from-gray-700 to-gray-900",
+      coverEmoji: data.coverEmoji,
+      readingTime: calculateReadingTime(content),
+      noIndex: data.noIndex === true,
     });
+  }
 
   return posts.sort((a, b) => {
     return (
@@ -269,14 +284,26 @@ export async function getRelatedPosts(
   locale: BlogLocale | string = "en"
 ): Promise<BlogPostMeta[]> {
   const posts = await getAllPosts(locale);
-  const normCategory = category.toLowerCase().trim();
-  const normTags = new Set(tags.map((t) => t.toLowerCase().trim()));
+  // Defensive: even with the isUsablePost filter, callers may pass an
+  // undefined category/tag from a partially-translated post that still
+  // satisfies title+publishedAt. Coerce so a single malformed sibling
+  // can't crash the prerender of the whole locale.
+  const normCategory = (category ?? "").toLowerCase().trim();
+  const normTags = new Set(
+    (tags ?? [])
+      .filter((t): t is string => typeof t === "string")
+      .map((t) => t.toLowerCase().trim()),
+  );
 
   return posts
     .filter((p) => p.slug !== currentSlug)
     .map((p) => {
-      const catMatch = p.category.toLowerCase().trim() === normCategory ? 2 : 0;
-      const tagOverlap = p.tags.filter((t) => normTags.has(t.toLowerCase().trim())).length;
+      const pCategory = typeof p.category === "string" ? p.category.toLowerCase().trim() : "";
+      const catMatch = pCategory && pCategory === normCategory ? 2 : 0;
+      const pTags = Array.isArray(p.tags) ? p.tags : [];
+      const tagOverlap = pTags.filter(
+        (t): t is string => typeof t === "string" && normTags.has(t.toLowerCase().trim()),
+      ).length;
       return { post: p, score: catMatch + tagOverlap };
     })
     .sort((a, b) => b.score - a.score || new Date(b.post.publishedAt).getTime() - new Date(a.post.publishedAt).getTime())
