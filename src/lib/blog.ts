@@ -80,6 +80,25 @@ const categoryFallbackImages: Record<string, string> = {
   "Use Cases": "/blog/before-after-examples.webp",
 };
 
+// Optional schema-augmenting frontmatter fields. Markdown-embedded JSON-LD
+// blocks get stripped by the renderer, so these declarative fields drive
+// page-level <script type="application/ld+json"> injection instead. Used by
+// "best …" / "X vs Y" / FAQ-rich posts so Google sees FAQPage / ItemList /
+// Review schemas without authors hand-writing JSON-LD in the body.
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+export interface BlogItemListEntry {
+  name: string;
+  url?: string;
+  description?: string;
+}
+export interface BlogAggregateRating {
+  rating: number;
+  count: number;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -98,6 +117,10 @@ export interface BlogPost {
   readingTime: number;
   headings: { id: string; text: string; level: number }[];
   noIndex?: boolean;
+  faq?: BlogFaqItem[];
+  itemList?: BlogItemListEntry[];
+  aggregateRating?: BlogAggregateRating;
+  reviewedItem?: string;
 }
 
 export interface BlogPostMeta {
@@ -290,6 +313,15 @@ export async function getPostBySlug(slug: string, locale: BlogLocale | string = 
       readingTime: calculateReadingTime(content),
       headings,
       noIndex: data.noIndex === true,
+      faq: Array.isArray(data.faq) ? data.faq : undefined,
+      itemList: Array.isArray(data.itemList) ? data.itemList : undefined,
+      aggregateRating:
+        data.aggregateRating &&
+        typeof data.aggregateRating.rating === "number" &&
+        typeof data.aggregateRating.count === "number"
+          ? data.aggregateRating
+          : undefined,
+      reviewedItem: typeof data.reviewedItem === "string" ? data.reviewedItem : undefined,
     };
   } catch {
     return null;

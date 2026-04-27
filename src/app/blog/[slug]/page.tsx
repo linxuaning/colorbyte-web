@@ -218,6 +218,57 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
+  // Optional schema-augmenting blocks driven by frontmatter. Markdown-embedded
+  // JSON-LD gets stripped by remark-html, so we inject these page-level instead.
+  const faqLd =
+    post.faq && post.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faq.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
+        }
+      : null;
+
+  const itemListLd =
+    post.itemList && post.itemList.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          itemListOrder: "https://schema.org/ItemListOrderDescending",
+          numberOfItems: post.itemList.length,
+          itemListElement: post.itemList.map((item, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: item.name,
+            ...(item.url ? { url: item.url } : {}),
+            ...(item.description ? { description: item.description } : {}),
+          })),
+        }
+      : null;
+
+  const reviewLd =
+    post.aggregateRating && post.reviewedItem
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          itemReviewed: {
+            "@type": "SoftwareApplication",
+            name: post.reviewedItem,
+            applicationCategory: "MultimediaApplication",
+          },
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: post.aggregateRating.rating,
+            bestRating: 10,
+          },
+          author: { "@type": "Person", name: post.author },
+        }
+      : null;
+
   return (
     <>
       <script
@@ -228,6 +279,24 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
+      {itemListLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
+        />
+      )}
+      {reviewLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLd) }}
+        />
+      )}
 
       <article className="min-h-screen">
         {/* ─── Hero Cover ─── */}
