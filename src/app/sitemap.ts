@@ -2,8 +2,50 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
 
+const BASE_URL = "https://artimagehub.com";
+
+// Locales that have a translated /[locale]/{tool} variant. EN ships at root.
+const TOOL_LOCALE_PREFIXES = ["es", "pt-BR", "fr", "de", "ja", "ko"] as const;
+
+// Build the languages map for a tool path so Next 15 emits
+// <xhtml:link rel="alternate" hreflang="..." /> siblings under each <url>.
+function toolLanguages(toolPath: string): Record<string, string> {
+  const en = `${BASE_URL}/${toolPath}`;
+  const languages: Record<string, string> = {
+    "x-default": en,
+    en,
+  };
+  for (const loc of TOOL_LOCALE_PREFIXES) {
+    languages[loc] = `${BASE_URL}/${loc}/${toolPath}`;
+  }
+  return languages;
+}
+
+// EN tool entry (e.g. /photo-colorizer) with reciprocal hreflang alternates.
+function toolEntry(toolPath: string) {
+  return {
+    url: `${BASE_URL}/${toolPath}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+    alternates: { languages: toolLanguages(toolPath) },
+  };
+}
+
+// Locale tool entry (e.g. /es/photo-colorizer). Mirrors the same alternates
+// so Google sees reciprocal hreflang from any cluster member.
+function localeToolEntry(toolPath: string, locale: string) {
+  return {
+    url: `${BASE_URL}/${locale}/${toolPath}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+    alternates: { languages: toolLanguages(toolPath) },
+  };
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://artimagehub.com";
+  const baseUrl = BASE_URL;
 
   const posts = await getAllPosts();
 
@@ -49,45 +91,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 1.0,
     },
-    {
-      url: `${baseUrl}/old-photo-restoration`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    // Locale pages — /old-photo-restoration
-    ...["es", "pt-BR", "fr", "de", "ja", "ko"].map((locale) => ({
-      url: `${baseUrl}/${locale}/old-photo-restoration`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    })),
-    {
-      url: `${baseUrl}/photo-colorizer`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    // Locale pages — /photo-colorizer
-    ...["es", "pt-BR", "fr", "de", "ja", "ko"].map((locale) => ({
-      url: `${baseUrl}/${locale}/photo-colorizer`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    })),
-    {
-      url: `${baseUrl}/photo-enhancer`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    // Locale pages — /photo-enhancer
-    ...["es", "pt-BR", "fr", "de", "ja", "ko"].map((locale) => ({
-      url: `${baseUrl}/${locale}/photo-enhancer`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    })),
+    // Tool pages with reciprocal hreflang alternates (3 EN + 18 locale = 21 cluster)
+    toolEntry("old-photo-restoration"),
+    ...TOOL_LOCALE_PREFIXES.map((loc) => localeToolEntry("old-photo-restoration", loc)),
+    toolEntry("photo-colorizer"),
+    ...TOOL_LOCALE_PREFIXES.map((loc) => localeToolEntry("photo-colorizer", loc)),
+    toolEntry("photo-enhancer"),
+    ...TOOL_LOCALE_PREFIXES.map((loc) => localeToolEntry("photo-enhancer", loc)),
     // High-value landing pages (138K/month search volume)
     {
       url: `${baseUrl}/how-to-restore-old-photos`,
@@ -161,6 +171,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    // T-F: previously-missing landing routes (already-built pages, not in sitemap until now)
+    ...[
+      { path: "ai-photo-fixer", priority: 0.8 },
+      { path: "ai-photo-restoration", priority: 0.8 },
+      { path: "damaged-photo-repair", priority: 0.8 },
+      { path: "fix-blurry-photos", priority: 0.8 },
+      { path: "free-photo-restoration", priority: 0.8 },
+      { path: "old-photo-colorization", priority: 0.8 },
+      { path: "photo-restoration-near-me", priority: 0.8 },
+      { path: "photo-restoration-service", priority: 0.8 },
+      { path: "picture-restoration", priority: 0.8 },
+      { path: "restore-damaged-photos", priority: 0.8 },
+      { path: "restore-faded-photos", priority: 0.8 },
+      { path: "restore-old-photos-free", priority: 0.8 },
+      { path: "restore-photos-online", priority: 0.8 },
+      { path: "vintage-photo-restoration", priority: 0.8 },
+      { path: "subscription", priority: 0.7 },
+    ].map((p) => ({
+      url: `${baseUrl}/${p.path}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: p.priority,
+    })),
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),

@@ -11,6 +11,7 @@ tags: ["ai restoration", "photoshop comparison", "photo editing tools", "digital
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🖥️"
+noIndex: true
 ---
 
 

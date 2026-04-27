@@ -11,6 +11,7 @@ tags: ["CVS Photo", "Photo Restoration", "Retail Photo", "Old Photos", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-red-800 via-rose-800 to-pink-900"
 coverEmoji: "💊"
+noIndex: true
 ---
 
 

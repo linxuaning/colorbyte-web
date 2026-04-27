@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 When restoring precious family photos, you have two main options: AI-powered restoration tools and professional human restorers. Both have their place—understanding the differences helps you choose the right approach for your photos.

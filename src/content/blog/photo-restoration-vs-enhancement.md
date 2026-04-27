@@ -11,6 +11,7 @@ tags: ["Photo Restoration", "Photo Enhancement", "AI Tools", "Old Photos", "Expl
 image: "/blog/before-after-examples.webp"
 coverColor: "from-indigo-700 via-violet-700 to-purple-600"
 coverEmoji: "🔬"
+noIndex: true
 ---
 
 
