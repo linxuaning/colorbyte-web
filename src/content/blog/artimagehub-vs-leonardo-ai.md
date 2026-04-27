@@ -11,6 +11,7 @@ tags: ["Leonardo AI", "Photo Restoration", "AI Image Generation", "Comparison", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-yellow-700 via-amber-600 to-orange-500"
 coverEmoji: "🦁"
+noIndex: true
 ---
 
 

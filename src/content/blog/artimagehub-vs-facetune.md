@@ -11,6 +11,7 @@ tags: ["Facetune", "Photo Restoration", "Portrait App", "Comparison", "Old Photo
 image: "/blog/before-after-examples.webp"
 coverColor: "from-purple-700 via-violet-700 to-indigo-600"
 coverEmoji: "💄"
+noIndex: true
 ---
 
 

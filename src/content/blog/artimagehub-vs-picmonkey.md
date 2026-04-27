@@ -11,6 +11,7 @@ tags: ["PicMonkey", "Photo Restoration", "Online Photo Editor", "Comparison", "O
 image: "/blog/before-after-examples.webp"
 coverColor: "from-orange-600 via-amber-600 to-yellow-600"
 coverEmoji: "🐵"
+noIndex: true
 ---
 
 

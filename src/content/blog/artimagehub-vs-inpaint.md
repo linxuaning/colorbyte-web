@@ -11,6 +11,7 @@ tags: ["Inpaint", "Photo Restoration", "Object Removal", "Comparison", "Old Phot
 image: "/blog/before-after-examples.webp"
 coverColor: "from-amber-700 via-orange-700 to-red-600"
 coverEmoji: "🩹"
+noIndex: true
 ---
 
 

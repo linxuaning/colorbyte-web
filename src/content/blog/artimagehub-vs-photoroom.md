@@ -11,6 +11,7 @@ tags: ["PhotoRoom", "Photo Restoration", "Background Removal", "Comparison", "Ol
 image: "/blog/before-after-examples.webp"
 coverColor: "from-sky-700 via-blue-600 to-indigo-500"
 coverEmoji: "🖼️"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Cleanup.pictures", "Photo Restoration", "Object Removal", "Comparison", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-sky-700 via-blue-700 to-indigo-600"
 coverEmoji: "🧹"
+noIndex: true
 ---
 
 

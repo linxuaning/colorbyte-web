@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import Link from "next/link";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
@@ -175,6 +176,50 @@ export default function PhotoEnhancerPage() {
       <Suspense fallback={<div className="min-h-[400px]" />}>
         <EnhanceClient />
       </Suspense>
+
+      {/* ─── See How We Compare ─── */}
+      <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-5">
+          <div className="text-center mb-10">
+            <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f]">
+              See How We Compare
+            </h2>
+            <p className="mt-3 text-[15px] text-[#6e6e73] max-w-xl mx-auto leading-[1.6]">
+              Looking at other AI enhancers and upscalers? Here&rsquo;s how ArtImageHub stacks up on quality, speed, and price.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { slug: "remini", label: "vs Remini", desc: "Face-restore mobile app vs full-photo enhancement." },
+              { slug: "topaz-gigapixel", label: "vs Topaz Gigapixel", desc: "Pro upscaling suite vs one-click web tool." },
+              { slug: "vanceai", label: "vs VanceAI", desc: "Modular AI editor vs streamlined enhancement workflow." },
+              { slug: "lets-enhance", label: "vs Let’s Enhance", desc: "Subscription upscaler vs one-time-payment enhancer." },
+              { slug: "picwish", label: "vs PicWish", desc: "All-purpose AI editor vs focused photo enhancer." },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`/blog/artimagehub-vs-${item.slug}`}
+                className="group block rounded-xl border border-[#d2d2d7]/60 bg-white p-5 hover:border-[#0071e3]/40 hover:shadow-sm transition-all duration-200"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] transition-colors mb-1.5">
+                  {item.label}
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.55] mb-2">
+                  {item.desc}
+                </p>
+                <span className="text-[12px] font-medium text-[#0071e3] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                  Read <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-[13px] text-[#6e6e73]">
+            <Link href="/blog?category=comparisons" className="text-[#0071e3] hover:underline">
+              See all ArtImageHub comparisons →
+            </Link>
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

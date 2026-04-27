@@ -11,6 +11,7 @@ tags: ["IMG2GO", "Photo Restoration", "Online Image Tools", "Comparison", "Old P
 image: "/blog/before-after-examples.webp"
 coverColor: "from-teal-700 via-cyan-700 to-sky-600"
 coverEmoji: "🔄"
+noIndex: true
 ---
 
 

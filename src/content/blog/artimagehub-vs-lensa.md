@@ -11,6 +11,7 @@ tags: ["Lensa AI", "Photo Restoration", "AI Selfie", "Comparison", "Old Photos"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-pink-700 via-fuchsia-700 to-purple-600"
 coverEmoji: "✨"
+noIndex: true
 ---
 
 

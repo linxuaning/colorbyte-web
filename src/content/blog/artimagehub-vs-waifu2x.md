@@ -11,6 +11,7 @@ tags: ["Waifu2x", "Photo Restoration", "AI Upscaling", "Comparison", "Old Photos
 image: "/blog/before-after-examples.webp"
 coverColor: "from-pink-700 via-rose-600 to-red-500"
 coverEmoji: "📈"
+noIndex: true
 ---
 
 

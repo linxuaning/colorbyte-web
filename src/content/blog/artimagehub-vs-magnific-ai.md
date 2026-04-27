@@ -11,6 +11,7 @@ tags: ["Magnific AI", "Photo Restoration", "AI Upscaling", "Comparison", "Old Ph
 image: "/blog/before-after-examples.webp"
 coverColor: "from-fuchsia-700 via-pink-700 to-rose-600"
 coverEmoji: "✨"
+noIndex: true
 ---
 
 

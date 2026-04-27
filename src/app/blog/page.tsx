@@ -27,10 +27,24 @@ export const metadata: Metadata = {
 // Category definitions
 const CATEGORIES = ["All", "Guides", "Features", "Tips", "Comparison", "Use Cases"];
 
+// Strip the leading "ArtImageHub vs " (and any trailing qualifier after " for ")
+// to produce a tight card title like "Adobe Photoshop" or "Remini".
+function compactComparisonTitle(title: string): string {
+  return title
+    .replace(/^ArtImageHub\s+vs\s+/i, "")
+    .replace(/\s+for\s+.*$/i, "")
+    .trim();
+}
+
 export default async function BlogPage() {
-  const posts = await getAllPosts();
-  const featuredPost = posts[0];
-  const remainingPosts = posts.slice(1);
+  const allPosts = await getAllPosts();
+  // Hub-level filter: hide noIndex posts from the public feed entirely.
+  const posts = allPosts.filter((p) => !p.noIndex);
+  const comparisonPosts = posts.filter((p) => p.category === "Comparisons");
+  const nonComparisonPosts = posts.filter((p) => p.category !== "Comparisons");
+  const featuredPost = nonComparisonPosts[0] ?? posts[0];
+  // Remaining grid: keep editorial mix; comparisons live in their own featured section.
+  const remainingPosts = nonComparisonPosts.slice(featuredPost ? 1 : 0);
 
   const collectionLd = {
     "@context": "https://schema.org",
@@ -233,6 +247,42 @@ export default async function BlogPage() {
                 </div>
               </div>
             </Link>
+          </section>
+        )}
+
+        {/* ── How ArtImageHub Compares — featured comparison index ── */}
+        {comparisonPosts.length > 0 && (
+          <section className="mb-20" aria-label="How ArtImageHub compares to other tools">
+            <div className="mb-8 flex items-center gap-4">
+              <div className="h-px w-8 bg-[#8B5E3C]" aria-hidden="true" />
+              <span className="font-lora text-[12px] uppercase tracking-[0.14em] text-[#8B5E3C]">How ArtImageHub Compares</span>
+              <div className="flex-1 h-px bg-[#d4bc91]/40" aria-hidden="true" />
+            </div>
+            <p className="font-lora text-[15px] text-[#6b5344] max-w-2xl mb-8 leading-[1.7]">
+              Side-by-side reviews against the tools people most often shortlist for old-photo work — so you can pick the right one before you upload anything.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {comparisonPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group block rounded-xl border border-[#d4bc91]/40 bg-white p-5 hover:border-[#8B5E3C]/60 hover:shadow-sm transition-all duration-200"
+                >
+                  <h3 className="font-playfair text-[16px] font-700 text-[#2c2416] group-hover:text-[#8B5E3C] transition-colors mb-1.5 leading-[1.3]">
+                    vs {compactComparisonTitle(post.title)}
+                  </h3>
+                  <p className="font-lora text-[13px] text-[#6b5344] leading-[1.6] line-clamp-2 mb-3">
+                    {post.description}
+                  </p>
+                  <span className="font-lora text-[12px] font-600 text-[#8B5E3C] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                    Read comparison
+                    <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                      <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </Link>
+              ))}
+            </div>
           </section>
         )}
 

@@ -11,6 +11,7 @@ tags: ["Krea AI", "Photo Restoration", "AI Creative Tools", "Comparison", "Old P
 image: "/blog/before-after-examples.webp"
 coverColor: "from-indigo-700 via-violet-600 to-purple-500"
 coverEmoji: "🎨"
+noIndex: true
 ---
 
 

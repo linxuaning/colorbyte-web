@@ -11,6 +11,7 @@ tags: ["Upscayl", "Photo Restoration", "AI Upscaling", "Open Source", "Compariso
 image: "/blog/before-after-examples.webp"
 coverColor: "from-violet-800 via-purple-700 to-fuchsia-600"
 coverEmoji: "🔭"
+noIndex: true
 ---
 
 

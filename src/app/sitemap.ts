@@ -11,16 +11,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = Date.now();
   const thirtyDays = 30 * 24 * 60 * 60 * 1000;
 
-  const blogPosts = posts.map((post) => {
-    const publishedMs = new Date(post.publishedAt).getTime();
-    const isRecent = now - publishedMs < thirtyDays;
-    return {
-      url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date(post.updatedAt || post.publishedAt),
-      changeFrequency: isRecent ? ("weekly" as const) : ("monthly" as const),
-      priority: isRecent ? 0.8 : 0.7,
-    };
-  });
+  const blogPosts = posts
+    .filter((post) => !post.noIndex)
+    .map((post) => {
+      const publishedMs = new Date(post.publishedAt).getTime();
+      const isRecent = now - publishedMs < thirtyDays;
+      return {
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.updatedAt || post.publishedAt),
+        changeFrequency: isRecent ? ("weekly" as const) : ("monthly" as const),
+        priority: isRecent ? 0.8 : 0.7,
+      };
+    });
 
   // Locale blog posts — only include if translations exist
   const localeBlogPosts: MetadataRoute.Sitemap = [];
@@ -28,6 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (locale === routing.defaultLocale) continue;
     const localePosts = await getAllPosts(locale);
     for (const post of localePosts) {
+      if (post.noIndex) continue;
       const publishedMs = new Date(post.publishedAt).getTime();
       const isRecent = now - publishedMs < thirtyDays;
       localeBlogPosts.push({

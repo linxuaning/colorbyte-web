@@ -11,6 +11,7 @@ tags: ["Flux", "Black Forest Labs", "Photo Restoration", "AI Image Generation", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-gray-800 via-slate-700 to-zinc-600"
 coverEmoji: "⚡"
+noIndex: true
 ---
 
 

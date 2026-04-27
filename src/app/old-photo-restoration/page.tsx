@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import Link from "next/link";
 import RestoreClient from "./restore-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
@@ -391,6 +392,50 @@ export default function OldPhotoRestorationPage() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* ─── See How We Compare ─── */}
+      <section className="border-t border-[#d2d2d7]/40 bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-5">
+          <div className="text-center mb-10">
+            <h2 className="text-[28px] sm:text-[32px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
+              See How We Compare
+            </h2>
+            <p className="mt-3 text-[15px] text-[#6e6e73] max-w-xl mx-auto leading-[1.6]">
+              Evaluating other restoration tools? Read our side-by-side reviews against the alternatives most people consider.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { slug: "adobe-photoshop", label: "vs Adobe Photoshop", desc: "Manual layer-by-layer retouching vs one-click AI restoration." },
+              { slug: "myheritage", label: "vs MyHeritage", desc: "Genealogy platform’s AI features vs a focused restoration tool." },
+              { slug: "photomyne", label: "vs Photomyne", desc: "Mobile photo-scanner app vs a desktop-grade restoration pipeline." },
+              { slug: "deep-nostalgia", label: "vs Deep Nostalgia", desc: "Photo animation feature vs actual repair of damage and fading." },
+              { slug: "remini", label: "vs Remini", desc: "Face-only mobile enhancer vs full-photo restoration." },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`/blog/artimagehub-vs-${item.slug}`}
+                className="group block rounded-xl border border-[#d2d2d7]/60 bg-[#faf8f4] p-5 hover:border-[#0071e3]/40 hover:shadow-sm transition-all duration-200"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] transition-colors mb-1.5">
+                  {item.label}
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.55] mb-2">
+                  {item.desc}
+                </p>
+                <span className="text-[12px] font-medium text-[#0071e3] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                  Read <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-[13px] text-[#6e6e73]">
+            <Link href="/blog?category=comparisons" className="text-[#0071e3] hover:underline">
+              See all ArtImageHub comparisons →
+            </Link>
+          </p>
         </div>
       </section>
 

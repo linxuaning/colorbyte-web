@@ -52,6 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical,
       languages,
     },
+    robots: post.noIndex ? { index: false, follow: true } : undefined,
     openGraph: {
       title: post.title,
       description: post.description,

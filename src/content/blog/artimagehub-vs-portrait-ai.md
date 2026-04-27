@@ -11,6 +11,7 @@ tags: ["Portrait AI", "Photo Restoration", "AI Headshots", "Comparison", "Old Ph
 image: "/blog/before-after-examples.webp"
 coverColor: "from-rose-700 via-pink-700 to-fuchsia-700"
 coverEmoji: "🤳"
+noIndex: true
 ---
 
 

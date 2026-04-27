@@ -11,6 +11,7 @@ tags: ["Picsart", "Photo Restoration", "Photo Editor", "Comparison", "Old Photos
 image: "/blog/before-after-examples.webp"
 coverColor: "from-purple-600 via-violet-600 to-indigo-500"
 coverEmoji: "🎭"
+noIndex: true
 ---
 
 

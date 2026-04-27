@@ -11,6 +11,7 @@ tags: ["Media.io", "Photo Restoration", "AI Photo Editor", "Comparison", "Old Ph
 image: "/blog/before-after-examples.webp"
 coverColor: "from-teal-700 via-cyan-700 to-blue-600"
 coverEmoji: "🔄"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["BeFunky", "Photo Restoration", "Online Photo Editor", "Comparison", "Old
 image: "/blog/before-after-examples.webp"
 coverColor: "from-teal-700 via-emerald-700 to-green-700"
 coverEmoji: "✨"
+noIndex: true
 ---
 
 

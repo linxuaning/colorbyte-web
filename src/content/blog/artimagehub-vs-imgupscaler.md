@@ -11,6 +11,7 @@ tags: ["ImgUpscaler", "Photo Restoration", "AI Upscaling", "Comparison", "Old Ph
 image: "/blog/before-after-examples.webp"
 coverColor: "from-cyan-700 via-teal-700 to-green-600"
 coverEmoji: "🔎"
+noIndex: true
 ---
 
 

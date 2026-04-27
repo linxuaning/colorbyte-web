@@ -11,6 +11,7 @@ tags: ["Ideogram", "Photo Restoration", "AI Image Generation", "Comparison", "Ol
 image: "/blog/before-after-examples.webp"
 coverColor: "from-slate-700 via-gray-700 to-zinc-600"
 coverEmoji: "💭"
+noIndex: true
 ---
 
 

@@ -77,6 +77,7 @@ export interface BlogPost {
   content: string;
   readingTime: number;
   headings: { id: string; text: string; level: number }[];
+  noIndex?: boolean;
 }
 
 export interface BlogPostMeta {
@@ -93,6 +94,7 @@ export interface BlogPostMeta {
   coverColor: string;
   coverEmoji?: string;
   readingTime: number;
+  noIndex?: boolean;
 }
 
 function calculateReadingTime(content: string): number {
@@ -209,6 +211,7 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
           "from-gray-700 to-gray-900",
         coverEmoji: data.coverEmoji,
         readingTime: calculateReadingTime(content),
+        noIndex: data.noIndex === true,
       };
     });
 
@@ -251,6 +254,7 @@ export async function getPostBySlug(slug: string, locale: BlogLocale | string = 
       content: contentHtml,
       readingTime: calculateReadingTime(content),
       headings,
+      noIndex: data.noIndex === true,
     };
   } catch {
     return null;
