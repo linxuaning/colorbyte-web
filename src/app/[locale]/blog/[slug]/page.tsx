@@ -7,6 +7,7 @@ import {
   getAllPosts,
   getRelatedPosts,
   getAvailableLocalesForSlug,
+  getEnPostNoIndex,
   type BlogLocale,
 } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
@@ -18,6 +19,10 @@ type Props = { params: Promise<{ locale: string; slug: string }> };
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
+  // Keep noIndex-parent locale variants in the param set so the URLs still
+  // resolve at 200 and render the inherited noindex meta — mirrors how the
+  // EN [slug] page handles its noIndex pages. The actual de-emphasis is
+  // sitemap exclusion + meta robots, not a hard 404.
   const out: Array<{ locale: string; slug: string }> = [];
   for (const locale of routing.locales) {
     if (locale === routing.defaultLocale) continue; // EN served from /blog/[slug]
@@ -52,7 +57,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical,
       languages,
     },
-    robots: post.noIndex ? { index: false, follow: true } : undefined,
+    // Inherit noIndex from the EN parent so the hreflang cluster stays
+    // consistent — Google warns when EN is noindex but locale variants are not.
+    robots:
+      post.noIndex || getEnPostNoIndex(slug)
+        ? { index: false, follow: true }
+        : undefined,
     openGraph: {
       title: post.title,
       description: post.description,

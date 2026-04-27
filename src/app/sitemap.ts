@@ -53,6 +53,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = Date.now();
   const thirtyDays = 30 * 24 * 60 * 60 * 1000;
 
+  // Track EN-side noIndex so locale variants inherit indexability from their
+  // parent. Otherwise a hreflang cluster ends up with EN=noindex but locale=index
+  // — Google flags that inconsistency in its docs.
+  const enNoIndexSlugs = new Set(posts.filter((p) => p.noIndex).map((p) => p.slug));
+
   const blogPosts = posts
     .filter((post) => !post.noIndex)
     .map((post) => {
@@ -66,13 +71,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       };
     });
 
-  // Locale blog posts — only include if translations exist
+  // Locale blog posts — only include if translations exist AND the EN parent
+  // is itself indexable (locale follows EN noIndex).
   const localeBlogPosts: MetadataRoute.Sitemap = [];
   for (const locale of routing.locales) {
     if (locale === routing.defaultLocale) continue;
     const localePosts = await getAllPosts(locale);
     for (const post of localePosts) {
-      if (post.noIndex) continue;
+      if (post.noIndex || enNoIndexSlugs.has(post.slug)) continue;
       const publishedMs = new Date(post.publishedAt).getTime();
       const isRecent = now - publishedMs < thirtyDays;
       localeBlogPosts.push({

@@ -17,6 +17,26 @@ function localeBlogDir(locale: BlogLocale | string): string {
 }
 
 /**
+ * Lightweight check for whether the EN parent post for a slug has `noIndex: true`
+ * in its frontmatter. Used by the locale routes to inherit indexability from the
+ * EN parent so a hreflang cluster never has the EN page noindex while its locale
+ * variants stay index — Google flags that as a bad consistency signal. Reads
+ * frontmatter only (no remark) so it's cheap to call from generateMetadata at
+ * build time. Returns false when the EN file doesn't exist or YAML can't parse.
+ */
+export function getEnPostNoIndex(slug: string): boolean {
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  if (!fs.existsSync(fullPath)) return false;
+  try {
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data } = matter(fileContents);
+    return data.noIndex === true;
+  } catch {
+    return false;
+  }
+}
+
+/**
  * Returns the list of non-EN locales that have a translated variant for the given slug.
  *
  * Used by both the EN root post page (to emit hreflang `languages` alternates) and the
