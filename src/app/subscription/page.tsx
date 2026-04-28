@@ -224,15 +224,18 @@ export default function SubscriptionPage() {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
-      {/* HD original offer - show before subscription check */}
+    <div className="mx-auto max-w-4xl px-4 py-6 sm:py-16">
+      {/* HD original offer - show before subscription check.
+          Mobile: card (with email + Pay) renders above title block to keep
+          the actionable inputs inside the 600px fold. Desktop layout is
+          preserved by reversing order at the sm breakpoint. */}
       {shouldShowOffer && (
-        <div id="checkout-offer" className="mb-12 scroll-mt-24">
-          <div className="text-center mb-8">
-            <h1 className="text-[32px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
+        <div id="checkout-offer" className="mb-12 scroll-mt-24 flex flex-col">
+          <div className="order-2 sm:order-1 text-center mb-6 sm:mb-8">
+            <h1 className="text-[28px] sm:text-[40px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
               Unlock Upload + HD Access — {PRO_PRICE_TEXT}
             </h1>
-            <p className="mt-3 text-[17px] text-[#6e6e73]">
+            <p className="mt-3 text-[15px] sm:text-[17px] text-[#6e6e73]">
               Pay first, then return to the tool and upload with the same email so your purchase and HD download access stay connected to that checkout.
             </p>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[12px] text-[#6e6e73]">
@@ -249,7 +252,7 @@ export default function SubscriptionPage() {
             </div>
           </div>
 
-          <div className="max-w-md mx-auto">
+          <div className="order-1 sm:order-2 max-w-md mx-auto w-full">
             {/* HD original checkout */}
             <div className="relative rounded-2xl bg-[#1d1d1f] p-6">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -322,12 +325,12 @@ export default function SubscriptionPage() {
             </div>
           </div>
 
-          <p className="mt-6 text-center text-[12px] text-[#6e6e73]">
+          <p className="order-3 mt-6 text-center text-[12px] text-[#6e6e73]">
             One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secured by DodoPayments
           </p>
 
           {EMAIL_PAYMENT_ENTRY_ENABLED && (
-            <div className="mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
+            <div className="order-4 mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
               <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
                 Send this checkout link to yourself
               </p>
@@ -353,7 +356,7 @@ export default function SubscriptionPage() {
             </div>
           )}
 
-          <div className="mt-6 grid gap-3 text-left sm:grid-cols-3">
+          <div className="order-5 mt-6 grid gap-3 text-left sm:grid-cols-3">
             {[
               {
                 title: "Restore more than one photo",
@@ -375,7 +378,7 @@ export default function SubscriptionPage() {
             ))}
           </div>
 
-          <div className="mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
+          <div className="order-6 mt-8 pt-8 border-t border-[#d2d2d7]/40 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-3">
               Already purchased? Check your paid access below
             </p>

@@ -174,9 +174,9 @@ function Header() {
           <LanguageSwitcher />
           <Link
             href="/old-photo-restoration"
-            className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20"
+            className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20 whitespace-nowrap"
           >
-            Restore Free
+            Get Started — $4.99
           </Link>
         </div>
       </div>

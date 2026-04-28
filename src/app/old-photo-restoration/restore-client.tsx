@@ -269,6 +269,27 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     setStage("done");
   }, [checkingAccess, isSubscriber, resumeTaskId, stage]);
 
+  // Auto-prompt the file picker when the visitor lands here with
+  // ?payment=success — fires once after subscription is confirmed and
+  // we're still in the idle (pre-upload) state. Skipped when a
+  // resume_task_id is present because the resume flow already drives
+  // straight to a "done" view of the previous task.
+  const autoPromptDoneRef = useRef(false);
+  useEffect(() => {
+    if (autoPromptDoneRef.current) return;
+    if (searchParams.get("payment") !== "success") return;
+    if (resumeTaskId) return;
+    if (checkingAccess || !isSubscriber) return;
+    if (stage !== "idle") return;
+    autoPromptDoneRef.current = true;
+    // Small delay so the picker click feels intentional after the
+    // unlock confirmation paints, not jarring at page-load instant.
+    const t = window.setTimeout(() => {
+      fileInputRef.current?.click();
+    }, 350);
+    return () => window.clearTimeout(t);
+  }, [checkingAccess, isSubscriber, stage, resumeTaskId, searchParams]);
+
   // Handle click on upload area only after paid access is confirmed.
   const handleUploadClick = useCallback(() => {
     if (!canUpload) {

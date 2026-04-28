@@ -5,6 +5,7 @@ import RestoreClient from "./restore-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
+import CollapsibleSection from "@/components/CollapsibleSection";
 
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
@@ -156,7 +157,7 @@ export default function OldPhotoRestorationPage() {
       {/* Hero header */}
       <div className="relative overflow-hidden border-b border-[#d2d2d7]/40 bg-white">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_-15%,rgba(0,113,227,0.07),transparent)]" />
-        <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
+        <div className="relative mx-auto max-w-3xl px-5 py-8 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
             Pay Once · No Subscription
@@ -179,26 +180,29 @@ export default function OldPhotoRestorationPage() {
               </span>
             ))}
           </div>
-          <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
-            <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
-              <p>One-time $4.99 payment. No subscription required.</p>
-              <p>Uploads encrypted and deleted within 24 hours.</p>
-              <p>Supports JPG, PNG, and WEBP up to 20 MB.</p>
-            </div>
+          {/* Hero CTA — actionable entry into pay flow above the fold */}
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/subscription?cta_slot=hero_above_fold&entry_variant=hero_inline"
+              className="inline-flex h-12 items-center rounded-full bg-[#0071e3] px-7 text-[15px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-md shadow-[#0071e3]/30"
+            >
+              $4.99 — Get Started
+              <span aria-hidden="true" className="ml-2">→</span>
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Social Proof */}
-      <div className="mx-auto max-w-3xl px-5 -mt-2 mb-8">
-        <LiveActivity />
-      </div>
-
-      {/* Main tool */}
-      <div id="upload" className="mx-auto max-w-3xl px-5 py-12 sm:py-16">
+      {/* Main tool — promoted above LiveActivity to keep mobile fold tight */}
+      <div id="upload" className="mx-auto max-w-3xl px-5 py-6 sm:py-16">
         <Suspense fallback={<div className="min-h-[400px]" />}>
           <RestoreClient />
         </Suspense>
+      </div>
+
+      {/* Social Proof — moved below pay gate */}
+      <div className="mx-auto max-w-3xl px-5 mb-8">
+        <LiveActivity />
       </div>
 
       {/* 30-Day Guarantee + Trust */}
@@ -276,8 +280,8 @@ export default function OldPhotoRestorationPage() {
 
       <FloatingCTA landingPage="/old-photo-restoration" />
 
-      {/* ─── SEO Content: How It Works ─── */}
-      <section className="py-16 sm:py-20">
+      {/* ─── SEO Content: How It Works (mobile-collapsible) ─── */}
+      <CollapsibleSection title="how it works" className="py-8 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
@@ -293,7 +297,7 @@ export default function OldPhotoRestorationPage() {
               {
                 step: "1",
                 title: "Pay once to unlock",
-                desc: "$4.99 one-time payment unlocks upload and processing access on your email. No subscription.",
+                desc: "$4.99 one-time payment unlocks upload and processing access on your email.",
               },
               {
                 step: "2",
@@ -316,10 +320,10 @@ export default function OldPhotoRestorationPage() {
             ))}
           </div>
         </div>
-      </section>
+      </CollapsibleSection>
 
-      {/* ─── SEO Content: What We Fix ─── */}
-      <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">
+      {/* ─── SEO Content: What We Fix (mobile-collapsible) ─── */}
+      <CollapsibleSection title="what AI restoration fixes" className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-8 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
           <div className="text-center mb-12">
             <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
@@ -346,7 +350,7 @@ export default function OldPhotoRestorationPage() {
             ))}
           </div>
         </div>
-      </section>
+      </CollapsibleSection>
 
       {/* ─── SEO Content: FAQ ─── */}
       <section className="py-16 sm:py-20">
