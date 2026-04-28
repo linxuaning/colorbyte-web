@@ -6,6 +6,7 @@ import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import CollapsibleSection from "@/components/CollapsibleSection";
+import DodoQuickCheckoutButton from "@/components/DodoQuickCheckoutButton";
 
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
@@ -180,15 +181,19 @@ export default function OldPhotoRestorationPage() {
               </span>
             ))}
           </div>
-          {/* Hero CTA — actionable entry into pay flow above the fold */}
+          {/* Hero CTA — opens the Dodo overlay directly via an in-page email
+              modal so the visitor never bounces through /subscription. Falls
+              back to /subscription if the SDK or backend fails. */}
           <div className="mt-6 flex justify-center">
-            <Link
-              href="/subscription?cta_slot=hero_above_fold&entry_variant=hero_inline"
+            <DodoQuickCheckoutButton
+              label="$4.99 — Get Started"
               className="inline-flex h-12 items-center rounded-full bg-[#0071e3] px-7 text-[15px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-md shadow-[#0071e3]/30"
-            >
-              $4.99 — Get Started
-              <span aria-hidden="true" className="ml-2">→</span>
-            </Link>
+              funnelSource={{
+                landingPage: "/old-photo-restoration",
+                ctaSlot: "hero_above_fold",
+                entryVariant: "hero_inline_overlay",
+              }}
+            />
           </div>
         </div>
       </div>

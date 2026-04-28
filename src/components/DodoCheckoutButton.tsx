@@ -11,6 +11,7 @@ import {
   trackPaymentRecoveryAction,
   trackPaymentStarted,
 } from "@/lib/analytics";
+import { openDodoOverlay } from "@/lib/dodo-overlay";
 import type { PaymentFunnelSource } from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
@@ -122,7 +123,24 @@ export default function DodoCheckoutButton({
       }
 
       trackCreateOrderResult(true, data.session_id || "session_created", funnelSource);
-      window.location.href = data.checkout_url;
+
+      // Try Dodo's overlay first; fall back to redirect if SDK can't load
+      // or open. The overlay keeps the visitor on artimagehub.com so the
+      // post-payment redirect (?payment=success) lands back inside our
+      // domain instantly instead of a hosted-page round trip.
+      await openDodoOverlay({
+        checkoutUrl: data.checkout_url,
+        onSuccess: () => {
+          // Backend return_url is already /old-photo-restoration?payment=success
+          // — Dodo's overlay handles its own success navigation. We force
+          // a parent navigation as a safety net so the auto-prompt file
+          // picker fires even if the overlay doesn't auto-redirect us.
+          window.location.href = `${window.location.origin}/old-photo-restoration?payment=success`;
+        },
+        onCancel: () => {
+          trackPaymentCancel("dodo_overlay_dismissed", funnelSource);
+        },
+      });
     } catch (err) {
       const message = err instanceof Error ? err.message : "Failed to start checkout";
       clearPendingPaymentFunnelSource();
