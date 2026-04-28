@@ -191,7 +191,6 @@ export default function OldPhotoRestorationPage() {
               funnelSource={{
                 landingPage: "/old-photo-restoration",
                 ctaSlot: "hero_above_fold",
-                entryVariant: "hero_inline_overlay",
               }}
             />
           </div>

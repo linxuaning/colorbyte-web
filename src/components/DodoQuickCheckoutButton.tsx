@@ -11,7 +11,10 @@ import {
   trackPaymentStarted,
 } from "@/lib/analytics";
 import { openDodoOverlay } from "@/lib/dodo-overlay";
-import type { PaymentFunnelSource } from "@/lib/payment-funnel";
+import {
+  enrichFunnelSource,
+  type PaymentFunnelSource,
+} from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -112,10 +115,19 @@ export default function DodoQuickCheckoutButton({
     setLoading(true);
     setError(null);
 
+    // Auto-fill funnel attribution from browser when caller hasn't supplied
+    // it; default checkout_source for this component is "modal_overlay"
+    // because the Dodo SDK overlay is the success path here. Caller can
+    // override via the funnelSource prop.
+    const enrichedSource = enrichFunnelSource(funnelSource, {
+      ctaSlot: "hero_quick_checkout",
+      checkoutSource: "modal_overlay",
+    });
+
     try {
       localStorage.setItem("artimagehub_email", normalized);
-      storePendingPaymentFunnelSource(funnelSource, undefined);
-      trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
+      storePendingPaymentFunnelSource(enrichedSource, undefined);
+      trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
       const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
         method: "POST",
@@ -123,7 +135,7 @@ export default function DodoQuickCheckoutButton({
         body: JSON.stringify({
           email: normalized,
           resume_task_id: null,
-          ...paymentFunnelPayload(funnelSource),
+          ...paymentFunnelPayload(enrichedSource),
         }),
       });
 
@@ -136,7 +148,7 @@ export default function DodoQuickCheckoutButton({
         } catch {
           /* keep http_status detail */
         }
-        trackCreateOrderResult(false, detail, funnelSource);
+        trackCreateOrderResult(false, detail, enrichedSource);
         // Hard fallback to /subscription where DodoCheckoutButton has its
         // own error UX + manual support link.
         window.location.href = `${window.location.origin}/subscription?email=${encodeURIComponent(normalized)}&cta_slot=hero_quick_checkout&entry_variant=hero_modal_fallback`;
@@ -147,7 +159,7 @@ export default function DodoQuickCheckoutButton({
         await response.json();
       if (!data.checkout_url) {
         clearPendingPaymentFunnelSource();
-        trackCreateOrderResult(false, "missing_checkout_url", funnelSource);
+        trackCreateOrderResult(false, "missing_checkout_url", enrichedSource);
         window.location.href = `${window.location.origin}/subscription?email=${encodeURIComponent(normalized)}&cta_slot=hero_quick_checkout&entry_variant=hero_modal_fallback`;
         return;
       }
@@ -159,7 +171,7 @@ export default function DodoQuickCheckoutButton({
           Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001
         ) {
           clearPendingPaymentFunnelSource();
-          trackCreateOrderResult(false, "amount_mismatch", funnelSource);
+          trackCreateOrderResult(false, "amount_mismatch", enrichedSource);
           setError(
             `Pricing temporarily out of sync. Please reload or use the Get Started button below.`,
           );
@@ -168,7 +180,7 @@ export default function DodoQuickCheckoutButton({
         }
       }
 
-      trackCreateOrderResult(true, data.session_id || "session_created", funnelSource);
+      trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
 
       const result = await openDodoOverlay({
         checkoutUrl: data.checkout_url,
@@ -176,7 +188,7 @@ export default function DodoQuickCheckoutButton({
           window.location.href = `${window.location.origin}/old-photo-restoration?payment=success`;
         },
         onCancel: () => {
-          trackPaymentCancel("dodo_overlay_dismissed", funnelSource);
+          trackPaymentCancel("dodo_overlay_dismissed", enrichedSource);
           setLoading(false);
         },
       });
@@ -190,7 +202,7 @@ export default function DodoQuickCheckoutButton({
     } catch (err) {
       const message = err instanceof Error ? err.message : "Something went wrong.";
       clearPendingPaymentFunnelSource();
-      trackCreateOrderResult(false, "exception", funnelSource);
+      trackCreateOrderResult(false, "exception", enrichedSource);
       setError(message);
       setLoading(false);
     }

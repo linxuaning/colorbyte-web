@@ -12,7 +12,10 @@ import {
   trackPaymentStarted,
 } from "@/lib/analytics";
 import { openDodoOverlay } from "@/lib/dodo-overlay";
-import type { PaymentFunnelSource } from "@/lib/payment-funnel";
+import {
+  enrichFunnelSource,
+  type PaymentFunnelSource,
+} from "@/lib/payment-funnel";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -79,11 +82,21 @@ export default function DodoCheckoutButton({
     setError(null);
     setValidationMessage(null);
 
+    // Auto-fill funnel attribution from the browser when the caller hasn't
+    // already supplied it. Caller-provided values always win — this only
+    // backfills landing_page (current pathname+search), entry_variant
+    // (from utm_source / referrer), and the default checkout_source for
+    // this component (intermediate_redirect — the /subscription pay-gate).
+    const enrichedSource = enrichFunnelSource(funnelSource, {
+      ctaSlot: "pay_gate_main",
+      checkoutSource: "intermediate_redirect",
+    });
+
     try {
       localStorage.setItem("artimagehub_email", normalizedCheckoutEmail);
-      trackPaymentClick(CHECKOUT_ITEM_LABEL, funnelSource);
-      storePendingPaymentFunnelSource(funnelSource, resumeTaskId);
-      trackPaymentStarted(CHECKOUT_ITEM_LABEL, funnelSource);
+      trackPaymentClick(CHECKOUT_ITEM_LABEL, enrichedSource);
+      storePendingPaymentFunnelSource(enrichedSource, resumeTaskId);
+      trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
       const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
         method: "POST",
@@ -93,21 +106,21 @@ export default function DodoCheckoutButton({
         body: JSON.stringify({
           email: normalizedCheckoutEmail,
           resume_task_id: resumeTaskId || null,
-          ...paymentFunnelPayload(funnelSource),
+          ...paymentFunnelPayload(enrichedSource),
         }),
       });
 
       if (!response.ok) {
         clearPendingPaymentFunnelSource();
         const detail = await readErrorDetail(response);
-        trackCreateOrderResult(false, detail, funnelSource);
+        trackCreateOrderResult(false, detail, enrichedSource);
         throw new Error(`Failed to create checkout (${detail})`);
       }
 
       const data = (await response.json()) as DodoCheckoutResponse;
       if (!data.checkout_url) {
         clearPendingPaymentFunnelSource();
-        trackCreateOrderResult(false, "missing_checkout_url", funnelSource);
+        trackCreateOrderResult(false, "missing_checkout_url", enrichedSource);
         throw new Error("Checkout link is missing in payment response");
       }
 
@@ -115,14 +128,14 @@ export default function DodoCheckoutButton({
         const backendAmount = Number.parseFloat(String(data.amount));
         if (Number.isFinite(backendAmount) && Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001) {
           clearPendingPaymentFunnelSource();
-          trackCreateOrderResult(false, "amount_mismatch", funnelSource);
+          trackCreateOrderResult(false, "amount_mismatch", enrichedSource);
           throw new Error(
             `Price mismatch: UI ${PRO_PRICE_TEXT} vs checkout $${backendAmount.toFixed(2)}`
           );
         }
       }
 
-      trackCreateOrderResult(true, data.session_id || "session_created", funnelSource);
+      trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
 
       // Try Dodo's overlay first; fall back to redirect if SDK can't load
       // or open. The overlay keeps the visitor on artimagehub.com so the
@@ -138,13 +151,13 @@ export default function DodoCheckoutButton({
           window.location.href = `${window.location.origin}/old-photo-restoration?payment=success`;
         },
         onCancel: () => {
-          trackPaymentCancel("dodo_overlay_dismissed", funnelSource);
+          trackPaymentCancel("dodo_overlay_dismissed", enrichedSource);
         },
       });
     } catch (err) {
       const message = err instanceof Error ? err.message : "Failed to start checkout";
       clearPendingPaymentFunnelSource();
-      trackPaymentCancel("dodo_checkout_error", funnelSource);
+      trackPaymentCancel("dodo_checkout_error", enrichedSource);
       setError(message);
     } finally {
       setLoading(false);

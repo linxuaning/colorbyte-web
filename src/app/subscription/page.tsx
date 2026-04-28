@@ -312,6 +312,7 @@ export default function SubscriptionPage() {
               <DodoCheckoutButton
                 checkoutEmail={email}
                 resumeTaskId={resumeTaskId || undefined}
+                funnelSource={funnelSource}
               />
 
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
