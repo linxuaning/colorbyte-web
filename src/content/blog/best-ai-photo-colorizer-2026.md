@@ -77,7 +77,7 @@ For this comparison I ran a curated set of 40 representative B&W test photos thr
 
 [ArtImageHub's photo colorizer](/photo-colorizer) is a browser-based tool that bundles colorization with restoration and upscaling in a single $4.99 one-time payment. There is no monthly fee, no app to install, and no separate plans for "premium" features — what you get for $4.99 is the same tool the homepage advertises.
 
-What it does well: skin tones come out natural without the over-saturated look common in older colorizers. The pipeline runs colorization through a deep learning model based on the open-source Colorizer family of architectures, then optionally chains face enhancement and 4× upscaling on the same image — useful when your source scan is low-resolution. Browser-based means it works equally well from a phone, laptop, or shared family computer.
+What it does well: skin tones come out natural without the over-saturated look common in older colorizers. The pipeline runs colorization through an open-source AI model adapted for photo colorization, then optionally chains face enhancement and 4× upscaling on the same image — useful when your source scan is low-resolution. Browser-based means it works equally well from a phone, laptop, or shared family computer.
 
 What it does not do: there is no per-region color editing — you cannot tell it "make the dress blue" the way Palette.fm or EditThisPic can. For most family-photo use cases this is a feature, not a flaw (one upload, one result), but if you need artistic control over specific regions, pick a tool from #2 or #6 instead.
 
