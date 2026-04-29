@@ -10,7 +10,11 @@ import {
   trackPaymentClick,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import { openDodoOverlay } from "@/lib/dodo-overlay";
+import {
+  CHECKOUT_FETCH_TIMEOUT_MS,
+  fetchWithTimeout,
+  openDodoOverlay,
+} from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -129,15 +133,39 @@ export default function DodoQuickCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, undefined);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: normalized,
-          resume_task_id: null,
-          ...paymentFunnelPayload(enrichedSource),
-        }),
-      });
+      // 5s timeout via AbortController. Native `fetch` doesn't time out by
+      // default; on a hung connection (China VPN flapping, GFW interference,
+      // ISP-level throttle) it can wait minutes — long enough for the user
+      // to abandon and the modal to feel broken. AbortError below is the
+      // timeout-fired path → fallback to /subscription.
+      let response: Response;
+      try {
+        response = await fetchWithTimeout(
+          `${API_BASE}/api/payment/dodo-create-checkout`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              email: normalized,
+              resume_task_id: null,
+              ...paymentFunnelPayload(enrichedSource),
+            }),
+          },
+          CHECKOUT_FETCH_TIMEOUT_MS,
+        );
+      } catch (err) {
+        const isAbort =
+          err instanceof DOMException &&
+          (err.name === "AbortError" || err.name === "TimeoutError");
+        clearPendingPaymentFunnelSource();
+        trackCreateOrderResult(
+          false,
+          isAbort ? "timeout_fetch" : "fetch_error",
+          enrichedSource,
+        );
+        window.location.href = `${window.location.origin}/subscription?email=${encodeURIComponent(normalized)}&cta_slot=hero_quick_checkout&entry_variant=hero_modal_timeout`;
+        return;
+      }
 
       if (!response.ok) {
         clearPendingPaymentFunnelSource();
