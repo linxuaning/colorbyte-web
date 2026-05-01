@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Deep Nostalgia (MyHeritage) for Old Photos"
 description: "Deep Nostalgia vs ArtImageHub for restoring old family photographs. MyHeritage's animation feature vs specialized AI restoration — what each does and when to use which."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-800 via-sky-700 to-cyan-700"
 coverEmoji: "🎬"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Deep Nostalgia is MyHeritage's viral photo animation feature — it makes old portrait photographs appear to move and look around. ArtImageHub is a specialized AI pipeline for old photo restoration. These tools are often searched together by people trying to improve old family photos, but they do fundamentally different things.

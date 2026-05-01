@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Canva for Old Photo Restoration: What Canva Can't Do"
 description: "Can Canva restore old, faded, or damaged photos? Comparing Canva's photo tools vs ArtImageHub AI restoration for old family photographs. Honest breakdown."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-cyan-600 via-teal-600 to-emerald-700"
 coverEmoji: "🎨"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Canva is one of the most popular design tools in the world. It can do a lot. Old photo restoration — in the sense of repairing fading, scratches, and recovering face detail from aging family photographs — is not one of them.

@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Facetune for Old Photo Restoration"
 description: "Facetune vs ArtImageHub for restoring old, damaged family photos. Popular portrait retouching app vs specialized AI restoration — what each does for historical photographs."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-purple-700 via-violet-700 to-indigo-600"
 coverEmoji: "💄"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Facetune is one of the most popular portrait retouching apps — millions of users use it to enhance selfies and modern portraits. ArtImageHub is a specialized AI pipeline for old photo restoration. Both touch faces and improve photographs; they're built for entirely different problems.

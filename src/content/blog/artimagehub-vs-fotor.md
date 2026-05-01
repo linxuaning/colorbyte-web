@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Fotor: AI Photo Restoration Compared"
 description: "ArtImageHub vs Fotor for restoring old photos. Honest comparison of output quality, pricing, and which is better for damaged or faded family photographs."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Rachel Kim"
 authorRole: "Photography Educator"
 authorBio: "Rachel teaches digital photography and photo archival techniques. She has tested every major AI photo tool for her courses and workshops."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-rose-500 via-pink-600 to-fuchsia-700"
 coverEmoji: "📸"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Fotor is a popular all-in-one photo editor with AI enhancement features. It's well-known, widely used, and has a decent free tier.

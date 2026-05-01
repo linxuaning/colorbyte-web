@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Let's Enhance: Which Is Better for Old Photo Restoration?"
 description: "ArtImageHub vs Let's Enhance for restoring old family photos. Comparing quality, pricing, damage repair, and which tool is right for faded or scratched photos."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "James Whitfield"
 authorRole: "Photo Archival Consultant"
 authorBio: "James consults for museums and private collectors on digitizing and restoring historical photo archives. He evaluates AI tools for archival and consumer use."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-cyan-600 via-teal-600 to-emerald-700"
 coverEmoji: "🔍"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Let's Enhance is a well-known AI upscaling and image enhancement tool, popular with photographers and designers who need to increase image resolution. It has a clean interface and produces sharp results on modern photography.

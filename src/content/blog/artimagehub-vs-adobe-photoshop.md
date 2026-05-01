@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Adobe Photoshop: Which Is Better for Old Photo Restoration?"
 description: "ArtImageHub vs Adobe Photoshop for restoring old family photos. Comparing Neural Filters, scratch repair, face enhancement, skill required, and cost per photo."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Rachel Steiner"
 authorRole: "Digital Photography Educator"
 authorBio: "Rachel teaches digital photography and image editing at a community college. She evaluates AI tools and traditional editing software for students ranging from beginners to advanced photographers."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-blue-700 via-indigo-700 to-violet-800"
 coverEmoji: "🎨"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Adobe Photoshop is the world's most powerful image editing software. It's the industry standard for professional photographers, designers, and restoration artists. Its Neural Filters include AI-powered tools for colorization and face enhancement.

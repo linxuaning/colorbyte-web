@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Cleanup.pictures for Old Photo Restoration"
 description: "Cleanup.pictures vs ArtImageHub for restoring old, damaged family photographs. Object removal tool vs specialized AI restoration — what each does and when to use which."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-sky-700 via-blue-700 to-indigo-600"
 coverEmoji: "🧹"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Cleanup.pictures is a popular AI-powered object removal tool — paint over something in a photo and the AI removes it and fills in the background. ArtImageHub is a specialized AI pipeline for old photo restoration. Both deal with photo "damage" in some sense, but they're solving different problems.
