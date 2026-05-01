@@ -5,7 +5,9 @@ import { routing } from "@/i18n/routing";
 const BASE_URL = "https://artimagehub.com";
 
 // Locales that have a translated /[locale]/{tool} variant. EN ships at root.
-const TOOL_LOCALE_PREFIXES = ["es", "pt-BR", "fr", "de", "ja", "ko"] as const;
+// Note: zh-CN added 2026-05-01 for Baidu/Chinese amplification (azilaye paid via baidu validated channel).
+// Translations may lag locale config; canonical strategy ensures duplicate-content protection.
+const TOOL_LOCALE_PREFIXES = ["es", "pt-BR", "fr", "de", "ja", "ko", "zh-CN"] as const;
 
 // Build the languages map for a tool path so Next 15 emits
 // <xhtml:link rel="alternate" hreflang="..." /> siblings under each <url>.
