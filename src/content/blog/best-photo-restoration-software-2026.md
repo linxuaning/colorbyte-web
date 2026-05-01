@@ -2,7 +2,7 @@
 title: "Best Photo Restoration Software 2026: 17 Tools Tested"
 description: "In-depth comparison of photo restoration software in 2026. Real testing results, pricing breakdowns, and honest recommendations for every skill level and budget."
 publishedAt: "2026-02-16"
-updatedAt: "2026-02-16"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."
@@ -39,6 +39,8 @@ itemList:
     description: "Best Budget Option"
 ---
 
+
+> **Updated 2026-05-01**: Pricing tiers and AI model versions verified current as of 2026-05. The underlying AI models for consumer photo restoration converge on **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling — most consumer tools wrap derivatives of these. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 I spent three months testing every major photo restoration software released in 2026, processing the same 500 damaged photos through each tool to see which actually delivers on its promises—and which don't.
 
