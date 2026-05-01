@@ -2,7 +2,7 @@
 title: "Best AI Tools for Old Photo Restoration in 2026 (Tested)"
 description: "Ranked: the best AI photo restoration tools in 2026 for restoring old, faded, and damaged family photos. Tested on real photos — face quality, damage repair, price, and ease of use."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Claire Donovan"
 authorRole: "Photo Archivist"
 authorBio: "Claire manages digitization and restoration projects for private family archives and small museums. She has tested more than 30 AI tools on historical photograph collections over the past three years."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🏆"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Not all AI photo tools are built for old photographs. Most are designed for modern digital photos — fixing JPEG compression, reducing noise from high-ISO settings, or upscaling clean images. Even generative image platforms like [Flux from Black Forest Labs](/blog/artimagehub-vs-flux) produce beautiful new images but aren't engineered to recover detail from a scratched 1950s print.

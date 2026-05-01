@@ -2,7 +2,7 @@
 title: "ArtImageHub vs VanceAI: Which AI Photo Restoration Tool Is Worth It?"
 description: "Comparing ArtImageHub vs VanceAI for old photo restoration. Pricing, quality, credits system, and which tool makes more sense for restoring family photos."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Michael Torres"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has worked with photography archives for 12 years and has evaluated dozens of AI enhancement tools for professional and consumer use."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-teal-500 via-cyan-600 to-blue-700"
 coverEmoji: "🔍"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 VanceAI offers a suite of AI image tools — enhancement, upscaling, background removal, and more. It's one of the more feature-complete image AI platforms aimed at professionals and creators.

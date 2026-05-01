@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Remove.bg for Old Photo Restoration"
 description: "Remove.bg vs ArtImageHub for old family photos. Background removal tool vs specialized restoration — what each does and when to use which."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-green-700 via-emerald-600 to-teal-500"
 coverEmoji: "✂️"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Remove.bg is one of the most popular AI background removal tools — clean, fast, and focused on one task. ArtImageHub is a specialized pipeline for old photo restoration. People sometimes confuse background removal with restoration; they're different operations that can complement each other.

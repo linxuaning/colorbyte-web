@@ -2,7 +2,7 @@
 title: "AI Photo Restoration vs Photoshop: Which Is Better for Old Photos?"
 description: "A detailed comparison of AI-powered restoration tools versus manual Photoshop techniques for repairing old and damaged photographs."
 publishedAt: "2026-03-23"
-updatedAt: "2026-03-31"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "AI Photography Analyst"
 authorBio: "David Park researches and writes about the intersection of artificial intelligence and photographic preservation."
@@ -13,6 +13,8 @@ coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🖥️"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 When it comes to restoring cherished old photographs, two approaches dominate the conversation: AI-powered tools like ArtImageHub and traditional manual editing in Photoshop. Both can produce beautiful results, but they serve different needs, skill levels, and time budgets. Understanding the real-world differences helps you choose the right tool for your specific photos.

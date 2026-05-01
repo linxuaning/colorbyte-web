@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Ideogram for Old Photo Restoration"
 description: "Ideogram vs ArtImageHub for restoring old family photos. AI image generation platform vs specialized restoration — why these tools serve completely different purposes."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-slate-700 via-gray-700 to-zinc-600"
 coverEmoji: "💭"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Ideogram (ideogram.ai) is an AI image generation platform known for its strong text rendering within generated images. ArtImageHub is a specialized AI pipeline for old photo restoration. Like Midjourney and DALL-E, Ideogram is a generative tool — it creates new images. Here's why it can't restore old photographs.

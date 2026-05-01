@@ -2,12 +2,14 @@
 title: "How to Digitize and Restore Old Slides: Convert and Enhance Transparencies"
 description: "Learn how to digitize and restore 35mm slides, medium format transparencies, and other slide film. Expert guide to scanning, color correcting, and enhancing old slides."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Boxes of old slides represent a treasure trove of family memories—vivid color photographs that have sat in carousels and storage boxes for decades. Unlike negatives, slides were designed for direct viewing, making them easier to digitize but also more susceptible to visible deterioration. Understanding how to properly digitize and restore slides helps preserve these vibrant records of the past.
 

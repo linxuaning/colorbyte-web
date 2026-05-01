@@ -2,7 +2,7 @@
 title: "Restore Old Photos at Home: DIY Guide for Beginners"
 description: "Learn professional photo restoration techniques you can do at home. Step-by-step guide covering scanning, AI restoration, and manual touch-ups for damaged family photos."
 publishedAt: "2026-02-16"
-updatedAt: "2026-02-16"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah Chen has spent over a decade helping families preserve their photographic heritage. As a certified digital archivist, she's restored tens of thousands of historical images for museums, genealogists, and private collectors."
@@ -13,6 +13,8 @@ coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🏠"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 You don't need expensive software or years of Photoshop experience to restore old photos at home. In 2026, AI-powered restoration tools have changed what was once a highly specialized skill requiring hundreds of hours of training. If your photos have scratches, tears, or water damage, our [restore damaged photos](/restore-damaged-photos) tool handles these automatically.

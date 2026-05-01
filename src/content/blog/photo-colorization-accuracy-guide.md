@@ -2,12 +2,14 @@
 title: "Photo Colorization Accuracy: AI vs Manual Techniques"
 description: "Expert guide to accurate photo colorization. Compare AI vs manual methods, learn historical research, and master color accuracy for B&W photo restoration."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "James Morrison"
 role: "Historical Photo Conservator"
 category: "Photo Restoration"
 featured: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Colorizing black and white photographs transforms historical images into vivid, relatable scenes—but achieving photo colorization accuracy requires far more than applying random colors. Whether using AI-powered tools like our [photo colorizer](/photo-colorizer) service or manual techniques, accurate colorization demands historical research, understanding of period-appropriate palettes, and knowledge of photographic rendering. This guide examines what separates accurate, historically faithful colorization from guesswork, comparing AI and manual approaches while providing professional techniques for achieving realistic, authentic results.
 

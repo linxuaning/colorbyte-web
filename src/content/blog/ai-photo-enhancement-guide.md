@@ -2,12 +2,14 @@
 title: "AI Photo Enhancement Guide 2026: Complete Tutorial for Beginners"
 description: "Complete guide to AI photo enhancement. Learn how artificial intelligence improves old photos, step-by-step tutorials, and tips for best results."
 publishedAt: "2026-02-22"
-updatedAt: "2026-02-22"
+updatedAt: "2026-05-01"
 author: "James Morrison"
 role: "Vintage Photo Specialist"
 category: "Photo Enhancement"
 featured: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Artificial intelligence has transformed photo enhancement, making professional-quality restoration accessible to everyone regardless of technical skills. What once required hours of painstaking manual work in Photoshop can now be done in seconds through AI-powered algorithms that understand image content, recognize damage patterns, and apply precise corrections automatically. Whether you're enhancing old family photos, restoring damaged historical images, or [improving the quality of low-resolution pictures](/blog/enhance-low-quality-images), AI photo enhancement offers unprecedented capability at consumer-friendly prices.
 

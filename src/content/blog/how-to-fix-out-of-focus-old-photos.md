@@ -2,12 +2,14 @@
 title: "How to Fix Out of Focus Old Photos: Sharpen Blurry Vintage Images"
 description: "Learn how to fix blurry and out-of-focus old photographs. Expert guide to sharpening soft vintage images and recovering detail from unfocused pictures."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Out-of-focus photographs are among the most common issues in vintage image collections. Whether caused by camera limitations, photographer error, or subject movement, soft and blurry images obscure the faces and details we want to see. While original sharpness can't be fully recovered, modern restoration techniques can significantly improve clarity and make out-of-focus photos more viewable.
 

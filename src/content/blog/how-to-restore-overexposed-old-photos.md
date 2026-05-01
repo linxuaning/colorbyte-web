@@ -2,7 +2,7 @@
 title: "How to Restore Overexposed Old Photos: Recovering Washed-Out Images"
 description: "Complete guide to overexposed photos photo restoration. Learn how AI and digital techniques restore washed out images and blown highlights from overex"
 publishedAt: "2026-02-18"
-updatedAt: "2026-02-27"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, processing over 12,000 historical photos. He specializes in recovering family memories from damaged and deteriorating prints."
@@ -12,6 +12,8 @@ image: "/blog/how-to-restore-overexposed-old-photos.jpg"
 coverColor: "from-yellow-600 via-amber-700 to-orange-800"
 coverEmoji: "☀️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every overexposed restoration is about more than technical quality.

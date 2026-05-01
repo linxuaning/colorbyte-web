@@ -2,12 +2,14 @@
 title: "7 AI Colorization Tips for Realistic B&W Photo Colors (2026)"
 description: "Avoid fake, cartoon-looking colorization. 7 specialist tips for realistic skin, fabric, and sky tones on vintage B&W photos — with concrete examples."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Digital Photo Archivist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Adding color to black and white photographs can bring historical images to vivid life—or create jarring anachronisms that destroy authenticity. The difference between compelling colorization and obvious fakery lies in accuracy: researching historically appropriate colors, understanding period limitations, and applying color with restraint and knowledge. These colorization accuracy tips will help you add color to vintage photographs while maintaining historical integrity and visual realism.
 

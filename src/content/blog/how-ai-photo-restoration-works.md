@@ -2,7 +2,7 @@
 title: "How AI Photo Restoration Works: Inside the Technology"
 description: "A specialist explains what happens inside AI restoration tools - the neural networks, failures, and why your photo processes in seconds."
 publishedAt: "2026-01-15"
-updatedAt: "2026-02-14"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, from research labs at Stanford to building production restoration pipelines. He's processed over 12,000 historical photos and still gets excited when a 1940s face emerges from chemical haze."
@@ -12,6 +12,8 @@ image: "/blog/ai-restoration-technology.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🧠"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 I almost didn't write this article.

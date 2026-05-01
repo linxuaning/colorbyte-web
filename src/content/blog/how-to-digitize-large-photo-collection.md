@@ -2,7 +2,7 @@
 title: "How to Digitize a Large Photo Collection: Systematic Approach for 500+ Photos"
 description: "Complete guide to digitizing a large family photo collection. Planning, equipment, workflow, and quality control for collections of 500 or more photographs."
 publishedAt: "2026-02-21"
-updatedAt: "2026-03-16"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Digital Archivist"
 authorBio: "David spent a decade at the National Archives before founding his own photo preservation studio."
@@ -12,6 +12,8 @@ image: "/blog/how-to-digitize-large-photo-collection.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "📁"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Five hundred photographs. A thousand. Two thousand. At some point, the scale of a family photo collection changes the problem from "restore some photographs" to "create a systematic archive."

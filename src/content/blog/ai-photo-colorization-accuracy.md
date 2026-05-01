@@ -2,12 +2,14 @@
 title: "AI Photo Colorization Accuracy: How Precise Is It?"
 description: "In-depth analysis of AI photo colorization accuracy. Compare leading tools, understand limitations, and learn when AI colorization works best for historical photos."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-01"
 author: "Rachel Kim"
 role: "Photo Preservation Consultant"
 category: "AI Technology"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 The black and white photograph of your grandmother on her wedding day holds a lifetime of memories, but you've often wondered: what color was her dress? Was the bouquet red roses or pink peonies? What shade of blue was the sky on that summer day in 1952? AI photo colorization promises to answer these questions, transforming monochrome memories into vibrant color images with seemingly magical accuracy.
 

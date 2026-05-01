@@ -2,7 +2,7 @@
 title: "How to Restore Faded Color Photos from the 1970s"
 description: "Step-by-step guide to restoring the characteristic color fading, orange-yellow cast, and dye decay common in 1970s color photographs."
 publishedAt: "2026-03-25"
-updatedAt: "2026-04-11"
+updatedAt: "2026-05-01"
 author: "Sarah Kim"
 authorRole: "Digital Heritage Expert"
 authorBio: "Sarah Kim specializes in digital preservation techniques, helping clients rescue deteriorating photographs from every era."
@@ -12,6 +12,8 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🎨"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Color photographs from the 1970s have a distinctive look that's immediately recognizable — not because it was an artistic choice, but because the photographic chemistry of the era was flawed. The dyes in Kodachrome, Ektachrome, and similar films from this period have deteriorated unevenly over 50+ years, creating the characteristic orange-yellow cast that makes 1970s family photos look washed out and strangely warm. Restoring these photos requires correcting these specific chemical decay patterns.

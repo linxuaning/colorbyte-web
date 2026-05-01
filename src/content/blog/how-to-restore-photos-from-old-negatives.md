@@ -2,12 +2,14 @@
 title: "How to Restore Photos from Old Negatives: Digitize and Enhance Film"
 description: "Learn how to restore photographs from old film negatives. Expert guide to digitizing, converting, and enhancing images from deteriorating negative strips."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Old film negatives often contain images that were never printed, or hold better quality than existing prints—making them valuable restoration sources. Whether you've discovered boxes of family negatives in the attic or want to rescue images from deteriorating prints by returning to the source, understanding how to digitize and restore from negatives opens new possibilities for preserving family history.
 

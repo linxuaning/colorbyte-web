@@ -2,12 +2,14 @@
 title: "How to Combine Damaged Photo Fragments: Reassemble Torn Pictures"
 description: "Learn how to digitally combine fragments of torn, cut, or broken photographs. Expert guide to reassembling damaged pictures into complete restored images."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Photographs torn into pieces, cut apart, or broken into fragments present a challenging but often solvable restoration puzzle. Whether damaged by accident, deliberately separated, or deteriorated into pieces over time, fragments can be digitally reassembled and restored to create complete images again. Understanding the process helps recover photographs that might otherwise seem beyond saving.
 

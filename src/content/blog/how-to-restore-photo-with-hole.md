@@ -2,7 +2,7 @@
 title: "How to Restore a Photo with a Hole or Punch Mark"
 description: "Techniques for digitally restoring photographs with holes from tacks, staples, or punch damage. AI inpainting for missing circular areas."
 publishedAt: "2026-01-04"
-updatedAt: "2026-01-24"
+updatedAt: "2026-05-01"
 author: "Emma Wilson"
 authorRole: "Heritage Photography Expert"
 authorBio: "Emma trained as a traditional darkroom technician before transitioning to digital restoration."
@@ -12,6 +12,8 @@ image: "/blog/how-to-restore-photo-with-hole.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🔴"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The pushpin hole through the center of the photograph is one of the most common forms of unintentional photograph damage — decades of being tacked to bulletin boards, then removed and saved. A tiny hole through an otherwise undamaged photograph is a clean digital restoration challenge.

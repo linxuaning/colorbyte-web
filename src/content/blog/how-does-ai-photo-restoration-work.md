@@ -2,7 +2,7 @@
 title: "How Does AI Photo Restoration Work? (Plain English)"
 description: "How AI photo restoration actually works — CodeFormer, GFPGAN, and Real-ESRGAN explained in plain English. Why these models work better than Photoshop filters for old photos."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Thomas Hale"
 authorRole: "AI Tools Researcher"
 authorBio: "Thomas writes about practical AI applications for everyday users — cutting through the hype to explain what tools actually do what they claim."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-cyan-800 via-blue-800 to-indigo-700"
 coverEmoji: "⚙️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 When you upload an old family photo to ArtImageHub and get back a restored version 90 seconds later, three separate AI models have processed your image. Here's what each one does, and why specialized restoration AI produces results that general photo editors can't.

@@ -2,7 +2,7 @@
 title: "ArtImageHub vs PicWish: Old Photo Restoration Compared"
 description: "PicWish vs ArtImageHub for restoring old, faded, or damaged family photos. Which AI tool actually fixes historical photo degradation — face recovery, scratches, fading?"
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-green-700 via-emerald-700 to-teal-800"
 coverEmoji: "🆚"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 PicWish is a popular AI photo enhancement tool with a large user base. ArtImageHub is purpose-built for old photo restoration using CodeFormer, GFPGAN, and Real-ESRGAN. Both deal with image quality — but they were built for different primary use cases.

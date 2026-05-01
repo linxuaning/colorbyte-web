@@ -2,7 +2,7 @@
 title: "Best Photo Restoration Gift for Mom: Why AI-Restored Photos Beat Everything Else"
 description: "Looking for the best photo restoration gift for mom? AI restoration turns her faded, damaged family photos into vivid keepsakes for under $25—more meaningful than flowers or jewelry."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Rachel Kim"
 authorRole: "Family Historian & Gift Expert"
 authorBio: "Rachel Kim helps families preserve memories through photography archiving and meaningful gifting. She's documented over 300 family histories across the US and runs workshops on photo preservation for seniors."
@@ -13,6 +13,8 @@ coverColor: "from-rose-500 via-pink-500 to-fuchsia-500"
 coverEmoji: "🎁"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Every year, the same problem: you want to give your mom something that means something. Not something off a list. Not something you'd give anyone. Something that proves you actually know her.

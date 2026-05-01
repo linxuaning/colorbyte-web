@@ -2,7 +2,7 @@
 title: "ArtImageHub vs MyHeritage Photo Enhancer: Which Is Better for Old Photo Restoration?"
 description: "Honest comparison of ArtImageHub vs MyHeritage Photo Enhancer. Pricing, quality, features, and which tool wins for restoring scratched or faded family photos."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sarah Brennan"
 authorRole: "Digital Archivist"
 authorBio: "Sarah is a digital archivist who has restored thousands of family photos for genealogy projects. She evaluates AI photo tools for a living."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-blue-600 via-indigo-600 to-purple-700"
 coverEmoji: "⚖️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 MyHeritage Photo Enhancer is the most recognized name in family photo AI tools. It's baked into the world's second-largest genealogy platform, which means tens of millions of people have tried it.

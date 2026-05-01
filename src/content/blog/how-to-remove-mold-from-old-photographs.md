@@ -2,7 +2,7 @@
 title: "How to Remove Mold from Old Photographs"
 description: "Practical guidance on safely handling mold-damaged photos and using AI tools to digitally restore the visual damage caused by mold growth."
 publishedAt: "2026-01-29"
-updatedAt: "2026-02-12"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "AI Photography Analyst"
 authorBio: "David Park researches and writes about the intersection of artificial intelligence and photographic preservation."
@@ -12,6 +12,8 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🍄"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Discovering mold on old photographs is alarming — the fuzzy white, gray, or green growth that appears on photos stored in damp conditions can destroy the image layer if left untreated. Mold poses both a preservation challenge (the physical photo) and a health concern (mold spores). Knowing how to safely handle mold-affected photos and how to digitally restore the damage they've already caused are two separate but equally important skills.

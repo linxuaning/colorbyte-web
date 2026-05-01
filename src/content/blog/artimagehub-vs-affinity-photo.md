@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Affinity Photo for Old Photo Restoration"
 description: "Affinity Photo vs ArtImageHub for restoring old, damaged family photos. One-time purchase desktop editor vs specialized AI restoration — cost, capability, and results."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-700 via-sky-700 to-cyan-700"
 coverEmoji: "🔵"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Affinity Photo is a professional photo editor from Serif — a capable Photoshop alternative at a one-time purchase price. ArtImageHub is a specialized AI pipeline for old photo restoration. Both are worth considering for old family photo work; they approach the problem differently.

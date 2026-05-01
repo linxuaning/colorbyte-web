@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Magnific AI for Old Photo Restoration"
 description: "Magnific AI vs ArtImageHub for restoring old, faded, or damaged family photos. AI upscaling/enhancement tool vs specialized restoration pipeline — honest comparison."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-fuchsia-700 via-pink-700 to-rose-600"
 coverEmoji: "✨"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Magnific AI (magnific.ai) is an AI upscaling and "reimagining" tool that went viral in late 2023 for its ability to dramatically enhance and add detail to images. ArtImageHub is a specialized pipeline for old photo restoration. Here's an honest comparison for old family photograph restoration.

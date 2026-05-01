@@ -2,7 +2,7 @@
 title: "Best AI Photo Restoration Tools 2026: Honest Comparison"
 description: "A specialist's honest comparison of the best AI photo restoration tools and software in 2026 — what each one actually does well, where they fail, and what to pay."
 publishedAt: "2026-04-18"
-updatedAt: "2026-04-18"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Senior Photo Restoration Specialist"
 authorBio: "Michael Chen has spent over a decade helping families recover their most precious visual memories using advanced AI restoration technology."
@@ -13,6 +13,8 @@ coverColor: "from-indigo-600 via-purple-700 to-pink-700"
 coverEmoji: "🏆"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 ## Quick Answer

@@ -2,12 +2,14 @@
 title: "How to Fix Double Exposure Photos: Restore Overlapping Images"
 description: "Learn how to fix double exposure photographs where two images overlap. Expert guide to separating and restoring accidentally exposed vintage photos."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Double exposure photographs—where two or more images overlap on the same frame—present unique restoration challenges. Whether caused by camera malfunction, forgotten film advancement, or accidental shutter release, these overlapping images often obscure important faces and moments. Understanding how to address double exposures can help recover photographs that might otherwise seem lost.
 

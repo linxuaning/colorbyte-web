@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Snapseed for Old Photo Restoration: What Snapseed Can't Do"
 description: "Snapseed vs ArtImageHub for restoring old, damaged family photos. What Google's free mobile editor actually does for old photos — and where AI restoration closes the gap."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-green-800 via-emerald-700 to-teal-700"
 coverEmoji: "📲"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Snapseed is Google's free mobile photo editor — one of the most capable free tools available for iOS and Android. ArtImageHub is a specialized AI pipeline for old photo restoration. Understanding what each does well determines which to use for your old family photos.

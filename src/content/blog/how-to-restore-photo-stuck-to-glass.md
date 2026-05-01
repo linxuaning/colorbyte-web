@@ -2,7 +2,7 @@
 title: "How to Restore a Photo Stuck to Frame Glass: Recovery Without Further Damage"
 description: "Guide to handling photographs stuck to frame glass. When to attempt removal versus scanning in place, and digital restoration after recovery."
 publishedAt: "2026-04-01"
-updatedAt: "2026-04-10"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, processing over 12,000 historical photos."
@@ -12,6 +12,8 @@ image: "/blog/how-to-restore-photo-stuck-to-glass.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🪟"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 It happens when a photograph is framed without an archival mat: over time, humidity causes the photograph to adhere to the glass. Pulling the photograph away from the glass risks tearing the emulsion. Leaving it stuck leaves you with a photograph that can't be scanned.

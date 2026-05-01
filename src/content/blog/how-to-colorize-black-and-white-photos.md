@@ -2,7 +2,7 @@
 title: "How to Colorize Black and White Photos with AI"
 description: "A guide to using AI colorization tools to add realistic color to black and white family photographs from the pre-color era."
 publishedAt: "2026-02-04"
-updatedAt: "2026-02-11"
+updatedAt: "2026-05-01"
 author: "James Rodriguez"
 authorRole: "Photo Conservation Technician"
 authorBio: "James Rodriguez brings hands-on conservation expertise to the world of AI-assisted photo restoration."
@@ -12,6 +12,8 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎨"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 For many families, the most treasured photographs are also the most alien-looking to modern eyes: black and white images of grandparents as young adults, great-grandparents at work, children playing in a world that exists only in monochrome. AI colorization has transformed the experience of connecting with these images by adding realistic, historically-informed color — turning historical documents into living portraits.

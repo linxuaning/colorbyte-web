@@ -2,12 +2,14 @@
 title: "How to Scan Old Photos Properly: Complete Guide to Photo Digitization"
 description: "Learn how to scan old photos properly with expert techniques. Get professional results with settings, equipment recommendations, and step-by-step instructions."
 publishedAt: "2026-02-18"
-updatedAt: "2026-02-18"
+updatedAt: "2026-05-01"
 author: "David Park"
 role: "Photography Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 The first step in preserving precious family photographs is creating high-quality digital copies. However, many people scan old photos improperly, creating digital files that look worse than the originals or lack the resolution needed for restoration and printing. Learning how to scan old photos properly ensures you capture maximum detail, create archival-quality digital files, and provide the best foundation for any future restoration work.
 

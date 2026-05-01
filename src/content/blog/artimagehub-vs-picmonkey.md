@@ -2,7 +2,7 @@
 title: "ArtImageHub vs PicMonkey for Old Photo Restoration"
 description: "PicMonkey vs ArtImageHub for restoring old, faded, or damaged family photos. Popular online design tool vs specialized AI restoration — capabilities and honest comparison."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-orange-600 via-amber-600 to-yellow-600"
 coverEmoji: "🐵"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 PicMonkey is a popular browser-based photo editor and graphic design tool — known for its accessible interface and portrait touch-up features. ArtImageHub is a specialized AI pipeline for old photo restoration. Here's how they compare for the specific task of restoring old, damaged family photographs.

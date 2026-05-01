@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Topaz Gigapixel AI: Which Is Better for Old Photo Restoration?"
 description: "Comparing ArtImageHub vs Topaz Gigapixel AI for restoring old family photos. Pricing, quality, use cases, and which tool is right for old photo restoration."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "James Whitfield"
 authorRole: "Photo Archival Consultant"
 authorBio: "James consults for museums and private collectors on digitizing and restoring historical photo archives. He evaluates AI tools for archival and consumer use."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-violet-600 via-purple-600 to-indigo-700"
 coverEmoji: "🔬"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Topaz Gigapixel AI is a professional-grade upscaling tool with a strong reputation among photographers and retouchers. It's known for extraordinary image upscaling — turning low-resolution images into large, print-ready files.

@@ -2,12 +2,14 @@
 title: "AI Photo Restoration Limitations: What AI Can and Can't Do"
 description: "Honest assessment of AI photo restoration capabilities and limitations. Learn what AI restoration excels at and when professional help is needed."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Digital Photo Archivist"
 category: "AI Technology"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 AI photo restoration has transformed how we preserve and recover damaged photographs, making professional-quality results accessible to anyone with a smartphone or computer. However, like all technologies, AI restoration has both remarkable capabilities and important limitations. Understanding what AI can and can't do helps you set realistic expectations, choose the right tools for your specific needs, and know when professional human expertise remains necessary. For blur specifically, try our [unblur photo](/unblur-photo) tool — it handles camera shake and soft focus well, though severe motion blur remains challenging.
 

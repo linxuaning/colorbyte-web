@@ -2,7 +2,7 @@
 title: "How to Clean Old Photos Before Scanning: Safe Techniques for Better Results"
 description: "Learn safe techniques for cleaning old photographs before scanning. Remove dust, surface contamination, and handling marks without damaging fragile prints."
 publishedAt: "2026-01-22"
-updatedAt: "2026-02-14"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, processing over 12,000 historical photos. He specializes in recovering family memories from damaged and deteriorating prints."
@@ -12,6 +12,8 @@ image: "/blog/how-to-clean-photo-before-scanning.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🧹"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in an envelope with two decades of dust on it. That's not unusual — many family photographs have been in storage conditions that accumulated surface contamination over years or decades. Before scanning, some cleaning is often beneficial.

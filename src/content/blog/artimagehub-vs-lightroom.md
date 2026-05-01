@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Adobe Lightroom: Which Is Better for Old Photo Restoration?"
 description: "ArtImageHub vs Adobe Lightroom for old family photo restoration. Comparing AI enhancement, damage repair, colorization, skill required, and cost for restoring faded prints."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Nathan Cole"
 authorRole: "Photography Workflow Consultant"
 authorBio: "Nathan consults with photography studios and archivists on digital workflow, post-processing, and AI tool evaluation. He has tested dozens of AI restoration tools over four years."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-amber-600 via-orange-600 to-red-700"
 coverEmoji: "📸"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Adobe Lightroom is the go-to tool for modern photo editing and organization. Millions of photographers use it daily for color grading, exposure correction, and library management.

@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Remini: 100 Photo Test Shows Which AI Tool Wins"
 description: "Tested 6 AI photo tools on 100 family photos. Honest comparison of ArtImageHub, Remini, MyHeritage with real results, pricing, and limitations."
 publishedAt: "2026-01-28"
-updatedAt: "2026-02-14"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Photography Workflow Consultant"
 authorBio: "David consults for photography studios and archival institutions on digital workflows. He's tested every major AI photo tool since 2023 and maintains a database of 500+ before/after comparisons."
@@ -12,6 +12,8 @@ image: "/blog/artimagehub-vs-remini.jpg"
 coverColor: "from-orange-500 via-amber-600 to-yellow-700"
 coverEmoji: "⚖️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 When my aunt asked me to restore 100 family photos for her father's 85th birthday slideshow, I had three weeks and zero budget for professional restoration (which would've cost $5,000–$15,000).

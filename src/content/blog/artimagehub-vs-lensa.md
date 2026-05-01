@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Lensa AI for Old Photo Restoration"
 description: "Lensa AI vs ArtImageHub for restoring old family photos. AI avatar/selfie editor vs specialized photo restoration — what each does and why they're different."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-pink-700 via-fuchsia-700 to-purple-600"
 coverEmoji: "✨"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Lensa AI went viral for its "Magic Avatars" — AI-generated artistic portraits based on selfies. ArtImageHub is a specialized pipeline for old photo restoration. People searching for AI photo tools sometimes encounter both; they solve completely different problems.

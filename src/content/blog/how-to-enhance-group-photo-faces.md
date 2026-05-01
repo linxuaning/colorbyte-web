@@ -2,7 +2,7 @@
 title: "How to Enhance Individual Faces in Group Photos: Targeting Specific People"
 description: "Complete guide to group photo faces photo restoration. Learn how AI and digital techniques restore individual face enhancement and crowd photos from t"
 publishedAt: "2026-02-02"
-updatedAt: "2026-02-25"
+updatedAt: "2026-05-01"
 author: "James Rodriguez"
 authorRole: "Photo Restoration Specialist"
 authorBio: "James runs a family photo restoration service serving genealogists and family historians. He has worked with photos dating back to the 1840s and consults for documentary filmmakers."
@@ -12,6 +12,8 @@ image: "/blog/how-to-enhance-group-photo-faces.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-cyan-800"
 coverEmoji: "👥"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every group faces restoration is about more than technical quality.

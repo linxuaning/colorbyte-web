@@ -2,7 +2,7 @@
 title: "How to Fix a Photo Torn Into Quarters: Reassembling Damaged Photographs"
 description: "Step-by-step guide to reassembling and digitally restoring a photograph torn into quarters or multiple pieces."
 publishedAt: "2026-04-04"
-updatedAt: "2026-04-10"
+updatedAt: "2026-05-01"
 author: "James Rodriguez"
 authorRole: "Photo Restoration Specialist"
 authorBio: "James runs a family photo restoration service serving genealogists and family historians worldwide."
@@ -12,6 +12,8 @@ image: "/blog/how-to-fix-photo-torn-in-quarters.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🔧"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in four pieces — torn cleanly along vertical and horizontal axes, as if someone had methodically divided it into quarters. It was not vandalism but grief: a divorce, years before, had resulted in someone tearing the wedding photograph and then, years later, someone else gathering the pieces.

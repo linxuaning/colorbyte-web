@@ -2,12 +2,14 @@
 title: "Best AI Image Upscaler 2026: Top Enlarging Tools"
 description: "Compare the best AI image upscalers in 2026. Learn which AI upscaling tools deliver superior results for enlarging old photos, restoring details, and creating prints."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-01"
 author: "David Park"
 role: "Photography Specialist"
 category: "AI Technology"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 You've found the perfect family photo from 1975, but there's a problem: it's tiny. The original print measures just 3x5 inches, and when you try to enlarge it for framing or printing, the result's a blurry, pixelated mess that looks worse than the small original. Traditional image enlargement simply spreads existing pixels across a larger area, creating obvious quality loss that ruins the photo.
 

@@ -2,7 +2,7 @@
 title: "How to Give Restored Photos as a Gift: Presentation Ideas That Make It Land"
 description: "Learn how to give restored photos as a meaningful gift. From framing and printing to photo books and digital frames—presentation ideas that turn a restoration into an unforgettable moment."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Rachel Kim"
 authorRole: "Family Historian & Gift Expert"
 authorBio: "Rachel Kim helps families preserve memories through photography archiving and meaningful gifting. She's documented over 300 family histories across the US and runs workshops on photo preservation for seniors."
@@ -13,6 +13,8 @@ coverColor: "from-fuchsia-400 via-rose-500 to-pink-600"
 coverEmoji: "🖼️"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 You've done the work: found the damaged photo, scanned it, run it through [AI restoration](/old-photo-restoration), and downloaded a vivid, sharp version that looks better than the original ever did in living memory. Now comes the question most guides skip over.

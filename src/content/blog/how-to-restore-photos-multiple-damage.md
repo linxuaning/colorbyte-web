@@ -2,12 +2,14 @@
 title: "How to Restore Photos with Multiple Damage Types: Comprehensive Repair Guide"
 description: "Learn how to restore photographs affected by multiple types of damage simultaneously. Expert guide to prioritizing and addressing combined damage issues."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Most old photographs don't suffer from just one type of damage—they typically show fading, scratches, stains, tears, and deterioration all at once. Restoring these multi-problem images requires understanding how different damage types interact and determining the optimal sequence for addressing each issue. A systematic approach to multiple damage types produces far better results than random attempts at repair.
 

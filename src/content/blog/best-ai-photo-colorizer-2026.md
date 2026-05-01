@@ -2,7 +2,7 @@
 title: "Best AI Photo Colorizer 2026: 8 Tools Compared (Honest Review)"
 description: "Side-by-side comparison of the top AI photo colorizers in 2026. Real testing on black-and-white family photos, pricing breakdown, and honest pros and cons for every budget."
 publishedAt: "2026-04-28"
-updatedAt: "2026-04-28"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."
@@ -46,6 +46,8 @@ itemList:
   - name: "Colourise.sg"
     description: "Best Quick Single-Shot — free single-photo workflow, no account needed"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Black-and-white photos hold something a color snapshot rarely captures — a feeling of distance, a quiet sense of the past being genuinely past. But a colorized version of the same image hits differently. A 1942 wedding portrait in muted color, a great-grandfather's serious gaze in plausible skin tones, a 1920s street scene where the trolley signs suddenly read as red — these are the kinds of moments AI colorization unlocks for families and archivists who do not have the budget or time for hand-coloring.
 

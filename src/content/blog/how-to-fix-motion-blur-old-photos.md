@@ -2,12 +2,14 @@
 title: "How to Fix Motion Blur in Old Photos: Restore Movement-Affected Images"
 description: "Learn how to fix motion blur in vintage photographs caused by subject movement or camera shake. Expert guide to restoring clarity to movement-affected images."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Motion blur in old photographs—whether from subject movement, camera shake, or slow shutter speeds—creates streaky, unclear images that obscure the faces and moments you want to see. While perfect clarity can't be restored to severely blurred images, modern restoration technology can significantly reduce motion blur effects and reveal details hidden by movement.
 

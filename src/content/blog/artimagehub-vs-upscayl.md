@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Upscayl for Old Photo Restoration"
 description: "Upscayl vs ArtImageHub for restoring old, damaged family photos. Free open-source AI upscaler vs specialized restoration pipeline — honest comparison."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-violet-800 via-purple-700 to-fuchsia-600"
 coverEmoji: "🔭"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Upscayl is a popular free, open-source AI image upscaler for desktop (Windows, Mac, Linux). It uses Real-ESRGAN and other upscaling models under the hood with a clean desktop GUI. ArtImageHub is a specialized pipeline for old photo restoration. Here's how they compare.

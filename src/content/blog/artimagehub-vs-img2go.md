@@ -2,7 +2,7 @@
 title: "ArtImageHub vs IMG2GO for Old Photo Restoration"
 description: "IMG2GO vs ArtImageHub for restoring old, faded, or damaged family photos. Online image converter vs specialized AI restoration — what each does for historical photographs."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-teal-700 via-cyan-700 to-sky-600"
 coverEmoji: "🔄"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 IMG2GO (img2go.com) is an online image processing toolkit — file conversion, compression, editing, and AI enhancement tools in one browser-based platform. ArtImageHub is a specialized AI pipeline for old photo restoration. Here's how they compare for restoring old family photographs.

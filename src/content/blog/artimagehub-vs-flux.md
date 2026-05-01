@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Flux (Black Forest Labs) for Old Photo Restoration"
 description: "Flux AI vs ArtImageHub for restoring old, damaged family photos. Flux image generation model vs specialized restoration pipeline — why they're completely different tools."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-gray-800 via-slate-700 to-zinc-600"
 coverEmoji: "⚡"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Flux (by Black Forest Labs) is one of the newest and most capable AI image generation models — competing with Midjourney and DALL-E in image quality. ArtImageHub is a specialized pipeline for old photo restoration. Like all image generation models, Flux creates new images rather than restoring existing ones.

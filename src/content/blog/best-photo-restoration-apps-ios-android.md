@@ -2,7 +2,7 @@
 title: "Best Photo Restoration Apps for iOS and Android in 2026"
 description: "Complete guide to mobile apps photo restoration. Learn how AI and digital techniques restore iOS and Android and restoration apps from mobile restorat"
 publishedAt: "2026-01-18"
-updatedAt: "2026-02-11"
+updatedAt: "2026-05-01"
 author: "Sarah Kim"
 authorRole: "AI Imaging Researcher"
 authorBio: "Sarah researches machine learning applications in cultural heritage preservation. She has digitized over 50,000 archival photographs and consults for museums across the country."
@@ -12,6 +12,8 @@ image: "/blog/best-photo-restoration-apps-ios-android.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-cyan-800"
 coverEmoji: "📲"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every mobile apps restoration is about more than technical quality.

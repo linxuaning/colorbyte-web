@@ -2,7 +2,7 @@
 title: "How Long Does AI Photo Restoration Take?"
 description: "An honest breakdown of processing times for AI photo restoration — from upload to finished result — and what factors affect speed."
 publishedAt: "2026-01-21"
-updatedAt: "2026-02-11"
+updatedAt: "2026-05-01"
 author: "Sarah Kim"
 authorRole: "Digital Heritage Expert"
 authorBio: "Sarah Kim specializes in digital preservation techniques, helping clients rescue deteriorating photographs from every era."
@@ -12,6 +12,8 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "⏱️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 One of the most common questions people have about AI photo restoration is simply: how long does it take? The answer depends on several factors — the complexity of the damage, the resolution of the image, and the tool you're using. But the short version is that AI restoration is dramatically faster than traditional manual methods, with most photos processed in seconds to a few minutes.

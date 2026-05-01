@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Waifu2x for Old Photo Restoration"
 description: "Waifu2x vs ArtImageHub for restoring old, damaged family photos. AI upscaling tool vs specialized restoration pipeline — what each does for historical photographs."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-pink-700 via-rose-600 to-red-500"
 coverEmoji: "📈"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Waifu2x is an open-source AI upscaling tool originally developed for anime and illustrated content, later adapted for photographs. It's well-known in technical communities for producing sharp, clean upscaling results. ArtImageHub is a specialized pipeline for old photo restoration. Here's an honest comparison for old family photograph restoration.

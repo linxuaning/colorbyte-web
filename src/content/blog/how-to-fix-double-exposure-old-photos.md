@@ -2,7 +2,7 @@
 title: "How to Fix Double Exposure Old Photos: Separating Overlaid Images"
 description: "Complete guide to double exposure photo restoration. Learn how AI and digital techniques restore overlaid images and film mistakes from double exposur"
 publishedAt: "2026-01-07"
-updatedAt: "2026-01-14"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Digital Archivist"
 authorBio: "David spent a decade at the National Archives before founding his own photo preservation studio. He combines traditional conservation techniques with AI-assisted restoration."
@@ -12,6 +12,8 @@ image: "/blog/how-to-fix-double-exposure-old-photos.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "👻"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every double exposure restoration is about more than technical quality.

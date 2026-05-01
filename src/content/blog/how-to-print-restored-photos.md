@@ -2,7 +2,7 @@
 title: "How to Print Restored Photos: A Guide to Getting It Right"
 description: "How to prepare AI-restored photos for high-quality printing — file formats, resolution requirements, and the best printing services for restored images."
 publishedAt: "2026-02-22"
-updatedAt: "2026-03-14"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "AI Photography Analyst"
 authorBio: "David Park researches and writes about the intersection of artificial intelligence and photographic preservation."
@@ -12,6 +12,8 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🖼️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Once you've restored an old photograph using AI tools, the natural next step is often printing it — for framing, for gifting, for inclusion in a photo book, or to replace a damaged print with a clean new version. Getting the printing right is as important as the restoration itself: a beautiful restoration printed at the wrong resolution or through the wrong service will look disappointing. Here's what you need to know.

@@ -2,7 +2,7 @@
 title: "How to Restore a Water Damaged Photo Album: Page by Page Recovery"
 description: "Step-by-step guide to recovering a water-damaged photo album. Handle swollen pages, stuck photographs, and album deterioration with these expert techniques."
 publishedAt: "2026-03-29"
-updatedAt: "2026-04-10"
+updatedAt: "2026-05-01"
 author: "Sarah Kim"
 authorRole: "AI Imaging Researcher"
 authorBio: "Sarah researches machine learning applications in cultural heritage preservation, having digitized over 50,000 archival photographs."
@@ -12,6 +12,8 @@ image: "/blog/how-to-restore-water-damaged-album.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "💧"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The album is, in some ways, a worse situation than loose photographs when water damage occurs. The album structure — pages, binding, covers — holds the photographs in sustained contact with moisture and with each other. Photographs that might have dried separately in loose storage are stuck together under the pressure of a swollen album.

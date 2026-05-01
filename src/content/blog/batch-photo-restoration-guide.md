@@ -2,7 +2,7 @@
 title: "Batch Photo Restoration: Restoring Hundreds of Photos at Once"
 description: "Complete guide to batch processing photo restoration. Learn how AI and digital techniques restore bulk photo restoration and automation tools from pho"
 publishedAt: "2026-01-19"
-updatedAt: "2026-01-26"
+updatedAt: "2026-05-01"
 author: "Emma Wilson"
 authorRole: "Heritage Photography Expert"
 authorBio: "Emma trained as a traditional darkroom technician before transitioning to digital restoration. She helps families across three continents recover their visual histories."
@@ -12,6 +12,8 @@ image: "/blog/batch-photo-restoration-guide.jpg"
 coverColor: "from-yellow-600 via-amber-700 to-orange-800"
 coverEmoji: "⚡"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every batch restoration restoration is about more than technical quality.

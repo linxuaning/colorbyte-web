@@ -2,7 +2,7 @@
 title: "How Accurate is AI Photo Colorization in 2026? Real Tests and Results"
 description: "Complete guide to colorization accuracy photo restoration. Learn how AI and digital techniques restore AI color accuracy and colorization testing from"
 publishedAt: "2026-03-15"
-updatedAt: "2026-03-25"
+updatedAt: "2026-05-01"
 author: "David Park"
 authorRole: "Digital Archivist"
 authorBio: "David spent a decade at the National Archives before founding his own photo preservation studio. He combines traditional conservation techniques with AI-assisted restoration."
@@ -12,6 +12,8 @@ image: "/blog/ai-colorization-accuracy-2026.jpg"
 coverColor: "from-rainbow-600 via-violet-700 to-indigo-800"
 coverEmoji: "🎨"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every colorization restoration is about more than technical quality.

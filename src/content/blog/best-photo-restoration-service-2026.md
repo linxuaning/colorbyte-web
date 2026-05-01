@@ -2,7 +2,7 @@
 title: "Best Photo Restoration Service in 2026: Ranked"
 description: "The best photo restoration services in 2026 — AI tools and professional services ranked by quality, price, and speed. Which service is right for old family photos."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Thomas Hale"
 authorRole: "AI Tools Researcher"
 authorBio: "Thomas writes about practical AI applications for everyday users — cutting through the hype to explain what tools actually do what they claim."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-yellow-700 via-amber-600 to-orange-600"
 coverEmoji: "🏆"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photo restoration market in 2026 spans AI-powered browser tools, mobile apps, and professional human services. Here's a ranked comparison for the most common use case: restoring old, faded, or damaged family photographs.

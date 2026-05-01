@@ -2,7 +2,7 @@
 title: "How to Repair Photo Borders and Edges: Restoring Damaged Margins"
 description: "Complete guide to photo borders photo restoration. Learn how AI and digital techniques restore damaged edges and margin restoration from border repair"
 publishedAt: "2026-02-19"
-updatedAt: "2026-03-09"
+updatedAt: "2026-05-01"
 author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, processing over 12,000 historical photos. He specializes in recovering family memories from damaged and deteriorating prints."
@@ -12,6 +12,8 @@ image: "/blog/how-to-repair-photo-borders-edges.jpg"
 coverColor: "from-stone-600 via-gray-700 to-zinc-800"
 coverEmoji: "🖼️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every edges restoration is about more than technical quality.

@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Media.io for Old Photo Restoration"
 description: "Media.io vs ArtImageHub for restoring old photos. General-purpose AI media toolkit vs dedicated restoration pipeline — features, pricing, and results compared."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-teal-700 via-cyan-700 to-blue-600"
 coverEmoji: "🔄"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Media.io (by Wondershare) is a browser-based AI media toolkit with tools for video, audio, and image editing — including a photo restorer. ArtImageHub is a dedicated old photo restoration pipeline. Both work in the browser and claim AI restoration, but the depth of restoration differs.

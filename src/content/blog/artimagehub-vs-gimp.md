@@ -2,7 +2,7 @@
 title: "ArtImageHub vs GIMP for Old Photo Restoration: AI vs Manual Editing"
 description: "GIMP vs ArtImageHub for restoring old family photos. Free open-source editor vs specialized AI restoration — cost, skill requirement, and results compared."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-slate-700 via-gray-700 to-zinc-800"
 coverEmoji: "🖥️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 GIMP is the most powerful free photo editor available. ArtImageHub is an AI restoration tool built specifically for old photographs. Both can address old photo damage — but through completely different approaches, with completely different skill requirements.

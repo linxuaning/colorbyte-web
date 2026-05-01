@@ -2,7 +2,7 @@
 title: "How to Restore Black and White Photos with AI"
 description: "How to restore old black and white family photographs using AI — fixing fading, scratches, and soft faces, plus optional colorization. Step-by-step guide."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Thomas Hale"
 authorRole: "AI Tools Researcher"
 authorBio: "Thomas writes about practical AI applications for everyday users — cutting through the hype to explain what tools actually do what they claim."
@@ -12,6 +12,8 @@ image: "/blog/before-after-examples.webp"
 coverColor: "from-gray-800 via-slate-700 to-zinc-600"
 coverEmoji: "⬛"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Black and white photographs from the 1930s through 1970s are among the most commonly damaged family photos — decades of aging leaves them faded, scratched, and with faces that have softened beyond recognition. AI restoration handles these well. Here's exactly how to do it.

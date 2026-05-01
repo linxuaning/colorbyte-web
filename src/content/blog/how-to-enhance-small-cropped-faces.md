@@ -2,12 +2,14 @@
 title: "How to Enhance Small Cropped Faces in Old Photos: Enlarge and Clarify"
 description: "Learn how to enhance and enlarge small faces cropped from group photos. Expert guide to upscaling tiny faces while maintaining clarity and natural appearance."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-01"
 author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Group photographs and crowd scenes often capture family members as small faces in larger compositions. When you want to focus on a specific person—for a memorial, genealogy project, or family album—cropping creates a tiny image that looks pixelated and unclear when enlarged. Modern AI technology can intelligently upscale these small faces while adding realistic detail, creating usable portraits from seemingly inadequate source material.
 

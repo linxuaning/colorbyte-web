@@ -2,7 +2,7 @@
 title: "ArtImageHub vs Inpaint for Old Photo Restoration"
 description: "Inpaint vs ArtImageHub for fixing old photos. Object removal tool vs full AI restoration pipeline — what each handles and where they fall short."
 publishedAt: "2026-04-14"
-updatedAt: "2026-04-14"
+updatedAt: "2026-05-01"
 author: "Sophie Laurent"
 authorRole: "Consumer Tech Reviewer"
 authorBio: "Sophie reviews consumer photo tools and AI applications for mainstream users. She tests tools on real use cases, not controlled benchmarks."
@@ -13,6 +13,8 @@ coverColor: "from-amber-700 via-orange-700 to-red-600"
 coverEmoji: "🩹"
 noIndex: true
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 Inpaint (Teorex Inpaint) is a dedicated object removal tool — paint over something, and the software fills the area based on surrounding pixels. ArtImageHub is an AI pipeline built specifically for old photo restoration. They overlap in one narrow area (removing visible damage) but differ everywhere else.

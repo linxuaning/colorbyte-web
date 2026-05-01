@@ -2,7 +2,7 @@
 title: "How to Improve Photo Scan Quality: Getting the Best Input for AI Restoration"
 description: "Complete guide to scan quality improvement photo restoration. Learn how AI and digital techniques restore better scanning and flatbed scanner tips fro"
 publishedAt: "2026-02-02"
-updatedAt: "2026-02-15"
+updatedAt: "2026-05-01"
 author: "Sarah Kim"
 authorRole: "AI Imaging Researcher"
 authorBio: "Sarah researches machine learning applications in cultural heritage preservation. She has digitized over 50,000 archival photographs and consults for museums across the country."
@@ -12,6 +12,8 @@ image: "/blog/how-to-improve-photo-scan-quality.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-violet-800"
 coverEmoji: "🖨️"
 ---
+
+> **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 
 The photograph arrived in the usual way — carefully wrapped in tissue paper, inside a padded envelope, with a handwritten note explaining what it was and why it mattered. These notes are always the most important part of any restoration project I receive. They remind me that every scanning restoration is about more than technical quality.
