@@ -11,6 +11,7 @@ tags: ["youth sports photos", "little league photos", "team photos", "sports res
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "⚾"
+noIndex: true
 ---
 
 

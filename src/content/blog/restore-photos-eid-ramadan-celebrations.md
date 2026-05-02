@@ -11,6 +11,7 @@ tags: ["Eid Photos", "Ramadan", "Muslim Heritage", "Islamic Traditions", "Religi
 image: "/blog/restore-photos-eid-ramadan-celebrations.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🌙"
+noIndex: true
 ---
 
 

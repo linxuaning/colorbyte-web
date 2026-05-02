@@ -11,6 +11,7 @@ tags: ["passport photos", "immigration documents", "identity document photos", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🪪"
+noIndex: true
 ---
 
 

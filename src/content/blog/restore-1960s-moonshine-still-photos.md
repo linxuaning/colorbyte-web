@@ -11,6 +11,7 @@ tags: ["Appalachian Heritage", "Rural Mountain Photos", "Mountain Communities", 
 image: "/blog/restore-1960s-moonshine-still-photos.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🏔️"
+noIndex: true
 ---
 
 

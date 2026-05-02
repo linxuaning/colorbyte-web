@@ -11,6 +11,7 @@ tags: ["1970s summer", "summer gathering photos", "1970s family photos", "backya
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🌞"
+noIndex: true
 ---
 
 

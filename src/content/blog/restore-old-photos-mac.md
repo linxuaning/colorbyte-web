@@ -11,6 +11,7 @@ tags: ["Mac", "macOS", "Photo Restoration", "Apple Photos", "How To", "Old Photo
 image: "/blog/before-after-examples.webp"
 coverColor: "from-gray-700 via-slate-600 to-zinc-500"
 coverEmoji: "🍎"
+noIndex: true
 ---
 
 

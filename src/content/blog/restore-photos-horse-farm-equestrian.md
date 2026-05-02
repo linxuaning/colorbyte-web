@@ -11,6 +11,7 @@ tags: ["Horse Photos", "Equestrian Heritage", "Horse Farm", "Riding Photos", "Eq
 image: "/blog/restore-photos-horse-farm-equestrian.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🐎"
+noIndex: true
 ---
 
 

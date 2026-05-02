@@ -11,6 +11,7 @@ tags: ["why photos turn yellow", "photo fading science", "brown photos", "sepia 
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🔬"
+noIndex: true
 ---
 
 

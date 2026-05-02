@@ -11,6 +11,7 @@ tags: ["1980s Sports", "Little League", "Youth Athletics", "Team Photos", "Sport
 image: "/blog/restore-photos-1980s-sports-little-league.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "⚾"
+noIndex: true
 ---
 
 

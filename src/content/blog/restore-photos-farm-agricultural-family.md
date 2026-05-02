@@ -11,6 +11,7 @@ tags: ["farm photos", "agricultural history", "farm family photos", "rural herit
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🌾"
+noIndex: true
 ---
 
 

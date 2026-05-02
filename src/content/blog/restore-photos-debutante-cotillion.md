@@ -11,6 +11,7 @@ tags: ["Debutante Ball", "Cotillion Photos", "Social Traditions", "Coming Out", 
 image: "/blog/restore-photos-debutante-cotillion.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "👸"
+noIndex: true
 ---
 
 

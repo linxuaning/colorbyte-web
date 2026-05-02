@@ -11,6 +11,7 @@ tags: ["textile mill photos", "garment workers", "textile heritage", "sewing fac
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🧵"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["cloud photo storage", "family photo sharing", "Google Photos", "iCloud s
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "☁️"
+noIndex: true
 ---
 
 

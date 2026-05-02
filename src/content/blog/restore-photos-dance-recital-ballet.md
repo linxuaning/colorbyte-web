@@ -11,6 +11,7 @@ tags: ["Dance Recital", "Ballet Photos", "Performance Dance", "Youth Dance", "Pe
 image: "/blog/restore-photos-dance-recital-ballet.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🩰"
+noIndex: true
 ---
 
 

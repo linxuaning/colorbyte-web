@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Water damage from floods, hurricanes, burst pipes, or leaks devastates family photo collections. Acting quickly and knowing proper techniques can save many water-damaged photographs that seem beyond hope.

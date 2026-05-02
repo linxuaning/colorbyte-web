@@ -11,6 +11,7 @@ tags: ["1980s Arcade", "Video Games", "Gaming History", "Youth Culture", "Neon L
 image: "/blog/restore-photos-1980s-video-game-arcade.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🕹️"
+noIndex: true
 ---
 
 

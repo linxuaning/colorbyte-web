@@ -11,6 +11,7 @@ tags: ["Cemetery Photos", "Grave Markers", "Genealogy Research", "Headstones", "
 image: "/blog/restore-photos-cemetery-grave-markers.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "⚰️"
+noIndex: true
 ---
 
 

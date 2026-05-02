@@ -11,6 +11,7 @@ tags: ["1980s Punk", "New Wave Music", "Alternative Culture", "Underground Scene
 image: "/blog/restore-photos-1980s-punk-new-wave.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🎵"
+noIndex: true
 ---
 
 

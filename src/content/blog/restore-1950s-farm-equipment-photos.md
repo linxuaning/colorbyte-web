@@ -11,6 +11,7 @@ tags: ["Farm Equipment", "1950s Agriculture", "Tractor Photos", "Rural America",
 image: "/blog/restore-1950s-farm-equipment-photos.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🚜"
+noIndex: true
 ---
 
 

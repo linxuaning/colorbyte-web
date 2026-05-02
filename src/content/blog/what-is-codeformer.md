@@ -11,6 +11,7 @@ tags: ["CodeFormer", "AI Photo Restoration", "Face Restoration", "Technical", "O
 image: "/blog/before-after-examples.webp"
 coverColor: "from-violet-800 via-purple-700 to-indigo-600"
 coverEmoji: "🧠"
+noIndex: true
 ---
 
 

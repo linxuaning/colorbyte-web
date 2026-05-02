@@ -11,6 +11,7 @@ tags: ["early digital photos", "first digital camera", "1990s digital", "low res
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "💾"
+noIndex: true
 ---
 
 

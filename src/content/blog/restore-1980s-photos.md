@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 The 1980s brought affordable photography to everyone—point-and-shoot cameras, disposable cameras, and one-hour photo labs made capturing memories easier than ever. Now those photos from the Reagan era, MTV generation, and big hair days need preservation.

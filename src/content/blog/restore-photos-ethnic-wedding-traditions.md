@@ -11,6 +11,7 @@ tags: ["Cultural Weddings", "Ethnic Ceremonies", "Marriage Traditions", "Cultura
 image: "/blog/restore-photos-ethnic-wedding-traditions.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🌺"
+noIndex: true
 ---
 
 

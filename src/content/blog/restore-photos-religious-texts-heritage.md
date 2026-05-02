@@ -11,6 +11,7 @@ tags: ["family bible photos", "religious heritage photos", "bible records", "rel
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "📖"
+noIndex: true
 ---
 
 

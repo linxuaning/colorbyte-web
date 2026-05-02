@@ -11,6 +11,7 @@ tags: ["Kodachrome slides", "35mm slides", "slide restoration", "transparency re
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🎞️"
+noIndex: true
 ---
 
 

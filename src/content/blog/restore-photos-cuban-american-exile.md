@@ -11,6 +11,7 @@ tags: ["Cuban American", "Cuba 1959", "Exile Photos", "Cuban Heritage", "Diaspor
 image: "/blog/restore-photos-cuban-american-exile.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🌴"
+noIndex: true
 ---
 
 

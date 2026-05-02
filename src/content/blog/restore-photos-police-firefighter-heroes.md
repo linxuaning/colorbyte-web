@@ -11,6 +11,7 @@ tags: ["Police Photos", "Firefighter Photos", "First Responders", "Public Servic
 image: "/blog/restore-photos-police-firefighter-heroes.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🚒"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Coal Country", "Appalachian Heritage", "Mining Families", "Mountain Comm
 image: "/blog/restore-photos-appalachian-coal-country.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "⛏️"
+noIndex: true
 ---
 
 

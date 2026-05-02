@@ -11,6 +11,7 @@ tags: ["heirloom prints", "archival printing", "giclée prints", "fine art photo
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🖼️"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Hanukkah Photos", "Jewish Holidays", "Passover", "Jewish Heritage", "Rel
 image: "/blog/restore-photos-hanukkah-jewish-holidays.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🕎"
+noIndex: true
 ---
 
 

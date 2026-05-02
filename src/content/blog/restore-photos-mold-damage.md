@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Mold and mildew damage occurs when photographs are stored in humid environments like basements, attics, or flood-affected areas. While physical mold requires careful handling, digital restoration can often recover the underlying image.

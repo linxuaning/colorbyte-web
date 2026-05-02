@@ -11,6 +11,7 @@ tags: ["teenage photos history", "teens through decades", "youth culture photos"
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎸"
+noIndex: true
 ---
 
 

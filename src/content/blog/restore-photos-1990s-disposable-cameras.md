@@ -11,6 +11,7 @@ tags: ["1990s photos", "disposable camera", "90s memories", "1990s restoration",
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "📷"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["1980s Aerobics", "Workout Photos", "Fitness Culture", "Neon Colors", "Ex
 image: "/blog/restore-1980s-aerobics-workout-photos.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "💪"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Civil Rights", "March Photos", "Protest Photography", "1960s History", "
 image: "/blog/restore-photos-civil-rights-march.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "✊"
+noIndex: true
 ---
 
 

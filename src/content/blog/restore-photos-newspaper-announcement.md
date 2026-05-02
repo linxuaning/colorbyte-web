@@ -11,6 +11,7 @@ tags: ["Newspaper Announcements", "Birth Notices", "Obituary Photos", "Wedding A
 image: "/blog/restore-photos-newspaper-announcement.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "📰"
+noIndex: true
 ---
 
 

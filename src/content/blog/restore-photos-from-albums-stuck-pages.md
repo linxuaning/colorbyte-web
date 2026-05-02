@@ -11,6 +11,7 @@ tags: ["magnetic album damage", "self adhesive album", "photo album damage", "st
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "📕"
+noIndex: true
 ---
 
 

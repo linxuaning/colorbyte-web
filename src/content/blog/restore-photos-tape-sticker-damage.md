@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Tape and stickers on photographs seemed harmless at the time—holding photos in albums, marking names on backs, or decorating with stickers. Years later, that adhesive has yellowed, lifted emulsion, and left permanent marks. Digital restoration offers solutions.

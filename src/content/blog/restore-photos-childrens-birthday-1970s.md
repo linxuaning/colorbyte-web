@@ -11,6 +11,7 @@ tags: ["1970s Birthday Party", "Children's Photos", "Birthday Memories", "Kodaco
 image: "/blog/restore-photos-childrens-birthday-1970s.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🎂"
+noIndex: true
 ---
 
 

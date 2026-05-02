@@ -11,6 +11,7 @@ tags: ["VJ Day", "Victory Celebrations", "1945", "WWII End", "Historical Photogr
 image: "/blog/restore-photos-1940s-vj-day-celebrations.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🎊"
+noIndex: true
 ---
 
 

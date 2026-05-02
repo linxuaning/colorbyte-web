@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 A restored photograph makes one of the most meaningful gifts you can give—a piece of family history brought back to life. Whether for parents, grandparents, or anyone who treasures family memories, restored photos create emotional connections that store-bought gifts simply cannot match.

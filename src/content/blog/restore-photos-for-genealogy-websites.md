@@ -11,6 +11,7 @@ tags: ["genealogy websites", "Ancestry photos", "FamilySearch", "MyHeritage phot
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🌐"
+noIndex: true
 ---
 
 

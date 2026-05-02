@@ -11,6 +11,7 @@ tags: ["Great-Grandparent Photos", "Generational Connection", "Portrait Restorat
 image: "/blog/restore-photos-great-grandparents-portrait.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "👴"
+noIndex: true
 ---
 
 

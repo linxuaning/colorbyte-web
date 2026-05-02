@@ -11,6 +11,7 @@ tags: ["Labor Movement", "Union Photos", "Workers Rights", "Labor History", "Org
 image: "/blog/restore-photos-union-labor-movement.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "✊"
+noIndex: true
 ---
 
 

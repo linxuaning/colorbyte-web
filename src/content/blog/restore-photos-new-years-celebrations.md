@@ -11,6 +11,7 @@ tags: ["New Year's Eve photos", "New Year celebration", "countdown photos", "par
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🥂"
+noIndex: true
 ---
 
 

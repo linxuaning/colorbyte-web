@@ -11,6 +11,7 @@ tags: ["1890s Photos", "Gilded Age", "Victorian Era", "Albumen Print", "Historic
 image: "/blog/restore-1890s-gilded-age-photos.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎩"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Anniversary Gift", "Wedding Photos", "Parents", "Family Milestone", "Pho
 image: "/blog/restore-photos-parents-anniversary-gift.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "💍"
+noIndex: true
 ---
 
 

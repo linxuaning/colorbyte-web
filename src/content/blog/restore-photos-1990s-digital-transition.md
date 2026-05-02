@@ -11,6 +11,7 @@ tags: ["Early Digital Photos", "1990s Digital", "JPEG Artifacts", "Digital Photo
 image: "/blog/restore-photos-1990s-digital-transition.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "💾"
+noIndex: true
 ---
 
 

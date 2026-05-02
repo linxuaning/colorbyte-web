@@ -11,6 +11,7 @@ tags: ["genealogy", "family history research", "ancestor photos", "photo restora
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🌳"
+noIndex: true
 ---
 
 

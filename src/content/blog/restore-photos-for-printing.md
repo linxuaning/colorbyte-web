@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Restoring old photos digitally is rewarding, but the real magic happens when you hold a beautiful print of a photo you thought was lost to time. Proper preparation ensures your restored photos print beautifully.

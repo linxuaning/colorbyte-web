@@ -11,6 +11,7 @@ tags: ["Irish American photos", "Irish heritage", "famine immigration", "Irish A
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "☘️"
+noIndex: true
 ---
 
 

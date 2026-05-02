@@ -11,6 +11,7 @@ tags: ["Grok", "xAI", "Photo Restoration", "AI Tools", "Old Photos"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-slate-800 via-gray-800 to-zinc-700"
 coverEmoji: "🤖"
+noIndex: true
 ---
 
 

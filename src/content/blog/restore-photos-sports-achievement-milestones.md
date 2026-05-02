@@ -11,6 +11,7 @@ tags: ["sports achievement photos", "athletic milestone photos", "sports restora
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🏆"
+noIndex: true
 ---
 
 

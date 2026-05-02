@@ -11,6 +11,7 @@ tags: ["Memorial Day", "Military Photos", "Photo Restoration", "Veterans", "Old 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-red-700 via-blue-700 to-blue-800"
 coverEmoji: "🎖️"
+noIndex: true
 ---
 
 

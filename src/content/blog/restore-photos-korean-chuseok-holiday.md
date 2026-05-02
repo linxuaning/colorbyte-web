@@ -11,6 +11,7 @@ tags: ["Korean Chuseok", "Seollal", "Korean Heritage", "Korean American", "Holid
 image: "/blog/restore-photos-korean-chuseok-holiday.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🌕"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Android", "Photo Restoration", "Mobile", "Google Photos", "How To", "Old
 image: "/blog/before-after-examples.webp"
 coverColor: "from-green-700 via-teal-700 to-cyan-600"
 coverEmoji: "🤖"
+noIndex: true
 ---
 
 

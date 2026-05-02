@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Film negatives and slides contain the highest quality original images—often better than the prints made from them. Properly scanning and restoring these transparencies can yield stunning results from decades-old photographs.

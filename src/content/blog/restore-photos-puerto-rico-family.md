@@ -11,6 +11,7 @@ tags: ["Puerto Rican Heritage", "Caribbean Photos", "Diaspora History", "Island 
 image: "/blog/restore-photos-puerto-rico-family.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🌺"
+noIndex: true
 ---
 
 

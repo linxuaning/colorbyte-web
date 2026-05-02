@@ -11,6 +11,7 @@ tags: ["Shoebox Photos", "Family Archive", "Organization", "Photo Restoration", 
 image: "/blog/restore-photos-from-shoebox.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📦"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["background reconstruction", "photo inpainting", "missing background", "d
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖌️"
+noIndex: true
 ---
 
 

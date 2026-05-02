@@ -11,6 +11,7 @@ tags: ["1950s Road Trip", "Highway Photos", "Route 66", "Motor Travel", "America
 image: "/blog/restore-photos-1950s-road-trip-highway.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🛣️"
+noIndex: true
 ---
 
 

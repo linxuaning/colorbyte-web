@@ -11,6 +11,7 @@ tags: ["Patriotic Photos", "American Flag", "4th of July", "National Holidays", 
 image: "/blog/restore-photos-american-flag-holidays.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🇺🇸"
+noIndex: true
 ---
 
 

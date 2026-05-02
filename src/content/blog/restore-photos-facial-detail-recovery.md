@@ -11,6 +11,7 @@ tags: ["facial recovery", "portrait restoration", "face sharpening", "facial det
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "👤"
+noIndex: true
 ---
 
 

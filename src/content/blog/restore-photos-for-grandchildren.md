@@ -11,6 +11,7 @@ tags: ["grandchildren", "family history", "generational photos", "photo legacy",
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "👶"
+noIndex: true
 ---
 
 

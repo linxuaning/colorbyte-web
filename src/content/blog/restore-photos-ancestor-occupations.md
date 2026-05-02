@@ -11,6 +11,7 @@ tags: ["occupation photos", "ancestor work photos", "historical occupations", "w
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🔨"
+noIndex: true
 ---
 
 

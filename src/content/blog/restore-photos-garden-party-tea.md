@@ -11,6 +11,7 @@ tags: ["Garden Party", "Tea Party", "Social Events", "Gracious Living", "Social 
 image: "/blog/restore-photos-garden-party-tea.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "☕"
+noIndex: true
 ---
 
 

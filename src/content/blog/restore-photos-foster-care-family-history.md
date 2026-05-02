@@ -11,6 +11,7 @@ tags: ["foster care photos", "foster family history", "photo restoration for fos
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "📸"
+noIndex: true
 ---
 
 

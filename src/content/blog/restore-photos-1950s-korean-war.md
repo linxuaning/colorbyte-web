@@ -11,6 +11,7 @@ tags: ["Korean War", "Military Photos", "1950s Military", "Forgotten War", "Serv
 image: "/blog/restore-photos-1950s-korean-war.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🎖️"
+noIndex: true
 ---
 
 

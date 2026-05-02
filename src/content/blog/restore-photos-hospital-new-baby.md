@@ -11,6 +11,7 @@ tags: ["New Baby Photos", "Hospital Photos", "Maternity Ward", "Birth Memories",
 image: "/blog/restore-photos-hospital-new-baby.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "👶"
+noIndex: true
 ---
 
 

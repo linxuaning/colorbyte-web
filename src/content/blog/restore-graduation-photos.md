@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Graduation photos mark significant educational achievements—from kindergarten ceremonies to doctoral hooding. These milestone photographs deserve preservation, yet many have faded or become damaged over the decades. Modern restoration brings these proud moments back to vivid clarity.

@@ -11,6 +11,7 @@ tags: ["Immigration Story", "Oral History", "Grandparents", "Family History Proj
 image: "/blog/restore-photos-grandparents-immigration-story.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📖"
+noIndex: true
 ---
 
 

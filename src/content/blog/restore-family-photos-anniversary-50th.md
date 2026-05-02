@@ -11,6 +11,7 @@ tags: ["Anniversary Gift", "50th Anniversary", "Photo Restoration", "Family Gift
 image: "/blog/restore-family-photos-anniversary-50th.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "💛"
+noIndex: true
 ---
 
 

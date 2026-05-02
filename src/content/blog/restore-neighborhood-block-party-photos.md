@@ -11,6 +11,7 @@ tags: ["Block Party", "Neighborhood Community", "Community Events", "American Tr
 image: "/blog/restore-neighborhood-block-party-photos.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🏘️"
+noIndex: true
 ---
 
 

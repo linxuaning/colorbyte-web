@@ -11,6 +11,7 @@ tags: ["church photos", "congregation history", "religious community photos", "c
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "⛪"
+noIndex: true
 ---
 
 

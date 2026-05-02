@@ -11,6 +11,7 @@ tags: ["music heritage photos", "band photos", "performance photos", "musical he
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎵"
+noIndex: true
 ---
 
 

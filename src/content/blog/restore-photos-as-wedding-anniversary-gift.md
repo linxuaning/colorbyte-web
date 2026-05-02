@@ -11,6 +11,7 @@ tags: ["anniversary gift", "wedding anniversary", "photo restoration gift", "mil
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "💑"
+noIndex: true
 ---
 
 

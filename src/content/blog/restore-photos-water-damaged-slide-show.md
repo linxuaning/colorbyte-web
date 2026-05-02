@@ -11,6 +11,7 @@ tags: ["Water Damaged Slides", "35mm Slides", "Slide Mounts", "Transparency Film
 image: "/blog/restore-photos-water-damaged-slide-show.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎞️"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Grandparents Wedding", "1940s Wedding", "WWII Era Marriage", "Family Her
 image: "/blog/restore-photos-grandparents-wedding-1940s.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "💒"
+noIndex: true
 ---
 
 

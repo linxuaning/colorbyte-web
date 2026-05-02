@@ -11,6 +11,7 @@ tags: ["milestone birthday", "70th birthday", "80th birthday", "birthday gift", 
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🎂"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["last photo together", "final family photo", "last visit photos", "family
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "❤️"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Vietnamese American photos", "Vietnamese heritage", "Vietnam War era", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🌸"
+noIndex: true
 ---
 
 

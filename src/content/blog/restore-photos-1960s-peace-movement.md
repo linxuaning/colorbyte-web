@@ -11,6 +11,7 @@ tags: ["Peace Movement", "Anti-War Protests", "1960s Activism", "Social History"
 image: "/blog/restore-photos-1960s-peace-movement.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "☮️"
+noIndex: true
 ---
 
 

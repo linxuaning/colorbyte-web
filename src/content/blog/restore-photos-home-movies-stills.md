@@ -11,6 +11,7 @@ tags: ["home movies", "Super 8 films", "VHS family videos", "film to photo", "vi
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🎬"
+noIndex: true
 ---
 
 

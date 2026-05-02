@@ -11,6 +11,7 @@ tags: ["Immigrant Workers", "First Job", "Employment Photos", "New Americans", "
 image: "/blog/restore-photos-immigrant-first-job.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "💼"
+noIndex: true
 ---
 
 

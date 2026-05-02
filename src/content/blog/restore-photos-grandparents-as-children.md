@@ -11,6 +11,7 @@ tags: ["grandparents as children", "grandparent childhood photos", "childhood an
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "👦"
+noIndex: true
 ---
 
 

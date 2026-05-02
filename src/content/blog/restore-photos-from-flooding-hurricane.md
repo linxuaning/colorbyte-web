@@ -11,6 +11,7 @@ tags: ["hurricane damage", "flood damage", "disaster recovery", "photo restorati
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🌀"
+noIndex: true
 ---
 
 

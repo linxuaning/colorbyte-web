@@ -11,6 +11,7 @@ tags: ["1980s photos", "1980s color fading", "photo restoration", "1980s film", 
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "📼"
+noIndex: true
 ---
 
 

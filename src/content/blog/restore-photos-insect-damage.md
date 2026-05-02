@@ -11,6 +11,7 @@ tags: ["insect damage photos", "silverfish damage", "bookworm damage", "pest dam
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🐛"
+noIndex: true
 ---
 
 

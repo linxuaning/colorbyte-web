@@ -11,6 +11,7 @@ tags: ["cigarette smoke damage", "nicotine staining", "smoke damaged photos", "y
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🚬"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Dust Bowl Migration", "Okies", "1930s Depression", "California Migration
 image: "/blog/restore-photos-1930s-dust-bowl-migration.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🛻"
+noIndex: true
 ---
 
 

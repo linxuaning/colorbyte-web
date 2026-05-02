@@ -11,6 +11,7 @@ tags: ["WWII Children", "1940s Childhood", "Rationing Era", "Kids During War", "
 image: "/blog/restore-1940s-rationing-children-photos.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎈"
+noIndex: true
 ---
 
 

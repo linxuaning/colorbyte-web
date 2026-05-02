@@ -11,6 +11,7 @@ tags: ["1960s Counterculture", "Flower Power", "Hippie Era", "Peace Movement", "
 image: "/blog/restore-photos-1960s-flower-power.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌸"
+noIndex: true
 ---
 
 

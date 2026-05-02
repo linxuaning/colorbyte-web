@@ -11,6 +11,7 @@ tags: ["baby photos", "first year photos", "newborn photos", "infant restoration
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "👶"
+noIndex: true
 ---
 
 

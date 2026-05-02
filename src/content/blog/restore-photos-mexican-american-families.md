@@ -11,6 +11,7 @@ tags: ["Mexican American", "Bi-national Heritage", "Border Communities", "Mexica
 image: "/blog/restore-photos-mexican-american-families.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🌮"
+noIndex: true
 ---
 
 

@@ -11,7 +11,6 @@ tags: ["Leonardo AI", "Photo Restoration", "AI Image Generation", "Comparison", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-yellow-700 via-amber-600 to-orange-500"
 coverEmoji: "🦁"
-noIndex: true
 ---
 
 > **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.

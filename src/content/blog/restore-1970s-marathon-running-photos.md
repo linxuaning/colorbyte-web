@@ -11,6 +11,7 @@ tags: ["1970s Running", "Marathon Photos", "Jogging Boom", "Fitness History", "S
 image: "/blog/restore-1970s-marathon-running-photos.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "🏃"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["retirement gift", "career photos", "retirement tribute", "workplace memo
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🎉"
+noIndex: true
 ---
 
 

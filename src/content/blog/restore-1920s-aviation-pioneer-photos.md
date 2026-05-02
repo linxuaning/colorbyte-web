@@ -11,6 +11,7 @@ tags: ["Aviation History", "Barnstorming", "1920s Flight", "Early Aviation", "Pi
 image: "/blog/restore-1920s-aviation-pioneer-photos.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "✈️"
+noIndex: true
 ---
 
 

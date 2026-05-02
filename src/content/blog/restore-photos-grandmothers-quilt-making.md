@@ -11,6 +11,7 @@ tags: ["Quilt Making", "Textile Heritage", "Grandmother Photos", "Craft History"
 image: "/blog/restore-photos-grandmothers-quilt-making.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🪡"
+noIndex: true
 ---
 
 

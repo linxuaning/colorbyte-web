@@ -11,6 +11,7 @@ tags: ["Lunar New Year", "Chinese New Year", "Asian Heritage", "Holiday Traditio
 image: "/blog/restore-photos-lunar-new-year-celebrations.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🧧"
+noIndex: true
 ---
 
 

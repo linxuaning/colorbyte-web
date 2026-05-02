@@ -11,6 +11,7 @@ tags: ["Staple Damage", "Rust Stains", "Metal Marks", "Photo Restoration", "Albu
 image: "/blog/restore-photo-damaged-by-staple.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📎"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Chinese American photos", "Chinese heritage", "immigrant family photos",
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏮"
+noIndex: true
 ---
 
 

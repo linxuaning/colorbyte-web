@@ -11,6 +11,7 @@ tags: ["World War 1 photos", "WWI era", "1910s photos", "wartime photos", "dough
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎖️"
+noIndex: true
 ---
 
 

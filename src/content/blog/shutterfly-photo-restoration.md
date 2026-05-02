@@ -11,6 +11,7 @@ tags: ["Shutterfly", "Photo Restoration", "Photo Books", "Old Photos", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-orange-700 via-amber-600 to-yellow-600"
 coverEmoji: "📖"
+noIndex: true
 ---
 
 

@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Sharing restored family photos on social media connects generations and preserves stories. Vintage photos attract engagement and spark conversations about family history. Proper restoration and formatting ensures your old photos look great online.

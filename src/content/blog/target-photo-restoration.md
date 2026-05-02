@@ -11,6 +11,7 @@ tags: ["Target", "Photo Printing", "Photo Restoration", "Old Photos", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-red-700 via-red-600 to-rose-500"
 coverEmoji: "🎯"
+noIndex: true
 ---
 
 

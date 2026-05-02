@@ -11,6 +11,7 @@ tags: ["1960s Suburbs", "Planned Communities", "Postwar Expansion", "Suburban De
 image: "/blog/restore-photos-1960s-suburbanization.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🏡"
+noIndex: true
 ---
 
 

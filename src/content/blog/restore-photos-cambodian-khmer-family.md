@@ -11,6 +11,7 @@ tags: ["Cambodian Heritage", "Khmer Rouge", "Genocide Survival", "Cambodian Amer
 image: "/blog/restore-photos-cambodian-khmer-family.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🌸"
+noIndex: true
 ---
 
 

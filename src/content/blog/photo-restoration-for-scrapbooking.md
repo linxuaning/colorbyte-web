@@ -11,6 +11,7 @@ tags: ["Scrapbooking", "Photo Restoration", "Old Photos", "Crafts", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-pink-600 via-rose-500 to-fuchsia-500"
 coverEmoji: "📒"
+noIndex: true
 ---
 
 

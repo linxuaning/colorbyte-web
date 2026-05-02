@@ -11,6 +11,7 @@ tags: ["Vietnamese American", "Refugee Era", "1975 Fall of Saigon", "Diaspora Hi
 image: "/blog/restore-photos-vietnamese-american-refugee.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🕊️"
+noIndex: true
 ---
 
 

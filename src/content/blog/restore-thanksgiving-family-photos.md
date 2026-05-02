@@ -11,6 +11,7 @@ tags: ["Thanksgiving photos", "family gathering", "holiday photos", "Thanksgivin
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🦃"
+noIndex: true
 ---
 
 

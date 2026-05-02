@@ -11,6 +11,7 @@ tags: ["prom photos", "formal dance", "high school prom", "teenage milestone", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "💃"
+noIndex: true
 ---
 
 

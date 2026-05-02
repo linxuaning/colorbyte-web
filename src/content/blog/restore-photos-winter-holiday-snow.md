@@ -11,6 +11,7 @@ tags: ["Winter Photos", "Snow Day", "Holiday Photos", "Cold Weather", "Winter Me
 image: "/blog/restore-photos-winter-holiday-snow.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "☃️"
+noIndex: true
 ---
 
 

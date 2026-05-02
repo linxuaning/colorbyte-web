@@ -11,6 +11,7 @@ tags: ["TV Celebrities", "1950s Television", "Fan Photos", "Media History", "Cel
 image: "/blog/restore-photos-50s-60s-tv-celebrities.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "📺"
+noIndex: true
 ---
 
 

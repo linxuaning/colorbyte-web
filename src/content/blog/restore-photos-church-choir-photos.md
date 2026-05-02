@@ -11,6 +11,7 @@ tags: ["Church Choir", "Religious Music", "Sacred Performance", "Faith Community
 image: "/blog/restore-photos-church-choir-photos.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎵"
+noIndex: true
 ---
 
 

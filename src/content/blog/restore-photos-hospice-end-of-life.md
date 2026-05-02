@@ -11,6 +11,7 @@ tags: ["hospice photos", "end of life legacy", "dying process photos", "family l
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🕊️"
+noIndex: true
 ---
 
 

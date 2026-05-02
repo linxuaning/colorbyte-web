@@ -11,6 +11,7 @@ tags: ["Backyard Photos", "Barbecue Photos", "Summer Parties", "Family Gathering
 image: "/blog/restore-photos-backyard-barbecue.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🍔"
+noIndex: true
 ---
 
 

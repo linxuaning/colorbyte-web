@@ -11,6 +11,7 @@ tags: ["Neighborhood History", "Street Photography", "Urban Change", "Community 
 image: "/blog/restore-photos-neighborhood-streets-changed.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🏘️"
+noIndex: true
 ---
 
 

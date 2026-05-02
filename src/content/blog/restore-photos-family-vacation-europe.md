@@ -11,6 +11,7 @@ tags: ["European Travel", "Vacation Photos", "Postwar Tourism", "Travel Heritage
 image: "/blog/restore-photos-family-vacation-europe.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "✈️"
+noIndex: true
 ---
 
 

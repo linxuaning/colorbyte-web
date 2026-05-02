@@ -11,6 +11,7 @@ tags: ["photo privacy", "data security", "photo restoration privacy", "cloud pho
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🔒"
+noIndex: true
 ---
 
 

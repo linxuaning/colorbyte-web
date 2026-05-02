@@ -11,6 +11,7 @@ tags: ["family reunion photos", "extended family gathering", "reunion restoratio
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "👨‍👩‍👧‍👦"
+noIndex: true
 ---
 
 

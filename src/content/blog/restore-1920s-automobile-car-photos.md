@@ -11,6 +11,7 @@ tags: ["1920s Cars", "Automobile History", "Model T", "Motor Age", "Transportati
 image: "/blog/restore-1920s-automobile-car-photos.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🚗"
+noIndex: true
 ---
 
 

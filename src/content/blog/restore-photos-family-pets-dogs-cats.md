@@ -11,6 +11,7 @@ tags: ["Pet Photos", "Dog Photos", "Cat Photos", "Family Pets", "Animal Heritage
 image: "/blog/restore-photos-family-pets-dogs-cats.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🐕"
+noIndex: true
 ---
 
 

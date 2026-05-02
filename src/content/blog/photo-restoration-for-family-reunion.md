@@ -11,6 +11,7 @@ tags: ["Family Reunion", "Photo Restoration", "Old Photos", "Family Events", "Ho
 image: "/blog/before-after-examples.webp"
 coverColor: "from-green-700 via-emerald-600 to-teal-500"
 coverEmoji: "👨‍👩‍👧‍👦"
+noIndex: true
 ---
 
 

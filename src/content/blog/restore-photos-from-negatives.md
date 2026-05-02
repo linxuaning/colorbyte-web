@@ -11,6 +11,7 @@ tags: ["film negatives", "negative scanning", "35mm negatives", "photo restorati
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "📽️"
+noIndex: true
 ---
 
 

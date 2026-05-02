@@ -11,6 +11,7 @@ tags: ["small town photos", "main street history", "community photos", "local hi
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🏘️"
+noIndex: true
 ---
 
 

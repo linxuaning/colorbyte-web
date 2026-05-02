@@ -11,6 +11,7 @@ tags: ["Walmart", "Photo Restoration", "Photo Prints", "Old Photos", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-700 via-blue-600 to-sky-500"
 coverEmoji: "🏪"
+noIndex: true
 ---
 
 

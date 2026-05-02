@@ -11,6 +11,7 @@ tags: ["Costco Photo", "Photo Restoration", "Photo Printing", "Old Photos", "How
 image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-800 via-blue-700 to-indigo-700"
 coverEmoji: "🏬"
+noIndex: true
 ---
 
 

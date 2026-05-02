@@ -11,6 +11,7 @@ tags: ["1960s Wedding", "Wedding Reception", "Color Photography", "Black and Whi
 image: "/blog/restore-photos-wedding-reception-1960s.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "💒"
+noIndex: true
 ---
 
 

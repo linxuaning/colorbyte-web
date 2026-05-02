@@ -11,6 +11,7 @@ tags: ["Space Age", "Moon Landing", "1960s History", "Television Photos", "Histo
 image: "/blog/restore-1960s-space-age-photos.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🚀"
+noIndex: true
 ---
 
 

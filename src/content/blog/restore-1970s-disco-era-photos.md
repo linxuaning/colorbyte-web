@@ -11,6 +11,7 @@ tags: ["1970s Disco", "Night Photography", "Dance Culture", "Disco Era", "Club P
 image: "/blog/restore-1970s-disco-era-photos.jpg"
 coverColor: "from-emerald-600 via-green-700 to-teal-800"
 coverEmoji: "🪩"
+noIndex: true
 ---
 
 

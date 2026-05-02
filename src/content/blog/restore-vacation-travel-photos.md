@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Vacation photos capture adventures, discoveries, and family bonding in unique locations around the world. These travel memories often suffer from years of fading, but restoration brings the colors of your journeys back to life.

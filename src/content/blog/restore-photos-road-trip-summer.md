@@ -11,6 +11,7 @@ tags: ["road trip photos", "cross country travel", "car trip photos", "family ro
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🚗"
+noIndex: true
 ---
 
 

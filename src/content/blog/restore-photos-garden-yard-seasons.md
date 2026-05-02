@@ -11,6 +11,7 @@ tags: ["Garden Photos", "Yard Photography", "Growing Spaces", "Outdoor Heritage"
 image: "/blog/restore-photos-garden-yard-seasons.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🌻"
+noIndex: true
 ---
 
 

@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Family reunions bring generations together—and restored family photos create powerful connections between young and old. Transforming faded, damaged photos into vivid images sparks conversations, preserves stories, and strengthens family bonds.

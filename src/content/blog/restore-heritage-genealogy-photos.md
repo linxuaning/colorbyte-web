@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Genealogy research uncovers names, dates, and relationships—but photographs bring ancestors to life. Restoring old family photos transforms genealogy from a list of facts into a visual journey through your family's history.

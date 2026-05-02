@@ -11,6 +11,7 @@ tags: ["Immigration Journey", "Citizenship Photos", "Immigrant Archive", "Arriva
 image: "/blog/restore-photos-immigrant-citizenship-journey.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🗽"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Drive-In Movie", "1950s Entertainment", "American Culture", "Night Photo
 image: "/blog/restore-photos-1950s-drive-in-movie.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🎬"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["mildew damage", "fungal spots", "photo damage", "mildew restoration", "b
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🍄"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Snapfish", "Photo Restoration", "Photo Books", "Old Photos", "How To"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-red-700 via-pink-700 to-rose-700"
 coverEmoji: "🐠"
+noIndex: true
 ---
 
 

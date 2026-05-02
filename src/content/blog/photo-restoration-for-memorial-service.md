@@ -11,6 +11,7 @@ tags: ["Memorial Service", "Funeral Photos", "Photo Restoration", "Old Photos", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-slate-800 via-gray-700 to-zinc-600"
 coverEmoji: "🕊️"
+noIndex: true
 ---
 
 

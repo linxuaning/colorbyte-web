@@ -11,6 +11,7 @@ tags: ["Military Commissioning", "Officer Ceremony", "Military Career", "Service
 image: "/blog/restore-photos-military-commissioning.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "⭐"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Caribbean American photos", "Jamaican heritage", "Trinidadian family pho
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🌊"
+noIndex: true
 ---
 
 

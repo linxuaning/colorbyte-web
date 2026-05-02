@@ -11,6 +11,7 @@ tags: ["1970s Wedding", "Church Wedding", "Wedding Photography", "Ceremony Photo
 image: "/blog/restore-photos-church-wedding-1970s.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "💒"
+noIndex: true
 ---
 
 

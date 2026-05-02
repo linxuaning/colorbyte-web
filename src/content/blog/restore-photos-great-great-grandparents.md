@@ -11,6 +11,7 @@ tags: ["great great grandparents", "pre-1900 photos", "daguerreotype restoration
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "👴"
+noIndex: true
 ---
 
 

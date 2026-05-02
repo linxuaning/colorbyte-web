@@ -11,6 +11,7 @@ tags: ["dementia photos", "Alzheimer memory", "memory care photos", "dementia th
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🧠"
+noIndex: true
 ---
 
 

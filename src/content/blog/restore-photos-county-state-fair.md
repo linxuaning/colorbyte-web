@@ -11,6 +11,7 @@ tags: ["County Fair", "State Fair", "Annual Traditions", "Carnival", "Community 
 image: "/blog/restore-photos-county-state-fair.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎡"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["first communion photos", "confirmation photos", "religious ceremony", "C
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "✝️"
+noIndex: true
 ---
 
 

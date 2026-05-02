@@ -11,6 +11,7 @@ tags: ["cousin photos", "extended family network", "cousin relationships", "fami
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "👨‍👩‍👧‍👦"
+noIndex: true
 ---
 
 

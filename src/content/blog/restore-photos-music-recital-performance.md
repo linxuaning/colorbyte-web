@@ -11,6 +11,7 @@ tags: ["Music Recital", "Performance Photos", "Youth Musicians", "School Perform
 image: "/blog/restore-photos-music-recital-performance.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🎹"
+noIndex: true
 ---
 
 

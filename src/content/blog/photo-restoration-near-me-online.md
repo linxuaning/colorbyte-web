@@ -11,6 +11,7 @@ tags: ["Photo Restoration Near Me", "Local vs Online", "Old Photos", "How To", "
 image: "/blog/before-after-examples.webp"
 coverColor: "from-emerald-700 via-green-600 to-teal-500"
 coverEmoji: "📍"
+noIndex: true
 ---
 
 

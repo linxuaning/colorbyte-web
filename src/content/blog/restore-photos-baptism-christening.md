@@ -11,6 +11,7 @@ tags: ["baptism photos", "christening photos", "religious milestone", "infant ba
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "⛪"
+noIndex: true
 ---
 
 

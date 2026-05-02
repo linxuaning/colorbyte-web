@@ -11,6 +11,7 @@ tags: ["Back to School", "First Day Photos", "School Memories", "Children's Phot
 image: "/blog/restore-photos-back-to-school-1950s-1980s.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🎒"
+noIndex: true
 ---
 
 

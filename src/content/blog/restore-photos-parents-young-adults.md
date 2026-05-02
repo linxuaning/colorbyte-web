@@ -11,6 +11,7 @@ tags: ["parents young adult photos", "before you were born", "parents dating pho
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "💑"
+noIndex: true
 ---
 
 

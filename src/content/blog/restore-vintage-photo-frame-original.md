@@ -11,6 +11,7 @@ tags: ["Vintage Frames", "Original Frames", "Photo in Frame", "Frame Preservatio
 image: "/blog/restore-vintage-photo-frame-original.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🖼️"
+noIndex: true
 ---
 
 

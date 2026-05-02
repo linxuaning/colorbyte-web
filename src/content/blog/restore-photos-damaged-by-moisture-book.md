@@ -11,6 +11,7 @@ tags: ["Book Photos", "Pressed Photos", "Bookmark Photos", "Acid Migration", "Pa
 image: "/blog/restore-photos-damaged-by-moisture-book.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📚"
+noIndex: true
 ---
 
 

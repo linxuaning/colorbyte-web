@@ -11,6 +11,7 @@ tags: ["Hawaiian Heritage", "Hawaiian Culture", "Island Life", "Pacific Heritage
 image: "/blog/restore-photos-hawaiian-family-heritage.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🌺"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Country Music", "Nashville Photos", "Honky-Tonk", "1950s-1980s Music", "
 image: "/blog/restore-photos-country-music-nashville.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎸"
+noIndex: true
 ---
 
 

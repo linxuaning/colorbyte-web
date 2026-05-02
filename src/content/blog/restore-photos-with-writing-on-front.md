@@ -11,6 +11,7 @@ tags: ["writing on photos", "handwritten notes on photos", "photo annotation", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "✍️"
+noIndex: true
 ---
 
 

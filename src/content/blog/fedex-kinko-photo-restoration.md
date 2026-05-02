@@ -11,6 +11,7 @@ tags: ["FedEx Office", "Kinkos", "Photo Printing", "Photo Restoration", "Old Pho
 image: "/blog/before-after-examples.webp"
 coverColor: "from-orange-700 via-amber-700 to-yellow-600"
 coverEmoji: "📦"
+noIndex: true
 ---
 
 

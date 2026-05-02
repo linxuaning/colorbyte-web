@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Yearbook and class photos document our educational journey and the friends we made along the way. These group photos and portraits may be the only images of certain classmates, making restoration valuable for reunions and memory preservation.

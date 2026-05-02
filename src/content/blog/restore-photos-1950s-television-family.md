@@ -11,6 +11,7 @@ tags: ["1950s Television", "Family Gathering", "Electronic Hearth", "Postwar Cul
 image: "/blog/restore-photos-1950s-television-family.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📺"
+noIndex: true
 ---
 
 

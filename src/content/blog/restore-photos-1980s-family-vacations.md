@@ -11,6 +11,7 @@ tags: ["1980s vacation", "1980s family trip", "vintage vacation photos 80s", "19
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "✈️"
+noIndex: true
 ---
 
 

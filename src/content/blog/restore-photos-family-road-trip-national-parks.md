@@ -11,6 +11,7 @@ tags: ["National Parks", "Road Trips", "Family Vacation", "Parks History", "Amer
 image: "/blog/restore-photos-family-road-trip-national-parks.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🏔️"
+noIndex: true
 ---
 
 

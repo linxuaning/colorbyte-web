@@ -11,6 +11,7 @@ tags: ["retirement party photos", "career farewell", "workplace celebration", "r
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🎈"
+noIndex: true
 ---
 
 

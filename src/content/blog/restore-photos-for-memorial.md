@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 When preparing to honor a loved one's memory, finding the right photograph often means working with older images that have faded or become damaged over time. Memorial photo restoration helps create dignified tributes that truly capture the person being remembered.

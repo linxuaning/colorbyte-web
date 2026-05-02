@@ -11,6 +11,7 @@ tags: ["House Heritage", "Property History", "Address Photos", "Building Documen
 image: "/blog/restore-photos-specific-house-address.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🏠"
+noIndex: true
 ---
 
 

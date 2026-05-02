@@ -11,6 +11,7 @@ tags: ["water soaked photos", "flooding", "photo rescue", "water damage", "emerg
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "💧"
+noIndex: true
 ---
 
 

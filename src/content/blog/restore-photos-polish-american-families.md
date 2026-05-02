@@ -11,6 +11,7 @@ tags: ["Polish American photos", "Polish heritage", "immigrant family photos", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "🦅"
+noIndex: true
 ---
 
 

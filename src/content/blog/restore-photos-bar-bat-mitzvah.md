@@ -11,6 +11,7 @@ tags: ["Bar Mitzvah", "Bat Mitzvah", "Jewish Heritage", "Coming of Age", "Religi
 image: "/blog/restore-photos-bar-bat-mitzvah.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "✡️"
+noIndex: true
 ---
 
 

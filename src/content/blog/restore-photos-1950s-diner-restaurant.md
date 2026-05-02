@@ -11,6 +11,7 @@ tags: ["1950s Diner", "Restaurant Photos", "Soda Fountain", "Mid-Century Culture
 image: "/blog/restore-photos-1950s-diner-restaurant.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "🥤"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Diwali Photos", "Indian Heritage", "Festival of Lights", "South Asian Cu
 image: "/blog/restore-photos-diwali-family-celebrations.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🪔"
+noIndex: true
 ---
 
 

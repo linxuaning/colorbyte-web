@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Anniversary gifts that feature restored photos from a couple's history create deeply meaningful presents. Whether for your own anniversary or honoring parents or grandparents, restored photos celebrate the journey of love.

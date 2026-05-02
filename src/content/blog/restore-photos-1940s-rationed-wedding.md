@@ -11,6 +11,7 @@ tags: ["WWII Wedding", "Rationed Wedding", "Wartime Marriage", "1940s Romance", 
 image: "/blog/restore-photos-1940s-rationed-wedding.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "💍"
+noIndex: true
 ---
 
 

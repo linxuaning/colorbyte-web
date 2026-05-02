@@ -11,6 +11,7 @@ tags: ["Amazon Photos", "Photo Storage", "Photo Restoration", "Old Photos", "How
 image: "/blog/before-after-examples.webp"
 coverColor: "from-orange-700 via-amber-600 to-yellow-500"
 coverEmoji: "📦"
+noIndex: true
 ---
 
 

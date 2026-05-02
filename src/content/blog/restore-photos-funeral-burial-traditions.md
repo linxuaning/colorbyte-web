@@ -11,6 +11,7 @@ tags: ["Funeral Photos", "Burial Traditions", "Death Rituals", "Cultural Practic
 image: "/blog/restore-photos-funeral-burial-traditions.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🕯️"
+noIndex: true
 ---
 
 

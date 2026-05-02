@@ -11,6 +11,7 @@ tags: ["Ellis Island photos", "immigrant arrival photos", "immigration heritage"
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🗽"
+noIndex: true
 ---
 
 

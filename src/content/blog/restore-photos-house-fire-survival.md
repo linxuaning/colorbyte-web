@@ -11,6 +11,7 @@ tags: ["Fire Survival", "Photo Recovery", "Physical Properties", "Photo Material
 image: "/blog/restore-photos-house-fire-survival.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🔥"
+noIndex: true
 ---
 
 

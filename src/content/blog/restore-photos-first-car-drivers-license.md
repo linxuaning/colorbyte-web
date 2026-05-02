@@ -11,6 +11,7 @@ tags: ["first car photos", "drivers license photos", "teenage milestone photos",
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🚗"
+noIndex: true
 ---
 
 

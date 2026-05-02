@@ -11,6 +11,7 @@ tags: ["civil rights era photos", "1960s history", "civil rights movement", "Afr
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "✊"
+noIndex: true
 ---
 
 

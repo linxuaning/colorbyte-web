@@ -11,6 +11,7 @@ tags: ["Family History Book", "Photo Book", "Self Publishing", "Family Archive",
 image: "/blog/restore-photos-for-family-history-book.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "📖"
+noIndex: true
 ---
 
 

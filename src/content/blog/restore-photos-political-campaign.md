@@ -11,6 +11,7 @@ tags: ["Political Campaign", "Civic Events", "Democracy Photos", "Political Part
 image: "/blog/restore-photos-political-campaign.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🗳️"
+noIndex: true
 ---
 
 

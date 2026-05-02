@@ -11,6 +11,7 @@ tags: ["Sam's Club", "Photo Printing", "Photo Restoration", "Old Photos", "How T
 image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-700 via-sky-600 to-cyan-500"
 coverEmoji: "🏢"
+noIndex: true
 ---
 
 

@@ -11,6 +11,7 @@ tags: ["Swimming Pool Photos", "Summer Swimming", "Beach Photos", "Water Recreat
 image: "/blog/restore-photos-swimming-pool-summer.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🏊"
+noIndex: true
 ---
 
 

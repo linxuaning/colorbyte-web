@@ -11,6 +11,7 @@ tags: ["photo framing ideas", "photo display", "gallery wall", "restored photo d
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖼️"
+noIndex: true
 ---
 
 

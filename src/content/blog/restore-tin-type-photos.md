@@ -11,6 +11,7 @@ tags: ["tintype photos", "civil war photos", "tintype restoration", "antique pho
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🖤"
+noIndex: true
 ---
 
 

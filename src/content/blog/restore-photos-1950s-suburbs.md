@@ -11,6 +11,7 @@ tags: ["1950s photos", "postwar suburbs", "1950s family life", "suburban restora
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🏡"
+noIndex: true
 ---
 
 

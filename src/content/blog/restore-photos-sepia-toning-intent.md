@@ -11,6 +11,7 @@ tags: ["Sepia Toning", "Intentional Toning", "Color Fading", "Photo Chemistry", 
 image: "/blog/restore-photos-sepia-toning-intent.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🟤"
+noIndex: true
 ---
 
 

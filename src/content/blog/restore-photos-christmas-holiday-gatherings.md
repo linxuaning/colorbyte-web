@@ -11,6 +11,7 @@ tags: ["Christmas photos", "holiday gathering", "family Christmas", "holiday res
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🎄"
+noIndex: true
 ---
 
 

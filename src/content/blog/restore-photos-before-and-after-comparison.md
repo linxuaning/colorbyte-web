@@ -11,6 +11,7 @@ tags: ["before after comparison", "restoration results", "photo comparison", "si
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🔄"
+noIndex: true
 ---
 
 

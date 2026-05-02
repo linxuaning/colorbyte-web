@@ -11,6 +11,7 @@ tags: ["Locket Photos", "Miniature Photos", "Tiny Portraits", "Jewelry Photograp
 image: "/blog/restore-photos-from-locket.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "💎"
+noIndex: true
 ---
 
 

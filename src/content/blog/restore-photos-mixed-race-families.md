@@ -11,6 +11,7 @@ tags: ["mixed race family photos", "multicultural family", "biracial heritage", 
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🌈"
+noIndex: true
 ---
 
 

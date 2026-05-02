@@ -11,6 +11,7 @@ tags: ["Naturalization Photos", "Citizenship", "Becoming American", "Immigration
 image: "/blog/restore-photos-immigrant-naturalization.jpg"
 coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "🇺🇸"
+noIndex: true
 ---
 
 

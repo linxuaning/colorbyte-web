@@ -11,6 +11,7 @@ tags: ["Outdoor Wedding", "Garden Wedding", "Natural Light", "Informal Ceremony"
 image: "/blog/restore-photos-outdoor-wedding-garden.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🌸"
+noIndex: true
 ---
 
 

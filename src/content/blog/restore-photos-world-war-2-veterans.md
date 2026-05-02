@@ -11,6 +11,7 @@ tags: ["WWII veterans", "World War 2 photos", "military photos", "veteran memori
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🎖️"
+noIndex: true
 ---
 
 

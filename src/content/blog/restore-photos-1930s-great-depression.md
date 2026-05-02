@@ -11,6 +11,7 @@ tags: ["1930s photos", "Great Depression era", "dust bowl", "depression era fami
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🌾"
+noIndex: true
 ---
 
 

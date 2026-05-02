@@ -11,6 +11,7 @@ tags: ["funeral photos", "memorial service", "tribute display", "photo restorati
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🕊️"
+noIndex: true
 ---
 
 

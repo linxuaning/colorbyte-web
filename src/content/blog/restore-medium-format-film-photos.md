@@ -11,6 +11,7 @@ tags: ["medium format photos", "large format photography", "4x5 film", "120 film
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "📸"
+noIndex: true
 ---
 
 

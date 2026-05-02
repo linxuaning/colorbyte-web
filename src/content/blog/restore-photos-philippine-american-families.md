@@ -11,6 +11,7 @@ tags: ["Filipino American", "Philippine Heritage", "Asian American", "Immigratio
 image: "/blog/restore-photos-philippine-american-families.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌺"
+noIndex: true
 ---
 
 

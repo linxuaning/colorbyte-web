@@ -11,6 +11,7 @@ tags: ["1960s photos", "1960s counterculture", "Vietnam era photos", "civil righ
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-fuchsia-100 to-purple-200"
 coverEmoji: "✌️"
+noIndex: true
 ---
 
 

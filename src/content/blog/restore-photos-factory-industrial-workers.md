@@ -11,6 +11,7 @@ tags: ["factory photos", "industrial workers", "manufacturing history", "working
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🔧"
+noIndex: true
 ---
 
 

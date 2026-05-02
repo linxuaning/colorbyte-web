@@ -11,6 +11,7 @@ tags: ["photo organization", "digital archive", "photo filing system", "family p
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "📁"
+noIndex: true
 ---
 
 

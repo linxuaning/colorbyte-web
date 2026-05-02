@@ -11,6 +11,7 @@ tags: ["Pastor Photos", "Church Ministry", "Religious Leadership", "Faith Herita
 image: "/blog/restore-photos-church-pastor-ministry.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "⛪"
+noIndex: true
 ---
 
 

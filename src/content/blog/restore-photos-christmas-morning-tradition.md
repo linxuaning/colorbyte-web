@@ -11,6 +11,7 @@ tags: ["Christmas Morning", "Holiday Tradition", "Annual Photos", "Family Celebr
 image: "/blog/restore-photos-christmas-morning-tradition.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🎁"
+noIndex: true
 ---
 
 

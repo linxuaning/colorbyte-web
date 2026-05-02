@@ -11,6 +11,7 @@ tags: ["Father's Day Gift", "Photo Restoration Gift", "Dad Gift", "Old Photos", 
 image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-700 via-sky-700 to-cyan-600"
 coverEmoji: "👨"
+noIndex: true
 ---
 
 

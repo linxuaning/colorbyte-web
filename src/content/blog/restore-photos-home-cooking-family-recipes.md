@@ -11,6 +11,7 @@ tags: ["family cooking photos", "recipe heritage", "cooking tradition photos", "
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-rose-100 to-pink-200"
 coverEmoji: "🍳"
+noIndex: true
 ---
 
 

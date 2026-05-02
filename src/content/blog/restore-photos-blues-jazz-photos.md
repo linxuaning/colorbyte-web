@@ -11,6 +11,7 @@ tags: ["Blues Music", "Jazz Photos", "1920s-1960s Music", "African American Musi
 image: "/blog/restore-photos-blues-jazz-photos.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🎺"
+noIndex: true
 ---
 
 

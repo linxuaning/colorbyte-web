@@ -11,6 +11,7 @@ tags: ["Water Damage", "Flood Recovery", "Emergency", "Photo Restoration", "Wate
 image: "/blog/restore-photos-water-heater-flood.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🚿"
+noIndex: true
 ---
 
 

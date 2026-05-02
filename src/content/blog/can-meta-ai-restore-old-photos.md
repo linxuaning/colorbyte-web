@@ -11,6 +11,7 @@ tags: ["Meta AI", "Llama", "Photo Restoration", "AI Tools", "Old Photos"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-blue-700 via-indigo-700 to-violet-600"
 coverEmoji: "🦙"
+noIndex: true
 ---
 
 

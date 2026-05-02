@@ -11,6 +11,7 @@ tags: ["Vietnam War", "Letters Home", "Wartime Correspondence", "Military Mail",
 image: "/blog/restore-photos-vietnam-war-letters-home.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "✉️"
+noIndex: true
 ---
 
 

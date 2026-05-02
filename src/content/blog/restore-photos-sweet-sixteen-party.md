@@ -11,6 +11,7 @@ tags: ["sweet sixteen photos", "16th birthday", "teenage milestone", "birthday p
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🎀"
+noIndex: true
 ---
 
 

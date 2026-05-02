@@ -11,6 +11,7 @@ tags: ["graduation photos", "graduation ceremony", "academic milestone", "cap an
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-green-100 to-emerald-200"
 coverEmoji: "🎓"
+noIndex: true
 ---
 
 

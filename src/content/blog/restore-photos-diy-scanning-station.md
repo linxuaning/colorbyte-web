@@ -11,6 +11,7 @@ tags: ["home scanning setup", "photo scanning station", "diy digitization", "pho
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🖨️"
+noIndex: true
 ---
 
 

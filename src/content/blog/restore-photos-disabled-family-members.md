@@ -11,6 +11,7 @@ tags: ["disability history photos", "family members with disabilities", "inclusi
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "♿"
+noIndex: true
 ---
 
 

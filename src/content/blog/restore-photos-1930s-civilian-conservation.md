@@ -11,6 +11,7 @@ tags: ["CCC Photos", "Civilian Conservation Corps", "New Deal", "1930s Work", "D
 image: "/blog/restore-photos-1930s-civilian-conservation.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🌲"
+noIndex: true
 ---
 
 

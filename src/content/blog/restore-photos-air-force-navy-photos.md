@@ -11,6 +11,7 @@ tags: ["Air Force Photos", "Navy Photos", "Military Service", "Aviation Photogra
 image: "/blog/restore-photos-air-force-navy-photos.jpg"
 coverColor: "from-purple-600 via-indigo-700 to-blue-800"
 coverEmoji: "✈️"
+noIndex: true
 ---
 
 

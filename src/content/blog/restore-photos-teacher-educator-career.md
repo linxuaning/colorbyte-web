@@ -11,6 +11,7 @@ tags: ["Teacher Photos", "Educator Career", "Classroom Photos", "Educational His
 image: "/blog/restore-photos-teacher-educator-career.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🍎"
+noIndex: true
 ---
 
 

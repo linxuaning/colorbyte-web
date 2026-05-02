@@ -11,6 +11,7 @@ tags: ["flood mud photos", "contaminated photos", "muddy photos", "sewage damage
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🌊"
+noIndex: true
 ---
 
 

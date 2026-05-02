@@ -7,6 +7,7 @@ author: "Sarah Chen"
 role: "Photo Restoration Specialist"
 category: "Photo Restoration"
 featured: false
+noIndex: true
 ---
 
 Victorian-era photographs represent some of our oldest family visual records—formal portraits that connect us to ancestors from the 1800s. These antique images require special care in restoration to preserve their historical character while improving visibility.

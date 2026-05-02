@@ -11,6 +11,7 @@ tags: ["Senior Portraits", "High School Photos", "Coming of Age", "Studio Photog
 image: "/blog/restore-photos-senior-portrait.jpg"
 coverColor: "from-teal-600 via-green-700 to-cyan-800"
 coverEmoji: "🎓"
+noIndex: true
 ---
 
 

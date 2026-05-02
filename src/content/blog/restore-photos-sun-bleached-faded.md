@@ -11,6 +11,7 @@ tags: ["sun bleached photos", "UV damage", "light damaged photos", "faded displa
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "☀️"
+noIndex: true
 ---
 
 

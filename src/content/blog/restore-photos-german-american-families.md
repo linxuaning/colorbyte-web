@@ -11,6 +11,7 @@ tags: ["German American photos", "German heritage", "German immigrant history", 
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🥨"
+noIndex: true
 ---
 
 

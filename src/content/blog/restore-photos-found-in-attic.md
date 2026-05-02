@@ -11,6 +11,7 @@ tags: ["attic photos", "photo discovery", "photo boxes", "photo restoration", "f
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-yellow-100 to-amber-200"
 coverEmoji: "🏚️"
+noIndex: true
 ---
 
 

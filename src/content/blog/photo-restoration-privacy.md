@@ -11,6 +11,7 @@ tags: ["Privacy", "Photo Security", "AI Tools", "Old Photos", "Data Privacy"]
 image: "/blog/before-after-examples.webp"
 coverColor: "from-slate-800 via-gray-800 to-zinc-700"
 coverEmoji: "🔒"
+noIndex: true
 ---
 
 

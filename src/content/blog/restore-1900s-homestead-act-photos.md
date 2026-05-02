@@ -11,6 +11,7 @@ tags: ["Homestead Act", "Land Settlement", "Frontier History", "Pioneer Photos",
 image: "/blog/restore-1900s-homestead-act-photos.jpg"
 coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🌾"
+noIndex: true
 ---
 
 

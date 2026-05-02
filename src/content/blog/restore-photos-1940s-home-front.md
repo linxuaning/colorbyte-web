@@ -11,6 +11,7 @@ tags: ["1940s home front", "WWII era photos", "wartime family", "1940s restorati
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-purple-100 to-violet-200"
 coverEmoji: "🏠"
+noIndex: true
 ---
 
 

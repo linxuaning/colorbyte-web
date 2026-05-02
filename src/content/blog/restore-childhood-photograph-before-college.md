@@ -11,6 +11,7 @@ tags: ["College Gift", "Childhood Photos", "Leaving Home", "Family Milestone", "
 image: "/blog/restore-childhood-photograph-before-college.jpg"
 coverColor: "from-blue-600 via-indigo-700 to-purple-800"
 coverEmoji: "🎓"
+noIndex: true
 ---
 
 

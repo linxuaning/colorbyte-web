@@ -11,6 +11,7 @@ tags: ["Smartphone Scanning", "Mobile Scanning", "Photo Apps", "DIY Scanning", "
 image: "/blog/restore-photos-scan-smartphone.jpg"
 coverColor: "from-indigo-600 via-blue-700 to-teal-800"
 coverEmoji: "📱"
+noIndex: true
 ---
 
 

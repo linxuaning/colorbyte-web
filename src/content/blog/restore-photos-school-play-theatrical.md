@@ -11,6 +11,7 @@ tags: ["School Play", "Theater Photos", "Drama Club", "Stage Photography", "Perf
 image: "/blog/restore-photos-school-play-theatrical.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "🎭"
+noIndex: true
 ---
 
 

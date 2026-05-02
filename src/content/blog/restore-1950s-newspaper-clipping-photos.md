@@ -11,6 +11,7 @@ tags: ["Newspaper Clippings", "Press Photography", "Newsprint Contamination", "1
 image: "/blog/restore-1950s-newspaper-clipping-photos.jpg"
 coverColor: "from-rose-600 via-pink-700 to-purple-800"
 coverEmoji: "📰"
+noIndex: true
 ---
 
 

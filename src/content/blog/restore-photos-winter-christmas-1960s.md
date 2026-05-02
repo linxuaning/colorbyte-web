@@ -11,6 +11,7 @@ tags: ["1960s Christmas", "winter holiday photos 60s", "1960s family celebration
 image: "/images/blog/default-restoration.jpg"
 coverColor: "from-emerald-100 to-teal-200"
 coverEmoji: "🎄"
+noIndex: true
 ---
 
 

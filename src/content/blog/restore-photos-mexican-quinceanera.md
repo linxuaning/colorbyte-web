@@ -11,6 +11,7 @@ tags: ["Quinceañera", "Coming of Age", "Latin American Heritage", "15th Birthda
 image: "/blog/restore-photos-mexican-quinceanera.jpg"
 coverColor: "from-cyan-600 via-teal-700 to-blue-800"
 coverEmoji: "🌸"
+noIndex: true
 ---
 
 

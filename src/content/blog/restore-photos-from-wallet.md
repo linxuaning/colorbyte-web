@@ -11,6 +11,7 @@ tags: ["Wallet Photos", "Fold Damage", "Pocket Wear", "Photo Recovery", "Persona
 image: "/blog/restore-photos-from-wallet.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "👛"
+noIndex: true
 ---
 
 

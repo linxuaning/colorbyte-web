@@ -11,6 +11,7 @@ tags: ["Dog Show", "Pet Competition", "Animal Shows", "Competitive Pets", "Show 
 image: "/blog/restore-photos-family-dog-show.jpg"
 coverColor: "from-amber-600 via-orange-700 to-red-800"
 coverEmoji: "🐕"
+noIndex: true
 ---
 
 
