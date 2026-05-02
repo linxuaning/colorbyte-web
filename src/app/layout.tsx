@@ -90,10 +90,20 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
+  // Build/deploy version markers for production verification.
+  // Vercel auto-injects VERCEL_GIT_COMMIT_SHA at build time; falls back to "dev" for local.
+  // Use this to verify commits actually shipped: curl artimagehub.com | grep build-version
+  const buildSha = (process.env.VERCEL_GIT_COMMIT_SHA || "dev").slice(0, 7);
+  const buildTime = process.env.VERCEL_GIT_COMMIT_REF
+    ? new Date().toISOString().split("T")[0]
+    : "dev";
+
   return (
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="98cqS97bUFFlYj8cBj00nRpliOpGGgjNoC1gGNmSpoo" />
+        <meta name="build-version" content={buildSha} />
+        <meta name="build-date" content={buildTime} />
         {/* Preconnect to the API origin so the subscription-check / upload
             handshakes start their DNS + TLS before the JS that triggers them
             loads. Cuts LCP on the tool pages by ~300-500ms. */}
