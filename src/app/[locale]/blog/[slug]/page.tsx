@@ -18,6 +18,10 @@ type Props = { params: Promise<{ locale: string; slug: string }> };
 // Default (true) lets Vercel cache ISR-rendered notFound() pages with HTTP 200 → soft-404.
 export const dynamicParams = false;
 
+// Force static generation — avoids ISR Reads consumption on Vercel free tier.
+// (Added 2026-05-02 in response to free-tier 1M ISR Reads cap alert.)
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   // Keep noIndex-parent locale variants in the param set so the URLs still
   // resolve at 200 and render the inherited noindex meta — mirrors how the

@@ -13,6 +13,12 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+// Force static generation for blog pages — avoids ISR Reads consumption.
+// All blog posts are generated at build time via generateStaticParams() below.
+// (Added 2026-05-02 in response to Vercel free-tier 1M ISR Reads cap alert.)
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 const comparisonCtaBySlug = {
   "artimagehub-vs-remini": {
     href: "/vs-remini?entry_variant=blog_compare_cta",
