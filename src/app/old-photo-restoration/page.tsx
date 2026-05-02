@@ -95,12 +95,46 @@ const softwareSchema = {
   name: "ArtImageHub Old Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web browser",
+  url: "https://artimagehub.com/old-photo-restoration",
+  description:
+    "AI photo restoration tool that repairs old, damaged, faded, and water-damaged photographs in 30-90 seconds. One-time $4.99 payment for unlimited restorations.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "One-time payment. Unlocks upload, AI processing, and HD original download."
+    description: "One-time payment. Unlocks upload, AI processing, and HD original download.",
+    availability: "https://schema.org/InStock",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "Margaret K." },
+      reviewBody:
+        "My grandmother's 1943 wedding photo was barely visible — yellowed and cracked. After restoration, I could see her face clearly for the first time.",
+    },
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "David R." },
+      reviewBody:
+        "Restored my grandfather's WWII service photo. The scratch across his face is gone. Quality is incredible for $4.99.",
+    },
+    {
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: "Susan T." },
+      reviewBody:
+        "Used it for a whole box of 1960s–70s family photos. Every single one came back sharp and clear.",
+    },
+  ],
 };
 
 const testimonials = [
