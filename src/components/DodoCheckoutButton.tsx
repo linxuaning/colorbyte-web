@@ -11,11 +11,7 @@ import {
   trackPaymentRecoveryAction,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import {
-  CHECKOUT_FETCH_TIMEOUT_MS,
-  fetchWithTimeout,
-  openDodoOverlay,
-} from "@/lib/dodo-overlay";
+import { openDodoOverlay } from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -102,43 +98,17 @@ export default function DodoCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, resumeTaskId);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      // 5s timeout — see DodoQuickCheckoutButton for rationale. On
-      // /subscription the user is already on the legacy fallback page,
-      // so a hung POST here just throws into the existing error UI
-      // (manual support link). No further redirect is helpful.
-      let response: Response;
-      try {
-        response = await fetchWithTimeout(
-          `${API_BASE}/api/payment/dodo-create-checkout`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              email: normalizedCheckoutEmail,
-              resume_task_id: resumeTaskId || null,
-              ...paymentFunnelPayload(enrichedSource),
-            }),
-          },
-          CHECKOUT_FETCH_TIMEOUT_MS,
-        );
-      } catch (err) {
-        const isAbort =
-          err instanceof DOMException &&
-          (err.name === "AbortError" || err.name === "TimeoutError");
-        clearPendingPaymentFunnelSource();
-        trackCreateOrderResult(
-          false,
-          isAbort ? "timeout_fetch" : "fetch_error",
-          enrichedSource,
-        );
-        throw new Error(
-          isAbort
-            ? "Failed to create checkout (timeout_5s)"
-            : "Failed to create checkout (network)",
-        );
-      }
+      const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: normalizedCheckoutEmail,
+          resume_task_id: resumeTaskId || null,
+          ...paymentFunnelPayload(enrichedSource),
+        }),
+      });
 
       if (!response.ok) {
         clearPendingPaymentFunnelSource();
