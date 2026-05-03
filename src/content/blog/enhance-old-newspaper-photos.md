@@ -20,6 +20,23 @@ faq:
     answer: "Yes, preserve original newspaper clippings even after creating enhanced digital versions, as the originals have historical and archival value as authentic primary source documents, may contain information not visible in digital copies (like paper quality, printing techniques, etc.), serve as backup if digital files are lost, and have potential research value for future historians."
   - question: "Can AI enhance newspaper clippings where the ink has faded severely?"
     answer: "Yes, AI enhancement can often recover legibility from severely faded newspaper clippings where ink has deteriorated significantly. The technology maximizes contrast from even faint remaining ink traces, recovers tonal range from low-contrast originals, removes yellowing that obscures faded printing, and optimizes the image for maximum readability."
+howTo:
+  - name: "Physical Preservation Assessment"
+    text: "Before digitizing, assess your newspaper clipping's physical condition. Determine if the clipping is too fragile to handle safely, check if it's mounted or attached to other materials, note all damage types present, and decide if professional conservation is needed for extremely valuable or fragile clippings."
+  - name: "Optimal Scanning Technique"
+    text: "Scanning newspaper clippings requires specific techniques for best results. Set scanner to 600 dpi minimum (higher than normal photos because the halftone pattern requires adequate resolution to capture properly), scan in grayscale mode for black and white clippings (color mode only if the clipping actually has color printing), and use scanner histogram to maximize tonal range capture despite yellowing and fading."
+  - name: "Upload to AI Enhancement Service"
+    text: "Navigate to ArtImageHub's photo enhancement service and upload your scanned newspaper clipping. The AI system analyzes your image to identify halftone printing patterns, assess yellowing severity and background discoloration, detect fading and contrast loss, evaluate text legibility issues, and determine optimal enhancement approach for newsprint."
+  - name: "Background Cleanup and Yellowing Removal"
+    text: "The enhancement process begins by removing newspaper background yellowing and discoloration. The AI analyzes the yellowed newsprint background, applies inverse color correction to neutralize yellowing, restores background to white or light neutral tone, and increases contrast between printed areas and background."
+  - name: "Halftone Pattern Processing"
+    text: "Enhancing newspaper photos requires advanced handling of the halftone dot pattern. The AI identifies the halftone screen frequency and pattern characteristics, smooths the dot pattern while preserving tonal information, recovers continuous tone appearance from the dot-based original, eliminates moiré patterns if present from scanning interference, and enhances edges and details while managing halftone artifacts."
+  - name: "Contrast and Tone Enhancement"
+    text: "After background cleanup and halftone processing, the AI optimizes contrast and tonal range by restoring true blacks in text and dark image areas, enhancing midtone contrast to improve facial features and details, adjusting overall brightness for optimal legibility, and recovering tonal range compressed by fading and deterioration."
+  - name: "Detail Sharpening"
+    text: "Newspaper photos often appear soft due to the halftone process, printing limitations, and age-related deterioration. Enhancement applies targeted sharpening to faces and important subject matter, text and captions for maximum legibility, overall image for improved clarity, while avoiding over-sharpening that emphasizes printing defects or damage."
+  - name: "Damage Repair"
+    text: "Physical damage to clippings requires digital repair including removing stains and discoloration, repairing tears and missing sections, eliminating adhesive marks and residue, cleaning up fold lines and creases, and reconstructing damaged text or image areas."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

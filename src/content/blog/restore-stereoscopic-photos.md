@@ -20,6 +20,13 @@ faq:
     answer: "Store original cards flat in acid-free folders or boxes, maintain stable temperature and humidity, keep away from light to prevent further fading, and handle by edges to avoid touching image surfaces. Digital restored versions should be maintained in high-resolution archival formats suitable for both 2D viewing and 3D display."
   - question: "Can damaged stereoscopic glass plates be restored?"
     answer: "Yes, glass stereo plates can be digitally restored even if physically damaged. Photograph with transmitted light at high resolution, use AI restoration to remove damage and enhance images, and maintain the dual-image format for continued 3D viewing capability. Physical glass preservation should be handled by professional conservators."
+howTo:
+  - name: "Digitize Both Images Properly"
+    text: "Scan complete stereoview cards at 600-1200 dpi to capture both images and mounting card. Photograph each image separately if mounted separately or damaged differently. Maintain precise alignment for 3D viewing compatibility."
+  - name: "AI Restoration with Dual Image Awareness"
+    text: "Upload to ArtImageHub for damage removal, detail enhancement, and tonal correction. Process each image separately if damage differs significantly between left and right views."
+  - name: "Manual Alignment and Refinement"
+    text: "Ensure both images match in brightness, contrast, and color. Correct any distortion that affects 3D viewing. Verify alignment is preserved for stereoscopic viewing."
 ---
 
 > **TL;DR** — Stereoviews (1850s-1930s) are pairs of nearly identical photos on cardstock mounts, viewed through stereoscope to produce 3D effect. Cards typically curve to fit the viewer — preserve the curve when scanning. Scan flat at 1200 DPI for digital archive (curved scanning introduces distortion that breaks 3D effect). AI restoration via GFPGAN/Real-ESRGAN recovers fine detail in the small-format halves. Card backs often hold publisher imprints (Keystone, Underwood) — scan for collection cataloging.

@@ -20,6 +20,17 @@ faq:
     answer: "Yes, small yearbook sports team photos can be successfully enlarged for printing through a combination of high-resolution scanning, AI restoration, and intelligent upscaling. The process starts with scanning the small original at very high resolution—use 1200-2400 dpi for a 2x3 inch yearbook photo to capture maximum detail. This creates enough base information for enlargement."
   - question: "How should I preserve and display restored sports photographs?"
     answer: "Proper preservation and display of restored sports photos ensures they survive for future generations while being enjoyed now. For original photographs, store in archival-quality materials using acid-free folders, sleeves, or boxes, polyester sleeves for individual protection, and stable environmental conditions (65-70°F, 30-40% RH)."
+howTo:
+  - name: "Identify and Research Your Sports Photograph"
+    text: "Before restoration, gather information about your sports image to guide historically appropriate enhancement."
+  - name: "High-Quality Digitization for Sports Images"
+    text: "Newspaper Clipping Scanning requires special care. Scan newsprint at very high resolution (1200-2400 dpi) to capture maximum detail despite coarse halftone dots. Scan in color mode to capture yellowing and potential ink colors. Handle brittle newsprint extremely gently to prevent tearing. Consider using a digital camera if clippings are too fragile for scanner pressure. Save immediately in archival format before originals deteriorate further."
+  - name: "AI-Powered Sports Photo Enhancement"
+    text: "Upload digitized sports photographs to ArtImageHub's photo restoration tool. The AI handles multiple enhancement challenges specific to athletic images."
+  - name: "Manual Enhancement for Sports-Specific Details"
+    text: "Import AI-enhanced images into photo editing software for final sport-specific optimization."
+  - name: "Enlargement and Print Preparation"
+    text: "Many restored sports photos will be printed for display in homes, trophy cases, or reunions."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

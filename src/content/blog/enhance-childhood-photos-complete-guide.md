@@ -20,6 +20,21 @@ faq:
     answer: "Restore color in faded childhood Polaroids by scanning at 2400 DPI (small format requires high resolution), adding significant blue channel correction in Curves (Polaroids yellow as blue dyes fade first), reducing yellow cast through Selective Color adjustment, restoring contrast aggressively, and boosting saturation carefully."
   - question: "Should you enhance digital scans of childhood photos or physical prints?"
     answer: "Always enhance digital scans of childhood photos rather than attempting physical manipulation of original prints. Scan originals at high resolution (1200+ DPI), then perform all enhancement digitally—this preserves physical originals while allowing unlimited experimentation with restoration. Keep physical prints in archival storage as backup and historical artifacts."
+howTo:
+  - name: "High-Resolution Scanning (Critical Foundation)"
+    text: "The single most important factor in childhood photo enhancement is scanning quality. Insufficient resolution limits all subsequent enhancement."
+  - name: "Global Exposure and Contrast Correction"
+    text: "Before addressing specific damage, establish proper overall tonal range:"
+  - name: "Color Correction and Balance"
+    text: "For color childhood photos, accurate color restoration is essential:"
+  - name: "Localized Adjustments for Problem Areas"
+    text: "After global corrections, address specific areas:"
+  - name: "Damage Repair"
+    text: "With proper exposure and color established, repair physical damage:"
+  - name: "Noise Reduction and Grain Management"
+    text: "Scanned childhood photos contain grain (from film), paper texture, and scanning noise:"
+  - name: "Sharpening (Final Step)"
+    text: "Apply sharpening as the absolute final step:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

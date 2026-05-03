@@ -20,6 +20,17 @@ faq:
     answer: "Use your scanner's exposure compensation features to lighten the scan, or make multiple scans at different exposure levels and combine the best parts later. Some scanners have \"backlight\" or \"dark original\" modes that help. If scanning prints from negatives, consider re-scanning the negatives directly if available—they contain more information than darkened prints."
   - question: "Can AI really enhance photos from disposable cameras or early phone cameras?"
     answer: "AI can improve these low-quality sources, but can't overcome fundamental resolution and quality limitations. Disposable camera photos often have acceptable quality after grain reduction and color correction. Early phone camera photos (pre-2010) are extremely challenging due to tiny sensors and poor lenses—expect limited results."
+howTo:
+  - name: "Gathering and Assessing Your Concert Photos"
+    text: "Locate All Versions: Check if you have: Original negatives or slides (these are gold for restoration) Multiple prints from the same negative Contact sheets showing the full roll Any digital scans made previously"
+  - name: "Proper Digitization"
+    text: "The quality of your digital scan directly impacts restoration success."
+  - name: "AI-Powered Enhancement with ArtImageHub"
+    text: "Modern AI technology transforms how we enhance old concert photographs. ArtImageHub's photo restoration tools are specifically designed to handle the unique challenges of concert photography."
+  - name: "Targeted Manual Refinements"
+    text: "While AI handles most enhancement automatically, some concert photos benefit from manual attention:"
+  - name: "Contextual Research and Authentication"
+    text: "For historically significant concert photos, verify accuracy:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,19 @@ faq:
     answer: "Scan newspaper clippings at minimum 600 DPI, with 800-1200 DPI recommended for severely faded text or clippings you plan to enlarge. Higher resolution captures more detail from faded ink and allows for greater manipulation during restoration. Save scans as TIFF or PNG files rather than JPEG to avoid compression artifacts that can make faded text harder to recover."
   - question: "How much does professional newspaper clipping restoration cost?"
     answer: "Professional restoration services typically charge $40-100 per newspaper clipping depending on size and damage severity. ArtImageHub offers AI-powered restoration starting at $9.99 per image, making it affordable to restore multiple clippings."
+howTo:
+  - name: "Safe Handling and Documentation"
+    text: "Before attempting restoration, protect the original clipping and document its current state."
+  - name: "High-Quality Digitization"
+    text: "Proper scanning is crucial when working to fix faded newspaper clippings. The goal is to capture maximum information before any digital enhancement."
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI technology excels at restoring faded newspaper clippings because it can intelligently separate text from background deterioration."
+  - name: "Fine-Tuning for Optimal Results"
+    text: "While AI handles the bulk of restoration, manual adjustments perfect the results."
+  - name: "Text-Specific Enhancement Techniques"
+    text: "Newspaper text requires special attention for optimal legibility."
+  - name: "Creating Archival and Display Versions"
+    text: "Create multiple versions for different purposes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

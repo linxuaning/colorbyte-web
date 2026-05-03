@@ -20,6 +20,21 @@ faq:
     answer: "Tide marks—the distinctive lines showing where water levels stood during drying—remove effectively through AI restoration. The technology detects the characteristic linear or curved patterns of tide marks, analyzes the color and tonal shift they create (typically darker lines or bands), applies graduated correction to neutralize the discoloration, and blends the repair seamlessly into surroundi..."
   - question: "Is it safe to scan water-damaged photos or will it cause more damage?"
     answer: "Scanning water-damaged photos is generally safe if done carefully and is essential for preservation through restoration. Ensure photos are completely dry before scanning—wet photos should never contact scanner glass. Clean scanner glass thoroughly before and after scanning water-damaged photos to prevent residue transfer."
+howTo:
+  - name: "Physical Stabilization"
+    text: "Before attempting digital restoration, address the physical condition of water-damaged photos. If photos are currently wet, immediately separate stuck photos carefully by gently working a thin plastic spatula between layers, rinse in clean distilled water to remove contaminants, air dry laid flat on absorbent paper (change paper regularly), and never attempt to wipe or rub wet emulsion as this will cause irreversible damage."
+  - name: "High-Quality Scanning"
+    text: "Proper digitization captures all image information for restoration. Use a flatbed scanner at 1200 dpi minimum for water-damaged photos (damage may have reduced detail requiring higher resolution capture). Scan in color mode even for black and white photos to capture all stain coloration. Clean scanner glass meticulously as water-damaged photos may deposit residue."
+  - name: "Upload to AI Restoration Service"
+    text: "Navigate to ArtImageHub's photo restoration service and upload your scanned water-damaged photograph. The AI system analyzes your image to identify water stain patterns and characteristics, assess staining severity and coloration, detect mold spots and discoloration, evaluate emulsion damage and image loss, and calculate optimal restoration approach."
+  - name: "AI Water Damage Removal"
+    text: "The restoration process addresses water damage through several smart techniques. Stain removal analyzes water stain coloration (typically brown, yellow, or gray) and applies precise opposite color correction to neutralize staining. Tide mark elimination detects the characteristic lines and patterns of tide marks and removes them while preserving authentic image detail underneath."
+  - name: "Emulsion Damage Repair"
+    text: "Photos with emulsion separation, bubbling, or transfer present additional challenges beyond simple water spotting. AI restoration addresses these issues by reconstructing missing image areas where emulsion transferred away, repairing cracks and separations in damaged emulsion, recovering detail from partially damaged sections, and blending repairs invisibly into surrounding areas."
+  - name: "Additional Restoration"
+    text: "Water-damaged photos often have other age-related issues requiring simultaneous correction including overall fading and color shifts, physical damage (tears, creases), yellowing or discoloration beyond water staining, and loss of contrast and clarity."
+  - name: "Output and Preservation"
+    text: "Download your restored water-damage-free photograph in appropriate formats. For archival masters, save as TIFF or PNG at full resolution. For printing, create high-quality JPEG at 300 dpi. For sharing, generate web-optimized versions appropriately sized."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

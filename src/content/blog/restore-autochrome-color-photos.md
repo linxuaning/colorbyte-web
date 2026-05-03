@@ -20,6 +20,17 @@ faq:
     answer: "Yes, Autochromes are generally valuable, especially those by known photographers, depicting interesting subjects, or in good condition. Values range from hundreds to tens of thousands of dollars depending on photographer, subject matter, condition, and size. Even damaged Autochromes have value to collectors and historians."
   - question: "Can modern AI really handle the unique characteristics of Autochromes?"
     answer: "Advanced AI systems like ArtImageHub have been trained on thousands of early color photographs including Autochromes. The AI learns to recognize the starch grain pattern, typical color palettes, glass plate damage patterns, and other Autochrome-specific characteristics. This training allows it to restore damage while preserving the authentic qualities that make Autochromes special."
+howTo:
+  - name: "Assess the Digital Scan"
+    text: "Initial Review: View at 100% magnification to understand grain structure Evaluate overall color balance and saturation Identify specific damage areas (cracks, stains, losses) Assess technical quality of the scan itself"
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI offers remarkable capabilities for Autochrome restoration while preserving authentic characteristics."
+  - name: "Manual Refinement"
+    text: "While AI handles major restoration, some aspects benefit from human judgment:"
+  - name: "Historical Accuracy Verification"
+    text: "Authenticity is paramount when restoring rare historical photographs:"
+  - name: "Archival Documentation"
+    text: "Proper documentation ensures future researchers understand what was restored:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

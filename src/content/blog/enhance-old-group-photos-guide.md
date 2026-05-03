@@ -20,6 +20,21 @@ faq:
     answer: "Professional restoration of old class photos costs $200-600 for medium-sized groups (10-20 people) with basic to moderate damage, and $600-2000+ for large classes (30+ students) or severe damage requiring extensive reconstruction. Using AI photo enhancement for group photos can reduce this cost significantly by handling much of the work automatically."
   - question: "Can damaged faces in group photos be reconstructed?"
     answer: "Yes, damaged faces in group photos can often be reconstructed through digital restoration techniques, though results vary based on damage extent. If 40-50% of facial features remain visible, reconstruction typically succeeds using clone stamping, content-aware fill, and reference photos of the same person."
+howTo:
+  - name: "Assessment and Planning"
+    text: "Before making any adjustments, thoroughly analyze the group photograph."
+  - name: "Digitization for Maximum Detail"
+    text: "Proper scanning is critical when multiple faces need enhancement."
+  - name: "Global Corrections"
+    text: "Start with improvements that benefit the entire image."
+  - name: "Face-by-Face Enhancement"
+    text: "This is where group photo restoration becomes labor-intensive but rewarding."
+  - name: "Selective Sharpening Strategy"
+    text: "Different areas of group photos need different sharpening approaches."
+  - name: "Background and Context Enhancement"
+    text: "Don't neglect the setting and environment."
+  - name: "Final Polishing"
+    text: "Last adjustments ensure cohesive enhancement."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

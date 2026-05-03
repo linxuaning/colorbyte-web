@@ -20,6 +20,15 @@ faq:
     answer: "Vinegar syndrome smells like vinegar or acetic acid—a distinctive sharp, acidic odor from deteriorating acetate-based film. While not immediately dangerous to humans, the acid gases accelerate film deterioration and damage nearby film and photographs. Separate affected negatives from stable film immediately, store in well-ventilated area, and digitize as soon as possible."
   - question: "Can I restore negatives that have mold or fungus damage?"
     answer: "Negatives with mold can often be digitally restored if the fungal growth hasn't permanently etched into the emulsion. Inactive, dry mold may be gently cleaned by professionals. After scanning, AI restoration can remove mold spots and reconstruct damaged areas. Active mold growth should be addressed by conservation professionals before handling."
+howTo:
+  - name: "High-Quality Negative Scanning"
+    text: "Proper scanning is critical for restoration success."
+  - name: "Inversion and Basic Correction"
+    text: "Convert negative to positive image."
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI excels at negative restoration."
+  - name: "Manual Fine-Tuning"
+    text: "Refine AI results for specific negative issues."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

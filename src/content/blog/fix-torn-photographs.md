@@ -23,6 +23,17 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Photograph or Scan Torn Pieces"
+    text: "For photos torn into 2-5 large pieces:"
+  - name: "AI-Powered Restoration (Fastest Method)"
+    text: "For photos torn into 2-3 pieces with tears that aren't too complex, AI tools can fix them automatically."
+  - name: "Manual Digital Repair (For Complex Tears)"
+    text: "When AI struggles, manual repair in photo editing software produces perfect results."
+  - name: "Final Enhancement"
+    text: "Once tear is repaired, enhance overall image:"
+  - name: "Saving and Printing"
+    text: "Save multiple versions: 1. Master file: Layered PSD/XCF with all work (can edit later) 2. High-res TIFF: Flattened, archival quality (for future printing) 3. JPEG for sharing: 90-100% quality for web/social media"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,21 @@ faq:
     answer: "This depends on your goals and personal preference. For accurate historical documentation, restore to natural, realistic colors that reflect how the scene actually appeared, preserving authentic 1970s photo characteristics and maintaining appropriate period aesthetic."
   - question: "Are instant photos from the 1970s (Polaroids) restorable?"
     answer: "Yes, 1970s instant photos including Polaroid and other brands can be restored, though they present unique challenges. Instant film from the disco era typically shows severe fading to pale yellow or cream tones within decades, characteristic orange or brown color shifts in skin tones, loss of contrast creating flat, washed-out appearance, and sometimes physical deterioration of the instant film ..."
+howTo:
+  - name: "Assessment and Prioritization"
+    text: "Begin by gathering your disco-era photographs and examining each one carefully. Sort by apparent decade (early 1970s vs. late 1970s—early photos typically show worse deterioration), damage severity (light fading vs. severe color shifts), subject importance (family vs. acquaintances, significant events vs. random parties), and photo quality (sharp, well-composed photos vs. blurry snapshots)."
+  - name: "Safe Removal from Albums"
+    text: "Many disco-era photos remain stuck in magnetic albums from the 1970s-1980s. Remove these carefully by gently working a thin plastic spatula under one corner, proceeding slowly and stopping if significant resistance occurs, using dental floss slid under photo edges as an alternative technique, or scanning photos while still in albums if safe removal proves impossible."
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all remaining image information despite severe fading. Use a flatbed scanner set to 1200 dpi for small disco-era snapshots (many are 3.5x5 or 4x6 inches), scan in color mode to capture all remaining color information no matter how faded, and save in uncompressed TIFF format for maximum restoration flexibility."
+  - name: "AI-Powered Restoration"
+    text: "Upload your scanned disco photo to ArtImageHub's photo restoration service. The AI system analyzes your image to identify 1970s color print characteristics and typical fading patterns, assess color shift type and severity (magenta cast, yellow shift, etc.), detect physical damage requiring repair, evaluate original photo quality issues (blur, flash problems), and determine optimal full restoration approach."
+  - name: "Enhancing 1970s Details"
+    text: "Beyond color correction, restoration enhances the unique details of disco-era photos. It sharpens faces and important subject matter, recovers detail in dark backgrounds (common in flash photography), enhances clothing details showing 1970s fashion, improves visibility of environmental elements (disco balls, dance floors, period decor), and adjusts exposure to balance flash-lit foregrounds with darker backgrounds."
+  - name: "Full Damage Repair"
+    text: "Disco photos often need additional repairs beyond color correction including removing water stains from spilled drinks, eliminating yellowing from cigarette smoke exposure, repairing tears, creases, and edge damage, removing scratches and surface damage, cleaning up adhesive residue from magnetic albums, and reconstructing missing corners or damaged sections."
+  - name: "Final Optimization"
+    text: "After restoration, optimize your revived disco photos for their intended use. For social media sharing and digital display, create vibrant, punchy versions emphasizing the colorful, energetic disco aesthetic. For printing, maintain rich colors but ensure natural skin tones and balanced contrast. For archival preservation, create faithful restorations that accurately represent the original scene."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

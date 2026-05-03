@@ -22,6 +22,19 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Prepare Your Photo"
+    text: "The quality of your colorization result depends heavily on the quality of the input. Before uploading, optimize your scan:"
+  - name: "Upload to ArtImageHub"
+    text: "Navigate to our AI Photo Colorizer and upload your black-and-white photo. The tool accepts JPEG, PNG, TIFF, and WebP files."
+  - name: "Enable Colorization"
+    text: "Select the colorization option in the processing settings. If you also have damaged areas (scratches, tears, fading), enable restoration simultaneously—the tool can handle both at once."
+  - name: "Process and Review"
+    text: "Processing typically takes 30–90 seconds. When the result appears, use the before/after slider to compare the colorized version to the original."
+  - name: "Download Your Results"
+    text: "Download both the colorized version and, if you ran restoration, the restored version. Always keep the original unmodified scan."
+  - name: "Share and Get Feedback"
+    text: "For family photos, share the colorized version with relatives. Older family members may remember specific details—\"Grandma's dress was actually blue, not the pink it looks like here\"—and their memories can tell you how accurate the colorization is."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

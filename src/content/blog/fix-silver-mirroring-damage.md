@@ -20,6 +20,17 @@ faq:
     answer: "Yes, proper storage and handling can prevent or minimize silver mirroring development in photographs currently in good condition. Store photographs in archival-quality enclosures made from materials that pass the Photographic Activity Test (PAT), ensuring they won't contribute deterioration-causing chemicals."
   - question: "Will removing silver mirroring damage the original photograph?"
     answer: "No—digital restoration that removes silver mirroring affects only digital copies, not the original photograph. The process involves digitizing the photograph through scanning or photography, then performing all restoration work on the digital copy using computer software. The original photograph remains completely untouched throughout the digital restoration process."
+howTo:
+  - name: "Proper Documentation and Digitization"
+    text: "Successfully removing silver mirroring through digital restoration begins with capturing the image information that exists beneath the reflective surface."
+  - name: "AI-Powered Silver Mirroring Removal"
+    text: "Modern AI restoration technology offers remarkable capabilities for removing silver mirroring and recovering obscured image detail."
+  - name: "Manual Refinement for Challenging Cases"
+    text: "While AI handles most silver mirroring removal automatically, some cases benefit from manual refinement to perfect the restoration."
+  - name: "Comparison with Original and Quality Control"
+    text: "Before finalizing your restoration, carefully compare the result with the original mirrored image to ensure you've achieved your goals."
+  - name: "Output and Archival Preservation"
+    text: "Complete your silver mirroring restoration by creating appropriate output files and ensuring long-term preservation."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

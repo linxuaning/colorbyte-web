@@ -20,6 +20,21 @@ faq:
     answer: "Proper storage is essential for preventing additional deterioration of these fragile glass plate photographs. Store ambrotypes in their original cases if the cases are intact and in good condition—the cases were designed to protect the delicate images. Keep cased ambrotypes upright rather than stacked horizontally to prevent pressure on the glass plates."
   - question: "Can hand-colored ambrotypes be restored without losing the color?"
     answer: "Yes, hand-colored ambrotypes can be restored while preserving their original tinting, which is an important part of their historical and artistic value. Hand-coloring was a popular enhancement for ambrotypes during their era—artists applied oil paints, pigments, or dyes to add color to cheeks, lips, jewelry, clothing, and other elements, creating beautiful and distinctive images."
+howTo:
+  - name: "Assessment and Documentation"
+    text: "Before any restoration work begins, thoroughly assess your ambrotype's condition and document its current state."
+  - name: "Physical Stabilization and Preservation"
+    text: "Before digital restoration, ensure the original ambrotype is physically stable and properly preserved."
+  - name: "High-Resolution Digitization"
+    text: "Capturing a high-quality digital image of your ambrotype requires careful technique to handle the glass plate's reflective properties and delicate condition."
+  - name: "AI-Powered Ambrotype Restoration"
+    text: "Modern AI restoration technology offers remarkable capabilities for enhancing digitized ambrotype images while preserving their authentic historical character."
+  - name: "Manual Refinement of Critical Details"
+    text: "While AI produces excellent results for most ambrotype restoration, manual work enhances critical details and addresses any remaining issues."
+  - name: "Backing Reconstruction and Presentation"
+    text: "Many damaged ambrotypes suffer from deteriorated backing that makes the image appear as a negative or barely visible. Digital restoration can reconstruct the appearance of proper backing."
+  - name: "Output and Long-Term Preservation"
+    text: "Complete your ambrotype restoration by creating appropriate output files and ensuring long-term digital preservation."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -275,6 +275,23 @@ export default async function BlogPostPage({ params }: Props) {
         }
       : null;
 
+  const howToLd =
+    post.howTo && post.howTo.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: post.title,
+          description: post.description,
+          step: post.howTo.map((s, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            name: s.name,
+            text: s.text,
+            ...(s.url ? { url: s.url } : {}),
+          })),
+        }
+      : null;
+
   return (
     <>
       <script
@@ -301,6 +318,12 @@ export default async function BlogPostPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLd) }}
+        />
+      )}
+      {howToLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
         />
       )}
 

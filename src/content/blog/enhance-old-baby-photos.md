@@ -20,6 +20,21 @@ faq:
     answer: "AI restoration can improve out-of-focus baby photos, though results depend on the severity of the focus problem. Mildly soft photos can be significantly sharpened while maintaining natural appearance. Moderately out-of-focus photos can be improved enough to create acceptable results, especially for small print sizes or digital viewing."
   - question: "Should I enhance baby photos myself or hire a professional?"
     answer: "The decision depends on several factors including budget, number of photos, and restoration complexity. AI-powered enhancement services like ArtImageHub offer excellent results for most baby photos at $5-20 per photo, processing time of minutes rather than days or weeks, and user-friendly interfaces requiring no technical expertise."
+howTo:
+  - name: "Inventory and Assessment"
+    text: "Begin by gathering all baby photos you want to enhance and carefully examining each one to assess the type and extent of damage."
+  - name: "Proper Digitization"
+    text: "High-quality scanning forms the foundation of successful baby photo enhancement. The goal is to capture all remaining image information, no matter how degraded the original appears."
+  - name: "AI-Powered Photo Enhancement"
+    text: "Modern AI restoration technology has transformed old baby photo enhancement, offering capabilities that would have required hours of painstaking manual work just a few years ago."
+  - name: "Color Correction and Restoration"
+    text: "Baby photos often exhibit severe color shifts that can make precious memories look unnatural and unappealing. Proper color correction restores realistic, pleasing skin tones and overall image color."
+  - name: "Enhancing Faces and Critical Details"
+    text: "Baby faces represent the most important elements in these photos, requiring special attention during enhancement."
+  - name: "Background and Context Enhancement"
+    text: "While faces are paramount, enhancing backgrounds and contextual elements creates more complete, satisfying restorations."
+  - name: "Finishing Touches and Output Optimization"
+    text: "The final enhancement phase optimizes your restored baby photo for its intended use."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

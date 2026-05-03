@@ -20,6 +20,19 @@ faq:
     answer: "Scan microfilm photocopies at minimum 600 DPI in grayscale mode (not black and white) using TIFF or PNG format. Higher resolution (1200 DPI) is better for very poor quality originals or small text. Grayscale preserves tonal information that pure black and white mode loses, providing better results during enhancement."
   - question: "Can AI remove all artifacts from microfilm copies?"
     answer: "AI can remove most common microfilm artifacts including dust spots, scratches, background noise, and uneven illumination. However, some artifacts may be too severe for complete automatic removal, particularly if they obscure text. ArtImageHub's AI handles typical microfilm issues very effectively, with manual touch-up available for stubborn artifacts."
+howTo:
+  - name: "Assessment and Preparation"
+    text: "Evaluate what you're working with before enhancement."
+  - name: "High-Quality Scanning"
+    text: "If you have a physical photocopy, digitize it properly."
+  - name: "AI-Powered Enhancement with ArtImageHub"
+    text: "Modern AI excels at enhancing microfilm copies."
+  - name: "Manual Fine-Tuning"
+    text: "Refine AI results for optimal quality."
+  - name: "Text Legibility Optimization"
+    text: "Make the text as readable as possible."
+  - name: "Creating Multiple Versions"
+    text: "Generate different versions for different purposes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

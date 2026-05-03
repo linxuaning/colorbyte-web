@@ -20,6 +20,17 @@ faq:
     answer: "Proper framing preserves platinum prints while allowing enjoyment of their beauty. Use conservation-standard materials exclusively including UV-protective glazing (museum-quality glass or acrylic blocking 99% of UV light), acid-free mat board in neutral colors, window mats that don't contact the print surface, and backing that allows air circulation."
   - question: "Is it safe to digitally restore valuable platinum prints?"
     answer: "Digital restoration is completely safe for original platinum prints because it works from scans or photographs of the print, creating enhanced digital copies while leaving the original untouched and preserved in archival storage."
+howTo:
+  - name: "Assessment and Planning"
+    text: "Carefully assess damage in the digital file noting paper deterioration versus image degradation, types of stains or discoloration present, physical damage including tears, creases, or missing areas, and any mounting or adhesive damage visible in the scan."
+  - name: "AI-Powered Restoration with Constraints"
+    text: "Upload your platinum print scan to ArtImageHub's photo restoration tool. The AI will address damage while generally preserving image characteristics. However, be aware that AI may not fully recognize platinum prints' distinctive qualities and might over-process or modernize the image inappropriately."
+  - name: "Manual Refinement for Authenticity"
+    text: "Import the AI-restored image into professional editing software for careful manual work that preserves platinum print qualities."
+  - name: "Addressing Specific Damage Types"
+    text: "Different damage types require specialized approaches for platinum prints."
+  - name: "Final Optimization"
+    text: "Complete the restoration with final refinements including overall tonal balance ensuring proper whites, blacks, and midtone values, subtle contrast adjustment to create appealing but period-appropriate appearance, final cleanup of any remaining minor imperfections, and output preparation at appropriate resolution and file format."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

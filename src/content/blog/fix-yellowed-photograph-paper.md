@@ -20,6 +20,17 @@ faq:
     answer: "Compare the yellow to period-appropriate sepia tones by examining other photos from the same era. Sepia toning is warm brown with purplish undertones, evenly applied, and common in 1880s-1930s photos. Age-yellowing is more greenish-yellow, often uneven, and continues to darken. Protected areas (under mats) showing original color also help distinguish."
   - question: "Can I prevent my restored digital files from yellowing?"
     answer: "Digital files don't yellow—that's a chemical process affecting physical paper. Once scanned and restored digitally, your images are permanently protected from further yellowing. Store digital files properly (multiple backups, reliable media, verified regularly) and they'll remain in perfect condition indefinitely."
+howTo:
+  - name: "High-Quality Digitization"
+    text: "Foundation of successful restoration starts with proper scanning."
+  - name: "Basic Color Correction"
+    text: "Start with global adjustments to remove yellow cast. For black-and-white photos, this restores neutral tones. For color photos that had their colors altered by yellowing, you may want to use AI photo colorization tools to help restore original color after removing the yellow cast."
+  - name: "Localized Correction for Uneven Yellowing"
+    text: "When yellowing varies across the image:"
+  - name: "Restoring Contrast and Tonal Range"
+    text: "Yellowing often accompanies contrast loss."
+  - name: "Black and White vs. Color Decision"
+    text: "For originally black-and-white photos yellowed with age:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

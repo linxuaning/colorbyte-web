@@ -20,6 +20,21 @@ faq:
     answer: "Restored digital photos stored as computer files will never yellow—digital files don't deteriorate chemically like physical photographs. However, if you print restored photos, use archival methods to prevent yellowing in the new prints."
   - question: "Should I restore yellowed black and white photos to neutral tones or keep some warmth?"
     answer: "This is largely a matter of personal preference, though AI restoration typically defaults to neutral tones that show maximum detail and contrast. For most black and white photos, removing yellowing completely to achieve neutral black and white tones provides the most striking, high-quality results with maximum detail and contrast."
+howTo:
+  - name: "Assessment and Inventory"
+    text: "Begin by examining your yellowed photographs carefully to understand the extent and pattern of discoloration. Sort photos by yellowing severity (light, moderate, severe), yellowing pattern (overall, edge, spotty, uneven), photo type (black and white, color, instant film), and era (1940s-50s, 1960s-70s, 1980s-90s, 2000s+)."
+  - name: "Proper Digitization"
+    text: "High-quality scanning provides the foundation for successful yellowing correction. Use a flatbed scanner set to at least 600 dpi resolution, preferably 1200 dpi for small photos or those with additional damage beyond yellowing."
+  - name: "AI-Powered Yellow Removal"
+    text: "Modern AI restoration technology has completely changed the game for removing yellowing from old photographs. Upload your scanned yellowed photo to ArtImageHub's photo restoration service. The AI system immediately analyzes your image to identify yellowing type and severity, determine whether the photo is originally black and white or color, assess additional damage requiring correction, and calculate optimal color correction settings."
+  - name: "Contrast and Tonal Recovery"
+    text: "Yellowing not only changes color but also reduces contrast, creating muddy, flat-looking images. After removing the yellow cast, proper tonal adjustment restores impact and clarity."
+  - name: "Additional Restoration Needs"
+    text: "Yellowed photographs often suffer from other age-related damage requiring correction. AI restoration simultaneously addresses multiple issues including fading and loss of detail, scratches and surface damage, tears or creases, water stains or spots, and overall deterioration beyond just yellowing."
+  - name: "Fine-Tuning and Customization"
+    text: "While AI restoration produces excellent results automatically, you may want to fine-tune specific aspects of the restoration. Some restoration services allow you to adjust the strength of yellow removal (preserving subtle warm tones if desired), modify contrast and brightness to personal preference, enhance specific areas like faces or important details, and choose between neutral black and white or subtle warm toning for black and white photos."
+  - name: "Output Optimization"
+    text: "Optimize your restored photo for its intended use. For digital sharing and display, create web-optimized JPEG files at 1920px on the longest edge, sharpen slightly for screen viewing, and adjust brightness slightly lighter for screen display (screens show darker than prints)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,19 @@ faq:
     answer: "Autochromes can be quite valuable both historically and monetarily, though value varies considerably based on subject, condition, and provenance. Historically, every autochrome has significance as an example of early color photography and a window into the pre-1935 world in authentic color."
   - question: "How should I display or store autochromes to prevent further fading?"
     answer: "Autochromes are extremely vulnerable to light damage—their organic dyes fade progressively with light exposure, particularly the red and blue-violet dyes. This makes display and storage challenging but critical for preservation. For long-term storage, keep autochromes in complete darkness in archival-quality housings. Use acid-free enclosures designed for glass plate photographs."
+howTo:
+  - name: "Authentication and Assessment"
+    text: "Before beginning restoration, verify that your photograph is indeed an autochrome and assess its specific condition."
+  - name: "Proper Digitization of Autochromes"
+    text: "Capturing high-quality digital images of autochromes requires specialized technique because these are transparency images designed for transmitted light viewing."
+  - name: "AI-Powered Autochrome Restoration"
+    text: "Modern AI restoration technology can address autochrome damage while preserving the format's distinctive characteristics."
+  - name: "Manual Color Correction and Refinement"
+    text: "Autochrome restoration often benefits from manual color adjustment to achieve authentic period color appearance."
+  - name: "Grain Preservation and Texture Enhancement"
+    text: "The visible grain structure of autochromes is part of their essential character and should be preserved or even enhanced during restoration."
+  - name: "Output Optimization for Different Purposes"
+    text: "Create multiple versions of restored autochromes optimized for different uses."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

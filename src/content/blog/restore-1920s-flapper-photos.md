@@ -20,6 +20,17 @@ faq:
     answer: "Scan at minimum 600 DPI, preferably 1200 DPI. This captures fine details in clothing, accessories, and backgrounds. Higher resolution also provides flexibility for future uses like large-format printing or further digital enhancement as technology improves."
   - question: "How do I research the correct colors for flapper-era clothing?"
     answer: "Consult period fashion magazines, museum textile collections, and early color photography (Autochrome plates from the 1920s). ArtImageHub's AI colorization is trained on authentic period colors, providing an excellent starting point. Cross-reference with historical sources and contemporary written descriptions of fashion trends."
+howTo:
+  - name: "Digitization with Proper Scanning"
+    text: "The foundation of any successful restoration is a high-quality digital scan. For 1920s photographs, follow these scanning guidelines:"
+  - name: "Assessment and Planning"
+    text: "Before diving into restoration, create a plan:"
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI technology has transformed how we restore 1920s flapper photos. ArtImageHub's old photo restoration tools use machine learning trained on thousands of period photographs to deliver authentic results."
+  - name: "Manual Refinements"
+    text: "While AI handles the heavy lifting, some details require human judgment:"
+  - name: "Authentic Colorization (Optional)"
+    text: "Many people want to colorize their 1920s flapper photos to bring the subjects to life. If you choose this route, authenticity is crucial."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

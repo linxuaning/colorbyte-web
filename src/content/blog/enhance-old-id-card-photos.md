@@ -20,6 +20,17 @@ faq:
     answer: "AI can significantly improve apparent sharpness of moderately blurry photos through detail enhancement and upscaling. However, there are limits—if the original is severely out of focus, AI can improve it but can't create detail that was never captured."
   - question: "Should I enhance old ID photos of deceased relatives?"
     answer: "This is a personal and family decision. For family history purposes, enhancement is generally appropriate and valuable. It preserves the image in clearer form for future generations and makes it more suitable for memorial uses. Be respectful in how you enhance and share, maintain the person's dignity, and consider family wishes."
+howTo:
+  - name: "Careful Scanning or Photography"
+    text: "ID card photos require special handling due to their size and condition."
+  - name: "Pre-Processing Assessment"
+    text: "Evaluate Source Material: Is this the only available image of the person? Are better photos of the same person available for reference? What's the intended use (family history, document recreation, enlargement)? Is the card still attached or is photo separate?"
+  - name: "AI-Powered Enhancement with ArtImageHub"
+    text: "Modern AI technology offers remarkable capabilities for small, challenging images."
+  - name: "Targeted Manual Corrections"
+    text: "Some ID photo issues benefit from specific manual intervention."
+  - name: "Quality Control and Verification"
+    text: "Ensure enhanced ID photo maintains identity accuracy."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

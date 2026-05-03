@@ -20,6 +20,19 @@ faq:
     answer: "Photos adhered to glass present special challenges and should be handled carefully. Do not attempt to forcibly separate a photo from glass, as this will likely destroy the image surface. Instead, scan or photograph the photo through the glass, using cross-polarized lighting if possible to minimize reflections."
   - question: "What should I do if I don't know who appears in my Ellis Island photos?"
     answer: "Unknown subjects are common in inherited photograph collections. Start by examining the photo for any inscriptions, dates, or clues on the front or reverse. Consult family members, especially older relatives who may recognize faces or remember family stories. Research Ellis Island arrival records for your family to establish timeframes and identify who immigrated when."
+howTo:
+  - name: "Documentation and Assessment"
+    text: "Before beginning any restoration work, thoroughly document your Ellis Island photos. Create high-resolution scans at a minimum of 600 dpi, preferably 1200 dpi for severely damaged images. Photograph the entire item, including the back, which may contain valuable inscriptions, dates, or photographer marks. Record all visible damage, noting the type and extent of deterioration. Research the approximate date and photographic process used, as this information will guide your restoration approach."
+  - name: "Digital Capture"
+    text: "Proper digitization forms the foundation of successful photo restoration. Use a flatbed scanner with at least 600 dpi resolution, though 1200 dpi or higher is recommended for severely damaged or very small photographs. Scan in color mode even if the photo appears black and white, as this captures subtle color information that aids restoration. Save files in uncompressed TIFF format to preserve all image data, and create a RAW backup before making any edits."
+  - name: "Basic Restoration Using AI Photo Restoration"
+    text: "Modern AI photo restoration technology has transformed the restoration of historical photographs, making professional-quality results accessible to family historians and amateur archivists."
+  - name: "Manual Refinement"
+    text: "While AI restoration produces excellent results for most Ellis Island photos, manual refinement may be necessary for specific areas requiring special attention."
+  - name: "Tone and Color Correction"
+    text: "Many Ellis Island photos exhibit uneven toning or color shifts due to aging and deterioration. Correcting these issues while maintaining period authenticity requires a careful approach."
+  - name: "Sharpening and Final Enhancement"
+    text: "The final step brings clarity and definition to your restored Ellis Island photo while avoiding over-processing."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

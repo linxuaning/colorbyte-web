@@ -20,6 +20,21 @@ faq:
     answer: "True black and white photographs (those created using only black and white chemistry on black and white paper) don't have color shift because they contain no color dyes—only metallic silver forms the image. However, many photographs that appear black and white are actually color prints that have faded to near-monochrome, often showing sepia, brown, or warm tones from deteriorated color dyes."
   - question: "Should I correct color shift to neutral or keep vintage look?"
     answer: "This decision depends on personal preference and the photo's intended use. For neutral modern appearance, fully correct color shifts to achieve contemporary color balance with natural skin tones, proper sky blues, and accurate color throughout. This creates the clearest, most universally appealing images."
+howTo:
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all remaining color information, even color data too faint to see easily. This hidden information becomes crucial for accurate color correction."
+  - name: "AI-Powered Color Correction"
+    text: "Modern AI restoration technology excels at correcting color shifts in vintage photographs, analyzing remaining dye patterns and reconstructing original natural colors with remarkable accuracy."
+  - name: "Manual Color Correction Refinement"
+    text: "While AI produces excellent results for most color-shifted photos, manual refinement can perfect corrections or address AI limitations."
+  - name: "Restoring Color Saturation"
+    text: "Color-shifted photos often lose saturation along with color balance, appearing washed out and pale. Restoring appropriate color intensity completes the correction."
+  - name: "Adjusting for Period-Appropriate Color"
+    text: "While correcting color shifts, maintain some period-appropriate color characteristics that distinguish vintage photos from modern ones."
+  - name: "Addressing Uneven Color Shifts"
+    text: "Photos with different color casts in different areas require more advanced correction approaches."
+  - name: "Final Enhancement and Output"
+    text: "Complete correction with final enhancements. Adjust overall contrast using curves or levels for appealing, well-balanced images. Apply appropriate sharpening for the resolution and intended use. Fine-tune brightness and exposure to optimize viewing. Create final output files in appropriate formats and color spaces."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

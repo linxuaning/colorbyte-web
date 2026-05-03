@@ -20,6 +20,23 @@ faq:
     answer: "This is partly personal preference, though consider the photograph's purpose and significance. For strict historical accuracy, subtle warm toning approximates original albumen print appearance when new (they were never purely neutral)."
   - question: "What information on the back of cabinet cards should be preserved?"
     answer: "Preserve all information from cabinet card backs as it has significant historical and genealogical value. Studio name and location help identify where ancestors lived or visited, studio operational dates help date undated portraits, decorative designs and studio card styles help narrow dating when other information is missing, handwritten names, dates, and notes provide vital genealogical data,..."
+howTo:
+  - name: "Physical Assessment and Documentation"
+    text: "Before beginning restoration, carefully assess your cabinet card's condition. Examine the photograph surface for cracks, fading, yellowing, or silvering. Check the mount for brittleness, cracks, or separation. Look for physical damage (tears, creases, edge damage). Note water stains, mold spots, or other environmental damage."
+  - name: "Safe Handling and Stabilization"
+    text: "Cabinet cards are often extremely fragile after 100+ years. Handle by edges only, wear clean cotton gloves to prevent oil and acid transfer, work on clean, padded surfaces, and avoid bending or flexing brittle mounts."
+  - name: "High-Quality Scanning"
+    text: "Proper digitization captures all remaining image information for restoration. Use a flatbed scanner (ideal for cabinet card size), set to 1200 dpi minimum (these are small photos requiring high resolution to capture remaining detail), scan in color mode even though photos appear monochromatic (captures yellowing and toning information), and save as uncompressed TIFF format for maximum quality."
+  - name: "Upload to AI Restoration Service"
+    text: "Navigate to ArtImageHub's photo restoration service and upload your scanned cabinet card. The AI system analyzes your image to identify albumen print characteristics and typical damage, assess yellowing severity and fading extent, detect cracks, tears, and physical damage, evaluate facial detail loss, and determine optimal restoration approach for Victorian-era portraits."
+  - name: "Color Correction and Tone Restoration"
+    text: "The restoration process begins by addressing yellowing and tonal shifts. The AI removes characteristic albumen yellowing by analyzing the brown or cream cast affecting the photo, applying precise inverse color correction to neutralize yellowing, and restoring the neutral or subtly warm tone of original albumen prints."
+  - name: "Facial Enhancement"
+    text: "The most critical aspect of cabinet card restoration is recovering facial detail. These portraits exist primarily to show ancestors' appearances, so facial clarity is paramount."
+  - name: "Damage Repair"
+    text: "Physical damage requires digital reconstruction. The AI removes cracks and crackling in albumen emulsion, repairs tears and missing sections, eliminates scratches and surface damage, removes water stains and mold spots, and reconstructs damaged areas using intelligent interpolation from surrounding information."
+  - name: "Background and Context Enhancement"
+    text: "Beyond the portrait subject, cabinet cards include important contextual elements worth preserving. Victorian studio backdrops (painted scenes, draped fabric) provide period atmosphere, studio furniture and props (chairs, columns, balustrades) show photographic conventions of the era, and clothing details document Victorian fashion and social status."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,23 @@ faq:
     answer: "Very old ancestor photographs (tintypes, ambrotypes, cabinet cards from 1860s-1900s) are often extremely fragile requiring special care. Handle only by edges wearing clean cotton gloves to prevent oil and acid transfer. Support fully during any movement to avoid stress and cracking."
   - question: "Should I restore all ancestor photos or just identified ones?"
     answer: "Restore all ancestor photos regardless of current identification status. Unknown photos may be identified after restoration reveals clear facial features enabling family recognition or comparison, contain valuable contextual information (backgrounds, clothing, studio details) useful for research, show relatives or connections not immediately apparent, and represent the only surviving images of ..."
+howTo:
+  - name: "Documentation and Research"
+    text: "Before restoration, document all available information. Photograph photo fronts and backs (studio information, handwritten notes). Record all known details (names, dates, locations, relationships). Note photo format and approximate age. Research studio information if present to establish time period and location."
+  - name: "Condition Assessment"
+    text: "Examine each ancestor photo carefully to assess restoration needs. Check for fading severity (slight, moderate, severe, extreme), yellowing and discoloration, physical damage (tears, creases, cracks), surface deterioration (scratches, spots, emulsion damage), and missing sections or complete sections destroyed."
+  - name: "High-Quality Scanning"
+    text: "Proper digitization captures all remaining image information for restoration. Use flatbed scanner at 1200 dpi minimum for ancestor photos (many are small formats requiring higher resolution), scan in color mode even for black and white photos (captures toning and yellowing information), and save as uncompressed TIFF format for maximum quality."
+  - name: "AI-Powered Restoration"
+    text: "Upload your scanned ancestor photo to ArtImageHub's photo restoration service. The AI system analyzes your image to identify historical photograph characteristics and era, assess fading and deterioration severity, detect damage types requiring correction, and determine optimal restoration for ancestral portraits."
+  - name: "Facial Enhancement Priority"
+    text: "For genealogical purposes, facial clarity is paramount. AI restoration prioritizes facial areas by identifying faces even when severely faded or damaged, sharpening and clarifying facial features for identification, enhancing eyes, nose, mouth, and distinctive features, recovering detail in beards, hair, and period styling, and revealing subtle expressions and characteristics."
+  - name: "Full Damage Removal"
+    text: "Ancestor photos typically need extensive restoration addressing multiple issues simultaneously. The AI removes severe yellowing returning photos to neutral or subtly toned appearance, corrects extreme fading recovering tonal range and contrast, repairs physical damage (tears, creases, cracks), eliminates stains, spots, and discoloration, and reconstructs missing or damaged sections."
+  - name: "Historical Context Preservation"
+    text: "Beyond the ancestor's face, restoration should enhance contextual elements valuable for genealogy. Studio props and furniture indicate social status and period. Clothing details document fashion, occupation, and wealth. Background elements may show locations or businesses. These contextual details provide historical information worth preserving alongside facial enhancement."
+  - name: "Output for Genealogical Use"
+    text: "After restoration, create versions optimized for different genealogical applications. For family history books and documentation, prepare high-resolution versions (300 dpi at intended size), enhance for print reproduction, and include identifying captions and information."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

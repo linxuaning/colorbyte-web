@@ -20,6 +20,23 @@ faq:
     answer: "The decision depends on your collection size and budget, though AI enhancement is affordable enough to make enhancing all meaningful baby photos practical. Consider enhancing all first photos from hospital (irreplaceable first moments), milestone photos (first smile, steps, birthday), photos showing baby with family members (grandparents, siblings, parents), unique or special occasion photos, a..."
   - question: "Can you remove yellow color casts from old baby photos?"
     answer: "Absolutely—yellow color casts affecting old baby photos can be completely removed through AI restoration. This yellowing occurs in aged color prints when magenta dyes fade leaving yellow behind, in Polaroid and instant film through characteristic dye deterioration, and in photos stored in contact with acidic materials."
+howTo:
+  - name: "Inventory and Assessment"
+    text: "Begin by gathering all baby photos requiring enhancement. Examine each carefully to assess damage type and severity, original photo quality issues, subject clarity (can you see baby's face clearly?), and historical context (dates, locations, circumstances)."
+  - name: "Safe Removal from Albums"
+    text: "Many precious baby photos remain stuck in magnetic albums or baby books. Remove these carefully by gently working a thin plastic spatula under corners, proceeding slowly and stopping if strong resistance occurs, using dental floss slid under photo edges as alternative technique, or photographing/scanning while still mounted if safe removal proves impossible."
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all remaining image information despite damage or deterioration. Use a flatbed scanner set to at least 600 dpi, preferably 1200 dpi for small baby photos or wallet-sized pictures, scan in color mode even for black and white photos, and save as uncompressed TIFF format for maximum restoration potential."
+  - name: "Upload to AI Enhancement Service"
+    text: "Navigate to ArtImageHub's photo enhancement service and upload your scanned baby photo. The AI system analyzes your image to identify damage types and severity, assess original photo quality and characteristics, determine optimal enhancement settings for baby portraits, and process restoration targeting facial features and important details."
+  - name: "Full Restoration"
+    text: "The AI enhancement process addresses multiple issues simultaneously. It reverses color fading by analyzing remaining color information and reconstructing original hues, removes scratches, creases, and physical damage through intelligent interpolation, eliminates spots, stains, and blemishes while preserving important details, sharpens and clarifies faces and features that have softened with age, and adjusts exposure and contrast to recover detail in poor hospital lighting."
+  - name: "Color Correction Specialized for Baby Photos"
+    text: "Baby portraits require particular attention to skin tone accuracy. The AI removes magenta or pink color casts common in aged color prints, eliminates yellow or orange shifts typical of aged Polaroids, corrects overall color balance for natural peachy baby skin tones, and adjusts warmth to preserve appropriate tenderness while removing age-related color shifts."
+  - name: "Background Enhancement"
+    text: "Hospital and home baby photos often have distracting or damaged backgrounds. Consider selective enhancement that brings attention to baby while minimizing background issues through reducing clutter via subtle blurring or desaturation, repairing background damage that draws attention from subject, and brightening backgrounds to create better separation from baby."
+  - name: "Output Optimization for Multiple Uses"
+    text: "After enhancement, create versions optimized for different purposes. For digital sharing and social media, create web-optimized JPEG files at 1920px longest edge, sharpen slightly for screen viewing, and adjust brightness appropriately."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

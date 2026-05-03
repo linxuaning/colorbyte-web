@@ -20,6 +20,19 @@ faq:
     answer: "It's safe to scan photographs with dormant, dry mold if you take precautions: wear an N95 respirator, line the scanner bed with disposable acetate sheets, and clean the scanner with 70% isopropyl alcohol afterward. Never scan photographs with active fuzzy growth—this contaminates your equipment and risks spreading spores."
   - question: "How much does it cost to restore fungus-damaged photos?"
     answer: "DIY digital restoration to fix fungus damaged photos costs $0-100 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99 one-time) plus scanning equipment ($200-500). Time investment ranges from 2-4 hours for light foxing to 8-15 hours for severe damage."
+howTo:
+  - name: "File Preparation and Setup"
+    text: "Create Your Working Environment"
+  - name: "Removing Foxing Spots"
+    text: "Foxing requires patient, systematic removal."
+  - name: "Correcting Fungal Staining"
+    text: "Large areas of discoloration require different approaches than spot removal."
+  - name: "Reconstructing Missing Image Detail"
+    text: "Fungal damage often destroys emulsion, creating gaps in the image."
+  - name: "Overall Tonal and Color Correction"
+    text: "After removing damage, restore overall image quality."
+  - name: "Detail Enhancement and Sharpening"
+    text: "Restore clarity lost to fungal damage and aging."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,19 @@ faq:
     answer: "The pink or magenta cast results from cyan dye fading faster than magenta and yellow dyes in chromogenic (traditional color) prints. This differential fading leaves an excess of magenta, creating the characteristic pink appearance. It's one of the most common sun damage patterns and fortunately one of the easier to correct digitally."
   - question: "Should I frame restored photos or keep originals stored away?"
     answer: "Ideally, both. Keep original sun damaged photos in archival storage as historical artifacts. Display high-quality prints of your restored digital versions in UV-protective frames with museum glass. This gives you the joy of displaying images without risking further damage to irreplaceable originals."
+howTo:
+  - name: "Proper Digitization"
+    text: "The foundation of successful restoration is a high-quality digital scan."
+  - name: "Initial Assessment in Editing Software"
+    text: "Open your scan in professional editing software (Adobe Photoshop, Affinity Photo, or similar)."
+  - name: "Basic Exposure and Contrast Correction"
+    text: "Start with fundamental adjustments to recover tonal range."
+  - name: "Color Correction for Sun Damage"
+    text: "This is where you fix sun damaged photos' color shifts and casts."
+  - name: "Detail Recovery and Sharpening"
+    text: "Faded photos often lose apparent sharpness and detail."
+  - name: "Reconstructing Missing Detail"
+    text: "Severely faded areas may have lost detail entirely, requiring reconstruction."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Prioritization"
+    text: "Sort Your Collection: Identify most important photos first Note condition of each Group by era or event Plan restoration order"
+  - name: "Gentle Digitization"
+    text: "Scanning Baby Photos: Handle fragile photos carefully 600 DPI minimum Don't force stuck album pages Clean scanner glass thoroughly"
+  - name: "AI Restoration"
+    text: "Using Modern Tools: 1. Upload scanned baby photo 2. AI detects damage and deterioration 3. Automatic enhancement preserving softness 4. Download restored version"
+  - name: "Review and Adjust"
+    text: "Quality Check: Skin tones natural, not artificial Baby features appropriately soft Colors accurate for era Damage successfully removed"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

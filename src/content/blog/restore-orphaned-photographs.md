@@ -20,6 +20,19 @@ faq:
     answer: "Orphaned photograph value varies widely depending on multiple factors. Monetary value is generally modest ($1-20 for common vintage portraits) unless the photos show notable historical events or famous people, represent rare early photographic processes in excellent condition, are works by recognized photographers, or depict unusual or significant subjects."
   - question: "Should orphaned photos be restored or left in original condition?"
     answer: "Digital restoration creates enhanced copies while preserving originals in their current state, making this a false choice. The best approach is to digitally restore orphaned photographs while preserving original physical photos without alteration. This provides clear, well-preserved digital versions suitable for research, identification, sharing, and archival contribution."
+howTo:
+  - name: "Safe Digitization"
+    text: "Create high-quality digital copies of orphaned photographs before physical deterioration worsens. Scan at appropriate resolution (600-1200 dpi) for the photo's size and condition. Use color mode even for apparent black and white photos to capture subtle toning. Save uncompressed TIFF files as archival masters. Photograph extremely fragile items rather than scanning to avoid contact damage."
+  - name: "AI-Powered Restoration"
+    text: "Upload orphaned photographs to ArtImageHub's restoration service. The AI excels at restoring vintage photos regardless of subject identity, addressing damage types common in old photographs (tears, scratches, fading), enhancing facial details that might aid identification, correcting color shifts in color photos, and reconstructing missing or damaged areas."
+  - name: "Manual Enhancement for Identification"
+    text: "Import AI-restored images into editing software for refinement focused on improving identification potential. Carefully enhance faces to bring out distinguishing features, clarify any visible text (on buildings, signs, clothing), enhance background details that might suggest locations, and sharpen details that could aid dating or identification."
+  - name: "Creating Research-Friendly Versions"
+    text: "Produce versions specifically designed to aid research and identification. Create high-contrast versions that emphasize facial features and details. Generate enhanced face crops from group photos for individual identification attempts. Produce clean, well-lit versions suitable for online posting and sharing. Prepare comparative versions showing before and after restoration to demonstrate original condition."
+  - name: "Archival Documentation"
+    text: "Document orphaned photographs together. Record all available information (where/when acquired, any accompanying materials, observable details). Assign unique identification numbers to each photo in collections. Create metadata files documenting restoration work performed. Photograph or scan photo backs, mats, frames, or cases. Note photographic process, approximate date range, and condition assessment."
+  - name: "Appropriate Storage"
+    text: "Store restored digital files and any physical photos properly. Save digital masters in archival formats with multiple backups in different locations. House physical photos in acid-free archival materials. Store in appropriate environmental conditions (stable temperature and humidity). Keep detailed catalogs with all documentation and research notes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

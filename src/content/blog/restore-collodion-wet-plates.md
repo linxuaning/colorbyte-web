@@ -20,6 +20,15 @@ faq:
     answer: "Value varies enormously based on subject, condition, photographer, and historical significance. Common ambrotype portraits: $20-100. Tintypes: $5-50. High-quality, identified subjects: $100-500. Civil War military: $200-2000+. Famous photographers or historically significant images: thousands to tens of thousands."
   - question: "Can AI really restore severely damaged wet plates?"
     answer: "AI excels at this type of restoration. Trained on thousands of 19th-century photographs, modern AI understands wet plate characteristics and typical damage patterns. It can remove cracks, correct oxidation, neutralize varnish yellowing, and reconstruct missing areas with remarkable accuracy."
+howTo:
+  - name: "Proper Documentation and Digitization"
+    text: "Pre-Digitization Documentation: Photograph plate in its current state (including case if applicable) Document all damage, inscriptions, case details Measure dimensions Note any historical information or provenance"
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI offers remarkable capabilities while respecting historical authenticity."
+  - name: "Preserving Historical Authenticity"
+    text: "Critical considerations for collodion plate restoration:"
+  - name: "Specialized Restoration Techniques"
+    text: "Reconstructing Broken Plates: If plate is broken into multiple pieces, scan/photograph each piece Digital reassembly using image editing software Align pieces carefully using edge features Blend seams and reconstruct missing fragments Results often superior to physical reassembly"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,19 @@ faq:
     answer: "Identify a tintype by checking these characteristics: it's on thin metal (iron) that attracts a magnet; the image appears dark when held against dark backgrounds and lighter against light backgrounds; it's usually 1/4 inch thick or less; edges may show rust; the surface has a dark, varnished appearance; and the image is reversed (mirror image)."
   - question: "What's the best way to digitize old tintypes?"
     answer: "The best way to digitize tintypes is using cross-polarized photography rather than flatbed scanning. Position the tintype vertically, use two polarized lights at 45-degree angles, attach a polarizing filter to your camera, and rotate filters until reflections disappear. Shoot in RAW format at highest resolution."
+howTo:
+  - name: "Safe Digitization"
+    text: "Tintypes present unique scanning challenges due to their reflective metal base."
+  - name: "Removing Rust and Oxidation"
+    text: "Rust is the most common issue when you restore tintype images."
+  - name: "Correcting Overall Tone and Varnish Yellowing"
+    text: "Aged varnish creates yellow-brown color casts."
+  - name: "Restoring Contrast and Density"
+    text: "Faded tintypes need tonal restoration."
+  - name: "Sharpening and Detail Enhancement"
+    text: "Tintype detail needs careful enhancement."
+  - name: "Restoring Hand-Tinting"
+    text: "Many tintypes were hand-colored with pigments."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

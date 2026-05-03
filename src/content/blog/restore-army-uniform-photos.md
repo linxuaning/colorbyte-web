@@ -20,6 +20,19 @@ faq:
     answer: "Colorization is a personal choice with both benefits and considerations. Benefits include bringing the image to life and showing accurate uniform colors. Considerations include maintaining historical authenticity and the fact that original black and white photos have period character."
   - question: "How can I find out more about the uniform and insignia in an old military photo?"
     answer: "Resources include the Institute of Heraldry (official U.S. military insignia), National Archives military records, branch-specific military museums, military uniform collector forums, and veterans organizations. Many online communities have experts who can identify uniforms, insignia, and units from photos. Consider also consulting military history books specific to the era and conflict."
+howTo:
+  - name: "High-Quality Digitization"
+    text: "Military photos often contain fine details crucial to the image's meaning."
+  - name: "Damage Assessment"
+    text: "Analyze the specific damage requiring repair:"
+  - name: "Basic Restoration Work"
+    text: "Start with fundamental repairs before addressing fine details."
+  - name: "Restoring Military-Specific Details"
+    text: "This is where military photo restoration differs from general portrait restoration."
+  - name: "Facial and Portrait Restoration"
+    text: "After uniform details are accurate, focus on the portrait itself."
+  - name: "Enhancement and Finalization"
+    text: "Once restoration is complete, optimize for display and preservation."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

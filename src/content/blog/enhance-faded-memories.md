@@ -20,6 +20,15 @@ faq:
     answer: "Restoring accurate colors to faded color photographs is challenging because original color information has been lost through chemical dye degradation. However, significant improvement is possible through several approaches."
   - question: "Should I enhance faded photographs myself or hire a professional?"
     answer: "With modern AI restoration technology, most people can successfully enhance faded photographs themselves without professional expertise. AI tools like ArtImageHub handle the complex technical work automatically—analyzing fading patterns, boosting contrast and detail, and recovering image information—without requiring Photoshop skills or restoration knowledge."
+howTo:
+  - name: "High-Quality Capture of Faded Images"
+    text: "Scanning Technique maximizes information capture from faded photographs. Scan at highest resolution (1200-2400 dpi) to record all remaining detail no matter how faint. Scan in 48-bit color mode (even for B&W) to capture maximum tonal information. Make multiple scans at different exposure settings—overexpose slightly to capture faint shadow detail, normal exposure for midtones, slight underexposure for any remaining highlights. These multiple exposures can be merged for maximum tonal range."
+  - name: "AI-Powered Fading Recovery"
+    text: "Upload faded photographs to ArtImageHub. The AI analyzes remaining image information and performs advanced enhancement."
+  - name: "Manual Optimization for Maximum Recovery"
+    text: "Import AI-enhanced images into editing software for final optimization."
+  - name: "Reconstruction of Completely Lost Content"
+    text: "For critically faded photographs where some areas have lost all visible detail, reconstruction techniques may be necessary."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

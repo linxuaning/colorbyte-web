@@ -20,6 +20,19 @@ faq:
     answer: "Ambrotypes with missing or deteriorated backing show negative images (or partially negative) where backing is lost. Digital restoration can recreate the appearance of proper backing by inverting the negative areas to positive, matching tonality with properly backed sections, and blending seamlessly across the entire image."
   - question: "Are ambrotypes valuable, and should I get mine appraised?"
     answer: "Ambrotype value varies enormously based on several factors including subject matter (Civil War soldiers, notable individuals, occupational images, and unusual subjects command premium prices), condition (intact, clear images in original cases are most valuable), size (larger plates are generally more valuable), and historical significance (documented subjects or notable photographers increase v..."
+howTo:
+  - name: "Assessment and Stabilization"
+    text: "Begin by thoroughly documenting the ambrotype's current condition. Photograph it in its case from multiple angles, recording all visible damage. If safely possible, remove the ambrotype from its case and photograph the image, edges, and back of the glass plate separately."
+  - name: "Digitization of Ambrotype Images"
+    text: "Proper digitization is crucial for ambrotype restoration, as these fragile objects should be handled as little as possible once a high-quality digital copy exists."
+  - name: "AI-Powered Image Restoration"
+    text: "Once you have a high-quality digital scan or photograph of your ambrotype, modern AI restoration technology can address damage while preserving the image's historical character."
+  - name: "Manual Refinement and Historical Accuracy"
+    text: "While AI restoration produces excellent results, ambrotypes often benefit from expert manual refinement to ensure historical accuracy and optimal presentation."
+  - name: "Color and Tone Adjustment"
+    text: "Most ambrotypes are monochrome, but they often show warm toning from the original process or from aging. Proper tone adjustment enhances legibility while maintaining historical authenticity."
+  - name: "Output and Presentation"
+    text: "Restored ambrotypes can be presented in various ways depending on your goals and audience."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

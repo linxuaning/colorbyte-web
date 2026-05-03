@@ -20,6 +20,17 @@ faq:
     answer: "Never discard original instant photos after digitization. Despite their poor longevity, originals are irreplaceable primary sources. Store them properly in archival conditions (cool, dark, dry, in polyester sleeves) as backup and historical artifacts. Display and share the restored digital versions while preserving originals safely."
   - question: "Can I prevent my instant photos from deteriorating further?"
     answer: "While you can't reverse chemical degradation that has already occurred, you can slow future deterioration by: storing in cool (65-70°F), dark, dry (30-40% RH) conditions, using archival polyester sleeves, keeping away from heat sources and light, avoiding basements and attics, and most importantly, digitizing and restoring now before they degrade further."
+howTo:
+  - name: "Assessment and Documentation"
+    text: "Carefully evaluate each instant photo before restoration."
+  - name: "Safe Handling and Cleaning"
+    text: "Handle 1970s instant photos with extreme care."
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all recoverable information."
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI excels at restoring instant photos."
+  - name: "Manual Fine-Tuning"
+    text: "While AI handles bulk correction, manual adjustments perfect results."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

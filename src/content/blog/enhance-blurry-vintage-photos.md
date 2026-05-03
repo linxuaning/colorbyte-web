@@ -19,6 +19,21 @@ faq:
     answer: "Yes, AI enhancement works well on blurry instant film photos including Polaroid, though these images present particular challenges. Instant film often has inherent softness compared to traditional film, characteristic grain structure that becomes more visible with sharpening, and color shifts or fading complicating enhancement."
   - question: "Should I enhance all my blurry vintage photos or just the important ones?"
     answer: "The decision depends on your budget, number of photos, and how you plan to use them. For photos you plan to display, share, or use in family history projects, enhancement is definitely worthwhile as it transforms barely acceptable images into quality photos worth showcasing."
+howTo:
+  - name: "Assessment and Categorization"
+    text: "Begin by carefully examining your blurry vintage photos to understand the blur type and severity. Determine whether the entire image is equally blurry or some areas sharper than others, whether blur shows directionality (indicating motion) or appears uniform (suggesting focus issues), if text or fine details are visible at all (even if soft), and whether the photo appears blurry when viewed physically or only in digital scans."
+  - name: "Optimal Digitization"
+    text: "High-quality scanning provides the foundation for successful blur reduction. For blurry vintage photos, digitization quality matters even more than for sharp photos, as you're trying to capture every possible bit of detail for enhancement."
+  - name: "AI-Powered Enhancement"
+    text: "Modern AI enhancement technology has completely changed the game for sharpening blurry vintage photos. Upload your scanned blurry photo to ArtImageHub's photo enhancement service. The AI system immediately analyzes your image to identify blur type and characteristics, determine the original photo's subject matter and important elements, assess additional damage or issues beyond blur, and calculate optimal sharpening settings."
+  - name: "Facial Enhancement"
+    text: "For portrait photos, faces represent the most important element requiring maximum sharpness and clarity. AI systems excel at facial enhancement even in blurry vintage portraits."
+  - name: "Full Restoration"
+    text: "Blurry vintage photos often have issues beyond just blur requiring simultaneous correction. AI enhancement addresses all these issues together for a full restoration: correcting fading and color shifts, removing scratches, spots, and damage, adjusting exposure and contrast, eliminating yellowing or discoloration, and repairing tears or missing sections."
+  - name: "Realistic Expectation Setting"
+    text: "Understanding what's possible helps you evaluate results appropriately. AI enhancement can significantly improve blurry vintage photos, noticeably increasing perceived sharpness and detail, making previously illegible text readable in many cases, clarifying faces and important elements, and creating images suitable for display and sharing."
+  - name: "Output Optimization"
+    text: "After enhancement, optimize your sharpened vintage photo for its intended use. For digital display on screens, create JPEG files sized appropriately (1920px on longest edge works well), sharpen specifically for screen viewing if needed, and adjust brightness slightly lighter than optimal for print."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -22,6 +22,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Find the Photo"
+    text: "Look for photos that meant something to your mom — her childhood, her parents, her wedding day, early family life. The older and more damaged, the more dramatic the restoration will be."
+  - name: "Scan It"
+    text: "You don't need a scanner. Use your phone:"
+  - name: "Restore It with AI"
+    text: "1. Go to artimagehub.com/old-photo-restoration 2. Pay the $4.99 one-time unlock 3. Upload your scanned photo 4. Wait 30–90 seconds 5. Preview the before/after result 6. Download the HD restored version"
+  - name: "Print and Frame It"
+    text: "Order a print from: Artifact Uprising — highest quality, $6–$20 per print Walgreens or CVS — same day, $3–$8, 4\"×6\" to 8\"×10\" Shutterfly — ships to your door, frequent discounts"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

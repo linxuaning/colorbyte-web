@@ -20,6 +20,21 @@ faq:
     answer: "1980s photographs should definitely have strong, punchy colors—the era's aesthetic embraced vibrancy and boldness. However, there's a difference between appropriately vibrant 1980s colors and artificially oversaturated images."
   - question: "Can I restore photos where all color has faded to brown or sepia?"
     answer: "Photos that appear to have faded to completely monochrome brown or sepia tone often retain more color information than is visible to the naked eye. Scan these photos at high resolution in color mode (never grayscale), even though they appear monochrome. Use 48-bit color depth if your scanner supports it. Scan at increased brightness to capture any faint remaining color."
+howTo:
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all remaining color information in faded 1980s photographs, even colors too faint for your eyes to perceive easily. This hidden information becomes crucial for successful restoration."
+  - name: "AI-Powered Color Restoration"
+    text: "Modern AI restoration technology excels at recovering faded colors in 1980s photographs, analyzing remaining dye patterns and reconstructing original hues with remarkable accuracy."
+  - name: "Manual Color Refinement"
+    text: "While AI restoration produces excellent results for most 1980s photos, manual refinement often enhances results further, particularly for photographs featuring the era's most characteristic neon and fluorescent colors."
+  - name: "Restoring Characteristic 1980s Tones"
+    text: "Beyond individual bright colors, 1980s photographs often had characteristic overall tonal qualities influenced by film stocks, printing papers, and processing chemistry of the era."
+  - name: "Addressing Specific 1980s Photo Challenges"
+    text: "Several challenges appear frequently in 1980s photograph restoration."
+  - name: "Contrast and Clarity Enhancement"
+    text: "Color restoration alone may not fully restore the visual impact of 1980s photographs. Enhancing contrast and clarity completes the transformation."
+  - name: "Final Output and Presentation"
+    text: "Create final versions optimized for your intended use. For digital sharing and online posting, save in sRGB color space for consistent appearance across devices. Optimize file size while maintaining quality. Consider adding context in captions about the 1980s era and restored colors."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

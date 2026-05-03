@@ -20,6 +20,17 @@ faq:
     answer: "Yes, but small eyes (from group photos or distance shots) require high-resolution scanning. Scan at minimum 1200 DPI for photos where eyes are very small. AI tools can handle small eyes well, but manual correction of tiny eyes requires extreme zoom and patience. For eyes smaller than 30-40 pixels across, AI correction often outperforms manual methods."
   - question: "Is it better to use AI or manual correction for red eye?"
     answer: "AI correction works best for 90%+ of red eye cases, providing fast, consistent, natural results. Use AI first, then manually refine only if needed. Manual correction is better for: unusual eye angles AI doesn't recognize, extremely small eyes needing precision, artistic control preferences, or cases where AI over-corrects or under-corrects."
+howTo:
+  - name: "Digitization and Preparation"
+    text: "Start with high-quality scanning or photography of the original print."
+  - name: "AI-Powered Red Eye Removal with ArtImageHub"
+    text: "Modern AI technology provides the fastest and often most effective red eye correction."
+  - name: "Manual Red Eye Correction Techniques"
+    text: "For photos AI can't fully correct or when you need precise control, manual techniques work well."
+  - name: "Restoring Natural Eye Appearance"
+    text: "After removing red, ensure eyes look realistic and natural."
+  - name: "Correcting Multiple People"
+    text: "Group photos require systematic approach."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

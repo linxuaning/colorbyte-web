@@ -20,6 +20,23 @@ faq:
     answer: "Smartphones can digitize photos acceptably for casual purposes but have limitations for archival-quality preservation. Modern smartphone cameras provide very high resolution potentially exceeding flatbed scanners, convenience without additional equipment, and instant processing and organization."
   - question: "How should I organize and back up digitized photos?"
     answer: "Implement systematic organization and backup for digitized photos. Organization involves creating clear folder structure by date, event, person, or category, using consistent file naming (Date_Subject_Number format works well), adding metadata (captions, dates, locations, people), and maintaining catalog or spreadsheet documenting collection."
+howTo:
+  - name: "Equipment Setup and Preparation"
+    text: "Begin with proper scanner setup. Clean scanner glass meticulously using microfiber cloth and glass cleaner—even tiny dust specks will be captured in scans. Position scanner in stable location free from vibration. Ensure good ventilation and lighting for working comfortably."
+  - name: "Choosing Optimal Resolution"
+    text: "Resolution determines how much detail is captured and affects file size and processing time. Understand these guidelines for different photo sizes and purposes."
+  - name: "Color Mode Selection"
+    text: "Choose scanning mode based on photo type. For color photographs, always scan in color mode (typically 24-bit or 48-bit color), capturing all color information even if photos are faded. Never use auto-detection as it may incorrectly categorize color photos."
+  - name: "File Format Selection"
+    text: "Choose appropriate file formats for different purposes. For archival master files, save as TIFF uncompressed or with lossless compression (LZW), preserving all captured information without quality loss. TIFF files are large but maintain perfect quality."
+  - name: "Scanning Technique"
+    text: "Position photos carefully on scanner bed ensuring photos are straight and aligned, lie completely flat without curl or warping, don't overlap (scan one at a time for best quality), and are clean (gently brush away any dust)."
+  - name: "Batch Scanning Workflow"
+    text: "For large photo collections, develop efficient workflow. Organize photos in manageable batches (20-50 photos), sort by size to minimize scanner setting changes, clean scanner glass between batches, and maintain consistent quality throughout project."
+  - name: "Post-Scan Processing"
+    text: "After scanning, perform basic quality checks and adjustments. Crop scans to remove excess border around photos. Rotate if needed to correct orientation. Adjust exposure only if significant scanner errors occurred (avoid unnecessary manipulation). Check for dust spots or scanner artifacts requiring cleaning and rescanning."
+  - name: "Organization and File Management"
+    text: "Organize digitized photos systematically with clear folder structure by date, event, or person, consistent file naming throughout collection, and metadata including dates, locations, and people identified."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

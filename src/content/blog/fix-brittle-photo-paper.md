@@ -20,6 +20,17 @@ faq:
     answer: "Never attempt to forcibly flatten brittle photographs. The stress of flattening can cause catastrophic cracking, breaking, or shattering of embrittled paper. Even gentle pressure or weighting can damage fragile photographs beyond repair. Instead, scan or photograph curled photos in their current state and address the curvature digitally."
   - question: "Can I store brittle photos in plastic sleeves?"
     answer: "Yes, but choose the right type of plastic. Use only archival-quality polyester (Mylar, Melinex) or polypropylene sleeves specifically sold for archival photograph storage. Never use PVC (polyvinyl chloride) sleeves, which off-gas chemicals that accelerate photograph deterioration. Avoid \"magnetic\" photo albums entirely, as the adhesive damages photographs."
+howTo:
+  - name: "Assessment of Digital Image"
+    text: "Examine your digital scan or photograph carefully, noting all damage related to paper brittleness including cracks running through the image, chips and missing pieces from edges or corners, separation lines where the emulsion has separated from the paper, discoloration from paper degradation, and distortion from curling or warping."
+  - name: "AI-Powered Restoration"
+    text: "Modern AI restoration technology excels at repairing damage from brittle photo paper. Upload your digitized image to ArtImageHub's photo restoration tool. The AI analyzes the photograph, recognizing brittleness-related damage patterns and determining optimal restoration approaches."
+  - name: "Manual Refinement"
+    text: "While AI restoration handles most brittleness-related damage excellently, some photographs benefit from additional manual work. Import the AI-restored image into photo editing software like Photoshop, GIMP, or Affinity Photo for detailed refinement."
+  - name: "Addressing Paper Discoloration"
+    text: "Brittle photo paper often shows significant discoloration—yellowing, browning, or uneven toning from chemical degradation. Correct these color issues while maintaining period-appropriate image characteristics."
+  - name: "Final Enhancement and Output"
+    text: "Complete the restoration with final enhancements that optimize the image for viewing and archival preservation. Apply selective sharpening to enhance detail, particularly in faces and important elements. Adjust overall contrast and brightness to create appealing, well-balanced images. Reduce noise or grain if excessive, but preserve some period-appropriate texture. Perform final color balancing to achieve neutral or appropriately toned results."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

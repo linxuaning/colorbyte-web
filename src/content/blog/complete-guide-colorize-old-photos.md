@@ -23,6 +23,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Upload and Auto-Colorize"
+    text: "Upload the scan to our photo colorizer. The auto mode produces a result in 30–90 seconds. This is your draft."
+  - name: "Evaluate the Draft"
+    text: "Before accepting the auto result, look at it for these specific failure modes:"
+  - name: "Corrections"
+    text: "This is the part most one-click tools hide from you. In my working experience, the corrections fall into three categories:"
+  - name: "Final Grading"
+    text: "A finished colorization should not look like maximum saturation. Real film, even restored, has a slightly muted color palette compared to modern digital cameras. Pulling saturation back 10–20% from the AI output is usually correct. A faint warm tone in the overall image reads as \"period photograph\" rather than \"digital render.\" This is the same reason modern movies shot digitally are often graded warm to feel cinematic."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

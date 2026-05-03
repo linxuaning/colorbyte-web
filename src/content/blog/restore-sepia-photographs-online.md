@@ -20,6 +20,21 @@ faq:
     answer: "No—online restoration is completely non-invasive to your original photograph. You scan or photograph your sepia original, creating a digital copy. All restoration work happens on that digital copy, with your original remaining completely untouched."
   - question: "Can online services restore color to sepia photos?"
     answer: "This question involves two different scenarios. If your photograph was originally black and white and later sepia-toned, it never contained color information—sepia toning was applied to a monochrome image."
+howTo:
+  - name: "Digitization Preparation"
+    text: "Before uploading sepia photographs for online restoration, create optimal digital captures. Examine your sepia photograph carefully, noting all damage types and their severity, checking for brittleness or fragility requiring gentle handling, and identifying whether the photograph has additional damage beyond typical age-related issues."
+  - name: "Optimal Scanning Technique"
+    text: "High-quality scanning provides the foundation for successful online restoration. Use a flatbed scanner set to at least 600 dpi resolution, with 1200 dpi preferred for small sepia photographs or those with significant damage."
+  - name: "Upload to AI Restoration Service"
+    text: "Modern online AI restoration services make sepia photograph restoration accessible to anyone, regardless of technical expertise. Navigate to ArtImageHub's photo restoration service and upload your scanned sepia photograph. The service accepts various file formats including TIFF (preferred for maximum quality), JPEG (acceptable for convenience), PNG (also acceptable), and most standard image formats."
+  - name: "AI Processing and Enhancement"
+    text: "The AI restoration process addresses multiple aspects of sepia photograph deterioration simultaneously. The system reverses fading by analyzing remaining tonal information and reconstructing original sepia tones, bringing faded cream or beige tones back to rich, authentic brown. It restores contrast by adjusting tonal range to recover detail in highlights and shadows, eliminating the flat, muddy appearance common in faded sepia photos."
+  - name: "Tone and Style Decisions"
+    text: "When restoring sepia photographs online, you face an important aesthetic decision: preserve authentic sepia tones, enhance sepia tones beyond the faded original, convert to neutral black and white for maximum clarity, or create custom toning matching your preference."
+  - name: "Review and Refinement"
+    text: "After AI processing completes (typically in minutes or even seconds), review the restored sepia photograph carefully. Examine overall appearance and tone, checking that sepia color appears authentic and pleasing. Verify that fading has been corrected to appropriate richness, ensure contrast and detail look natural, not over-processed, and confirm that damage has been repaired invisibly."
+  - name: "Download and Preservation"
+    text: "Once satisfied with your restored sepia photograph, download the high-resolution result. Save the restored file in multiple formats: TIFF or PNG for archival master (highest quality, lossless), high-quality JPEG for printing (appropriate size and resolution), web-optimized JPEG for sharing and display online, and any other formats you need for specific uses."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

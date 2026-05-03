@@ -20,6 +20,13 @@ faq:
     answer: "Examine the physical characteristics: Daguerreotypes are on metal with mirror-like surfaces in cases; ambrotypes are glass-based in cases; tintypes are on iron sheets; cabinet cards and cartes de visite are paper photos mounted on cardboard. The backing, case style, and photographer marks also help identification and dating."
   - question: "What's the best way to scan Victorian photographs for restoration?"
     answer: "Use a flatbed scanner at 600-1200 DPI in color mode, even for sepia images. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and multiple angles to minimize glare. Always handle photographs by edges only, using cotton gloves, and never remove cased photographs from their cases."
+howTo:
+  - name: "Proper Digitization"
+    text: "For Cased Images (Daguerreotypes/Ambrotypes)"
+  - name: "Digital Assessment"
+    text: "Before making any changes, analyze what you're working with:"
+  - name: "Basic Corrections"
+    text: "Start with fundamental improvements:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

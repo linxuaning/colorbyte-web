@@ -20,6 +20,21 @@ faq:
     answer: "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize Victorian photos, extensive research is essential—Victorian fashion, fabric dyes, and studio practices followed specific conventions. Use muted, period-appropriate colors rather than saturated modern hues."
   - question: "How do I scan Victorian photographs without damaging them?"
     answer: "Scan Victorian photographs safely by handling only the edges with clean cotton gloves, using a flatbed scanner with the lid open (to avoid pressure), and scanning at 600-1200 DPI in 48-bit color mode with all automatic corrections disabled. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and a polarizing filter."
+howTo:
+  - name: "Assessment and Documentation"
+    text: "Before touching the photograph, create a complete record of its current state."
+  - name: "Safe Digitization"
+    text: "Digitizing Victorian photographs requires format-specific techniques to avoid damage while capturing maximum detail."
+  - name: "Digital Preparation"
+    text: "Set up your restoration workspace properly before making any edits."
+  - name: "Basic Restoration"
+    text: "Start with fundamental corrections that don't alter the photograph's character."
+  - name: "Advanced Damage Repair"
+    text: "Complex damage requires specialized techniques and historical knowledge."
+  - name: "Enhancement While Preserving Authenticity"
+    text: "The final restoration phase enhances the image without making it look modern."
+  - name: "Optional Colorization"
+    text: "Adding color to Victorian photos is controversial but increasingly popular."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

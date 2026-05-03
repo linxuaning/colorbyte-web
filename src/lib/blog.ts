@@ -98,6 +98,11 @@ export interface BlogAggregateRating {
   rating: number;
   count: number;
 }
+export interface BlogHowToStep {
+  name: string;
+  text: string;
+  url?: string;
+}
 
 export interface BlogPost {
   slug: string;
@@ -121,6 +126,7 @@ export interface BlogPost {
   itemList?: BlogItemListEntry[];
   aggregateRating?: BlogAggregateRating;
   reviewedItem?: string;
+  howTo?: BlogHowToStep[];
 }
 
 export interface BlogPostMeta {
@@ -357,6 +363,15 @@ export async function getPostBySlug(slug: string, locale: BlogLocale | string = 
           : data.reviewedItem && typeof data.reviewedItem.name === "string"
             ? data.reviewedItem.name
             : undefined,
+      howTo: Array.isArray(data.howTo)
+        ? data.howTo
+            .map((step: { name?: string; title?: string; text?: string; description?: string; url?: string }) => ({
+              name: step.name ?? step.title ?? "",
+              text: step.text ?? step.description ?? "",
+              ...(step.url ? { url: step.url } : {}),
+            }))
+            .filter((step) => step.name && step.text)
+        : undefined,
     };
   } catch {
     return null;

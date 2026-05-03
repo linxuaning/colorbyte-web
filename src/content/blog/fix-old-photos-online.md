@@ -18,6 +18,13 @@ faq:
     answer: "Currently, photos are processed one at a time to ensure quality. If you have a large collection to restore, working through the batch systematically takes under 2 minutes per photo."
   - question: "What format does the restored photo come back in?"
     answer: "Restored photos are delivered as high-resolution JPEGs at the same dimensions as your uploaded original. For printing, these files produce sharp results up to 8×10 inches at standard print resolution."
+howTo:
+  - name: "Scan or photograph your original"
+    text: "The quality of your starting image determines the ceiling of your result. For best results:"
+  - name: "Upload to an AI restoration tool"
+    text: "Visit ArtimagehHub's free photo restoration and upload your scanned image. The file size limit is 20MB, which covers most high-resolution scans."
+  - name: "Review and download your result"
+    text: "Within 30–60 seconds, your restored photo appears alongside the original for comparison. The result is a full-resolution image ready for printing, framing, or sharing."
 ---
 
 > **TL;DR** — AI photo restoration online (under 60 seconds): scan at 600+ DPI → upload to a tool that wraps **GFPGAN** (face) + **Real-ESRGAN** (upscale) → review side-by-side → download. Three free, then $4.99 one-time for unlimited unwatermarked HD. AI handles fading, scratches, yellowing, soft focus reliably; large missing sections and overlapping severe damage still need human review.

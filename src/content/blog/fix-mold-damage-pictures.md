@@ -20,6 +20,13 @@ faq:
     answer: "Physical mold removal from photographs should generally be left to professional photograph conservators because improper removal can cause severe additional damage, mold spores create health hazards requiring proper safety equipment, and different photographic formats require different specialized treatment approaches."
   - question: "How can I tell if mold damage is active or old?"
     answer: "Active mold shows fuzzy or powdery growth on photograph surfaces, may have musty odor, appears on photographs stored in humid conditions (basement, attic), and actively spreads to adjacent photographs if not isolated. Old dormant mold appears as staining and spots without fuzzy growth, occurs in photographs moved to dry storage, has no musty odor, and doesn't actively spread to other photographs."
+howTo:
+  - name: "Safe Digitization of Mold-Damaged Photos"
+    text: "Safety Precautions protect your health. Work in well-ventilated area or outdoors. Wear N95 mask to avoid inhaling mold spores. Use disposable gloves when handling. Clean work area thoroughly afterward."
+  - name: "AI-Powered Mold Removal"
+    text: "Upload digitized images to ArtImageHub. The AI identifies and removes mold damage patterns."
+  - name: "Manual Refinement for Severe Cases"
+    text: "Import AI-restored images into editing software for additional work on challenging areas."
 ---
 
 > **TL;DR** — Mold actively eats photo emulsion — every day matters. Step 1: isolate moldy items in zip-lock bags away from healthy collection (mold spreads via airborne spores). Step 2: dry in 30-40% RH room 1-2 weeks (kills active mold; deactivated spores cannot grow). Step 3: gently brush surface debris with soft brush. Step 4: scan at 1200 DPI. Step 5: AI restoration recovers face detail and reduces foxing stains; severely eaten emulsion areas need plausible content fill. Wear N95 + gloves throughout — moldy materials are health hazards.

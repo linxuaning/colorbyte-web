@@ -20,6 +20,21 @@ faq:
     answer: "White fuzzy growth on photographs is active fungal colonization, most commonly Aspergillus or Penicillium species. This growth indicates current mold activity requiring immediate attention. Move affected photos away from clean materials to prevent spreading, allow photos to dry in low humidity (below 40% RH) to kill active growth, gently remove dried fungal material with a soft brush, and scan ..."
   - question: "Can professional photo labs remove fungus damage better than AI?"
     answer: "Professional photo conservation labs and AI restoration each have distinct advantages for different situations. Professional labs excel at physical stabilization of actively deteriorating photos, rare or historically significant photographs requiring archival treatment, and extremely complex cases requiring custom chemical treatment."
+howTo:
+  - name: "Safety Precautions and Assessment"
+    text: "Before handling fungus-damaged photographs, protect yourself from mold exposure, which can cause allergic reactions or respiratory issues in sensitive individuals."
+  - name: "Stabilizing Physical Photos (If Applicable)"
+    text: "If your photograph shows active fungal growth, you must stabilize it before digital restoration to prevent further damage and avoid spreading contamination."
+  - name: "High-Resolution Digitization"
+    text: "Proper scanning forms the foundation of successful fungus damage restoration. The goal is to capture all remaining image information, no matter how degraded."
+  - name: "AI-Powered Fungus Damage Restoration"
+    text: "Modern AI restoration technology has transformed the repair of fungus-damaged photographs, offering capabilities far beyond traditional manual editing."
+  - name: "Manual Refinement and Enhancement"
+    text: "While AI restoration produces excellent results for most fungus damage, some photographs benefit from additional manual refinement."
+  - name: "Addressing Severe Emulsion Loss"
+    text: "In cases where fungi have completely consumed portions of the emulsion, leaving blank or severely damaged areas, reconstruction becomes necessary."
+  - name: "Final Color and Tone Optimization"
+    text: "Fungal staining often creates uneven color casts and tonal shifts across the photograph. The final restoration phase addresses these issues while maintaining period-appropriate image characteristics."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

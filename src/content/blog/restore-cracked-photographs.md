@@ -20,6 +20,23 @@ faq:
     answer: "Photographs with cracking and peeling emulsion require careful handling and digital restoration. For the physical photograph, stop any further handling that might cause additional flaking, photograph or scan immediately before more emulsion is lost, and store flat in protective enclosure (acid-free folder or Mylar sleeve)."
   - question: "What's the difference between cracks and intentional texture in old photos?"
     answer: "AI restoration distinguishes between damage (cracks) and authentic photo characteristics (intentional texture, grain, canvas texture) through pattern analysis. Cracks appear as linear or irregular damage patterns interrupting image continuity, create visual disruption across genuine image details, and follow stress patterns from physical damage."
+howTo:
+  - name: "Careful Assessment"
+    text: "Before attempting any restoration, examine your cracked photographs carefully to understand damage extent and type. Assess crack severity (fine crazing vs. deep fissures), coverage extent (localized vs. throughout entire photo), emulsion condition (adhering vs. lifting or flaking), overall photo fragility, and additional damage beyond cracking."
+  - name: "Stabilization and Safe Handling"
+    text: "Cracked photographs are fragile and require careful handling to prevent further damage or emulsion loss. Handle only by edges, wearing clean cotton gloves. Never bend, flex, or roll cracked photos. Support fully when moving (use both hands). Store flat, never on edge or stacked with weight."
+  - name: "High-Resolution Scanning"
+    text: "Proper digitization captures all image information including cracks for restoration. Use a flatbed scanner at 1200 dpi minimum for cracked photos (higher resolution captures fine crack details needed for effective removal), scan in color mode even for black and white photos, and save as uncompressed TIFF format for maximum quality."
+  - name: "Upload to AI Restoration Service"
+    text: "Navigate to ArtImageHub's photo restoration service and upload your scanned cracked photograph. The AI system analyzes your image to identify crack patterns and characteristics, distinguish cracks from authentic image details, assess image content and areas requiring protection, determine additional damage requiring correction, and calculate optimal crack removal approach."
+  - name: "AI Crack Detection and Removal"
+    text: "The restoration process uses advanced crack removal algorithms. The AI identifies linear damage patterns distinguishing them from authentic image features, analyzes both sides of each crack to understand underlying image content, reconstructs missing pixels along crack lines through intelligent interpolation, and blends repairs seamlessly into surrounding image areas."
+  - name: "Detail and Tone Recovery"
+    text: "After crack removal, restoration enhances the recovered image by sharpening details that may have been softened by crack presence, adjusting contrast to compensate for any tonal shifts caused by cracks, correcting color or tone if needed, and enhancing important areas like faces that may have been crossed by cracks."
+  - name: "Additional Restoration"
+    text: "Cracked photographs often have other age-related issues requiring simultaneous correction including overall fading or discoloration, yellowing from age, physical damage beyond cracks (tears, scratches), staining or water damage, and loss of contrast and clarity."
+  - name: "Output and Preservation"
+    text: "Download your restored crack-free photograph in appropriate formats. Save master restoration as high-resolution TIFF or PNG (lossless formats preserving all restoration work). Create high-quality JPEG for printing (300 dpi at intended size). Generate web-optimized versions for sharing and display."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

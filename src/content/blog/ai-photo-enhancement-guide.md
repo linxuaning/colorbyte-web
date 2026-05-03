@@ -20,6 +20,23 @@ faq:
     answer: "AI photo enhancement costs dramatically less than traditional professional restoration while delivering comparable quality. Typical AI enhancement pricing runs $5-20 per photo with instant processing (seconds-minutes) and no hidden fees."
   - question: "Will AI enhancement work on color photos that have faded severely?"
     answer: "Yes, AI enhancement handles severely faded color photos remarkably well. The technology analyzes remaining color information (no matter how faint), identifies original color relationships from traces that survive, reconstructs authentic colors based on patterns learned from millions of training examples, and restores natural skin tones and color balance."
+howTo:
+  - name: "Gather and Assess Your Photos"
+    text: "Begin by collecting all photos you want to enhance. For physical photos, examine each one to identify damage types (fading, scratches, tears, etc.), assess overall condition and fragility, note any special characteristics or challenges, and prioritize photos by importance and damage severity."
+  - name: "Digitize Physical Photos Properly"
+    text: "High-quality scanning provides the foundation for successful AI enhancement. Use a flatbed scanner rather than smartphone apps for best quality, set to at least 600 dpi resolution (1200 dpi for small or damaged photos), scan in color mode even for black and white photos, and save as uncompressed TIFF format for maximum quality."
+  - name: "Choose Your AI Enhancement Service"
+    text: "Several AI enhancement options exist with different strengths. ArtImageHub offers full restoration addressing all damage types, professional-quality results, affordable per-photo pricing ($5-20), and user-friendly upload-and-download process. Learn more at the photo restoration service."
+  - name: "Upload Your Photo"
+    text: "Navigate to your chosen AI enhancement service and locate the upload function (typically prominent on the homepage). Click or tap to select your photo file from your computer or device, or drag-and-drop the file into the upload area."
+  - name: "AI Processing"
+    text: "Once uploaded, the AI system begins automatic analysis and enhancement. The process typically takes seconds to a few minutes depending on photo size and complexity. During processing, the AI identifies all damage and quality issues, analyzes image content and context, determines optimal enhancement settings, applies corrections for all detected issues, and generates the enhanced result."
+  - name: "Review Results"
+    text: "When processing completes, carefully review the enhanced photo. Examine overall appearance checking if colors look natural and accurate, damage has been removed effectively, faces and important details are clear, and the result maintains authentic photographic quality."
+  - name: "Refinement (If Available)"
+    text: "Some AI services offer refinement options allowing you to adjust enhancement strength or intensity, modify specific correction types, enhance particular areas selectively, or request reprocessing with different settings."
+  - name: "Download Enhanced Photo"
+    text: "Once satisfied with results, download your enhanced photo. Save in multiple formats including TIFF or PNG for archival master (highest quality, lossless), high-quality JPEG for printing (appropriate size at 300 dpi), and web-optimized JPEG for sharing (smaller file size)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

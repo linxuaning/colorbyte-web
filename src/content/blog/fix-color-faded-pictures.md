@@ -20,6 +20,21 @@ faq:
     answer: "Color restoration works excellently on printed photos—in fact, most color restoration is performed on scanned prints from the 1960s-2000s that have faded over decades. The process involves scanning your faded print at high resolution (600-1200 dpi) in color mode, uploading the scan to AI restoration service, processing that analyzes and corrects fading in the digital file, and downloading the r..."
   - question: "How much do color restoration services cost compared to living with faded photos?"
     answer: "AI color restoration is remarkably affordable at $5-20 per photo typically, with processing in minutes and professional-quality results. Compare this to traditional professional color correction ($50-200+ per photo, weeks of turnaround) or the cost of leaving photos faded (priceless memories remaining hidden away, deteriorating further, or displayed in poor quality)."
+howTo:
+  - name: "High-Quality Scanning"
+    text: "Proper digitization captures all remaining color information for restoration. Use a flatbed scanner set to at least 600 dpi (1200 dpi for small faded photos), scan in color mode (obviously, but worth emphasizing—never grayscale for color photos), and save as uncompressed TIFF format for maximum color data preservation."
+  - name: "Upload to AI Color Restoration Service"
+    text: "Navigate to ArtImageHub's photo restoration service and upload your scanned faded photo. The AI system analyzes your image to identify color fade pattern and severity, determine original photo era and type, assess remaining color information, detect additional damage beyond fading, and calculate optimal color reconstruction approach."
+  - name: "AI Color Analysis and Reconstruction"
+    text: "The restoration process begins with detailed color analysis. The AI examines all three color channels (red, green, blue) separately, identifies which dye layers have deteriorated more than others, analyzes relationships between remaining color information across the image, and determines the characteristic fade pattern affecting the photo."
+  - name: "Targeted Color Correction"
+    text: "Different image areas often require different corrections. The AI applies selective color restoration with stronger correction to severely faded areas, preservation of less-faded sections that retain good color, facial enhancement prioritizing natural skin tones, and careful color balancing across the entire image for cohesive appearance."
+  - name: "Saturation and Vibrancy Recovery"
+    text: "Beyond correcting color shifts, restoration must recover lost color saturation and vibrancy. The AI enhances overall color saturation to appropriate levels (avoiding oversaturation), boosts vibrancy in important subject matter, restores color separation (distinct colors rather than muddy blending), and enhances color contrast for more impactful images."
+  - name: "Additional Restoration"
+    text: "Color faded photos often have other issues requiring simultaneous correction including physical damage (tears, scratches, creases), yellowing affecting background or border areas, loss of sharpness and detail, exposure problems, and age-related deterioration beyond color fading."
+  - name: "Final Color Optimization"
+    text: "After primary restoration, the AI optimizes final color appearance for intended use. For printing, colors are adjusted for proper reproduction on photo paper with attention to how different colors print. For digital display, colors are optimized for screen viewing with appropriate brightness and saturation. For archival preservation, faithful accurate color restoration takes priority over artistic enhancement."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

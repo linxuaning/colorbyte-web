@@ -20,6 +20,19 @@ faq:
     answer: "Yes. Modern AI systems like ArtImageHub are trained on thousands of examples of specific damage types, including complex issues like dichroic fog. The AI can recognize damage patterns, separate them from image content, and selectively correct them while preserving authentic image qualities. Results often exceed what's possible with manual methods."
   - question: "What's the difference between chemical damage and aging?"
     answer: "Aging is gradual, relatively uniform deterioration over time. Chemical damage is typically more irregular, showing distinct patterns, color shifts, or localized effects. Chemical damage often progresses more rapidly than simple aging and may accelerate existing age-related deterioration. Proper diagnosis determines the best restoration approach."
+howTo:
+  - name: "Documentation and Assessment"
+    text: "Before touching the original print:"
+  - name: "Safe Handling and Scanning"
+    text: "Chemically damaged prints are often fragile:"
+  - name: "Digital Analysis"
+    text: "With a high-quality scan, analyze the damage digitally:"
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI technology offers unprecedented capabilities to fix chemically damaged prints. Beyond simple chemical stain removal, you can also enhance overall photo quality and detail using AI photo enhancement tools that complement restoration work."
+  - name: "Targeted Manual Corrections"
+    text: "While AI handles the heavy lifting, some chemical damage benefits from human judgment:"
+  - name: "Verification and Quality Control"
+    text: "Before considering a restoration complete:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

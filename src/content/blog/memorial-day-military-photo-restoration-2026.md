@@ -22,6 +22,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Find the Original Print"
+    text: "Look in family photo albums, shoeboxes, or stored documents. If the veteran has passed, ask surviving family members — siblings, children, cousins — whether they have originals. The original print has more recoverable detail than a digital photo of a photo."
+  - name: "Scan It Properly"
+    text: "You don't need professional equipment: 1. Lay the photo flat in natural light (avoid direct sunlight) 2. Open Microsoft Lens (free, iOS/Android) or your phone's document scanner 3. Hold the phone directly above the photo — no angle 4. Export at maximum resolution as JPEG 5. For fragile photos, shoot in even indoor light rather than risking handling damage"
+  - name: "Run the Restoration"
+    text: "1. Go to artimagehub.com/old-photo-restoration 2. Pay the $4.99 one-time unlock 3. Upload the scanned photo 4. Wait 30–90 seconds 5. Review the before/after comparison 6. Download the HD restored version"
+  - name: "Print and Display"
+    text: "For a military service portrait: Size: 5\"×7\" or 8\"×10\" — large enough to see the face clearly Frame: Simple dark wood or black metal frame, matte board Location: Near a shadowbox with medals, a flag case, or other service memorabilia"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -23,6 +23,21 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Clean Up Each Fragment Individually"
+    text: "Before you try to reassemble, each fragment should be a clean scan. Run light dust and scratch removal on each fragment. If the fragments have surface dirt or fingerprints from the tear event, those will compound seam artifacts later. The fix scratched vintage prints guide covers the general scratch-removal approach."
+  - name: "Register and Align"
+    text: "Align the fragments into their correct relative positions in a single canvas. In Photoshop, each fragment on its own layer, translated and rotated until the broken edges match. Leave a 2–4 pixel gap between fragments — do not overlap or butt them perfectly flush. The AI inpainting step needs that gap to identify where it is supposed to work."
+  - name: "Mask the Seam"
+    text: "Paint a mask over the gap between fragments, plus 2–3 pixels on either side to cover any emulsion damage right along the tear. This mask is what you hand to the inpainting model. Too thin, and the model leaves visible residual seam; too thick, and it starts repainting areas of the original image unnecessarily."
+  - name: "Run the AI Inpaint Pass"
+    text: "Export the aligned composite with the masked region clearly marked, and process through the old photo restoration tool in repair mode. Modern models fill the masked region with content synthesized from the surrounding pixels. For most torn family photos, this single pass produces a seamless result."
+  - name: "Review at 100% Zoom"
+    text: "Zoom to 100% and walk along the former tear line. You are looking for: residual color mismatch (one fragment slightly warmer or cooler than the other), hallucinated content (the model invented something that does not match context), and any visible seam pixels. Most issues at this stage are tiny and can be fixed with a 2-minute clone-stamp pass in any editor."
+  - name: "Run the Full Restoration Pass"
+    text: "Now that the seam is gone, run the whole image through standard restoration — fade correction, color balance, face sharpening. Doing this second, not first, is important: if you run the full restoration before the tear repair, the AI tries to correct the seam as fade or dust and gets confused. Tear repair first, then everything else. The explainer on how AI photo restoration works is useful here for understanding why the order matters."
+  - name: "Save Two Versions"
+    text: "Save the aligned-fragments-with-tear version as an archival record alongside the final restored version. Ten years from now, if somebody questions the restoration, you want the source-of-truth scan available without going back to the original fragments."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,17 @@ faq:
     answer: "While professional archival supplies are ideal, you can make significant preservation improvements with minimal cost by prioritizing properly. **Free or low-cost preservation actions:** Move photographs from hostile environments (damp basements, hot attics) to stable climate-controlled living spaces, remove photographs from definitely harmful storage (magnetic albums, PVC sleeves, deteriorating..."
   - question: "Should I write information on the backs of photographs?"
     answer: "Recording identification information on photographs is crucial for preserving family knowledge, but method matters enormously. **Safe identification methods:** Use archival-quality pencils specifically designed for photograph marking (available from archival suppliers). Write gently on photograph backs, never pressing hard enough to indent through to image side."
+howTo:
+  - name: "Assessment and Prioritization"
+    text: "Survey Your Collection to understand needs. Count photographs and estimate collection size. Identify most valuable or vulnerable images. Note current storage conditions and problems. Assess urgency based on damage levels and storage environment."
+  - name: "Digital Preservation Foundation"
+    text: "Before beginning physical preservation work, create digital insurance."
+  - name: "Physical Photograph Organization"
+    text: "Remove from Damaging Storage immediately. Take photographs out of magnetic albums (highly acidic and destructive). Remove from old albums with deteriorating pages. Free photographs taped or glued to acidic materials. Extract from deteriorating frames or mounts."
+  - name: "Archival Housing and Storage"
+    text: "Individual Protection isolates each photograph. Place each photograph in polyester (Mylar D or equivalent) or polypropylene sleeve. Use acid-free paper folders for additional protection. Never use PVC plastic \"magnetic\" pages or albums. Avoid glassine, which can stick to photographs."
+  - name: "Environmental Optimization"
+    text: "Temperature Control prevents accelerated aging. Store in climate-controlled space, not basements, attics, or garages. Keep temperature stable—avoid areas with significant daily or seasonal fluctuations. Cooler is generally better (within reasonable comfort range). For maximum archival life, professional archives use cold storage (40-50°F), but typical home conditions (65-72°F) are acceptable."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

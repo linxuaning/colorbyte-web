@@ -20,6 +20,17 @@ faq:
     answer: "Yes. Modern AI systems like ArtImageHub are trained on millions of photographs including high-grain images from pushed film. The AI can distinguish between film grain (which should be preserved as part of the image character) and damage noise (which should be reduced). The key is using AI specifically designed for vintage photo restoration rather than general-purpose enhancement tools."
   - question: "How do I preserve the historical context of annotated beatnik photos?"
     answer: "Scan annotations separately and preserve them as documentation even if you remove them from the visual image for clarity. The writing often contains valuable historical information (names, dates, venues, context). You might create two versions: one with annotations visible for historical documentation and one with annotations removed for visual presentation."
+howTo:
+  - name: "Documentation and Research"
+    text: "Photograph Everything: Front and back before any intervention Any annotations or markings (may provide historical context) Damage patterns and condition Compare with other photos if in a series"
+  - name: "High-Quality Digitization"
+    text: "Scanning Parameters: Minimum 600 DPI, preferably 1200 DPI Scan in color mode even for B&W (captures toning and aging) Capture the full tonal range—beatnik photos often have deep blacks Multiple scans at different exposures if needed for extreme contrast"
+  - name: "AI-Powered Restoration with ArtImageHub"
+    text: "Modern AI technology offers powerful tools while preserving beatnik aesthetic authenticity."
+  - name: "Respecting the Beatnik Aesthetic"
+    text: "Critical consideration when restoring beat-era photography:"
+  - name: "Targeted Manual Refinements"
+    text: "Some aspects benefit from careful human judgment:"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

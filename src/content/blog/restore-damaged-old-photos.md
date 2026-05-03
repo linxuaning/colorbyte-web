@@ -20,6 +20,23 @@ faq:
     answer: "AI can reconstruct missing sections with varying success depending on the size and location of the loss. For small missing sections (edge damage, corner losses, small tears), AI reconstruction is typically excellent and nearly invisible. For moderate missing sections crossing less critical areas, AI generates plausible fill based on surrounding context."
   - question: "What's the best way to preserve photos after restoration?"
     answer: "After restoring damaged photos digitally, proper preservation ensures both the originals and restored versions survive for future generations. For original damaged photos, store them in acid-free, lignin-free sleeves and boxes away from light, heat, and humidity in a stable environment (65-70°F, 30-40% relative humidity)."
+howTo:
+  - name: "Assessment and Documentation"
+    text: "Begin by carefully examining each damaged photo to understand the full scope of restoration needed. Create detailed documentation by photographing the damaged photo from multiple angles, noting all visible damage types on a written inventory, checking photo backs for dates, names, or other information, and researching the photo's approximate age and original format."
+  - name: "Physical Stabilization"
+    text: "Before digitizing damaged photos, address any physical issues that could worsen during scanning or handling. For photos curled from water damage or age, place them between sheets of acid-free paper under light weight for several days to flatten gradually, or use a humidification chamber to relax fibers before flattening."
+  - name: "High-Quality Digitization"
+    text: "Proper scanning captures all remaining image information, providing the best possible foundation for restoration. Use a flatbed scanner rather than a document feeder, which can damage fragile photos. Set your scanner to at least 600 dpi resolution, with 1200 dpi preferred for small photos or those with significant damage."
+  - name: "AI-Powered Restoration"
+    text: "Modern AI restoration technology has transformed the process of restoring damaged photos, offering capabilities that would have required dozens of hours of painstaking manual work just a few years ago."
+  - name: "Color Correction and Tonal Adjustment"
+    text: "Damaged photos often suffer from severe color shifts, fading, or tonal problems that make them appear unnatural or unappealing. The AI restoration process automatically addresses these issues, but understanding the corrections helps you evaluate results and make any needed refinements."
+  - name: "Repairing Specific Damage Types"
+    text: "Different damage types require specialized restoration approaches that AI handles automatically but that you should understand for evaluating results."
+  - name: "Face and Detail Enhancement"
+    text: "Human faces represent the most important elements in most photographs, requiring special attention during restoration. AI restoration systems use advanced facial recognition and enhancement algorithms to identify faces even when severely damaged or obscured, sharpen and clarify facial features, reconstruct damaged facial areas using understanding of human facial structure, and enhance skin tone and texture for natural appearance."
+  - name: "Final Refinement and Output Optimization"
+    text: "After primary restoration, optimize your image for its intended use. For digital sharing and display, create web-optimized JPEG files at appropriate resolution (1920px on longest edge works well), sharpen slightly for screen viewing, and adjust brightness slightly lighter than optimal for print since screens display darker."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

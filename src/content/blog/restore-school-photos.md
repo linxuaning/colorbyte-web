@@ -20,6 +20,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Gathering Photos"
+    text: "Collection Sources: Family photo albums Boxes and drawers Yearbooks Relatives' collections"
+  - name: "Assessment"
+    text: "Evaluate Condition: Overall fading level Physical damage Color accuracy Restoration priority"
+  - name: "Digitization"
+    text: "Scanning Tips: Remove from albums carefully if possible Scan yearbook pages flat 600 DPI for individual portraits Higher resolution for class photos you'll crop"
+  - name: "AI Restoration"
+    text: "Using ArtImageHub: 1. Upload scanned school photo 2. AI automatically enhances 3. Faces become clearer 4. Colors restored"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
