@@ -4,10 +4,14 @@ description: "Expert guide to restoring military photos and army uniform portrai
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Military photographs hold profound significance—they document service, sacrifice, and family heritage. When you restore army uniform photos, you're not just repairing an old image; you're preserving a visual record of someone's service to their country. These photographs deserve special care because the details matter: rank insignia, unit patches, medals, and uniform specifics tell stories that words alone can't capture.
 

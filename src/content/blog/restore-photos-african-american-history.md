@@ -13,6 +13,7 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "✊"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 African American family photographs carry a weight that goes beyond personal memory. For much of American history, Black families were systematically excluded from the official visual record — excluded from community portrait studios in many regions, excluded from newspaper coverage of ordinary life, excluded from the photographic documentation that white families took for granted. The family photographs that did survive — formal portraits saved in Bibles, snapshots from community gatherings, studio portraits from Black-owned photography studios — are irreplaceable evidence of a heritage that the broader historical record often ignored.
 

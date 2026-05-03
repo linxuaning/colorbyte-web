@@ -4,10 +4,14 @@ description: "Expert guide to restoring autochrome color photographs from the ea
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Autochrome photographs represent a magical moment in photographic history—the first commercially successful color photography process, capturing the world in vivid hues decades before Kodachrome or modern color film existed. Created between 1907 and 1935, these glass plate images show our ancestors, historical events, and everyday life in authentic color, offering a window into the past that black-and-white photography can't provide.
 

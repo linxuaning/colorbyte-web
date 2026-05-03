@@ -4,10 +4,14 @@ description: "Improve microfilm photocopy quality with expert restoration techni
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The microfilm photocopy in your hand represents hours of genealogy research at the library or archives. You've finally found your great-grandfather's census record, your grandmother's ship manifest, or that vital marriage certificate—but the copy quality is frustratingly poor. Curved text from microfilm reader distortion, contrast so harsh it's barely legible, dark splotches obscuring crucial information, and overall image quality that makes reading a strain.
 

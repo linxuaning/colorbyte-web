@@ -46,6 +46,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI face restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles minor crease damage in formal portraits well — wedding photos benefit particularly because the typical wedding pose (clear face presentation, controlled lighting) matches AI training data. Severe creases require manual content-aware fill before AI restoration; **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) sharpens the resulting clean image.
 
 You inherit a wedding photo from grandparents you never met. The photo has been folded and refolded over decades — a deep crease runs through the bride's face, the corner is dog-eared from being slipped in and out of a wallet, and a hairline crack splits the groom's tuxedo. You want to bring this photo back to a state worth framing for a family display.

@@ -4,10 +4,14 @@ description: "Complete guide to enhancing and restoring old baby photos. Transfo
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Few photographs hold as much emotional value as baby photos. Those first moments captured on camera—newborn hospital photos, first smiles, milestone moments—become treasured family heirlooms passed down through generations. Yet these precious images often show their age, with fading colors, damaged surfaces, and lost detail threatening to obscure those cherished first moments.
 

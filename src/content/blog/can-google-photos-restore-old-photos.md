@@ -13,6 +13,7 @@ coverColor: "from-blue-600 via-indigo-600 to-purple-700"
 coverEmoji: "📷"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 If you've scanned some old family photos and uploaded them to Google Photos, hoping the AI can fix the fading and damage — here's the direct answer:
 

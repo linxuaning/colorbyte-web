@@ -4,10 +4,14 @@ description: "Compare the leading AI photo upscaling tools including ArtImageHub
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Lisa Martinez"
-role: "Photo Conservator"
+authorRole: "Photo Conservator"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 AI photo upscaling has completely changed what's possible with low-resolution images. Photos that looked hopeless a few years ago can now be transformed into sharp, printable pictures. But with dozens of tools on the market in 2026, picking the right one is genuinely confusing—each uses different AI models and produces noticeably different results.
 

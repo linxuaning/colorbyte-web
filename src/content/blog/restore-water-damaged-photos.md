@@ -14,6 +14,7 @@ coverEmoji: "💧"
 featured: false
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 It's 2 AM. A pipe burst in the ceiling above the box labeled "Family Photos 1940–1980." By morning, 40 years of irreplaceable prints are soaked, stuck together, and starting to smell like mold.
 

@@ -4,10 +4,14 @@ description: "Complete guide to restoring orphaned and found photographs with un
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "James Morrison"
-role: "Digital Preservation Specialist"
+authorRole: "Digital Preservation Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Orphaned photographs—images separated from their families and histories—represent one of the most poignant aspects of photo collecting. Found in antique stores, estate sales, flea markets, or simply abandoned in old buildings, these photographs show people whose names have been forgotten, families whose descendants don't know these images exist, and moments frozen in time with no one left to remember them.
 

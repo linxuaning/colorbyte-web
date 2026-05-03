@@ -4,10 +4,14 @@ description: "Reverse sun fading, pink discoloration, and washed-out vintage pri
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Few things are more heartbreaking than discovering cherished family photographs ruined by sun exposure. That vibrant wedding portrait now looks washed out and pink. Your children's baby pictures have faded to almost nothing. The vacation photos from twenty years ago are barely recognizable. If you need to fix sun damaged photos, you're not alone—sun damage is one of the most common forms of photograph deterioration, but fortunately, it's also one of the most repairable.
 

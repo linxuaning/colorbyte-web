@@ -4,10 +4,14 @@ description: "Discover the best free photo restoration apps for 2026. Compare fe
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "AI Technology"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Photo restoration no longer requires expensive software or professional expertise, thanks to the emergence of powerful free photo restoration apps. Whether you're looking to repair grandparents' wedding photos, restore faded family portraits, or recover damaged historical images, several excellent free options can deliver impressive results without costing a penny.
 

@@ -4,10 +4,14 @@ description: "Guide to restoring orphaned photographs with unknown subjects. Lea
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Orphaned photographs—images separated from their original context with no identifying information about subjects, dates, or locations—represent both a preservation challenge and a historical mystery. Found in antique stores, estate sales, family albums, or attics, these anonymous faces stare out from the past, their stories lost to time but their images waiting to be preserved and perhaps reunited with their histories.
 

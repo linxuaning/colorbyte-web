@@ -12,6 +12,7 @@ coverColor: "from-violet-500 via-purple-600 to-indigo-700"
 coverEmoji: "📷"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 My mother called me on a Sunday afternoon in October to tell me they were selling the house. My parents had lived in that house for 38 years. I drove over that evening, and while my mother made tea and my father watched football in the other room, I started going through the hall closet where, behind the winter coats and the box of mystery cables and the baby shoes she'd never thrown away, I found it.
 

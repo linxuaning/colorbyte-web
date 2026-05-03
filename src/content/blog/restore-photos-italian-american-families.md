@@ -13,6 +13,7 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🍝"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Italian Americans represent one of the largest immigrant groups in American history, with the peak of Italian immigration occurring between 1880 and 1924. The photographs these families kept — formal studio portraits from Italy before departure, arrival documents, first American homes in urban enclaves, church celebrations, and the gradual movement to suburban America — document a multigenerational story of adaptation and cultural preservation. These photographs connect living generations to the Italian towns and villages their ancestors left behind.
 

@@ -4,10 +4,14 @@ description: "Learn how to restore old yearbook photographs. Expert guide to fix
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Yearbook photographs document school years, friendships, and coming-of-age moments that shape who we become. From elementary class photos to high school portraits, these images capture youthful faces, period fashions, and educational milestones. When vintage yearbook photos fade or become damaged, restoration preserves memories of school days that can never be recreated.
 

@@ -13,6 +13,7 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "💰"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The landscape of AI photo restoration has expanded dramatically in recent years, with both free and paid options available. Choosing between them depends on how many photos you need to restore, what quality level you require, and what features matter for your specific use case. Here's an honest comparison of what free vs. paid tools typically offer.
 

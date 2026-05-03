@@ -13,6 +13,7 @@ coverColor: "from-blue-600 via-teal-700 to-green-800"
 coverEmoji: "🎨"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Colorizing 1950s photographs is both technically interesting and emotionally complex. The 1950s were a transitional era for color photography — Kodacolor existed, but most family documentation was still black-and-white. Colorizing them means making color decisions that can feel definitively right or slightly wrong in ways that are hard to articulate.
 

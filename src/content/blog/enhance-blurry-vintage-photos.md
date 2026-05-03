@@ -10,6 +10,8 @@ category: "Photo Enhancement"
 featured: false
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI deblur quality has improved noticeably in the past 12 months as **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), Wang et al. 2021) and **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Wang et al. Tencent ARC Lab 2021) derivatives matured. Editorial review process: this article is updated quarterly; sources are independently verified.
 
 ## Key Takeaways (TL;DR)

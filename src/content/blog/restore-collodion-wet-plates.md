@@ -4,10 +4,14 @@ description: "Expert guide to restore collodion wet plates from the Civil War er
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Collodion wet plate photography represents one of the most fascinating and historically significant photographic processes ever developed. Used primarily from the 1850s through the 1880s, this process captured some of history's most important images: Civil War battlefields, Victorian portraits, Western frontier expansion, and the daily lives of our ancestors during a transformative period.
 

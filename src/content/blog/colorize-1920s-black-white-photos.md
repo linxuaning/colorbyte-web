@@ -13,6 +13,7 @@ coverColor: "from-amber-600 via-yellow-700 to-gold-800"
 coverEmoji: "🎷"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The Roaring Twenties were, photographically, a black-and-white decade. Almost every photograph from the era is monochrome. But the 1920s were also a particularly colorful era visually — Art Deco design, fashion, and nightlife all featured bold, saturated colors. AI colorization of 1920s photographs has to navigate this.
 

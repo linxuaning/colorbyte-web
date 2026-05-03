@@ -12,6 +12,7 @@ coverColor: "from-emerald-500 via-teal-600 to-cyan-700"
 coverEmoji: "✨"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Last spring, a woman named Renata messaged me through my website. Her family had emigrated from Poland in the 1960s, and the only photographs they brought with them were now faded, cracked, and barely legible. She wanted her grandmother's portrait restored before her mother's 80th birthday — three weeks away. The local print shop quoted her $120 per photo. She had eleven photos.
 

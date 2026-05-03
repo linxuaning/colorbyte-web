@@ -4,10 +4,14 @@ description: "Best DPI, color mode, and file format for scanning old photographs
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"
-role: "Digital Preservation Consultant"
+authorRole: "Digital Preservation Consultant"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Digitizing your photograph collection is one of the most important preservation steps you can take. Proper scanning creates high-quality digital archives that protect against physical deterioration, damage, and loss while making photos easily shareable with family. However, scanning quality varies dramatically based on equipment, settings, and technique.
 

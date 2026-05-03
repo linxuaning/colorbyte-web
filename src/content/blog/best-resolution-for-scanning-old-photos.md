@@ -13,6 +13,7 @@ coverColor: "from-blue-100 to-indigo-200"
 coverEmoji: "🖨️"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 If you're preparing old photos for AI restoration, the scanning resolution you choose has a significant impact on the quality of results you'll get. Too low a resolution and important detail is lost before the AI even sees the image; unnecessarily high resolution creates huge files that slow down uploads and processing without meaningful quality gain. Here's the practical guide to getting the scanning decision right.
 

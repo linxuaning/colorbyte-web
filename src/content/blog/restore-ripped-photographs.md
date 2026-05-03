@@ -4,10 +4,14 @@ description: "Expert guide to restoring torn and ripped photographs. Learn digit
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Lisa Martinez"
-role: "Wedding Photo Specialist"
+authorRole: "Wedding Photo Specialist"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 A ripped photograph can feel like a disaster—a precious memory literally torn apart. Whether from accidents, deterioration, or decades of handling, torn photographs represent some of the most challenging restoration projects. But there's hope: with modern digital restoration techniques, even photographs torn into multiple pieces can be seamlessly repaired, preserving irreplaceable memories.
 

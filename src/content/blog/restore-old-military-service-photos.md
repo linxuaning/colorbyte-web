@@ -47,6 +47,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles military service portraits exceptionally well due to the era's professional military photography conventions (controlled studio lighting, posed presentation).
 
 You inherit a military service portrait from a great-grandparent who served in WWII. The print has yellowed, the face has softened, and you're not sure what unit information is visible. You want to restore it to a state worth framing for your family's history record.

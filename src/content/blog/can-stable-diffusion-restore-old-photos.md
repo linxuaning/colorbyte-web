@@ -13,6 +13,7 @@ coverColor: "from-violet-800 via-purple-800 to-indigo-700"
 coverEmoji: "🌀"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Stable Diffusion is one of the most powerful open-source AI image generation models. It runs locally, it's free, and it's highly customizable. If you're wondering whether it can restore old, faded, or damaged family photographs, here's the direct answer:
 

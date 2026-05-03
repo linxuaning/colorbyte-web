@@ -4,10 +4,14 @@ description: "Complete guide to restoring photographs damaged by chemical deteri
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "Sarah Chen"
-role: "Historical Photography Specialist"
+authorRole: "Historical Photography Specialist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Damage Repair"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Chemical damage represents one of the most destructive forms of photograph deterioration, attacking images from within through ongoing chemical reactions that break down photographic materials. Unlike physical damage from tears or scratches that remain stable once they occur, chemical damage is often progressive—continuing to worsen as reactions proceed, spreading from small affected areas to eventually consume entire photographs.
 

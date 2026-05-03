@@ -40,6 +40,7 @@ reviewedItem:
   category: "Software Comparison"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 You inherit your grandparents' photo album. The corners are bent, faces have softened with age, and you're not sure if the silver-gelatin prints are losing their tone or your eyes are adjusting. You search "AI photo restoration tool" and the same two names dominate the results: **[Remini](https://remini.ai/)** and **[MyHeritage Deep Nostalgia](https://www.myheritage.com/deep-nostalgia)**.
 

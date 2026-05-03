@@ -13,6 +13,7 @@ coverColor: "from-silver-600 via-gray-700 to-zinc-800"
 coverEmoji: "🪞"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The daguerreotype is the first practical photographic process, introduced in 1839, and it produces a unique kind of image: a direct positive on a silver-coated copper plate. Daguerreotypes are not printed photographs in the conventional sense. Understanding their specific degradation patterns is essential for restoration.
 

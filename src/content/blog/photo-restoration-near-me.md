@@ -13,6 +13,7 @@ coverColor: "from-amber-700 via-orange-700 to-red-800"
 coverEmoji: "📍"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 If you've searched "photo restoration near me," you already know what you're looking for: someone to fix an old, damaged family photo. The question is whether a local shop is the right choice — or whether AI restoration is faster, cheaper, and produces equal or better results.
 

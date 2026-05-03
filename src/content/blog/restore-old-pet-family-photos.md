@@ -47,6 +47,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) trained primarily on human faces also benefits pet faces — the underlying edge sharpening + texture recovery improves pet eye detail, fur texture, and feature definition.
 
 You discover an old photo of a beloved pet — perhaps a childhood dog, a cat that lived a long happy life, or a more recent pet who's now passed. The print has faded, the eyes are soft, and you want to bring this photo back to a state worth framing as a memorial keepsake.

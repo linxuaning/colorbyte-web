@@ -13,6 +13,7 @@ coverColor: "from-teal-100 to-cyan-200"
 coverEmoji: "🌴"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Puerto Rican family photographs document a unique American story: Puerto Ricans became American citizens in 1917 without choosing to immigrate, yet the mass migration from the island to the mainland (primarily New York City) from the 1940s through 1970s created one of the most dramatic urban migration stories in American history. Family photographs from this period often show both sides of this experience — island life before departure and the challenges and creativity of community building in New York's Spanish Harlem and other urban enclaves.
 

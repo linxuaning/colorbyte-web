@@ -4,10 +4,14 @@ description: "Turn pixelated or blurry photos into sharp, printable prints. AI u
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "David Park"
-role: "Image Enhancement Specialist"
+authorRole: "Image Enhancement Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 We've all been there: you find an important photograph only to discover it's low quality—pixelated, blurry, poorly compressed, or frustratingly small. Last month, a client sent me the only photo of her late grandmother—a tiny 200x300 pixel image saved from a 2004 email. She wanted it printed at 8x10 for a memorial. I honestly thought it was a lost cause, but after running it through a few tools I'll cover here, we got a printable result that made her cry happy tears.
 

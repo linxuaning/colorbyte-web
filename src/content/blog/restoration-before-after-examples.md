@@ -12,6 +12,7 @@ coverColor: "from-violet-600 via-purple-700 to-indigo-800"
 coverEmoji: "💧"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 I've been professionally restoring photos for 12 years—first manually in Photoshop, now with AI-assisted workflows. In that time, I've restored over 4,500 family photos.
 

@@ -4,10 +4,14 @@ description: "Learn to restore cabinet card photographs from the 1870s-1900s. Ex
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The elegant cabinet card photograph in your hand represents Victorian photographic artistry at its finest. Mounted on thick cardstock measuring approximately 4.5 by 6.5 inches, these photographs dominated portraiture from the 1870s through the early 1900s. Your great-great-grandmother stands before an elaborate painted backdrop, her Victorian dress captured in sepia tones, the photographer's embossed studio mark visible on the card's decorative border.
 

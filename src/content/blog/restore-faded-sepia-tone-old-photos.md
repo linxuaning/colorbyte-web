@@ -43,6 +43,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI restoration models — primarily face-specific recovery via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) and tone-aware sharpening derived from **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) — handle sepia-tone photos well when configured to preserve the original tone palette.
 
 You inherit a small album of late-Victorian or early-1900s family photos. The prints are warm brown — that distinctive sepia tone we associate with antique photography. Some are clearly intentional sepia toning from when the prints were originally made. Others may be neutral prints that have yellowed with age. All of them have varying degrees of fading.

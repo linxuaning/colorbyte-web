@@ -43,6 +43,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) for face recovery and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) for tone correction handles 1980s Polaroid color shifts well while preserving the soft instant-film aesthetic that makes Polaroids feel distinctive.
 
 You're sorting through a relative's storage and find a stack of 1980s Polaroids — birthday parties, beach vacations, holiday gatherings, candid family moments captured on instant film. Many of them have a noticeable yellow or orange cast. The faces look slightly off-tone. The colors don't match how you remember the originals.

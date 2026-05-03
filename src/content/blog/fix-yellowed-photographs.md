@@ -4,10 +4,14 @@ description: "Expert guide to fixing yellowed photographs. Learn professional te
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "David Park"
-role: "Photo Conservation Expert"
+authorRole: "Photo Conservation Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Few things diminish the impact of cherished old photographs more dramatically than yellowing. That warm, sepia-like tint might seem quaint at first glance, but it obscures the original image quality, distorts colors and tones, reduces contrast and visual impact, and indicates ongoing chemical deterioration. Whether you're dealing with black and white photos turned brownish-yellow, color prints with overall yellow casts, or papers yellowed around the edges, understanding how to fix yellowed photographs preserves these irreplaceable memories for future generations.
 

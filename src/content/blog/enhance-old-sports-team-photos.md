@@ -4,10 +4,14 @@ description: "Restore faded sports team photos with expert techniques. Enhance f
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The team photo hanging in the high school trophy case has seen better days. Faces have faded into the background, uniform numbers are barely visible, and the championship trophy your father holds is just a blur. Or perhaps you've inherited a box of your grandfather's baseball team photos from the 1940s, each one yellowed and cracked, but representing a piece of sports history that deserves preservation.
 

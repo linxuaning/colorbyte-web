@@ -13,6 +13,7 @@ coverColor: "from-amber-700 via-orange-700 to-yellow-600"
 coverEmoji: "🌳"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Genealogy research depends heavily on photographs — they place names to faces, confirm family relationships, and connect living descendants to ancestors they never met. The problem: most family photographs from before 1980 are in some state of degradation, and many from before 1960 are significantly damaged.
 

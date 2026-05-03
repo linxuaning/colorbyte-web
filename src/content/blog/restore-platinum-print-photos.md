@@ -4,10 +4,14 @@ description: "Complete guide to restoring platinum and palladium print photograp
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Platinum prints represent the pinnacle of fine art photography, prized for their extraordinary tonal range, exceptional permanence, and distinctive aesthetic qualities. Created through a contact printing process using platinum or palladium metals rather than silver, these photographs exhibit subtlety and beauty that have made them favorites of serious photographers and collectors since the late 19th century.
 

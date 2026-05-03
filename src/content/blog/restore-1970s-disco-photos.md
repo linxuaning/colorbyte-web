@@ -4,10 +4,14 @@ description: "Complete guide to restoring 1970s disco era photos. Fix faded colo
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "David Park"
-role: "Photo Conservation Expert"
+authorRole: "Photo Conservation Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Era-Specific Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The 1970s disco era created some of the most vibrant, energetic, and memorable photographs in family collections—dance floor action shots, glittering party scenes, bold fashion statements, and uninhibited celebration captured on film. Yet these precious disco-era memories often show severe deterioration today, with color prints from the 1970s being particularly susceptible to fading, color shifts, and damage. Whether your photos show legendary Studio 54 visits, local disco dance competitions, 70s wedding receptions with disco balls and dance floors, or simply friends and family dressed in platform shoes and bell-bottoms having the time of their lives, restoration can bring these groovy memories back to vibrant life.
 

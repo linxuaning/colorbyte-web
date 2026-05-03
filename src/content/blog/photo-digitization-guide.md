@@ -4,10 +4,14 @@ description: "Complete guide to photo digitization. Learn proper scanning techni
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "James Morrison"
-role: "Vintage Photo Specialist"
+authorRole: "Vintage Photo Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Preservation"
 featured: true
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Photo digitization transforms fragile physical photographs into permanent digital formats that never deteriorate, fade, or suffer physical damage. Proper digitization preserves irreplaceable family memories for future generations while creating easily shareable, printable copies for current enjoyment. Yet the difference between excellent and poor digitization can mean the difference between capturing all image information or losing critical details forever. Whether you're digitizing a few special photos or tackling an entire family collection, understanding proper scanning techniques, optimal settings, file format choices, and workflow organization ensures you create the highest-quality digital archives possible.
 

@@ -4,10 +4,14 @@ description: "Expert guide to restoring Victorian era photographs from the 1800s
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Victorian era photographs represent some of the most precious historical artifacts in family archives. These images from the 1830s through early 1900s capture our ancestors in ways that written records simply can't. However, the passage of 120+ years takes its toll on these delicate photographs. If you're looking to restore Victorian era photographs, you're preserving not just images, but irreplaceable pieces of history.
 

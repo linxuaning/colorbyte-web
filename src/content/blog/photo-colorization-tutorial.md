@@ -4,10 +4,14 @@ description: "Complete guide to colorizing black and white photos. Learn AI-powe
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"
-role: "Digital Preservation Consultant"
+authorRole: "Digital Preservation Consultant"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Colorizing black and white photographs breathes new life into vintage family photos, making historical moments feel immediate and relatable. What once seemed distant and removed suddenly becomes vivid and real when you add color. Modern technology's made colorization accessible to everyone, from AI-powered automatic tools to detailed manual techniques.
 

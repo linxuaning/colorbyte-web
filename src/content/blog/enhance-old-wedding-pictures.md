@@ -4,10 +4,14 @@ description: "Transform faded wedding photos with professional enhancement techn
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "Lisa Martinez"
-role: "Wedding Photo Specialist"
+authorRole: "Wedding Photo Specialist"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Your wedding photographs capture one of life's most precious moments—but time hasn't been kind to them. Faded colors, yellowed paper, cracked emulsion, and lost details can make vintage wedding photos look nothing like the vibrant memories you cherish. The good news? Modern restoration techniques can bring those treasured wedding pictures back to life, sometimes even improving upon the original quality.
 

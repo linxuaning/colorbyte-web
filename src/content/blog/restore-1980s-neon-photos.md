@@ -4,10 +4,14 @@ description: "Complete guide to restoring 1980s photographs with neon colors. Re
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The 1980s brought bold fashion, vibrant culture, and photographs bursting with electric colors—neon pinks, brilliant magentas, electric blues, and fluorescent greens that defined the decade's aesthetic. Yet three to four decades later, many of these once-vivid photographs have faded dramatically, their electric colors muted to pale shadows of their original brilliance. The very dyes that created those intense hues proved unstable, making 1980s color photographs particularly susceptible to severe fading.
 

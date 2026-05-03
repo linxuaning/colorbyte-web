@@ -4,10 +4,14 @@ description: "Learn the most common photo restoration mistakes and how to avoid 
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "James Morrison"
-role: "Professional Photo Restorer"
+authorRole: "Professional Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 After restoring thousands of photographs over two decades, I've seen every mistake imaginable—and made many of them myself early in my career. Photo restoration mistakes can range from minor aesthetic issues to catastrophic damage to irreplaceable originals. Some mistakes are immediately obvious, while others only appear months or years later as photographs continue to deteriorate from improper treatment.
 

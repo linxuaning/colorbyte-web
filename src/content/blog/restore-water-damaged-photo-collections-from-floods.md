@@ -46,6 +46,8 @@ reviewedItem:
   category: "Emergency Photo Restoration"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: Modern AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) handles dried water-damaged prints well, but cannot substitute for the urgent emergency drying step. The first 24-48 hours after water damage are the critical recovery window.
 
 You come home to a flooded basement. Or a burst pipe upstairs has soaked the closet where you stored family albums. Or a hurricane swept water through your home. Decades of family photographs are wet, stuck together, smelling of mildew. The clock is now running.

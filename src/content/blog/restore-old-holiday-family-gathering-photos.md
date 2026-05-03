@@ -47,6 +47,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) for face recovery + color correction tools handle holiday photos well, including the typical low-light indoor conditions of 1950s-1990s family gatherings.
 
 You discover a box of old holiday photos in a relative's storage. Christmas mornings from the 1970s, Thanksgiving dinners from the 1960s, family reunions from the 1980s. You want to restore them for a family memorial slideshow or to share with younger relatives.

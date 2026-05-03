@@ -4,10 +4,14 @@ description: "Compare AI-powered and manual photo restoration techniques. Learn 
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "James Morrison"
-role: "Digital Preservation Specialist"
+authorRole: "Digital Preservation Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Technology"
 featured: true
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The debate between AI-powered and manual photo restoration has changed dramatically over the past few years. Just five years ago, serious photo restoration required extensive Photoshop skills, countless hours of meticulous manual work, and significant expertise to achieve professional results. AI restoration tools were primitive, often creating artifacts worse than the original damage.
 

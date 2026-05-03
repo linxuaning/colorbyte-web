@@ -47,6 +47,8 @@ itemList:
     description: "Best Quick Single-Shot — free single-photo workflow, no account needed"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI model lineage clarified — most consumer photo restoration tools (including those compared here) wrap derivatives of **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face restoration and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling. Differences between products are mostly pricing model and workflow, not raw AI quality.
 
 Black-and-white photos hold something a color snapshot rarely captures — a feeling of distance, a quiet sense of the past being genuinely past. But a colorized version of the same image hits differently. A 1942 wedding portrait in muted color, a great-grandfather's serious gaze in plausible skin tones, a 1920s street scene where the trolley signs suddenly read as red — these are the kinds of moments AI colorization unlocks for families and archivists who do not have the budget or time for hand-coloring.

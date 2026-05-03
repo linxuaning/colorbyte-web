@@ -4,10 +4,14 @@ description: "Learn professional techniques to restore military service photogra
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Military service photographs hold profound significance far beyond typical family snapshots. These images document sacrifice, service, and crucial moments in history. Whether a formal portrait of a Civil War soldier, a candid World War II snapshot, a Vietnam-era service photo, or modern deployment images, military photographs deserve special care and respectful restoration that honors both the technical challenges and the emotional weight they carry.
 

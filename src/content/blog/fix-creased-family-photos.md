@@ -4,10 +4,14 @@ description: "Discover professional methods to fix creased family photos. Step-b
 publishedAt: "2026-02-16"
 updatedAt: "2026-02-16"
 author: "David Park"
-role: "Digital Restoration Expert"
+authorRole: "Digital Restoration Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Creased photographs are among the most common types of damage found in family photo collections. Whether caused by improper storage, accidents, or decades of handling, creases can mar precious memories and seem impossible to fix. The good news? With the right techniques, you can restore creased family photos to near-original condition.
 

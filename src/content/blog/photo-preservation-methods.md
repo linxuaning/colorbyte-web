@@ -4,10 +4,14 @@ description: "Expert guide to photograph preservation and archival storage. Lear
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "Rachel Kim"
-role: "Preservation Specialist"
+authorRole: "Preservation Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Best Practices"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Photograph preservation isn't just about restoring damaged images—it's about preventing damage before it occurs. Every photograph in your collection is deteriorating right now through environmental exposure, improper storage, or simple aging. The photographs that seem fine today may show severe damage in five or ten years if stored improperly. Conversely, photographs stored using proper archival methods can survive centuries in excellent condition.
 

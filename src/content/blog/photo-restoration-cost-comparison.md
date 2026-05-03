@@ -4,10 +4,14 @@ description: "Complete cost comparison guide for photo restoration services. Com
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Rachel Kim"
-role: "Photo Restoration Analyst"
+authorRole: "Photo Restoration Analyst"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Choosing a photo restoration service involves balancing cost, quality, convenience, and the specific needs of your damaged photographs. With options ranging from free mobile apps to professional conservation services costing hundreds of dollars per photo, understanding the true cost and value of different restoration approaches helps you make smart decisions that protect your budget while preserving irreplaceable memories.
 

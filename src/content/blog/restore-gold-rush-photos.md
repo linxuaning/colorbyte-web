@@ -4,10 +4,14 @@ description: "Expert guide to restoring Gold Rush photographs from the Californi
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "David Park"
-role: "Photo Restoration Expert"
+authorRole: "Photo Restoration Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Gold Rush photographs capture one of the most dramatic periods in American history—when hundreds of thousands of fortune-seekers flooded into California, transforming a remote Mexican territory into a bustling state virtually overnight. From 1849 through the end of the 19th century, photographers documented this transformation, creating a remarkable visual record of mining camps, boomtowns, miners, and the harsh realities of life on the frontier.
 

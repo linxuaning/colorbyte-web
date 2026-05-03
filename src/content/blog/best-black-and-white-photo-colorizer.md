@@ -45,6 +45,8 @@ itemList:
     description: "Best Free Single-Photo — research-grade quick test from National University of Singapore"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 The first time someone in the family colorizes a photo of a great-grandparent and shows it to a teenager who never met them, something shifts. The B&W version was a historical document; the colorized version is a person. For genealogy researchers and family historians, this is the practical use case for AI colorization — not artistic reinterpretation, but emotional accessibility for relatives who never knew the original people.
 
 This guide focuses specifically on B&W family photo colorization for genealogy and heirloom preservation. The criteria are different from a general "best colorizer" comparison: ease of use for non-technical relatives, integration with family tree workflows, honest framing about what AI colorization can and cannot do, and pricing that fits a one-time family-archive project rather than recurring professional work.

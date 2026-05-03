@@ -4,10 +4,14 @@ description: "Restore severely faded family photographs and bring lost detail ba
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "David Park"
-role: "Photo Restoration Expert"
+authorRole: "Photo Restoration Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: true
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Few experiences are more frustrating than pulling out a treasured family photograph only to find that time has faded it nearly to invisibility. The faces you remember clearly in your mind appear as ghostly pale shadows in the actual photograph. Details that should be vivid and sharp have washed out to barely perceptible forms. The vibrant memories you associate with the image don't match the faded, washed-out reality before you.
 

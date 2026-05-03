@@ -4,10 +4,14 @@ description: "Understand the difference between photo enhancement and restoratio
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 When you discover old family photographs or want to improve your existing images, you'll encounter two terms that seem similar but represent fundamentally different processes: photo enhancement and photo restoration. Understanding photo enhancement vs restoration is crucial for choosing the right service, setting appropriate expectations, and achieving the results you want.
 

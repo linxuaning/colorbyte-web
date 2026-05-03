@@ -4,10 +4,14 @@ description: "Side-by-side comparison of 8 photo restoration tools on real damag
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "AI Technology"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The photo restoration landscape has transformed dramatically over the past few years, with AI-powered tools revolutionizing what's possible for recovering damaged, faded, or deteriorated photographs — everything from [blurry vintage photos](/blog/enhance-blurry-vintage-photos) to severely cracked family portraits. Where professional-quality restoration once required years of Photoshop expertise and hours of painstaking manual work, modern AI restoration software can achieve remarkable results in minutes with minimal user input.
 

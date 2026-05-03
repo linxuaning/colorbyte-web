@@ -4,10 +4,14 @@ description: "Expert techniques for handling and digitally restoring photographs
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "Rachel Kim"
-role: "Photo Preservation Consultant"
+authorRole: "Photo Preservation Consultant"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Opening a box of old family photographs and hearing the crackle of brittle paper can be heartbreaking. These fragile treasures, often stored for decades in attics, basements, or forgotten albums, may seem too delicate to touch let alone restore. Yet brittle photo paper, while challenging to handle, doesn't have to mean lost memories. With proper techniques for safe handling and modern digital restoration methods, even the most fragile photographs can be preserved and restored for future generations.
 

@@ -40,6 +40,7 @@ reviewedItem:
   category: "Software Comparison"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 You're considering a serious photo restoration project — not a one-off, but a deliberate effort to clean up your family's photo archive. The two names that dominate professional photo restoration discussions are **[Adobe Photoshop](https://www.adobe.com/products/photoshop.html)** (with its Neural Filters AI bundle) and **[Topaz Photo AI](https://www.topazlabs.com/topaz-photo-ai)**. Both are powerful. Both are expensive in different ways.
 

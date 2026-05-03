@@ -4,10 +4,14 @@ description: "Complete guide to restoring ancestor photographs for genealogy. Re
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "Rachel Kim"
-role: "Photo Restoration Analyst"
+authorRole: "Photo Restoration Analyst"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Genealogy"
 featured: true
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Ancestor photographs serve as irreplaceable connections to family history—visual links to grandparents, great-grandparents, and generations beyond living memory. These precious images document faces, clothing, character, and lives of people whose genes we carry, whose stories shaped our families, and whose experiences created the foundation for our own existence. Yet photographs of ancestors from the 19th and early 20th centuries almost always show severe deterioration including extreme fading approaching invisibility, yellowing and discoloration obscuring features, physical damage from age and handling, and loss of detail that makes identification difficult. Modern AI restoration technology offers unprecedented capability for recovering these ancestral portraits, revealing faces clearly for the first time in generations.
 

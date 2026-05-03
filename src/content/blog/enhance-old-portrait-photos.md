@@ -4,10 +4,14 @@ description: "Transform old portrait photographs with expert enhancement techniq
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "David Park"
-role: "Digital Restoration Expert"
+authorRole: "Digital Restoration Expert"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Old portrait photographs capture the faces of our ancestors, preserving family resemblances and personal characteristics across generations. Whether formal studio portraits or casual snapshots, these images connect us to family history in the most personal way possible. When age, damage, or poor original quality obscure these faces, professional enhancement can restore clarity and detail, bringing your ancestors' faces back into sharp focus.
 

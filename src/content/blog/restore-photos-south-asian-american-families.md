@@ -13,6 +13,7 @@ coverColor: "from-red-100 to-rose-200"
 coverEmoji: "🪔"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 South Asian Americans — including families of Indian, Pakistani, Bangladeshi, and Sri Lankan origin — represent one of the fastest-growing immigrant communities in the United States, with major immigration waves following the 1965 Immigration Act and continuing through today. South Asian American family photographs reflect both the rich photographic traditions of the subcontinent (where formal family portraiture has deep roots) and the distinctive experience of immigrant professional life in America. The photographs span from pre-immigration formal portraits in South Asian studios to documentation of life in American university towns, suburban communities, and major cities.
 

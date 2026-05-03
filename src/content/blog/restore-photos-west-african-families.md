@@ -13,6 +13,7 @@ coverColor: "from-slate-100 to-gray-200"
 coverEmoji: "🥁"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 West African immigration to the United States has grown substantially since the 1965 Immigration Act removed national origin quotas, with Nigerians, Ghanaians, Senegalese, and immigrants from across West Africa establishing communities in major American cities. These families bring photographic traditions from cultures where formal portrait photography has been practiced since the late 19th century, when West African studio photographers created distinctive portrait styles that influenced photography globally. Restoring West African American family photographs connects living generations to a rich visual heritage.
 

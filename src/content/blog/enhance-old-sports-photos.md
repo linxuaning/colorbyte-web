@@ -4,10 +4,14 @@ description: "Complete guide to restoring and enhancing vintage sports photograp
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Rachel Kim"
-role: "Sports Photography Specialist"
+authorRole: "Sports Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Old sports photographs capture moments of athletic achievement, team camaraderie, and sporting history that connect us to the past in uniquely powerful ways. Whether it's your grandfather's high school basketball team from 1955, a faded action shot of a Little League championship, or a crumbling newspaper clipping of a local sports hero, these images preserve memories of competition, triumph, and the simple joy of playing the game.
 

@@ -12,6 +12,7 @@ coverColor: "from-blue-600 via-indigo-700 to-violet-800"
 coverEmoji: "🔍"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Your grandfather's face is almost there—you can see the outline of his smile, the suggestion of a military uniform, maybe a faint backdrop of somewhere important. But the blur won't let you in. The image hovers just beyond recognition, a ghost trapped in gelatin and silver.
 

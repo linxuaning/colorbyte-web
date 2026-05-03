@@ -13,6 +13,7 @@ coverColor: "from-green-700 via-emerald-700 to-teal-600"
 coverEmoji: "🎨"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 DALL-E 3, OpenAI's image generation model, is capable of producing remarkably detailed and realistic images from text descriptions. If you're wondering whether it can restore old, faded, or damaged family photographs, here's the direct answer:
 

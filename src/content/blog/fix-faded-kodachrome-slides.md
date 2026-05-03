@@ -4,10 +4,14 @@ description: "Restore faded Kodachrome and Ektachrome slides at home. Scan setti
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Rachel Kim"
-role: "Photo Technology Analyst"
+authorRole: "Photo Technology Analyst"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Kodachrome slides represent the golden age of color photography—vibrant, saturated colors that were unmatched by any other film format. From the 1930s through 2009, Kodachrome captured family vacations, special events, and everyday moments in stunning color. But after decades in storage, even legendary Kodachrome can fade, shift colors, or accumulate damage.
 

@@ -4,10 +4,14 @@ description: "Expert guide to restoring cabinet card photographs from the Victor
 publishedAt: "2026-02-22"
 updatedAt: "2026-02-22"
 author: "Rachel Kim"
-role: "Photo Restoration Analyst"
+authorRole: "Photo Restoration Analyst"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Historical Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Cabinet cards represent some of the most historically significant photographs in family collections—formal Victorian-era portraits of ancestors from the 1870s through early 1900s. These distinctive mounted photographs, typically measuring 4.25 x 6.5 inches, provide our most direct visual connection to 19th-century family members. Yet after 100-150 years, cabinet cards face severe deterioration including faded images, damaged mounting boards, yellowing and discoloration, physical tears and creases, and loss of fine detail in faces and clothing. Modern AI restoration technology offers unprecedented capability for recovering these precious historical portraits while preserving their authentic Victorian character.
 

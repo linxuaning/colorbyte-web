@@ -4,10 +4,14 @@ description: "Discover the best online tools to restore black and white photos. 
 publishedAt: "2026-02-17"
 updatedAt: "2026-02-17"
 author: "James Morrison"
-role: "Digital Preservation Consultant"
+authorRole: "Digital Preservation Consultant"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Black and white photographs hold a special place in our family histories, capturing moments from a time when color photography was either unavailable or too expensive. But age takes its toll—faded images, yellowed paper, scratches, tears, and missing pieces can make these precious memories barely recognizable.
 

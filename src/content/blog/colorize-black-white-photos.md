@@ -12,6 +12,7 @@ coverColor: "from-purple-600 via-pink-600 to-rose-700"
 coverEmoji: "🎨"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The photograph was taken in 1943. A young man in military dress, maybe 22 years old, stands in front of what looks like a barracks building. He's smiling—one of those slightly awkward smiles people make when they're told to hold still. The photo's been in a box for decades. Nobody who remembers him well enough to describe his hair color or the exact shade of his uniform is still alive.
 

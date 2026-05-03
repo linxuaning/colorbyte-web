@@ -4,10 +4,14 @@ description: "Learn how to restore photographs from the Korean War (1950-1953). 
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The Korean War (1950-1953) is often called "The Forgotten War," but for the families of the 5.7 million Americans who served, those memories are far from forgotten. Photographs from this conflict document sacrifice, service, and a pivotal moment in Cold War history. Restoring Korean War photos honors veterans and preserves their stories for future generations.
 

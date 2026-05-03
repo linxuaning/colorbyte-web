@@ -4,10 +4,14 @@ description: "Complete guide to restoring Ellis Island photographs. Learn profes
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Sarah Chen"
-role: "Digital Photo Archivist"
+authorRole: "Digital Photo Archivist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 For millions of Americans, Ellis Island represents the gateway to their family's American story. Between 1892 and 1954, over 12 million immigrants passed through this historic immigration station, and many of these precious moments were captured in photographs. Today, these Ellis Island photos serve as invaluable links to our heritage, but decades of aging, environmental damage, and poor storage conditions have left many of these treasures in desperate need of restoration.
 

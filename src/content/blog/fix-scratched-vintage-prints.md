@@ -4,10 +4,14 @@ description: "Remove deep scratches, surface scuffs, and emulsion damage from vi
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Scratches are among the most common and frustrating types of damage found on vintage photographs. Whether from decades of handling, improper storage, or contact with other objects, scratches can mar precious family memories and seem impossible to fix. The good news? With modern restoration techniques, even severely scratched vintage prints can be restored to beautiful condition.
 

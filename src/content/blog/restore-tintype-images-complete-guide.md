@@ -4,10 +4,14 @@ description: "Digitize and restore 19th-century tintype (ferrotype) photographs 
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"
-role: "Historical Photo Conservator"
+authorRole: "Historical Photo Conservator"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Tintype photographs—also called ferrotypes or melanotypes—represent a fascinating chapter in photographic history. These unique images created on thin iron sheets captured everything from Civil War soldiers to Victorian families to traveling carnival portraits. If you need to restore tintype images, you're working with photographs that are simultaneously more durable and more challenging than paper prints. The metal base makes them nearly indestructible, yet rust, varnish deterioration, and improper storage create restoration challenges that require specialized knowledge.
 

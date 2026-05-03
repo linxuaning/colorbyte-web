@@ -4,10 +4,14 @@ description: "Transform faded school photos with professional enhancement. Compl
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Lisa Martinez"
-role: "Wedding Photo Specialist"
+authorRole: "Wedding Photo Specialist"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Old school photographs capture formative moments in our lives—first day of kindergarten, senior portraits, team photos, graduation day. These images document not just how we looked, but who we were becoming. Unfortunately, school photos often suffer from poor storage, cheap materials, and decades of handling, leaving them faded, damaged, or barely visible.
 

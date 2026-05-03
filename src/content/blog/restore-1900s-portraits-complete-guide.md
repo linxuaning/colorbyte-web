@@ -13,6 +13,7 @@ coverColor: "from-green-600 via-teal-700 to-emerald-800"
 coverEmoji: "🎩"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 My grandmother kept a photograph in a velvet-lined box on her bedside table. The box itself was worn at the corners, the velvet faded from deep burgundy to a dusty pink. Inside, wrapped in tissue paper that crumbled to the touch, was a formal portrait of a man I never knew — my great-great-grandfather, taken sometime around 1903.
 

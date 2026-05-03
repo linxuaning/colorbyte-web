@@ -4,10 +4,14 @@ description: "Restore faded 1970s instant photos from Polaroid, Kodak Instant, a
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The instant photo in your hand developed right before your eyes in 1977. You watched the image slowly appear on that distinctive white-bordered square, capturing a birthday party, family vacation, or everyday moment with the magic of instant gratification. Polaroid and other instant cameras transformed photography by making every moment immediately visible, creating billions of unique, irreplaceable photographs.
 

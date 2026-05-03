@@ -4,10 +4,14 @@ description: "Expert guide to restore glass negatives from 1850s-1920s. Safe han
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Rachel Kim"
-role: "Photo Software Analyst"
+authorRole: "Photo Software Analyst"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Glass negatives represent some of the most historically significant photographic artifacts, capturing images from the 1850s through the 1920s when glass plates were the standard for professional photography. If you need to restore glass negatives, you're working with fragile, irreplaceable historical documents that require specialized handling and restoration techniques. These glass plate negatives—whether wet collodion plates from the Civil War era, dry plates from Victorian studios, or early 20th-century professional negatives—contain extraordinary detail but face unique preservation challenges from broken glass, emulsion separation, and environmental damage.
 

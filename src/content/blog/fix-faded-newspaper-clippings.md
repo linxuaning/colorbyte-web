@@ -4,10 +4,14 @@ description: "Restore faded newspaper clippings with AI technology. Learn profes
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 There's something uniquely powerful about holding a newspaper clipping from decades past. Perhaps it's your grandmother's obituary, your grandfather's war service announcement, a birth announcement from 1950, or coverage of a family business opening. These fragile pieces of newsprint capture moments in time, but they're also some of the most challenging historical documents to preserve.
 

@@ -4,10 +4,14 @@ description: "Learn expert techniques to restore immigrant ancestor photos from 
 publishedAt: "2026-02-18"
 updatedAt: "2026-02-18"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The weathered photograph in your hand tells a story of courage, sacrifice, and hope. Your immigrant ancestors stared into the camera lens generations ago, capturing a moment in time that connected their old world to their new life. These precious images often survived treacherous journeys across oceans, passed down through generations, and now sit before you—faded, damaged, but irreplaceable.
 

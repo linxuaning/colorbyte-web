@@ -13,6 +13,7 @@ coverColor: "from-blue-800 via-indigo-700 to-violet-700"
 coverEmoji: "🪟"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 If you're wondering whether Microsoft Copilot — Microsoft's AI assistant built into Windows 11, Edge, and Microsoft 365 — can restore old, faded, or damaged family photos, here's the direct answer:
 

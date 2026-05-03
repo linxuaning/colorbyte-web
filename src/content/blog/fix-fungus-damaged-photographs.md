@@ -4,10 +4,14 @@ description: "Expert guide to restoring fungus-damaged photos. Learn to identify
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Discovering fungus damage on precious photographs can be heartbreaking. Those white spots, mysterious patterns, and cloudy areas signal that mold and fungi have attacked your irreplaceable memories. However, with modern restoration techniques and AI-powered tools, even severely fungus-damaged photographs can be rescued and restored to their former glory.
 

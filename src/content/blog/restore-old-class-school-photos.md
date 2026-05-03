@@ -47,6 +47,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles formal yearbook portraits well; class group photos benefit from very-high-resolution scanning (2400+ DPI) to give AI more data per small face.
 
 You inherit a parent's school yearbook from the 1960s, or a stack of class photos from your own school days. The pages are yellowed, faces are soft, and you want to restore the photos for family-history records or class-reunion display.

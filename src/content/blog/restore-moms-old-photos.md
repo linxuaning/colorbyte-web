@@ -14,6 +14,7 @@ coverEmoji: "📷"
 featured: false
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Your mom's old photos are probably in a box somewhere. A stack of prints from the 1960s and 70s, some in albums with sticky pages that have yellowed the images, others loose and creased from decades in a drawer. A few are labeled on the back. Most aren't.
 

@@ -4,10 +4,14 @@ description: "Expert guide to restore 1960s beatnik photos from coffeehouses, po
 publishedAt: "2026-02-21"
 updatedAt: "2026-02-21"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The beatnik movement of the late 1950s and 1960s represented a profound cultural shift—a rejection of mainstream conformity in favor of artistic expression, jazz music, poetry, and philosophical exploration. Photographs from this era capture an important counterculture moment: dimly lit coffeehouses, poetry readings, jazz clubs, and bohemian gatherings that challenged postwar American values.
 

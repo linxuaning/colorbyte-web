@@ -43,6 +43,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: Modern AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) produces strong results on mold-affected prints AFTER physical cleanup — but cannot substitute for the manual conservation step.
 
 You discover an old family album in your basement or attic. The cover is musty. Inside, the prints have white or grey fuzzy patches, brown stains where pages stuck together, and a smell that says "this album spent years in a damp environment". You want to restore these photos. AI can help — but only after you handle the mold first.

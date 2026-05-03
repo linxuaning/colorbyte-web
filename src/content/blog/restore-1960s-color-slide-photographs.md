@@ -43,6 +43,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI color correction tools have improved noticeably for compensating dye-fade color shifts in 1960s slide film. The underlying technology — color-aware enhancement models in the **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) family combined with face-aware restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) derivatives — handles the typical magenta/pink shift from Ektachrome aging well.
 
 You inherit a box of slide carousels from a relative who shot extensively in the 1960s. Inside: family vacations, holiday gatherings, neighborhood barbecues — all captured on Ektachrome, Anscochrome, or Kodachrome 35mm slide film. When you hold the slides up to light, many show a noticeable magenta or pink cast. The faces look slightly off. The skies are a strange color.

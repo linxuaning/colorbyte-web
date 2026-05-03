@@ -4,10 +4,14 @@ description: "Expert guide to restore autochrome color photos from 1907-1935. Le
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Autochrome photographs represent a magical moment in photographic history—the first commercially successful color photography process. Created using dyed potato starch grains on glass plates, these extraordinary images captured the world in color from 1907 until the mid-1930s. If you're fortunate enough to have autochrome plates in your collection, or if you're working with digitized versions, you're preserving some of the rarest and most historically significant photographs in existence.
 

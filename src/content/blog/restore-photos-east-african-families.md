@@ -13,6 +13,7 @@ coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🦁"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 East African Americans from Kenya, Uganda, Tanzania, Rwanda, Somalia, and other nations represent a diverse community with distinct histories and photographic traditions. Kenyan Americans are among the most numerous, with significant communities in the United States drawn by educational and professional opportunities. Somali Americans represent one of the largest refugee communities in the United States, concentrated especially in the Twin Cities of Minnesota. Each of these communities brings distinct photographic heritage reflecting colonial histories (British in Kenya, Uganda, Tanzania; Italian and British in Somalia), independence-era national identities, and diverse cultural practices.
 

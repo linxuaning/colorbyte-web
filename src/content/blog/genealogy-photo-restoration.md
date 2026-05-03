@@ -14,6 +14,7 @@ coverEmoji: "🌳"
 featured: false
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 There is a box in almost every family's attic. Inside: photographs that are cracked, faded, stained, and fragile — the only visual records of ancestors most of us will never meet. A great-great-grandmother standing stiffly for a daguerreotype. A grandfather in uniform before shipping out in 1944. A grandmother's wedding day, the image now brown and spotted with foxing.
 

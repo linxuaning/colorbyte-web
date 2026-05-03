@@ -13,6 +13,7 @@ coverColor: "from-indigo-100 to-blue-200"
 coverEmoji: "🌺"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Cuban American family photographs tell one of the most dramatic immigration stories of the 20th century: the sudden, forced displacement of a middle and upper-middle class community from an established homeland after the 1959 revolution. Unlike most immigration stories, many Cuban Americans fled not economic hardship but political persecution, leaving behind homes, businesses, and communities in the expectation of a brief exile that became permanent. This history gives Cuban American family photographs a particular quality — the before and after of a world abruptly ended.
 

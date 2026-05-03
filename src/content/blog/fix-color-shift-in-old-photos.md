@@ -4,10 +4,14 @@ description: "Complete guide to correcting color shifts in vintage photographs. 
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "David Park"
-role: "Photography Specialist"
+authorRole: "Photography Specialist"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Opening a box of old color photographs and finding everything has shifted to unnatural pink, orange, or yellow tones can be disappointing. These color shifts are among the most common forms of deterioration in vintage color photography, transforming once-vibrant, natural-looking images into strange, off-colored versions that barely resemble the original scenes.
 

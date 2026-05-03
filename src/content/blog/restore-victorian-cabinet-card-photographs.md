@@ -43,6 +43,8 @@ reviewedItem:
   category: "Photo Restoration Guide"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
+
 > **Updated 2026-05-01**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles late-Victorian formal portraits surprisingly well — the era's controlled studio lighting, neutral backgrounds, and posed subject conventions match the training data of modern face restoration models. **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) sharpens age-related softness while respecting the original sepia aesthetic.
 
 You inherit a small box of Victorian-era cabinet cards from a great-aunt's estate. Inside: formal studio portraits of ancestors in their best clothes, mounted on decorative cardboard with elaborate studio name banners. The sepia tones are warm, the faces are slightly soft, and you want to preserve these for your family tree.

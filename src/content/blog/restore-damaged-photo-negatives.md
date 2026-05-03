@@ -4,10 +4,14 @@ description: "Restore damaged photo negatives with expert techniques. Fix scratc
 publishedAt: "2026-02-20"
 updatedAt: "2026-02-20"
 author: "James Morrison"
-role: "Photo Restorer"
+authorRole: "Photo Restorer"
+authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The box of old film negatives in your attic represents decades of family memories—vacations, celebrations, everyday moments captured on film but never printed. Unlike the few prints your parents made, these negatives contain every photo ever taken, including countless images you've never seen. But time has not been kind: scratches crisscross the emulsion, color negatives have shifted to bizarre orange or magenta hues, some are curled or warped, and many show spots, dust, and deterioration.
 

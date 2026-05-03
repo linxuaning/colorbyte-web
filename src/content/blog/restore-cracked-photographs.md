@@ -4,10 +4,14 @@ description: "Expert guide to restoring cracked photographs. Repair emulsion cra
 publishedAt: "2026-02-19"
 updatedAt: "2026-02-19"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Cracked photographs represent some of the most visually distressing damage in vintage photo collections. Those fine lines and fissures running across beloved faces, important scenes, and precious memories seem to fracture the images themselves, threatening to obscure or destroy irreplaceable moments. Whether cracks appear as fine crazing patterns throughout the photo surface, deep fissures running across critical areas like faces, emulsion separation creating bubbles or peeling sections, or widespread crackling affecting entire images, modern AI restoration technology can remove crack patterns and recover the clear images underneath with remarkable success.
 

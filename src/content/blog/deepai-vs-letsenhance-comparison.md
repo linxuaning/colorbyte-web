@@ -40,6 +40,7 @@ reviewedItem:
   category: "Software Comparison"
 ---
 
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 You searched "AI photo restoration" and found two services with very different pricing models: **[DeepAI](https://deepai.org/)** (with its tempting free tier) and **[LetsEnhance](https://letsenhance.io/)** (with its credits-based subscription). Both promise AI-powered enhancement of old photos. Both have legitimate use cases. Neither is the obvious winner for every situation.
 
