@@ -50,6 +50,7 @@ LOCALE_NAME = {
     "de": "German",
     "ja": "Japanese",
     "ko": "Korean",
+    "zh-CN": "Simplified Chinese (Mainland China, 简体中文)",
 }
 
 SYSTEM_PROMPT = """You are a professional translator and editor producing high-quality, natural localized content for ArtImageHub, an AI photo restoration web app.
