@@ -19,7 +19,8 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+---
 
 > **TL;DR** — Insects (silverfish, cockroaches, beetles) eat gelatin photo emulsion, leaving pinholes, edge nibbling, and surface scrapes. Step 1: freeze affected items 72 hours at 0°F (-18°C) to halt any active infestation. Step 2: gently brush surface debris with soft brush. Step 3: scan at 1200 DPI. Step 4: AI restoration fills small bug holes via inpainting; large eaten areas require manual masking. Long-term: store in archival sleeves with insect-deterring boxes; address infestation source.
 

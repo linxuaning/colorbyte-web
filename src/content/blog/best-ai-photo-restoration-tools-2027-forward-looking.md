@@ -44,7 +44,8 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "AI Photo Restoration Tools 2027 Forward Analysis"
-  category: "Technology Forecast"---
+  category: "Technology Forecast"
+---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

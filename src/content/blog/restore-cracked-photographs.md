@@ -19,7 +19,8 @@ faq:
   - question: "How do you restore photographs where the emulsion is cracking and peeling off?"
     answer: "Photographs with cracking and peeling emulsion require careful handling and digital restoration. For the physical photograph, stop any further handling that might cause additional flaking, photograph or scan immediately before more emulsion is lost, and store flat in protective enclosure (acid-free folder or Mylar sleeve)."
   - question: "What's the difference between cracks and intentional texture in old photos?"
-    answer: "AI restoration distinguishes between damage (cracks) and authentic photo characteristics (intentional texture, grain, canvas texture) through pattern analysis. Cracks appear as linear or irregular damage patterns interrupting image continuity, create visual disruption across genuine image details, and follow stress patterns from physical damage."---
+    answer: "AI restoration distinguishes between damage (cracks) and authentic photo characteristics (intentional texture, grain, canvas texture) through pattern analysis. Cracks appear as linear or irregular damage patterns interrupting image continuity, create visual disruption across genuine image details, and follow stress patterns from physical damage."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Is it safe to separate stuck photographs that have dried together?"
     answer: "Yes, but with caution. Never force stuck photographs apart. Use the steam method or soaking method described above to soften the adhesion first. Attempting to pull apart stuck photographs without proper preparation will tear the emulsion layer and destroy both images. If you're dealing with valuable photographs, consider consulting a professional conservator."
   - question: "Can moldy photographs be saved, or should they be discarded?"
-    answer: "Moldy photographs can often be saved, but require careful handling. First, isolate moldy photographs to prevent spore spread. Once dry, mold can be gently brushed away outdoors (wearing a mask). The remaining stains can be minimized through digital restoration. However, if mold has penetrated deep into the paper base or caused emulsion separation, professional restoration may be needed."---
+    answer: "Moldy photographs can often be saved, but require careful handling. First, isolate moldy photographs to prevent spore spread. Once dry, mold can be gently brushed away outdoors (wearing a mask). The remaining stains can be minimized through digital restoration. However, if mold has penetrated deep into the paper base or caused emulsion separation, professional restoration may be needed."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

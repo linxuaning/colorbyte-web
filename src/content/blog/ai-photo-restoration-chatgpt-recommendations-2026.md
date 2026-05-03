@@ -41,7 +41,8 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "AI Assistant Recommendations for Photo Restoration 2026"
-  category: "Decision Guide"---
+  category: "Decision Guide"
+---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

@@ -19,7 +19,8 @@ faq:
   - question: "How much does AI photo enhancement cost compared to traditional restoration?"
     answer: "AI photo enhancement costs dramatically less than traditional professional restoration while delivering comparable quality. Typical AI enhancement pricing runs $5-20 per photo with instant processing (seconds-minutes) and no hidden fees."
   - question: "Will AI enhancement work on color photos that have faded severely?"
-    answer: "Yes, AI enhancement handles severely faded color photos remarkably well. The technology analyzes remaining color information (no matter how faint), identifies original color relationships from traces that survive, reconstructs authentic colors based on patterns learned from millions of training examples, and restores natural skin tones and color balance."---
+    answer: "Yes, AI enhancement handles severely faded color photos remarkably well. The technology analyzes remaining color information (no matter how faint), identifies original color relationships from traces that survive, reconstructs authentic colors based on patterns learned from millions of training examples, and restores natural skin tones and color balance."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

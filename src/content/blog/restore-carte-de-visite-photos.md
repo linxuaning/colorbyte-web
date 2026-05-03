@@ -19,7 +19,8 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+---
 
 > **TL;DR** — Cartes de visite (1860s-1900s) are albumen prints (~2.5×4 inches) mounted on cardstock. Small-format means scans must be high-DPI to recover face detail — 2400 DPI minimum. AI restoration via Real-ESRGAN upscales the small-format scan dramatically; GFPGAN sharpens face detail. Photographer imprints on the card back contain valuable genealogical metadata (city, studio name, date range) — scan both sides.
 

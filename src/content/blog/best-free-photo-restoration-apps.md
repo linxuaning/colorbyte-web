@@ -19,7 +19,8 @@ faq:
   - question: "Are free photo restoration apps safe for privacy?"
     answer: "Privacy varies significantly. Snapseed and GIMP process locally without uploading photos, offering best privacy. Cloud-based apps like Remini, Fotor, and Photo Restore AI upload photos to servers, which presents privacy considerations. Review privacy policies and use offline apps for sensitive family photos."
   - question: "How many photos can I restore for free?"
-    answer: "Completely free apps (Snapseed, GIMP) have no limits. Apps with free tiers limit usage: Remini allows 5 per day, Fotor offers 3 AI credits daily, Photo Restore AI provides 3-5 monthly, Photomyne limits high-res exports to 10 monthly. Adobe Photoshop Express is generous without hard limits."---
+    answer: "Completely free apps (Snapseed, GIMP) have no limits. Apps with free tiers limit usage: Remini allows 5 per day, Fotor offers 3 AI credits daily, Photo Restore AI provides 3-5 monthly, Photomyne limits high-res exports to 10 monthly. Adobe Photoshop Express is generous without hard limits."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

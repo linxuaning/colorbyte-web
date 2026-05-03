@@ -19,7 +19,8 @@ faq:
   - question: "What's the best resolution for scanning 1920s photos?"
     answer: "Scan at minimum 600 DPI, preferably 1200 DPI. This captures fine details in clothing, accessories, and backgrounds. Higher resolution also provides flexibility for future uses like large-format printing or further digital enhancement as technology improves."
   - question: "How do I research the correct colors for flapper-era clothing?"
-    answer: "Consult period fashion magazines, museum textile collections, and early color photography (Autochrome plates from the 1920s). ArtImageHub's AI colorization is trained on authentic period colors, providing an excellent starting point. Cross-reference with historical sources and contemporary written descriptions of fashion trends."---
+    answer: "Consult period fashion magazines, museum textile collections, and early color photography (Autochrome plates from the 1920s). ArtImageHub's AI colorization is trained on authentic period colors, providing an excellent starting point. Cross-reference with historical sources and contemporary written descriptions of fashion trends."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

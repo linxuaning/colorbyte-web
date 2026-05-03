@@ -19,7 +19,8 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+---
 
 > **TL;DR** — WWII soldier photos (1939-1945) are now 80+ years old and typically face Kodachrome fade, V-mail print degradation, and brittle paper. AI restoration via GFPGAN/Real-ESRGAN recovers face detail, sharpens unit insignia, and reduces silver mirroring without altering historical authenticity. Scan at 1200 DPI, restore, and store both originals and digital copies — 80th anniversary commemorations (2025) make digital archives especially valuable for family records.
 

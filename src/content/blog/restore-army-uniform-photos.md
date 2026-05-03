@@ -19,7 +19,8 @@ faq:
   - question: "Should I colorize a black and white military photo?"
     answer: "Colorization is a personal choice with both benefits and considerations. Benefits include bringing the image to life and showing accurate uniform colors. Considerations include maintaining historical authenticity and the fact that original black and white photos have period character."
   - question: "How can I find out more about the uniform and insignia in an old military photo?"
-    answer: "Resources include the Institute of Heraldry (official U.S. military insignia), National Archives military records, branch-specific military museums, military uniform collector forums, and veterans organizations. Many online communities have experts who can identify uniforms, insignia, and units from photos. Consider also consulting military history books specific to the era and conflict."---
+    answer: "Resources include the Institute of Heraldry (official U.S. military insignia), National Archives military records, branch-specific military museums, military uniform collector forums, and veterans organizations. Many online communities have experts who can identify uniforms, insignia, and units from photos. Consider also consulting military history books specific to the era and conflict."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

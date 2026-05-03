@@ -19,7 +19,8 @@ faq:
   - question: "Can AI restore photos with missing faces or important sections?"
     answer: "AI can reconstruct missing sections with varying success depending on the size and location of the loss. For small missing sections (edge damage, corner losses, small tears), AI reconstruction is typically excellent and nearly invisible. For moderate missing sections crossing less critical areas, AI generates plausible fill based on surrounding context."
   - question: "What's the best way to preserve photos after restoration?"
-    answer: "After restoring damaged photos digitally, proper preservation ensures both the originals and restored versions survive for future generations. For original damaged photos, store them in acid-free, lignin-free sleeves and boxes away from light, heat, and humidity in a stable environment (65-70°F, 30-40% relative humidity)."---
+    answer: "After restoring damaged photos digitally, proper preservation ensures both the originals and restored versions survive for future generations. For original damaged photos, store them in acid-free, lignin-free sleeves and boxes away from light, heat, and humidity in a stable environment (65-70°F, 30-40% relative humidity)."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Are tintypes valuable enough to warrant professional restoration?"
     answer: "Tintypes vary widely in value. Common portrait tintypes from the 1870s-1880s have modest monetary value but immense family historical value. Civil War soldier tintypes, identified individuals, or unusual subjects can be quite valuable."
   - question: "Can bent or creased tintypes be restored?"
-    answer: "Physically bent tintypes should not be forcibly flattened—this risks cracking the emulsion. Digital restoration can correct perspective distortion from bending and repair emulsion cracks that resulted from the crease. The digital result can look as if the tintype were never bent, while the physical original is preserved in its current state without further damage."---
+    answer: "Physically bent tintypes should not be forcibly flattened—this risks cracking the emulsion. Digital restoration can correct perspective distortion from bending and repair emulsion cracks that resulted from the crease. The digital result can look as if the tintype were never bent, while the physical original is preserved in its current state without further damage."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

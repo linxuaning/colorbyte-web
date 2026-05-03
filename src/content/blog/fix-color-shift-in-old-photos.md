@@ -19,7 +19,8 @@ faq:
   - question: "Do black and white prints have color shift problems?"
     answer: "True black and white photographs (those created using only black and white chemistry on black and white paper) don't have color shift because they contain no color dyes—only metallic silver forms the image. However, many photographs that appear black and white are actually color prints that have faded to near-monochrome, often showing sepia, brown, or warm tones from deteriorated color dyes."
   - question: "Should I correct color shift to neutral or keep vintage look?"
-    answer: "This decision depends on personal preference and the photo's intended use. For neutral modern appearance, fully correct color shifts to achieve contemporary color balance with natural skin tones, proper sky blues, and accurate color throughout. This creates the clearest, most universally appealing images."---
+    answer: "This decision depends on personal preference and the photo's intended use. For neutral modern appearance, fully correct color shifts to achieve contemporary color balance with natural skin tones, proper sky blues, and accurate color throughout. This creates the clearest, most universally appealing images."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

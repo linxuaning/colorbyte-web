@@ -19,7 +19,8 @@ faq:
   - question: "Is learning manual restoration still worthwhile when AI is so good?"
     answer: "Learning manual restoration techniques remains valuable even in the AI era for several important reasons. First, AI produces excellent automated results but understanding manual techniques allows you to refine and perfect those results for images that matter most. Hybrid workflow skills combining AI foundation with manual refinement produce the absolute best outcomes."
   - question: "Which gives better results for faces—AI or manual restoration?"
-    answer: "Modern AI facial restoration in 2026 has become remarkably advanced, often matching or exceeding manual restoration for damaged faces. AI advantages for facial restoration include training on millions of facial images creating deep understanding of facial structure, ability to reconstruct damaged facial areas with realistic proportions and features, consistent enhancement quality across all fac..."---
+    answer: "Modern AI facial restoration in 2026 has become remarkably advanced, often matching or exceeding manual restoration for damaged faces. AI advantages for facial restoration include training on millions of facial images creating deep understanding of facial structure, ability to reconstruct damaged facial areas with realistic proportions and features, consistent enhancement quality across all fac..."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Are autochromes valuable, and should I have mine professionally conserved?"
     answer: "Autochromes can be quite valuable both historically and monetarily, though value varies considerably based on subject, condition, and provenance. Historically, every autochrome has significance as an example of early color photography and a window into the pre-1935 world in authentic color."
   - question: "How should I display or store autochromes to prevent further fading?"
-    answer: "Autochromes are extremely vulnerable to light damage—their organic dyes fade progressively with light exposure, particularly the red and blue-violet dyes. This makes display and storage challenging but critical for preservation. For long-term storage, keep autochromes in complete darkness in archival-quality housings. Use acid-free enclosures designed for glass plate photographs."---
+    answer: "Autochromes are extremely vulnerable to light damage—their organic dyes fade progressively with light exposure, particularly the red and blue-violet dyes. This makes display and storage challenging but critical for preservation. For long-term storage, keep autochromes in complete darkness in archival-quality housings. Use acid-free enclosures designed for glass plate photographs."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

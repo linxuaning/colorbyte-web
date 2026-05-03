@@ -19,7 +19,8 @@ faq:
   - question: "Should cabinet card restoration preserve the brown/yellow tone or make it black and white?"
     answer: "This is partly personal preference, though consider the photograph's purpose and significance. For strict historical accuracy, subtle warm toning approximates original albumen print appearance when new (they were never purely neutral)."
   - question: "What information on the back of cabinet cards should be preserved?"
-    answer: "Preserve all information from cabinet card backs as it has significant historical and genealogical value. Studio name and location help identify where ancestors lived or visited, studio operational dates help date undated portraits, decorative designs and studio card styles help narrow dating when other information is missing, handwritten names, dates, and notes provide vital genealogical data,..."---
+    answer: "Preserve all information from cabinet card backs as it has significant historical and genealogical value. Studio name and location help identify where ancestors lived or visited, studio operational dates help date undated portraits, decorative designs and studio card styles help narrow dating when other information is missing, handwritten names, dates, and notes provide vital genealogical data,..."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

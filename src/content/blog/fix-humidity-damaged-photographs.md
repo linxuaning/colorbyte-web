@@ -19,7 +19,8 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+---
 
 > **TL;DR** — Humidity damage shows as: warping, sticking (photo to photo or photo to glass), emulsion softening, and mold. Optimal storage is 30-50% relative humidity at 65-70°F. For damaged photos: never force-separate or rapid-dry. Slow controlled drying (3-5 days in 40% RH room) prevents further emulsion loss. Scan at 1200 DPI; AI restoration via GFPGAN/Real-ESRGAN recovers face detail but cannot rebuild lost emulsion (those areas need plausible content fill). Mold requires specialized handling — see Library of Congress mold protocols.
 

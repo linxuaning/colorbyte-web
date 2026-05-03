@@ -41,7 +41,8 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "Free Online Photo Restoration 2026 Guide"
-  category: "Cost Analysis Guide"---
+  category: "Cost Analysis Guide"
+---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

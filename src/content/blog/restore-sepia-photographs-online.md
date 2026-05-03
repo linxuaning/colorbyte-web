@@ -19,7 +19,8 @@ faq:
   - question: "Will online restoration damage my original sepia photograph?"
     answer: "No—online restoration is completely non-invasive to your original photograph. You scan or photograph your sepia original, creating a digital copy. All restoration work happens on that digital copy, with your original remaining completely untouched."
   - question: "Can online services restore color to sepia photos?"
-    answer: "This question involves two different scenarios. If your photograph was originally black and white and later sepia-toned, it never contained color information—sepia toning was applied to a monochrome image."---
+    answer: "This question involves two different scenarios. If your photograph was originally black and white and later sepia-toned, it never contained color information—sepia toning was applied to a monochrome image."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "How do I know if my immigrant photo is too damaged to restore?"
     answer: "Very few photos are beyond restoration with modern AI technology. Even photos with severe damage, fading, or missing sections can often be successfully restored. Upload your photo to ArtImageHub for a free damage assessment. The AI will analyze the damage and show you a preview of potential results before you commit to the restoration."
   - question: "What's the best way to share restored immigrant photos with family?"
-    answer: "Create multiple sharing options: print high-quality copies on archival paper for framing, create digital galleries for online sharing, compile photo books telling the immigration story, and provide high-resolution digital files family members can use for their own purposes. Consider both older relatives who prefer prints and younger generations who engage with digital media."---
+    answer: "Create multiple sharing options: print high-quality copies on archival paper for framing, create digital galleries for online sharing, compile photo books telling the immigration story, and provide high-resolution digital files family members can use for their own purposes. Consider both older relatives who prefer prints and younger generations who engage with digital media."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

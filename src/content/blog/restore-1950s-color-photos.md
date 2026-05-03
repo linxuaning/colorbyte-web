@@ -19,7 +19,8 @@ faq:
   - question: "How do I know what the original colors were in a badly faded photo?"
     answer: "Use multiple approaches: look for less-faded areas (center often better than edges), identify neutral reference points (white shirts, gray pavement), research period-appropriate colors (car paint, fashion trends, interior design), consult family members' memory (with skepticism—memory fades too), examine less-faded photos from same event or era, and understand typical fading patterns (helps rev..."
   - question: "Is it worth restoring 1950s color photos if they're very faded?"
-    answer: "Absolutely, especially with modern AI tools. Even severely faded photos contain more color information than appears visually. Digital scanning in 48-bit color captures subtle color variations invisible to eye. AI restoration tools can analyze patterns and restore surprisingly good color from badly faded originals."---
+    answer: "Absolutely, especially with modern AI tools. Even severely faded photos contain more color information than appears visually. Digital scanning in 48-bit color captures subtle color variations invisible to eye. AI restoration tools can analyze patterns and restore surprisingly good color from badly faded originals."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

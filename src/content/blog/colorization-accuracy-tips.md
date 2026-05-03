@@ -19,7 +19,8 @@ faq:
   - question: "What are the most common colorization mistakes that destroy accuracy?"
     answer: "Over-saturation (colors too vivid for the era), wrong skin tones (orange or pink faces), ignoring historical research (modern colors on Victorian photos), violating tonal values (dark colors where tones are light), anachronistic colors (shades not available in that period), and uniform application (no natural variation)."
   - question: "How do I know what colors to use if there are no color references from that exact photo?"
-    answer: "Research the era thoroughly: study period fashion catalogs, examine verified color photographs from the same timeframe, consult museum collections, and reference paint company historical palettes. For specific items (automobiles, military uniforms), use manufacturer specifications or regulations. Build a reference board of verified era-appropriate colors."---
+    answer: "Research the era thoroughly: study period fashion catalogs, examine verified color photographs from the same timeframe, consult museum collections, and reference paint company historical palettes. For specific items (automobiles, military uniforms), use manufacturer specifications or regulations. Build a reference board of verified era-appropriate colors."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

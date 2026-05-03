@@ -19,7 +19,8 @@ faq:
   - question: "How do you restore color in faded childhood Polaroids?"
     answer: "Restore color in faded childhood Polaroids by scanning at 2400 DPI (small format requires high resolution), adding significant blue channel correction in Curves (Polaroids yellow as blue dyes fade first), reducing yellow cast through Selective Color adjustment, restoring contrast aggressively, and boosting saturation carefully."
   - question: "Should you enhance digital scans of childhood photos or physical prints?"
-    answer: "Always enhance digital scans of childhood photos rather than attempting physical manipulation of original prints. Scan originals at high resolution (1200+ DPI), then perform all enhancement digitally—this preserves physical originals while allowing unlimited experimentation with restoration. Keep physical prints in archival storage as backup and historical artifacts."---
+    answer: "Always enhance digital scans of childhood photos rather than attempting physical manipulation of original prints. Scan originals at high resolution (1200+ DPI), then perform all enhancement digitally—this preserves physical originals while allowing unlimited experimentation with restoration. Keep physical prints in archival storage as backup and historical artifacts."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

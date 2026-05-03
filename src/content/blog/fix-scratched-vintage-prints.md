@@ -19,7 +19,8 @@ faq:
   - question: "Do scratch removal apps work as well as manual restoration?"
     answer: "Modern AI-powered scratch removal apps often match or exceed manual restoration quality, especially for straightforward scratches. Apps like ArtImageHub use algorithms trained on millions of scratched photos, recognizing patterns humans might miss. However, manual restoration provides more control for unusual situations or when you want specific artistic choices."
   - question: "Should I remove all scratches or leave some for authenticity?"
-    answer: "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story."---
+    answer: "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

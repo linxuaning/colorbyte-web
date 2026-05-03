@@ -19,7 +19,8 @@ faq:
   - question: "Is there a limit to how much you can enhance a low quality image?"
     answer: "Yes, absolutely. You can't create information that never existed. Extremely low resolution images (less than 100x100 pixels), severely compressed images with massive data loss, or completely blurred images have fundamental limitations. AI can create plausible detail but can't recover actual lost information."
   - question: "Should I use AI enhancement or manual Photoshop techniques?"
-    answer: "Both have advantages. AI enhancement (like ArtImageHub) excels at: upscaling resolution, automatic detection of issues, speed and convenience, consistent results, and handling complex patterns. Manual Photoshop techniques excel at: precise control over specific areas, handling unusual situations AI wasn't trained on, artistic interpretation, and combining multiple specialized techniques."---
+    answer: "Both have advantages. AI enhancement (like ArtImageHub) excels at: upscaling resolution, automatic detection of issues, speed and convenience, consistent results, and handling complex patterns. Manual Photoshop techniques excel at: precise control over specific areas, handling unusual situations AI wasn't trained on, artistic interpretation, and combining multiple specialized techniques."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

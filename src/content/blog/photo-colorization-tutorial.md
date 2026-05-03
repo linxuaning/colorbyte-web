@@ -19,7 +19,8 @@ faq:
   - question: "Should I remove sepia tone before colorizing?"
     answer: "Yes, converting sepia-toned photos to true black and white before colorization typically produces better results. The sepia tone is just discoloration from aging—it wasn't part of the original photograph. Removing it gives you a clean base for adding accurate colors."
   - question: "How long does it take to learn manual photo colorization?"
-    answer: "Basic colorization can be learned in a few hours of practice. After colorizing 5-10 photos, you'll understand fundamental techniques and achieve decent results. Developing truly advanced skills takes 20-30 photos worth of practice. The learning curve is moderate—easier than advanced photo manipulation, harder than basic editing. Start with simple portraits before attempting complex scenes."---
+    answer: "Basic colorization can be learned in a few hours of practice. After colorizing 5-10 photos, you'll understand fundamental techniques and achieve decent results. Developing truly advanced skills takes 20-30 photos worth of practice. The learning curve is moderate—easier than advanced photo manipulation, harder than basic editing. Start with simple portraits before attempting complex scenes."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

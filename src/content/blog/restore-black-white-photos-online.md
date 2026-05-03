@@ -19,7 +19,8 @@ faq:
   - question: "Is it safe to upload family photos to online restoration services?"
     answer: "Reputable online restoration services use encryption and secure storage to protect uploaded photos. However, privacy practices vary by service. Before uploading, review the service's privacy policy, data retention practices, and terms of service."
   - question: "Can I restore black and white photos from my smartphone?"
-    answer: "Yes, many online restoration services offer mobile-responsive websites or dedicated mobile apps. Services like Remini specialize in mobile restoration, offering iOS and Android apps. Simply photograph or scan your black and white photo, upload through the mobile app or website, and receive restored results on your device."---
+    answer: "Yes, many online restoration services offer mobile-responsive websites or dedicated mobile apps. Services like Remini specialize in mobile restoration, offering iOS and Android apps. Simply photograph or scan your black and white photo, upload through the mobile app or website, and receive restored results on your device."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

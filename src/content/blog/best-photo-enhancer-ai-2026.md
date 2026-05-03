@@ -44,7 +44,8 @@ itemList:
   - name: "Upscayl"
     description: "Best Free Open-Source — runs locally on your machine; no upload, no subscription"
   - name: "Magnific AI"
-    description: "Best Generative Re-Imagining — invents new detail rather than recovering original (different category)"---
+    description: "Best Generative Re-Imagining — invents new detail rather than recovering original (different category)"
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

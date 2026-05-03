@@ -19,7 +19,8 @@ faq:
   - question: "Are wet plate collodion images valuable?"
     answer: "Value varies enormously based on subject, condition, photographer, and historical significance. Common ambrotype portraits: $20-100. Tintypes: $5-50. High-quality, identified subjects: $100-500. Civil War military: $200-2000+. Famous photographers or historically significant images: thousands to tens of thousands."
   - question: "Can AI really restore severely damaged wet plates?"
-    answer: "AI excels at this type of restoration. Trained on thousands of 19th-century photographs, modern AI understands wet plate characteristics and typical damage patterns. It can remove cracks, correct oxidation, neutralize varnish yellowing, and reconstruct missing areas with remarkable accuracy."---
+    answer: "AI excels at this type of restoration. Trained on thousands of 19th-century photographs, modern AI understands wet plate characteristics and typical damage patterns. It can remove cracks, correct oxidation, neutralize varnish yellowing, and reconstruct missing areas with remarkable accuracy."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

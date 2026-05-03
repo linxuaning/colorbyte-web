@@ -19,7 +19,8 @@ faq:
   - question: "How do you store glass photographic plates safely?"
     answer: "Store glass photographic plates vertically in four-flap acid-free paper enclosures with archival dividers in protective boxes, at 30-40% humidity and 65-70°F temperature in dark storage, never stacked flat. Each plate needs individual housing (never direct contact between plates), vertical storage prevents weight damage to emulsion, and proper environmental control prevents further deterioration."
   - question: "Are glass plate negatives worth restoring professionally?"
-    answer: "Glass plate negatives are worth professional restoration when they contain irreplaceable historical images, document significant events or people, represent work of notable photographers, or have genealogical/legal importance. Professional conservation costs $200-2000+ per plate but provides expert stabilization, fragment reassembly, mold remediation, and proper archival housing."---
+    answer: "Glass plate negatives are worth professional restoration when they contain irreplaceable historical images, document significant events or people, represent work of notable photographers, or have genealogical/legal importance. Professional conservation costs $200-2000+ per plate but provides expert stabilization, fragment reassembly, mold remediation, and proper archival housing."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

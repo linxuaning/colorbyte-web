@@ -19,7 +19,8 @@ faq:
   - question: "Can chemical damage spread from one photograph to other photographs stored nearby?"
     answer: "Yes, chemical damage can definitely spread through contamination transfer, making isolation of damaged photographs from undamaged ones an important preservation practice. Several contamination mechanisms enable spread: Volatile organic compounds (VOCs) emitted by deteriorating photographs or storage materials affect nearby photographs even without direct contact—acids, peroxides, and other dama..."
   - question: "Is chemical damage worse for color photographs than black-and-white?"
-    answer: "Color and black-and-white photographs are vulnerable to different types of chemical damage, each with characteristic deterioration patterns. Black-and-white photographs suffer primarily from silver oxidation and degradation creating brownish, yellowish, or purple discoloration, residual processing chemicals continuing to react with image silver, paper degradation releasing acids that attack ima..."---
+    answer: "Color and black-and-white photographs are vulnerable to different types of chemical damage, each with characteristic deterioration patterns. Black-and-white photographs suffer primarily from silver oxidation and degradation creating brownish, yellowish, or purple discoloration, residual processing chemicals continuing to react with image silver, paper degradation releasing acids that attack ima..."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

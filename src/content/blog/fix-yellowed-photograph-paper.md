@@ -19,7 +19,8 @@ faq:
   - question: "How do I know if yellowing is from aging or intentional sepia tone?"
     answer: "Compare the yellow to period-appropriate sepia tones by examining other photos from the same era. Sepia toning is warm brown with purplish undertones, evenly applied, and common in 1880s-1930s photos. Age-yellowing is more greenish-yellow, often uneven, and continues to darken. Protected areas (under mats) showing original color also help distinguish."
   - question: "Can I prevent my restored digital files from yellowing?"
-    answer: "Digital files don't yellow—that's a chemical process affecting physical paper. Once scanned and restored digitally, your images are permanently protected from further yellowing. Store digital files properly (multiple backups, reliable media, verified regularly) and they'll remain in perfect condition indefinitely."---
+    answer: "Digital files don't yellow—that's a chemical process affecting physical paper. Once scanned and restored digitally, your images are permanently protected from further yellowing. Store digital files properly (multiple backups, reliable media, verified regularly) and they'll remain in perfect condition indefinitely."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Can AI really handle the extreme grain in pushed-film beatnik photos?"
     answer: "Yes. Modern AI systems like ArtImageHub are trained on millions of photographs including high-grain images from pushed film. The AI can distinguish between film grain (which should be preserved as part of the image character) and damage noise (which should be reduced). The key is using AI specifically designed for vintage photo restoration rather than general-purpose enhancement tools."
   - question: "How do I preserve the historical context of annotated beatnik photos?"
-    answer: "Scan annotations separately and preserve them as documentation even if you remove them from the visual image for clarity. The writing often contains valuable historical information (names, dates, venues, context). You might create two versions: one with annotations visible for historical documentation and one with annotations removed for visual presentation."---
+    answer: "Scan annotations separately and preserve them as documentation even if you remove them from the visual image for clarity. The writing often contains valuable historical information (names, dates, venues, context). You might create two versions: one with annotations visible for historical documentation and one with annotations removed for visual presentation."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "How do I remove tide marks from vintage photographs?"
     answer: "Tide marks—the distinctive lines showing where water levels stood during drying—remove effectively through AI restoration. The technology detects the characteristic linear or curved patterns of tide marks, analyzes the color and tonal shift they create (typically darker lines or bands), applies graduated correction to neutralize the discoloration, and blends the repair seamlessly into surroundi..."
   - question: "Is it safe to scan water-damaged photos or will it cause more damage?"
-    answer: "Scanning water-damaged photos is generally safe if done carefully and is essential for preservation through restoration. Ensure photos are completely dry before scanning—wet photos should never contact scanner glass. Clean scanner glass thoroughly before and after scanning water-damaged photos to prevent residue transfer."---
+    answer: "Scanning water-damaged photos is generally safe if done carefully and is essential for preservation through restoration. Ensure photos are completely dry before scanning—wet photos should never contact scanner glass. Clean scanner glass thoroughly before and after scanning water-damaged photos to prevent residue transfer."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

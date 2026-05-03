@@ -19,7 +19,8 @@ faq:
   - question: "Can AI enhancement be trusted for historical documentation?"
     answer: "With caveats, yes. For well-preserved historical photos, AI enhancement is highly accurate and trustworthy. For severely damaged photos, AI provides the best available reconstruction, but it should be clearly documented as reconstruction rather than pure recovery. Historical researchers should: 1) Keep original scans alongside enhanced versions, 2) Document what was enhanced vs."
   - question: "How can I verify that AI face enhancement is accurate?"
-    answer: "Compare enhanced results with: 1) Other photos of the same person, 2) Photos of family members to verify genetic trait consistency, 3) Written descriptions if available, 4) Period-appropriate hairstyles and fashion, 5) Known age at time of photo. Check for anatomical correctness, appropriate age indicators, and maintained ethnic characteristics."---
+    answer: "Compare enhanced results with: 1) Other photos of the same person, 2) Photos of family members to verify genetic trait consistency, 3) Written descriptions if available, 4) Period-appropriate hairstyles and fashion, 5) Known age at time of photo. Check for anatomical correctness, appropriate age indicators, and maintained ethnic characteristics."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

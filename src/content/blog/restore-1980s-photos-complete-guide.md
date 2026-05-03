@@ -19,7 +19,8 @@ faq:
   - question: "Are Polaroids from the 1980s worth restoring?"
     answer: "Yes, 1980s Polaroids are worth restoring, especially SX-70 and Polaroid 600 instant photos that capture unique moments impossible to recreate. While Polaroids typically show severe fading (yellow-brown cast as blues disappear), digital restoration can recover much of the original appearance."
   - question: "Should you keep faded 1980s prints after restoration?"
-    answer: "Yes, keep faded 1980s prints after digital restoration even though they look poor—the physical prints remain the original artifacts and may be needed for future restoration as technology improves. Store prints properly in polyester sleeves in archival boxes or, ideally, in freezer storage (dramatically slows further fading)."---
+    answer: "Yes, keep faded 1980s prints after digital restoration even though they look poor—the physical prints remain the original artifacts and may be needed for future restoration as technology improves. Store prints properly in polyester sleeves in archival boxes or, ideally, in freezer storage (dramatically slows further fading)."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

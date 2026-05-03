@@ -19,7 +19,8 @@ faq:
   - question: "Can I enlarge small yearbook sports photos for printing?"
     answer: "Yes, small yearbook sports team photos can be successfully enlarged for printing through a combination of high-resolution scanning, AI restoration, and intelligent upscaling. The process starts with scanning the small original at very high resolution—use 1200-2400 dpi for a 2x3 inch yearbook photo to capture maximum detail. This creates enough base information for enlargement."
   - question: "How should I preserve and display restored sports photographs?"
-    answer: "Proper preservation and display of restored sports photos ensures they survive for future generations while being enjoyed now. For original photographs, store in archival-quality materials using acid-free folders, sleeves, or boxes, polyester sleeves for individual protection, and stable environmental conditions (65-70°F, 30-40% RH)."---
+    answer: "Proper preservation and display of restored sports photos ensures they survive for future generations while being enjoyed now. For original photographs, store in archival-quality materials using acid-free folders, sleeves, or boxes, polyester sleeves for individual protection, and stable environmental conditions (65-70°F, 30-40% RH)."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

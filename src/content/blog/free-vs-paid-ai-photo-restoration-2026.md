@@ -41,7 +41,8 @@ aggregateRating:
   ratingCount: 7
 reviewedItem:
   name: "Free vs Paid AI Photo Restoration Tools Comparison 2026"
-  category: "Software Comparison"---
+  category: "Software Comparison"
+---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

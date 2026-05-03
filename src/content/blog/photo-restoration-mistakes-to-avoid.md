@@ -19,7 +19,8 @@ faq:
   - question: "What should I do if I've already made mistakes with my photographs?"
     answer: "First, stop and don't attempt additional fixes that might cause more damage. Assess what damage has occurred and whether it's progressing or stable. Remove photos from harmful storage materials immediately (PVC plastic, acidic papers, metal fasteners). Place in archival materials in stable environment. Scan at highest quality while current condition allows."
   - question: "Is it better to do imperfect restoration myself or wait for perfect professional restoration?"
-    answer: "For physical originals, err on side of caution—improper handling causes irreversible damage. However, for digital restoration, attempting your own work has minimal risk if you follow proper workflow (preserve original scan, work non-destructively, keep backups). You can always get professional help later, and your attempts won't prevent that if you didn't damage the original."---
+    answer: "For physical originals, err on side of caution—improper handling causes irreversible damage. However, for digital restoration, attempting your own work has minimal risk if you follow proper workflow (preserve original scan, work non-destructively, keep backups). You can always get professional help later, and your attempts won't prevent that if you didn't damage the original."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Can faded color photographs be fully restored to original colors?"
     answer: "Restoring accurate colors to faded color photographs is challenging because original color information has been lost through chemical dye degradation. However, significant improvement is possible through several approaches."
   - question: "Should I enhance faded photographs myself or hire a professional?"
-    answer: "With modern AI restoration technology, most people can successfully enhance faded photographs themselves without professional expertise. AI tools like ArtImageHub handle the complex technical work automatically—analyzing fading patterns, boosting contrast and detail, and recovering image information—without requiring Photoshop skills or restoration knowledge."---
+    answer: "With modern AI restoration technology, most people can successfully enhance faded photographs themselves without professional expertise. AI tools like ArtImageHub handle the complex technical work automatically—analyzing fading patterns, boosting contrast and detail, and recovering image information—without requiring Photoshop skills or restoration knowledge."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

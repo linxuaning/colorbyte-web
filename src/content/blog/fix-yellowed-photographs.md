@@ -19,7 +19,8 @@ faq:
   - question: "How do I prevent restored photos from yellowing again?"
     answer: "Restored digital photos stored as computer files will never yellow—digital files don't deteriorate chemically like physical photographs. However, if you print restored photos, use archival methods to prevent yellowing in the new prints."
   - question: "Should I restore yellowed black and white photos to neutral tones or keep some warmth?"
-    answer: "This is largely a matter of personal preference, though AI restoration typically defaults to neutral tones that show maximum detail and contrast. For most black and white photos, removing yellowing completely to achieve neutral black and white tones provides the most striking, high-quality results with maximum detail and contrast."---
+    answer: "This is largely a matter of personal preference, though AI restoration typically defaults to neutral tones that show maximum detail and contrast. For most black and white photos, removing yellowing completely to achieve neutral black and white tones provides the most striking, high-quality results with maximum detail and contrast."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

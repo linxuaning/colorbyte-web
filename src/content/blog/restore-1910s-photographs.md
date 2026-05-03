@@ -19,7 +19,8 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+---
 
 > **TL;DR** — 1910s photos span Edwardian-style studio portraits, WWI service photos, and early candid snapshots (Kodak No. 1A Folding cameras popularized hand-held photography). Now 110+ years old, typical issues: silver mirroring, fade, brittle paper. Scan at 1200 DPI; AI restoration via GFPGAN/Real-ESRGAN recovers face detail and clothing texture. The decade transitioned from formal cabinet cards to casual snapshots — different scan handling for each format.
 

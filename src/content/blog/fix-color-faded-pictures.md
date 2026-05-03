@@ -19,7 +19,8 @@ faq:
   - question: "Will color restoration work on printed photos or only digital photos?"
     answer: "Color restoration works excellently on printed photos—in fact, most color restoration is performed on scanned prints from the 1960s-2000s that have faded over decades. The process involves scanning your faded print at high resolution (600-1200 dpi) in color mode, uploading the scan to AI restoration service, processing that analyzes and corrects fading in the digital file, and downloading the r..."
   - question: "How much do color restoration services cost compared to living with faded photos?"
-    answer: "AI color restoration is remarkably affordable at $5-20 per photo typically, with processing in minutes and professional-quality results. Compare this to traditional professional color correction ($50-200+ per photo, weeks of turnaround) or the cost of leaving photos faded (priceless memories remaining hidden away, deteriorating further, or displayed in poor quality)."---
+    answer: "AI color restoration is remarkably affordable at $5-20 per photo typically, with processing in minutes and professional-quality results. Compare this to traditional professional color correction ($50-200+ per photo, weeks of turnaround) or the cost of leaving photos faded (priceless memories remaining hidden away, deteriorating further, or displayed in poor quality)."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

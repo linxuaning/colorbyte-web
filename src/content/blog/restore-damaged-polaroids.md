@@ -19,7 +19,8 @@ faq:
   - question: "Should I try to fix physical damage to Polaroids before scanning?"
     answer: "Generally no—physical intervention with Polaroid photos is risky due to their delicate chemical layers. Light cleaning (soft brush for dust) is acceptable, but avoid any liquid cleaning, attempting to peel layers, or trying to fix cracks physically. Instead, scan the photo as-is and repair all damage digitally."
   - question: "Can I prevent my newer Polaroid Originals or Instax photos from fading like vintage Polaroids did?"
-    answer: "Yes, modern instant film is more stable, but proper storage significantly extends life. Store in dark, cool, dry conditions (65-70°F, 30-40% humidity). Keep in individual archival sleeves away from light and heat. Never display originals in sunlight—frame copies instead. Even with perfect storage, create digital scans of important instant photos as insurance."---
+    answer: "Yes, modern instant film is more stable, but proper storage significantly extends life. Store in dark, cool, dry conditions (65-70°F, 30-40% humidity). Keep in individual archival sleeves away from light and heat. Never display originals in sunlight—frame copies instead. Even with perfect storage, create digital scans of important instant photos as insurance."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -19,7 +19,8 @@ faq:
   - question: "Can AI noise reduction handle very grainy photographs?"
     answer: "Yes, modern AI noise reduction (like ArtImageHub) handles heavy grain remarkably well. AI understands difference between noise and image content, preserving details even while removing significant grain. It's particularly effective on faces and portraits."
   - question: "Does scanning increase grain visibility?"
-    answer: "Yes, scanning can emphasize grain in several ways: faded photographs require contrast boost which brings out grain; some scanners add digital noise; upscaling small originals enlarges grain; sharpening applied during scanning emphasizes grain."---
+    answer: "Yes, scanning can emphasize grain in several ways: faded photographs require contrast boost which brings out grain; some scanners add digital noise; upscaling small originals enlarges grain; sharpening applied during scanning emphasizes grain."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

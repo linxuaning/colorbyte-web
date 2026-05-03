@@ -19,7 +19,8 @@ faq:
   - question: "Is it worth restoring severely faded wartime photos where barely anything is visible?"
     answer: "Absolutely. Modern AI restoration can recover images from photos that appear nearly blank to the naked eye. Even photos that seem hopelessly faded often retain enough information for significant recovery. ArtImageHub specializes in extreme fading recovery and regularly restores photos that families assumed were beyond saving."
   - question: "Should I remove handwritten dates and notes from the backs of wartime photos during restoration?"
-    answer: "Writing on the back of photos should generally be preserved—it provides invaluable historical context, identifies people and places, and records family history. When scanning, create separate scans of photo fronts and backs. The front writing (if bleeding through) can be removed during digital restoration while preserving the actual historical note on the back."---
+    answer: "Writing on the back of photos should generally be preserved—it provides invaluable historical context, identifies people and places, and records family history. When scanning, create separate scans of photo fronts and backs. The front writing (if bleeding through) can be removed during digital restoration while preserving the actual historical note on the back."
+---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
