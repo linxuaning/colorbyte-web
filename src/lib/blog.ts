@@ -313,15 +313,50 @@ export async function getPostBySlug(slug: string, locale: BlogLocale | string = 
       readingTime: calculateReadingTime(content),
       headings,
       noIndex: data.noIndex === true,
-      faq: Array.isArray(data.faq) ? data.faq : undefined,
-      itemList: Array.isArray(data.itemList) ? data.itemList : undefined,
-      aggregateRating:
-        data.aggregateRating &&
-        typeof data.aggregateRating.rating === "number" &&
-        typeof data.aggregateRating.count === "number"
-          ? data.aggregateRating
-          : undefined,
-      reviewedItem: typeof data.reviewedItem === "string" ? data.reviewedItem : undefined,
+      // Normalize frontmatter to internal schema: accept both `q`/`a` and
+      // `question`/`answer` for FAQ items (most existing posts use the latter
+      // — silently produced empty FAQPage JSON-LD prior to 2026-05-04 fix).
+      faq: Array.isArray(data.faq)
+        ? data.faq
+            .map((item: { q?: string; a?: string; question?: string; answer?: string }) => ({
+              q: item.q ?? item.question ?? "",
+              a: item.a ?? item.answer ?? "",
+            }))
+            .filter((item) => item.q && item.a)
+        : undefined,
+      itemList: Array.isArray(data.itemList)
+        ? data.itemList.map(
+            (item: { name?: string; title?: string; url?: string; description?: string }) => ({
+              name: item.name ?? item.title ?? "",
+              ...(item.url ? { url: item.url } : {}),
+              ...(item.description ? { description: item.description } : {}),
+            }),
+          )
+        : undefined,
+      // Accept both `rating`/`count` and `ratingValue`/`ratingCount` for AggregateRating
+      aggregateRating: (() => {
+        const ar = data.aggregateRating;
+        if (!ar) return undefined;
+        const rating =
+          typeof ar.rating === "number"
+            ? ar.rating
+            : typeof ar.ratingValue === "number"
+              ? ar.ratingValue
+              : undefined;
+        const count =
+          typeof ar.count === "number"
+            ? ar.count
+            : typeof ar.ratingCount === "number"
+              ? ar.ratingCount
+              : undefined;
+        return rating !== undefined && count !== undefined ? { rating, count } : undefined;
+      })(),
+      reviewedItem:
+        typeof data.reviewedItem === "string"
+          ? data.reviewedItem
+          : data.reviewedItem && typeof data.reviewedItem.name === "string"
+            ? data.reviewedItem.name
+            : undefined,
     };
   } catch {
     return null;
