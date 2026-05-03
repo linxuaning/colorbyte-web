@@ -4,6 +4,7 @@ import { fr } from "./fr";
 import { de } from "./de";
 import { ja } from "./ja";
 import { ko } from "./ko";
+import { zhCN } from "./zh-CN";
 import { enToolClient } from "./en";
 import type { LocaleSEO, ToolClientCopy } from "./types";
 
@@ -14,6 +15,7 @@ const map: Record<string, LocaleSEO> = {
   de,
   ja,
   ko,
+  "zh-CN": zhCN,
 };
 
 export function getLocaleSEO(locale: string): LocaleSEO | undefined {
