@@ -2,7 +2,7 @@
 title: "Restore 1940s WWII Era Family Photos: AI Recovery Guide for Wartime Memories"
 description: "How to restore 1940s WWII-era family photographs using AI tools. Covers typical damage profiles (silver oxidation, sepia drift, paper acidity), restoration workflow, and ethical considerations for historic wartime images."
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -40,8 +40,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "1940s WWII Era Photo Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

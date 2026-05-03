@@ -2,7 +2,7 @@
 title: "How to Fix Mold Damage in Pictures: Remove Fungus from Photos"
 description: "Complete guide to removing mold and fungus damage from photographs. Learn digital restoration techniques for mold-damaged pictures."
 publishedAt: "2026-02-24"
-updatedAt: "2026-02-24"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement. She handles mold-affected family collections with conservator-grade isolation protocols."
@@ -19,8 +19,7 @@ faq:
   - question: "Can I remove mold from photographs myself before scanning?"
     answer: "Physical mold removal from photographs should generally be left to professional photograph conservators because improper removal can cause severe additional damage, mold spores create health hazards requiring proper safety equipment, and different photographic formats require different specialized treatment approaches."
   - question: "How can I tell if mold damage is active or old?"
-    answer: "Active mold shows fuzzy or powdery growth on photograph surfaces, may have musty odor, appears on photographs stored in humid conditions (basement, attic), and actively spreads to adjacent photographs if not isolated. Old dormant mold appears as staining and spots without fuzzy growth, occurs in photographs moved to dry storage, has no musty odor, and doesn't actively spread to other photographs."
----
+    answer: "Active mold shows fuzzy or powdery growth on photograph surfaces, may have musty odor, appears on photographs stored in humid conditions (basement, attic), and actively spreads to adjacent photographs if not isolated. Old dormant mold appears as staining and spots without fuzzy growth, occurs in photographs moved to dry storage, has no musty odor, and doesn't actively spread to other photographs."---
 
 > **TL;DR** — Mold actively eats photo emulsion — every day matters. Step 1: isolate moldy items in zip-lock bags away from healthy collection (mold spreads via airborne spores). Step 2: dry in 30-40% RH room 1-2 weeks (kills active mold; deactivated spores cannot grow). Step 3: gently brush surface debris with soft brush. Step 4: scan at 1200 DPI. Step 5: AI restoration recovers face detail and reduces foxing stains; severely eaten emulsion areas need plausible content fill. Wear N95 + gloves throughout — moldy materials are health hazards.
 

@@ -2,7 +2,7 @@
 title: "How to Separate Photos Stuck Together: Safe Methods for Fused Photographs"
 description: "Learn safe techniques to separate photographs stuck together from humidity, flooding, or improper storage. Step-by-step guide to rescuing fused photos without damage."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has rescued photo collections from flood, hurricane, and water damage events. Her separation protocol is based on archival conservation principles published by the Library of Congress."
@@ -19,8 +19,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **TL;DR** — Stuck photos almost always tear if pulled apart dry. Two safe paths: (1) Soak in cool distilled water 20-30 min, gently slide apart while submerged, air-dry face-up. (2) For brittle/old prints, use a freezer-controlled humidity method (3-5 days) to slowly relax emulsion. Even partial separation + AI restoration recovers more than dry-tearing. Scan whatever you save and process via AI to fill emulsion damage.
 

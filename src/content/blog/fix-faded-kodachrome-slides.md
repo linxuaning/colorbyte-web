@@ -2,7 +2,7 @@
 title: "Fix Faded Kodachrome Slides — Restore 70s Color in 30 Seconds"
 description: "Restore faded Kodachrome and Ektachrome slides at home. Scan settings, AI color recovery, and why the magenta shift happens — free preview first."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "Rachel Kim"
 authorRole: "Photo Technology Analyst"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Can modern scanning and AI restore slides that were heavily damaged by projection?"
     answer: "Modern AI restoration can achieve remarkable results even with severely projection-damaged slides. While perfect restoration of extreme damage isn't possible, tools like ArtImageHub can recover recognizable images from slides that appear nearly destroyed. The AI analyzes remaining color information (often preserved at edges) and intelligently reconstructs faded areas."
   - question: "Is it worth digitizing slides if I don't plan to print them?"
-    answer: "Absolutely. Digital preservation is critical regardless of print plans. Slides continue to deteriorate even in good storage—digitization captures current state before further damage occurs. Digital files enable easy sharing with family via email, cloud albums, or social media. You can view on large screens, create slideshows, and incorporate into family history projects."
----
+    answer: "Absolutely. Digital preservation is critical regardless of print plans. Slides continue to deteriorate even in good storage—digitization captures current state before further damage occurs. Digital files enable easy sharing with family via email, cloud albums, or social media. You can view on large screens, create slideshows, and incorporate into family history projects."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

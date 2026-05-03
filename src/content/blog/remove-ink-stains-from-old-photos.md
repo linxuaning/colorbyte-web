@@ -2,7 +2,7 @@
 title: "How to Remove Ink Stains from Old Photos: Complete Restoration Guide"
 description: "Learn effective techniques to remove ink stains, pen marks, and writing from vintage photographs. Digital and physical restoration methods for damaged family photos."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has restored hundreds of photos with pen marks, ink bleed, and stamps over faces. Her digital-first protocol avoids the risk of solvent-based physical removal that often destroys the underlying photographic emulsion."
@@ -19,8 +19,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **TL;DR** — Physical ink removal almost always damages the photographic emulsion underneath. Digital removal via AI inpainting + manual masking in Photoshop is safer and produces better results. Workflow: scan the inked photo at 1200 DPI → AI restoration recovers fade and sharpens → manual mask + inpaint over the ink → optional second AI pass for blending. AI restoration tools without manual masking handle small ink dots; large pen marks across faces need the hybrid manual+AI approach.
 

@@ -2,7 +2,7 @@
 title: "Restore Victorian Photos: 1800s Preservation Guide"
 description: "Complete guide to restore Victorian photos from the 1800s. Learn professional techniques for daguerreotypes, cabinet cards, and antique family portraits with AI-powered tools."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Should I colorize Victorian black and white photographs?"
     answer: "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize Victorian photos, extensive research is essential—Victorian fashion, fabric dyes, and studio practices followed specific conventions. Use muted, period-appropriate colors rather than saturated modern hues."
   - question: "How do I scan Victorian photographs without damaging them?"
-    answer: "Scan Victorian photographs safely by handling only the edges with clean cotton gloves, using a flatbed scanner with the lid open (to avoid pressure), and scanning at 600-1200 DPI in 48-bit color mode with all automatic corrections disabled. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and a polarizing filter."
----
+    answer: "Scan Victorian photographs safely by handling only the edges with clean cotton gloves, using a flatbed scanner with the lid open (to avoid pressure), and scanning at 600-1200 DPI in 48-bit color mode with all automatic corrections disabled. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and a polarizing filter."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

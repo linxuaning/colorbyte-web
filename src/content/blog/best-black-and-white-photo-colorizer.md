@@ -2,7 +2,7 @@
 title: "Best Black and White Photo Colorizer 2026: Family-Photo Honest Guide"
 description: "Which AI tool actually colorizes black-and-white family photos well? Honest comparison focused on genealogy and heirloom photos — what works, what doesn't, and how to verify."
 publishedAt: "2026-04-29"
-updatedAt: "2026-04-29"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."
@@ -42,8 +42,7 @@ itemList:
   - name: "Overchat AI"
     description: "Best Free No-Signup — instant colorization without account creation"
   - name: "Colourise.sg"
-    description: "Best Free Single-Photo — research-grade quick test from National University of Singapore"
----
+    description: "Best Free Single-Photo — research-grade quick test from National University of Singapore"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

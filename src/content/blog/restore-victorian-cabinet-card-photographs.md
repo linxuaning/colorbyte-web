@@ -2,7 +2,7 @@
 title: "Restore Victorian Cabinet Card Photographs: AI Recovery for Late-1800s Studio Portraits"
 description: "How to restore Victorian-era cabinet card photographs (1870s-1900s) using AI. Covers cabinet card structure, scanning antique mounted prints, and AI restoration that respects historical artifacts."
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -40,8 +40,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "Victorian Cabinet Card Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

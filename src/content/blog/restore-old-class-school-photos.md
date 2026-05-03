@@ -2,7 +2,7 @@
 title: "Restore Old Class and School Photos: AI Recovery for Educational Heritage"
 description: "How to restore old school class photos, yearbook portraits, and graduation pictures using AI. Covers school photo damage profiles, batch processing for class group shots, and yearbook archive workflows."
 publishedAt: "2026-05-02"
-updatedAt: "2026-05-02"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -44,8 +44,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "Old Class and School Photo Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

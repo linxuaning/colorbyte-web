@@ -2,7 +2,7 @@
 title: "Restore Tintype Photos — Bring 1800s Metal Portraits Back to Life"
 description: "Digitize and restore 19th-century tintype (ferrotype) photographs with AI. Fix tarnish, scratches, and fading on 1850s-1930s metal prints in 30 seconds."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Historical Photo Conservator"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "How can you tell if a photograph is a tintype?"
     answer: "Identify a tintype by checking these characteristics: it's on thin metal (iron) that attracts a magnet; the image appears dark when held against dark backgrounds and lighter against light backgrounds; it's usually 1/4 inch thick or less; edges may show rust; the surface has a dark, varnished appearance; and the image is reversed (mirror image)."
   - question: "What's the best way to digitize old tintypes?"
-    answer: "The best way to digitize tintypes is using cross-polarized photography rather than flatbed scanning. Position the tintype vertically, use two polarized lights at 45-degree angles, attach a polarizing filter to your camera, and rotate filters until reflections disappear. Shoot in RAW format at highest resolution."
----
+    answer: "The best way to digitize tintypes is using cross-polarized photography rather than flatbed scanning. Position the tintype vertically, use two polarized lights at 45-degree angles, attach a polarizing filter to your camera, and rotate filters until reflections disappear. Shoot in RAW format at highest resolution."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

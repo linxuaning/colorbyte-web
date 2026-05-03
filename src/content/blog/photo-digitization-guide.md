@@ -2,7 +2,7 @@
 title: "Photo Digitization Guide 2026: How to Scan Old Photos Properly"
 description: "Complete guide to photo digitization. Learn proper scanning techniques, resolution settings, file formats, and best practices for preserving old photos digitally."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Vintage Photo Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Can I use my smartphone to digitize old photos?"
     answer: "Smartphones can digitize photos acceptably for casual purposes but have limitations for archival-quality preservation. Modern smartphone cameras provide very high resolution potentially exceeding flatbed scanners, convenience without additional equipment, and instant processing and organization."
   - question: "How should I organize and back up digitized photos?"
-    answer: "Implement systematic organization and backup for digitized photos. Organization involves creating clear folder structure by date, event, person, or category, using consistent file naming (Date_Subject_Number format works well), adding metadata (captions, dates, locations, people), and maintaining catalog or spreadsheet documenting collection."
----
+    answer: "Implement systematic organization and backup for digitized photos. Organization involves creating clear folder structure by date, event, person, or category, using consistent file naming (Date_Subject_Number format works well), adding metadata (captions, dates, locations, people), and maintaining catalog or spreadsheet documenting collection."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

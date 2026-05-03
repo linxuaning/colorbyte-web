@@ -2,7 +2,7 @@
 title: "How to Restore Orphaned Photographs: Preserve Unknown Heritage Photos"
 description: "Guide to restoring orphaned photographs with unknown subjects. Learn to preserve, restore, and research anonymous historical photos and family images."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "Are orphaned photographs valuable?"
     answer: "Orphaned photograph value varies widely depending on multiple factors. Monetary value is generally modest ($1-20 for common vintage portraits) unless the photos show notable historical events or famous people, represent rare early photographic processes in excellent condition, are works by recognized photographers, or depict unusual or significant subjects."
   - question: "Should orphaned photos be restored or left in original condition?"
-    answer: "Digital restoration creates enhanced copies while preserving originals in their current state, making this a false choice. The best approach is to digitally restore orphaned photographs while preserving original physical photos without alteration. This provides clear, well-preserved digital versions suitable for research, identification, sharing, and archival contribution."
----
+    answer: "Digital restoration creates enhanced copies while preserving originals in their current state, making this a false choice. The best approach is to digitally restore orphaned photographs while preserving original physical photos without alteration. This provides clear, well-preserved digital versions suitable for research, identification, sharing, and archival contribution."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

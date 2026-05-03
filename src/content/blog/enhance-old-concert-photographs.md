@@ -2,7 +2,7 @@
 title: "Fix Blurry Concert Photos from 60s–90s — AI Recovers Detail"
 description: "Rescue blurry, faded concert photos from the 60s–90s. AI fixes low-light grain, motion blur, and color fading in 30 seconds. Free preview first."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "What's the best way to scan concert photos that are very dark?"
     answer: "Use your scanner's exposure compensation features to lighten the scan, or make multiple scans at different exposure levels and combine the best parts later. Some scanners have \"backlight\" or \"dark original\" modes that help. If scanning prints from negatives, consider re-scanning the negatives directly if available—they contain more information than darkened prints."
   - question: "Can AI really enhance photos from disposable cameras or early phone cameras?"
-    answer: "AI can improve these low-quality sources, but can't overcome fundamental resolution and quality limitations. Disposable camera photos often have acceptable quality after grain reduction and color correction. Early phone camera photos (pre-2010) are extremely challenging due to tiny sensors and poor lenses—expect limited results."
----
+    answer: "AI can improve these low-quality sources, but can't overcome fundamental resolution and quality limitations. Disposable camera photos often have acceptable quality after grain reduction and color correction. Early phone camera photos (pre-2010) are extremely challenging due to tiny sensors and poor lenses—expect limited results."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

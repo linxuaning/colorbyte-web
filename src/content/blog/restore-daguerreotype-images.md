@@ -2,7 +2,7 @@
 title: "How to Restore Daguerreotype Images: Preserve America's Earliest Photos"
 description: "Learn how to care for and digitally restore daguerreotype photographs from the 1840s-1860s. Expert guide to preserving these irreplaceable treasures of early photography."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has worked with genealogy researchers digitizing 1840s-60s daguerreotype collections. Her workflow respects the physical fragility of silver-plate originals while maximizing detail recovery in the digital scan."
@@ -19,8 +19,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **TL;DR** — Daguerreotypes (1839-1860s) are silver-coated copper plates: never touch the silvered surface, never use water, never attempt to clean. Photograph or scan through the protective glass at oblique angle to capture the mirror image, 2400+ DPI. AI restoration via Real-ESRGAN sharpens the digital scan dramatically; GFPGAN recovers face detail in the captured silver image. Original physical artifact stays in archival housing — digital restoration creates a shareable family record.
 

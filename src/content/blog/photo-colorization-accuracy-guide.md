@@ -2,7 +2,7 @@
 title: "Photo Colorization Accuracy: AI vs Manual Techniques"
 description: "Expert guide to accurate photo colorization. Compare AI vs manual methods, learn historical research, and master color accuracy for B&W photo restoration."
 publishedAt: "2026-02-23"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Historical Photo Conservator"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Can you colorize old photos with 100% accuracy?"
     answer: "No, you can't colorize old black and white photos with 100% accuracy unless contemporary color references exist (original hand-tinting, known objects with documented colors, or color photos of same scene)."
   - question: "Is manual or AI colorization better for old family photos?"
-    answer: "For old family photos, AI colorization provides better value for casual restoration (fast, affordable, good enough for sharing), while manual colorization delivers superior results for important family heirlooms (historically accurate, carefully researched, professional quality). Use AI ($10-30/month for batch processing) for albums with dozens of photos needing quick enhancement."
----
+    answer: "For old family photos, AI colorization provides better value for casual restoration (fast, affordable, good enough for sharing), while manual colorization delivers superior results for important family heirlooms (historically accurate, carefully researched, professional quality). Use AI ($10-30/month for batch processing) for albums with dozens of photos needing quick enhancement."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

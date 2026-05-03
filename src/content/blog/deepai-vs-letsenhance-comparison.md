@@ -2,7 +2,7 @@
 title: "DeepAI vs LetsEnhance: 2026 Comparison for AI Photo Restoration and Upscaling"
 description: "Honest comparison of DeepAI and LetsEnhance for AI photo restoration in 2026, covering free tiers, pricing, output quality, and a one-time-payment alternative."
 publishedAt: "2026-05-03"
-updatedAt: "2026-05-03"
+updatedAt: "2026-05-04"
 author: "Thomas Hale"
 authorRole: "AI Tools Researcher"
 authorBio: "Thomas writes about practical AI applications for everyday users — cutting through the hype to explain what tools actually do what they claim."
@@ -37,8 +37,7 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "DeepAI vs LetsEnhance for Photo Restoration"
-  category: "Software Comparison"
----
+  category: "Software Comparison"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

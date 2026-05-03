@@ -2,7 +2,7 @@
 title: "Photo Enhancement vs Restoration: Key Differences and When to Use Each"
 description: "Understand the difference between photo enhancement and restoration. Learn which service you need for your images and how each process works."
 publishedAt: "2026-02-17"
-updatedAt: "2026-02-17"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "Should old family photos be enhanced or just restored?"
     answer: "This depends on your goals. For historical preservation, restoration alone maintains authenticity. For display and sharing, restoration followed by selective enhancement (sharpening, optimization for output) provides the best of both worlds. Avoid heavy enhancement that erases the photo's period character, but reasonable improvements for viewing are generally appropriate."
   - question: "Can AI do photo restoration as well as photo enhancement?"
-    answer: "AI currently performs better at enhancement than restoration. AI excels at upscaling, color correction, and optimization, but struggles with historically accurate restoration of damaged areas. Restoration benefits from AI for repetitive tasks but still requires human oversight for quality and accuracy. Enhancement can often be handled well by AI with minimal human intervention."
----
+    answer: "AI currently performs better at enhancement than restoration. AI excels at upscaling, color correction, and optimization, but struggles with historically accurate restoration of damaged areas. Restoration benefits from AI for repetitive tasks but still requires human oversight for quality and accuracy. Enhancement can often be handled well by AI with minimal human intervention."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

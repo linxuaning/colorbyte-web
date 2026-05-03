@@ -2,7 +2,7 @@
 title: "Fix Scratched Vintage Prints — AI Removes Scratches in 30 Seconds"
 description: "Remove deep scratches, surface scuffs, and emulsion damage from vintage prints. AI fills scratches naturally in 30 seconds. Free preview before you commit."
 publishedAt: "2026-02-18"
-updatedAt: "2026-02-18"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Do scratch removal apps work as well as manual restoration?"
     answer: "Modern AI-powered scratch removal apps often match or exceed manual restoration quality, especially for straightforward scratches. Apps like ArtImageHub use algorithms trained on millions of scratched photos, recognizing patterns humans might miss. However, manual restoration provides more control for unusual situations or when you want specific artistic choices."
   - question: "Should I remove all scratches or leave some for authenticity?"
-    answer: "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story."
----
+    answer: "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -2,7 +2,7 @@
 title: "AI Photo Restoration Limitations: What AI Can and Can't Do"
 description: "Honest assessment of AI photo restoration capabilities and limitations. Learn what AI restoration excels at and when professional help is needed."
 publishedAt: "2026-02-21"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Can AI restore photos that are almost completely faded or blank?"
     answer: "AI can sometimes recover surprising amounts of information from nearly blank-appearing photos, but there are hard limits. Photos that appear blank to the naked eye sometimes retain faint image data detectable through high-resolution scanning at adjusted exposure settings. AI can amplify these subtle variations to reveal the image."
   - question: "Should I use AI restoration or hire a professional photo restorer?"
-    answer: "The decision depends on your specific needs and the photographs in question. Use AI restoration (like ArtImageHub) for most family photos with typical damage, when budget is limited ($5-20 vs. $50-300+ per photo), when quick turnaround is important (minutes vs. weeks), and for large collections requiring consistent processing."
----
+    answer: "The decision depends on your specific needs and the photographs in question. Use AI restoration (like ArtImageHub) for most family photos with typical damage, when budget is limited ($5-20 vs. $50-300+ per photo), when quick turnaround is important (minutes vs. weeks), and for large collections requiring consistent processing."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

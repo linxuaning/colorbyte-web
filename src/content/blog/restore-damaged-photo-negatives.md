@@ -2,7 +2,7 @@
 title: "Restore Damaged Photo Negatives: Repair & Digitization Guide"
 description: "Restore damaged photo negatives with expert techniques. Fix scratches, color shifts, and deterioration in film negatives. Digitize and preserve before it's too late."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Photo Restorer"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "What does vinegar syndrome smell like and is it dangerous?"
     answer: "Vinegar syndrome smells like vinegar or acetic acid—a distinctive sharp, acidic odor from deteriorating acetate-based film. While not immediately dangerous to humans, the acid gases accelerate film deterioration and damage nearby film and photographs. Separate affected negatives from stable film immediately, store in well-ventilated area, and digitize as soon as possible."
   - question: "Can I restore negatives that have mold or fungus damage?"
-    answer: "Negatives with mold can often be digitally restored if the fungal growth hasn't permanently etched into the emulsion. Inactive, dry mold may be gently cleaned by professionals. After scanning, AI restoration can remove mold spots and reconstruct damaged areas. Active mold growth should be addressed by conservation professionals before handling."
----
+    answer: "Negatives with mold can often be digitally restored if the fungal growth hasn't permanently etched into the emulsion. Inactive, dry mold may be gently cleaned by professionals. After scanning, AI restoration can remove mold spots and reconstruct damaged areas. Active mold growth should be addressed by conservation professionals before handling."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

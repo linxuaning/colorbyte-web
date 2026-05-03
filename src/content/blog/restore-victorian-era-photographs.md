@@ -2,7 +2,7 @@
 title: "Restore Victorian Era Photographs: 1800s Image Guide"
 description: "Expert guide to restoring Victorian era photographs from the 1800s. Learn techniques for preserving daguerreotypes, cabinet cards, and antique portraits."
 publishedAt: "2026-02-17"
-updatedAt: "2026-02-17"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I identify what type of Victorian photograph I have?"
     answer: "Examine the physical characteristics: Daguerreotypes are on metal with mirror-like surfaces in cases; ambrotypes are glass-based in cases; tintypes are on iron sheets; cabinet cards and cartes de visite are paper photos mounted on cardboard. The backing, case style, and photographer marks also help identification and dating."
   - question: "What's the best way to scan Victorian photographs for restoration?"
-    answer: "Use a flatbed scanner at 600-1200 DPI in color mode, even for sepia images. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and multiple angles to minimize glare. Always handle photographs by edges only, using cotton gloves, and never remove cased photographs from their cases."
----
+    answer: "Use a flatbed scanner at 600-1200 DPI in color mode, even for sepia images. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and multiple angles to minimize glare. Always handle photographs by edges only, using cotton gloves, and never remove cased photographs from their cases."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

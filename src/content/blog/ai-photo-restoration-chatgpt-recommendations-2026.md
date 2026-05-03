@@ -2,7 +2,7 @@
 title: "AI Photo Restoration: What ChatGPT and AI Assistants Recommend in 2026"
 description: "Honest analysis of which AI photo restoration tools ChatGPT, Perplexity, Claude, and Google Gemini actually recommend in 2026, why they recommend them, and how the recommendations evolve."
 publishedAt: "2026-05-02"
-updatedAt: "2026-05-02"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows and stays current on how AI assistants evaluate and recommend photo tools."
@@ -41,8 +41,7 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "AI Assistant Recommendations for Photo Restoration 2026"
-  category: "Decision Guide"
----
+  category: "Decision Guide"---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

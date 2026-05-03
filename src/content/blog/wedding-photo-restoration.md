@@ -2,6 +2,7 @@
 title: "Wedding Photo Restoration: AI Saves Precious Memories"
 description: "Wedding photos are treasured heirlooms vulnerable to damage. Learn how AI restoration tools like ArtImageHub fix common problems and bring them back to life."
 publishedAt: "2026-02-13"
+updatedAt: "2026-05-04"
 author: "Jessica Thompson"
 authorRole: "Wedding Photographer"
 authorBio: "Jessica Thompson is a wedding photographer based in Charleston, South Carolina, with over 12 years of experience. She has photographed more than 400 weddings and now works with families to digitize and restore archival wedding photography from previous generations."
@@ -20,8 +21,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -2,7 +2,7 @@
 title: "Enhance Old Portrait Photos: Professional Restoration Techniques"
 description: "Transform old portrait photographs with expert enhancement techniques. Complete guide to restoring faces, improving quality, and preserving family portraits."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Digital Restoration Expert"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "What's the difference between enhancing a portrait and restoring it?"
     answer: "Enhancement focuses on improving image quality—sharpness, contrast, color, and clarity—to make the portrait look its best. Restoration addresses damage—removing scratches, tears, stains, and fading—to return the photo to its original condition. Most portrait work involves both: restoring damage first, then enhancing quality. For archival purposes, minimal intervention is often preferred."
   - question: "How do I maintain a natural look when enhancing very old, poor-quality portraits?"
-    answer: "The key to natural enhancement is restraint and understanding limitations. Work subtly with low opacity adjustments that build up gradually. Don't try to make a poor-quality portrait look like modern digital photography—respect its era and original quality. Focus on the most important elements (eyes, face) while keeping backgrounds soft."
----
+    answer: "The key to natural enhancement is restraint and understanding limitations. Work subtly with low opacity adjustments that build up gradually. Don't try to make a poor-quality portrait look like modern digital photography—respect its era and original quality. Focus on the most important elements (eyes, face) while keeping backgrounds soft."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -2,7 +2,7 @@
 title: "How to Enhance Old Family Portraits: Restore Heritage Photography"
 description: "Expert guide to enhancing and restoring old family portrait photographs. Transform faded, damaged heritage portraits into cherished heirlooms."
 publishedAt: "2026-02-22"
-updatedAt: "2026-02-22"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "Can I enlarge small antique portraits like carte-de-visite for printing?"
     answer: "Yes, small antique portraits can be enlarged successfully for modern printing with appropriate techniques. Scan small portraits at very high resolution (1200-2400 dpi or higher) to capture maximum available detail. Use AI restoration which simultaneously enhances detail while repairing damage."
   - question: "Is it okay to remove damage from historical family portraits?"
-    answer: "Digital restoration that removes damage from family portraits is entirely appropriate and doesn't affect the original photograph, which remains preserved in its current state. You're creating enhanced digital copies while keeping originals safe in archival storage."
----
+    answer: "Digital restoration that removes damage from family portraits is entirely appropriate and doesn't affect the original photograph, which remains preserved in its current state. You're creating enhanced digital copies while keeping originals safe in archival storage."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

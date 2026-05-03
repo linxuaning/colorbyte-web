@@ -2,7 +2,7 @@
 title: "How to Scan Old Photos Properly: Complete Guide to Photo Digitization"
 description: "Learn how to scan old photos properly with expert techniques. Get professional results with settings, equipment recommendations, and step-by-step instructions."
 publishedAt: "2026-02-18"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "What file format should I use when scanning old photos?"
     answer: "Always scan to TIFF format for master archival files. TIFF uses lossless compression, preserves maximum quality, and supports 16-bit color depth. Create JPEG copies from your TIFF masters for sharing and web use, but never use JPEG for original scans as it's a lossy format that discards data."
   - question: "How long does it take to scan old photos properly?"
-    answer: "At recommended settings (1200 DPI, TIFF format), expect 2-4 minutes per photo including positioning, scanning, verification, and file management. A collection of 100 photos requires approximately 4-7 hours. Batch scanning similar-sized photos and developing an efficient workflow reduces time significantly."
----
+    answer: "At recommended settings (1200 DPI, TIFF format), expect 2-4 minutes per photo including positioning, scanning, verification, and file management. A collection of 100 photos requires approximately 4-7 hours. Batch scanning similar-sized photos and developing an efficient workflow reduces time significantly."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

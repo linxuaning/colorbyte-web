@@ -2,7 +2,7 @@
 title: "How to Fix Fungus Damaged Photographs: Complete Restoration Guide"
 description: "Expert guide to restoring fungus-damaged photos. Learn to identify, treat, and digitally repair photographs affected by mold and fungal growth."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "What's the white fuzzy stuff on my old photos?"
     answer: "White fuzzy growth on photographs is active fungal colonization, most commonly Aspergillus or Penicillium species. This growth indicates current mold activity requiring immediate attention. Move affected photos away from clean materials to prevent spreading, allow photos to dry in low humidity (below 40% RH) to kill active growth, gently remove dried fungal material with a soft brush, and scan ..."
   - question: "Can professional photo labs remove fungus damage better than AI?"
-    answer: "Professional photo conservation labs and AI restoration each have distinct advantages for different situations. Professional labs excel at physical stabilization of actively deteriorating photos, rare or historically significant photographs requiring archival treatment, and extremely complex cases requiring custom chemical treatment."
----
+    answer: "Professional photo conservation labs and AI restoration each have distinct advantages for different situations. Professional labs excel at physical stabilization of actively deteriorating photos, rare or historically significant photographs requiring archival treatment, and extremely complex cases requiring custom chemical treatment."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

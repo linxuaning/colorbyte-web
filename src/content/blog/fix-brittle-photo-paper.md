@@ -2,7 +2,7 @@
 title: "How to Fix Brittle Photo Paper: Restore Fragile Vintage Photographs"
 description: "Expert techniques for handling and digitally restoring photographs with brittle paper. Learn to preserve fragile vintage photos safely and effectively."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "Rachel Kim"
 authorRole: "Photo Preservation Consultant"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Should I try to flatten curled brittle photos before scanning?"
     answer: "Never attempt to forcibly flatten brittle photographs. The stress of flattening can cause catastrophic cracking, breaking, or shattering of embrittled paper. Even gentle pressure or weighting can damage fragile photographs beyond repair. Instead, scan or photograph curled photos in their current state and address the curvature digitally."
   - question: "Can I store brittle photos in plastic sleeves?"
-    answer: "Yes, but choose the right type of plastic. Use only archival-quality polyester (Mylar, Melinex) or polypropylene sleeves specifically sold for archival photograph storage. Never use PVC (polyvinyl chloride) sleeves, which off-gas chemicals that accelerate photograph deterioration. Avoid \"magnetic\" photo albums entirely, as the adhesive damages photographs."
----
+    answer: "Yes, but choose the right type of plastic. Use only archival-quality polyester (Mylar, Melinex) or polypropylene sleeves specifically sold for archival photograph storage. Never use PVC (polyvinyl chloride) sleeves, which off-gas chemicals that accelerate photograph deterioration. Avoid \"magnetic\" photo albums entirely, as the adhesive damages photographs."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

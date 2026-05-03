@@ -2,7 +2,7 @@
 title: "How to Restore Stereoscopic Photos: Guide to 3D Victorian Photography"
 description: "Expert guide to restoring stereoscopic photographs and stereoviews. Preserve rare 3D images from the Victorian era with specialized techniques."
 publishedAt: "2026-02-24"
-updatedAt: "2026-02-24"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Historical Photography Specialist"
 authorBio: "Sarah works with collectors and museums on Victorian stereoview preservation, including the Keystone-Mast collection format and 1860s-1900s travel/event documentary stereoviews."
@@ -19,8 +19,7 @@ faq:
   - question: "How should I store restored stereoviews?"
     answer: "Store original cards flat in acid-free folders or boxes, maintain stable temperature and humidity, keep away from light to prevent further fading, and handle by edges to avoid touching image surfaces. Digital restored versions should be maintained in high-resolution archival formats suitable for both 2D viewing and 3D display."
   - question: "Can damaged stereoscopic glass plates be restored?"
-    answer: "Yes, glass stereo plates can be digitally restored even if physically damaged. Photograph with transmitted light at high resolution, use AI restoration to remove damage and enhance images, and maintain the dual-image format for continued 3D viewing capability. Physical glass preservation should be handled by professional conservators."
----
+    answer: "Yes, glass stereo plates can be digitally restored even if physically damaged. Photograph with transmitted light at high resolution, use AI restoration to remove damage and enhance images, and maintain the dual-image format for continued 3D viewing capability. Physical glass preservation should be handled by professional conservators."---
 
 > **TL;DR** — Stereoviews (1850s-1930s) are pairs of nearly identical photos on cardstock mounts, viewed through stereoscope to produce 3D effect. Cards typically curve to fit the viewer — preserve the curve when scanning. Scan flat at 1200 DPI for digital archive (curved scanning introduces distortion that breaks 3D effect). AI restoration via GFPGAN/Real-ESRGAN recovers fine detail in the small-format halves. Card backs often hold publisher imprints (Keystone, Underwood) — scan for collection cataloging.
 

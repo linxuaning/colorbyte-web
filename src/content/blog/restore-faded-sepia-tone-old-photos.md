@@ -2,7 +2,7 @@
 title: "Restore Faded Sepia-Tone Old Photos: AI Recovery for Late-Victorian and Early-20th-Century Prints"
 description: "How to restore faded sepia-tone photographs using AI. Covers sepia chemistry, fading patterns, scanning approach, and decision tree for preserving sepia versus reverting to neutral tone."
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -40,8 +40,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "Faded Sepia-Tone Photo Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

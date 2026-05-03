@@ -2,7 +2,7 @@
 title: "Photo Preservation Methods: Complete Guide to Protecting Family Images"
 description: "Expert guide to photograph preservation and archival storage. Learn professional methods for protecting family photographs from deterioration."
 publishedAt: "2026-02-24"
-updatedAt: "2026-02-24"
+updatedAt: "2026-05-04"
 author: "Rachel Kim"
 authorRole: "Preservation Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I preserve photographs if I can't afford archival supplies?"
     answer: "While professional archival supplies are ideal, you can make significant preservation improvements with minimal cost by prioritizing properly. **Free or low-cost preservation actions:** Move photographs from hostile environments (damp basements, hot attics) to stable climate-controlled living spaces, remove photographs from definitely harmful storage (magnetic albums, PVC sleeves, deteriorating..."
   - question: "Should I write information on the backs of photographs?"
-    answer: "Recording identification information on photographs is crucial for preserving family knowledge, but method matters enormously. **Safe identification methods:** Use archival-quality pencils specifically designed for photograph marking (available from archival suppliers). Write gently on photograph backs, never pressing hard enough to indent through to image side."
----
+    answer: "Recording identification information on photographs is crucial for preserving family knowledge, but method matters enormously. **Safe identification methods:** Use archival-quality pencils specifically designed for photograph marking (available from archival suppliers). Write gently on photograph backs, never pressing hard enough to indent through to image side."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

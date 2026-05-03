@@ -2,7 +2,7 @@
 title: "Restore Military Service Photos: Veteran Preservation Guide"
 description: "Learn professional techniques to restore military service photographs from all eras. Includes uniform identification, damage repair, and respectful restoration of veteran images."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I ensure historically accurate uniform colors when restoring?"
     answer: "Research is essential. Consult military uniform regulations for the specific era and branch (colors were precisely specified). Reference period color photographs and films. Use military uniform guidebooks and collector references. Federal Standard 595 color system specifies many military colors. Contact military museums or historical societies."
   - question: "Are military service photographs more valuable and should I get professional help?"
-    answer: "Military photographs often have high historical, genealogical, and emotional value regardless of monetary worth. For typical service portraits and personal photographs, DIY restoration using proper methods and tools like ArtImageHub is appropriate and achievable."
----
+    answer: "Military photographs often have high historical, genealogical, and emotional value regardless of monetary worth. For typical service portraits and personal photographs, DIY restoration using proper methods and tools like ArtImageHub is appropriate and achievable."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

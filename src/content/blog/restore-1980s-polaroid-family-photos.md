@@ -2,7 +2,7 @@
 title: "Restore 1980s Polaroid Family Photos: AI Recovery for Instant Film Color Shifts"
 description: "How to restore 1980s Polaroid instant film photographs using AI. Covers Polaroid-specific color shifts, scanning approach, and AI restoration workflow that preserves the instant-film aesthetic."
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -40,8 +40,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "1980s Polaroid Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

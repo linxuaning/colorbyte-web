@@ -2,7 +2,7 @@
 title: "How to Restore Ambrotype Images: Preserve Your Civil War Era Photos"
 description: "Expert guide to restoring ambrotype photographs. Learn to digitize and repair these rare 1850s-1880s glass plate images using modern restoration techniques."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Photo Restorer"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I restore an ambrotype with missing backing?"
     answer: "Ambrotypes with missing or deteriorated backing show negative images (or partially negative) where backing is lost. Digital restoration can recreate the appearance of proper backing by inverting the negative areas to positive, matching tonality with properly backed sections, and blending seamlessly across the entire image."
   - question: "Are ambrotypes valuable, and should I get mine appraised?"
-    answer: "Ambrotype value varies enormously based on several factors including subject matter (Civil War soldiers, notable individuals, occupational images, and unusual subjects command premium prices), condition (intact, clear images in original cases are most valuable), size (larger plates are generally more valuable), and historical significance (documented subjects or notable photographers increase v..."
----
+    answer: "Ambrotype value varies enormously based on several factors including subject matter (Civil War soldiers, notable individuals, occupational images, and unusual subjects command premium prices), condition (intact, clear images in original cases are most valuable), size (larger plates are generally more valuable), and historical significance (documented subjects or notable photographers increase v..."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

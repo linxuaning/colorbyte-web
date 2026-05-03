@@ -2,7 +2,7 @@
 title: "Restore Historical Photographs: Preservation Guide"
 description: "Professional techniques to restore historical photographs. Includes authentication, preservation, and digital restoration for archival results."
 publishedAt: "2026-02-17"
-updatedAt: "2026-02-17"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "How should I store historical photographs I've inherited?"
     answer: "Store historical photographs in a cool (65-70°F), dry (30-40% RH) environment with stable conditions. Use archival-quality materials: acid-free paper folders or polyester sleeves, never PVC plastic. Store flat in boxes, not standing on edge. Keep in darkness when not in use. Handle carefully, supporting from underneath, and use gloves for valuable items."
   - question: "Is it worth paying for professional restoration of historical photographs?"
-    answer: "It depends on the photograph's value and your goals. For rare, unique, or high-value historical photographs (worth $500+), professional conservator assessment is usually worth the cost. For photographs with significant historical importance, family heritage value, or museum potential, professional work ensures appropriate treatment following archival standards."
----
+    answer: "It depends on the photograph's value and your goals. For rare, unique, or high-value historical photographs (worth $500+), professional conservator assessment is usually worth the cost. For photographs with significant historical importance, family heritage value, or museum potential, professional work ensures appropriate treatment following archival standards."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

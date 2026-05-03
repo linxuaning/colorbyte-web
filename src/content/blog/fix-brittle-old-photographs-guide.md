@@ -2,7 +2,7 @@
 title: "Fix Brittle Old Photographs: Safe Handling Guide"
 description: "Expert guide to fix brittle old photographs safely. Learn techniques for handling, digitizing, and restoring fragile vintage photos."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Is it safe to scan brittle photographs?"
     answer: "Yes, it's safe to scan brittle photographs if you take proper precautions: leave the scanner lid open (never close it on brittle photos), support the photograph on a rigid board during transport, place it gently on the scanner bed without forcing it flat, cover with black cloth instead of closing lid, and remove immediately after scanning."
   - question: "How do you store brittle photographs safely?"
-    answer: "Store brittle photographs in individual acid-free enclosures (polyester sleeves or buffered paper envelopes) in archival boxes, at 30-40% humidity and 65-70°F with stable conditions. Support brittle photos on acid-free mat board cut to size, place in polyester sleeves to prevent handling damage, store flat (never upright), and label boxes to minimize opening."
----
+    answer: "Store brittle photographs in individual acid-free enclosures (polyester sleeves or buffered paper envelopes) in archival boxes, at 30-40% humidity and 65-70°F with stable conditions. Support brittle photos on acid-free mat board cut to size, place in polyester sleeves to prevent handling damage, store flat (never upright), and label boxes to minimize opening."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

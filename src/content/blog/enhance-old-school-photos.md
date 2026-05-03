@@ -2,7 +2,7 @@
 title: "Enhance Old School Photos: Restore Yearbook and Class Pictures"
 description: "Transform faded school photos with professional enhancement. Complete guide to restoring yearbook pictures, class photos, and school day memories."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Wedding Photo Specialist"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "How can I identify myself in old group class photos?"
     answer: "Strategies for finding yourself: count rows and positions if you remember placement, compare clothing to other photos from same era, look for characteristic hairstyles or features you remember, ask family members or classmates to help identify, check yearbook pages for the same year (usually list names in order), and compare to individual photo from same year."
   - question: "Should I modernize old school photos or keep the vintage look?"
-    answer: "This is a personal choice based on your goals. For historical preservation, maintain period authenticity—keep slight softness, period color characteristics, and vintage qualities. For display and sharing, some modernization (sharpness, color correction, damage removal) improves visual appeal without losing character."
----
+    answer: "This is a personal choice based on your goals. For historical preservation, maintain period authenticity—keep slight softness, period color characteristics, and vintage qualities. For display and sharing, some modernization (sharpness, color correction, damage removal) improves visual appeal without losing character."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

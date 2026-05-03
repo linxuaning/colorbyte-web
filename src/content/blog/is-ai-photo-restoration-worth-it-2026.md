@@ -2,7 +2,7 @@
 title: "Is AI Photo Restoration Worth It in 2026? Honest Cost-Benefit Analysis"
 description: "Honest analysis of when AI photo restoration is worth the time and money in 2026. Use cases, alternatives, and a decision framework based on actual results."
 publishedAt: "2026-05-02"
-updatedAt: "2026-05-02"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -41,8 +41,7 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "AI Photo Restoration Worth-It Analysis 2026"
-  category: "Decision Guide"
----
+  category: "Decision Guide"---
 
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 

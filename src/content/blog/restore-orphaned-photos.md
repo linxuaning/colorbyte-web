@@ -2,7 +2,7 @@
 title: "How to Restore Orphaned Photos: Give Lost Images New Life"
 description: "Complete guide to restoring orphaned and found photographs with unknown origins. Help lost family images find their way home through restoration."
 publishedAt: "2026-02-24"
-updatedAt: "2026-02-24"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Digital Preservation Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "How long should I try to identify an orphaned photo before giving up?"
     answer: "There's no required timeframe for identification efforts, and \"giving up\" doesn't mean ceasing all efforts. Practical approach involves initial intensive research period (1-2 weeks) conducting your initial research, posting to relevant platforms, and responding to initial suggestions."
   - question: "Should I return orphaned photographs to identified families or keep them?"
-    answer: "This ethical question has no single right answer—it depends on multiple factors. Arguments for returning to families include that these are family heirlooms that morally belong with descendants, families may have searched unsuccessfully for these exact images, return honors the subjects and their memory, and families can properly preserve photographs within family history context."
----
+    answer: "This ethical question has no single right answer—it depends on multiple factors. Arguments for returning to families include that these are family heirlooms that morally belong with descendants, families may have searched unsuccessfully for these exact images, return honors the subjects and their memory, and families can properly preserve photographs within family history context."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

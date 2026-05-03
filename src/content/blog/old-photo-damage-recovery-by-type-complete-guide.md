@@ -2,7 +2,7 @@
 title: "Old Photo Damage Recovery by Type: Complete 2026 Guide"
 description: "Complete damage-by-damage guide to restoring old photographs. Water, fire, smoke, mold, fading, scratches — diagnostic chart and AI workflow guidance for every damage type."
 publishedAt: "2026-05-03"
-updatedAt: "2026-05-03"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has reviewed AI photo restoration outcomes across every common damage type from minor fading through catastrophic flood/fire damage. She publishes evidence-based diagnostic guides rather than vendor marketing."
@@ -44,8 +44,7 @@ aggregateRating:
   ratingCount: 9
 reviewedItem:
   name: "Old Photo Damage Recovery Complete Diagnostic Guide"
-  category: "Damage-Specific Restoration Guide"
----
+  category: "Damage-Specific Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

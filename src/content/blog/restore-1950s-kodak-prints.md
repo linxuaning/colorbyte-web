@@ -2,7 +2,7 @@
 title: "Restore 1950s Kodak Prints: Mid-Century Photo Guide"
 description: "Expert guide to restoring 1950s Kodak prints. Learn techniques for correcting fading, color shifts, and damage specific to mid-century photographs."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I know what colors to restore if the photo is almost completely faded?"
     answer: "Use multiple reference sources: any protected areas showing original colors, other photos from the same event or roll, family member recollections, period-appropriate color palettes for clothing and automobiles, and historical references. When uncertain, conservative restoration maintaining subtle colors is better than guessing at specific vibrant hues."
   - question: "Is it better to restore or colorize badly faded 1950s Kodak prints?"
-    answer: "If any color information remains (even faint), restoration is better as it recovers actual original colors. Only colorize when prints have faded to essentially black-and-white or sepia. Even then, creating both a restored version from remaining color data and a researched colorization provides options. Always maintain multiple versions rather than choosing only one approach."
----
+    answer: "If any color information remains (even faint), restoration is better as it recovers actual original colors. Only colorize when prints have faded to essentially black-and-white or sepia. Even then, creating both a restored version from remaining color data and a researched colorization provides options. Always maintain multiple versions rather than choosing only one approach."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

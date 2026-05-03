@@ -2,7 +2,7 @@
 title: "Restore Old Holiday and Family Gathering Photos: Christmas, Thanksgiving, Reunions"
 description: "How to restore old holiday photos including Christmas mornings, Thanksgiving dinners, family reunions, and birthday parties using AI. Covers indoor lighting challenges and emotional photo prioritization."
 publishedAt: "2026-05-02"
-updatedAt: "2026-05-02"
+updatedAt: "2026-05-04"
 author: "Sophie Laurent"
 authorRole: "Family History Preservation Specialist"
 authorBio: "Sophie writes accessible guides for family historians restoring photos from significant historical periods. She focuses on practical AI tool workflows for non-expert users preserving heirloom photographs."
@@ -44,8 +44,7 @@ aggregateRating:
   ratingCount: 5
 reviewedItem:
   name: "Old Holiday and Family Gathering Photo Restoration Workflow"
-  category: "Photo Restoration Guide"
----
+  category: "Photo Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

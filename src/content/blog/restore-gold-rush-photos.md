@@ -2,7 +2,7 @@
 title: "Restore Gold Rush Photos: 1849-1900 Mining Images"
 description: "Expert guide to restoring Gold Rush photographs from the California mining era. Learn techniques for preserving these rare historical images from 1849-1900."
 publishedAt: "2026-02-22"
-updatedAt: "2026-02-22"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photo Restoration Expert"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "How should I store Gold Rush photographs to prevent further damage?"
     answer: "Proper storage varies by photographic format. Daguerreotypes and ambrotypes should remain in their original cases if intact, stored flat in acid-free boxes with stable temperature (65-70°F) and humidity (30-40%). Never attempt to clean the image surface. Tintypes are more durable but still require acid-free enclosures—avoid PVC sleeves which emit damaging gases."
   - question: "Should I donate historically significant mining photographs to archives?"
-    answer: "Donating significant Gold Rush photographs to archives ensures long-term preservation and research access while honoring the historical subjects. Consider donation if photographs show identifiable mining operations, camps, or communities, depict underrepresented groups (Chinese miners, women, diverse populations), include documentation of provenance or subject identification, or represent photo..."
----
+    answer: "Donating significant Gold Rush photographs to archives ensures long-term preservation and research access while honoring the historical subjects. Consider donation if photographs show identifiable mining operations, camps, or communities, depict underrepresented groups (Chinese miners, women, diverse populations), include documentation of provenance or subject identification, or represent photo..."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -2,7 +2,7 @@
 title: "How to Restore 1930s Depression Era Photos: Preserve Hard Times Memories"
 description: "Learn how to restore photographs from the Great Depression (1929-1939). Expert guide to preserving and enhancing this historically significant decade's photography."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has worked with family historians on Great Depression-era photo collections, including Dust Bowl migrant family records and small-town documentary photos from the 1930s."
@@ -19,8 +19,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **TL;DR** — 1930s family photos are typically silver gelatin contact prints (small format, 3×5 or smaller) shot on roll film with simple cameras. Now 85-95 years old. Common issues: fade, paper yellowing, contact-print scratches. Scan at 2400 DPI for small-format originals (essential for face detail recovery). AI restoration via GFPGAN/Real-ESRGAN works very well on Depression-era studio portraits but is more limited on heavily damaged outdoor candids. The Library of Congress FSA collection provides era reference for color-correction calibration.
 

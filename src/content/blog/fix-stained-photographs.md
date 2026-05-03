@@ -2,7 +2,7 @@
 title: "Fix Stained Photographs: Stain Removal Guide"
 description: "Professional techniques to fix stained photographs including water stains, chemical damage, and adhesive discoloration with digital restoration."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Rachel Kim"
 authorRole: "Photo Conservator"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Can yellowed photographs be restored to white?"
     answer: "Yes, digitally. Yellow staining is one of the most successfully corrected types of damage. Scan in 48-bit color, then use Curves adjustment in the Blue channel (adding blue removes yellow), Color Balance adjustments, or LAB color mode corrections. AI tools like ArtImageHub automatically detect and correct yellowing."
   - question: "Should I attempt stain removal on valuable photographs?"
-    answer: "For valuable photographs, prioritize preservation over appearance. Have them professionally assessed and stored properly in archival materials. Create high-quality scans immediately to preserve current state digitally. Digital restoration provides beautiful viewing copies without risking the original."
----
+    answer: "For valuable photographs, prioritize preservation over appearance. Have them professionally assessed and stored properly in archival materials. Create high-quality scans immediately to preserve current state digitally. Digital restoration provides beautiful viewing copies without risking the original."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

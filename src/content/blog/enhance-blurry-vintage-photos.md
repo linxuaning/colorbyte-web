@@ -2,7 +2,7 @@
 title: "Enhance Blurry Vintage Photos — AI Sharpens Soft Focus in Seconds"
 description: "Sharpen out-of-focus, motion-blurred, and soft-focus vintage photographs with AI. Recover detail even on severe blur — free preview first."
 publishedAt: "2026-02-19"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement. She tests every tool she recommends on real damaged family photos before publication."
@@ -18,8 +18,7 @@ faq:
   - question: "Will enhancement work on blurry old Polaroid photos?"
     answer: "Yes, AI enhancement works well on blurry instant film photos including Polaroid, though these images present particular challenges. Instant film often has inherent softness compared to traditional film, characteristic grain structure that becomes more visible with sharpening, and color shifts or fading complicating enhancement."
   - question: "Should I enhance all my blurry vintage photos or just the important ones?"
-    answer: "The decision depends on your budget, number of photos, and how you plan to use them. For photos you plan to display, share, or use in family history projects, enhancement is definitely worthwhile as it transforms barely acceptable images into quality photos worth showcasing."
----
+    answer: "The decision depends on your budget, number of photos, and how you plan to use them. For photos you plan to display, share, or use in family history projects, enhancement is definitely worthwhile as it transforms barely acceptable images into quality photos worth showcasing."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

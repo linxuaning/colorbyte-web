@@ -2,7 +2,7 @@
 title: "Restore Ambrotype Photos: Glass Plate Guide"
 description: "Expert guide to restoring and preserving ambrotype photographs. Learn professional techniques for enhancing these rare 19th-century glass plate images."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Historical Photography Specialist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "How should I store an ambrotype to prevent further damage?"
     answer: "Proper storage is essential for preventing additional deterioration of these fragile glass plate photographs. Store ambrotypes in their original cases if the cases are intact and in good condition—the cases were designed to protect the delicate images. Keep cased ambrotypes upright rather than stacked horizontally to prevent pressure on the glass plates."
   - question: "Can hand-colored ambrotypes be restored without losing the color?"
-    answer: "Yes, hand-colored ambrotypes can be restored while preserving their original tinting, which is an important part of their historical and artistic value. Hand-coloring was a popular enhancement for ambrotypes during their era—artists applied oil paints, pigments, or dyes to add color to cheeks, lips, jewelry, clothing, and other elements, creating beautiful and distinctive images."
----
+    answer: "Yes, hand-colored ambrotypes can be restored while preserving their original tinting, which is an important part of their historical and artistic value. Hand-coloring was a popular enhancement for ambrotypes during their era—artists applied oil paints, pigments, or dyes to add color to cheeks, lips, jewelry, clothing, and other elements, creating beautiful and distinctive images."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

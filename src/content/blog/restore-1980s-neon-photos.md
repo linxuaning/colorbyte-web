@@ -2,7 +2,7 @@
 title: "How to Restore 1980s Neon Photos: Fix Faded Vibrant Colors"
 description: "Complete guide to restoring 1980s photographs with neon colors. Recover faded vibrant hues from retro photos and preserve your 80s memories."
 publishedAt: "2026-02-22"
-updatedAt: "2026-02-22"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Should 1980s photos look super saturated after restoration?"
     answer: "1980s photographs should definitely have strong, punchy colors—the era's aesthetic embraced vibrancy and boldness. However, there's a difference between appropriately vibrant 1980s colors and artificially oversaturated images."
   - question: "Can I restore photos where all color has faded to brown or sepia?"
-    answer: "Photos that appear to have faded to completely monochrome brown or sepia tone often retain more color information than is visible to the naked eye. Scan these photos at high resolution in color mode (never grayscale), even though they appear monochrome. Use 48-bit color depth if your scanner supports it. Scan at increased brightness to capture any faint remaining color."
----
+    answer: "Photos that appear to have faded to completely monochrome brown or sepia tone often retain more color information than is visible to the naked eye. Scan these photos at high resolution in color mode (never grayscale), even though they appear monochrome. Use 48-bit color depth if your scanner supports it. Scan at increased brightness to capture any faint remaining color."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

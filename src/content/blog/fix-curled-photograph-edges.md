@@ -2,7 +2,7 @@
 title: "Fix Curled Photograph Edges: Flattening Guide"
 description: "Learn professional techniques to fix curled photograph edges. Includes safe physical flattening methods and digital restoration for permanently curled photos."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Is it safe to iron photographs to flatten them?"
     answer: "No, never iron photographs. Heat can destroy the emulsion, cause permanent discoloration, and make paper brittle. Even with protective layers, irons apply too much heat and pressure. The risks far outweigh any potential benefits. Use humidity-based flattening methods instead."
   - question: "Can I fix curled edges on Polaroids and instant photos?"
-    answer: "Physical flattening of Polaroids is risky due to their complex chemical structure and sensitivity to moisture. Digital correction is much safer and more effective for Polaroids. Scan or photograph them while gently held flat (using glass if necessary) and correct any edge issues digitally."
----
+    answer: "Physical flattening of Polaroids is risky due to their complex chemical structure and sensitivity to moisture. Digital correction is much safer and more effective for Polaroids. Scan or photograph them while gently held flat (using glass if necessary) and correct any edge issues digitally."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

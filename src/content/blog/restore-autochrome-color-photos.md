@@ -2,7 +2,7 @@
 title: "Restore Autochrome Color Photos: Early Color Guide"
 description: "Expert guide to restore autochrome color photos from 1907-1935. Learn about potato starch color plates, damage patterns, and modern AI restoration techniques."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "James Morrison"
 authorRole: "Photo Restorer"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Are Autochromes valuable?"
     answer: "Yes, Autochromes are generally valuable, especially those by known photographers, depicting interesting subjects, or in good condition. Values range from hundreds to tens of thousands of dollars depending on photographer, subject matter, condition, and size. Even damaged Autochromes have value to collectors and historians."
   - question: "Can modern AI really handle the unique characteristics of Autochromes?"
-    answer: "Advanced AI systems like ArtImageHub have been trained on thousands of early color photographs including Autochromes. The AI learns to recognize the starch grain pattern, typical color palettes, glass plate damage patterns, and other Autochrome-specific characteristics. This training allows it to restore damage while preserving the authentic qualities that make Autochromes special."
----
+    answer: "Advanced AI systems like ArtImageHub have been trained on thousands of early color photographs including Autochromes. The AI learns to recognize the starch grain pattern, typical color palettes, glass plate damage patterns, and other Autochrome-specific characteristics. This training allows it to restore damage while preserving the authentic qualities that make Autochromes special."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

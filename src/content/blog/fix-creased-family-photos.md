@@ -2,7 +2,7 @@
 title: "Fix Creased Family Photos: Expert Techniques for Perfect Restoration"
 description: "Discover professional methods to fix creased family photos. Step-by-step guide for removing folds, wrinkles, and crease marks from precious photographs."
 publishedAt: "2026-02-16"
-updatedAt: "2026-02-16"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Digital Restoration Expert"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Can I use an iron to flatten creased photographs?"
     answer: "While the iron method can work, it carries significant risk and should only be used by experienced individuals on less valuable photographs. The iron must be set to the lowest possible temperature (under 150°F), used only with protective cloth between iron and photo, and kept moving constantly. For most people, safer methods like weighted pressing or humidity chambers are better choices."
   - question: "Should I restore the physical photo before scanning, or scan then restore digitally?"
-    answer: "The best practice is to attempt safe physical restoration first (weighted flattening, humidity method) to reduce the crease as much as possible without risk. Then scan the photograph at high resolution and complete the restoration digitally. This combined approach yields the best results. Make sure to create a backup scan before attempting any physical restoration in case something goes wrong."
----
+    answer: "The best practice is to attempt safe physical restoration first (weighted flattening, humidity method) to reduce the crease as much as possible without risk. Then scan the photograph at high resolution and complete the restoration digitally. This combined approach yields the best results. Make sure to create a backup scan before attempting any physical restoration in case something goes wrong."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

@@ -2,7 +2,7 @@
 title: "Fix Faded Newspaper Clippings: Restoration Guide"
 description: "Restore faded newspaper clippings with AI technology. Learn professional techniques to repair yellowed newsprint, enhance text, and preserve historical articles."
 publishedAt: "2026-02-18"
-updatedAt: "2026-02-18"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "What's the best resolution for scanning faded newspaper clippings?"
     answer: "Scan newspaper clippings at minimum 600 DPI, with 800-1200 DPI recommended for severely faded text or clippings you plan to enlarge. Higher resolution captures more detail from faded ink and allows for greater manipulation during restoration. Save scans as TIFF or PNG files rather than JPEG to avoid compression artifacts that can make faded text harder to recover."
   - question: "How much does professional newspaper clipping restoration cost?"
-    answer: "Professional restoration services typically charge $40-100 per newspaper clipping depending on size and damage severity. ArtImageHub offers AI-powered restoration starting at $9.99 per image, making it affordable to restore multiple clippings."
----
+    answer: "Professional restoration services typically charge $40-100 per newspaper clipping depending on size and damage severity. ArtImageHub offers AI-powered restoration starting at $9.99 per image, making it affordable to restore multiple clippings."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

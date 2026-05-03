@@ -2,7 +2,7 @@
 title: "Restore Water-Damaged Photo Collections from Floods: Drying Workflow + AI Recovery"
 description: "How to handle water-damaged photo collections after floods, hurricanes, or burst pipes. Covers emergency drying, salvage triage, scanning, and AI restoration of cleaned scans."
 publishedAt: "2026-05-01"
-updatedAt: "2026-05-01"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."
@@ -43,8 +43,7 @@ aggregateRating:
   ratingCount: 6
 reviewedItem:
   name: "Flood-Damaged Photo Recovery Workflow"
-  category: "Emergency Photo Restoration"
----
+  category: "Emergency Photo Restoration"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

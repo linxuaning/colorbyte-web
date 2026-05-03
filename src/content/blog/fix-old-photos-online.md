@@ -2,7 +2,7 @@
 title: "Fix Old Photos Online: Fast AI Repair in Under 60 Seconds"
 description: "Fix old photos online instantly with AI. Remove scratches, repair faded colors, restore torn edges—no Photoshop skills needed. 3 photos free, no signup."
 publishedAt: "2026-04-12"
-updatedAt: "2026-04-12"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has reviewed AI photo restoration tools across 200+ side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -17,8 +17,7 @@ faq:
   - question: "Can I fix multiple old photos at once?"
     answer: "Currently, photos are processed one at a time to ensure quality. If you have a large collection to restore, working through the batch systematically takes under 2 minutes per photo."
   - question: "What format does the restored photo come back in?"
-    answer: "Restored photos are delivered as high-resolution JPEGs at the same dimensions as your uploaded original. For printing, these files produce sharp results up to 8×10 inches at standard print resolution."
----
+    answer: "Restored photos are delivered as high-resolution JPEGs at the same dimensions as your uploaded original. For printing, these files produce sharp results up to 8×10 inches at standard print resolution."---
 
 > **TL;DR** — AI photo restoration online (under 60 seconds): scan at 600+ DPI → upload to a tool that wraps **GFPGAN** (face) + **Real-ESRGAN** (upscale) → review side-by-side → download. Three free, then $4.99 one-time for unlimited unwatermarked HD. AI handles fading, scratches, yellowing, soft focus reliably; large missing sections and overlapping severe damage still need human review.
 

@@ -2,7 +2,7 @@
 title: "How to Restore 1970s Disco Photos: Revive Your Groovy Memories"
 description: "Complete guide to restoring 1970s disco era photos. Fix faded color prints, enhance party pictures, and preserve your groovy 70s memories with AI restoration."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "David Park"
 authorRole: "Photo Conservation Expert"
 authorBio: "An ArtImageHub editorial contributor specializing in family photo preservation and AI restoration workflow guides."
@@ -19,8 +19,7 @@ faq:
   - question: "Should I restore disco photos to accurate colors or enhance them for modern viewing?"
     answer: "This depends on your goals and personal preference. For accurate historical documentation, restore to natural, realistic colors that reflect how the scene actually appeared, preserving authentic 1970s photo characteristics and maintaining appropriate period aesthetic."
   - question: "Are instant photos from the 1970s (Polaroids) restorable?"
-    answer: "Yes, 1970s instant photos including Polaroid and other brands can be restored, though they present unique challenges. Instant film from the disco era typically shows severe fading to pale yellow or cream tones within decades, characteristic orange or brown color shifts in skin tones, loss of contrast creating flat, washed-out appearance, and sometimes physical deterioration of the instant film ..."
----
+    answer: "Yes, 1970s instant photos including Polaroid and other brands can be restored, though they present unique challenges. Instant film from the disco era typically shows severe fading to pale yellow or cream tones within decades, characteristic orange or brown color shifts in skin tones, loss of contrast creating flat, washed-out appearance, and sometimes physical deterioration of the instant film ..."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

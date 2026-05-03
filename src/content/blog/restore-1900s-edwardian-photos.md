@@ -2,7 +2,7 @@
 title: "How to Restore 1900s Edwardian Era Photos: Complete Guide"
 description: "Learn how to restore photographs from the Edwardian era (1901-1910). Expert guide to preserving and enhancing early 20th century family photos."
 publishedAt: "2026-02-23"
-updatedAt: "2026-02-23"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah works with genealogy researchers and family historians on early 20th century photo collections, with particular focus on Edwardian-era studio portraits and group photographs."
@@ -19,8 +19,7 @@ faq:
   - question: "How long does the workflow take?"
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
-    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
----
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."---
 
 > **TL;DR** — Edwardian-era photos (1901-1910) are now 115+ years old: typically silver gelatin prints on cabinet-card mounts, prone to silver mirroring (visible as metallic sheen on dark areas), fade, and mount deterioration. Scan at 1200 DPI to capture fine studio detail. AI restoration via GFPGAN/Real-ESRGAN recovers face detail and clothing texture. Many Edwardian portraits feature elaborate dress and posed groups — preserve detail rather than over-smoothing.
 

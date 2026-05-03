@@ -2,7 +2,7 @@
 title: "Old Photo Restoration by Decade: 1880s-2000s Complete Index"
 description: "Complete decade-by-decade guide to restoring old photographs. Era-specific restoration techniques, common damage profiles, and AI workflow guidance for 1880s through 2000s family photos."
 publishedAt: "2026-05-03"
-updatedAt: "2026-05-03"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Sarah has reviewed AI photo restoration workflows across every decade of consumer photography from 1880s albumen prints through 2000s digital photo prints. She publishes evidence-based comparisons rather than vendor marketing."
@@ -50,8 +50,7 @@ aggregateRating:
   ratingCount: 8
 reviewedItem:
   name: "Old Photo Restoration by Decade Complete Index"
-  category: "Era-Specific Restoration Guide"
----
+  category: "Era-Specific Restoration Guide"---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

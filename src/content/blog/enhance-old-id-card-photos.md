@@ -2,7 +2,7 @@
 title: "How to Enhance Old ID Card Photos: Restore Passport & Document Images"
 description: "Expert guide to enhance old ID card photos from passports, licenses, and documents. Fix low-quality booth photos and damaged identification images."
 publishedAt: "2026-02-21"
-updatedAt: "2026-02-21"
+updatedAt: "2026-05-04"
 author: "Lisa Martinez"
 authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement."
@@ -19,8 +19,7 @@ faq:
   - question: "Can AI make a blurry ID photo sharp?"
     answer: "AI can significantly improve apparent sharpness of moderately blurry photos through detail enhancement and upscaling. However, there are limits—if the original is severely out of focus, AI can improve it but can't create detail that was never captured."
   - question: "Should I enhance old ID photos of deceased relatives?"
-    answer: "This is a personal and family decision. For family history purposes, enhancement is generally appropriate and valuable. It preserves the image in clearer form for future generations and makes it more suitable for memorial uses. Be respectful in how you enhance and share, maintain the person's dignity, and consider family wishes."
----
+    answer: "This is a personal and family decision. For family history purposes, enhancement is generally appropriate and valuable. It preserves the image in clearer form for future generations and makes it more suitable for memorial uses. Be respectful in how you enhance and share, maintain the person's dignity, and consider family wishes."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

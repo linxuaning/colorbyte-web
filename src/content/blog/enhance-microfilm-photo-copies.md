@@ -2,7 +2,7 @@
 title: "Enhance Microfilm Photo Copies: Historical Document Guide"
 description: "Improve microfilm photocopy quality with expert restoration techniques. Fix distortion, enhance text, remove artifacts from genealogy and historical research photos."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "What's the best way to scan microfilm photocopies for enhancement?"
     answer: "Scan microfilm photocopies at minimum 600 DPI in grayscale mode (not black and white) using TIFF or PNG format. Higher resolution (1200 DPI) is better for very poor quality originals or small text. Grayscale preserves tonal information that pure black and white mode loses, providing better results during enhancement."
   - question: "Can AI remove all artifacts from microfilm copies?"
-    answer: "AI can remove most common microfilm artifacts including dust spots, scratches, background noise, and uneven illumination. However, some artifacts may be too severe for complete automatic removal, particularly if they obscure text. ArtImageHub's AI handles typical microfilm issues very effectively, with manual touch-up available for stubborn artifacts."
----
+    answer: "AI can remove most common microfilm artifacts including dust spots, scratches, background noise, and uneven illumination. However, some artifacts may be too severe for complete automatic removal, particularly if they obscure text. ArtImageHub's AI handles typical microfilm issues very effectively, with manual touch-up available for stubborn artifacts."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

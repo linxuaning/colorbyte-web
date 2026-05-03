@@ -2,7 +2,7 @@
 title: "Restore Cabinet Card Photos: Victorian Preservation Guide"
 description: "Learn to restore cabinet card photographs from the 1870s-1900s. Expert techniques for albumen prints, studio backdrops, and ornate Victorian photo cards."
 publishedAt: "2026-02-19"
-updatedAt: "2026-02-19"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "Should I remove the photograph from the mounting board?"
     answer: "No, never separate the photograph from its mounting board. The two are considered a single artifact, and the mounting board provides historical context through the photographer's information and decorative elements. Additionally, attempting removal risks tearing or otherwise damaging the photograph. If the mount is severely damaged, scan or photograph the entire card and restore digitally."
   - question: "Are cabinet card photographs valuable?"
-    answer: "Value varies widely based on several factors: subject matter (celebrities, unusual occupations, post-mortem), photographer (famous studios), condition, and historical significance. Common family cabinet cards have sentimental value but limited monetary value ($5-20). Notable subjects or famous photographers can be worth $50-500+. Rare or historically significant cards may be worth more."
----
+    answer: "Value varies widely based on several factors: subject matter (celebrities, unusual occupations, post-mortem), photographer (famous studios), condition, and historical significance. Common family cabinet cards have sentimental value but limited monetary value ($5-20). Notable subjects or famous photographers can be worth $50-500+. Rare or historically significant cards may be worth more."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 

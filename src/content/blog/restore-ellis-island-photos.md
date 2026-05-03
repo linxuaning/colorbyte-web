@@ -2,7 +2,7 @@
 title: "How to Restore Ellis Island Photos: Preserve Your Immigration Heritage"
 description: "Complete guide to restoring Ellis Island photographs. Learn professional techniques to preserve precious immigration photos and family history treasures."
 publishedAt: "2026-02-20"
-updatedAt: "2026-02-20"
+updatedAt: "2026-05-04"
 author: "Sarah Chen"
 authorRole: "Digital Photo Archivist"
 authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
@@ -19,8 +19,7 @@ faq:
   - question: "How do I restore photos that are stuck to glass?"
     answer: "Photos adhered to glass present special challenges and should be handled carefully. Do not attempt to forcibly separate a photo from glass, as this will likely destroy the image surface. Instead, scan or photograph the photo through the glass, using cross-polarized lighting if possible to minimize reflections."
   - question: "What should I do if I don't know who appears in my Ellis Island photos?"
-    answer: "Unknown subjects are common in inherited photograph collections. Start by examining the photo for any inscriptions, dates, or clues on the front or reverse. Consult family members, especially older relatives who may recognize faces or remember family stories. Research Ellis Island arrival records for your family to establish timeframes and identify who immigrated when."
----
+    answer: "Unknown subjects are common in inherited photograph collections. Start by examining the photo for any inscriptions, dates, or clues on the front or reverse. Consult family members, especially older relatives who may recognize faces or remember family stories. Research Ellis Island arrival records for your family to establish timeframes and identify who immigrated when."---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
