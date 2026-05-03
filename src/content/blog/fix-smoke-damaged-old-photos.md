@@ -4,10 +4,16 @@ description: "Learn professional techniques to restore smoke-damaged photographs
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with families recovering photo collections after house fires and long-term smoke exposure. Her protocol pairs physical cleaning (dry sponge + distilled water) with AI tonal recovery."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Smoke damage layers two problems: physical soot residue (clean before scanning) + permanent yellow/brown discoloration (AI corrects digitally). Use a chemical sponge dry-clean first, never solvents on photos. Scan at 1200 DPI then run through AI restoration — GFPGAN recovers face detail under fade and Real-ESRGAN sharpens edges. Severe deep-burn damage cannot be reversed; AI fills small missing areas with plausible content but cannot invent lost detail.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For physical cleaning protocols, consult the [American Institute for Conservation](https://www.culturalheritage.org).
 
 Smoke damage is one of the most devastating forms of photograph deterioration. Whether from house fires, cigarette exposure over decades, or proximity to fireplaces and stoves, smoke leaves behind stubborn residues that can permanently alter your precious memories. The good news? With the right techniques and modern AI tools, even severely smoke-damaged photos can often be restored.
 

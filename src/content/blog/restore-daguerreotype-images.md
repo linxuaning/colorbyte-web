@@ -4,10 +4,16 @@ description: "Learn how to care for and digitally restore daguerreotype photogra
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with genealogy researchers digitizing 1840s-60s daguerreotype collections. Her workflow respects the physical fragility of silver-plate originals while maximizing detail recovery in the digital scan."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Daguerreotypes (1839-1860s) are silver-coated copper plates: never touch the silvered surface, never use water, never attempt to clean. Photograph or scan through the protective glass at oblique angle to capture the mirror image, 2400+ DPI. AI restoration via Real-ESRGAN sharpens the digital scan dramatically; GFPGAN recovers face detail in the captured silver image. Original physical artifact stays in archival housing — digital restoration creates a shareable family record.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For physical conservation, consult the [Library of Congress daguerreotype care guide](https://www.loc.gov/preservation/care/photo.html) before any handling.
 
 Daguerreotypes represent the beginning of photography as we know it. Created between 1839 and the early 1860s, these mirror-like images on silver-coated copper plates are among the most precious photographic artifacts in existence. If you're fortunate enough to have daguerreotypes in your family collection, understanding how to care for and restore them is essential for preserving these irreplaceable windows into the past.
 

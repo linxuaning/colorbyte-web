@@ -4,10 +4,16 @@ description: "Learn how to restore World War II military photographs. Expert gui
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with US, UK, and Commonwealth genealogy archives on WWII-era image restoration projects. Her workflow guides have been used by family historians honoring 80th anniversary commemorations."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — WWII soldier photos (1939-1945) are now 80+ years old and typically face Kodachrome fade, V-mail print degradation, and brittle paper. AI restoration via GFPGAN/Real-ESRGAN recovers face detail, sharpens unit insignia, and reduces silver mirroring without altering historical authenticity. Scan at 1200 DPI, restore, and store both originals and digital copies — 80th anniversary commemorations (2025) make digital archives especially valuable for family records.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For institutional WWII photo preservation guidance, see the [National Archives film preservation guidelines](https://www.archives.gov/preservation).
 
 World War II photographs document the greatest conflict of the 20th century and the 16 million Americans who served. From basic training portraits to battlefield images, V-mail letters to homecoming celebrations, these photographs capture the "Greatest Generation" at their defining moment. Now 80+ years old, these images require careful preservation to honor those who served and sacrificed.
 

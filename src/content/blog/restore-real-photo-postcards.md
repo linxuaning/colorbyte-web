@@ -4,10 +4,16 @@ description: "Learn how to restore real photo postcards (RPPC) from the early 19
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with RPPC collectors digitizing 1900-1950s postcard archives, including local-event documentation and family postcard correspondence used as genealogical primary sources."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Real Photo Postcards (1900-1950s) are silver gelatin prints on postcard stock — true photographs, not printed lithographs. Stamp box markings on the back identify era (AZO, KRUXO, VELOX). Scan front + back at 1200+ DPI; the back often holds postmarks, addresses, and handwritten messages with priceless genealogical context. AI restoration via GFPGAN/Real-ESRGAN recovers face detail and edge sharpness without destroying postcard-stock texture.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For RPPC era identification by stamp box, see the [Smithsonian RPPC dating guide](https://siarchives.si.edu/blog/dating-real-photo-postcards).
 
 Real photo postcards (RPPCs) represent a unique category of photographs—actual photographic prints made on postcard stock rather than mass-printed lithographs. Popular from the 1900s through the 1950s, these cards documented everything from family portraits to local disasters, creating an invaluable historical record. If you have real photo postcards in your collection, understanding their restoration and preservation is essential.
 

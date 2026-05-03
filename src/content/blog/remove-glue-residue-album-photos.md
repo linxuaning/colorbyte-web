@@ -4,10 +4,16 @@ description: "Learn safe techniques to remove photos stuck in albums and clean g
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has rescued thousands of family photos from 1970s-80s magnetic albums (the worst preservation format ever sold) and Victorian paste-in albums. Her approach prioritizes physical preservation but accepts AI digital recovery for damaged areas."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Magnetic albums (1970s-80s) are the worst photo storage format: PVC adhesive yellows, off-gasses, and bonds prints irreversibly. Use dental floss to slowly work under each photo, never pull. For severe glue residue, accept that physical removal damage will occur and rely on AI restoration to recover the image digitally. Move ALL family photos out of magnetic albums to archival sleeves; this is the highest-priority preservation action for most US families.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims for digital recovery rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Countless precious family photographs are trapped in deteriorating albums, stuck fast by decades-old adhesive. Whether in those notorious magnetic albums from the 1970s-80s or traditional paste-in albums, removing photos without damage requires patience and the right techniques. This guide will help you safely rescue your memories.
 

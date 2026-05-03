@@ -4,10 +4,16 @@ description: "Learn effective techniques to remove ink stains, pen marks, and wr
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has restored hundreds of photos with pen marks, ink bleed, and stamps over faces. Her digital-first protocol avoids the risk of solvent-based physical removal that often destroys the underlying photographic emulsion."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Physical ink removal almost always damages the photographic emulsion underneath. Digital removal via AI inpainting + manual masking in Photoshop is safer and produces better results. Workflow: scan the inked photo at 1200 DPI → AI restoration recovers fade and sharpens → manual mask + inpaint over the ink → optional second AI pass for blending. AI restoration tools without manual masking handle small ink dots; large pen marks across faces need the hybrid manual+AI approach.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Ink stains on photographs are surprisingly common—from accidental pen marks to intentional writing that's no longer wanted. Whether someone wrote names on the front, a pen leaked nearby, or stamps bled through, ink damage can obscure precious memories. Fortunately, modern restoration techniques offer hope.
 

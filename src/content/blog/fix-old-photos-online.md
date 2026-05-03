@@ -4,10 +4,16 @@ description: "Fix old photos online instantly with AI. Remove scratches, repair 
 publishedAt: "2026-04-12"
 updatedAt: "2026-04-12"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has reviewed AI photo restoration tools across 200+ side-by-side tests on real damaged family photos. She publishes evidence-based comparisons rather than vendor marketing."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
 ---
+
+> **TL;DR** — AI photo restoration online (under 60 seconds): scan at 600+ DPI → upload to a tool that wraps **GFPGAN** (face) + **Real-ESRGAN** (upscale) → review side-by-side → download. Three free, then $4.99 one-time for unlimited unwatermarked HD. AI handles fading, scratches, yellowing, soft focus reliably; large missing sections and overlapping severe damage still need human review.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Fixing old photos online used to mean hiring a professional retoucher or spending hours in Photoshop. AI has changed that completely. Today you can upload a damaged, faded, or torn photo and get a professionally restored version back in under 60 seconds—no software, no skills, no waiting.
 

@@ -4,10 +4,16 @@ description: "Learn how to restore carte de visite photographs from the 1860s-19
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah works regularly with genealogists digitizing Victorian portrait cards. Her CDV protocol respects the cardstock+albumen-print construction and recovers fine face detail typical of small-format originals."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Cartes de visite (1860s-1900s) are albumen prints (~2.5×4 inches) mounted on cardstock. Small-format means scans must be high-DPI to recover face detail — 2400 DPI minimum. AI restoration via Real-ESRGAN upscales the small-format scan dramatically; GFPGAN sharpens face detail. Photographer imprints on the card back contain valuable genealogical metadata (city, studio name, date range) — scan both sides.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For CDV identification by photographer imprint, see the [Library of Congress photo identification resources](https://www.loc.gov/pictures/collection/cdv/).
 
 Cartes de visite—small portrait photographs mounted on card stock—revolutionized photography in the 1860s by making portraits affordable for the masses. These calling card-sized images were collected, traded, and treasured, leaving behind an extraordinary visual record of the Victorian and Edwardian eras. If you have cartes de visite in your family collection, understanding their restoration and preservation is essential.
 

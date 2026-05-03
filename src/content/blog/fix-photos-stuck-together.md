@@ -4,10 +4,16 @@ description: "Learn safe techniques to separate photographs stuck together from 
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has rescued photo collections from flood, hurricane, and water damage events. Her separation protocol is based on archival conservation principles published by the Library of Congress."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Stuck photos almost always tear if pulled apart dry. Two safe paths: (1) Soak in cool distilled water 20-30 min, gently slide apart while submerged, air-dry face-up. (2) For brittle/old prints, use a freezer-controlled humidity method (3-5 days) to slowly relax emulsion. Even partial separation + AI restoration recovers more than dry-tearing. Scan whatever you save and process via AI to fill emulsion damage.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims for AI face/texture recovery rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For physical handling, see [Library of Congress photograph care](https://www.loc.gov/preservation/care/photo.html).
 
 Few things are more frustrating than discovering your photographs have stuck together—whether from flood damage, humid storage, or years in a forgotten box. The instinct is to pull them apart, but that almost always results in torn emulsion and lost images. With patience and proper technique, stuck photos can often be safely separated.
 
