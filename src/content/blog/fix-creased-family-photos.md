@@ -20,6 +20,19 @@ faq:
     answer: "While the iron method can work, it carries significant risk and should only be used by experienced individuals on less valuable photographs. The iron must be set to the lowest possible temperature (under 150°F), used only with protective cloth between iron and photo, and kept moving constantly. For most people, safer methods like weighted pressing or humidity chambers are better choices."
   - question: "Should I restore the physical photo before scanning, or scan then restore digitally?"
     answer: "The best practice is to attempt safe physical restoration first (weighted flattening, humidity method) to reduce the crease as much as possible without risk. Then scan the photograph at high resolution and complete the restoration digitally. This combined approach yields the best results. Make sure to create a backup scan before attempting any physical restoration in case something goes wrong."
+howTo:
+  - name: "Prepare Your Workspace"
+    text: "1. Open photograph in editing software 2. Duplicate background layer (always work non-destructively) 3. Create additional empty layers for restoration work 4. Set up before/after view to monitor progress 5. Zoom to 100% or greater for detailed work"
+  - name: "Assess the Damage"
+    text: "1. Examine all crease lines at high magnification 2. Identify areas requiring most attention 3. Note any color variations along creases 4. Plan restoration strategy from least to most damaged areas"
+  - name: "Clone Stamp Technique"
+    text: "The clone stamp is your primary tool for crease removal:"
+  - name: "Healing Brush for Texture"
+    text: "The healing brush excels at maintaining photograph texture:"
+  - name: "Color and Tone Correction"
+    text: "Creases often show as lighter or darker lines:"
+  - name: "Final Touches"
+    text: "1. Add subtle noise/grain to match original photograph texture 2. Apply slight blur to overly-sharp restoration areas 3. Adjust overall brightness and contrast if needed 4. Sharpen appropriate areas while leaving smooth areas alone"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

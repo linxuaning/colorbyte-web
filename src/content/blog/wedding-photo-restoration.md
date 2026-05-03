@@ -22,6 +22,17 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Assessment and Preparation (30–60 minutes)"
+    text: "Before scanning or uploading anything, go through the album and assess what you have."
+  - name: "Scanning (1–4 hours depending on volume)"
+    text: "Proper scanning is essential. No AI tool can compensate for a poor scan."
+  - name: "AI Restoration (30–90 seconds per photo)"
+    text: "With clean scans ready, the restoration process itself is fast."
+  - name: "Review and Manual Refinement"
+    text: "After AI processing, review each photo carefully."
+  - name: "Archiving and Sharing"
+    text: "File organization: ``` Wedding Photo Archive/ ├── 01_Originals_NEVER_EDIT/ │ ├── Ceremony/ │ ├── Reception/ │ └── Portraits/ ├── 02_AI_Restored/ │ ├── Ceremony/ │ ├── Reception/ │ └── Portraits/ └── 03_Best_Of/ └── (Top 20–30 photos for printing and sharing) ```"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

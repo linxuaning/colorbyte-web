@@ -22,6 +22,17 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Prepare your scan"
+    text: "Before uploading, make sure you've scanned at sufficient resolution. A 4×6 inch print should be scanned at 600 DPI minimum (producing roughly 3600×2400 pixels). Small prints (wallet size, 3×4) should be scanned at 1200 DPI. If your file is small (under 500KB for a 4×6 print), you may need to re-scan at higher resolution."
+  - name: "Upload to ArtImageHub"
+    text: "Navigate to the restoration tool and upload your photo. The interface accepts JPEG, PNG, TIFF, and WebP files."
+  - name: "Enable face enhancement"
+    text: "If your photo contains people—which is most family photos—enable the face enhancement option. This activates the face-specific model that provides the most dramatic improvement for blurry portraits."
+  - name: "Review and compare"
+    text: "ArtImageHub shows a before/after slider so you can see exactly what changed. Pay attention to faces, eyes, and fine detail like hair strands or fabric texture."
+  - name: "Download and evaluate"
+    text: "Download the restored version and compare it to the original at 100% zoom. For most family photos with blur, you'll see significant improvement in face clarity and fine detail."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

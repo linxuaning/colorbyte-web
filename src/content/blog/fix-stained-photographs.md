@@ -20,6 +20,23 @@ faq:
     answer: "Yes, digitally. Yellow staining is one of the most successfully corrected types of damage. Scan in 48-bit color, then use Curves adjustment in the Blue channel (adding blue removes yellow), Color Balance adjustments, or LAB color mode corrections. AI tools like ArtImageHub automatically detect and correct yellowing."
   - question: "Should I attempt stain removal on valuable photographs?"
     answer: "For valuable photographs, prioritize preservation over appearance. Have them professionally assessed and stored properly in archival materials. Create high-quality scans immediately to preserve current state digitally. Digital restoration provides beautiful viewing copies without risking the original."
+howTo:
+  - name: "Analyze the Stain"
+    text: "What type of stain? Which areas affected vs. unaffected? Is underlying image still visible? What color shifts are present? How much of image is affected?"
+  - name: "Identify Reference Areas"
+    text: "Find unstained or less-stained areas Note original tonality and color Establish what \"correct\" looks like Use for color and density matching"
+  - name: "Choose Approach"
+    text: "Local correction for isolated stains Overall correction for widespread staining Combination approach for mixed damage"
+  - name: "Create Frequency Layers"
+    text: "1. Duplicate background layer twice 2. Name \"Low Frequency\" (color/tone) and \"High Frequency\" (detail) 3. On Low Frequency: Filter > Blur > Gaussian Blur (radius until detail disappears, 3-10 pixels typical) 4. On High Frequency: Image > Apply Image Layer: Low Frequency Blending: Subtract Scale: 2, Offset: 128 5. Set High Frequency blend mode to Linear Light"
+  - name: "Remove Stain Color from Low Frequency"
+    text: "Select Low Frequency layer Use Healing Brush, Clone Stamp with large soft brush Smooth out color variations Remove stain coloration Work only on color, detail is on other layer"
+  - name: "Preserve Detail on High Frequency"
+    text: "High Frequency layer contains texture and detail Usually needs minimal work Can sharpen if desired Detail remains intact while color corrected"
+  - name: "Merge and Finalize"
+    text: "Adjust layer opacities if needed Merge or flatten when satisfied Apply final global adjustments"
+  - name: "Careful Scanning"
+    text: "Scanned at 1200 DPI 48-bit color Multiple scans to capture full tonal range Noted areas of emulsion loss"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

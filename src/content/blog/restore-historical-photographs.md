@@ -20,6 +20,19 @@ faq:
     answer: "Store historical photographs in a cool (65-70°F), dry (30-40% RH) environment with stable conditions. Use archival-quality materials: acid-free paper folders or polyester sleeves, never PVC plastic. Store flat in boxes, not standing on edge. Keep in darkness when not in use. Handle carefully, supporting from underneath, and use gloves for valuable items."
   - question: "Is it worth paying for professional restoration of historical photographs?"
     answer: "It depends on the photograph's value and your goals. For rare, unique, or high-value historical photographs (worth $500+), professional conservator assessment is usually worth the cost. For photographs with significant historical importance, family heritage value, or museum potential, professional work ensures appropriate treatment following archival standards."
+howTo:
+  - name: "Global Adjustments"
+    text: "Converted to LAB color space Reduced yellowing in A channel while maintaining period warmth Adjusted L channel for improved density Preserved B channel characteristics"
+  - name: "Water Stain Removal"
+    text: "Careful masking of stained areas Density and color matching to adjacent areas Preserved texture and grain Used frequency separation for complex areas"
+  - name: "Crack Repair"
+    text: "Carefully reconstructed facial features using both sides of crack Referenced period portrait conventions Maintained slight evidence of crack for authenticity Avoided over-smoothing or artificial appearance"
+  - name: "Detail Enhancement"
+    text: "Improved visibility of uniform details Enhanced brass buttons and insignia Improved legibility of studio mark Sharpened cautiously to reveal detail without creating artifacts"
+  - name: "Crazing Decision"
+    text: "Decided to preserve fine crazing pattern It's characteristic of albumen prints Provides authenticity and doesn't obscure image Reduced only where it interfered with face visibility"
+  - name: "Final Refinement"
+    text: "Overall contrast and density optimization Careful noise reduction while preserving grain Edge cleanup (removed modern scanning artifacts only) Created multiple versions: full restoration, conservative restoration, preservation scan"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

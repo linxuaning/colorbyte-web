@@ -23,6 +23,23 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Upload your faded photo"
+    text: "Drag and drop or click to select Accepts JPEG, PNG, TIFF up to 50 MB Works with photos you've scanned or photographed with phone"
+  - name: "Select restoration options"
+    text: "Face enhancement: ON (for portraits), OFF (for landscapes) Color correction: Auto (AI decides intensity) Scratch removal: ON (works well even on faded photos with scratches) Upscaling: 2× (doubles resolution)"
+  - name: "Process (30-90 seconds)"
+    text: "Processing happens in cloud Shows progress bar Side-by-side preview when complete"
+  - name: "Download"
+    text: "Full resolution, no watermark Save both original and restored versions Can re-process with different settings if unsatisfied"
+  - name: "Open photo in Pixlr"
+    text: "Go to pixlr.com/editor Open image from computer"
+  - name: "Adjust levels"
+    text: "Image menu → Adjustments → Levels Drag black point right to restore shadows Drag white point left to restore highlights Drag midpoint to adjust overall brightness"
+  - name: "Fix color fading"
+    text: "Image → Adjustments → Hue/Saturation Increase saturation to restore color intensity Adjust hue if colors shifted (common in old color photos)"
+  - name: "Sharpen details"
+    text: "Filter → Sharpen → Unsharp Mask Amount: 50-100% (adjust to taste) Radius: 1-2 pixels"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

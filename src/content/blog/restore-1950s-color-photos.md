@@ -20,6 +20,23 @@ faq:
     answer: "Use multiple approaches: look for less-faded areas (center often better than edges), identify neutral reference points (white shirts, gray pavement), research period-appropriate colors (car paint, fashion trends, interior design), consult family members' memory (with skepticism—memory fades too), examine less-faded photos from same event or era, and understand typical fading patterns (helps rev..."
   - question: "Is it worth restoring 1950s color photos if they're very faded?"
     answer: "Absolutely, especially with modern AI tools. Even severely faded photos contain more color information than appears visually. Digital scanning in 48-bit color captures subtle color variations invisible to eye. AI restoration tools can analyze patterns and restore surprisingly good color from badly faded originals."
+howTo:
+  - name: "Neutral Point Identification"
+    text: "Find True Neutrals: Look for areas that should be neutral gray White objects (clothing, paper, walls) Gray pavement, concrete Black objects in shadows"
+  - name: "Initial Color Cast Removal"
+    text: "Levels Color Correction: Open Levels adjustment Use gray point eyedropper Click on area that should be neutral gray Auto-balances color across all channels Quick first step"
+  - name: "Selective Color Channel Adjustment"
+    text: "Understanding Channels: Red channel: adjust red vs. cyan Green channel: adjust green vs. magenta Blue channel: adjust blue vs. yellow"
+  - name: "Saturation Recovery"
+    text: "Vibrance/Saturation Adjustments: Vibrance first (protects skin tones) Increase gradually Check for clipping Saturation for additional boost if needed"
+  - name: "High-Quality Scan"
+    text: "Scanned at 1200 DPI 48-bit color depth Captured all damage and fading"
+  - name: "Initial Color Correction"
+    text: "Used Camera Raw for first pass Reduced yellow with temperature slider Reduced magenta with tint slider Set neutral point on white shirt collar"
+  - name: "Selective Color Work"
+    text: "Curves adjustment in Photoshop Reduced red and yellow channels Increased blue channel Adjusted green slightly"
+  - name: "Saturation Recovery"
+    text: "Vibrance +40 Selective Hue/Saturation adjustments Boosted reds (dresses, ornaments) Enhanced greens (partial tree visible) Careful with skin tones"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,17 @@ faq:
     answer: "Reputable online restoration services use encryption and secure storage to protect uploaded photos. However, privacy practices vary by service. Before uploading, review the service's privacy policy, data retention practices, and terms of service."
   - question: "Can I restore black and white photos from my smartphone?"
     answer: "Yes, many online restoration services offer mobile-responsive websites or dedicated mobile apps. Services like Remini specialize in mobile restoration, offering iOS and Android apps. Simply photograph or scan your black and white photo, upload through the mobile app or website, and receive restored results on your device."
+howTo:
+  - name: "Upload Your Photo"
+    text: "1. Visit the restoration page 2. Click \"Upload Photo\" or drag and drop 3. Wait for upload completion (10-30 seconds) 4. Preview uploaded image"
+  - name: "Select Restoration Options"
+    text: "1. Choose restoration level (automatic or custom) 2. Select specific issues to address: Scratch removal Tear repair Contrast enhancement Sharpening Noise reduction 3. Preview estimated result"
+  - name: "Process and Preview"
+    text: "1. Click \"Restore Photo\" to begin AI processing 2. Wait for processing (typically 1-3 minutes) 3. View side-by-side before/after comparison 4. Use zoom to inspect details 5. Compare different areas of photo"
+  - name: "Adjust and Refine"
+    text: "(if available) 1. Make manual adjustments if needed: Brightness and contrast Sharpness levels Specific area touch-ups 2. Request re-processing with different settings 3. Compare multiple versions"
+  - name: "Download Results"
+    text: "1. Select output format (JPEG, PNG, TIFF) 2. Choose resolution (match intended use) 3. Download high-resolution file 4. Save original processed version 5. Create backup copy"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,15 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+howTo:
+  - name: "Assess the Damage"
+    text: "What percentage is missing? What content was likely there? Are there any context clues? Do you have reference photos?"
+  - name: "High-Quality Scan"
+    text: "600 DPI minimum Full image including all damage Color scan even for B&W Save original unedited"
+  - name: "AI Restoration"
+    text: "Upload to restoration tool Let AI analyze and reconstruct Review results carefully May need multiple passes"
+  - name: "Review and Refine"
+    text: "Check reconstructed areas Ensure natural blending Verify no artifacts Compare to original for accuracy"
 ---
 
 > **TL;DR** — Two paths for missing corners: (1) Honest crop — re-frame the photo to exclude missing area; preserves authenticity. (2) AI inpainting — fills missing areas with plausible content based on surrounding context. Inpainting works well for backgrounds (sky, walls, floor) but invents content where missing area contains subjects. Workflow: scan at 1200 DPI → AI restoration recovers what's there → manual or AI inpainting for missing edges → for large losses, prefer honest crop. Always preserve the original scan as the historical record.

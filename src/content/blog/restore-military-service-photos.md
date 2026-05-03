@@ -20,6 +20,23 @@ faq:
     answer: "Research is essential. Consult military uniform regulations for the specific era and branch (colors were precisely specified). Reference period color photographs and films. Use military uniform guidebooks and collector references. Federal Standard 595 color system specifies many military colors. Contact military museums or historical societies."
   - question: "Are military service photographs more valuable and should I get professional help?"
     answer: "Military photographs often have high historical, genealogical, and emotional value regardless of monetary worth. For typical service portraits and personal photographs, DIY restoration using proper methods and tools like ArtImageHub is appropriate and achievable."
+howTo:
+  - name: "Assessment and Planning"
+    text: ": Document current condition Identify all damage types Research uniform and context Plan restoration approach Set appropriate goals"
+  - name: "Global Corrections"
+    text: ": Color/tone correction first Adjust exposure and contrast Remove overall color casts Establish proper tonality Non-destructive adjustment layers"
+  - name: "Damage Repair"
+    text: ": Remove tears, creases, stains Clone stamp and healing brush Preserve important details Work at high magnification Careful, patient work"
+  - name: "Uniform Detail Enhancement"
+    text: ": Sharpen insignia carefully Enhance badges and ribbons Clarify rank markings Maintain fabric texture Preserve authentic wear and characteristics"
+  - name: "Facial Enhancement"
+    text: ": Careful sharpening of faces Eye clarity improvement Natural expression preservation Maintain period photographic quality"
+  - name: "Final Refinement"
+    text: ": Overall sharpening (conservative) Final tone and color adjustments Check for artifacts or errors Preserve period character"
+  - name: "High-Quality Scanning"
+    text: "Scanned at 1200 DPI 48-bit color to capture all information Multiple scans to ensure best quality"
+  - name: "Crease Repair"
+    text: "Carefully aligned torn sections digitally Reconstructed facial features across crease Used both sides of crease for information Gradual, careful work at high magnification"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

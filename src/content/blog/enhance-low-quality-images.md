@@ -20,6 +20,23 @@ faq:
     answer: "Yes, absolutely. You can't create information that never existed. Extremely low resolution images (less than 100x100 pixels), severely compressed images with massive data loss, or completely blurred images have fundamental limitations. AI can create plausible detail but can't recover actual lost information."
   - question: "Should I use AI enhancement or manual Photoshop techniques?"
     answer: "Both have advantages. AI enhancement (like ArtImageHub) excels at: upscaling resolution, automatic detection of issues, speed and convenience, consistent results, and handling complex patterns. Manual Photoshop techniques excel at: precise control over specific areas, handling unusual situations AI wasn't trained on, artistic interpretation, and combining multiple specialized techniques."
+howTo:
+  - name: "Upload and Analysis"
+    text: "Upload your low quality image AI automatically analyzes quality issues Identifies resolution, compression, noise, sharpness problems Determines optimal enhancement strategy"
+  - name: "Automatic Enhancement"
+    text: "AI applies appropriate corrections Upscales resolution intelligently Removes compression artifacts Reduces noise while preserving detail Enhances sharpness and clarity"
+  - name: "Review and Refine"
+    text: "Preview enhanced result Adjust enhancement strength if needed Fine-tune specific aspects Compare before/after Download high-quality result"
+  - name: "View at 100%"
+    text: "Always judge sharpness at actual pixels Don't sharpen based on zoomed out view"
+  - name: "Apply Conservative Sharpening"
+    text: "Start with less than you think you need Can always add more, hard to remove excess"
+  - name: "Use Layer-Based Approach"
+    text: "Sharpen on duplicate layer or smart object Allows adjustment and removal Can mask sharpening to specific areas"
+  - name: "Check for Artifacts"
+    text: "Halos around edges (white outlines) Increased noise Unnatural texture Reduce if artifacts appear"
+  - name: "Selective Sharpening"
+    text: "Sharpen important areas more (faces, eyes, key details) Less sharpening in backgrounds Minimal or no sharpening in smooth areas (sky, skin)"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -20,6 +20,21 @@ faq:
     answer: "Always scan to TIFF format for master archival files. TIFF uses lossless compression, preserves maximum quality, and supports 16-bit color depth. Create JPEG copies from your TIFF masters for sharing and web use, but never use JPEG for original scans as it's a lossy format that discards data."
   - question: "How long does it take to scan old photos properly?"
     answer: "At recommended settings (1200 DPI, TIFF format), expect 2-4 minutes per photo including positioning, scanning, verification, and file management. A collection of 100 photos requires approximately 4-7 hours. Batch scanning similar-sized photos and developing an efficient workflow reduces time significantly."
+howTo:
+  - name: "Organize Photos"
+    text: "Before scanning: Sort photos by size to minimize scanner bed adjustments Group photos by era or event for easier metadata organization Identify photos needing special handling (very fragile, odd sizes, etc.) Estimate scanning time (2-4 minutes per photo at high quality)"
+  - name: "Clean Photos Gently"
+    text: "Careful cleaning improves scan quality:"
+  - name: "Prepare Your Scanner"
+    text: "Clean scanner glass with appropriate glass cleaner Dry thoroughly with microfiber cloth Ensure no dust, fingerprints, or smudges on glass Position scanner for easy access Have good lighting to view photos while working Organize workspace for efficient workflow"
+  - name: "Position the Photo"
+    text: "Proper placement ensures best results:"
+  - name: "Configure Scan Settings"
+    text: "Access your scanner software and configure:"
+  - name: "Preview Scan"
+    text: "Most scanner software offers preview:"
+  - name: "Perform the Final Scan"
+    text: "1. Initiate the full scan 2. Remain patient (high-resolution scans take time) 3. Don't move or bump the scanner during scanning 4. Wait for completion before opening lid 5. Verify the scan looks correct before removing photo"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

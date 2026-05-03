@@ -20,6 +20,15 @@ faq:
     answer: "Learning manual restoration techniques remains valuable even in the AI era for several important reasons. First, AI produces excellent automated results but understanding manual techniques allows you to refine and perfect those results for images that matter most. Hybrid workflow skills combining AI foundation with manual refinement produce the absolute best outcomes."
   - question: "Which gives better results for faces—AI or manual restoration?"
     answer: "Modern AI facial restoration in 2026 has become remarkably advanced, often matching or exceeding manual restoration for damaged faces. AI advantages for facial restoration include training on millions of facial images creating deep understanding of facial structure, ability to reconstruct damaged facial areas with realistic proportions and features, consistent enhancement quality across all fac..."
+howTo:
+  - name: "AI Restoration"
+    text: "using quality tools. Upload to ArtImageHub or similar advanced AI restoration service. Review AI results for overall quality and problem areas. Save AI-restored version as working file. This takes 5-15 minutes."
+  - name: "Assessment"
+    text: "determines manual work needed. Examine faces—do they need additional enhancement? Check historically important details—are they accurate and clear? Assess color accuracy if colorization was applied. Identify any artifacts or areas where AI didn't produce optimal results. This takes 5-10 minutes."
+  - name: "Manual Refinement"
+    text: "focuses on identified needs. Enhance critical facial details using dodging, burning, and sharpening. Correct any color or tonal issues using adjustment layers. Address any remaining damage or artifacts AI missed. Apply final creative enhancements to optimize appearance. This takes 20-60 minutes depending on image importance and requirements."
+  - name: "Final Output"
+    text: "creates deliverable files. Apply appropriate sharpening for output medium (print vs screen). Size and optimize for intended use. Save in multiple formats (archival TIFF, print-ready JPEG, web-optimized versions). Add metadata and restoration notes. This takes 10-15 minutes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

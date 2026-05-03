@@ -20,6 +20,23 @@ faq:
     answer: "No, never iron photographs. Heat can destroy the emulsion, cause permanent discoloration, and make paper brittle. Even with protective layers, irons apply too much heat and pressure. The risks far outweigh any potential benefits. Use humidity-based flattening methods instead."
   - question: "Can I fix curled edges on Polaroids and instant photos?"
     answer: "Physical flattening of Polaroids is risky due to their complex chemical structure and sensitivity to moisture. Digital correction is much safer and more effective for Polaroids. Scan or photograph them while gently held flat (using glass if necessary) and correct any edge issues digitally."
+howTo:
+  - name: "Preparation"
+    text: "Clean work area thoroughly Wash hands or wear cotton gloves Ensure all materials are clean and archival quality Have patience—this process takes days, not hours"
+  - name: "Create Humidity Chamber"
+    text: "Use large plastic container with lid or humidity chamber Place damp (not wet) blotters or sponges in chamber Aim for 60-70% relative humidity Use hygrometer to monitor—don't exceed 70% (mold risk)"
+  - name: "Expose Print to Humidity"
+    text: "Place print face-up on clean surface in chamber Don't let print touch damp materials directly Close chamber and allow print to relax for 6-24 hours Check periodically—print should become more flexible"
+  - name: "Flatten While Damp"
+    text: "When print is relaxed and slightly flexible, remove from chamber Place between clean blotter papers or acid-free tissue Place smooth weight on top (wrapped books work well) Don't use excessive weight—gentle pressure suffices"
+  - name: "Dry Under Pressure"
+    text: "Leave weighted for several days in normal room conditions Change blotters if they become damp Gradually reduce humidity if using controlled environment Don't remove weight too soon or curl may return"
+  - name: "Maintenance"
+    text: "Once flat, store properly to prevent recurl Use acid-free folders or polyester sleeves Maintain stable humidity (30-40% RH ideal for photographs) Store flat with minimal weight on top"
+  - name: "Initial Digital Capture"
+    text: "(Before Physical Flattening) Photographed the print while gently curved (unable to scan in curled state) Used copy stand with DSLR Multiple exposures at different focus points Focus-stacked the images to get entire curled surface in focus Created usable digital backup before attempting any physical intervention"
+  - name: "Cautious Physical Flattening"
+    text: "Built humidity chamber with careful monitoring Slowly raised humidity over 12 hours to 65% RH Left print in chamber for 48 hours Print gradually relaxed Carefully placed between archival blotters with light weight Dried under pressure over 5 days with daily blotter changes"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

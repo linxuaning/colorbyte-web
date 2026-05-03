@@ -20,6 +20,17 @@ faq:
     answer: "Yes, it's safe to scan brittle photographs if you take proper precautions: leave the scanner lid open (never close it on brittle photos), support the photograph on a rigid board during transport, place it gently on the scanner bed without forcing it flat, cover with black cloth instead of closing lid, and remove immediately after scanning."
   - question: "How do you store brittle photographs safely?"
     answer: "Store brittle photographs in individual acid-free enclosures (polyester sleeves or buffered paper envelopes) in archival boxes, at 30-40% humidity and 65-70°F with stable conditions. Support brittle photos on acid-free mat board cut to size, place in polyester sleeves to prevent handling damage, store flat (never upright), and label boxes to minimize opening."
+howTo:
+  - name: "Support During Transport"
+    text: "Use rigid support board Never hold brittle photo without support Move slowly and steadily Position near scanner before lifting photo"
+  - name: "Careful Placement"
+    text: "Leave scanner lid OPEN (no pressure on brittle photo) Gently slide photo onto scanner glass Position carefully (minimize adjustments) Use corner guides if helpful Don't force photo flat if curved"
+  - name: "Covering for Scanning"
+    text: "Place black cloth over photo and scanner Cloth blocks external light Never close lid on brittle photograph Weight cloth edges, not photo"
+  - name: "Scan Settings"
+    text: "Resolution: 1200-2400 DPI (higher for damaged photos) Color depth: 48-bit minimum Color mode: Full color (even for B&W photos) Disable all automatic corrections Save as uncompressed TIFF"
+  - name: "Multiple Scans"
+    text: "For severely brittle photos: Scan once, then remove immediately If quality insufficient, wait 24 hours before second scan Multiple handling sessions less risky than one long session Consider photography instead if too fragile"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

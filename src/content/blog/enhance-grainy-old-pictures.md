@@ -20,6 +20,21 @@ faq:
     answer: "Yes, modern AI noise reduction (like ArtImageHub) handles heavy grain remarkably well. AI understands difference between noise and image content, preserving details even while removing significant grain. It's particularly effective on faces and portraits."
   - question: "Does scanning increase grain visibility?"
     answer: "Yes, scanning can emphasize grain in several ways: faded photographs require contrast boost which brings out grain; some scanners add digital noise; upscaling small originals enlarges grain; sharpening applied during scanning emphasizes grain."
+howTo:
+  - name: "High-Quality Scan"
+    text: "Scanned at 1200 DPI 48-bit color Captured all grain and detail"
+  - name: "AI Noise Reduction (ArtImageHub)"
+    text: "Uploaded to ArtImageHub AI automatically detected heavy grain Applied intelligent reduction Preserved facial details while smoothing grain Excellent starting point"
+  - name: "Additional Manual Refinement"
+    text: "Opened in Photoshop for fine-tuning Additional selective noise reduction in backgrounds Preserved more grain in period-appropriate areas Very slight additional reduction on faces only"
+  - name: "Color Noise Removal"
+    text: "Aggressive color noise reduction (from scanning) Removed distracting colored speckles Preserved luminance grain structure"
+  - name: "Exposure and Tone Correction"
+    text: "Brightened faces carefully Improved overall exposure Enhanced contrast Brought out detail"
+  - name: "Selective Sharpening"
+    text: "Sharpened faces, especially eyes Less sharpening in backgrounds Recovered edge definition lost to noise reduction High Pass filter at low opacity"
+  - name: "Final Balance"
+    text: "Reduced noise reduction layer opacity slightly Allowed small amount of grain back in Authentic 1970s character preserved Just enough grain for period feel"
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
