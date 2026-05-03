@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) for face recovery and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) for tone correction handles 1980s Polaroid color shifts well while preserving the soft instant-film aesthetic that makes Polaroids feel distinctive.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You're sorting through a relative's storage and find a stack of 1980s Polaroids — birthday parties, beach vacations, holiday gatherings, candid family moments captured on instant film. Many of them have a noticeable yellow or orange cast. The faces look slightly off-tone. The colors don't match how you remember the originals.
 
 This guide walks through restoring 1980s Polaroid family photographs while preserving the iconic instant-film character that makes them special.
@@ -72,6 +74,13 @@ Storage conditions accelerate fading:
 - Photos stored in attics or basements (temperature swings) fade fastest
 - Photos exposed to even indirect sunlight develop strongest yellow shift
 - Photos in dark, cool, dry storage (closet shoeboxes) fade slowest
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Triage your Polaroid collection
 
@@ -159,3 +168,22 @@ If your Polaroids are stuck in a magnetic album:
 A box of 1980s Polaroids represents a particular kind of family memory — the instant-photograph era of birthday parties, road trips, and casual snapshots. AI restoration makes these accessible after decades of color drift while respecting their distinctive soft aesthetic. Treat the Polaroid as a historical artifact, treat the AI-restored version as a faithful interpretation, and your family's 1980s visual record stays alive.
 
 For related guides, see [restore 1960s color slide photographs](/blog/restore-1960s-color-slide-photographs), [enhance blurry vintage photos](/blog/enhance-blurry-vintage-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

@@ -15,6 +15,8 @@ featured: false
 
 Orphaned photographs—images separated from their original context with no identifying information about subjects, dates, or locations—represent both a preservation challenge and a historical mystery. Found in antique stores, estate sales, family albums, or attics, these anonymous faces stare out from the past, their stories lost to time but their images waiting to be preserved and perhaps reunited with their histories.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Whether you've inherited a collection of unidentified family photos, purchased fascinating historical images at an estate sale, or discovered abandoned photographs in an old house, learning to restore orphaned photographs preserves these fragments of history and sometimes enables remarkable rediscoveries of their origins.
 
 This guide covers restoring orphaned photographs—from assessment and research to digital restoration and ethical considerations around preserving images of unknown subjects.
@@ -42,6 +44,13 @@ Many orphaned photographs are historically significant documentation of eras, pl
 Restoring and preserving orphaned photographs raises ethical questions. Should we restore photos of unknown people? Most preservation experts say yes—these images are historical documents worthy of preservation regardless of current anonymity. What about selling or profiting from orphaned photos? Opinions vary, but preservation and appropriate archiving generally takes ethical priority. How do we handle potentially private or sensitive images? Treat all subjects with dignity and respect, avoiding voyeuristic or exploitative use.
 
 Should we try to identify subjects and reunite photos with families? When possible and appropriate, yes—this honors both the subjects and their descendants. The general consensus is that orphaned photographs deserve preservation and respectful treatment as historical documents, with efforts to restore context and identity when feasible.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Researching Orphaned Photographs
 
@@ -263,3 +272,22 @@ Every face in every photograph represents a life lived, a story told, and a conn
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

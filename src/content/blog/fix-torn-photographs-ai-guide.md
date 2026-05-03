@@ -18,6 +18,8 @@ featured: false
 
 ## Quick Answer
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 How to restore torn, creased, or physically damaged photographs using AI reconstruction and traditional techniques.
 
 **In 30 seconds:**
@@ -38,6 +40,13 @@ A torn photograph is the damage type that feels most hopeless to families and is
 I have repaired roughly four thousand torn prints in the last decade. About 70% of them come back indistinguishable from undamaged at typical viewing distance. Another 20% come back with a faint residual seam that is only visible under magnification. The remaining 10% — tears that lost emulsion along the edge, or fragments that went missing entirely — require judgment calls about how much to reconstruct and how much to leave honest. This guide covers all three cases.
 
 If you already have the fragments in a safe place and just want to start digital work, you can jump straight to the [old photo restoration](/old-photo-restoration) tool and work from a scan of the aligned pieces. If the photo just tore and you are holding the pieces in your hand, read the stabilization section first. What you do in the next twenty minutes determines how much of the original survives.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Why Torn Photos Are Physically Tricky (But Digitally Forgiving)
 
@@ -308,3 +317,22 @@ For quick casual work, yes — mobile apps will do a serviceable job on simple t
 ---
 
 A torn photo feels like irreversible damage until you work on a few of them. The fragments preserve the information; the tear is a seam to hide, not a loss to mourn. When you are ready to start, bring your scanned fragments to [old photo restoration](/old-photo-restoration) and try the repair mode on a clean two-piece tear first. That first success changes how you look at the rest of the shoebox.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

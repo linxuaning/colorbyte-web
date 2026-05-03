@@ -17,6 +17,8 @@ coverEmoji: "🌳"
 
 Genealogy research depends heavily on photographs — they place names to faces, confirm family relationships, and connect living descendants to ancestors they never met. The problem: most family photographs from before 1980 are in some state of degradation, and many from before 1960 are significantly damaged.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Here's how AI photo restoration serves genealogy work specifically.
 
 ---
@@ -34,6 +36,13 @@ Here's how AI photo restoration serves genealogy work specifically.
 **Genealogical databases:** Platforms like Ancestry.com, FamilySearch, and MyHeritage allow attaching photos to family tree profiles. Restored, high-quality photos make records significantly more useful.
 
 ---
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## The Degradation Problem
 
@@ -127,3 +136,22 @@ For most genealogy projects, the 10–20 most significant photos represent the h
 - [Old Photo Restoration as a Gift](/blog/old-photo-restoration-gifts) — gift ideas for family history projects
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — tool comparison
 - [How to Restore Old Photos: Free Options vs Paid AI](/blog/how-to-restore-old-photos-free-vs-paid) — full overview
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

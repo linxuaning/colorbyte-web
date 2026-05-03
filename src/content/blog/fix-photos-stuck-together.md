@@ -15,6 +15,8 @@ featured: false
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims for AI face/texture recovery rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For physical handling, see [Library of Congress photograph care](https://www.loc.gov/preservation/care/photo.html).
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Few things are more frustrating than discovering your photographs have stuck together—whether from flood damage, humid storage, or years in a forgotten box. The instinct is to pull them apart, but that almost always results in torn emulsion and lost images. With patience and proper technique, stuck photos can often be safely separated.
 
 Already have photos damaged from being stuck? Our [AI photo enhancer](/enhance-old-photos) can restore torn areas, fix emulsion damage, and recover images even when separation wasn't perfect.
@@ -67,6 +69,13 @@ Understanding how photos become fused helps you choose the right separation appr
 | Partial fusion | Moderate water damage | Difficult | 50-70% |
 | Complete fusion | Severe water/heat | Very Difficult | 20-40% |
 | Chemical bonding | Age + poor storage | Extremely Difficult | 10-30% |
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Before You Begin
 
@@ -312,3 +321,22 @@ Separating stuck photographs requires patience and the right technique, but many
 
 
 Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

@@ -15,6 +15,8 @@ featured: false
 
 Gold Rush photographs capture one of the most dramatic periods in American history—when hundreds of thousands of fortune-seekers flooded into California, transforming a remote Mexican territory into a bustling state virtually overnight. From 1849 through the end of the 19th century, photographers documented this transformation, creating a remarkable visual record of mining camps, boomtowns, miners, and the harsh realities of life on the frontier.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 These photographs show men standing beside sluice boxes and gold pans, rough mining camps perched on mountainsides, the muddy streets of rapidly-built towns, Chinese laborers working placer claims, and the environmental devastation of hydraulic mining. They document the transformation from individual prospectors to industrial mining operations, from tent camps to permanent communities, from lawless frontier to settled society.
 
 Yet Gold Rush photographs face severe preservation challenges. Created using early photographic processes—daguerreotypes, ambrotypes, tintypes, wet plate negatives, and albumen prints—they're vulnerable to deterioration specific to 19th-century photography. Many survived decades in harsh mining camp conditions before reaching archives or family collections. Environmental exposure, poor storage, and simple neglect have damaged these irreplaceable historical documents.
@@ -44,6 +46,13 @@ Gold Rush photographs document extraordinary subjects rarely captured elsewhere.
 **Boomtowns and Communities** document the rapid growth from tent camps to permanent towns, commercial districts of mining supply stores and saloons, infrastructure like roads, bridges, and water systems, and the evolution from frontier outposts to settled communities.
 
 **Environmental and Landscape Changes** show virgin wilderness before mining, devastated landscapes after hydraulic mining, deforested hillsides and diverted waterways, and recovery and transformation of former mining areas.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step-by-Step Gold Rush Photo Restoration
 
@@ -182,3 +191,22 @@ The Gold Rush shaped the American West. Its photographs must be preserved to und
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

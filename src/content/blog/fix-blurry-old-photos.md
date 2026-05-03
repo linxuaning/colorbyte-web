@@ -16,6 +16,8 @@ coverEmoji: "🔍"
 
 Your grandfather's face is almost there—you can see the outline of his smile, the suggestion of a military uniform, maybe a faint backdrop of somewhere important. But the blur won't let you in. The image hovers just beyond recognition, a ghost trapped in gelatin and silver.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Blurry old photos are one of the most common and most frustrating problems in family photo preservation. Unlike fading or scratches, blur feels permanent—like information that's just gone. The good news is that in 2026, it's not nearly as permanent as it used to be. Modern AI tools have changed what's recoverable, and even manual techniques have improved dramatically.
 
 This guide covers everything: why photos go blurry, what manual methods can do, what AI tools like [ArtImageHub](https://artimagehub.vercel.app/old-photo-restoration) can do that manual methods can't, and an honest comparison so you know which approach to use for which photos.
@@ -71,6 +73,13 @@ Sometimes the original photo is fine but the scan created the blur. Scanning at 
 **How fixable it is:** Highly fixable—just re-scan correctly.
 
 **Quick test:** Is the blur uniform and completely consistent across the image? If so, consider whether re-scanning is an option before spending time on restoration.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Manual Methods: Photoshop and Beyond
 
@@ -342,3 +351,22 @@ Yes. Sharpening increases edge contrast to create the *perception* of sharpness.
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

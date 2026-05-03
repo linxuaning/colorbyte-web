@@ -16,6 +16,8 @@ coverEmoji: "💒"
 
 I've been photographing weddings for twelve years, and in that time I've heard a version of the same story dozens of times. A couple is cleaning out a parent's house, or going through a grandmother's belongings after she passes, and they find the wedding photos. The album is stiff with age. Some pages are stuck together. The photos inside have turned sepia, or yellow, or they've faded to ghostly near-invisibility. A face that once anchored a family—the person everyone measured time against—looks back through the damage.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 These photos are often the only ones that exist. One of a kind. Irreplaceable.
 
 And until recently, the choices were grim: pay a professional restoration artist hundreds of dollars per photo, or accept the damage as permanent. Today, there's a third option. AI-powered restoration tools have made it possible for any family to restore wedding photographs in minutes, with results that would have required professional skill just a few years ago.
@@ -61,6 +63,13 @@ Wedding photos also tend to be stored in exactly the conditions most likely to c
 **Humidity** is the primary enemy of photographic prints. High humidity encourages mold growth and chemical reactions; low humidity causes brittleness and curling. Cycling between the two is worse than either extreme.
 
 **Light exposure** is the other major factor. Many families display wedding photos prominently—on mantlepieces, in sunny hallways, in frames on bedroom walls. Years of light exposure cause irreversible fading, especially to color prints.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## The Five Most Common Wedding Photo Problems
 
@@ -379,3 +388,22 @@ Follow the 3-2-1 backup rule: three copies of all files, two different storage t
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

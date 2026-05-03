@@ -16,6 +16,8 @@ coverEmoji: "🔬"
 
 My brother called me last Thanksgiving with a request I've heard a hundred times: "David, you're the photo guy — can you fix this?"
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 He'd found a photo in our parents' attic. Our grandfather, maybe 1962, holding a fish he was clearly very proud of. The photo had spent sixty years folded inside a birthday card: a crease bisected his face, the whole image had that flat grey haze of oxidation, and the resolution was barely enough to make out his expression. My brother wanted to print it large and frame it for our mom's birthday.
 
 I said sure. Then I spent two evenings testing every AI image enhancer I could find on that one photo and a batch of forty others — old scans, blurry phone shots, compressed social media downloads, and recent portraits taken in bad light. I wanted real answers, not marketing claims.
@@ -360,3 +362,22 @@ The right AI tool for old photos exists. [Start with a free test on ArtImageHub]
 - [How AI Photo Restoration Actually Works](/blog/how-ai-photo-restoration-works)
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
 - [ArtImageHub vs. Remini: Real Results Compared](/blog/artimagehub-vs-remini)
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

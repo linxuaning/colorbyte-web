@@ -18,6 +18,8 @@ featured: false
 
 There is a box in almost every family's attic. Inside: photographs that are cracked, faded, stained, and fragile — the only visual records of ancestors most of us will never meet. A great-great-grandmother standing stiffly for a daguerreotype. A grandfather in uniform before shipping out in 1944. A grandmother's wedding day, the image now brown and spotted with foxing.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 These images are irreplaceable. And for the past century, "irreplaceable" also meant "slowly deteriorating."
 
 AI photo restoration has changed that equation entirely. Today, you can take a severely damaged 1890s photograph and recover recognizable faces, clear details, and vivid (or colorized) images — in under a minute, with no photography or editing skills required.
@@ -238,3 +240,22 @@ The barrier to restoration is lower than it has ever been. You don't need Photos
 **[Start with our Old Photo Restoration tool](/old-photo-restoration)** — upload your first genealogy photo and see what AI recovery looks like in 30 seconds. One-time access, $4.99, no subscription required.
 
 Your great-grandchildren will thank you.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

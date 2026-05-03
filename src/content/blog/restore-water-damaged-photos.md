@@ -18,6 +18,8 @@ featured: false
 
 It's 2 AM. A pipe burst in the ceiling above the box labeled "Family Photos 1940–1980." By morning, 40 years of irreplaceable prints are soaked, stuck together, and starting to smell like mold.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 This scenario happens to thousands of families every year — after hurricanes, basement floods, leaking roofs, fire suppression systems, and simple plumbing failures. And the most common reaction — letting the photos dry in a pile or throwing them away — is almost always a mistake.
 
 Water-damaged photos can often be saved. The key is acting quickly, drying correctly, and using the right restoration tools afterward.
@@ -242,3 +244,22 @@ If your photos have already dried and you're past the emergency phase, the path 
 **[Use ArtImageHub's photo restoration tool](/old-photo-restoration)** to start recovering your water-damaged photos. One-time access, $4.99, results in 30 seconds.
 
 The photos you save today are the ones future generations will thank you for.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

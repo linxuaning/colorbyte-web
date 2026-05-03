@@ -16,6 +16,8 @@ coverEmoji: "🎨"
 
 The photograph was taken in 1943. A young man in military dress, maybe 22 years old, stands in front of what looks like a barracks building. He's smiling—one of those slightly awkward smiles people make when they're told to hold still. The photo's been in a box for decades. Nobody who remembers him well enough to describe his hair color or the exact shade of his uniform is still alive.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 And then you upload it to an AI colorization tool.
 
 Forty seconds later, you can see that his eyes were likely hazel, his uniform the deep olive-drab of the US Army, the barracks behind him painted in institutional pale green. Maybe the colors aren't perfectly accurate—there's no way to verify them. But suddenly this ancestor is no longer a figure from a distant black-and-white past. He looks like someone who could have been alive last week.
@@ -58,6 +60,13 @@ The gap between what AI and human colorization artists produce has narrowed dram
 - **Historical period awareness** (some models have been trained to recognize period details and apply more historically appropriate color palettes)
 
 The result is that modern AI colorization—like what ArtImageHub offers—produces results that most non-experts can't distinguish from authentic color photography.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## How AI Colorization Actually Works
 
@@ -339,3 +348,22 @@ Not necessarily. Some black-and-white photographs have a distinctive aesthetic t
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

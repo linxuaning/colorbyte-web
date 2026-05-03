@@ -51,6 +51,8 @@ reviewedItem:
 
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles formal yearbook portraits well; class group photos benefit from very-high-resolution scanning (2400+ DPI) to give AI more data per small face.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a parent's school yearbook from the 1960s, or a stack of class photos from your own school days. The pages are yellowed, faces are soft, and you want to restore the photos for family-history records or class-reunion display.
 
 This guide walks through restoring old class and school photographs with attention to the unique challenges of group photos with many small faces.
@@ -66,6 +68,13 @@ Unlike formal portraits (one face filling the frame), school photos have specifi
 - **Yearbook quality**: 1950s-1980s yearbooks used economical printing that loses detail
 
 The closest, largest faces in a class photo restore best. Back-row and corner subjects see less improvement.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Sort your collection
 
@@ -187,3 +196,22 @@ Class photo restoration outcomes:
 School and class photographs document family members' educational journey. Even decades-old yearbook collections carry meaning for descendants researching family heritage. Modern AI tools recover these images, while online yearbook databases enable identification and historical context.
 
 For related guides, see [restore old wedding photos](/blog/restore-old-wedding-photos-ai-recovery), [restore 1940s WWII era family photos](/blog/restore-1940s-wwii-era-family-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

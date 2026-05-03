@@ -17,9 +17,18 @@ coverEmoji: "🌺"
 
 Cuban American family photographs tell one of the most dramatic immigration stories of the 20th century: the sudden, forced displacement of a middle and upper-middle class community from an established homeland after the 1959 revolution. Unlike most immigration stories, many Cuban Americans fled not economic hardship but political persecution, leaving behind homes, businesses, and communities in the expectation of a brief exile that became permanent. This history gives Cuban American family photographs a particular quality — the before and after of a world abruptly ended.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Pre-Revolution Photography: The Cuba That Was
 
 Photographs taken in Cuba before 1959 document a prosperous, cosmopolitan society with a distinctive visual culture influenced by both European (particularly Spanish) and American aesthetics. Havana was one of the most modern cities in the Western Hemisphere, and its photographic tradition reflected this — sophisticated studio portraits, fashionable clothing, elegant interiors. When Cuban families left in 1959–1965, many brought photographs as one of the few portable connections to the life they were leaving. These pre-revolution photos are precious documents of a world that no longer exists in the same form.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## The Exile Community's Visual Record
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

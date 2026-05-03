@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: Modern AI restoration models — primarily **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061), Tencent ARC Lab 2021) for face recovery and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021) for upscaling — handle 1940s wartime portraits notably well due to the controlled lighting and clear face presentation typical of that era's formal photography.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a wartime family album. Inside: small 3×5 contact prints of soldiers in service portraits, civilian families on home-front porches, group shots from V-J Day celebrations. The paper has yellowed. The silver image surface looks slightly darkened or shows a subtle iridescent silvering. Faces are visible but soft.
 
 This guide walks through restoring 1940s WWII-era photographs with attention to the specific damage profiles common to that period and the ethical considerations of historical accuracy.
@@ -61,6 +63,13 @@ Combined damage typical of a 1940s family album:
 - **Soft-focus appearance** from age + small original print size
 - **Creases and fold lines** from being mailed in V-mail letters or stored in cramped wartime trunks
 - **Acid burn marks** from contact with low-quality album backing or newspaper clippings
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Scan at maximum useful resolution
 
@@ -127,3 +136,22 @@ Set expectations with family members before sharing restored photos — phrases 
 1940s photographs are precious because the people in them are increasingly beyond living memory. Restoration preserves visual access to your family's wartime story. Treat the original scan as the historical record, treat the AI restoration as a respectful interpretation, and document your process so the next generation knows exactly what they're looking at.
 
 For more on AI photo restoration techniques, see our [best AI photo restoration tools 2026 roundup](/blog/best-photo-restoration-software-2026), [vintage photo enhancement guide](/blog/enhance-blurry-vintage-photos), or [photo colorization accuracy guide](/blog/ai-colorization-accuracy-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

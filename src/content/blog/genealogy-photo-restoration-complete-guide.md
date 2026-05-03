@@ -18,6 +18,8 @@ featured: false
 
 ## Quick Answer
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 End-to-end guide to restoring photographs for family history and genealogy projects — digitization, AI restoration, preservation.
 
 **In 30 seconds:**
@@ -38,6 +40,13 @@ Genealogy work and photo restoration arrived at the same place from two differen
 I have worked on roughly eight thousand family-history collections over the last decade, and the honest truth is that the restoration step is not the hard part. The hard part is the decision-making before you ever touch a scanner — what to prioritize, what to keep as an original, what to discard after digitizing, how to annotate things so the archive is still legible to your grandchildren. This guide is how I approach a genealogy collection end-to-end, from the cardboard box somebody hands me to the shareable digital archive that gets distributed to forty cousins at a reunion.
 
 If you already have scans and just want to run them through restoration, skip to the [old photo restoration](/old-photo-restoration) workflow and come back for the organizational sections later. If you have a shoebox of tintypes and no idea where to start, stay here. The upstream decisions matter more than any single restoration pass.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Why Genealogy Photos Are a Different Project Than "Old Photos"
 
@@ -272,3 +281,22 @@ The Library of Congress standard is 600 DPI for standard reflective prints, 1200
 ---
 
 A genealogy archive is one of the few projects in your life where the payoff compounds for generations. Start with the worst-condition photos first, because their clock is running fastest. When you are ready to digitize and restore, bring your scans to [old photo restoration](/old-photo-restoration) and let the batch process handle the green pile while you focus your attention on the photos that actually need hand work. The family collections that survive are the ones somebody decided to save before it was too late.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

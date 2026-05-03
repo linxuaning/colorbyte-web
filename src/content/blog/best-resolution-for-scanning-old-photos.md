@@ -17,9 +17,18 @@ coverEmoji: "🖨️"
 
 If you're preparing old photos for AI restoration, the scanning resolution you choose has a significant impact on the quality of results you'll get. Too low a resolution and important detail is lost before the AI even sees the image; unnecessarily high resolution creates huge files that slow down uploads and processing without meaningful quality gain. Here's the practical guide to getting the scanning decision right.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Understanding DPI: What It Actually Means
 
 DPI stands for 'dots per inch' — it describes how many pixels of information are captured per inch of the physical photograph. A 4×6 inch photo scanned at 300 DPI produces an image that's 1200×1800 pixels (about 2 megapixels). The same photo at 600 DPI is 2400×3600 pixels (about 9 megapixels), and at 1200 DPI it's 4800×7200 pixels (about 35 megapixels). More pixels means more detail captured, but also larger files and slower uploads.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## The Right DPI for Each Use Case
 
@@ -38,3 +47,22 @@ Once you have a clean digital copy, visit [restore old photos online](/old-photo
 ---
 
 *Ready to bring your photograph back to life? Try [ArtImageHub's AI restoration](/old-photo-restoration) — no technical skills needed, results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

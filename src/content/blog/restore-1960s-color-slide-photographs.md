@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: AI color correction tools have improved noticeably for compensating dye-fade color shifts in 1960s slide film. The underlying technology — color-aware enhancement models in the **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) family combined with face-aware restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) derivatives — handles the typical magenta/pink shift from Ektachrome aging well.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a box of slide carousels from a relative who shot extensively in the 1960s. Inside: family vacations, holiday gatherings, neighborhood barbecues — all captured on Ektachrome, Anscochrome, or Kodachrome 35mm slide film. When you hold the slides up to light, many show a noticeable magenta or pink cast. The faces look slightly off. The skies are a strange color.
 
 This guide walks through restoring 1960s color slide photographs with attention to the specific dye-fade patterns of that era's film stocks.
@@ -60,6 +62,13 @@ The chemistry that made these slides vibrant in 1965 has not aged uniformly:
 - **Kodachrome** is the most stable slide film ever made — it resists fade better than any other consumer slide stock — but eventually shows a subtle overall yellow drift
 - **GAF and Agfa** show varied fade patterns depending on storage conditions
 - **Storage damage** (mold spots, surface scratches, mount fingerprints) accumulates from decades of handling and projection
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Identify the slide film stock
 
@@ -139,3 +148,22 @@ AI cannot restore the exact original colors of your 1960s slides. The color info
 A box of 1960s slide carousels often holds more visual richness than people realize — color photography of an era when slide projectors were how families relived vacations. AI restoration makes these slides accessible again after decades of fade. Treat the original scan as the historical record, treat the AI restoration as a generous interpretation, and your family's 1960s visual memory becomes vivid and shareable.
 
 For related restoration topics, see our [Kodachrome slide restoration deep-dive](/blog/fix-faded-kodachrome-slides), [vintage photo enhancement guide](/blog/enhance-blurry-vintage-photos), or [AI colorization accuracy guide](/blog/ai-colorization-accuracy-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

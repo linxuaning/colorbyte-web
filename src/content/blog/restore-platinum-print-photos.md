@@ -15,6 +15,8 @@ featured: false
 
 Platinum prints represent the pinnacle of fine art photography, prized for their extraordinary tonal range, exceptional permanence, and distinctive aesthetic qualities. Created through a contact printing process using platinum or palladium metals rather than silver, these photographs exhibit subtlety and beauty that have made them favorites of serious photographers and collectors since the late 19th century.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 If you own or have inherited platinum print photographs, you possess rare and potentially valuable works of photographic art. While platinum prints are among the most stable photographic processes ever developed, they're not immune to damage from improper handling, storage, or environmental conditions. Understanding how to properly care for, digitize, and if necessary restore these exceptional photographs ensures they continue to be appreciated for generations to come.
 
 This guide explores platinum print photography—its characteristics, common issues, and appropriate restoration approaches that preserve both the image and its value as a fine art object.
@@ -50,6 +52,13 @@ These photographers chose platinum specifically for its aesthetic qualities and 
 While similar, platinum and palladium prints have subtle differences. Pure platinum prints create neutral gray to cool-toned images with very long tonal range and the finest, most delicate gradation. Palladium prints (or platinum-palladium combinations) produce slightly warmer tones, sometimes with brown or olive casts, with slightly less extended tonal range than pure platinum but still exceptional by photographic standards, and often at lower cost since palladium is less expensive than platinum.
 
 Many "platinum" prints actually use platinum-palladium mixtures offering varying characteristics depending on the ratio. The terms are often used interchangeably, though purists distinguish between them.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Identifying Platinum Prints
 
@@ -316,3 +325,22 @@ Platinum prints were created to last centuries. With proper care, digitization, 
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

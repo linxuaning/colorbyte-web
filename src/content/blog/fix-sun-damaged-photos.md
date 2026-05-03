@@ -15,6 +15,8 @@ featured: false
 
 Few things are more heartbreaking than discovering cherished family photographs ruined by sun exposure. That vibrant wedding portrait now looks washed out and pink. Your children's baby pictures have faded to almost nothing. The vacation photos from twenty years ago are barely recognizable. If you need to fix sun damaged photos, you're not alone—sun damage is one of the most common forms of photograph deterioration, but fortunately, it's also one of the most repairable.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Ready to restore your sun-damaged photos? Try our [Old Photo Restoration](/old-photo-restoration) tool—restore your photos instantly with no sign-up required.
 
 ## Understanding Sun Damage in Photographs
@@ -77,6 +79,13 @@ Rather than simple fading, colors change entirely:
 - **Splotchy discoloration**: Uneven dye degradation across the print
 
 For sun-damaged photos, you can [restore faded photos](/restore-faded-photos) using AI to recover lost colors and detail.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Assessing Your Sun Damaged Photos
 
@@ -608,3 +617,22 @@ Don't let sun damage erase your memories. Start your restoration today and prese
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

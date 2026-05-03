@@ -15,6 +15,8 @@ featured: false
 
 Tintype photographs—also called ferrotypes or melanotypes—represent a fascinating chapter in photographic history. These unique images created on thin iron sheets captured everything from Civil War soldiers to Victorian families to traveling carnival portraits. If you need to restore tintype images, you're working with photographs that are simultaneously more durable and more challenging than paper prints. The metal base makes them nearly indestructible, yet rust, varnish deterioration, and improper storage create restoration challenges that require specialized knowledge.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Understanding Tintype Photography
 
 Before you can effectively restore tintype images, understanding their unique characteristics and history is essential.
@@ -73,6 +75,13 @@ As other processes improved, tintypes declined but persisted:
 - Faster emulsions allowed candid shots
 - Smaller operations and traveling photographers
 - Eventually replaced by paper prints and film
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Common Damage Patterns in Tintype Images
 
@@ -663,3 +672,22 @@ Our specialists have extensive experience with tintypes, ferrotypes, and other e
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

@@ -17,6 +17,8 @@ coverEmoji: "📚"
 
 A photo book of restored family photographs is one of the most meaningful family keepsakes you can create — particularly for significant occasions (anniversaries, reunions, memorial gatherings) or as a gift for older family members. Here's how to do it well.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ---
 
 ## Step 1: Gather and Select the Photos
@@ -32,6 +34,13 @@ A 20–30 photo book is more impactful than a 100-photo book where the selection
 **Inventory what exists:** Ask family members to look for old prints. Check the back of frames. Look through storage boxes. Libraries and genealogical societies sometimes have historical photos of local families.
 
 ---
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 2: Digitize
 
@@ -123,3 +132,22 @@ Order well before the occasion: standard shipping takes 7–14 days, rush shippi
 - [Snapfish Photo Restoration](/blog/snapfish-photo-restoration) — Snapfish guide
 - [Old Photo Restoration as a Gift](/blog/old-photo-restoration-gifts) — gift guide
 - [Old Photo Restoration for Genealogy](/blog/old-photo-restoration-for-genealogy) — genealogy use case
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

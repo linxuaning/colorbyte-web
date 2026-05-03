@@ -17,9 +17,18 @@ coverEmoji: "🎎"
 
 Korean American immigration has come in distinct waves: early laborers to Hawaii in the 1900s, Korean War-era war brides and orphans in the 1950s, and the large professional and family immigration that followed the 1965 Immigration Act. Korean American family photographs reflect all these different immigration experiences, from the formal portraits of early Hawaiian plantation workers to the documentation of Korean businesses, churches, and community life in American cities. The Korean American community is also notable for its strong emphasis on education and professional achievement, documented extensively in graduation and achievement photographs.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Early Hawaii and West Coast Korean Immigration Photography
 
 The earliest Korean Americans were the 7,000+ immigrants who came to work in Hawaiian sugar plantations between 1902 and 1905. Photographs from this community are rare and historically significant — they document the founding generation of Korean American life at a time when Korea was under increasing Japanese imperial pressure. These early Hawaiian Korean immigrants maintained strong Korean national identity through churches and community organizations, and their photographs show both the Hawaiian setting and the Korean cultural elements they preserved.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Korean War Era: War Brides and Adoptees
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

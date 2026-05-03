@@ -15,6 +15,8 @@ featured: false
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For institutional WWII photo preservation guidance, see the [National Archives film preservation guidelines](https://www.archives.gov/preservation).
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 World War II photographs document the greatest conflict of the 20th century and the 16 million Americans who served. From basic training portraits to battlefield images, V-mail letters to homecoming celebrations, these photographs capture the "Greatest Generation" at their defining moment. Now 80+ years old, these images require careful preservation to honor those who served and sacrificed.
 
 Need to restore WWII soldier photographs? Our [AI photo enhancer](/enhance-old-photos) can repair wartime damage and aging while preserving the authentic character of these precious military memories.
@@ -64,6 +66,13 @@ World War II saw more comprehensive photographic documentation than any previous
 - Personal snapshots: moderate
 - V-mail: small but often sharp
 - Newspapers: halftone dot pattern
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Common Damage Patterns
 
@@ -330,3 +339,22 @@ World War II photographs preserve the memory of the "Greatest Generation" and th
 
 
 Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

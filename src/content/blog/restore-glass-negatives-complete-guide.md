@@ -15,6 +15,8 @@ featured: false
 
 Glass negatives represent some of the most historically significant photographic artifacts, capturing images from the 1850s through the 1920s when glass plates were the standard for professional photography. If you need to restore glass negatives, you're working with fragile, irreplaceable historical documents that require specialized handling and restoration techniques. These glass plate negatives—whether wet collodion plates from the Civil War era, dry plates from Victorian studios, or early 20th-century professional negatives—contain extraordinary detail but face unique preservation challenges from broken glass, emulsion separation, and environmental damage.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Understanding Glass Plate Negatives
 
 Glass negatives came in several formats across different eras, each requiring specific restoration approaches.
@@ -79,6 +81,13 @@ Storage conditions affect preservation:
 - Adhesion to paper envelopes
 - Dirt and debris accumulation
 - Oxidation and discoloration
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Critical Safety and Handling Guidelines
 
@@ -562,3 +571,22 @@ Our team understands the unique challenges of wet collodion plates, dry gelatin 
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

@@ -15,6 +15,8 @@ featured: true
 
 When you restore an old photograph, you face fascinating ethical questions that photographers, archivists, and historians have debated for decades. How much damage should you remove? Should you correct obvious flaws in the original photograph? Is it acceptable to add color to black-and-white images? When does restoration become falsification?
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 These questions matter because photographs serve as historical documents and evidence, family heirlooms preserving memories, and artistic works reflecting their creators' vision. The choices you make during restoration affect how future generations understand the past and remember their ancestors.
 
 Photo restoration ethics isn't about rigid rules that apply universally to every situation. Rather, it's about understanding principles that help you make thoughtful decisions appropriate to each photograph's purpose, significance, and condition. A treasured family portrait may warrant different treatment than a historically significant documentary photograph. Personal memories have different ethical considerations than scholarly research materials.
@@ -64,6 +66,13 @@ Photographs are created by photographers whose artistic and documentary choices 
 **Correcting Original Flaws** presents ethical questions. Should you fix a photograph that was slightly out of focus when created? Remove red-eye that appeared in the original? Correct exposure mistakes? For historical documentation, preserving even flaws may be appropriate. For family enjoyment, moderate correction of technical defects creates better images without fundamentally changing what's shown.
 
 **Era-Appropriate Appearance** guides restoration decisions. Don't make 1920s photographs look like modern digital images with excessive sharpening and contrast. Preserve the characteristic soft tonality of Victorian albumen prints. Maintain the distinctive grain structure of mid-century film photography. Restored images should look like well-preserved examples of their type, not like they were photographed yesterday.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Ethical Framework for Different Restoration Scenarios
 
@@ -287,3 +296,22 @@ Ethical restoration honors both the past and the future—preserving what was wh
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

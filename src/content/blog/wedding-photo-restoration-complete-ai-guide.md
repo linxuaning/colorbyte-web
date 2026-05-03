@@ -18,6 +18,8 @@ featured: false
 
 ## Quick Answer
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Wedding photos deserve a different restoration workflow than ordinary family snapshots — the stakes on face identity, dress whites, and skin tones are higher, and the photos are often the only surviving record of people no longer with us.
 
 **In 30 seconds:**
@@ -36,6 +38,13 @@ Wedding photos deserve a different restoration workflow than ordinary family sna
 I have restored more wedding photos than any other single category. Something about a wedding print — the formality, the whites, the faces turned toward each other, the fact that half the people in the frame are usually gone by the time somebody asks me to restore it — raises the stakes in ways that ordinary snapshots do not. People forgive a restored birthday photo that is "close enough." Nobody forgives a wedding photo where grandma's face looks subtly wrong.
 
 This guide is how I approach wedding photo restoration from the moment a damaged album arrives on my desk to the moment the reprinted enlargement goes up on the wall. It covers physical triage, scanning, AI restoration, manual touch-up, colorization decisions, and the ethical questions specific to wedding photos. If you are restoring a family wedding album today, you can work through it in order. If you only have one damaged print, skip to the section on your specific damage type.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Why Wedding Photos Are Harder Than They Look
 
@@ -314,3 +323,22 @@ The technology in 2026 is good enough that you can restore most wedding photos a
 Start with one photo. Scan it carefully. Run it through [ArtImageHub](/old-photo-restoration). Look at the result with a critical eye, especially at the faces. Decide whether it is good enough for the wall, or whether that specific photo merits the conservator. Repeat for the next photo. A shoebox becomes a finished family archive one careful restoration at a time.
 
 For deeper dives on adjacent topics, our hubs on [water damage](/blog/ultimate-guide-water-damage-photo-restoration), [colorization](/blog/complete-guide-colorize-old-photos), [genealogy](/blog/genealogy-photo-restoration-complete-guide), and [torn photographs](/blog/fix-torn-photographs-ai-guide) cover the other workflows that often intersect with wedding photo work.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

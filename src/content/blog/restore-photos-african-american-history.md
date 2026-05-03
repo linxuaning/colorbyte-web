@@ -17,9 +17,18 @@ coverEmoji: "✊"
 
 African American family photographs carry a weight that goes beyond personal memory. For much of American history, Black families were systematically excluded from the official visual record — excluded from community portrait studios in many regions, excluded from newspaper coverage of ordinary life, excluded from the photographic documentation that white families took for granted. The family photographs that did survive — formal portraits saved in Bibles, snapshots from community gatherings, studio portraits from Black-owned photography studios — are irreplaceable evidence of a heritage that the broader historical record often ignored.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## The Historical Context of Black Photography
 
 African American families have a rich photographic history that runs parallel to (and sometimes ahead of) the mainstream American photographic tradition. Black-owned photography studios flourished in cities across the country from the 1890s through the mid-20th century, producing formal portraits of quality equal to or exceeding their white-owned counterparts. These studios documented the Black community's formal life — the church deacons and Sunday best dresses, the college graduations and professional portraits, the social club gatherings and fraternal organization events — creating a visual record of a thriving community culture.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Common Preservation Challenges and Why They Matter
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

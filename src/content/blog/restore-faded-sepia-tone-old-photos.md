@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: AI restoration models — primarily face-specific recovery via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) and tone-aware sharpening derived from **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) — handle sepia-tone photos well when configured to preserve the original tone palette.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a small album of late-Victorian or early-1900s family photos. The prints are warm brown — that distinctive sepia tone we associate with antique photography. Some are clearly intentional sepia toning from when the prints were originally made. Others may be neutral prints that have yellowed with age. All of them have varying degrees of fading.
 
 This guide walks through restoring sepia-tone photographs while making informed decisions about preservation versus correction.
@@ -60,6 +62,13 @@ This guide walks through restoring sepia-tone photographs while making informed 
 The visual result can be similar, but the appropriate restoration response differs:
 - Intentional toning → preserve, just enhance detail
 - Age-related yellowing → may correct toward neutral
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Identify which kind of sepia you're dealing with
 
@@ -153,3 +162,22 @@ Moderately faded prints (where features are visible but soft) typically restore 
 Sepia-tone photographs carry a particular aesthetic weight in family history — the warm brown color signals "this is an antique". Restoration should respect that aesthetic when the sepia is intentional, while still recovering the visual detail that has faded with age. Modern AI tools handle this balance well when configured to preserve the original tone palette.
 
 For related restoration topics, see [restore 1940s WWII era family photos](/blog/restore-1940s-wwii-era-family-photos), [enhance blurry vintage photos](/blog/enhance-blurry-vintage-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

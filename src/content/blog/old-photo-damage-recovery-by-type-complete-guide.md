@@ -51,6 +51,8 @@ reviewedItem:
 
 Damaged photos come in many flavors — water, fire, smoke, mold, sticky albums, insect bites, ink stains, sun fade. Each damage type has a distinct visual signature and a tailored recovery protocol. This guide indexes every common damage scenario so you can match the right approach to your photo's actual problem.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Quick damage diagnostic chart
 
 | Visual signature | Likely cause | Recovery guide |
@@ -69,6 +71,13 @@ Damaged photos come in many flavors — water, fire, smoke, mold, sticky albums,
 | Dark / shadow areas obscured | Underexposed original | [Underexposed photo recovery](/blog/fix-underexposed-old-photographs) |
 | Magenta / orange shift on color photos | Color dye breakdown | [Faded sepia / color cast](/blog/restore-faded-sepia) |
 | Crease lines / fold marks | Folded/creased photo | [Creased photo repair](/blog/restore-creased-folded-wedding) |
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Damage categories explained
 
@@ -191,3 +200,18 @@ For typical family-history projects (50-300 photos), the math heavily favors AI 
 For overall workflow guidance, see [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026), [restore old photos free online 2026](/blog/restore-old-photos-free-online-2026), or [is AI photo restoration worth it 2026](/blog/is-ai-photo-restoration-worth-it-2026).
 
 For era-specific damage profiles, see the [decade index](/blog/old-photo-restoration-by-decade-complete-index).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).

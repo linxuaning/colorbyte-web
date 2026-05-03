@@ -17,9 +17,18 @@ coverEmoji: "🦁"
 
 East African Americans from Kenya, Uganda, Tanzania, Rwanda, Somalia, and other nations represent a diverse community with distinct histories and photographic traditions. Kenyan Americans are among the most numerous, with significant communities in the United States drawn by educational and professional opportunities. Somali Americans represent one of the largest refugee communities in the United States, concentrated especially in the Twin Cities of Minnesota. Each of these communities brings distinct photographic heritage reflecting colonial histories (British in Kenya, Uganda, Tanzania; Italian and British in Somalia), independence-era national identities, and diverse cultural practices.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Colonial Era Photography in East Africa
 
 British colonial photography in East Africa — Kenya, Uganda, Tanganyika (now Tanzania) — created a substantial photographic record that encompasses both colonial documentation of African subjects and the developing tradition of African commercial portrait photography. By the 1920s–1940s, photography studios operated by African, Indian (who formed a significant merchant community under British colonialism), and European photographers served urban communities in Nairobi, Kampala, and Dar es Salaam. Family photographs from this era reflect the complex social hierarchies of colonial East Africa.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Independence Era and National Identity Photography
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

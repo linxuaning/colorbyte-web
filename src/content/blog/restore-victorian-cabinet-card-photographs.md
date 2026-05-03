@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles late-Victorian formal portraits surprisingly well — the era's controlled studio lighting, neutral backgrounds, and posed subject conventions match the training data of modern face restoration models. **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) sharpens age-related softness while respecting the original sepia aesthetic.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a small box of Victorian-era cabinet cards from a great-aunt's estate. Inside: formal studio portraits of ancestors in their best clothes, mounted on decorative cardboard with elaborate studio name banners. The sepia tones are warm, the faces are slightly soft, and you want to preserve these for your family tree.
 
 This guide walks through restoring Victorian cabinet card photographs while respecting them as both photographic and historical artifacts.
@@ -60,6 +62,13 @@ Cabinet cards (1870s-1910s) sit at a particular intersection of photographic his
 - Often the only existing photographs of great-grandparents or great-great-grandparents
 
 The cabinet card is a complete historical artifact — not just the photographic image but the cardboard mount, the studio's typography, and the embossed decorative elements all together. Restoration should respect this completeness.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Examine the cabinet card
 
@@ -177,3 +186,22 @@ Expect strong face detail recovery, modest sharpening, and preserved sepia aesth
 Victorian cabinet cards connect families to their pre-modern past — the era before automobiles, telephones, and color photography. AI restoration makes these formal portraits visible again while respecting them as historical artifacts. Treat the cabinet card as a complete document (photo + mount + studio name + handwritten notes), restore the photo with appropriate sepia preservation, and your Victorian-era family memory becomes vivid for the next generation.
 
 For related guides, see [restore faded sepia-tone old photos](/blog/restore-faded-sepia-tone-old-photos), [enhance blurry vintage photos](/blog/enhance-blurry-vintage-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

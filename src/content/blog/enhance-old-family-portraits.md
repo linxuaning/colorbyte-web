@@ -15,6 +15,8 @@ featured: false
 
 Family portraits represent the most treasured photographs in any family collection—formal compositions capturing multiple generations together, studio portraits preserving ancestors' likenesses, or candid family gatherings frozen in time. These images form the visual foundation of family history, connecting present generations with their heritage and providing tangible links to ancestors who lived decades or even centuries ago.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Yet time, handling, and imperfect storage have left many old family portraits faded, damaged, or deteriorating. Faces that should be clear and expressive have become obscured by damage. Details of clothing, settings, and backgrounds that provide historical context have faded or disappeared. The good news is that modern photo restoration technology can breathe new life into these heritage portraits, recovering detail, clarifying faces, and preserving family history for future generations.
 
 Want to restore your family portraits now? Try our specialized [family photo restoration tool](/restore-old-family-photos)—fix faded grandparent photos, repair damaged family pictures, and enhance vintage portraits in 30 seconds. 3 photos free, no signup required.
@@ -58,6 +60,13 @@ Family portraits suffer from specific deterioration patterns related to their cr
 **Environmental Damage** manifests as water stains or tide marks from exposure to moisture, mold or mildew spots in portraits stored in humid conditions, sunlight fading in framed portraits displayed near windows, and adhesive damage from mounting or album storage.
 
 **Retouching Damage** occurs in professionally retouched portraits where overpaint has darkened, cracked, or discolored, hand-tinting has faded unevenly creating odd color patterns, and airbrushing or manipulation has deteriorated differently than the underlying photo.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step-by-Step Guide to Enhance Old Family Portraits
 
@@ -281,3 +290,22 @@ Your ancestors deserve to be remembered clearly and beautifully. Restored family
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

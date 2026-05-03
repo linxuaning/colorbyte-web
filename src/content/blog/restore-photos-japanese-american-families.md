@@ -17,9 +17,18 @@ coverEmoji: "🌸"
 
 Japanese American family photographs tell a story unique in American immigration history: a community that built successful lives over two to three generations, was forcibly incarcerated during World War II in one of the most significant civil rights violations in American history, and then rebuilt again after the war. Photographs from before, during, and after the incarceration period are precious historical documents that have been the subject of significant archival work by the National Archives, the Japanese American National Museum, and family researchers.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## The Issei and Nisei Photographic Record
 
 Japanese Americans typically identify by generation: Issei (first generation, born in Japan), Nisei (second generation, born in America), Sansei (third generation), and so on. Each generation has a distinctive photographic aesthetic reflecting both the photographic norms of their era and the specific circumstances of Japanese American life. Issei photographs often show both Japanese cultural elements and early American immigrant life — the picture bride portraits exchanged through matchmakers, the formal family portraits taken in Japanese American studios, the documentation of early business success in gardening, farming, and small businesses.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Incarceration Photography and Its Documentation
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

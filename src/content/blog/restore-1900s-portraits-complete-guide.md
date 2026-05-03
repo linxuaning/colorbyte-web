@@ -17,6 +17,8 @@ coverEmoji: "🎩"
 
 My grandmother kept a photograph in a velvet-lined box on her bedside table. The box itself was worn at the corners, the velvet faded from deep burgundy to a dusty pink. Inside, wrapped in tissue paper that crumbled to the touch, was a formal portrait of a man I never knew — my great-great-grandfather, taken sometime around 1903.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 The photo itself was a silver gelatin print, roughly 5x7 inches, mounted on thick cardboard. His expression was what people from that era called "dignified" — we might call it frozen. He stood beside an ornate chair he clearly wasn't sitting in, his mustache trimmed with the care of someone who knew the photograph would outlast him by generations.
 
 It nearly didn't outlast him by much. By the time I inherited it, the image had taken on a brownish-gray cast, the blacks had gone grey, and there was a network of fine cracks across the sky backdrop. The edges of the cardboard mount had expanded and contracted through a hundred years of humidity cycles, and the photo was beginning to separate from its backing.
@@ -36,6 +38,13 @@ What I see most often when working with 1900s photographs:
 **Fading and color shift** in 1900s photos tends toward a warm brown rather than the orange shift you see in 1970s color prints. This is the gelatin itself yellowing, combined with the silver toning toward warmer hues. The original image was neutral gray; what survives is often sepia-toned by degradation rather than by original processing.
 
 **Mounting board separation** is structural rather than photographic, but it complicates scanning. When the paper backing separates from the cardboard mount, the print develops texture — ripples, bulges, and eventually cracks as the support fails.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Scanning Edwardian-Era Photos
 
@@ -80,3 +89,22 @@ Ready to restore your Edwardian-era family portraits? Our [AI photo restoration 
 ---
 
 *[ArtImageHub's photo restoration service](/old-photo-restoration) specializes in historical photographs from the 1900s through the 1980s. Free to try, no signup required.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

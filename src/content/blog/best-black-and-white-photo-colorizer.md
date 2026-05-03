@@ -49,6 +49,8 @@ itemList:
 
 The first time someone in the family colorizes a photo of a great-grandparent and shows it to a teenager who never met them, something shifts. The B&W version was a historical document; the colorized version is a person. For genealogy researchers and family historians, this is the practical use case for AI colorization — not artistic reinterpretation, but emotional accessibility for relatives who never knew the original people.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 This guide focuses specifically on B&W family photo colorization for genealogy and heirloom preservation. The criteria are different from a general "best colorizer" comparison: ease of use for non-technical relatives, integration with family tree workflows, honest framing about what AI colorization can and cannot do, and pricing that fits a one-time family-archive project rather than recurring professional work.
 
 ## Key Takeaways
@@ -58,6 +60,13 @@ This guide focuses specifically on B&W family photo colorization for genealogy a
 - **For active genealogy researchers** already paying for MyHeritage or Ancestry: use their built-in colorization (saves the upload-and-attach step).
 - **For damaged originals**: restore first, then colorize — colorizing damaged photos often produces colors on the damage itself, which looks wrong.
 - **Always keep the B&W original.** Colorization is reversible at the file level, but only if you don't lose the source.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Why Family Photos Are a Special Case
 
@@ -165,3 +174,22 @@ For broader colorizer comparison (not just B&W family-photo focused), see our [b
 - [Complete Guide: Colorize Old Photos Step-by-Step](/blog/complete-guide-colorize-old-photos)
 - [How to Colorize Black and White Photos](/blog/how-to-colorize-black-and-white-photos)
 - [Best AI Photo Colorizer 2026: 8 Tools Compared](/blog/best-ai-photo-colorizer-2026)
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

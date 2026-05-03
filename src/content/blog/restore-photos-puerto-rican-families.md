@@ -17,9 +17,18 @@ coverEmoji: "🌴"
 
 Puerto Rican family photographs document a unique American story: Puerto Ricans became American citizens in 1917 without choosing to immigrate, yet the mass migration from the island to the mainland (primarily New York City) from the 1940s through 1970s created one of the most dramatic urban migration stories in American history. Family photographs from this period often show both sides of this experience — island life before departure and the challenges and creativity of community building in New York's Spanish Harlem and other urban enclaves.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Island Photography Before and After Jones Act
 
 Photographs taken in Puerto Rico before the Jones Act (1917) and the early decades of citizenship document a society in significant transition — from Spanish colonial rule to American territory status. Photography practices in Puerto Rico reflected both Spanish colonial traditions (formal studio portraits, Catholic ceremony documentation) and American influences that arrived after 1898. Photographs from this period often have a distinctive aesthetic that differs from both mainland American photography of the same era and contemporary Latin American photography.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## The Great Migration North and Its Documentation
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

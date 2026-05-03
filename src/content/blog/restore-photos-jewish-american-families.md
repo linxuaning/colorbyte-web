@@ -17,9 +17,18 @@ coverEmoji: "✡️"
 
 Jewish American family photographs often span the entire arc of American Jewish history: sepia-toned portraits of newly arrived Eastern European immigrants in the 1890s and 1900s, Depression-era family gatherings in tenement apartments, the profound before/after of families disrupted by the Holocaust, and the post-war expansion into suburban American life. Each of these periods has its own photographic character and its own emotional weight. Restoring these photographs is an act of bearing witness as much as family preservation.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 ## Pre-War European vs. American Photographs
 
 Many Jewish American families have photographs that span the Atlantic — European photos of the family before immigration alongside American photos of the family after arrival. European photos, especially from Eastern Europe, often show the distinctive settings and dress of shtetl or urban Jewish communities in Poland, Russia, or the Austro-Hungarian empire. American photos from the same generation often show the same people transformed by American clothing and settings while maintaining family resemblances. The contrast between pre- and post-immigration photos is often one of the most striking visual narratives in a family archive.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Holocaust Documentation and Its Unique Significance
 
@@ -36,3 +45,22 @@ Gather your old photographs, scan them at the highest resolution your equipment 
 ---
 
 *Bring your cherished photographs back to life with [ArtImageHub's AI restoration](/old-photo-restoration) — professional results in seconds.*
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

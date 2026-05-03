@@ -48,6 +48,8 @@ reviewedItem:
 
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles formal wedding portraits exceptionally well — the era's posed photography style, controlled studio lighting, and clear face presentation match AI training data closely.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a wedding photo from grandparents you never met. The corners are bent, the bride's face has softened with age, and the silver-gelatin print has yellowed unevenly. You want to bring this photo back to a state worth framing for the family.
 
 This guide walks through restoring old wedding photographs with attention to the specific damage profiles common to marriage-day photography.
@@ -68,6 +70,13 @@ Combined damage typical of an inherited wedding album:
 - Soft-focus appearance from age + original studio softness
 - Surface scratches from handling
 - Crease lines from being folded into letters or wallet pockets
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Triage your collection
 
@@ -175,3 +184,22 @@ For irreplaceable wedding photos with severe damage, professional restoration ($
 Wedding photographs document the moment a family began. Even decades-old faded wedding photos carry meaning that justifies restoration effort. Modern AI tools recover these images for descendants who would otherwise see only a yellowed relic from before their time.
 
 For related guides, see [restore 1940s WWII era family photos](/blog/restore-1940s-wwii-era-family-photos), [restore creased and folded wedding photos](/blog/restore-creased-folded-wedding-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

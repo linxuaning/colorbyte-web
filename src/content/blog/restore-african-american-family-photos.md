@@ -15,6 +15,8 @@ featured: false
 
 African American family photographs document generations of resilience, achievement, and community—from the earliest post-emancipation portraits through the Civil Rights era to today. These images preserve faces and stories that mainstream archives often overlooked, making family photographs essential records of Black history and heritage. Restoring these photos honors ancestors and preserves irreplaceable documentation.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Need to restore African American family photographs? Our [AI photo enhancer](/enhance-old-photos) can repair decades of damage while properly rendering diverse skin tones and preserving the authentic character of these precious heritage images.
 
 ## Understanding African American Family Photography
@@ -54,6 +56,13 @@ African American photography has a rich history, with family photographs serving
 - Family studios as safe spaces
 - Pride and dignity in portraiture
 - Cultural documentation
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Photo Preservation Challenges
 
@@ -249,3 +258,22 @@ African American family photographs preserve irreplaceable documentation of Blac
 
 
 Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

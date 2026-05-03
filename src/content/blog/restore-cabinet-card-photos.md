@@ -15,6 +15,8 @@ featured: false
 
 Cabinet cards represent some of the most historically significant photographs in family collections—formal Victorian-era portraits of ancestors from the 1870s through early 1900s. These distinctive mounted photographs, typically measuring 4.25 x 6.5 inches, provide our most direct visual connection to 19th-century family members. Yet after 100-150 years, cabinet cards face severe deterioration including faded images, damaged mounting boards, yellowing and discoloration, physical tears and creases, and loss of fine detail in faces and clothing. Modern AI restoration technology offers unprecedented capability for recovering these precious historical portraits while preserving their authentic Victorian character.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 This guide explains cabinet card photography and construction, common damage patterns after a century or more, step-by-step restoration techniques, and strategies for preserving both originals and restored digital versions of these irreplaceable family heirlooms.
 
 ## Understanding Cabinet Card Photographs
@@ -44,6 +46,13 @@ Cabinet card backs typically contain valuable information including photographer
 This information has significant genealogical and historical value beyond the portrait itself, helping date photos when subjects are unknown, locate ancestors in specific cities at specific times, and identify photographers whose records might contain additional information.
 
 Restoration should preserve this back information along with the portrait. For comprehensive restoration techniques for historical photographs, see our [vintage photo restoration](/vintage-photo-restoration) guide.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Common Damage Patterns in Cabinet Cards
 
@@ -254,3 +263,22 @@ Preserve all information from cabinet card backs as it has significant historica
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

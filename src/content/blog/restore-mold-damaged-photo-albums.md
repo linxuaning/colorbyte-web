@@ -47,6 +47,8 @@ reviewedItem:
 
 > **Updated 2026-05-01**: Modern AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) and **Real-ESRGAN** ([arXiv:2107.10833](https://arxiv.org/abs/2107.10833)) produces strong results on mold-affected prints AFTER physical cleanup — but cannot substitute for the manual conservation step.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You discover an old family album in your basement or attic. The cover is musty. Inside, the prints have white or grey fuzzy patches, brown stains where pages stuck together, and a smell that says "this album spent years in a damp environment". You want to restore these photos. AI can help — but only after you handle the mold first.
 
 This guide walks through the combined manual + AI workflow for mold-damaged photo albums.
@@ -59,6 +61,13 @@ Mold on photographs is physical contamination — fungal growth on the print sur
 - The "restored" version still showing mold artifacts
 
 The correct workflow is: physical cleanup first, then scan, then AI restoration.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Triage your album
 
@@ -147,3 +156,22 @@ For irreplaceable photos with severe damage, the goal of restoration shifts from
 A mold-damaged photo album is not a lost cause. With careful triage, manual cleanup, and AI restoration of the cleaned scans, most albums produce usable family-history records. The combined workflow respects the limits of each approach: AI for what AI does well, human conservation for what AI can't substitute.
 
 For related guides, see [restore water-damaged photo collections from floods](/blog/restore-water-damaged-photo-collections-from-floods), [enhance blurry vintage photos](/blog/enhance-blurry-vintage-photos), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

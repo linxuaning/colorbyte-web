@@ -15,6 +15,8 @@ featured: false
 
 Water damage is one of the most common—and heartbreaking—ways old photos get ruined. I've seen it dozens of times: a basement flood, a leaky roof, or just years of humid storage, and suddenly those irreplaceable family photos are covered in brown stains, tide marks, and mold spots.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 The good news? Water-stained photos aren't a lost cause. Modern AI restoration can remove most water damage surprisingly well, and I'll walk you through exactly how—from stabilizing wet photos to getting clean, restored results. I'll also cover how to protect your collection from moisture damage going forward.
 
 ## Understanding Water Damage in Photographs
@@ -46,6 +48,13 @@ Paper deterioration occurs as water weakens paper fibers, causes warping and cur
 **Moderate Water Damage:** Obvious water stains and marks, visible color changes and discoloration, minor emulsion separation or bubbling, and possible light mold spots. Most moderate damage restores well with AI technology.
 
 **Severe Water Damage:** Heavy staining throughout the image, significant emulsion damage or loss, extensive mold growth, and paper deterioration or extreme fragility. Even severe cases often show surprising recovery potential. For comprehensive damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step-by-Step Guide to Fix Water Spots on Photos
 
@@ -249,3 +258,22 @@ I've seen photos that looked completely ruined come back looking great after AI 
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

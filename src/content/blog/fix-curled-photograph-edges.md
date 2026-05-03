@@ -15,6 +15,8 @@ featured: false
 
 Edge curling is one of the most common problems affecting old photographs. Walk into any attic, open an old album, or sort through a box of family photos, and you'll inevitably find prints with edges that curl upward, downward, or even roll completely. This damage isn't just aesthetic—curled edges make scanning difficult, increase handling damage risk, and can lead to cracking or permanent deformation.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 In this guide, I'll share professional techniques to fix curled photograph edges, including both safe physical flattening methods for valuable originals and digital restoration approaches for photographs that can't or shouldn't be physically manipulated.
 
 ## Understanding Why Photograph Edges Curl
@@ -60,6 +62,13 @@ For comprehensive damage repair techniques, see our [damaged photo repair](/dama
 - Prints with weight on edges curl at the corners
 - Prints in contact with curved surfaces adopt those curves
 - Albums with tight binding force curling
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Types of Edge Curl and What They Tell You
 
@@ -651,3 +660,22 @@ Whether you flatten physically, correct digitally, or combine both approaches, y
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

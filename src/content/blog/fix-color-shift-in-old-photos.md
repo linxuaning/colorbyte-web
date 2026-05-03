@@ -15,6 +15,8 @@ featured: false
 
 Opening a box of old color photographs and finding everything has shifted to unnatural pink, orange, or yellow tones can be disappointing. These color shifts are among the most common forms of deterioration in vintage color photography, transforming once-vibrant, natural-looking images into strange, off-colored versions that barely resemble the original scenes.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Color shift occurs when the three dye layers in color photographs—cyan, magenta, and yellow—deteriorate at different rates over time. Since these three dyes combine to create all the colors in the photograph, uneven fading creates dramatic color balance shifts that can make photos appear entirely different from how they looked when first developed.
 
 The good news is that color-shifted photographs can almost always be corrected and restored to natural-looking colors using modern restoration techniques. Whether your old photos have turned pink, orange, yellow, or muddy brown, I'll walk you through how to fix color shift in old photos and recover the true colors of your precious memories.
@@ -52,6 +54,13 @@ Different eras of color photography show characteristic color shift patterns due
 Color-shifted photographs typically show one of several characteristic casts. Magenta/pink casts are the most common, resulting from cyan dye fading while magenta and yellow remain. Orange/salmon casts occur when both cyan and magenta dyes have faded, leaving primarily yellow. Yellow/warm casts develop when magenta and cyan dyes fade together. Green/cyan casts result from magenta dye fading (less common than cyan fading). Brown/sepia appearance happens when all three dyes fade but at different rates, creating muddy overall tone.
 
 Understanding which dye layers have faded helps guide the correction approach. For more comprehensive techniques, see our guide to [restore faded photos](/restore-faded-photos) with AI technology.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Identifying Color Shift Types
 
@@ -264,3 +273,22 @@ Your color-shifted photographs deserve to be seen as they were meant to be—in 
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

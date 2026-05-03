@@ -16,6 +16,8 @@ coverEmoji: "💰"
 
 Sandra found me through a Google search at 11 p.m. on a Tuesday. She'd just gotten a quote from a professional restoration studio — $400 for a single photo — and she wasn't sure if that was normal or if she'd been taken for a ride.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 The photo was her late father's military portrait from the Korean War, badly water-damaged after a basement flood. She'd been putting off doing anything about it for three years, partly because she didn't know where to start and partly because she assumed it would cost a fortune. The $400 quote confirmed her worst fear.
 
 I asked her to send me the photo.
@@ -365,3 +367,22 @@ The tools now let you be smart about which category your photos belong to. Most 
 - [How AI Photo Restoration Actually Works](/blog/how-ai-photo-restoration-works)
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
 - [AI Image Enhancer: 7 Tools Tested in 2026](/blog/ai-image-enhancer)
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

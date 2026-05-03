@@ -15,6 +15,8 @@ featured: false
 
 Opening a box of old family photographs and hearing the crackle of brittle paper can be heartbreaking. These fragile treasures, often stored for decades in attics, basements, or forgotten albums, may seem too delicate to touch let alone restore. Yet brittle photo paper, while challenging to handle, doesn't have to mean lost memories. With proper techniques for safe handling and modern digital restoration methods, even the most fragile photographs can be preserved and restored for future generations.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Brittle photo paper affects countless vintage photographs, particularly those from the late 19th through mid-20th century. Understanding why photographic paper becomes brittle, how to handle these fragile images safely, and how to digitally restore them ensures your irreplaceable family history survives despite the physical deterioration of the original materials.
 
 ## Understanding Why Photo Paper Becomes Brittle
@@ -38,6 +40,13 @@ Photographs stored in hot, dry attics often show severe embrittlement, while tho
 Different photographic papers age differently. Early albumen prints (1850s-1890s) are particularly prone to brittleness due to acidic paper bases and natural deterioration of the egg white (albumen) coating. Gelatin silver prints (1880s-present) vary widely in stability depending on manufacturing quality and processing. RC (resin-coated) papers (1970s-present) generally resist brittleness better than fiber-based papers but can suffer from other deterioration modes.
 
 Generally, the older the photograph and the poorer its storage conditions, the more likely it is to exhibit severe paper brittleness. For more damage repair techniques, see our [damaged photo repair](/damaged-photo-repair) guide.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Identifying Different Stages of Paper Brittleness
 
@@ -283,3 +292,22 @@ The photographs may be brittle, but the memories they contain are priceless. Wit
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

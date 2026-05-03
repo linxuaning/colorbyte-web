@@ -51,6 +51,8 @@ reviewedItem:
 
 > **Updated 2026-05-02**: AI restoration via **GFPGAN** ([arXiv:2101.04061](https://arxiv.org/abs/2101.04061)) handles military service portraits exceptionally well due to the era's professional military photography conventions (controlled studio lighting, posed presentation).
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 You inherit a military service portrait from a great-grandparent who served in WWII. The print has yellowed, the face has softened, and you're not sure what unit information is visible. You want to restore it to a state worth framing for your family's history record.
 
 This guide walks through restoring old military service photographs with attention to historical accuracy and family genealogy integration.
@@ -66,6 +68,13 @@ Military photography in the 1900s-1990s had several characteristics that make th
 - **High-resolution originals**: Military photos often used larger formats than civilian snapshots
 
 These factors mean even severely faded service photos retain underlying detail that AI can recover.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Step 1: Identify era and service branch
 
@@ -183,3 +192,22 @@ Service photo restoration outcomes:
 Military service photographs document family members' service to country. Restoring these photos preserves both visual heritage AND historical record. Modern AI tools handle the typical fading and softness common to service photo archives, while research integration (NARA, Fold3, VA records) builds the full context around each restored image.
 
 For related guides, see [restore 1940s WWII era family photos](/blog/restore-1940s-wwii-era-family-photos), [restore old wedding photos](/blog/restore-old-wedding-photos-ai-recovery), or [best AI photo restoration tools 2026](/blog/best-photo-restoration-software-2026).
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

@@ -15,6 +15,8 @@ featured: false
 
 For millions of Americans, Ellis Island represents the gateway to their family's American story. Between 1892 and 1954, over 12 million immigrants passed through this historic immigration station, and many of these precious moments were captured in photographs. Today, these Ellis Island photos serve as invaluable links to our heritage, but decades of aging, environmental damage, and poor storage conditions have left many of these treasures in desperate need of restoration.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Whether you've discovered immigration photos in your grandmother's attic or inherited a family archive filled with Ellis Island documentation, learning to restore Ellis Island photos properly can help preserve these irreplaceable pieces of history for future generations.
 
 ## Understanding Ellis Island Photography: Historical Context
@@ -22,6 +24,13 @@ Whether you've discovered immigration photos in your grandmother's attic or inhe
 Ellis Island photographs fall into several distinct categories, each presenting unique restoration challenges. Official documentation photos, taken by immigration authorities, were typically small, formal portraits often affixed to identification papers. Family departure or arrival photos captured emotional moments of farewell or reunion, usually in outdoor settings near the docks or the iconic immigration building. Ship manifest photos documented passengers and crew, while souvenir photographs, purchased by immigrants as keepsakes, often featured the Statue of Liberty or Ellis Island buildings.
 
 These photographs were typically produced using late 19th and early 20th century photographic processes, including albumen prints (1850-1890s), silver gelatin prints (1890s-1950s), and early developing-out paper prints. Understanding the specific photographic process used in your Ellis Island photos is crucial for effective restoration, as each technique ages differently and requires specialized treatment approaches.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Common Damage Patterns in Ellis Island Photos
 
@@ -221,3 +230,22 @@ Remember, every restored Ellis Island photo helps keep alive the American immigr
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.

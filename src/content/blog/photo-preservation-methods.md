@@ -15,6 +15,8 @@ featured: false
 
 Photograph preservation isn't just about restoring damaged images—it's about preventing damage before it occurs. Every photograph in your collection is deteriorating right now through environmental exposure, improper storage, or simple aging. The photographs that seem fine today may show severe damage in five or ten years if stored improperly. Conversely, photographs stored using proper archival methods can survive centuries in excellent condition.
 
+> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+
 Professional archivists and conservators have developed proven preservation methods based on decades of research into photographic deterioration. These techniques aren't complex or expensive—they're accessible to anyone who cares about protecting family visual heritage. The investment in proper storage materials and practices pays enormous dividends in photograph longevity.
 
 I'll walk you through professional preservation methods, from quick actions that stop ongoing damage to long-term archival storage that keeps photos safe for generations. Whether you've got a handful of treasured family shots or a large collection, these practices will help your photographs survive for your grandchildren and beyond.
@@ -30,6 +32,13 @@ I'll walk you through professional preservation methods, from quick actions that
 **Physical Damage** results from handling and storage. Bending, creasing, and folding create permanent damage. Surface scratches and abrasions remove emulsion. Fingerprints deposit oils and acids. Adhesive damage from taping or gluing is often irreversible. Pressure from stacking or tight storage creates indentations.
 
 **Biological Threats** consume photographic materials. Mold and fungus actively digest gelatin and paper. Insects damage paper and feast on organic binders. Rodents shred photographs for nesting material. Biological damage is often catastrophic and progressive.
+
+---
+
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+
+---
+
 
 ## Core Preservation Principles
 
@@ -216,3 +225,22 @@ Your photographs are worth protecting. Preserve them now while you still can.
   ]
 }
 </script>
+
+## Quick method comparison: AI vs DIY vs Professional
+
+| Method | Time per photo | Cost | Skill required | Result quality |
+|--------|----------------|------|----------------|----------------|
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
+| Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
+| Local print shop | 2–5 days | $20–80 per photo | None | Good |
+
+For typical family-history photos, AI restoration matches professional retoucher quality at 1/30th the cost and 1/4000th the time. For high-monetary-value historical artifacts (museum-grade items), professional conservation is still warranted.
+
+
+
+For era-specific damage profiles, see [Old Photo Restoration by Decade complete index](/blog/old-photo-restoration-by-decade-complete-index).
+
+For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
+
+Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
