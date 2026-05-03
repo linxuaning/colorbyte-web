@@ -9,6 +9,17 @@ authorBio: "Sarah has worked with archives recovering photo collections from sil
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can AI restoration handle fix insect damaged photographs?"
+    answer: "Yes. AI restoration via GFPGAN (face) + Real-ESRGAN (upscale) handles most cases of fix insect damaged photographs effectively. Upload, wait ~60 seconds, download. For severe cases (large missing areas, catastrophic damage), AI fills with plausible content but cannot invent fully lost detail."
+  - question: "How much does it cost?"
+    answer: "ArtImageHub: $4.99 one-time for unlimited HD restoration. Compared to professional retouching ($50-300 per photo) or DIY Photoshop (2-10 hours per photo), AI is the cost-effective path for finite family-history projects."
+  - question: "What scan resolution should I use?"
+    answer: "1200 DPI minimum for standard 4x6 prints. 2400 DPI for small-format originals where face detail recovery is essential. Color mode preserves natural tones even on B&W photos. Save the unmodified scan as your archival record."
+  - question: "How long does the workflow take?"
+    answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
+  - question: "When should I seek professional conservation?"
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
 ---
 
 > **TL;DR** — Insects (silverfish, cockroaches, beetles) eat gelatin photo emulsion, leaving pinholes, edge nibbling, and surface scrapes. Step 1: freeze affected items 72 hours at 0°F (-18°C) to halt any active infestation. Step 2: gently brush surface debris with soft brush. Step 3: scan at 1200 DPI. Step 4: AI restoration fills small bug holes via inpainting; large eaten areas require manual masking. Long-term: store in archival sleeves with insect-deterring boxes; address infestation source.

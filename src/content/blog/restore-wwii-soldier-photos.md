@@ -9,6 +9,17 @@ authorBio: "Sarah has worked with US, UK, and Commonwealth genealogy archives on
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can AI restoration handle restore wwii soldier photos?"
+    answer: "Yes. AI restoration via GFPGAN (face) + Real-ESRGAN (upscale) handles most cases of restore wwii soldier photos effectively. Upload, wait ~60 seconds, download. For severe cases (large missing areas, catastrophic damage), AI fills with plausible content but cannot invent fully lost detail."
+  - question: "How much does it cost?"
+    answer: "ArtImageHub: $4.99 one-time for unlimited HD restoration. Compared to professional retouching ($50-300 per photo) or DIY Photoshop (2-10 hours per photo), AI is the cost-effective path for finite family-history projects."
+  - question: "What scan resolution should I use?"
+    answer: "1200 DPI minimum for standard 4x6 prints. 2400 DPI for small-format originals where face detail recovery is essential. Color mode preserves natural tones even on B&W photos. Save the unmodified scan as your archival record."
+  - question: "How long does the workflow take?"
+    answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
+  - question: "When should I seek professional conservation?"
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
 ---
 
 > **TL;DR** — WWII soldier photos (1939-1945) are now 80+ years old and typically face Kodachrome fade, V-mail print degradation, and brittle paper. AI restoration via GFPGAN/Real-ESRGAN recovers face detail, sharpens unit insignia, and reduces silver mirroring without altering historical authenticity. Scan at 1200 DPI, restore, and store both originals and digital copies — 80th anniversary commemorations (2025) make digital archives especially valuable for family records.

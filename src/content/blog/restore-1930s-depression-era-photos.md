@@ -9,6 +9,17 @@ authorBio: "Sarah has worked with family historians on Great Depression-era phot
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can AI restoration handle restore 1930s depression era photos?"
+    answer: "Yes. AI restoration via GFPGAN (face) + Real-ESRGAN (upscale) handles most cases of restore 1930s depression era photos effectively. Upload, wait ~60 seconds, download. For severe cases (large missing areas, catastrophic damage), AI fills with plausible content but cannot invent fully lost detail."
+  - question: "How much does it cost?"
+    answer: "ArtImageHub: $4.99 one-time for unlimited HD restoration. Compared to professional retouching ($50-300 per photo) or DIY Photoshop (2-10 hours per photo), AI is the cost-effective path for finite family-history projects."
+  - question: "What scan resolution should I use?"
+    answer: "1200 DPI minimum for standard 4x6 prints. 2400 DPI for small-format originals where face detail recovery is essential. Color mode preserves natural tones even on B&W photos. Save the unmodified scan as your archival record."
+  - question: "How long does the workflow take?"
+    answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
+  - question: "When should I seek professional conservation?"
+    answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
 ---
 
 > **TL;DR** — 1930s family photos are typically silver gelatin contact prints (small format, 3×5 or smaller) shot on roll film with simple cameras. Now 85-95 years old. Common issues: fade, paper yellowing, contact-print scratches. Scan at 2400 DPI for small-format originals (essential for face detail recovery). AI restoration via GFPGAN/Real-ESRGAN works very well on Depression-era studio portraits but is more limited on heavily damaged outdoor candids. The Library of Congress FSA collection provides era reference for color-correction calibration.
