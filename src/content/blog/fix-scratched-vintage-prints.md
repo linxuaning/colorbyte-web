@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can all scratches be removed from vintage photographs?"
+    answer: "Most scratches can be significantly reduced or eliminated through digital restoration. Surface scratches respond particularly well to treatment. Deep scratches that penetrate to the paper base or remove emulsion entirely may always show slight evidence, though typically reduced to barely noticeable levels."
+  - question: "Is it safe to try physical scratch removal methods on old photos?"
+    answer: "Physical methods carry risks and should only be attempted on photos you're comfortable potentially damaging further. Always create high-resolution scans before attempting any physical restoration. For valuable, rare, or irreplaceable photographs, skip physical methods entirely and proceed directly to digital restoration. Test any physical technique on expendable photos first."
+  - question: "How long does manual scratch removal take in Photoshop?"
+    answer: "Manual scratch removal time varies dramatically based on scratch severity and your skill level. A single simple scratch might take 2-5 minutes. A photo with dozens of scratches could require 1-4 hours. Complex scratches across detailed areas (faces, text) take longer than scratches in simple backgrounds. Expect a learning curve—your first restorations will take longer as you develop technique."
+  - question: "Do scratch removal apps work as well as manual restoration?"
+    answer: "Modern AI-powered scratch removal apps often match or exceed manual restoration quality, especially for straightforward scratches. Apps like ArtImageHub use algorithms trained on millions of scratched photos, recognizing patterns humans might miss. However, manual restoration provides more control for unusual situations or when you want specific artistic choices."
+  - question: "Should I remove all scratches or leave some for authenticity?"
+    answer: "This is a personal choice depending on your goals. For archival preservation and sharing with family, removing all damage makes sense—preserving the memory, not the damage. Some prefer leaving minor imperfections for authenticity, particularly on historical photos where damage tells part of the story."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

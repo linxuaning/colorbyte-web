@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can extremely faded ID photos be enhanced?"
+    answer: "Often yes, to a surprising degree. Modern AI can amplify very low contrast signals and recover detail that appears invisible to the naked eye. However, completely faded images (where chemical deterioration has destroyed all image information) can't be recovered. The key is having any remaining image information, even if barely visible."
+  - question: "Will enhanced ID photos work for official identification purposes?"
+    answer: "No. Enhanced photos are for personal, historical, and genealogical purposes only. Official identification requires official processes and original documents. Using enhanced or altered photos for official ID purposes would be fraudulent. Keep enhanced images clearly separate from any official documentation needs."
+  - question: "How can I enhance an ID photo that's still embedded in a laminated card?"
+    answer: "Scan or photograph the card at very high resolution. The enhancement process can digitally correct the yellowing, cloudiness, and other lamination issues. You're creating an enhanced digital copy, not physically altering the original card. The original card remains unchanged. This is the safest approach and preserves the original document."
+  - question: "Can AI make a blurry ID photo sharp?"
+    answer: "AI can significantly improve apparent sharpness of moderately blurry photos through detail enhancement and upscaling. However, there are limits—if the original is severely out of focus, AI can improve it but can't create detail that was never captured."
+  - question: "Should I enhance old ID photos of deceased relatives?"
+    answer: "This is a personal and family decision. For family history purposes, enhancement is generally appropriate and valuable. It preserves the image in clearer form for future generations and makes it more suitable for memorial uses. Be respectful in how you enhance and share, maintain the person's dignity, and consider family wishes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

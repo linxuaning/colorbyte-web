@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Are 1940s wartime photos more difficult to restore than photos from other eras?"
+    answer: "1940s wartime photos present specific challenges due to material shortages during the war years, which affected photo quality, and the simple fact of 80+ years of aging. However, they're not necessarily more difficult than other severely aged photos. The main differences are the characteristic fading patterns, yellowing, and often heavy handling damage."
+  - question: "Should I colorize black and white wartime photos or keep them as originally taken?"
+    answer: "This is a personal choice with no wrong answer. Colorization can make photos feel more immediate and relatable, especially for younger generations. However, period black and white photography has its own artistic integrity and historical authenticity. A good compromise: create both colorized and restored black and white versions."
+  - question: "How can I identify the military unit or location in a wartime photo?"
+    answer: "Research military insignia, patches, and uniforms visible in photos. The National Archives, service branch historical centers, and online military history communities can help identify units. Cross-reference with family service records if available. Even partial information helps—service branch, approximate date, and theater of operations."
+  - question: "Is it worth restoring severely faded wartime photos where barely anything is visible?"
+    answer: "Absolutely. Modern AI restoration can recover images from photos that appear nearly blank to the naked eye. Even photos that seem hopelessly faded often retain enough information for significant recovery. ArtImageHub specializes in extreme fading recovery and regularly restores photos that families assumed were beyond saving."
+  - question: "Should I remove handwritten dates and notes from the backs of wartime photos during restoration?"
+    answer: "Writing on the back of photos should generally be preserved—it provides invaluable historical context, identifies people and places, and records family history. When scanning, create separate scans of photo fronts and backs. The front writing (if bleeding through) can be removed during digital restoration while preserving the actual historical note on the back."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

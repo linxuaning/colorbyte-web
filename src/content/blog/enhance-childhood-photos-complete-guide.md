@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How do you enhance old childhood photos from the 1960s-1980s?"
+    answer: "To enhance old childhood photos from the 1960s-1980s, scan at 1200+ DPI in 48-bit color, correct color shifts (typically magenta/pink for 80s photos, yellowing for earlier decades), restore contrast using Curves adjustments, remove scratches and damage with healing brush, and sharpen selectively on faces. For 1960s-70s photos, focus on yellowing correction and emulsion crack repair."
+  - question: "Can severely faded baby pictures be restored?"
+    answer: "Yes, severely faded baby pictures can be restored even when barely visible, using high-resolution scanning (2400 DPI), aggressive contrast restoration with Curves, color correction to remove yellowing or magenta shifts, and AI-assisted detail recovery for extremely faded areas. Scan in 48-bit color to capture maximum information from faded originals."
+  - question: "What's the best way to enhance school photos from different decades?"
+    answer: "Enhance school photos by first identifying the era and format (1950s-60s black & white on matte paper, 1970s-80s color prints with fading, 1990s-2000s better-preserved color), then scanning at 600-1200 DPI depending on size and condition. For class photos with multiple children, work systematically face-by-face with selective adjustments."
+  - question: "How do you restore color in faded childhood Polaroids?"
+    answer: "Restore color in faded childhood Polaroids by scanning at 2400 DPI (small format requires high resolution), adding significant blue channel correction in Curves (Polaroids yellow as blue dyes fade first), reducing yellow cast through Selective Color adjustment, restoring contrast aggressively, and boosting saturation carefully."
+  - question: "Should you enhance digital scans of childhood photos or physical prints?"
+    answer: "Always enhance digital scans of childhood photos rather than attempting physical manipulation of original prints. Scan originals at high resolution (1200+ DPI), then perform all enhancement digitally—this preserves physical originals while allowing unlimited experimentation with restoration. Keep physical prints in archival storage as backup and historical artifacts."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

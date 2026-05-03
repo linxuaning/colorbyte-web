@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Is it disrespectful to colorize historical black and white photos?"
+    answer: "Colorization is generally not disrespectful when done thoughtfully. It can make historical moments more relatable and emotionally resonant, especially for younger generations. However, always preserve original black and white versions—they are the authentic historical record. Create colorized versions as an addition, not a replacement."
+  - question: "How accurate are AI colorization tools compared to original colors?"
+    answer: "AI colorization tools can't know exact original colors (that information wasn't captured), but modern AI achieves impressive accuracy through training on millions of period photographs. For common elements (skin tones, grass, sky, typical clothing), AI is often quite accurate."
+  - question: "Can I colorize a photo if I don't know what the original colors were?"
+    answer: "Yes, absolutely. Most colorization involves educated guesses based on research and context clues. AI tools make this easy by automatically applying plausible colors. For manual colorization, research period-appropriate colors for clothing and decor, use natural colors for landscapes and common objects, and make informed guesses for specific items."
+  - question: "Should I remove sepia tone before colorizing?"
+    answer: "Yes, converting sepia-toned photos to true black and white before colorization typically produces better results. The sepia tone is just discoloration from aging—it wasn't part of the original photograph. Removing it gives you a clean base for adding accurate colors."
+  - question: "How long does it take to learn manual photo colorization?"
+    answer: "Basic colorization can be learned in a few hours of practice. After colorizing 5-10 photos, you'll understand fundamental techniques and achieve decent results. Developing truly advanced skills takes 20-30 photos worth of practice. The learning curve is moderate—easier than advanced photo manipulation, harder than basic editing. Start with simple portraits before attempting complex scenes."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

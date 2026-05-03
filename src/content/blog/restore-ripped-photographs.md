@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can a photo torn into many small pieces be fully restored?"
+    answer: "Yes, even photographs torn into dozens of pieces can often be fully restored digitally. The key is collecting all pieces, scanning them at high resolution, and carefully aligning them digitally. Modern AI tools like ArtImageHub can intelligently fill gaps where pieces are missing. The process is time-intensive but results can be remarkable."
+  - question: "Should I physically tape torn photos back together before scanning?"
+    answer: "Only use removable tape on the back side (never the front) and only temporarily for scanning purposes. Remove tape immediately after scanning. Never use permanent adhesives as they damage photos further and make future restoration harder. Physical repairs often create additional problems (misalignment, adhesive damage, trapped dirt)."
+  - question: "How can I repair a tear across someone's face?"
+    answer: "Facial tears require extra care due to high visibility. Scan at highest resolution possible (1200-2400 DPI). Use clone stamp to carefully repair along the tear, sampling skin texture from the same facial area. Ensure facial features align perfectly—even slight misalignment is very noticeable. Use symmetry when possible (copy from opposite side)."
+  - question: "What do I do if pieces of the torn photo are completely missing?"
+    answer: "For small missing areas, use clone stamp to extend surrounding areas into the gap. For larger missing sections, AI-powered reconstruction (ArtImageHub) can intelligently fill areas based on context. If photo is symmetrical (portrait faces, buildings), copy and flip from the opposite side. For irreplaceable photos with significant loss, professional conservators have specialized techniques."
+  - question: "Is it possible to repair photos that have been torn for decades and the pieces are deteriorated?"
+    answer: "Yes, the timeline of the tear doesn't significantly affect digital restoration difficulty. Whether torn yesterday or 50 years ago, the same techniques apply. However, pieces may have deteriorated differently (varied fading, damage), requiring additional color and tone matching during repair. The main challenge is whether all pieces were preserved."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "AI Technology"
 featured: false
+faq:
+  - question: "Can AI photo restoration create details that weren't in the original photo?"
+    answer: "No, AI can't add information that was never captured in the original photograph. However, it can appear to do so when reconstructing damaged areas. For example, if a scratch runs across a person's face, AI reconstructs what was likely underneath the scratch based on surrounding facial features, lighting patterns, and learned understanding of human faces."
+  - question: "Is AI restoration accurate enough for genealogical or historical research?"
+    answer: "AI restoration is generally reliable for genealogical and historical use with important caveats. For identifying people, viewing clothing or background details, and reading text or signs in photos, AI restoration significantly improves visibility of existing information. However, researchers should be aware that severely damaged areas may be reconstructed rather than recovered."
+  - question: "Why does AI sometimes make faces look unnatural or \"smoothed\"?"
+    answer: "AI restoration systems trained on large datasets of photographs learn what typical faces look like, sometimes resulting in over-smoothing or genericization of facial features. This occurs because the AI averages across thousands of training examples when reconstructing damaged facial areas, reconstructs based on common facial features rather than individual characteristics, may apply noise redu..."
+  - question: "Can AI restore photos that are almost completely faded or blank?"
+    answer: "AI can sometimes recover surprising amounts of information from nearly blank-appearing photos, but there are hard limits. Photos that appear blank to the naked eye sometimes retain faint image data detectable through high-resolution scanning at adjusted exposure settings. AI can amplify these subtle variations to reveal the image."
+  - question: "Should I use AI restoration or hire a professional photo restorer?"
+    answer: "The decision depends on your specific needs and the photographs in question. Use AI restoration (like ArtImageHub) for most family photos with typical damage, when budget is limited ($5-20 vs. $50-300+ per photo), when quick turnaround is important (minutes vs. weeks), and for large collections requiring consistent processing."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

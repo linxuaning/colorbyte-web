@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Color Restoration"
 featured: false
+faq:
+  - question: "Can AI restore color to severely faded old photos?"
+    answer: "Yes, AI can often restore vibrant natural colors to severely faded photographs, even those that appear nearly monochrome. The technology analyzes faint remaining color information that may be invisible to the eye, identifies characteristic fading patterns based on photo era and type, reconstructs original color relationships from traces that survive, and applies advanced color correction to rec..."
+  - question: "How does AI know what colors were originally in faded photos?"
+    answer: "AI determines original colors through multiple advanced analytical techniques. It analyzes relationships between remaining color information in different channels (even severely faded photos retain some color data), identifies characteristic fading patterns based on photo era, paper type, and dye chemistry, uses image content understanding (faces should have flesh tones, skies should be blue, g..."
+  - question: "Can you fix photos where colors have shifted to pink or orange?"
+    answer: "Absolutely—pink and orange color shifts are among the easiest issues for AI restoration to fix. These shifts occur when cyan dyes fade faster than magenta and yellow (creating pink cast) or when magenta fades faster than yellow (creating orange shift)."
+  - question: "Will color restoration work on printed photos or only digital photos?"
+    answer: "Color restoration works excellently on printed photos—in fact, most color restoration is performed on scanned prints from the 1960s-2000s that have faded over decades. The process involves scanning your faded print at high resolution (600-1200 dpi) in color mode, uploading the scan to AI restoration service, processing that analyzes and corrects fading in the digital file, and downloading the r..."
+  - question: "How much do color restoration services cost compared to living with faded photos?"
+    answer: "AI color restoration is remarkably affordable at $5-20 per photo typically, with processing in minutes and professional-quality results. Compare this to traditional professional color correction ($50-200+ per photo, weeks of turnaround) or the cost of leaving photos faded (priceless memories remaining hidden away, deteriorating further, or displayed in poor quality)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

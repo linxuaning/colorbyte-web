@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
+faq:
+  - question: "How much does it cost to restore Victorian photos professionally?"
+    answer: "Professional restoration to restore Victorian photos ranges from $75-150 for basic damage repair to $2000+ for museum-quality restoration of severely damaged images. The cost depends on damage extent, photograph rarity, research requirements, and turnaround time. DIY restoration costs $500-2000 in initial equipment and software, plus 3-15 hours per photograph."
+  - question: "Can I restore Victorian photos that are severely damaged or torn?"
+    answer: "Yes, severely damaged Victorian photographs can often be restored through digital techniques, even with significant portions missing. Photographs with at least 40-50% of the original image intact generally restore well. Missing areas can be reconstructed using period-appropriate reference materials, though this requires historical research to maintain accuracy."
+  - question: "What's the difference between restoring daguerreotypes and cabinet cards?"
+    answer: "Daguerreotypes and cabinet cards require completely different restoration approaches. Daguerreotypes are metal-based with reflective surfaces that need special digitization techniques (photographing from multiple angles with polarizing filters), while cabinet cards are paper prints that scan traditionally."
+  - question: "Should I colorize Victorian black and white photographs?"
+    answer: "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize Victorian photos, extensive research is essential—Victorian fashion, fabric dyes, and studio practices followed specific conventions. Use muted, period-appropriate colors rather than saturated modern hues."
+  - question: "How do I scan Victorian photographs without damaging them?"
+    answer: "Scan Victorian photographs safely by handling only the edges with clean cotton gloves, using a flatbed scanner with the lid open (to avoid pressure), and scanning at 600-1200 DPI in 48-bit color mode with all automatic corrections disabled. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and a polarizing filter."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

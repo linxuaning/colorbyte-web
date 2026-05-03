@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How do I identify the rank insignia in a damaged military photo?"
+    answer: "Identify rank by examining the location (collar, shoulder, sleeve), color (brass, silver, gold), and any visible portions of the insignia. Cross-reference with military rank charts from the appropriate era and branch. Service records, if available, confirm rank at specific dates. When uncertain, consult military history experts or veterans organizations for identification assistance."
+  - question: "Can I add medals to a military photo that were earned but not shown in the original photo?"
+    answer: "This is a personal decision, but transparency is essential. The photograph documents that specific moment in time, and adding medals not physically present changes the historical record. If you choose to add medals verified from service records, clearly label the image as enhanced rather than simply restored, and maintain an unaltered version."
+  - question: "How much does military photo restoration cost?"
+    answer: "Basic military photo restoration costs $50-150 for minor damage and straightforward repairs. Moderate restoration with uniform detail reconstruction ranges from $150-300. Complex restoration requiring extensive research, severe damage repair, and detailed insignia reconstruction can cost $300-500 or more."
+  - question: "Should I colorize a black and white military photo?"
+    answer: "Colorization is a personal choice with both benefits and considerations. Benefits include bringing the image to life and showing accurate uniform colors. Considerations include maintaining historical authenticity and the fact that original black and white photos have period character."
+  - question: "How can I find out more about the uniform and insignia in an old military photo?"
+    answer: "Resources include the Institute of Heraldry (official U.S. military insignia), National Archives military records, branch-specific military museums, military uniform collector forums, and veterans organizations. Many online communities have experts who can identify uniforms, insignia, and units from photos. Consider also consulting military history books specific to the era and conflict."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

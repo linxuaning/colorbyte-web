@@ -8,6 +8,17 @@ authorRole: "Family History Expert"
 authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement. She tests every tool she recommends on real damaged family photos before publication."
 category: "Photo Enhancement"
 featured: false
+faq:
+  - question: "Can AI really fix blurry vintage photos?"
+    answer: "Yes, AI can significantly improve blurry vintage photos in most cases, though the degree of improvement depends on blur type and severity. For photos with mild to moderate blur from focus errors, camera shake, or lens limitations, AI enhancement typically produces noticeable and often dramatic improvement."
+  - question: "What's the difference between sharpening and AI enhancement?"
+    answer: "Traditional sharpening applies mathematical filters that increase contrast along edges throughout an image uniformly. This can improve apparent sharpness but also enhances noise, creates halos, and treats all image areas identically."
+  - question: "Can enhancement make blurry text in vintage photos readable?"
+    answer: "Often yes, particularly for moderately blurry text. AI enhancement excels at text recovery because text represents high-contrast edges that respond well to advanced sharpening algorithms. The technology recognizes text patterns and applies appropriate enhancement for legibility. Text that appears illegible or barely visible in blurry originals often becomes readable after enhancement."
+  - question: "Will enhancement work on blurry old Polaroid photos?"
+    answer: "Yes, AI enhancement works well on blurry instant film photos including Polaroid, though these images present particular challenges. Instant film often has inherent softness compared to traditional film, characteristic grain structure that becomes more visible with sharpening, and color shifts or fading complicating enhancement."
+  - question: "Should I enhance all my blurry vintage photos or just the important ones?"
+    answer: "The decision depends on your budget, number of photos, and how you plan to use them. For photos you plan to display, share, or use in family history projects, enhancement is definitely worthwhile as it transforms barely acceptable images into quality photos worth showcasing."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

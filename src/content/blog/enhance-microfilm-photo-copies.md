@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I fix curved text from microfilm reader distortion?"
+    answer: "Curved text can be straightened using AI restoration tools or manual perspective/warp adjustments in photo editing software. ArtImageHub's AI automatically detects and corrects text curvature common in microfilm copies. For manual correction, use warp or perspective transformation tools to align text baselines horizontally."
+  - question: "Why are microfilm photocopies such poor quality?"
+    answer: "Microfilm photocopies are poor quality due to multiple generation copying (original to microfilm to reader screen to print), microfilm reader screen curvature creating distortion, high contrast settings losing grey tones, dust and scratches on old microfilm, aging microfilm quality, and often poorly maintained microfilm reader equipment. Each stage of reproduction adds quality loss and artifacts."
+  - question: "Can I make microfilm copies good enough for legal purposes?"
+    answer: "Enhanced microfilm copies can be made clearer and more legible, but legal acceptance depends on jurisdiction and purpose. For official legal use, contact the issuing authority for certified copies rather than relying on microfilm reproductions."
+  - question: "What's the best way to scan microfilm photocopies for enhancement?"
+    answer: "Scan microfilm photocopies at minimum 600 DPI in grayscale mode (not black and white) using TIFF or PNG format. Higher resolution (1200 DPI) is better for very poor quality originals or small text. Grayscale preserves tonal information that pure black and white mode loses, providing better results during enhancement."
+  - question: "Can AI remove all artifacts from microfilm copies?"
+    answer: "AI can remove most common microfilm artifacts including dust spots, scratches, background noise, and uneven illumination. However, some artifacts may be too severe for complete automatic removal, particularly if they obscure text. ArtImageHub's AI handles typical microfilm issues very effectively, with manual touch-up available for stubborn artifacts."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

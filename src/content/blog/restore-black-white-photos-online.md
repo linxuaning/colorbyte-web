@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How long does online black and white photo restoration typically take?"
+    answer: "Most online restoration services process photos in 1-5 minutes using AI technology. Upload and download times add another 1-2 minutes depending on file size and internet speed. Total time from start to finished photo is usually 5-10 minutes. Batch processing may take longer but allows multiple photos to process simultaneously."
+  - question: "Can online tools restore severely faded black and white photos where the image is barely visible?"
+    answer: "Yes, modern AI-powered restoration tools can often recover images from severely faded photographs. Tools like ArtImageHub use machine learning trained on millions of degraded photos to reconstruct missing details and enhance faint images. However, results depend on how much information remains in the original."
+  - question: "Are online restoration results good enough for printing and framing?"
+    answer: "Absolutely. Quality online restoration services provide high-resolution output (typically 300 DPI or higher) suitable for printing at sizes up to 16x20 inches or larger, depending on original scan quality. The key is starting with a high-resolution scan (minimum 600 DPI, preferably 1200 DPI) of your original photo."
+  - question: "Is it safe to upload family photos to online restoration services?"
+    answer: "Reputable online restoration services use encryption and secure storage to protect uploaded photos. However, privacy practices vary by service. Before uploading, review the service's privacy policy, data retention practices, and terms of service."
+  - question: "Can I restore black and white photos from my smartphone?"
+    answer: "Yes, many online restoration services offer mobile-responsive websites or dedicated mobile apps. Services like Remini specialize in mobile restoration, offering iOS and Android apps. Simply photograph or scan your black and white photo, upload through the mobile app or website, and receive restored results on your device."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

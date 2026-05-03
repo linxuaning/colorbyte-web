@@ -9,6 +9,17 @@ authorBio: "Sarah works with collectors and museums on Victorian stereoview pres
 reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
+faq:
+  - question: "Can I view restored stereoviews in 3D?"
+    answer: "Yes, restored stereoviews maintain their 3D viewing capability if proper alignment is preserved during restoration. Modern viewing options include traditional stereoscope viewers (antique or reproduction), modern 3D glasses for digital viewing, VR headset viewing of digitized stereoviews, and cross-eye viewing technique for small images."
+  - question: "Should I restore both images identically or address damage individually?"
+    answer: "This depends on how damage affects each image. If both images show similar damage, process them together for consistency. If one image is more damaged than the other, restore each separately to optimize results, then carefully match brightness and contrast between them after restoration. The key is ensuring both images remain properly aligned and visually compatible for 3D viewing."
+  - question: "Are stereoscopic photographs valuable?"
+    answer: "Value varies widely based on subject, condition, and rarity. Common tourist views typically worth $5-20, rare or unusual subjects can reach $50-500+, important historical events command premium prices, and Civil War stereoviews are particularly collectible. Even common stereoviews have historical value as 3D documents of Victorian-era world."
+  - question: "How should I store restored stereoviews?"
+    answer: "Store original cards flat in acid-free folders or boxes, maintain stable temperature and humidity, keep away from light to prevent further fading, and handle by edges to avoid touching image surfaces. Digital restored versions should be maintained in high-resolution archival formats suitable for both 2D viewing and 3D display."
+  - question: "Can damaged stereoscopic glass plates be restored?"
+    answer: "Yes, glass stereo plates can be digitally restored even if physically damaged. Photograph with transmitted light at high resolution, use AI restoration to remove damage and enhance images, and maintain the dual-image format for continued 3D viewing capability. Physical glass preservation should be handled by professional conservators."
 ---
 
 > **TL;DR** — Stereoviews (1850s-1930s) are pairs of nearly identical photos on cardstock mounts, viewed through stereoscope to produce 3D effect. Cards typically curve to fit the viewer — preserve the curve when scanning. Scan flat at 1200 DPI for digital archive (curved scanning introduces distortion that breaks 3D effect). AI restoration via GFPGAN/Real-ESRGAN recovers fine detail in the small-format halves. Card backs often hold publisher imprints (Keystone, Underwood) — scan for collection cataloging.

@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
+faq:
+  - question: "Can severely damaged photos really be restored?"
+    answer: "Yes, even severely damaged photos can often be restored to displayable quality using modern AI restoration technology. Photos torn in half or into pieces can be digitally reassembled and repaired with tears becoming invisible. Water-damaged photos with stains, mold, and fading can be cleaned, corrected, and enhanced to recover the original image."
+  - question: "Should I try to repair physical damage before scanning?"
+    answer: "Generally, no—avoid attempting physical repairs before scanning. Tape, glue, and other adhesives cause additional damage and discoloration over time. Pressing or flattening damaged photos can crack emulsion or worsen tears. Cleaning attempts with household products may cause chemical damage. Instead, scan or photograph the damaged photo as-is, then perform all restoration digitally."
+  - question: "How does AI restoration compare to manual photo editing?"
+    answer: "AI restoration offers several significant advantages over traditional manual photo editing. Speed is dramatically faster—AI processes complex repairs in seconds or minutes that would require hours or days of manual work. Consistency across similar damage types means AI applies the same high-quality repair techniques automatically."
+  - question: "Can AI restore photos with missing faces or important sections?"
+    answer: "AI can reconstruct missing sections with varying success depending on the size and location of the loss. For small missing sections (edge damage, corner losses, small tears), AI reconstruction is typically excellent and nearly invisible. For moderate missing sections crossing less critical areas, AI generates plausible fill based on surrounding context."
+  - question: "What's the best way to preserve photos after restoration?"
+    answer: "After restoring damaged photos digitally, proper preservation ensures both the originals and restored versions survive for future generations. For original damaged photos, store them in acid-free, lignin-free sleeves and boxes away from light, heat, and humidity in a stable environment (65-70°F, 30-40% relative humidity)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

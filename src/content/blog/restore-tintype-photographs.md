@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if my photograph is a tintype?"
+    answer: "Test with a small magnet—tintypes are magnetic due to iron base. They're metal (heavier than paper), reflective, typically show dark backing around edges, and create a positive image (right-reading). If you can see your reflection in the surface and it's attracted to a magnet, it's likely a tintype. Glass ambrotypes won't be magnetic, and daguerreotypes have a distinctive mirror-bright surface."
+  - question: "Can I clean rust off a tintype photograph myself?"
+    answer: "No, don't attempt physical rust removal. Physical cleaning can permanently damage the delicate collodion emulsion or accelerate deterioration. Digital restoration can remove rust appearance in scanned/photographed copies while leaving the original untouched. For valuable tintypes with active rust, consult a professional conservator who can stabilize the object."
+  - question: "What's the best way to digitize a tintype without glare?"
+    answer: "Photograph rather than scan tintypes. Use two diffused light sources at 45-degree angles, position your camera perpendicular to the tintype, and use a polarizing filter to reduce glare. Take multiple exposures from slightly different angles to find the best glare-free position. Ensure lighting is even and indirect rather than direct harsh light."
+  - question: "Are tintypes valuable enough to warrant professional restoration?"
+    answer: "Tintypes vary widely in value. Common portrait tintypes from the 1870s-1880s have modest monetary value but immense family historical value. Civil War soldier tintypes, identified individuals, or unusual subjects can be quite valuable."
+  - question: "Can bent or creased tintypes be restored?"
+    answer: "Physically bent tintypes should not be forcibly flattened—this risks cracking the emulsion. Digital restoration can correct perspective distortion from bending and repair emulsion cracks that resulted from the crease. The digital result can look as if the tintype were never bent, while the physical original is preserved in its current state without further damage."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

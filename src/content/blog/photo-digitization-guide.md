@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Preservation"
 featured: true
+faq:
+  - question: "What resolution should I scan old photos?"
+    answer: "For most old family photos, scan at 1200 dpi for archival-quality preservation. This resolution captures excellent detail, allows enlargement beyond original size, provides ample information for restoration if needed, and creates files of manageable size (~50 MB TIFF for 4x6 photo)."
+  - question: "Should I scan photos in color or grayscale mode?"
+    answer: "Always scan in color mode regardless of whether photos are color or black-and-white. For color photos, obviously color mode captures the color information. For black-and-white photos, color mode captures subtle toning (sepia, etc.), yellowing and discoloration useful for restoration, and slight color casts helpful for accurate restoration."
+  - question: "What file format is best for archiving scanned photos?"
+    answer: "TIFF (Tagged Image File Format) is the best format for archival master files because it uses lossless compression preserving all image data without quality loss, supports high bit depths (16-bit per channel), is widely supported and likely to remain accessible long-term, and serves as industry standard for archival imaging."
+  - question: "Can I use my smartphone to digitize old photos?"
+    answer: "Smartphones can digitize photos acceptably for casual purposes but have limitations for archival-quality preservation. Modern smartphone cameras provide very high resolution potentially exceeding flatbed scanners, convenience without additional equipment, and instant processing and organization."
+  - question: "How should I organize and back up digitized photos?"
+    answer: "Implement systematic organization and backup for digitized photos. Organization involves creating clear folder structure by date, event, person, or category, using consistent file naming (Date_Subject_Number format works well), adding metadata (captions, dates, locations, people), and maintaining catalog or spreadsheet documenting collection."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

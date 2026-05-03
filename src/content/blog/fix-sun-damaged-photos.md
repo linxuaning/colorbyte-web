@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can severely sun damaged photos be restored?"
+    answer: "Yes, even severely faded photos can often be restored to recognizable condition through digital techniques. Success depends on how much information remains in the original print. Photos that have completely faded to white in large areas may require reconstruction rather than true restoration, but most sun damaged photos retain enough detail for significant improvement."
+  - question: "How long does it take to fix sun damaged photos?"
+    answer: "DIY restoration takes 30 minutes to 4 hours per photo depending on damage severity and your skill level. AI-powered tools process photos in minutes but may need manual refinement. Professional services typically take 1-2 weeks including consultation and approval stages."
+  - question: "What's the best software to fix sun damaged photos?"
+    answer: "Adobe Photoshop offers the most full tools, but Affinity Photo provides similar capabilities at a one-time $50 cost versus Photoshop's subscription. For AI-powered quick fixes, specialized restoration platforms can process sun damage in minutes. The best choice depends on your budget, skill level, and time available."
+  - question: "Why do some photos turn pink when sun damaged?"
+    answer: "The pink or magenta cast results from cyan dye fading faster than magenta and yellow dyes in chromogenic (traditional color) prints. This differential fading leaves an excess of magenta, creating the characteristic pink appearance. It's one of the most common sun damage patterns and fortunately one of the easier to correct digitally."
+  - question: "Should I frame restored photos or keep originals stored away?"
+    answer: "Ideally, both. Keep original sun damaged photos in archival storage as historical artifacts. Display high-quality prints of your restored digital versions in UV-protective frames with museum glass. This gives you the joy of displaying images without risking further damage to irreplaceable originals."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

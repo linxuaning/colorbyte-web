@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Era-Specific Restoration"
 featured: false
+faq:
+  - question: "Why do 1970s photos fade so badly compared to other eras?"
+    answer: "Color photography technology of the 1970s used dye-based prints with inherently unstable color dyes that deteriorated rapidly over time. The cyan (blue) dye layer was particularly unstable and faded within 20-30 years in many cases, leaving behind magenta and yellow dyes that create the characteristic pink or orange cast visible in most 1970s color prints today."
+  - question: "Can the pink color cast in old disco photos be fixed?"
+    answer: "Yes, the characteristic pink or magenta color cast affecting most 1970s photos can be completely removed through AI restoration. This color shift occurs because cyan (blue) dyes fade faster than magenta dyes, leaving an overall pink appearance."
+  - question: "How can I restore photos of people dancing in disco clubs?"
+    answer: "Disco dance floor photos present particular challenges including motion blur from dancing subjects, dark backgrounds from flash falloff, mixed lighting from disco balls and colored lights, and overall 1970s color print fading."
+  - question: "Should I restore disco photos to accurate colors or enhance them for modern viewing?"
+    answer: "This depends on your goals and personal preference. For accurate historical documentation, restore to natural, realistic colors that reflect how the scene actually appeared, preserving authentic 1970s photo characteristics and maintaining appropriate period aesthetic."
+  - question: "Are instant photos from the 1970s (Polaroids) restorable?"
+    answer: "Yes, 1970s instant photos including Polaroid and other brands can be restored, though they present unique challenges. Instant film from the disco era typically shows severe fading to pale yellow or cream tones within decades, characteristic orange or brown color shifts in skin tones, loss of contrast creating flat, washed-out appearance, and sometimes physical deterioration of the instant film ..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

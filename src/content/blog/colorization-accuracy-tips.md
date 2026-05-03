@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I ensure historically accurate colors when colorizing old photos?"
+    answer: "Research is essential: date the photograph precisely, study period fashion and color availability, examine verified color photographs from the same era, and consult historical resources (fashion magazines, catalogs, museum collections). Create reference boards before colorizing. When uncertain, conservative, historically plausible colors are better than vivid guesses."
+  - question: "Should I use AI colorization or manual colorization for accuracy?"
+    answer: "For maximum accuracy, use AI as a starting point, then manually refine based on historical research. AI is fast but lacks historical knowledge and often applies modern colors to period photos. Manual colorization allows incorporating specific research (exact uniform regulations, verified automobile colors, period fashion palettes)."
+  - question: "How do I colorize skin tones accurately in old photographs?"
+    answer: "Reference period portraits from the same era, as photographic processes rendered skin differently over time. Use appropriate undertones for ethnicity and individual variation. Build up color gradually with subtle variations—skin isn't uniform. Consider lighting (warm or cool affects appearance). Avoid over-saturation."
+  - question: "What are the most common colorization mistakes that destroy accuracy?"
+    answer: "Over-saturation (colors too vivid for the era), wrong skin tones (orange or pink faces), ignoring historical research (modern colors on Victorian photos), violating tonal values (dark colors where tones are light), anachronistic colors (shades not available in that period), and uniform application (no natural variation)."
+  - question: "How do I know what colors to use if there are no color references from that exact photo?"
+    answer: "Research the era thoroughly: study period fashion catalogs, examine verified color photographs from the same timeframe, consult museum collections, and reference paint company historical palettes. For specific items (automobiles, military uniforms), use manufacturer specifications or regulations. Build a reference board of verified era-appropriate colors."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

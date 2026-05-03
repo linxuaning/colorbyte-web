@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
+faq:
+  - question: "How can I identify whether my mining photograph is from the Gold Rush era?"
+    answer: "Dating Gold Rush photographs requires examining multiple factors. First, identify the photographic process—daguerreotypes (1849-1860s) appear mirror-like on silver-plated copper, ambrotypes (1855-1870s) are glass plates with soft tones, and tintypes (1856-1900s) are magnetic iron plates with dark surfaces."
+  - question: "Are Gold Rush photographs valuable, and should I have them professionally appraised?"
+    answer: "Gold Rush photographs can be valuable historically and monetarily. Common tintypes of anonymous miners typically sell for $50-200, while identified subjects, famous mining locations, or rare processes like daguerreotypes command $500 to several thousand dollars. Photographs showing Chinese miners, mining operations, or well-documented camps are particularly valuable."
+  - question: "Can severely damaged mining-era photographs be restored?"
+    answer: "Yes, modern digital restoration can recover remarkable detail from severely damaged Gold Rush photographs. AI restoration technology effectively removes tarnish from daguerreotypes and tintypes, fills cracks in glass plate ambrotypes, corrects fading and yellowing, and eliminates water damage and environmental deterioration."
+  - question: "How should I store Gold Rush photographs to prevent further damage?"
+    answer: "Proper storage varies by photographic format. Daguerreotypes and ambrotypes should remain in their original cases if intact, stored flat in acid-free boxes with stable temperature (65-70°F) and humidity (30-40%). Never attempt to clean the image surface. Tintypes are more durable but still require acid-free enclosures—avoid PVC sleeves which emit damaging gases."
+  - question: "Should I donate historically significant mining photographs to archives?"
+    answer: "Donating significant Gold Rush photographs to archives ensures long-term preservation and research access while honoring the historical subjects. Consider donation if photographs show identifiable mining operations, camps, or communities, depict underrepresented groups (Chinese miners, women, diverse populations), include documentation of provenance or subject identification, or represent photo..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

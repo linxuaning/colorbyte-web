@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Damage Repair"
 featured: false
+faq:
+  - question: "Can chemical damage be physically removed from photographs?"
+    answer: "Physical removal of chemical damage from original photographs is possible in some cases but requires professional photograph conservation expertise and carries significant risks. Some types of chemical damage can be treated through careful chemical or physical processes. Removal of surface contaminants may be possible through gentle dry or aqueous cleaning by trained conservators."
+  - question: "Why do some old photographs turn yellow or brown while others remain clear?"
+    answer: "The variable deterioration among photographs of similar age results from differences in original processing quality, storage conditions, and material quality. Processing quality is perhaps the most significant factor."
+  - question: "Will digitizing a chemically damaged photograph cause more damage?"
+    answer: "Proper digitization technique does not cause additional chemical damage to photographs, though handling must be careful with chemically damaged images because deterioration may have weakened the photograph structurally. When scanning, place photographs gently on scanner bed avoiding excessive pressure or sliding that might abrade weakened emulsion."
+  - question: "Can chemical damage spread from one photograph to other photographs stored nearby?"
+    answer: "Yes, chemical damage can definitely spread through contamination transfer, making isolation of damaged photographs from undamaged ones an important preservation practice. Several contamination mechanisms enable spread: Volatile organic compounds (VOCs) emitted by deteriorating photographs or storage materials affect nearby photographs even without direct contact—acids, peroxides, and other dama..."
+  - question: "Is chemical damage worse for color photographs than black-and-white?"
+    answer: "Color and black-and-white photographs are vulnerable to different types of chemical damage, each with characteristic deterioration patterns. Black-and-white photographs suffer primarily from silver oxidation and degradation creating brownish, yellowish, or purple discoloration, residual processing chemicals continuing to react with image silver, paper degradation releasing acids that attack ima..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

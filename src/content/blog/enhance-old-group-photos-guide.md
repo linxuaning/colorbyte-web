@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How do you enhance old group photos with many people?"
+    answer: "To enhance old group photos with multiple people, start with global corrections (alignment, exposure, color balance) that improve the entire image, then work face-by-face with selective adjustments for each person. Scan at high resolution (1200+ DPI), create separate adjustment layers for different rows or individuals, and apply varying levels of sharpening based on distance from camera."
+  - question: "Can you sharpen faces in the back row of old class photos?"
+    answer: "Back row faces in old class photos can be improved but have limitations. Faces smaller than 50 pixels wide (even after high-resolution scanning) won't sharpen dramatically due to insufficient image data. Use moderate sharpening (50-80% strength) at smaller radius (0.4-0.8 pixels) and reduced opacity (60-80%) for back rows."
+  - question: "Why do old group photos fade unevenly?"
+    answer: "Old group photos fade unevenly due to differential light exposure during display (centers receive more light than edges), handling wear (frequently touched areas deteriorate faster), original lighting variations (studio lights weren't perfectly even), and storage conditions (areas touching album pages or frames age differently)."
+  - question: "How much does it cost to restore an old class photo?"
+    answer: "Professional restoration of old class photos costs $200-600 for medium-sized groups (10-20 people) with basic to moderate damage, and $600-2000+ for large classes (30+ students) or severe damage requiring extensive reconstruction. Using AI photo enhancement for group photos can reduce this cost significantly by handling much of the work automatically."
+  - question: "Can damaged faces in group photos be reconstructed?"
+    answer: "Yes, damaged faces in group photos can often be reconstructed through digital restoration techniques, though results vary based on damage extent. If 40-50% of facial features remain visible, reconstruction typically succeeds using clone stamping, content-aware fill, and reference photos of the same person."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

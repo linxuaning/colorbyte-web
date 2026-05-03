@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Damage Repair"
 featured: false
+faq:
+  - question: "Can mold-damaged photographs be fully restored?"
+    answer: "Digital restoration can remove visible mold damage very effectively, creating clear viewable images even from severely mold-damaged photographs. Success depends on damage severity—light to moderate mold damage (scattered spots, some staining) removes 90-95% successfully, heavy mold damage (extensive spots, significant staining) achieves 75-90% restoration, and severe damage with actual emulsion..."
+  - question: "Is it safe to scan mold-damaged photographs?"
+    answer: "Scanning mold-damaged photographs is safe if proper precautions are followed. Wear an N95 mask to avoid inhaling mold spores released during handling. Use disposable gloves to avoid skin contact with mold. Work in well-ventilated area to disperse spores. Place mold-damaged photos in sealed plastic bags immediately after scanning to prevent spore spread."
+  - question: "Will mold come back after I restore the digital image?"
+    answer: "Digital restoration removes mold damage from digital copies but doesn't affect mold in the original physical photograph. If mold was actively growing on the original when you scanned it, spores and growth may remain on the physical photograph."
+  - question: "Can I remove mold from photographs myself before scanning?"
+    answer: "Physical mold removal from photographs should generally be left to professional photograph conservators because improper removal can cause severe additional damage, mold spores create health hazards requiring proper safety equipment, and different photographic formats require different specialized treatment approaches."
+  - question: "How can I tell if mold damage is active or old?"
+    answer: "Active mold shows fuzzy or powdery growth on photograph surfaces, may have musty odor, appears on photographs stored in humid conditions (basement, attic), and actively spreads to adjacent photographs if not isolated. Old dormant mold appears as staining and spots without fuzzy growth, occurs in photographs moved to dry storage, has no musty odor, and doesn't actively spread to other photographs."
 ---
 
 > **TL;DR** — Mold actively eats photo emulsion — every day matters. Step 1: isolate moldy items in zip-lock bags away from healthy collection (mold spreads via airborne spores). Step 2: dry in 30-40% RH room 1-2 weeks (kills active mold; deactivated spores cannot grow). Step 3: gently brush surface debris with soft brush. Step 4: scan at 1200 DPI. Step 5: AI restoration recovers face detail and reduces foxing stains; severely eaten emulsion areas need plausible content fill. Wear N95 + gloves throughout — moldy materials are health hazards.

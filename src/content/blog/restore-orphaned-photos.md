@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
+faq:
+  - question: "Is it worth restoring orphaned photographs if I don't know who they are?"
+    answer: "Absolutely yes, for several compelling reasons. First, restoration dramatically increases identification chances because clear faces are far more recognizable than damaged or faded images, enhanced details provide clues for research (visible text, distinctive features, background elements), and better-quality photographs get more attention when posted online."
+  - question: "What should I do if someone claims an orphaned photo but I'm uncertain?"
+    answer: "When someone claims identification of an orphaned photograph but you're not certain they're correct, verify carefully before accepting the identification. Request additional evidence supporting their claim including other photographs of the same person for visual comparison, family documents (letters, Bible records) mentioning the person, genealogical research showing the person lived in the ri..."
+  - question: "Can I keep or sell orphaned photographs I've restored?"
+    answer: "The ethics and legality of keeping or selling orphaned photographs are complex. Legally, if you purchased orphaned photographs legitimately from antique stores, estate sales, or similar sources, you own the physical objects and generally can keep or sell them. However, ethical considerations complicate this simple legal answer."
+  - question: "How long should I try to identify an orphaned photo before giving up?"
+    answer: "There's no required timeframe for identification efforts, and \"giving up\" doesn't mean ceasing all efforts. Practical approach involves initial intensive research period (1-2 weeks) conducting your initial research, posting to relevant platforms, and responding to initial suggestions."
+  - question: "Should I return orphaned photographs to identified families or keep them?"
+    answer: "This ethical question has no single right answer—it depends on multiple factors. Arguments for returning to families include that these are family heirlooms that morally belong with descendants, families may have searched unsuccessfully for these exact images, return honors the subjects and their memory, and families can properly preserve photographs within family history context."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

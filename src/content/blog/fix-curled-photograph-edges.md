@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can all curled photographs be safely flattened?"
+    answer: "No. Very brittle prints, those with cracked or lifting emulsion, and certain historical processes should not be physically flattened. When in doubt, digital correction is safer. Any print that makes cracking sounds when gently flexed should not be flattened physically. For valuable photographs, consult a professional conservator before attempting physical flattening."
+  - question: "How long does it take to fix curled photograph edges?"
+    answer: "Physical flattening typically requires 3-7 days for safe, controlled humidity treatment. Quick methods exist but carry higher risks. Digital correction can be accomplished in minutes to hours depending on the severity of curl and associated damage. Don't rush physical flattening—patience prevents damage."
+  - question: "Will flattened photographs curl again?"
+    answer: "They can, especially if stored in poor conditions. Proper storage at stable humidity (30-40% RH) and temperature prevents recurrence. RC prints resist re-curling better than fiber-based prints. Some prints with \"memory\" of being curled for decades may show slight curl tendency even with perfect storage. Periodic inspection and light re-weighting may be necessary."
+  - question: "Is it safe to iron photographs to flatten them?"
+    answer: "No, never iron photographs. Heat can destroy the emulsion, cause permanent discoloration, and make paper brittle. Even with protective layers, irons apply too much heat and pressure. The risks far outweigh any potential benefits. Use humidity-based flattening methods instead."
+  - question: "Can I fix curled edges on Polaroids and instant photos?"
+    answer: "Physical flattening of Polaroids is risky due to their complex chemical structure and sensitivity to moisture. Digital correction is much safer and more effective for Polaroids. Scan or photograph them while gently held flat (using glass if necessary) and correct any edge issues digitally."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I enhance facial features that are completely faded or missing?"
+    answer: "When facial features have faded to the point of being invisible, options are limited. Modern AI tools like ArtImageHub can sometimes recover details invisible to the naked eye by analyzing subtle remaining tonal variations."
+  - question: "Should I smooth wrinkles and blemishes in old portrait photos?"
+    answer: "This is a personal choice. For archival and historical purposes, preserve the person as they appeared—wrinkles, blemishes, and all. These features are part of who they were. However, you can remove damage-related blemishes (scratches across the face) while preserving natural features. Some families prefer slight enhancement for display copies while keeping unretouched versions for archival."
+  - question: "Can AI enhancement change how someone looked or alter their features inappropriately?"
+    answer: "Reputable AI enhancement tools like ArtImageHub are designed to enhance clarity and repair damage without changing facial structure or features. They sharpen details, recover faded areas, and improve overall quality while preserving the person's actual appearance. However, aggressive enhancement or inappropriate use of beautification filters can alter features."
+  - question: "What's the difference between enhancing a portrait and restoring it?"
+    answer: "Enhancement focuses on improving image quality—sharpness, contrast, color, and clarity—to make the portrait look its best. Restoration addresses damage—removing scratches, tears, stains, and fading—to return the photo to its original condition. Most portrait work involves both: restoring damage first, then enhancing quality. For archival purposes, minimal intervention is often preferred."
+  - question: "How do I maintain a natural look when enhancing very old, poor-quality portraits?"
+    answer: "The key to natural enhancement is restraint and understanding limitations. Work subtly with low opacity adjustments that build up gradually. Don't try to make a poor-quality portrait look like modern digital photography—respect its era and original quality. Focus on the most important elements (eyes, face) while keeping backgrounds soft."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

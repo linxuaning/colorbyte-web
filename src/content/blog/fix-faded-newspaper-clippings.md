@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can severely yellowed newspaper clippings be restored to white?"
+    answer: "Yes, AI-powered restoration can remove yellowing and browning from newspaper clippings, returning the background to near-white. ArtImageHub's technology analyzes the discoloration and neutralizes it while preserving the text and any photographs. The key is starting with a high-quality scan at 600 DPI or higher to capture maximum detail before enhancement."
+  - question: "Why do newspaper clippings fade faster than photographs?"
+    answer: "Newspaper is made from wood pulp containing lignin and high acid content, which chemically breaks down when exposed to light and air. This process causes yellowing, brittleness, and fading much faster than photograph paper, which is manufactured with different materials designed for longer life."
+  - question: "Should I remove newspaper clippings from old scrapbooks before scanning?"
+    answer: "Only remove newspaper clippings from scrapbooks if they can be removed safely without tearing or further damage. Many old scrapbooks used glue or tape that has bonded permanently to the newsprint. If removal is not safe, scan the clipping while still in the scrapbook, then use digital tools to remove the background and any show-through from the reverse side during restoration."
+  - question: "What's the best resolution for scanning faded newspaper clippings?"
+    answer: "Scan newspaper clippings at minimum 600 DPI, with 800-1200 DPI recommended for severely faded text or clippings you plan to enlarge. Higher resolution captures more detail from faded ink and allows for greater manipulation during restoration. Save scans as TIFF or PNG files rather than JPEG to avoid compression artifacts that can make faded text harder to recover."
+  - question: "How much does professional newspaper clipping restoration cost?"
+    answer: "Professional restoration services typically charge $40-100 per newspaper clipping depending on size and damage severity. ArtImageHub offers AI-powered restoration starting at $9.99 per image, making it affordable to restore multiple clippings."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can daguerreotypes and tintypes be safely scanned on a flatbed scanner?"
+    answer: "Yes, with caution. Daguerreotypes and tintypes can be scanned on flatbed scanners, but their reflective metal surfaces create challenges. Place face-down carefully, use black backing, and understand that glare may still occur. Often, photographing with a digital camera yields better results for metal photographs."
+  - question: "Should I remove antique photos from their original cases or mounts?"
+    answer: "Generally no. Original cases and mounts are part of the photograph's history and have preservation value. Daguerreotypes and ambrotypes should never be removed from cases without professional assistance—they're sealed units that protect the delicate image. Cabinet cards can remain on their mounts unless the mount is actively damaging the photo."
+  - question: "How can I restore an antique photo that's almost completely faded?"
+    answer: "Even severely faded antique photos often retain recoverable information invisible to the naked eye. High-resolution scanning (2400-4800 DPI) captures subtle remaining detail. Modern AI restoration like ArtImageHub specializes in recovering severely faded images, often revealing faces and details that appear completely lost."
+  - question: "Is it historically appropriate to colorize antique black and white portraits?"
+    answer: "This is a matter of personal preference and intended use. For archival and historical documentation, preserve original monochrome or period-tinted versions. However, colorization can make antique ancestors feel more immediate and relatable to modern family members, especially children. If colorizing, research period-appropriate colors for historical accuracy."
+  - question: "What should I do with antique photos when I don't know who the people are?"
+    answer: "Preserve and digitize them anyway. Unknown ancestors are still family history, and future research or relatives may identify them. Scan at high resolution, document physical characteristics (clothing era, studio location, any writing), research studio information to narrow time and place, share with extended family for identification help, and post in genealogy communities."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

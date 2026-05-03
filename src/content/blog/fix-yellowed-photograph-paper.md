@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can yellowed photographs be completely restored to original appearance?"
+    answer: "Yes, in most cases digital restoration can completely remove yellowing and return photographs to their original appearance. The key is high-quality scanning (1200 DPI, 48-bit color) to capture subtle remaining color information, then carefully correcting the yellow cast while preserving detail. Even severely yellowed photos usually contain enough information for excellent restoration."
+  - question: "Why do some black and white photos turn yellow?"
+    answer: "Black and white photographs yellow primarily due to lignin degradation in the paper base. Lignin, a component of wood pulp paper, breaks down over time when exposed to light, oxygen, and pollutants, creating yellow-brown compounds. The photograph itself (silver image) is stable, but the paper yellows."
+  - question: "Will removing yellowing damage the original photograph?"
+    answer: "Digital restoration doesn't touch the physical photograph—all work is done on scanned digital copies. The original photograph remains unchanged. This is the safest restoration approach. Physical chemical treatments to remove yellowing from the actual paper are risky and often damage the photograph further. Always use digital restoration for yellowing correction."
+  - question: "How do I know if yellowing is from aging or intentional sepia tone?"
+    answer: "Compare the yellow to period-appropriate sepia tones by examining other photos from the same era. Sepia toning is warm brown with purplish undertones, evenly applied, and common in 1880s-1930s photos. Age-yellowing is more greenish-yellow, often uneven, and continues to darken. Protected areas (under mats) showing original color also help distinguish."
+  - question: "Can I prevent my restored digital files from yellowing?"
+    answer: "Digital files don't yellow—that's a chemical process affecting physical paper. Once scanned and restored digitally, your images are permanently protected from further yellowing. Store digital files properly (multiple backups, reliable media, verified regularly) and they'll remain in perfect condition indefinitely."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

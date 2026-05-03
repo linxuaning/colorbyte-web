@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can severely color-shifted photos be restored to natural colors?"
+    answer: "Yes, even photos with severe color shifts to pink, orange, or yellow can almost always be restored to natural-looking colors. The key is that color-shifted photos retain information about original color relationships in the ratios between the remaining dyes. Even a severely magenta-shifted photo contains enough information about original colors for accurate reconstruction."
+  - question: "Why did my photos turn pink or magenta?"
+    answer: "Magenta or pink color shifts are the most common form of color deterioration in vintage photographs because cyan dye (the blue-absorbing dye layer) fades faster than magenta and yellow dyes in most color photographic processes. When cyan dye fades while the other dyes remain, the photograph loses blue color information and appears increasingly red/magenta."
+  - question: "Can I fix color shift without expensive software?"
+    answer: "Yes, several free or low-cost options exist for fixing color-shifted photos. AI restoration services like ArtImageHub offer affordable per-photo pricing ($5-15 typically) producing excellent results without requiring any software or expertise."
+  - question: "Do black and white prints have color shift problems?"
+    answer: "True black and white photographs (those created using only black and white chemistry on black and white paper) don't have color shift because they contain no color dyes—only metallic silver forms the image. However, many photographs that appear black and white are actually color prints that have faded to near-monochrome, often showing sepia, brown, or warm tones from deteriorated color dyes."
+  - question: "Should I correct color shift to neutral or keep vintage look?"
+    answer: "This decision depends on personal preference and the photo's intended use. For neutral modern appearance, fully correct color shifts to achieve contemporary color balance with natural skin tones, proper sky blues, and accurate color throughout. This creates the clearest, most universally appealing images."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

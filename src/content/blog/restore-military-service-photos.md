@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I identify the unit or division from a military photograph?"
+    answer: "Look for shoulder patches, collar insignia, and distinctive unit markings. Shoulder patches (shoulder sleeve insignia) are usually the most visible identifier. Research using military insignia guides, online databases, and military history forums. Consider the era (uniform style), visible equipment, and any background details. Service records (if available) confirm unit assignments."
+  - question: "What's the best way to restore faded color military photos from Vietnam era?"
+    answer: "Vietnam-era color photos typically show magenta shift or overall fading. Scan at high resolution (1200+ DPI) in 48-bit color. Use color correction tools to remove magenta casts and restore fading. Research period-appropriate uniform colors (olive green fatigues, jungle boots, specific shades changed during the war)."
+  - question: "Should I restore damage that occurred during combat or deployment?"
+    answer: "This depends on the type of damage and family wishes. Physical wear from service (creases from wallet carry, exposure from field conditions) can be considered part of the photograph's history and story. However, water damage, severe fading, or deterioration that obscures the image doesn't honor the service and should be corrected."
+  - question: "How do I ensure historically accurate uniform colors when restoring?"
+    answer: "Research is essential. Consult military uniform regulations for the specific era and branch (colors were precisely specified). Reference period color photographs and films. Use military uniform guidebooks and collector references. Federal Standard 595 color system specifies many military colors. Contact military museums or historical societies."
+  - question: "Are military service photographs more valuable and should I get professional help?"
+    answer: "Military photographs often have high historical, genealogical, and emotional value regardless of monetary worth. For typical service portraits and personal photographs, DIY restoration using proper methods and tools like ArtImageHub is appropriate and achievable."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

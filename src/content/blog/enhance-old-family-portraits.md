@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "Can AI accurately restore faces in damaged family portraits?"
+    answer: "AI restoration is remarkably effective at restoring faces in damaged portraits, with some important qualifications. For minor to moderate facial damage (scratches, spots, slight fading), AI produces excellent results that accurately preserve individual appearance."
+  - question: "How can I identify people in old family portraits with no labels?"
+    answer: "Identifying unlabeled family portrait subjects requires detective work combining multiple research approaches. Interview older relatives who may recognize faces or remember family stories about portraits. Compare faces with labeled portraits looking for family resemblance and matching individuals appearing in multiple photos at different ages."
+  - question: "Should I restore old family portraits to black and white or keep sepia tones?"
+    answer: "This decision depends on the portrait's original characteristics and your personal preferences. For originally black and white portraits that have yellowed or browned over time, you can restore to neutral black and white for a clean, modern appearance, or preserve period-appropriate warm sepia or brown toning for vintage character."
+  - question: "Can I enlarge small antique portraits like carte-de-visite for printing?"
+    answer: "Yes, small antique portraits can be enlarged successfully for modern printing with appropriate techniques. Scan small portraits at very high resolution (1200-2400 dpi or higher) to capture maximum available detail. Use AI restoration which simultaneously enhances detail while repairing damage."
+  - question: "Is it okay to remove damage from historical family portraits?"
+    answer: "Digital restoration that removes damage from family portraits is entirely appropriate and doesn't affect the original photograph, which remains preserved in its current state. You're creating enhanced digital copies while keeping originals safe in archival storage."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can severely faded 1970s school photos be restored to look good?"
+    answer: "Yes, even severely faded 1970s school photos can be dramatically improved. This era is particularly challenging due to color fading and chemical degradation, but modern AI restoration tools like ArtImageHub are specifically trained on 1970s photo deterioration patterns."
+  - question: "Should I remove classmate signatures from school photos?"
+    answer: "This depends on the photo's purpose. Signatures add personal and historical value—they document friendships and show who was important to you. For archival and sentimental purposes, preserve signatures. However, creating a clean version without signatures can be useful for formal display or presentations."
+  - question: "Is it better to enhance individual school photos or extract them from yearbook pages?"
+    answer: "If you have original individual photos (8x10s, wallet-sized), always use those for enhancement—they'll provide better quality than yearbook reproductions. However, yearbook pages are often the only remaining record, especially for classmates' photos or if individual photos are lost."
+  - question: "How can I identify myself in old group class photos?"
+    answer: "Strategies for finding yourself: count rows and positions if you remember placement, compare clothing to other photos from same era, look for characteristic hairstyles or features you remember, ask family members or classmates to help identify, check yearbook pages for the same year (usually list names in order), and compare to individual photo from same year."
+  - question: "Should I modernize old school photos or keep the vintage look?"
+    answer: "This is a personal choice based on your goals. For historical preservation, maintain period authenticity—keep slight softness, period color characteristics, and vintage qualities. For display and sharing, some modernization (sharpness, color correction, damage removal) improves visual appeal without losing character."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

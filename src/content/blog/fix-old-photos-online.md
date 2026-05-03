@@ -9,6 +9,15 @@ authorBio: "Sarah has reviewed AI photo restoration tools across 200+ side-by-si
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
+faq:
+  - question: "Is it safe to upload old family photos?"
+    answer: "Yes, when you use a reputable service. ArtimagehHub processes your photo for restoration purposes only and does not store or use your images for AI training. Your original files are deleted after processing."
+  - question: "How much does it cost to fix old photos online?"
+    answer: "ArtimagehHub offers 3 free photo restorations with no signup required. Additional restorations are available at $4.99 per photo—significantly less than professional retouching services, which typically cost $30–$150 per image."
+  - question: "Can I fix multiple old photos at once?"
+    answer: "Currently, photos are processed one at a time to ensure quality. If you have a large collection to restore, working through the batch systematically takes under 2 minutes per photo."
+  - question: "What format does the restored photo come back in?"
+    answer: "Restored photos are delivered as high-resolution JPEGs at the same dimensions as your uploaded original. For printing, these files produce sharp results up to 8×10 inches at standard print resolution."
 ---
 
 > **TL;DR** — AI photo restoration online (under 60 seconds): scan at 600+ DPI → upload to a tool that wraps **GFPGAN** (face) + **Real-ESRGAN** (upscale) → review side-by-side → download. Three free, then $4.99 one-time for unlimited unwatermarked HD. AI handles fading, scratches, yellowing, soft focus reliably; large missing sections and overlapping severe damage still need human review.

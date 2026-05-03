@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
+faq:
+  - question: "How accurate is AI photo colorization?"
+    answer: "AI photo colorization achieves 70-85% accuracy for common subjects (people, landscapes, buildings) but struggles with historical accuracy, unusual objects, and period-specific details. AI tools like DeOldify and Palette.fm use neural networks trained on millions of color photos to predict likely colors, working well for generic scenes but often making errors on historical fashion colors, specif..."
+  - question: "What's the difference between AI and manual photo colorization?"
+    answer: "AI photo colorization processes images automatically in seconds using neural networks that predict colors based on training data, while manual colorization requires artists to research and hand-paint colors over 5-30 hours per image. AI excels at speed, consistency, and modern subjects but makes historical inaccuracies and can't incorporate specific knowledge."
+  - question: "How do you ensure historically accurate colorization?"
+    answer: "Ensure historically accurate colorization through systematic research: identify photograph date and location, research period fashion and fabric dyes available in that era, find contemporary color references (hand-tinted photos, paintings, color film from slightly later), consult historical records for specific uniforms or products, and verify regional color preferences."
+  - question: "Can you colorize old photos with 100% accuracy?"
+    answer: "No, you can't colorize old black and white photos with 100% accuracy unless contemporary color references exist (original hand-tinting, known objects with documented colors, or color photos of same scene)."
+  - question: "Is manual or AI colorization better for old family photos?"
+    answer: "For old family photos, AI colorization provides better value for casual restoration (fast, affordable, good enough for sharing), while manual colorization delivers superior results for important family heirlooms (historically accurate, carefully researched, professional quality). Use AI ($10-30/month for batch processing) for albums with dozens of photos needing quick enhancement."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

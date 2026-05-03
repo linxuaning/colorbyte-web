@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if my 1920s photo is worth restoring?"
+    answer: "Any photograph with personal or historical significance is worth restoring. Professionally, photos with clear subjects, minimal damage to facial areas, and interesting period details are most valuable. Even severely damaged images can often be successfully restored with modern AI technology."
+  - question: "Can AI restoration really handle 100-year-old photograph damage?"
+    answer: "Yes. Modern AI systems like ArtImageHub are specifically trained on early 20th-century photographs and understand the damage patterns, photographic techniques, and visual characteristics of 1920s images. The AI can intelligently repair damage while maintaining period authenticity in ways that would be extremely time-consuming with manual methods."
+  - question: "Should I colorize my restored flapper photos?"
+    answer: "This is a personal choice. Colorization can bring subjects to life and help modern viewers connect with historical figures. However, it requires careful research to ensure period-accurate colors. Black and white restoration alone is perfectly valid and maintains the original artistic intent of the photographer."
+  - question: "What's the best resolution for scanning 1920s photos?"
+    answer: "Scan at minimum 600 DPI, preferably 1200 DPI. This captures fine details in clothing, accessories, and backgrounds. Higher resolution also provides flexibility for future uses like large-format printing or further digital enhancement as technology improves."
+  - question: "How do I research the correct colors for flapper-era clothing?"
+    answer: "Consult period fashion magazines, museum textile collections, and early color photography (Autochrome plates from the 1920s). ArtImageHub's AI colorization is trained on authentic period colors, providing an excellent starting point. Cross-reference with historical sources and contemporary written descriptions of fashion trends."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

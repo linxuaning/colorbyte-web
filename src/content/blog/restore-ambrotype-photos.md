@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: true
+faq:
+  - question: "What's the difference between ambrotypes, daguerreotypes, and tintypes?"
+    answer: "These three photographic formats were all popular in the 19th century but have distinct characteristics. Daguerreotypes (1839-1860s) are images on polished silver-plated copper with a mirror-like surface, exist as unique positive images with extraordinary detail and clarity, appear reversed left-to-right like mirror images, and were the most expensive format."
+  - question: "Can a broken ambrotype be restored?"
+    answer: "Yes, broken ambrotypes can often be successfully restored through digital reconstruction, though the process depends on the severity of the damage. For ambrotypes with minor cracks that don't significantly disrupt the image, AI restoration can digitally remove crack lines and restore the image to its pre-damage appearance with excellent results."
+  - question: "Why does my ambrotype look like a negative?"
+    answer: "Ambrotypes appear as negatives when their backing has failed or been removed. Understanding this phenomenon requires knowing how ambrotypes work. The collodion coating on the glass plate creates a negative image during the photographic process—dark areas in the original scene appear light (clear) on the plate, and light areas appear dark (dense silver)."
+  - question: "How should I store an ambrotype to prevent further damage?"
+    answer: "Proper storage is essential for preventing additional deterioration of these fragile glass plate photographs. Store ambrotypes in their original cases if the cases are intact and in good condition—the cases were designed to protect the delicate images. Keep cased ambrotypes upright rather than stacked horizontally to prevent pressure on the glass plates."
+  - question: "Can hand-colored ambrotypes be restored without losing the color?"
+    answer: "Yes, hand-colored ambrotypes can be restored while preserving their original tinting, which is an important part of their historical and artistic value. Hand-coloring was a popular enhancement for ambrotypes during their era—artists applied oil paints, pigments, or dyes to add color to cheeks, lips, jewelry, clothing, and other elements, creating beautiful and distinctive images."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

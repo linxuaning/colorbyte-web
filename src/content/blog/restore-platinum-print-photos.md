@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if my photograph is a valuable platinum print?"
+    answer: "Several factors indicate potentially valuable platinum prints. Original works by notable photographers (Stieglitz, Weston, Steichen, etc.) can be extremely valuable ($10,000-$500,000+ for major works). Gallery or museum provenance suggests significance and value. Photographer signatures or estate stamps add value and authenticity."
+  - question: "Can faded platinum prints be restored to original density?"
+    answer: "Platinum print fading is rare but can occur from improper processing or extreme environmental exposure. Digital restoration can often recover significant density and tonal range from faded platinum prints by analyzing remaining tonal variations to reconstruct original relationships, adjusting curves and levels to expand compressed tonal range, and selectively enhancing different areas to recove..."
+  - question: "Should I remove platinum prints from old mounts?"
+    answer: "Never remove platinum prints from mounts yourself unless you have conservation training. Historical mounting may be affecting the print's condition, but improper removal can cause catastrophic damage including tearing the print, leaving adhesive residue, damaging the platinum image, or destroying the print entirely."
+  - question: "How should I frame and display platinum prints?"
+    answer: "Proper framing preserves platinum prints while allowing enjoyment of their beauty. Use conservation-standard materials exclusively including UV-protective glazing (museum-quality glass or acrylic blocking 99% of UV light), acid-free mat board in neutral colors, window mats that don't contact the print surface, and backing that allows air circulation."
+  - question: "Is it safe to digitally restore valuable platinum prints?"
+    answer: "Digital restoration is completely safe for original platinum prints because it works from scans or photographs of the print, creating enhanced digital copies while leaving the original untouched and preserved in archival storage."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

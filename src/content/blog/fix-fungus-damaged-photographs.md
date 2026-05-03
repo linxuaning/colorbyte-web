@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can all fungus-damaged photos be restored?"
+    answer: "Most fungus-damaged photographs can be significantly improved through digital restoration, even when damage appears severe. The limiting factor is how much original image information remains. Light to moderate fungal staining, spots, and etching typically restore very well with AI technology."
+  - question: "Should I clean fungus off photos before scanning?"
+    answer: "For inactive fungus (dry, not actively growing), gently brush away loose surface material before scanning, but avoid aggressive cleaning that might damage the photograph. For active fungus (visible fuzzy growth), allow the photo to dry completely in low humidity to kill active growth, then gently remove surface material."
+  - question: "How do I prevent fungus from returning after restoration?"
+    answer: "Digital restoration creates new, clean copies free from fungal contamination, but the original photograph remains vulnerable if environmental conditions aren't corrected. Store original photos in low humidity (below 50% RH), use archival-quality, acid-free storage materials, ensure good air circulation around stored photos, and avoid dark, enclosed spaces with poor ventilation."
+  - question: "What's the white fuzzy stuff on my old photos?"
+    answer: "White fuzzy growth on photographs is active fungal colonization, most commonly Aspergillus or Penicillium species. This growth indicates current mold activity requiring immediate attention. Move affected photos away from clean materials to prevent spreading, allow photos to dry in low humidity (below 40% RH) to kill active growth, gently remove dried fungal material with a soft brush, and scan ..."
+  - question: "Can professional photo labs remove fungus damage better than AI?"
+    answer: "Professional photo conservation labs and AI restoration each have distinct advantages for different situations. Professional labs excel at physical stabilization of actively deteriorating photos, rare or historically significant photographs requiring archival treatment, and extremely complex cases requiring custom chemical treatment."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

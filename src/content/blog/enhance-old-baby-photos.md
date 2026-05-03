@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "Can faded baby photos be restored to their original colors?"
+    answer: "Yes, even severely faded baby photos can often be restored to natural-looking colors. AI restoration analyzes the remaining color information in the photograph, no matter how faint, and reconstructs the original color palette based on this data and understanding of typical baby photo characteristics."
+  - question: "How can I fix baby photos stuck in magnetic albums?"
+    answer: "Magnetic photo albums are notorious for damaging photos, but most stuck baby photos can be recovered and restored. Never try to forcibly peel photos away from album pages, as this will likely destroy the image surface. Instead, use a thin, flexible plastic spatula or credit card edge to gently work under one corner of the photo, working slowly and stopping if you feel significant resistance."
+  - question: "What's the best resolution for scanning baby photos?"
+    answer: "The optimal scanning resolution depends on your baby photo's size and intended use. For standard 4x6 inch prints, scan at 600 dpi for good quality or 1200 dpi if you plan to enlarge significantly. For wallet-sized baby photos (smaller than 3x4 inches), scan at 1200-2400 dpi to capture enough detail for enlargement and restoration."
+  - question: "Can AI restore baby photos that are out of focus?"
+    answer: "AI restoration can improve out-of-focus baby photos, though results depend on the severity of the focus problem. Mildly soft photos can be significantly sharpened while maintaining natural appearance. Moderately out-of-focus photos can be improved enough to create acceptable results, especially for small print sizes or digital viewing."
+  - question: "Should I enhance baby photos myself or hire a professional?"
+    answer: "The decision depends on several factors including budget, number of photos, and restoration complexity. AI-powered enhancement services like ArtImageHub offer excellent results for most baby photos at $5-20 per photo, processing time of minutes rather than days or weeks, and user-friendly interfaces requiring no technical expertise."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

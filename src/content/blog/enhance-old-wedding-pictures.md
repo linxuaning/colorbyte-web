@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How much can faded wedding photos be improved through enhancement?"
+    answer: "The degree of improvement depends on original photo quality and damage severity. Most faded wedding photos can be improved 70-90%, with colors restored close to original vibrancy. Severely damaged photos with chemical deterioration may achieve 50-70% improvement. Modern AI enhancement tools like ArtImageHub often exceed expectations, recovering details invisible in faded originals."
+  - question: "Can color be added to black and white wedding photos accurately?"
+    answer: "Yes, though accuracy depends on historical research and reference materials. AI colorization tools trained on period photographs produce historically accurate results. For manual colorization, research wedding fashion and décor from the specific era ensures appropriate color choices. While exact original colors can't be known, skilled colorization creates believable, beautiful results."
+  - question: "Is it better to scan the original wedding photo or damaged print?"
+    answer: "If you have access to original negatives or slides, these usually produce superior results compared to scanning damaged prints. Negatives often preserve color and detail better than prints. However, professional negative scanning requires specialized equipment. For most people, scanning the best-condition print available and applying digital enhancement yields excellent results."
+  - question: "How should I handle a wedding photo stuck in a magnetic album?"
+    answer: "Never force a stuck photo—this destroys the emulsion. Try the freeze method: place the entire album page in the freezer for 2-3 hours, then quickly peel the photo while cold. Alternatively, use dental floss slid behind the photo edge. If these methods fail, consider scanning directly through the album page or consulting a professional conservator for valuable photos."
+  - question: "Can extremely damaged wedding photos be restored to look like new?"
+    answer: "While modern restoration techniques are remarkable, there are limits. Photos with severe emulsion loss, extensive tearing, or complete color destruction may be improved significantly but won't look \"like new.\" However, AI-powered tools can reconstruct missing details and estimate original colors with surprising accuracy."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

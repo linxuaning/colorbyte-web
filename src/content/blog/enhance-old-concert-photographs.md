@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can you enhance extremely blurry concert photos?"
+    answer: "It depends on the type and severity of blur. Motion blur from slow shutter speeds can be partially reduced using AI deblurring technology, especially if the subject is the primary blurred element. Camera shake blur is more difficult."
+  - question: "How do you balance enhancement with maintaining authentic concert atmosphere?"
+    answer: "This is the critical artistic judgment in concert photo enhancement. The goal is to improve technical quality (reduce excessive grain, correct exposure, remove damage) while preserving the mood and aesthetic that make concert photos special. Maintain dramatic lighting contrasts, preserve intentional grain that contributes to the gritty feel, and don't over-sharpen to modern clinical standards."
+  - question: "Should I colorize black-and-white concert photos?"
+    answer: "Only if you can research accurate period colors. Colorization can add context and vibrancy, but inaccurate colors compromise historical authenticity. For well-documented artists and venues, research can provide confident color information. For obscure shows or unknown variables, black-and-white preservation may be more honest."
+  - question: "What's the best way to scan concert photos that are very dark?"
+    answer: "Use your scanner's exposure compensation features to lighten the scan, or make multiple scans at different exposure levels and combine the best parts later. Some scanners have \"backlight\" or \"dark original\" modes that help. If scanning prints from negatives, consider re-scanning the negatives directly if available—they contain more information than darkened prints."
+  - question: "Can AI really enhance photos from disposable cameras or early phone cameras?"
+    answer: "AI can improve these low-quality sources, but can't overcome fundamental resolution and quality limitations. Disposable camera photos often have acceptable quality after grain reduction and color correction. Early phone camera photos (pre-2010) are extremely challenging due to tiny sensors and poor lenses—expect limited results."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

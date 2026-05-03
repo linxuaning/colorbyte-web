@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Are Kodachrome slides really better preserved than other slide films?"
+    answer: "Yes, Kodachrome is exceptionally stable when properly stored. Dark-stored Kodachrome slides from the 1950s-1960s often retain vibrant colors nearly as good as when processed. However, light exposure and heat affect even Kodachrome—projected slides fade dramatically. Ektachrome and other E-6 films show more fading even in good storage conditions."
+  - question: "Should I throw away moldy slides or can they be restored?"
+    answer: "Don't discard moldy slides without attempting restoration. While mold damages the emulsion permanently, the image can often be recovered through careful scanning and digital restoration. If mold is active (fuzzy growth), isolate the slides to prevent spread and consider professional cleaning. Inactive mold (staining and etching) can be scanned and digitally restored."
+  - question: "What's the best way to scan thousands of family slides?"
+    answer: "For large collections, consider these approaches: 1) Use scanning service (professional slide scanning services charge $0.30-$1.00 per slide), 2) Purchase or rent dedicated slide scanner for DIY (investment pays off for 500+ slides), 3) Hybrid approach—scan priority slides yourself, send remainder to service. Budget 2-3 minutes per slide for DIY scanning including handling time."
+  - question: "Can modern scanning and AI restore slides that were heavily damaged by projection?"
+    answer: "Modern AI restoration can achieve remarkable results even with severely projection-damaged slides. While perfect restoration of extreme damage isn't possible, tools like ArtImageHub can recover recognizable images from slides that appear nearly destroyed. The AI analyzes remaining color information (often preserved at edges) and intelligently reconstructs faded areas."
+  - question: "Is it worth digitizing slides if I don't plan to print them?"
+    answer: "Absolutely. Digital preservation is critical regardless of print plans. Slides continue to deteriorate even in good storage—digitization captures current state before further damage occurs. Digital files enable easy sharing with family via email, cloud albums, or social media. You can view on large screens, create slideshows, and incorporate into family history projects."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

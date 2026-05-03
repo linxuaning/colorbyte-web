@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if my old photograph is an ambrotype?"
+    answer: "Ambrotypes have several distinctive characteristics that identify them. They're on glass plates, usually 1-3mm thick. When viewed against white or bright light, the image appears as a negative (reversed light and dark values). With dark backing material behind them, they appear as positive images. They're typically housed in decorative cases with velvet or silk lining."
+  - question: "Can cracked ambrotypes be restored?"
+    answer: "Yes, cracked ambrotypes can be digitally restored very successfully even if the physical glass can't be repaired. The process involves carefully scanning or photographing the cracked ambrotype at high resolution to capture all image detail, using AI restoration software to intelligently remove crack lines while preserving underlying image detail, and reconstructing any areas where cracks have c..."
+  - question: "Should I remove an ambrotype from its case?"
+    answer: "Remove an ambrotype from its case only if you can do so safely and have a good reason (such as examination, digitization, or conservation treatment). Many cases are designed to be opened, with accessible hinges and clasps. However, some cases are sealed or have deteriorated mechanisms that make opening risky. If you're unsure, consult a professional."
+  - question: "How do I restore an ambrotype with missing backing?"
+    answer: "Ambrotypes with missing or deteriorated backing show negative images (or partially negative) where backing is lost. Digital restoration can recreate the appearance of proper backing by inverting the negative areas to positive, matching tonality with properly backed sections, and blending seamlessly across the entire image."
+  - question: "Are ambrotypes valuable, and should I get mine appraised?"
+    answer: "Ambrotype value varies enormously based on several factors including subject matter (Civil War soldiers, notable individuals, occupational images, and unusual subjects command premium prices), condition (intact, clear images in original cases are most valuable), size (larger plates are generally more valuable), and historical significance (documented subjects or notable photographers increase v..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

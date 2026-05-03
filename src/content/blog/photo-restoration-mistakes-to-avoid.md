@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "What's the single most important mistake to avoid?"
+    answer: "Never apply tape, glue, or adhesives to photographs. This causes permanent, often irreversible damage including chemical deterioration, staining, and emulsion destruction. Virtually every other mistake can potentially be worked around or corrected, but adhesive damage is nearly always permanent. If photos are torn or damaged, keep pieces together in proper storage and repair digitally."
+  - question: "Can photo restoration mistakes be fixed?"
+    answer: "It depends on the type and severity. Physical damage to originals (adhesive damage, heat damage, chemical damage) is usually permanent and irreversible. Some stabilization may be possible but original condition can't be recovered. Digital restoration mistakes are fully reversible if you preserved the original scan and worked non-destructively."
+  - question: "How do I know if I should attempt restoration myself or hire a professional?"
+    answer: "Consider these factors: Value (monetary, historical, sentimental)—high-value items warrant professional help. Condition—fragile, actively deteriorating, or rare processes need expert care. Your skill level and experience—practice on less important items first. Availability of professional help—some areas lack qualified conservators. Budget—professional work costs $50-500+ per item."
+  - question: "What should I do if I've already made mistakes with my photographs?"
+    answer: "First, stop and don't attempt additional fixes that might cause more damage. Assess what damage has occurred and whether it's progressing or stable. Remove photos from harmful storage materials immediately (PVC plastic, acidic papers, metal fasteners). Place in archival materials in stable environment. Scan at highest quality while current condition allows."
+  - question: "Is it better to do imperfect restoration myself or wait for perfect professional restoration?"
+    answer: "For physical originals, err on side of caution—improper handling causes irreversible damage. However, for digital restoration, attempting your own work has minimal risk if you follow proper workflow (preserve original scan, work non-destructively, keep backups). You can always get professional help later, and your attempts won't prevent that if you didn't damage the original."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

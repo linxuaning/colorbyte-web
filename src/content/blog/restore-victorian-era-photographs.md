@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How much does it cost to restore Victorian era photographs?"
+    answer: "DIY restoration costs $10-50 monthly for software plus initial scanner investment ($100-400). Professional restoration ranges from $50 for basic work to $2000+ for museum-quality restoration of severely damaged images. The cost depends on damage extent, photograph size, and desired quality level."
+  - question: "Can severely damaged Victorian photographs be restored?"
+    answer: "Yes, even heavily damaged Victorian photographs can often be restored through digital techniques. Missing sections can be reconstructed using reference materials from the same era, though results depend on how much original detail remains. Photographs with at least 50-60% of the original image intact generally restore well."
+  - question: "Should I colorize Victorian black and white photographs?"
+    answer: "Colorization is a personal choice, but always maintain an uncolorized restored version. If you choose to colorize, research Victorian era clothing, studio practices, and demographics for accuracy. Many experts recommend keeping Victorian photographs in their original sepia or black-and-white presentation to maintain historical authenticity."
+  - question: "How do I identify what type of Victorian photograph I have?"
+    answer: "Examine the physical characteristics: Daguerreotypes are on metal with mirror-like surfaces in cases; ambrotypes are glass-based in cases; tintypes are on iron sheets; cabinet cards and cartes de visite are paper photos mounted on cardboard. The backing, case style, and photographer marks also help identification and dating."
+  - question: "What's the best way to scan Victorian photographs for restoration?"
+    answer: "Use a flatbed scanner at 600-1200 DPI in color mode, even for sepia images. For cased photographs (daguerreotypes/ambrotypes), photograph rather than scan, using indirect lighting and multiple angles to minimize glare. Always handle photographs by edges only, using cotton gloves, and never remove cased photographs from their cases."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "Can faded baby photos from the 1970s be restored?"
+    answer: "Yes, baby photos from the 1970s can almost always be restored beautifully despite severe fading. Photos from this era typically show extreme color shifts (magenta casts, yellow-orange tints) and overall fading, but AI restoration excels at reversing these characteristic deterioration patterns."
+  - question: "How can I fix baby photos stuck in magnetic albums?"
+    answer: "Magnetic albums are notorious for trapping precious baby photos, but most can be recovered and restored. Never forcibly peel photos from pages as this will likely destroy the image surface. Instead, gently work a thin plastic spatula or credit card edge under one corner, proceeding slowly and stopping if you feel significant resistance."
+  - question: "Can AI enhance blurry baby photos from poor hospital lighting?"
+    answer: "AI can significantly improve baby photos with focus or lighting issues, though results depend on problem severity. For mildly soft or underexposed hospital photos, AI provides excellent improvement through sharpening facial features and details, correcting exposure to reveal baby's features clearly, reducing grain or noise from underexposure, and optimizing contrast for maximum clarity."
+  - question: "Should I enhance all my baby photos or just select special ones?"
+    answer: "The decision depends on your collection size and budget, though AI enhancement is affordable enough to make enhancing all meaningful baby photos practical. Consider enhancing all first photos from hospital (irreplaceable first moments), milestone photos (first smile, steps, birthday), photos showing baby with family members (grandparents, siblings, parents), unique or special occasion photos, a..."
+  - question: "Can you remove yellow color casts from old baby photos?"
+    answer: "Absolutely—yellow color casts affecting old baby photos can be completely removed through AI restoration. This yellowing occurs in aged color prints when magenta dyes fade leaving yellow behind, in Polaroid and instant film through characteristic dye deterioration, and in photos stored in contact with acidic materials."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Genealogy"
 featured: true
+faq:
+  - question: "Can extremely faded ancestor photos from the 1800s be restored?"
+    answer: "Yes, even extremely faded 19th-century ancestor photos often restore remarkably well despite appearing nearly invisible in their current state. AI restoration technology analyzes faint remaining image information (even traces invisible to the eye), removes severe yellowing and discoloration from a century or more of aging, reconstructs original tonal relationships from minimal surviving data, a..."
+  - question: "How can restored ancestor photos help with genealogy research?"
+    answer: "Restored ancestor photos provide multiple genealogical benefits including visual identification confirming identities through facial recognition and family resemblance, comparison with other photos establishing connections between previously unidentified images, sharing with extended family potentially generating new information or additional photos, and revealing physical characteristics and a..."
+  - question: "What should I do with unidentified ancestor photos after restoration?"
+    answer: "After restoring unknown ancestor photos to reveal clear facial features, take systematic identification steps. Share enhanced photos with all family members, particularly elderly relatives who may recognize faces from family stories or personal memory. Post to genealogical forums and family history social media groups where other researchers working on related lines may recognize subjects."
+  - question: "How do I safely scan very old fragile ancestor photographs?"
+    answer: "Very old ancestor photographs (tintypes, ambrotypes, cabinet cards from 1860s-1900s) are often extremely fragile requiring special care. Handle only by edges wearing clean cotton gloves to prevent oil and acid transfer. Support fully during any movement to avoid stress and cracking."
+  - question: "Should I restore all ancestor photos or just identified ones?"
+    answer: "Restore all ancestor photos regardless of current identification status. Unknown photos may be identified after restoration reveals clear facial features enabling family recognition or comparison, contain valuable contextual information (backgrounds, clothing, studio details) useful for research, show relatives or connections not immediately apparent, and represent the only surviving images of ..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

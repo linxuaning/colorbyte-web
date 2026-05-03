@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "What's the main difference between photo enhancement and restoration?"
+    answer: "Photo restoration repairs damage and returns photos to their original condition, addressing issues like tears, fading, and scratches. Photo enhancement improves photos beyond their original state, making them sharper, better-colored, or compositionally stronger. Restoration recovers; enhancement improves."
+  - question: "Can I do both restoration and enhancement on the same photo?"
+    answer: "Yes, and this is common for old damaged photos. Typically, restoration happens first to repair damage and recover the original image, then enhancement optimizes the restored photo for modern viewing, printing, or sharing. This combination provides both historical accuracy and contemporary quality."
+  - question: "Is photo restoration more expensive than enhancement?"
+    answer: "Generally yes, especially for significantly damaged photos. Restoration requires careful analysis, period-appropriate reconstruction, and meticulous repair work that's time-intensive. Enhancement, while requiring skill, often involves more straightforward improvements. However, costs vary based on specific requirements, with complex enhancement potentially exceeding simple restoration."
+  - question: "Should old family photos be enhanced or just restored?"
+    answer: "This depends on your goals. For historical preservation, restoration alone maintains authenticity. For display and sharing, restoration followed by selective enhancement (sharpening, optimization for output) provides the best of both worlds. Avoid heavy enhancement that erases the photo's period character, but reasonable improvements for viewing are generally appropriate."
+  - question: "Can AI do photo restoration as well as photo enhancement?"
+    answer: "AI currently performs better at enhancement than restoration. AI excels at upscaling, color correction, and optimization, but struggles with historically accurate restoration of damaged areas. Restoration benefits from AI for repetitive tasks but still requires human oversight for quality and accuracy. Enhancement can often be handled well by AI with minimal human intervention."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

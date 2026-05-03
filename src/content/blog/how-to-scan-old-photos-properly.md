@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "What DPI should I scan old photos at?"
+    answer: "For most old family photos, scan at 1200 DPI in TIFF format. This provides sufficient detail for restoration and large prints while maintaining manageable file sizes. For extremely small photos or those requiring significant enlargement, use 2400 DPI. Minimum acceptable is 600 DPI, but this limits future options for restoration and printing."
+  - question: "Should I scan photos in color or black and white?"
+    answer: "Always scan in color mode (RGB), even for black and white photos. Color mode captures any toning, age-related discoloration, or subtle color information that provides valuable data for restoration. You can always convert to grayscale later, but you can't add color information to grayscale scans."
+  - question: "Can I use my phone to scan old photos instead of a scanner?"
+    answer: "Smartphones can create acceptable digital copies, particularly using specialized apps like Google PhotoScan. However, dedicated flatbed scanners produce better quality with higher resolution, better color accuracy, and more consistent results. Use smartphone scanning for convenience or quick projects, but invest in a scanner for important family photo preservation."
+  - question: "What file format should I use when scanning old photos?"
+    answer: "Always scan to TIFF format for master archival files. TIFF uses lossless compression, preserves maximum quality, and supports 16-bit color depth. Create JPEG copies from your TIFF masters for sharing and web use, but never use JPEG for original scans as it's a lossy format that discards data."
+  - question: "How long does it take to scan old photos properly?"
+    answer: "At recommended settings (1200 DPI, TIFF format), expect 2-4 minutes per photo including positioning, scanning, verification, and file management. A collection of 100 photos requires approximately 4-7 hours. Batch scanning similar-sized photos and developing an efficient workflow reduces time significantly."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

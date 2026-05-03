@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "AI Technology"
 featured: false
+faq:
+  - question: "Can AI face enhancement change someone's appearance?"
+    answer: "AI aims to restore, not change, but with severely damaged images, some interpretation is inevitable. The AI makes educated guesses about missing details based on surrounding context and learned patterns from millions of faces. For minor damage, AI is very accurate."
+  - question: "How accurate is AI face enhancement for old family photos?"
+    answer: "For typical family photos with moderate aging damage, modern AI systems like ArtImageHub achieve 85-90% structural accuracy compared to the original undamaged image. The AI is very good at removing fading, scratches, and minor damage while preserving facial identity. However, extremely damaged areas may require reconstruction where some detail is invented rather than truly recovered."
+  - question: "Does AI face enhancement work equally well for all ethnicities?"
+    answer: "It depends on the training data. Systems trained on diverse datasets, like ArtImageHub, show no significant accuracy difference across ethnic groups. However, some AI systems trained primarily on Western European faces may subtly shift features of other ethnicities. This is a serious concern being actively addressed by responsible AI developers."
+  - question: "Can AI enhancement be trusted for historical documentation?"
+    answer: "With caveats, yes. For well-preserved historical photos, AI enhancement is highly accurate and trustworthy. For severely damaged photos, AI provides the best available reconstruction, but it should be clearly documented as reconstruction rather than pure recovery. Historical researchers should: 1) Keep original scans alongside enhanced versions, 2) Document what was enhanced vs."
+  - question: "How can I verify that AI face enhancement is accurate?"
+    answer: "Compare enhanced results with: 1) Other photos of the same person, 2) Photos of family members to verify genetic trait consistency, 3) Written descriptions if available, 4) Period-appropriate hairstyles and fashion, 5) Known age at time of photo. Check for anatomical correctness, appropriate age indicators, and maintained ethnic characteristics."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

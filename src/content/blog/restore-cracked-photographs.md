@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can cracks be completely removed from old photographs?"
+    answer: "Yes, cracks in old photographs can typically be completely or nearly completely removed through AI restoration. The technology identifies crack patterns throughout the image, analyzes image content on both sides of each crack to understand what the undamaged photo should look like, reconstructs the damaged crack areas through intelligent interpolation, and blends the repairs seamlessly into the..."
+  - question: "Will scanning cracked photos cause more damage?"
+    answer: "Scanning cracked photographs is generally safe if done carefully and is essential for preservation through digital restoration. Ensure the photo lies completely flat on the scanner bed without forcing or flexing, close the scanner lid gently to avoid pressure on fragile areas, support fragile photos fully when moving to and from scanner, and handle only by edges wearing cotton gloves."
+  - question: "Can AI remove cracks while preserving fine details like facial features?"
+    answer: "Yes, AI excels at removing cracks while preserving and even enhancing important image details, particularly facial features. The technology understands image content contextually through facial recognition identifying faces and prioritizing their preservation, edge detection distinguishing authentic details from crack artifacts, and intelligent analysis separating damage from genuine image info..."
+  - question: "How do you restore photographs where the emulsion is cracking and peeling off?"
+    answer: "Photographs with cracking and peeling emulsion require careful handling and digital restoration. For the physical photograph, stop any further handling that might cause additional flaking, photograph or scan immediately before more emulsion is lost, and store flat in protective enclosure (acid-free folder or Mylar sleeve)."
+  - question: "What's the difference between cracks and intentional texture in old photos?"
+    answer: "AI restoration distinguishes between damage (cracks) and authentic photo characteristics (intentional texture, grain, canvas texture) through pattern analysis. Cracks appear as linear or irregular damage patterns interrupting image continuity, create visual disruption across genuine image details, and follow stress patterns from physical damage."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

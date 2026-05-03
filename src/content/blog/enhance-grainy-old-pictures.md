@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
+faq:
+  - question: "Should I remove all grain from old photographs?"
+    answer: "No, moderate grain is often desirable and appropriate. Complete grain removal creates an artificial \"plastic\" appearance and removes authentic vintage character. Reduce grain enough to improve clarity and viewability, but preserve some grain for natural photographic appearance."
+  - question: "What's the difference between film grain and digital noise?"
+    answer: "Film grain comes from silver halide crystals in photographic emulsion—it's organic, random but consistent, and part of authentic image structure. Digital noise comes from electronic sensors, scanning artifacts, or compression—it's often irregular, includes color noise (colored speckles), and wasn't present in original photograph."
+  - question: "How can I reduce grain without making faces look plastic?"
+    answer: "Use selective noise reduction: apply moderate reduction overall, then stronger reduction in backgrounds and smooth areas only. Preserve texture in skin, hair, and fabric. Use frequency separation to smooth color/tone while maintaining detail texture. Work at 100% magnification to judge results. Reduce color noise aggressively but luminance noise conservatively."
+  - question: "Can AI noise reduction handle very grainy photographs?"
+    answer: "Yes, modern AI noise reduction (like ArtImageHub) handles heavy grain remarkably well. AI understands difference between noise and image content, preserving details even while removing significant grain. It's particularly effective on faces and portraits."
+  - question: "Does scanning increase grain visibility?"
+    answer: "Yes, scanning can emphasize grain in several ways: faded photographs require contrast boost which brings out grain; some scanners add digital noise; upscaling small originals enlarges grain; sharpening applied during scanning emphasizes grain."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

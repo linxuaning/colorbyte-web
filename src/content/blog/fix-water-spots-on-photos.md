@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can water stains be completely removed from old photos?"
+    answer: "Yes, water stains can typically be removed completely or reduced to invisibility through AI restoration. The technology analyzes water stain characteristics including color (usually brown, yellow, or gray), pattern (tide marks, spots, overall discoloration), and intensity, then applies precise correction to neutralize staining while preserving the photograph underneath."
+  - question: "What should I do if my photos got wet?"
+    answer: "If photos are currently wet, take immediate action to minimize damage. Gently separate stuck photos by carefully working a thin plastic spatula between them—never pull or force separation. Rinse photos in clean distilled water to remove contaminants that will stain as they dry. Air dry photos laid flat on clean absorbent paper or photo-drying screens, changing absorbent material regularly."
+  - question: "Can AI fix photos damaged by mold from water exposure?"
+    answer: "Yes, AI restoration effectively removes mold damage from water-exposed photographs. The technology identifies mold spots and staining through pattern and color recognition, removes dark mold spots using intelligent interpolation from surrounding undamaged areas, eliminates overall haziness or discoloration from mold growth, and recovers image detail obscured by mold."
+  - question: "How do I remove tide marks from vintage photographs?"
+    answer: "Tide marks—the distinctive lines showing where water levels stood during drying—remove effectively through AI restoration. The technology detects the characteristic linear or curved patterns of tide marks, analyzes the color and tonal shift they create (typically darker lines or bands), applies graduated correction to neutralize the discoloration, and blends the repair seamlessly into surroundi..."
+  - question: "Is it safe to scan water-damaged photos or will it cause more damage?"
+    answer: "Scanning water-damaged photos is generally safe if done carefully and is essential for preservation through restoration. Ensure photos are completely dry before scanning—wet photos should never contact scanner glass. Clean scanner glass thoroughly before and after scanning water-damaged photos to prevent residue transfer."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

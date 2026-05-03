@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "How much does it cost to restore immigrant ancestor photos?"
+    answer: "Professional restoration typically costs $75-300 per photo depending on damage severity. ArtImageHub offers AI-powered restoration starting at just $9.99 per photo, with subscription plans available for multiple photos. For families with numerous immigrant photos to restore, the AI approach offers exceptional value while maintaining professional quality results."
+  - question: "Can severely damaged immigrant photos be restored?"
+    answer: "Yes, modern AI restoration can repair even severely damaged immigrant ancestor photos. ArtImageHub's technology can fix tears, water damage, extreme fading, missing sections, and mold damage. However, the best results come from high-quality scans of the original. For photos with physical damage, scan at 1200 DPI or higher before attempting restoration."
+  - question: "Should I colorize my immigrant ancestor photos?"
+    answer: "Colorization is a personal choice. Consider these factors: Do you know the accurate colors? Will it help younger family members connect? Are you preserving the original black and white version? For immigrant photos with cultural significance, research period-appropriate colors for clothing and consult family members who may remember details before colorizing."
+  - question: "How do I know if my immigrant photo is too damaged to restore?"
+    answer: "Very few photos are beyond restoration with modern AI technology. Even photos with severe damage, fading, or missing sections can often be successfully restored. Upload your photo to ArtImageHub for a free damage assessment. The AI will analyze the damage and show you a preview of potential results before you commit to the restoration."
+  - question: "What's the best way to share restored immigrant photos with family?"
+    answer: "Create multiple sharing options: print high-quality copies on archival paper for framing, create digital galleries for online sharing, compile photo books telling the immigration story, and provide high-resolution digital files family members can use for their own purposes. Consider both older relatives who prefer prints and younger generations who engage with digital media."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

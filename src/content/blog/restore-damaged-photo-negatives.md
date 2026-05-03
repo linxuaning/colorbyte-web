@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can scratched film negatives be restored?"
+    answer: "Yes, scratched film negatives can be digitally restored using AI technology and manual editing. ArtImageHub's AI automatically detects and removes most scratches during the restoration process. Deep scratches may require additional manual cloning. Digital ICE technology in modern film scanners also removes many scratches during scanning."
+  - question: "How do I fix color negatives that have turned orange or magenta?"
+    answer: "Color shifts in negatives result from dye layer fading at different rates. After scanning and inverting the negative to positive, use color correction tools to neutralize the color cast. ArtImageHub's AI automatically corrects color shifts common in aging color negatives."
+  - question: "Should I throw away negatives after scanning them?"
+    answer: "Never discard original film negatives after scanning. Despite damage or deterioration, negatives are irreplaceable primary sources and should be preserved in proper archival storage. Scanning technology improves over time—future scanning may recover even more detail."
+  - question: "What does vinegar syndrome smell like and is it dangerous?"
+    answer: "Vinegar syndrome smells like vinegar or acetic acid—a distinctive sharp, acidic odor from deteriorating acetate-based film. While not immediately dangerous to humans, the acid gases accelerate film deterioration and damage nearby film and photographs. Separate affected negatives from stable film immediately, store in well-ventilated area, and digitize as soon as possible."
+  - question: "Can I restore negatives that have mold or fungus damage?"
+    answer: "Negatives with mold can often be digitally restored if the fungal growth hasn't permanently etched into the emulsion. Inactive, dry mold may be gently cleaned by professionals. After scanning, AI restoration can remove mold spots and reconstruct damaged areas. Active mold growth should be addressed by conservation professionals before handling."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

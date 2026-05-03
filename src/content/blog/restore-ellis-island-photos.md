@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "How can I identify if a photo was taken at Ellis Island?"
+    answer: "Ellis Island photos often show distinctive architectural features including the red brick main building with its distinctive towers, the Registry Room (Great Hall) with its vaulted ceiling, outdoor areas with views of the harbor or Statue of Liberty, and official documentation photos with standardized backgrounds."
+  - question: "Should I restore the original photo or just a copy?"
+    answer: "Always work from a high-quality scan or photograph of the original. Never attempt physical restoration on irreplaceable Ellis Island photos unless you're a trained conservator. Digital restoration preserves the original while creating an enhanced version for display and sharing. Keep the original photo in archival storage conditions to prevent further deterioration."
+  - question: "Can severely faded Ellis Island photos be restored?"
+    answer: "Yes, even extremely faded photos often contain recoverable image information. AI restoration technology can analyze subtle tonal variations invisible to the naked eye and reconstruct the original image. Photos that appear nearly blank often retain enough data for significant restoration. The key is creating the best possible high-resolution scan, as this captures all available image information."
+  - question: "How do I restore photos that are stuck to glass?"
+    answer: "Photos adhered to glass present special challenges and should be handled carefully. Do not attempt to forcibly separate a photo from glass, as this will likely destroy the image surface. Instead, scan or photograph the photo through the glass, using cross-polarized lighting if possible to minimize reflections."
+  - question: "What should I do if I don't know who appears in my Ellis Island photos?"
+    answer: "Unknown subjects are common in inherited photograph collections. Start by examining the photo for any inscriptions, dates, or clues on the front or reverse. Consult family members, especially older relatives who may recognize faces or remember family stories. Research Ellis Island arrival records for your family to establish timeframes and identify who immigrated when."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

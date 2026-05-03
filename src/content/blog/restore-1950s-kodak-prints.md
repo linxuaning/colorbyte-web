@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Why do 1950s Kodak prints turn pink?"
+    answer: "The pink or magenta cast results from differential dye fading in chromogenic prints. Cyan dyes (responsible for blues and greens) fade faster than magenta and yellow dyes. When cyan fades while magenta remains, the overall image shifts pink. This is the most common aging pattern in mid-century color photographs and it's completely correctable with proper digital restoration."
+  - question: "Can severely faded 1950s Kodak prints be fully restored?"
+    answer: "Yes, even severely faded prints usually retain enough information for successful restoration. The key is scanning at high resolution (1200+ DPI) in 48-bit color to capture subtle remaining color data. Protected areas under frames often preserve original colors, providing perfect reference points. Professional restoration can return most faded 1950s Kodak prints to near-original appearance."
+  - question: "Should I remove 1950s photos from old albums before scanning?"
+    answer: "If photos are in non-damaging albums (corner-mount style), they can be scanned in place, then carefully removed later. Photos in magnetic or adhesive albums should be removed carefully to prevent further damage, though this is delicate work. For valuable photos in damaging albums, consider professional removal and scanning to minimize risk."
+  - question: "How do I know what colors to restore if the photo is almost completely faded?"
+    answer: "Use multiple reference sources: any protected areas showing original colors, other photos from the same event or roll, family member recollections, period-appropriate color palettes for clothing and automobiles, and historical references. When uncertain, conservative restoration maintaining subtle colors is better than guessing at specific vibrant hues."
+  - question: "Is it better to restore or colorize badly faded 1950s Kodak prints?"
+    answer: "If any color information remains (even faint), restoration is better as it recovers actual original colors. Only colorize when prints have faded to essentially black-and-white or sepia. Even then, creating both a restored version from remaining color data and a researched colorization provides options. Always maintain multiple versions rather than choosing only one approach."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "What is the difference between a cabinet card and a carte de visite?"
+    answer: "Cabinet cards (1870s-1900s) measure approximately 4.5 x 6.5 inches, while cartes de visite (1860s-1880s) are smaller at about 2.5 x 4 inches. Cabinet cards became popular because the larger size showed more detail and was better for display. Both use similar albumen print technology and mounting on decorated cardstock. For more on restoring cartes de visite, see our dedicated guide."
+  - question: "Can the yellowing of albumen prints be reversed?"
+    answer: "Physical chemical reversal of albumen yellowing is possible but requires professional conservation and carries risks of damaging the photograph. Digital restoration through AI technology safely removes the appearance of yellowing without touching the original photograph, which should be preserved in its current state."
+  - question: "How can I tell if my old photograph is a cabinet card?"
+    answer: "Cabinet cards are characterized by: (1) Photograph mounted on thick cardstock backing, (2) Size around 4.5 x 6.5 inches, (3) Photographer's studio information printed or embossed on the mount, (4) Dates from approximately 1870-1920, (5) Decorative borders or designs on the mounting card, (6) Usually sepia or brown-toned photographs."
+  - question: "Should I remove the photograph from the mounting board?"
+    answer: "No, never separate the photograph from its mounting board. The two are considered a single artifact, and the mounting board provides historical context through the photographer's information and decorative elements. Additionally, attempting removal risks tearing or otherwise damaging the photograph. If the mount is severely damaged, scan or photograph the entire card and restore digitally."
+  - question: "Are cabinet card photographs valuable?"
+    answer: "Value varies widely based on several factors: subject matter (celebrities, unusual occupations, post-mortem), photographer (famous studios), condition, and historical significance. Common family cabinet cards have sentimental value but limited monetary value ($5-20). Notable subjects or famous photographers can be worth $50-500+. Rare or historically significant cards may be worth more."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

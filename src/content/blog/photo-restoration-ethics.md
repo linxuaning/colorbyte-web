@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Best Practices"
 featured: true
+faq:
+  - question: "Is it ethical to colorize black-and-white family photos?"
+    answer: "Colorization of family photographs is ethically acceptable for personal and family use with important caveats. The primary ethical requirement is to preserve the original black-and-white photograph untouched and maintain both black-and-white and colorized versions."
+  - question: "Should I remove a person from a photograph if they're no longer part of the family?"
+    answer: "Removing people from historical photographs raises serious ethical concerns and is generally inappropriate except in very specific circumstances. Photographs serve as historical documents showing who was actually present at events, family gatherings, or particular moments in time. Altering them to remove someone changes historical truth and falsifies the record."
+  - question: "How much reconstruction of damaged areas is ethically acceptable?"
+    answer: "The ethics of reconstruction depends on the photograph's purpose and the extent of reconstruction required. For family photographs where the primary purpose is preserving memory and allowing family connection with ancestors, moderate to extensive reconstruction is generally ethically acceptable."
+  - question: "Should I correct obvious flaws in the original photograph, like bad exposure or poor focus?"
+    answer: "Correcting original photographic flaws raises interesting ethical questions with answers that depend on context and purpose. For family photographs where technical defects make images less useful or enjoyable, moderate correction of exposure problems, color balance, or slight focus issues is generally acceptable."
+  - question: "If I digitally restore photographs for clients, what ethical standards should I follow?"
+    answer: "Professional photo restoration work carries ethical responsibilities to clients, photograph subjects, and historical accuracy. First, establish clear communication with clients about restoration extent and approach—discuss how much restoration they want, show examples of minimal vs."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

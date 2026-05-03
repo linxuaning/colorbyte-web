@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Best Practices"
 featured: false
+faq:
+  - question: "How long will properly stored photographs last?"
+    answer: "Properly stored photographs can survive centuries in excellent condition. Black-and-white silver photographs are inherently stable—well-processed examples stored in proper archival conditions can last 200-300+ years."
+  - question: "Should I remove old photographs from albums?"
+    answer: "This depends on the album type and photograph condition. **Definitely remove from:** magnetic albums with sticky pages and plastic overlays (extremely acidic and destructive), albums with pages showing obvious deterioration (brittleness, discoloration, mold), albums where photographs are showing damage (staining, adhesive residue, emulsion deterioration), and \"peel-back\" or pressure-sensitive p..."
+  - question: "Can I store photographs in plastic containers?"
+    answer: "Plastic containers are acceptable for photograph storage if you choose the right plastic and use them properly. **Safe plastics for photograph storage:** Polyester (PET, PETE)—excellent for sleeves and enclosures, Polypropylene (PP)—good for sleeves and boxes, and Polyethylene (LDPE, HDPE)—acceptable for outer containers."
+  - question: "How do I preserve photographs if I can't afford archival supplies?"
+    answer: "While professional archival supplies are ideal, you can make significant preservation improvements with minimal cost by prioritizing properly. **Free or low-cost preservation actions:** Move photographs from hostile environments (damp basements, hot attics) to stable climate-controlled living spaces, remove photographs from definitely harmful storage (magnetic albums, PVC sleeves, deteriorating..."
+  - question: "Should I write information on the backs of photographs?"
+    answer: "Recording identification information on photographs is crucial for preserving family knowledge, but method matters enormously. **Safe identification methods:** Use archival-quality pencils specifically designed for photograph marking (available from archival suppliers). Write gently on photograph backs, never pressing hard enough to indent through to image side."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

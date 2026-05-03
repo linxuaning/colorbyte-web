@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "What DPI should I use for scanning old family photos?"
+    answer: "For most family photos, scan at 600-1200 DPI. Small photos (wallet size) benefit from higher resolution (1200-2400 DPI) to enable larger prints. Very large photos (8x10\"+) can be scanned at 600 DPI. For archival purposes or maximum restoration potential, err on the higher side. Remember: you can always reduce resolution later, but you can't add detail that wasn't captured initially."
+  - question: "Should I scan photos in color even if they're black and white?"
+    answer: "Yes, always scan black and white photos using color mode (48-bit color). This captures yellowing, sepia toning, and subtle color casts that contain valuable information for restoration. You can convert to true grayscale later if desired, but you can't recover color information if you scan in grayscale mode. Color scans provide maximum flexibility for future enhancement."
+  - question: "Is it better to scan photos myself or use a scanning service?"
+    answer: "This depends on your collection size, budget, time, and quality requirements. DIY scanning gives you control, saves money for large collections (500+ photos), and allows immediate access. Professional services save time, provide consistent quality, and make sense for small collections (under 100 photos) or if you lack equipment."
+  - question: "How long does it take to scan a photo collection?"
+    answer: "Scanning speed varies based on equipment, resolution, and workflow. Budget 2-3 minutes per photo including handling, positioning, scanning, and verification. At 600 DPI, scanning alone takes 30-60 seconds per photo. For large collections, expect 20-30 photos per hour initially, improving to 40-50 with practice. A collection of 500 photos might take 15-25 hours spread over several weeks."
+  - question: "What should I do with original photos after scanning?"
+    answer: "Always keep original photographs. Even after high-quality scanning, originals have historical value and may be needed for future re-scanning as technology improves. Store originals properly: individual archival sleeves, acid-free boxes, climate-controlled environment (65-70°F, 30-40% humidity), dark storage. Treat scans as backups of originals, not replacements."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

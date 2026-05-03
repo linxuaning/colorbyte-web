@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Family History"
 featured: false
+faq:
+  - question: "Is it okay to keep or collect orphaned photographs?"
+    answer: "Yes, collecting and preserving orphaned photographs is generally considered worthwhile historical preservation work. These images might otherwise be destroyed, losing their historical value forever. Collectors and preservationists rescue orphaned photos from disposal and ensure their survival."
+  - question: "How can I identify people in orphaned photographs?"
+    answer: "Identifying orphaned photo subjects requires detective work combining multiple approaches. Research photographer studios through historical directories and databases to establish date and location parameters. Post restored photos in genealogy forums, Facebook groups, and historical society pages where researchers might recognize subjects."
+  - question: "What should I do if I identify subjects in orphaned photos?"
+    answer: "If you successfully identify subjects in orphaned photographs, several ethical steps follow. Try to locate living descendants through genealogy websites, family trees, and social media. Contact families respectfully, explaining how you acquired the photos and offering to share high-resolution restored copies or return original photos."
+  - question: "Are orphaned photographs valuable?"
+    answer: "Orphaned photograph value varies widely depending on multiple factors. Monetary value is generally modest ($1-20 for common vintage portraits) unless the photos show notable historical events or famous people, represent rare early photographic processes in excellent condition, are works by recognized photographers, or depict unusual or significant subjects."
+  - question: "Should orphaned photos be restored or left in original condition?"
+    answer: "Digital restoration creates enhanced copies while preserving originals in their current state, making this a false choice. The best approach is to digitally restore orphaned photographs while preserving original physical photos without alteration. This provides clear, well-preserved digital versions suitable for research, identification, sharing, and archival contribution."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

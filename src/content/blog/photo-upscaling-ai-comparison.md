@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
+faq:
+  - question: "Which AI upscaler is best overall?"
+    answer: "No single tool is \"best\" for everything. For old photo restoration, ArtImageHub excels with combined damage repair and upscaling. For maximum quality upscaling of good-condition images, Topaz Gigapixel AI leads. For simplicity and web-based convenience, Let's Enhance works well. For budget users, Upscayl offers impressive free results."
+  - question: "Can AI upscaling match the quality of an original high-resolution photo?"
+    answer: "No. AI upscaling creates plausible detail based on learned patterns, not actual recovered information. It's smart \"educated guessing\" that looks very good but isn't the same as true high-resolution capture. Results are excellent for practical purposes (prints, viewing, sharing) but won't match detail and accuracy of original high-resolution photograph."
+  - question: "How much can you enlarge a photo with AI before quality suffers?"
+    answer: "Most AI tools work best for 2x-4x enlargements. Beyond 4x, results become increasingly synthetic-looking as AI must \"hallucinate\" more detail. Practical limits: 2x gives excellent, nearly perfect results; 4x gives very good results for most uses; 6x-8x starts showing more obvious AI generation; beyond 8x becomes increasingly artificial."
+  - question: "Is paid AI upscaling worth it compared to free options?"
+    answer: "For casual, occasional use, free options like Upscayl or Waifu2x work well. For serious photo restoration, professional work, or frequent use, paid tools offer significantly better quality, easier workflows, and specialized features worth the investment. ArtImageHub offers affordable pricing for restoration-focused work."
+  - question: "Can AI upscaling fix blurry photos?"
+    answer: "AI upscaling can improve slightly blurry photos by sharpening and enhancing details, but can't fix severely out-of-focus images. Slight blur from scanning, compression, or minor focus issues: AI helps significantly. Motion blur or severe out-of-focus: AI improvement limited. Some tools offer specific deblur features beyond upscaling. Best results come from sharp originals."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can severely faded 1980s photos be restored to their original colors?"
+    answer: "Yes, even dramatically faded 1980s photographs can usually be restored to vibrant colors very close to the originals. The key is that even severely faded photos typically retain some color information in the dye layers, though it may be too faint for your eyes to see easily. High-quality scanning at high bit depth captures this subtle remaining color data."
+  - question: "How do I restore neon pink that's faded to pale beige?"
+    answer: "Neon colors that have faded almost completely present the greatest restoration challenge but are still recoverable in most cases. Scan at the highest resolution and bit depth your scanner supports to capture any remaining color trace. Use AI restoration which will analyze even imperceptible remaining color and reconstruct the original hue."
+  - question: "Are Polaroid photos from the 1980s harder to restore?"
+    answer: "Polaroid and other instant film photos from the 1980s present unique challenges but restore very successfully with appropriate techniques. These photos typically show severe color shifting (often to yellow-orange tones), blue-green staining particularly around borders, and potential physical deterioration including cracking or image transfer to the plastic overlay."
+  - question: "Should 1980s photos look super saturated after restoration?"
+    answer: "1980s photographs should definitely have strong, punchy colors—the era's aesthetic embraced vibrancy and boldness. However, there's a difference between appropriately vibrant 1980s colors and artificially oversaturated images."
+  - question: "Can I restore photos where all color has faded to brown or sepia?"
+    answer: "Photos that appear to have faded to completely monochrome brown or sepia tone often retain more color information than is visible to the naked eye. Scan these photos at high resolution in color mode (never grayscale), even though they appear monochrome. Use 48-bit color depth if your scanner supports it. Scan at increased brightness to capture any faint remaining color."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

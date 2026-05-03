@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
+faq:
+  - question: "Can blurry old sports action shots be made sharp?"
+    answer: "Motion blur and focus issues in vintage sports action photography can be improved but not entirely eliminated through restoration. AI restoration can reduce slight motion blur to some degree, making details somewhat clearer while maintaining natural appearance. Sharpening techniques can enhance edges and details to improve perceived clarity."
+  - question: "Should I colorize old black-and-white sports photographs?"
+    answer: "Colorizing vintage black-and-white sports photos is a personal choice with considerations specific to athletic imagery. The advantages of colorization for sports photos include making team colors visible, which aids identification and connection to specific schools or organizations, helping younger family members or fans connect more readily with vintage images by making them feel more immediat..."
+  - question: "How can I make old newspaper sports clippings look better?"
+    answer: "Newspaper sports clippings present particular restoration challenges due to low-quality newsprint paper, coarse halftone dot printing, severe yellowing and brittleness from acidic paper degradation, and often poor original print quality from fast newspaper production. Despite these challenges, significant improvement is possible through careful restoration."
+  - question: "Can I enlarge small yearbook sports photos for printing?"
+    answer: "Yes, small yearbook sports team photos can be successfully enlarged for printing through a combination of high-resolution scanning, AI restoration, and intelligent upscaling. The process starts with scanning the small original at very high resolution—use 1200-2400 dpi for a 2x3 inch yearbook photo to capture maximum detail. This creates enough base information for enlargement."
+  - question: "How should I preserve and display restored sports photographs?"
+    answer: "Proper preservation and display of restored sports photos ensures they survive for future generations while being enjoyed now. For original photographs, store in archival-quality materials using acid-free folders, sleeves, or boxes, polyester sleeves for individual protection, and stable environmental conditions (65-70°F, 30-40% RH)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

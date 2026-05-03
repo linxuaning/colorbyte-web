@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if I have a real Autochrome?"
+    answer: "Genuine Autochromes have distinctive characteristics: they're on glass plates (usually 9x12cm or 13x18cm), require transmitted light to view properly, show a visible grain pattern from the colored starch, and date from 1907-1935. Under magnification, you can see the individual colored starch grains. The colors are typically soft and pastel."
+  - question: "Can autochromes be restored physically, or only digitally?"
+    answer: "Physical restoration of Autochrome plates is extremely delicate and should only be attempted by professional conservators specializing in glass plate photography. Digital restoration is safer, reversible, and often more effective for making the images viewable and shareable."
+  - question: "Why do Autochromes have that soft, dreamlike quality?"
+    answer: "The starch grain screen layer creates slight diffusion, reducing sharpness compared to modern processes. Additionally, the limited color gamut and pastel palette contribute to the dreamy aesthetic. Long exposure times (often 1-10 seconds even in bright light) could also create slight subject movement."
+  - question: "Are Autochromes valuable?"
+    answer: "Yes, Autochromes are generally valuable, especially those by known photographers, depicting interesting subjects, or in good condition. Values range from hundreds to tens of thousands of dollars depending on photographer, subject matter, condition, and size. Even damaged Autochromes have value to collectors and historians."
+  - question: "Can modern AI really handle the unique characteristics of Autochromes?"
+    answer: "Advanced AI systems like ArtImageHub have been trained on thousands of early color photographs including Autochromes. The AI learns to recognize the starch grain pattern, typical color palettes, glass plate damage patterns, and other Autochrome-specific characteristics. This training allows it to restore damage while preserving the authentic qualities that make Autochromes special."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Technology"
 featured: true
+faq:
+  - question: "Is AI restoration good enough for professional use?"
+    answer: "AI restoration has absolutely reached professional quality for most applications in 2026. Current AI technology handles common damage types (fading, tears, stains, scratches) with results matching expert manual restoration. Professional photographers, photo studios, and restoration services increasingly incorporate AI into workflows for efficiency without quality loss."
+  - question: "Can AI handle all types of photo damage?"
+    answer: "AI restoration in 2026 handles the vast majority of photo damage types very effectively, but some limitations remain. AI excels at common deterioration including fading and yellowing from age, tears and creases, scratches and surface damage, stains and foxing spots, water damage, missing corners or edges, and overall color shifts."
+  - question: "How do I know if my restored photo needs manual refinement after AI processing?"
+    answer: "Evaluating AI restoration results to determine if manual refinement would add value involves systematic assessment. Examine faces closely at 100-200% magnification looking for proper eye detail and sharpness, natural skin texture without smoothing or artifacts, correct facial feature proportions and appearance, and realistic expression rather than \"AI-reconstructed\" look."
+  - question: "Is learning manual restoration still worthwhile when AI is so good?"
+    answer: "Learning manual restoration techniques remains valuable even in the AI era for several important reasons. First, AI produces excellent automated results but understanding manual techniques allows you to refine and perfect those results for images that matter most. Hybrid workflow skills combining AI foundation with manual refinement produce the absolute best outcomes."
+  - question: "Which gives better results for faces—AI or manual restoration?"
+    answer: "Modern AI facial restoration in 2026 has become remarkably advanced, often matching or exceeding manual restoration for damaged faces. AI advantages for facial restoration include training on millions of facial images creating deep understanding of facial structure, ability to reconstruct damaged facial areas with realistic proportions and features, consistent enhancement quality across all fac..."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

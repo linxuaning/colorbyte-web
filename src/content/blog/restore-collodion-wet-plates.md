@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How can I tell if I have a collodion wet plate?"
+    answer: "Ambrotypes are unique images on glass that appear positive when backed with black material (case often includes dark backing). Tintypes are on thin metal (magnetic, despite name \"tin\"). Both date from 1850s-1880s. Images have characteristic soft quality, limited tonal range, and hand-colored details are common. Cases are often leather-covered wood or Union cases (molded thermoplastic)."
+  - question: "Can broken wet plate glass be physically restored?"
+    answer: "Professional conservators can sometimes reassemble broken glass plates, but it's delicate work requiring specialized skills and materials. For most purposes, digital restoration is safer, more effective, and less expensive. Physical reassembly risks further damage and doesn't actually repair the breaks (just stabilizes the pieces)."
+  - question: "Should I remove an ambrotype from its case?"
+    answer: "Generally no, unless you have conservation training. Cases protect fragile plates and are part of the historical artifact. Opening cases requires understanding the specific construction and can cause damage if done incorrectly. Sealed cases should never be opened without professional guidance. If you need to digitize a cased ambrotype, photograph it through the glass in the case."
+  - question: "Are wet plate collodion images valuable?"
+    answer: "Value varies enormously based on subject, condition, photographer, and historical significance. Common ambrotype portraits: $20-100. Tintypes: $5-50. High-quality, identified subjects: $100-500. Civil War military: $200-2000+. Famous photographers or historically significant images: thousands to tens of thousands."
+  - question: "Can AI really restore severely damaged wet plates?"
+    answer: "AI excels at this type of restoration. Trained on thousands of 19th-century photographs, modern AI understands wet plate characteristics and typical damage patterns. It can remove cracks, correct oxidation, neutralize varnish yellowing, and reconstruct missing areas with remarkable accuracy."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

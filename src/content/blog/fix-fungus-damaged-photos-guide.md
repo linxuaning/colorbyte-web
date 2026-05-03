@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can fungus-damaged photos be fully restored?"
+    answer: "Yes, most fungus-damaged photos can be significantly restored through digital techniques, even with extensive foxing or staining. The restoration success depends on damage severity—photographs with light to moderate foxing (under 50% coverage) restore excellently, while severe damage (over 70% coverage or emulsion loss) may require complex reconstruction."
+  - question: "How do I stop mold from spreading on old photographs?"
+    answer: "Stop mold spread immediately by isolating affected photographs from others, reducing humidity below 60% (ideally 30-40%), and improving air circulation. Remove photographs from contaminated albums or storage, place each in individual acid-free paper envelopes (never plastic), and store in a cool, dry location."
+  - question: "What causes brown spots (foxing) on old photos?"
+    answer: "Brown foxing spots on photographs result from fungal growth feeding on iron compounds in the paper sizing, gelatin emulsion, or photo chemistry. Fungus requires humidity above 60%, warm temperatures, and organic materials to thrive. Foxing commonly appears on photographs stored in basements, attics, or other humid environments, especially in older photographs with iron-rich paper."
+  - question: "Is it safe to scan moldy photographs?"
+    answer: "It's safe to scan photographs with dormant, dry mold if you take precautions: wear an N95 respirator, line the scanner bed with disposable acetate sheets, and clean the scanner with 70% isopropyl alcohol afterward. Never scan photographs with active fuzzy growth—this contaminates your equipment and risks spreading spores."
+  - question: "How much does it cost to restore fungus-damaged photos?"
+    answer: "DIY digital restoration to fix fungus damaged photos costs $0-100 for software (GIMP is free, Photoshop $54.99/month, Affinity Photo $69.99 one-time) plus scanning equipment ($200-500). Time investment ranges from 2-4 hours for light foxing to 8-15 hours for severe damage."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

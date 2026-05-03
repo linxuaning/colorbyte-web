@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How do you restore tintype images without damaging them?"
+    answer: "Restore tintype images digitally rather than physically cleaning the original. Never attempt physical cleaning—emulsion is fragile and any wiping or scrubbing causes irreversible damage. Instead, digitize the tintype at high resolution (1200+ DPI) using scanning or cross-polarized photography, then perform all restoration work on the digital file."
+  - question: "Why do tintypes have a dark background?"
+    answer: "Tintypes appear dark because they're created on thin iron sheets coated with black japan varnish or dark enamel paint before applying the photographic emulsion. This dark background is essential to the tintype process—it provides contrast for the light-colored silver image in the collodion emulsion."
+  - question: "Can rusted tintypes be restored?"
+    answer: "Yes, rusted tintypes can be digitally restored even with significant rust damage. Light to moderate surface rust (orange-brown spots) can be removed through color correction and selective desaturation techniques. Heavy rust that has destroyed image detail requires reconstruction using clone stamping and content-aware fill."
+  - question: "How can you tell if a photograph is a tintype?"
+    answer: "Identify a tintype by checking these characteristics: it's on thin metal (iron) that attracts a magnet; the image appears dark when held against dark backgrounds and lighter against light backgrounds; it's usually 1/4 inch thick or less; edges may show rust; the surface has a dark, varnished appearance; and the image is reversed (mirror image)."
+  - question: "What's the best way to digitize old tintypes?"
+    answer: "The best way to digitize tintypes is using cross-polarized photography rather than flatbed scanning. Position the tintype vertically, use two polarized lights at 45-degree angles, attach a polarizing filter to your camera, and rotate filters until reflections disappear. Shoot in RAW format at highest resolution."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

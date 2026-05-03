@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"  
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Why do 1980s photos fade to pink or magenta?"
+    answer: "1980s photos fade to pink or magenta because the cyan (blue-green) dye layer in chromogenic color prints deteriorates fastest, leaving behind the more stable magenta and yellow dyes. When you remove cyan from a full-color image, the remaining magenta and yellow create the characteristic pink-magenta cast seen in faded 80s photos."
+  - question: "Can severely faded 1980s photos be restored?"
+    answer: "Yes, even severely faded 1980s photos can be restored through digital techniques, often with excellent results. Scan the faded print at high resolution (1200+ DPI, 48-bit color), then use Curves adjustments in individual color channels to rebalance colors—primarily adding cyan/blue to counteract magenta shift."
+  - question: "How do you restore magenta-shifted photos from the 1980s?"
+    answer: "To restore 1980s photos from magenta shift, use Curves adjustment in Photoshop/Affinity Photo: increase the Blue channel curve (especially in midtones and highlights) to add cyan/blue back to the image, neutralizing the magenta cast. Use Selective Color adjustment to add cyan to Blues (+40-60), Greens (+20-40), and reduce magenta in Whites (-40-60)."
+  - question: "Are Polaroids from the 1980s worth restoring?"
+    answer: "Yes, 1980s Polaroids are worth restoring, especially SX-70 and Polaroid 600 instant photos that capture unique moments impossible to recreate. While Polaroids typically show severe fading (yellow-brown cast as blues disappear), digital restoration can recover much of the original appearance."
+  - question: "Should you keep faded 1980s prints after restoration?"
+    answer: "Yes, keep faded 1980s prints after digital restoration even though they look poor—the physical prints remain the original artifacts and may be needed for future restoration as technology improves. Store prints properly in polyester sleeves in archival boxes or, ideally, in freezer storage (dramatically slows further fading)."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

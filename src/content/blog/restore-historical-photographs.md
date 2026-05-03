@@ -9,6 +9,17 @@ authorBio: "Sarah has reviewed AI photo restoration tools across hundreds of sid
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "How do I know if my old photograph is historically significant?"
+    answer: "Historical significance depends on several factors: subject matter (does it document important people, events, or places?), rarity (are there other examples?), research value (does it provide unique information?), and provenance (is the history of the photograph documented?)."
+  - question: "Can historical photographs be restored without losing their authenticity?"
+    answer: "Yes, when done properly. The key is distinguishing between the original physical object and digital access copies. The original should be preserved in its current state with minimal physical intervention—proper storage and stabilization only. Digital restoration creates enhanced copies for research and sharing while leaving the original untouched."
+  - question: "What's the difference between conservation and restoration of historical photographs?"
+    answer: "Conservation focuses on stabilizing and preserving the original object, preventing further deterioration, and maintaining the photograph in its current state. It involves proper storage, environmental control, and minimal reversible interventions. Restoration involves actively repairing damage and improving appearance, either physically or digitally."
+  - question: "How should I store historical photographs I've inherited?"
+    answer: "Store historical photographs in a cool (65-70°F), dry (30-40% RH) environment with stable conditions. Use archival-quality materials: acid-free paper folders or polyester sleeves, never PVC plastic. Store flat in boxes, not standing on edge. Keep in darkness when not in use. Handle carefully, supporting from underneath, and use gloves for valuable items."
+  - question: "Is it worth paying for professional restoration of historical photographs?"
+    answer: "It depends on the photograph's value and your goals. For rare, unique, or high-value historical photographs (worth $500+), professional conservator assessment is usually worth the cost. For photographs with significant historical importance, family heritage value, or museum potential, professional work ensures appropriate treatment following archival standards."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

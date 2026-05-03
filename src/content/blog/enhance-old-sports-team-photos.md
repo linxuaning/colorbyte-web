@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can AI really enhance faces in large group sports team photos?"
+    answer: "Yes, modern AI technology like ArtImageHub can detect and individually enhance every face in team photos with 50+ people. The AI identifies each face, applies appropriate restoration, and maintains natural appearance while improving clarity. Results are particularly impressive for photos where faces have faded into shadows or backgrounds, making team members clearly identifiable again."
+  - question: "How do I restore uniform numbers that have completely faded?"
+    answer: "If uniform numbers are partially visible, AI enhancement can often recover them by maximizing contrast and sharpening edges. For completely faded numbers, research team rosters from the year to identify players, then reconstruct numbers using the same font style visible elsewhere in the photo. Always document which numbers are original versus reconstructed."
+  - question: "Should I enhance old sports team photos in color or keep them black and white?"
+    answer: "Keep originally black and white photos in black and white for historical authenticity. However, if you want to create a colorized version for younger family members or modern displays, use ArtImageHub's AI colorization after completing the enhancement. Research period-appropriate team colors and create both versions—black and white for archival, color for engagement."
+  - question: "Can motion blur in action sports photos be fixed?"
+    answer: "Motion blur in action shots can be reduced but not completely eliminated without creating artificial-looking results. Use selective sharpening to enhance faces and key details while maintaining some blur to preserve the sense of motion. AI tools can intelligently sharpen static elements (faces, clear equipment) while respecting intentional motion blur areas."
+  - question: "What's the best way to share enhanced team photos with former teammates?"
+    answer: "Create high-resolution digital files and share through private online galleries, email, or cloud storage links. For team reunions, provide printed copies in matching frames. Use social media to connect with former teammates you've lost touch with, sharing the enhanced photos to generate interest in reunions and ongoing connection."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

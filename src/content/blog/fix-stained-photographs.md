@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can photograph stains be physically removed without damage?"
+    answer: "In most cases, no. Stains in photographs are typically integrated into the emulsion or paper, not surface deposits. Attempting physical stain removal with water or chemicals usually makes damage worse, potentially dissolving the emulsion or causing the image to wash away. Only surface dirt and soot can safely be removed physically using dry methods (soft brush)."
+  - question: "Why does digital stain removal work better than physical methods?"
+    answer: "Digital restoration removes the appearance of stains without touching the original photograph. You can correct color, rebuild lost detail, and create clean versions while the original remains safely stored. Physical stain removal risks dissolving the image, creating new damage, or making stains worse."
+  - question: "What's the brown staining on my old photographs?"
+    answer: "Brown staining has several possible causes: water damage deposits minerals and oxidizes emulsion components creating brown marks; chemical stains from residual processing chemicals (fixer) oxidize over time; adhesive and tape stains turn brown with age; mold and fungus create brown discoloration as they consume gelatin; lignin in acidic paper breaks down into brown compounds; environmental poll..."
+  - question: "Can yellowed photographs be restored to white?"
+    answer: "Yes, digitally. Yellow staining is one of the most successfully corrected types of damage. Scan in 48-bit color, then use Curves adjustment in the Blue channel (adding blue removes yellow), Color Balance adjustments, or LAB color mode corrections. AI tools like ArtImageHub automatically detect and correct yellowing."
+  - question: "Should I attempt stain removal on valuable photographs?"
+    answer: "For valuable photographs, prioritize preservation over appearance. Have them professionally assessed and stored properly in archival materials. Create high-quality scans immediately to preserve current state digitally. Digital restoration provides beautiful viewing copies without risking the original."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

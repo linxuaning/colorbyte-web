@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: true
+faq:
+  - question: "Is cheap photo restoration worth it or should I pay more for better quality?"
+    answer: "Price doesn't always correlate with quality in photo restoration. Modern AI restoration services deliver professional-quality results at $5-20 per photo—prices that seem \"cheap\" but reflect automated processing efficiency rather than inferior quality."
+  - question: "Are free photo restoration apps really free or do they have hidden costs?"
+    answer: "Free photo restoration apps typically have significant limitations that constitute hidden costs including watermarks on restored photos requiring paid upgrade to remove, severe resolution restrictions making photos unsuitable for printing, limits on number of free restorations (often 3-5 before payment required), privacy concerns as free services may use uploaded photos for other purposes, adve..."
+  - question: "How much should I expect to pay for professional photo restoration?"
+    answer: "Professional photo restoration pricing varies widely based on service type and damage severity. For AI-powered automated restoration, expect $5-20 per photo with instant processing and excellent quality for most damage types. For professional digital restoration labs, budget $50-150 for standard work, $150-300 for complex damage, with 1-4 week turnaround."
+  - question: "Is it cheaper to learn Photoshop myself than pay for restoration services?"
+    answer: "The answer depends on your project size and how you value your time. For small projects under 20-30 photos, paying for AI restoration ($100-400 total) is more cost-effective than Photoshop subscription ($55/month) plus the 50-100+ hours needed to learn restoration techniques."
+  - question: "Do volume discounts really save money for large photo collections?"
+    answer: "Yes, volume discounts for photo restoration can provide substantial savings on large collections. For example, AI services typically offer 10-15% discount for 10-25 photos, 15-20% discount for 26-50 photos, and 20-30% discount for 100+ photos. On a 50-photo project at $15/photo base rate, a 20% volume discount saves $150 ($600 vs. $750). On a 100-photo project, a 25% discount saves $375-450."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

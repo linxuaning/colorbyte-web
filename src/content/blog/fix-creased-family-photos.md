@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Can all creases be completely removed from photographs?"
+    answer: "Most creases can be significantly reduced or eliminated through a combination of physical and digital restoration. Light to moderate creases in modern photographs can often be 95-100% corrected. Severe creases with emulsion damage may always show slight evidence of damage, though this can typically be reduced to barely noticeable levels."
+  - question: "Will flattening a creased photo damage it further?"
+    answer: "When done correctly, physical flattening methods are safe and won't cause additional damage. The key is using gentle pressure, protective materials, and avoiding heat or excessive moisture. Always test techniques on less valuable photos first, and never attempt to flatten brittle or extremely old photographs without professional advice."
+  - question: "How long does it take to digitally remove creases from a photograph?"
+    answer: "Simple crease removal using AI tools like ArtImageHub takes just a few minutes. Manual restoration in Photoshop ranges from 30 minutes for a single simple crease to 3-4 hours for photographs with multiple complex creases. Your skill level significantly impacts restoration time—experienced restorers work much faster than beginners."
+  - question: "Can I use an iron to flatten creased photographs?"
+    answer: "While the iron method can work, it carries significant risk and should only be used by experienced individuals on less valuable photographs. The iron must be set to the lowest possible temperature (under 150°F), used only with protective cloth between iron and photo, and kept moving constantly. For most people, safer methods like weighted pressing or humidity chambers are better choices."
+  - question: "Should I restore the physical photo before scanning, or scan then restore digitally?"
+    answer: "The best practice is to attempt safe physical restoration first (weighted flattening, humidity method) to reduce the crease as much as possible without risk. Then scan the photograph at high resolution and complete the restoration digitally. This combined approach yields the best results. Make sure to create a backup scan before attempting any physical restoration in case something goes wrong."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

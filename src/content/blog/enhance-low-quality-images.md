@@ -9,6 +9,17 @@ authorBio: "An ArtImageHub editorial contributor specializing in family photo pr
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Enhancement"
 featured: false
+faq:
+  - question: "Can you enhance image quality beyond the original resolution?"
+    answer: "Yes, with limitations. AI upscaling can effectively increase resolution 2-4x while adding plausible detail. The AI creates new pixels based on learned patterns from millions of images. However, it's \"educated guessing\" rather than recovering actual detail. Results look natural and work well for most purposes, but won't match genuine high-resolution originals."
+  - question: "What's the best way to fix blurry photos?"
+    answer: "Blur correction depends on blur type. Slight softness can be improved with careful sharpening using Unsharp Mask or Smart Sharpen. AI-powered deblur tools (like those in Topaz Sharpen AI) can improve moderate blur by analyzing and reversing blur patterns. However, severe blur, motion blur, or out-of-focus subjects can't be truly fixed—detail that was never captured can't be recreated."
+  - question: "How do I remove JPEG compression artifacts?"
+    answer: "JPEG artifacts appear as blocky patterns and edge ringing. Reduce them through several techniques: slight Gaussian blur (0.3-0.5 pixels) with selective masking protects details; median filter (1-2 pixel radius) effectively reduces blocking; surface blur preserves edges while smoothing blocks; dedicated noise reduction software often includes artifact removal; AI tools automatically detect and r..."
+  - question: "Is there a limit to how much you can enhance a low quality image?"
+    answer: "Yes, absolutely. You can't create information that never existed. Extremely low resolution images (less than 100x100 pixels), severely compressed images with massive data loss, or completely blurred images have fundamental limitations. AI can create plausible detail but can't recover actual lost information."
+  - question: "Should I use AI enhancement or manual Photoshop techniques?"
+    answer: "Both have advantages. AI enhancement (like ArtImageHub) excels at: upscaling resolution, automatic detection of issues, speed and convenience, consistent results, and handling complex patterns. Manual Photoshop techniques excel at: precise control over specific areas, handling unusual situations AI wasn't trained on, artistic interpretation, and combining multiple specialized techniques."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

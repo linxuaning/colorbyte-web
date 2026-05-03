@@ -9,6 +9,17 @@ authorBio: "Lisa Martinez has worked with family historians for over a decade, r
 reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
+faq:
+  - question: "Why do Polaroid photos turn pink or magenta over time?"
+    answer: "Instant photos turn pink/magenta because the cyan (blue) dye layer degrades faster than magenta and yellow layers, creating color imbalance. This selective fading is accelerated by heat exposure and is the most common degradation pattern in 1970s Polaroid SX-70 and similar instant films. AI restoration can neutralize this color shift and restore balanced, natural colors."
+  - question: "Can completely faded instant photos be restored?"
+    answer: "Severely faded instant photos can often be restored if any image detail remains visible. AI enhancement can maximize contrast and recover shadow detail, making ghostly faded images visible again. However, if the photo has faded to completely blank, no restoration can recover information that no longer exists."
+  - question: "How long do instant photos last?"
+    answer: "1970s instant photos were not designed for long-term preservation and typically show significant degradation within 20-40 years. Factors affecting lifespan include: storage temperature (heat accelerates degradation), light exposure (causes fading), humidity (promotes mold), and storage materials (acidic materials worsen degradation)."
+  - question: "Should I throw away instant photos after digitizing and restoring them?"
+    answer: "Never discard original instant photos after digitization. Despite their poor longevity, originals are irreplaceable primary sources. Store them properly in archival conditions (cool, dark, dry, in polyester sleeves) as backup and historical artifacts. Display and share the restored digital versions while preserving originals safely."
+  - question: "Can I prevent my instant photos from deteriorating further?"
+    answer: "While you can't reverse chemical degradation that has already occurred, you can slow future deterioration by: storing in cool (65-70°F), dark, dry (30-40% RH) conditions, using archival polyester sleeves, keeping away from heat sources and light, avoiding basements and attics, and most importantly, digitizing and restoring now before they degrade further."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
