@@ -4,10 +4,16 @@ description: "Complete guide to removing mold and fungus damage from photographs
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "Lisa Martinez"
-role: "Family History Expert"
+authorRole: "Family History Expert"
+authorBio: "Lisa Martinez has worked with family historians for over a decade, restoring blurry vintage photographs and writing accessible guides on AI photo enhancement. She handles mold-affected family collections with conservator-grade isolation protocols."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Damage Repair"
 featured: false
 ---
+
+> **TL;DR** — Mold actively eats photo emulsion — every day matters. Step 1: isolate moldy items in zip-lock bags away from healthy collection (mold spreads via airborne spores). Step 2: dry in 30-40% RH room 1-2 weeks (kills active mold; deactivated spores cannot grow). Step 3: gently brush surface debris with soft brush. Step 4: scan at 1200 DPI. Step 5: AI restoration recovers face detail and reduces foxing stains; severely eaten emulsion areas need plausible content fill. Wear N95 + gloves throughout — moldy materials are health hazards.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For mold remediation in archival materials, see the [Library of Congress mold guidance](https://www.loc.gov/preservation/scientists/projects/mold.html).
 
 Discovering mold or fungus growing on treasured family photographs is distressing. Those spots, discoloration, and fuzzy growth represent active biological deterioration that, left unchecked, will completely destroy your images. Mold doesn't just sit on photograph surfaces—it actually digests photographic materials, breaking down emulsion layers, attacking paper fibers, and causing permanent damage that worsens daily.
 

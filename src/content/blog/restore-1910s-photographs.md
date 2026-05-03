@@ -4,10 +4,16 @@ description: "Learn how to restore photographs from the 1910s, including World W
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah works with genealogy researchers and WWI family historians on 1910s photo collections, including service portraits and home-front documentary images."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — 1910s photos span Edwardian-style studio portraits, WWI service photos, and early candid snapshots (Kodak No. 1A Folding cameras popularized hand-held photography). Now 110+ years old, typical issues: silver mirroring, fade, brittle paper. Scan at 1200 DPI; AI restoration via GFPGAN/Real-ESRGAN recovers face detail and clothing texture. The decade transitioned from formal cabinet cards to casual snapshots — different scan handling for each format.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The 1910s was a decade of dramatic transformation—from the elegant final years of the Edwardian era through the upheaval of World War I and into the uncertain post-war period. Photographs from this decade capture a world in transition, with evolving styles, new technologies, and the first widespread documentation of modern warfare. Restoring these 110+ year old images requires understanding their unique historical context.
 

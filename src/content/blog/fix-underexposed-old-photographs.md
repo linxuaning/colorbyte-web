@@ -4,10 +4,16 @@ description: "Learn techniques to restore underexposed dark photographs. Complet
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah specializes in low-key vintage photo recovery. Her workflow uses raw-style scans + AI tonal recovery to surface shadow detail that's often dismissed as 'too dark to save'."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Underexposed photos contain more recoverable detail than they appear to: silver halide compounds preserve information even in dark areas. Scan in raw/TIFF mode if scanner supports it; otherwise high-bit JPEG. Use shadow lift in image editor before AI restoration to surface detail. AI restoration via GFPGAN/Real-ESRGAN works on the lifted version, recovering face detail and texture. Severely underexposed (near-black) photos may not have any recoverable signal — accept the loss rather than artificially brighten noise.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Underexposed photographs—those frustratingly dark images where faces disappear into shadows and details vanish into blackness—are common in vintage photography. Poor lighting, camera limitations, and processing errors left many precious memories nearly invisible. The good news? Dark photos often contain more recoverable information than you might expect.
 

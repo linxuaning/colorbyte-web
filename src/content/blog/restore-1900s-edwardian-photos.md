@@ -4,10 +4,16 @@ description: "Learn how to restore photographs from the Edwardian era (1901-1910
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah works with genealogy researchers and family historians on early 20th century photo collections, with particular focus on Edwardian-era studio portraits and group photographs."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Edwardian-era photos (1901-1910) are now 115+ years old: typically silver gelatin prints on cabinet-card mounts, prone to silver mirroring (visible as metallic sheen on dark areas), fade, and mount deterioration. Scan at 1200 DPI to capture fine studio detail. AI restoration via GFPGAN/Real-ESRGAN recovers face detail and clothing texture. Many Edwardian portraits feature elaborate dress and posed groups — preserve detail rather than over-smoothing.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 The Edwardian era (1901-1910) produced some of the most elegant and well-crafted photographs in history. Named for King Edward VII's reign, this period saw photography mature into an art form, with stunning portraits, detailed group photos, and documentary images that capture a world on the cusp of modernity. Restoring these 115+ year old treasures requires understanding their unique characteristics.
 

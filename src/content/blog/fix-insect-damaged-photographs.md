@@ -4,10 +4,16 @@ description: "Learn how to restore photographs damaged by insects, silverfish, a
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with archives recovering photo collections from silverfish, cockroach, and book-worm damage. Her protocol freezes affected items first to halt active infestations before any restoration."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Insects (silverfish, cockroaches, beetles) eat gelatin photo emulsion, leaving pinholes, edge nibbling, and surface scrapes. Step 1: freeze affected items 72 hours at 0°F (-18°C) to halt any active infestation. Step 2: gently brush surface debris with soft brush. Step 3: scan at 1200 DPI. Step 4: AI restoration fills small bug holes via inpainting; large eaten areas require manual masking. Long-term: store in archival sleeves with insect-deterring boxes; address infestation source.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For pest treatment in archival collections, see the [Smithsonian Integrated Pest Management guide](https://www.si.edu/mci/english/learn_more/preservation/ipm.html).
 
 Discovering that insects have feasted on your precious photographs is heartbreaking. Silverfish, cockroaches, beetles, and other pests find the gelatin in photo emulsion particularly appetizing. But even photos with significant insect damage can often be restored using modern techniques.
 

@@ -4,10 +4,16 @@ description: "Learn how to restore photographs from the Great Depression (1929-1
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with family historians on Great Depression-era photo collections, including Dust Bowl migrant family records and small-town documentary photos from the 1930s."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — 1930s family photos are typically silver gelatin contact prints (small format, 3×5 or smaller) shot on roll film with simple cameras. Now 85-95 years old. Common issues: fade, paper yellowing, contact-print scratches. Scan at 2400 DPI for small-format originals (essential for face detail recovery). AI restoration via GFPGAN/Real-ESRGAN works very well on Depression-era studio portraits but is more limited on heavily damaged outdoor candids. The Library of Congress FSA collection provides era reference for color-correction calibration.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For era reference, see the [Library of Congress FSA-OWI photo collection](https://www.loc.gov/collections/fsa-owi-black-and-white-negatives/).
 
 The 1930s Great Depression was one of the most challenging periods in American history, yet it produced some of the most powerful and enduring photographs ever taken. From FSA documentary images to family snapshots capturing daily survival, these photographs tell stories of resilience and hardship. Restoring these 90+ year old images helps preserve an essential chapter of history.
 

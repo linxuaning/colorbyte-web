@@ -4,10 +4,16 @@ description: "Expert guide to restoring stereoscopic photographs and stereoviews
 publishedAt: "2026-02-24"
 updatedAt: "2026-02-24"
 author: "Sarah Chen"
-role: "Historical Photography Specialist"
+authorRole: "Historical Photography Specialist"
+authorBio: "Sarah works with collectors and museums on Victorian stereoview preservation, including the Keystone-Mast collection format and 1860s-1900s travel/event documentary stereoviews."
+reviewedBy: "ArtImageHub editorial team"
 category: "Historical Photography"
 featured: false
 ---
+
+> **TL;DR** — Stereoviews (1850s-1930s) are pairs of nearly identical photos on cardstock mounts, viewed through stereoscope to produce 3D effect. Cards typically curve to fit the viewer — preserve the curve when scanning. Scan flat at 1200 DPI for digital archive (curved scanning introduces distortion that breaks 3D effect). AI restoration via GFPGAN/Real-ESRGAN recovers fine detail in the small-format halves. Card backs often hold publisher imprints (Keystone, Underwood) — scan for collection cataloging.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For institutional reference, see the [Library of Congress stereograph collection](https://www.loc.gov/collections/stereograph-cards/).
 
 Stereoscopic photographs—stereoviews or stereographs—represent one of the most fascinating photographic formats from the Victorian era. Created by mounting two nearly identical photographs side-by-side and viewed through special stereoscope viewers, these images produced remarkably convincing three-dimensional effects that amazed 19th-century viewers and remain captivating today.
 

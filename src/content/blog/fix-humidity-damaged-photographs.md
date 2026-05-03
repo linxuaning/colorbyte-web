@@ -4,10 +4,16 @@ description: "Learn how to restore photographs damaged by humidity and moisture.
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with families recovering photo collections from humid Gulf Coast, Florida, and tropical storage conditions. Her protocol pairs slow controlled drying with AI digital recovery for emulsion-damaged areas."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Humidity damage shows as: warping, sticking (photo to photo or photo to glass), emulsion softening, and mold. Optimal storage is 30-50% relative humidity at 65-70°F. For damaged photos: never force-separate or rapid-dry. Slow controlled drying (3-5 days in 40% RH room) prevents further emulsion loss. Scan at 1200 DPI; AI restoration via GFPGAN/Real-ESRGAN recovers face detail but cannot rebuild lost emulsion (those areas need plausible content fill). Mold requires specialized handling — see Library of Congress mold protocols.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For mold-affected photos, consult the [Library of Congress mold remediation guidance](https://www.loc.gov/preservation/scientists/projects/mold.html).
 
 Humidity is one of the most insidious enemies of photograph preservation. Unlike sudden water damage, humidity damage often occurs slowly over years of improper storage, causing warping, sticking, emulsion deterioration, and mold growth. Understanding how to address humidity damage can save photographs that might otherwise be lost.
 

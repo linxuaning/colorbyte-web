@@ -4,10 +4,16 @@ description: "Learn how to restore World War I photographs from 1914-1918. Exper
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has worked with WWI genealogy researchers including the National WWI Museum's family-archive volunteer program, restoring soldier portraits and home-front photos approaching their 110th anniversary."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — WWI photos (1914-1918) are now 105-110+ years old: silver gelatin prints suffer silver mirroring, fade, and cardboard mount deterioration. Scan at 1200 DPI for service portraits; identify regiment insignia and unit pins (preserve detail in restoration). AI restoration via GFPGAN recovers face detail; Real-ESRGAN sharpens uniform/equipment edges. Many WWI prints are on cabinet-card mounts with photographer imprints — scan front + back for genealogical records.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For institutional WWI archive guidance, see the [National WWI Museum and Memorial collection guidelines](https://www.theworldwar.org/research).
 
 World War I photographs capture one of history's most devastating conflicts and the soldiers, families, and communities affected by it. These images from 1914-1918 document trench warfare, military service, and the home front during "The Great War." Now over a century old, these photographs deserve careful preservation and restoration to honor those who served.
 

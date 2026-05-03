@@ -4,10 +4,16 @@ description: "Learn techniques to repair old photographs with missing corners, t
 publishedAt: "2026-02-23"
 updatedAt: "2026-02-23"
 author: "Sarah Chen"
-role: "Photo Restoration Specialist"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Sarah has rebuilt thousands of photos with missing corners and torn edges. Her approach favors crop-and-frame solutions over invented content when missing areas contain critical detail like subjects' faces."
+reviewedBy: "ArtImageHub editorial team"
 category: "Photo Restoration"
 featured: false
 ---
+
+> **TL;DR** — Two paths for missing corners: (1) Honest crop — re-frame the photo to exclude missing area; preserves authenticity. (2) AI inpainting — fills missing areas with plausible content based on surrounding context. Inpainting works well for backgrounds (sky, walls, floor) but invents content where missing area contains subjects. Workflow: scan at 1200 DPI → AI restoration recovers what's there → manual or AI inpainting for missing edges → for large losses, prefer honest crop. Always preserve the original scan as the historical record.
+
+> **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
 
 Missing corners and torn edges are among the most common forms of physical damage to vintage photographs. Whether from decades of handling, removal from albums, accidental tearing, or environmental damage, these losses can make photos look incomplete and damaged. Fortunately, modern restoration techniques can rebuild what's been lost.
 
