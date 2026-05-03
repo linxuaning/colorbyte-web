@@ -51,6 +51,17 @@ aggregateRating:
 reviewedItem:
   name: "Old Photo Restoration by Decade Complete Index"
   category: "Era-Specific Restoration Guide"
+howTo:
+  - name: "Identify your photo's decade"
+    text: "Look at format (cabinet card vs Polaroid vs C-print), clothing styles, technology in the image (cars, appliances), and any handwritten dates. Different eras require different scan and restoration calibration."
+  - name: "Click the corresponding era guide"
+    text: "Each era has distinct photographic media and damage patterns. Click the matching link in the decade selector table for era-specific scanning and restoration considerations."
+  - name: "Scan at appropriate DPI"
+    text: "1200 DPI minimum for standard prints. 2400 DPI for small-format originals (cartes de visite, contact prints). Scan front and back when photographer imprints or handwritten notes are present."
+  - name: "Apply AI restoration via ArtImageHub"
+    text: "Upload to ArtImageHub at $4.99 one-time for unlimited HD restoration regardless of decade. The GFPGAN/Real-ESRGAN models recover face detail and sharpen edges while preserving period authenticity."
+  - name: "Cross-reference damage type guides"
+    text: "If your photo also has specific damage (water, smoke, mold, glue, ink, missing corners), see the linked damage-specific guides. Multi-damage photos benefit from combined era + damage protocols."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).

@@ -45,6 +45,19 @@ aggregateRating:
 reviewedItem:
   name: "Old Photo Damage Recovery Complete Diagnostic Guide"
   category: "Damage-Specific Restoration Guide"
+howTo:
+  - name: "Diagnose damage type via visual inspection"
+    text: "Yellow/brown stains = chemical breakdown or smoke. Green/black/red fuzzy spots = mold. Curl/warp = heat/humidity. Stuck-together = humidity. Pinholes = insects. White cloudy haze on dark areas = silver mirroring. Multi-cause damage is common."
+  - name: "Stabilize before any restoration"
+    text: "Halt active damage first: freeze for mold/insects (72h at 0F), dry for water/humidity (3-5 days at 30-40 percent RH). Improper handling causes worse damage than the original issue."
+  - name: "Physical cleaning with soft brush only"
+    text: "Use a soft natural-hair brush to remove surface debris. Never use water, solvents, or chemical cleaners on photos. For mold: wear N95 mask and isolate items. For glue: use dental floss to slowly work under prints, never pull."
+  - name: "High-DPI scan (1200+ DPI)"
+    text: "1200 DPI minimum for standard prints. 2400 DPI for small-format. Scan in color even on B&W photos to preserve full tonal information. Save unmodified scan as your archival record before any digital processing."
+  - name: "AI restoration via ArtImageHub"
+    text: "Upload to ArtImageHub at $4.99 one-time for unlimited HD restoration. The GFPGAN/Real-ESRGAN models handle 80-90 percent of typical family photo damage; severe localized damage may need manual masking + AI inpainting."
+  - name: "Cross-reference era guide if applicable"
+    text: "Era-specific damage profiles exist (Kodachrome fade for 1960s, magnetic album glue for 1980s). See the linked decade index for era-aware calibration on top of damage-specific protocol."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
