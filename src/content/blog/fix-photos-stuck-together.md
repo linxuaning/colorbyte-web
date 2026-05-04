@@ -29,6 +29,25 @@ howTo:
     text: "When to seek professional help:"
 ---
 
+## Quick Answer: How to Separate Photos Stuck Together
+
+**Do not pull dry** — forcing stuck photos apart tears the emulsion and destroys image content permanently.
+
+**Water method** (most stuck photos from humidity, flooding, or storage):
+1. Fill a tray with cool distilled water (tap water minerals can stain emulsion).
+2. Submerge the stuck photos face-down for 20–30 minutes until the emulsion softens.
+3. Gently slide the photos apart while still underwater — do not peel from above.
+4. Lay each photo face-up on a clean white towel to air-dry. Do not use heat.
+
+**Humidity method** (brittle, antique, or dry-bonded prints):
+1. Place photos in a sealed container with a damp sponge nearby — not touching the photos.
+2. Leave 24–48 hours. The controlled humidity softens the emulsion without soaking.
+3. Try to slide apart gently. If resistant, return for another 12–24 hours.
+
+If your photos separated but have emulsion damage, tears, or surface staining left behind, [AI photo restoration can repair the remaining damage](/old-photo-restoration) in under 60 seconds — scan first, then process.
+
+---
+
 > **TL;DR** — Stuck photos almost always tear if pulled apart dry. Two safe paths: (1) Soak in cool distilled water 20-30 min, gently slide apart while submerged, air-dry face-up. (2) For brittle/old prints, use a freezer-controlled humidity method (3-5 days) to slowly relax emulsion. Even partial separation + AI restoration recovers more than dry-tearing. Scan whatever you save and process via AI to fill emulsion damage.
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims for AI face/texture recovery rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021). For physical handling, see [Library of Congress photograph care](https://www.loc.gov/preservation/care/photo.html).
