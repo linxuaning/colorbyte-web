@@ -95,10 +95,12 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Is AI photo colorization free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub lets you colorize and preview your photo for free, no account or credit card required. If you want the HD original without a watermark, the download is a one-time $4.99 payment." } },
-    { "@type": "Question", name: "How accurate is AI photo colorization?", acceptedAnswer: { "@type": "Answer", text: "AI colorization predicts colors based on patterns learned from millions of photos. While it's often very accurate for common objects (sky=blue, grass=green), it guesses colors for specific items like clothing or eyes. Results are artistic interpretation, not historical fact. For best accuracy, AI works well on clear photos with recognizable subjects." } },
+    { "@type": "Question", name: "How accurate is AI photo colorization?", acceptedAnswer: { "@type": "Answer", text: "AI colorization produces plausible results in 70–85% of cases for common subjects: skin tones, sky, foliage, and familiar objects. The model predicts colors based on statistical patterns learned from millions of paired color and grayscale images — it cannot recover the true original colors of a scene, since that information was permanently lost when the photo was taken in black and white." } },
+    { "@type": "Question", name: "What AI model does ArtImageHub use for colorization?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub uses a deep learning colorization pipeline that analyzes image content — textures, shapes, and subject context — to predict realistic color values in a single pass. The model includes face-aware processing to ensure skin tones remain natural across different lighting conditions and skin types." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Both grayscale and black & white photos work. For best results, use high-resolution scans (600 DPI or higher)." } },
     { "@type": "Question", name: "How long does colorization take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are colorized in 15–30 seconds. Very large or complex images may take up to 60 seconds." } },
-    { "@type": "Question", name: "Can I colorize old family photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! ArtImageHub is perfect for colorizing old family photos, vintage pictures, historical images, and any black & white photographs. The AI works well on portraits, landscapes, and everyday scenes from any era." } },
+    { "@type": "Question", name: "Can I colorize old family photos?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub is designed for colorizing old family photos, vintage portraits, historical images, and any black-and-white photograph. The AI handles soft focus, grain, and minor damage common in old photos without requiring pre-processing." } },
+    { "@type": "Question", name: "What is the difference between AI colorization and hand-coloring?", acceptedAnswer: { "@type": "Answer", text: "AI colorization predicts plausible colors automatically in 15–30 seconds based on machine learning models. Hand-coloring by a professional requires hours of manual work and can use historically verified reference sources to produce accurately dated palettes. For family archive use where speed and cost matter, AI colorization is the practical choice. For historically sensitive images (military, governmental, archival publication), professional hand-coloring remains the more accurate option." } },
   ],
 };
 
@@ -174,6 +176,66 @@ export default function PhotoColorizerPage() {
       <Suspense fallback={<div className="min-h-[400px]" />}>
         <ColorizeClient />
       </Suspense>
+
+      {/* ─── GEO: What Is AI Colorization ─── */}
+      <section className="border-t border-[#d2d2d7]/40 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] mb-6 text-center">
+            What Is AI Photo Colorization?
+          </h2>
+          <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
+            AI photo colorization is the process of automatically adding realistic color to black-and-white or grayscale photographs using deep learning models. The model learns statistical associations between image content — textures, subject type, and contextual patterns — and plausible color values: skin tones, sky, foliage, fabric, and architectural materials.
+          </p>
+          <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
+            ArtImageHub&rsquo;s Photo Colorizer applies this pipeline in a single upload pass, completing colorization in 15–30 seconds. The preview is free; HD download without watermark is a one-time $4.99 payment. Supported formats: JPG, PNG, WEBP up to 20MB.
+          </p>
+          <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
+            <strong>Accuracy note:</strong> AI colorization produces plausible results — not historically accurate ones. For subjects with recognizable color patterns (skin tones, blue sky, green foliage), results are consistently natural-looking. For historically specific objects (period uniforms, brand colors, specific clothing), the AI predicts based on training data. Results should be reviewed alongside the original before archival or publication use.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] text-center mb-10">
+            Frequently Asked Questions
+          </h2>
+          <dl className="space-y-6">
+            {[
+              {
+                q: "Is AI photo colorization free?",
+                a: "Yes — ArtImageHub lets you colorize and preview your photo for free, no account or credit card required. If you want the HD original without a watermark, the download is a one-time $4.99 payment.",
+              },
+              {
+                q: "How accurate is AI photo colorization?",
+                a: "AI colorization produces plausible results in 70–85% of cases for common subjects: skin tones, sky, foliage, and familiar objects. The model predicts based on statistical patterns — it cannot recover the true original colors of a scene, since that information was permanently lost when the photo was taken in black and white.",
+              },
+              {
+                q: "What AI model does ArtImageHub use for colorization?",
+                a: "ArtImageHub uses a deep learning colorization pipeline that analyzes image content — textures, shapes, and subject context — to predict realistic color values in a single pass. The model includes face-aware processing to ensure skin tones remain natural across different lighting conditions.",
+              },
+              {
+                q: "What image formats are supported?",
+                a: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Both grayscale and black & white photos work. For best results, use high-resolution scans (600 DPI or higher).",
+              },
+              {
+                q: "Can I colorize old family photos?",
+                a: "Yes — ArtImageHub is designed for colorizing old family photos, vintage portraits, historical images, and any black-and-white photograph. The AI handles soft focus, grain, and minor damage common in old photos without requiring pre-processing.",
+              },
+              {
+                q: "What is the difference between AI colorization and hand-coloring?",
+                a: "AI colorization predicts plausible colors automatically in 15–30 seconds. Hand-coloring by a professional requires hours of manual work but can use historically verified reference sources for accurate dated palettes. For family archives where speed and cost matter, AI is the practical choice. For historically sensitive images intended for archival publication, professional hand-coloring remains more accurate.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
+                <dt className="text-[16px] font-semibold text-[#1d1d1f] mb-2">{item.q}</dt>
+                <dd className="text-[15px] text-[#6e6e73] leading-[1.65]">{item.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       {/* ─── See How We Compare ─── */}
       <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">

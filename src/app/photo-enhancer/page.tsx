@@ -96,8 +96,10 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "Is AI photo enhancement free?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub lets you enhance and preview your photo for free, no account or credit card required. If you want the HD original without a watermark, the download is a one-time $4.99 payment." } },
-    { "@type": "Question", name: "What does AI photo enhancement do?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement improves photo quality in multiple ways: (1) Face enhancement detects and sharpens faces, fixing eyes, skin, and facial details. (2) Super resolution upscales images 4× without losing quality. (3) Noise reduction removes grain and artifacts. (4) Color correction improves contrast and vibrancy. All automatically in one click." } },
-    { "@type": "Question", name: "Can AI fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, to an extent. AI photo enhancement can significantly improve slightly blurry photos by sharpening details and applying super resolution. However, extremely blurry or out-of-focus photos cannot be fully recovered — AI predictions work best when some detail remains in the original image." } },
+    { "@type": "Question", name: "What does AI photo enhancement do?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement applies four operations automatically: (1) Face enhancement using GFPGAN (Wang et al., Tencent ARC Lab, 2021) reconstructs facial detail — sharpening eyes, skin, and features. (2) Super-resolution using Real-ESRGAN (Wang et al., 2021) upscales up to 4× original size. (3) Noise reduction removes grain and compression artifacts. (4) Color correction improves contrast and vibrancy. All run in a single processing pass." } },
+    { "@type": "Question", name: "What AI models power the photo enhancer?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub uses Real-ESRGAN (Wang et al., 2021) for 4× super-resolution upscaling and GFPGAN (Wang et al., Tencent ARC Lab, 2021) for face-specific reconstruction. Both are peer-reviewed, open-source models. For face-forward photos, both models run in the same processing pass." } },
+    { "@type": "Question", name: "How much does super-resolution upscaling improve image size?", acceptedAnswer: { "@type": "Answer", text: "Real-ESRGAN upscales up to 4× original dimensions. A 500×500px photo becomes 2000×2000px. The model uses learned detail patterns rather than pixel interpolation, producing sharp output rather than blurry enlargement. A 300 DPI scan at 4×4 inches can become print-quality at 8×8 inches after upscaling." } },
+    { "@type": "Question", name: "Can AI fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement significantly improves slightly blurry photos. For motion blur and soft focus on portrait photos, GFPGAN restores face sharpness well. Extreme blur (heavily out-of-focus or severely motion-blurred landscapes) cannot be fully recovered — AI works best when some detail remains in the original." } },
     { "@type": "Question", name: "What image formats are supported?", acceptedAnswer: { "@type": "Answer", text: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Works with any photo: old photos, selfies, portraits, product images, landscapes, and more." } },
     { "@type": "Question", name: "How long does enhancement take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are enhanced in 15–30 seconds. Very large or complex images may take up to 60 seconds." } },
   ],
@@ -176,6 +178,66 @@ export default function PhotoEnhancerPage() {
       <Suspense fallback={<div className="min-h-[400px]" />}>
         <EnhanceClient />
       </Suspense>
+
+      {/* ─── GEO: What Is AI Photo Enhancement ─── */}
+      <section className="border-t border-[#d2d2d7]/40 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] mb-6 text-center">
+            What Is AI Photo Enhancement?
+          </h2>
+          <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
+            AI photo enhancement applies machine learning models to improve the technical quality of a photograph — automatically, without manual editing. It covers four operations: (1) face-aware reconstruction using <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021), which sharpens facial detail while preserving identity; (2) super-resolution upscaling up to 4× using <strong>Real-ESRGAN</strong> (Wang et al., 2021); (3) automatic noise reduction; and (4) contrast and color correction.
+          </p>
+          <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
+            ArtImageHub&rsquo;s Photo Enhancer runs this full pipeline in a single upload pass — no manual step selection required. Processing takes 15–30 seconds. Free to preview; HD download without watermark is a one-time $4.99 payment.
+          </p>
+          <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
+            <strong>Resolution output:</strong> Real-ESRGAN upscales up to 4× original dimensions. A 500×500px photo becomes 2000×2000px using learned detail patterns rather than pixel interpolation — producing sharp output rather than blurry enlargement. A 300 DPI scan at 4×4 inches can become print-ready at 8×8 inches after upscaling.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] text-center mb-10">
+            Frequently Asked Questions
+          </h2>
+          <dl className="space-y-6">
+            {[
+              {
+                q: "Is AI photo enhancement free?",
+                a: "Yes — ArtImageHub lets you enhance and preview your photo for free, no account or credit card required. If you want the HD original without a watermark, the download is a one-time $4.99 payment.",
+              },
+              {
+                q: "What does AI photo enhancement do?",
+                a: "AI photo enhancement applies four operations automatically: (1) Face enhancement using GFPGAN reconstructs facial detail. (2) Super-resolution using Real-ESRGAN upscales up to 4× original size. (3) Noise reduction removes grain and compression artifacts. (4) Color correction improves contrast and vibrancy. All run in a single processing pass.",
+              },
+              {
+                q: "What AI models power the photo enhancer?",
+                a: "ArtImageHub uses Real-ESRGAN (Wang et al., 2021) for 4× super-resolution upscaling and GFPGAN (Wang et al., Tencent ARC Lab, 2021) for face-specific reconstruction. Both are peer-reviewed, open-source models that run together in a single processing pass for face-forward photos.",
+              },
+              {
+                q: "How much does super-resolution upscaling improve image size?",
+                a: "Real-ESRGAN upscales up to 4× original dimensions — a 500×500px photo becomes 2000×2000px. The model uses learned detail patterns rather than pixel interpolation, so output looks sharp rather than blurry when enlarged. A 300 DPI scan at 4×4 inches can become print-ready at 8×8 inches.",
+              },
+              {
+                q: "Can AI fix blurry photos?",
+                a: "AI enhancement significantly improves slightly blurry photos. For motion blur and soft focus on portrait photos, GFPGAN restores face sharpness well. Extreme blur (heavily out-of-focus or severely motion-blurred images) cannot be fully recovered — AI works best when some detail remains in the original.",
+              },
+              {
+                q: "What image formats are supported?",
+                a: "We accept JPG, JPEG, PNG, and WEBP formats up to 20MB per file. Works with any photo: old photos, selfies, portraits, product images, and landscapes.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
+                <dt className="text-[16px] font-semibold text-[#1d1d1f] mb-2">{item.q}</dt>
+                <dd className="text-[15px] text-[#6e6e73] leading-[1.65]">{item.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       {/* ─── See How We Compare ─── */}
       <section className="border-t border-[#d2d2d7]/40 bg-[#faf8f4] py-16 sm:py-20">

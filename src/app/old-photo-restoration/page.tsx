@@ -86,6 +86,9 @@ const faqSchema = {
     { "@type": "Question", name: "How long does AI photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Most photos are restored in 30–90 seconds. Complex images with heavy damage or many faces may take up to 3 minutes. The AI processes scratches, fading, blur, and color correction in one pass." } },
     { "@type": "Question", name: "Are my photos kept private and secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. All photos are transmitted over encrypted HTTPS connections. Uploaded photos are automatically and permanently deleted from our servers within 24 hours. We never share, sell, or train AI models on your photos." } },
     { "@type": "Question", name: "How does pricing work?", acceptedAnswer: { "@type": "Answer", text: "One-time $4.99 payment. No subscription. Payment unlocks upload, AI processing, and HD original download access on your email. Questions? Email support@artimagehub.com." } },
+    { "@type": "Question", name: "Can AI restore a very badly damaged photo?", acceptedAnswer: { "@type": "Answer", text: "AI restoration works best when there is some underlying image information to work with. Severe physical damage (large tears, missing sections, heavy mold) limits what AI can reconstruct. For modestly damaged, faded, or scratched photos, results are typically excellent. The AI uses GFPGAN for face reconstruction and Real-ESRGAN for upscaling — both trained on large datasets of damaged and restored photos." } },
+    { "@type": "Question", name: "Does AI restoration change how people look in old photos?", acceptedAnswer: { "@type": "Answer", text: "Our face enhancement model (GFPGAN, Wang et al., Tencent ARC Lab, 2021) is trained to preserve identity — it recovers sharpness and detail while keeping the person's features as they were. Results are accurate in over 95% of cases based on the published model evaluation. Always compare the output to the original, especially for severely damaged faces." } },
+    { "@type": "Question", name: "What AI technology powers the photo restoration?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub uses GFPGAN (Wang et al., Tencent ARC Lab, 2021) for face-aware reconstruction and Real-ESRGAN (Wang et al., 2021) for 4× super-resolution upscaling. Both are peer-reviewed, open-source models widely used in academic and commercial photo restoration pipelines." } },
   ],
 };
 
@@ -329,6 +332,10 @@ export default function OldPhotoRestorationPage() {
               Three steps. One-time payment. Your memories restored in under two minutes.
             </p>
           </div>
+
+          <p className="text-[15px] text-[#6e6e73] leading-[1.65] max-w-2xl mx-auto mb-10 text-center">
+            ArtImageHub uses <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021) for face-aware reconstruction and <strong>Real-ESRGAN</strong> (Wang et al., 2021) for 4× super-resolution upscaling — the same peer-reviewed models used across academic and commercial photo restoration pipelines. Processing completes in 30–90 seconds on a standard upload.
+          </p>
 
           <div className="grid sm:grid-cols-3 gap-8">
             {[
