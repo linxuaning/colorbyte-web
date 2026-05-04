@@ -5,8 +5,8 @@ import { de } from "./de";
 import { ja } from "./ja";
 import { ko } from "./ko";
 import { zhCN } from "./zh-CN";
-import { enToolClient } from "./en";
-import type { LocaleSEO, ToolClientCopy } from "./types";
+import { enObjectRemoverClient, enToolClient } from "./en";
+import type { LocaleSEO, ObjectRemoverClientCopy, ToolClientCopy } from "./types";
 
 const map: Record<string, LocaleSEO> = {
   es,
@@ -30,4 +30,11 @@ export type ToolKey = "restore" | "colorize" | "enhance";
 export function getToolClientCopy(locale: string, tool: ToolKey): ToolClientCopy {
   const localeCopy = map[locale]?.toolClient?.[tool];
   return localeCopy ?? enToolClient[tool];
+}
+
+// Object Remover client copy (Phase 1 AI Tool, 2026-05-04). Falls back to
+// English when the locale lacks `toolClient.objectRemover`. Currently only
+// zh-CN ships translations; en is the source of truth.
+export function getObjectRemoverClientCopy(locale: string): ObjectRemoverClientCopy {
+  return map[locale]?.toolClient?.objectRemover ?? enObjectRemoverClient;
 }

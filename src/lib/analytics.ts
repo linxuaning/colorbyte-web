@@ -239,7 +239,7 @@ export const trackProcessingComplete = ({
   source,
 }: {
   taskId: string;
-  tool: "restore" | "enhance" | "colorize";
+  tool: "restore" | "enhance" | "colorize" | "object-remover";
   processingTimeMs: number;
   source?: PaymentFunnelSource;
 }) => {

@@ -57,6 +57,65 @@ export type ToolClientCopy = {
   restartAnother: string;         // "Restore Another Photo" / "Colorize Another Photo" / "Enhance Another Photo"
 };
 
+// ---------------------------------------------------------------------------
+// Object Remover client UI copy. Distinct from ToolClientCopy because the
+// object-remover surface has unique controls (brush / mask / undo) that don't
+// fit the upload→process→done pattern of restore/colorize/enhance.
+// ---------------------------------------------------------------------------
+
+export type ObjectRemoverClientCopy = {
+  // Pay gate
+  payGateHeadline: string;
+  payGateBody: string;
+  unlockButton: string;
+  alreadyPaidLabel: string;
+  alreadyPaidPlaceholder: string;
+  alreadyPaidCheckButton: string;
+  alreadyPaidFound: string;
+  alreadyPaidNotFound: string;
+
+  // Upload
+  uploadHeadline: string;
+  uploadHint: string;
+  uploadCta: string;
+  uploadFormatHint: string;
+
+  // Mask drawing
+  brushLabel: string;
+  undoButton: string;
+  clearButton: string;
+  differentPhotoButton: string;
+  removeButton: string;
+  maskInstructions: string;
+
+  // Submitting
+  submittingShort: string;
+  submittingMid: string;
+  submittingLong: string;
+  submittingExtra: string;
+  submittingNote: string;
+
+  // Done
+  doneTitle: string;
+  originalLabel: string;
+  cleanedLabel: string;
+  downloadButton: string;
+  downloadHint: string;
+  restartAnother: string;
+
+  // Errors
+  errorTitle: string;
+  errorBodyPrefix: string;
+  errorRetrySame: string;
+  errorTryAgain: string;
+  errorUploadDifferent: string;
+  errorInvalidFileType: string;
+  errorFileTooLarge: string;
+  errorMaskExportFailed: string;
+  errorServiceBusy: string;
+  errorRequestTimeout: string;
+};
+
 export type LocaleSEO = {
   oldPhotoRestoration: PageMeta;
   colorizer: PageMeta;
@@ -66,5 +125,8 @@ export type LocaleSEO = {
     restore: ToolClientCopy;
     colorize: ToolClientCopy;
     enhance: ToolClientCopy;
+    // object-remover added 2026-05-04. Optional during phase-1 rollout (no
+    // /{locale}/ai-tools/object-remover routes yet) — wire when locale variants ship.
+    objectRemover?: ObjectRemoverClientCopy;
   };
 };

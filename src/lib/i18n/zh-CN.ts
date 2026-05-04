@@ -1,4 +1,55 @@
-import type { LocaleSEO, ToolClientCopy } from "./types";
+import type { LocaleSEO, ObjectRemoverClientCopy, ToolClientCopy } from "./types";
+
+// Object Remover (Phase 1, 2026-05-04). Translations parallel
+// `enObjectRemoverClient` in en.ts. Strings activate when /zh-CN/ai-tools/object-remover
+// route ships (deferred per foreman 5-4 — no empty-content risk while route absent).
+const zhObjectRemoverClient: ObjectRemoverClientCopy = {
+  payGateHeadline: "解锁物体消除工具",
+  payGateBody:
+    "一次付费，无限次使用高清物体消除。返回时使用相同邮箱即可上传并清理你的照片。",
+  unlockButton: "解锁访问",
+  alreadyPaidLabel: "已付款？输入邮箱恢复访问",
+  alreadyPaidPlaceholder: "you@example.com",
+  alreadyPaidCheckButton: "查询",
+  alreadyPaidFound: "访问已恢复 — 现在可以上传你的照片。",
+  alreadyPaidNotFound: "未找到该邮箱的有效订阅。",
+
+  uploadHeadline: "上传一张照片",
+  uploadHint: "下一步会让你画出想要消除的部分",
+  uploadCta: "选择照片",
+  uploadFormatHint: "JPG、PNG、WEBP，最大 20MB",
+
+  brushLabel: "画笔",
+  undoButton: "撤销",
+  clearButton: "清空",
+  differentPhotoButton: "换张照片",
+  removeButton: "消除",
+  maskInstructions: "画出想要消除的区域。边缘多涂一些 — 留出余地 AI 修补效果更干净。",
+
+  submittingShort: "正在上传图片和蒙版...",
+  submittingMid: "AI 正在重建你画过的区域...",
+  submittingLong: "正在生成最终结果 — 即将完成。",
+  submittingExtra: "服务器响应较慢，请稍候。",
+  submittingNote: "请保持本页打开。照片处理过程加密，24 小时内自动删除。",
+
+  doneTitle: "物体已消除",
+  originalLabel: "原图",
+  cleanedLabel: "清理后",
+  downloadButton: "下载高清结果",
+  downloadHint: "已为此邮箱解锁原始质量",
+  restartAnother: "清理另一张照片",
+
+  errorTitle: "出了点问题",
+  errorBodyPrefix: "物体消除失败，请重试，或者发邮件到 ",
+  errorRetrySame: "重试当前照片",
+  errorTryAgain: "再试一次",
+  errorUploadDifferent: "换一张照片重试",
+  errorInvalidFileType: "文件类型不支持，请使用 JPG、PNG 或 WEBP。",
+  errorFileTooLarge: "文件过大，最大支持 20MB。",
+  errorMaskExportFailed: "蒙版导出失败，请重试。",
+  errorServiceBusy: "服务暂时繁忙，请稍后再试。",
+  errorRequestTimeout: "请求超时。你的网络可能较慢 — 请重试。",
+};
 
 const zhRestoreClient: ToolClientCopy = {
   dropHeadline: "拖放照片到这里",
@@ -142,5 +193,6 @@ export const zhCN: LocaleSEO = {
     restore: zhRestoreClient,
     colorize: zhColorizeClient,
     enhance: zhEnhanceClient,
+    objectRemover: zhObjectRemoverClient,
   },
 };

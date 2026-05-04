@@ -179,6 +179,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    // AI Tools cluster (Phase 1 launch 2026-05-04). EN-only at launch — locale
+    // variants (/{locale}/ai-tools/object-remover) deferred until translation
+    // batch ships, per foreman 5-4 GO ("avoid empty content if 6 locale routes
+    // open before strings translated"). Adding alternates here without locale
+    // pages would create false-claim hreflang.
+    {
+      url: `${baseUrl}/ai-tools/object-remover`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     // T-F: previously-missing landing routes (already-built pages, not in sitemap until now)
     ...[
       { path: "ai-photo-fixer", priority: 0.8 },
