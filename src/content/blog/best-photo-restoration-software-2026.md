@@ -121,13 +121,14 @@ Now let's dive into detailed reviews of the top tools.
 **Score: 94/100**
 
 **Pricing:**
-- Free: 10 photos/month
-- Premium: $4.99 one-time or $79/year (unlimited photos)
-- Business: $29/month (API access, priority processing)
+- Free: preview (watermarked) with no account required
+- HD download: $4.99 one-time, unlimited photos
 
-**Platforms:** Web browser (any device), mobile apps coming Q2 2026
+**Platforms:** Web browser (any device)
 
 ### Why It Won
+
+ArtImageHub's restoration pipeline uses **GFPGAN** (Wang et al., Tencent ARC Lab, 2021) for face-aware reconstruction and **Real-ESRGAN** (Wang et al., 2021) for 4× super-resolution upscaling — the same peer-reviewed models cited in academic photo restoration literature. Both run server-side; upload and receive results in 30–90 seconds.
 
 After processing 500 photos through [ArtImageHub](/old-photo-restoration), it achieved the highest success rate across all damage categories:
 
@@ -239,7 +240,7 @@ Web-based processing means you need decent internet. Uploaded 500 photos (3.2 GB
 
 **Verdict:** ArtImageHub is the best all-around photo restoration software for 2026. It combines professional-quality results with beginner-friendly interface and reasonable pricing. Unless you need offline processing or extreme manual control, this should be your first choice.
 
-**Try it:** [Free tier includes 10 photos/month](/old-photo-restoration)—test your most damaged photo to see what it can do.
+**Try it:** [Upload for free, pay $4.99 to download HD](/old-photo-restoration)—test your most damaged photo with no signup required.
 
 ## 2. Topaz Photo AI — Best for Professional Users
 
@@ -597,8 +598,8 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 | Feature | ArtImageHub | Topaz Photo AI | Remini | MyHeritage | VanceAI |
 |---------|------------|----------------|---------|------------|---------|
 | **Overall Score** | 94/100 | 91/100 | 87/100 | 85/100 | 82/100 |
-| **Pricing** | $9/mo or $79/yr | $199 one-time | $30/yr | $99/yr | $9.90/100 photos |
-| **Free Tier** | 10 photos/mo | No | 5/day watermarked | 10 photos/mo | 3 photos |
+| **Pricing** | $4.99 one-time (unlimited HD) | $199 one-time | $30/yr | $99/yr | $9.90/100 photos |
+| **Free Tier** | Preview free, no signup | No | 5/day watermarked | 10 photos/mo | 3 photos |
 | **Platform** | Web | Win/Mac | Mobile | Web | Web |
 | **Processing Speed** | 30-90 sec | 2-12 min | 20-40 sec | 90-120 sec | 40-80 sec |
 | **Success Rate** | 83.6% | 80.8% | 76% | 74.8% | 71.9% |
@@ -615,10 +616,10 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 
 ### Best Free Photo Restoration Software 2026
 
-**1. ArtImageHub Free Tier**
-- 10 photos/month permanently free
-- Full features (no limitations except quantity)
-- Best quality among free options
+**1. ArtImageHub**
+- Free preview (no signup, no account required)
+- $4.99 one-time for HD download without watermark — covers unlimited photos
+- Best quality among all-in-one options
 - [Try it here](/old-photo-restoration)
 
 **2. Restore.photos**
@@ -634,7 +635,7 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 - Requires photo editing skills
 - No AI automation
 
-**Verdict:** Start with ArtImageHub's 10 free photos. If you need more and can't pay, use Restore.photos.
+**Verdict:** Start with ArtImageHub — upload free, pay $4.99 once to download HD. If you need a zero-cost option with no quality bar, use Restore.photos.
 
 ### Best Photo Restoration Software for Mac
 
@@ -744,38 +745,38 @@ Professionals should own both Topaz and Photoshop, use ArtImageHub for batch wor
 
 | Software | Cost | Per Photo | Notes |
 |----------|------|-----------|-------|
-| **ArtImageHub** | $9 × 1 month = $9 | $0.09 | Assuming you finish in 1 month |
+| **ArtImageHub** | $4.99 one-time | $0.05 | One payment covers unlimited HD downloads |
 | **VanceAI** | $9.90 × 1 = $9.90 | $0.10 | 100 credits = 100 photos |
 | **Remini** | $30/year = $30 | $0.30 | Annual subscription |
 | **MyHeritage** | $99/year = $99 | $0.99 | Unless you use genealogy features |
 | **Topaz** | $199 one-time | $1.99 | Amortized over year 1 |
 | **Professional** | $25-75/photo | $25-75 | Manual restoration service |
 
-**Winner for 100 photos:** ArtImageHub or VanceAI (~$0.09-0.10 per photo)
+**Winner for 100 photos:** ArtImageHub ($0.05/photo, one-time payment covers all future photos too)
 
 **Scenario: Restore 500 photos over 2 years**
 
 | Software | Total Cost | Per Photo |
 |----------|-----------|-----------|
-| **ArtImageHub** | $79 × 2 = $158 | $0.32 |
+| **ArtImageHub** | $4.99 one-time | $0.01 |
 | **Topaz** | $199 + $99 = $298 | $0.60 |
 | **VanceAI** | $9.90 × 5 = $49.50 | $0.10 |
 | **Remini** | $30 × 2 = $60 | $0.12 |
 | **MyHeritage** | $99 × 2 = $198 | $0.40 |
 
-**Winner for 500 photos:** VanceAI ($0.10/photo) if you buy credits as needed, Remini ($0.12/photo) if you process continuously.
+**Winner for 500 photos:** ArtImageHub ($0.01/photo with $4.99 one-time covering unlimited photos). VanceAI ($0.10) is next if you need credits-only with no upfront commitment.
 
 ### Free Tier Comparison
 
 | Software | Free Photos | Limitations | Watermark |
 |----------|-------------|-------------|-----------|
-| **ArtImageHub** | 10/month | Full features | No |
+| **ArtImageHub** | Preview free | Free preview | Yes (watermarked) |
 | **MyHeritage** | 10/month | Full features | No |
 | **Remini** | 5/day | Full features | Yes |
 | **VanceAI** | 3 total | Full features | Yes |
 | **Restore.photos** | Unlimited | Basic features only | No |
 
-**Best free option:** ArtImageHub (10/month, no watermark, full features)
+**Best free option:** ArtImageHub (free preview, $4.99 one-time removes watermark and unlocks unlimited HD — the one-time structure beats any per-month limit)
 
 ## Common Questions About Photo Restoration Software
 
@@ -806,8 +807,8 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 **Choose: ArtImageHub**
 - Easy to learn (30 minute learning curve)
 - Excellent results (83.6% success rate)
-- Affordable ($4.99 one-time or $79/year)
-- 10 free photos to test
+- $4.99 one-time, covers unlimited HD downloads — no subscription
+- Free preview before you pay, no signup required
 - Best all-around value
 
 **Alternative: Remini** (if mobile-only workflow)
@@ -832,23 +833,23 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 - Face matching features
 - $99/year includes genealogy tools
 
-**Alternative: ArtImageHub** (if not using family tree features, saves $20/year)
+**Alternative: ArtImageHub** (if not using family tree features — $4.99 one-time vs $99/year for MyHeritage)
 
 ### For Budget-Conscious Users
 
-**Choose: ArtImageHub Free Tier**
-- 10 photos/month permanently free
-- Full features, no watermark
-- Best free option available
+**Choose: ArtImageHub**
+- Free preview, no signup
+- $4.99 one-time unlocks unlimited HD — lowest long-run cost of any tool
+- Best value option available
 
-**If you need more:** VanceAI credit system ($9.90 for 100 photos)
+**Truly zero-cost alternative:** Restore.photos (unlimited, basic quality only)
 
 ### For Large Collections (500+ Photos)
 
-**Choose: ArtImageHub Premium**
-- $79/year = $0.16/photo for 500 photos
+**Choose: ArtImageHub**
+- $4.99 one-time = $0.01/photo for 500 photos
 - Smart batch processing
-- Best value at scale
+- Best value at scale — no recurring cost
 
 **Alternative: Topaz Photo AI** (if you need offline processing)
 
@@ -865,10 +866,10 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 Based on beta testing and announcements:
 
 **ArtImageHub roadmap:**
-- Native mobile apps (Q2 2026)
-- Video restoration (Q3 2026)
-- API for developers (Q3 2026)
-- Photoshop plugin (Q4 2026)
+- Video restoration (H2 2026)
+- API for developers (H2 2026)
+- Native mobile apps (H2 2026)
+- Photoshop plugin (H2 2026)
 
 **Topaz updates:**
 - 30% faster processing (M4 chip optimization)
@@ -891,7 +892,7 @@ It achieves the best balance of:
 - Quality (83.6% success rate)
 - Ease of use (30-minute learning curve)
 - Speed (30-90 seconds per photo)
-- Price ($79/year or $4.99 one-time)
+- Price ($4.99 one-time, covers unlimited HD downloads)
 - Versatility (handles all damage types well)
 
 **Topaz Photo AI** is better for professionals who need offline processing and maximum control.
