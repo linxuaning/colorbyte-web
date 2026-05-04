@@ -312,7 +312,7 @@ def main() -> int:
         default="cli",
         help="cli (default, free via Claude Code subscription) | api (legacy, needs ANTHROPIC_API_KEY)",
     )
-    ap.add_argument("--cli-timeout", type=int, default=180, help="per-post claude CLI timeout in seconds (--client cli only)")
+    ap.add_argument("--cli-timeout", type=int, default=300, help="per-post claude CLI timeout in seconds (--client cli only)")
     args = ap.parse_args()
 
     if not (args.slug or args.slugs_file or args.all):
@@ -357,13 +357,18 @@ def main() -> int:
     start = time.time()
     for slug in slugs:
         for locale in locales:
-            success, msg = translate_one(
-                client,
-                slug,
-                locale,
-                skip_existing=not args.force,
-                dry_run=args.dry_run,
-            )
+            try:
+                success, msg = translate_one(
+                    client,
+                    slug,
+                    locale,
+                    skip_existing=not args.force,
+                    dry_run=args.dry_run,
+                )
+            except RuntimeError as e:
+                # Resilient: a single timeout / API error shouldn't crash the whole batch.
+                # Log and move on to the next post.
+                success, msg = False, f"{slug} → {locale}: {e}"
             tag = "OK" if success else "FAIL"
             print(f"  [{tag}] {msg}")
             if success:
