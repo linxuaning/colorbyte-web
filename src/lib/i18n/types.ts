@@ -120,6 +120,10 @@ export type LocaleSEO = {
   oldPhotoRestoration: PageMeta;
   colorizer: PageMeta;
   enhancer: PageMeta;
+  // New tools — optional during rollout (EN fallback when absent).
+  denoiser?: PageMeta;
+  deblurrer?: PageMeta;
+  jpegFix?: PageMeta;
   // Optional during rollout — default to EN copy if missing.
   toolClient?: {
     restore: ToolClientCopy;

@@ -17,6 +17,9 @@ type LocaleCode = (typeof LOCALES)[number]["code"];
 
 const NON_EN: LocaleCode[] = ["es", "pt-BR", "fr", "de", "ja", "ko"];
 
+// Pages that have no locale variants — hide switcher rather than 404.
+const EN_ONLY_PATHS: string[] = [];
+
 function detectLocale(pathname: string): LocaleCode {
   for (const locale of NON_EN) {
     if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)) {
@@ -45,6 +48,9 @@ export default function LanguageSwitcher() {
   const current = detectLocale(pathname);
   const currentLocale = LOCALES.find((l) => l.code === current)!;
 
+  // EN-only pages have no locale variants — hide switcher to prevent 404.
+  const isEnOnly = EN_ONLY_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+
   const handleSelect = useCallback(
     (code: LocaleCode) => {
       if (code === current) { setOpen(false); return; }
@@ -66,6 +72,8 @@ export default function LanguageSwitcher() {
     document.addEventListener("mousedown", onDown);
     return () => document.removeEventListener("mousedown", onDown);
   }, [open]);
+
+  if (isEnOnly) return null;
 
   return (
     <div ref={ref} className="relative">
