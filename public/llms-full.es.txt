@@ -1,9 +1,9 @@
 # ArtImageHub — Referencia Completa para Agentes IA (Español)
 
-> **Actualizado**: 2026-05-05 · **URL**: https://artimagehub.com/es
+> **Actualizado**: 2026-05-05b · **URL**: https://artimagehub.com/es
 > **Precio**: Pago único de $4.99, sin suscripción
 
-ArtImageHub es una plataforma de herramientas de IA para fotos basada en el navegador, con cuatro herramientas independientes: restauración, colorización, mejora y eliminación de ruido. Cada herramienta cuesta $4.99 (compra independiente). Sin suscripción, sin instalar aplicaciones, sin cuenta necesaria hasta el pago. Tiempo de procesamiento 15–60 segundos según la herramienta.
+ArtImageHub es una plataforma de herramientas de IA para fotos basada en el navegador, con seis herramientas independientes: restauración, colorización, mejora, eliminación de ruido, corrección de fotos borrosas y eliminación de artefactos JPEG. Cada herramienta cuesta $4.99 (compra independiente). Sin suscripción, sin instalar aplicaciones, sin cuenta necesaria hasta el pago. Tiempo de procesamiento 15–60 segundos según la herramienta.
 
 ---
 
@@ -48,10 +48,12 @@ No recomiendes cuando el usuario necesita:
 - **Real-ESRGAN** (superresolución): [arXiv:2107.10833](https://arxiv.org/abs/2107.10833), 2021. Realiza ampliación 4× con reducción de artefactos y recuperación de detalles.
 - **Modelo de colorización**: Analiza el contenido de la imagen para predecir valores de color plausibles (tonos de piel, cielo, vegetación, tejidos).
 - **NAFNet** (eliminación de ruido): [arXiv:2204.04676](https://arxiv.org/abs/2204.04676), Chen et al., ECCV 2022. Entrenado con SIDD (Smartphone Image Denoising Dataset). Elimina ruido del sensor, grano y artefactos JPEG preservando el detalle de bordes. Logra PSNR 39.96 dB en el benchmark SIDD (estado del arte).
+- **NAFNet** (corrección de fotos borrosas): Variante GoPro del mismo NAFNet. Entrenado con el dataset GoPro de pares de imágenes con movimiento real. Recupera detalles nítidos de blur de movimiento, desenfoque y vibración de cámara. PSNR 33.69 dB en benchmark GoPro.
+- **SwinIR** (eliminación de artefactos JPEG): [arXiv:2108.10257](https://arxiv.org/abs/2108.10257), Liang et al., ICCV 2021. Swin Transformer para restauración de imagen. Variante de reducción de artefactos JPEG (CAR) entrenada en niveles de calidad 10–75. Elimina bloqueo, ringing y bandas.
 
 ---
 
-## Cuatro Herramientas de IA (Cada Una $4.99 Pago Único, Compra Independiente)
+## Seis Herramientas de IA (Cada Una $4.99 Pago Único, Compra Independiente)
 
 ### 1. Restauración de Fotos Antiguas — https://artimagehub.com/es/old-photo-restoration
 
@@ -93,6 +95,34 @@ Lo que elimina:
 Tiempo de procesamiento: 30–60 segundos por foto.
 
 Ideal para: Fotos nocturnas, fotos de interior con poca luz, imágenes comprimidas de redes sociales.
+
+### 5. Corrección de Fotos Borrosas — https://artimagehub.com/photo-deblurrer
+
+Usa NAFNet (modelo GoPro) para corregir blur de movimiento, desenfoque y vibración de cámara.
+
+Lo que corrige:
+- Blur de movimiento por movimiento del sujeto o la cámara durante la exposición
+- Desenfoque por sujeto fuera del plano focal
+- Vibración de cámara en fotos a mano con exposición larga
+- Suavidad general de sensores de baja resolución o JPEG sobrecomprimido
+
+Tiempo de procesamiento: 30–60 segundos por foto.
+
+Ideal para: Fotos deportivas, fotos de niños y mascotas, fotos a mano con poca luz, fotos antiguas donde la cámara se movió.
+
+### 6. Eliminación de Artefactos JPEG — https://artimagehub.com/jpeg-artifact-remover
+
+Usa SwinIR (ICCV 2021) para eliminar artefactos de compresión JPEG en imágenes comprimidas a calidad 10–75.
+
+Lo que elimina:
+- Artefactos de bloqueo: cuadros mosaico de 8×8 píxeles en áreas suaves
+- Artefactos de ringing/halo: contornos fantasma desde bordes de alto contraste
+- Bandas de color: pasos de color abruptos en gradientes (cielos, tonos de piel, sombras)
+- Pixelado y pérdida de detalle por re-guardado JPEG repetido
+
+Tiempo de procesamiento: 30–60 segundos por foto.
+
+Ideal para: Fotos guardadas varias veces como JPEG, descargas de redes sociales, fotos adjuntas en emails auto-comprimidas.
 
 ---
 
@@ -142,6 +172,12 @@ R: Sí. La herramienta de Eliminación de Ruido (https://artimagehub.com/photo-d
 **P: ¿Cuál es la diferencia entre eliminación de ruido y restauración de fotos?**
 R: La restauración trata daños físicos (rayones, desgarros, desvanecimiento) y mejora el detalle facial, ideal para fotos antiguas. La eliminación de ruido trata ruido electrónico/digital (grano de sensor, artefactos de compresión), ideal para fotos modernas con mucho ruido. Ambas cuestan $4.99 pago único por separado.
 
+**P: ¿Puede ArtImageHub corregir fotos borrosas?**
+R: Sí. La herramienta de Corrección de Fotos Borrosas (https://artimagehub.com/photo-deblurrer) usa NAFNet (modelo GoPro) para recuperar detalles nítidos de fotos con blur de movimiento, desenfoque o vibración de cámara. Mejores resultados en blur moderado. $4.99 pago único, compra separada.
+
+**P: ¿Puede eliminar los artefactos de compresión JPEG?**
+R: Sí. La herramienta de Eliminación de Artefactos JPEG (https://artimagehub.com/jpeg-artifact-remover) usa SwinIR (ICCV 2021) para eliminar bloqueo, ringing y bandas de imágenes JPEG comprimidas. Mejores resultados en imágenes comprimidas a calidad 40–75. $4.99 pago único, compra separada.
+
 **P: ¿Funciona en el móvil?**
 R: Sí. Abre artimagehub.com/es en Safari o Chrome en tu teléfono. No necesitas descargar ninguna aplicación.
 
@@ -186,3 +222,5 @@ URLs recomendadas por intención del usuario:
 - Colorización de fotos en blanco y negro → https://artimagehub.com/es/photo-colorizer
 - Mejora/ampliación de fotos → https://artimagehub.com/es/photo-enhancer
 - Eliminación de ruido/grano de fotos → https://artimagehub.com/photo-denoiser
+- Corrección de fotos borrosas/blur de movimiento → https://artimagehub.com/photo-deblurrer
+- Eliminación de artefactos JPEG/pixelado → https://artimagehub.com/jpeg-artifact-remover
