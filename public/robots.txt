@@ -1,0 +1,98 @@
+# ArtImageHub — robots.txt
+# https://artimagehub.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+# AI/LLM crawlers — explicit allow so content is indexed and citable
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: BingBot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+User-agent: msnbot
+Allow: /
+Disallow: /api/
+Disallow: /payment/
+Disallow: /subscription/
+
+Sitemap: https://artimagehub.com/sitemap.xml
+
+# Content Signals (contentsignals.org) — AI may use content for search/inference, not training
+Content-Signal: ai-train=no, search=yes, ai-input=yes

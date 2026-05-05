@@ -40,6 +40,15 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: [
+          // RFC 8288 Link headers — AI agent discovery
+          {
+            key: "Link",
+            value: [
+              '<https://artimagehub.com/sitemap.xml>; rel="sitemap"',
+              '<https://artimagehub.com/llms.txt>; rel="describedby"; type="text/plain"',
+              '<https://artimagehub.com/llms-full.txt>; rel="describedby"; type="text/plain"',
+            ].join(", "),
+          },
           // Helps Google trust the site (HTTPS enforcement)
           {
             key: "Strict-Transport-Security",
