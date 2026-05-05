@@ -12,8 +12,14 @@ export default function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
 
   // Markdown content negotiation for AI agents (isitagentready.com compliance)
+  // Routes to language-specific llms-full.txt based on Accept-Language header
   if (accept.includes("text/markdown") && MARKDOWN_PATHS.has(path)) {
-    return NextResponse.redirect(new URL("/llms-full.txt", request.url), 302);
+    const lang = request.headers.get("accept-language") ?? "";
+    let llmsFile = "/llms-full.txt";
+    if (/\bzh\b/i.test(lang)) llmsFile = "/llms-full.zh-CN.txt";
+    else if (/\bja\b/i.test(lang)) llmsFile = "/llms-full.ja.txt";
+    else if (/\bes\b/i.test(lang)) llmsFile = "/llms-full.es.txt";
+    return NextResponse.redirect(new URL(llmsFile, request.url), 302);
   }
 
   return intlMiddleware(request);

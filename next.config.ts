@@ -130,16 +130,16 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // llms-full.txt served as text/markdown so AI agents get correct Content-Type
-      {
-        source: "/llms-full.txt",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "text/markdown; charset=utf-8",
-          },
-        ],
-      },
+      // llms-full.txt variants served as text/markdown so AI agents get correct Content-Type
+      ...[
+        "/llms-full.txt",
+        "/llms-full.zh-CN.txt",
+        "/llms-full.ja.txt",
+        "/llms-full.es.txt",
+      ].map((source) => ({
+        source,
+        headers: [{ key: "Content-Type", value: "text/markdown; charset=utf-8" }],
+      })),
       // API Catalog (RFC 9727)
       {
         source: "/.well-known/api-catalog",
