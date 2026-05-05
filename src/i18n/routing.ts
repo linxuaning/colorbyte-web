@@ -5,6 +5,9 @@ export const routing = defineRouting({
   defaultLocale: "en",
   // English served at / (no prefix); all others get /{locale}/
   localePrefix: "as-needed",
+  // Disable auto-redirect based on Accept-Language header.
+  // Users switch language via the on-page switcher; / always serves EN.
+  localeDetection: false,
 });
 
 export type Locale = (typeof routing.locales)[number];
