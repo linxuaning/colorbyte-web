@@ -170,6 +170,9 @@ function Header() {
           <Link href="/old-photo-restoration" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Restore
           </Link>
+          <Link href="/photo-denoiser" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
+            Denoise
+          </Link>
           <Link href="/blog" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Journal
           </Link>
@@ -250,6 +253,7 @@ function Footer() {
             <h3 className="font-playfair text-[14px] font-600 text-[#d4bc91] uppercase tracking-[0.08em] mb-4">Product</h3>
             <nav className="flex flex-col gap-3 text-[14px]" aria-label="Product links">
               <Link href="/old-photo-restoration" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Photo Restoration</Link>
+              <Link href="/photo-denoiser" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Photo Denoiser</Link>
               <Link href="/#pricing" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">Pricing</Link>
               <Link href="/subscription" className="text-[#a8967e] hover:text-[#d4bc91] transition-colors">My Account</Link>
             </nav>

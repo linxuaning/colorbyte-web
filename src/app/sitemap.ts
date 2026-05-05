@@ -106,6 +106,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...TOOL_LOCALE_PREFIXES.map((loc) => localeToolEntry("photo-colorizer", loc)),
     toolEntry("photo-enhancer"),
     ...TOOL_LOCALE_PREFIXES.map((loc) => localeToolEntry("photo-enhancer", loc)),
+    toolEntry("photo-denoiser"),
     // High-value landing pages (138K/month search volume)
     {
       url: `${baseUrl}/how-to-restore-old-photos`,

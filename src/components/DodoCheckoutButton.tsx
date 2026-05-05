@@ -31,6 +31,7 @@ interface DodoCheckoutButtonProps {
   checkoutEmail?: string;
   resumeTaskId?: string;
   funnelSource?: PaymentFunnelSource;
+  featureKey?: string;
 }
 
 type DodoCheckoutResponse = {
@@ -53,6 +54,7 @@ export default function DodoCheckoutButton({
   checkoutEmail,
   resumeTaskId,
   funnelSource = {},
+  featureKey = "restoration",
 }: DodoCheckoutButtonProps) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -105,6 +107,7 @@ export default function DodoCheckoutButton({
         },
         body: JSON.stringify({
           email: normalizedCheckoutEmail,
+          feature_key: featureKey,
           resume_task_id: resumeTaskId || null,
           ...paymentFunnelPayload(enrichedSource),
         }),

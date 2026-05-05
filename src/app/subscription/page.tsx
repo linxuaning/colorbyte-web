@@ -97,6 +97,7 @@ export default function SubscriptionPage() {
   }, [searchParams]);
 
   const funnelSource = readPaymentFunnelSource(searchParams);
+  const featureKey = searchParams.get("feature_key")?.trim() || "restoration";
   const normalizedEmail = email.trim().toLowerCase();
   const hasValidCheckoutEmail = EMAIL_REGEX.test(normalizedEmail);
   const shouldShowOffer = !sub || RESTARTABLE_INACTIVE_STATUSES.has(sub.status);
@@ -313,6 +314,7 @@ export default function SubscriptionPage() {
                 checkoutEmail={email}
                 resumeTaskId={resumeTaskId || undefined}
                 funnelSource={funnelSource}
+                featureKey={featureKey}
               />
 
               <div className="mt-4 rounded-xl border border-white/10 bg-white/5 p-3 text-[12px] text-white/75">
