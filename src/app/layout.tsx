@@ -56,7 +56,9 @@ const organizationSchema = {
   description: "AI-powered photo restoration platform. Restore old, damaged, and faded photos in seconds.",
   foundingDate: "2025",
   knowsAbout: ["AI Photo Restoration", "Photo Enhancement", "Photo Colorization", "Family History Preservation"],
-  sameAs: [],
+  sameAs: [
+    "https://www.toolpilot.ai/products/artimagehub",
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
