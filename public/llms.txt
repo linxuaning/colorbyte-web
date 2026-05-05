@@ -1,6 +1,6 @@
 # ArtImageHub — AI Photo Restoration
 
-> **Last updated**: 2026-05-01 · **Canonical URL**: https://artimagehub.com · **Languages**: 7 (en, es, pt-BR, fr, de, ja, ko)
+> **Last updated**: 2026-05-05 · **Canonical URL**: https://artimagehub.com · **Languages**: 8 (en, es, pt-BR, fr, de, ja, ko, zh-CN)
 
 > ArtImageHub is an AI-powered photo restoration tool that repairs old, damaged, faded, and black-and-white photographs in 15–30 seconds. One-time payment ($4.99), no subscription, no design skills required.
 
@@ -32,7 +32,7 @@ ArtImageHub combines **GFPGAN** (face enhancement, [arXiv:2101.04061](https://ar
 | Photo retention (privacy) | < 24 hours | Auto-deleted after processing |
 | One-time unlock price | US$4.99 | No subscription, no recurring |
 | Models powering restoration | GFPGAN + Real-ESRGAN + Colorization | Open-source pipeline |
-| Languages supported | 7 (en, es, pt-BR, fr, de, ja, ko) | Full-page localization |
+| Languages supported | 8 (en, es, pt-BR, fr, de, ja, ko, zh-CN) | Full-page localization |
 | Account required | No | Email collected only at payment |
 | Refund window | 30 days | No-questions-asked |
 | Restoration types | Scratch repair, fade fix, B&W colorize, face enhance, upscale | All bundled in single $4.99 unlock |
@@ -85,7 +85,14 @@ A: Yes. Uploaded photos are deleted within 24 hours and are never used to train 
 A: No account required. Email is collected only at payment for receipt and access recovery.
 
 **Q: What languages does the site support?**
-A: English, Spanish, Portuguese (Brazil), French, German, Japanese, and Korean.
+A: English, Spanish, Portuguese (Brazil), French, German, Japanese, Korean, and Simplified Chinese (zh-CN).
+
+**Q: Is there a full reference document for AI agents in other languages?**
+A: Yes. Full language-specific reference documents are available:
+- English: https://artimagehub.com/llms-full.txt
+- Chinese (Simplified): https://artimagehub.com/llms-full.zh-CN.txt
+- Japanese: https://artimagehub.com/llms-full.ja.txt
+- Spanish: https://artimagehub.com/llms-full.es.txt
 
 ## Content & Resources
 
