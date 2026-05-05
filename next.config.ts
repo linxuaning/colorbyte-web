@@ -130,6 +130,53 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // llms-full.txt served as text/markdown so AI agents get correct Content-Type
+      {
+        source: "/llms-full.txt",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "text/markdown; charset=utf-8",
+          },
+        ],
+      },
+      // API Catalog (RFC 9727)
+      {
+        source: "/.well-known/api-catalog",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/linkset+json",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, stale-while-revalidate=3600",
+          },
+        ],
+      },
+      // Agent discovery files
+      {
+        source: "/.well-known/mcp/:path*",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/json",
+          },
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "*",
+          },
+        ],
+      },
+      {
+        source: "/.well-known/agent-skills/:path*",
+        headers: [
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "*",
+          },
+        ],
+      },
     ];
   },
 

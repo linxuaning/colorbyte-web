@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "photo-restoration",
+      "type": "tool",
+      "description": "Restore old, damaged, and faded photographs using AI. Removes scratches, tears, stains, and repairs missing areas.",
+      "url": "https://artimagehub.com/.well-known/agent-skills/photo-restoration/SKILL.md",
+      "sha256": "18dd7b47a385563ce64e1a610c7edd02253a60b83d13b127b9e205c9587c2787"
+    },
+    {
+      "name": "photo-colorization",
+      "type": "tool",
+      "description": "Colorize black-and-white photographs using AI. Produces natural, historically accurate color renditions.",
+      "url": "https://artimagehub.com/.well-known/agent-skills/photo-colorization/SKILL.md",
+      "sha256": "b46e3a28397b1b23923410bc5e651e97ad8be2bb90c08c66fcf5b2d85a825e3b"
+    },
+    {
+      "name": "photo-enhancement",
+      "type": "tool",
+      "description": "Enhance photo resolution and clarity using AI upscaling. Increases resolution up to 4× while sharpening details.",
+      "url": "https://artimagehub.com/.well-known/agent-skills/photo-enhancement/SKILL.md",
+      "sha256": "677823815dc7d2026730e55ca9932a8dcff7b2353ab453e928f527d419b910f8"
+    }
+  ]
+}

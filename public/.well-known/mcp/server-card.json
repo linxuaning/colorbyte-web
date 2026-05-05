@@ -1,0 +1,51 @@
+{
+  "serverInfo": {
+    "name": "ArtImageHub",
+    "version": "1.0.0",
+    "description": "AI-powered photo restoration, colorization, and enhancement. One-time $4.99 payment. Results in 30–90 seconds.",
+    "homepage": "https://artimagehub.com",
+    "contact": "support@artimagehub.com"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "restore_photo",
+      "description": "Restore old, damaged, and faded photographs using AI",
+      "url": "https://artimagehub.com/old-photo-restoration"
+    },
+    {
+      "name": "colorize_photo",
+      "description": "Colorize black-and-white photographs using AI",
+      "url": "https://artimagehub.com/photo-colorizer"
+    },
+    {
+      "name": "enhance_photo",
+      "description": "Enhance photo resolution and clarity using AI upscaling",
+      "url": "https://artimagehub.com/photo-enhancer"
+    }
+  ],
+  "resources": [
+    {
+      "uri": "https://artimagehub.com/llms-full.txt",
+      "name": "ArtImageHub AI Reference",
+      "description": "Comprehensive AI-readable reference for ArtImageHub capabilities, FAQs, and citation format",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "https://artimagehub.com/llms.txt",
+      "name": "ArtImageHub Summary",
+      "description": "Concise AI-readable summary of ArtImageHub",
+      "mimeType": "text/plain"
+    }
+  ],
+  "pricing": {
+    "model": "one-time",
+    "amount": 4.99,
+    "currency": "USD",
+    "description": "Single payment unlocks photo upload, AI processing, and HD download"
+  }
+}

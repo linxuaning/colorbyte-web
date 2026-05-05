@@ -1,0 +1,42 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://artimagehub.com",
+      "service-desc": [
+        {
+          "href": "https://colorbyte-api.onrender.com/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://artimagehub.com/blog",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://colorbyte-api.onrender.com/health",
+          "type": "application/json"
+        }
+      ],
+      "item": [
+        {
+          "href": "https://artimagehub.com/old-photo-restoration",
+          "type": "text/html",
+          "title": "Photo Restoration"
+        },
+        {
+          "href": "https://artimagehub.com/photo-colorizer",
+          "type": "text/html",
+          "title": "Photo Colorization"
+        },
+        {
+          "href": "https://artimagehub.com/photo-enhancer",
+          "type": "text/html",
+          "title": "Photo Enhancement"
+        }
+      ]
+    }
+  ]
+}

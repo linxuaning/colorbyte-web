@@ -116,6 +116,12 @@ export default function RootLayout({
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}
       >
         <RouteChromeGuard />
+        {/* WebMCP — expose site tools to AI agents via browser modelContext API */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){if(typeof navigator==='undefined'||!navigator.modelContext)return;navigator.modelContext.provideContext({tools:[{name:'restore_photo',description:'Restore old, damaged, and faded photographs using AI. Results in 30-90 seconds.',inputSchema:{type:'object',properties:{action:{type:'string',const:'restore'}},required:['action']},execute:async function(){window.location.href='/old-photo-restoration';return{success:true};}},{name:'colorize_photo',description:'Colorize black-and-white photographs using AI with historically accurate colors.',inputSchema:{type:'object',properties:{action:{type:'string',const:'colorize'}},required:['action']},execute:async function(){window.location.href='/photo-colorizer';return{success:true};}},{name:'enhance_photo',description:'Enhance photo resolution and clarity using AI upscaling up to 4x.',inputSchema:{type:'object',properties:{action:{type:'string',const:'enhance'}},required:['action']},execute:async function(){window.location.href='/photo-enhancer';return{success:true};}}]});})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
