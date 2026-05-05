@@ -179,7 +179,7 @@ class CLIClient:
 
 class APIClient:
     """Legacy direct-billed path. Requires ANTHROPIC_API_KEY + founder authorization."""
-    def __init__(self, api_key: str, model: str = "claude-sonnet-4-6"):
+    def __init__(self, api_key: str, model: str = "claude-opus-4-7"):
         try:
             from anthropic import Anthropic
         except ImportError as e:
@@ -305,7 +305,7 @@ def main() -> int:
     ap.add_argument("--skip-existing", action="store_true", default=True, help="skip posts already translated (default: true)")
     ap.add_argument("--force", action="store_true", help="overwrite existing translations")
     ap.add_argument("--dry-run", action="store_true", help="print what would be translated without calling LLM")
-    ap.add_argument("--model", default="claude-sonnet-4-6", help="model id (only used when --client api)")
+    ap.add_argument("--model", default="claude-opus-4-7", help="model id (only used when --client api)")
     ap.add_argument(
         "--client",
         choices=["cli", "api"],
