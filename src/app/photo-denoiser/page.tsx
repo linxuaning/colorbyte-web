@@ -207,7 +207,7 @@ export default function PhotoDenoiserPage() {
       <section className="border-t border-[#d2d2d7]/40 py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-5">
           <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] mb-6 text-center">
-            What Is AI Photo Denoising?
+            What Does an AI Photo Denoiser Actually Remove?
           </h2>
           <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
             AI photo denoising uses machine learning to detect and separate noise from signal in digital images. Unlike Gaussian blur or median filtering — which reduce noise by averaging pixels and sacrificing sharpness — AI denoising models learn to distinguish noise patterns from real image structure, preserving edges and fine texture while removing grain.
@@ -217,6 +217,62 @@ export default function PhotoDenoiserPage() {
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
             <strong>When to use it:</strong> High-ISO low-light shots, scanned film photos with grain, JPEG compressed images with blocking artifacts, and smartphone night-mode photos where processing introduced color noise. Processing takes 30–60 seconds per image. Free preview; HD download is a one-time $4.99 payment.
+          </p>
+        </div>
+      </section>
+
+      {/* Competitor comparison */}
+      <section className="border-t border-[#d2d2d7]/40 py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <h2 className="text-[24px] sm:text-[30px] font-bold tracking-[-0.02em] text-[#1d1d1f] mb-8 text-center">
+            How Does ArtImageHub Compare to Other Denoisers?
+          </h2>
+          <div className="overflow-x-auto rounded-xl border border-[#d2d2d7]/60">
+            <table className="w-full text-[14px]">
+              <thead>
+                <tr className="border-b border-[#d2d2d7]/60 bg-[#f5f5f7]">
+                  <th className="px-4 py-3 text-left font-semibold text-[#1d1d1f]">Tool</th>
+                  <th className="px-4 py-3 text-center font-semibold text-[#1d1d1f]">Price</th>
+                  <th className="px-4 py-3 text-center font-semibold text-[#1d1d1f]">Model</th>
+                  <th className="px-4 py-3 text-center font-semibold text-[#1d1d1f]">No Subscription</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#d2d2d7]/40 bg-white">
+                <tr className="bg-blue-50/40">
+                  <td className="px-4 py-3 font-semibold text-[#0071e3]">ArtImageHub</td>
+                  <td className="px-4 py-3 text-center">$4.99 one-time</td>
+                  <td className="px-4 py-3 text-center">NAFNet SIDD</td>
+                  <td className="px-4 py-3 text-center">✅</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-[#444]">Topaz DeNoise AI</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">$79/year</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">Proprietary</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">❌</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-[#444]">Adobe Lightroom AI Denoise</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">$9.99+/month</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">Adobe Sensei</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">❌</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-[#444]">DxO PhotoLab</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">$229 one-time</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">PRIME / DeepPRIME</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">✅</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 text-[#444]">Neat Image</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">$44.90 one-time</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">Traditional NR</td>
+                  <td className="px-4 py-3 text-center text-[#6e6e73]">✅</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-[13px] text-[#6e6e73] text-center">
+            ArtImageHub is the lowest-cost AI denoiser with no subscription required. Best for occasional use or single-project needs.
           </p>
         </div>
       </section>
@@ -243,11 +299,15 @@ export default function PhotoDenoiserPage() {
               },
               {
                 q: "Is photo denoising separate from photo restoration?",
-                a: "Yes — each feature costs $4.99 one-time and is purchased independently. Buying restoration does not unlock denoising, and vice versa. Each tool can be unlocked and used on its own.",
+                a: "Yes — ArtImageHub charges $4.99 one-time per feature, independently. Photo restoration (crack repair, face enhancement, colorization) is one purchase. Photo denoising (grain and noise removal with NAFNet) is a separate $4.99 purchase. You can buy either tool on its own without needing the other. Future features follow the same model — each unlocks with a separate one-time payment, and you only pay for what you actually use. There are no bundles or subscriptions.",
               },
               {
                 q: "What image formats are supported?",
-                a: "JPG, PNG, and WEBP up to 20MB per file. Works with smartphone photos, DSLR exports, scanned images, and screenshots.",
+                a: "JPG, PNG, and WEBP files up to 20MB are supported. The denoiser works with smartphone photos exported from iOS or Android, RAW-converted JPEGs from DSLRs, scanned images saved as JPG or PNG, and screenshots. For best results, upload the original image before any additional compression or editing — JPEG re-compression after denoising can reintroduce artifacts the model just removed.",
+              },
+              {
+                q: "How does AI denoising differ from sharpening?",
+                a: "Sharpening increases contrast at edges to create the perception of crispness — it does not remove noise, and can actually amplify grain by making it more visually prominent. AI denoising specifically targets the noise component of an image: it models what real noise looks like and subtracts it, leaving the underlying signal intact. The result is a cleaner image that still sharpens well afterward if needed. Running sharpening before denoising typically makes results worse; apply denoising first.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
