@@ -15,13 +15,13 @@ faq:
   - question: "What resolution do I need for a poster-sized photo display at a memorial service?"
     answer: "For a 16x20 inch poster-sized display at a memorial service, you need a minimum of 2400x3000 pixels at 150 DPI. At 3-to-5-foot viewing distances typical of an easel-mounted display, 150 DPI is the practical minimum before pixelation becomes visible. For sharper close-range viewing, target 300 DPI, which requires 4800x6000 pixels for 16x20 output — a file size FedEx Office and Walgreens Photo handle for large-format printing. ArtImageHub's Real-ESRGAN upscaling can take a 600 DPI scan of a 4x6 print (2400x3600 pixel source) and produce output sufficient for 16x20 at 150 DPI. For small originals — wallet-size or 3x3 studio prints — scan at 1200 DPI before uploading. The ArtImageHub pipeline runs GFPGAN for face recovery and NAFNet for detail sharpening on the upscaled output, giving you the best possible resolution from the available source material before sending the file to a print service."
   - question: "What slideshow specs work best for projector display at a memorial service?"
-    answer: "For projector display at a memorial service or celebration of life, export your restored photos at 1920x1080 pixels for standard HD projector output, or 3840x2160 pixels for 4K projectors. Most funeral home projectors and portable event projectors are HD 1080p — check with the venue. When building the slideshow in PowerPoint, Apple Keynote, or Google Slides, set the slide dimensions to 16:9 (widescreen) and import photos at the native 1920x1080 or higher resolution. Do not upscale inside the slideshow software — import at the correct pixel dimensions from the restored file. For slideshow timing, 5 to 7 seconds per photo is standard for a background music slideshow, with key photographs extended to 10 to 12 seconds. ArtImageHub's full-resolution downloads export at the maximum resolution the AI pipeline produced, which is suitable for 1080p projection without additional processing. For portraits specifically, GFPGAN's face recovery produces sharper face detail on projection than the unrestored original, which typically appears noticeably soft or blurry when projected at screen size."
+    answer: "Export restored photos at 1920x1080 pixels for standard HD projector output, or 3840x2160 for 4K. Most funeral home and portable event projectors are 1080p — confirm with the venue before finalizing. In PowerPoint, Keynote, or Google Slides, set slide dimensions to 16:9 and import photos at the correct pixel dimensions — do not let the slideshow software upscale from smaller files. For timing, 5 to 7 seconds per photo is standard for a background music slideshow, with key photographs held at 10 to 12 seconds. ArtImageHub's full-resolution downloads are suitable for 1080p projection without additional processing. For portraits, GFPGAN's face recovery produces sharper face detail when projected than the unrestored original, which typically appears noticeably soft or blurry at screen width. The free preview at ArtImageHub lets you evaluate this face sharpening quality specifically before paying $4.99 for the download."
   - question: "Which types of photo damage does AI restore in under 30 seconds versus what takes longer?"
-    answer: "AI photo restoration at ArtImageHub processes most photographs in 20 to 35 seconds regardless of damage type — the processing time is determined by image size and server load, not by damage complexity. However, the quality of results varies significantly by damage type, and this variation affects how useful the restored image will be for your memorial service display. AI resolves in a single pass with consistently good results: fading and color shift in chromogenic prints, surface scratches narrower than 2-3mm, analog film grain and noise, soft focus from consumer camera lenses, and black-and-white face recovery using GFPGAN. AI produces variable results that require preview evaluation: colorization of black-and-white photos (plausible but not guaranteed accurate), blurry candid photos with faces smaller than 50 pixels wide, severely underexposed photos with minimal tonal information, and photos with large areas of physical damage such as missing paper or torn sections. For memorial service use, this distinction matters practically: if you have 20 photos to process in a 3-day window, upload all of them, preview each result, and prioritize downloading the ones with clearly usable output. Photos with very severe damage that produce unsatisfactory AI results may need to be displayed in their damaged state if time does not allow manual restoration."
+    answer: "ArtImageHub processes most photographs in 20 to 35 seconds regardless of damage type — processing time is determined by image size and server load, not damage complexity. Result quality varies by damage type, and this matters for memorial use. AI resolves consistently in one pass: fading and color shift in chromogenic prints, surface scratches narrower than 2-3mm, analog film grain, soft focus from consumer lenses, and face recovery using GFPGAN. AI produces variable results requiring preview evaluation: colorization of black-and-white photos (plausible but not guaranteed accurate for every detail), blurry candids with faces smaller than 50 pixels wide, severely underexposed photos with minimal tonal information, and large areas of physical damage such as torn sections. For a 3-day memorial timeline, upload all photos and preview each result. Download the clearly usable ones immediately. Photos with very severe damage that produce unsatisfactory results may need to be displayed as-is if time does not allow further processing."
   - question: "What are the print specs for Walgreens, CVS, and Shutterfly for memorial display photos?"
-    answer: "For Walgreens Photo, standard print sizes up to 8x10 are processed at 200-300 DPI and are available for same-day pickup at most locations — critically important when working within a 3-5 day memorial timeline. Walgreens accepts JPEG files and recommends 300 DPI at final print size. For a 5x7, this means 1500x2100 pixels; for an 8x10, 2400x3000 pixels. CVS Photo offers similar same-day service for prints up to 8x10, with the same 300 DPI recommendation. For larger prints (11x14, 16x20), both Walgreens and CVS offer pickup in 1-3 days. Shutterfly does not offer same-day pickup but provides higher-quality large-format printing with consistent color management. For a memorial poster at 16x20, Shutterfly recommends 3200x4000 pixels minimum at their standard quality setting. All three services accept JPEG uploads — export your ArtImageHub download as a high-quality JPEG (95% quality or higher) for print submission. FedEx Office and Staples also offer same-day large-format printing for a single poster-sized memorial display, typically at lower quality than a dedicated photo lab but with faster turnaround."
+    answer: "Walgreens Photo offers same-day pickup for prints up to 8x10 at most locations, which is critical for a 3-to-5-day memorial timeline. Walgreens recommends 300 DPI at final print size: 1500x2100 pixels for a 5x7, and 2400x3000 for an 8x10. For 11x14 and 16x20, pickup is 1-3 days. CVS Photo offers identical same-day service for prints up to 8x10 at the same 300 DPI standard. Shutterfly does not offer same-day pickup but provides higher-quality large-format printing — their 16x20 recommendation is 3200x4000 pixels minimum. For same-day large-format poster printing, FedEx Office and Staples both offer this service, typically with next-business-day or same-day turnaround. All services accept JPEG uploads — export your ArtImageHub download as a high-quality JPEG at 95% quality or higher for print submission. ArtImageHub downloads are in sRGB color space, which all these print services handle correctly without conversion."
   - question: "How does the $4.99 cost fit into a typical memorial service budget?"
-    answer: "A typical memorial service or celebration of life in the United States costs between $7,000 and $12,000 for a full funeral, or $1,500 to $4,000 for a simpler graveside or celebration-of-life service. Within that budget, photo display costs are typically a minor line item. Families commonly display 10 to 30 photographs at a memorial service — a mix of framed prints, a poster-sized central display, and a projected slideshow. At $4.99 per photo, restoring 15 damaged or faded photographs costs $74.85 total. Printing 5 framed 5x7 prints at Walgreens at standard pricing costs $10 to $15. A 16x20 memorial poster printed at FedEx Office runs $15 to $25. The total photography display cost for a memorial service with AI-restored photos, professional-quality prints, and a digital slideshow is typically under $150 — less than 2% of even a modest service budget. For families dealing with the emotional weight of a loss and the practical pressure of a 3 to 5 day preparation window, the combination of 30-second AI processing, free preview, and $4.99 one-time download at artimagehub.com removes both cost and time as barriers to honoring a loved one with high-quality photographs."
+    answer: "A full funeral in the United States costs $7,000 to $12,000; a simpler graveside or celebration-of-life service runs $1,500 to $4,000. Photo display costs are a minor line item within either budget. Families typically display 10 to 30 photographs — framed prints, a central poster display, and a projected slideshow. At $4.99 per photo, restoring 15 damaged photographs costs $74.85 total. Five framed 5x7 prints at Walgreens costs $10 to $15. A 16x20 memorial poster at FedEx Office runs $15 to $25. The total photography display cost — AI restoration, professional prints, and a digital slideshow — is typically under $150, less than 2% of a modest service budget. For families navigating grief and a 3-to-5-day preparation window simultaneously, the combination of 30-second AI processing, free preview, and $4.99 one-time download at artimagehub.com removes cost and time as barriers to displaying the photographs that best honor a loved one's memory."
 ---
 
 When a family member dies, photographs become urgent. The memorial service — whether a traditional funeral, a celebration of life, or a graveside gathering — typically happens within 3 to 5 days of death. In that window, families are simultaneously managing grief, logistics, and the practical task of assembling photographs that represent a complete life.
@@ -58,17 +58,11 @@ The most visually prominent photo display at most memorial services is a large c
 
 ## What Are the Slideshow Specifications for Projector Display?
 
-A projected memorial slideshow is displayed at a resolution determined by the projector, not by the original photograph. Understanding projector resolution prevents the common mistake of displaying photographs that look acceptable on screen but appear noticeably pixelated at projection size.
+A projected slideshow is displayed at the projector's resolution, not the original photograph's. Most funeral home and event venue projectors are HD 1080p — export restored photos at 1920x1080 pixels. For 4K projectors, export at 3840x2160.
 
-**Standard HD projectors (1080p):** Output at 1920x1080 pixels. This is the most common projector specification at funeral homes, event spaces, and church fellowship halls. Photographs exported at 1920x1080 pixels match the projector output exactly — no scaling, no quality loss.
+In PowerPoint or Apple Keynote, set slide dimensions to 1920x1080 for 16:9 widescreen and import photos at their native resolution. For timing, 5 to 7 seconds per image works well for a background music slideshow, with key photographs extended to 10 to 12 seconds. A 25-photo slideshow at 7 seconds runs approximately 3 minutes.
 
-**4K projectors:** Output at 3840x2160 pixels. Less common but increasingly available at larger venues. Photographs exported at 3840x2160 fill a 4K projector without upscaling.
-
-**Building the slideshow:** In PowerPoint or Apple Keynote, set the presentation dimensions to 1920x1080 (for 16:9 widescreen) or 1920x1440 (for 4:3 if the venue uses older projector equipment). Import restored photographs at their native resolution — the software will scale them to fit the slide, but starting with a 1920x1080 or higher resolution file ensures no quality loss in the final display.
-
-**Timing guidance:** 5 to 7 seconds per image is standard for a background music slideshow. Extend key photographs — the central portrait, wedding photos, photos with children — to 10 to 12 seconds. A 25-photograph slideshow at 7 seconds per image runs approximately 3 minutes, which is appropriate for a musical selection of 3 to 4 minutes.
-
-**GFPGAN face recovery** at ArtImageHub is particularly valuable for slideshow use because faces are displayed large on screen. A portrait photograph with a soft or slightly blurry face that looks acceptable at 4x6 print size will appear noticeably soft when projected at screen width. **GFPGAN's** face-specific reconstruction produces sharper, more detailed face rendering in the projection context than the unrestored original.
+**GFPGAN face recovery** is particularly valuable for slideshow use — faces are displayed large on screen, and a portrait that looks acceptable at 4x6 print size will appear noticeably soft when projected. GFPGAN's reconstruction produces sharper face detail at projection size than the unrestored original.
 
 ## Which Damage Types Does AI Resolve Quickly, and Which Require More Time?
 
@@ -98,41 +92,13 @@ The processing time at ArtImageHub is 20 to 35 seconds for most photographs rega
 
 ## What Are the Specific Print Service Specs for Each Provider?
 
-### Walgreens Photo
+**Walgreens Photo** offers same-day pickup for prints up to 8x10 at most locations — critical for a 3-to-5-day timeline. Resolution standard: 300 DPI at final print size (1500x2100 for 5x7, 2400x3000 for 8x10). Larger sizes (11x14, 16x20) take 1-3 days. Upload as JPEG at 95% quality or higher.
 
-Walgreens Photo is the most accessible same-day printing option for memorial service preparation. Most Walgreens locations offer same-day pickup for prints up to 8x10, and 1-to-3-day turnaround for larger formats.
+**CVS Photo** matches Walgreens for same-day prints up to 8x10, same 300 DPI standard, similar pricing. Upload as JPEG for in-store kiosk or online order.
 
-- **4x6:** 1200x1800 pixels at 300 DPI. Standard print, $.35 to $.50, same-day pickup.
-- **5x7:** 1500x2100 pixels at 300 DPI. Same-day pickup.
-- **8x10:** 2400x3000 pixels at 300 DPI. Same-day pickup at most locations.
-- **11x14:** 3300x4200 pixels at 300 DPI. 1-3 day order.
-- **16x20:** 4800x6000 pixels at 300 DPI. 1-3 day order.
+**Shutterfly** does not offer same-day pickup. Their 16x20 recommendation is 3200x4000 pixels minimum. Order time is 3-5 days plus shipping — unsuitable for Day 3 ordering toward a Day 5 service. Best used for post-service memorial books or archive prints for family members.
 
-Upload format: JPEG at high quality (95% or above). Walgreens Photo accepts files up to 20MB through the online upload or in-store kiosk.
-
-### CVS Photo
-
-CVS Photo offers same-day pickup for standard sizes at most locations. Pricing and resolution requirements are similar to Walgreens.
-
-- **Same-day prints** available for 4x6, 5x7, and 8x10.
-- **Resolution standard:** 300 DPI at final print size.
-- Upload as JPEG. Same-day pickup at most locations with online order.
-
-### Shutterfly
-
-Shutterfly does not offer same-day pickup but provides higher-quality large-format printing with better color management than in-store kiosks.
-
-- **16x20 poster:** Recommends 3200x4000 pixels minimum at their standard quality setting.
-- **Standard order time:** 3-5 days plus shipping, making Shutterfly unsuitable for a Day 3 order toward a Day 5 service unless you use rush shipping.
-- Best used for post-service printed memorial books or archive-quality large prints for family members.
-
-### FedEx Office / Staples
-
-For same-day large-format printing (poster-size memorial display), FedEx Office and Staples offer large-format print services with same-day or next-business-day turnaround.
-
-- **16x20 or 20x24 poster:** Submit as PDF or JPEG at 150-300 DPI at final size.
-- **Color management:** Request sRGB color space — the ArtImageHub download is in sRGB by default.
-- **Paper options:** Photo paper gives the best result for a portrait display; matte paper reduces glare for bright venue lighting.
+**FedEx Office and Staples** offer same-day large-format poster printing. Submit as PDF or JPEG at 150-300 DPI at final print size. ArtImageHub downloads are in sRGB color space by default, which all four services handle correctly without conversion.
 
 ## What Is the Complete Workflow for Memorial Photo Preparation?
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Fix Washed-Out Overexposed Old Photos with AI Restoration"
-description: "Why old photos go washed out, what Real-ESRGAN can recover from blown highlights, and how to combine manual Lightroom dodge/burn with AI restoration for best results."
+description: "Why old photos go washed out, what Real-ESRGAN recovers from blown highlights, and how to combine Lightroom highlight recovery with AI restoration effectively."
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-08"
 author: "Maya Chen"

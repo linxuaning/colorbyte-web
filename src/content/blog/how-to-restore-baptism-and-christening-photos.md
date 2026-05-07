@@ -73,33 +73,25 @@ Many baptism and christening photographs from before 1965 were taken in black an
 - **Studio backgrounds** — typically painted canvas gradients or plain plaster — receive neutral gray, pale blue, or light brown depending on the tonal values and texture of the background.
 - **Flowers** if present in the frame receive green stems and petals of probable hues based on shape analysis.
 
-What DDColor cannot do is know the specific color of a particular dress or a specific eye color. It assigns statistically probable colors. For families who want to create a credible color version for framing or sharing with relatives who were not alive when the photo was taken, the result is typically convincing. For families who want an archivally accurate color record, the honest answer is that colorization is an interpretation, not a fact.
-
-Both choices are available in the same upload. You can restore the black-and-white version with sharpening and damage repair without requesting colorization, or you can request the full colorization. The $4.99 one-time payment covers either version of your restored photograph.
+What DDColor cannot do is know the specific color of a particular dress or eye color. It assigns statistically probable colors. For families wanting a credible color version for framing or sharing, the result is typically convincing. For families wanting an archivally accurate color record, colorization is an interpretation, not a fact. The $4.99 one-time payment covers either the restored B&W version or the colorized version — preview both before deciding.
 
 ## What Resolution and File Format Do You Need for Final Use?
 
 Restoration quality depends heavily on what you upload. The AI pipeline, led by **Real-ESRGAN**, can extract detail and recover information from a high-quality scan, but it cannot manufacture resolution from a low-quality source. Here are the scanning parameters that produce the best results:
 
-**Standard 4x6 prints:** Scan at 600 DPI minimum. This produces a 2400x3600 pixel source file — enough for AI models to work with edge and texture data in meaningful detail.
-
-**Small prints (wallet size, 3x3 studio proofs):** Scan at 1200 DPI. Baptism photos from the 1950s and earlier were often printed small, and the extra scanning resolution gives Real-ESRGAN source material for its upscaling pass.
-
-**Damaged or very soft originals:** Scan at 1200 DPI regardless of print size. More input resolution means more information for NAFNet's denoising and GFPGAN's face recovery.
-
-**Format:** Save as TIFF or high-quality PNG. Do not save as JPEG before uploading — JPEG compression introduces its own artifacts that the AI will attempt to correct in addition to the original photograph's damage, complicating the result.
+**Standard 4x6 prints:** Scan at 600 DPI minimum, producing a 2400x3600 pixel source file. **Small prints (wallet size, 3x3 studio proofs):** Scan at 1200 DPI — baptism photos from the 1950s and earlier were often printed small, and the extra resolution gives Real-ESRGAN source material for its upscaling pass. **Damaged or very soft originals:** 1200 DPI regardless of print size. **Format:** Save as TIFF or PNG, not JPEG — JPEG compression adds artifacts that complicate AI correction.
 
 ## How Are Families Using Restored Baptism Photos?
 
 Restored baptism photographs appear in several contexts today:
 
-**Memorial services and celebrations of life.** The baptism portrait as the opening image of a life — the first formal photograph of a person — is a recurring choice for memorial slideshows and framed displays. Families frequently restore these images specifically in the week before a service, making the 30-second AI processing time and single-payment workflow particularly appropriate. The full-resolution download from ArtImageHub is suitable for both 8x10 or 11x14 print output and 1920x1080 or 4K digital slideshow use.
+**Memorial services and celebrations of life.** The baptism portrait as the first formal photograph of a person is a recurring choice for memorial slideshows and framed displays. ArtImageHub's full-resolution download is suitable for both 8x10 or 11x14 print output and 1920x1080 digital slideshow use.
 
-**Generational family gifts.** A restored and colorized baptism portrait of a grandparent or great-grandparent, printed and framed, has become a meaningful gift at family gatherings and milestone occasions. The combination of GFPGAN face recovery, NAFNet damage cleanup, and DDColor colorization produces a result that family members who never knew the person as an infant find genuinely moving.
+**Generational family gifts.** A restored and colorized baptism portrait of a grandparent or great-grandparent, printed and framed, has become a meaningful gift at family gatherings. The combination of GFPGAN face recovery, NAFNet damage cleanup, and DDColor colorization produces a result that family members who never knew the person as an infant find genuinely moving.
 
-**Digital family archives.** Families building photo archives on Google Photos, Amazon Photos, or external drives include restored versions of baptism photographs as anchor documents at the beginning of each family member's photo record. These restored files, saved in the full resolution available from ArtImageHub, are future-proof for print output at any size without re-processing.
+**Digital family archives.** Families building archives on Google Photos or external drives use restored baptism photographs as anchor documents at the beginning of each family member's record. These restored files are future-proof for print output at any size without re-processing.
 
-**Church anniversary publications.** Parishes celebrating anniversaries often assemble historical records that include baptism photographs. The single $4.99 per photo cost is negligible against the production budget of a printed anniversary booklet, and the restored files are ready for commercial printing at 300 DPI output with no additional work required.
+**Church anniversary publications.** Parishes assembling historical records include baptism photographs at $4.99 per photo — negligible against a printed anniversary booklet budget — with files ready for commercial printing at 300 DPI.
 
 ## What Is the Step-by-Step Workflow at ArtImageHub?
 

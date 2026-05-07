@@ -54,25 +54,13 @@ The visual effect is immediately recognizable: a cool, slightly greenish cast th
 
 ### Ektachrome Slides: The Blue Shadow Problem
 
-Ektachrome reversal slide films from the 1960s and 1970s (Ektachrome-X, High Speed Ektachrome, and professional Ektachrome variants) are well documented among slide collectors and archivists for a specific blue shift that develops over decades.
+Ektachrome reversal slide films from the 1960s and 1970s (Ektachrome-X, High Speed Ektachrome, and professional Ektachrome variants) are well documented for a blue shift that develops over decades. The cause is yellow dye fade in the reversal emulsion — as yellow fades, blue light passes through unchecked, progressively cooling the image. The shift is spatially uneven: shadows lose yellow dye density faster than highlights, so shadow areas go strongly blue while highlights remain moderately warm.
 
-The cause is **yellow dye fade in the reversal emulsion**. In a reversal slide, the yellow dye absorbs blue light. As yellow fades, blue light passes through unchecked, progressively bluing the image. Because shadows have less overall dye density than highlights, the yellow dye fades faster in shadow areas, producing a **spatially uneven correction requirement**: shadow areas shift strongly blue while highlights may remain moderately warm.
-
-This spatial variation makes Ektachrome correction more complex than chromogenic print correction. A single global white balance adjustment corrects either the highlights or the shadows but not both simultaneously. In Lightroom, the HSL/Color panel's blue channel, combined with split-toning adjustments that target the shadow range, addresses this more effectively than a global white balance change.
-
-**Practical workflow for Ektachrome:** Scan the slide at 1200-2400 DPI on a dedicated slide scanner. Apply a Lightroom warm white balance correction in the 5500-6500K range, and add yellow while reducing blue in the HSL panel. Then upload to ArtImageHub for final **NAFNet** grain reduction and **DDColor** color cast normalization.
+This spatial variation requires split correction. A single global white balance adjustment addresses either highlights or shadows but not both. Scan Ektachrome on a dedicated slide scanner at 1200-2400 DPI. Apply a Lightroom warm white balance correction (5500-6500K range) with blue reduction in the HSL panel before uploading to ArtImageHub for **NAFNet** grain reduction and **DDColor** final color normalization.
 
 ### School Photos: The Cheap Processing Orange
 
-School portrait photographs from the 1970s and 1980s with a strong orange cast are the product of two compounding issues: equipment and economy-grade print paper.
-
-School portrait photography was high-volume, low-margin work. Photographers used tungsten-balanced lights or early electronic flash equipment that produced a slightly warm color temperature, and the prints were produced by high-volume portrait labs using the least expensive print papers available — typically not professional Kodak or Fujifilm papers, but lower-grade alternatives with significantly less stable dye formulations.
-
-The initial slight warmth from the photographic setup has been compounded over decades by aggressive cyan dye fade from the cheap print paper, producing the strongly orange school portrait cast that is now familiar to everyone who has sorted through a box of old school photos.
-
-An additional historical note: school portrait labs frequently printed with a deliberate slight warm bias, because warm-toned skin in a portrait looks flattering to the parents who were the ultimate customers. This intentional warm choice, compounded by subsequent dye fade, produces some of the most severely orange prints in family collections.
-
-**DDColor** at ArtImageHub handles school photo orange cast automatically by normalizing the overall color balance relative to expected neutral areas. The correction typically requires no Lightroom pre-processing for typical school photo orange.
+School portrait photographs from the 1970s and 1980s develop orange cast from two compounding factors: slightly warm photographic lighting (tungsten or early electronic flash), combined with aggressive cyan dye fade in the economy-grade print papers used by high-volume portrait labs. Labs also printed with a deliberate warm bias because warm skin tones looked flattering to the parent customers. This intentional warmth, combined with subsequent cyan fade, produces some of the most severely orange prints in family collections. **DDColor** at ArtImageHub handles school photo orange cast automatically in a single pass without requiring Lightroom pre-correction.
 
 ## How Do Real-ESRGAN and DDColor Handle Chromogenic Color Balance?
 
