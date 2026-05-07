@@ -1,0 +1,16 @@
+name: Backend Keepalive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping backend health
+        run: |
+          curl -sf --max-time 20 https://backend.artimagehub.com/health \
+            && echo "Backend awake" \
+            || echo "Backend unreachable (cold start in progress)"

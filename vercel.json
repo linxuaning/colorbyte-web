@@ -1,10 +1,4 @@
 {
-  "crons": [
-    {
-      "path": "/api/keepalive",
-      "schedule": "*/10 * * * *"
-    }
-  ],
   "redirects": [
     {
       "source": "/:path*",
