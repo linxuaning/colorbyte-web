@@ -15,13 +15,13 @@ faq:
   - question: "Is Upscayl completely free to use?"
     answer: "Yes — Upscayl is free, open-source software available for Windows, macOS, and Linux. You download the desktop app, run it locally on your own GPU, and pay nothing per photo or per month. That zero-cost model is its defining advantage for anyone doing high-volume upscaling. ArtImageHub costs $4.99 one-time, which covers unlimited photos — so for a single family archive project, the cost is still minimal. The meaningful question is not price but capability: Upscayl does not include face restoration or damage correction, so for old photos with age damage, ArtImageHub adds significant value that Upscayl cannot match regardless of cost. The right choice depends entirely on whether your photos have damage. For clean, well-preserved photos that just need to be larger, Upscayl's free tier is the sensible answer. For damaged old photos with faces, ArtImageHub handles what Upscayl cannot."
   - question: "Does Upscayl fix scratches, yellowing, or cracks in old photos?"
-    answer: "No — and this is a fundamental capability boundary, not a settings issue. Upscayl is an upscaler: it enlarges images using Real-ESRGAN-based models, making the input larger and sharper, but it does not analyze the image for damage artifacts or apply any targeted correction. If your old photo has yellowing from chemical aging, cracks from emulsion brittleness, fading from light exposure, or water staining, Upscayl will make those defects larger and sharper alongside the genuine photographic detail. The damage upscales in proportion with the image. ArtImageHub's pipeline runs dedicated restoration passes before upscaling — targeting yellowing, fading, noise, and surface damage — then upscales the corrected result. For old photos with visible damage, this restoration-first sequencing is the entire difference between an output you can print and one that is a sharper version of a damaged photo."
+    answer: "No — and this is a fundamental capability boundary, not a settings issue. Upscayl is an upscaler: it enlarges images using Real-ESRGAN-based models, making the input larger and sharper, but it does not analyze the image for damage artifacts or apply any targeted correction. If your old photo has yellowing from chemical aging, cracks from emulsion brittleness, fading from light exposure, or water staining, Upscayl will make those defects larger and sharper alongside the genuine photographic detail. The damage upscales in proportion with the image. ArtImageHub's pipeline runs dedicated restoration passes before upscaling — targeting yellowing, fading, noise, and surface damage — then upscales the corrected result. For old photos with visible damage, this restoration-first sequencing is the entire difference between a final output you can print proudly and one that is simply a sharper version of a still-damaged photo."
   - question: "Which tool produces better results on faces in old photos?"
     answer: "ArtImageHub wins clearly on faces, and the gap is larger than you might expect. It applies GFPGAN-based face restoration that specifically detects face regions in the image and reconstructs fine detail — eyes, skin texture, hair definition — that degraded over decades of aging. This matters enormously for pre-1980 photographs where faces often printed at very low effective resolution and have softened further through physical deterioration. Upscayl has no dedicated face processing whatsoever. Its Real-ESRGAN models sharpen a face the same way they sharpen a wall or a table — the face becomes larger but the soft, degraded quality remains. On my 20-portrait test subset, ArtImageHub produced outputs I would call client-deliverable in 17 cases versus 8 for Upscayl. If recovering identifiable faces from old portraits is your goal, GFPGAN face reconstruction is the single most important capability difference between these two tools."
   - question: "Can I use Upscayl offline and keep my photos private?"
     answer: "Yes — Upscayl processes everything locally on your machine. Photos never leave your computer, which is a genuine advantage for users with privacy concerns about uploading family photographs to third-party cloud services. If you have photos of living people, family members who did not consent to cloud uploads, or sensitive historical documents, local processing removes that concern entirely. ArtImageHub processes photos server-side, which is how it can run large models like GFPGAN, NAFNet, and DDColor without requiring users to own expensive GPU hardware. ArtImageHub states photos are not stored beyond the active session. For most users weighing the tradeoff, server-side processing gives access to a more powerful restoration pipeline. For users with a strict local-only policy — institutional archives, legal privacy requirements, or strong personal preference — Upscayl is the answer. Both tools are used by privacy-conscious families for different reasons."
   - question: "What AI models does each tool use?"
-    answer: "Upscayl uses Real-ESRGAN and related upscaling models — including remacri, ultrasharp, and digital-art variants — selectable from its interface depending on your source material type. These are genuinely strong upscaling models with good performance on clean photographic sources. ArtImageHub runs a multi-model pipeline: Real-ESRGAN for resolution upscaling, GFPGAN for face detection and reconstruction, NAFNet for deblurring and noise reduction, and DDColor for colorizing black-and-white photographs. Each model in the ArtImageHub pipeline addresses a specific degradation type that a single upscaling model cannot handle. The architectural difference is that Upscayl applies one model to the full image, while ArtImageHub sequences specialized models targeting different problem types before the final upscale pass. For clean photos, a single strong upscaler is sufficient. For damaged old photos requiring restoration across multiple damage types, a multi-model pipeline like ArtImageHub's is the appropriate tool."
+    answer: "Upscayl uses Real-ESRGAN and related upscaling models — including remacri, ultrasharp, and digital-art variants — selectable from its interface depending on your source material type. These are genuinely strong upscaling models with solid performance on clean photographic sources. ArtImageHub runs a multi-model pipeline: Real-ESRGAN for resolution upscaling, GFPGAN for face detection and reconstruction, NAFNet for deblurring and noise reduction, and DDColor for colorizing black-and-white photographs. Each model in the ArtImageHub pipeline addresses a specific degradation type that a single upscaling model simply cannot handle on its own. The architectural difference is that Upscayl applies one model to the full image, while ArtImageHub sequences specialized models targeting different problem types before the final upscale pass. For clean, undamaged photos, a single strong upscaler is sufficient and Upscayl excels at it. For damaged old photos requiring restoration across multiple damage types simultaneously, a multi-model pipeline like ArtImageHub's is the appropriate tool."
 ---
 
 > **Editorial trust notice**: This comparison is published by [ArtImageHub](https://artimagehub.com), an AI photo restoration service charging $4.99 one-time. Technical claims draw on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
@@ -57,7 +57,7 @@ The key architectural difference: ArtImageHub's pipeline runs restoration before
 
 This ordering matters enormously for old photos, which typically have damage artifacts before they have resolution problems.
 
-## Head-to-Head: 55 Old Photos
+## How Do They Compare Head-to-Head on 55 Old Photos?
 
 ### How Does Upscaling Quality Compare?
 
@@ -101,7 +101,7 @@ Upscayl simply does not address damage. That is an accurate description of its f
 
 If an old photo is undamaged but small, Upscayl is the right tool. If an old photo has the typical cluster of age damage — yellowing, some fading, soft faces — ArtImageHub addresses problems that Upscayl will make visually more prominent.
 
-## The Privacy Question
+## Does Upscayl Keep Your Photos More Private?
 
 Upscayl processes everything locally. Your photos never leave your machine. This is a genuine advantage for users sensitive about uploading family photos to third-party servers.
 
@@ -109,7 +109,7 @@ ArtImageHub processes photos server-side. Running GFPGAN, NAFNet, and DDColor lo
 
 For most users, the convenience and capability tradeoff favors ArtImageHub for restoration work. For users with a strict local-only requirement, Upscayl is the answer.
 
-## Pricing Comparison
+## How Do the Prices Compare?
 
 | | ArtImageHub | Upscayl |
 |---|---|---|
@@ -139,7 +139,7 @@ Upscayl is free. That matters. But for a one-time family photo project, $4.99 is
 - You want a web tool with no installation or GPU required
 - You are colorizing black-and-white photos alongside restoration
 
-## The Honest Bottom Line
+## What Is the Honest Bottom Line?
 
 Upscayl is exceptional at what it does, which is upscaling. If your old photos are clean scans that just need to be larger, download Upscayl — it is free, fast, and effective for that specific task.
 

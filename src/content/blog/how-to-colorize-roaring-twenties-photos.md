@@ -19,7 +19,7 @@ faq:
   - question: "Will AI colorize flapper dresses and beaded gowns accurately?"
     answer: "AI colorization produces plausible, period-appropriate colors for flapper-era garments, often landing on historically reasonable choices. Beaded evening gowns colorize convincingly in gold, silver, bronze, or black tones, which aligns with surviving garments in museum collections from the 1920s. Daytime dresses in solid fabrics colorize in the muted rose, sage green, and dusty mauve tones characteristic of the era. Two-tone geometric printed fabrics — very fashionable in the decade — colorize well when the pattern is visible but the specific color assignments remain a plausible interpretation rather than a recovered fact. Beaded textures where every bead creates a different tonal value are harder: the AI assigns a single color range to the fabric area rather than tracking individual bead colors. If you have archival documentation of specific garment colors — a family letter, a period fashion plate, or a surviving garment — use it to evaluate and interpret your colorization result."
   - question: "Should I restore the photo before colorizing it?"
-    answer: "Yes — restore before you colorize, always. This is one of the most important steps people skip, and the quality difference is substantial and visible. Yellowing in the source photo is the biggest problem: a yellow-tinted grayscale image causes DDColor to see warmth baked into the tonal values and produces a colorization with an unnatural warm cast throughout the entire scene. Scratches and surface damage appear as colored streaks in the output. Film grain and noise produce speckled color artifacts that make skin and fabric tones look irregular and artificial. ArtImageHub handles the restoration-first sequence automatically within its pipeline — the restoration pass runs before DDColor sees the image, so you do not need to manage this step manually. If you are using a standalone colorization tool, first run ArtImageHub's Old Photo Restoration, download the clean result, then upload that to the colorizer. The before-and-after difference from this one sequencing choice is often as dramatic as the difference between no AI processing and full processing."
+    answer: "Yes — restore before you colorize, always. This is one of the most important steps people skip, and the quality difference is substantial. Yellowing in the source photo is the biggest problem: a yellow-tinted grayscale image causes DDColor to see warmth baked into the tonal values and produces a colorization with an unnatural warm cast throughout the scene. Scratches and surface damage appear as colored streaks in the output. Film grain and noise produce speckled color artifacts that make skin and fabric tones look irregular and artificial. ArtImageHub handles the restoration-first sequence automatically within its pipeline — the restoration pass runs before DDColor sees the image, so you do not need to manage this manually. If you are using a standalone colorization tool, first run ArtImageHub's Old Photo Restoration, download the clean result, then upload that to the colorizer. The before-and-after difference from this sequencing choice is often as dramatic as the difference between no AI processing and full processing."
   - question: "How do I colorize a 1920s street scene with cars, buildings, and crowds?"
     answer: "Street scenes are among the most visually rewarding 1920s colorization subjects because the era's specific details come to life so compellingly in color. For automobiles: Ford Model T was produced only in black from 1914 to 1925, when Henry Ford finally introduced color options. Other manufacturers offered dark blue and dark green from the early 1920s. A street scene dated before 1925 should show predominantly black cars; later 1920s scenes can include dark-toned color variation. Brick building facades range from red to buff tan depending on regional clay. Sidewalks and paved streets are grey concrete or dark asphalt. Men's street clothing followed the era's conservative palette — grey, brown, and navy suits predominate. Women's daywear in public showed the muted jewel tones of 1920s ready-to-wear fashion. ArtImageHub's DDColor model handles these multi-element compositions well. After colorizing, zoom in on individual scene elements to evaluate plausibility before downloading for print use."
 ---
@@ -40,7 +40,7 @@ This guide covers the full process: understanding what makes 1920s photos unique
 
 **Photo condition** — 1920s prints are now roughly 100 years old. Even well-preserved examples have yellowing and silver mirroring. Glass-plate negatives from the era have specific cracking and bubble artifacts. The physical condition of the source matters significantly for colorization quality.
 
-## The Restoration-First Rule
+## Should You Restore Before You Colorize?
 
 Before any colorization work, restore the base image. Yellowing in the source creates a warm cast throughout the colorized output. Scratches produce colored streaks. Film grain and noise create speckled color artifacts that look unnatural.
 
@@ -48,7 +48,7 @@ Before any colorization work, restore the base image. Yellowing in the source cr
 
 The difference between colorizing a raw 1920s scan versus a restored scan is consistently large. Spend the extra step.
 
-## Colorizing the Iconic Subjects of the 1920s
+## How Do the Iconic Subjects of the 1920s Colorize?
 
 ### Flapper Portraits
 
@@ -80,7 +80,7 @@ Street scenes are visually complex and some of the most satisfying colorizations
 
 **Street-level detail** — Signs, storefronts, awnings, and produce displays are colorization highlights in street scenes. Period-appropriate colors bring the commercial texture of the era to life.
 
-## Getting the Best Results from ArtImageHub
+## How Do You Get the Best Results from ArtImageHub?
 
 Visit [ArtImageHub](https://artimagehub.com/photo-colorizer) and upload your 1920s photograph. The tool accepts JPEG, PNG, TIFF, and most common image formats.
 
@@ -90,7 +90,7 @@ Visit [ArtImageHub](https://artimagehub.com/photo-colorizer) and upload your 192
 
 **If something looks wrong:** The most common issues are lips that look too light (the orthochromatic film problem), and muted fabrics that received an unexpected color assignment. These are limitations of the medium — the AI is interpreting ambiguous grayscale, not reading a color record. For most family history uses, the output is compelling and period-appropriate even when not precisely accurate.
 
-## Sharing 1920s Colorizations Responsibly
+## How Should You Share AI-Colorized 1920s Photos Responsibly?
 
 When sharing AI-colorized historical photos — particularly portraits of real people — label them clearly as AI colorizations. The colors are plausible interpretations, not archival records. Family members and historical society members deserve to know what they are looking at.
 

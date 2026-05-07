@@ -93,7 +93,7 @@ The visible result is a yellowing of the paper base — often most pronounced al
 | Gelatin blistering (small) | Partial | Inferred from surrounding context |
 | Dissolved emulsion | None | No image information exists to recover |
 
-The free preview step at ArtImageHub is specifically useful for sun-damaged photos because it tells you immediately which category your photo falls into — before any payment is required.
+ArtImageHub's pipeline applies Real-ESRGAN for detail recovery, NAFNet for noise and grain reduction from film stock aging, and color normalization for cast correction — all in a single pass. The free preview step is specifically useful for sun-damaged photos because it tells you immediately which category your photo falls into — before any payment is required.
 
 ---
 

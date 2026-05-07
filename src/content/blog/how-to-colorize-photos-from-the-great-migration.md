@@ -58,11 +58,11 @@ From a colorization perspective, these studio elements offer identifiable color 
 
 James Van Der Zee's studio on 135th Street is the most documented photography practice of the Harlem Renaissance, but dozens of competing studios served Harlem's community through the 1910s and 1940s. Van Der Zee specifically used elaborate painted backdrops — domestic interior scenes, outdoor garden settings, pastoral landscapes — that provided aspirational environmental context for subjects who might be living in crowded tenement apartments.
 
-Van Der Zee's later work from the 1930s onward survives in some color, and the GEH (George Eastman House) and Smithsonian collections hold examples. These later color images provide direct reference for the types of colors Van Der Zee associated with his subject community — formal clothing in navy, charcoal, and black with occasional warm brown tones, studio drapes in gold or dark red fabric.
+Van Der Zee's later work from the 1930s onward survives in some color at the GEH (George Eastman House) and Smithsonian collections. These provide direct color reference — formal clothing in navy, charcoal, and black, studio drapes in gold or dark red fabric.
 
 ### Detroit's Black Bottom Neighborhood
 
-Detroit's Black Bottom neighborhood, concentrated in the city's east side, hosted photography studios serving automotive industry workers and their families from the early 1910s through urban renewal displacement in the late 1950s. Detroit studio portraiture tended toward more formal and symmetrical staging conventions than Harlem — reflecting the industrial worker community's different relationship to aspirational imagery. Two-person portraits (couples and siblings) were particularly common in this tradition.
+Detroit's Black Bottom neighborhood hosted photography studios serving automotive industry workers from the early 1910s through the late 1950s. Detroit studio portraiture tended toward more formal and symmetrical staging than Harlem. Two-person portraits (couples and siblings) were particularly common in this tradition.
 
 ## Where Can You Research Period-Accurate Colors Before Colorizing?
 
@@ -70,7 +70,7 @@ AI colorization with DDColor produces plausible output — it assigns colors tha
 
 **The Schomburg Center for Research in Black Culture** (New York Public Library, 135th Street branch) maintains digitized collections that include color materials from the period alongside photographic archives. Their digitized magazine collection includes color covers and illustrations from publications targeting African American readers — Crisis magazine, Opportunity, Abbott's Monthly — that accurately represent period clothing colors and interior decoration.
 
-**The Library of Congress Farm Security Administration (FSA) color collection** includes photographs by Jack Delano, Russell Lee, and others from the late 1930s and early 1940s that document period clothing and domestic interiors in actual color. While the FSA primarily documented rural and small-city subjects, the clothing documented by these photographers reflects the same available commercial textile palette as urban Great Migration communities.
+**The Library of Congress Farm Security Administration (FSA) color collection** includes photographs by Jack Delano, Russell Lee, and others from the late 1930s and early 1940s documenting period clothing in actual color. The available commercial textile palette shown in FSA images applies equally to urban Great Migration communities.
 
 **The Smithsonian National Museum of African American History and Culture** maintains a searchable online collection that includes textile objects and material culture artifacts with documented colors from this period.
 
@@ -96,19 +96,17 @@ Colorizing historical photographs of subjects from communities that have experie
 
 Skin tone accuracy is the most sensitive and consequential element. Incorrectly colorized skin tones — whether too dark, too light, or the wrong hue — participate in a history of visual misrepresentation of Black subjects in American photography and media. DDColor's output for skin tones should always be evaluated critically in the preview before download.
 
-The framing of colorized images matters. A colorized photograph is an interpretation, not a historical document. Distributing colorized images of historical subjects without noting the colorization process and its methods misrepresents the nature of the image. The responsible practice is to note explicitly: this is a colorized version of an original black-and-white photograph, produced using DDColor AI colorization, with skin tones evaluated against [specific references] and clothing colors consistent with period documentation from [specific sources].
-
-This framing honors both the historical subjects and the communities they represent, while being honest about the nature of the visualization.
+The framing of colorized images matters. A colorized photograph is an interpretation, not a historical document. The responsible practice is to note explicitly that DDColor AI colorization was used, that skin tones were evaluated against specific references, and that clothing colors are consistent with period documentation. This framing honors the historical subjects while being honest about the nature of the visualization.
 
 ## What Are the Practical Steps for Colorizing Great Migration Photographs?
 
-**Scan at high resolution first.** For formal studio portraits where facial detail and expression are central, scan at 1200 DPI before uploading. The additional resolution gives DDColor more information to work with in assigning color to fine details like collar lace, lapel texture, and background fabric.
+**Scan at high resolution first.** For formal studio portraits where facial detail and expression are central, scan at 1200 DPI before uploading. The additional resolution gives DDColor more information to work with in assigning color to fine details like collar lace, lapel texture, and background fabric. ArtImageHub also runs Real-ESRGAN upscaling and NAFNet denoising on the source image before colorization, so higher scan resolution compounds into better final output quality across all three processing stages.
 
-**Research period colors before reviewing the preview.** Spend 15 minutes with the Schomburg Center digital collection or FSA color photographs before uploading. Having concrete color references in mind makes the preview evaluation meaningful rather than impressionistic.
+**Research period colors before reviewing the preview.** Check the Schomburg Center digital collection or FSA color photographs before uploading. Concrete color references make the preview evaluation meaningful rather than impressionistic.
 
 **Evaluate skin tones carefully in the preview.** ArtImageHub shows you the full DDColor colorization before any payment. Evaluate specifically whether the skin tone assignment appears accurate for the subject. The preview is the moment to make this judgment.
 
-**Consider the archival value of both versions.** The original black-and-white scan remains a historical document. The colorized version is a new interpretive artifact. Keep both clearly labeled.
+**Keep both versions.** The original black-and-white scan remains the historical document. The colorized version is a new interpretive artifact — label both clearly.
 
 The $4.99 one-time payment at ArtImageHub unlocks the full-resolution colorized download after you have confirmed the result in the free preview step.
 

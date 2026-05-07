@@ -26,7 +26,7 @@ faq:
 
 School photographs occupy a special category in the archive of personal memory. They are often the only photographic record of a child's appearance in a given year, they document friendships and teachers that might otherwise be forgotten entirely, and they exist in formats — class composites, yearbook reproductions, tiny individual prints — that create specific restoration challenges. This guide addresses those challenges directly.
 
-## Why School Photos Degrade Differently Than Other Portraits
+## Why Do School Photos Degrade Differently Than Other Portraits?
 
 School photographs go through more copies and reproductions than most family photos. The original portrait print was made by a commercial photographer, then a copy was given to the school for composite assembly, then the composite was photographed or scanned for yearbook reproduction using halftone printing. By the time a family's yearbook photo reached the printed annual, it might be three or four generations of reproduction from the original negative.
 
@@ -34,7 +34,7 @@ Each copy step reduces sharpness and compresses tonal range. A face that was sha
 
 Class composite photos present different problems. Individual portrait tiles are often tiny — a standard 8x10 composite for a class of 30 students gives each student a portrait area of roughly one inch square in the print. Scanned at 600 DPI, that is about 600 pixels per inch square: enough for a recognizable face but not enough for clearly resolved individual features.
 
-## How GFPGAN Handles Small Faces in Class Composites
+## How Does GFPGAN Handle Small Faces in Class Composite Photos?
 
 **GFPGAN** (Generative Facial Prior GAN) is designed specifically for this kind of problem. Unlike general upscaling models, it combines a super-resolution backbone with a pre-trained face landmark network that understands facial geometry at the structural level. Even when the input face is only 50 to 80 pixels wide, GFPGAN can identify the landmark positions — the corners of the eyes, the bridge of the nose, the mouth edges — and use them to guide enhancement that respects the actual face structure rather than inventing features.
 

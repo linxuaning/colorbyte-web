@@ -13,15 +13,15 @@ coverColor: "#f5f0e8"
 coverEmoji: "🖼️"
 faq:
   - question: "Why do newspaper photos look dotted or grainy when scanned?"
-    answer: "Newspaper photographs were not printed like regular photographic prints. Before the digital era, photos in newspapers were converted to halftone screens — a grid of tiny dots of varying size and density that created the illusion of continuous tone when viewed at normal reading distance. Under magnification or when scanned at high resolution, these dots become clearly visible as a regular pattern. When you scan a newspaper clipping, you are capturing both the photographic content and the halftone dot pattern on top of it. AI restoration, particularly NAFNet's deblurring and noise-reduction pipeline, can significantly reduce the halftone pattern while recovering the underlying image content — but very coarse halftone screens (common in smaller papers and earlier printing) may leave residual dot artifacts in the output."
+    answer: "Newspaper photographs before the digital era were not printed photographically. They were converted to halftone screens — a grid of tiny dots of varying size and density that creates the illusion of continuous tone when viewed at normal reading distance of 12 to 18 inches. At that distance, the eye blends the dots into apparent shades of grey. Under magnification, or when scanned at high resolution, the dots become clearly visible as a regular geometric pattern overlaid on the photographic content. When you scan a newspaper clipping, you capture both layers simultaneously: the photographic subject and the halftone dot grid printed on top of it. AI restoration tools like ArtImageHub use NAFNet's structured noise reduction to distinguish between the regular halftone pattern — which has a predictable spatial frequency — and the irregular underlying photographic content, reducing the dots while preserving image detail. Very coarse halftone screens from smaller papers and earlier printing decades respond less completely."
   - question: "What resolution should I scan a newspaper clipping for best AI restoration results?"
-    answer: "Scan newspaper clippings at 600 DPI minimum, ideally 1200 DPI for small photos. Higher resolution seems counterintuitive — it makes the halftone dots larger and more visible — but it gives the AI model more pixel information to distinguish between the dot pattern and the underlying photographic content. At very low scan resolutions (72 or 150 DPI), the dots and the photo content blur together into a single muddy signal that is harder to separate. At 600 DPI and above, the dot pattern is clearly distinct from the image content, which helps NAFNet's descreen processing identify and reduce the dots while preserving image detail. Save as TIFF rather than JPEG to avoid adding JPEG artifacts on top of the halftone pattern."
+    answer: "Scan newspaper clippings at 600 DPI minimum, and ideally 1200 DPI for any photo smaller than about 3 inches wide. Higher resolution feels counterintuitive because it makes halftone dots larger and more conspicuous in the scan — but this is actually what you want. At high resolution, the dot pattern and the underlying photographic content are clearly distinct signals that the AI model can differentiate and separate. At very low scan resolutions like 72 or 150 DPI, the dots and photo content blur together into a single muddy undifferentiated mass that is much harder for NAFNet to process cleanly. The distinction between dot pattern and image content becomes ambiguous at low DPI, and the AI cannot reliably separate what it cannot clearly see as separate. Save the scan as TIFF rather than JPEG — JPEG compression creates its own artifact pattern in the same spatial frequency range as halftone dots, making separation significantly harder and degrading the final output quality."
   - question: "Can AI restore a face from a very low-resolution newspaper photo?"
-    answer: "AI face restoration can do impressive work on newspaper photos, but it has a ceiling determined by how much face information was captured in the original print. GFPGAN, which ArtImageHub applies to face regions, reconstructs facial detail from degraded sources by learning from millions of high-quality face photographs. For newspaper photos where the face is at least recognizably human-shaped — eyes, nose, and mouth roughly in the right positions — GFPGAN often produces a significantly sharpened result. For very small faces (a few pixels across after halftone removal) or extremely degraded prints where the halftone has obscured all facial structure, the model fills in a generic plausible face rather than recovering the actual subject. The key variable is whether the underlying face structure survived the halftone process with enough signal to reconstruct from."
+    answer: "AI face restoration can produce impressive results on newspaper photos, but the quality ceiling is determined by how much face information survived the original printing. GFPGAN, which ArtImageHub applies to detected face regions, reconstructs facial detail from degraded sources by drawing on patterns learned from millions of high-quality face photographs. For newspaper portrait photos where the face is at least recognizably human-structured — eyes, nose, and mouth occupy plausible positions with some tonal differentiation — GFPGAN often produces significantly sharpened, recognizable output. Society page portrait photos from mid-20th-century newspapers, which were often decently sized and well-lit, respond particularly well. For very small faces only a few pixels wide after halftone removal, or for prints where the coarse halftone has collapsed all facial structure into undifferentiated tonal blocks, the model fills in a plausible face rather than recovering the specific individual. The minimum viable face for good GFPGAN output is roughly a postage stamp in the original scan."
   - question: "I found a family member in an old newspaper photo — how do I get the best restoration?"
-    answer: "Start by finding the highest-quality version of the original scan. Newspaper archives like Newspapers.com, Chronicling America (Library of Congress), and local library databases often hold higher-resolution scans than the physical clipping you might have at home. If the original newspaper page is still accessible at a library, request a fresh high-resolution scan from their flatbed scanner rather than using a photocopy. Once you have the best available scan, upload to ArtImageHub at artimagehub.com — the restoration pipeline will apply NAFNet halftone reduction and noise correction, then Real-ESRGAN upscaling, then GFPGAN face reconstruction. Download the result and compare at 100% zoom. For identification purposes, also compare to other photos of the same person from the same era to verify recognizability."
+    answer: "Before uploading any scan, invest a few minutes finding the highest-quality source available. Physical clippings you have at home are often the lowest-quality version that exists. Newspaper archives like Newspapers.com, GenealogyBank, and Chronicling America at the Library of Congress hold digital scans at full-page resolution that are frequently better than a home scanner scan of a clipping that has been handled and stored for decades. Chronicling America is free and covers thousands of historical papers primarily before 1963. If the newspaper is accessible at a local library on microfilm, a fresh microfilm scan at 400 DPI or higher often produces fewer halftone artifacts than scanning a physical clipping. Once you have the best available scan, upload to ArtImageHub — the pipeline applies NAFNet halftone reduction and tonal correction, then Real-ESRGAN upscaling, then GFPGAN face reconstruction in sequence. Compare the output at 100% zoom and, for identification verification, cross-reference against other photographs of the same person from the same era."
   - question: "Are there types of newspaper photos that AI cannot improve significantly?"
-    answer: "Yes. The most challenging cases are extremely coarse halftone screens — common in rural and small-circulation papers before 1950 — where the dot pattern was so large that the underlying photographic detail is effectively destroyed rather than obscured. Photos printed on very poor-quality newsprint that has yellowed and degraded the contrast to near-zero are also difficult. Wire service photos transmitted by early facsimile technology (before the 1960s) have a specific streaked artifact pattern from transmission noise that AI models handle inconsistently. Finally, photos that were already low-quality when printed — poorly focused or badly lit original negatives — cannot be reconstructed beyond what the original image contained. For these cases, AI restoration still helps with tonal correction and dot reduction, but the face or scene detail may remain unclear."
+    answer: "Yes — and knowing the limits sets realistic expectations. The most resistant cases are extremely coarse halftone screens from rural and small-circulation papers before 1950, where the dot pattern was printed so large that underlying photographic detail is effectively destroyed rather than obscured. When dots are larger than the features they represent, there is no recoverable signal beneath them. Photos on very poor-quality newsprint that has yellowed severely and flattened contrast to near-zero are also difficult — the tonal range the AI needs to work with has been chemically erased. Wire service photos transmitted by early facsimile technology before the 1960s carry a distinctive horizontal-streaking artifact from transmission noise that AI models handle inconsistently. Finally, photos that were already low quality when printed — badly lit originals, out-of-focus negatives — cannot be reconstructed beyond what the original image contained. AI restoration is recovery of what was captured, not invention of what was not."
 ---
 
 Old newspaper photographs present a restoration challenge unlike any other source material. They were not intended to preserve photographic fidelity — they were functional images designed to be readable at arm's length on cheap newsprint. The printing technology used, the paper quality, and the archival conditions of newspaper collections all combine to produce some of the most challenging subjects for AI restoration work.
@@ -30,7 +30,7 @@ But they are also some of the most historically significant. A birth announcemen
 
 This guide explains how AI restoration handles the specific technical problems of newspaper photographs and how to get the best possible results using [ArtImageHub](https://artimagehub.com).
 
-## Understanding What Makes Newspaper Photos Different
+## What Makes Newspaper Photos Different from Other Historical Sources?
 
 Before 1990, photographs in newspapers were not printed photographically. They were converted to **halftone screens** — a grid of tiny dots of varying sizes that simulate tonal range through the density of ink coverage. Under magnification, a newspaper photograph reveals itself as a pattern of dots, not a continuous-tone image.
 
@@ -43,7 +43,7 @@ Additionally, newspaper photographs contend with:
 - **Heavy JPEG compression** in digital archives, which compounds halftone artifacts
 - **Small image dimensions:** Photos in narrow newspaper columns were physically small, often 2-3 inches at the original printing size
 
-## How AI Handles Halftone Patterns
+## How Does AI Handle Halftone Dot Patterns?
 
 The AI models in [ArtImageHub's](https://artimagehub.com) pipeline approach halftone removal as a form of structured noise reduction.
 
@@ -55,7 +55,7 @@ The effectiveness depends on the coarseness of the halftone. Fine halftone scree
 
 **GFPGAN** handles face reconstruction, which is often the most important element in newspaper photos — the reason most people are looking at them in the first place.
 
-## The Scanning Step: Getting Maximum Input Quality
+## How Should You Scan a Newspaper Clipping for Maximum Input Quality?
 
 The scan is the ceiling for what restoration can achieve. For newspaper photographs, this step deserves particular attention.
 
@@ -67,7 +67,7 @@ The scan is the ceiling for what restoration can achieve. For newspaper photogra
 
 **Do not use scanner auto-sharpening:** Scanner software often applies sharpening to improve the apparent appearance of scans. For halftone sources, this sharpening makes the dot pattern crisper and harder for AI to remove. Turn off automatic sharpening and let the AI restoration pipeline handle it.
 
-## Finding the Best Source Scan
+## Where Can You Find the Best Available Source Scan?
 
 Before restoring a physical clipping, check whether better digital sources exist.
 
@@ -79,7 +79,7 @@ Before restoring a physical clipping, check whether better digital sources exist
 
 **Local library microfilm** — Many historical newspapers survive on microfilm at local libraries. A microfilm scan at 400 DPI or higher produces very different artifacts from a direct paper scan — the optical quality of microfilm introduces its own blur, but the halftone dots may be less prominent because of the photographic reproduction step. ArtImageHub handles microfilm scans well.
 
-## Specific Scenarios and What to Expect
+## What Should You Expect for Specific Types of Newspaper Photos?
 
 ### Wedding and Portrait Photos from Newspaper Announcements
 
@@ -101,7 +101,7 @@ News wire photographs — sports action, news events, crowd scenes — were ofte
 
 Obituary photos are often the most important single photograph that survives for some family members. They also tend to be small, roughly cropped from a larger photo, and reproduced at low quality. For faces large enough to retain structural information, GFPGAN face restoration can produce moving results — a recognizable face from a decades-old newspaper obituary that has been in a family album for generations.
 
-## After Restoration: Evaluating and Using the Output
+## How Do You Evaluate and Use the Restored Output?
 
 After processing through [ArtImageHub](https://artimagehub.com/old-photo-restoration), check the result at 100% zoom before finalizing.
 
