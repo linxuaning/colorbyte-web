@@ -1,6 +1,6 @@
 ---
 title: "How to Colorize Photos from the Dust Bowl Era"
-description: "Colorize 1930s Dust Bowl photos accurately with AI. FSA archive color references, DDColor on high-contrast documentary photography, and period-correct palette guide."
+description: "Colorize 1930s Dust Bowl FSA photos accurately. DDColor AI, period-correct colors, Library of Congress Kodachrome references, and scan preparation guide."
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-08"
 author: "Maya Chen"

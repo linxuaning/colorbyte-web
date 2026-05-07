@@ -1,6 +1,6 @@
 ---
 title: "AI Photo Tools for Real Estate Agents: Restoring Old Listing Photos"
-description: "AI photo restoration for real estate agents: recover pre-digital listing photos, fix old interior shots, improve historic home presentations. $4.99 one-time, no subscription."
+description: "Real estate agents: restore pre-digital listing photos with AI. Fix old interiors and historic home images using NAFNet and Real-ESRGAN. $4.99 one-time."
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-08"
 author: "Maya Chen"

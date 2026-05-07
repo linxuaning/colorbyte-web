@@ -1,6 +1,6 @@
 ---
 title: "Best Scanner Settings for Old Photos"
-description: "Best scanner settings for old photos: DPI by print type, 35mm negatives, slides. Color depth, TIFF vs JPEG, and how scan resolution affects AI restoration quality."
+description: "Best DPI, color depth, and format for scanning old photos, negatives, and slides — and how scan resolution directly affects AI restoration output quality."
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-08"
 author: "Maya Chen"

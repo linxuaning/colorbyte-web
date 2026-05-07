@@ -1,6 +1,6 @@
 ---
 title: "How to Restore Photos from Old DVDs and CDs"
-description: "Recover photos from degraded DVDs and CDs. Covers disc rot, CD-R dye oxidation, Kodak Picture CD format, and using NAFNet to remove compression artifacts after recovery."
+description: "Recover photos from degraded DVDs and CDs. Disc rot, CD-R dye oxidation, Kodak Picture CD, disc reading methods, and NAFNet artifact removal after recovery."
 publishedAt: "2026-05-08"
 updatedAt: "2026-05-08"
 author: "Maya Chen"
