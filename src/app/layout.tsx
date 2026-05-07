@@ -170,15 +170,6 @@ function Header() {
           <Link href="/old-photo-restoration" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Restore
           </Link>
-          <Link href="/photo-denoiser" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
-            Denoise
-          </Link>
-          <Link href="/photo-deblurrer" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
-            Deblur
-          </Link>
-          <Link href="/jpeg-artifact-remover" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
-            JPEG Fix
-          </Link>
           <Link href="/blog" className="hover:text-[#8B5E3C] transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8B5E3C] hover:after:w-full after:transition-all after:duration-200">
             Journal
           </Link>

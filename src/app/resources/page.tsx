@@ -43,6 +43,30 @@ const tools = [
   },
 ];
 
+const specialistTools = [
+  {
+    name: "Photo Denoiser",
+    desc: "Remove grain and noise from high-ISO, low-light, and scanned film photos using NAFNet trained on real sensor noise data.",
+    href: "/photo-denoiser",
+    badge: "$4.99 one-time",
+    badgeColor: "bg-amber-100 text-amber-700",
+  },
+  {
+    name: "Photo Deblurrer",
+    desc: "Recover sharpness from motion blur, camera shake, and defocus using NAFNet trained on real GoPro blur datasets.",
+    href: "/photo-deblurrer",
+    badge: "$4.99 one-time",
+    badgeColor: "bg-amber-100 text-amber-700",
+  },
+  {
+    name: "JPEG Artifact Remover",
+    desc: "Fix compression blocking, halos, and banding from WhatsApp, social media, and repeated JPEG saves using SwinIR.",
+    href: "/jpeg-artifact-remover",
+    badge: "$4.99 one-time",
+    badgeColor: "bg-amber-100 text-amber-700",
+  },
+];
+
 const guides = [
   {
     title: "The Complete Guide to Restoring Old Photos",
@@ -156,6 +180,34 @@ export default function ResourcesPage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {tools.map((tool) => (
+              <Link
+                key={tool.name}
+                href={tool.href}
+                className="group flex flex-col gap-3 rounded-xl border border-[#d4bc91]/50 bg-white p-6 hover:shadow-md hover:border-[#8B5E3C]/30 transition-all duration-200"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="font-playfair text-[17px] font-700 text-[#2c2416] group-hover:text-[#8B5E3C] transition-colors">
+                    {tool.name}
+                  </h3>
+                  <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-600 ${tool.badgeColor}`}>
+                    {tool.badge}
+                  </span>
+                </div>
+                <p className="font-lora text-[14px] text-[#6b5344] leading-[1.65]">{tool.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Specialist Tools */}
+        <section>
+          <div className="mb-8 flex items-center gap-4">
+            <div className="h-px w-8 bg-[#8B5E3C]" aria-hidden="true" />
+            <h2 className="font-playfair text-[24px] font-700 text-[#2c2416]">Specialist AI Tools</h2>
+            <div className="flex-1 h-px bg-[#d4bc91]/40" aria-hidden="true" />
+          </div>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {specialistTools.map((tool) => (
               <Link
                 key={tool.name}
                 href={tool.href}
