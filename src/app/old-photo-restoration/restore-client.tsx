@@ -219,9 +219,18 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         }
         if (cancelled) return;
         try {
-          const res = await fetch(
-            `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`
-          );
+          const controller = new AbortController();
+          // 8s cap prevents Render cold-start from blocking the UI indefinitely
+          const tid = setTimeout(() => controller.abort(), 8000);
+          let res: Response;
+          try {
+            res = await fetch(
+              `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`,
+              { signal: controller.signal }
+            );
+          } finally {
+            clearTimeout(tid);
+          }
           const data = await res.json();
           if (data.is_active) {
             setIsSubscriber(true);
