@@ -7,7 +7,7 @@ author: "Maya Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Maya has spent 8 years helping families recover damaged and faded photographs using the latest AI restoration technology."
 category: "Photo Restoration"
-tags: ["Water Damage", "Photo Restoration", "Flood Recovery", "Mold Damage", "Damaged Photos"]
+tags: ["Water Damage", "Photo Restoration", "Flood Recovery", "Damaged Photos"]
 image: "/blog/og-default.jpg"
 coverColor: "#f5f0e8"
 coverEmoji: "🖼️"

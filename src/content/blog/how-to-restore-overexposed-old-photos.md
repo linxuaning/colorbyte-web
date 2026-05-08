@@ -7,7 +7,7 @@ author: "Michael Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Michael has spent 8 years working with AI imaging systems, processing over 12,000 historical photos. He specializes in recovering family memories from damaged and deteriorating prints."
 category: "Guides"
-tags: ["Overexposed Photos", "Recovery", "Exposure Correction", "Photo Restoration", "Techniques"]
+tags: ["Overexposed Photos", "Exposure Correction", "Photo Restoration", "Film Photography"]
 image: "/blog/how-to-restore-overexposed-old-photos.jpg"
 coverColor: "from-yellow-600 via-amber-700 to-orange-800"
 coverEmoji: "☀️"
