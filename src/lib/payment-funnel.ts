@@ -21,6 +21,18 @@ export const LOCKED_LANDING_PAGES = new Set([
   "/photo-restoration-app",
 ]);
 
+// Blog paths (with optional locale prefix) are part of the funnel, but we
+// don't want to enumerate every slug — accept any /blog/* via wildcard.
+// Match path-only (strip query/hash before testing).
+const _BLOG_PATH_RE = /^(?:\/[a-z]{2}(?:-[A-Z]{2})?)?\/blog(?:\/|$)/;
+
+export const isAllowedLandingPath = (path: string): boolean => {
+  if (!path) return false;
+  const pathOnly = path.split("?")[0].split("#")[0];
+  if (LOCKED_LANDING_PAGES.has(pathOnly)) return true;
+  return _BLOG_PATH_RE.test(pathOnly);
+};
+
 export type SearchParamInput = Record<string, string | string[] | undefined>;
 
 const readValue = (params: URLSearchParams, key: string) => {
@@ -35,9 +47,7 @@ export const readPaymentFunnelSource = (
 
   return {
     landingPage:
-      landingPage && LOCKED_LANDING_PAGES.has(landingPage)
-        ? landingPage
-        : undefined,
+      landingPage && isAllowedLandingPath(landingPage) ? landingPage : undefined,
     ctaSlot: readValue(params, QUERY_KEY_MAP.ctaSlot),
     entryVariant: readValue(params, QUERY_KEY_MAP.entryVariant),
     checkoutSource: readValue(params, QUERY_KEY_MAP.checkoutSource),
@@ -182,9 +192,37 @@ export const detectEntryVariantFromBrowser = (): string => {
   return "other";
 };
 
+// Session-scoped first-observed pagepath. Captures the *initial* pagepath
+// the user landed on this session (e.g. /blog/<slug>) so that when later
+// checkout flows can't recover landing_page from URL params or whitelist
+// (entry=direct, no UTM, blog wildcard not allow-listed yet on the way in,
+// etc.), we still attribute to the real entry — not /subscription, not NULL.
+const FIRST_PAGEPATH_KEY = "artimagehub_first_pagepath";
+
+export const recordFirstPagePathIfMissing = (): void => {
+  if (typeof window === "undefined") return;
+  try {
+    if (sessionStorage.getItem(FIRST_PAGEPATH_KEY)) return;
+    const path = `${window.location.pathname}${window.location.search}`;
+    if (!path) return;
+    sessionStorage.setItem(FIRST_PAGEPATH_KEY, path);
+  } catch {
+    // sessionStorage may be unavailable (private mode, quota); silent ignore.
+  }
+};
+
+const getFirstPagePath = (): string | undefined => {
+  if (typeof window === "undefined") return undefined;
+  try {
+    return sessionStorage.getItem(FIRST_PAGEPATH_KEY) || undefined;
+  } catch {
+    return undefined;
+  }
+};
+
 /**
  * Fill missing fields on a funnel-source object with browser-derived values:
- *   - landingPage <- window.location.pathname + search (full path, includes locale)
+ *   - landingPage <- session-first pagepath, or current window.location.pathname+search
  *   - entryVariant <- detectEntryVariantFromBrowser()
  *   - cta_slot / checkout_source from caller-provided defaults
  *
@@ -208,6 +246,7 @@ export const enrichFunnelSource = (
     landingPage:
       base.landingPage ||
       defaults.landingPage ||
+      getFirstPagePath() ||
       `${window.location.pathname}${window.location.search}`,
     ctaSlot: base.ctaSlot || defaults.ctaSlot,
     entryVariant:

@@ -52,6 +52,18 @@ const LOCKED_LANDING_PAGES = new Set([
   "/ko/photo-enhancer",
 ]);
 
+// Blog paths (with optional locale prefix) are part of the funnel, but we
+// don't want to enumerate every slug — accept any /blog/* via wildcard.
+// Match path-only (strip query/hash before testing).
+const _BLOG_PATH_RE = /^(?:\/[a-z]{2}(?:-[A-Z]{2})?)?\/blog(?:\/|$)/;
+
+const isAllowedLandingPath = (path: string): boolean => {
+  if (!path) return false;
+  const pathOnly = path.split("?")[0].split("#")[0];
+  if (LOCKED_LANDING_PAGES.has(pathOnly)) return true;
+  return _BLOG_PATH_RE.test(pathOnly);
+};
+
 const readPaymentFunnelValue = (params: URLSearchParams, key: string) => {
   const value = params.get(key)?.trim();
   return value || undefined;
@@ -66,10 +78,10 @@ export const readPaymentFunnelSource = (
   );
 
   const resolvedLandingPage = (() => {
-    if (landingPage && LOCKED_LANDING_PAGES.has(landingPage)) return landingPage;
+    if (landingPage && isAllowedLandingPath(landingPage)) return landingPage;
     if (typeof window === "undefined") return undefined;
     const pathname = window.location.pathname;
-    return LOCKED_LANDING_PAGES.has(pathname) ? pathname : undefined;
+    return isAllowedLandingPath(pathname) ? pathname : undefined;
   })();
 
   return {

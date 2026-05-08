@@ -7,6 +7,7 @@ import ExitIntentPopup from "@/components/ExitIntentPopup";
 import StickyCTA from "@/components/StickyCTA";
 import RouteChromeGuard from "@/components/RouteChromeGuard";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import PageviewTracker from "@/components/PageviewTracker";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -116,6 +117,7 @@ export default function RootLayout({
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}
       >
         <RouteChromeGuard />
+        <PageviewTracker />
         {/* WebMCP — expose site tools to AI agents via browser modelContext API */}
         <script
           dangerouslySetInnerHTML={{
