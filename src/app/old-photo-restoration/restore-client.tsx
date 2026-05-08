@@ -127,6 +127,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const canUpload = isSubscriber && !checkingAccess;
   const [photosRestored, setPhotosRestored] = useState<number | null>(null);
 
+  // Unconditional warmup ping — keeps Render warm before user submits email
+  useEffect(() => {
+    if (API_BASE) fetch(`${API_BASE}/health`).catch(() => {});
+  }, []);
+
   // Fetch social proof counter (fire-and-forget, no retry needed)
   useEffect(() => {
     if (!API_BASE) return;
