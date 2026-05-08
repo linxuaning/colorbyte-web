@@ -97,3 +97,25 @@ Professional photo restoration at a portrait studio or specialty service runs $5
 ArtImageHub's $4.99 one-time unlock delivers a full-resolution restored file immediately, with no subscription or ongoing charge. In the context of median U.S. funeral costs of $7,000 to $12,000, it is a negligible line item that produces a permanent, high-quality record — something the family will keep long after the obituary has been published.
 
 For families managing funeral logistics under emotional and time pressure, the combination of low cost, instant results, and no technical expertise required makes [ArtImageHub](https://artimagehub.com) a practical tool for exactly this use case.
+
+## Frequently Asked Questions
+
+## What resolution does a newspaper obituary photo actually need?
+
+Most U.S. daily newspapers require a minimum of 200 DPI at their print dimensions. For a standard 2x3 inch obituary portrait that means at least 400x600 pixels, while papers preferring 300 DPI need 600x900 pixels. Ask the obituary desk for the exact pixel dimension rather than a DPI figure, since digital submission bypasses some of the DPI complexity. AI upscaling with Real-ESRGAN can take a wallet-sized print scanned at 600 DPI and produce a file well above 3000x4000 pixels — far beyond any newspaper requirement — with sharp recovered detail rather than blurry interpolation.
+
+## Can AI restoration fix a blurry or damaged photo in time for a newspaper deadline?
+
+Yes. The entire AI restoration workflow on ArtImageHub takes under five minutes per photo once you have uploaded the file, with the AI processing itself completing in seconds. A realistic timeline from deciding on a specific photo to having a newspaper-ready file is thirty to sixty minutes, including scanning. Newspaper obituary desks typically accept submissions up to twenty-four hours before publication, and the 24-72 hour window most families have is more than sufficient. GFPGAN handles face clarity specifically, which is the most important quality factor for a portrait published in an obituary.
+
+## What are the technical requirements for a funeral home slideshow?
+
+The most common standard is 1920x1080 pixels — standard HD — for full-screen display. Photos smaller than this are stretched or letterboxed by slideshow software, which softens the image visibly. For a portrait occupying half the screen, a 960x1080 pixel source image is adequate. AI upscaling with Real-ESRGAN can bring a 400x300 pixel old snapshot up to 1600x1200 or higher with recovered detail rather than just stretched pixels. Contact the funeral home to confirm their preferred file format — JPEG at 85 quality or above and PNG are both widely accepted.
+
+## How do I quickly identify the best photo to restore when time is limited?
+
+Prioritize by three factors in order: face size, original sharpness, and physical condition. A photo where the subject's face fills at least a quarter of the frame gives AI models the most detail to restore. A faded photo that was originally sharp restores far better than one that was originally blurry — check for catchlights (tiny reflections in the eyes) to confirm original focus. Physical condition matters least: fading, yellowing, foxing, and creases are all addressable, while original blur from camera motion or a soft lens cannot be fully recovered. Studio photographs from any decade will typically outperform informal snapshots because studio lighting and focus produce better original capture quality.
+
+## Is $4.99 a reasonable cost in the context of funeral expenses?
+
+The median U.S. funeral costs between $7,000 and $12,000. In that context, $4.99 for a one-time AI restoration that produces a lasting high-quality image for the obituary, memorial cards, and family records is negligible. Professional restoration services at portrait studios or specialty shops typically charge $50 to $300 per image with one-to-two-week turnaround — far outside the window an obituary deadline allows. ArtImageHub's $4.99 one-time unlock gives you the full-resolution restored file immediately, with no subscription or recurring charge.
