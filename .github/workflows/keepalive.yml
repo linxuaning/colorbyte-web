@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Ping backend health
         run: |
-          curl -sf --max-time 20 https://backend.artimagehub.com/health \
+          curl -sf --max-time 55 https://backend.artimagehub.com/health \
             && echo "Backend awake" \
             || echo "Backend unreachable (cold start in progress)"
