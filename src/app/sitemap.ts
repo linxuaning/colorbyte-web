@@ -149,6 +149,58 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Buyer-guide comparison pages (2026-05-10 batch — replicates winning
+    // /best-photo-restoration-software template that converted Rich Horan via
+    // DDG organic). 5× X-vs-Y + 3× ranked-list buyer guides. Apex paths only
+    // (no /blog/ prefix) to avoid cannibalization with main buyer-guide.
+    {
+      url: `${baseUrl}/artimagehub-vs-remini`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/artimagehub-vs-myheritage`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/artimagehub-vs-vivid-pix`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/artimagehub-vs-photomyne`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/artimagehub-vs-yodayo`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/best-photo-colorization-tool`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/best-old-photo-enhancer`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/photo-restoration-app-comparison`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/ai-photo-upscaler`,
       lastModified: new Date(),
