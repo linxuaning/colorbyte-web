@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Pre-push hook: scan YAML frontmatter for parse errors before push.
+# c39f671 (2026-05-11) had 9 zh-CN files with inline ASCII " in YAML scalars
+# that broke Vercel builds 4 times. This hook catches the class locally.
+#
+# Enable: git config core.hooksPath .githooks
+
+set -e
+cd "$(git rev-parse --show-toplevel)"
+if [ -f scripts/check-yaml-frontmatter.js ]; then
+  node scripts/check-yaml-frontmatter.js || {
+    echo
+    echo "Push aborted. Run: python3 scripts/fix-yaml-frontmatter.py"
+    echo "Or bypass: git push --no-verify (NOT recommended)"
+    exit 1
+  }
+fi
