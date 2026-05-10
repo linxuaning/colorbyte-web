@@ -13,11 +13,11 @@ coverColor: "#e8f0f5"
 coverEmoji: "⚖️"
 faq:
   - question: "Luminar Neo 和 ArtImageHub 在老照片修复上的关键区别是什么？"
-    answer: "Luminar Neo 是一款通用 AI 照片编辑器，老照片修复是它众多功能中的一项；ArtImageHub 是专注于老照片修复的专用工具，整个流水线都为这一目的设计。这导致两者在效果和工作流上截然不同。Luminar Neo 的"老照片"模块用单一通用增强算法处理，对轻度褪色和模糊有效，但对严重物理损伤（深度划痕、水渍、霉斑）效果有限。ArtImageHub 用 GFPGAN（人脸专用模型）+ Real-ESRGAN（4× 超分辨率）+ NAFNet（去模糊）+ DDColor（上色）多模型流水线，每个模型针对一种特定损伤类型训练。对家庭档案中那些有真实损伤的老照片，ArtImageHub 的多模型方法效果显著更好。Luminar Neo 适合现代照片的整体美化和创意编辑，不是为深度修复设计的。"
+    answer: "Luminar Neo 是一款通用 AI 照片编辑器，老照片修复是它众多功能中的一项；ArtImageHub 是专注于老照片修复的专用工具，整个流水线都为这一目的设计。这导致两者在效果和工作流上截然不同。Luminar Neo 的「老照片」模块用单一通用增强算法处理，对轻度褪色和模糊有效，但对严重物理损伤（深度划痕、水渍、霉斑）效果有限。ArtImageHub 用 GFPGAN（人脸专用模型）+ Real-ESRGAN（4× 超分辨率）+ NAFNet（去模糊）+ DDColor（上色）多模型流水线，每个模型针对一种特定损伤类型训练。对家庭档案中那些有真实损伤的老照片，ArtImageHub 的多模型方法效果显著更好。Luminar Neo 适合现代照片的整体美化和创意编辑，不是为深度修复设计的。"
   - question: "哪个更划算：Luminar Neo $79/年 还是 ArtImageHub $4.99 一次性？"
     answer: "看你的使用频率和需求。Luminar Neo 是一次性购买（$79）+ 年度订阅模式获取最新功能，五年总成本可能达到 $200 到 $400，适合每周都做创意照片编辑的爱好者。ArtImageHub 是一次性 $4.99 解锁，永久访问，适合家庭项目的有限批次（修复完一批家族照片就基本完成了）。100 张老照片项目：Luminar Neo 需要 $79 起 + 大量手动调整时间（每张 5 到 15 分钟），合计成本远超 $79；ArtImageHub 是 $4.99 + 30 到 90 秒每张自动处理，总成本接近 $5。如果你的目标是修复家族档案，ArtImageHub 是 16 倍便宜的选择。如果你想成为创意摄影师或定期编辑现代照片，Luminar Neo 的全套创意工具更合适。"
   - question: "Luminar Neo 的 AI 引擎和 ArtImageHub 用的模型有什么不同？"
-    answer: "Luminar Neo 用的是 Skylum 自研的 AI 引擎（不开源、技术细节有限）。ArtImageHub 用的是开源同行评议模型：GFPGAN（Wang 等，腾讯 ARC 实验室，2021）、Real-ESRGAN（Wang 等，2021）、NAFNet（Chen 等，2022）、DDColor（Kang 等，2023）。开源模型的优势是技术细节可验证、研究社区可监督、性能基准公开。Luminar Neo 的封闭模型在创意效果上有时更"惊艳"（因为可以为视觉冲击优化而非历史准确性），但对家族档案这类要求高保真度的用途，可验证的开源模型更可靠。两者用了完全不同的 AI 哲学，反映了它们的目标用户：Luminar Neo 服务创意摄影师，ArtImageHub 服务家族档案保护。"
+    answer: "Luminar Neo 用的是 Skylum 自研的 AI 引擎（不开源、技术细节有限）。ArtImageHub 用的是开源同行评议模型：GFPGAN（Wang 等，腾讯 ARC 实验室，2021）、Real-ESRGAN（Wang 等，2021）、NAFNet（Chen 等，2022）、DDColor（Kang 等，2023）。开源模型的优势是技术细节可验证、研究社区可监督、性能基准公开。Luminar Neo 的封闭模型在创意效果上有时更「惊艳」（因为可以为视觉冲击优化而非历史准确性），但对家族档案这类要求高保真度的用途，可验证的开源模型更可靠。两者用了完全不同的 AI 哲学，反映了它们的目标用户：Luminar Neo 服务创意摄影师，ArtImageHub 服务家族档案保护。"
 language: "zh-CN"
 ---
 
