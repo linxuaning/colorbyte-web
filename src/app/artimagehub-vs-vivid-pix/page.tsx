@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'The pricing models are also different. Vivid-Pix Restore costs $39.99 for a desktop license (with subscription tiers also available). ArtImageHub uses a single $4.99 unlock per restoration project with a free preview before payment. We tested both on 30 photos covering 1950s prints, 1970s slides, and modern document scans to compare quality, workflow, and total cost.',
   ],
 
-  comparisonHeading: 'ArtImageHub vs Vivid-Pix Restore at a Glance',
+  comparisonHeading: 'How do ArtImageHub and Vivid-Pix Restore compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -103,7 +103,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Vivid-Pix Restore is $39.99 for the desktop license. ArtImageHub is $4.99 once. For a single restoration project, ArtImageHub is roughly 8× cheaper. Vivid-Pix only wins on cost if you restore 8+ separate batches over years and value the offline desktop install.',
 
-  detailedHeading: 'Detailed Comparison: Top 3 Picks',
+  detailedHeading: 'Which Vivid-Pix Restore alternative wins on web-based AI restoration?',
   detailedReviews: [
     {
       position: 1,
@@ -190,7 +190,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable Vivid-Pix Alternatives',
+  otherHeading: 'What other Vivid-Pix Restore alternatives should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -257,7 +257,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Results: Same Scan, Both Tools',
+  beforeAfterHeading: 'What do real before/after results show on the same scan?',
   beforeAfterCaption1: '1956 35mm slide with severe color fade and emulsion damage',
   beforeAfterCaption2: 'Restored with ArtImageHub in 32 seconds — color and detail recovered',
 

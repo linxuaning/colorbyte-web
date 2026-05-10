@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'The rest of this guide compares ArtImageHub against the actual photo restoration alternatives someone would consider, with a brief honest section on what Yodayo does well in its own category. We tested ArtImageHub against four real photo restoration tools on the same 40 family photos.',
   ],
 
-  comparisonHeading: 'Real Photo Restoration Alternatives',
+  comparisonHeading: 'Which AI tools actually restore real photos vs anime AI like Yodayo?',
   comparisonItems: [
     {
       position: 1,
@@ -103,7 +103,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '⚠️ Note: Yodayo is an anime AI art generator, not a photo restoration tool. We list it for completeness because users searching "Yodayo photo restoration" sometimes arrive expecting restoration. For real photo restoration, the top 4 tools are the right options.',
 
-  detailedHeading: 'Detailed Comparison: Top 3 Real Photo Restoration Picks',
+  detailedHeading: 'Which Yodayo alternative actually restores real photos?',
   detailedReviews: [
     {
       position: 1,
@@ -187,7 +187,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Real Photo Restoration Alternatives',
+  otherHeading: 'What other real-photo restoration alternatives should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -255,7 +255,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'What Real Photo Restoration Looks Like (ArtImageHub)',
+  beforeAfterHeading: 'What does real photo restoration actually look like on a damaged print?',
   beforeAfterCaption1: '1962 family portrait with deep scratches and color fade',
   beforeAfterCaption2: 'Restored with ArtImageHub — same people, same scene, damage repaired',
 

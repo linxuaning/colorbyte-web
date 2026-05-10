@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'This guide ranks the 8 tools tested, recommends free vs paid options based on your project size, and includes honest assessments of where free tools fall short. We tested at native resolution on photos with realistic damage rather than cherry-picked examples, so the results reflect what you will actually see on your own photos.',
   ],
 
-  comparisonHeading: 'Best Old Photo Enhancers at a Glance',
+  comparisonHeading: 'How do the best old photo enhancers compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -136,7 +136,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year for old-photo enhancement: ArtImageHub stays at $4.99 • Remini ≈ $119.88/year • MyHeritage from $129/year • VanceAI ≈ $238.80/year • Topaz Photo AI $199 once. ArtImageHub is roughly 24–60× cheaper than subscription alternatives.',
 
-  detailedHeading: 'Detailed Reviews: Top 3 Picks',
+  detailedHeading: 'Which old photo enhancer is best for damaged vintage prints?',
   detailedReviews: [
     {
       position: 1,
@@ -221,7 +221,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable Old Photo Enhancers',
+  otherHeading: 'What other old photo enhancers should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -299,7 +299,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Old Photo Enhancement Results',
+  beforeAfterHeading: 'What do real old photo enhancement results look like?',
   beforeAfterCaption1: '1953 family portrait with severe blur and fading',
   beforeAfterCaption2: 'Enhanced with ArtImageHub — face detail and fabric texture recovered',
 

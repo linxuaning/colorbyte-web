@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'This guide ranks all 8 apps tested, breaks down where each one wins, and includes a buying guide for matching the right app to your specific project. We also flag common app failure modes (over-sharpened faces, anachronistic colorization, watermarks on free tiers) so you know what to look for in your own results.',
   ],
 
-  comparisonHeading: 'Photo Restoration Apps at a Glance',
+  comparisonHeading: 'How do the major photo restoration apps compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -136,7 +136,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year for restoration only: ArtImageHub stays at $4.99 • Remini ≈ $119.88/year • Photomyne subscription • MyHeritage from $129/year • VanceAI ≈ $238.80/year • Vivid-Pix $39.99 once • Topaz $199 once. ArtImageHub is the cheapest viable option by a wide margin for one-time projects.',
 
-  detailedHeading: 'Detailed Reviews: Top 3 Picks',
+  detailedHeading: 'Which photo restoration app is best for most family projects?',
   detailedReviews: [
     {
       position: 1,
@@ -221,7 +221,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Photo Restoration Apps Tested',
+  otherHeading: 'What other photo restoration apps should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -299,7 +299,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Results: Same Photo, Multiple Apps',
+  beforeAfterHeading: 'What do real before/after results show across different apps?',
   beforeAfterCaption1: '1955 family photo with severe water damage and fading',
   beforeAfterCaption2: 'Restored with ArtImageHub — water damage, fade, and blur all repaired',
 

@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'This guide ranks the 8 tools tested, highlights where each one wins, and includes a buying guide for matching the right colorizer to your specific project. We also flag the common AI colorization failure modes (over-saturated skin, monochrome outfits, anachronistic colors) so you know what to look for in your own results.',
   ],
 
-  comparisonHeading: 'Best Photo Colorization Tools at a Glance',
+  comparisonHeading: 'How do the best photo colorization tools compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -136,7 +136,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year: ArtImageHub stays at $4.99 • Remini ≈ $119.88/year • MyHeritage from $129/year • VanceAI ≈ $238.80/year • Photoshop CC ≈ $659.88/year. The cost gap between $4.99 and any subscription option is dramatic for a single colorization project.',
 
-  detailedHeading: 'Detailed Reviews: Top 3 Picks',
+  detailedHeading: 'Which AI photo colorization tool produces the most natural results?',
   detailedReviews: [
     {
       position: 1,
@@ -221,7 +221,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable Colorization Tools',
+  otherHeading: 'What other photo colorization tools should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -297,7 +297,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Colorization Results',
+  beforeAfterHeading: 'What do AI colorization results look like on real B&W photos?',
   beforeAfterCaption1: '1948 family portrait, original black-and-white',
   beforeAfterCaption2: 'Colorized with ArtImageHub — natural skin tones, accurate clothing colors',
 
