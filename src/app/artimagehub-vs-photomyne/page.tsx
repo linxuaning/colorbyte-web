@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'This guide breaks down where each tool wins, when to combine them, and how to pick if you only want one. We tested both on 40 photos digitized from family albums covering 1920s through 2000s.',
   ],
 
-  comparisonHeading: 'ArtImageHub vs Photomyne at a Glance',
+  comparisonHeading: 'How do ArtImageHub and Photomyne compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -103,7 +103,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Best workflow: Use Photomyne (or free Google PhotoScan) to digitize album pages, then run the resulting files through ArtImageHub for proper restoration. Total cost: $4.99 + scanning time, vs Photomyne subscription that bundles weaker restoration.',
 
-  detailedHeading: 'Detailed Comparison: Top 3 Picks',
+  detailedHeading: 'Which Photomyne alternative wins for restoration after scanning?',
   detailedReviews: [
     {
       position: 1,
@@ -188,7 +188,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable Photomyne Alternatives',
+  otherHeading: 'What other Photomyne alternatives should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -256,7 +256,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Results: Photomyne Scan + ArtImageHub Restore',
+  beforeAfterHeading: 'What does a Photomyne scan look like after ArtImageHub restoration?',
   beforeAfterCaption1: '1958 album page photo digitized with Photomyne (heavy fading and water stain)',
   beforeAfterCaption2: 'Same scan run through ArtImageHub — color, detail, and corner damage restored',
 

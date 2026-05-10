@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'Pricing also tells two different stories. Remini charges $9.99 per month, which adds up to roughly $120 per year — sustainable for daily mobile use, expensive if you only restore a handful of family photos once. ArtImageHub uses a preview-first model: you see the restored result before paying, and a single $4.99 unlock buys the original-quality download tied to your email. The rest of this guide breaks down quality, pricing, workflow, and use-case fit so you can pick the right tool for your specific photos.',
   ],
 
-  comparisonHeading: 'ArtImageHub vs Remini at a Glance',
+  comparisonHeading: 'How do ArtImageHub and Remini compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -103,7 +103,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year: ArtImageHub stays at $4.99 if you only need one batch • Remini ≈ $119.88/year • MyHeritage from $129/year • VanceAI ≈ $238.80/year. The break-even point against Remini is roughly one Remini month.',
 
-  detailedHeading: 'Detailed Comparison: Top 3 Picks',
+  detailedHeading: 'Which Remini alternative wins on whole-photo restoration?',
   detailedReviews: [
     {
       position: 1,
@@ -190,7 +190,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable Remini Alternatives',
+  otherHeading: 'What other Remini alternatives should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -257,7 +257,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Results: Same Photo, Both Tools',
+  beforeAfterHeading: 'What do real before/after results show on the same photo?',
   beforeAfterCaption1: '1947 wedding photo with water damage and scratches — the test image used for both tools',
   beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30 seconds',
 

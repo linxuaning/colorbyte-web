@@ -42,7 +42,7 @@ const config: BuyerGuideConfig = {
     'The rest of this guide breaks down where each tool actually wins, who should pay for which, and how to decide based on your real project rather than the marketing positioning. Both tools have strengths — the question is whether you need the genealogy bundle or just the photo restoration.',
   ],
 
-  comparisonHeading: 'ArtImageHub vs MyHeritage at a Glance',
+  comparisonHeading: 'How do ArtImageHub and MyHeritage compare at a glance?',
   comparisonItems: [
     {
       position: 1,
@@ -103,7 +103,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year for restoration only: ArtImageHub stays at $4.99 • MyHeritage Premium $129/year • MyHeritage Complete $299/year • Ancestry from $299/year • Remini ≈ $119.88/year. ArtImageHub is roughly 25–60× cheaper than MyHeritage if you only need photo restoration.',
 
-  detailedHeading: 'Detailed Comparison: Top 3 Picks',
+  detailedHeading: 'Which MyHeritage alternative wins for standalone photo restoration?',
   detailedReviews: [
     {
       position: 1,
@@ -188,7 +188,7 @@ const config: BuyerGuideConfig = {
     },
   ],
 
-  otherHeading: 'Other Notable MyHeritage Alternatives',
+  otherHeading: 'What other MyHeritage alternatives should I consider?',
   otherReviews: [
     {
       position: 4,
@@ -256,7 +256,7 @@ const config: BuyerGuideConfig = {
   ],
 
   showBeforeAfter: true,
-  beforeAfterHeading: 'Real Results: Same Photo, Both Tools',
+  beforeAfterHeading: 'What do real before/after results show on the same photo?',
   beforeAfterCaption1: '1942 wartime portrait with severe scratches and fading',
   beforeAfterCaption2: 'Restored with ArtImageHub in 28 seconds — face + uniform detail recovered',
 
