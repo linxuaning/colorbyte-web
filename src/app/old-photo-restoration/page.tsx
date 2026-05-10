@@ -405,6 +405,83 @@ export default function OldPhotoRestorationPage() {
         </div>
       </CollapsibleSection>
 
+      {/* ─── Hub-and-Spoke: Compare AI Tools (apex buyer-guide cards) ─── */}
+      {/* 2026-05-11: added per foreman overnight P2. Routes the converting
+          page's intent into apex buyer-guide pages (not /blog/* duplicates).
+          Pattern modeled after the buyer-guide cards in 26 tutorial blog
+          posts shipped in commit e2f3e98 (rich-horan pattern propagation). */}
+      <section className="border-t border-[#d2d2d7]/40 bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-5">
+          <div className="text-center mb-10">
+            <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
+              Which AI photo restoration tool is right for your project?
+            </h2>
+            <p className="mt-3 text-[15px] text-[#6e6e73] max-w-2xl mx-auto leading-[1.6]">
+              Browse our 2026 buyer guides — independently tested rankings, head-to-head comparisons against major competitors, and category-specific recommendations to help you pick the right tool before you upload.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                href: "/best-photo-restoration-software?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_buyer_guide&entry_variant=hub_apex_cards",
+                badge: "Buyer Guide",
+                title: "Best Photo Restoration Software 2026",
+                desc: "10 tools tested and ranked by value. The independent guide that helped a paying customer find ArtImageHub via DuckDuckGo organic.",
+              },
+              {
+                href: "/photo-restoration-app-comparison?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_app&entry_variant=hub_apex_cards",
+                badge: "Top of Funnel",
+                title: "Photo Restoration App Comparison",
+                desc: "8 major apps tested on the same family photos — pricing, quality, workflow, use-case fit.",
+              },
+              {
+                href: "/artimagehub-vs-remini?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_remini&entry_variant=hub_apex_cards",
+                badge: "Head-to-Head",
+                title: "ArtImageHub vs Remini",
+                desc: "Whole-photo restore vs face-only enhancement. $4.99 once vs $9.99/month. Honest 2026 comparison.",
+              },
+              {
+                href: "/artimagehub-vs-myheritage?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_myheritage&entry_variant=hub_apex_cards",
+                badge: "Head-to-Head",
+                title: "ArtImageHub vs MyHeritage",
+                desc: "Standalone restoration vs $129–299/year genealogy bundle. Cost analysis for finite projects.",
+              },
+              {
+                href: "/best-old-photo-enhancer?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_enhancer&entry_variant=hub_apex_cards",
+                badge: "Buyer Guide",
+                title: "Best Old Photo Enhancer 2026",
+                desc: "8 enhancers tested on vintage prints. Free vs paid options ranked honestly for old-photo damage patterns.",
+              },
+              {
+                href: "/best-photo-colorization-tool?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_colorization&entry_variant=hub_apex_cards",
+                badge: "Buyer Guide",
+                title: "Best Photo Colorization Tool 2026",
+                desc: "8 AI colorization tools tested. Skin tone accuracy, period-color fidelity, pricing compared.",
+              },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group block rounded-xl border border-[#d2d2d7]/60 bg-[#faf8f4] p-5 hover:border-[#0071e3]/40 hover:shadow-sm transition-all duration-200"
+              >
+                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[#8B5E3C] mb-2">
+                  {item.badge}
+                </p>
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#0071e3] transition-colors mb-1.5">
+                  {item.title}
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.55] mb-2">
+                  {item.desc}
+                </p>
+                <span className="text-[12px] font-medium text-[#0071e3] inline-flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                  Read the guide <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── SEO Content: FAQ ─── */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-5">
