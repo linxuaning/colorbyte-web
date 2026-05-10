@@ -201,6 +201,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // P3 apex comparison pages 2026-05-11 (foreman overnight P3) — high-search
+    // SaaS competitors that previously only had /blog/* coverage.
+    {
+      url: `${baseUrl}/artimagehub-vs-picsart`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/artimagehub-vs-fotor`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     {
       url: `${baseUrl}/ai-photo-upscaler`,
       lastModified: new Date(),
