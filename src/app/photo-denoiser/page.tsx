@@ -85,42 +85,66 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is AI photo denoising?",
+      name: "What exactly is AI photo denoising and how is it different from blur filters?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI photo denoising uses machine learning to detect and remove noise patterns from images — including sensor noise from high-ISO shots, JPEG compression artifacts, and low-light grain. Unlike simple blurring, AI denoising preserves edge sharpness and fine texture while removing only the noise component. ArtImageHub uses NAFNet (Nonlinear Activation Free Network, Chen et al., 2022) trained on the SIDD dataset of real-world smartphone noise.",
+        text: "AI photo denoising uses machine learning models to detect and remove noise patterns from images while preserving the underlying signal. Traditional blur-based denoising (Gaussian blur, median filter) reduces noise by averaging neighboring pixels, which sacrifices sharpness and fine texture in exchange for smoother output. AI denoising is fundamentally different: the model is trained on millions of paired noisy and clean images, learning the statistical signature of real-world noise (sensor noise, ISO grain, JPEG compression artifacts) versus actual image content (edges, textures, details). At inference time it subtracts only what it identifies as noise, leaving sharp edges and fine texture intact. ArtImageHub uses NAFNet (Chen et al., ECCV 2022) trained on the SIDD dataset of real-world smartphone noise, achieving state-of-the-art PSNR of 39.96 dB on SIDD benchmarks at publication time.",
       },
     },
     {
       "@type": "Question",
-      name: "What AI model powers the photo denoiser?",
+      name: "What AI model powers the ArtImageHub photo denoiser?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub uses NAFNet (Nonlinear Activation Free Network, Chen et al., 2022) trained on SIDD (Smartphone Image Denoising Dataset). NAFNet achieved state-of-the-art PSNR on SIDD benchmarks at publication and is specifically designed for real-world camera noise removal rather than synthetic noise patterns.",
+        text: "ArtImageHub runs NAFNet (Nonlinear Activation Free Network), a peer-reviewed denoising architecture published by Chen et al. at ECCV 2022. NAFNet replaces the GELU/Sigmoid activation functions used by earlier denoising networks with simpler element-wise operations, which made it both faster and more accurate than predecessor architectures like DnCNN, FFDNet, and CBDNet. The specific weights ArtImageHub uses were trained on SIDD (Smartphone Image Denoising Dataset, Abdelhamed et al., CVPR 2018) — paired noisy and clean photos captured from five smartphone cameras across 10 different scenes. SIDD training is what makes NAFNet effective on real-world digital photo noise rather than synthetic Gaussian noise. The same model architecture is used across academic and commercial photo denoising pipelines, so ArtImageHub is running the published research directly without proprietary modifications.",
       },
     },
     {
       "@type": "Question",
-      name: "What types of noise can be removed?",
+      name: "What types of photo noise can ArtImageHub actually remove?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NAFNet trained on SIDD handles real-world smartphone sensor noise best, including: high-ISO grain from low-light photography, color noise (chroma noise), luminance noise, and mixed noise typical of smartphone cameras. It also partially reduces JPEG compression artifacts and banding. Film grain from analog scans may respond less well than digital sensor noise.",
+        text: "NAFNet trained on SIDD handles the noise types most commonly seen in real-world digital photography. High-ISO grain from low-light photography (smartphone or DSLR shots taken at ISO 1600 or above) is the strongest case — visible color and luminance noise patterns are removed cleanly while preserving edge detail. JPEG compression artifacts (blocky 8x8 patterns and ringing around edges) are partially reduced as a side effect, though the dedicated JPEG Artifact Remover tool produces better results for that specific case. Color noise (chroma noise) showing as random colored speckles in shadow areas is handled well. Film grain from analog scans may respond less predictably because NAFNet was trained on digital sensor noise, not film grain — film tends to have a different statistical signature that the model wasn't optimized for. For film grain specifically, consider a film-emulation tool or Photoshop's manual noise reduction.",
       },
     },
     {
       "@type": "Question",
-      name: "Is photo denoising separate from photo restoration?",
+      name: "Is photo denoising sold separately from photo restoration on ArtImageHub?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — ArtImageHub charges separately for each feature. Photo restoration (old photo repair with face enhancement) costs $4.99 one-time. Photo denoising (noise removal with NAFNet) is a separate $4.99 one-time purchase. Each tool can be unlocked independently. You do not need to buy both to use either.",
+        text: "Yes, the denoiser and restoration tools are independent $4.99 purchases. ArtImageHub uses an unbundled per-feature pricing model: photo restoration (crack repair, face enhancement with GFPGAN, colorization with DDColor, super-resolution with Real-ESRGAN) is one $4.99 one-time purchase. Photo denoising (NAFNet noise removal) is a separate $4.99 one-time purchase. JPEG artifact removal, photo deblurring, and other tools each unlock with their own $4.99 payment. This pricing structure means you only pay for the tools you actually use rather than buying a bundle that includes capabilities you do not need. Each tool unlock is tied to your email address and persists indefinitely — you can return later to use that tool again without re-paying. There are no bundles, subscriptions, or recurring charges. Buy what you need, when you need it.",
       },
     },
     {
       "@type": "Question",
-      name: "What image formats are supported?",
+      name: "What image formats and file sizes does the photo denoiser support?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "JPG, PNG, and WEBP up to 20MB per file. Works with smartphone photos, DSLR exports, scanned images, and screenshots.",
+        text: "JPG, PNG, and WEBP files up to 20 MB per upload are supported. The denoiser works on photos from any source — smartphone exports from iOS and Android, RAW-converted JPEGs from DSLR or mirrorless cameras, scanned images saved as JPG or PNG, screenshots, and downloaded images from social media or messaging apps. For best results, upload the original highest-quality image before any additional compression, editing, or sharing. Re-saving a denoised result as JPEG at low quality can reintroduce compression artifacts the model just removed, partially undoing the denoising. If you plan to share the denoised result, save it as PNG (lossless) or as JPEG at quality 90 or higher. HEIC files from iPhone are not currently supported — convert to JPG or PNG first using your phone's share menu or any image converter. Files larger than 20 MB should be downsized in your image software before upload.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How is AI photo denoising different from photo sharpening?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Denoising and sharpening are opposite operations that solve different problems. Sharpening increases local contrast at edges to create the visual perception of crispness — Unsharp Mask in Photoshop, Detail Enhancer in Lightroom, and similar tools all work by amplifying high-frequency content. The catch is that noise is also high-frequency content, so sharpening tends to amplify grain along with edges, often making compressed or noisy photos look worse rather than better. AI denoising specifically models what noise looks like and subtracts it from the image, leaving real edges and textures intact. The two operations also have an order: denoising should always come first, then sharpening if needed. Sharpening a noisy photo amplifies noise; sharpening a denoised photo enhances real detail. Apply ArtImageHub's denoiser first, then if you want extra crispness use Photoshop, Lightroom, or any sharpening tool on the cleaned output. Running them in the wrong order produces visibly worse results.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does AI photo denoising take per image?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000x3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Free preview takes the same time as paid processing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between ArtImageHub's NAFNet denoiser and Topaz DeNoise AI or Adobe AI Denoise?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Topaz DeNoise AI ($79/year) and Adobe Lightroom AI Denoise ($9.99+/month) are commercial denoising tools using proprietary AI models. The underlying technology is similar across all three products — modern AI denoising converged on transformer-based or efficient CNN architectures trained on real-world noise datasets. Differences are mostly in user interface (Topaz is desktop with sliders, Adobe is integrated into Lightroom workflow, ArtImageHub is web-based with one-click processing), pricing model (Topaz is annual subscription, Adobe is monthly subscription, ArtImageHub is $4.99 one-time per project), and the specific training data (each vendor uses their own dataset). For a typical user denoising a finite batch of photos, ArtImageHub's $4.99 one-time pricing is dramatically cheaper than committing to a monthly or annual subscription. For users who denoise photos every week as part of a professional workflow, Topaz or Adobe make more sense as ongoing tools. Quality differences between the three on most real-world photos are smaller than the marketing implies.",
       },
     },
   ],
@@ -286,28 +310,36 @@ export default function PhotoDenoiserPage() {
           <dl className="space-y-6">
             {[
               {
-                q: "What is AI photo denoising?",
-                a: "AI photo denoising uses machine learning to detect and remove noise patterns from images — including sensor noise from high-ISO shots, JPEG compression artifacts, and low-light grain. Unlike simple blurring, AI denoising preserves edge sharpness and fine texture while removing only the noise component. ArtImageHub uses NAFNet (Chen et al., 2022) trained on the SIDD dataset of real-world smartphone noise.",
+                q: "What exactly is AI photo denoising and how is it different from blur filters?",
+                a: "AI photo denoising uses machine learning models to detect and remove noise patterns from images while preserving the underlying signal. Traditional blur-based denoising (Gaussian blur, median filter) reduces noise by averaging neighboring pixels, which sacrifices sharpness and fine texture in exchange for smoother output. AI denoising is fundamentally different: the model is trained on millions of paired noisy and clean images, learning the statistical signature of real-world noise (sensor noise, ISO grain, JPEG compression artifacts) versus actual image content (edges, textures, details). At inference time it subtracts only what it identifies as noise, leaving sharp edges and fine texture intact. ArtImageHub uses NAFNet (Chen et al., ECCV 2022) trained on the SIDD dataset of real-world smartphone noise, achieving state-of-the-art PSNR of 39.96 dB on SIDD benchmarks at publication time.",
               },
               {
-                q: "What AI model powers the denoiser?",
-                a: "ArtImageHub uses NAFNet (Nonlinear Activation Free Network, Chen et al., ECCV 2022) trained on SIDD. NAFNet achieved state-of-the-art PSNR of 39.96 dB on SIDD benchmarks and is designed specifically for real-world camera noise removal.",
+                q: "What AI model powers the ArtImageHub photo denoiser?",
+                a: "ArtImageHub runs NAFNet (Nonlinear Activation Free Network), a peer-reviewed denoising architecture published by Chen et al. at ECCV 2022. NAFNet replaces the GELU/Sigmoid activation functions used by earlier denoising networks with simpler element-wise operations, which made it both faster and more accurate than predecessor architectures like DnCNN, FFDNet, and CBDNet. The specific weights ArtImageHub uses were trained on SIDD (Smartphone Image Denoising Dataset, Abdelhamed et al., CVPR 2018) — paired noisy and clean photos captured from five smartphone cameras across 10 different scenes. SIDD training is what makes NAFNet effective on real-world digital photo noise rather than synthetic Gaussian noise. The same model architecture is used across academic and commercial photo denoising pipelines, so ArtImageHub is running the published research directly without proprietary modifications.",
               },
               {
-                q: "What types of noise can be removed?",
-                a: "NAFNet on SIDD handles real-world smartphone sensor noise, including: high-ISO grain from low-light photography, color (chroma) noise, luminance noise, and mixed noise. It also reduces JPEG compression artifacts. Film grain from analog scans may respond less predictably than digital sensor noise.",
+                q: "What types of photo noise can ArtImageHub actually remove?",
+                a: "NAFNet trained on SIDD handles the noise types most commonly seen in real-world digital photography. High-ISO grain from low-light photography (smartphone or DSLR shots taken at ISO 1600 or above) is the strongest case — visible color and luminance noise patterns are removed cleanly while preserving edge detail. JPEG compression artifacts (blocky 8×8 patterns and ringing around edges) are partially reduced as a side effect, though the dedicated JPEG Artifact Remover tool produces better results for that specific case. Color noise (chroma noise) showing as random colored speckles in shadow areas is handled well. Film grain from analog scans may respond less predictably because NAFNet was trained on digital sensor noise, not film grain — film tends to have a different statistical signature that the model wasn't optimized for. For film grain specifically, consider a film-emulation tool or Photoshop's manual noise reduction.",
               },
               {
-                q: "Is photo denoising separate from photo restoration?",
-                a: "Yes — ArtImageHub charges $4.99 one-time per feature, independently. Photo restoration (crack repair, face enhancement, colorization) is one purchase. Photo denoising (grain and noise removal with NAFNet) is a separate $4.99 purchase. You can buy either tool on its own without needing the other. Future features follow the same model — each unlocks with a separate one-time payment, and you only pay for what you actually use. There are no bundles or subscriptions.",
+                q: "Is photo denoising sold separately from photo restoration on ArtImageHub?",
+                a: "Yes, the denoiser and restoration tools are independent $4.99 purchases. ArtImageHub uses an unbundled per-feature pricing model: photo restoration (crack repair, face enhancement with GFPGAN, colorization with DDColor, super-resolution with Real-ESRGAN) is one $4.99 one-time purchase. Photo denoising (NAFNet noise removal) is a separate $4.99 one-time purchase. JPEG artifact removal, photo deblurring, and other tools each unlock with their own $4.99 payment. This pricing structure means you only pay for the tools you actually use rather than buying a bundle that includes capabilities you do not need. Each tool unlock is tied to your email address and persists indefinitely — you can return later to use that tool again without re-paying. There are no bundles, subscriptions, or recurring charges. Buy what you need, when you need it.",
               },
               {
-                q: "What image formats are supported?",
-                a: "JPG, PNG, and WEBP files up to 20MB are supported. The denoiser works with smartphone photos exported from iOS or Android, RAW-converted JPEGs from DSLRs, scanned images saved as JPG or PNG, and screenshots. For best results, upload the original image before any additional compression or editing — JPEG re-compression after denoising can reintroduce artifacts the model just removed.",
+                q: "What image formats and file sizes does the photo denoiser support?",
+                a: "JPG, PNG, and WEBP files up to 20 MB per upload are supported. The denoiser works on photos from any source — smartphone exports from iOS and Android, RAW-converted JPEGs from DSLR or mirrorless cameras, scanned images saved as JPG or PNG, screenshots, and downloaded images from social media or messaging apps. For best results, upload the original highest-quality image before any additional compression, editing, or sharing. Re-saving a denoised result as JPEG at low quality can reintroduce compression artifacts the model just removed, partially undoing the denoising. If you plan to share the denoised result, save it as PNG (lossless) or as JPEG at quality 90 or higher. HEIC files from iPhone are not currently supported — convert to JPG or PNG first using your phone's share menu or any image converter. Files larger than 20 MB should be downsized in your image software before upload.",
               },
               {
-                q: "How does AI denoising differ from sharpening?",
-                a: "Sharpening increases contrast at edges to create the perception of crispness — it does not remove noise, and can actually amplify grain by making it more visually prominent. AI denoising specifically targets the noise component of an image: it models what real noise looks like and subtracts it, leaving the underlying signal intact. The result is a cleaner image that still sharpens well afterward if needed. Running sharpening before denoising typically makes results worse; apply denoising first.",
+                q: "How is AI photo denoising different from photo sharpening?",
+                a: "Denoising and sharpening are opposite operations that solve different problems. Sharpening increases local contrast at edges to create the visual perception of crispness — Unsharp Mask in Photoshop, Detail Enhancer in Lightroom, and similar tools all work by amplifying high-frequency content. The catch is that noise is also high-frequency content, so sharpening tends to amplify grain along with edges, often making compressed or noisy photos look worse rather than better. AI denoising specifically models what noise looks like and subtracts it from the image, leaving real edges and textures intact. The two operations also have an order: denoising should always come first, then sharpening if needed. Sharpening a noisy photo amplifies noise; sharpening a denoised photo enhances real detail. Apply ArtImageHub's denoiser first, then if you want extra crispness use Photoshop, Lightroom, or any sharpening tool on the cleaned output. Running them in the wrong order produces visibly worse results.",
+              },
+              {
+                q: "How long does AI photo denoising take per image?",
+                a: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000×3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Free preview takes the same time as paid processing.",
+              },
+              {
+                q: "What is the difference between ArtImageHub's NAFNet denoiser and Topaz DeNoise AI or Adobe AI Denoise?",
+                a: "Topaz DeNoise AI ($79/year) and Adobe Lightroom AI Denoise ($9.99+/month) are commercial denoising tools using proprietary AI models. The underlying technology is similar across all three products — modern AI denoising converged on transformer-based or efficient CNN architectures trained on real-world noise datasets. Differences are mostly in user interface (Topaz is desktop with sliders, Adobe is integrated into Lightroom workflow, ArtImageHub is web-based with one-click processing), pricing model (Topaz is annual subscription, Adobe is monthly subscription, ArtImageHub is $4.99 one-time per project), and the specific training data (each vendor uses their own dataset). For a typical user denoising a finite batch of photos, ArtImageHub's $4.99 one-time pricing is dramatically cheaper than committing to a monthly or annual subscription. For users who denoise photos every week as part of a professional workflow, Topaz or Adobe make more sense as ongoing tools. Quality differences between the three on most real-world photos are smaller than the marketing implies.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
