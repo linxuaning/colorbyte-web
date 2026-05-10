@@ -1,6 +1,6 @@
 ---
 title: "How to Separate Photos Stuck Together: Safe Methods for Fused Photographs"
-description: "Learn safe techniques to separate photographs stuck together from humidity, flooding, or improper storage. Step-by-step guide to rescuing fused photos without damage."
+description: "Free DIY guide: how to safely separate photos stuck together from humidity, flooding, or storage. Step-by-step water + humidity methods to rescue fused photographs without tearing the emulsion."
 publishedAt: "2026-02-23"
 updatedAt: "2026-05-04"
 author: "Sarah Chen"
@@ -43,6 +43,8 @@ howTo:
 > Or browse the [full 17-tool comparison](/best-photo-restoration-software) before deciding.
 
 <!-- inline-paywall-card-injected -->
+
+**Quick answer:** Soak in cool distilled water for 20–30 minutes, slide the photos apart while still underwater, then air-dry face-up. For brittle, antique, or dry-bonded prints, use the humidity-chamber method below instead. **Never pull stuck photos apart dry** — it tears the emulsion and destroys image content permanently.
 
 **Do not pull dry** — forcing stuck photos apart tears the emulsion and destroys image content permanently.
 
