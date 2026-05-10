@@ -220,6 +220,6 @@ AI 助手不太适合用来:
 选哪款工具,取决于你的照片、预算,以及愿意亲自动手到什么程度。
 
 - **[对比头部照片修复工具 →](/best-photo-restoration-software)** — 2026 年 17 款 AI 照片修复工具的独立测评榜单,含价格、各类损伤的成功率,以及面向不同用户层级的推荐。
-- **[ArtImageHub vs Remini 人脸修复对比 →](/blog/artimagehub-vs-remini)** — 针对该具体场景的逐项功能拆解。
+- **[ArtImageHub vs Remini 人脸修复对比 →](/artimagehub-vs-remini)** — 针对该具体场景的逐项功能拆解。
 
 <!-- buyer-guide-internal-link-injected -->

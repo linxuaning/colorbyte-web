@@ -101,7 +101,7 @@ The honest answer: plausible, not necessarily accurate. The AI predicts the most
 
 For personal use — printing for family, sharing memories, making a framed gift — the distinction rarely matters. A realistically colorized portrait of a great-grandparent is meaningful regardless of whether the dress was exactly that shade.
 
-For archival, genealogical documentation, or publication, label colorized images as "AI-estimated colorization" rather than presenting them as factual color records. This matches how professional archivists and historians treat computer-generated colorizations, including those produced by services like [MyHeritage InColor](/blog/artimagehub-vs-myheritage).
+For archival, genealogical documentation, or publication, label colorized images as "AI-estimated colorization" rather than presenting them as factual color records. This matches how professional archivists and historians treat computer-generated colorizations, including those produced by services like [MyHeritage InColor](/artimagehub-vs-myheritage).
 
 For deeper context on colorization accuracy across different model generations, see [AI Photo Colorization Accuracy](/blog/ai-photo-colorization-accuracy) and the [Complete Guide to Colorizing Old Photos](/blog/complete-guide-colorize-old-photos).
 

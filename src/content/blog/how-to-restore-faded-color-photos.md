@@ -60,7 +60,7 @@ ArtImageHub ($4.99 per image) combines DDColor, Real-ESRGAN, and NAFNet in a sin
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Find the right tool for faded color photos →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs MyHeritage for color recovery →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs MyHeritage for color recovery →](/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 

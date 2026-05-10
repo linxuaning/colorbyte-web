@@ -285,7 +285,7 @@ For most photos with minor to moderate damage — yes. AI-restored images at 600
 **How is ArtImageHub different from Remini or MyHeritage?**
 **Short answer:** ArtImageHub is optimized for old photo restoration specifically; Remini is strongest on face enhancement; MyHeritage has the best colorization.
 
-All three use similar underlying technology (GFPGAN/Real-ESRGAN family of models). ArtImageHub is optimized for old photo restoration specifically — scratch removal, fading correction, and face enhancement in a single pipeline. Remini is strongest on face enhancement alone. MyHeritage has good colorization. For a full comparison with real test photos, see our [detailed comparison article](/blog/artimagehub-vs-remini).
+All three use similar underlying technology (GFPGAN/Real-ESRGAN family of models). ArtImageHub is optimized for old photo restoration specifically — scratch removal, fading correction, and face enhancement in a single pipeline. Remini is strongest on face enhancement alone. MyHeritage has good colorization. For a full comparison with real test photos, see our [detailed comparison article](/artimagehub-vs-remini).
 
 ---
 
@@ -297,7 +297,7 @@ All three use similar underlying technology (GFPGAN/Real-ESRGAN family of models
 
 **Related Reading:**
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
-- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
+- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/artimagehub-vs-remini)
 - [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
 <script type="application/ld+json">
 {

@@ -372,8 +372,8 @@ When choosing photo restoration software, consider how your images are handled a
 
 ## Related Articles
 
-- [ArtImageHub vs Remini — feature-by-feature comparison](/blog/artimagehub-vs-remini)
-- [ArtImageHub vs MyHeritage Photo Enhancer — pricing & quality comparison](/blog/artimagehub-vs-myheritage)
+- [ArtImageHub vs Remini — feature-by-feature comparison](/artimagehub-vs-remini)
+- [ArtImageHub vs MyHeritage Photo Enhancer — pricing & quality comparison](/artimagehub-vs-myheritage)
 - [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
 - [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
 - [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)

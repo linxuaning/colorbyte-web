@@ -193,7 +193,7 @@ $4.99 for CodeFormer + GFPGAN + damage repair + integrated upscaling is not a pr
 
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool ranked comparison
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — professional tools vs automated AI
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — detailed face quality comparison
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — detailed face quality comparison
 - [What AI Photo Restoration Can and Cannot Fix](/blog/ai-photo-restoration-limitations) — realistic expectations
 
 ## Quick method comparison: AI vs DIY vs Professional

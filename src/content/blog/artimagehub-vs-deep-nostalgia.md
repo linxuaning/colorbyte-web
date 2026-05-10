@@ -127,7 +127,7 @@ This combination gives you the best quality underlying photo + the viral emotion
 
 ## Related
 
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — full MyHeritage comparison
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — full MyHeritage comparison
 - [Old Photo Restoration for Genealogy](/blog/old-photo-restoration-for-genealogy) — genealogy use case
 - [How to Colorize Old Photos with AI](/blog/how-to-colorize-old-photos) — colorization guide
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool ranked comparison

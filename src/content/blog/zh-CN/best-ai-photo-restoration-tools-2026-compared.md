@@ -83,7 +83,7 @@ language: "zh-CN"
 | MyHeritage Photo Fix | $129/年 | 7/10 | 7/10 | 7/10 | 6/10 | 7/10 | 20 秒 | 与家谱服务捆绑 |
 | Topaz Photo AI(桌面) | $199 一次性 | 8/10 | 8/10 | 7/10 | 7/10 | 8/10 | 本地 | 批处理之王,需要 GPU |
 
-这张表压平了很多细节差异。有意义的两两对比我会单独拆开来讲:[ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop)、[ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai)、[ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger),以及 [ArtImageHub vs Remini](/blog/artimagehub-vs-remini)。我也专门写了一篇文章回答"Gemini 能行吗?",见 [Gemini 能修复老照片吗](/blog/can-gemini-restore-old-photos),短答:勉强能,但不可靠。
+这张表压平了很多细节差异。有意义的两两对比我会单独拆开来讲:[ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop)、[ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai)、[ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger),以及 [ArtImageHub vs Remini](/artimagehub-vs-remini)。我也专门写了一篇文章回答"Gemini 能行吗?",见 [Gemini 能修复老照片吗](/blog/can-gemini-restore-old-photos),短答:勉强能,但不可靠。
 
 ## 类别一:网页一次性工具(大多数人的甜点区)
 
@@ -107,7 +107,7 @@ language: "zh-CN"
 
 **ImageLarger** 本质上是一款乔装成修复工具的放大器。如果你只有低分辨率扫描件,主要想要更多像素,它没问题。如果你有物理损伤,它就用错了工具。
 
-它们与 ArtImageHub 的具体对比文章见各自的对照页:[vs Remini](/blog/artimagehub-vs-remini)、[vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai)、[vs ImageLarger](/blog/artimagehub-vs-imagelarger)。
+它们与 ArtImageHub 的具体对比文章见各自的对照页:[vs Remini](/artimagehub-vs-remini)、[vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai)、[vs ImageLarger](/blog/artimagehub-vs-imagelarger)。
 
 ### 免费网页工具
 

@@ -242,6 +242,6 @@ Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimi
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare top photo restoration tools →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[Compare ArtImageHub vs Remini for face restoration →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[Compare ArtImageHub vs Remini for face restoration →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

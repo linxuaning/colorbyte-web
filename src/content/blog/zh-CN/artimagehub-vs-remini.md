@@ -8,7 +8,7 @@ authorRole: "Photography Workflow Consultant"
 authorBio: "David consults for photography studios and archival institutions on digital workflows. He's tested every major AI photo tool since 2023 and maintains a database of 500+ before/after comparisons."
 category: "Comparisons"
 tags: ["Comparison", "Remini", "AI Tools", "Photo Enhancement", "Testing"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-orange-500 via-amber-600 to-yellow-700"
 coverEmoji: "⚖️"
 faq: 
@@ -463,7 +463,7 @@ language: "zh-CN"
 
 ## 相关对比
 
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — 人脸增强与隐私的深度对决
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — 人脸增强与隐私的深度对决
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — 积分制 vs 一次性付费的照片修复对比
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — 全能图片编辑器 vs 专注修复的工具
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — 专业放大 vs 老照片修复

@@ -73,6 +73,6 @@ Restored photographs become permanent fixtures in residents' rooms. They are pre
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Find the best photo restoration tool for senior care projects →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Remini — accessibility & ease comparison →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Remini — accessibility & ease comparison →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

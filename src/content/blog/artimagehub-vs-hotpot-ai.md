@@ -117,7 +117,7 @@ Hotpot AI's restoration tool applies AI enhancement to old photographs. The unde
 
 ## Related
 
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — similar multi-tool comparison
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — similar multi-tool comparison
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credit-based pricing comparison
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool ranked comparison
 - [How to Restore Old Photos for Free](/blog/how-to-restore-old-photos-for-free) — free tools overview

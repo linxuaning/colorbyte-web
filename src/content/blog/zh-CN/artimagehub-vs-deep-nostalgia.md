@@ -120,7 +120,7 @@ MyHeritage 提供两款独立的工具：
 
 ## 相关阅读
 
-- [ArtImageHub 与 MyHeritage Photo Enhancer 对比](/blog/artimagehub-vs-myheritage) —— 完整 MyHeritage 对比
+- [ArtImageHub 与 MyHeritage Photo Enhancer 对比](/artimagehub-vs-myheritage) —— 完整 MyHeritage 对比
 - [面向家谱研究的 Old Photo Restoration](/blog/old-photo-restoration-for-genealogy) —— 家谱场景应用
 - [如何用 AI 为老照片上色](/blog/how-to-colorize-old-photos) —— 上色指南
 - [2026 年 Old Photo Restoration 最佳 AI 工具](/blog/best-ai-old-photo-restoration-tools-2026) —— 7 款工具排行对比

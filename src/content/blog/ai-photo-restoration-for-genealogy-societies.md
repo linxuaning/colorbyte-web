@@ -75,6 +75,6 @@ Your society's members submitted those photos because they believed they mattere
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Read the in-depth photo restoration buyer's guide →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs MyHeritage for genealogy societies →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs MyHeritage for genealogy societies →](/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

@@ -523,7 +523,7 @@ Spend 1 hour today: find your 20 most irreplaceable photos, put them in Ziploc b
 **Related Reading:**
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
-- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
+- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/artimagehub-vs-remini)
 
 **Resources:**
 - American Institute for Conservation: [Find a Conservator](https://www.culturalheritage.org/about-conservation/find-a-conservator)

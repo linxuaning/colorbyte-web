@@ -8,7 +8,7 @@ authorRole: "Digital Archivist"
 authorBio: "Sarah is a digital archivist who has restored thousands of family photos for genealogy projects. She evaluates AI photo tools for a living."
 category: "Comparisons"
 tags: ["Comparison", "MyHeritage", "AI Tools", "Photo Restoration", "Family Photos"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-blue-600 via-indigo-600 to-purple-700"
 coverEmoji: "⚖️"
 faq:
@@ -159,8 +159,8 @@ Try ArtImageHub's free preview before you pay — you can see the restored versi
 
 ## Related Comparisons
 
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — face enhancement and colorization compared
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — face enhancement and colorization compared
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair

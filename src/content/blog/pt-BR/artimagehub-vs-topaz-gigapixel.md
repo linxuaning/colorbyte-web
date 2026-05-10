@@ -8,7 +8,7 @@ authorRole: "Photo Archival Consultant"
 authorBio: "James consults for museums and private collectors on digitizing and restoring historical photo archives. He evaluates AI tools for archival and consumer use."
 category: "Comparisons"
 tags: ["Comparison", "Topaz", "Gigapixel AI", "Photo Restoration", "Image Upscaling"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-violet-600 via-purple-600 to-indigo-700"
 coverEmoji: "🔬"
 faq: 
@@ -143,8 +143,8 @@ Para a restauração típica de fotos de família — uma caixa de cópias antig
 
 ## Comparações relacionadas
 
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — teste aprofundado com 6 ferramentas em 100 fotos de família
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — comparação de melhoria facial e colorização
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — teste aprofundado com 6 ferramentas em 100 fotos de família
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — comparação de melhoria facial e colorização
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — modelo de créditos vs preço único
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — editor completo de fotos vs ferramenta dedicada à restauração
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — ampliação por IA vs restauração de fotos antigas

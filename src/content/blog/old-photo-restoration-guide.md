@@ -452,7 +452,7 @@ I use a decade-based folder structure: `01_Originals_NEVER_EDIT/`, `02_AI_Restor
 
 **Related Reading:**
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)
-- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
+- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/artimagehub-vs-remini)
 - [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
 <script type="application/ld+json">
 {

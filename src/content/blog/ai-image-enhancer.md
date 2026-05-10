@@ -373,7 +373,7 @@ The right AI tool for old photos exists. [Start with a free test on ArtImageHub]
 **Related Reading:**
 - [How AI Photo Restoration Actually Works](/blog/how-ai-photo-restoration-works)
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
-- [ArtImageHub vs. Remini: Real Results Compared](/blog/artimagehub-vs-remini)
+- [ArtImageHub vs. Remini: Real Results Compared](/artimagehub-vs-remini)
 
 ## Quick method comparison: AI vs DIY vs Professional
 

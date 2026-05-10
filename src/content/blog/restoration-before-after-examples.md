@@ -601,7 +601,7 @@ More often than you'd think. About 1 in 20 restorations reveals something the cl
 **Related Stories:**
 - [I Spent 6 Months Restoring 847 Family Photos — Complete Guide](/blog/old-photo-restoration-guide)
 - [My Parents' Basement Flooded and Destroyed 40 Years of Photos](/blog/preserving-old-photos)
-- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/blog/artimagehub-vs-remini)
+- [I Tested 6 AI Photo Tools on 100 Damaged Photos — Real Results](/artimagehub-vs-remini)
 
 **Technical Guide:**
 - [How AI Photo Restoration Actually Works: The Technology Explained](/blog/how-ai-photo-restoration-works)

@@ -8,7 +8,7 @@ import Link from "next/link";
 // modal_overlay path uncluttered (acceptance criterion in handoff spec).
 //
 // Card 3 (Photomyne) intentionally dropped — comparison page doesn't exist
-// yet (`/blog/artimagehub-vs-photomyne` not in src/content/blog/). Add back
+// yet (`/artimagehub-vs-photomyne` not in src/content/blog/). Add back
 // when content batch lands the comparison post.
 
 interface AlternativeCard {
@@ -31,7 +31,7 @@ const cards: AlternativeCard[] = [
     ctaText: "See ArtImageHub vs Remini →",
     ctaHref:
       "/subscription?landing_page=%2Fold-photo-restoration&cta_slot=sidebar_card_remini&entry_variant=buyer_guide&checkout_source=inline_card",
-    secondaryHref: "/blog/artimagehub-vs-remini",
+    secondaryHref: "/artimagehub-vs-remini",
     secondaryText: "Read the full comparison",
   },
   {
@@ -42,7 +42,7 @@ const cards: AlternativeCard[] = [
     ctaText: "See ArtImageHub vs MyHeritage →",
     ctaHref:
       "/subscription?landing_page=%2Fold-photo-restoration&cta_slot=sidebar_card_myheritage&entry_variant=buyer_guide&checkout_source=inline_card",
-    secondaryHref: "/blog/artimagehub-vs-myheritage",
+    secondaryHref: "/artimagehub-vs-myheritage",
     secondaryText: "Read the full comparison",
   },
 ];

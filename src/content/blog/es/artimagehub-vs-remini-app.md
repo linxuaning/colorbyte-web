@@ -136,6 +136,6 @@ Para la tarea específica sobre la que trata este artículo, restaurar fotograf�
 ## Comparaciones Relacionadas
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — IA automatizada vs edición profesional manual
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — mejora de rostros y colorización comparadas
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — mejora de rostros y colorización comparadas
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — editor de fotos completo vs herramienta de restauración enfocada
 - [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) — flujo de trabajo de edición RAW vs restauración con IA

@@ -135,6 +135,6 @@ For the specific task this article is about — restoring old family photographs
 ## Related Comparisons
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — automated AI vs manual professional editing
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — face enhancement and colorization compared
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — face enhancement and colorization compared
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) — RAW editing workflow vs AI restoration

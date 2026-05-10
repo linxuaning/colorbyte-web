@@ -60,7 +60,7 @@ The cases where expectations should be modestly set are extreme handheld motion 
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Which AI tool sharpens blurry photos best? See the rankings →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Remini for blur & face sharpening →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Remini for blur & face sharpening →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 

@@ -105,6 +105,6 @@ The faces in those old directories deserve to be legible again.
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[See which AI tool wins for batch directory photos →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs MyHeritage for genealogy & directory photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs MyHeritage for genealogy & directory photos →](/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

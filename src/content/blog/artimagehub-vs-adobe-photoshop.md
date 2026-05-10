@@ -8,7 +8,7 @@ authorRole: "Digital Photography Educator"
 authorBio: "Rachel teaches digital photography and image editing at a community college. She evaluates AI tools and traditional editing software for students ranging from beginners to advanced photographers."
 category: "Comparisons"
 tags: ["Comparison", "Adobe Photoshop", "Photo Restoration", "Neural Filters", "AI Tools"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-blue-700 via-indigo-700 to-violet-800"
 coverEmoji: "🎨"
 faq:
@@ -208,9 +208,9 @@ Once restored, the next question is usually [how to print restored photos](/blog
 
 ## Related Comparisons
 
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — AI upscaling vs old photo restoration
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — face enhancement and colorization compared
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — face enhancement and colorization compared
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair

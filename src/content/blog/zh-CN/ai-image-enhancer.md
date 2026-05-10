@@ -366,7 +366,7 @@ language: "zh-CN"
 **延伸阅读:**
 - [AI 照片修复实际是如何工作的](/blog/how-ai-photo-restoration-works)
 - [我花了 6 个月修复 847 张家庭照片 —— 完整指南](/blog/old-photo-restoration-guide)
-- [ArtImageHub 对比 Remini:真实结果实测](/blog/artimagehub-vs-remini)
+- [ArtImageHub 对比 Remini:真实结果实测](/artimagehub-vs-remini)
 
 ## 方法快速对比:AI vs DIY vs 专业
 

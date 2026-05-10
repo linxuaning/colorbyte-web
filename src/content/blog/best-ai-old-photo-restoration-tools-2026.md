@@ -199,9 +199,9 @@ Remini is the best alternative for portrait-only use without physical damage. Ph
 
 **Top alternatives (head-to-head tests):**
 
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — full 100-photo test
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — full 100-photo test
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — upscaling vs restoration
-- [ArtImageHub vs MyHeritage](/blog/artimagehub-vs-myheritage) — genealogy and colorization
+- [ArtImageHub vs MyHeritage](/artimagehub-vs-myheritage) — genealogy and colorization
 - [ArtImageHub vs MyHeritage Deep Nostalgia](/blog/artimagehub-vs-deep-nostalgia) — animation vs full restoration
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits vs one-time
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full editor vs restoration tool
@@ -212,7 +212,7 @@ Remini is the best alternative for portrait-only use without physical damage. Ph
 
 **Specialized restoration & touch-up alternatives:**
 
-- [ArtImageHub vs Photomyne](/blog/artimagehub-vs-photomyne) — scan-and-restore mobile app vs web tool
+- [ArtImageHub vs Photomyne](/artimagehub-vs-photomyne) — scan-and-restore mobile app vs web tool
 - [ArtImageHub vs RetouchUp](/blog/artimagehub-vs-retouchup) — outsourced human retouching vs AI
 - [ArtImageHub vs Inpaint](/blog/artimagehub-vs-inpaint) — object-removal vs full restoration
 - [ArtImageHub vs Pixelmator](/blog/artimagehub-vs-pixelmator) — Mac editor vs dedicated restoration

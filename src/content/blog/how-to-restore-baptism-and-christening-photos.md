@@ -111,6 +111,6 @@ If the preview shows a result that does not meet your needs — a very heavily d
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare ArtImageHub against alternatives →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs MyHeritage for family ceremony photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs MyHeritage for family ceremony photos →](/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

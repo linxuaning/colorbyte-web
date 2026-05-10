@@ -96,7 +96,7 @@ Before going deep on each tool, here is the shape of the market right now. I hav
 | MyHeritage Photo Fix | $129/yr | 7/10 | 7/10 | 7/10 | 6/10 | 7/10 | 20s | Bundled with genealogy |
 | Topaz Photo AI (desktop) | $199 once | 8/10 | 8/10 | 7/10 | 7/10 | 8/10 | Local | Batch king, needs GPU |
 
-The table flattens a lot of nuance. I break the significant head-to-head comparisons out in [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop), [ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger), and [ArtImageHub vs Remini](/blog/artimagehub-vs-remini). I also wrote a dedicated answer to the "can Gemini do it?" question in [can Gemini restore old photos](/blog/can-gemini-restore-old-photos), and the short answer is: sort of, but not reliably.
+The table flattens a lot of nuance. I break the significant head-to-head comparisons out in [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop), [ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger), and [ArtImageHub vs Remini](/artimagehub-vs-remini). I also wrote a dedicated answer to the "can Gemini do it?" question in [can Gemini restore old photos](/blog/can-gemini-restore-old-photos), and the short answer is: sort of, but not reliably.
 
 ## Category 1: Web-Based One-Shot Tools (The Sweet Spot for Most People)
 
@@ -120,7 +120,7 @@ These three sit in the "freemium monthly" bucket. You get a few restores free, t
 
 **ImageLarger** is really an upscaler masquerading as a restoration tool. If you have a low-res scan and mostly want more pixels, it is fine. If you have physical damage, it is the wrong tool.
 
-Detail on each of these vs. ArtImageHub lives in their individual comparisons: [vs Remini](/blog/artimagehub-vs-remini), [vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [vs ImageLarger](/blog/artimagehub-vs-imagelarger).
+Detail on each of these vs. ArtImageHub lives in their individual comparisons: [vs Remini](/artimagehub-vs-remini), [vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [vs ImageLarger](/blog/artimagehub-vs-imagelarger).
 
 ### Free Web Tools
 

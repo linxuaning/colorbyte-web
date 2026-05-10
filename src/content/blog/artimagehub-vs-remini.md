@@ -8,7 +8,7 @@ authorRole: "Photography Workflow Consultant"
 authorBio: "David consults for photography studios and archival institutions on digital workflows. He's tested every major AI photo tool since 2023 and maintains a database of 500+ before/after comparisons."
 category: "Comparisons"
 tags: ["Comparison", "Remini", "AI Tools", "Photo Enhancement", "Testing"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-orange-500 via-amber-600 to-yellow-700"
 coverEmoji: "⚖️"
 faq:
@@ -470,7 +470,7 @@ Worth every hour and dollar.
 
 ## Related Comparisons
 
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — in-depth head-to-head on face enhancement and privacy
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — in-depth head-to-head on face enhancement and privacy
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing for photo restoration
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs old photo restoration

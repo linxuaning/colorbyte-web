@@ -342,7 +342,7 @@ Unlike ArtImageHub, Topaz applies same settings to entire batch. For varied dama
 
 ## 3. Remini — Best Mobile Photo Restoration App
 
-> **Detailed comparison:** [ArtImageHub vs Remini — feature-by-feature breakdown](/blog/artimagehub-vs-remini) covering pricing model, face restoration tone, watermark policy, and which tool wins per damage type.
+> **Detailed comparison:** [ArtImageHub vs Remini — feature-by-feature breakdown](/artimagehub-vs-remini) covering pricing model, face restoration tone, watermark policy, and which tool wins per damage type.
 
 **Score: 87/100**
 
@@ -436,7 +436,7 @@ Free version adds "Remini" watermark to restored photos. Must subscribe to remov
 
 ## 4. MyHeritage Photo Enhancer — Best for Genealogy
 
-> **Detailed comparison:** [ArtImageHub vs MyHeritage Photo Enhancer — pricing, colorization, and genealogy workflow](/blog/artimagehub-vs-myheritage) — useful if you're choosing between a $99/year genealogy bundle vs $4.99 one-time restoration.
+> **Detailed comparison:** [ArtImageHub vs MyHeritage Photo Enhancer — pricing, colorization, and genealogy workflow](/artimagehub-vs-myheritage) — useful if you're choosing between a $99/year genealogy bundle vs $4.99 one-time restoration.
 
 **Score: 85/100**
 
@@ -1002,8 +1002,8 @@ The technology is ready. Your family photos are waiting.
 
 ## Related Articles
 
-- [ArtImageHub vs Remini — feature-by-feature comparison](/blog/artimagehub-vs-remini)
-- [ArtImageHub vs MyHeritage Photo Enhancer — pricing & quality comparison](/blog/artimagehub-vs-myheritage)
+- [ArtImageHub vs Remini — feature-by-feature comparison](/artimagehub-vs-remini)
+- [ArtImageHub vs MyHeritage Photo Enhancer — pricing & quality comparison](/artimagehub-vs-myheritage)
 - [Restore Your Wedding Photos: How AI is Saving Precious Memor...](/blog/wedding-photo-restoration)
 - [Vintage Photo Repair Techniques: Professional Methods for Re...](/blog/vintage-photo-repair-techniques)
 - [How to Restore Water Damaged Photographs at Home: Complete G...](/blog/restore-water-damaged-photographs-at-home)

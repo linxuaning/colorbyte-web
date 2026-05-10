@@ -115,6 +115,6 @@ For family photo archiving, Amazon Photos' unlimited full-resolution storage (wi
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[See the 2026 AI photo restoration software rankings →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Remini for cloud photo cleanup →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Remini for cloud photo cleanup →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

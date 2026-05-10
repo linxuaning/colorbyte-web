@@ -54,7 +54,7 @@ For prints stuck to magnetic album pages, do not force removal. Scan the print i
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[View the buyer's guide to AI photo restoration →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs MyHeritage for 1970s era photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs MyHeritage for 1970s era photos →](/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 

@@ -66,7 +66,7 @@ Antes de aprofundar em cada ferramenta, este é o formato atual do mercado. Aval
 | MyHeritage Photo Fix | US$ 129/ano | 7/10 | 7/10 | 7/10 | 6/10 | 7/10 | 20s | Integrado à genealogia |
 | Topaz Photo AI (desktop) | US$ 199 único | 8/10 | 8/10 | 7/10 | 7/10 | 8/10 | Local | Rei do lote, exige GPU |
 
-A tabela aplaina muita nuance. Destrincho os confrontos diretos mais relevantes em [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop), [ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger) e [ArtImageHub vs Remini](/blog/artimagehub-vs-remini). Também escrevi uma resposta dedicada à pergunta "o Gemini dá conta?" em [o Gemini consegue restaurar fotos antigas](/blog/can-gemini-restore-old-photos), e a resposta curta é: mais ou menos, mas não de forma confiável.
+A tabela aplaina muita nuance. Destrincho os confrontos diretos mais relevantes em [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop), [ArtImageHub vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [ArtImageHub vs ImageLarger](/blog/artimagehub-vs-imagelarger) e [ArtImageHub vs Remini](/artimagehub-vs-remini). Também escrevi uma resposta dedicada à pergunta "o Gemini dá conta?" em [o Gemini consegue restaurar fotos antigas](/blog/can-gemini-restore-old-photos), e a resposta curta é: mais ou menos, mas não de forma confiável.
 
 ## Categoria 1: Ferramentas Web de Uso Único (O Ponto Ideal para a Maioria)
 
@@ -90,7 +90,7 @@ Essas três ficam no balde "freemium mensal". Você ganha algumas restaurações
 
 **ImageLarger** é, na verdade, um ampliador disfarçado de ferramenta de restauração. Se você tem uma digitalização em baixa resolução e quer, sobretudo, mais pixels, dá para o gasto. Se tem dano físico, é a ferramenta errada.
 
-O detalhamento de cada uma delas contra o ArtImageHub está em comparações individuais: [vs Remini](/blog/artimagehub-vs-remini), [vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [vs ImageLarger](/blog/artimagehub-vs-imagelarger).
+O detalhamento de cada uma delas contra o ArtImageHub está em comparações individuais: [vs Remini](/artimagehub-vs-remini), [vs Hotpot AI](/blog/artimagehub-vs-hotpot-ai), [vs ImageLarger](/blog/artimagehub-vs-imagelarger).
 
 ### Ferramentas Web Gratuitas
 

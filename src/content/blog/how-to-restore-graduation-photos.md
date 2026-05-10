@@ -79,7 +79,7 @@ For everything short of those hard limits — which represents the vast majority
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare AI restoration apps by photo type →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Remini for portrait & face photos →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Remini for portrait & face photos →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 

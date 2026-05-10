@@ -8,7 +8,7 @@ authorRole: "Photo Archival Consultant"
 authorBio: "James consults for museums and private collectors on digitizing and restoring historical photo archives. He evaluates AI tools for archival and consumer use."
 category: "Comparisons"
 tags: ["Comparison", "Let's Enhance", "Photo Restoration", "Image Upscaling", "AI Tools"]
-image: "/blog/artimagehub-vs-remini.jpg"
+image: "/artimagehub-vs-remini.jpg"
 coverColor: "from-cyan-600 via-teal-600 to-emerald-700"
 coverEmoji: "🔍"
 faq:
@@ -171,8 +171,8 @@ For old printed photographs with damage and degradation, ArtImageHub's restorati
 
 ## Related Comparisons
 
-- [ArtImageHub vs Remini](/blog/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
-- [ArtImageHub vs MyHeritage Photo Enhancer](/blog/artimagehub-vs-myheritage) — face enhancement and colorization compared
+- [ArtImageHub vs Remini](/artimagehub-vs-remini) — in-depth 6-tool test on 100 family photos
+- [ArtImageHub vs MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — face enhancement and colorization compared
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits model vs one-time pricing
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full photo editor vs focused restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair

@@ -71,7 +71,7 @@ When childhood photos degrade and disappear, this visual continuity breaks. Rest
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Read the photo restoration software shootout →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Remini for childhood photo memories →](/blog/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Remini for childhood photo memories →](/artimagehub-vs-remini)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 
