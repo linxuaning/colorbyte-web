@@ -7,6 +7,7 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import DodoQuickCheckoutButton from "@/components/DodoQuickCheckoutButton";
+import HubAlternativesSidebar from "@/components/HubAlternativesSidebar";
 
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
@@ -234,16 +235,23 @@ export default function OldPhotoRestorationPage() {
         </div>
       </div>
 
-      {/* Main tool — promoted above LiveActivity to keep mobile fold tight */}
-      <div id="upload" className="mx-auto max-w-3xl px-5 py-6 sm:py-16">
-        <Suspense fallback={<div className="min-h-[400px]" />}>
-          <RestoreClient />
-        </Suspense>
-      </div>
+      {/* Main tool + buyer-guide sidebar (lg+ only). Mobile preserves the
+          original max-w-3xl single-column flow so the modal_overlay path is
+          untouched on the device class that drives most paid conversions. */}
+      <div className="mx-auto max-w-6xl px-5 py-6 sm:py-16 lg:flex lg:gap-8">
+        <div id="upload" className="flex-1 lg:max-w-3xl">
+          <Suspense fallback={<div className="min-h-[400px]" />}>
+            <RestoreClient />
+          </Suspense>
 
-      {/* Social Proof — moved below pay gate */}
-      <div className="mx-auto max-w-3xl px-5 mb-8">
-        <LiveActivity />
+          {/* Social Proof — moved below pay gate, kept inside main column so
+              the sidebar doesn't push it across breakpoints. */}
+          <div className="mt-8">
+            <LiveActivity />
+          </div>
+        </div>
+
+        <HubAlternativesSidebar />
       </div>
 
       {/* 30-Day Guarantee + Trust */}
