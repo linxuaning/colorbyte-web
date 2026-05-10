@@ -183,6 +183,186 @@ export const fr: LocaleSEO = {
       { q: "Combien ça coûte ?", a: "4,99 $ de paiement unique. Sans abonnement." },
     ],
   },
+  homePage: {
+    metaTitle: "ArtImageHub — Restauration, Amélioration et Colorisation de Photos par IA",
+    metaDescription:
+      "Restaurez vos vieilles photos, améliorez la qualité d'image et colorisez les photos en noir et blanc avec l'IA. Commencez gratuitement, puis téléchargez l'original HD pour 4,99 $.",
+    ogTitle: "ArtImageHub — Restauration de Photos par IA",
+    ogDescription:
+      "Restaurez vos vieilles photos, améliorez la qualité et colorisez les photos en noir et blanc avec ArtImageHub. Paiement unique de 4,99 $. Résultats en 30 à 90 secondes. Sans abonnement.",
+
+    heroEyebrow: "Depuis 2024 · Studio de restauration par IA",
+    heroH1: "Redonnez vie aux souvenirs effacés grâce à la restauration photo par IA.",
+    heroSubhead:
+      "Téléversez une photo abîmée, décolorée ou en noir et blanc — notre IA la restaure avec une netteté saisissante en quelques secondes. Commencez gratuitement, choisissez l'original HD pour 4,99 $ si vous le souhaitez.",
+    heroCtaPrimary: "Restaurez votre photo gratuitement",
+    heroBullets: ["Aperçu gratuit", "Original HD 4,99 $", "Résultats instantanés"] as const,
+    heroTrustStrip: [
+      "Aperçu gratuit avant le paiement",
+      "Supprimée des serveurs sous 24 h",
+      "JPG, PNG, WEBP jusqu'à 20 Mo",
+    ] as const,
+    heroTrustSignals: [
+      "Restauration de qualité professionnelle",
+      "Résultats en 30 secondes",
+      "Paiement unique, sans abonnement",
+    ] as const,
+    heroBadges: [
+      "Paiement sécurisé",
+      "100 % confidentialité",
+      "Supprimée sous 24 h · Téléchargez avant l'expiration",
+      "Garantie remboursé",
+    ] as const,
+    heroSidebarLabel: "La confiance de familles dans le monde entier",
+    heroSidebarStat: "10 000+",
+    heroSidebarStatLabel: "Souvenirs restaurés",
+    heroBottomBorder: "Amélioration faciale · Super-résolution · Colorisation",
+    heroBottomEst: "Est. 2024",
+
+    featuresEyebrow: "Capacités",
+    featuresH2: "Tout ce dont votre photo a besoin.",
+    featuresSubhead:
+      "Six décennies de dégradation photographique inversées en trente secondes par des réseaux neuronaux conçus sur mesure.",
+    features: [
+      {
+        title: "Amélioration faciale",
+        desc: "Reconstruisez les détails du visage perdus à cause du temps ou des dégâts. Grâce aux réseaux neuronaux GFPGAN, nous récupérons des yeux nets, une texture de peau naturelle et l'expression préservée.",
+      },
+      {
+        title: "Super-résolution 4×",
+        desc: "Augmentez jusqu'à 4× la résolution avec l'IA — un détail cristallin récupéré sur les scans de la plus faible qualité, les tirages anciens et les originaux déchirés.",
+      },
+      {
+        title: "Colorisation automatique",
+        desc: "Ajoutez une couleur naturelle et historiquement fidèle aux photos en noir et blanc. Des ciels bleus, des tons de peau chaleureux — en un seul clic.",
+      },
+      {
+        title: "Réparation des rayures et dégâts",
+        desc: "Supprimez fissures, taches d'eau, marques de pliage et taches du temps. Notre modèle d'inpainting comble les détails perdus de manière transparente.",
+      },
+      {
+        title: "Amélioration de la qualité",
+        desc: "Corrigez exposition, contraste et bruit en même temps. Chaque pixel est analysé et corrigé pour un rendu naturel et équilibré.",
+      },
+      {
+        title: "Téléchargement immédiat",
+        desc: "Comparez avant et après avec notre curseur interactif, puis téléchargez votre photo restaurée en pleine résolution.",
+      },
+    ] as const,
+
+    stats: [
+      { number: "10 000+", label: "Photos restaurées", sub: "et plus chaque jour" },
+      { number: "30 s", label: "Traitement moyen", sub: "résultats en quelques secondes" },
+      { number: "4,8★", label: "Note utilisateurs", sub: "sur plus de 2 400 avis" },
+    ] as const,
+    testimonialsEyebrow: "Témoignages",
+    testimonialsH2: "La confiance de familles dans le monde entier",
+    testimonials: [
+      {
+        quote:
+          "J'étais sceptique au départ, mais les résultats m'ont bluffé. Le portrait abîmé de mon arrière-grand-père de 1942 semble neuf. L'IA a même restauré des détails que je ne soupçonnais pas.",
+        author: "Michael Chen",
+        location: "San Francisco, CA",
+      },
+      {
+        quote:
+          "En tant que généalogiste professionnelle, je recommande cet outil à tous mes clients. C'est plus rapide et plus abordable que la restauration traditionnelle, et la qualité est constamment excellente.",
+        author: "Dr Patricia Moore",
+        location: "Boston, MA",
+      },
+      {
+        quote:
+          "J'ai restauré plus de 50 photos de famille au cours du dernier mois. La fonction de colorisation est incroyable — elle a redonné vie aux photos de mariage en noir et blanc de ma grand-mère. Cela vaut chaque centime.",
+        author: "James Rodriguez",
+        location: "Austin, TX",
+      },
+    ] as const,
+
+    howEyebrow: "Processus",
+    howH2: "Trois étapes. Trente secondes.",
+    howSteps: [
+      {
+        n: "1",
+        title: "Débloquez l'accès payant",
+        desc: "Commencez par le paiement pour activer l'envoi et le traitement sur cette adresse e-mail avant d'entrer dans l'outil.",
+      },
+      {
+        n: "2",
+        title: "Téléversez avec la même adresse e-mail",
+        desc: "Revenez dans l'outil après le paiement et envoyez votre photo abîmée, décolorée, en noir et blanc ou de mauvaise qualité.",
+      },
+      {
+        n: "3",
+        title: "Traitez et téléchargez",
+        desc: "Si le traitement réussit, la même adresse e-mail garde l'accès au téléchargement en qualité originale.",
+      },
+    ] as const,
+    howCtaPrimary: "Restaurez votre photo gratuitement",
+
+    compareEyebrow: "Comparez avant de choisir",
+    compareH2: "Commencez par les questions à plus forte intention.",
+    compareSubhead:
+      "Les acheteurs qui comparent déjà des outils sont plus proches de l'action que les visiteurs génériques. Nous orientons cette intention vers des pages de comparaison directes, puis vers le flux de restauration.",
+    compareLabel: "Page à forte intention",
+    compareCards: [
+      {
+        title: "ArtImageHub vs Remini",
+        desc: "Idéal pour ceux qui hésitent entre des outils d'amélioration par IA et cherchent le meilleur flux pour les vieilles photos de famille.",
+        points: [
+          "Comparez la qualité de restauration, le prix et le contrôle des artefacts",
+          "Voyez quel outil est meilleur pour les portraits décolorés et les tirages abîmés",
+          "Passez directement à notre flux de restauration après la comparaison",
+        ],
+        cta: "Lire la comparaison avec Remini",
+      },
+      {
+        title: "Restauration par IA vs Photoshop",
+        desc: "Idéal pour ceux qui pèsent vitesse, effort et qualité avant de s'engager dans l'édition manuelle.",
+        points: [
+          "Comparez l'effort total, le délai et le réalisme",
+          "Clarifiez quand l'édition manuelle est excessive pour récupérer une photo de famille",
+          "Passez directement de l'évaluation à une restauration IA en direct",
+        ],
+        cta: "Lire la comparaison avec Photoshop",
+      },
+    ] as const,
+    compareDirectCta: "Aller directement à la restauration",
+
+    faqEyebrow: "FAQ",
+    faqH2: "Vos questions, nos réponses.",
+    faqSubheadPrefix: "Tout ce que vous devez savoir avant de commencer. Vous ne trouvez pas de réponse ? ",
+    faqVisitJournalLink: "Consultez notre journal",
+    faqSubheadSuffix: ".",
+    faqItems: [
+      {
+        q: "Quels formats d'image acceptez-vous ?",
+        a: "Formats JPG, PNG et WEBP — jusqu'à 20 Mo par fichier.",
+      },
+      {
+        q: "Que se passe-t-il après le paiement ?",
+        a: "Votre paiement débloque l'envoi et le traitement par IA sur cette adresse e-mail. Une fois le traitement terminé, la même adresse débloque le téléchargement HD en qualité originale — sans filigrane, sans abonnement.",
+      },
+      {
+        q: "Mes données photo sont-elles privées et sécurisées ?",
+        a: "Oui. Toutes les photos téléversées sont automatiquement supprimées au bout de 24 heures. Nous ne stockons, ne partageons et n'entraînons jamais de modèles sur vos images.",
+      },
+      {
+        q: "Comment fonctionne l'accès ?",
+        a: "Le paiement débloque l'envoi et le traitement sur cette adresse e-mail. Si le traitement réussit, la même adresse débloque le téléchargement en qualité originale.",
+      },
+      {
+        q: "Ai-je besoin d'un abonnement ?",
+        a: "Non. Il s'agit d'un paiement unique qui débloque l'accès sur cette adresse e-mail. Sans facturation récurrente.",
+      },
+    ] as const,
+
+    finalH2: "Vos souvenirs méritent de briller à nouveau.",
+    finalSubhead:
+      "Payez une fois pour débloquer l'envoi et le traitement sur cette adresse e-mail, puis continuez à l'intérieur de l'outil. Redonnez vie à l'histoire de votre famille sans retomber dans la promesse de l'aperçu gratuit.",
+    finalCtaPrimary: "Restaurez votre photo gratuitement",
+    finalCtaSecondary: "Voir les tarifs",
+    finalTagline: "Accès payant avant l'envoi · Paiement unique · Sans abonnement",
+  },
   toolClient: {
     restore: frRestoreClient,
     colorize: frColorizeClient,

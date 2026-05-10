@@ -183,6 +183,186 @@ export const de: LocaleSEO = {
       { q: "Was kostet es?", a: "4,99 $ Einmalzahlung. Kein Abonnement." },
     ],
   },
+  homePage: {
+    metaTitle: "ArtImageHub — KI-Fotorestaurierung, -Verbesserung und -Kolorierung",
+    metaDescription:
+      "Restauriere alte Fotos, verbessere die Bildqualität und koloriere Schwarz-Weiß-Bilder mit KI. Kostenlos starten und das HD-Original für 4,99 $ herunterladen.",
+    ogTitle: "ArtImageHub — KI-Fotorestaurierung",
+    ogDescription:
+      "Restauriere alte Fotos, verbessere die Qualität und koloriere Schwarz-Weiß-Bilder mit ArtImageHub. Einmalzahlung von 4,99 $. Ergebnisse in 30–90 Sekunden. Kein Abonnement.",
+
+    heroEyebrow: "Seit 2024 · KI-Restaurationsstudio",
+    heroH1: "Erwecke verblasste Erinnerungen mit KI-Fotorestaurierung wieder zum Leben.",
+    heroSubhead:
+      "Lade ein beschädigtes, verblasstes oder Schwarz-Weiß-Foto hoch — unsere KI restauriert es in Sekunden zu beeindruckender Klarheit. Kostenlos starten und das HD-Original für 4,99 $ wählen, wenn du es behalten willst.",
+    heroCtaPrimary: "Foto kostenlos restaurieren",
+    heroBullets: ["Kostenlose Vorschau", "HD-Original 4,99 $", "Sofortige Ergebnisse"] as const,
+    heroTrustStrip: [
+      "Kostenlose Vorschau vor dem Kauf",
+      "Innerhalb von 24 Stunden vom Server gelöscht",
+      "JPG, PNG, WEBP bis zu 20 MB",
+    ] as const,
+    heroTrustSignals: [
+      "Restaurierung in Profi-Qualität",
+      "Ergebnisse in 30 Sekunden",
+      "Einmalzahlung, kein Abonnement",
+    ] as const,
+    heroBadges: [
+      "Sichere Zahlung",
+      "100 % Privatsphäre",
+      "In 24 h gelöscht · Vor Ablauf herunterladen",
+      "Geld-zurück-Garantie",
+    ] as const,
+    heroSidebarLabel: "Familien weltweit vertrauen uns",
+    heroSidebarStat: "10.000+",
+    heroSidebarStatLabel: "Wiederhergestellte Erinnerungen",
+    heroBottomBorder: "Gesichtsverbesserung · Super-Auflösung · Kolorierung",
+    heroBottomEst: "Est. 2024",
+
+    featuresEyebrow: "Funktionen",
+    featuresH2: "Alles, was dein Foto braucht.",
+    featuresSubhead:
+      "Sechs Jahrzehnte fotografischer Verfall, in dreißig Sekunden rückgängig gemacht durch maßgeschneiderte neuronale Netze.",
+    features: [
+      {
+        title: "Gesichtsverbesserung",
+        desc: "Rekonstruiere Gesichtsdetails, die durch Alter oder Schäden verloren gingen. Mit GFPGAN-Netzen holen wir scharfe Augen, natürliche Hauttextur und den ursprünglichen Ausdruck zurück.",
+      },
+      {
+        title: "4× Super-Auflösung",
+        desc: "Vergrößere mit KI bis zur 4-fachen Auflösung — kristallklare Details, wiederhergestellt aus Scans niedrigster Qualität, gealterten Abzügen und zerrissenen Originalen.",
+      },
+      {
+        title: "Automatische Kolorierung",
+        desc: "Füge Schwarz-Weiß-Fotos natürliche, historisch genaue Farben hinzu. Himmel werden blau, Hauttöne warm — alles mit einem Klick.",
+      },
+      {
+        title: "Reparatur von Kratzern und Schäden",
+        desc: "Entferne Risse, Wasserflecken, Knickspuren und Altersflecken. Unser Inpainting-Modell füllt verlorene Details nahtlos auf.",
+      },
+      {
+        title: "Qualitätsverbesserung",
+        desc: "Korrigiere Belichtung, Kontrast und Rauschen gleichzeitig. Jeder Pixel wird analysiert und für ein natürliches, ausgewogenes Ergebnis korrigiert.",
+      },
+      {
+        title: "Sofortiger Download",
+        desc: "Vergleiche Vorher und Nachher mit unserem interaktiven Schieberegler und lade dein restauriertes Foto in voller Auflösung herunter.",
+      },
+    ] as const,
+
+    stats: [
+      { number: "10.000+", label: "Restaurierte Fotos", sub: "und es werden mehr" },
+      { number: "30 s", label: "Durchschnittliche Bearbeitung", sub: "Ergebnisse in Sekunden" },
+      { number: "4,8★", label: "Nutzerbewertung", sub: "aus über 2.400 Bewertungen" },
+    ] as const,
+    testimonialsEyebrow: "Stimmen",
+    testimonialsH2: "Familien weltweit vertrauen uns",
+    testimonials: [
+      {
+        quote:
+          "Anfangs war ich skeptisch, aber das Ergebnis hat mich umgehauen. Das beschädigte Porträt meines Urgroßvaters von 1942 sieht aus wie neu. Die KI hat sogar Details wiederhergestellt, von denen ich nicht wusste, dass sie da waren.",
+        author: "Michael Chen",
+        location: "San Francisco, CA",
+      },
+      {
+        quote:
+          "Als professionelle Genealogin empfehle ich dieses Tool allen meinen Klient:innen. Es ist schneller und günstiger als die klassische Restaurierung, und die Qualität ist durchgehend hervorragend.",
+        author: "Dr. Patricia Moore",
+        location: "Boston, MA",
+      },
+      {
+        quote:
+          "Ich habe im letzten Monat über 50 Familienfotos restauriert. Die Kolorierungsfunktion ist unglaublich — sie hat den Schwarz-Weiß-Hochzeitsfotos meiner Großmutter neues Leben eingehaucht. Jeden Cent wert.",
+        author: "James Rodriguez",
+        location: "Austin, TX",
+      },
+    ] as const,
+
+    howEyebrow: "Ablauf",
+    howH2: "Drei Schritte. Dreißig Sekunden.",
+    howSteps: [
+      {
+        n: "1",
+        title: "Bezahlten Zugang freischalten",
+        desc: "Beginne mit dem Checkout, damit Upload und Verarbeitung für diese E-Mail-Adresse aktiviert werden, bevor du das Tool nutzt.",
+      },
+      {
+        n: "2",
+        title: "Mit derselben E-Mail hochladen",
+        desc: "Kehre nach der Zahlung zum Tool zurück und lade dein beschädigtes, verblasstes, schwarz-weißes oder qualitativ schwaches Foto hoch.",
+      },
+      {
+        n: "3",
+        title: "Verarbeiten und herunterladen",
+        desc: "Wenn die Verarbeitung gelingt, hält dieselbe E-Mail den Pfad zum Original-Download offen.",
+      },
+    ] as const,
+    howCtaPrimary: "Foto kostenlos restaurieren",
+
+    compareEyebrow: "Vergleichen, bevor du wählst",
+    compareH2: "Beginne mit den Fragen mit höchster Kaufabsicht.",
+    compareSubhead:
+      "Wer bereits Tools vergleicht, ist näher am Handeln als allgemeine Besucher. Wir leiten diese Absicht in direkte Vergleichsseiten und dann in den Restaurations-Flow.",
+    compareLabel: "Landingpage mit hoher Absicht",
+    compareCards: [
+      {
+        title: "ArtImageHub vs Remini",
+        desc: "Ideal für Nutzer, die zwischen KI-Verbesserern schwanken und den besseren Workflow für alte Familienfotos suchen.",
+        points: [
+          "Vergleiche Restaurierungsqualität, Preis und Artefakt-Kontrolle",
+          "Sieh, welches Tool besser für verblasste Porträts und beschädigte Abzüge ist",
+          "Springe nach dem Vergleich direkt in unseren Restaurierungs-Flow",
+        ],
+        cta: "Remini-Vergleich lesen",
+      },
+      {
+        title: "KI-Restaurierung vs Photoshop",
+        desc: "Ideal für Nutzer, die Geschwindigkeit, Aufwand und Qualität abwägen, bevor sie sich für manuelle Bearbeitung entscheiden.",
+        points: [
+          "Vergleiche Gesamtaufwand, Bearbeitungszeit und Realismus",
+          "Klär, wann manuelle Bearbeitung für die Familienfoto-Wiederherstellung übertrieben ist",
+          "Wechsle direkt von der Bewertung in eine Live-KI-Restaurierung",
+        ],
+        cta: "Photoshop-Vergleich lesen",
+      },
+    ] as const,
+    compareDirectCta: "Direkt zur Restaurierung",
+
+    faqEyebrow: "FAQ",
+    faqH2: "Antworten auf deine Fragen.",
+    faqSubheadPrefix: "Alles, was du vor dem Start wissen musst. Findest du keine Antwort? ",
+    faqVisitJournalLink: "Schau in unser Journal",
+    faqSubheadSuffix: ".",
+    faqItems: [
+      {
+        q: "Welche Bildformate werden unterstützt?",
+        a: "JPG-, PNG- und WEBP-Formate — bis zu 20 MB pro Datei.",
+      },
+      {
+        q: "Was passiert nach der Zahlung?",
+        a: "Deine Zahlung schaltet Upload und KI-Verarbeitung für diese E-Mail-Adresse frei. Sobald die Verarbeitung abgeschlossen ist, schaltet dieselbe E-Mail den HD-Download in Originalqualität frei — ohne Wasserzeichen, ohne Abonnement.",
+      },
+      {
+        q: "Sind meine Fotodaten privat und sicher?",
+        a: "Ja. Alle hochgeladenen Fotos werden nach 24 Stunden automatisch gelöscht. Wir speichern, teilen oder trainieren niemals Modelle mit deinen Bildern.",
+      },
+      {
+        q: "Wie funktioniert der Zugang?",
+        a: "Die Zahlung schaltet Upload und Verarbeitung für diese E-Mail frei. Wenn die Verarbeitung gelingt, schaltet dieselbe E-Mail den Download in Originalqualität frei.",
+      },
+      {
+        q: "Brauche ich ein Abonnement?",
+        a: "Nein. Es ist eine Einmalzahlung, die den Zugang für diese E-Mail freischaltet. Keine wiederkehrenden Gebühren.",
+      },
+    ] as const,
+
+    finalH2: "Deine Erinnerungen verdienen es, wieder zu strahlen.",
+    finalSubhead:
+      "Zahle einmal, um Upload und Verarbeitung für diese E-Mail freizuschalten, und mache dann im Tool weiter. Erwecke die Geschichte deiner Familie wieder zum Leben, ohne erneut in das Versprechen einer kostenlosen Vorschau abzudriften.",
+    finalCtaPrimary: "Foto kostenlos restaurieren",
+    finalCtaSecondary: "Preise ansehen",
+    finalTagline: "Bezahlter Zugang vor dem Upload · Einmalzahlung · Kein Abonnement",
+  },
   toolClient: {
     restore: deRestoreClient,
     colorize: deColorizeClient,

@@ -234,6 +234,186 @@ export const zhCN: LocaleSEO = {
       { q: "价格是多少？", a: "一次性支付 $4.99。无需订阅。" },
     ],
   },
+  homePage: {
+    metaTitle: "ArtImageHub — AI 老照片修复、画质增强与上色",
+    metaDescription:
+      "用 AI 修复老照片、提升画质、为黑白照片上色。免费开始，HD 原图仅需 $4.99 下载。",
+    ogTitle: "ArtImageHub — AI 老照片修复",
+    ogDescription:
+      "用 ArtImageHub 修复老照片、提升画质、为黑白照片上色。一次性支付 $4.99。30–90 秒出结果。无需订阅。",
+
+    heroEyebrow: "自 2024 年 · AI 修复工作室",
+    heroH1: "用 AI 老照片修复，让褪色的回忆重焕新生。",
+    heroSubhead:
+      "上传一张受损、褪色或黑白的照片 — 我们的 AI 在数秒内将其修复至惊艳清晰度。免费开始，如有需要可选择 $4.99 的 HD 原图。",
+    heroCtaPrimary: "免费修复你的照片",
+    heroBullets: ["免费预览", "HD 原图 $4.99", "即时出结果"] as const,
+    heroTrustStrip: [
+      "结账前免费预览",
+      "服务器 24 小时内删除",
+      "JPG、PNG、WEBP，最大 20 MB",
+    ] as const,
+    heroTrustSignals: [
+      "专业级修复品质",
+      "30 秒出结果",
+      "一次性付款，无需订阅",
+    ] as const,
+    heroBadges: [
+      "安全支付",
+      "100% 隐私",
+      "24 小时后删除 · 请在过期前下载",
+      "退款保障",
+    ] as const,
+    heroSidebarLabel: "全球家庭信赖之选",
+    heroSidebarStat: "10,000+",
+    heroSidebarStatLabel: "已修复回忆",
+    heroBottomBorder: "面部增强 · 超分辨率 · 上色",
+    heroBottomEst: "Est. 2024",
+
+    featuresEyebrow: "能力",
+    featuresH2: "你的照片所需的一切。",
+    featuresSubhead:
+      "六十年的照片劣化，由专门设计的神经网络在三十秒内逆转。",
+    features: [
+      {
+        title: "面部细节修复",
+        desc: "重建因岁月或损伤而丢失的面部细节。基于 GFPGAN 神经网络，我们恢复清晰的眼睛、自然的肌肤纹理和保留下来的表情。",
+      },
+      {
+        title: "4× 超分辨率",
+        desc: "用 AI 提升至 4 倍分辨率 — 即便是最低质量的扫描件、老旧相片和破损原件，也能恢复晶莹剔透的细节。",
+      },
+      {
+        title: "自动上色",
+        desc: "为黑白照片添加自然且符合历史的色彩。蓝天蓝、肤色暖 — 一键完成。",
+      },
+      {
+        title: "划痕与损伤修复",
+        desc: "去除裂纹、水渍、折痕和岁月斑点。我们的修复模型无缝填补丢失的细节。",
+      },
+      {
+        title: "画质增强",
+        desc: "同时修正曝光、对比度和噪点。每个像素都经过分析与校正，输出自然均衡的画面。",
+      },
+      {
+        title: "立即下载",
+        desc: "通过我们的交互式滑块对比修复前后，然后下载完整分辨率的修复照片。",
+      },
+    ] as const,
+
+    stats: [
+      { number: "10,000+", label: "已修复照片", sub: "且持续增长" },
+      { number: "30 秒", label: "平均处理时间", sub: "数秒出结果" },
+      { number: "4.8★", label: "用户评分", sub: "来自 2,400+ 条评价" },
+    ] as const,
+    testimonialsEyebrow: "用户评价",
+    testimonialsH2: "全球家庭信赖之选",
+    testimonials: [
+      {
+        quote:
+          "起初我半信半疑，但结果令我惊叹。我曾祖父 1942 年那张受损肖像看起来焕然一新。AI 甚至修复了一些我自己都没注意到的细节。",
+        author: "Michael Chen",
+        location: "旧金山，加州",
+      },
+      {
+        quote:
+          "作为一名专业家谱研究者，我向所有客户推荐这款工具。它比传统修复更快、更实惠，质量始终出色。",
+        author: "Dr. Patricia Moore",
+        location: "波士顿，马萨诸塞州",
+      },
+      {
+        quote:
+          "过去一个月里我修复了 50 多张家族照片。上色功能令人惊叹 — 它让我祖母的黑白婚礼照片焕发了生命。物超所值。",
+        author: "James Rodriguez",
+        location: "奥斯汀，得克萨斯州",
+      },
+    ] as const,
+
+    howEyebrow: "流程",
+    howH2: "三步。三十秒。",
+    howSteps: [
+      {
+        n: "1",
+        title: "解锁付费访问",
+        desc: "请先从结账开始，让该邮箱在进入工具之前就开通上传与处理权限。",
+      },
+      {
+        n: "2",
+        title: "用相同邮箱上传",
+        desc: "付款后回到工具，上传你的受损、褪色、黑白或低质量照片。",
+      },
+      {
+        n: "3",
+        title: "处理并下载",
+        desc: "处理成功后，相同邮箱将持续保留原图品质的下载通道。",
+      },
+    ] as const,
+    howCtaPrimary: "免费修复你的照片",
+
+    compareEyebrow: "选择前先比较",
+    compareH2: "从最高购买意向的问题开始。",
+    compareSubhead:
+      "正在比较工具的买家比一般访客更接近行动。我们将这种意图引导至直接的对比页面，再连接到修复流程。",
+    compareLabel: "高意向落地页",
+    compareCards: [
+      {
+        title: "ArtImageHub vs Remini",
+        desc: "适合在多款 AI 增强工具间犹豫、希望为老旧家庭照片找到更好工作流的用户。",
+        points: [
+          "比较修复质量、价格与瑕疵控制",
+          "看清哪款更适合褪色肖像与受损相片",
+          "比较后直接进入我们的修复流程",
+        ],
+        cta: "阅读 Remini 对比",
+      },
+      {
+        title: "AI 修复 vs Photoshop",
+        desc: "适合在投入手动编辑前权衡速度、工作量与输出质量的用户。",
+        points: [
+          "比较总工作量、出片速度和真实感",
+          "明确手动编辑何时对家庭照片来说过度",
+          "从评估直接进入实时 AI 修复",
+        ],
+        cta: "阅读 Photoshop 对比",
+      },
+    ] as const,
+    compareDirectCta: "直接进入修复",
+
+    faqEyebrow: "常见问题",
+    faqH2: "为你解答。",
+    faqSubheadPrefix: "开始之前你需要了解的一切。找不到答案？",
+    faqVisitJournalLink: "查看我们的专栏",
+    faqSubheadSuffix: "。",
+    faqItems: [
+      {
+        q: "你们支持哪些图像格式？",
+        a: "支持 JPG、PNG 和 WEBP 格式 — 单个文件最大 20 MB。",
+      },
+      {
+        q: "付款后会发生什么？",
+        a: "付款会为该邮箱地址解锁上传与 AI 处理权限。处理完成后，相同邮箱解锁原图品质 HD 下载 — 无水印，无需订阅。",
+      },
+      {
+        q: "我的照片数据是否私密且安全？",
+        a: "是的。所有上传的照片在 24 小时后自动删除。我们绝不存储、共享或用你的图像训练模型。",
+      },
+      {
+        q: "访问机制如何运作？",
+        a: "付款会为该邮箱解锁上传与处理权限。处理成功后，同一个邮箱也会解锁原图品质下载。",
+      },
+      {
+        q: "我需要订阅吗？",
+        a: "不需要。这是一次性付款，仅为该邮箱解锁访问。无周期性扣款。",
+      },
+    ] as const,
+
+    finalH2: "你的回忆值得再次闪耀。",
+    finalSubhead:
+      "一次付款即可为该邮箱解锁上传与处理权限，然后在工具内继续操作。让你的家族历史重焕生机，不再回到免费预览的承诺里。",
+    finalCtaPrimary: "免费修复你的照片",
+    finalCtaSecondary: "查看价格",
+    finalTagline: "上传前付费访问 · 一次性付款 · 无需订阅",
+  },
   toolClient: {
     restore: zhRestoreClient,
     colorize: zhColorizeClient,

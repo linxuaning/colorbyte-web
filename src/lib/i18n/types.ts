@@ -116,6 +116,88 @@ export type ObjectRemoverClientCopy = {
   errorRequestTimeout: string;
 };
 
+// ---------------------------------------------------------------------------
+// Apex homepage content (2026-05-10). EN homepage at / and locale homepages
+// at /{locale}/ render from the same content shape; getHomePageContent falls
+// back to EN when a locale lacks a translation.
+// ---------------------------------------------------------------------------
+
+export type HomePageStat = { number: string; label: string; sub: string };
+export type HomePageTestimonial = { quote: string; author: string; location: string };
+export type HomePageStep = { n: string; title: string; desc: string };
+export type HomePageFeature = { title: string; desc: string };
+export type HomePageCompareCard = {
+  title: string;
+  desc: string;
+  points: readonly string[];
+  cta: string;
+};
+export type HomePageFaqItem = { q: string; a: string };
+
+export type HomePageContent = {
+  // Metadata (Next Metadata)
+  metaTitle: string;
+  metaDescription: string;
+  ogTitle: string;
+  ogDescription: string;
+
+  // Hero
+  heroEyebrow: string;
+  heroH1: string;
+  heroSubhead: string;
+  heroCtaPrimary: string;
+  heroBullets: readonly string[];     // 3 items
+  heroTrustStrip: readonly string[];  // 3 items
+  heroTrustSignals: readonly string[]; // 3 items
+  heroBadges: readonly string[];      // 4 items
+  heroSidebarLabel: string;
+  heroSidebarStat: string;
+  heroSidebarStatLabel: string;
+  heroBottomBorder: string;
+  heroBottomEst: string;
+
+  // Features
+  featuresEyebrow: string;
+  featuresH2: string;
+  featuresSubhead: string;
+  features: readonly HomePageFeature[]; // 6 items
+
+  // Stats + Testimonials
+  stats: readonly HomePageStat[]; // 3 items
+  testimonialsEyebrow: string;
+  testimonialsH2: string;
+  testimonials: readonly HomePageTestimonial[]; // 3 items
+
+  // How It Works
+  howEyebrow: string;
+  howH2: string;
+  howSteps: readonly HomePageStep[]; // 3 items
+  howCtaPrimary: string;
+
+  // Comparison Intent
+  compareEyebrow: string;
+  compareH2: string;
+  compareSubhead: string;
+  compareLabel: string;
+  compareCards: readonly HomePageCompareCard[]; // 2 items
+  compareDirectCta: string;
+
+  // FAQ
+  faqEyebrow: string;
+  faqH2: string;
+  faqSubheadPrefix: string;       // before the link, e.g. "Everything you need to know before you begin. Can't find an answer? "
+  faqVisitJournalLink: string;    // "Visit our journal"
+  faqSubheadSuffix: string;       // after the link, e.g. "."
+  faqItems: readonly HomePageFaqItem[]; // 5 items
+
+  // Final CTA
+  finalH2: string;
+  finalSubhead: string;
+  finalCtaPrimary: string;
+  finalCtaSecondary: string;
+  finalTagline: string;
+};
+
 export type LocaleSEO = {
   oldPhotoRestoration: PageMeta;
   colorizer: PageMeta;
@@ -124,6 +206,11 @@ export type LocaleSEO = {
   denoiser?: PageMeta;
   deblurrer?: PageMeta;
   jpegFix?: PageMeta;
+  // Apex homepage. Optional during rollout — getHomePageContent falls back
+  // to EN when missing. Added 2026-05-10 after user reported KO/JA homepage
+  // rendering EN content (root cause: src/app/[locale]/page.tsx re-exported
+  // the EN page without locale data).
+  homePage?: HomePageContent;
   // Optional during rollout — default to EN copy if missing.
   toolClient?: {
     restore: ToolClientCopy;

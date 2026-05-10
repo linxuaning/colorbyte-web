@@ -5,8 +5,13 @@ import { de } from "./de";
 import { ja } from "./ja";
 import { ko } from "./ko";
 import { zhCN } from "./zh-CN";
-import { enObjectRemoverClient, enToolClient } from "./en";
-import type { LocaleSEO, ObjectRemoverClientCopy, ToolClientCopy } from "./types";
+import { enHomePage, enObjectRemoverClient, enToolClient } from "./en";
+import type {
+  HomePageContent,
+  LocaleSEO,
+  ObjectRemoverClientCopy,
+  ToolClientCopy,
+} from "./types";
 
 const map: Record<string, LocaleSEO> = {
   es,
@@ -37,4 +42,13 @@ export function getToolClientCopy(locale: string, tool: ToolKey): ToolClientCopy
 // zh-CN ships translations; en is the source of truth.
 export function getObjectRemoverClientCopy(locale: string): ObjectRemoverClientCopy {
   return map[locale]?.toolClient?.objectRemover ?? enObjectRemoverClient;
+}
+
+// Apex homepage content for a given locale. EN renders enHomePage at /, all
+// other locales render their localized homePage at /{locale}/. Falls back to
+// EN if a locale file has not yet provided homePage. Added 2026-05-10 after
+// user reported KO/JA homepage rendering EN content (root cause: the locale
+// page re-exported the EN page module without locale data).
+export function getHomePageContent(locale: string): HomePageContent {
+  return map[locale]?.homePage ?? enHomePage;
 }

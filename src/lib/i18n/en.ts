@@ -1,4 +1,4 @@
-import type { ObjectRemoverClientCopy, ToolClientCopy } from "./types";
+import type { HomePageContent, ObjectRemoverClientCopy, ToolClientCopy } from "./types";
 
 // ---------------------------------------------------------------------------
 // English tool-client copy (source of truth for non-localized fallbacks).
@@ -120,3 +120,190 @@ export const enToolClient = {
   colorize: enToolClientColorize,
   enhance: enToolClientEnhance,
 } as const;
+
+// ---------------------------------------------------------------------------
+// English apex homepage content (2026-05-10). Source of truth for all locales;
+// non-EN locale files override fields they translate, fall back to this when
+// a field is missing.
+// ---------------------------------------------------------------------------
+
+export const enHomePage: HomePageContent = {
+  metaTitle: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
+  metaDescription:
+    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
+  ogTitle: "ArtImageHub — AI Photo Restoration",
+  ogDescription:
+    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
+
+  heroEyebrow: "Since 2024 · AI Restoration Studio",
+  heroH1: "Breathe life into faded memories with AI photo restoration.",
+  heroSubhead:
+    "Upload a damaged, faded, or black & white photo — our AI restores it to stunning clarity in seconds. Start free, then choose the HD original for $4.99 if you want it.",
+  heroCtaPrimary: "Restore Your Photo Free",
+  heroBullets: ["Free preview", "HD original $4.99", "Instant results"] as const,
+  heroTrustStrip: [
+    "Free preview before checkout",
+    "Deleted from servers within 24 hours",
+    "JPG, PNG, WEBP up to 20 MB",
+  ] as const,
+  heroTrustSignals: [
+    "Pro quality restoration",
+    "Results in 30 seconds",
+    "One-time payment, no subscription",
+  ] as const,
+  heroBadges: [
+    "Secure Payment",
+    "100% Privacy",
+    "Deleted in 24h · Download before it expires",
+    "Money-Back Guarantee",
+  ] as const,
+  heroSidebarLabel: "Trusted by families worldwide",
+  heroSidebarStat: "10,000+",
+  heroSidebarStatLabel: "Memories restored",
+  heroBottomBorder: "Face enhancement · Super resolution · Colorization",
+  heroBottomEst: "Est. 2024",
+
+  featuresEyebrow: "Capabilities",
+  featuresH2: "Everything your photo needs.",
+  featuresSubhead:
+    "Six decades of photographic deterioration, reversed in thirty seconds by purpose-built neural networks.",
+  features: [
+    {
+      title: "Face Enhancement",
+      desc: "Reconstruct facial details lost to age or damage. Using GFPGAN neural networks, we recover crisp eyes, natural skin texture, and preserved expression.",
+    },
+    {
+      title: "4× Super Resolution",
+      desc: "Upscale to 4× resolution with AI — crystal-clear detail recovered from the lowest-quality scans, aged prints, and torn originals.",
+    },
+    {
+      title: "Auto Colorization",
+      desc: "Add natural, historically-accurate color to black & white photos. Skies turn blue, skin tones warm — all with a single click.",
+    },
+    {
+      title: "Scratch & Damage Repair",
+      desc: "Remove cracks, water stains, fold marks, and age spots. Our inpainting model fills in lost detail seamlessly.",
+    },
+    {
+      title: "Quality Enhancement",
+      desc: "Fix exposure, contrast, and noise simultaneously. Every pixel analyzed and corrected for natural, balanced output.",
+    },
+    {
+      title: "Instant Download",
+      desc: "Compare before & after with our interactive slider, then download your restored photo at full resolution.",
+    },
+  ] as const,
+
+  stats: [
+    { number: "10,000+", label: "Photos restored", sub: "and counting" },
+    { number: "30s", label: "Average processing", sub: "results in seconds" },
+    { number: "4.8★", label: "User rating", sub: "from 2,400+ reviews" },
+  ] as const,
+  testimonialsEyebrow: "Testimonials",
+  testimonialsH2: "Trusted by families worldwide",
+  testimonials: [
+    {
+      quote:
+        "I was skeptical at first, but the results blew me away. My great-grandfather's damaged portrait from 1942 looks brand new. The AI even restored details I didn't know were there.",
+      author: "Michael Chen",
+      location: "San Francisco, CA",
+    },
+    {
+      quote:
+        "As a professional genealogist, I recommend this tool to all my clients. It's faster and more affordable than traditional restoration, and the quality is consistently excellent.",
+      author: "Dr. Patricia Moore",
+      location: "Boston, MA",
+    },
+    {
+      quote:
+        "I've restored over 50 family photos in the past month. The colorization feature is incredible — it brought my grandmother's black & white wedding photos to life. Worth every penny.",
+      author: "James Rodriguez",
+      location: "Austin, TX",
+    },
+  ] as const,
+
+  howEyebrow: "Process",
+  howH2: "Three steps. Thirty seconds.",
+  howSteps: [
+    {
+      n: "1",
+      title: "Unlock Paid Access",
+      desc: "Start from checkout so upload and processing access are activated on this email before you enter the tool.",
+    },
+    {
+      n: "2",
+      title: "Upload with the Same Email",
+      desc: "Return to the tool after payment and upload your damaged, faded, black-and-white, or low-quality photo.",
+    },
+    {
+      n: "3",
+      title: "Process and Download",
+      desc: "If processing succeeds, the same email keeps the original-quality download path unlocked.",
+    },
+  ] as const,
+  howCtaPrimary: "Restore Your Photo Free",
+
+  compareEyebrow: "Compare Before You Choose",
+  compareH2: "Start with the highest-intent questions.",
+  compareSubhead:
+    "Buyers who are already comparing tools are closer to action than generic visitors. We route that intent into direct head-to-head pages and then into the restoration flow.",
+  compareLabel: "High-intent landing page",
+  compareCards: [
+    {
+      title: "ArtImageHub vs Remini",
+      desc: "Best for users deciding between AI enhancers and looking for the better old-family-photo workflow.",
+      points: [
+        "Compare restoration quality, pricing, and artifact control",
+        "See which tool is better for faded portraits and damaged prints",
+        "Jump directly into our restore flow after the comparison",
+      ],
+      cta: "Read the Remini Comparison",
+    },
+    {
+      title: "AI Restoration vs Photoshop",
+      desc: "Best for users weighing speed, effort, and output quality before committing to manual editing.",
+      points: [
+        "Compare total effort, turnaround speed, and realism",
+        "Clarify when manual editing is overkill for family-photo recovery",
+        "Move straight from evaluation into a live AI restore",
+      ],
+      cta: "Read the Photoshop Comparison",
+    },
+  ] as const,
+  compareDirectCta: "Go Straight to Restore",
+
+  faqEyebrow: "FAQ",
+  faqH2: "Questions answered.",
+  faqSubheadPrefix: "Everything you need to know before you begin. Can’t find an answer? ",
+  faqVisitJournalLink: "Visit our journal",
+  faqSubheadSuffix: ".",
+  faqItems: [
+    {
+      q: "What image formats do you support?",
+      a: "JPG, PNG, and WEBP formats — up to 20 MB per file.",
+    },
+    {
+      q: "What happens after payment?",
+      a: "Your payment unlocks upload and AI processing on this email address. Once processing completes, the same email unlocks the original-quality HD download — no watermarks, no subscription required.",
+    },
+    {
+      q: "Is my photo data private and secure?",
+      a: "Yes. All uploaded photos are automatically deleted after 24 hours. We never store, share, or train models on your images.",
+    },
+    {
+      q: "How does access work?",
+      a: "Payment unlocks upload and processing access on this email. If processing succeeds, the same email unlocks the original-quality download.",
+    },
+    {
+      q: "Do I need a subscription?",
+      a: "No. This is a one-time payment that unlocks access on this email. No recurring billing.",
+    },
+  ] as const,
+
+  finalH2: "Your memories deserve to shine again.",
+  finalSubhead:
+    "Pay once to unlock upload and processing access on this email, then continue inside the tool. Bring your family’s history back to life without drifting back into a free-preview promise.",
+  finalCtaPrimary: "Restore Your Photo Free",
+  finalCtaSecondary: "View Pricing",
+  finalTagline: "Paid access before upload · One-time payment · No subscription",
+};
