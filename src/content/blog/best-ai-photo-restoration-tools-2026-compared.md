@@ -2,7 +2,13 @@
 title: "Best AI Photo Restoration Tools 2026: Honest Comparison"
 description: "A specialist's honest comparison of the best AI photo restoration tools and software in 2026 — what each one actually does well, where they fail, and what to pay."
 publishedAt: "2026-04-18"
-updatedAt: "2026-05-04"
+updatedAt: "2026-05-10"
+noIndex: true
+# 2026-05-10: deprecated to consolidate ranking signals into the converting
+# /best-photo-restoration-software apex page (Rich Horan paid 2026-05-09 via
+# DDG organic). Cannibalization audit found 4 URLs targeting the same query
+# cluster; this is one of three /blog/* pages being noindex'd to leave the
+# apex buyer-guide as the single ranker.
 author: "Michael Chen"
 authorRole: "Senior Photo Restoration Specialist"
 authorBio: "Michael Chen has spent over a decade helping families recover their most precious visual memories using advanced AI restoration technology."

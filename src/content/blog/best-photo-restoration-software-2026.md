@@ -2,7 +2,13 @@
 title: "Best Photo Restoration Software 2026: 17 Tools Tested"
 description: "In-depth comparison of photo restoration software in 2026. Real testing results, pricing breakdowns, and honest recommendations for every skill level and budget."
 publishedAt: "2026-02-16"
-updatedAt: "2026-05-04"
+updatedAt: "2026-05-10"
+noIndex: true
+# 2026-05-10: deprecated to consolidate ranking signals into the converting
+# /best-photo-restoration-software apex page (Rich Horan paid 2026-05-09 via
+# DDG organic). Cannibalization audit found 4 URLs targeting the same query
+# cluster; this is one of three /blog/* pages being noindex'd to leave the
+# apex buyer-guide as the single ranker.
 author: "David Park"
 authorRole: "Photography Specialist"
 authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."

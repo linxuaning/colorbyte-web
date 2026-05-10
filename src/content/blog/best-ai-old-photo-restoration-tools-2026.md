@@ -2,7 +2,13 @@
 title: "Best AI Tools for Old Photo Restoration in 2026 (Tested)"
 description: "Ranked: the best AI photo restoration tools in 2026 for restoring old, faded, and damaged family photos. Tested on real photos — face quality, damage repair, price, and ease of use."
 publishedAt: "2026-04-14"
-updatedAt: "2026-05-04"
+updatedAt: "2026-05-10"
+noIndex: true
+# 2026-05-10: deprecated to consolidate ranking signals into the converting
+# /best-photo-restoration-software apex page (Rich Horan paid 2026-05-09 via
+# DDG organic). Cannibalization audit found 4 URLs targeting the same query
+# cluster; this is one of three /blog/* pages being noindex'd to leave the
+# apex buyer-guide as the single ranker.
 author: "Claire Donovan"
 authorRole: "Photo Archivist"
 authorBio: "Claire manages digitization and restoration projects for private family archives and small museums. She has tested more than 30 AI tools on historical photograph collections over the past three years."
