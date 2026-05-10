@@ -105,3 +105,12 @@ The process at [artimagehub.com](https://artimagehub.com) is designed to require
 The AI pipeline applies Real-ESRGAN for upscaling and sharpening, GFPGAN for face-specific recovery, NAFNet for noise and blur reduction, and DDColor for color correction or B&W colorization — all in a single processing pass. For a photograph that has spent 60 years in a church envelope accumulating acid damage, humidity spotting, and color shift, the transformation in 30 seconds is often remarkable.
 
 If the preview shows a result that does not meet your needs — a very heavily damaged photograph where large areas of content are missing, for example — you have lost nothing. The preview is free, and the decision to download is entirely yours.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Compare ArtImageHub against alternatives →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for family ceremony photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

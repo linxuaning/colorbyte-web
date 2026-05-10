@@ -77,3 +77,12 @@ Crack patterns on gelatin plates appear as bright lines crossing the positive im
 ArtImageHub's preview-first workflow is specifically valuable for glass plate work because plate conditions vary enormously and outcomes are not always predictable. Upload the inverted positive scan and see the AI restoration result before paying anything. If edge delamination has consumed large areas of the image, the preview shows exactly what reconstruction is possible in those zones. If hairline cracks run through the primary subject, the preview shows how effectively the AI has suppressed them.
 
 The $4.99 one-time fee applies only after you have reviewed the restored preview and decided the result meets your needs. For archivists working through a collection with highly variable plate conditions, this prevents paying for restorations of images where damage is beyond useful recovery. Most glass plates with moderate damage produce dramatically improved results — the combination of inversion, high-resolution scanning, and the full Real-ESRGAN and GFPGAN pipeline recovers images that appear unviewable in their raw negative state.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Read the in-depth photo restoration tool comparison →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs Adobe Lightroom for archival negatives →](/blog/artimagehub-vs-adobe-lightroom)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

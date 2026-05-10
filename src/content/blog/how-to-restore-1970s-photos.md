@@ -49,6 +49,15 @@ For drugstore prints from the 1970s, scan at 600 DPI minimum and 1200 DPI for sm
 
 For prints stuck to magnetic album pages, do not force removal. Scan the print in place if the scanner can accommodate the album, or photograph it with a camera rather than risk tearing the emulsion. The ArtImageHub pipeline at $4.99 can work effectively with in-album scans that include the album texture around the photograph.
 
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[View the buyer's guide to AI photo restoration →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for 1970s era photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->
+
 ## Frequently Asked Questions
 
 ## Why do my 1970s photos have such a strong orange or magenta tint?

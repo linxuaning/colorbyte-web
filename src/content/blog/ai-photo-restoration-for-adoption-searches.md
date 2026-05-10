@@ -112,3 +112,12 @@ For adoptees who may have only one or two photos from an entire search, the abil
 6. Keep the original scan regardless of how the restoration turns out — the original is irreplaceable
 
 The search itself may take years. The photo quality you work with should not be an unnecessary obstacle.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Find the right tool for genealogy-grade restoration →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage — which works better for adoption photo searches? →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

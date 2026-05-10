@@ -69,3 +69,12 @@ A volunteer coordinator working part-time can process roughly 50 to 100 photos p
 The real investment is in submission collection, file organization, and metadata entry. Those steps take longer than the restoration itself. Plan your project timeline accordingly, and use the low cost of AI restoration to justify a higher-quality metadata standard — good metadata outlasts any individual tool.
 
 Your society's members submitted those photos because they believed they mattered. AI restoration is how you prove them right.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Read the in-depth photo restoration buyer's guide →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for genealogy societies →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

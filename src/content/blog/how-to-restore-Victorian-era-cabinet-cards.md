@@ -79,3 +79,12 @@ Albumen prints are sensitive to humidity, light, and atmospheric pollutants. Aft
 Store in an environment below 65 degrees Fahrenheit and below 50 percent relative humidity. Temperature and humidity stability matter more than absolute values: fluctuation drives the expansion-contraction cycling that causes micro-cracking. A dedicated archival box in a climate-controlled room is ideal.
 
 Never display original albumen prints in direct sunlight. The silver image is fugitive under UV radiation and will fade noticeably within months of regular light exposure. If you want to display a Victorian portrait, display the AI-restored digital file as a high-quality print on modern stable paper, and store the original in archival conditions.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Get the photo restoration tool ranking →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for Victorian-era restoration →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

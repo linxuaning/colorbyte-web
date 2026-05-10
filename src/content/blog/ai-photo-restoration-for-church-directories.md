@@ -99,3 +99,12 @@ At $4.99 one-time for a session, the AI restoration portion of the project is th
 For churches working with historical photographs that matter to the community but do not individually justify professional retouching costs, [ArtImageHub](https://artimagehub.com) represents a practical middle ground: meaningful quality improvement, preview before payment, and a total cost that fits within a small committee budget.
 
 The faces in those old directories deserve to be legible again.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[See which AI tool wins for batch directory photos →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for genealogy & directory photos →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

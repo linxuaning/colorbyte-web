@@ -106,3 +106,12 @@ For the majority of immigration document photos stored reasonably carefully over
 ---
 
 *For related reading, see our guides on [AI photo restoration for genealogy](/blog/ai-photo-restoration-for-genealogy-societies) and [scanning old photos for best results](/blog/ai-photo-restoration-for-beginners).*
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Find your match: photo restoration tool comparison →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs MyHeritage for immigration & genealogy documents →](/blog/artimagehub-vs-myheritage)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->

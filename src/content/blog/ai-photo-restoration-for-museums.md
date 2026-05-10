@@ -77,3 +77,12 @@ For the bulk of a museum collection — portraits, event documentation, facility
 The practical approach: use professional conservators for the top 1-2% of items by significance and condition, and use AI restoration for the 98% that would otherwise remain in the backlog indefinitely. Your collection, and the public it serves, benefits from both.
 
 The photos are waiting. Your community's history is in them. Start with your most representative 20 images and see what comes back.
+
+## Compare AI Photo Restoration Tools
+
+Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
+
+- **[Get our 2026 photo restoration software comparison →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
+- **[ArtImageHub vs Photoshop for museum-grade restoration →](/blog/artimagehub-vs-adobe-photoshop)** — feature-by-feature breakdown for this specific use case.
+
+<!-- buyer-guide-internal-link-injected -->
