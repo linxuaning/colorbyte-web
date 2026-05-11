@@ -68,6 +68,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [originalUrl, setOriginalUrl] = useState<string | null>(null);
   const [isSubscriber, setIsSubscriber] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
+  // 5-11 case #3: returning paid customers see "Logging you in..." instead
+  // of generic "Checking access..." when localStorage email is present
+  const [returningUser, setReturningUser] = useState(false);
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
   const [paidEmail, setPaidEmail] = useState("");
@@ -191,6 +194,10 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
       setCheckingAccess(false);
       return;
     }
+
+    // 5-11 case #3: paid user returning — show "Logging you in..." in the
+    // checkingAccess UI instead of generic "Checking access..."
+    setReturningUser(true);
 
     // Only run the full retry loop when the user is actually returning from
     // a payment redirect — otherwise every returning visitor waits ~14s for
@@ -586,7 +593,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             <p className="text-[13px] text-[#6e6e73]">
               {warmupSeconds > 15
                 ? "Waking up our AI server — this is taking longer than usual..."
-                : "Checking access..."}
+                : returningUser
+                  ? "Logging you in..."
+                  : "Checking access..."}
             </p>
             {warmupSeconds > 25 && (
               <p className="text-[11px] text-[#6e6e73]/70">

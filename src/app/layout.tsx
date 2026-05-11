@@ -8,6 +8,7 @@ import StickyCTA from "@/components/StickyCTA";
 import RouteChromeGuard from "@/components/RouteChromeGuard";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import PageviewTracker from "@/components/PageviewTracker";
+import SignedInBadge from "@/components/SignedInBadge";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -189,8 +190,9 @@ function Header() {
           </Link>
         </nav>
 
-        {/* CTA + Language switcher */}
+        {/* CTA + Language switcher + SignedInBadge (5-11 case #4) */}
         <div className="flex items-center gap-2">
+          <SignedInBadge />
           <LanguageSwitcher />
           <Link
             href="/old-photo-restoration"
