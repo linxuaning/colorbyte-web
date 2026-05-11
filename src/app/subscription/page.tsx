@@ -332,14 +332,46 @@ export default function SubscriptionPage() {
             One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secured by DodoPayments
           </p>
 
-          {/* 2026-05-11 founder pick B: removed secondary "Send checkout link to
-              yourself" block. The primary block above (Email for activation +
-              DodoCheckoutButton, lines ~290-318) already captures the user's
-              identity email AND launches checkout in one place. The secondary
-              mailto-self UX read as "send link to my inbox" which confused users
-              into thinking that WAS the payment flow. Primary flow + copy
-              clearly communicate "this email = your login = your access after
-              payment". No payment / checkout / Dodo / orders logic touched. */}
+          {/* 2026-05-11 founder follow-up: replace removed "Send link to yourself"
+              with the "Already paid? restore access" UX from /old-photo-restoration
+              (line 669-695 of restore-client.tsx). Pure email lookup + status
+              feedback; no checkout invocation. Helps cross-browser/device returning
+              customers who don't have localStorage cached. */}
+          <div className="order-4 mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3 text-center">
+            <p className="text-[12px] font-medium text-[#1d1d1f]">
+              Already paid? Enter your email to restore access
+            </p>
+            <div className="mt-2 flex gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && hasValidCheckoutEmail) checkSubscription();
+                }}
+                placeholder="you@example.com"
+                className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+              />
+              <button
+                type="button"
+                onClick={() => checkSubscription()}
+                disabled={loading || !hasValidCheckoutEmail}
+                className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f] disabled:opacity-50"
+              >
+                {loading ? "…" : "Check"}
+              </button>
+            </div>
+            {sub && sub.status === "active" && (
+              <p className="mt-1.5 text-[11px] text-green-600">
+                Access restored — your subscription is active. You can return to the tools.
+              </p>
+            )}
+            {sub && sub.status !== "active" && (
+              <p className="mt-1.5 text-[11px] text-[#6e6e73]">
+                No active subscription found. Use the checkout above to unlock access.
+              </p>
+            )}
+          </div>
 
           <div className="order-5 mt-6 grid gap-3 text-left sm:grid-cols-3">
             {[
