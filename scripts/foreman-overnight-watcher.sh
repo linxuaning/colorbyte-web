@@ -70,7 +70,19 @@ while true; do
 
   # Find latest Ready production deploy
   TOKEN=$(cat "$TOKEN_FILE")
-  LATEST=$(/Users/zj-db0812/node-arm64/bin/vercel ls --token "$TOKEN" 2>/dev/null | awk '/Production/ && /Ready/ {print $3; exit}')
+  # 5-11: use Vercel API directly (CLI ls had column-shift bug — $3 was bullet
+  # symbol not URL). API returns commit SHA which we can match precisely.
+  PROJECT_ID=prj_wcr5gRwNAkNrVcfPBYE4Pk4SQz24
+  LATEST=$(curl -sS -m 10 -H "Authorization: Bearer $TOKEN" \
+    "https://api.vercel.com/v6/deployments?projectId=$PROJECT_ID&limit=10&state=READY" 2>/dev/null \
+    | python3 -c "
+import json, sys
+d = json.load(sys.stdin)
+for it in d.get('deployments', []):
+    if it.get('state') == 'READY' and it.get('target') == 'production':
+        print('https://' + it.get('url',''))
+        break
+")
 
   if [ -z "$LATEST" ]; then
     log "no Ready production deploy yet, retrying in 5min"
