@@ -332,32 +332,14 @@ export default function SubscriptionPage() {
             One-time payment ({PRO_PRICE_TEXT}) · Pay first, then upload · Secured by DodoPayments
           </p>
 
-          {EMAIL_PAYMENT_ENTRY_ENABLED && (
-            <div className="order-4 mt-4 max-w-md mx-auto rounded-xl border border-[#d2d2d7]/60 bg-white p-3">
-              <p className="text-center text-[12px] font-medium text-[#1d1d1f]">
-                Send this checkout link to yourself
-              </p>
-              <div className="mt-2 flex gap-2">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@example.com"
-                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
-                />
-                <button
-                  type="button"
-                  onClick={handleSendPaymentLinkEmail}
-                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f]"
-                >
-                  Send
-                </button>
-              </div>
-              <p className="mt-1.5 text-center text-[11px] text-[#6e6e73]">
-                {emailEntryHint || "Useful if you want to finish payment on another device later."}
-              </p>
-            </div>
-          )}
+          {/* 2026-05-11 founder pick B: removed secondary "Send checkout link to
+              yourself" block. The primary block above (Email for activation +
+              DodoCheckoutButton, lines ~290-318) already captures the user's
+              identity email AND launches checkout in one place. The secondary
+              mailto-self UX read as "send link to my inbox" which confused users
+              into thinking that WAS the payment flow. Primary flow + copy
+              clearly communicate "this email = your login = your access after
+              payment". No payment / checkout / Dodo / orders logic touched. */}
 
           <div className="order-5 mt-6 grid gap-3 text-left sm:grid-cols-3">
             {[
