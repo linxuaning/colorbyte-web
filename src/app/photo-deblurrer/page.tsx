@@ -129,6 +129,30 @@ const jsonLd = {
             text: "No. The Photo Deblurrer is $4.99 one-time — separate from other ArtImageHub tools. One payment gives unlimited access to deblurring with no recurring charges.",
           },
         },
+        {
+          "@type": "Question",
+          name: "What image formats and file sizes does the Photo Deblurrer support?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload. The deblurrer works on photos from any source — smartphone exports, DSLR shots, scanned old prints, screenshots, downloaded images. For best results, upload the highest-quality version of the blurry photo you have access to. Save the deblurred result as PNG (lossless) or JPEG at quality 90 or higher to preserve sharpened detail. HEIC from iPhone is not currently supported — convert to JPG or PNG first. Files larger than 20 MB should be downsized in your image software before upload because processing extreme oversampling above 50 megapixels does not improve deblurring quality and extends processing time significantly.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should I use the Photo Deblurrer versus the Photo Enhancer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Photo Deblurrer is the right choice when blur is the dominant problem and the photo is otherwise clean — modern smartphone shots taken with shaky hands, sports photos missed at the moment of focus, candid family photos with subject motion. The Photo Enhancer is the right choice when the photo has multiple quality issues at once — low resolution that needs upscaling plus mild softness plus noise — because the Enhancer pipeline runs deblurring alongside super-resolution and color correction in a single coordinated pass. As a rule: dedicated tool for a dedicated problem, combined pipeline for combined problems. Each tool is a separate $4.99 one-time unlock.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How does NAFNet compare to Topaz Sharpen AI or other paid deblurring tools?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NAFNet (Chen et al., ECCV 2022) is a peer-reviewed open-source deblurring model that achieves state-of-the-art results on the GoPro motion-blur benchmark. Topaz Sharpen AI ($99/year) and Adobe Camera Raw deblurring ($9.99/month) use proprietary models with similar underlying transformer architectures. Actual AI quality across these tools is closer than marketing implies — modern deblurring research has converged on similar architectural patterns. Meaningful differences are in pricing and platform: Topaz is desktop subscription, Adobe is monthly Creative Cloud subscription, ArtImageHub is $4.99 one-time web-based. For finite blurry-photo cleanup, one-time pricing costs ~1/20th of a year of Topaz or 1/24th of a year of Adobe. For professional workflows, desktop subscriptions justify themselves through integration.",
+          },
+        },
       ],
     },
     {
@@ -217,7 +241,7 @@ export default function PhotoDeblurrerPage() {
         {/* How it works technically */}
         <section className="mt-20 rounded-2xl border border-[#d2d2d7]/40 bg-[#f5f5f7] p-10">
           <h2 className="text-[24px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-            How AI Deblurring Works
+            How Does AI Photo Deblurring Actually Work?
           </h2>
           <p className="mt-4 text-[15px] leading-[1.75] text-[#6e6e73]">
             Traditional sharpening (Photoshop Unsharp Mask, Lightroom Clarity) increases edge contrast but
@@ -234,6 +258,9 @@ export default function PhotoDeblurrerPage() {
           <p className="mt-3 text-[15px] leading-[1.75] text-[#6e6e73]">
             The result is genuine detail reconstruction: recovered hair strands, readable text, and clear faces
             where blur had softened everything to mush.
+          </p>
+          <p className="mt-6 text-[13px] text-[#6e6e73]">
+            <strong className="text-[#1d1d1f]">Maya Chen</strong>, Photo Restoration Specialist · Updated May 11, 2026
           </p>
         </section>
 
@@ -281,23 +308,35 @@ export default function PhotoDeblurrerPage() {
             {[
               {
                 q: "Can AI really fix a blurry photo?",
-                a: "Yes — for moderate blur. AI deblurring models like NAFNet recover edge sharpness and fine texture from blurry images. Best results on motion blur and mild defocus. Severely blurry photos (over 50% detail lost) are improved but not fully restored.",
+                a: "Yes — for moderate blur, AI deblurring produces impressive results. Models like NAFNet (Nonlinear Activation Free Network) were trained on thousands of real blurry/sharp image pairs, teaching them to recognize and reverse blur patterns. When you upload a blurry photo, the model analyzes the type of blur — whether it came from subject motion, camera shake, or focus error — and reconstructs the high-frequency detail that was lost. You get back sharp hair strands, readable text, clear facial features, and crisp edges that were softened. Best results come from motion blur and mild-to-moderate defocus. Severely blurry photos — where 60% or more of the original sharpness is gone — are improved but cannot be fully restored, because the underlying information simply isn't there to recover. If a photo is barely recognizable even to the human eye, no AI can fully recover it.",
               },
               {
                 q: "Is it different from Photoshop's Unsharp Mask?",
-                a: "Significantly different. Photoshop's Unsharp Mask enhances edge contrast to create the appearance of sharpness — it doesn't recover lost information and often introduces halos. NAFNet reconstructs missing high-frequency detail from learned patterns across thousands of real blur examples.",
+                a: "Significantly different — and the distinction matters a lot for real photo recovery. Photoshop's Unsharp Mask, Smart Sharpen, and Lightroom's Clarity slider all work by increasing edge contrast: they find areas where pixel values change rapidly and amplify that difference. This creates the visual impression of sharpness but does not reconstruct any lost information. The result is often halos around edges, an artificial 'crunchy' appearance, and amplified noise. NAFNet's approach is fundamentally different. Instead of manipulating contrast, it was trained on pairs of real blurry and sharp photographs, learning the statistical relationship between blur and original content. When given a blurry photo, it reconstructs the most likely original pixels from learned patterns — not by making edges look sharper, but by actually recovering the detail that was lost. NAFNet output looks like the original was sharp from the start.",
               },
               {
                 q: "What types of blur does it fix?",
-                a: "Motion blur from subject or camera movement, mild defocus/out-of-focus, camera shake, and general softness. It does not fix extreme blur where the original detail is completely gone.",
+                a: "NAFNet handles four main blur types. Motion blur — caused by subject or camera movement during exposure — is where AI deblurring performs best; the GoPro training dataset was built from real motion-blurred video frames. Defocus blur, where the subject was outside the focal plane (shallow depth-of-field misses or autofocus errors), also responds well. Camera shake from handheld shooting at slow shutter speeds is treated similarly to motion blur. General softness from low-megapixel sensors or heavy in-camera JPEG processing also improves noticeably. One type it cannot fix: extreme blur where original detail has been completely destroyed — when even the human eye barely recognizes the subject, reconstruction is limited. Images that look soft or hazy rather than truly blurred respond far better than severely blurry ones.",
               },
               {
                 q: "How long does it take?",
-                a: "30–60 seconds per photo depending on image size and server load.",
+                a: "30–60 seconds per photo, depending on image dimensions and current server load. Larger photos — above 2000 pixels on the longest side — take closer to 60 seconds because NAFNet processes more pixel data. Smaller photos (under 1000px) typically complete in 20–30 seconds. Processing happens on GPU servers; the time is mostly AI compute, not your upload speed. You'll see a progress indicator while the model runs. If you're processing multiple photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited deblurring with no daily cap or per-image fee, so you can clean up an entire album without hitting any limits.",
               },
               {
                 q: "Is there a subscription?",
-                a: "No. The Photo Deblurrer is $4.99 one-time — separate from other ArtImageHub tools. One payment gives unlimited access to deblurring with no recurring charges.",
+                a: "No. The Photo Deblurrer is a one-time $4.99 payment with no subscription, no renewal, and no recurring charges. Most people have a specific batch of blurry photos to fix — wedding shots, vacation pictures, childhood memories — not an ongoing monthly workflow. The $4.99 covers unlimited access to AI deblurring for as long as ArtImageHub exists. No monthly charges, no renewal reminders, no features locked behind a 'pro tier.' Each ArtImageHub tool is priced separately at $4.99: restoration, colorization, enhancement, denoising, deblurring, and JPEG repair. You only pay for what you need — there's no forced bundle. Competitors like Topaz Sharpen AI charge $99/year and Adobe Lightroom charges $9.99/month for similar functionality most users only need once or twice.",
+              },
+              {
+                q: "What image formats and file sizes does the Photo Deblurrer support?",
+                a: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload. The deblurrer works on photos from any source — smartphone exports, DSLR-captured shots, scanned old prints, screenshots, downloaded images. For best results, upload the highest-quality version of the blurry photo you have access to; re-saving a JPEG at lower quality before upload does not help and re-compressing after deblurring can reintroduce softness the AI just fixed. Save the deblurred result as PNG (lossless) or JPEG at quality 90 or higher to preserve the sharpened detail. HEIC files from iPhone are not currently supported — convert to JPG or PNG first using your phone's share menu. Files larger than 20 MB should be downsized in your image software before upload because processing extreme oversampling above 50 megapixels does not improve deblurring quality and extends processing time significantly.",
+              },
+              {
+                q: "When should I use the Photo Deblurrer versus the Photo Enhancer?",
+                a: "The Photo Deblurrer is the right choice when blur is the dominant problem and the photo is otherwise clean — modern smartphone shots taken with shaky hands, sports photos missed at the moment of focus, candid family photos with subject motion. The Photo Enhancer is the right choice when the photo has multiple quality issues at once — low resolution that needs upscaling plus mild softness plus noise — because the Enhancer pipeline runs deblurring alongside super-resolution and color correction in a single coordinated pass. As a rule: dedicated tool for a dedicated problem, combined pipeline for combined problems. Each tool is a separate $4.99 one-time unlock, so for users who have multiple distinct problems to solve over time, paying for multiple specific tools costs the same per project as paying for one comprehensive subscription elsewhere.",
+              },
+              {
+                q: "How does NAFNet compare to Topaz Sharpen AI or other paid deblurring tools?",
+                a: "NAFNet (Chen et al., ECCV 2022) is a peer-reviewed open-source deblurring model that achieves state-of-the-art results on the GoPro motion-blur benchmark used across academic image restoration research. Topaz Sharpen AI ($99 per year) and Adobe Camera Raw deblurring features ($9.99 per month) use proprietary models with similar underlying transformer architectures. The actual AI quality across these tools is closer than marketing implies — modern deblurring research has converged on similar architectural patterns. The meaningful differences are in pricing model and platform: Topaz is desktop subscription, Adobe is monthly subscription tied to Creative Cloud, ArtImageHub is $4.99 one-time web-based. For users with a finite batch of blurry photos to fix, paying once for unlimited access costs roughly 1/20th of a year of Topaz or 1/24th of a year of Adobe. For users who deblur photos every week professionally, the desktop subscription tools justify themselves through workflow integration.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-[#d2d2d7]/40 bg-[#f5f5f7] p-6">

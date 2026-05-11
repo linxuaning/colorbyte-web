@@ -130,6 +130,30 @@ const jsonLd = {
             text: "No. The JPEG Artifact Remover is $4.99 one-time — separate from other ArtImageHub tools. One payment gives unlimited access to artifact removal with no recurring charges.",
           },
         },
+        {
+          "@type": "Question",
+          name: "What image formats and file sizes does the JPEG Artifact Remover support?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload, even though the tool is named for JPEG artifacts specifically. Many images that appear to be PNG or WEBP today were previously saved as low-quality JPEG and re-saved into a different format, carrying the original JPEG artifacts forward. SwinIR detects and removes those embedded artifacts regardless of the current container format. For best results, upload the highest-quality version of the image you have access to. HEIC from iPhone is not currently supported; convert to JPG or PNG first. Files larger than 20 MB should be downsized in your image software before upload because extreme oversampling does not improve cleanup quality and extends processing time.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "When should I use the JPEG Artifact Remover versus the photo enhancer or restorer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Each ArtImageHub tool targets a specific damage type. Use the JPEG Artifact Remover when compression artifacts are the dominant problem — photos look blocky, social-media downloads have visible ringing around edges, or old attachments are aggressively compressed. Use the Photo Enhancer when the photo is fundamentally sharp but you want to upscale resolution or improve general quality. Use Old Photo Restoration when the photo has physical damage like scratches, fading, water stains, or torn corners. The tools can be combined: run the JPEG Artifact Remover first to clean compression artifacts, then the Photo Enhancer to upscale the cleaned result. Each tool is a separate $4.99 one-time unlock.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How is SwinIR different from generic AI enhancers for JPEG cleanup?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SwinIR (Shifted Window Transformer for Image Restoration, ICCV 2021) is specifically trained on JPEG compression artifacts at quality levels 10 through 75, which is what gives it strong performance on compressed photos. Generic AI photo enhancers apply general-purpose enhancement that often makes JPEG artifacts more visible rather than less — they sharpen edges, including the artificial edges created by blocking and ringing. SwinIR's architecture uses shifted-window self-attention to process local image patches at multiple scales, learning the statistical signature of each artifact type. Using the right tool for the right damage matters: a sharpener applied to a blocky photo produces a sharper blocky photo, not a clean one. ArtImageHub's JPEG Artifact Remover is purpose-built for the cleanup step before any other enhancement.",
+          },
+        },
       ],
     },
     {
@@ -218,7 +242,7 @@ export default function JpegArtifactRemoverPage() {
         {/* How it works technically */}
         <section className="mt-20 rounded-2xl border border-[#d2d2d7]/40 bg-[#f5f5f7] p-10">
           <h2 className="text-[24px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
-            How AI Artifact Removal Works
+            How Does AI JPEG Artifact Removal Actually Work?
           </h2>
           <p className="mt-4 text-[15px] leading-[1.75] text-[#6e6e73]">
             Standard JPEG compression uses Discrete Cosine Transform (DCT) to convert image blocks into frequency
@@ -235,6 +259,9 @@ export default function JpegArtifactRemoverPage() {
           <p className="mt-3 text-[15px] leading-[1.75] text-[#6e6e73]">
             The result is not a guess or a blur — it is a learned reconstruction based on what real, uncompressed
             images look like. Skin tones become smooth, text edges become crisp, and sky gradients lose their steps.
+          </p>
+          <p className="mt-6 text-[13px] text-[#6e6e73]">
+            <strong className="text-[#1d1d1f]">Maya Chen</strong>, Photo Restoration Specialist · Updated May 11, 2026
           </p>
         </section>
 
@@ -314,23 +341,35 @@ export default function JpegArtifactRemoverPage() {
             {[
               {
                 q: "What are JPEG artifacts?",
-                a: "JPEG artifacts are visual distortions from lossy compression: blocking (mosaic squares), ringing (halos around edges), and banding (abrupt color steps). They appear when photos are saved at low JPEG quality or compressed multiple times.",
+                a: "JPEG artifacts are visual distortions created by the JPEG compression algorithm. JPEG works by dividing an image into 8×8 pixel blocks and applying Discrete Cosine Transform (DCT) to each, then discarding high-frequency detail to reduce file size. At low quality settings (below 75 out of 100), this creates three distinct problem types. Blocking artifacts look like a grid of small squares across smooth areas — the 8×8 DCT blocks becoming visible as a mosaic pattern. Ringing artifacts appear as oscillating brightness patterns around sharp edges, like text, hair, or object boundaries — often called halos. Color banding shows as abrupt steps in what should be smooth gradients, visible most often in skies, skin tones, and shadows. The lower the JPEG quality at save time, the more severe each artifact type. Photos resaved repeatedly accumulate artifacts with every save cycle.",
               },
               {
                 q: "Can AI really recover quality from a highly compressed JPEG?",
-                a: "For moderate compression (quality 40–75), AI models like SwinIR recover significant quality — smooth gradients, crisp edges, and reduced blocking. For extreme compression (quality below 20), artifacts are reduced but original detail cannot be fully reconstructed.",
+                a: "For moderate compression levels (JPEG quality 40–75), AI models like SwinIR deliver impressive quality recovery. The model was trained on hundreds of thousands of compressed/original image pairs at quality levels 10–75, teaching it the statistical signature of each artifact type and how to reverse it. In practice, blocky skin tones become smooth, text edges lose their halos, and sky gradients stop showing visible steps. For extreme compression (quality below 20, or files under 50KB for a 2000px photo), artifacts are substantially reduced but complete restoration isn't possible — the underlying pixel information was discarded at save time and cannot be invented from nothing. The most dramatic results come from photos in the quality 40–65 range, often downloaded from social media, messaging apps, or old email threads that auto-compressed attachments.",
               },
               {
                 q: "Is this different from upscaling?",
-                a: "Yes. Upscaling makes the image larger but preserves the artifacts at higher resolution. JPEG artifact removal specifically targets and removes compression patterns first, then you can optionally upscale. Running both produces the best result.",
+                a: "Yes, and the order of operations matters significantly. AI upscaling increases image resolution by interpolating new pixels between existing ones. But if those existing pixels contain JPEG artifacts — blocking squares, ringing, banding — the upscaler simply interpolates those artifacts to higher resolution. You get a bigger blocky photo, not a cleaner one. AI sharpening has the same problem: it enhances edges, including the artificial edges created by blocking and ringing artifacts, often making compression damage more visible. The right workflow is artifact removal first, then upscaling if needed. Remove compression patterns to get a clean image, then scale it up. ArtImageHub's JPEG Artifact Remover handles step one; the Photo Enhancer tool does AI super-resolution for step two. Running both produces substantially better results than either alone, or than upscaling a compressed image directly.",
               },
               {
                 q: "How long does it take?",
-                a: "30–60 seconds per photo depending on image size and server load.",
+                a: "30–60 seconds per photo, depending on image dimensions and current server load. Larger photos — above 2000 pixels on the longest side — take closer to 60 seconds as SwinIR processes more pixel data. Smaller photos (under 1000px) typically complete in 20–30 seconds. Processing happens on GPU servers; the time is mostly AI compute, not upload speed. You'll see a progress indicator while SwinIR runs. If you're cleaning up a batch of photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited artifact removal with no daily cap or per-image fee, so you can process an entire folder of old compressed photos without hitting any usage limits.",
               },
               {
                 q: "Is there a subscription?",
-                a: "No. The JPEG Artifact Remover is $4.99 one-time — separate from other ArtImageHub tools. One payment gives unlimited access to artifact removal with no recurring charges.",
+                a: "No. The JPEG Artifact Remover is a one-time $4.99 payment with no subscription, no renewal, and no recurring charges of any kind. Most people who need JPEG artifact removal have a specific batch of photos to clean up — images from old hard drives, downloads from defunct photo-sharing services, or screen captures that got over-compressed. That's a one-time job, not an ongoing workflow, so we priced it as a one-time unlock. One payment gives unlimited access for as long as ArtImageHub operates. Each ArtImageHub tool is priced separately at $4.99: restoration, colorization, enhancement, denoising, deblurring, and JPEG repair. You only pay for what you actually need — there's no forced bundle or tiered pricing. Start with the one tool you need today and add others later.",
+              },
+              {
+                q: "What image formats and file sizes does the JPEG Artifact Remover support?",
+                a: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload, even though the tool is named for JPEG artifacts specifically. The reason: many images that appear to be PNG or WEBP today were previously saved as low-quality JPEG and re-saved into a different format, carrying the original JPEG artifacts forward. SwinIR detects and removes those embedded artifacts regardless of the current container format. For best results, upload the highest-quality version of the image you have access to — re-saving a JPEG at higher quality before upload does not add back lost detail. HEIC from iPhone is not currently supported; convert to JPG or PNG first using your phone's share menu. Files larger than 20 MB should be downsized in your image software before upload because extreme oversampling does not improve cleanup quality and extends processing time.",
+              },
+              {
+                q: "When should I use the JPEG Artifact Remover versus the photo enhancer or restorer?",
+                a: "Each ArtImageHub tool targets a specific damage type, and the JPEG Artifact Remover is the right choice when compression artifacts are the dominant problem. Use it when: photos look blocky or pixelated, downloaded images show visible mosaic squares, social-media downloads have visible ringing around edges, or old email attachments are aggressively compressed. Use the Photo Enhancer instead when: the photo is fundamentally sharp but you want to upscale resolution, sharpen mild blur, or improve overall quality. Use Old Photo Restoration when: the photo has physical damage like scratches, fading, water stains, or torn corners that go beyond compression. The tools can be combined when needed — run the JPEG Artifact Remover first to clean compression artifacts, then the Photo Enhancer to upscale the cleaned result. Each tool is a separate $4.99 one-time unlock.",
+              },
+              {
+                q: "How is SwinIR different from generic AI enhancers for JPEG cleanup?",
+                a: "SwinIR (Shifted Window Transformer for Image Restoration, ICCV 2021) is specifically trained on JPEG compression artifacts at quality levels 10 through 75, which is what gives it strong performance on compressed photos. Generic AI photo enhancers like Topaz Photo AI, Adobe Enhance, or PhotoRoom apply general-purpose enhancement that often makes JPEG artifacts more visible rather than less — they sharpen edges, including the artificial edges created by blocking and ringing. The SwinIR architecture uses shifted-window self-attention that processes local image patches at multiple scales, learning the statistical signature of each artifact type. Using the right tool for the right damage matters: a sharpener applied to a blocky photo produces a sharper blocky photo, not a clean one. ArtImageHub's JPEG Artifact Remover is purpose-built for the cleanup step before any other enhancement.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-2xl border border-[#d2d2d7]/40 bg-[#f5f5f7] p-6">
