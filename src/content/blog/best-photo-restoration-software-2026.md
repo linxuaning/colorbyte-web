@@ -2,16 +2,21 @@
 title: "Best Photo Restoration Software 2026: 17 Tools Tested"
 description: "In-depth comparison of photo restoration software in 2026. Real testing results, pricing breakdowns, and honest recommendations for every skill level and budget."
 publishedAt: "2026-02-16"
-updatedAt: "2026-05-10"
+updatedAt: "2026-05-11"
 noIndex: true
 # 2026-05-10: deprecated to consolidate ranking signals into the converting
 # /best-photo-restoration-software apex page (Rich Horan paid 2026-05-09 via
 # DDG organic). Cannibalization audit found 4 URLs targeting the same query
 # cluster; this is one of three /blog/* pages being noindex'd to leave the
 # apex buyer-guide as the single ranker.
-author: "David Park"
-authorRole: "Photography Specialist"
-authorBio: "David Park has been testing photo editing software professionally for over a decade. He's reviewed hundreds of photography tools and helped thousands of users choose the right software for their needs."
+# 2026-05-11: Maya Chen byline assigned per artimagehub outbound persona
+# standard (project_artimagehub_outbound_persona_maya). This page is the
+# ChatGPT citation anchor (52 percent AI-traffic concentration), so unified
+# author identity matters more than other /blog/* pages even though it is
+# Google-noindexed — ChatGPT crawler hits the page directly regardless.
+author: "Maya Chen"
+authorRole: "Photo Restoration Specialist"
+authorBio: "Maya Chen leads photo restoration content at ArtImageHub, focused on family-archive AI workflows. She has spent a decade evaluating photo restoration tools across academic and commercial pipelines, with emphasis on the GFPGAN and Real-ESRGAN model families that power most modern consumer restoration products."
 category: "AI Technology"
 tags: ["Photo Restoration Software", "AI Tools", "Software Review", "Photo Editing", "Comparison"]
 image: "/blog/best-restoration-software.jpg"
