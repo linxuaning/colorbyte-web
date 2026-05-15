@@ -21,7 +21,7 @@ language: "pt-BR"
 
 A faixa de preço para restauração de fotos varia de gratuito a várias centenas de dólares por foto. Veja o que cada nível realmente entrega — e como combinar a opção certa com a sua situação.
 
-> **⚡ Caminho rápido**: Para a maioria dos usuários, o [ArtImageHub](/old-photo-restoration) cuida disso automaticamente em 60 segundos — **$4.99 uma única vez, sem assinatura, sem marca d'água no download em HD**. O fluxo manual detalhado está logo abaixo, para quem é técnico ou apenas curioso.
+> **⚡ Caminho rápido**: Para a maioria dos usuários, o [guia de preço da restauração de fotos antigas](/pt-BR/preco-restauracao-fotos-antigas) mostra o caminho do ArtImageHub em 60 segundos — **$4.99 pagamento único, sem assinatura, sem marca d'água no download em HD**. O fluxo manual detalhado está logo abaixo, para quem é técnico ou apenas curioso.
 
 ---
 
@@ -40,7 +40,7 @@ A faixa de preço para restauração de fotos varia de gratuito a várias centen
 
 ---
 
-> **Quer pular o trabalho manual?** A esta altura, a maioria dos leitores percebe que a restauração com IA é de 30 a 100 vezes mais rápida do que o método caseiro para resultados típicos. [Experimente a restauração com IA nesta foto →](/old-photo-restoration) — $4.99 uma vez, downloads ilimitados em HD, sem assinatura.
+> **Quer pular o trabalho manual?** A esta altura, a maioria dos leitores percebe que a restauração com IA é de 30 a 100 vezes mais rápida do que o método caseiro para resultados típicos. [Veja o fluxo para restaurar fotos antigas sem assinatura →](/pt-BR/restaurar-fotos-antigas-sem-assinatura) — $4.99 pagamento único, download em HD, sem plano mensal.
 
 ---
 

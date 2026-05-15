@@ -489,6 +489,20 @@ export default async function LocaleOldPhotoRestorationPage({ params }: Props) {
           </h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
+              ...(locale === "pt-BR"
+                ? [
+                    {
+                      href: "/pt-BR/preco-restauracao-fotos-antigas",
+                      title: "Preço da restauração de fotos antigas",
+                      desc: "$4.99 pagamento único vs. serviços profissionais e assinaturas.",
+                    },
+                    {
+                      href: "/pt-BR/restaurar-fotos-antigas-sem-assinatura",
+                      title: "Restaurar fotos antigas sem assinatura",
+                      desc: "Fluxo pay-first com pagamento único e download em HD.",
+                    },
+                  ]
+                : []),
               {
                 href: "/blog/how-ai-photo-restoration-works",
                 title: "How AI Photo Restoration Works",
