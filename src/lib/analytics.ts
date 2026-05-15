@@ -203,11 +203,41 @@ declare global {
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+const INTERNAL_HOSTS = new Set(["localhost", "127.0.0.1", "0.0.0.0", "::1"]);
+
+const isInternalHostname = (hostname: string) => {
+  const normalized = hostname.trim().toLowerCase();
+  return INTERNAL_HOSTS.has(normalized) || normalized.endsWith(".local");
+};
+
+const readReferrerHostname = () => {
+  if (typeof document === "undefined" || !document.referrer) return "";
+
+  try {
+    return new URL(document.referrer).hostname;
+  } catch {
+    return "";
+  }
+};
+
+export const shouldSendAnalytics = () => {
+  if (!GA_MEASUREMENT_ID) return false;
+  if (typeof window === "undefined" || !window.gtag) return false;
+
+  const currentHostname = window.location.hostname;
+  if (isInternalHostname(currentHostname)) return false;
+
+  const referrerHostname = readReferrerHostname();
+  if (referrerHostname && isInternalHostname(referrerHostname)) return false;
+
+  return true;
+};
+
 // Track page views
 export const pageview = (url: string) => {
-  if (!GA_MEASUREMENT_ID || !window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag!('config', GA_MEASUREMENT_ID!, {
     page_path: url,
   });
 };
@@ -224,9 +254,9 @@ export const event = ({
   label?: string;
   value?: number;
 }) => {
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag('event', action, {
+  window.gtag!('event', action, {
     event_category: category,
     event_label: label,
     value: value,
@@ -235,9 +265,9 @@ export const event = ({
 
 // Predefined conversion events
 export const trackPhotoUpload = (source?: PaymentFunnelSource) => {
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "photo_upload", {
+  window.gtag!("event", "photo_upload", {
     event_category: "engagement",
     event_label: "User uploaded a photo",
     ...paymentFunnelPayload(source || {}),
@@ -264,9 +294,9 @@ export const trackProcessingComplete = ({
 
   console.info("[processing_complete]", payload);
 
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "processing_complete", {
+  window.gtag!("event", "processing_complete", {
     event_category: "conversion",
     ...payload,
   });
@@ -276,9 +306,9 @@ export const trackPhotoDownload = (
   quality: "free" | "pro",
   source?: PaymentFunnelSource
 ) => {
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "photo_download", {
+  window.gtag!("event", "photo_download", {
     event_category: "conversion",
     event_label: `Download - ${quality}`,
     ...paymentFunnelPayload(source || {}),
@@ -296,9 +326,9 @@ export const trackPhotoDownloadFailure = (
 
   console.info("[photo_download_error]", payload);
 
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "photo_download_error", {
+  window.gtag!("event", "photo_download_error", {
     event_category: "conversion",
     ...payload,
   });
@@ -308,9 +338,9 @@ export const trackPaymentClick = (
   plan: string,
   source?: PaymentFunnelSource
 ) => {
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "payment_click", {
+  window.gtag!("event", "payment_click", {
     event_category: "conversion",
     event_label: `Payment initiated - ${plan}`,
     ...paymentFunnelPayload(source || {}),
@@ -326,9 +356,9 @@ const trackPaymentFunnelEvent = (
   // Keep a console evidence trail for operational debugging and screenshots.
   console.info(`[payment_funnel] ${action}`, { ...payload, utc });
 
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag('event', action, {
+  window.gtag!('event', action, {
     event_category: 'payment_funnel',
     ...payload,
     utc,
@@ -410,8 +440,8 @@ export const trackPaymentSuccess = (
 ) => {
   const analyticsTransactionId = transactionId || `${Date.now()}`;
 
-  if (window.gtag) {
-    window.gtag("event", "purchase", {
+  if (shouldSendAnalytics()) {
+    window.gtag!("event", "purchase", {
       event_category: "conversion",
       event_label: "Payment completed",
       value: amount,
@@ -428,9 +458,9 @@ export const trackPaymentSuccess = (
   });
 
   // Also track as conversion
-  if (window.gtag && GA_MEASUREMENT_ID) {
-    window.gtag('event', 'conversion', {
-      send_to: GA_MEASUREMENT_ID,
+  if (shouldSendAnalytics()) {
+    window.gtag!('event', 'conversion', {
+      send_to: GA_MEASUREMENT_ID!,
       value: amount,
       currency: 'USD',
       transaction_id: analyticsTransactionId,
@@ -498,9 +528,9 @@ export const trackCTAClick = (
   location: string,
   source?: PaymentFunnelSource
 ) => {
-  if (!window.gtag) return;
+  if (!shouldSendAnalytics()) return;
 
-  window.gtag("event", "cta_click", {
+  window.gtag!("event", "cta_click", {
     event_category: "engagement",
     event_label: `CTA clicked - ${location}`,
     ...paymentFunnelPayload(source || {}),
