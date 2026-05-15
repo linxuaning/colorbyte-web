@@ -55,30 +55,30 @@ const ptBREnhanceClient: ToolClientCopy = {
 
 export const ptBR: LocaleSEO = {
   oldPhotoRestoration: {
-    title: "Restaurar Fotos Antigas Grátis Online — IA para Fotos Velhas",
+    title: "Restaurar Fotos Antigas Online — $4.99 Pagamento Único",
     description:
-      "Restaure suas fotos antigas grátis com inteligência artificial. Repare danos, elimine arranhões e melhore a nitidez das suas memórias mais preciosas. Sem cadastro.",
+      "Restaure suas fotos antigas com IA por $4.99 pagamento único. Repare danos, elimine arranhões e baixe o resultado em HD. Sem assinatura.",
     keywords: [
-      "restaurar fotos antigas grátis",
+      "restaurar fotos antigas pagamento único",
       "restaurar fotos velhas",
       "restauração de fotos danificadas",
       "reparar fotos antigas online",
-      "melhorar fotos com IA grátis",
+      "restaurar fotos antigas sem assinatura",
     ],
-    h1: "Restaure suas fotos antigas com IA — grátis.",
-    subtitle: "Envie sua foto. A IA repara danos, elimina arranhões e melhora a qualidade em segundos.",
-    badge: "SEM CADASTRO · RESULTADO EM SEGUNDOS",
-    ctaPrimary: "Restaurar foto grátis",
+    h1: "Restaure suas fotos antigas com IA — $4.99 pagamento único.",
+    subtitle: "Pague $4.99 uma vez, envie sua foto antiga e baixe a restauração em HD. Sem assinatura.",
+    badge: "$4.99 PAGAMENTO ÚNICO · SEM ASSINATURA",
+    ctaPrimary: "Restaurar foto por $4.99",
     ctaSecondary: "Ver exemplos",
     faqItems: [
-      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim, é necessário um pagamento único para ter acesso. Depois de pagar, você pode restaurar quantas fotos quiser." },
+      { q: "Preciso pagar antes de enviar minha foto?", a: "Sim. O ArtImageHub usa $4.99 pagamento único, sem assinatura, para desbloquear envio, processamento por IA e download em HD no seu e-mail." },
       { q: "Quais formatos de imagem são aceitos?", a: "JPG, PNG e WEBP de até 20 MB." },
       { q: "Quanto tempo leva a restauração?", a: "Geralmente entre 10 e 30 segundos, dependendo do tamanho e do estado da foto." },
       { q: "Que tipos de danos a IA consegue reparar?", a: "Arranhões, manchas, desbotamento de cores, rasgos e deterioração geral causada pelo tempo." },
       { q: "Minha foto fica armazenada nos seus servidores?", a: "As fotos são processadas com segurança e não ficam armazenadas permanentemente em nossos servidores." },
     ],
     howToSteps: [
-      { name: "Pague para desbloquear", text: "Um pagamento único libera acesso completo à ferramenta de restauração." },
+      { name: "Pague para desbloquear", text: "$4.99 pagamento único libera envio, processamento por IA e download em HD. Sem assinatura." },
       { name: "Envie sua foto antiga", text: "Selecione uma foto em formato JPG, PNG ou WEBP de até 20 MB." },
       { name: "A IA restaura a imagem", text: "Nossa IA analisa e repara automaticamente danos, arranhões e deterioração em segundos." },
       { name: "Baixe o resultado", text: "Baixe sua foto restaurada em alta resolução." },
