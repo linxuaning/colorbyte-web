@@ -37,6 +37,28 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const RESTORATION_FEATURE_KEY = "restoration";
+
+async function hasRestorationAccess(email: string, signal?: AbortSignal): Promise<boolean> {
+  const encodedEmail = encodeURIComponent(email);
+  const entitlementRes = await fetch(
+    `${API_BASE}/api/payment/feature-entitlement/${encodedEmail}/${RESTORATION_FEATURE_KEY}`,
+    { signal }
+  );
+
+  if (entitlementRes.ok) {
+    const entitlement = await entitlementRes.json();
+    if (entitlement.is_entitled) return true;
+  }
+
+  const subscriptionRes = await fetch(
+    `${API_BASE}/api/payment/subscription/${encodedEmail}`,
+    { signal }
+  );
+  if (!subscriptionRes.ok) return false;
+  const subscription = await subscriptionRes.json();
+  return Boolean(subscription.is_active);
+}
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
 
@@ -234,17 +256,13 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           const controller = new AbortController();
           // 8s cap prevents Render cold-start from blocking the UI indefinitely
           const tid = setTimeout(() => controller.abort(), 8000);
-          let res: Response;
+          let hasAccess = false;
           try {
-            res = await fetch(
-              `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`,
-              { signal: controller.signal }
-            );
+            hasAccess = await hasRestorationAccess(email, controller.signal);
           } finally {
             clearTimeout(tid);
           }
-          const data = await res.json();
-          if (data.is_active) {
+          if (hasAccess) {
             setIsSubscriber(true);
             setBackendReady(true);
             setCheckingAccess(false);
@@ -563,11 +581,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const handleAlreadyPaidCheck = useCallback(() => {
     if (!EMAIL_REGEX.test(paidEmail.trim())) return;
     setPaidCheckStatus("checking");
-    fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(paidEmail.trim().toLowerCase())}`)
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.is_active) {
-          localStorage.setItem("artimagehub_email", paidEmail.trim().toLowerCase());
+    const normalizedEmail = paidEmail.trim().toLowerCase();
+    hasRestorationAccess(normalizedEmail)
+      .then((hasAccess) => {
+        if (hasAccess) {
+          localStorage.setItem("artimagehub_email", normalizedEmail);
           setIsSubscriber(true);
           setPaidCheckStatus("found");
         } else {
