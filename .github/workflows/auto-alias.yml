@@ -2,8 +2,8 @@ name: Promote latest Vercel deploy to artimagehub.com
 
 # Vercel's native deploy is configured to NOT auto-alias to the production
 # domain (discovered 2026-04-17 after 3 days of stale prod). This workflow
-# fills that gap by explicitly aliasing the latest Ready production deploy
-# to artimagehub.com after every push to main.
+# fills that gap by explicitly aliasing the Ready production deploy for the
+# pushed commit to artimagehub.com after every push to main.
 #
 # Inert until secrets are configured. Set in GitHub → Settings → Secrets:
 #   VERCEL_TOKEN       (https://vercel.com/account/tokens — any scope)
@@ -28,11 +28,12 @@ jobs:
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
-      - name: Alias latest Ready production deploy to artimagehub.com
+      - name: Alias Ready production deploy for this commit to artimagehub.com
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          GITHUB_SHA: ${{ github.sha }}
         run: |
           if [ -z "$VERCEL_TOKEN" ]; then
             echo "::notice title=Inert::VERCEL_TOKEN secret not set."
@@ -41,23 +42,39 @@ jobs:
             exit 0
           fi
 
-          echo "Waiting 120s for Vercel native build to start..."
-          sleep 120
+          if [ -z "$VERCEL_ORG_ID" ] || [ -z "$VERCEL_PROJECT_ID" ]; then
+            echo "::error title=Missing Vercel secrets::VERCEL_ORG_ID and VERCEL_PROJECT_ID are required."
+            exit 1
+          fi
 
-          # Poll up to 20 min for a Ready production deploy. The Vercel table
-          # prints Status before Environment ("● Ready Production"), so do not
-          # match on "Production.*Ready"; it misses valid deployments.
+          echo "Waiting for Vercel production deploy for commit ${GITHUB_SHA}..."
+
+          # Poll up to 20 min. Use the Vercel API instead of parsing `vercel ls`
+          # table output; GitHub Actions has no linked project directory and the
+          # CLI table format has changed before.
           for i in $(seq 1 80); do
-            LATEST=$(vercel ls colorbyte-web --token "$VERCEL_TOKEN" 2>/dev/null \
-              | awk '$0 ~ /https:\/\// && $0 ~ /Ready/ && $0 ~ /Production/ {print $2; exit}')
-            if [ -n "$LATEST" ]; then
-              echo "Aliasing $LATEST → artimagehub.com"
-              vercel alias set "$LATEST" artimagehub.com --token "$VERCEL_TOKEN"
+            DEPLOY_URL=$(curl -fsS \
+              -H "Authorization: Bearer ${VERCEL_TOKEN}" \
+              "https://api.vercel.com/v6/deployments?teamId=${VERCEL_ORG_ID}&projectId=${VERCEL_PROJECT_ID}&target=production&limit=20" \
+              | jq -r --arg sha "$GITHUB_SHA" '
+                  .deployments[]
+                  | select(.state == "READY")
+                  | select(.meta.githubCommitSha == $sha or .meta.githubCommitSha == ($sha[0:7]))
+                  | "https://" + .url
+                ' \
+              | head -n 1)
+
+            if [ -n "$DEPLOY_URL" ]; then
+              echo "Aliasing $DEPLOY_URL → artimagehub.com"
+              vercel alias set "$DEPLOY_URL" artimagehub.com \
+                --scope "$VERCEL_ORG_ID" \
+                --token "$VERCEL_TOKEN"
               exit 0
             fi
-            echo "No Ready production deploy yet (attempt $i/80), waiting 15s..."
+
+            echo "No Ready production deploy for this commit yet (attempt $i/80), waiting 15s..."
             sleep 15
           done
 
-          echo "::error title=Timeout::No Ready production deploy found in 20 min"
+          echo "::error title=Timeout::No Ready production deploy for ${GITHUB_SHA} found in 20 min"
           exit 1
