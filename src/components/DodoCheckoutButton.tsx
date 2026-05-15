@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import {
   clearPendingPaymentFunnelSource,
   paymentFunnelPayload,
+  readGaClientId,
   storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
@@ -109,6 +110,7 @@ export default function DodoCheckoutButton({
           email: normalizedCheckoutEmail,
           feature_key: featureKey,
           resume_task_id: resumeTaskId || null,
+          ga_client_id: readGaClientId() || null,
           ...paymentFunnelPayload(enrichedSource),
         }),
       });

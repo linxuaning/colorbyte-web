@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   clearPendingPaymentFunnelSource,
   paymentFunnelPayload,
+  readGaClientId,
   storePendingPaymentFunnelSource,
   trackCreateOrderResult,
   trackPaymentCancel,
@@ -135,6 +136,7 @@ export default function DodoQuickCheckoutButton({
         body: JSON.stringify({
           email: normalized,
           resume_task_id: null,
+          ga_client_id: readGaClientId() || null,
           ...paymentFunnelPayload(enrichedSource),
         }),
       });

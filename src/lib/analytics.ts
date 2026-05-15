@@ -233,6 +233,23 @@ export const shouldSendAnalytics = () => {
   return true;
 };
 
+export const readGaClientId = () => {
+  if (typeof document === "undefined") return undefined;
+
+  const gaCookie = document.cookie
+    .split(";")
+    .map((part) => part.trim())
+    .find((part) => part.startsWith("_ga="));
+  if (!gaCookie) return undefined;
+
+  const value = decodeURIComponent(gaCookie.slice("_ga=".length));
+  const parts = value.split(".");
+  if (parts.length < 4) return undefined;
+
+  const clientId = `${parts[parts.length - 2]}.${parts[parts.length - 1]}`;
+  return /^\d+\.\d+$/.test(clientId) ? clientId : undefined;
+};
+
 // Track page views
 export const pageview = (url: string) => {
   if (!shouldSendAnalytics()) return;
