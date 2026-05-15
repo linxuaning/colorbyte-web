@@ -4,8 +4,9 @@
  * GET /api/metrics/ga4?days=7
  *
  * Env vars required (set in Vercel dashboard after andy provides credentials):
- *   GA4_CREDENTIALS_JSON  — full service account JSON as string
  *   GA4_PROPERTY_ID       — numeric GA4 property ID (e.g. "123456789")
+ *   GA4_CREDENTIALS_JSON  — full service account JSON as string, or
+ *   GA4_OAUTH_CLIENT_JSON + GA4_OAUTH_REFRESH_TOKEN — user OAuth fallback
  *
  * Protected by internal key header:
  *   x-internal-key: artimagehub-internal-2026
@@ -20,6 +21,19 @@ interface ServiceAccountCreds {
   client_email: string;
   private_key: string;
   token_uri: string;
+}
+
+interface OAuthClientCreds {
+  installed?: {
+    client_id: string;
+    client_secret: string;
+    token_uri?: string;
+  };
+  web?: {
+    client_id: string;
+    client_secret: string;
+    token_uri?: string;
+  };
 }
 
 /** Build a signed RS256 JWT for Google service account auth. */
@@ -62,6 +76,39 @@ async function getAccessToken(creds: ServiceAccountCreds): Promise<string> {
   return data.access_token;
 }
 
+async function getOAuthAccessToken(clientJson: string, refreshToken: string): Promise<string> {
+  let parsed: OAuthClientCreds;
+  try {
+    parsed = JSON.parse(clientJson) as OAuthClientCreds;
+  } catch {
+    throw new Error('GA4_OAUTH_CLIENT_JSON is not valid JSON');
+  }
+
+  const client = parsed.installed ?? parsed.web;
+  if (!client?.client_id || !client.client_secret) {
+    throw new Error('GA4_OAUTH_CLIENT_JSON must contain installed or web client_id/client_secret');
+  }
+
+  const resp = await fetch(client.token_uri ?? 'https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      client_id: client.client_id,
+      client_secret: client.client_secret,
+      refresh_token: refreshToken,
+      grant_type: 'refresh_token',
+    }),
+  });
+
+  if (!resp.ok) {
+    const text = await resp.text();
+    throw new Error(`OAuth refresh failed (${resp.status}): ${text.slice(0, 200)}`);
+  }
+
+  const data = await resp.json() as { access_token: string };
+  return data.access_token;
+}
+
 export async function GET(request: Request) {
   // Auth check
   const key = request.headers.get('x-internal-key');
@@ -70,11 +117,13 @@ export async function GET(request: Request) {
   }
 
   const credsJson = process.env.GA4_CREDENTIALS_JSON;
+  const oauthClientJson = process.env.GA4_OAUTH_CLIENT_JSON;
+  const oauthRefreshToken = process.env.GA4_OAUTH_REFRESH_TOKEN;
   const propertyId = process.env.GA4_PROPERTY_ID;
 
-  if (!credsJson || !propertyId) {
+  if (!propertyId || (!credsJson && (!oauthClientJson || !oauthRefreshToken))) {
     return NextResponse.json(
-      { error: 'GA4_CREDENTIALS_JSON and GA4_PROPERTY_ID are not configured' },
+      { error: 'GA4_PROPERTY_ID and either GA4_CREDENTIALS_JSON or GA4_OAUTH_CLIENT_JSON + GA4_OAUTH_REFRESH_TOKEN are not configured' },
       { status: 503 }
     );
   }
@@ -82,15 +131,20 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const days = Math.min(parseInt(searchParams.get('days') ?? '7', 10), 90);
 
-  let creds: ServiceAccountCreds;
   try {
-    creds = JSON.parse(credsJson) as ServiceAccountCreds;
-  } catch {
-    return NextResponse.json({ error: 'GA4_CREDENTIALS_JSON is not valid JSON' }, { status: 503 });
-  }
+    let token: string;
 
-  try {
-    const token = await getAccessToken(creds);
+    if (oauthClientJson && oauthRefreshToken) {
+      token = await getOAuthAccessToken(oauthClientJson, oauthRefreshToken);
+    } else {
+      let creds: ServiceAccountCreds;
+      try {
+        creds = JSON.parse(credsJson as string) as ServiceAccountCreds;
+      } catch {
+        return NextResponse.json({ error: 'GA4_CREDENTIALS_JSON is not valid JSON' }, { status: 503 });
+      }
+      token = await getAccessToken(creds);
+    }
 
     const body = {
       dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
