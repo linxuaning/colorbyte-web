@@ -32,10 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: d?.title ?? "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
+    title: d?.title ?? "AI Photo Enhancer: Enhance Photo Quality Online in Seconds",
     description:
       d?.description ??
-      "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
+      "Best AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces in 30 seconds.",
     keywords: (d?.keywords as string[] | undefined) ?? [
       "AI photo enhancer",
       "photo enhancer free",
@@ -48,10 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: languageAlternates as Record<string, string>,
     },
     openGraph: {
-      title: d?.title ?? "AI Photo Enhancer — Enhance Photo Quality Free Online",
+      title: d?.title ?? "AI Photo Enhancer — Enhance Photo Quality Online",
       description:
         d?.description ??
-        "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale. No signup, instant results.",
+        "Best AI photo enhancer. Improve photo quality, fix blur, 4x upscale. Instant results.",
       type: "website",
       images: [
         {
@@ -64,10 +64,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: d?.title ?? "AI Photo Enhancer — Enhance Photo Quality Free",
+      title: d?.title ?? "AI Photo Enhancer — Enhance Photo Quality",
       description:
         d?.description ??
-        "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale.",
+        "Best AI photo enhancer. Improve photo quality, fix blur, 4x upscale.",
       images: ["/blog/before-after-examples.webp"],
     },
   };
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
   { name: "Upload your photo", text: "Upload any blurry, low-resolution, or low-quality photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required." },
   { name: "AI enhances your photo in seconds", text: "AI removes blur, upscales resolution up to 4×, and enhances face detail automatically. Results are ready in 30 seconds." },
-  { name: "Preview free, download HD with Pro", text: "Preview the enhanced result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download." },
+  { name: "Unlock enhancement and download HD", text: "Pro Lifetime Access ($4.99 one-time) unlocks AI enhancement and the original-quality HD download on your email." },
 ];
 
 function buildHowToSchema(steps: readonly HowToStep[]) {
@@ -84,7 +84,7 @@ function buildHowToSchema(steps: readonly HowToStep[]) {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: "How to Enhance Photo Quality Online with AI",
-    description: "Improve photo quality with AI in 3 steps. Fix blur, upscale resolution, enhance faces. Free preview — original-quality download for $4.99.",
+    description: "Improve photo quality with AI in 3 steps. Fix blur, upscale resolution, and enhance faces after a one-time $4.99 unlock.",
     totalTime: "PT2M",
     tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Enhancer" }],
     step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
@@ -106,7 +106,7 @@ const softwareSchema = {
 };
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
-  { q: "Is the photo enhancer free to use?", a: "Yes — enhancement preview is free. Download the original quality result requires Pro Lifetime Access ($4.99 one-time). No subscription." },
+  { q: "Do I need to pay before using the photo enhancer?", a: "Yes — ArtImageHub uses a pay-first model. Pro Lifetime Access is a one-time $4.99 payment that unlocks AI enhancement and the original-quality download on your email. No subscription." },
   { q: "How long does AI photo enhancement take?", a: "Most photos are enhanced in 30 seconds. Complex images may take up to 90 seconds." },
   { q: "Are my photos kept private?", a: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos." },
 ];
@@ -127,11 +127,11 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
   const { locale } = await params;
   const d = getLocaleSEO(locale)?.enhancer;
 
-  const h1 = d?.h1 ?? "Enhance Photo Quality with AI — Free";
+  const h1 = d?.h1 ?? "Enhance Photo Quality with AI";
   const subtitle =
     d?.subtitle ??
-    "Upload your photo. AI removes blur, upscales resolution, and enhances faces in seconds. Free preview — Pro Lifetime Access for $4.99.";
-  const badge = d?.badge ?? "Free Preview · No Signup";
+    "Pay once, upload your photo, and let AI remove blur, upscale resolution, and enhance faces in seconds. Pro Lifetime Access is $4.99 with no subscription.";
+  const badge = d?.badge ?? "$4.99 One-Time · No Subscription";
 
   const howToSchema = buildHowToSchema(d?.howToSteps ?? DEFAULT_HOW_TO_STEPS);
   const faqSchema = buildFaqSchema(d?.faqItems ?? DEFAULT_FAQ_ITEMS);

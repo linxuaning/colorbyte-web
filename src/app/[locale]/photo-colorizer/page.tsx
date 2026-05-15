@@ -32,10 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: d?.title ?? "Photo Colorizer: Colorize Black and White Photos with AI Free",
+    title: d?.title ?? "Photo Colorizer: Colorize Black and White Photos with AI",
     description:
       d?.description ??
-      "Best AI photo colorizer to colorize black and white photos online free. Turn old family photos into vivid color in 30 seconds. No signup, instant results.",
+      "Best AI photo colorizer to colorize black and white photos online. Turn old family photos into vivid color in 30 seconds.",
     keywords: (d?.keywords as string[] | undefined) ?? [
       "photo colorizer",
       "colorize black and white photos",
@@ -48,10 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: languageAlternates as Record<string, string>,
     },
     openGraph: {
-      title: d?.title ?? "Photo Colorizer — Colorize Black & White Photos Free Online",
+      title: d?.title ?? "Photo Colorizer — Colorize Black & White Photos Online",
       description:
         d?.description ??
-        "Best AI photo colorizer. Turn black and white photos into vivid color instantly. Free, no signup required.",
+        "Best AI photo colorizer. Turn black and white photos into vivid color instantly.",
       type: "website",
       images: [
         {
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: d?.title ?? "Photo Colorizer — Colorize Black & White Photos Free",
+      title: d?.title ?? "Photo Colorizer — Colorize Black & White Photos",
       description:
         d?.description ??
         "Best AI photo colorizer. Turn black and white photos into vivid color instantly.",
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
   { name: "Upload your black and white photo", text: "Upload any black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required." },
   { name: "AI colorizes your photo in seconds", text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30 seconds." },
-  { name: "Preview free, download HD with Pro", text: "Preview the colorized result instantly for free. Pro Lifetime Access ($4.99 one-time) unlocks the original-quality HD download." },
+  { name: "Unlock colorization and download HD", text: "Pro Lifetime Access ($4.99 one-time) unlocks AI colorization and the original-quality HD download on your email." },
 ];
 
 function buildHowToSchema(steps: readonly HowToStep[]) {
@@ -84,7 +84,7 @@ function buildHowToSchema(steps: readonly HowToStep[]) {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: "How to Colorize Black and White Photos Online with AI",
-    description: "Colorize black and white photos with AI in 3 steps. Free preview — original-quality download for $4.99.",
+    description: "Colorize black and white photos with AI after a one-time $4.99 unlock for original-quality processing and download.",
     totalTime: "PT2M",
     tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Colorizer" }],
     step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, name: s.name, text: s.text })),
@@ -106,7 +106,7 @@ const softwareSchema = {
 };
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
-  { q: "Is the photo colorizer free to use?", a: "Yes — colorization preview is free. Download the original quality result requires Pro Lifetime Access ($4.99 one-time). No subscription." },
+  { q: "Do I need to pay before using the photo colorizer?", a: "Yes — ArtImageHub uses a pay-first model. Pro Lifetime Access is a one-time $4.99 payment that unlocks AI colorization and the original-quality download on your email. No subscription." },
   { q: "How long does AI photo colorization take?", a: "Most photos are colorized in 30 seconds. Complex images may take up to 90 seconds." },
   { q: "Are my photos kept private?", a: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos." },
 ];
@@ -130,8 +130,8 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
   const h1 = d?.h1 ?? "Colorize Black & White Photos with AI";
   const subtitle =
     d?.subtitle ??
-    "Upload your photo. AI adds realistic color in seconds. Free preview — Pro Lifetime Access for $4.99.";
-  const badge = d?.badge ?? "Free Preview · No Signup";
+    "Pay once, upload your photo, and let AI add realistic color in seconds. Pro Lifetime Access is $4.99 with no subscription.";
+  const badge = d?.badge ?? "$4.99 One-Time · No Subscription";
 
   const howToSchema = buildHowToSchema(d?.howToSteps ?? DEFAULT_HOW_TO_STEPS);
   const faqSchema = buildFaqSchema(d?.faqItems ?? DEFAULT_FAQ_ITEMS);
