@@ -240,7 +240,7 @@ export default function DodoCheckoutButton({
         disabled={loading}
         className="mt-6 inline-flex h-11 w-full items-center justify-center rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white transition hover:bg-[#005bb5] disabled:cursor-not-allowed disabled:opacity-70"
       >
-        {loading ? "Redirecting to DodoPayments..." : `Pay ${PRO_PRICE_TEXT} with DodoPayments`}
+        {loading ? "Opening secure checkout..." : `Pay ${PRO_PRICE_TEXT} securely`}
       </button>
 
       {/* Expectation-setting line — GA4 shows ~58% of create_order_success
@@ -248,8 +248,8 @@ export default function DodoCheckoutButton({
           is the most likely cause. Flagging it upfront converts the moment
           from "wait, what?" to an anticipated step. */}
       <p className="mt-2 text-center text-[11px] leading-snug text-white/60">
-        Secure checkout — you&rsquo;ll enter name &amp; billing address on the
-        next page (takes ~30 seconds).
+        Secure DodoPayments popup — keep this tab open; name and billing
+        details usually take ~30 seconds.
       </p>
 
       {validationMessage && (
