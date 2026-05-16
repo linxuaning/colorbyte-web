@@ -27,6 +27,15 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
+const CHECKOUT_CREATE_TIMEOUT_MS = 15000;
+
+function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
+  if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
+    return AbortSignal.timeout(timeoutMs);
+  }
+
+  return undefined;
+}
 
 interface DodoCheckoutButtonProps {
   checkoutEmail?: string;
@@ -106,6 +115,7 @@ export default function DodoCheckoutButton({
         headers: {
           "Content-Type": "application/json",
         },
+        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
         body: JSON.stringify({
           email: normalizedCheckoutEmail,
           feature_key: featureKey,
@@ -160,7 +170,12 @@ export default function DodoCheckoutButton({
         },
       });
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Failed to start checkout";
+      const message =
+        err instanceof DOMException && err.name === "TimeoutError"
+          ? "Checkout is taking longer than usual. Please retry or request a direct payment link."
+          : err instanceof Error
+            ? err.message
+            : "Failed to start checkout";
       clearPendingPaymentFunnelSource();
       trackPaymentCancel("dodo_checkout_error", enrichedSource);
       setError(message);

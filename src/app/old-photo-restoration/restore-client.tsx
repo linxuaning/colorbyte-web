@@ -38,26 +38,83 @@ const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const RESTORATION_FEATURE_KEY = "restoration";
+const MANUAL_ACCESS_CHECK_TIMEOUT_MS = 8000;
+const ACCESS_CHECK_TIMEOUT_REASON = "access_check_timeout";
+
+function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
+  if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
+    return AbortSignal.timeout(timeoutMs);
+  }
+
+  return undefined;
+}
+
+function isTimeoutError(error: unknown): boolean {
+  return (
+    error instanceof DOMException &&
+    (error.name === "TimeoutError" || error.name === "AbortError")
+  );
+}
+
+type AccessCheckResult = "granted" | "denied" | "timeout";
+
+async function readAccessFlag(
+  url: string,
+  flag: "is_entitled" | "is_active",
+  signal?: AbortSignal
+): Promise<AccessCheckResult> {
+  try {
+    const response = await fetch(url, { signal });
+    if (!response.ok) return "denied";
+    const data = await response.json();
+    return Boolean(data[flag]) ? "granted" : "denied";
+  } catch (error) {
+    if (isTimeoutError(error)) return "timeout";
+    return "denied";
+  }
+}
+
+function resolveAccessChecks(checks: Promise<AccessCheckResult>[]): Promise<boolean> {
+  return new Promise((resolve, reject) => {
+    let pending = checks.length;
+    let sawTimeout = false;
+
+    checks.forEach((check) => {
+      check
+        .then((result) => {
+          if (result === "granted") {
+            resolve(true);
+            return;
+          }
+
+          if (result === "timeout") {
+            sawTimeout = true;
+          }
+
+          pending -= 1;
+          if (pending === 0) {
+            if (sawTimeout) {
+              reject(new Error(ACCESS_CHECK_TIMEOUT_REASON));
+              return;
+            }
+            resolve(false);
+          }
+        })
+        .catch((error) => reject(error));
+    });
+  });
+}
 
 async function hasRestorationAccess(email: string, signal?: AbortSignal): Promise<boolean> {
   const encodedEmail = encodeURIComponent(email);
-  const entitlementRes = await fetch(
-    `${API_BASE}/api/payment/feature-entitlement/${encodedEmail}/${RESTORATION_FEATURE_KEY}`,
-    { signal }
-  );
-
-  if (entitlementRes.ok) {
-    const entitlement = await entitlementRes.json();
-    if (entitlement.is_entitled) return true;
-  }
-
-  const subscriptionRes = await fetch(
-    `${API_BASE}/api/payment/subscription/${encodedEmail}`,
-    { signal }
-  );
-  if (!subscriptionRes.ok) return false;
-  const subscription = await subscriptionRes.json();
-  return Boolean(subscription.is_active);
+  return resolveAccessChecks([
+    readAccessFlag(
+      `${API_BASE}/api/payment/feature-entitlement/${encodedEmail}/${RESTORATION_FEATURE_KEY}`,
+      "is_entitled",
+      signal
+    ),
+    readAccessFlag(`${API_BASE}/api/payment/subscription/${encodedEmail}`, "is_active", signal),
+  ]);
 }
 
 type Stage = "idle" | "uploading" | "processing" | "done" | "error";
@@ -96,7 +153,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
   const [emailEntry, setEmailEntry] = useState("");
   const [emailEntryHint, setEmailEntryHint] = useState("");
   const [paidEmail, setPaidEmail] = useState("");
-  const [paidCheckStatus, setPaidCheckStatus] = useState<"idle" | "checking" | "found" | "notfound">("idle");
+  const [paidCheckStatus, setPaidCheckStatus] = useState<"idle" | "checking" | "found" | "notfound" | "retry">("idle");
   const [processingCount, setProcessingCount] = useState<number | null>(null);
   const [backendReady, setBackendReady] = useState(false);
   const [warmupSeconds, setWarmupSeconds] = useState(0);
@@ -582,7 +639,16 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     if (!EMAIL_REGEX.test(paidEmail.trim())) return;
     setPaidCheckStatus("checking");
     const normalizedEmail = paidEmail.trim().toLowerCase();
-    hasRestorationAccess(normalizedEmail)
+    const accessSignal = abortSignalAfter(MANUAL_ACCESS_CHECK_TIMEOUT_MS);
+    const timeoutFallback = new Promise<never>((_, reject) => {
+      if (accessSignal) return;
+      window.setTimeout(
+        () => reject(new Error(ACCESS_CHECK_TIMEOUT_REASON)),
+        MANUAL_ACCESS_CHECK_TIMEOUT_MS
+      );
+    });
+
+    Promise.race([hasRestorationAccess(normalizedEmail, accessSignal), timeoutFallback])
       .then((hasAccess) => {
         if (hasAccess) {
           localStorage.setItem("artimagehub_email", normalizedEmail);
@@ -592,7 +658,13 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           setPaidCheckStatus("notfound");
         }
       })
-      .catch(() => setPaidCheckStatus("notfound"));
+      .catch((error) => {
+        if (isTimeoutError(error) || error?.message === ACCESS_CHECK_TIMEOUT_REASON) {
+          setPaidCheckStatus("retry");
+          return;
+        }
+        setPaidCheckStatus("notfound");
+      });
   }, [paidEmail]);
 
   return (
@@ -709,6 +781,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               )}
               {paidCheckStatus === "notfound" && (
                 <p className="mt-1.5 text-[11px] text-red-500">No active subscription found for this email.</p>
+              )}
+              {paidCheckStatus === "retry" && (
+                <p className="mt-1.5 text-[11px] text-amber-600">
+                  Access check is taking too long. Please retry in a few seconds.
+                </p>
               )}
             </div>
           </div>

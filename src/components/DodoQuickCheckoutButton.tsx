@@ -25,6 +25,15 @@ const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const CHECKOUT_CREATE_TIMEOUT_MS = 15000;
+
+function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
+  if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
+    return AbortSignal.timeout(timeoutMs);
+  }
+
+  return undefined;
+}
 
 interface Props {
   /** Visible button label, e.g. "$4.99 — Get Started". */
@@ -133,6 +142,7 @@ export default function DodoQuickCheckoutButton({
       const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
         body: JSON.stringify({
           email: normalized,
           resume_task_id: null,
@@ -202,7 +212,12 @@ export default function DodoQuickCheckoutButton({
         // without forcing the user to start over.
       }
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Something went wrong.";
+      const message =
+        err instanceof DOMException && err.name === "TimeoutError"
+          ? "Checkout is taking longer than usual. Please use the full checkout page."
+          : err instanceof Error
+            ? err.message
+            : "Something went wrong.";
       clearPendingPaymentFunnelSource();
       trackCreateOrderResult(false, "exception", enrichedSource);
       setError(message);
