@@ -220,6 +220,19 @@ const getFirstPagePath = (): string | undefined => {
   }
 };
 
+const currentAllowedLandingPath = (): string | undefined => {
+  if (typeof window === "undefined") return undefined;
+  const pathname = window.location.pathname;
+  return isAllowedLandingPath(pathname) ? pathname : undefined;
+};
+
+const firstAllowedLandingPath = (): string | undefined => {
+  const firstPagePath = getFirstPagePath();
+  return firstPagePath && isAllowedLandingPath(firstPagePath)
+    ? firstPagePath
+    : undefined;
+};
+
 /**
  * Fill missing fields on a funnel-source object with browser-derived values:
  *   - landingPage <- session-first pagepath, or current window.location.pathname+search
@@ -246,8 +259,8 @@ export const enrichFunnelSource = (
     landingPage:
       base.landingPage ||
       defaults.landingPage ||
-      getFirstPagePath() ||
-      `${window.location.pathname}${window.location.search}`,
+      firstAllowedLandingPath() ||
+      currentAllowedLandingPath(),
     ctaSlot: base.ctaSlot || defaults.ctaSlot,
     entryVariant:
       base.entryVariant || defaults.entryVariant || detectEntryVariantFromBrowser(),
