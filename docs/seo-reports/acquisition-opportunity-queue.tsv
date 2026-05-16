@@ -1,0 +1,7 @@
+status	channel	query_or_surface	angle	target_url	evidence_required	metric_to_watch
+ready	Pinterest	old family photo restoration	Restore old family photos without a subscription	/old-photo-restoration	final pin URL + screenshot	payment_initiations,payment_successes
+ready	Pinterest	photo restoration one time payment	One-time payment vs subscription apps	/photo-restoration-one-time-payment	final pin URL + screenshot	payment_initiations,payment_successes
+ready	Reddit/comment	threads asking how to restore old photos	No-subscription workflow for a finite family-photo batch	/photo-restoration-no-subscription	final comment URL + screenshot	payment_initiations,payment_successes
+ready	Forum/blog comment	photo restoration cost discussions	Transparent $4.99 one-time restoration cost	/photo-restoration-cost	final comment URL + screenshot	payment_initiations,payment_successes
+ready	Brazil social/forum	restaurar fotos antigas sem assinatura	Pagamento único, sem assinatura, fluxo em português	/pt-BR/restaurar-fotos-antigas-sem-assinatura	final URL + screenshot	payment_initiations,payment_successes
+ready	Brazil social/forum	preço restauração de fotos antigas	Comparativo de preço para restaurar fotos antigas	/pt-BR/preco-restauracao-fotos-antigas	final URL + screenshot	payment_initiations,payment_successes

@@ -6,6 +6,18 @@ const path = require('path');
 const SITE_URL = 'https://www.artimagehub.com';
 const API_ENDPOINT = `${SITE_URL}/api/indexnow`;
 
+const BUYER_INTENT_PATHS = [
+  '/old-photo-restoration',
+  '/photo-restoration-no-subscription',
+  '/photo-restoration-one-time-payment',
+  '/photo-restoration-cost',
+  '/photo-restoration-service',
+  '/best-photo-restoration-software',
+  '/photo-restoration-app-comparison',
+  '/pt-BR/preco-restauracao-fotos-antigas',
+  '/pt-BR/restaurar-fotos-antigas-sem-assinatura',
+];
+
 // Get all blog post slugs
 function getAllBlogSlugs() {
   const blogDir = path.join(__dirname, '../src/content/blog');
@@ -21,7 +33,7 @@ function buildUrlList() {
 
   const urls = [
     '/',
-    '/old-photo-restoration',
+    ...BUYER_INTENT_PATHS,
     '/photo-colorizer',
     '/photo-enhancer',
     '/blog',
@@ -33,7 +45,7 @@ function buildUrlList() {
     ...slugs.map(slug => `/blog/${slug}`)
   ];
 
-  return urls;
+  return [...new Set(urls)];
 }
 
 // Submit to IndexNow

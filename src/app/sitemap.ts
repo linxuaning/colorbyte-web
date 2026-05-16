@@ -201,6 +201,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Buyer-intent restoration pages (2026-05-15 revenue push). These pages
+    // target purchase-model queries that map directly to one-time checkout
+    // intent, so keep them in sitemap with the other apex buyer guides.
+    {
+      url: `${baseUrl}/photo-restoration-no-subscription`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/photo-restoration-one-time-payment`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/photo-restoration-cost`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     // pt-BR buyer-intent pages (2026-05-15 Brazil push). Locale-only pages:
     // no hreflang cluster until equivalent EN/other-locale routes exist.
     {

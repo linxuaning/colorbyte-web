@@ -1,0 +1,12 @@
+market	intent	keyword	target_url	metric_to_watch	priority	notes
+US	core restore	old photo restoration	/old-photo-restoration	payment_initiations,payment_successes	P0	Primary paid restore page.
+US	pricing	photo restoration cost	/photo-restoration-cost	payment_initiations,payment_successes	P0	Buyer asks price before checkout.
+US	pricing	photo restoration no subscription	/photo-restoration-no-subscription	payment_initiations,payment_successes	P0	Matches one-time unlock differentiator.
+US	pricing	photo restoration one time payment	/photo-restoration-one-time-payment	payment_initiations,payment_successes	P0	Direct purchase-model query.
+US	service	best photo restoration service	/photo-restoration-service	payment_initiations,payment_successes	P1	Service comparison intent.
+US	software	best photo restoration software	/best-photo-restoration-software	payment_initiations,payment_successes	P1	Known buyer-guide template.
+US	family	restore old family photos	/old-photo-restoration	payment_initiations,payment_successes	P1	Family-photo emotional buyer angle.
+BR	core restore	restaurar fotos antigas online	/pt-BR/old-photo-restoration	payment_initiations,payment_successes	P0	Brazil market expansion; existing localized tool page.
+BR	pricing	preço restauração de fotos antigas	/pt-BR/preco-restauracao-fotos-antigas	payment_initiations,payment_successes	P0	pt-BR pricing buyer page.
+BR	pricing	restaurar fotos antigas sem assinatura	/pt-BR/restaurar-fotos-antigas-sem-assinatura	payment_initiations,payment_successes	P0	pt-BR no-subscription buyer page.
+BR	pricing	restauração de fotos pagamento único	/pt-BR/restaurar-fotos-antigas-sem-assinatura	payment_initiations,payment_successes	P1	Secondary keyword; avoid new page until SERP split is proven.
