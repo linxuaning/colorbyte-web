@@ -19,6 +19,21 @@ export const LOCKED_LANDING_PAGES = new Set([
   "/vs-photoshop-restoration",
   "/best-photo-restoration-software",
   "/photo-restoration-app",
+  "/photo-restoration-no-subscription",
+  "/photo-restoration-one-time-payment",
+  "/photo-restoration-cost",
+  "/photo-restoration-app-comparison",
+  "/best-old-photo-enhancer",
+  "/best-photo-colorization-tool",
+  "/artimagehub-vs-remini",
+  "/artimagehub-vs-myheritage",
+  "/artimagehub-vs-photomyne",
+  "/artimagehub-vs-vivid-pix",
+  "/artimagehub-vs-fotor",
+  "/artimagehub-vs-picsart",
+  "/artimagehub-vs-yodayo",
+  "/pt-BR/restaurar-fotos-antigas-sem-assinatura",
+  "/pt-BR/preco-restauracao-fotos-antigas",
 ]);
 
 // Blog paths (with optional locale prefix) are part of the funnel, but we
