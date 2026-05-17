@@ -50,6 +50,30 @@ type DodoCheckoutResponse = {
   amount?: string;
 };
 
+type CheckoutErrorKind =
+  | "timeout"
+  | "network"
+  | "http"
+  | "missing_checkout_url"
+  | "amount_mismatch"
+  | "unknown";
+
+type CheckoutErrorState = {
+  title: string;
+  detail: string;
+  kind: CheckoutErrorKind;
+};
+
+class CheckoutStartError extends Error {
+  kind: CheckoutErrorKind;
+
+  constructor(kind: CheckoutErrorKind, message: string) {
+    super(message);
+    this.name = "CheckoutStartError";
+    this.kind = kind;
+  }
+}
+
 const readErrorDetail = async (response: Response): Promise<string> => {
   try {
     const data = await response.json();
@@ -67,7 +91,7 @@ export default function DodoCheckoutButton({
   featureKey = "restoration",
 }: DodoCheckoutButtonProps) {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<CheckoutErrorState | null>(null);
   const [validationMessage, setValidationMessage] = useState<string | null>(null);
   const manualSupportEmail = "support@artimagehub.com";
   const normalizedCheckoutEmail = checkoutEmail?.trim().toLowerCase() || "";
@@ -81,7 +105,11 @@ export default function DodoCheckoutButton({
 
   const startCheckout = async () => {
     if (!API_BASE) {
-      setError("Missing NEXT_PUBLIC_API_URL: payment endpoint is not configured.");
+      setError({
+        kind: "unknown",
+        title: "Payment is not configured. Your card was not charged.",
+        detail: "Missing payment API configuration. Please request a direct payment link.",
+      });
       return;
     }
 
@@ -129,14 +157,14 @@ export default function DodoCheckoutButton({
         clearPendingPaymentFunnelSource();
         const detail = await readErrorDetail(response);
         trackCreateOrderResult(false, detail, enrichedSource);
-        throw new Error(`Failed to create checkout (${detail})`);
+        throw new CheckoutStartError("http", `Payment API returned ${detail}.`);
       }
 
       const data = (await response.json()) as DodoCheckoutResponse;
       if (!data.checkout_url) {
         clearPendingPaymentFunnelSource();
         trackCreateOrderResult(false, "missing_checkout_url", enrichedSource);
-        throw new Error("Checkout link is missing in payment response");
+        throw new CheckoutStartError("missing_checkout_url", "Checkout link is missing in payment response.");
       }
 
       if (data.amount) {
@@ -144,8 +172,9 @@ export default function DodoCheckoutButton({
         if (Number.isFinite(backendAmount) && Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001) {
           clearPendingPaymentFunnelSource();
           trackCreateOrderResult(false, "amount_mismatch", enrichedSource);
-          throw new Error(
-            `Price mismatch: UI ${PRO_PRICE_TEXT} vs checkout $${backendAmount.toFixed(2)}`
+          throw new CheckoutStartError(
+            "amount_mismatch",
+            `Price mismatch: UI ${PRO_PRICE_TEXT} vs checkout $${backendAmount.toFixed(2)}.`
           );
         }
       }
@@ -170,15 +199,35 @@ export default function DodoCheckoutButton({
         },
       });
     } catch (err) {
-      const message =
-        err instanceof DOMException && err.name === "TimeoutError"
-          ? "Checkout is taking longer than usual. Please retry or request a direct payment link."
-          : err instanceof Error
-            ? err.message
-            : "Failed to start checkout";
+      let nextError: CheckoutErrorState;
+      if (err instanceof DOMException && err.name === "TimeoutError") {
+        nextError = {
+          kind: "timeout",
+          title: "Checkout request timed out. Your card was not charged.",
+          detail: "Your browser could not reach the payment API within 15 seconds. Try again, or request a direct payment link.",
+        };
+      } else if (err instanceof CheckoutStartError) {
+        const title =
+          err.kind === "http"
+            ? "Payment API returned an error. Your card was not charged."
+            : "Checkout could not start. Your card was not charged.";
+        nextError = { kind: err.kind, title, detail: err.message };
+      } else if (err instanceof TypeError) {
+        nextError = {
+          kind: "network",
+          title: "Browser could not reach the payment API. Your card was not charged.",
+          detail: "This is usually a temporary network, VPN, or browser connection issue. Try again, or request a direct payment link.",
+        };
+      } else {
+        nextError = {
+          kind: "unknown",
+          title: "Checkout could not start. Your card was not charged.",
+          detail: err instanceof Error ? err.message : "Failed to start checkout.",
+        };
+      }
       clearPendingPaymentFunnelSource();
-      trackPaymentCancel("dodo_checkout_error", enrichedSource);
-      setError(message);
+      trackPaymentCancel(`dodo_checkout_error_${nextError.kind}`, enrichedSource);
+      setError(nextError);
     } finally {
       setLoading(false);
     }
@@ -207,10 +256,10 @@ export default function DodoCheckoutButton({
     return (
       <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-center">
         <p className="text-sm font-medium text-amber-800">
-          Payment processor temporarily unavailable. Your card was not charged.
+          {error.title}
         </p>
         <p className="mt-1 text-xs text-amber-600">
-          Contact us and we&apos;ll send you a direct payment link within 24 hours.
+          {error.detail}
         </p>
         <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:justify-center">
           <button

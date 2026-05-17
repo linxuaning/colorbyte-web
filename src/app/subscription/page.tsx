@@ -27,6 +27,23 @@ const RESTARTABLE_INACTIVE_STATUSES = new Set([
   "expired",
   "refunded",
 ]);
+const SUBSCRIPTION_CHECK_TIMEOUT_MS = 8000;
+
+function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
+  if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
+    return AbortSignal.timeout(timeoutMs);
+  }
+
+  return undefined;
+}
+
+async function fetchSubscriptionStatus(email: string): Promise<SubscriptionData> {
+  const res = await fetch(
+    `${API_BASE}/api/payment/subscription/${encodeURIComponent(email)}`,
+    { signal: abortSignalAfter(SUBSCRIPTION_CHECK_TIMEOUT_MS) }
+  );
+  return res.json();
+}
 
 const getStatusLabel = (status: string) => {
   switch (status) {
@@ -83,12 +100,12 @@ export default function SubscriptionPage() {
         setLoading(true);
         setError("");
         try {
-          const res = await fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(initialEmail)}`);
-          const data = await res.json();
+          const data = await fetchSubscriptionStatus(initialEmail);
           setSub(data);
           localStorage.setItem("artimagehub_email", initialEmail);
         } catch {
-          setError("Could not check subscription status. Please try again.");
+          setSub(null);
+          setError("We could not verify existing access quickly, but checkout is still available below.");
         } finally {
           setLoading(false);
         }
@@ -118,12 +135,12 @@ export default function SubscriptionPage() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`${API_BASE}/api/payment/subscription/${encodeURIComponent(e)}`);
-      const data = await res.json();
+      const data = await fetchSubscriptionStatus(e);
       setSub(data);
       localStorage.setItem("artimagehub_email", e);
     } catch {
-      setError("Could not check subscription status. Please try again.");
+      setSub(null);
+      setError("Could not check existing access quickly. You can still continue to checkout above.");
     } finally {
       setLoading(false);
     }
