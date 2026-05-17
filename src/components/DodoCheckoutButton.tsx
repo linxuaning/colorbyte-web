@@ -27,7 +27,8 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
-const CHECKOUT_CREATE_TIMEOUT_MS = 15000;
+const CHECKOUT_CREATE_TIMEOUT_MS = 30000;
+const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
@@ -84,6 +85,32 @@ const readErrorDetail = async (response: Response): Promise<string> => {
   }
 };
 
+async function fetchCheckoutWithRetry(
+  url: string,
+  init: Omit<RequestInit, "signal">,
+): Promise<Response> {
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= CHECKOUT_CREATE_MAX_ATTEMPTS; attempt += 1) {
+    try {
+      return await fetch(url, {
+        ...init,
+        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
+      });
+    } catch (err) {
+      lastError = err;
+      const retryable =
+        err instanceof TypeError ||
+        (err instanceof DOMException && err.name === "TimeoutError");
+      if (!retryable || attempt === CHECKOUT_CREATE_MAX_ATTEMPTS) {
+        throw err;
+      }
+    }
+  }
+
+  throw lastError instanceof Error ? lastError : new Error("Checkout request failed.");
+}
+
 export default function DodoCheckoutButton({
   checkoutEmail,
   resumeTaskId,
@@ -138,12 +165,11 @@ export default function DodoCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, resumeTaskId);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
+      const response = await fetchCheckoutWithRetry(`${API_BASE}/api/payment/dodo-create-checkout`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
         body: JSON.stringify({
           email: normalizedCheckoutEmail,
           feature_key: featureKey,
@@ -204,7 +230,7 @@ export default function DodoCheckoutButton({
         nextError = {
           kind: "timeout",
           title: "Checkout request timed out. Your card was not charged.",
-          detail: "Your browser could not reach the payment API within 15 seconds. Try again, or request a direct payment link.",
+          detail: "Your browser could not reach the payment API after two 30-second attempts. Try again, or request a direct payment link.",
         };
       } else if (err instanceof CheckoutStartError) {
         const title =

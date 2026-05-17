@@ -25,7 +25,8 @@ const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CHECKOUT_CREATE_TIMEOUT_MS = 15000;
+const CHECKOUT_CREATE_TIMEOUT_MS = 30000;
+const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
@@ -33,6 +34,32 @@ function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   }
 
   return undefined;
+}
+
+async function fetchCheckoutWithRetry(
+  url: string,
+  init: Omit<RequestInit, "signal">,
+): Promise<Response> {
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= CHECKOUT_CREATE_MAX_ATTEMPTS; attempt += 1) {
+    try {
+      return await fetch(url, {
+        ...init,
+        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
+      });
+    } catch (err) {
+      lastError = err;
+      const retryable =
+        err instanceof TypeError ||
+        (err instanceof DOMException && err.name === "TimeoutError");
+      if (!retryable || attempt === CHECKOUT_CREATE_MAX_ATTEMPTS) {
+        throw err;
+      }
+    }
+  }
+
+  throw lastError instanceof Error ? lastError : new Error("Checkout request failed.");
 }
 
 interface Props {
@@ -139,10 +166,9 @@ export default function DodoQuickCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, undefined);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      const response = await fetch(`${API_BASE}/api/payment/dodo-create-checkout`, {
+      const response = await fetchCheckoutWithRetry(`${API_BASE}/api/payment/dodo-create-checkout`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
         body: JSON.stringify({
           email: normalized,
           resume_task_id: null,
@@ -211,17 +237,10 @@ export default function DodoQuickCheckoutButton({
         // Keep modal open under the overlay so we can react to onCancel
         // without forcing the user to start over.
       }
-    } catch (err) {
-      const message =
-        err instanceof DOMException && err.name === "TimeoutError"
-          ? "Checkout is taking longer than usual. Please use the full checkout page."
-          : err instanceof Error
-            ? err.message
-            : "Something went wrong.";
+    } catch {
       clearPendingPaymentFunnelSource();
       trackCreateOrderResult(false, "exception", enrichedSource);
-      setError(message);
-      setLoading(false);
+      window.location.href = `${window.location.origin}/subscription?email=${encodeURIComponent(normalized)}&cta_slot=hero_quick_checkout&entry_variant=hero_modal_retry_fallback`;
     }
   };
 
