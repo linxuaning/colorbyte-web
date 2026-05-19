@@ -12,7 +12,7 @@ import {
   trackPaymentRecoveryAction,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import { openDodoOverlay } from "@/lib/dodo-overlay";
+import { openDodoOverlay, prefetchDodoOverlay } from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -27,8 +27,8 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
-const CHECKOUT_CREATE_TIMEOUT_MS = 30000;
-const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
+const CHECKOUT_CREATE_TIMEOUT_MS = 18000;
+const CHECKOUT_CREATE_MAX_ATTEMPTS = 1;
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
@@ -130,6 +130,12 @@ export default function DodoCheckoutButton({
     }
   }, [hasValidInlineEmail, validationMessage]);
 
+  useEffect(() => {
+    if (hasValidInlineEmail) {
+      prefetchDodoOverlay();
+    }
+  }, [hasValidInlineEmail]);
+
   const startCheckout = async () => {
     if (!API_BASE) {
       setError({
@@ -230,7 +236,7 @@ export default function DodoCheckoutButton({
         nextError = {
           kind: "timeout",
           title: "Checkout request timed out. Your card was not charged.",
-          detail: "Your browser could not reach the payment API after two 30-second attempts. Try again, or request a direct payment link.",
+          detail: "Your browser could not reach the payment API quickly. Try again, or request a direct payment link.",
         };
       } else if (err instanceof CheckoutStartError) {
         const title =

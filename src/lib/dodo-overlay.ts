@@ -39,6 +39,7 @@ type DodoModule = {
 let modulePromise: Promise<DodoModule | null> | null = null;
 let initialized = false;
 let activeOnEvent: ((event: DodoEvent) => void) | null = null;
+const OVERLAY_LOAD_FALLBACK_MS = 2500;
 
 async function loadModule(): Promise<DodoModule | null> {
   if (typeof window === "undefined") return null;
@@ -71,6 +72,16 @@ async function ensureInitialized(): Promise<DodoModule | null> {
   return mod;
 }
 
+export function prefetchDodoOverlay(): void {
+  void ensureInitialized();
+}
+
+function timeout<T>(ms: number, value: T): Promise<T> {
+  return new Promise((resolve) => {
+    window.setTimeout(() => resolve(value), ms);
+  });
+}
+
 export interface OpenDodoOverlayOptions {
   checkoutUrl: string;
   /**
@@ -96,7 +107,10 @@ export interface OpenDodoOverlayOptions {
 export async function openDodoOverlay(
   options: OpenDodoOverlayOptions,
 ): Promise<"overlay" | "redirect"> {
-  const mod = await ensureInitialized();
+  const mod = await Promise.race([
+    ensureInitialized(),
+    timeout<DodoModule | null>(OVERLAY_LOAD_FALLBACK_MS, null),
+  ]);
   if (!mod) {
     if (typeof window !== "undefined") window.location.href = options.checkoutUrl;
     return "redirect";

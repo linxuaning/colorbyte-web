@@ -38,7 +38,8 @@ const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const RESTORATION_FEATURE_KEY = "restoration";
-const MANUAL_ACCESS_CHECK_TIMEOUT_MS = 8000;
+const ACCESS_CHECK_TIMEOUT_MS = 4500;
+const MANUAL_ACCESS_CHECK_TIMEOUT_MS = 4500;
 const ACCESS_CHECK_TIMEOUT_REASON = "access_check_timeout";
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
@@ -311,8 +312,10 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         if (cancelled) return;
         try {
           const controller = new AbortController();
-          // 8s cap prevents Render cold-start from blocking the UI indefinitely
-          const tid = setTimeout(() => controller.abort(), 8000);
+          // Short cap prevents Render/API latency from trapping the user on
+          // "Logging you in..." while the backend still enforces paid access
+          // on upload/download.
+          const tid = setTimeout(() => controller.abort(), ACCESS_CHECK_TIMEOUT_MS);
           let hasAccess = false;
           try {
             hasAccess = await hasRestorationAccess(email, controller.signal);
@@ -681,16 +684,25 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             </div>
             <div className="h-11 w-56 rounded-full bg-[#d2d2d7]/40 animate-pulse" />
             <p className="text-[13px] text-[#6e6e73]">
-              {warmupSeconds > 15
+              {warmupSeconds > 8
                 ? "Waking up our AI server — this is taking longer than usual..."
                 : returningUser
                   ? "Logging you in..."
                   : "Checking access..."}
             </p>
-            {warmupSeconds > 25 && (
-              <p className="text-[11px] text-[#6e6e73]/70">
-                Server is warming up ({warmupSeconds}s) — almost there
-              </p>
+            {warmupSeconds > 6 && (
+              <button
+                type="button"
+                onClick={() => {
+                  setCheckingAccess(false);
+                  setPaidEmail(
+                    localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || ""
+                  );
+                }}
+                className="text-[12px] font-medium text-[#0071e3] underline underline-offset-2"
+              >
+                This is slow — enter email manually
+              </button>
             )}
           </div>
         ) : !canUpload ? (

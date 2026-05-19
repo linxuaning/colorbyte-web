@@ -11,7 +11,7 @@ import {
   trackPaymentClick,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import { openDodoOverlay } from "@/lib/dodo-overlay";
+import { openDodoOverlay, prefetchDodoOverlay } from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -25,8 +25,8 @@ const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CHECKOUT_CREATE_TIMEOUT_MS = 30000;
-const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
+const CHECKOUT_CREATE_TIMEOUT_MS = 18000;
+const CHECKOUT_CREATE_MAX_ATTEMPTS = 1;
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
@@ -115,6 +115,12 @@ export default function DodoQuickCheckoutButton({
       document.body.style.overflow = previousOverflow;
     };
   }, [open]);
+
+  useEffect(() => {
+    if (EMAIL_REGEX.test(email.trim().toLowerCase())) {
+      prefetchDodoOverlay();
+    }
+  }, [email]);
 
   // Esc closes the modal.
   useEffect(() => {
