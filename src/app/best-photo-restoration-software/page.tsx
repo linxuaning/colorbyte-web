@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: '10 Best Photo Restoration Software — Tested & Ranked (2026)',
-  description: 'We tested 10 photo restoration tools on the same damaged photo. ArtImageHub rated #1 for value ($4.99 one-time). Full comparison: features, pricing, and real results.',
+  title: 'Best Photo Restoration Software 2026 — No Subscription Picks',
+  description: 'Compare the best photo restoration software in 2026, including no-subscription and one-time payment options. ArtImageHub offers free preview + $4.99 unlock.',
   alternates: { canonical: '/best-photo-restoration-software' },
   keywords: [
     'best photo restoration software',
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
     'photo restoration software 2026'
   ],
   openGraph: {
-    title: '10 Best Photo Restoration Software in 2026 (Tested & Compared)',
-    description: 'We tested 10 photo restoration tools. Compare features, pricing, and results. ArtImageHub rated #1 for value.',
+    title: 'Best Photo Restoration Software in 2026 (Tested & Compared)',
+    description: 'Compare photo restoration tools by quality, pricing, subscription model, and time to restored download.',
     images: ['/blog/before-after-examples.webp'],
     type: 'article',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '10 Best Photo Restoration Software in 2026',
-    description: 'Complete comparison of photo restoration tools. See which is best for your needs.',
+    title: 'Best Photo Restoration Software in 2026',
+    description: 'Complete comparison of photo restoration tools, including no-subscription options.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -234,7 +234,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                 </div>
                 <div>
                   <div className="font-medium text-stone-700">ArtImageHub Editorial Team</div>
-                  <div className="text-xs text-stone-500">Updated February 23, 2026</div>
+                  <div className="text-xs text-stone-500">Updated May 19, 2026</div>
                 </div>
               </div>
               <span className="text-stone-300">•</span>
@@ -273,6 +273,43 @@ export default function BestPhotoRestorationSoftwarePage() {
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
               We tested 10 leading photo restoration software options on 500+ damaged photos from the 1890s to 1980s. We evaluated AI quality, ease of use, pricing models, and real-world results. Here&apos;s what we found.
             </p>
+
+            <div className="not-prose my-10 rounded-xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
+              <h2 className="mb-3 text-2xl font-bold text-stone-900">
+                Best Pick for Most One-Time Restorations
+              </h2>
+              <p className="mb-4 text-stone-700">
+                If you are comparing photo restoration software because you have a small set of family photos, avoid paying for a monthly subscription before you know the result is usable. The shortest path is a preview-first web tool: upload the scan, inspect the restored preview, then unlock the original-quality file only if it is worth keeping.
+              </p>
+              <div className="grid gap-3 text-sm text-stone-700 md:grid-cols-3">
+                <div className="rounded-lg bg-white p-4">
+                  <div className="font-semibold text-stone-900">No Subscription</div>
+                  <p className="mt-1">Use a one-time unlock instead of a recurring app plan.</p>
+                </div>
+                <div className="rounded-lg bg-white p-4">
+                  <div className="font-semibold text-stone-900">Preview First</div>
+                  <p className="mt-1">Check face quality, scratches, fading, and color before paying.</p>
+                </div>
+                <div className="rounded-lg bg-white p-4">
+                  <div className="font-semibold text-stone-900">Fast Checkout</div>
+                  <p className="mt-1">Best when you need one restored family photo today.</p>
+                </div>
+              </div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/old-photo-restoration?landing_page=%2Fbest-photo-restoration-software&cta_slot=may2026_no_subscription_preview&entry_variant=buyer_guide"
+                  className="inline-flex items-center rounded-lg bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-stone-800"
+                >
+                  Preview a restoration
+                </Link>
+                <Link
+                  href="/subscription?landing_page=%2Fbest-photo-restoration-software&cta_slot=may2026_no_subscription_pay&entry_variant=buyer_guide&checkout_source=buyer_guide_direct"
+                  className="inline-flex items-center rounded-lg border border-amber-300 bg-white px-5 py-3 text-sm font-semibold text-amber-800 transition-colors hover:bg-amber-100"
+                >
+                  One-time $4.99 unlock
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -928,6 +965,16 @@ export default function BestPhotoRestorationSoftwarePage() {
 
               <details className="bg-white rounded-lg shadow-md p-6 border border-stone-200 group">
                 <summary className="font-bold text-stone-900 cursor-pointer flex items-center justify-between">
+                  What is the best no-subscription photo restoration software?
+                  <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="mt-4 text-stone-700 leading-relaxed">
+                  For most one-time family photo projects, choose software that lets you preview the restored image first and pay once for the final download. <Link href="/old-photo-restoration" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> fits that workflow: no app install, no monthly subscription, and a $4.99 original-quality unlock when the preview is good enough to keep.
+                </p>
+              </details>
+
+              <details className="bg-white rounded-lg shadow-md p-6 border border-stone-200 group">
+                <summary className="font-bold text-stone-900 cursor-pointer flex items-center justify-between">
                   Can photo restoration software fix severely damaged photos?
                   <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
@@ -1030,8 +1077,8 @@ export default function BestPhotoRestorationSoftwarePage() {
                 <p className="text-sm text-stone-600">How neural networks restore photos</p>
               </Link>
               <Link href="/restore-old-photos-free" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
-                <h4 className="font-bold text-stone-900 mb-2">Free Photo Restoration</h4>
-                <p className="text-sm text-stone-600">Preview first, then unlock the original-quality file</p>
+                <h4 className="font-bold text-stone-900 mb-2">No-Subscription Photo Restoration</h4>
+                <p className="text-sm text-stone-600">Preview first, then unlock the original-quality file once</p>
               </Link>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mt-6">
