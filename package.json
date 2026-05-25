@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "version:bump": "npm version patch --no-git-tag-version",
-    "seo:audit-buyers": "node scripts/audit-buyer-pages.js"
+    "seo:audit-buyers": "node scripts/audit-buyer-pages.js",
+    "payment:check-live": "node scripts/check-payment-live.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.1.6",

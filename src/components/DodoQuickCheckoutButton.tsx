@@ -16,6 +16,7 @@ import {
   enrichFunnelSource,
   type PaymentFunnelSource,
 } from "@/lib/payment-funnel";
+import { fetchCheckoutWithFallback } from "@/lib/checkout-request";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
 const parsedPrice = Number.parseFloat(
@@ -25,42 +26,6 @@ const PRO_PRICE_USD = Number.isFinite(parsedPrice) ? parsedPrice : 4.99;
 const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const CHECKOUT_CREATE_TIMEOUT_MS = 18000;
-const CHECKOUT_CREATE_MAX_ATTEMPTS = 1;
-
-function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
-  if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
-    return AbortSignal.timeout(timeoutMs);
-  }
-
-  return undefined;
-}
-
-async function fetchCheckoutWithRetry(
-  url: string,
-  init: Omit<RequestInit, "signal">,
-): Promise<Response> {
-  let lastError: unknown;
-
-  for (let attempt = 1; attempt <= CHECKOUT_CREATE_MAX_ATTEMPTS; attempt += 1) {
-    try {
-      return await fetch(url, {
-        ...init,
-        signal: abortSignalAfter(CHECKOUT_CREATE_TIMEOUT_MS),
-      });
-    } catch (err) {
-      lastError = err;
-      const retryable =
-        err instanceof TypeError ||
-        (err instanceof DOMException && err.name === "TimeoutError");
-      if (!retryable || attempt === CHECKOUT_CREATE_MAX_ATTEMPTS) {
-        throw err;
-      }
-    }
-  }
-
-  throw lastError instanceof Error ? lastError : new Error("Checkout request failed.");
-}
 
 interface Props {
   /** Visible button label, e.g. "$4.99 — Get Started". */
@@ -84,17 +49,13 @@ export default function DodoQuickCheckoutButton({
   funnelSource = {},
 }: Props) {
   const [open, setOpen] = useState(false);
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(() => {
+    if (typeof window === "undefined") return "";
+    return localStorage.getItem("artimagehub_email")?.trim() || "";
+  });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  // Pre-fill from any saved email so returning visitors skip retyping.
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const saved = localStorage.getItem("artimagehub_email")?.trim() || "";
-    if (saved) setEmail(saved);
-  }, []);
 
   // Auto-focus the email input as the modal opens.
   useEffect(() => {
@@ -172,15 +133,11 @@ export default function DodoQuickCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, undefined);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      const response = await fetchCheckoutWithRetry(`${API_BASE}/api/payment/dodo-create-checkout`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      const response = await fetchCheckoutWithFallback(API_BASE, {
           email: normalized,
           resume_task_id: null,
           ga_client_id: readGaClientId() || null,
           ...paymentFunnelPayload(enrichedSource),
-        }),
       });
 
       if (!response.ok) {
