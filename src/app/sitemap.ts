@@ -236,6 +236,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    // ru buyer-intent pages (2026-05-26 Russia push). Explicit /ru routes only:
+    // do not add ru to TOOL_LOCALE_PREFIXES until full translated tool pages exist.
+    {
+      url: `${baseUrl}/ru/restavraciya-staryh-foto-bez-podpiski`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/ru/stoimost-restavracii-staryh-foto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
     // P3 apex comparison pages 2026-05-11 (foreman overnight P3) — high-search
     // SaaS competitors that previously only had /blog/* coverage.
     {
