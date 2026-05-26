@@ -11,6 +11,12 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
+const EMERGENCY_EN_STATIC_SLUGS = new Set([
+  "best-photo-enhancement-apps-2026",
+  "best-free-photo-restoration-apps",
+  "can-gemini-restore-old-photos",
+  "how-to-fix-out-of-focus-old-photos",
+]);
 const EMERGENCY_STATIC_POST_LIMIT = 120;
 
 function localeBlogDir(locale: BlogLocale | string): string {
@@ -288,7 +294,11 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
   });
 
   if (EMERGENCY_STATIC_EXPORT) {
-    return sortedPosts.slice(0, EMERGENCY_STATIC_POST_LIMIT);
+    if (locale !== "en") return sortedPosts.slice(0, 8);
+
+    const pinnedPosts = sortedPosts.filter((post) => EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
+    const remainingPosts = sortedPosts.filter((post) => !EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
+    return [...pinnedPosts, ...remainingPosts].slice(0, EMERGENCY_STATIC_POST_LIMIT);
   }
 
   return sortedPosts;

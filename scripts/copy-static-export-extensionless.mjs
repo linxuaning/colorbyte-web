@@ -1,4 +1,4 @@
-import { copyFile, readdir, stat } from "node:fs/promises";
+import { copyFile, readdir, rm, stat } from "node:fs/promises";
 import path from "node:path";
 
 const outDir = path.resolve("out");
@@ -31,3 +31,16 @@ async function copyExtensionlessHtml(dir) {
 }
 
 await copyExtensionlessHtml(outDir);
+
+const textArtifacts = await readdir(outDir, { recursive: true });
+await Promise.all(
+  textArtifacts.map(async (entry) => {
+    const filePath = path.join(outDir, entry);
+    if (entry.startsWith("llms") || !entry.endsWith(".txt")) return;
+    try {
+      await rm(filePath);
+    } catch (err) {
+      if (err?.code !== "ENOENT") throw err;
+    }
+  }),
+);
