@@ -10,6 +10,8 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
+const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
+const EMERGENCY_STATIC_POST_LIMIT = 120;
 
 function localeBlogDir(locale: BlogLocale | string): string {
   if (!locale || locale === "en") return postsDirectory;
@@ -279,11 +281,17 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
     });
   }
 
-  return posts.sort((a, b) => {
+  const sortedPosts = posts.sort((a, b) => {
     return (
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
     );
   });
+
+  if (EMERGENCY_STATIC_EXPORT) {
+    return sortedPosts.slice(0, EMERGENCY_STATIC_POST_LIMIT);
+  }
+
+  return sortedPosts;
 }
 
 export async function getPostBySlug(slug: string, locale: BlogLocale | string = "en"): Promise<BlogPost | null> {

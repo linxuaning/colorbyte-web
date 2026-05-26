@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const apiUrl = (process.env.NEXT_PUBLIC_API_URL || "https://backend.artimagehub.com").trim();
+  const apiUrl = (process.env.NEXT_PUBLIC_API_URL || "https://colorbyte-api.onrender.com").trim();
   try {
     const [healthRes, paymentRes] = await Promise.all([
       fetch(`${apiUrl}/health`, {

@@ -28,7 +28,7 @@ import {
 import { getToolClientCopy } from "@/lib/i18n/locale-map";
 import { detectLocaleFromPath } from "@/lib/i18n/detect";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "https://colorbyte-api.onrender.com";
 const parsedPrice = Number.parseFloat(
   process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
 );
@@ -38,8 +38,10 @@ const EMAIL_PAYMENT_ENTRY_ENABLED =
   process.env.NEXT_PUBLIC_EMAIL_PAYMENT_ENTRY_ENABLED !== "false";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const RESTORATION_FEATURE_KEY = "restoration";
-const ACCESS_CHECK_TIMEOUT_MS = 4500;
-const MANUAL_ACCESS_CHECK_TIMEOUT_MS = 4500;
+const ACCESS_CHECK_TIMEOUT_MS = 15000;
+const MANUAL_ACCESS_CHECK_TIMEOUT_MS = 20000;
+const MANUAL_ACCESS_CHECK_MAX_ATTEMPTS = 2;
+const MANUAL_ACCESS_CHECK_RETRY_DELAY_MS = 1200;
 const ACCESS_CHECK_TIMEOUT_REASON = "access_check_timeout";
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
@@ -55,6 +57,14 @@ function isTimeoutError(error: unknown): boolean {
     error instanceof DOMException &&
     (error.name === "TimeoutError" || error.name === "AbortError")
   );
+}
+
+function hasAccessCheckTimeoutMessage(error: unknown): boolean {
+  return error instanceof Error && error.message === ACCESS_CHECK_TIMEOUT_REASON;
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
 }
 
 type AccessCheckResult = "granted" | "denied" | "timeout";
@@ -642,16 +652,38 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     if (!EMAIL_REGEX.test(paidEmail.trim())) return;
     setPaidCheckStatus("checking");
     const normalizedEmail = paidEmail.trim().toLowerCase();
-    const accessSignal = abortSignalAfter(MANUAL_ACCESS_CHECK_TIMEOUT_MS);
-    const timeoutFallback = new Promise<never>((_, reject) => {
-      if (accessSignal) return;
-      window.setTimeout(
-        () => reject(new Error(ACCESS_CHECK_TIMEOUT_REASON)),
-        MANUAL_ACCESS_CHECK_TIMEOUT_MS
-      );
-    });
 
-    Promise.race([hasRestorationAccess(normalizedEmail, accessSignal), timeoutFallback])
+    const checkAccessWithRetry = async (): Promise<boolean> => {
+      for (let attempt = 1; attempt <= MANUAL_ACCESS_CHECK_MAX_ATTEMPTS; attempt++) {
+        const accessSignal = abortSignalAfter(MANUAL_ACCESS_CHECK_TIMEOUT_MS);
+        const timeoutFallback = new Promise<never>((_, reject) => {
+          if (accessSignal) return;
+          window.setTimeout(
+            () => reject(new Error(ACCESS_CHECK_TIMEOUT_REASON)),
+            MANUAL_ACCESS_CHECK_TIMEOUT_MS
+          );
+        });
+
+        try {
+          return await Promise.race([
+            hasRestorationAccess(normalizedEmail, accessSignal),
+            timeoutFallback,
+          ]);
+        } catch (error) {
+          if (
+            attempt >= MANUAL_ACCESS_CHECK_MAX_ATTEMPTS ||
+            (!isTimeoutError(error) && !hasAccessCheckTimeoutMessage(error))
+          ) {
+            throw error;
+          }
+          await sleep(MANUAL_ACCESS_CHECK_RETRY_DELAY_MS);
+        }
+      }
+
+      return false;
+    };
+
+    checkAccessWithRetry()
       .then((hasAccess) => {
         if (hasAccess) {
           localStorage.setItem("artimagehub_email", normalizedEmail);
@@ -662,7 +694,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
         }
       })
       .catch((error) => {
-        if (isTimeoutError(error) || error?.message === ACCESS_CHECK_TIMEOUT_REASON) {
+        if (isTimeoutError(error) || hasAccessCheckTimeoutMessage(error)) {
           setPaidCheckStatus("retry");
           return;
         }

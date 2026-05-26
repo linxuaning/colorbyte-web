@@ -3,6 +3,10 @@ export const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
 export const CHECKOUT_CREATE_RETRY_DELAY_MS = 1200;
 const SAME_ORIGIN_CHECKOUT_PATH = "/api/payment/dodo-create-checkout";
 
+function shouldTryDirectCheckoutFallback(response: Response): boolean {
+  return [404, 405, 410, 500, 502, 503, 504].includes(response.status);
+}
+
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
     return AbortSignal.timeout(timeoutMs);
@@ -56,7 +60,12 @@ export async function fetchCheckoutWithFallback(
   };
 
   try {
-    return await fetchCheckoutWithRetry(SAME_ORIGIN_CHECKOUT_PATH, init);
+    const sameOriginResponse = await fetchCheckoutWithRetry(SAME_ORIGIN_CHECKOUT_PATH, init);
+    if (!sameOriginResponse.ok && apiBase && shouldTryDirectCheckoutFallback(sameOriginResponse)) {
+      return fetchCheckoutWithRetry(`${apiBase}/api/payment/dodo-create-checkout`, init);
+    }
+
+    return sameOriginResponse;
   } catch (err) {
     if (!isRetryableCheckoutError(err) || !apiBase) throw err;
   }

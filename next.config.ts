@@ -1,9 +1,18 @@
 import type { NextConfig } from "next";
 import { deletedBlogSlugs } from "./src/lib/deleted-blog-slugs";
 
+const isStaticExport = process.env.NEXT_OUTPUT_EXPORT === "1";
+
 const nextConfig: NextConfig = {
+  ...(isStaticExport
+    ? {
+        output: "export" as const,
+        trailingSlash: true,
+      }
+    : {}),
   // Image optimization
   images: {
+    ...(isStaticExport ? { unoptimized: true } : {}),
     remotePatterns: [
       {
         protocol: "https",
@@ -18,6 +27,7 @@ const nextConfig: NextConfig = {
 
   // 301 permanent redirects for SEO
   async redirects() {
+    if (isStaticExport) return [];
     return [
       {
         source: "/colorize-photos",
@@ -36,6 +46,7 @@ const nextConfig: NextConfig = {
 
   // HTTP security & SEO headers
   async headers() {
+    if (isStaticExport) return [];
     return [
       {
         source: "/(.*)",
