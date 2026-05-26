@@ -39,7 +39,7 @@ type DodoModule = {
 let modulePromise: Promise<DodoModule | null> | null = null;
 let initialized = false;
 let activeOnEvent: ((event: DodoEvent) => void) | null = null;
-const OVERLAY_LOAD_FALLBACK_MS = 2500;
+const OVERLAY_LOAD_FALLBACK_MS = 900;
 
 async function loadModule(): Promise<DodoModule | null> {
   if (typeof window === "undefined") return null;
