@@ -1,6 +1,7 @@
 export const CHECKOUT_CREATE_TIMEOUT_MS = 45000;
 export const CHECKOUT_CREATE_MAX_ATTEMPTS = 2;
 export const CHECKOUT_CREATE_RETRY_DELAY_MS = 1200;
+const SAME_ORIGIN_CHECKOUT_PATH = "/api/payment/dodo-create-checkout";
 
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
@@ -55,11 +56,10 @@ export async function fetchCheckoutWithFallback(
   };
 
   try {
-    return await fetchCheckoutWithRetry(`${apiBase}/api/payment/dodo-create-checkout`, init);
+    return await fetchCheckoutWithRetry(SAME_ORIGIN_CHECKOUT_PATH, init);
   } catch (err) {
-    if (!isRetryableCheckoutError(err)) throw err;
+    if (!isRetryableCheckoutError(err) || !apiBase) throw err;
   }
 
-  return fetchCheckoutWithRetry("/api/payment/dodo-create-checkout", init);
+  return fetchCheckoutWithRetry(`${apiBase}/api/payment/dodo-create-checkout`, init);
 }
-
