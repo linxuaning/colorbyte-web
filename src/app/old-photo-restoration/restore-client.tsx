@@ -802,22 +802,29 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
 
             <div className="mt-6 rounded-xl border border-[#d2d2d7]/60 bg-white p-3 text-center">
               <p className="text-[12px] font-medium text-[#1d1d1f]">Already paid? Enter your email to restore access</p>
-              <div className="mt-2 flex gap-2">
+              <div className="mt-2 flex flex-col gap-2 sm:flex-row">
                 <input
                   type="email"
                   value={paidEmail}
                   onChange={(e) => setPaidEmail(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && handleAlreadyPaidCheck()}
                   placeholder="you@example.com"
-                  className="h-9 flex-1 rounded-lg border border-[#d2d2d7] px-2.5 text-[12px] outline-none focus:border-[#0071e3]"
+                  className="h-10 min-w-0 flex-1 rounded-lg border border-[#d2d2d7] px-3 text-[13px] outline-none focus:border-[#0071e3]"
                 />
                 <button
                   type="button"
                   onClick={handleAlreadyPaidCheck}
                   disabled={paidCheckStatus === "checking"}
-                  className="h-9 rounded-lg bg-[#1d1d1f] px-3 text-[12px] font-medium text-white hover:bg-[#2d2d2f] disabled:opacity-50"
+                  className="inline-flex h-10 min-w-[92px] shrink-0 items-center justify-center rounded-lg bg-[#1d1d1f] px-4 text-[13px] font-semibold text-white hover:bg-[#2d2d2f] disabled:cursor-wait disabled:opacity-70"
                 >
-                  {paidCheckStatus === "checking" ? "…" : "Check"}
+                  {paidCheckStatus === "checking" ? (
+                    <>
+                      <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
+                      Checking
+                    </>
+                  ) : (
+                    "Check"
+                  )}
                 </button>
               </div>
               {paidCheckStatus === "found" && (

@@ -191,14 +191,15 @@ function Header() {
         </nav>
 
         {/* CTA + Language switcher + SignedInBadge (5-11 case #4) */}
-        <div className="flex items-center gap-2">
+        <div className="flex min-w-0 items-center gap-1.5 sm:gap-2">
           <SignedInBadge />
           <LanguageSwitcher />
           <Link
             href="/old-photo-restoration"
-            className="inline-flex h-9 items-center rounded-full bg-[#0071e3] px-5 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20 whitespace-nowrap"
+            className="inline-flex h-9 shrink-0 items-center rounded-full bg-[#0071e3] px-3 text-[12px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.97] transition-all duration-200 shadow-sm shadow-[#0071e3]/20 whitespace-nowrap sm:px-5 sm:text-[13px]"
           >
-            Get Started — $4.99
+            <span className="sm:hidden">$4.99</span>
+            <span className="hidden sm:inline">Get Started — $4.99</span>
           </Link>
         </div>
       </div>

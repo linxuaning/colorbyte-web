@@ -51,24 +51,24 @@ export default function HubAlternativesSidebar() {
   return (
     <aside
       aria-labelledby="hub-alternatives-heading"
-      className="hidden lg:block lg:w-80 lg:flex-shrink-0"
+      className="hidden xl:block xl:w-72 xl:flex-shrink-0"
     >
-      <div className="sticky top-20 rounded-2xl border border-[#d2d2d7]/60 bg-[#faf8f4] p-5">
+      <div className="sticky top-24 rounded-2xl border border-[#d2d2d7]/60 bg-[#faf8f4] p-4">
         <h2
           id="hub-alternatives-heading"
-          className="text-[16px] font-semibold tracking-[-0.01em] text-[#1d1d1f]"
+          className="text-[15px] font-semibold tracking-[-0.01em] text-[#1d1d1f]"
         >
           Compare with alternatives
         </h2>
-        <p className="mt-2 text-[13px] leading-[1.55] text-[#6e6e73]">
+        <p className="mt-2 text-[12px] leading-[1.55] text-[#6e6e73]">
           Most readers buy outright after 1–2 minutes on this page. If you&rsquo;d like to compare against Remini or MyHeritage first, here&rsquo;s the side-by-side.
         </p>
 
-        <div className="mt-5 space-y-4">
+        <div className="mt-4 space-y-3">
           {cards.map((card) => (
             <article
               key={card.competitor}
-              className="rounded-xl border border-[#d2d2d7]/60 bg-white p-4"
+              className="rounded-xl border border-[#d2d2d7]/60 bg-white p-3"
             >
               <h3 className="text-[14px] font-semibold text-[#1d1d1f]">
                 ArtImageHub vs {card.competitor}
@@ -91,7 +91,7 @@ export default function HubAlternativesSidebar() {
 
               <Link
                 href={card.ctaHref}
-                className="mt-4 inline-flex h-9 w-full items-center justify-center rounded-full bg-[#0071e3] px-4 text-[13px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all duration-150"
+                className="mt-3 inline-flex min-h-9 w-full items-center justify-center rounded-full bg-[#0071e3] px-3 py-2 text-center text-[12px] font-semibold leading-snug text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all duration-150"
               >
                 {card.ctaText}
               </Link>

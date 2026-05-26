@@ -238,8 +238,8 @@ export default function OldPhotoRestorationPage() {
       {/* Main tool + buyer-guide sidebar (lg+ only). Mobile preserves the
           original max-w-3xl single-column flow so the modal_overlay path is
           untouched on the device class that drives most paid conversions. */}
-      <div className="mx-auto max-w-6xl px-5 py-6 sm:py-16 lg:flex lg:gap-8">
-        <div id="upload" className="flex-1 lg:max-w-3xl">
+      <div className="mx-auto max-w-6xl px-5 py-6 sm:py-12 xl:flex xl:items-start xl:gap-7">
+        <div id="upload" className="mx-auto w-full max-w-3xl xl:mx-0 xl:flex-1">
           <Suspense fallback={<div className="min-h-[400px]" />}>
             <RestoreClient />
           </Suspense>
