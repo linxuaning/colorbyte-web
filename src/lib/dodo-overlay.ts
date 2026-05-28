@@ -76,6 +76,19 @@ export function prefetchDodoOverlay(): void {
   void ensureInitialized();
 }
 
+export function isMobileCheckoutViewport(): boolean {
+  if (typeof window === "undefined") return false;
+  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches ?? false;
+  const narrowViewport = window.innerWidth <= 768;
+  return coarsePointer || narrowViewport;
+}
+
+export function redirectToDodoCheckout(checkoutUrl: string): void {
+  if (typeof window !== "undefined") {
+    window.location.href = checkoutUrl;
+  }
+}
+
 function timeout<T>(ms: number, value: T): Promise<T> {
   return new Promise((resolve) => {
     window.setTimeout(() => resolve(value), ms);

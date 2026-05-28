@@ -113,6 +113,10 @@ export default function RootLayout({
             loads. Cuts LCP on the tool pages by ~300-500ms. */}
         <link rel="preconnect" href="https://colorbyte-api.onrender.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://colorbyte-api.onrender.com" />
+        <link rel="preconnect" href="https://checkout.dodopayments.com" />
+        <link rel="dns-prefetch" href="https://checkout.dodopayments.com" />
+        <link rel="preconnect" href="https://sdk.hs.dodopayments.com" />
+        <link rel="dns-prefetch" href="https://sdk.hs.dodopayments.com" />
       </head>
       <body
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}

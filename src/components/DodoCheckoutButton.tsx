@@ -12,7 +12,12 @@ import {
   trackPaymentRecoveryAction,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import { openDodoOverlay, prefetchDodoOverlay } from "@/lib/dodo-overlay";
+import {
+  isMobileCheckoutViewport,
+  openDodoOverlay,
+  prefetchDodoOverlay,
+  redirectToDodoCheckout,
+} from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -28,6 +33,7 @@ const PRO_PRICE_TEXT = `$${PRO_PRICE_USD.toFixed(2)}`;
 const CHECKOUT_ITEM_LABEL = `Original-quality download - ${PRO_PRICE_TEXT}`;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const INLINE_EMAIL_GATE_MESSAGE = "Enter a valid email before checkout";
+const PAYMENT_WARMUP_TIMEOUT_MS = 2500;
 
 interface DodoCheckoutButtonProps {
   checkoutEmail?: string;
@@ -76,6 +82,27 @@ const readErrorDetail = async (response: Response): Promise<string> => {
   }
 };
 
+const warmPaymentDependency = async (): Promise<void> => {
+  if (typeof window === "undefined" || !API_BASE) return;
+
+  const controller = new AbortController();
+  const timeoutId = window.setTimeout(
+    () => controller.abort(),
+    PAYMENT_WARMUP_TIMEOUT_MS,
+  );
+
+  try {
+    await fetch(`${API_BASE}/api/payment/dodo-health`, {
+      cache: "no-store",
+      signal: controller.signal,
+    });
+  } catch {
+    // Best-effort prewarm only. Checkout creation remains the source of truth.
+  } finally {
+    window.clearTimeout(timeoutId);
+  }
+};
+
 export default function DodoCheckoutButton({
   checkoutEmail,
   resumeTaskId,
@@ -98,6 +125,7 @@ export default function DodoCheckoutButton({
   useEffect(() => {
     if (hasValidInlineEmail) {
       prefetchDodoOverlay();
+      void warmPaymentDependency();
     }
   }, [hasValidInlineEmail]);
 
@@ -171,6 +199,11 @@ export default function DodoCheckoutButton({
       }
 
       trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
+
+      if (isMobileCheckoutViewport()) {
+        redirectToDodoCheckout(data.checkout_url);
+        return;
+      }
 
       // Try Dodo's overlay first; fall back to redirect if SDK can't load
       // or open. The overlay keeps the visitor on artimagehub.com so the
