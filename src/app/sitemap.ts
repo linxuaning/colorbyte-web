@@ -222,6 +222,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/remini-alternative-photo-restoration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/restore-old-photos-without-photoshop`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     // pt-BR buyer-intent pages (2026-05-15 Brazil push). Locale-only pages:
     // no hreflang cluster until equivalent EN/other-locale routes exist.
     {
