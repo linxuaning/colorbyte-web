@@ -13,9 +13,6 @@ import {
   trackPaymentStarted,
 } from "@/lib/analytics";
 import {
-  isMobileCheckoutViewport,
-  openDodoOverlay,
-  prefetchDodoOverlay,
   redirectToDodoCheckout,
 } from "@/lib/dodo-overlay";
 import {
@@ -124,7 +121,6 @@ export default function DodoCheckoutButton({
 
   useEffect(() => {
     if (hasValidInlineEmail) {
-      prefetchDodoOverlay();
       void warmPaymentDependency();
     }
   }, [hasValidInlineEmail]);
@@ -199,29 +195,7 @@ export default function DodoCheckoutButton({
       }
 
       trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
-
-      if (isMobileCheckoutViewport()) {
-        redirectToDodoCheckout(data.checkout_url);
-        return;
-      }
-
-      // Try Dodo's overlay first; fall back to redirect if SDK can't load
-      // or open. The overlay keeps the visitor on artimagehub.com so the
-      // post-payment redirect (?payment=success) lands back inside our
-      // domain instantly instead of a hosted-page round trip.
-      await openDodoOverlay({
-        checkoutUrl: data.checkout_url,
-        onSuccess: () => {
-          // Backend return_url is already /old-photo-restoration?payment=success
-          // — Dodo's overlay handles its own success navigation. We force
-          // a parent navigation as a safety net so the auto-prompt file
-          // picker fires even if the overlay doesn't auto-redirect us.
-          window.location.href = `${window.location.origin}/old-photo-restoration?payment=success`;
-        },
-        onCancel: () => {
-          trackPaymentCancel("dodo_overlay_dismissed", enrichedSource);
-        },
-      });
+      redirectToDodoCheckout(data.checkout_url);
     } catch (err) {
       let nextError: CheckoutErrorState;
       if (err instanceof DOMException && (err.name === "TimeoutError" || err.name === "AbortError")) {

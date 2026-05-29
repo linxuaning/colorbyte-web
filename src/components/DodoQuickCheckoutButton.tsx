@@ -7,11 +7,10 @@ import {
   readGaClientId,
   storePendingPaymentFunnelSource,
   trackCreateOrderResult,
-  trackPaymentCancel,
   trackPaymentClick,
   trackPaymentStarted,
 } from "@/lib/analytics";
-import { openDodoOverlay, prefetchDodoOverlay } from "@/lib/dodo-overlay";
+import { redirectToDodoCheckout } from "@/lib/dodo-overlay";
 import {
   enrichFunnelSource,
   type PaymentFunnelSource,
@@ -39,8 +38,8 @@ interface Props {
 /**
  * Hero-class CTA that bypasses the /subscription middle page: collects
  * email in a small in-page modal, calls
- * /api/payment/dodo-create-checkout, then opens the Dodo overlay
- * directly. Falls back to redirecting to /subscription if anything
+ * /api/payment/dodo-create-checkout, then redirects to Dodo's hosted
+ * checkout. Falls back to /subscription if anything
  * upstream fails so visitors never lose the path to payment.
  */
 export default function DodoQuickCheckoutButton({
@@ -76,12 +75,6 @@ export default function DodoQuickCheckoutButton({
       document.body.style.overflow = previousOverflow;
     };
   }, [open]);
-
-  useEffect(() => {
-    if (EMAIL_REGEX.test(email.trim().toLowerCase())) {
-      prefetchDodoOverlay();
-    }
-  }, [email]);
 
   // Esc closes the modal.
   useEffect(() => {
@@ -120,12 +113,10 @@ export default function DodoQuickCheckoutButton({
     setError(null);
 
     // Auto-fill funnel attribution from browser when caller hasn't supplied
-    // it; default checkout_source for this component is "modal_overlay"
-    // because the Dodo SDK overlay is the success path here. Caller can
-    // override via the funnelSource prop.
+    // it. Caller can override via the funnelSource prop.
     const enrichedSource = enrichFunnelSource(funnelSource, {
       ctaSlot: "hero_quick_checkout",
-      checkoutSource: "modal_overlay",
+      checkoutSource: "hosted_checkout_redirect",
     });
 
     try {
@@ -182,24 +173,7 @@ export default function DodoQuickCheckoutButton({
       }
 
       trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
-
-      const result = await openDodoOverlay({
-        checkoutUrl: data.checkout_url,
-        onSuccess: () => {
-          window.location.href = `${window.location.origin}/old-photo-restoration?payment=success`;
-        },
-        onCancel: () => {
-          trackPaymentCancel("dodo_overlay_dismissed", enrichedSource);
-          setLoading(false);
-        },
-      });
-
-      // If we redirected (overlay couldn't open) the page is already
-      // navigating; keep the modal in its loading state until then.
-      if (result === "overlay") {
-        // Keep modal open under the overlay so we can react to onCancel
-        // without forcing the user to start over.
-      }
+      redirectToDodoCheckout(data.checkout_url);
     } catch {
       clearPendingPaymentFunnelSource();
       trackCreateOrderResult(false, "exception", enrichedSource);
