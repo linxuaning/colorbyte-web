@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   clearPendingPaymentFunnelSource,
   paymentFunnelPayload,
@@ -43,6 +43,16 @@ type DodoCheckoutResponse = {
   session_id?: string;
   checkout_url?: string;
   amount?: string;
+};
+
+type ValidDodoCheckoutResponse = DodoCheckoutResponse & {
+  checkout_url: string;
+};
+
+type PrefetchedCheckout = {
+  email: string;
+  key: string;
+  data: ValidDodoCheckoutResponse;
 };
 
 type CheckoutErrorKind =
@@ -109,9 +119,17 @@ export default function DodoCheckoutButton({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<CheckoutErrorState | null>(null);
   const [validationMessage, setValidationMessage] = useState<string | null>(null);
+  const prefetchedCheckoutRef = useRef<PrefetchedCheckout | null>(null);
+  const prefetchPromiseRef = useRef<Promise<PrefetchedCheckout | null> | null>(null);
   const manualSupportEmail = "support@artimagehub.com";
   const normalizedCheckoutEmail = checkoutEmail?.trim().toLowerCase() || "";
   const hasValidInlineEmail = EMAIL_REGEX.test(normalizedCheckoutEmail);
+
+  const checkoutKey = JSON.stringify({
+    featureKey,
+    resumeTaskId: resumeTaskId || null,
+    funnelSource,
+  });
 
   useEffect(() => {
     if (validationMessage && hasValidInlineEmail) {
@@ -124,6 +142,104 @@ export default function DodoCheckoutButton({
       void warmPaymentDependency();
     }
   }, [hasValidInlineEmail]);
+
+  const getEnrichedSource = useCallback(() =>
+    enrichFunnelSource(funnelSource, {
+      ctaSlot: "pay_gate_main",
+      checkoutSource: "intermediate_redirect",
+    }), [funnelSource]);
+
+  const validateCheckoutData = (data: DodoCheckoutResponse): ValidDodoCheckoutResponse => {
+    if (!data.checkout_url) {
+      throw new CheckoutStartError("missing_checkout_url", "Checkout link is missing in payment response.");
+    }
+
+    if (data.amount) {
+      const backendAmount = Number.parseFloat(String(data.amount));
+      if (Number.isFinite(backendAmount) && Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001) {
+        throw new CheckoutStartError(
+          "amount_mismatch",
+          `Price mismatch: UI ${PRO_PRICE_TEXT} vs checkout $${backendAmount.toFixed(2)}.`
+        );
+      }
+    }
+
+    return data as ValidDodoCheckoutResponse;
+  };
+
+  const createCheckout = useCallback(async (
+    enrichedSource: PaymentFunnelSource,
+  ): Promise<ValidDodoCheckoutResponse> => {
+    const response = await fetchCheckoutWithFallback(API_BASE, {
+      email: normalizedCheckoutEmail,
+      feature_key: featureKey,
+      resume_task_id: resumeTaskId || null,
+      ga_client_id: readGaClientId() || null,
+      ...paymentFunnelPayload(enrichedSource),
+    });
+
+    if (!response.ok) {
+      const detail = await readErrorDetail(response);
+      throw new CheckoutStartError("http", `Payment API returned ${detail}.`);
+    }
+
+    return validateCheckoutData((await response.json()) as DodoCheckoutResponse);
+  }, [featureKey, normalizedCheckoutEmail, resumeTaskId]);
+
+  const getOrCreateCheckout = async (
+    enrichedSource: PaymentFunnelSource,
+  ): Promise<ValidDodoCheckoutResponse> => {
+    const cached = prefetchedCheckoutRef.current;
+    if (
+      cached &&
+      cached.email === normalizedCheckoutEmail &&
+      cached.key === checkoutKey &&
+      cached.data.checkout_url
+    ) {
+      return cached.data;
+    }
+
+    if (prefetchPromiseRef.current) {
+      const prefetched = await prefetchPromiseRef.current;
+      if (
+        prefetched &&
+        prefetched.email === normalizedCheckoutEmail &&
+        prefetched.key === checkoutKey &&
+        prefetched.data.checkout_url
+      ) {
+        return prefetched.data;
+      }
+    }
+
+    return createCheckout(enrichedSource);
+  };
+
+  useEffect(() => {
+    if (!hasValidInlineEmail || !API_BASE) return;
+    if (
+      prefetchedCheckoutRef.current?.email === normalizedCheckoutEmail &&
+      prefetchedCheckoutRef.current?.key === checkoutKey
+    ) {
+      return;
+    }
+
+    const timeoutId = window.setTimeout(() => {
+      const enrichedSource = getEnrichedSource();
+      const promise = createCheckout(enrichedSource)
+        .then((data) => {
+          const prefetched = { email: normalizedCheckoutEmail, key: checkoutKey, data };
+          prefetchedCheckoutRef.current = prefetched;
+          return prefetched;
+        })
+        .catch(() => null)
+        .finally(() => {
+          prefetchPromiseRef.current = null;
+        });
+      prefetchPromiseRef.current = promise;
+    }, 350);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [checkoutKey, createCheckout, getEnrichedSource, hasValidInlineEmail, normalizedCheckoutEmail]);
 
   const startCheckout = async () => {
     if (!API_BASE) {
@@ -145,14 +261,8 @@ export default function DodoCheckoutButton({
     setValidationMessage(null);
 
     // Auto-fill funnel attribution from the browser when the caller hasn't
-    // already supplied it. Caller-provided values always win — this only
-    // backfills landing_page (current pathname+search), entry_variant
-    // (from utm_source / referrer), and the default checkout_source for
-    // this component (intermediate_redirect — the /subscription pay-gate).
-    const enrichedSource = enrichFunnelSource(funnelSource, {
-      ctaSlot: "pay_gate_main",
-      checkoutSource: "intermediate_redirect",
-    });
+    // already supplied it. Caller-provided values always win.
+    const enrichedSource = getEnrichedSource();
 
     try {
       localStorage.setItem("artimagehub_email", normalizedCheckoutEmail);
@@ -160,39 +270,7 @@ export default function DodoCheckoutButton({
       storePendingPaymentFunnelSource(enrichedSource, resumeTaskId);
       trackPaymentStarted(CHECKOUT_ITEM_LABEL, enrichedSource);
 
-      const response = await fetchCheckoutWithFallback(API_BASE, {
-          email: normalizedCheckoutEmail,
-          feature_key: featureKey,
-          resume_task_id: resumeTaskId || null,
-          ga_client_id: readGaClientId() || null,
-          ...paymentFunnelPayload(enrichedSource),
-      });
-
-      if (!response.ok) {
-        clearPendingPaymentFunnelSource();
-        const detail = await readErrorDetail(response);
-        trackCreateOrderResult(false, detail, enrichedSource);
-        throw new CheckoutStartError("http", `Payment API returned ${detail}.`);
-      }
-
-      const data = (await response.json()) as DodoCheckoutResponse;
-      if (!data.checkout_url) {
-        clearPendingPaymentFunnelSource();
-        trackCreateOrderResult(false, "missing_checkout_url", enrichedSource);
-        throw new CheckoutStartError("missing_checkout_url", "Checkout link is missing in payment response.");
-      }
-
-      if (data.amount) {
-        const backendAmount = Number.parseFloat(String(data.amount));
-        if (Number.isFinite(backendAmount) && Math.abs(backendAmount - PRO_PRICE_USD) > 0.0001) {
-          clearPendingPaymentFunnelSource();
-          trackCreateOrderResult(false, "amount_mismatch", enrichedSource);
-          throw new CheckoutStartError(
-            "amount_mismatch",
-            `Price mismatch: UI ${PRO_PRICE_TEXT} vs checkout $${backendAmount.toFixed(2)}.`
-          );
-        }
-      }
+      const data = await getOrCreateCheckout(enrichedSource);
 
       trackCreateOrderResult(true, data.session_id || "session_created", enrichedSource);
       redirectToDodoCheckout(data.checkout_url);
