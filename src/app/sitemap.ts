@@ -248,6 +248,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    // pt-BR problem-word buyer pages (2026-05-30 Brazil push): water-damage +
+    // colorization intents. Locale-only; EN equivalents exist but no hreflang
+    // cluster wired yet.
+    {
+      url: `${baseUrl}/pt-BR/restaurar-fotos-danificadas-por-agua`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/pt-BR/colorizar-fotos-antigas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     // ru buyer-intent pages (2026-05-26 Russia push). Explicit /ru routes only:
     // do not add ru to TOOL_LOCALE_PREFIXES until full translated tool pages exist.
     {
@@ -258,6 +273,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/ru/stoimost-restavracii-staryh-foto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    // ru problem-word buyer pages (2026-05-30 Russia push): water-damage +
+    // colorization intents. ASCII transliterated slugs (non-ASCII ru slugs 500).
+    {
+      url: `${baseUrl}/ru/vosstanovit-foto-povrezhdennoe-vodoy`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/ru/kolorizaciya-staryh-foto`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.82,
