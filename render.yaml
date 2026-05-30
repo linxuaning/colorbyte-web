@@ -23,10 +23,8 @@ services:
       - type: redirect
         source: /pricing
         destination: /#pricing
-      # SPA-style fallback so unknown paths serve the static 404 page.
-      - type: rewrite
-        source: /*
-        destination: /404.html
+      # NOTE: no catch-all rewrite — Render static sites auto-serve 404.html for
+      # unmatched paths. A `/* -> /404.html` rewrite would 404 the whole site.
 
     # --- response headers (replicate next.config headers(), lost in static export) ---
     headers:
