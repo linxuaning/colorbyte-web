@@ -1,0 +1,50 @@
+# Render Blueprint — host colorbyte-web as a static site (non-Vercel).
+# Frontend only; the payment backend (colorbyte-api) is a separate Render service.
+# Static sites on Render's free tier do NOT spin down (unlike free web services).
+#
+# Build runs the export pipeline (scripts/build-static-export.mjs): it relocates
+# export-incompatible routes (src/app/api/**, src/app/sitemap.ts) during the
+# `next build`, then generates extensionless HTML + static sitemap.xml into ./out.
+services:
+  - type: web
+    name: colorbyte-web
+    runtime: static
+    buildCommand: npm ci && node scripts/build-static-export.mjs
+    staticPublishPath: ./out
+    pullRequestPreviewsEnabled: false
+
+    # --- redirects (replicate the Vercel/next.config ones still in effect) ---
+    # NOTE: deletedBlogSlugs is EMPTY as of 2026-05-04 (list cleared so live pages
+    # stop redirecting) — there are NO bulk blog 301s to replicate.
+    routes:
+      - type: redirect
+        source: /colorize-photos
+        destination: /photo-colorizer
+      - type: redirect
+        source: /pricing
+        destination: /#pricing
+      # SPA-style fallback so unknown paths serve the static 404 page.
+      - type: rewrite
+        source: /*
+        destination: /404.html
+
+    # --- response headers (replicate next.config headers(), lost in static export) ---
+    headers:
+      - path: /*
+        name: Strict-Transport-Security
+        value: max-age=63072000; includeSubDomains; preload
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=()
+      - path: /*
+        name: Link
+        value: <https://artimagehub.com/sitemap.xml>; rel="sitemap", <https://artimagehub.com/llms.txt>; rel="describedby"; type="text/plain"
+      - path: /_next/static/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
