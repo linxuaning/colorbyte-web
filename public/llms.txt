@@ -135,11 +135,13 @@ High-intent localized pages for priority markets. Each one ends with the same $4
 - https://artimagehub.com/pt-BR/restaurar-fotos-danificadas-por-agua — pt-BR water-damaged photo repair: stains, mold, discoloration
 - https://artimagehub.com/pt-BR/colorizar-fotos-antigas — pt-BR colorization: black-and-white old photos to natural color
 - https://artimagehub.com/pt-BR/restaurar-fotos-desbotadas — pt-BR faded-photo recovery: color, contrast and sharpness
+- https://artimagehub.com/pt-BR/restaurar-fotos-rasgadas — pt-BR torn-photo repair: tears, creases and missing corners
 - https://artimagehub.com/ru/stoimost-restavracii-staryh-foto — ru cost guide: AI ($4.99 one-time) vs manual retouching vs subscriptions
 - https://artimagehub.com/ru/restavraciya-staryh-foto-bez-podpiski — ru no-subscription restoration workflow
 - https://artimagehub.com/ru/vosstanovit-foto-povrezhdennoe-vodoy — ru water-damaged photo repair: stains, mold, discoloration
 - https://artimagehub.com/ru/kolorizaciya-staryh-foto — ru colorization: black-and-white old photos to natural color
 - https://artimagehub.com/ru/vosstanovit-vycvetshie-foto — ru faded-photo recovery: color, contrast and sharpness
+- https://artimagehub.com/ru/vosstanovit-porvannoe-foto — ru torn-photo repair: tears, creases and missing corners
 
 ## Contact & Legal
 

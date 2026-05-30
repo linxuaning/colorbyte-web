@@ -269,6 +269,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    {
+      url: `${baseUrl}/pt-BR/restaurar-fotos-rasgadas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     // ru buyer-intent pages (2026-05-26 Russia push). Explicit /ru routes only:
     // do not add ru to TOOL_LOCALE_PREFIXES until full translated tool pages exist.
     {
@@ -299,6 +305,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/ru/vosstanovit-vycvetshie-foto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/ru/vosstanovit-porvannoe-foto`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.82,
