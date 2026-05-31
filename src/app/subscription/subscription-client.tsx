@@ -93,6 +93,14 @@ export default function SubscriptionClient({
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
 
+  // Unconditional warmup ping — pre-warm the payment backend on page load so
+  // checkout is fast even for direct visitors who haven't entered an email yet
+  // (mirrors the restore page). Fire-and-forget; failures are silent and never
+  // surfaced to the user. Does not touch checkout creation / payment.
+  useEffect(() => {
+    if (API_BASE) fetch(`${API_BASE}/health`).catch(() => {});
+  }, []);
+
   // Pre-fill email from localStorage
   useEffect(() => {
     if (!API_BASE) {
