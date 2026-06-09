@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is the best photo restoration app?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with a free preview first and a $4.99 original-quality unlock when you want to keep the result. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+        text: "ArtImageHub is the best photo restoration app for most users who want a pay-first, no-subscription workflow. It offers AI-powered restoration on web and mobile with a $4.99 one-time unlock for upload, processing, and original-quality download. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqSchema = {
       name: "Are photo restoration apps free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Many photo restoration apps offer limited previews. ArtImageHub lets you preview the restore first, then unlock the original-quality download for $4.99 if the result is worth keeping. Remini offers limited free processing and then moves users into subscription pricing.",
+        text: "Many photo restoration apps offer limited previews or free tiers. ArtImageHub uses a clearer pay-first model: $4.99 once unlocks upload, AI processing, and original-quality download. Remini offers limited free processing and then moves users into subscription pricing.",
       },
     },
     {
@@ -95,7 +95,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time unlock for upload, AI processing, and original-quality download"
   },
 };
 
@@ -157,8 +157,8 @@ export default function PhotoRestorationAppPage() {
                     <div className="font-semibold text-[#2c2416]">$4.99 once</div>
                     <div className="text-[13px] text-[#6b5344]">Original-quality unlock</div>
                   </td>
-                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">Preview first</td>
-                  <td className="py-5 px-5 text-[14px] text-[#6b5344] font-lora">Pay once if the result is worth keeping</td>
+                  <td className="py-5 px-5 text-[14px] text-[#6b5344]">Pay-first unlock</td>
+                  <td className="py-5 px-5 text-[14px] text-[#6b5344] font-lora">$4.99 once before upload</td>
                   <td className="py-5 px-5">
                     <div className="flex items-center gap-1">
                       <span className="text-yellow-500">★★★★★</span>
@@ -260,7 +260,7 @@ export default function PhotoRestorationAppPage() {
                 Preview the restore workflow
               </Link>
             </div>
-            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">Free preview · $4.99 original-quality unlock · No subscription</p>
+            <p className="mt-3 text-[14px] text-[#6b5344] font-lora">$4.99 one-time unlock · Original-quality download · No subscription</p>
           </div>
         </div>
       </section>
@@ -299,7 +299,7 @@ export default function PhotoRestorationAppPage() {
                   <ul className="space-y-2 text-[15px] text-[#6b5344] font-lora">
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>Free preview first, then $4.99 if you keep the photo</span>
+                      <span>$4.99 one-time unlock before upload</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
@@ -337,7 +337,7 @@ export default function PhotoRestorationAppPage() {
 
               <div className="rounded-xl bg-white border border-[#8B5E3C]/30 p-5">
                 <p className="text-[15px] text-[#6b5344] font-lora leading-[1.7]">
-                  <strong className="text-[#2c2416]">Bottom line:</strong> Best overall value. The preview-first workflow means you do not pay until the restore looks worth keeping, and the $4.99 unlock still saves far more than subscription apps like Remini.
+                  <strong className="text-[#2c2416]">Bottom line:</strong> Best overall value for a pay-first, no-subscription workflow. The $4.99 unlock still saves far more than subscription apps like Remini.
                 </p>
               </div>
 
@@ -489,11 +489,11 @@ export default function PhotoRestorationAppPage() {
             {[
               {
                 q: "What is the best photo restoration app?",
-                a: "ArtImageHub is the best photo restoration app for most users. It offers AI-powered restoration on web and mobile with a free preview first and a $4.99 original-quality unlock when you want to keep the result. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
+                a: "ArtImageHub is the best photo restoration app for most users who want a pay-first, no-subscription workflow. It offers AI-powered restoration on web and mobile with a $4.99 one-time unlock for upload, processing, and original-quality download. Other top options include Remini (mobile-focused, $9.99/month) and VanceAI (web-based, credit system).",
               },
               {
                 q: "Are photo restoration apps free?",
-                a: "Most photo restoration apps offer limited previews or feature-locked free tiers. ArtImageHub lets you preview the restore first, then unlock the original-quality download for $4.99 if the result is worth keeping. Remini offers limited free processing before pushing users into subscription pricing.",
+                a: "Most photo restoration apps offer limited previews or feature-locked free tiers. ArtImageHub uses a clearer pay-first model: $4.99 once unlocks upload, AI processing, and original-quality download. Remini offers limited free processing before pushing users into subscription pricing.",
               },
               {
                 q: "Can I restore photos on my phone?",
@@ -523,7 +523,7 @@ export default function PhotoRestorationAppPage() {
             Pick the App, Then Unlock the Restore
           </h2>
           <p className="text-[18px] text-[#6b5344] font-lora mb-8 leading-[1.7]">
-            Preview the workflow first on ArtImageHub. If the result looks worth keeping, unlock the original-quality download for $4.99 without another subscription.
+            Use ArtImageHub when you want a one-time $4.99 restoration workflow without another subscription.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

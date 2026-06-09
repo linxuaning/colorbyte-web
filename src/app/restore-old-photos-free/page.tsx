@@ -232,9 +232,9 @@ export default function RestoreOldPhotosFreePage() {
               <thead>
                 <tr className="border-b-2 border-[#d2d2d7]">
                   <th className="py-4 px-4 text-[#1d1d1f] font-semibold">Feature</th>
-                  <th className="py-4 px-4 text-center">
-                    <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">$4.99 Unlock</span>
-                  </th>
+              <th className="py-4 px-4 text-center">
+                <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Typical Free Tools</span>
+              </th>
                   <th className="py-4 px-4 text-center">
                     <span className="inline-block px-3 py-1 bg-[#0071e3] text-white rounded-full text-sm font-semibold">$4.99 Unlock</span>
                   </th>
@@ -243,27 +243,27 @@ export default function RestoreOldPhotosFreePage() {
               <tbody className="divide-y divide-[#d2d2d7]/60">
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">What you see first</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Restored preview</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Same restored result</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Limited preview or watermark</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Paid restore workflow</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">AI Quality</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">✓ Same</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">✓ Same</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Varies</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">AI restoration included</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Download Resolution</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Preview</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                   <td className="py-4 px-4 text-center text-green-600 font-semibold">Full Original</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">Face Enhancement</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Colorization</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                   <td className="py-4 px-4 text-center text-green-600">✓</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
@@ -273,12 +273,12 @@ export default function RestoreOldPhotosFreePage() {
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Signup Required</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">No</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Email only</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often yes</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Email-tied paid access</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">Price</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-bold text-lg">$0</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Hidden limits</td>
                   <td className="py-4 px-4 text-center text-[#0071e3] font-bold text-lg">$4.99 once</td>
                 </tr>
               </tbody>
@@ -300,23 +300,23 @@ export default function RestoreOldPhotosFreePage() {
             How We Compare to Other &quot;Free&quot; Tools
           </h2>
           <p className="text-center text-[#6e6e73] mb-12 max-w-2xl mx-auto">
-            Many tools claim to be free but add watermarks, require signups, or have hidden limits.
+            Many tools claim to be free but add watermarks, require signups, or hide the real download cost.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "ArtImageHub", free: "Free preview, no signup", catch: "$4.99 only if you want the original-quality file", best: true },
+              { name: "ArtImageHub", free: "$4.99 one-time unlock", catch: "Upload, AI processing, and original-quality download included", best: true },
               { name: "Remini", free: "5 photos/day with watermark", catch: "$9.99/mo for no watermark", best: false },
               { name: "Fotor", free: "Basic features only", catch: "Upgrade popup every action", best: false },
               { name: "PhotoRoom", free: "With watermark", catch: "Subscription for clean output", best: false },
             ].map((tool) => (
               <div key={tool.name} className={`rounded-xl p-5 ${tool.best ? 'bg-green-50 border-2 border-green-400 ring-2 ring-green-100' : 'bg-white border border-[#d2d2d7]/60'}`}>
                 {tool.best && (
-                  <div className="text-xs font-bold text-green-700 uppercase tracking-wider mb-2">✓ Best Free Option</div>
+                  <div className="text-xs font-bold text-green-700 uppercase tracking-wider mb-2">✓ Best One-Time Option</div>
                 )}
                 <h3 className="font-bold text-[#1d1d1f] mb-2">{tool.name}</h3>
                 <p className="text-[13px] text-green-700 mb-2">{tool.free}</p>
-                <p className="text-[12px] text-[#6e6e73]">Catch: {tool.catch}</p>
+                <p className="text-[12px] text-[#6e6e73]">Note: {tool.catch}</p>
               </div>
             ))}
           </div>
@@ -327,7 +327,7 @@ export default function RestoreOldPhotosFreePage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-5">
           <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f] text-center mb-12">
-            Free Photo Restoration FAQ
+            Photo Restoration Pricing FAQ
           </h2>
 
           <dl className="space-y-6">
@@ -354,7 +354,7 @@ export default function RestoreOldPhotosFreePage() {
               },
               {
                 q: "What happens after the $4.99 unlock?",
-                a: "If the preview looks good, you can unlock the original-quality restored photo for $4.99 once. If it is not good enough, you can stop there without starting a subscription.",
+                a: "After checkout, your paid access unlocks upload, AI restoration, and the original-quality restored photo. There is no subscription or monthly renewal.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
@@ -373,7 +373,7 @@ export default function RestoreOldPhotosFreePage() {
             Restore a Photo for $4.99
           </h2>
           <p className="text-green-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Upload your photo and see the AI restore it in 30 seconds. No signup. One-time payment. Unlock the original-quality file only if you want it.
+            Pay once, upload your photo, and let the AI restore it in about 30 seconds. Original-quality download is included.
           </p>
           <Link
             href="#upload"
@@ -382,7 +382,7 @@ export default function RestoreOldPhotosFreePage() {
             Restore a Photo for $4.99
           </Link>
           <p className="mt-4 text-green-200 text-[13px]">
-            Scroll up to upload your photo · Results in 30 seconds
+            Scroll up to start checkout · Results in about 30 seconds after upload
           </p>
         </div>
       </section>
