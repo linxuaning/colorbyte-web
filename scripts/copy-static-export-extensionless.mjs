@@ -3,6 +3,7 @@ import path from "node:path";
 
 const outDir = path.resolve("out");
 const baseUrl = "https://artimagehub.com";
+const indexNowKeyPattern = /^[a-z0-9]{32}\.txt$/;
 
 async function copyExtensionlessHtml(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -114,7 +115,8 @@ const textArtifacts = await readdir(outDir, { recursive: true });
 await Promise.all(
   textArtifacts.map(async (entry) => {
     const filePath = path.join(outDir, entry);
-    if (entry.startsWith("llms") || !entry.endsWith(".txt")) return;
+    const fileName = path.basename(entry);
+    if (entry.startsWith("llms") || indexNowKeyPattern.test(fileName) || !entry.endsWith(".txt")) return;
     try {
       await rm(filePath);
     } catch (err) {
