@@ -25,7 +25,7 @@ const config: BuyerGuideConfig = {
   heroBadge: 'Software Comparison',
   heroEyebrow: 'Honest 2026 Head-to-Head',
   heroH1: 'ArtImageHub vs Photomyne',
-  heroSubhead: 'Photomyne specializes in scanning multiple album photos at once on mobile with auto-cropping and add-on restoration. ArtImageHub focuses purely on AI restoration quality with a $4.99 one-time unlock and free preview. Different problems, sometimes paired.',
+  heroSubhead: 'Photomyne specializes in scanning multiple album photos at once on mobile with auto-cropping and add-on restoration. ArtImageHub focuses purely on AI restoration quality with a $4.99 pay-first unlock for upload, AI processing, and original-quality download. Different problems, sometimes paired.',
   heroReadTime: '12 min read',
   heroTestedNote: '40 album photos digitized + restored',
 
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'AI restoration quality',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -119,7 +119,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class restoration on heavily damaged photos',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before you pay',
+        '$4.99 one-time payment',
         'Web-based — works on any device',
         'Pairs with any scanning app',
         'Includes colorization, enhancement, upscaling',
@@ -135,7 +135,7 @@ const config: BuyerGuideConfig = {
         'Pairing with Photomyne or Google PhotoScan',
         'Heavy damage cases where quality matters',
         'Cost-sensitive users avoiding subscriptions',
-        'Users who want to preview before paying',
+        'Users who want one-time pricing',
       ],
     },
     {
@@ -251,7 +251,7 @@ const config: BuyerGuideConfig = {
       number: 4,
       title: 'Test Restoration Quality Before Committing',
       borderColor: 'purple',
-      body: 'Restoration quality is where these tools diverge most. Pick your most damaged photo, scan it with whichever tool you prefer, then run the result through both Photomyne\'s restore feature and ArtImageHub\'s free preview. Compare side by side. ArtImageHub will typically produce cleaner output on heavily damaged photos because the AI pipeline is purpose-built for restoration rather than bundled into a scanning app. If quality matters more to you than mobile convenience, that side-by-side test will be decisive.',
+      body: 'Restoration quality is where these tools diverge most. Pick your most damaged photo, scan it with whichever tool you prefer, then compare Photomyne\'s restore feature with ArtImageHub on the same source where possible. ArtImageHub will typically produce cleaner output on heavily damaged photos because the AI pipeline is purpose-built for restoration rather than bundled into a scanning app. If quality matters more to you than mobile convenience, that side-by-side test will be decisive.',
     },
   ],
 
@@ -298,7 +298,7 @@ const config: BuyerGuideConfig = {
 
   finalCtaHeading: 'Restore Your Already-Scanned Photos',
   finalCtaSubhead: 'Scan with whichever app you prefer, then upload to ArtImageHub for the actual AI restoration. Preview the result for free, unlock the original-quality download for $4.99.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [

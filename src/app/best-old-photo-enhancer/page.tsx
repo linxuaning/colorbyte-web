@@ -30,7 +30,7 @@ const config: BuyerGuideConfig = {
   heroTestedNote: '35 vintage prints enhanced',
 
   quickPicks: [
-    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/photo-enhancer', description: 'free preview + $4.99 unlock, handles old prints with damage and fading' },
+    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/photo-enhancer', description: '$4.99 pay-first unlock, handles old prints with damage and fading' },
     { label: 'Best Free Option', tool: 'GFP-GAN online demos', description: 'free Hugging Face demos with limits, decent face enhancement' },
     { label: 'Best Mobile App', tool: 'Remini', description: '$9.99/month, polished iOS/Android workflow, strong on faces' },
     { label: 'Best for Pro Workflows', tool: 'VanceAI Photo Enhancer', description: '$19.90/month with batch processing and API access' },
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Old photo enhancement',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -141,18 +141,18 @@ const config: BuyerGuideConfig = {
     {
       position: 1,
       name: 'ArtImageHub',
-      tagline: 'Best for Old Photos — Free Preview, $4.99 Unlock',
+      tagline: 'Best for Old Photos — $4.99 Pay-First Unlock',
       rating: '★★★★★',
       reviewCount: '4.8/5 old-photo enhancement',
       isWinner: true,
       body: [
         'specializes in old-photo enhancement as part of a combined pipeline that also handles restoration, colorization, and upscaling. In our 35-photo test set, ArtImageHub produced the cleanest enhanced output on heavily damaged 1940s and 1950s prints — sharpening detail without amplifying scratches or fading artifacts. The pipeline is tuned specifically for the damage patterns of old photographs, which is why it outperforms generic AI sharpeners on vintage prints.',
-        'Pricing is the practical advantage: $4.99 once vs subscription pricing on every comparable tool. The free preview shows you exactly what the enhanced result will look like before paying anything. ArtImageHub also runs in any browser without installation, which is meaningfully easier than installing a desktop tool like Topaz Photo AI when you only need to enhance a finite batch of photos.',
+        'Pricing is the practical advantage: $4.99 once vs subscription pricing on every comparable tool.  ArtImageHub also runs in any browser without installation, which is meaningfully easier than installing a desktop tool like Topaz Photo AI when you only need to enhance a finite batch of photos.',
       ],
       pros: [
         'Tuned for old-photo damage patterns',
         '$4.99 one-time unlock, no subscription',
-        'Free preview shows enhanced result before payment',
+        '$4.99 one-time unlock',
         'Combined enhance + restore + colorize in one pass',
         'Web-based — works on any device',
         'Email-tied access (re-download anytime)',
@@ -168,7 +168,7 @@ const config: BuyerGuideConfig = {
         'Genealogy and family-history projects',
         'Cost-sensitive users avoiding subscriptions',
         'Anyone who wants enhance + restore in one tool',
-        'Users who want preview-first pricing',
+        'Users who want one-time pricing',
       ],
     },
     {
@@ -282,7 +282,7 @@ const config: BuyerGuideConfig = {
       number: 2,
       title: 'Test Free Options Before Committing to Paid',
       borderColor: 'blue',
-      body: 'GFP-GAN demos and Palette.fm offer free testing for face enhancement specifically. These are useful for evaluating whether AI enhancement meets your bar before paying anything. ArtImageHub also offers a free preview that shows the actual enhanced result before the $4.99 unlock. Run your most damaged photo through 2–3 candidates and compare results side by side. Quality is surprisingly close on lightly damaged photos; the differences widen on heavy damage where dedicated old-photo tools pull ahead.',
+      body: 'GFP-GAN demos and Palette.fm offer free testing for face enhancement specifically. These are useful for evaluating whether AI enhancement meets your bar before paying anything. ArtImageHub uses a $4.99 pay-first unlock for upload, AI enhancement, and original-quality download. Compare candidates on your most damaged photo where possible. Quality is surprisingly close on lightly damaged photos; the differences widen on heavy damage where dedicated old-photo tools pull ahead.',
     },
     {
       number: 3,
@@ -319,15 +319,15 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'How much should I pay for an old photo enhancer?',
-      answer: 'For most family photo projects, you should not pay more than $5 for a one-time enhancement of a typical batch of old photos. ArtImageHub charges $4.99 once for unlimited use on a project, with a free preview before payment. This is dramatically cheaper than the subscription alternatives — Remini at $9.99/month, MyHeritage at $129–299/year, VanceAI at $19.90/month, Topaz Photo AI at $199 one-time. Over one year, the cost difference between $4.99 and any subscription option compounds into hundreds of dollars. Subscription tools only make sense if you enhance new photos every week and use other features like batch processing or genealogy integration. For one-time family album enhancement projects, ArtImageHub\'s pricing matches the project shape (finite, complete-and-stop) better than recurring subscriptions. Always check whether a tool offers preview-first pricing — paying upfront for unknown quality is unnecessary in 2026.',
+      answer: 'For most family photo projects, you should not pay more than $5 for a one-time enhancement of a typical batch of old photos. ArtImageHub charges $4.99 once for unlimited use on a project, with a one-time payment. This is dramatically cheaper than the subscription alternatives — Remini at $9.99/month, MyHeritage at $129–299/year, VanceAI at $19.90/month, Topaz Photo AI at $199 one-time. Over one year, the cost difference between $4.99 and any subscription option compounds into hundreds of dollars. Subscription tools only make sense if you enhance new photos every week and use other features like batch processing or genealogy integration. For one-time family album enhancement projects, ArtImageHub\'s pricing matches the project shape (finite, complete-and-stop) better than recurring subscriptions. Always check whether a tool offers preview-first pricing — paying upfront for unknown quality is unnecessary in 2026.',
     },
     {
       question: 'Will old photo enhancement work on heavily damaged photos?',
-      answer: 'AI old-photo enhancement works well on moderately damaged photos and produces reasonable results even on heavily damaged photos, with one important caveat: the AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, or tearing, the AI can fill in plausible content based on the surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift), AI enhancement produces dramatically better results than the original — often good enough to print and frame. For severely damaged photos, AI is still useful for the parts that survived; you may want to combine AI enhancement with manual Photoshop work or professional human restoration for the most damaged sections. ArtImageHub, MyHeritage, and Remini all handle moderate damage well; Topaz Photo AI gives you more manual control for difficult cases. Always preview the result before paying to verify the AI handled your specific damage type acceptably.',
+      answer: 'AI old-photo enhancement works well on moderately damaged photos and produces reasonable results even on heavily damaged photos, with one important caveat: the AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, or tearing, the AI can fill in plausible content based on the surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift), AI enhancement produces dramatically better results than the original — often good enough to print and frame. For severely damaged photos, AI is still useful for the parts that survived; you may want to combine AI enhancement with manual Photoshop work or professional human restoration for the most damaged sections. ArtImageHub, MyHeritage, and Remini all handle moderate damage well; Topaz Photo AI gives you more manual control for difficult cases. Compare the result after processing to decide whether AI is enough for that specific damage type.',
     },
     {
       question: 'Should I enhance my old photos myself or pay for restoration?',
-      answer: 'AI enhancement at $4.99 per project covers most family photo needs and produces results that rival professional human restoration on moderately damaged photos. Paying $50–150 per photo for professional human restoration only makes sense for severely damaged irreplaceable photos where AI fails — typically large missing sections, complex water damage with structural loss, or photos where historical accuracy is critical (museum-quality archival work). For 95% of family photo projects, AI enhancement produces results that are genuinely good enough. The remaining 5% involves photos so damaged that even AI can only do so much, and professional restoration may be worth the higher cost. Try ArtImageHub\'s free preview on your worst photos first — if the AI result looks good enough to print and share, professional restoration is overkill. If the AI result still has obvious problems, that is the cue to consider professional help for those specific photos while using AI for the rest.',
+      answer: 'AI enhancement at $4.99 per project covers most family photo needs and produces results that rival professional human restoration on moderately damaged photos. Paying $50–150 per photo for professional human restoration only makes sense for severely damaged irreplaceable photos where AI fails — typically large missing sections, complex water damage with structural loss, or photos where historical accuracy is critical (museum-quality archival work). For 95% of family photo projects, AI enhancement produces results that are genuinely good enough. The remaining 5% involves photos so damaged that even AI can only do so much, and professional restoration may be worth the higher cost. ArtImageHub uses a $4.99 pay-first unlock for upload, AI enhancement, and original-quality download. If the AI result still has obvious problems, that is the cue to consider professional help for those specific photos while using AI for the rest.',
     },
     {
       question: 'Can I enhance an old photo on my phone?',
@@ -335,13 +335,13 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'How do I enhance an old photo without losing the original character?',
-      answer: 'The risk with aggressive AI enhancement is that the result looks "too clean" and loses the historical character of the original — over-smoothed skin, plastic-looking surfaces, modern-photo polish on a 1940s print. The best old-photo enhancers default to a more conservative enhancement that preserves natural film grain and period-appropriate texture. ArtImageHub\'s pipeline is tuned to keep the source photo recognizable as an old photo while removing damage; the result feels like the original on a good day rather than a modern reinterpretation. If you want to control the enhancement intensity, Topaz Photo AI offers manual sliders that let you dial down the aggression, but most users find the AI defaults from a tool like ArtImageHub produce the right balance. Preview the result first; if the enhanced version looks too clean or modern, the AI is being too aggressive and a different tool may produce a more authentic result. Always keep the original scan as the archival version regardless of how the enhancement turns out.',
+      answer: 'The risk with aggressive AI enhancement is that the result looks "too clean" and loses the historical character of the original — over-smoothed skin, plastic-looking surfaces, modern-photo polish on a 1940s print. The best old-photo enhancers default to a more conservative enhancement that preserves natural film grain and period-appropriate texture. ArtImageHub\'s pipeline is tuned to keep the source photo recognizable as an old photo while removing damage; the result feels like the original on a good day rather than a modern reinterpretation. If you want to control the enhancement intensity, Topaz Photo AI offers manual sliders that let you dial down the aggression, but most users find the AI defaults from a tool like ArtImageHub produce the right balance. Always keep the original scan as the archival version regardless of how the enhancement turns out.',
     },
   ],
 
   finalCtaHeading: 'Enhance Your Old Family Photos',
-  finalCtaSubhead: 'Preview the enhanced result first. If the result looks worth keeping, unlock the original-quality download for $4.99 — once, with no subscription, no install.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'Pay $4.99 first to unlock upload, AI enhancement, and original-quality download — once, with no subscription, no install.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Guides',
   relatedGuides: [
