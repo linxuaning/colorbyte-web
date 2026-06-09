@@ -549,7 +549,7 @@ export default async function BlogPostPage({ params }: Props) {
                         : "bg-white text-blue-700 shadow-lg hover:bg-blue-50"
                     }`}
                   >
-                    {checkoutCta ? "Preview the restore workflow" : "Restore Photos Free"}
+                    {checkoutCta ? "Unlock and restore" : "Restore Photos"}
                     <span aria-hidden="true">→</span>
                   </Link>
                 </div>
