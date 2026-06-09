@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Vintage Photo Restoration | AI Restores Antique Photos in Seconds',
-  description: 'Restore vintage and antique photos with AI. Preview the restoration first, then unlock the original-quality download for $4.99. No subscription.',
+  description: 'Restore vintage and antique photos with AI. Pay $4.99 once to unlock upload, AI restoration, and original-quality download. No subscription.',
   keywords: [
     'vintage photo restoration',
     'antique photo restoration',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/vintage-photo-restoration' },
   openGraph: {
     title: 'Vintage Photo Restoration | AI for Antique Photos',
-    description: 'Restore vintage photos with AI. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Restore vintage photos with AI. Pay $4.99 once for AI restoration and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after vintage photo restoration' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vintage Photo Restoration - AI Powered',
-    description: 'Preview the vintage restoration first, then unlock the original-quality download for $4.99.',
+    description: 'Pay $4.99 once to unlock AI restoration and original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Vintage Photos with AI",
-  description: "Restore vintage, antique, and heritage photographs using AI restoration. Preview first, then unlock the original-quality download for $4.99.",
+  description: "Restore vintage, antique, and heritage photographs using AI restoration. Pay $4.99 once for AI restoration and original-quality download.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Vintage Photo Restoration" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your restored vintage photo",
-      text: "Preview the restoration first. If you want the clean original-quality restored photo, unlock the download for $4.99. You can keep the sepia tones or colorize it.",
+      text: "After checkout, download the clean original-quality restored photo. You can keep the sepia tones or colorize it.",
     },
   ],
 };
@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "Pay-first $4.99 one-time unlock for AI processing and original-quality download"
   },
 };
 
@@ -85,7 +85,7 @@ const faqSchema = {
     { "@type": "Question", name: "Will AI restoration remove the vintage look?", acceptedAnswer: { "@type": "Answer", text: "No — our AI preserves the authentic vintage character by default. It repairs damage without removing the natural aging that gives vintage photos their charm. You can optionally colorize, but the sepia/B&W aesthetic is preserved unless you choose otherwise." } },
     { "@type": "Question", name: "How should I scan vintage photos for best results?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum (1200 DPI for small prints). Use a flatbed scanner, not a phone camera. Save as PNG or TIFF to avoid compression artifacts. Clean the scanner glass and handle photos with cotton gloves." } },
     { "@type": "Question", name: "Can AI restore photos on old photo paper that's deteriorating?", acceptedAnswer: { "@type": "Answer", text: "AI restoration works on the digital scan, not the physical photo. The digital restoration can remove signs of paper deterioration (yellowing, foxing, silvering) from the image. For physical preservation, consult an archivist." } },
-    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the vintage restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription." } },
+    { "@type": "Question", name: "Is vintage photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. No subscription." } },
   ],
 };
 
@@ -121,7 +121,7 @@ export default function VintagePhotoRestorationPage() {
             <span className="text-amber-700">Vintage</span> Photo Restoration
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            AI trained on historical photographs from the 1850s to 1970s. Preview the restoration first, then unlock the original-quality download for $4.99 while <strong className="text-[#1d1d1f]">preserving authentic character</strong>.
+            AI trained on historical photographs from the 1850s to 1970s. Pay $4.99 once to unlock upload, AI restoration, and original-quality download while <strong className="text-[#1d1d1f]">preserving authentic character</strong>.
           </p>
 
           {/* Trust indicators */}
@@ -313,7 +313,7 @@ export default function VintagePhotoRestorationPage() {
               },
               {
                 q: "Is vintage photo restoration free?",
-                a: "Yes. ArtImageHub lets you preview the vintage restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
+                a: "No. ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. No subscription.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
@@ -338,10 +338,10 @@ export default function VintagePhotoRestorationPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-amber-700 hover:bg-amber-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview
+            Unlock and Restore
           </Link>
           <p className="mt-4 text-amber-200 text-[13px]">
-            Free preview · $4.99 original-quality unlock · No subscription
+            Pay-first unlock · $4.99 original-quality download · No subscription
           </p>
         </div>
       </section>
@@ -358,7 +358,7 @@ export default function VintagePhotoRestorationPage() {
               <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
             </Link>
             <Link href="/restore-old-photos-free" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
-              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Free Photo Restoration</h3>
+              <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Photo Restoration</h3>
               <p className="text-sm text-[#6b5344]">Preview the restoration first</p>
             </Link>
             <Link href="/restore-faded-photos" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">

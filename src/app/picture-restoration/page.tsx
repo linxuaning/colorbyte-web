@@ -4,7 +4,7 @@ import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
   title: 'Picture Restoration | Restore Old Pictures with AI in 30 Seconds',
-  description: 'Restore old pictures automatically with AI. Fix damaged family pictures, enhance faded memories, and start with a free preview. Unlock the original-quality download for $4.99.',
+  description: 'Restore old pictures automatically with AI. Fix damaged family pictures, enhance faded memories, and pay $4.99 once to unlock upload, AI processing, and original-quality download.',
   keywords: [
     'picture restoration',
     'restore old pictures',
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/picture-restoration' },
   openGraph: {
     title: 'Picture Restoration | Restore Old Pictures with AI',
-    description: 'Restore old family pictures with AI. Preview the restored result first, then unlock the original-quality download for $4.99.',
+    description: 'Restore old family pictures with AI. Pay $4.99 once to unlock AI processing and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Picture restoration before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Picture Restoration - Restore Old Family Pictures',
-    description: 'AI picture restoration. Start with a free preview, then unlock the original-quality download for $4.99.',
+    description: 'AI picture restoration. Pay $4.99 once to unlock AI processing and original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -44,7 +44,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 1,
       name: "Upload your old picture",
-      text: "Upload the picture you want to restore. Supports damaged, faded, torn, or blurry family pictures. No signup required.",
+      text: "Upload the picture you want to restore. Supports damaged, faded, torn, or blurry family pictures. Checkout unlocks upload and processing.",
     },
     {
       "@type": "HowToStep",
@@ -56,7 +56,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download restored picture",
-      text: "Preview before/after first. When you want the original-quality restored picture, unlock the download for $4.99.",
+      text: "After checkout, download the original-quality restored picture.",
     },
   ],
 };
@@ -67,12 +67,12 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "How do I restore old pictures?", acceptedAnswer: { "@type": "Answer", text: "Upload your picture to ArtImageHub's AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30 seconds. Download the restored picture — no editing skills required." } },
     { "@type": "Question", name: "Can AI restore badly damaged pictures?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI picture restoration works on: scratched pictures, torn or ripped pictures, water-damaged pictures, faded color pictures, blurry pictures, fire/smoke damaged pictures. Best results on pictures with 10-80% damage. Very heavily damaged pictures (>80%) may need manual artist restoration." } },
-    { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub lets you preview the restored picture first, then unlock the original-quality download for $4.99. Traditional restoration services usually cost $50-150 per picture." } },
+    { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. Traditional restoration services usually cost $50-150 per picture." } },
     { "@type": "Question", name: "What's the difference between photo and picture restoration?", acceptedAnswer: { "@type": "Answer", text: "No technical difference — 'photo restoration' and 'picture restoration' mean the same thing. Some people search 'photo', others search 'picture'. ArtImageHub restores both equally well using the same AI technology." } },
     { "@type": "Question", name: "How long does picture restoration take?", acceptedAnswer: { "@type": "Answer", text: "AI picture restoration takes 15-30 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
-    { "@type": "Question", name: "Can I restore family pictures for free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview family pictures for free with no signup required. When you want the original-quality download, unlock it for $4.99." } },
+    { "@type": "Question", name: "Can I restore family pictures for free?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download." } },
     { "@type": "Question", name: "What types of pictures can AI restore?", acceptedAnswer: { "@type": "Answer", text: "AI restores: family pictures (portraits, group photos), vintage pictures (1800s-1990s), black & white pictures, color pictures, Polaroid pictures, scanned pictures, damaged pictures (scratches, tears, fading), blurry pictures. Works on any picture type." } },
-    { "@type": "Question", name: "Is picture restoration worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, especially for irreplaceable family memories. Previewing the restored picture first lowers the risk, and the $4.99 original-quality unlock is still far below the $50-150 that traditional restoration shops usually charge." } },
+    { "@type": "Question", name: "Is picture restoration worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, especially for irreplaceable family memories. The $4.99 one-time unlock is still far below the $50-150 that traditional restoration shops usually charge." } },
   ],
 };
 
@@ -84,9 +84,9 @@ const softwareSchema = {
   operatingSystem: "Web Browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "Pay-first $4.99 one-time unlock for AI processing and original-quality download"
   },
 };
 
@@ -145,7 +145,7 @@ export default function PictureRestorationPage() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-amber-900/80 mb-10 max-w-3xl leading-relaxed">
-            Don&apos;t let precious family pictures fade away. Our AI restores damaged, faded, and torn pictures automatically, and lets you compare the preview before unlocking the original-quality file for $4.99. <span className="font-semibold text-amber-900">30 seconds per picture.</span>
+            Don&apos;t let precious family pictures fade away. Our AI restores damaged, faded, and torn pictures automatically, and unlocks AI processing and the original-quality file for $4.99. <span className="font-semibold text-amber-900">30 seconds per picture.</span>
           </p>
 
           {/* CTA Buttons */}
@@ -154,7 +154,7 @@ export default function PictureRestorationPage() {
               href="/old-photo-restoration"
               className="px-10 py-5 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white text-lg font-bold rounded-xl transition-all shadow-lg shadow-amber-500/30 hover:shadow-amber-400/40 hover:scale-105"
             >
-              Start Free Preview →
+              Unlock and Restore →
             </Link>
             <a
               href="#before-after"
@@ -170,13 +170,13 @@ export default function PictureRestorationPage() {
               <svg className="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">No signup required</span>
+              <span className="font-medium">Email access lookup</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">Free preview first</span>
+              <span className="font-medium">Pay-first unlock</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
@@ -310,7 +310,7 @@ export default function PictureRestorationPage() {
             href="/old-photo-restoration"
             className="inline-block px-12 py-6 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white text-xl font-bold rounded-xl transition-all shadow-lg hover:scale-105"
           >
-            Start Free Preview →
+            Unlock and Restore →
           </Link>
         </div>
       </section>
@@ -366,7 +366,7 @@ export default function PictureRestorationPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Download Restored Picture</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  Preview before/after first. Download the original-quality restored picture instantly when it is worth $4.99. Share with family, print for framing, or save digitally.
+                  After checkout, download the original-quality restored picture instantly. Share with family, print for framing, or save digitally.
                 </p>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default function PictureRestorationPage() {
               Start Restoring Your Pictures
             </h2>
             <p className="text-xl text-slate-700">
-              Upload your first picture and see AI restore it in 30 seconds
+              Pay once, upload your picture, and let AI restore it in 30 seconds
             </p>
           </div>
 
@@ -394,8 +394,8 @@ export default function PictureRestorationPage() {
               <div className="text-slate-700">Average restoration time</div>
             </div>
             <div>
-              <div className="text-4xl font-black text-amber-600 mb-2">Preview first</div>
-              <div className="text-slate-700">See the result before checkout</div>
+              <div className="text-4xl font-black text-amber-600 mb-2">Pay first</div>
+              <div className="text-slate-700">Checkout unlocks upload and processing</div>
             </div>
             <div>
               <div className="text-4xl font-black text-amber-600 mb-2">$4.99</div>
@@ -439,7 +439,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                ArtImageHub lets you preview the restored picture first, then unlock the original-quality download for $4.99. Traditional restoration services usually cost $50-150 per picture.
+                ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. Traditional restoration services usually cost $50-150 per picture.
               </p>
             </details>
 
@@ -469,7 +469,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Yes. ArtImageHub lets you preview family pictures for free with no signup required. When you want the original-quality download, unlock it for $4.99.
+                No. ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download.
               </p>
             </details>
 
@@ -489,7 +489,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Yes, especially for irreplaceable family memories. Previewing the restored picture first lowers the risk, and the $4.99 original-quality unlock is still far below the $50-150 that traditional restoration shops usually charge.
+                Yes, especially for irreplaceable family memories. The $4.99 one-time unlock is still far below the $50-150 that traditional restoration shops usually charge.
               </p>
             </details>
           </div>
@@ -526,14 +526,14 @@ export default function PictureRestorationPage() {
             Preserve Your Family Memories Today
           </h2>
           <p className="text-xl text-amber-100 mb-10 max-w-2xl mx-auto">
-            Don&apos;t let precious family pictures fade away. Restore them now before it&apos;s too late. Start with a free preview — no signup, no credit card.
+            Don&apos;t let precious family pictures fade away. Restore them now before it&apos;s too late. Pay once to unlock upload, AI processing, and original-quality download.
           </p>
 
           <Link
             href="/old-photo-restoration"
             className="inline-block px-14 py-7 bg-white hover:bg-amber-50 text-amber-900 text-xl font-black rounded-xl transition-all shadow-2xl hover:scale-105"
           >
-            Start Free Preview →
+            Unlock and Restore →
           </Link>
 
           <div className="mt-10 flex flex-wrap justify-center gap-8 text-amber-100">
@@ -541,7 +541,7 @@ export default function PictureRestorationPage() {
               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Free preview first</span>
+              <span>Pay-first unlock</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
