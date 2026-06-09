@@ -16,6 +16,13 @@ const EMERGENCY_EN_STATIC_SLUGS = new Set([
   "best-free-photo-restoration-apps",
   "can-gemini-restore-old-photos",
   "how-to-fix-out-of-focus-old-photos",
+  // T152 止血: 成交页被 120 cap 砍成 404,显式 pin 保证 static export 收录
+  "photo-restoration-software-comparison",
+  "how-to-fix-overexposed-photos-ai",
+  "can-chatgpt-restore-old-photos",
+  "can-google-photos-restore-old-photos",
+  "can-midjourney-restore-old-photos",
+  "can-microsoft-copilot-restore-old-photos",
 ]);
 const EMERGENCY_STATIC_POST_LIMIT = 120;
 
@@ -298,6 +305,12 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
 
     const pinnedPosts = sortedPosts.filter((post) => EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
     const remainingPosts = sortedPosts.filter((post) => !EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
+    // fail-loud: a pinned slug with no matching post = silent 404 in static export
+    const foundSlugs = new Set(pinnedPosts.map((post) => post.slug));
+    const missingPins = [...EMERGENCY_EN_STATIC_SLUGS].filter((slug) => !foundSlugs.has(slug));
+    if (missingPins.length > 0) {
+      console.warn(`[blog] EMERGENCY_EN_STATIC_SLUGS pin(s) not found, will 404: ${missingPins.join(", ")}`);
+    }
     return [...pinnedPosts, ...remainingPosts].slice(0, EMERGENCY_STATIC_POST_LIMIT);
   }
 
