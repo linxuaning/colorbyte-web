@@ -30,7 +30,7 @@ const config: BuyerGuideConfig = {
   heroTestedNote: '50 photos across 8 apps',
 
   quickPicks: [
-    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/', description: 'free preview + $4.99 unlock, whole-photo repair, no subscription' },
+    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/', description: '$4.99 pay-first unlock, whole-photo repair, no subscription' },
     { label: 'Best Mobile App', tool: 'Remini', description: '$9.99/month, polished iOS/Android workflow, strong on faces' },
     { label: 'Best for Genealogy', tool: 'MyHeritage Photo Tools', description: '$129–299/year if you also use family-tree research' },
     { label: 'Best for Pros', tool: 'VanceAI', description: '$19.90/month with batch processing and API access' },
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Whole-photo restoration',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -147,7 +147,7 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is the strongest combination of quality and price for most photo restoration projects. The AI pipeline addresses scratches, fading, water stains, color shifts, blur, and torn corners in a single 20–30 second pass — the whole-photo repair that competing apps either bundle into expensive subscriptions or split across multiple separate features. In our 50-photo test, ArtImageHub produced the cleanest output on heavily damaged photos and matched the best paid tools on lightly damaged photos.',
-        'Pricing is the practical differentiator: $4.99 once vs $120-300/year for the closest paid competitors. The free preview shows exactly what the restored result will look like before payment, and the unlock applies to the entire restoration project rather than a single photo. ArtImageHub also runs in any browser without an install, which means the same workflow works on your phone, laptop, or any borrowed computer — a real advantage over apps that require a specific platform install.',
+        'Pricing is the practical differentiator: $4.99 once vs $120-300/year for the closest paid competitors. The pay-first unlock covers upload, AI restoration, and original-quality download for the entire restoration project rather than a single photo. ArtImageHub also runs in any browser without an install, which means the same workflow works on your phone, laptop, or any borrowed computer — a real advantage over apps that require a specific platform install.',
       ],
       pros: [
         'Whole-photo repair (scratches, fading, water damage)',
@@ -168,7 +168,7 @@ const config: BuyerGuideConfig = {
         'Genealogy and family-history work',
         'Cost-sensitive users avoiding subscriptions',
         'Anyone restoring under 100 photos',
-        'Users who want preview-first pricing',
+        'Users who want one-time pricing',
       ],
     },
     {
@@ -292,9 +292,9 @@ const config: BuyerGuideConfig = {
     },
     {
       number: 4,
-      title: 'Test Free Previews Before Paying',
+      title: 'Compare Output Quality Before Committing to Subscriptions',
       borderColor: 'purple',
-      body: 'ArtImageHub\'s free preview shows the actual restored result before the $4.99 unlock — you see exactly what you would pay for. Remini\'s free tier limits resolution and adds watermarks but lets you preview. Most other apps require subscription before showing the full result. Run your hardest photo through 2–3 candidates and compare. Quality is surprisingly close on lightly damaged photos; the differences widen on heavy damage where dedicated old-photo tools pull ahead. Whichever app produces the result you would actually print and frame is the right tool for your project.',
+      body: 'ArtImageHub uses a $4.99 pay-first unlock for upload, AI restoration, and original-quality download. Remini\'s free tier limits resolution and adds watermarks but lets you preview. Most other apps require subscription before showing the full result. Compare your hardest photo across candidates where possible. Quality is surprisingly close on lightly damaged photos; the differences widen on heavy damage where dedicated old-photo tools pull ahead. Whichever app produces the result you would actually print and frame is the right tool for your project.',
     },
   ],
 
@@ -327,7 +327,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Can photo restoration apps handle severely damaged photos?',
-      answer: 'Modern AI restoration apps produce reasonable results on moderately damaged photos and surprisingly good results on heavily damaged photos, with one important caveat: AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, tearing, or fire, the AI can fill in plausible content based on surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift, light water staining), AI restoration produces dramatically better results than the original — often good enough to print and frame. For severely damaged irreplaceable photos where every detail matters, AI is a useful starting point but professional human restoration may be worth the higher cost ($50–150 per photo). ArtImageHub\'s free preview lets you see whether the AI handled your specific damage acceptably before committing the $4.99 unlock — for most photos the answer is yes, with the remaining cases being candidates for professional help.',
+      answer: 'Modern AI restoration apps produce reasonable results on moderately damaged photos and surprisingly good results on heavily damaged photos, with one important caveat: AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, tearing, or fire, the AI can fill in plausible content based on surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift, light water staining), AI restoration produces dramatically better results than the original — often good enough to print and frame. For severely damaged irreplaceable photos where every detail matters, AI is a useful starting point but professional human restoration may be worth the higher cost ($50–150 per photo). ArtImageHub uses a $4.99 pay-first unlock for upload, AI restoration, and original-quality download.',
     },
     {
       question: 'Which photo restoration app is best for genealogy?',
@@ -335,13 +335,13 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'How do I evaluate a photo restoration app before paying?',
-      answer: 'The best evaluation method is to test your hardest photo through the free preview of any candidate app. Pick the most damaged photo in your collection — usually one with deep scratches, severe fading, or water damage — and run it through 2–3 apps. Compare the restored results side by side and pick whichever produces output you would actually print or share. ArtImageHub\'s preview shows the exact result before the $4.99 unlock, so you see what you would pay for. Remini\'s free tier limits resolution but lets you preview face quality. MyHeritage requires a subscription before showing the full result, which makes free comparison harder. Avoid paying upfront for any app without first verifying quality on your specific content — modern apps differ enough that what works for one user\'s photos may not work for yours. The 5 minutes of testing time saves potential subscription regret. Most users find that one app handles the bulk of their work and a second is rarely necessary.',
+      answer: 'Pick the most damaged photo in your collection — usually one with deep scratches, severe fading, or water damage — and compare candidate apps on the same source where possible. Remini\'s free tier limits resolution but lets you preview face quality. MyHeritage requires a subscription before showing the full result, which makes free comparison harder. ArtImageHub uses a $4.99 pay-first unlock for upload, AI restoration, and original-quality download. Modern apps differ enough that what works for one user\'s photos may not work for yours. Most users find that one app handles the bulk of their work and a second is rarely necessary.',
     },
   ],
 
   finalCtaHeading: 'Restore Your Family Photos with the App That Fits',
-  finalCtaSubhead: 'For most projects, the right answer is ArtImageHub: free preview, $4.99 one-time unlock, no subscription, and quality that matches the best paid alternatives.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'For most projects, the right answer is ArtImageHub: $4.99 pay-first unlock, no subscription, and quality that matches the best paid alternatives.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Guides',
   relatedGuides: [

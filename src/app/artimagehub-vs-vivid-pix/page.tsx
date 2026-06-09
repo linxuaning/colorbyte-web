@@ -6,7 +6,7 @@ const config: BuyerGuideConfig = {
   pageTitle: 'ArtImageHub vs Vivid-Pix Restore: Web AI vs Desktop Software (2026)',
   metaDescription: 'ArtImageHub vs Vivid-Pix Restore compared on the same scans. Web-based AI restoration with $4.99 unlock vs desktop software at $39.99 + subscription option. Honest 2026 head-to-head.',
   ogTitle: 'ArtImageHub vs Vivid-Pix Restore — Web AI vs Desktop (2026)',
-  ogDescription: 'Web AI restoration vs Vivid-Pix\'s desktop install. Free preview + $4.99 unlock vs $39.99 download. See which fits your scan workflow.',
+  ogDescription: 'Web AI restoration vs Vivid-Pix\'s desktop install. $4.99 pay-first unlock vs $39.99 download. See which fits your scan workflow.',
   twitterTitle: 'ArtImageHub vs Vivid-Pix Restore (2026)',
   twitterDescription: 'Web AI vs desktop software. Pricing, quality, and workflow side-by-side.',
   keywords: [
@@ -25,12 +25,12 @@ const config: BuyerGuideConfig = {
   heroBadge: 'Software Comparison',
   heroEyebrow: 'Honest 2026 Head-to-Head',
   heroH1: 'ArtImageHub vs Vivid-Pix Restore',
-  heroSubhead: 'Vivid-Pix Restore is a desktop install for $39.99 (or subscription) focused on restoring scans, slides, and document photos. ArtImageHub runs in any browser with a $4.99 one-time unlock and free preview. We tested both on the same scans.',
+  heroSubhead: 'Vivid-Pix Restore is a desktop install for $39.99 (or subscription) focused on restoring scans, slides, and document photos. ArtImageHub runs in any browser with a $4.99 pay-first unlock for upload, AI processing, and original-quality download. We tested both on the same scans.',
   heroReadTime: '12 min read',
   heroTestedNote: '30 test photos: scans, slides, prints',
 
   quickPicks: [
-    { label: 'Best for no-install workflow', tool: 'ArtImageHub', toolHref: '/', description: 'web-based, runs anywhere with no download — preview free, unlock $4.99' },
+    { label: 'Best for no-install workflow', tool: 'ArtImageHub', toolHref: '/', description: 'web-based, runs anywhere with no download — pay $4.99 first, then upload and restore' },
     { label: 'Best for offline desktop work', tool: 'Vivid-Pix Restore', description: 'desktop install for Mac and Windows, works offline once installed' },
     { label: 'Best price for casual use', tool: 'ArtImageHub', toolHref: '/', description: '$4.99 one-time unlock vs $39.99 desktop license — 8× cheaper' },
     { label: 'Best for slides and document scans', tool: 'Vivid-Pix Restore', description: 'desktop tool with batch restore optimized for scanned documents and slides' },
@@ -39,7 +39,7 @@ const config: BuyerGuideConfig = {
   introParagraphs: [
     'If you are searching "Vivid-Pix Restore alternative" or "ArtImageHub vs Vivid-Pix," you are likely deciding whether to install desktop restoration software or use a web tool. Vivid-Pix Restore has been around for years as a Mac/Windows download, particularly popular for slide and document scanning. ArtImageHub is the web-first alternative that ships AI restoration through a browser without an install step.',
     'The biggest workflow difference is install vs no-install. Vivid-Pix is a downloaded application — you install it on a specific Mac or Windows computer and run it locally. ArtImageHub runs in any modern browser, so the same workflow works on your laptop, your phone, or a borrowed computer. For people who travel or use multiple machines, the web model is easier; for people on a single dedicated desktop, the local install is fine either way.',
-    'The pricing models are also different. Vivid-Pix Restore costs $39.99 for a desktop license (with subscription tiers also available). ArtImageHub uses a single $4.99 unlock per restoration project with a free preview before payment. We tested both on 30 photos covering 1950s prints, 1970s slides, and modern document scans to compare quality, workflow, and total cost.',
+    'The pricing models are also different. Vivid-Pix Restore costs $39.99 for a desktop license (with subscription tiers also available). ArtImageHub uses a single $4.99 unlock per restoration project with no subscription. We tested both on 30 photos covering 1950s prints, 1970s slides, and modern document scans to compare quality, workflow, and total cost.',
   ],
 
   comparisonHeading: 'How do ArtImageHub and Vivid-Pix Restore compare at a glance?',
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Web AI restoration',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -113,13 +113,13 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is web-first AI photo restoration with no install step. You upload a scan, the AI processes it in 20–30 seconds, and you can preview the restored result before paying. The $4.99 unlock buys the original-quality download tied to your email — no subscription, no per-photo metering, and no software to install on a specific computer.',
+        'is web-first AI photo restoration with no install step. You pay $4.99 first, upload a scan, the AI processes it in 20-30 seconds, and the unlock buys the original-quality download tied to your email — no subscription, no per-photo metering, and no software to install on a specific computer.',
         'In our scan tests covering 1950s prints, 1970s slides, and modern document scans, ArtImageHub matched or exceeded Vivid-Pix on most photos and was substantially stronger on heavily faded images. The web-based workflow also means you can scan on one machine and restore on another — useful if you scan with a flatbed at home but edit on a laptop while traveling. Output is standard JPG/PNG that drops into any photo library or family-tree application.',
       ],
       pros: [
         'No install required — runs in any browser',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before you pay',
+        '$4.99 one-time payment',
         'Works on Mac, Windows, Linux, ChromeOS, mobile',
         'Same login on any device',
         'Includes colorization, enhancement, upscaling',
@@ -135,7 +135,7 @@ const config: BuyerGuideConfig = {
         'People with multiple computers or who travel',
         'Casual restoration projects (under 100 photos)',
         'Cost-sensitive families ($4.99 vs $39.99)',
-        'Users who want to preview results before paying',
+        'Users who want a one-time payment with no subscription',
       ],
     },
     {
@@ -252,7 +252,7 @@ const config: BuyerGuideConfig = {
       number: 4,
       title: 'Test Both on Your Worst Photo',
       borderColor: 'purple',
-      body: 'Pick the most damaged scan you have — heavy fading, water stains, scratches that cross a face. ArtImageHub will let you preview the restored result for free; Vivid-Pix offers a trial download. Compare the two outputs side by side. ArtImageHub tends to be more aggressive on heavy damage; Vivid-Pix is more conservative, which can be a feature or a limitation depending on your goals. Whichever produces the result you would actually print or share is the right tool for your project.',
+      body: 'Pick the most damaged scan you have — heavy fading, water stains, scratches that cross a face. ArtImageHub uses a $4.99 pay-first restore unlock; Vivid-Pix offers a trial download. Compare the two outputs side by side. ArtImageHub tends to be more aggressive on heavy damage; Vivid-Pix is more conservative, which can be a feature or a limitation depending on your goals. Whichever produces the result you would actually print or share is the right tool for your project.',
     },
   ],
 
@@ -285,11 +285,11 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Should I install Vivid-Pix Restore if I already use ArtImageHub?',
-      answer: 'Probably not, unless you have a specific requirement that ArtImageHub does not address — primarily offline processing or true batch import of large folders. ArtImageHub already handles the core restoration workflow (scratches, fading, color shifts, water stains, blur) at higher quality than most users notice when comparing side by side, and its $4.99 per-project pricing keeps the total cost low. Adding a $39.99 Vivid-Pix license on top of an ArtImageHub workflow only makes sense if you actively need the desktop install\'s specific advantages. Most users find that one tool covers their needs and the second is redundant. If you are evaluating both tools for the first time, start with ArtImageHub\'s free preview to see whether its quality meets your bar before paying for a desktop license elsewhere.',
+      answer: 'Probably not, unless you have a specific requirement that ArtImageHub does not address — primarily offline processing or true batch import of large folders. ArtImageHub already handles the core restoration workflow (scratches, fading, color shifts, water stains, blur) at higher quality than most users notice when comparing side by side, and its $4.99 per-project pricing keeps the total cost low. Adding a $39.99 Vivid-Pix license on top of an ArtImageHub workflow only makes sense if you actively need the desktop install\'s specific advantages. Most users find that one tool covers their needs and the second is redundant.',
     },
     {
-      question: 'Can I try ArtImageHub before paying like Vivid-Pix offers a trial?',
-      answer: 'Yes, ArtImageHub\'s preview-first model is intentionally designed to let you see the actual restored result before paying anything. Upload your photo, wait 20–30 seconds for the AI to finish, and you will see the restored preview directly in your browser. If the result is not what you wanted, you simply leave — no charge, no subscription, no obligation. The $4.99 unlock only applies if you decide to download the original-quality version, and that decision happens after you have seen the result. This is meaningfully different from "free trials" that require credit card upfront or apply watermarks to previews. With ArtImageHub, the preview shows you exactly what the paid result will look like, so the only thing the unlock buys is the higher-resolution clean download. Vivid-Pix offers a trial download that lets you test the desktop app, which is also a legitimate way to evaluate before paying.',
+      question: 'How does ArtImageHub pricing compare with Vivid-Pix trial?',
+      answer: 'ArtImageHub uses pay-first access: $4.99 unlocks upload, AI restoration, and original-quality download with no subscription. Vivid-Pix offers a trial download that lets you test the desktop app, which is a legitimate way to evaluate before paying for its desktop license.',
     },
     {
       question: 'How do I migrate from Vivid-Pix Restore to ArtImageHub?',
@@ -298,8 +298,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Web-Based Photo Restoration — No Install Required',
-  finalCtaSubhead: 'Preview the workflow first. If the result looks worth keeping, unlock the original-quality download for $4.99 — no install, no license activation, no subscription.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No install',
+  finalCtaSubhead: 'Pay $4.99 first to unlock upload, AI restoration, and original-quality download — no install, no license activation, no subscription.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No install',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [

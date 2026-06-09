@@ -30,7 +30,7 @@ const config: BuyerGuideConfig = {
   heroTestedNote: '30 B&W photos colorized',
 
   quickPicks: [
-    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/photo-colorizer', description: 'free preview + $4.99 unlock, accurate skin tones, no subscription' },
+    { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/photo-colorizer', description: '$4.99 pay-first unlock, accurate skin tones, no subscription' },
     { label: 'Best Mobile App', tool: 'Remini', description: '$9.99/month, polished iOS/Android workflow, strong on faces' },
     { label: 'Best for Genealogy', tool: 'MyHeritage In Color', description: '$129–299/year if you also want family-tree integration' },
     { label: 'Best Free Option', tool: 'Algorithmia / DeepAI demos', description: 'free but limited, low resolution, no commercial license' },
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Overall value',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.7/5 colorization',
       easeOfUse: '★★★★★',
@@ -141,17 +141,17 @@ const config: BuyerGuideConfig = {
     {
       position: 1,
       name: 'ArtImageHub',
-      tagline: 'Best Overall Value — Free Preview, $4.99 Unlock',
+      tagline: 'Best Overall Value — $4.99 Pay-First Unlock',
       rating: '★★★★★',
       reviewCount: '4.7/5 colorization',
       isWinner: true,
       body: [
         'colorizes black-and-white photos as part of the same restoration pipeline that handles scratches, fading, and damage. In our 30-photo test set, ArtImageHub produced the most natural skin tones and the most accurate clothing colors on portraits with reasonable lighting. The pipeline is also forgiving on tinted photos (sepia, blue-shifted) where some colorizers get confused.',
-        'Pricing is the headline advantage: $4.99 once vs subscription pricing on every comparable tool. The free preview lets you see exactly how the colorized result will look before paying anything, which is meaningfully different from "free trial" tiers that watermark or downscale the output. ArtImageHub also colorizes alongside whole-photo restoration in the same pass, which means scratches and damage get fixed at the same time — most other colorizers handle color and damage as separate passes.',
+        'Pricing is the headline advantage: $4.99 once vs subscription pricing on every comparable tool.  ArtImageHub also colorizes alongside whole-photo restoration in the same pass, which means scratches and damage get fixed at the same time — most other colorizers handle color and damage as separate passes.',
       ],
       pros: [
         '$4.99 one-time unlock, no subscription',
-        'Free preview shows exact colorized result before payment',
+        '$4.99 one-time unlock',
         'Accurate skin tones and clothing colors',
         'Combined restoration + colorization in one pass',
         'Web-based — works on any device',
@@ -168,7 +168,7 @@ const config: BuyerGuideConfig = {
         'Genealogy work where cost matters',
         'Anyone who wants restoration + colorization in one tool',
         'Cost-sensitive users avoiding subscriptions',
-        'Users who want preview-first pricing',
+        'Users who want one-time pricing',
       ],
     },
     {
@@ -274,7 +274,7 @@ const config: BuyerGuideConfig = {
       number: 1,
       title: 'Check the Quality on Your Hardest Photo',
       borderColor: 'amber',
-      body: 'Pick the most challenging B&W photo in your collection — usually a low-light indoor scene or a group photo with many people. Run it through the free preview of any candidate tool. The results will look surprisingly similar on well-lit outdoor portraits, where most modern AI colorizers work fine. The differences show up on hard cases: low-light interiors, busy outfits, complex backgrounds. Whichever tool produces the most natural result on your hardest photo is the right tool for your project.',
+      body: 'Pick the most challenging B&W photo in your collection — usually a low-light indoor scene or a group photo with many people. Compare candidates on the same source photo where possible. The results will look surprisingly similar on well-lit outdoor portraits, where most modern AI colorizers work fine. The differences show up on hard cases: low-light interiors, busy outfits, complex backgrounds. Whichever tool produces the most natural result on your hardest photo is the right tool for your project.',
     },
     {
       number: 2,
@@ -321,7 +321,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'How much does AI photo colorization cost?',
-      answer: 'AI photo colorization pricing varies widely depending on the tool. ArtImageHub charges $4.99 once for an unlimited unlock on a colorization project — no subscription, no per-photo metering, free preview before payment. Remini charges $9.99 per month, which works out to roughly $120 per year. MyHeritage In Color is bundled with $129–299 per year genealogy subscriptions. VanceAI Photo Colorizer is $19.90 per month for the standalone subscription. Free tiers from DeepAI, Algorithmia, and Palette.fm exist but usually have resolution limits and no commercial license. For a typical family photo colorization project covering 20–100 photos, ArtImageHub\'s $4.99 one-time pricing is the most cost-effective option by a wide margin — typically 24–60× cheaper than the subscription alternatives over one year. Subscriptions only make sense if you colorize new photos every week and value features beyond colorization.',
+      answer: 'AI photo colorization pricing varies widely depending on the tool. ArtImageHub charges $4.99 once for an unlimited unlock on a colorization project — no subscription, no per-photo metering, one-time payment. Remini charges $9.99 per month, which works out to roughly $120 per year. MyHeritage In Color is bundled with $129–299 per year genealogy subscriptions. VanceAI Photo Colorizer is $19.90 per month for the standalone subscription. Free tiers from DeepAI, Algorithmia, and Palette.fm exist but usually have resolution limits and no commercial license. For a typical family photo colorization project covering 20–100 photos, ArtImageHub\'s $4.99 one-time pricing is the most cost-effective option by a wide margin — typically 24–60× cheaper than the subscription alternatives over one year. Subscriptions only make sense if you colorize new photos every week and value features beyond colorization.',
     },
     {
       question: 'Will AI colorize my black-and-white photo accurately?',
@@ -329,7 +329,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Should I colorize my black-and-white family photos?',
-      answer: 'It depends on the purpose. For display, sharing, and bringing photos to life for younger family members, colorization is genuinely valuable — a colorized photo feels more immediate and emotionally accessible than a B&W image, especially for relatives who never met the people in the photo. For archival and historical accuracy, colorization is more controversial because the AI is interpreting rather than documenting. Most family historians take a middle path: keep the original B&W scan as the archival master copy, and create a separate colorized version for display purposes. Both files exist, both are clearly labeled, and viewers can choose how to engage with the photo. ArtImageHub\'s preview-first model lets you see the colorized result before paying anything, so you can decide on a per-photo basis whether to keep the colorized version or stick with the B&W original. For most family photos, colorization is worth doing as a separate display copy, not as a replacement for the original.',
+      answer: 'It depends on the purpose. For display, sharing, and bringing photos to life for younger family members, colorization is genuinely valuable — a colorized photo feels more immediate and emotionally accessible than a B&W image, especially for relatives who never met the people in the photo. For archival and historical accuracy, colorization is more controversial because the AI is interpreting rather than documenting. Most family historians take a middle path: keep the original B&W scan as the archival master copy, and create a separate colorized version for display purposes. Both files exist, both are clearly labeled, and viewers can choose how to engage with the photo. ArtImageHub\'s $4.99 pay-first model unlocks upload, AI colorization, and original-quality download with no subscription. For most family photos, colorization is worth doing as a separate display copy, not as a replacement for the original.',
     },
     {
       question: 'Why do AI colorized photos sometimes look wrong?',
@@ -338,8 +338,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Colorize Your Black-and-White Photos',
-  finalCtaSubhead: 'Preview the colorized result first. If the colors look natural and worth keeping, unlock the original-quality download for $4.99 — once, with no subscription.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'Pay $4.99 first to unlock upload, AI colorization, and original-quality download — once, with no subscription.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Guides',
   relatedGuides: [

@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Real photo restoration',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -114,12 +114,12 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is a dedicated AI photo restoration tool — its job is taking real photos with damage and producing restored versions. The pipeline handles scratches, fading, water stains, color shifts, blur, and torn corners in a single 20–30 second pass. Unlike Yodayo, it is not generating new images; it is repairing damage on the original photo while preserving the people, clothing, and scene exactly as they were.',
-        'Pricing is intentionally simple: preview the restored result for free, then pay $4.99 once for the original-quality download tied to your email. No subscription, no per-photo metering, no anime-style customization steps. The web interface runs in any browser on any device. For users who arrived from a Yodayo search expecting photo restoration, this is the tool that matches that intent.',
+        'Pricing is intentionally simple: pay $4.99 once to unlock upload, AI restoration, and the original-quality download tied to your email. No subscription, no per-photo metering, no anime-style customization steps. The web interface runs in any browser on any device. For users who arrived from a Yodayo search expecting photo restoration, this is the tool that matches that intent.',
       ],
       pros: [
         'Built specifically for real photo restoration',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before you pay',
+        '$4.99 one-time payment',
         'Whole-image repair (scratches, fading, water damage)',
         'Web-based — works on any device',
         'Includes colorization and enhancement',
@@ -135,7 +135,7 @@ const config: BuyerGuideConfig = {
         'Anyone who searched "Yodayo photo restoration" expecting restoration',
         'Genealogy and family-history projects',
         'Cost-sensitive users avoiding subscriptions',
-        'Users who want preview-first pricing',
+        'Users who want one-time pricing',
       ],
     },
     {
@@ -250,7 +250,7 @@ const config: BuyerGuideConfig = {
       number: 4,
       title: 'Test Before Paying',
       borderColor: 'purple',
-      body: 'Both products offer ways to test before committing. ArtImageHub gives you a free preview of the restored result before the $4.99 unlock — you see exactly what the paid output will look like. Yodayo offers a free tier for anime generation. Use whichever free tier matches your actual goal. If you upload a real damaged photo to Yodayo and the result is a stylized anime version of your grandmother, that is the AI doing what it was designed to do — and a clear sign you need ArtImageHub instead.',
+      body: 'Yodayo offers a free tier for anime generation. Use whichever free tier matches your actual goal. ArtImageHub works differently: $4.99 pay-first access unlocks upload, AI restoration, and original-quality download. If you upload a real damaged photo to Yodayo and the result is a stylized anime version of your grandmother, that is the AI doing what it was designed to do — and a clear sign you need ArtImageHub instead.',
     },
   ],
 
@@ -263,7 +263,7 @@ const config: BuyerGuideConfig = {
   faqItems: [
     {
       question: 'Can Yodayo restore old photos like ArtImageHub?',
-      answer: 'No, Yodayo is not built for photo restoration — it is an anime AI art generator. The two tools solve different problems and the workflows do not overlap. Yodayo creates new anime-style character illustrations from text prompts and reference images, which is great if you want anime art but useless if you want to fix scratches and fading on a real family photo. ArtImageHub is purpose-built for real photo restoration: upload a damaged photo, the AI repairs scratches, fading, water stains, and color shifts while preserving the actual people and scene from the original. If you arrived at Yodayo expecting photo restoration, that is a tool mismatch and you should switch to ArtImageHub or another dedicated photo restoration tool. The good news is that ArtImageHub\'s preview-first model lets you see whether the restored result is what you wanted before paying anything.',
+      answer: 'No, Yodayo is not built for photo restoration — it is an anime AI art generator. The two tools solve different problems and the workflows do not overlap. Yodayo creates new anime-style character illustrations from text prompts and reference images, which is great if you want anime art but useless if you want to fix scratches and fading on a real family photo. ArtImageHub is purpose-built for real photo restoration: pay $4.99, upload a damaged photo, and the AI repairs scratches, fading, water stains, and color shifts while preserving the actual people and scene from the original. If you arrived at Yodayo expecting photo restoration, that is a tool mismatch and you should switch to ArtImageHub or another dedicated photo restoration tool.',
     },
     {
       question: 'Why do people search for "Yodayo photo restoration" when Yodayo does not do that?',
@@ -271,7 +271,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'What should I use instead of Yodayo if I want to restore real photos?',
-      answer: 'For real photo restoration, the right tool depends on your specific needs. ArtImageHub is the simplest and cheapest option for most users — $4.99 one-time, web-based, free preview before payment, and it handles the full range of damage types (scratches, fading, water stains, color shifts, blur). Remini is a strong choice if you specifically want mobile face sharpening on selfies and modern portraits, with a $9.99/month subscription. MyHeritage Photo Tools work well if you also want family-tree integration and are willing to pay $129–299/year for the full bundle. VanceAI handles pro-grade batch processing for studios at $19.90/month. None of these compete with Yodayo because Yodayo does not actually do photo restoration — these are alternatives to the original photo restoration intent that Yodayo does not satisfy.',
+      answer: 'For real photo restoration, the right tool depends on your specific needs. ArtImageHub is the simplest and cheapest option for most users — $4.99 one-time, web-based, one-time payment, and it handles the full range of damage types (scratches, fading, water stains, color shifts, blur). Remini is a strong choice if you specifically want mobile face sharpening on selfies and modern portraits, with a $9.99/month subscription. MyHeritage Photo Tools work well if you also want family-tree integration and are willing to pay $129–299/year for the full bundle. VanceAI handles pro-grade batch processing for studios at $19.90/month. None of these compete with Yodayo because Yodayo does not actually do photo restoration — these are alternatives to the original photo restoration intent that Yodayo does not satisfy.',
     },
     {
       question: 'Is ArtImageHub better than Yodayo?',
@@ -296,8 +296,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Real Photo Restoration, Done Right',
-  finalCtaSubhead: 'If you arrived here looking to restore real family photos, this is the right tool. Preview the workflow first, unlock the original-quality download for $4.99 only if the result is worth keeping.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'If you arrived here looking to restore real family photos, this is the right tool. Pay $4.99 first to unlock upload, AI restoration, and original-quality download.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [
