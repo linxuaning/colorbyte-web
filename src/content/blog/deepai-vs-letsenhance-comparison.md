@@ -19,9 +19,9 @@ faq:
   - question: "Which tool produces better face restoration?"
     answer: "Both tools produce similar face restoration quality because both use derivatives of publicly-available AI models (GFPGAN family). The marketing emphasizes different aspects, but tested side-by-side on the same family photos, output quality differences are marginal."
   - question: "Is there an alternative without subscription or watermarks?"
-    answer: "Yes. ArtImageHub charges $4.99 one-time for unlimited browser-based AI restoration with no watermarks on HD output. The underlying AI models are similar to DeepAI's paid tier and LetsEnhance — you're paying for hosting and UX, not better AI."
+    answer: "Yes. ArtImageHub charges $4.99 once to unlock upload, AI restoration, and original-quality download with no subscription. The underlying AI models are similar to DeepAI's paid tier and LetsEnhance — you're paying for hosting and UX, not better AI."
   - question: "Can I use these tools for batch processing?"
-    answer: "DeepAI's free tier is one-at-a-time. LetsEnhance offers batch upload on paid plans, with each photo consuming credits. ArtImageHub processes one-at-a-time but unlimited. For 50+ photos, professional desktop tools (Topaz Photo AI) are typically faster than any browser-based option."
+    answer: "DeepAI's free tier is one-at-a-time. LetsEnhance offers batch upload on paid plans, with each photo consuming credits. ArtImageHub is a pay-first browser workflow for one restoration at a time. For 50+ photos, professional desktop tools (Topaz Photo AI) are typically faster than any browser-based option."
 itemList:
   - position: 1
     name: "DeepAI"
@@ -31,7 +31,7 @@ itemList:
     description: "Credit-based subscription AI photo enhancement service ($9-24/month tiers). Strong upscaling for product photos and creative work. Best for users with regular small-batch enhancement needs."
   - position: 3
     name: "ArtImageHub (alternative)"
-    description: "$4.99 one-time payment for unlimited browser-based AI photo restoration. Combines face recovery, 4× upscale, and colorization. No watermarks, no subscription. Best for users with a finite project (10-100 family photos) who don't want recurring billing."
+    description: "$4.99 one-time payment for browser-based AI photo restoration, upload, processing, and original-quality download. No subscription. Best for users with a finite project who don't want recurring billing."
 aggregateRating:
   ratingValue: 8.4
   ratingCount: 6
@@ -58,7 +58,7 @@ If you have a **one-time family photo project** (e.g., restore an entire album f
 
 ---
 
-> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Start AI restoration →](/old-photo-restoration) — $4.99 once for upload, AI processing, and original-quality download. No subscription.
 
 ---
 
@@ -137,9 +137,9 @@ If your actual situation is "I have a finite project — restore my grandparents
 
 This is where one-time-payment alternatives fit:
 
-- [ArtImageHub](/old-photo-restoration) charges $4.99 one-time for unlimited browser-based AI restoration. Combines face restoration + 4× upscale + colorization in single workflow.
+- [ArtImageHub](/old-photo-restoration) charges $4.99 once to unlock browser-based AI restoration. The unlock includes upload, processing, and original-quality download in a single workflow.
 - The AI is comparable to DeepAI's paid tier and LetsEnhance — same family of underlying models with consumer-tier tuning.
-- Unlimited use after unlock means a 100-photo project costs the same as a 1-photo project: $4.99 total.
+- No monthly subscription means you do not keep paying after a one-time restoration job.
 - No watermarks on HD download.
 - No subscription to forget to cancel.
 
@@ -198,7 +198,7 @@ For more on AI photo restoration tools and how to evaluate them, see our [best A
 
 | Method | Time per photo | Cost | Skill required | Result quality |
 |--------|----------------|------|----------------|----------------|
-| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** | None | Excellent (GFPGAN + Real-ESRGAN) |
 | Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
 | Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
 | Local print shop | 2–5 days | $20–80 per photo | None | Good |
@@ -211,4 +211,4 @@ For era-specific damage profiles, see [Old Photo Restoration by Decade complete 
 
 For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
 
-Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
+Start [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for upload, AI processing, and original-quality download.

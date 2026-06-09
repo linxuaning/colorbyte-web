@@ -70,7 +70,7 @@ Tools like GIMP, Photopea (browser-based), and various smartphone apps offer res
 
 ---
 
-> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Start AI restoration →](/old-photo-restoration) — $4.99 once for upload, AI processing, and original-quality download. No subscription.
 
 ---
 
@@ -466,7 +466,7 @@ Ready to start restoring your photos? Try [ArtImageHub's AI-powered restoration 
 
 | Method | Time per photo | Cost | Skill required | Result quality |
 |--------|----------------|------|----------------|----------------|
-| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** | None | Excellent (GFPGAN + Real-ESRGAN) |
 | Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
 | Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
 | Local print shop | 2–5 days | $20–80 per photo | None | Good |
@@ -479,4 +479,4 @@ For era-specific damage profiles, see [Old Photo Restoration by Decade complete 
 
 For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
 
-Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
+Start [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for upload, AI processing, and original-quality download.
