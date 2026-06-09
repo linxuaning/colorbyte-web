@@ -869,7 +869,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               {t.uploadCta}
             </button>
             <p className="text-[12px] text-[#6e6e73]/80">
-              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+              Paid access required · Full resolution for {PRO_PRICE_TEXT}
             </p>
 
             <label
@@ -1021,7 +1021,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           <div className="text-center">
             <p className="mb-2 text-[13px] text-[#6e6e73]">Happy with the result? Share it.</p>
             <a
-              href={`https://x.com/intent/tweet?text=${encodeURIComponent("Just restored this old family photo with AI ✨ Free to try at artimagehub.com — you upload, it restores, you decide if it's worth $4.99 to download.")}&url=${encodeURIComponent("https://artimagehub.com/old-photo-restoration")}`}
+              href={`https://x.com/intent/tweet?text=${encodeURIComponent("Just restored this old family photo with AI at artimagehub.com — $4.99 one-time access, no subscription.")}&url=${encodeURIComponent("https://artimagehub.com/old-photo-restoration")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-[13px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
