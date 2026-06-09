@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Photo Restoration Service | Professional Quality, Instant Results',
-  description: 'Professional photo restoration service powered by AI. Restore old, damaged, and faded photos in seconds. Preview first, then unlock the original-quality download for $4.99.',
+  description: 'Professional photo restoration service powered by AI. Pay $4.99 once, restore old, damaged, and faded photos in seconds, then download the original-quality result.',
   keywords: [
     'photo restoration service',
     'photo restoration services',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/photo-restoration-service' },
   openGraph: {
     title: 'Photo Restoration Service | Professional Quality, Instant Results',
-    description: 'Professional photo restoration service powered by AI. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Professional photo restoration service powered by AI. $4.99 one-time unlock, original-quality download included.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after photo restoration service' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Photo Restoration Service - AI Powered',
-    description: 'Professional-quality photo restoration. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Professional-quality photo restoration with a $4.99 one-time unlock and original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your restored photo",
-      text: "Preview your professionally restored photo first. If you want the original-quality download, unlock it for $4.99.",
+      text: "Pay $4.99 once, upload your photo, and download the original-quality restored result after processing.",
     },
   ],
 };
@@ -67,11 +67,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How does AI photo restoration compare to traditional services?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration delivers professional-quality results in seconds instead of 1-2 weeks. You can preview the result first and only pay $4.99 if you want the original-quality download, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away." } },
+    { "@type": "Question", name: "How does AI photo restoration compare to traditional services?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration delivers professional-quality results in seconds instead of 1-2 weeks. ArtImageHub is a $4.99 one-time unlock with original-quality download included, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away." } },
     { "@type": "Question", name: "Is this a real photo restoration service?", acceptedAnswer: { "@type": "Answer", text: "Yes, this is a real photo restoration service powered by advanced AI instead of manual work. The results are professional-quality — our AI is trained on millions of photos and can fix fading, damage, enhance faces, colorize B&W photos, and more. Over 100,000 photos have been restored using our service." } },
-    { "@type": "Question", name: "How much does the photo restoration service cost?", acceptedAnswer: { "@type": "Answer", text: "You can preview the restored result first at no cost. If you want the original-quality download, it is a one-time $4.99 unlock for that photo. That is still far below traditional services charging $25-100+ per photo." } },
+    { "@type": "Question", name: "How much does the photo restoration service cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub costs $4.99 one time for photo restoration and the original-quality download. That is still far below traditional services charging $25-100+ per photo." } },
     { "@type": "Question", name: "Do I need to mail my original photos?", acceptedAnswer: { "@type": "Answer", text: "No! That's the beauty of our digital service. Simply scan or photograph your original and upload it. Your precious original stays safe with you. We only work with digital copies." } },
-    { "@type": "Question", name: "What if I'm not satisfied with the restoration?", acceptedAnswer: { "@type": "Answer", text: "Preview the restoration first. If the result is not worth keeping, you can stop there. If it looks right, unlock the original-quality download for $4.99." } },
+    { "@type": "Question", name: "What if I'm not satisfied with the restoration?", acceptedAnswer: { "@type": "Answer", text: "If the restored result is not usable, contact support with the order email and image context so we can review the issue." } },
   ],
 };
 
@@ -92,15 +92,8 @@ const serviceSchema = {
     itemListElement: [
       {
         "@type": "Offer",
-        name: "Free Preview",
-        description: "Preview the restored photo before paying",
-        price: "0",
-        priceCurrency: "USD"
-      },
-      {
-        "@type": "Offer",
-        name: "Original-Quality Download",
-        description: "One-time $4.99 unlock for the original-quality restored photo",
+        name: "Photo Restoration Unlock",
+        description: "One-time $4.99 unlock for AI restoration and the original-quality restored photo",
         price: "4.99",
         priceCurrency: "USD"
       }
@@ -116,9 +109,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time photo restoration unlock with original-quality download"
   },
 };
 
@@ -172,14 +165,14 @@ export default function PhotoRestorationServicePage() {
             Photo Restoration <span className="text-emerald-600">Service</span>
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Professional photo restoration — powered by AI, delivered in seconds. No mailing photos. No waiting weeks. <strong className="text-[#1d1d1f]">Preview first, then unlock the original-quality download for $4.99.</strong>
+            Professional photo restoration — powered by AI, delivered in seconds. No mailing photos. No waiting weeks. <strong className="text-[#1d1d1f]">$4.99 one-time unlock with original-quality download included.</strong>
           </p>
 
           {/* Comparison callout */}
           <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full text-[13px] text-amber-800">
             <span className="font-semibold">Traditional: $50-100/photo, 1-2 weeks</span>
             <span className="text-amber-400">→</span>
-            <span className="font-semibold text-emerald-700">ArtImageHub: free preview, $4.99 original-quality unlock</span>
+            <span className="font-semibold text-emerald-700">ArtImageHub: $4.99 one-time original-quality unlock</span>
           </div>
         </div>
       </section>
@@ -246,8 +239,8 @@ export default function PhotoRestorationServicePage() {
                   <td className="p-4 text-center text-[14px] text-[#6e6e73]">Usually required</td>
                 </tr>
                 <tr>
-                  <td className="p-4 text-[14px] text-[#1d1d1f]">Preview Before Paying</td>
-                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">Yes - free preview</td>
+                  <td className="p-4 text-[14px] text-[#1d1d1f]">Result Access</td>
+                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">Paid result after unlock</td>
                   <td className="p-4 text-center text-[14px] text-[#6e6e73]">Rarely</td>
                 </tr>
                 <tr>
@@ -345,8 +338,8 @@ export default function PhotoRestorationServicePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-[#1d1d1f] mb-2">Auto-Deleted in 24h</h3>
-              <p className="text-[14px] text-[#6e6e73]">Photos are automatically deleted from our servers within 24 hours. We don&apos;t keep copies.</p>
+              <h3 className="font-semibold text-[#1d1d1f] mb-2">Limited Retention</h3>
+              <p className="text-[14px] text-[#6e6e73]">Uploaded and restored files are retained only as long as needed to process, deliver, and support the paid order.</p>
             </div>
             <div className="text-center p-6">
               <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 mb-4">
@@ -372,7 +365,7 @@ export default function PhotoRestorationServicePage() {
             {[
               {
                 q: "How does AI photo restoration compare to traditional services?",
-                a: "AI delivers professional-quality results in 30 seconds instead of 1-2 weeks. You can preview the result first and only pay $4.99 if you want the original-quality download, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away.",
+                a: "AI delivers professional-quality results in 30 seconds instead of 1-2 weeks. ArtImageHub is a $4.99 one-time unlock with original-quality download included, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away.",
               },
               {
                 q: "Is this a real photo restoration service?",
@@ -380,7 +373,7 @@ export default function PhotoRestorationServicePage() {
               },
               {
                 q: "How much does your photo restoration service cost?",
-                a: "You can preview the restored result first at no cost. If you want the original-quality download, it is a one-time $4.99 unlock for that photo. That is still far below traditional services charging $25-100+ per photo.",
+                a: "ArtImageHub costs $4.99 one time for photo restoration and the original-quality download. That is still far below traditional services charging $25-100+ per photo.",
               },
               {
                 q: "Do I need to mail my original photos?",
@@ -388,7 +381,7 @@ export default function PhotoRestorationServicePage() {
               },
               {
                 q: "What if the restoration doesn't meet my expectations?",
-                a: "Preview the restoration first. If the result is not worth keeping, you can stop there. If it looks right, unlock the original-quality download for $4.99.",
+                a: "If the restored result is not usable, contact support with the order email and image context so we can review the issue.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
@@ -407,16 +400,16 @@ export default function PhotoRestorationServicePage() {
             Professional Photo Restoration in Seconds
           </h2>
           <p className="text-emerald-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Stop waiting weeks and paying hundreds. Get professional-quality results instantly, preview first, and unlock the original-quality photo for $4.99 if it is worth keeping.
+            Stop waiting weeks and paying hundreds. Pay $4.99 once and get a professional-quality restored photo with original-quality download included.
           </p>
           <Link
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-emerald-700 hover:bg-emerald-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview
+            Restore Your Photo
           </Link>
           <p className="mt-4 text-emerald-200 text-[13px]">
-            Free preview · No signup · $4.99 original-quality unlock
+            $4.99 one-time unlock · No subscription · Original-quality download
           </p>
         </div>
       </section>
@@ -434,7 +427,7 @@ export default function PhotoRestorationServicePage() {
             </Link>
             <Link href="/restore-old-photos-free" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Free Photo Restoration</h3>
-              <p className="text-sm text-[#6b5344]">Preview first, then unlock the original-quality file</p>
+              <p className="text-sm text-[#6b5344]">One-time unlock, original-quality file included</p>
             </Link>
             <Link href="/best-photo-restoration-software" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Software Comparison</h3>
