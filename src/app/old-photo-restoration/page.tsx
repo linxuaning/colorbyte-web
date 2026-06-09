@@ -7,7 +7,6 @@ import LiveActivity from "@/components/LiveActivity";
 import ProofSampleGallery from "@/components/ProofSampleGallery";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import DodoQuickCheckoutButton from "@/components/DodoQuickCheckoutButton";
-import HubAlternativesSidebar from "@/components/HubAlternativesSidebar";
 
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
@@ -235,9 +234,7 @@ export default function OldPhotoRestorationPage() {
         </div>
       </div>
 
-      {/* Main tool + buyer-guide sidebar (lg+ only). Mobile preserves the
-          original max-w-3xl single-column flow so the modal_overlay path is
-          untouched on the device class that drives most paid conversions. */}
+      {/* Main tool. Keep the payment/upload path visually focused. */}
       <div className="mx-auto max-w-6xl px-5 py-6 sm:py-12 xl:flex xl:items-start xl:gap-7">
         <div id="upload" className="mx-auto w-full max-w-3xl xl:mx-0 xl:flex-1">
           <Suspense fallback={<div className="min-h-[400px]" />}>
@@ -250,8 +247,6 @@ export default function OldPhotoRestorationPage() {
             <LiveActivity />
           </div>
         </div>
-
-        <HubAlternativesSidebar />
       </div>
 
       {/* 30-Day Guarantee + Trust */}
