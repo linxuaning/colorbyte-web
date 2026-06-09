@@ -33,13 +33,13 @@ const config: BuyerGuideConfig = {
     { label: 'Best for old family photos', tool: 'ArtImageHub', toolHref: '/', description: 'whole-photo repair (scratches, fading, water damage) + $4.99 one-time unlock, no subscription' },
     { label: 'Best for selfie / face enhancement', tool: 'Remini', description: 'industry-leading face sharpening on iOS and Android, $9.99/month' },
     { label: 'Best for desktop workflow', tool: 'ArtImageHub', toolHref: '/', description: 'web-based, runs in any browser on a larger screen — no install required' },
-    { label: 'Best low-commitment option', tool: 'ArtImageHub', toolHref: '/', description: 'preview the restore for free, only pay $4.99 if the result is worth keeping' },
+    { label: 'Best low-commitment option', tool: 'ArtImageHub', toolHref: '/', description: '$4.99 pay-first access for upload, AI restoration, and original-quality download' },
   ],
 
   introParagraphs: [
     'If you have searched "Remini alternative" or "ArtImageHub vs Remini," you are probably looking at one of two situations. Either you are restoring scratched, faded, or water-damaged old family photos and want to know whether Remini\'s mobile-first model fits, or you already use Remini for selfies and want to know if a one-time $4.99 unlock is realistic. We tested both tools on 40 photos covering 1890s tintypes, 1940s wedding prints, 1970s color snapshots, and modern smartphone portraits.',
     'The headline finding: these tools solve different problems even though both market themselves as AI photo restoration. Remini\'s pipeline is optimized for face sharpening on a phone — it makes blurry portraits crisp and renders excellent skin and eye detail. ArtImageHub\'s pipeline is built for whole-image restoration, which means scratches, tears, water stains, fading, and color shifts get fixed in the same pass alongside the face. On modern selfies they overlap; on old prints with physical damage, they diverge sharply.',
-    'Pricing also tells two different stories. Remini charges $9.99 per month, which adds up to roughly $120 per year — sustainable for daily mobile use, expensive if you only restore a handful of family photos once. ArtImageHub uses a preview-first model: you see the restored result before paying, and a single $4.99 unlock buys the original-quality download tied to your email. The rest of this guide breaks down quality, pricing, workflow, and use-case fit so you can pick the right tool for your specific photos.',
+    'Pricing also tells two different stories. Remini charges $9.99 per month, which adds up to roughly $120 per year — sustainable for daily mobile use, expensive if you only restore a handful of family photos once. ArtImageHub uses a pay-first model: a single $4.99 unlock covers upload, AI restoration, and the original-quality download tied to your email. The rest of this guide breaks down quality, pricing, workflow, and use-case fit so you can pick the right tool for your specific photos.',
   ],
 
   comparisonHeading: 'How do ArtImageHub and Remini compare at a glance?',
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Whole old-photo repair',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -108,18 +108,18 @@ const config: BuyerGuideConfig = {
     {
       position: 1,
       name: 'ArtImageHub',
-      tagline: 'Best Whole-Photo Restoration — Free Preview, $4.99 Unlock',
+      tagline: 'Best Whole-Photo Restoration — $4.99 Pay-First Unlock',
       rating: '★★★★★',
       reviewCount: '4.8/5 (verified buyers)',
       isWinner: true,
       body: [
         'is our top pick when the goal is restoring old family photos with real damage. Its pipeline addresses scratches, water stains, fading, color shifts, torn corners, and blur in a single pass — not just the face. On the 1947 wedding print in our test set, the bride\'s lace and the corner damage came back together; on a 1970s Kodachrome, faded skin tones recovered without leaving the dress washed out.',
-        'Workflow is intentionally short. Upload the photo, wait 20–30 seconds for the AI preview, and decide whether to unlock the original-quality download for $4.99. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
+        'Workflow is intentionally short. Pay $4.99, upload the photo, wait 20-30 seconds for AI restoration, and download the original-quality result. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
       ],
       pros: [
         'Whole-image restoration — fixes the entire photo, not just faces',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before you pay',
+        '$4.99 one-time payment',
         'Handles 1890s tintypes through modern photos',
         'Web-based — works on any device',
         'Email-tied access (re-download anytime)',
@@ -135,7 +135,7 @@ const config: BuyerGuideConfig = {
         'Anyone who prefers paying once vs subscribing monthly',
         'Genealogy projects where every photo matters',
         'Users who want desktop workflow on a larger screen',
-        'People who want to preview before committing to a download',
+        'Users who want a one-time payment with no subscription',
       ],
     },
     {
@@ -252,7 +252,7 @@ const config: BuyerGuideConfig = {
       number: 4,
       title: 'Test Both on Your Hardest Photo Before Paying',
       borderColor: 'purple',
-      body: 'The fastest way to settle a tool comparison is to use the same source photo in both. ArtImageHub gives you a free preview before you pay, so you can see the actual restored result. Remini\'s free tier limits resolution and adds watermarks, but it lets you see the AI output. Compare the two on whichever photo matters most — usually a heavily damaged old print is the differentiator. Whichever tool produces the result you would actually keep is the one to pay for.',
+      body: 'The fastest way to settle a tool comparison is to use the same source photo in both. ArtImageHub uses a $4.99 one-time unlock for upload, AI restoration, and original-quality download. Remini\'s free tier limits resolution and adds watermarks, but it lets you see the AI output. Compare the two on whichever photo matters most — usually a heavily damaged old print is the differentiator. Whichever tool produces the result you would actually keep is the one to pay for.',
     },
   ],
 
@@ -265,7 +265,7 @@ const config: BuyerGuideConfig = {
   faqItems: [
     {
       question: 'Is ArtImageHub a good Remini alternative for old photos?',
-      answer: 'For old family photos with physical damage like scratches, fading, water stains, or torn corners, ArtImageHub is generally the stronger choice because its AI pipeline is built around whole-image restoration rather than face-only enhancement. Remini\'s models excel at sharpening faces in selfies and modern portraits, but they were not designed to repair the kind of chemical and physical decay you find in 50-year-old prints. ArtImageHub addresses scratches, color shifts, blur, and missing edges in the same pass alongside the face. It also avoids Remini\'s subscription model — you preview the restored result for free and pay $4.99 once if you want the original-quality download. For modern selfie cleanup, Remini still wins on mobile face detail; for family archive restoration, ArtImageHub is the better fit.',
+      answer: 'For old family photos with physical damage like scratches, fading, water stains, or torn corners, ArtImageHub is generally the stronger choice because its AI pipeline is built around whole-image restoration rather than face-only enhancement. Remini\'s models excel at sharpening faces in selfies and modern portraits, but they were not designed to repair the kind of chemical and physical decay you find in 50-year-old prints. ArtImageHub addresses scratches, color shifts, blur, and missing edges in the same pass alongside the face. It also avoids Remini\'s subscription model — one $4.99 payment unlocks upload, AI restoration, and original-quality download. For modern selfie cleanup, Remini still wins on mobile face detail; for family archive restoration, ArtImageHub is the better fit.',
     },
     {
       question: 'Which is cheaper over one year, ArtImageHub or Remini?',
@@ -273,7 +273,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Does ArtImageHub work on mobile phones like Remini does?',
-      answer: 'ArtImageHub runs in any modern web browser, which includes mobile browsers on iPhone and Android — you do not need to install an app to use it. Open the site in Safari or Chrome on your phone, upload a photo, and the AI preview appears on your screen the same way it does on desktop. The trade-off is that ArtImageHub does not have a native iOS or Android app, so the experience is browser-based rather than app-native. For quick selfie cleanup, Remini\'s app is more convenient because it is one tap from your home screen and integrates with the camera roll. For restoring scanned old photos, the web workflow is fine on phone and excellent on desktop, where the larger screen helps you see fine detail in the restored result before deciding to pay.',
+      answer: 'ArtImageHub runs in any modern web browser, which includes mobile browsers on iPhone and Android — you do not need to install an app to use it. Open the site in Safari or Chrome on your phone, pay $4.99 once, upload a photo, and the AI result appears on your screen the same way it does on desktop. The trade-off is that ArtImageHub does not have a native iOS or Android app, so the experience is browser-based rather than app-native. For quick selfie cleanup, Remini\'s app is more convenient because it is one tap from your home screen and integrates with the camera roll. For restoring scanned old photos, the web workflow is fine on phone and excellent on desktop, where the larger screen helps you see fine detail in the restored result.',
     },
     {
       question: 'Can Remini restore scratches, water stains, and torn corners?',
@@ -289,7 +289,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Why is ArtImageHub a one-time payment when most AI photo tools are subscriptions?',
-      answer: 'Photo restoration tends to be a project-based task rather than a daily-use tool. People restore a batch of inherited family photos, finish, and rarely come back for more. Subscription pricing is built around continuous usage and creates pressure to forget cancellations, which works well for streaming services and gym memberships but feels punitive for one-off restoration projects. ArtImageHub\'s pricing model reflects that reality: you pay $4.99 once for the original-quality unlock tied to your email, and you can return later to re-download the file or restore additional photos without entering another billing cycle. This also lets you preview the restored result for free before committing — you only pay if the AI output is actually worth keeping. Most users find this aligns better with how they actually use a photo restoration tool.',
+      answer: 'Photo restoration tends to be a project-based task rather than a daily-use tool. People restore a batch of inherited family photos, finish, and rarely come back for more. Subscription pricing is built around continuous usage and creates pressure to forget cancellations, which works well for streaming services and gym memberships but feels punitive for one-off restoration projects. ArtImageHub\'s pricing model reflects that reality: you pay $4.99 once for the original-quality unlock tied to your email, and you can return later to re-download the file or restore additional photos without entering another billing cycle. The paid access is tied to your email so you can return later without another subscription. Most users find this aligns better with how they actually use a photo restoration tool.',
     },
     {
       question: 'How do I switch from Remini to ArtImageHub without losing my work?',
@@ -298,8 +298,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Ready to Restore Your Family Photos?',
-  finalCtaSubhead: 'Preview the workflow first. If the result looks worth keeping, unlock the original-quality download for $4.99 and keep access tied to your email after checkout.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'Pay $4.99 first to unlock upload, AI restoration, original-quality download, and email-tied access after checkout.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [
