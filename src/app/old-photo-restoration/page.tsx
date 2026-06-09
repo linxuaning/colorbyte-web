@@ -235,8 +235,8 @@ export default function OldPhotoRestorationPage() {
       </div>
 
       {/* Main tool. Keep the payment/upload path visually focused. */}
-      <div className="mx-auto max-w-6xl px-5 py-6 sm:py-12 xl:flex xl:items-start xl:gap-7">
-        <div id="upload" className="mx-auto w-full max-w-3xl xl:mx-0 xl:flex-1">
+      <div className="mx-auto max-w-3xl px-5 py-6 sm:py-12">
+        <div id="upload" className="mx-auto w-full">
           <Suspense fallback={<div className="min-h-[400px]" />}>
             <RestoreClient />
           </Suspense>
