@@ -19,7 +19,7 @@ faq:
   - question: "Can either tool reconstruct missing parts of a torn photo?"
     answer: "Photoshop's content-aware fill (separate from Neural Filters) is the gold standard for filling missing image areas. Topaz Photo AI does not specialize in pixel reconstruction. For severely damaged photos with torn corners or missing portions, Photoshop's manual restoration tools win regardless of which AI restoration tool you use afterward."
   - question: "Is there a one-time-payment alternative to both?"
-    answer: "Yes. ArtImageHub charges $4.99 one-time for unlimited AI restoration in a browser, with no install required. The AI is comparable to consumer-grade restoration tools. It does NOT replicate Photoshop's manual restoration capabilities (content-aware fill, layer-based work) but for AI-only restoration on intact photos, it's a fraction of the cost of either Photoshop or Topaz."
+    answer: "Yes. ArtImageHub charges $4.99 once for browser-based AI restoration, upload, processing, and original-quality download, with no install required. The AI is comparable to consumer-grade restoration tools. It does NOT replicate Photoshop's manual restoration capabilities (content-aware fill, layer-based work) but for AI-only restoration on intact photos, it's a fraction of the cost of either Photoshop or Topaz."
   - question: "Which produces better face restoration on old portraits?"
     answer: "Both produce strong face detail recovery. Photoshop Neural Filters' Smart Portrait works on entire faces. Topaz Photo AI's Face Recovery model is purpose-built for photo restoration use cases. Output quality difference is marginal in most cases. The bigger differentiator is workflow, not raw quality."
 itemList:
@@ -31,7 +31,7 @@ itemList:
     description: "$199 one-time perpetual license (occasional sales). Combines Sharpen AI + DeNoise AI + Gigapixel AI in single app. Strong batch processing on desktop. Best for photographers using these tools regularly."
   - position: 3
     name: "ArtImageHub (alternative)"
-    description: "$4.99 one-time browser-based unlock for unlimited AI photo restoration. Combines face restoration, 4× upscale, and colorization. No install. Lower-cost alternative for users who only need AI restoration on intact photos, not full pixel-art editing."
+    description: "$4.99 one-time browser-based unlock for AI photo restoration, upload, processing, and original-quality download. No install. Lower-cost alternative for users who only need AI restoration on intact photos, not full pixel-art editing."
 aggregateRating:
   ratingValue: 8.7
   ratingCount: 6
@@ -58,7 +58,7 @@ If your situation is **"I have a batch of family photos to restore once, I don't
 
 ---
 
-> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Start AI restoration →](/old-photo-restoration) — $4.99 once for upload, AI processing, and original-quality download. No subscription.
 
 ---
 
@@ -141,7 +141,7 @@ If your situation is closer to "I have 20 family photos to restore for an annive
 
 This is where browser-based one-time-payment AI restoration tools fit:
 
-- [ArtImageHub](/old-photo-restoration) charges $4.99 one-time for unlimited browser-based AI restoration. Combines face recovery + 4× upscale + colorization in one workflow.
+- [ArtImageHub](/old-photo-restoration) charges $4.99 once for browser-based AI restoration. The unlock includes upload, processing, and original-quality download in one workflow.
 - The AI quality is consumer-grade — comparable to other GFPGAN-based services. Not professional-tier like Topaz Photo AI.
 - It does NOT replace Photoshop for manual reconstruction (torn corners, missing pixels). For those, Photoshop or professional restorers remain the answer.
 - For pure AI restoration on intact photos, the price-to-value ratio for a one-time project is significantly better than either Photoshop or Topaz.
@@ -201,7 +201,7 @@ For more on AI photo restoration tools and how to evaluate them, see our [best A
 
 | Method | Time per photo | Cost | Skill required | Result quality |
 |--------|----------------|------|----------------|----------------|
-| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** | None | Excellent (GFPGAN + Real-ESRGAN) |
 | Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
 | Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
 | Local print shop | 2–5 days | $20–80 per photo | None | Good |
@@ -214,4 +214,4 @@ For era-specific damage profiles, see [Old Photo Restoration by Decade complete 
 
 For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
 
-Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
+Start [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for upload, AI processing, and original-quality download.
