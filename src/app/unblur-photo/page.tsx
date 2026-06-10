@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "Free AI Unblur Photo — Fix Blurry Images in 30 Seconds (No Signup)",
+  title: "AI Unblur Photo — Fix Blurry Images in 30 Seconds",
   description:
-    "Upload a blurry photo, AI sharpens it in 30 seconds — try free, no signup needed. Fixes camera shake, out-of-focus, and motion blur. HD download $4.99 one-time.",
+    "Upload a blurry photo, AI sharpens it in 30 seconds. Fix camera shake, out-of-focus, and motion blur with a $4.99 one-time HD download unlock.",
   alternates: { canonical: "/unblur-photo" },
   keywords: [
     "unblur photo",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "AI unblur",
   ],
   openGraph: {
-    title: "Unblur Photo Free Online — Fix Blurry Photos with AI",
+    title: "Unblur Photo Online — Fix Blurry Photos with AI",
     description:
-      "Fix blurry photos instantly with AI. Preview the sharpened result first, then unlock the original-quality download for $4.99.",
+      "Fix blurry photos instantly with AI. $4.99 one-time unlock, original-quality download included.",
     type: "website",
     images: [
       {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Unblur Photo Free Online — AI Fix Blurry Photos",
+    title: "Unblur Photo Online — AI Fix Blurry Photos",
     description:
-      "Fix blurry photos with AI. Start with a free preview, then unlock the original-quality download for $4.99.",
+      "Fix blurry photos with AI. $4.99 one-time unlock with original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Unblur Photos Online Free",
+  name: "How to Unblur Photos Online",
   description:
-    "Fix blurry photos and sharpen images using AI — free, no signup required, results in 30 seconds.",
+    "Fix blurry photos and sharpen images using AI — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Unblur Tool" }],
   step: [
@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your clear photo",
-      text: "Preview the before/after comparison first. When you want the original-quality unblurred photo, unlock the download for $4.99.",
+      text: "After payment, download your original-quality unblurred photo when processing is complete.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo unblur tool free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. ArtImageHub lets you preview the unblurred result for free with no signup required. When you want the original-quality photo, unlock the download for $4.99.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for unblurring and the original-quality download.",
       },
     },
     {
@@ -133,16 +133,16 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/unblur-photo",
   description:
-    "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. Start with a free preview, then unlock the original-quality download for $4.99.",
+    "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. $4.99 one-time unlock with original-quality download.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
+    description: "$4.99 one-time unblur unlock with original-quality download",
   },
   featureList: [
-    "AI Photo Unblur with Free Preview",
+    "AI Photo Unblur",
     "Fix Motion Blur",
     "Fix Soft Focus",
     "Face-Aware Sharpening",
@@ -187,15 +187,15 @@ export default function UnblurPhotoPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview — No Signup Required
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Unblur Photo Free Online
+            Unblur Photo Online
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             Fix blurry photos instantly with AI. Upload any blurry picture,
-            compare the sharpened preview, and unlock the original-quality file
-            for $4.99 only if it is worth keeping.
+            sharpen it with face-aware enhancement, and download the
+            original-quality file after a $4.99 one-time unlock.
           </p>
         </div>
       </div>
@@ -432,7 +432,7 @@ export default function UnblurPhotoPage() {
                 },
                 {
                   q: "Is the photo unblur tool free?",
-                  a: "Yes. ArtImageHub lets you preview the unblurred result for free with no signup required. When you want the original-quality photo, unlock the download for $4.99.",
+                  a: "No. ArtImageHub uses a pay-first model: $4.99 one time for unblurring and the original-quality download.",
                 },
                 {
                   q: "What types of blur can AI fix?",

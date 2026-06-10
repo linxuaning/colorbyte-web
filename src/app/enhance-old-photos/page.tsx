@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Enhance Old Photos Free — AI Sharpens Faces & Upscales 4x (2026)",
+  title: "Enhance Old Photos — AI Sharpens Faces & Upscales 4x (2026)",
   description:
-    "AI enhances old photos in 30 seconds: sharpens blurry faces, upscales to 4x resolution, fixes fading. Preview free. HD download $4.99 one-time. No subscription.",
+    "AI enhances old photos in 30 seconds: sharpens blurry faces, upscales to 4x resolution, fixes fading. $4.99 one-time HD download unlock. No subscription.",
   alternates: { canonical: "/enhance-old-photos" },
   keywords: [
     "enhance old photos",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "old photo quality improvement",
   ],
   openGraph: {
-    title: "Enhance Old Photos Free — AI Old Photo Enhancer",
+    title: "Enhance Old Photos — AI Old Photo Enhancer",
     description:
-      "Enhance old photos with AI. Preview the improved result first, then unlock the original-quality download for $4.99.",
+      "Enhance old photos with AI. $4.99 one-time unlock, original-quality download included.",
     type: "website",
     images: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enhance Old Photos Free Online",
+    title: "Enhance Old Photos Online",
     description:
-      "AI old photo enhancer. Start with a free preview, then unlock the original-quality download for $4.99.",
+      "AI old photo enhancer with a $4.99 one-time unlock and original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -46,7 +46,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Enhance Old Photos with AI",
   description:
-    "Improve quality of old photographs using AI enhancement — free, no signup required, results in 30 seconds.",
+    "Improve quality of old photographs using AI enhancement — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Old Photo Enhancer" }],
   step: [
@@ -73,7 +73,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your enhanced photo",
-      text: "Preview the before/after comparison first. When you want the original-quality enhanced photo, unlock the download for $4.99.",
+      text: "After payment, download your original-quality enhanced photo when processing is complete.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Is the old photo enhancer free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. ArtImageHub lets you preview the enhanced result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for old photo enhancement and the original-quality download.",
       },
     },
     {
@@ -134,13 +134,13 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/enhance-old-photos",
   description:
-    "AI old photo enhancer that improves quality of vintage photographs. Sharpen faded pictures, enhance faces, and preview the result before unlocking the original-quality download for $4.99.",
+    "AI old photo enhancer that improves quality of vintage photographs. Sharpen faded pictures, enhance faces, and download the original-quality result after a $4.99 one-time unlock.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
+    description: "$4.99 one-time old photo enhancement unlock with original-quality download",
   },
   featureList: [
     "AI Old Photo Enhancement",
@@ -148,7 +148,7 @@ const softwareSchema = {
     "4× Resolution Upscaling",
     "Fading Correction",
     "Automatic Quality Improvement",
-    "Free Preview Before Unlock",
+    "One-Time Unlock",
   ],
 };
 
@@ -188,15 +188,15 @@ export default function EnhanceOldPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview — No Signup Required
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Enhance Old Photos Free with AI
+            Enhance Old Photos with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             Improve quality of vintage photographs instantly. AI sharpens faded
-            details, enhances faces, and lets you compare the preview before
-            unlocking the original-quality file for $4.99.
+            details, enhances faces, and downloads the original-quality file
+            after a $4.99 one-time unlock.
           </p>
         </div>
       </div>
@@ -402,7 +402,7 @@ export default function EnhanceOldPhotosPage() {
                 },
                 {
                   q: "Is the old photo enhancer free?",
-                  a: "Yes. ArtImageHub lets you preview the enhanced result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
+                  a: "No. ArtImageHub uses a pay-first model: $4.99 one time for old photo enhancement and the original-quality download.",
                 },
                 {
                   q: "Can AI enhance very old photos from the 1800s?",
