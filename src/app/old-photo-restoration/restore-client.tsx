@@ -44,6 +44,17 @@ const MANUAL_ACCESS_CHECK_MAX_ATTEMPTS = 2;
 const MANUAL_ACCESS_CHECK_RETRY_DELAY_MS = 1200;
 const ACCESS_CHECK_TIMEOUT_REASON = "access_check_timeout";
 
+function buildResultPreviewUrl(taskId: string): string {
+  const email =
+    typeof window !== "undefined"
+      ? localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || ""
+      : "";
+  const params = new URLSearchParams();
+  if (email) params.set("email", email);
+  const query = params.toString();
+  return `${API_BASE}/api/result-preview/${taskId}${query ? `?${query}` : ""}`;
+}
+
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
     return AbortSignal.timeout(timeoutMs);
@@ -370,7 +381,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     }
 
     setTaskId(resumeTaskId);
-    setResultPreviewUrl(`${API_BASE}/api/result-preview/${resumeTaskId}`);
+    setResultPreviewUrl(buildResultPreviewUrl(resumeTaskId));
     setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
     setProgress(100);
     setProgressText("");
@@ -536,7 +547,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               processingTimeMs: Date.now() - startedAt,
               source: funnelSource,
             });
-            setResultPreviewUrl(`${API_BASE}/api/result-preview/${taskId}`);
+            setResultPreviewUrl(buildResultPreviewUrl(taskId));
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
             break;
