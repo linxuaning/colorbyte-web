@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import DenoiseClient from "./denoise-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Denoiser Free: Remove Noise & Grain from Photos Online",
+  title: "AI Photo Denoiser: Remove Noise & Grain from Photos Online",
   description:
-    "Remove noise, grain, and digital artifacts from photos online with AI. NAFNet-powered denoising preserves fine detail while eliminating sensor noise, JPEG artifacts, and low-light grain. Free preview.",
+    "Remove noise, grain, and digital artifacts from photos online with AI. NAFNet-powered denoising preserves fine detail while eliminating sensor noise, JPEG artifacts, and low-light grain.",
   alternates: {
     canonical: "/photo-denoiser",
   },
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     "reduce image noise",
   ],
   openGraph: {
-    title: "AI Photo Denoiser — Remove Noise & Grain from Photos Free",
+    title: "AI Photo Denoiser — Remove Noise & Grain from Photos",
     description:
-      "Remove sensor noise, grain, and JPEG artifacts from photos with AI. NAFNet SIDD model. Free preview, one-time $4.99 for HD download.",
+      "Remove sensor noise, grain, and JPEG artifacts from photos with AI. NAFNet SIDD model, one-time $4.99 for HD download.",
     type: "website",
     images: [
       {
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Denoiser — Remove Grain & Noise Free Online",
+    title: "AI Photo Denoiser — Remove Grain & Noise Online",
     description:
-      "Remove noise, grain, and artifacts from photos with AI. NAFNet-powered. Free preview.",
+      "Remove noise, grain, and artifacts from photos with AI. NAFNet-powered.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -48,7 +48,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Remove Noise from a Photo with AI",
   description:
-    "Remove sensor noise, grain, and digital artifacts from any photo using AI denoising — free preview, results in 30–60 seconds.",
+    "Remove sensor noise, grain, and digital artifacts from any photo using AI denoising — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Denoiser" }],
   step: [
@@ -136,7 +136,7 @@ const faqSchema = {
       name: "How long does AI photo denoising take per image?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000x3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Free preview takes the same time as paid processing.",
+        text: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000x3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Processing time is the same for paid users.",
       },
     },
     {
@@ -158,7 +158,7 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/photo-denoiser",
   description:
-    "AI-powered photo denoising tool that removes grain, sensor noise, and digital artifacts from photos using NAFNet. Free preview, one-time $4.99 for HD download.",
+    "AI-powered photo denoising tool that removes grain, sensor noise, and digital artifacts from photos using NAFNet. One-time $4.99 for HD download.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -240,7 +240,7 @@ export default function PhotoDenoiserPage() {
             ArtImageHub uses <strong>NAFNet</strong> (Nonlinear Activation Free Network, Chen et al., ECCV 2022) trained on the <strong>SIDD dataset</strong> (Abdelhamed et al., CVPR 2018) — real-world smartphone noise from five different devices across 10 scenes. NAFNet achieved state-of-the-art PSNR of 39.96 dB on the SIDD benchmark at publication, outperforming earlier architectures like DnCNN, FFDNet, and CBDNet.
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
-            <strong>When to use it:</strong> High-ISO low-light shots, scanned film photos with grain, JPEG compressed images with blocking artifacts, and smartphone night-mode photos where processing introduced color noise. Processing takes 30–60 seconds per image. Free preview; HD download is a one-time $4.99 payment.
+            <strong>When to use it:</strong> High-ISO low-light shots, scanned film photos with grain, JPEG compressed images with blocking artifacts, and smartphone night-mode photos where processing introduced color noise. Processing takes 30–60 seconds per image. HD download is included in the one-time $4.99 payment.
           </p>
         </div>
       </section>
@@ -335,7 +335,7 @@ export default function PhotoDenoiserPage() {
               },
               {
                 q: "How long does AI photo denoising take per image?",
-                a: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000×3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Free preview takes the same time as paid processing.",
+                a: "Most photos finish denoising in 30 to 60 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 12-megapixel smartphone photo (4000×3000 pixels) takes about 30 seconds, a 24-megapixel DSLR photo takes 45 to 60 seconds, and a 50-megapixel medium-format scan can take up to 90 seconds. The NAFNet model runs the full image through the network in a single pass without tiling for images under about 25 megapixels, which avoids edge artifacts at tile boundaries. For very large images above 25 megapixels, the system uses overlapping tile processing that adds a few seconds of overhead. If you are processing a batch of denoising work, the per-image cost stays consistent — there is no warmup penalty after the first image, since the model stays loaded between requests for paid users. Processing time is the same for paid users.",
               },
               {
                 q: "What is the difference between ArtImageHub's NAFNet denoiser and Topaz DeNoise AI or Adobe AI Denoise?",
