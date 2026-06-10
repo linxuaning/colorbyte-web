@@ -4,9 +4,9 @@ import Link from "next/link";
 import EnhanceClient from "./enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Enhancer Free: Enhance Photo Quality Online in Seconds",
+  title: "AI Photo Enhancer: Enhance Photo Quality Online in Seconds",
   description:
-    "Best free AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces. No signup, instant results in 30 seconds.",
+    "AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, and enhance faces with a $4.99 one-time unlock.",
   alternates: {
     canonical: "/photo-enhancer",
     languages: {
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     "photo upscaler",
   ],
   openGraph: {
-    title: "AI Photo Enhancer — Enhance Photo Quality Free Online",
+    title: "AI Photo Enhancer — Enhance Photo Quality Online",
     description:
-      "Best free AI photo enhancer. Improve photo quality, fix blur, 4x upscale. No signup, instant results.",
+      "AI photo enhancer. Improve photo quality, fix blur, and 4x upscale with a $4.99 one-time unlock.",
     type: "website",
     images: [
       {
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Enhancer Free — Improve Photo Quality Online",
+    title: "AI Photo Enhancer — Improve Photo Quality Online",
     description:
-      "Best AI photo enhancer. Improve quality, fix blur, 4x upscale. Free online, instant results.",
+      "AI photo enhancer. Improve quality, fix blur, and 4x upscale with original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -58,7 +58,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Enhance Photo Quality with AI",
-  description: "Improve photo quality and fix blurry photos using AI photo enhancement — free, no signup required, results in 30 seconds.",
+  description: "Improve photo quality and fix blurry photos using AI photo enhancement — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancer" }],
   step: [
@@ -85,7 +85,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your enhanced photo",
-      text: "Preview the before/after result and download your enhanced photo in high resolution. Free users get a watermarked preview; HD original download is $4.99 one-time.",
+      text: "After payment, enhance the photo and download the original-quality result. The HD original download is included in the $4.99 one-time unlock.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,14 +95,14 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo enhancement free on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "Yes, ArtImageHub uses a preview-first model where photo enhancement and on-screen preview are free with no account or credit card required. Upload your photo, the AI pipeline returns an enhanced preview in 15 to 30 seconds, and you decide whether to pay anything based on the actual result. If you want the HD original-quality download without a watermark, that is a one-time $4.99 payment that unlocks the file on your email address. The free preview shows you the exact enhanced output before any commitment — meaningfully different from tools that watermark previews or downsample free results to push you toward a subscription. There is no recurring subscription and no monthly fee. Your $4.99 unlock persists on your email so you can return later to enhance additional photos or re-download earlier results without re-paying." } },
+    { "@type": "Question", name: "Is AI photo enhancement free on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI photo enhancement and the original-quality download. There is no recurring subscription and no monthly fee." } },
     { "@type": "Question", name: "What does AI photo enhancement actually do step by step?", acceptedAnswer: { "@type": "Answer", text: "AI photo enhancement on ArtImageHub applies four operations automatically in a single coordinated pass. First, face-aware reconstruction using GFPGAN (Wang et al., Tencent ARC Lab 2021) detects faces in the image and reconstructs facial detail, sharpening eyes, recovering skin texture, and preserving identity. Second, super-resolution upscaling using Real-ESRGAN (Wang et al., 2021) increases image dimensions up to 4 times original size, recovering crisp detail from low-resolution sources. Third, noise reduction removes sensor grain, ISO noise, and JPEG compression artifacts. Fourth, color correction balances exposure, contrast, and vibrancy for a more polished output. All four operations run in 15 to 30 seconds — you do not need to select steps or tune parameters. The combined pipeline is what makes the enhancer different from simple AI upscalers that only handle resolution without addressing other quality issues." } },
     { "@type": "Question", name: "What AI models and technology power the ArtImageHub photo enhancer?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub runs two peer-reviewed open-source AI models in combination. Real-ESRGAN (Wang et al., 2021) handles 4 times super-resolution upscaling and general detail recovery, trained on diverse real-world image degradation patterns. GFPGAN (Wang et al., Tencent ARC Lab 2021) handles face-specific reconstruction, trained on millions of face images including damaged historical photos. Both models are open-source and published academic work cited widely in image-restoration research, so the AI quality is verifiable rather than proprietary black-box. For face-forward photos (portraits, family photos, selfies), both models run together in the same processing pass; the system auto-detects whether faces are present. The same model architectures are used across other commercial photo enhancement pipelines — the underlying AI quality between most consumer tools is more similar than marketing implies. ArtImageHub's differentiator is the one-time pricing model and email-tied access, not proprietary AI." } },
     { "@type": "Question", name: "How much does super-resolution upscaling actually improve image size?", acceptedAnswer: { "@type": "Answer", text: "Real-ESRGAN upscales up to 4 times original dimensions, which means a 500 by 500 pixel photo becomes 2000 by 2000 pixels and a 1080p photo (1920 by 1080) becomes 3840 by 2160 (4K). The model uses learned detail patterns rather than pixel interpolation, so the upscaled output looks sharp rather than blurry as traditional interpolation methods produce. Practical print-size implications: a 300 DPI scan at 4 by 4 inches (1200 by 1200 pixels) can become print-quality at 8 by 8 inches after upscaling. A standard 4 by 6 print scanned at 600 DPI (2400 by 3600 pixels) can become print-quality at 16 by 24 inches. Note that upscaling works best when the source has some detail to recover — extreme low-resolution sources (under 200 pixels per side) produce less impressive results because the AI has minimal information to extrapolate from." } },
     { "@type": "Question", name: "Can AI photo enhancement fix blurry or low-quality photos?", acceptedAnswer: { "@type": "Answer", text: "AI enhancement significantly improves slightly blurry photos in most cases, but the success depends on the blur type and severity. Motion blur (slight camera shake during capture, subjects moving) is partially correctable — Real-ESRGAN and the noise reduction pass recover meaningful sharpness for mild cases, though extreme motion blur cannot be fully reversed. Soft focus (incorrect lens focus) responds well to enhancement, particularly on face areas where GFPGAN can reconstruct facial detail from blurred faces with high accuracy. Out-of-focus background blur (intentional bokeh) is preserved as artistic intent. Extreme blur cases — heavily out-of-focus shots where the subject is barely identifiable, or severe motion blur where the entire image is smeared — cannot be fully recovered because the AI cannot invent detail that no longer exists in the source. As a rule of thumb: if you can identify the subject and roughly see facial features in the original, AI enhancement will produce a meaningfully improved result." } },
     { "@type": "Question", name: "What image formats and file sizes does the photo enhancer support?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload. The enhancer works on any photo: old family photos, modern smartphone selfies, scanned portraits, product images, landscapes, screenshots, and downloaded images. For best results, upload the highest-quality source available before any additional compression or editing. Re-saving an enhanced result as JPEG at low quality can reintroduce compression artifacts the enhancer just removed. If you plan to share or print the result, save it as PNG (lossless) or as JPEG at quality 90 or higher. HEIC files from iPhone are not currently supported — convert to JPG or PNG first using your phone's share menu or any image converter. Files larger than 20 MB should be downsized in your image software before upload; processing extreme oversampling above 50 megapixels does not improve enhancement quality and extends processing time." } },
-    { "@type": "Question", name: "How long does AI photo enhancement actually take per image?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish enhancement in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions and content complexity: a typical 12-megapixel smartphone photo (4000 by 3000 pixels) takes 15 to 20 seconds, a 24-megapixel DSLR photo with multiple faces detected takes 30 to 45 seconds, and a high-resolution 50-megapixel scan can take up to 60 seconds. Face-forward photos take slightly longer because GFPGAN runs an additional face-detection and reconstruction pass for each detected face. The combined Real-ESRGAN + GFPGAN pipeline runs in a single forward pass rather than sequentially, which keeps total time below most users' patience threshold. Free preview takes the same time as paid processing — the $4.99 unlock only buys the HD original-quality download without watermark, not faster processing." } },
-    { "@type": "Question", name: "Is photo enhancement different from photo restoration on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "Yes, enhancement and restoration are distinct tools targeting different photo problems, each priced at $4.99 one-time independently. Photo enhancement targets modern or relatively clean photos that need quality improvement — sharpening blur, increasing resolution via 4x super-resolution, reducing noise, and correcting color. It is the right tool for low-quality smartphone shots, low-resolution scans of recent photos, or any photo that is fundamentally okay but needs a quality boost. Photo restoration targets old damaged photos that need repair — scratches, fading, color shift, water stains, torn corners, severe damage. It is the right tool for 50-plus year old prints, water-damaged photos, or any photo with visible physical damage. Most users only need one or the other; the preview-first model lets you test both on the same photo and decide which produces the result you actually want. Each tool unlock is a separate $4.99 payment and persists indefinitely on your email." } },
+    { "@type": "Question", name: "How long does AI photo enhancement actually take per image?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish enhancement in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions and content complexity: a typical 12-megapixel smartphone photo (4000 by 3000 pixels) takes 15 to 20 seconds, a 24-megapixel DSLR photo with multiple faces detected takes 30 to 45 seconds, and a high-resolution 50-megapixel scan can take up to 60 seconds. Face-forward photos take slightly longer because GFPGAN runs an additional face-detection and reconstruction pass for each detected face. The combined Real-ESRGAN + GFPGAN pipeline runs in a single forward pass rather than sequentially, which keeps total time below most users' patience threshold. Processing speed is the same for paid users; the $4.99 unlock buys AI enhancement and the HD original-quality download, not a faster queue." } },
+    { "@type": "Question", name: "Is photo enhancement different from photo restoration on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "Yes, enhancement and restoration are distinct tools targeting different photo problems, each priced at $4.99 one-time independently. Photo enhancement targets modern or relatively clean photos that need quality improvement — sharpening blur, increasing resolution via 4x super-resolution, reducing noise, and correcting color. It is the right tool for low-quality smartphone shots, low-resolution scans of recent photos, or any photo that is fundamentally okay but needs a quality boost. Photo restoration targets old damaged photos that need repair — scratches, fading, color shift, water stains, torn corners, severe damage. It is the right tool for 50-plus year old prints, water-damaged photos, or any photo with visible physical damage. Most users only need one or the other. Each tool unlock is a separate $4.99 payment and persists indefinitely on your email." } },
   ],
 };
 
@@ -113,7 +113,7 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://artimagehub.com/photo-enhancer",
-  description: "AI-powered photo enhancement tool that improves photo quality, fixes blurry photos, and enhances resolution in seconds. Free online tool for enhancing selfies, old photos, product images, and any picture.",
+  description: "AI-powered photo enhancement tool that improves photo quality, fixes blurry photos, and enhances resolution in seconds. $4.99 one-time unlock for selfies, old photos, product images, and any picture.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -165,13 +165,13 @@ export default function PhotoEnhancerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Free AI Enhancement
+            $4.99 AI Enhancement
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Enhance Photo Quality with AI
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Upload any photo and let AI improve quality instantly. Fix blurry images, enhance faces, upscale resolution — free.
+            Upload any photo after unlocking and let AI improve quality instantly. Fix blurry images, enhance faces, and upscale resolution.
           </p>
         </div>
       </div>
@@ -190,7 +190,7 @@ export default function PhotoEnhancerPage() {
             AI photo enhancement applies machine learning models to improve the technical quality of a photograph — automatically, without manual editing. It covers four operations: (1) face-aware reconstruction using <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021), which sharpens facial detail while preserving identity; (2) super-resolution upscaling up to 4× using <strong>Real-ESRGAN</strong> (Wang et al., 2021); (3) automatic noise reduction; and (4) contrast and color correction.
           </p>
           <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
-            ArtImageHub&rsquo;s Photo Enhancer runs this full pipeline in a single upload pass — no manual step selection required. Processing takes 15–30 seconds. Free to preview; HD download without watermark is a one-time $4.99 payment.
+            ArtImageHub&rsquo;s Photo Enhancer runs this full pipeline in a single upload pass — no manual step selection required. Processing takes 15–30 seconds. AI processing and HD download are included in the one-time $4.99 unlock.
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
             <strong>Resolution output:</strong> Real-ESRGAN upscales up to 4× original dimensions. A 500×500px photo becomes 2000×2000px using learned detail patterns rather than pixel interpolation — producing sharp output rather than blurry enlargement. A 300 DPI scan at 4×4 inches can become print-ready at 8×8 inches after upscaling.
@@ -211,7 +211,7 @@ export default function PhotoEnhancerPage() {
             {[
               {
                 q: "Is AI photo enhancement free on ArtImageHub?",
-                a: "Yes, ArtImageHub uses a preview-first model where photo enhancement and on-screen preview are free with no account or credit card required. Upload your photo, the AI pipeline returns an enhanced preview in 15 to 30 seconds, and you decide whether to pay anything based on the actual result. If you want the HD original-quality download without a watermark, that is a one-time $4.99 payment that unlocks the file on your email address. The free preview shows you the exact enhanced output before any commitment — meaningfully different from tools that watermark previews or downsample free results to push you toward a subscription. There is no recurring subscription and no monthly fee. Your $4.99 unlock persists on your email so you can return later to enhance additional photos or re-download earlier results without re-paying.",
+                a: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI photo enhancement and the original-quality download. There is no recurring subscription and no monthly fee.",
               },
               {
                 q: "What does AI photo enhancement actually do step by step?",
@@ -235,11 +235,11 @@ export default function PhotoEnhancerPage() {
               },
               {
                 q: "How long does AI photo enhancement actually take per image?",
-                a: "Most photos finish enhancement in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions and content complexity: a typical 12-megapixel smartphone photo (4000 by 3000 pixels) takes 15 to 20 seconds, a 24-megapixel DSLR photo with multiple faces detected takes 30 to 45 seconds, and a high-resolution 50-megapixel scan can take up to 60 seconds. Face-forward photos take slightly longer because GFPGAN runs an additional face-detection and reconstruction pass for each detected face. The combined Real-ESRGAN + GFPGAN pipeline runs in a single forward pass rather than sequentially, which keeps total time below most users' patience threshold. Free preview takes the same time as paid processing — the $4.99 unlock only buys the HD original-quality download without watermark, not faster processing.",
+                a: "Most photos finish enhancement in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions and content complexity: a typical 12-megapixel smartphone photo (4000 by 3000 pixels) takes 15 to 20 seconds, a 24-megapixel DSLR photo with multiple faces detected takes 30 to 45 seconds, and a high-resolution 50-megapixel scan can take up to 60 seconds. Face-forward photos take slightly longer because GFPGAN runs an additional face-detection and reconstruction pass for each detected face. The combined Real-ESRGAN + GFPGAN pipeline runs in a single forward pass rather than sequentially, which keeps total time below most users' patience threshold. Processing speed is the same for paid users; the $4.99 unlock buys AI enhancement and the HD original-quality download, not a faster queue.",
               },
               {
                 q: "Is photo enhancement different from photo restoration on ArtImageHub?",
-                a: "Yes, enhancement and restoration are distinct tools targeting different photo problems, each priced at $4.99 one-time independently. Photo enhancement targets modern or relatively clean photos that need quality improvement — sharpening blur, increasing resolution via 4x super-resolution, reducing noise, and correcting color. It is the right tool for low-quality smartphone shots, low-resolution scans of recent photos, or any photo that is fundamentally okay but needs a quality boost. Photo restoration targets old damaged photos that need repair — scratches, fading, color shift, water stains, torn corners, severe damage. It is the right tool for 50-plus year old prints, water-damaged photos, or any photo with visible physical damage. Most users only need one or the other; the preview-first model lets you test both on the same photo and decide which produces the result you actually want. Each tool unlock is a separate $4.99 payment and persists indefinitely on your email.",
+                a: "Yes, enhancement and restoration are distinct tools targeting different photo problems, each priced at $4.99 one-time independently. Photo enhancement targets modern or relatively clean photos that need quality improvement — sharpening blur, increasing resolution via 4x super-resolution, reducing noise, and correcting color. It is the right tool for low-quality smartphone shots, low-resolution scans of recent photos, or any photo that is fundamentally okay but needs a quality boost. Photo restoration targets old damaged photos that need repair — scratches, fading, color shift, water stains, torn corners, severe damage. It is the right tool for 50-plus year old prints, water-damaged photos, or any photo with visible physical damage. Most users only need one or the other. Each tool unlock is a separate $4.99 payment and persists indefinitely on your email.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

@@ -4,9 +4,9 @@ import Link from "next/link";
 import ColorizeClient from "./colorize-client";
 
 export const metadata: Metadata = {
-  title: "Photo Colorizer: Colorize Black and White Photos with AI Free",
+  title: "Photo Colorizer: Colorize Black and White Photos with AI",
   description:
-    "Best AI photo colorizer to colorize black and white photos online free. Turn old family photos, historical images into vivid color in 30 seconds. No signup, instant results.",
+    "AI photo colorizer for black and white photos. Turn old family photos and historical images into vivid color in 30 seconds with a $4.99 one-time unlock.",
   alternates: {
     canonical: "/photo-colorizer",
     languages: {
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "old photo colorizer",
   ],
   openGraph: {
-    title: "Photo Colorizer — Colorize Black & White Photos Free Online",
+    title: "Photo Colorizer — Colorize Black & White Photos Online",
     description:
-      "Best AI photo colorizer. Turn black and white photos into vivid color instantly. Free, no signup required.",
+      "AI photo colorizer. Turn black and white photos into vivid color instantly with a $4.99 one-time unlock.",
     type: "website",
     images: [
       {
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Photo Colorizer — Colorize Black & White Photos Free",
+    title: "Photo Colorizer — Colorize Black & White Photos",
     description:
-      "Best AI photo colorizer. Turn black and white photos into color instantly. Free online tool.",
+      "AI photo colorizer. Turn black and white photos into color instantly with original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -57,7 +57,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Colorize Black and White Photos with AI",
-  description: "Add realistic colors to black and white photos using AI colorization — free, no signup required, results in 30 seconds.",
+  description: "Add realistic colors to black and white photos using AI colorization — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Colorizer" }],
   step: [
@@ -84,7 +84,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your colorized photo",
-      text: "Preview the before/after result and download your colorized photo in high resolution. Free users get a watermarked preview; HD original download is $4.99 one-time.",
+      text: "After payment, colorize the photo and download the original-quality result. The HD original download is included in the $4.99 one-time unlock.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -94,12 +94,12 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is AI photo colorization free on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "Yes, ArtImageHub uses a preview-first model where colorization and on-screen preview are free with no account or credit card required. Upload your black-and-white or grayscale photo, the AI returns a colorized preview in 15 to 30 seconds, and you decide whether to pay anything based on the actual result. If you want the HD original-quality download without a watermark, that is a one-time $4.99 payment that unlocks the file on your email address. The free preview shows you the exact colorized output before any commitment, which is meaningfully different from tools that watermark previews or downsample free results to push you toward a subscription. There is no recurring subscription and no monthly fee. Your $4.99 unlock persists on your email so you can return later to colorize additional photos or re-download earlier results without re-paying." } },
+    { "@type": "Question", name: "Is AI photo colorization free on ArtImageHub?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI colorization and the original-quality download. There is no recurring subscription and no monthly fee." } },
     { "@type": "Question", name: "How accurate is AI photo colorization on old black-and-white photos?", acceptedAnswer: { "@type": "Answer", text: "AI photo colorization produces plausible, natural-looking results in roughly 70 to 85 percent of cases for common subjects such as skin tones, sky, foliage, fabric, and familiar architectural materials. The model predicts color values based on statistical patterns learned from millions of paired color and grayscale training images. Critically, AI colorization cannot recover the true original colors of a scene because that information was permanently lost when the photo was taken in black and white. For subjects where the AI lacks strong context (specific brand colors, period military uniforms, unusual indoor lighting), the predicted color may be a reasonable guess rather than the actual historical color. Always treat colorized results as artistic interpretations suitable for display, framing, or family-archive presentation rather than as historical color records." } },
     { "@type": "Question", name: "What AI model and technology power ArtImageHub photo colorization?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub runs DDColor, a transformer-based colorization architecture (Kang et al., ICCV 2023) specifically trained on historical photograph color patterns from millions of paired training images. DDColor analyzes image content at multiple semantic scales — recognizing subject context, textures, objects, lighting conditions — and predicts realistic color values for each region in a single forward pass. The model includes face-aware processing that ensures skin tones remain natural across different lighting and skin types, drawn from face-recognition modules trained on diverse demographics. Compared to earlier CNN-based colorization models (like the 2017 Zhang et al. paper that dominated early AI colorization), DDColor's transformer architecture produces more contextually appropriate colors with fewer hue-bleed artifacts. The model runs entirely server-side, so your photos process in 15 to 30 seconds without requiring any local GPU or installation." } },
     { "@type": "Question", name: "What image formats and file sizes does the photo colorizer support?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per upload. Both grayscale (single-channel) and traditional black-and-white (three-channel R=G=B) photos work — the AI auto-detects and processes both. For best results, use high-resolution scans at 600 DPI or higher when scanning physical prints; higher source resolution gives the AI more pixel detail to work with, producing more nuanced color predictions especially for face areas and fine textures. Smaller phone-captured photos of old prints work but produce less detailed results than proper flatbed scans. HEIC files from iPhone are not currently supported — convert to JPG or PNG first using your phone's share menu or any image converter. Files larger than 20 MB should be downsized in your scanner software before upload because processing extreme oversampling does not improve color quality." } },
-    { "@type": "Question", name: "How long does AI photo colorization actually take per image?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish colorization in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 4 by 6 inch print scanned at 600 DPI (about 6 megapixels) finishes in 15 to 20 seconds, a high-resolution 1200 DPI scan of the same print (about 25 megapixels) takes 30 to 45 seconds, and very large 50-plus megapixel scans can take up to 60 seconds. The DDColor model runs the full image through the transformer in a single forward pass without tiling for images under 25 megapixels, which avoids edge artifacts at tile boundaries. Free preview takes the same time as paid processing — the only thing the $4.99 unlock buys is the HD original-quality download without watermark, not faster processing." } },
-    { "@type": "Question", name: "Can ArtImageHub colorize old family photos with damage or fading?", acceptedAnswer: { "@type": "Answer", text: "Yes, ArtImageHub is specifically designed to colorize old family photos including vintage portraits, mid-century snapshots, wartime hospital records, and any black-and-white photograph from the 1900s through the 1990s. The AI handles soft focus, film grain, scratches, and minor damage that are common on old prints without requiring you to pre-process or clean up the photo first. For photos that also have significant restoration needs beyond colorization — deep scratches, water stains, severe fading, or torn corners — the recommended workflow is to use the Old Photo Restoration tool first to repair the damage, then colorize the cleaned output. Each tool is a separate $4.99 one-time unlock on your email. Most users find that one or the other handles their needs rather than both; preview the colorization result first to see whether prior restoration would meaningfully improve the colorized output." } },
+    { "@type": "Question", name: "How long does AI photo colorization actually take per image?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish colorization in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 4 by 6 inch print scanned at 600 DPI (about 6 megapixels) finishes in 15 to 20 seconds, a high-resolution 1200 DPI scan of the same print (about 25 megapixels) takes 30 to 45 seconds, and very large 50-plus megapixel scans can take up to 60 seconds. The DDColor model runs the full image through the transformer in a single forward pass without tiling for images under 25 megapixels, which avoids edge artifacts at tile boundaries. Processing speed is the same for paid users; the $4.99 unlock buys AI processing and the HD original-quality download, not a faster queue." } },
+    { "@type": "Question", name: "Can ArtImageHub colorize old family photos with damage or fading?", acceptedAnswer: { "@type": "Answer", text: "Yes, ArtImageHub is specifically designed to colorize old family photos including vintage portraits, mid-century snapshots, wartime hospital records, and any black-and-white photograph from the 1900s through the 1990s. The AI handles soft focus, film grain, scratches, and minor damage that are common on old prints without requiring you to pre-process or clean up the photo first. For photos that also have significant restoration needs beyond colorization — deep scratches, water stains, severe fading, or torn corners — the recommended workflow is to use the Old Photo Restoration tool first to repair the damage, then colorize the cleaned output. Each tool is a separate $4.99 one-time unlock on your email. Most users find that one or the other handles their needs rather than both; choose restoration first when the source photo has heavy damage." } },
     { "@type": "Question", name: "What is the difference between AI colorization and professional hand-coloring?", acceptedAnswer: { "@type": "Answer", text: "AI colorization (DDColor on ArtImageHub) predicts plausible colors automatically in 15 to 30 seconds for $4.99 one-time. Professional hand-coloring by a trained colorist requires 2 to 8 hours of manual painting per photo and typically costs $150 to $500 per image, but it can incorporate historically verified reference sources to produce period-accurate palettes (correct military uniform colors, specific brand identities, historically documented clothing dyes). For family archive use where the goal is to bring photos to life for display, sharing, and emotional connection rather than historical documentation, AI colorization is the practical choice at one hundred times lower cost. For historically sensitive images intended for academic publication, museum display, or legal documentation, professional hand-coloring with verified historical sources remains the accuracy gold standard. Many family historians use a hybrid: AI for the bulk archive, professional hand-coloring for the most important 1 to 5 photos." } },
     { "@type": "Question", name: "How is AI photo colorization different from manual Photoshop coloring?", acceptedAnswer: { "@type": "Answer", text: "Photoshop coloring is a manual technique where a human artist paints colors onto a black-and-white photo using layers, masks, and brushes. The advantage is complete control over every color decision, the ability to reference historical sources, and the option to apply custom artistic interpretations. The trade-off is time — a single portrait can take 2 to 6 hours of careful work for a skilled retoucher, and learning Photoshop coloring well takes months of practice. AI colorization in tools like ArtImageHub is fully automatic and finishes in 15 to 30 seconds. The AI handles common cases (skin, sky, foliage, fabric) confidently but cannot make the same nuanced historical decisions a human colorist would. For workflows that need many photos colorized quickly — family archives, genealogy projects, scrapbooks — AI is the right tool. For individual artwork-grade colorization, manual Photoshop work by a trained colorist still produces more authoritative results." } },
   ],
@@ -112,7 +112,7 @@ const softwareSchema = {
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web",
   url: "https://artimagehub.com/photo-colorizer",
-  description: "AI-powered photo colorization tool that adds realistic colors to black and white photos in seconds. Free online tool for colorizing old family photos, historical images, and vintage pictures.",
+  description: "AI-powered photo colorization tool that adds realistic colors to black and white photos in seconds. $4.99 one-time unlock for old family photos, historical images, and vintage pictures.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -163,13 +163,13 @@ export default function PhotoColorizerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#0071e3] shadow-[0_0_5px_rgba(0,113,227,0.5)]" />
-            Free AI Colorization
+            $4.99 AI Colorization
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Turn Black & White Photos into Color
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Upload your photo and let AI add realistic colors in seconds. Perfect for old family photos, historical images, and vintage pictures — free.
+            Upload your photo after unlocking and let AI add realistic colors in seconds. Perfect for old family photos, historical images, and vintage pictures.
           </p>
         </div>
       </div>
@@ -188,7 +188,7 @@ export default function PhotoColorizerPage() {
             AI photo colorization is the process of automatically adding realistic color to black-and-white or grayscale photographs using deep learning models. The model learns statistical associations between image content — textures, subject type, and contextual patterns — and plausible color values: skin tones, sky, foliage, fabric, and architectural materials.
           </p>
           <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
-            ArtImageHub&rsquo;s Photo Colorizer applies this pipeline in a single upload pass, completing colorization in 15–30 seconds. The preview is free; HD download without watermark is a one-time $4.99 payment. Supported formats: JPG, PNG, WEBP up to 20MB.
+            ArtImageHub&rsquo;s Photo Colorizer applies this pipeline in a single upload pass, completing colorization in 15–30 seconds. AI processing and HD download are included in the one-time $4.99 unlock. Supported formats: JPG, PNG, WEBP up to 20MB.
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
             <strong>Accuracy note:</strong> AI colorization produces plausible results — not historically accurate ones. For subjects with recognizable color patterns (skin tones, blue sky, green foliage), results are consistently natural-looking. For historically specific objects (period uniforms, brand colors, specific clothing), the AI predicts based on training data. Results should be reviewed alongside the original before archival or publication use.
@@ -209,7 +209,7 @@ export default function PhotoColorizerPage() {
             {[
               {
                 q: "Is AI photo colorization free on ArtImageHub?",
-                a: "Yes, ArtImageHub uses a preview-first model where colorization and on-screen preview are free with no account or credit card required. Upload your black-and-white or grayscale photo, the AI returns a colorized preview in 15 to 30 seconds, and you decide whether to pay anything based on the actual result. If you want the HD original-quality download without a watermark, that is a one-time $4.99 payment that unlocks the file on your email address. The free preview shows you the exact colorized output before any commitment, which is meaningfully different from tools that watermark previews or downsample free results to push you toward a subscription. There is no recurring subscription and no monthly fee. Your $4.99 unlock persists on your email so you can return later to colorize additional photos or re-download earlier results without re-paying.",
+                a: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI colorization and the original-quality download. There is no recurring subscription and no monthly fee.",
               },
               {
                 q: "How accurate is AI photo colorization on old black-and-white photos?",
@@ -225,11 +225,11 @@ export default function PhotoColorizerPage() {
               },
               {
                 q: "How long does AI photo colorization actually take per image?",
-                a: "Most photos finish colorization in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 4 by 6 inch print scanned at 600 DPI (about 6 megapixels) finishes in 15 to 20 seconds, a high-resolution 1200 DPI scan of the same print (about 25 megapixels) takes 30 to 45 seconds, and very large 50-plus megapixel scans can take up to 60 seconds. The DDColor model runs the full image through the transformer in a single forward pass without tiling for images under 25 megapixels, which avoids edge artifacts at tile boundaries. Free preview takes the same time as paid processing — the only thing the $4.99 unlock buys is the HD original-quality download without watermark, not faster processing.",
+                a: "Most photos finish colorization in 15 to 30 seconds end-to-end, including upload, AI processing, and result rendering. Processing time scales with image dimensions: a typical 4 by 6 inch print scanned at 600 DPI (about 6 megapixels) finishes in 15 to 20 seconds, a high-resolution 1200 DPI scan of the same print (about 25 megapixels) takes 30 to 45 seconds, and very large 50-plus megapixel scans can take up to 60 seconds. The DDColor model runs the full image through the transformer in a single forward pass without tiling for images under 25 megapixels, which avoids edge artifacts at tile boundaries. Processing speed is the same for paid users; the $4.99 unlock buys AI processing and the HD original-quality download, not a faster queue.",
               },
               {
                 q: "Can ArtImageHub colorize old family photos with damage or fading?",
-                a: "Yes, ArtImageHub is specifically designed to colorize old family photos including vintage portraits, mid-century snapshots, wartime hospital records, and any black-and-white photograph from the 1900s through the 1990s. The AI handles soft focus, film grain, scratches, and minor damage that are common on old prints without requiring you to pre-process or clean up the photo first. For photos that also have significant restoration needs beyond colorization — deep scratches, water stains, severe fading, or torn corners — the recommended workflow is to use the Old Photo Restoration tool first to repair the damage, then colorize the cleaned output. Each tool is a separate $4.99 one-time unlock on your email. Most users find that one or the other handles their needs rather than both; preview the colorization result first to see whether prior restoration would meaningfully improve the colorized output.",
+                a: "Yes, ArtImageHub is specifically designed to colorize old family photos including vintage portraits, mid-century snapshots, wartime hospital records, and any black-and-white photograph from the 1900s through the 1990s. The AI handles soft focus, film grain, scratches, and minor damage that are common on old prints without requiring you to pre-process or clean up the photo first. For photos that also have significant restoration needs beyond colorization — deep scratches, water stains, severe fading, or torn corners — the recommended workflow is to use the Old Photo Restoration tool first to repair the damage, then colorize the cleaned output. Each tool is a separate $4.99 one-time unlock on your email. Most users find that one or the other handles their needs rather than both; choose restoration first when the source photo has heavy damage.",
               },
               {
                 q: "What is the difference between AI colorization and professional hand-coloring?",
