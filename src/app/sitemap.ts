@@ -234,6 +234,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Family-occasion restoration pages (2026-06-10 growth batch). These target
+    // emotionally motivated buyer searches where a one-time pay-first unlock is
+    // easier to justify than a generic free-tool query.
+    {
+      url: `${baseUrl}/restore-old-wedding-photos`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/genealogy-photo-restoration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/memorial-photo-restoration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
     // pt-BR buyer-intent pages (2026-05-15 Brazil push). Locale-only pages:
     // no hreflang cluster until equivalent EN/other-locale routes exist.
     {
