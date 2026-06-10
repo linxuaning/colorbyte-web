@@ -130,7 +130,7 @@ export const enToolClient = {
 export const enHomePage: HomePageContent = {
   metaTitle: "ArtImageHub — AI Photo Restoration, Enhancement & Colorization",
   metaDescription:
-    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Start free, then download the HD original for $4.99.",
+    "Restore old photos, enhance image quality, and colorize black & white pictures with AI. Pay $4.99 once for upload, AI processing, and HD download.",
   ogTitle: "ArtImageHub — AI Photo Restoration",
   ogDescription:
     "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
@@ -138,12 +138,12 @@ export const enHomePage: HomePageContent = {
   heroEyebrow: "Since 2024 · AI Restoration Studio",
   heroH1: "Breathe life into faded memories with AI photo restoration.",
   heroSubhead:
-    "Upload a damaged, faded, or black & white photo — our AI restores it to stunning clarity in seconds. Start free, then choose the HD original for $4.99 if you want it.",
-  heroCtaPrimary: "Restore Your Photo Free",
-  heroBullets: ["Free preview", "HD original $4.99", "Instant results"] as const,
+    "Pay once, upload a damaged, faded, or black & white photo, and let AI restore it to stunning clarity in seconds.",
+  heroCtaPrimary: "Restore Your Photo",
+  heroBullets: ["Pay before upload", "HD original $4.99", "Instant results"] as const,
   heroTrustStrip: [
-    "Free preview before checkout",
-    "Deleted from servers within 24 hours",
+    "Paid access before upload",
+    "Files retained only as needed for delivery",
     "JPG, PNG, WEBP up to 20 MB",
   ] as const,
   heroTrustSignals: [
@@ -241,7 +241,7 @@ export const enHomePage: HomePageContent = {
       desc: "If processing succeeds, the same email keeps the original-quality download path unlocked.",
     },
   ] as const,
-  howCtaPrimary: "Restore Your Photo Free",
+  howCtaPrimary: "Restore Your Photo",
 
   compareEyebrow: "Compare Before You Choose",
   compareH2: "Start with the highest-intent questions.",
@@ -303,7 +303,7 @@ export const enHomePage: HomePageContent = {
   finalH2: "Your memories deserve to shine again.",
   finalSubhead:
     "Pay once to unlock upload and processing access on this email, then continue inside the tool. Bring your family’s history back to life without drifting back into a free-preview promise.",
-  finalCtaPrimary: "Restore Your Photo Free",
+  finalCtaPrimary: "Restore Your Photo",
   finalCtaSecondary: "View Pricing",
   finalTagline: "Paid access before upload · One-time payment · No subscription",
 };
