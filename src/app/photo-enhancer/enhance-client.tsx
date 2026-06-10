@@ -432,7 +432,7 @@ export default function EnhanceClient({ landingPage }: EnhanceClientProps = {}) 
               {t.uploadCta}
             </button>
             <p className="text-[12px] text-[#6e6e73]/80">
-              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+              Paid unlock required before upload · Full resolution for {PRO_PRICE_TEXT}
             </p>
 
             {/* Colorize toggle */}
