@@ -4,7 +4,7 @@ import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
   title: 'AI Photo Fixer | Fix Photos Automatically in 30 Seconds',
-  description: 'Fix old photos automatically with AI. Remove scratches, enhance blurry faces, restore colors, and preview the result first. Unlock the original-quality download for $4.99.',
+  description: 'Fix old photos automatically with AI. Remove scratches, enhance blurry faces, restore colors, and download the original-quality result after a $4.99 one-time unlock.',
   keywords: [
     'ai photo fixer',
     'ai photo repair',
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/ai-photo-fixer' },
   openGraph: {
     title: 'AI Photo Fixer | Fix Photos Automatically in 30 Seconds',
-    description: 'Fix old photos automatically with AI. Preview the result first, then unlock the original-quality download for $4.99.',
+    description: 'Fix old photos automatically with AI. $4.99 one-time unlock, original-quality download included.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'AI photo fixer before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Photo Fixer - Fix Photos Automatically',
-    description: 'Remove scratches, enhance faces, and restore colors with AI. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Remove scratches, enhance faces, and restore colors with AI. $4.99 one-time unlock with original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -44,7 +44,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 1,
       name: "Upload damaged photo",
-      text: "Upload your photo to ArtImageHub's AI fixer. Supports scratched, blurry, faded, or damaged photos. No signup required.",
+      text: "Upload your photo to ArtImageHub's AI fixer after unlocking. Supports scratched, blurry, faded, or damaged photos.",
     },
     {
       "@type": "HowToStep",
@@ -56,7 +56,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download fixed photo",
-      text: "Preview the before/after result first. When you want the clean original-quality fixed photo, pay $4.99 once to unlock the download.",
+      text: "After payment, AI fixes the photo and downloads the clean original-quality result.",
     },
   ],
 };
@@ -68,9 +68,9 @@ const faqSchema = {
     { "@type": "Question", name: "How does AI photo fixer work?", acceptedAnswer: { "@type": "Answer", text: "AI photo fixer uses machine learning trained on millions of photos to automatically detect and repair damage. It identifies scratches, fading, blur, tears, and color issues, then applies targeted fixes — all in 30 seconds without manual editing." } },
     { "@type": "Question", name: "What photo problems can AI fix?", acceptedAnswer: { "@type": "Answer", text: "AI photo fixer handles: scratches and tears, blurry or out-of-focus shots, faded colors and discoloration, water/fire damage stains, creases and cracks, low resolution (upscales to 4K), missing color (colorizes B&W), underexposure/overexposure, red-eye and glare." } },
     { "@type": "Question", name: "Is AI photo fixing as good as manual Photoshop editing?", acceptedAnswer: { "@type": "Answer", text: "For 90% of common photo issues (scratches, fading, blur), AI photo fixer delivers professional results instantly. Manual Photoshop editing is still better for: complex artistic retouching, removing large objects from scenes, precise color grading for print. But AI is 100x faster and doesn't require Photoshop skills." } },
-    { "@type": "Question", name: "Can I fix multiple photos at once with AI?", acceptedAnswer: { "@type": "Answer", text: "Yes. You can process photos one at a time and preview each result. When you want the clean original-quality fixed photo, pay $4.99 once to unlock that download on the same email." } },
+    { "@type": "Question", name: "Can I fix multiple photos at once with AI?", acceptedAnswer: { "@type": "Answer", text: "You can process photos one at a time after unlocking. The $4.99 one-time unlock is tied to the same email for the original-quality fixed photo." } },
     { "@type": "Question", name: "Do I need photo editing skills to use AI photo fixer?", acceptedAnswer: { "@type": "Answer", text: "No! That's the point. AI photo fixer is fully automatic — just upload and download. No Photoshop, no Lightroom, no manual editing. Perfect for non-photographers who want professional results." } },
-    { "@type": "Question", name: "How much does AI photo fixing cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub lets you preview the fixed result first. When you want the original-quality download, it is a one-time $4.99 unlock. Competitors often push monthly subscriptions or much higher one-time prices." } },
+    { "@type": "Question", name: "How much does AI photo fixing cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub uses a pay-first model: $4.99 one time for AI photo fixing and the original-quality download. Competitors often push monthly subscriptions or much higher one-time prices." } },
     { "@type": "Question", name: "Can AI fix severely damaged photos?", acceptedAnswer: { "@type": "Answer", text: "AI works best on photos with 10-80% damage. Very light damage (10-30%): perfect results. Moderate damage (30-60%): great results. Heavy damage (60-80%): good results but may need touch-ups. Extreme damage (>80% missing): AI struggles, manual artist recommended." } },
     { "@type": "Question", name: "What file formats does AI photo fixer support?", acceptedAnswer: { "@type": "Answer", text: "Upload: JPG, PNG, WEBP, HEIC up to 20MB. Download: High-res JPG or PNG. Works with photos from: smartphones, scanned prints, digital cameras, screenshots, social media." } },
   ],
@@ -143,7 +143,7 @@ export default function AIPhotoFixerPage() {
               href="/old-photo-restoration"
               className="px-10 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-lg font-bold rounded-xl transition-all shadow-lg shadow-indigo-500/50 hover:shadow-indigo-400/60 hover:scale-105"
             >
-              Preview Your Fix Free →
+              Fix Your Photo →
             </Link>
             <a
               href="#what-ai-fixes"
@@ -171,7 +171,7 @@ export default function AIPhotoFixerPage() {
               <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">Free preview first, no signup</span>
+              <span className="font-medium">$4.99 one-time unlock</span>
             </div>
           </div>
         </div>
@@ -320,7 +320,7 @@ export default function AIPhotoFixerPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Download Fixed Photo</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  Preview the before/after comparison first. If you want the clean original-quality fixed photo with no watermark, pay $4.99 once to unlock the download.
+                  After payment, compare the before/after result and download the clean original-quality fixed photo.
                 </p>
               </div>
             </div>
@@ -331,7 +331,7 @@ export default function AIPhotoFixerPage() {
               href="/old-photo-restoration"
               className="inline-block px-12 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-xl font-bold rounded-xl transition-all shadow-lg hover:scale-105"
             >
-              Preview AI Photo Fixer Free →
+              Start AI Photo Fixer →
             </Link>
           </div>
         </div>
@@ -413,7 +413,7 @@ export default function AIPhotoFixerPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-4">
-              Preview AI Photo Fixer Free
+              Start AI Photo Fixer
             </h2>
             <p className="text-xl text-slate-700">
               Upload a photo and see AI fix it automatically in 30 seconds before deciding on the original-quality download
@@ -483,7 +483,7 @@ export default function AIPhotoFixerPage() {
                 <span className="text-indigo-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Yes. You can process photos one at a time and preview each result. When you want the clean original-quality fixed photo, pay $4.99 once to unlock that download on the same email.
+                You can process photos one at a time after unlocking. The $4.99 one-time unlock is tied to the same email for the original-quality fixed photo.
               </p>
             </details>
 
@@ -503,7 +503,7 @@ export default function AIPhotoFixerPage() {
                 <span className="text-indigo-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                ArtImageHub lets you preview the fixed result first. When you want the original-quality download, it is a one-time $4.99 unlock. Competitors often push monthly subscriptions or much higher one-time prices.
+                ArtImageHub uses a pay-first model: $4.99 one time for AI photo fixing and the original-quality download. Competitors often push monthly subscriptions or much higher one-time prices.
               </p>
             </details>
 
@@ -544,7 +544,7 @@ export default function AIPhotoFixerPage() {
             href="/old-photo-restoration"
             className="inline-block px-14 py-7 bg-white hover:bg-indigo-50 text-indigo-900 text-xl font-black rounded-xl transition-all shadow-2xl hover:scale-105"
           >
-            Preview Your Fix Free →
+            Fix Your Photo →
           </Link>
 
           <div className="mt-10 flex flex-wrap justify-center gap-8 text-indigo-100">
@@ -558,7 +558,7 @@ export default function AIPhotoFixerPage() {
               <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Free preview first</span>
+              <span>$4.99 one-time unlock</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
