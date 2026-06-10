@@ -478,7 +478,7 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
                       Unlock the Original-Quality Download for $4.99 →
                     </Link>
                     <p className="text-sm text-stone-500 mt-2">
-                      Free preview • $4.99 original-quality unlock • No subscription
+                      Pay first • $4.99 original-quality unlock • No subscription
                     </p>
                   </div>
                 )}
