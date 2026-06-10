@@ -147,6 +147,8 @@ interface TaskStatus {
   progress: number;
   stage: string | null;
   error: string | null;
+  provider_used: string | null;
+  provider_backend: string | null;
 }
 
 interface RestoreClientProps {
@@ -553,6 +555,13 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             break;
           }
           if (data.status === "failed") {
+            const details = [
+              `Task: ${taskId}`,
+              data.error ? `Error: ${data.error}` : null,
+              data.provider_used ? `Provider: ${data.provider_used}` : null,
+              data.provider_backend ? `Backend: ${data.provider_backend}` : null,
+            ].filter(Boolean);
+            setErrorMsg(details.join(" · "));
             setIsHighUsageError(true);
             setStage("error");
             break;
@@ -1185,6 +1194,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               {t.errorBody}{" "}
               <a href="mailto:support@artimagehub.com" className="underline hover:text-[#1d1d1f] transition-colors">support@artimagehub.com</a>
             </p>
+            {errorMsg && (
+              <p className="mx-auto mt-3 max-w-lg rounded-xl border border-red-100 bg-white/70 px-3 py-2 font-mono text-[11px] leading-[1.5] text-red-700 break-words">
+                {errorMsg}
+              </p>
+            )}
           </div>
           <div className="flex flex-col items-center gap-2">
             <button
