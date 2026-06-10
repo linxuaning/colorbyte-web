@@ -442,6 +442,24 @@ export default function OldPhotoRestorationPage() {
                 desc: "Standalone restoration vs $129–299/year genealogy bundle. Cost analysis for finite projects.",
               },
               {
+                href: "/genealogy-photo-restoration?landing_page=%2Fold-photo-restoration&cta_slot=hub_usecase_genealogy&entry_variant=hub_apex_cards",
+                badge: "Use Case",
+                title: "Genealogy Photo Restoration",
+                desc: "Restore ancestor portraits and family tree photos with one-time pay-first access.",
+              },
+              {
+                href: "/restore-old-wedding-photos?landing_page=%2Fold-photo-restoration&cta_slot=hub_usecase_wedding&entry_variant=hub_apex_cards",
+                badge: "Use Case",
+                title: "Restore Old Wedding Photos",
+                desc: "Repair faded wedding portraits, yellowed ceremony prints, and anniversary keepsakes.",
+              },
+              {
+                href: "/memorial-photo-restoration?landing_page=%2Fold-photo-restoration&cta_slot=hub_usecase_memorial&entry_variant=hub_apex_cards",
+                badge: "Use Case",
+                title: "Memorial Photo Restoration",
+                desc: "Prepare clearer tribute photos for programs, frames, and family memorial displays.",
+              },
+              {
                 href: "/best-old-photo-enhancer?landing_page=%2Fold-photo-restoration&cta_slot=hub_compare_enhancer&entry_variant=hub_apex_cards",
                 badge: "Buyer Guide",
                 title: "Best Old Photo Enhancer 2026",

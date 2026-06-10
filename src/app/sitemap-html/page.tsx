@@ -23,6 +23,9 @@ export default async function SitemapHtmlPage() {
             <ul className="space-y-2 font-lora text-[14px]">
               <li><Link href="/" className="text-[#8B5E3C] hover:underline">Home</Link></li>
               <li><Link href="/old-photo-restoration" className="text-[#8B5E3C] hover:underline">Photo Restoration Tool</Link></li>
+              <li><Link href="/restore-old-wedding-photos" className="text-[#8B5E3C] hover:underline">Wedding Photo Restoration</Link></li>
+              <li><Link href="/genealogy-photo-restoration" className="text-[#8B5E3C] hover:underline">Genealogy Photo Restoration</Link></li>
+              <li><Link href="/memorial-photo-restoration" className="text-[#8B5E3C] hover:underline">Memorial Photo Restoration</Link></li>
             </ul>
           </section>
 
