@@ -32,7 +32,7 @@ const config: BuyerGuideConfig = {
   quickPicks: [
     { label: 'Best for restoring real photos', tool: 'ArtImageHub', toolHref: '/', description: 'AI restores scratches, fading, water damage on actual family photos — $4.99 once' },
     { label: 'Best for generating anime art', tool: 'Yodayo', description: 'creating new anime/character illustrations from text prompts — different product entirely' },
-    { label: 'Best for old family photos', tool: 'ArtImageHub', toolHref: '/', description: 'whole-photo restoration without subscription — preview free, unlock $4.99' },
+    { label: 'Best for old family photos', tool: 'ArtImageHub', toolHref: '/', description: 'whole-photo restoration without subscription — $4.99 pay-first unlock' },
     { label: 'Best free option for real photos', tool: 'GIMP (manual)', description: 'open-source desktop editor with manual restoration — no AI, time-intensive' },
   ],
 
