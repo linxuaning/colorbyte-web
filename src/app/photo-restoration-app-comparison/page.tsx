@@ -152,7 +152,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Whole-photo repair (scratches, fading, water damage)',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before payment',
+        'Pay-first access before upload',
         'Web-based — any browser, any device',
         'Combined restore + colorize + enhance in one pass',
         'Email-tied access (re-download anytime)',

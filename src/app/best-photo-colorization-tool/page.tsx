@@ -345,7 +345,7 @@ const config: BuyerGuideConfig = {
   relatedGuides: [
     { href: '/photo-colorizer', title: 'AI Photo Colorizer Tool', blurb: 'Try the colorization workflow now' },
     { href: '/best-photo-restoration-software', title: 'Best Photo Restoration Software', blurb: '10 restoration tools tested and ranked' },
-    { href: '/colorize-photos-free', title: 'Colorize Photos Free', blurb: 'Free preview workflow for B&W photos' },
+    { href: '/colorize-photos-free', title: 'Colorize Photos Free', blurb: '$4.99 pay-first colorization workflow for B&W photos' },
     { href: '/old-photo-restoration', title: 'Old Photo Restoration', blurb: 'Combined restoration + colorization' },
     { href: '/best-old-photo-enhancer', title: 'Best Old Photo Enhancer', blurb: 'Enhancer tools compared' },
     { href: '/photo-restoration-app-comparison', title: 'Photo Restoration App Comparison', blurb: 'Top-of-funnel buyer guide' },
