@@ -302,7 +302,7 @@ export const enHomePage: HomePageContent = {
 
   finalH2: "Your memories deserve to shine again.",
   finalSubhead:
-    "Pay once to unlock upload and processing access on this email, then continue inside the tool. Bring your family’s history back to life without drifting back into a free-preview promise.",
+    "Pay once to unlock upload and processing access on this email, then continue inside the tool. Bring your family’s history back to life without a subscription.",
   finalCtaPrimary: "Restore Your Photo",
   finalCtaSecondary: "View Pricing",
   finalTagline: "Paid access before upload · One-time payment · No subscription",
