@@ -285,7 +285,40 @@ export default function RestoreOldFamilyPhotosPage() {
             <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-6">
               Related Photo Tools
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <Link
+                href="/restore-old-wedding-photos"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Wedding Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Restore faded wedding portraits, anniversary prints, and heirloom ceremony photos.
+                </p>
+              </Link>
+              <Link
+                href="/genealogy-photo-restoration"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Genealogy Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Clean up ancestor portraits and family tree photos for archive projects.
+                </p>
+              </Link>
+              <Link
+                href="/memorial-photo-restoration"
+                className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
+              >
+                <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
+                  Memorial Photos
+                </h3>
+                <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
+                  Prepare clearer photos for tribute displays, programs, and keepsake frames.
+                </p>
+              </Link>
               <Link
                 href="/remove-scratches-from-photos"
                 className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
@@ -313,7 +346,7 @@ export default function RestoreOldFamilyPhotosPage() {
                 className="group rounded-xl bg-white p-5 border border-[#d4bc91]/40 hover:border-[#8B5E3C]/60 hover:shadow-md transition-all"
               >
                 <h3 className="text-[15px] font-semibold text-[#1d1d1f] group-hover:text-[#8B5E3C] mb-1.5">
-                  Colorize Photos Free
+                  Colorize Old Photos
                 </h3>
                 <p className="text-[13px] text-[#6e6e73] leading-[1.6]">
                   Add color to black and white family photos with AI colorization.
