@@ -125,15 +125,15 @@ export default function PhotoColorizationOnlinePage() {
 
           {/* CTA 1 */}
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
-            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Colorize your first photo free</p>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Colorize your first photo</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
-              Upload a black and white photo and preview the colorization result before you decide to download. Free preview, no account required.
+              Pay $4.99 once to unlock upload, AI colorization, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-10 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white hover:bg-[#0077ed] transition-colors"
             >
-              Try Photo Colorization Free →
+              Unlock Photo Colorization →
             </Link>
           </div>
 
@@ -234,13 +234,13 @@ export default function PhotoColorizationOnlinePage() {
 
           <ul>
             <li><strong>Face accuracy:</strong> How well does the tool handle skin tones and facial features? This is the most perceptually sensitive area.</li>
-            <li><strong>Preview before payment:</strong> Can you see the result before committing to a download fee? This matters because colorization quality varies by photo.</li>
+            <li><strong>Access model:</strong> Does the tool offer a free tier, subscription, credit pack, or pay-first one-time unlock?</li>
             <li><strong>Restoration integration:</strong> Does the tool also handle damage repair, or is it colorization-only? Combining both in one workflow saves time.</li>
             <li><strong>Privacy:</strong> Are uploaded photos deleted after processing, or retained for training data?</li>
           </ul>
 
           <p>
-            ArtImageHub handles both restoration and colorization in a single tool, with a free preview before any payment is required.
+            ArtImageHub handles both restoration and colorization in a single pay-first workflow: $4.99 unlocks upload, AI processing, and the original-quality download.
           </p>
 
           <h2>Best Practices for Photo Colorization Online</h2>
@@ -261,15 +261,15 @@ export default function PhotoColorizationOnlinePage() {
             Colorize and restore in one place
           </h2>
           <p className="text-[15px] text-[#6e6e73] mb-6 max-w-md mx-auto leading-relaxed">
-            Upload your black and white or damaged photo. Preview the restoration and colorization free before you download.
+            Pay $4.99 once to unlock upload, AI restoration/colorization, and the original-quality download. No subscription.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-8 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
-            Start for Free →
+            Unlock Colorization →
           </Link>
-          <p className="mt-3 text-[12px] text-[#6e6e73]">Preview free · $4.99 to download · No subscription</p>
+          <p className="mt-3 text-[12px] text-[#6e6e73]">$4.99 once · Original-quality download · No subscription</p>
         </div>
 
         {/* Tags */}
@@ -291,7 +291,7 @@ export default function PhotoColorizationOnlinePage() {
               {
                 href: "/old-photo-colorization",
                 title: "Old Photo Colorization Tool",
-                desc: "Free preview colorization for any black and white photo. Upload and see the result before you pay.",
+                desc: "$4.99 pay-first colorization for black and white photos. No subscription.",
               },
               {
                 href: "/blog/ai-photo-restoration",
