@@ -126,13 +126,13 @@ export default function AiPhotoRestorationPage() {
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
             <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">See AI restoration in action</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
-              Upload any old or damaged photo and get a free AI restoration preview in under 60 seconds.
+              Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-10 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white hover:bg-[#0077ed] transition-colors"
             >
-              Try AI Photo Restoration Free →
+              Unlock AI Photo Restoration →
             </Link>
           </div>
 
@@ -253,15 +253,15 @@ export default function AiPhotoRestorationPage() {
             Ready to restore your first photo?
           </h2>
           <p className="text-[15px] text-[#6e6e73] mb-6 max-w-md mx-auto leading-relaxed">
-            Upload any old or damaged photo and get a free AI restoration preview in under 60 seconds. No account, no skills required.
+            Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription, no skills required.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-8 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
-            Start AI Restoration Free →
+            Unlock AI Restoration →
           </Link>
-          <p className="mt-3 text-[12px] text-[#6e6e73]">Preview free · $4.99 to download · No subscription</p>
+          <p className="mt-3 text-[12px] text-[#6e6e73]">$4.99 once · Original-quality download · No subscription</p>
         </div>
 
         {/* Tags */}

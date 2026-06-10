@@ -115,24 +115,24 @@ export default function RestoreOldPhotosOnlineFreePage() {
         <div className="prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:text-[#1d1d1f] prose-p:text-[#3d3d3f] prose-p:leading-relaxed prose-a:text-[#0071e3] prose-a:no-underline hover:prose-a:underline">
 
           <p>
-            Searching for a way to restore old photos online free usually means one of two things: you have a damaged family photo and you're not sure if it's worth paying for, or you have a large collection and want to triage before committing to anything. Either way, the good news is that AI tools have made the free preview model genuinely useful — you can see the result before you spend a cent.
+            Searching for a way to restore old photos online free usually means one of two things: you have a damaged family photo and you are not sure if it is worth paying for, or you have a large collection and want to triage before committing to anything. Some tools offer free tiers or watermarked previews, but ArtImageHub currently uses a pay-first model: $4.99 unlocks upload, AI processing, and the original-quality download.
           </p>
 
           <p>
-            This guide covers exactly what the free tier gets you, how the full restoration process works, and what to expect from the output.
+            This guide covers what free restoration tools usually include, where the trade-offs show up, and how ArtImageHub's pay-first restoration process works.
           </p>
 
           {/* CTA 1 */}
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
-            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Try it first, then read the guide</p>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Restore with a one-time unlock</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
-              Upload your old photo and see the AI restoration result before you decide anything. Preview is always free.
+              Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-10 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white hover:bg-[#0077ed] transition-colors"
             >
-              Restore a Photo Free →
+              Unlock Photo Restoration →
             </Link>
           </div>
 
@@ -143,13 +143,13 @@ export default function RestoreOldPhotosOnlineFreePage() {
           </p>
 
           <ul>
-            <li><strong>Free preview:</strong> You upload, the AI processes, and you can see the result in the browser — but the download is gated behind a payment. This is the model ArtImageHub uses.</li>
+            <li><strong>Free preview:</strong> You upload, the AI processes, and you can see the result in the browser, but the download is gated behind a payment. Some restoration tools use this model.</li>
             <li><strong>Free with watermark:</strong> You get a full download, but the image has a visible watermark. Usable for sharing but not printing or archiving.</li>
             <li><strong>Free tier with daily limits:</strong> A set number of free restorations per day or per account, after which you upgrade.</li>
           </ul>
 
           <p>
-            The preview model (used here) is the most honest for deciding if a tool is right for your photo — you see the actual AI output before committing. This matters because restoration results vary significantly depending on the type and severity of damage in your original.
+            Preview models can be useful for deciding if a tool is right for your photo, because restoration results vary significantly depending on the type and severity of damage in your original. ArtImageHub is currently different: it uses a $4.99 pay-first unlock before upload and processing.
           </p>
 
           <h2>Step-by-Step: How to Restore Old Photos Online</h2>
@@ -170,14 +170,14 @@ export default function RestoreOldPhotosOnlineFreePage() {
             Visit <Link href="/old-photo-restoration">ArtImageHub's photo restoration tool</Link> and upload your scan. The file size limit is 20MB, which covers most high-resolution scans. The AI analyzes the damage profile of your specific photo within seconds — it doesn't apply a generic filter. It identifies which areas have scratches, where color has faded, and which faces need sharpening, then applies targeted corrections per region.
           </p>
 
-          <h3>Step 3: Review the free preview</h3>
+          <h3>Step 3: Review the restored result</h3>
 
           <p>
-            Within 30–60 seconds, a before/after slider appears. Drag the slider to compare your original with the AI result at full resolution in the browser. This is your free preview — no account, no watermark on screen, no time limit.
+            Within 30–60 seconds, a before/after slider appears. Drag the slider to compare your original with the AI result at full resolution in the browser. Your $4.99 unlock covers upload, processing, and the original-quality download.
           </p>
 
           <p>
-            Use this preview to verify:
+            Use the restored result to verify:
           </p>
 
           <ul>
@@ -190,12 +190,12 @@ export default function RestoreOldPhotosOnlineFreePage() {
           <h3>Step 4: Download or move on</h3>
 
           <p>
-            If the preview looks right, unlock the original-quality download for $4.99 — a one-time payment, no subscription. If the result isn't what you needed (happens with very severely damaged photos), you've spent nothing.
+            ArtImageHub uses a pay-first unlock: $4.99 covers upload, AI processing, and the original-quality download with no subscription. Very severely damaged photos may still need professional restoration.
           </p>
 
-          <h2>What AI Restoration Can Fix for Free Preview</h2>
+          <h2>What AI Restoration Can Fix</h2>
 
-          <p>The AI preview covers all damage types simultaneously in a single pass:</p>
+          <p>The AI restoration pipeline covers all damage types simultaneously in a single pass:</p>
 
           <ul>
             <li><strong>Fading and yellowing</strong> — color correction restores saturation and removes paper yellowing</li>
@@ -207,7 +207,7 @@ export default function RestoreOldPhotosOnlineFreePage() {
           </ul>
 
           <p>
-            The preview you see in the browser is the full-quality restoration. The paid download is the same result as a file — there's no additional processing when you pay.
+            The result you see in the browser is the restored output. The original-quality download is included in the same $4.99 unlock.
           </p>
 
           <h2>When Free Isn't Enough</h2>
@@ -227,7 +227,7 @@ export default function RestoreOldPhotosOnlineFreePage() {
             For typical aged family photos — faded colors, light scratches, soft focus — AI handles the job completely and the result is indistinguishable from professional retouching.
           </p>
 
-          <h2>Getting the Best Free Restoration Result</h2>
+          <h2>Getting the Best Restoration Result</h2>
 
           <ol>
             <li><strong>Clean your scanner glass</strong> before scanning — dust creates artifacts the AI may misread as photo damage</li>
@@ -239,9 +239,9 @@ export default function RestoreOldPhotosOnlineFreePage() {
 
           <h2>Frequently Asked Questions</h2>
 
-          <h3>Is the free preview the same quality as the paid download?</h3>
+          <h3>Is there a free preview?</h3>
           <p>
-            Yes. The browser preview and the downloaded file are the same AI output. You're not paying for better processing — you're paying for the file itself.
+            Not on the current ArtImageHub restoration flow. ArtImageHub uses pay-first access: $4.99 unlocks upload, AI processing, and the original-quality download.
           </p>
 
           <h3>Does ArtImageHub store my photos?</h3>
@@ -249,14 +249,14 @@ export default function RestoreOldPhotosOnlineFreePage() {
             No. Photos are processed and deleted from servers within 24 hours. They are never shared, sold, or used to train AI models.
           </p>
 
-          <h3>How many photos can I preview for free?</h3>
+          <h3>How many photos can I restore after paying?</h3>
           <p>
-            There's no hard limit on previews. Each upload processes one photo and shows you the result. You only pay when you want the download.
+            Your access is tied to your email after the $4.99 unlock. Use the same email when you return to the restoration tool.
           </p>
 
-          <h3>Do I need an account to restore photos online free?</h3>
+          <h3>Do I need an account to restore photos online?</h3>
           <p>
-            No account is required to upload, process, and preview. If you decide to download, you enter an email for access — no password, no registration flow.
+            You need an email for checkout and access. There is no monthly account subscription.
           </p>
 
         </div>
@@ -267,15 +267,15 @@ export default function RestoreOldPhotosOnlineFreePage() {
             Ready to restore your first photo?
           </h2>
           <p className="text-[15px] text-[#6e6e73] mb-6 max-w-md mx-auto leading-relaxed">
-            Upload any old or damaged photo and see the AI result in under 60 seconds. Free preview — no account required.
+            Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-8 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
-            Start Restoring Free →
+            Unlock Photo Restoration →
           </Link>
-          <p className="mt-3 text-[12px] text-[#6e6e73]">Preview free · $4.99 to download · No subscription</p>
+          <p className="mt-3 text-[12px] text-[#6e6e73]">$4.99 once · Original-quality download · No subscription</p>
         </div>
 
         {/* Tags */}
