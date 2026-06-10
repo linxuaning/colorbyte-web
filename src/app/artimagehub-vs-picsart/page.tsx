@@ -25,7 +25,7 @@ const config: BuyerGuideConfig = {
   heroBadge: 'Software Comparison',
   heroEyebrow: 'Honest 2026 Head-to-Head',
   heroH1: 'ArtImageHub vs Picsart',
-  heroSubhead: 'Picsart is a 1.5B-download creative photo editor with thousands of filters, stickers, templates, and a bundled "old photo restore" feature. ArtImageHub is a dedicated AI restoration tool with a $4.99 one-time unlock and free preview. Different products for different goals.',
+  heroSubhead: 'Picsart is a 1.5B-download creative photo editor with thousands of filters, stickers, templates, and a bundled "old photo restore" feature. ArtImageHub is a dedicated pay-first AI restoration tool with a $4.99 one-time unlock. Different products for different goals.',
   heroReadTime: '12 min read',
   heroTestedNote: '50 family photos tested',
 
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Old family photo restoration',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -114,12 +114,12 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is purpose-built for AI photo restoration with no creative editing distractions. The pipeline runs GFPGAN (face-aware reconstruction, peer-reviewed by Wang et al., Tencent ARC Lab 2021), Real-ESRGAN (4× super-resolution), NAFNet (deblurring), and DDColor (colorization) in a single 30-90 second pass. In our 50-photo test, ArtImageHub produced cleaner restoration on heavily damaged photos than Picsart\'s general-purpose AI enhancement.',
-        'The $4.99 one-time pricing is the practical advantage: no monthly subscription, free preview before payment, web-based workflow that runs in any browser without an app install. Email-tied access lets you return later to restore additional photos or re-download earlier results without re-paying.',
+        'The $4.99 one-time pricing is the practical advantage: no monthly subscription, pay-first web-based workflow that runs in any browser without an app install. Email-tied access lets you return later to restore additional photos or re-download earlier results without re-paying.',
       ],
       pros: [
         'Specialized AI for old-photo damage patterns',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before payment',
+        'Pay-first access before upload',
         'GFPGAN + Real-ESRGAN peer-reviewed models',
         'Web-based, runs on any device',
         'Combined restore + colorize + enhance in one pass',
@@ -135,7 +135,7 @@ const config: BuyerGuideConfig = {
         'Genealogy and family-history projects',
         'One-time finite restoration projects',
         'Cost-sensitive users avoiding subscriptions',
-        'Users who want preview-first pricing',
+        'Users who want simple one-time pricing',
       ],
     },
     {
@@ -247,13 +247,13 @@ const config: BuyerGuideConfig = {
       number: 3,
       title: 'Test Restoration Quality on Your Hardest Photo',
       borderColor: 'green',
-      body: 'Pick the most damaged photo in your collection — ideally one with deep scratches, severe fading, or water damage. Run it through ArtImageHub\'s free preview and compare with Picsart\'s old-photo feature on the same source. The differences widen sharply on heavily damaged photos: specialized restoration tools (ArtImageHub) tend to handle physical damage substantially better than general-purpose creative editors (Picsart).',
+      body: 'Pick the most damaged photo in your collection — ideally one with deep scratches, severe fading, or water damage. Use ArtImageHub\'s $4.99 pay-first unlock and compare with Picsart\'s old-photo feature on the same source. The differences widen sharply on heavily damaged photos: specialized restoration tools (ArtImageHub) tend to handle physical damage substantially better than general-purpose creative editors (Picsart).',
     },
     {
       number: 4,
       title: 'Plan for Mobile vs Desktop Workflow',
       borderColor: 'purple',
-      body: 'Picsart is mobile-first with polished iOS and Android apps. ArtImageHub is web-first and runs in any browser, including mobile. For quick on-phone editing of modern photos, Picsart\'s native app is convenient. For careful restoration of irreplaceable family photos, the larger desktop screen matters — you can see fine detail, compare before/after side by side, and verify the restored result before paying. Most family restoration projects benefit from desktop workflow.',
+      body: 'Picsart is mobile-first with polished iOS and Android apps. ArtImageHub is web-first and runs in any browser, including mobile. For quick on-phone editing of modern photos, Picsart\'s native app is convenient. For careful restoration of irreplaceable family photos, the larger desktop screen matters — you can see fine detail and compare before/after side by side after processing. Most family restoration projects benefit from desktop workflow.',
     },
   ],
 
@@ -293,14 +293,14 @@ const config: BuyerGuideConfig = {
       answer: 'Picsart subscriptions are managed through whichever platform you signed up on — iOS App Store, Google Play Store, or Picsart\'s web interface. To cancel: on iOS, open Settings → your name → Subscriptions → Picsart → Cancel; on Android, open Google Play Store → Menu → Payments & subscriptions → Subscriptions → Picsart → Cancel; on web, log into Picsart\'s website and manage subscriptions in your account settings. Cancellation takes effect at the end of the current billing period, so you keep paid features until then. Once cancelled, you no longer need an active Picsart account to use any photos you previously restored or saved — those files are stored locally on your device or in your personal cloud. ArtImageHub does not require any migration step; just upload your future original scans through the web interface and pay $4.99 once for the unlock.',
     },
     {
-      question: 'What about the free tier of Picsart vs ArtImageHub\'s preview?',
-      answer: 'These two free options work differently. Picsart\'s free tier is an ongoing free version of the full app with watermarks on exports and limited access to premium creative features (stickers, templates, AI effects). It is genuinely free forever for casual editing but signals constantly that you should upgrade to Gold. ArtImageHub\'s "free preview" is a one-time look at the actual restored result before you decide whether to pay $4.99 for the original-quality download. The preview shows you exactly what the paid result will look like — there is no upgrade pressure during the preview, just a yes/no decision on whether the result is worth $4.99. Most users find the ArtImageHub preview more useful for evaluating restoration quality before committing, while Picsart\'s free tier is more useful for ongoing casual creative editing. The two free experiences serve different purposes.',
+      question: 'What about the free tier of Picsart vs ArtImageHub?',
+      answer: 'Picsart\'s free tier is an ongoing free version of the full app with watermarks on exports and limited access to premium creative features (stickers, templates, AI effects). It is genuinely free forever for casual editing but signals constantly that you should upgrade to Gold. ArtImageHub works differently: it is a pay-first restoration flow where $4.99 unlocks upload, AI processing, and the original-quality download with no subscription. Picsart\'s free tier is useful for ongoing casual creative editing; ArtImageHub is built for a focused family-photo restoration job.',
     },
   ],
 
   finalCtaHeading: 'Restore Your Family Photos With the Right Tool',
-  finalCtaSubhead: 'For real photo restoration, ArtImageHub\'s specialized pipeline beats general-purpose creative editors. Preview the result first, unlock the original-quality download for $4.99 only if it\'s worth keeping.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'For real photo restoration, ArtImageHub\'s specialized pipeline beats general-purpose creative editors. Pay $4.99 once to unlock upload, AI restoration, and the original-quality download.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [

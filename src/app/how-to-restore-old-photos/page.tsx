@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How to Restore Old Photos — 3 Methods Compared, AI Wins (2026)",
   description:
-    "Step-by-step guide: restore old photos with AI in 30 seconds, Photoshop, or pro services. 12,400+ photos restored. Upload free, download from $4.99 — no subscription.",
+    "Step-by-step guide: restore old photos with AI in 30 seconds, Photoshop, or pro services. 12,400+ photos restored. $4.99 one-time AI restoration unlock — no subscription.",
   alternates: { canonical: "/how-to-restore-old-photos" },
   keywords: [
     "how to restore old photos",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Restore Old Photos: Complete Guide (2026)",
     description:
-      "Step-by-step guide to restoring old photos using AI, Photoshop, or professional services. Preview-first and paid methods compared.",
+      "Step-by-step guide to restoring old photos using AI, Photoshop, or professional services. Pay-first AI, DIY, and professional methods compared.",
     type: "article",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "How to Restore Old Photos: Complete Guide",
-    description: "Learn 3 methods to restore old photos: AI, Photoshop, professional services. Preview-first guide with examples.",
+    description: "Learn 3 methods to restore old photos: AI, Photoshop, professional services. Pay-first guide with examples.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What is the easiest way to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI photo restoration is the easiest method. Upload your photo to a tool like ArtImageHub, and the AI automatically removes damage, enhances faces, and improves resolution in 30 seconds. No technical skills required. You can preview the result first before deciding whether to pay for the original-quality download.",
+        text: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
       },
     },
     {
@@ -124,7 +124,7 @@ const faqSchema = {
       name: "Can I restore old photos for free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Many AI photo restoration tools let you see a preview first. ArtImageHub lets you preview the restored result before paying. If you want the original-quality download, it is a one-time $4.99 unlock for that photo.",
+        text: "Some tools offer limited previews or free tiers. ArtImageHub is pay-first: a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download with no subscription.",
       },
     },
     {
@@ -140,7 +140,7 @@ const faqSchema = {
       name: "How much does professional photo restoration cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Professional photo restoration costs $50-$150 per photo, depending on damage severity. This is suitable for historically significant or severely damaged photos. For family photos, AI restoration is usually far cheaper because you can preview first and only pay $4.99 if you want the original-quality download.",
+        text: "Professional photo restoration costs $50-$150 per photo, depending on damage severity. This is suitable for historically significant or severely damaged photos. For family photos, pay-first AI restoration is usually far cheaper at a one-time $4.99 unlock.",
       },
     },
     {
@@ -186,9 +186,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time unlock for upload, AI processing, and original-quality download"
   },
 };
 
@@ -241,13 +241,13 @@ export default function HowToRestoreOldPhotosPage() {
               href="/old-photo-restoration"
               className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-7 py-3.5 text-[15px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
             >
-              Start Free AI Preview
+              Unlock AI Restoration
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <div className="text-[14px] text-[#faf8f4]/60 font-lora">
-              Free preview · No signup · 30-second results
+              $4.99 one-time · No subscription · 30-second results
             </div>
           </div>
         </div>
@@ -282,7 +282,7 @@ export default function HowToRestoreOldPhotosPage() {
               <div className="flex items-baseline gap-2">
                 <span className="text-[#8B5E3C] font-bold">✓</span>
                 <span className="text-[#6b5344]">
-                  <strong className="text-[#2c2416]">$0 to preview</strong>
+                  <strong className="text-[#2c2416]">$4.99 once</strong>
                 </span>
               </div>
               <div className="flex items-baseline gap-2">
@@ -330,8 +330,8 @@ export default function HowToRestoreOldPhotosPage() {
                     <div className="text-[13px] text-[#6b5344] mt-1">Automated software</div>
                   </td>
                   <td className="py-5 px-4">
-                    <div className="font-semibold text-[#2c2416]">$0-$4.99</div>
-                    <div className="text-[13px] text-[#6b5344] mt-1">Preview first, then unlock</div>
+                    <div className="font-semibold text-[#2c2416]">$4.99</div>
+                    <div className="text-[13px] text-[#6b5344] mt-1">Pay first, then process</div>
                   </td>
                   <td className="py-5 px-4">
                     <div className="font-semibold text-[#2c2416]">30 seconds</div>
@@ -399,7 +399,7 @@ export default function HowToRestoreOldPhotosPage() {
               href="/old-photo-restoration"
               className="inline-flex items-center gap-2 text-[15px] font-semibold text-[#8B5E3C] hover:text-[#7a5234] transition-colors"
             >
-              Start with a free AI preview
+              Unlock AI restoration
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -442,7 +442,7 @@ export default function HowToRestoreOldPhotosPage() {
                 description:
                   "Visit an AI photo restoration tool like ArtImageHub. Drag and drop your scanned photo or click to upload. Most tools accept JPG, PNG, and WEBP formats up to 20MB.",
                 tips: [
-                  "Preview the result first before deciding whether to pay $4.99",
+                  "Pay $4.99 once to unlock upload, AI processing, and original-quality download",
                   "Test with your most damaged photo first",
                   "Compare results from different AI tools if unsure",
                 ],
@@ -464,8 +464,8 @@ export default function HowToRestoreOldPhotosPage() {
                 description:
                   "Compare the before and after result using the preview slider. If satisfied, download your restored photo in high resolution. Always save both the original scan and the restored version.",
                 tips: [
-                  "Use the preview to judge whether the restore is worth keeping",
-                  "Unlock the original-quality download for $4.99 only if the result is worth it",
+                  "Compare the output against the original before saving it",
+                  "The $4.99 unlock covers upload, processing, and original-quality download",
                   "Store restored photos separately from originals",
                 ],
               },
@@ -498,13 +498,13 @@ export default function HowToRestoreOldPhotosPage() {
           <div className="mt-12 rounded-2xl bg-gradient-to-br from-[#8B5E3C] to-[#6b4628] p-8 text-center shadow-xl shadow-[#8B5E3C]/20">
             <h3 className="font-playfair text-[28px] font-700 text-[#faf8f4] mb-3">Ready to restore your photos?</h3>
             <p className="text-[16px] text-[#faf8f4]/90 mb-6 font-lora">
-              Start with a free preview. No signup required. If the result looks right, unlock the original-quality download for $4.99.
+              Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex items-center gap-2 rounded-full bg-[#faf8f4] px-8 py-4 text-[16px] font-semibold text-[#8B5E3C] hover:bg-white active:scale-[0.98] transition-all duration-200 shadow-lg"
             >
-              Start Free Preview
+              Unlock AI Restoration
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -708,7 +708,7 @@ export default function HowToRestoreOldPhotosPage() {
               href="/old-photo-restoration"
               className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-7 py-3.5 text-[15px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
             >
-              Start Free Preview
+              Unlock AI Restoration
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -728,11 +728,11 @@ export default function HowToRestoreOldPhotosPage() {
             {[
               {
                 q: "What is the easiest way to restore old photos?",
-                a: "AI photo restoration is the easiest method. Upload your photo to a tool like ArtImageHub, and the AI automatically removes damage, enhances faces, and improves resolution in 30 seconds. No technical skills required. You can preview the result first before deciding whether to pay for the original-quality download.",
+                a: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
               },
               {
                 q: "Can I restore old photos for free?",
-                a: "Yes. Many AI photo restoration tools let you see a preview first. ArtImageHub lets you preview the restored result before paying. If you want the original-quality download, it is a one-time $4.99 unlock for that photo.",
+                a: "Some tools offer limited previews or free tiers. ArtImageHub is pay-first: a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download with no subscription.",
               },
               {
                 q: "Is AI better than Photoshop for photo restoration?",
@@ -740,7 +740,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "How much does professional photo restoration cost?",
-                a: "Professional photo restoration costs $50-$150 per photo, depending on damage severity. This is suitable for historically significant or severely damaged photos. For family photos, AI restoration is usually far cheaper because you can preview first and only pay $4.99 if you want the original-quality download.",
+                a: "Professional photo restoration costs $50-$150 per photo, depending on damage severity. This is suitable for historically significant or severely damaged photos. For family photos, pay-first AI restoration is usually far cheaper at a one-time $4.99 unlock.",
               },
               {
                 q: "What photo damage can AI restoration fix?",
@@ -778,19 +778,19 @@ export default function HowToRestoreOldPhotosPage() {
             Ready to restore your family memories?
           </h2>
           <p className="text-[18px] text-[#6b5344] font-lora mb-8 leading-[1.7]">
-            Start with a free preview. No signup required. See the results in 30 seconds. If the restoration looks worth keeping, unlock the original-quality download for $4.99.
+            Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex items-center gap-2 rounded-full bg-[#8B5E3C] px-8 py-4 text-[16px] font-semibold text-[#faf8f4] hover:bg-[#7a5234] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-[#8B5E3C]/30"
           >
-            Start Free Preview Now
+            Unlock AI Restoration
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
           <p className="mt-4 text-[14px] text-[#6b5344]/80 font-lora">
-            No credit card · No signup · 30-second results
+            Secure checkout · No subscription · 30-second results
           </p>
         </div>
       </section>

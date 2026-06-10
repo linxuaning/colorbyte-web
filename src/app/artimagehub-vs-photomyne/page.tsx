@@ -297,7 +297,7 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Restore Your Already-Scanned Photos',
-  finalCtaSubhead: 'Scan with whichever app you prefer, then upload to ArtImageHub for the actual AI restoration. Preview the result for free, unlock the original-quality download for $4.99.',
+  finalCtaSubhead: 'Scan with whichever app you prefer, then use ArtImageHub for the actual AI restoration. Pay $4.99 once to unlock upload, processing, and the original-quality download.',
   finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',

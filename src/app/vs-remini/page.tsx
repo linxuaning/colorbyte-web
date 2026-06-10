@@ -428,9 +428,8 @@ export default function VsReminiPage() {
               </summary>
               <p className="mt-3 text-sm text-[#6b5344]">
                 For old photo restoration, ArtImageHub uses one-time pay-first access — $4.99 unlocks upload,
-                processing, and HD download. There isn't a free trial on the restoration flow. Our colorizer
-                and enhancer tools offer a free preview if you want to see the AI output quality first on a
-                different type of photo before purchasing.
+                processing, and HD download. There is not a free trial on the restoration flow, and the core
+                colorizer and enhancer tools use the same pay-first access rule.
               </p>
             </details>
             <details className="rounded-xl border border-[#d4bc91]/40 bg-white p-5">

@@ -424,7 +424,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "Is the photo scratch remover free?",
-                  a: "Yes. ArtImageHub lets you preview the repaired result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
+                  a: "No. ArtImageHub uses pay-first access: $4.99 unlocks upload, AI scratch repair, and the original-quality download with no subscription.",
                 },
                 {
                   q: "What types of scratches can AI remove?",
