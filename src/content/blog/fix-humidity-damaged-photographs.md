@@ -30,6 +30,8 @@ faq:
 
 Humidity is one of the most insidious enemies of photograph preservation. Unlike sudden water damage, humidity damage often occurs slowly over years of improper storage, causing warping, sticking, emulsion deterioration, and mold growth. Understanding how to address humidity damage can save photographs that might otherwise be lost.
 
+When humidity has already bonded two prints together, use the focused guide to [separating old photos stuck together](/blog/fix-photos-stuck-together). This humidity guide explains the surrounding moisture damage and prevention steps.
+
 Need to restore moisture-damaged photos quickly? Our [AI photo enhancer](/enhance-old-photos) can correct color shifts, repair spotted damage, and improve overall image quality instantly.
 
 ## How Humidity Damages Photographs
@@ -198,7 +200,7 @@ For damaged photos, digital restoration often provides the best results without 
 - Fix foxing damage
 - Clear discolored areas
 
-Our [advanced restoration tool](/restore-old-family-photos) handles multiple types of humidity damage simultaneously.
+Our [old photo restoration tool](/old-photo-restoration) handles multiple types of humidity damage simultaneously.
 
 ### Scanning Damaged Photos
 
@@ -294,10 +296,10 @@ Short answer: Yes, using controlled humidification. Place photos in a sealed con
 
 ---
 
-Humidity damage doesn't have to mean permanent loss of your photographs. With proper emergency response, careful physical treatment, and powerful digital restoration tools, even severely affected photos can often be saved. Start with our [free AI photo restoration](/restore-old-family-photos) to see what's possible with your humidity-damaged memories.
+Humidity damage doesn't have to mean permanent loss of your photographs. With proper emergency response, careful physical treatment, and digital restoration tools, even severely affected photos can often be saved. Start with a careful scan, then use [old photo restoration](/old-photo-restoration) to repair the safest digital copy.
 
 
-Restore your own old photos at [ArtImageHub](/old-photo-restoration) — free preview, no signup required.
+Restore your own old photos at [ArtImageHub](/old-photo-restoration) — $4.99 one-time for the restored full-resolution download.
 
 ## Quick method comparison: AI vs DIY vs Professional
 

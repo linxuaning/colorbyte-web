@@ -17,6 +17,8 @@ noIndex: true
 
 The magnetic photo albums popular from the late 1960s through the 1990s — those albums with adhesive-coated pages covered by a clear plastic sheet — are responsible for some of the worst and most widespread damage in American family photo collections. The adhesives used in these albums, particularly early versions using pressure-sensitive adhesive coatings on plastic-backed pages, chemically attack photographs over time. Photographs stored in these albums for 30-50 years often face serious damage.
 
+For prints bonded to each other rather than to album pages, use the broader [photos stuck together separation guide](/blog/fix-photos-stuck-together) first. This page is specifically about self-adhesive album pages.
+
 ## Why Magnetic Albums Damage Photographs
 
 The 'magnetic' label is a misnomer — there's no magnetism involved. These albums work by covering an adhesive-coated page with a clear plastic sheet; photographs are placed on the adhesive and the plastic pressed down to hold them. The adhesives used were typically pressure-sensitive rubber-cement-like compounds that seemed stable initially but have proven chemically aggressive toward photographic materials over time. The adhesive migrates into the paper support and emulsion layers of photographs, causing discoloration. The plastic sheets can trap moisture and acids. The combination of adhesive migration, moisture trapping, and the plastic's own off-gassing creates a chemically hostile environment.

@@ -19,6 +19,8 @@ noIndex: true
 
 It happens when a photograph is framed without an archival mat: over time, humidity causes the photograph to adhere to the glass. Pulling the photograph away from the glass risks tearing the emulsion. Leaving it stuck leaves you with a photograph that can't be scanned.
 
+If your photos are stuck to each other rather than to glass, use the separate guide to [photos stuck together](/blog/fix-photos-stuck-together). Glass-stuck prints usually need a different, more conservative handling path.
+
 ## Assessment: Scan In Place First
 
 Before attempting any physical separation, photograph or scan the print through the glass. This gives you a reference image regardless of what happens next. The glass creates some glare challenges, but shooting at an angle eliminates most glare.
@@ -37,7 +39,7 @@ Start with the highest-quality scan you can produce — 600 DPI minimum for stan
 
 After restoration, compare the result with the original at full zoom. Check faces carefully to ensure identity is preserved, and note any areas where AI may have filled in damaged sections with plausible but uncertain reconstructions.
 
-Ready to begin? Our [AI photo restoration tool](/old-photo-restoration) handles all the types of damage described here — free to try, no signup required.
+Ready to begin? Our [AI photo restoration tool](/old-photo-restoration) handles the scanned copy after you photograph or scan through the glass. The restored full-resolution download is $4.99 one-time.
 
 ---
 *See also: [How AI restoration works](/blog/how-ai-photo-restoration-works) | [Vintage photo repair guide](/blog/vintage-photo-repair-techniques)*
