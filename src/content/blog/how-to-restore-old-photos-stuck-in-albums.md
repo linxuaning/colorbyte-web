@@ -9,6 +9,8 @@ coverEmoji: "📷"
 
 The magnetic photo album was one of the most damaging inventions in consumer photography. Manufactured from the late 1960s through the 1990s and still found in homes worldwide, these albums trapped millions of photographs between pressure-sensitive adhesive sheets and PVC plastic overlays. Decades later, many of those photographs are firmly bonded to their pages, chemically altered by off-gassing, or physically degraded in ways that demand careful handling before any digital restoration can begin.
 
+If the photos are stuck to each other in a stack, not just to an album page, read the dedicated guide to [separating photos stuck together](/blog/fix-photos-stuck-together) before attempting removal.
+
 ## What Makes Magnetic Albums So Destructive to Photographs?
 
 The term "magnetic" is a misnomer — these albums use no magnets. The name stuck because photographs seemed to cling to pages as if magnetically attracted. The actual mechanism is a pressure-sensitive adhesive coating applied to cardboard pages, covered by a clear plastic overlay sheet made from PVC or, in cheaper variants, polyvinyl acetate.

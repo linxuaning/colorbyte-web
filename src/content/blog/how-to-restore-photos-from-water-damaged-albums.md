@@ -26,11 +26,13 @@ faq:
 
 Flooding is among the most sudden and total forms of photograph damage. A burst pipe fills a closet overnight. A basement floods during a storm. Hurricane storm surge reaches a room where 40 years of family albums are stored. Within hours, prints that were untouched for decades are wet, stuck together, and beginning to deteriorate.
 
+If your immediate problem is two or more prints bonded to each other, start with the dedicated guide to [separating photos stuck together](/blog/fix-photos-stuck-together). This page covers the broader album and flood-recovery workflow around that specific separation step.
+
 The instinct is to panic. The practical reality is that most flooded photographs can be recovered — and many can be restored to a state that is genuinely better than they were before the flood — if the response is fast and the process is correct.
 
 This guide covers the emergency recovery steps, the scanning preparation, the AI restoration workflow, and what to expect from different types of water damage. The entire process, from wet print to digital archive, is achievable without professional conservation equipment in most cases.
 
-For AI restoration of your scanned flood-damaged photographs, [ArtImageHub](https://artimagehub.com) handles all common flood damage patterns — upload, preview free, and pay $4.99 to download the full-resolution restored file.
+For AI restoration of your scanned flood-damaged photographs, [ArtImageHub](/old-photo-restoration) handles common flood damage patterns after the prints are stabilized and scanned. Pay $4.99 once to unlock the restored full-resolution file.
 
 ---
 
