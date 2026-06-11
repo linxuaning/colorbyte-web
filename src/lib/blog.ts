@@ -11,20 +11,116 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_EN_STATIC_SLUGS = new Set([
+const EMERGENCY_STATIC_POST_LIMIT = 300;
+const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
+const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
+  en: new Set([
   "best-photo-enhancement-apps-2026",
   "best-free-photo-restoration-apps",
   "can-gemini-restore-old-photos",
   "how-to-fix-out-of-focus-old-photos",
-  // T152 止血: 成交页被 120 cap 砍成 404,显式 pin 保证 static export 收录
+  // T152: keep ranked/live-revenue pages emitted under Render static export caps.
   "photo-restoration-software-comparison",
   "how-to-fix-overexposed-photos-ai",
   "can-chatgpt-restore-old-photos",
   "can-google-photos-restore-old-photos",
   "can-midjourney-restore-old-photos",
   "can-microsoft-copilot-restore-old-photos",
-]);
-const EMERGENCY_STATIC_POST_LIMIT = 120;
+  "enhance-low-quality-images",
+  "best-photo-restoration-software-2026",
+  "fix-sun-damaged-photos",
+  "enhance-old-group-photos-guide",
+  "photo-restoration-ethics",
+  "best-ai-old-photo-restoration-tools-2026",
+  "enhance-old-concert-photographs",
+  "artimagehub-vs-topaz-gigapixel",
+  "can-claude-restore-old-photos",
+  "colorization-accuracy-tips",
+  "restore-grandfathers-old-photos",
+  "ai-image-enhancer",
+  "artimagehub-vs-lightroom",
+  "photo-restoration-near-me",
+  "photo-restoration-near-me-online",
+  "restore-tintype-images-complete-guide",
+  "fix-torn-photographs-ai-guide",
+  "artimagehub-vs-lets-enhance",
+  "enhance-old-school-photos",
+  "enhance-blurry-vintage-photos",
+  "fix-faded-kodachrome-slides",
+  "fix-scratched-vintage-prints",
+  "artimagehub-vs-adobe-photoshop",
+  "artimagehub-vs-waifu2x",
+  "enhance-faded-memories",
+  "fix-faded-newspaper-clippings",
+  "restore-photos-after-house-fire",
+  "wedding-photo-restoration-complete-ai-guide",
+  "ai-photo-restoration-chatgpt-recommendations-2026",
+  "best-photo-quality-tools-for-wix",
+  "free-photo-restoration-tools-2026",
+  "how-to-print-restored-photos",
+  "what-is-the-best-dpi-for-scanning-old-photos",
+  "ai-tools-for-vintage-clothing-sellers",
+  "best-free-photo-enhancer-no-watermark",
+  "digitize-restore-film-home-movies",
+  "how-to-enhance-group-photo-faces",
+  "how-to-enhance-small-cropped-faces",
+  "how-to-restore-photo-with-missing-person",
+  "remove-ink-stains-from-old-photos",
+  "restore-1960s-counterculture-photos",
+  "restore-1970s-instant-photos",
+  "restore-old-passport-photos",
+  "restore-photos-immigrant-ancestor-homestead",
+  "restore-photos-lgbtq-family-history",
+  "fix-photos-stuck-together",
+  "enhance-old-newspaper-photos",
+  "best-ai-photo-restoration-tools-2026-compared",
+  "best-photo-scanning-tips",
+  "restore-school-photos-class-portraits",
+  "photo-upscaling-ai-comparison",
+  "artimagehub-vs-myheritage",
+  "fix-curled-photograph-edges",
+  "photo-preservation-methods",
+  "ai-photo-restoration-vs-photoshop",
+  "colorize-1950s-family-photos",
+  "photo-scanning-best-practices",
+  "how-to-fix-red-eye-in-old-flash-photos",
+  "how-to-restore-old-photos-free-vs-paid",
+  "restore-ambrotype-images",
+  "restore-faded-polaroid-prints",
+  "restore-photos-gimp-tutorial",
+  "best-photo-restoration-apps-ios-android",
+  "complete-guide-colorize-old-photos",
+  "digitize-restore-old-slides",
+  "enhance-old-wedding-pictures",
+  "how-to-restore-water-damaged-album",
+  "restore-daguerreotype-images",
+  "restore-mold-damaged-photo-album",
+  "restore-water-damaged-photos",
+  ]),
+  de: new Set(["fix-photos-stuck-together"]),
+  es: new Set([
+    "photo-restoration-software-comparison",
+    "artimagehub-vs-topaz-gigapixel",
+    "artimagehub-vs-waifu2x",
+    "enhance-old-newspaper-photos",
+    "fix-photos-stuck-together",
+    "fix-torn-photographs-ai-guide",
+    "restore-grandmas-old-photos-mothers-day",
+    "restore-photos-genealogy-dna-testing",
+    "best-ai-photo-restoration-tools-2026-compared",
+    "colorize-civil-war-photos",
+    "how-to-restore-faded-color-photos-1970s",
+  ]),
+  ja: new Set(["fix-photos-stuck-together"]),
+  ko: new Set(["fix-photos-stuck-together"]),
+  "pt-BR": new Set([
+    "artimagehub-vs-topaz-gigapixel",
+    "artimagehub-vs-waifu2x",
+    "restore-photos-for-documentary-film",
+    "fix-cracked-emulsion-photos",
+    "restore-grandmas-old-photos-mothers-day",
+  ]),
+};
 
 function localeBlogDir(locale: BlogLocale | string): string {
   if (!locale || locale === "en") return postsDirectory;
@@ -301,17 +397,28 @@ export async function getAllPosts(locale: BlogLocale | string = "en"): Promise<B
   });
 
   if (EMERGENCY_STATIC_EXPORT) {
-    if (locale !== "en") return sortedPosts.slice(0, 8);
-
-    const pinnedPosts = sortedPosts.filter((post) => EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
-    const remainingPosts = sortedPosts.filter((post) => !EMERGENCY_EN_STATIC_SLUGS.has(post.slug));
-    // fail-loud: a pinned slug with no matching post = silent 404 in static export
+    const normalizedLocale = (locale || "en") as BlogLocale;
+    const pinnedSlugs = EMERGENCY_STATIC_SLUGS_BY_LOCALE[normalizedLocale];
+    const pinnedPosts = pinnedSlugs
+      ? sortedPosts.filter((post) => pinnedSlugs.has(post.slug))
+      : [];
+    const remainingPosts = pinnedSlugs
+      ? sortedPosts.filter((post) => !pinnedSlugs.has(post.slug))
+      : sortedPosts;
+    // fail-loud: a pinned slug with no matching post = silent 404 in static export.
     const foundSlugs = new Set(pinnedPosts.map((post) => post.slug));
-    const missingPins = [...EMERGENCY_EN_STATIC_SLUGS].filter((slug) => !foundSlugs.has(slug));
+    const missingPins = pinnedSlugs
+      ? [...pinnedSlugs].filter((slug) => !foundSlugs.has(slug))
+      : [];
     if (missingPins.length > 0) {
-      console.warn(`[blog] EMERGENCY_EN_STATIC_SLUGS pin(s) not found, will 404: ${missingPins.join(", ")}`);
+      console.warn(
+        `[blog] emergency ${normalizedLocale} static pin(s) not found, will 404: ${missingPins.join(", ")}`
+      );
     }
-    return [...pinnedPosts, ...remainingPosts].slice(0, EMERGENCY_STATIC_POST_LIMIT);
+    const limit = normalizedLocale === "en"
+      ? EMERGENCY_STATIC_POST_LIMIT
+      : EMERGENCY_LOCALE_STATIC_POST_LIMIT;
+    return [...pinnedPosts, ...remainingPosts].slice(0, limit);
   }
 
   return sortedPosts;
