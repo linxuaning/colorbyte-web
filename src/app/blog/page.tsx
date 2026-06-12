@@ -416,7 +416,7 @@ export default async function BlogPage() {
                 <em className="italic text-[#D4A96A]">back to life.</em>
               </h2>
               <p className="mt-4 font-lora text-[15px] text-[#a8967e] max-w-md leading-[1.7]">
-                AI-powered restoration in seconds. Face enhancement, super resolution, and colorization — all free to start.
+                AI-powered restoration in seconds. Face enhancement, super resolution, and colorization with a $4.99 one-time unlock.
               </p>
             </div>
 
@@ -425,7 +425,7 @@ export default async function BlogPage() {
                 href="/old-photo-restoration"
                 className="inline-flex h-13 items-center rounded-full bg-[#D4A96A] px-8 font-lora text-[15px] font-600 text-[#2c2416] hover:bg-[#c49a5a] active:scale-[0.97] transition-all duration-200 shadow-xl shadow-[#D4A96A]/20 whitespace-nowrap"
               >
-                Start Free Preview
+                Unlock AI Restoration
               </Link>
             </div>
           </div>

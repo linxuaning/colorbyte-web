@@ -5,8 +5,8 @@ import FloatingCTA from '@/components/FloatingCTA';
 import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
-  title: 'Restore Old Photos Free | AI Photo Restoration - No Signup',
-  description: 'Restore old photos free with an AI preview. No signup, no credit card. See the restored result in 30 seconds, then unlock the original-quality download for $4.99.',
+  title: 'Restore Old Photos Online | $4.99 One-Time AI Photo Restoration',
+  description: 'Restore old photos with a $4.99 one-time unlock for upload, AI processing, and original-quality download. No subscription.',
   keywords: [
     'restore old photos free',
     'free photo restoration',
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/restore-old-photos-free' },
   openGraph: {
-    title: 'Restore Old Photos Free | AI Photo Restoration',
-    description: 'Restore old photos free with an AI preview. No signup required. Preview first, then unlock the original-quality download for $4.99.',
+    title: 'Restore Old Photos Online | AI Photo Restoration',
+    description: 'Restore old photos with a $4.99 one-time unlock for upload, AI processing, and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after free AI photo restoration' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Restore Old Photos Free - No Signup Required',
-    description: 'Fix scratches, enhance faces, and colorize old photos with a free preview first. Unlock the original-quality download for $4.99.',
+    title: 'Restore Old Photos Online - $4.99 One-Time',
+    description: 'Fix scratches, enhance faces, and colorize old photos after a $4.99 one-time unlock. Original-quality download included.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -37,28 +37,28 @@ export const metadata: Metadata = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Restore Old Photos Free Online",
-  description: "Restore damaged, faded, or old photographs using free AI photo restoration — no signup required, results in 30 seconds.",
+  name: "How to Restore Old Photos Online",
+  description: "Restore damaged, faded, or old photographs with a $4.99 one-time AI restoration unlock and results in 30 seconds.",
   totalTime: "PT1M",
-  tool: [{ "@type": "HowToTool", name: "ArtImageHub Free AI Photo Restoration" }],
+  tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your photo free",
-      text: "Click the upload area and select your old or damaged photo. No signup or account required. Supports JPG, PNG, WEBP up to 20MB.",
+      name: "Pay once to unlock access",
+      text: "Pay $4.99 once, then upload your old or damaged photo. Supports JPG, PNG, WEBP up to 20MB.",
     },
     {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores automatically",
-      text: "Our free AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 15-30 seconds.",
+      text: "AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 15-30 seconds.",
     },
     {
       "@type": "HowToStep",
       position: 3,
       name: "Download your restored photo",
-      text: "Preview the before/after result for free first. When you want the original-quality restored photo, pay $4.99 once to unlock the download.",
+      text: "Compare the before/after result and download the original-quality restored photo.",
     },
   ],
 };
@@ -66,14 +66,14 @@ const howToSchema = {
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "ArtImageHub Free Photo Restoration",
+  name: "ArtImageHub Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time unlock for upload, AI processing, and original-quality download"
   },
 };
 
@@ -81,11 +81,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "Is this photo restoration really free?", acceptedAnswer: { "@type": "Answer", text: "Yes — you can create a free preview with ArtImageHub without signing up or entering a card. When you want the original-quality restored photo, pay $4.99 once to unlock that download." } },
-    { "@type": "Question", name: "What's the catch with free photo restoration?", acceptedAnswer: { "@type": "Answer", text: "The free part is the preview. You get to see the restored result first. If you want the clean original-quality file, you unlock that download for $4.99 once instead of starting a subscription." } },
-    { "@type": "Question", name: "Do I need to create an account for free restoration?", acceptedAnswer: { "@type": "Answer", text: "No. You can upload and preview a restored photo without creating an account. We only ask for an email when you decide to unlock the original-quality download." } },
-    { "@type": "Question", name: "What quality do I get with free restoration?", acceptedAnswer: { "@type": "Answer", text: "The AI restoration itself is the same. The difference is the file you take home: free preview first, then a $4.99 unlock for the original-quality download." } },
-    { "@type": "Question", name: "How does free compare to paid photo restoration?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub lets you preview the restoration for free first, then unlock the original-quality download for $4.99 once. Many competitors push subscriptions or higher one-time prices before you know whether the result is good enough." } },
+    { "@type": "Question", name: "Do I need to pay before restoring old photos?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub uses a pay-first model. A single $4.99 payment unlocks upload, AI restoration, and the original-quality download with no subscription." } },
+    { "@type": "Question", name: "How does ArtImageHub pricing work?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub charges $4.99 once to unlock upload, AI processing, and original-quality download. There is no subscription or monthly renewal." } },
+    { "@type": "Question", name: "Do I need to create an account?", acceptedAnswer: { "@type": "Answer", text: "Your paid access is tied to email so you can return to the tool and download results without a subscription." } },
+    { "@type": "Question", name: "What quality does the $4.99 unlock include?", acceptedAnswer: { "@type": "Answer", text: "The $4.99 unlock includes upload, AI restoration, and original-quality download with no subscription." } },
+    { "@type": "Question", name: "How does $4.99 AI restoration compare to traditional services?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is a $4.99 one-time AI restoration workflow. Traditional restoration services often cost much more per photo and take longer." } },
   ],
 };
 
@@ -128,25 +128,25 @@ export default function RestoreOldPhotosFreePage() {
             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            Free Preview · No Signup · No Credit Card
+            $4.99 One-Time Unlock
           </div>
 
           <h1 className="text-[32px] sm:text-[48px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Restore Old Photos <span className="text-green-600">Free</span>
+            Restore Old Photos <span className="text-green-600">Online</span>
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Upload your old, damaged, or faded photo. AI restores it in 30 seconds. <strong className="text-[#1d1d1f]">Start with a free preview</strong> and unlock the original-quality download only if you like the result.
+            Pay $4.99 once, upload your old, damaged, or faded photo, and get AI restoration plus original-quality download.
           </p>
 
           {/* Trust indicators */}
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-[13px] text-[#6e6e73]">
             <span className="flex items-center gap-1.5">
               <span className="text-green-600 font-bold">✓</span>
-              No signup required
+              No subscription
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-green-600 font-bold">✓</span>
-              No credit card
+              One-time payment
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-green-600 font-bold">✓</span>
@@ -161,7 +161,7 @@ export default function RestoreOldPhotosFreePage() {
         <LiveActivity />
         <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-[#6e6e73]">
           {[
-            { icon: "✓", text: "10,000+ previews created" },
+            { icon: "✓", text: "10,000+ photos restored" },
             { icon: "✓", text: "4.8★ user rating" },
             { icon: "✓", text: "Same AI as paid version" },
           ].map((badge) => (
@@ -196,18 +196,18 @@ export default function RestoreOldPhotosFreePage() {
             {[
               {
                 icon: "🎁",
-                title: "Free Preview First",
-                desc: "See the restored result before paying. Only unlock the original-quality file if the preview is worth it to you.",
+                title: "Pay Once First",
+                desc: "Pay once to unlock upload, processing, and original-quality download for old-photo restoration.",
               },
               {
                 icon: "🔓",
-                title: "No Account Needed",
-                desc: "We don't want your email. Just upload, restore, download. Your photos are processed instantly and deleted from our servers within 24 hours.",
+                title: "Email-Tied Access",
+                desc: "Your paid access is tied to email, so you can return without a subscription.",
               },
               {
                 icon: "💎",
-                title: "Same AI Quality",
-                desc: "The restoration model is the same. The difference is what you download: preview first, then the original-quality file after the $4.99 unlock.",
+                title: "Original-Quality Download",
+                desc: "The $4.99 unlock includes the AI result and original-quality download.",
               },
             ].map((item) => (
               <div key={item.title} className="text-center bg-white rounded-2xl p-6 shadow-sm border border-green-100">
@@ -224,7 +224,7 @@ export default function RestoreOldPhotosFreePage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-5">
           <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f] text-center mb-12">
-            Free Preview vs Original Download
+            One-Time Unlock vs Subscription
           </h2>
 
           <div className="overflow-x-auto">
@@ -232,9 +232,9 @@ export default function RestoreOldPhotosFreePage() {
               <thead>
                 <tr className="border-b-2 border-[#d2d2d7]">
                   <th className="py-4 px-4 text-[#1d1d1f] font-semibold">Feature</th>
-                  <th className="py-4 px-4 text-center">
-                    <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Free Preview</span>
-                  </th>
+              <th className="py-4 px-4 text-center">
+                <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold">Typical Free Tools</span>
+              </th>
                   <th className="py-4 px-4 text-center">
                     <span className="inline-block px-3 py-1 bg-[#0071e3] text-white rounded-full text-sm font-semibold">$4.99 Unlock</span>
                   </th>
@@ -243,27 +243,27 @@ export default function RestoreOldPhotosFreePage() {
               <tbody className="divide-y divide-[#d2d2d7]/60">
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">What you see first</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Restored preview</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Same restored result</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Limited preview or watermark</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Paid restore workflow</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">AI Quality</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">✓ Same</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">✓ Same</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Varies</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">AI restoration included</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Download Resolution</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Preview</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                   <td className="py-4 px-4 text-center text-green-600 font-semibold">Full Original</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">Face Enhancement</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Colorization</td>
-                  <td className="py-4 px-4 text-center text-green-600">✓</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often limited</td>
                   <td className="py-4 px-4 text-center text-green-600">✓</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
@@ -273,12 +273,12 @@ export default function RestoreOldPhotosFreePage() {
                 </tr>
                 <tr>
                   <td className="py-4 px-4 text-[#1d1d1f]">Signup Required</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-semibold">No</td>
-                  <td className="py-4 px-4 text-center text-[#6e6e73]">Email only</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Often yes</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-semibold">Email-tied paid access</td>
                 </tr>
                 <tr className="bg-[#f5f5f7]/50">
                   <td className="py-4 px-4 text-[#1d1d1f]">Price</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-bold text-lg">$0</td>
+                  <td className="py-4 px-4 text-center text-[#6e6e73]">Hidden limits</td>
                   <td className="py-4 px-4 text-center text-[#0071e3] font-bold text-lg">$4.99 once</td>
                 </tr>
               </tbody>
@@ -287,7 +287,7 @@ export default function RestoreOldPhotosFreePage() {
 
           <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
             <p className="text-center text-blue-900">
-              <strong>💡 Pro tip:</strong> Use this page to judge the preview first. If the restore is good enough for print, archive, or sharing, unlock the original-quality file for $4.99 once.
+              <strong>Pro tip:</strong> Use this page to start a $4.99 one-time restore for print, archive, or sharing.
             </p>
           </div>
         </div>
@@ -300,23 +300,23 @@ export default function RestoreOldPhotosFreePage() {
             How We Compare to Other &quot;Free&quot; Tools
           </h2>
           <p className="text-center text-[#6e6e73] mb-12 max-w-2xl mx-auto">
-            Many tools claim to be free but add watermarks, require signups, or have hidden limits.
+            Many tools claim to be free but add watermarks, require signups, or hide the real download cost.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "ArtImageHub", free: "Free preview, no signup", catch: "$4.99 only if you want the original-quality file", best: true },
+              { name: "ArtImageHub", free: "$4.99 one-time unlock", catch: "Upload, AI processing, and original-quality download included", best: true },
               { name: "Remini", free: "5 photos/day with watermark", catch: "$9.99/mo for no watermark", best: false },
               { name: "Fotor", free: "Basic features only", catch: "Upgrade popup every action", best: false },
               { name: "PhotoRoom", free: "With watermark", catch: "Subscription for clean output", best: false },
             ].map((tool) => (
               <div key={tool.name} className={`rounded-xl p-5 ${tool.best ? 'bg-green-50 border-2 border-green-400 ring-2 ring-green-100' : 'bg-white border border-[#d2d2d7]/60'}`}>
                 {tool.best && (
-                  <div className="text-xs font-bold text-green-700 uppercase tracking-wider mb-2">✓ Best Free Option</div>
+                  <div className="text-xs font-bold text-green-700 uppercase tracking-wider mb-2">✓ Best One-Time Option</div>
                 )}
                 <h3 className="font-bold text-[#1d1d1f] mb-2">{tool.name}</h3>
                 <p className="text-[13px] text-green-700 mb-2">{tool.free}</p>
-                <p className="text-[12px] text-[#6e6e73]">Catch: {tool.catch}</p>
+                <p className="text-[12px] text-[#6e6e73]">Note: {tool.catch}</p>
               </div>
             ))}
           </div>
@@ -327,34 +327,34 @@ export default function RestoreOldPhotosFreePage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-5">
           <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f] text-center mb-12">
-            Free Photo Restoration FAQ
+            Photo Restoration Pricing FAQ
           </h2>
 
           <dl className="space-y-6">
             {[
               {
-                q: "Is this photo restoration really free?",
-                a: "Yes. You can create a free preview with ArtImageHub without signing up or entering a card. When you want the original-quality restored photo, pay $4.99 once to unlock that download.",
+                q: "Do I need to pay before restoring old photos?",
+                a: "Yes. ArtImageHub uses a pay-first model. A single $4.99 payment unlocks upload, AI restoration, and the original-quality download with no subscription.",
               },
               {
-                q: "What's the catch with free photo restoration?",
-                a: "The free part is the preview. You get to see the restored result first. If you want the clean original-quality file, you unlock that download for $4.99 once instead of starting a subscription.",
+                q: "How does ArtImageHub pricing work?",
+                a: "ArtImageHub charges $4.99 once to unlock upload, AI processing, and original-quality download. There is no subscription or monthly renewal.",
               },
               {
-                q: "Do I need to create an account for free restoration?",
-                a: "No. You can upload and preview a restored photo without creating an account. We only ask for an email when you decide to unlock the original-quality download.",
+                q: "Do I need to create an account?",
+                a: "Your paid access is tied to email so you can return to the tool and download results without a subscription.",
               },
               {
-                q: "What quality do I get with free restoration?",
-                a: "The AI restoration itself is the same. The difference is the file you take home: free preview first, then a $4.99 unlock for the original-quality download.",
+                q: "What quality does the $4.99 unlock include?",
+                a: "The $4.99 unlock includes upload, AI restoration, and original-quality download with no subscription.",
               },
               {
                 q: "Are my photos safe and private?",
                 a: "Yes. All photos are transmitted over encrypted HTTPS. Uploaded photos are automatically deleted from our servers within 24 hours. We never share, sell, or use your photos to train AI.",
               },
               {
-                q: "What happens after the free preview?",
-                a: "If the preview looks good, you can unlock the original-quality restored photo for $4.99 once. If it is not good enough, you can stop there without starting a subscription.",
+                q: "What happens after the $4.99 unlock?",
+                a: "After checkout, your paid access unlocks upload, AI restoration, and the original-quality restored photo. There is no subscription or monthly renewal.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">
@@ -370,19 +370,19 @@ export default function RestoreOldPhotosFreePage() {
       <section className="py-16 sm:py-20 bg-gradient-to-br from-green-600 to-emerald-600">
         <div className="mx-auto max-w-3xl px-5 text-center">
           <h2 className="text-[32px] sm:text-[40px] font-bold text-white mb-4">
-            Start with a Free Preview Right Now
+            Restore a Photo for $4.99
           </h2>
           <p className="text-green-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Upload your photo and see the AI restore it in 30 seconds. No signup. No credit card. Unlock the original-quality file only if you want it.
+            Pay once, upload your photo, and let the AI restore it in about 30 seconds. Original-quality download is included.
           </p>
           <Link
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-green-700 hover:bg-green-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview Now
+            Restore a Photo for $4.99
           </Link>
           <p className="mt-4 text-green-200 text-[13px]">
-            Scroll up to upload your photo · Results in 30 seconds
+            Scroll up to start checkout · Results in about 30 seconds after upload
           </p>
         </div>
       </section>

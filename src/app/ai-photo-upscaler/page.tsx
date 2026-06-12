@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Photo Upscaler Free — Upscale to 4K in Seconds (2026)",
+  title: "AI Photo Upscaler — Upscale to 4K in Seconds (2026)",
   description:
-    "Upscale photos to 4x resolution with AI. Enlarge small images to 4K without losing quality. Preview free, HD download $4.99. Works on old photos, portraits, landscapes.",
+    "Upscale photos to 4x resolution with AI. Enlarge small images to 4K without losing quality. $4.99 one-time HD download unlock. Works on old photos, portraits, landscapes.",
   alternates: { canonical: "/ai-photo-upscaler" },
   keywords: [
     "AI photo upscaler",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "upscale image AI",
   ],
   openGraph: {
-    title: "AI Photo Upscaler Free — Upscale Images to 4K Online",
+    title: "AI Photo Upscaler — Upscale Images to 4K Online",
     description:
-      "AI photo upscaler. Preview the 4x enhancement first, then unlock the original-quality download for $4.99.",
+      "AI photo upscaler with a $4.99 one-time unlock and original-quality 4x download.",
     type: "website",
     images: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Photo Upscaler Free — Upscale to 4K Online",
+    title: "AI Photo Upscaler — Upscale to 4K Online",
     description:
-      "AI image upscaler. Start with a free preview, then unlock the original-quality 4x download for $4.99.",
+      "AI image upscaler with a $4.99 one-time unlock and original-quality 4x download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -46,7 +46,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Upscale Photos to 4K with AI",
   description:
-    "Enlarge photos and increase image resolution using AI upscaling — free, no signup required, results in 30 seconds.",
+    "Enlarge photos and increase image resolution using AI upscaling — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Upscaler" }],
   step: [
@@ -73,7 +73,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your 4K upscaled photo",
-      text: "Preview the before/after comparison first. When you want the original-quality 4x upscaled photo, unlock the download for $4.99.",
+      text: "After payment, download your original-quality 4x upscaled photo when processing is complete.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -96,7 +96,7 @@ const faqSchema = {
       name: "Is the AI photo upscaler free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. ArtImageHub lets you preview the upscaled result for free with no signup required. When you want the original-quality 4x download, unlock it for $4.99.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI upscaling and the original-quality 4x download.",
       },
     },
     {
@@ -134,19 +134,19 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/ai-photo-upscaler",
   description:
-    "AI photo upscaler that enlarges images to 4K without losing quality. Preview the result first, then unlock the original-quality 4x download for $4.99.",
+    "AI photo upscaler that enlarges images to 4K without losing quality. $4.99 one-time unlock with original-quality 4x download.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality 4x download unlock",
+    description: "$4.99 one-time AI upscaler unlock with original-quality 4x download",
   },
   featureList: [
     "4× AI Photo Upscaling",
     "Real-ESRGAN Super Resolution",
     "Detail Enhancement",
-    "Free Preview Before Unlock",
+    "One-Time Unlock",
     "No Quality Loss",
     "30-Second Processing",
   ],
@@ -188,16 +188,15 @@ export default function AIPhotoUpscalerPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview — No Signup
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            AI Photo Upscaler: Upscale to 4K Free
+            AI Photo Upscaler: Upscale to 4K
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             Enlarge photos without losing quality. AI upscaling increases
-            resolution 4× with intelligent detail enhancement, and you can
-            compare the preview before unlocking the original-quality file for
-            $4.99.
+            resolution 4× with intelligent detail enhancement and downloads
+            the original-quality file after a $4.99 one-time unlock.
           </p>
         </div>
       </div>
@@ -411,7 +410,7 @@ export default function AIPhotoUpscalerPage() {
                 },
                 {
                   q: "Is the AI photo upscaler free?",
-                  a: "Yes. ArtImageHub lets you preview the upscaled result for free with no signup required. When you want the original-quality 4x download, unlock it for $4.99.",
+                  a: "No. ArtImageHub uses a pay-first model: $4.99 one time for AI upscaling and the original-quality 4x download.",
                 },
                 {
                   q: "How much can AI upscale my photo?",

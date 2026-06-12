@@ -431,7 +431,7 @@ export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}
               {t.uploadCta}
             </button>
             <p className="text-[12px] text-[#6e6e73]/80">
-              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+              Paid unlock required before upload · Full resolution for {PRO_PRICE_TEXT}
             </p>
 
             <input
@@ -569,7 +569,7 @@ export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}
                     This colorized photo is ready for Pro download.
                   </p>
                   <p className="mt-1.5 text-[13px] leading-[1.6] text-[#6e6e73]">
-                    Preview stays free on this page. Unlock once to download the original-quality file and keep the same email linked for future colorization exports.
+                    Your paid unlock keeps this email linked for original-quality colorization exports.
                   </p>
                 </div>
                 <Link

@@ -44,6 +44,17 @@ const MANUAL_ACCESS_CHECK_MAX_ATTEMPTS = 2;
 const MANUAL_ACCESS_CHECK_RETRY_DELAY_MS = 1200;
 const ACCESS_CHECK_TIMEOUT_REASON = "access_check_timeout";
 
+function buildResultPreviewUrl(taskId: string): string {
+  const email =
+    typeof window !== "undefined"
+      ? localStorage.getItem("artimagehub_email")?.trim().toLowerCase() || ""
+      : "";
+  const params = new URLSearchParams();
+  if (email) params.set("email", email);
+  const query = params.toString();
+  return `${API_BASE}/api/result-preview/${taskId}${query ? `?${query}` : ""}`;
+}
+
 function abortSignalAfter(timeoutMs: number): AbortSignal | undefined {
   if (typeof AbortSignal !== "undefined" && "timeout" in AbortSignal) {
     return AbortSignal.timeout(timeoutMs);
@@ -136,6 +147,8 @@ interface TaskStatus {
   progress: number;
   stage: string | null;
   error: string | null;
+  provider_used: string | null;
+  provider_backend: string | null;
 }
 
 interface RestoreClientProps {
@@ -370,7 +383,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
     }
 
     setTaskId(resumeTaskId);
-    setResultPreviewUrl(`${API_BASE}/api/result-preview/${resumeTaskId}`);
+    setResultPreviewUrl(buildResultPreviewUrl(resumeTaskId));
     setOriginalUrl(`${API_BASE}/api/preview/${resumeTaskId}`);
     setProgress(100);
     setProgressText("");
@@ -536,12 +549,19 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               processingTimeMs: Date.now() - startedAt,
               source: funnelSource,
             });
-            setResultPreviewUrl(`${API_BASE}/api/result-preview/${taskId}`);
+            setResultPreviewUrl(buildResultPreviewUrl(taskId));
             setOriginalUrl(`${API_BASE}/api/preview/${taskId}`);
             setStage("done");
             break;
           }
           if (data.status === "failed") {
+            const details = [
+              `Task: ${taskId}`,
+              data.error ? `Error: ${data.error}` : null,
+              data.provider_used ? `Provider: ${data.provider_used}` : null,
+              data.provider_backend ? `Backend: ${data.provider_backend}` : null,
+            ].filter(Boolean);
+            setErrorMsg(details.join(" · "));
             setIsHighUsageError(true);
             setStage("error");
             break;
@@ -869,7 +889,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               {t.uploadCta}
             </button>
             <p className="text-[12px] text-[#6e6e73]/80">
-              Free preview is watermarked · Full resolution for {PRO_PRICE_TEXT}
+              Paid access required · Full resolution for {PRO_PRICE_TEXT}
             </p>
 
             <label
@@ -1021,7 +1041,7 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
           <div className="text-center">
             <p className="mb-2 text-[13px] text-[#6e6e73]">Happy with the result? Share it.</p>
             <a
-              href={`https://x.com/intent/tweet?text=${encodeURIComponent("Just restored this old family photo with AI ✨ Free to try at artimagehub.com — you upload, it restores, you decide if it's worth $4.99 to download.")}&url=${encodeURIComponent("https://artimagehub.com/old-photo-restoration")}`}
+              href={`https://x.com/intent/tweet?text=${encodeURIComponent("Just restored this old family photo with AI at artimagehub.com — $4.99 one-time access, no subscription.")}&url=${encodeURIComponent("https://artimagehub.com/old-photo-restoration")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full border border-[#d2d2d7] bg-white px-4 py-2 text-[13px] font-medium text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors"
@@ -1174,6 +1194,11 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               {t.errorBody}{" "}
               <a href="mailto:support@artimagehub.com" className="underline hover:text-[#1d1d1f] transition-colors">support@artimagehub.com</a>
             </p>
+            {errorMsg && (
+              <p className="mx-auto mt-3 max-w-lg rounded-xl border border-red-100 bg-white/70 px-3 py-2 font-mono text-[11px] leading-[1.5] text-red-700 break-words">
+                {errorMsg}
+              </p>
+            )}
           </div>
           <div className="flex flex-col items-center gap-2">
             <button

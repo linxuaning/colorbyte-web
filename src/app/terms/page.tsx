@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service — ArtImageHub",
-  description: "ArtImageHub terms of service: acceptable use, preview and one-time download terms, refund policy, and intellectual property rights for our AI photo restoration service.",
+  description: "ArtImageHub terms of service: acceptable use, one-time unlock terms, refund policy, and intellectual property rights for our AI photo restoration service.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -40,14 +40,14 @@ export default function TermsPage() {
           <section>
             <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">2. Description of Service</h2>
             <p>
-              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. We offer a free preview so you can evaluate results before choosing a one-time $4.99 original-quality download unlock.
+              ArtImageHub provides AI-powered photo restoration, enhancement, and colorization services. A one-time $4.99 payment unlocks upload, AI processing, and original-quality download access as described at checkout.
             </p>
           </section>
 
           <section>
-            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Free Preview</h2>
+            <h2 className="font-playfair text-[22px] font-700 text-[#2c2416] mb-4">3. Pay-First Access</h2>
             <p>
-              The free preview lets you evaluate the AI result before purchasing the original-quality download unlock. Preview outputs may include a watermark. We reserve the right to modify preview limits or availability at any time.
+              ArtImageHub uses a pay-first workflow. You must complete the one-time payment before uploading a photo for AI processing or accessing the original-quality restored output. We reserve the right to modify access limits or availability at any time.
             </p>
           </section>
 

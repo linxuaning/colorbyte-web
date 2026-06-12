@@ -17,7 +17,7 @@ faq:
   - question: "Can either tool fix water damage or torn photos?"
     answer: "Neither tool handles severe physical damage well. AI restoration excels at fading, blur, and facial detail recovery on intact images. Torn corners, missing pixels, and water-warped paper require manual Photoshop work or professional restoration before AI processing. Run AI restoration only after physical defects are addressed."
   - question: "Are there one-time payment alternatives to Remini and MyHeritage subscriptions?"
-    answer: "Yes. ArtImageHub charges $4.99 one-time for unlimited restorations and HD downloads, with no recurring billing. The underlying AI is similar to other tools (GFPGAN-based face restoration, Real-ESRGAN upscaling, automated colorization). You're paying for the convenience of browser access with no subscription commitment."
+    answer: "Yes. ArtImageHub charges $4.99 once to unlock upload, AI restoration, and original-quality download, with no recurring billing. The underlying AI is similar to other tools (GFPGAN-based face restoration, Real-ESRGAN upscaling, automated colorization). You're paying for the convenience of browser access with no subscription commitment."
   - question: "Which tool gives the most accurate colorization?"
     answer: "Both produce 'plausible' colorization rather than 'historically accurate' colorization. AI colorization is statistical guessing based on training data — it gets skin tones, foliage, and sky colors approximately right but invents specific clothing and object colors. Always preserve the original black-and-white version as the canonical archive copy."
   - question: "Is mobile or desktop better for photo restoration in 2026?"
@@ -60,7 +60,7 @@ The rest of this article unpacks why.
 
 ---
 
-> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Try AI restoration on this photo →](/old-photo-restoration) — $4.99 once, unlimited HD downloads, no subscription.
+> **Skip the manual work?** Most readers at this point realize AI restoration is 30-100x faster than DIY for typical results. [Start AI restoration →](/old-photo-restoration) — $4.99 once for upload, AI processing, and original-quality download. No subscription.
 
 ---
 
@@ -154,7 +154,7 @@ If the photo is too damaged for digital workflows, professional photo restorers 
 
 Both Remini and MyHeritage Deep Nostalgia are subscription products. If your situation is closer to "I have a batch of family photos to restore once, and I don't want a subscription I'll forget to cancel," there's a third category worth knowing about: **one-time-payment AI restoration tools**.
 
-[ArtImageHub](/old-photo-restoration) is one such tool. It's browser-based, charges $4.99 one-time for unlimited restorations and HD downloads, and combines face restoration, upscaling, and colorization in a single workflow. The AI is similar to what Remini and MyHeritage use under the hood (GFPGAN-derived face restoration + Real-ESRGAN upscaling + automated colorization).
+[ArtImageHub](/old-photo-restoration) is one such tool. It's browser-based, charges $4.99 once for upload, AI restoration, and original-quality download, and combines face restoration, upscaling, and colorization in a single workflow. The AI is similar to what Remini and MyHeritage use under the hood (GFPGAN-derived face restoration + Real-ESRGAN upscaling + automated colorization).
 
 ArtImageHub doesn't compete with these tools on every dimension:
 
@@ -188,7 +188,7 @@ Disclosure: This article is published on the ArtImageHub blog. The comparison fr
 - You have a batch of photos to restore for a specific project
 - You don't want a recurring subscription
 - You're comfortable with browser-based workflows
-- The simplicity of "pay once, restore unlimited, move on" matches how you think about this project
+- The simplicity of "pay once, restore, move on" matches how you think about this project
 
 **Consider professional photo restoration services if**:
 - The photos are severely physically damaged
@@ -209,7 +209,7 @@ For more on AI photo restoration tools and how to evaluate them, see our [best A
 
 | Method | Time per photo | Cost | Skill required | Result quality |
 |--------|----------------|------|----------------|----------------|
-| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** | None | Excellent (GFPGAN + Real-ESRGAN) |
 | Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
 | Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
 | Local print shop | 2–5 days | $20–80 per photo | None | Good |
@@ -222,4 +222,4 @@ For era-specific damage profiles, see [Old Photo Restoration by Decade complete 
 
 For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
 
-Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
+Start [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for upload, AI processing, and original-quality download.

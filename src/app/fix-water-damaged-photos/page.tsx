@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Fix Water Damaged Photos — AI Removes Stains & Restores (2026)",
   description:
-    "AI repairs water-damaged, flood-soaked, and stained photos. Removes watermarks, fixes discoloration, restores detail. Preview free, HD download $4.99.",
+    "AI repairs water-damaged, flood-soaked, and stained photos. Removes watermarks, fixes discoloration, restores detail. $4.99 one-time HD download unlock.",
   alternates: { canonical: "/fix-water-damaged-photos" },
   keywords: [
     "fix water damaged photos",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "fix photos damaged by water",
   ],
   openGraph: {
-    title: "Fix Water Damaged Photos Free — AI Water Damage Repair",
+    title: "Fix Water Damaged Photos — AI Water Damage Repair",
     description:
-      "AI fixes water damaged photos instantly. Preview first, then unlock the original-quality download for $4.99.",
+      "AI fixes water damaged photos instantly with a $4.99 one-time unlock and original-quality download.",
     type: "website",
     images: [
       {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fix Water Damaged Photos Free Online",
+    title: "Fix Water Damaged Photos Online",
     description:
-      "Preview the water damage repair first, then unlock the original-quality download for $4.99.",
+      "Repair water damage with a $4.99 one-time unlock and original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Fix Water Damaged Photos with AI",
   description:
-    "Repair water damaged photographs using AI restoration. Preview the repair first, then unlock the original-quality download for $4.99.",
+    "Repair water damaged photographs using AI restoration. $4.99 one-time unlock, original-quality download included.",
   totalTime: "PT1M",
   tool: [
     { "@type": "HowToTool", name: "ArtImageHub Water Damage Photo Repair" },
@@ -74,7 +74,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your restored photo",
-      text: "Preview the before/after comparison showing the water damage repair first. If you want the clean original-quality restored photo, unlock the download for $4.99.",
+      text: "After payment, repair the water damage and download the clean original-quality restored photo.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -97,7 +97,7 @@ const faqSchema = {
       name: "Is water damage photo repair free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. ArtImageHub lets you preview the water damage repair first with no account required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for water damage photo repair and the original-quality download. No subscription.",
       },
     },
     {
@@ -135,20 +135,20 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/fix-water-damaged-photos",
   description:
-    "AI-powered water damage photo repair that lets you preview the repair first, then unlock the original-quality download for $4.99 when you want to keep it.",
+    "AI-powered water damage photo repair with a $4.99 one-time unlock and original-quality download.",
   offers: {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
+    description: "$4.99 one-time water damage repair unlock with original-quality download",
   },
   featureList: [
     "Water Stain Removal",
     "Color Bleeding Correction",
     "Mold/Mildew Stain Repair",
     "Flood Damage Restoration",
-    "Free Preview First",
+    "$4.99 One-Time Unlock",
     "30-Second Processing",
   ],
 };
@@ -175,15 +175,14 @@ export default function FixWaterDamagedPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview First — No Signup Required
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Fix Water Damaged Photos Free
+            Fix Water Damaged Photos
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
-            AI repairs water damaged photos instantly. Preview the repair
-            first, then unlock the original-quality download for $4.99 if the
-            result is worth keeping.
+            AI repairs water damaged photos instantly. Pay $4.99 once
+            to process the repair and download the original-quality result.
           </p>
         </div>
       </div>
@@ -372,7 +371,7 @@ export default function FixWaterDamagedPhotosPage() {
                 },
                 {
                   q: "Is water damage photo repair free?",
-                  a: "Yes. ArtImageHub lets you preview the water damage repair first with no account required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription.",
+                  a: "No. ArtImageHub uses a pay-first model: $4.99 one time for water damage photo repair and the original-quality download. No subscription.",
                 },
                 {
                   q: "What types of water damage can AI fix?",

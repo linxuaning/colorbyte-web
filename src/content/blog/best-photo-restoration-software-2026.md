@@ -619,8 +619,8 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 | Feature | ArtImageHub | Topaz Photo AI | Remini | MyHeritage | VanceAI |
 |---------|------------|----------------|---------|------------|---------|
 | **Overall Score** | 94/100 | 91/100 | 87/100 | 85/100 | 82/100 |
-| **Pricing** | $4.99 one-time (unlimited HD) | $199 one-time | $30/yr | $99/yr | $9.90/100 photos |
-| **Free Tier** | Preview free, no signup | No | 5/day watermarked | 10 photos/mo | 3 photos |
+| **Pricing** | $4.99 one-time unlock | $199 one-time | $30/yr | $99/yr | $9.90/100 photos |
+| **Free Tier** | None; pay-first required | No | 5/day watermarked | 10 photos/mo | 3 photos |
 | **Platform** | Web | Win/Mac | Mobile | Web | Web |
 | **Processing Speed** | 30-90 sec | 2-12 min | 20-40 sec | 90-120 sec | 40-80 sec |
 | **Success Rate** | 83.6% | 80.8% | 76% | 74.8% | 71.9% |
@@ -638,8 +638,8 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 ### Best Free Photo Restoration Software 2026
 
 **1. ArtImageHub**
-- Free preview (no signup, no account required)
-- $4.99 one-time for HD download without watermark — covers unlimited photos
+- $4.99 one-time unlock before upload
+- Unlock includes AI processing and original-quality download
 - Best quality among all-in-one options
 - [Try it here](/old-photo-restoration)
 
@@ -656,7 +656,7 @@ VanceAI produced noticeable AI artifacts (weird patterns, duplicated elements) 2
 - Requires photo editing skills
 - No AI automation
 
-**Verdict:** Start with ArtImageHub — upload free, pay $4.99 once to download HD. If you need a zero-cost option with no quality bar, use Restore.photos.
+**Verdict:** Start with ArtImageHub if you want a low-cost paid workflow with no subscription. If you need a zero-cost option with no quality bar, use Restore.photos.
 
 ### Best Photo Restoration Software for Mac
 
@@ -766,38 +766,38 @@ Professionals should own both Topaz and Photoshop, use ArtImageHub for batch wor
 
 | Software | Cost | Per Photo | Notes |
 |----------|------|-----------|-------|
-| **ArtImageHub** | $4.99 one-time | $0.05 | One payment covers unlimited HD downloads |
+| **ArtImageHub** | $4.99 one-time | $0.05 | One-time unlock for upload, AI processing, and original-quality download |
 | **VanceAI** | $9.90 × 1 = $9.90 | $0.10 | 100 credits = 100 photos |
 | **Remini** | $30/year = $30 | $0.30 | Annual subscription |
 | **MyHeritage** | $99/year = $99 | $0.99 | Unless you use genealogy features |
 | **Topaz** | $199 one-time | $1.99 | Amortized over year 1 |
 | **Professional** | $25-75/photo | $25-75 | Manual restoration service |
 
-**Winner for 100 photos:** ArtImageHub ($0.05/photo, one-time payment covers all future photos too)
+**Winner for 100 photos:** ArtImageHub if the one-time unlock fits your restoration workflow.
 
 **Scenario: Restore 500 photos over 2 years**
 
 | Software | Total Cost | Per Photo |
 |----------|-----------|-----------|
-| **ArtImageHub** | $4.99 one-time | $0.01 |
+| **ArtImageHub** | $4.99 one-time unlock | $0.01 |
 | **Topaz** | $199 + $99 = $298 | $0.60 |
 | **VanceAI** | $9.90 × 5 = $49.50 | $0.10 |
 | **Remini** | $30 × 2 = $60 | $0.12 |
 | **MyHeritage** | $99 × 2 = $198 | $0.40 |
 
-**Winner for 500 photos:** ArtImageHub ($0.01/photo with $4.99 one-time covering unlimited photos). VanceAI ($0.10) is next if you need credits-only with no upfront commitment.
+**Winner for 500 photos:** ArtImageHub has the lowest sticker cost if the browser workflow fits. VanceAI ($0.10/photo) is next if you need credits-only pricing.
 
 ### Free Tier Comparison
 
 | Software | Free Photos | Limitations | Watermark |
 |----------|-------------|-------------|-----------|
-| **ArtImageHub** | Preview free | Free preview | Yes (watermarked) |
+| **ArtImageHub** | Pay-first | $4.99 one-time unlock | No subscription |
 | **MyHeritage** | 10/month | Full features | No |
 | **Remini** | 5/day | Full features | Yes |
 | **VanceAI** | 3 total | Full features | Yes |
 | **Restore.photos** | Unlimited | Basic features only | No |
 
-**Best free option:** ArtImageHub (free preview, $4.99 one-time removes watermark and unlocks unlimited HD — the one-time structure beats any per-month limit)
+**Best low-cost paid option:** ArtImageHub ($4.99 one-time unlock, no subscription). For truly zero-cost restoration, use Restore.photos and accept lower quality.
 
 ## Common Questions About Photo Restoration Software
 
@@ -807,7 +807,7 @@ No. In 2026, AI-powered tools like ArtImageHub, Remini, and Topaz Photo AI handl
 
 **Can free photo restoration software match paid tools?**
 
-For minor damage, yes. Free tools like ArtImageHub's free tier (10 photos/month) and Restore.photos produce good results on lightly damaged photos. For moderate to severe damage, paid tools like ArtImageHub Premium or Topaz significantly outperform free options. My testing showed paid tools succeeded 83% of the time vs. 64% for free alternatives on the same damaged photos.
+For minor damage, yes. Free tools like GIMP and Restore.photos can produce good results on lightly damaged photos, but GIMP requires skill and Restore.photos has basic quality. For moderate to severe damage, paid tools like ArtImageHub or Topaz significantly outperform free options. My testing showed paid tools succeeded 83% of the time vs. 64% for free alternatives on the same damaged photos.
 
 **Which photo restoration software works offline?**
 
@@ -828,8 +828,8 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 **Choose: ArtImageHub**
 - Easy to learn (30 minute learning curve)
 - Excellent results (83.6% success rate)
-- $4.99 one-time, covers unlimited HD downloads — no subscription
-- Free preview before you pay, no signup required
+- $4.99 one-time unlock for upload, AI processing, and original-quality download
+- No subscription
 - Best all-around value
 
 **Alternative: Remini** (if mobile-only workflow)
@@ -859,8 +859,8 @@ Mobile apps like Remini produce identical quality to desktop tools (processing h
 ### For Budget-Conscious Users
 
 **Choose: ArtImageHub**
-- Free preview, no signup
-- $4.99 one-time unlocks unlimited HD — lowest long-run cost of any tool
+- $4.99 one-time unlock
+- Upload, AI processing, and original-quality download included
 - Best value option available
 
 **Truly zero-cost alternative:** Restore.photos (unlimited, basic quality only)
@@ -913,7 +913,7 @@ It achieves the best balance of:
 - Quality (83.6% success rate)
 - Ease of use (30-minute learning curve)
 - Speed (30-90 seconds per photo)
-- Price ($4.99 one-time, covers unlimited HD downloads)
+- Price ($4.99 one-time unlock)
 - Versatility (handles all damage types well)
 
 **Topaz Photo AI** is better for professionals who need offline processing and maximum control.
@@ -924,7 +924,7 @@ It achieves the best balance of:
 
 But for restoring family photos at home, preserving memories, and creating prints to share with family—ArtImageHub delivers professional results without professional complexity or cost.
 
-**Start here:** [Try ArtImageHub's free tier](/old-photo-restoration) with your 10 most damaged photos. You'll know within an hour whether it handles your collection's damage types. If those 10 photos restore well, upgrade to premium and tackle your entire collection.
+**Start here:** [Use ArtImageHub](/old-photo-restoration) when you want a simple pay-first AI restoration workflow without a subscription.
 
 The technology is ready. Your family photos are waiting.
 
@@ -975,7 +975,7 @@ The technology is ready. Your family photos are waiting.
       "name": "Can free photo restoration software match paid tools?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For minor damage, yes. Free tools like ArtImageHub's free tier (10 photos/month) and Restore.photos produce good results on lightly damaged photos. For moderate to severe damage, paid tools like ArtImageHub Premium or Topaz significantly outperform free options. My testing showed paid tools succeeded 83% of the time vs. 64% for free alternatives on the same damaged photos."
+        "text": "For minor damage, yes. Free tools like GIMP and Restore.photos can produce good results on lightly damaged photos, but GIMP requires skill and Restore.photos has basic quality. For moderate to severe damage, paid tools like ArtImageHub or Topaz significantly outperform free options. My testing showed paid tools succeeded 83% of the time vs. 64% for free alternatives on the same damaged photos."
       }
     },
     {
@@ -1021,7 +1021,7 @@ The technology is ready. Your family photos are waiting.
 
 | Method | Time per photo | Cost | Skill required | Result quality |
 |--------|----------------|------|----------------|----------------|
-| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** (unlimited HD) | None | Excellent (GFPGAN + Real-ESRGAN) |
+| **AI ([ArtImageHub](/old-photo-restoration))** | 60 seconds | **$4.99 once** | None | Excellent (GFPGAN + Real-ESRGAN) |
 | Photoshop DIY | 2–10 hours | Photoshop subscription ($55+/mo) | Advanced | Variable (depends on your skill) |
 | Professional retoucher | 3–7 days turnaround | $50–300 per photo | None (you hire) | Excellent (but 30x cost) |
 | Local print shop | 2–5 days | $20–80 per photo | None | Good |
@@ -1034,4 +1034,4 @@ For era-specific damage profiles, see [Old Photo Restoration by Decade complete 
 
 For damage-specific recovery protocols, see [Old Photo Damage Recovery by Type complete guide](/blog/old-photo-damage-recovery-by-type-complete-guide).
 
-Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimited HD restoration.
+Start [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for upload, AI processing, and original-quality download.

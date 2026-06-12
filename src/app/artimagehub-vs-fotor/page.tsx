@@ -25,7 +25,7 @@ const config: BuyerGuideConfig = {
   heroBadge: 'Software Comparison',
   heroEyebrow: 'Honest 2026 Head-to-Head',
   heroH1: 'ArtImageHub vs Fotor',
-  heroSubhead: 'Fotor is a popular all-purpose AI photo editor with restoration as one of many features. ArtImageHub is a dedicated AI restoration tool with a $4.99 one-time unlock and free preview. We tested both on the same 50 family photos to find which delivers better restoration quality.',
+  heroSubhead: 'Fotor is a popular all-purpose AI photo editor with restoration as one of many features. ArtImageHub is a dedicated pay-first AI restoration tool with a $4.99 one-time unlock. We tested both on the same 50 family photos to find which delivers better restoration quality.',
   heroReadTime: '12 min read',
   heroTestedNote: '50 family photos tested',
 
@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Old-photo restoration',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -114,12 +114,12 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is purpose-built for AI photo restoration. The pipeline runs four specialized models: GFPGAN (face-aware reconstruction, peer-reviewed by Wang et al., Tencent ARC Lab 2021), Real-ESRGAN (4× super-resolution), NAFNet (deblurring and denoising), and DDColor (auto colorization). Each model is trained for a specific old-photo damage pattern, which produces cleaner output on damaged prints than Fotor\'s general-purpose AI.',
-        'Pricing is the practical advantage: $4.99 once vs Fotor\'s $8.99/month subscription. The free preview shows the actual restored result before payment, and the unlock applies to your entire restoration project rather than a single photo. Email-tied access lets you return later to restore additional photos or re-download earlier results.',
+        'Pricing is the practical advantage: $4.99 once vs Fotor\'s $8.99/month subscription. The pay-first unlock covers upload, AI processing, and original-quality download access rather than forcing a monthly plan. Email-tied access lets you return later to restore additional photos or re-download earlier results.',
       ],
       pros: [
         'Specialized 4-model AI pipeline for old-photo damage',
         '$4.99 one-time unlock, no subscription',
-        'Free preview shows restored result before payment',
+        'Pay-first access before upload',
         'GFPGAN + Real-ESRGAN + NAFNet + DDColor',
         'Web-based — works on any device',
         'Email-tied access (re-download anytime)',
@@ -136,7 +136,7 @@ const config: BuyerGuideConfig = {
         'Genealogy and family-history projects',
         'One-time finite restoration projects',
         'Cost-sensitive users avoiding subscriptions',
-        'Users who want preview-first pricing',
+        'Users who want simple one-time pricing',
       ],
     },
     {
@@ -248,7 +248,7 @@ const config: BuyerGuideConfig = {
       number: 3,
       title: 'Test Restoration Quality on Your Hardest Photo',
       borderColor: 'green',
-      body: 'Pick the most damaged photo in your collection — heavy fading, deep scratches, water stains, severe blur. Run it through ArtImageHub\'s free preview and Fotor\'s old-photo feature on the same source. Compare the restored outputs side by side. Specialized restoration tools tend to handle heavy damage substantially better than general-purpose creative editors. The 5 minutes of testing time saves potential subscription regret.',
+      body: 'Pick the most damaged photo in your collection — heavy fading, deep scratches, water stains, severe blur. Use ArtImageHub\'s $4.99 pay-first workflow and Fotor\'s old-photo feature on the same source. Compare the restored outputs side by side. Specialized restoration tools tend to handle heavy damage substantially better than general-purpose creative editors.',
     },
     {
       number: 4,
@@ -291,7 +291,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'What about Fotor\'s free tier — can I use it without paying?',
-      answer: 'Fotor has a free tier with limited features and watermarked exports. The "AI old photo restoration" feature on the free tier produces lower-resolution output, often with watermarks, and limits the number of photos you can process per month. For genuine free testing of restoration quality, the free tier is acceptable, but for actual family-archive use you would need Fotor Pro. ArtImageHub\'s free preview is structured differently — you get a full-quality preview of the actual restored result before paying, with no watermark and no resolution downsampling. The $4.99 unlock buys the original-quality download, and you only commit if the preview shows acceptable quality. This is a more honest "try before you buy" model than free tiers that limit output quality to push you toward upgrading. For evaluating restoration tools on your specific photos, ArtImageHub\'s preview model is more useful than Fotor\'s watermarked free tier.',
+      answer: 'Fotor has a free tier with limited features and watermarked exports. The "AI old photo restoration" feature on the free tier produces lower-resolution output, often with watermarks, and limits the number of photos you can process per month. For actual family-archive use you would need Fotor Pro. ArtImageHub is structured differently: a $4.99 pay-first unlock covers upload, AI processing, and original-quality download with no subscription. Fotor\'s free tier is useful for testing its general editor; ArtImageHub is better when you want a focused one-time restoration workflow.',
     },
     {
       question: 'Does Fotor\'s restoration work on very old photos like 1920s or earlier?',
@@ -300,8 +300,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Restore Your Family Photos Without the Bundle',
-  finalCtaSubhead: 'For real photo restoration, ArtImageHub\'s specialized pipeline beats general-purpose editors. Preview the result first, unlock the original-quality download for $4.99 only if it\'s worth keeping.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'For real photo restoration, ArtImageHub\'s specialized pipeline beats general-purpose editors. Pay $4.99 once to unlock upload, AI restoration, and the original-quality download.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [

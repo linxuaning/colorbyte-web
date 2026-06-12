@@ -234,6 +234,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Family-occasion restoration pages (2026-06-10 growth batch). These target
+    // emotionally motivated buyer searches where a one-time pay-first unlock is
+    // easier to justify than a generic free-tool query.
+    {
+      url: `${baseUrl}/restore-old-wedding-photos`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/genealogy-photo-restoration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/memorial-photo-restoration`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.88,
+    },
     // pt-BR buyer-intent pages (2026-05-15 Brazil push). Locale-only pages:
     // no hreflang cluster until equivalent EN/other-locale routes exist.
     {
@@ -275,6 +296,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     },
+    {
+      url: `${baseUrl}/pt-BR/restaurar-fotos-desbotadas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/pt-BR/restaurar-fotos-rasgadas`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     // ru buyer-intent pages (2026-05-26 Russia push). Explicit /ru routes only:
     // do not add ru to TOOL_LOCALE_PREFIXES until full translated tool pages exist.
     {
@@ -299,6 +332,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/ru/kolorizaciya-staryh-foto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/ru/vosstanovit-vycvetshie-foto`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/ru/vosstanovit-porvannoe-foto`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.82,

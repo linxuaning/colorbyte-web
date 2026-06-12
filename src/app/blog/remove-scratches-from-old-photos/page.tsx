@@ -127,13 +127,13 @@ export default function RemoveScratchesFromOldPhotosPage() {
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
             <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Remove scratches in under 60 seconds</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
-              Upload your scratched photo and preview the AI repair result for free. No account, no Photoshop skills needed.
+              Pay $4.99 once to unlock upload, AI scratch repair, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-10 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white hover:bg-[#0077ed] transition-colors"
             >
-              Repair Scratches Free →
+              Unlock Scratch Repair →
             </Link>
           </div>
 
@@ -233,15 +233,15 @@ export default function RemoveScratchesFromOldPhotosPage() {
             Ready to remove scratches from your photo?
           </h2>
           <p className="text-[15px] text-[#6e6e73] mb-6 max-w-md mx-auto leading-relaxed">
-            Upload any scratched or damaged old photo and see the AI result in under 60 seconds. Free preview, no account required.
+            Pay $4.99 once to unlock upload, AI scratch repair, and the original-quality download. No subscription.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-8 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
-            Remove Scratches Free →
+            Unlock Scratch Repair →
           </Link>
-          <p className="mt-3 text-[12px] text-[#6e6e73]">Preview free · $4.99 to download · No subscription</p>
+          <p className="mt-3 text-[12px] text-[#6e6e73]">$4.99 once · Original-quality download · No subscription</p>
         </div>
 
         {/* Tags */}

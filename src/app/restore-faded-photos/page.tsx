@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Restore Faded Photos | Bring Back Vibrant Colors with AI',
-  description: 'Restore faded photos with AI. Preview the restoration first, then unlock the original-quality download for $4.99. No subscription.',
+  description: 'Restore faded photos with AI. Pay $4.99 once, recover faded color, and download the original-quality result. No subscription.',
   keywords: [
     'restore faded photos',
     'fix faded photos',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/restore-faded-photos' },
   openGraph: {
     title: 'Restore Faded Photos | AI Color Recovery',
-    description: 'Bring back vibrant colors to faded photos. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Bring back vibrant colors to faded photos with a $4.99 one-time unlock and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Faded photo restoration before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Restore Faded Photos - AI Powered',
-    description: 'Preview the faded photo restoration first, then unlock the original-quality download for $4.99.',
+    description: 'Restore faded photos with a $4.99 one-time unlock and original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Faded Photos",
-  description: "Restore faded photographs to their original colors using AI. Preview first, then unlock the original-quality download for $4.99.",
+  description: "Restore faded photographs to their original colors using AI. $4.99 one-time unlock, original-quality download included.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Faded Photo Restoration" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your vibrant photo",
-      text: "Preview the color restoration first. If you want the clean original-quality restored photo, unlock the download for $4.99.",
+      text: "Pay $4.99 once, restore the faded photo, and download the clean original-quality result.",
     },
   ],
 };
@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time faded photo restoration unlock with original-quality download"
   },
 };
 
@@ -85,7 +85,7 @@ const faqSchema = {
     { "@type": "Question", name: "Can AI really restore faded colors?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI analyzes remaining color information and uses deep learning models trained on millions of photos to reconstruct original tones. Even severely faded photos often retain enough data for AI to restore surprisingly accurate colors. Results are typically excellent for moderate fading." } },
     { "@type": "Question", name: "Will restoration look natural or over-saturated?", acceptedAnswer: { "@type": "Answer", text: "Our AI is trained to restore natural-looking colors, not artificial oversaturation. The goal is accurate reconstruction of original tones based on the photo's era and subject matter. You can always adjust if you prefer more or less vibrant results." } },
     { "@type": "Question", name: "Can you restore photos that are almost completely faded?", acceptedAnswer: { "@type": "Answer", text: "AI can work with severely faded photos, but results depend on how much color data remains. Photos with visible image detail usually restore well. Completely washed-out photos with no discernible detail have limited restoration potential." } },
-    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the faded photo restoration first with no signup required. If you want the clean original-quality restored photo, unlock the download for $4.99. No subscription." } },
+    { "@type": "Question", name: "Is faded photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub uses a pay-first model: $4.99 one time for faded photo restoration and the original-quality download. No subscription." } },
   ],
 };
 
@@ -135,7 +135,7 @@ export default function RestoreFadedPhotosPage() {
             Restore <span className="text-amber-600">Faded</span> Photos
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Bring back the vibrant colors time has stolen. Preview the restoration first, then unlock the original-quality download for $4.99 if the result is worth keeping.
+            Bring back the vibrant colors time has stolen. Pay $4.99 once to restore your faded photo and download the original-quality result.
           </p>
 
           {/* Trust indicators */}
@@ -382,10 +382,10 @@ export default function RestoreFadedPhotosPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-amber-700 hover:bg-amber-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview
+            Restore Faded Photo
           </Link>
           <p className="mt-4 text-amber-200 text-[13px]">
-            Free preview · $4.99 original-quality unlock · No subscription
+            $4.99 one-time unlock · Original-quality download · No subscription
           </p>
         </div>
       </section>

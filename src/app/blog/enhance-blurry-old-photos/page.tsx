@@ -126,15 +126,15 @@ export default function EnhanceBlurryOldPhotosPage() {
 
           {/* CTA 1 */}
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
-            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Enhance your blurry photo free</p>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Enhance your blurry photo</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
-              Upload any old or blurry photo and see the AI enhancement result in under 60 seconds. Free preview, no account required.
+              Pay $4.99 once to unlock upload, AI enhancement, and the original-quality download. No subscription.
             </p>
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-10 items-center gap-2 rounded-full bg-[#0071e3] px-6 text-[14px] font-semibold text-white hover:bg-[#0077ed] transition-colors"
             >
-              Enhance Photo Free →
+              Unlock Photo Enhancement →
             </Link>
           </div>
 
@@ -231,7 +231,7 @@ export default function EnhanceBlurryOldPhotosPage() {
           <ul>
             <li>A very blurry photo will get meaningfully sharper, but may not reach the clarity of a photo that was in focus to begin with</li>
             <li>Face enhancement recovers sharpness while preserving identity — it doesn't generate a new face, it sharpens the one that's there</li>
-            <li>The free preview shows you exactly what the AI result looks like before you pay anything — use it to evaluate whether the result meets your needs</li>
+            <li>The pay-first workflow unlocks upload, AI enhancement, and original-quality download in one step</li>
           </ul>
 
         </div>
@@ -242,15 +242,15 @@ export default function EnhanceBlurryOldPhotosPage() {
             Enhance your blurry old photo today
           </h2>
           <p className="text-[15px] text-[#6e6e73] mb-6 max-w-md mx-auto leading-relaxed">
-            Upload any blurry or damaged old photo and see the AI result in under 60 seconds. Free preview — no account required.
+            Pay $4.99 once to unlock upload, AI enhancement, and the original-quality download. No subscription.
           </p>
           <Link
             href="/old-photo-restoration"
             className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0071e3] px-8 text-[14px] font-semibold text-white hover:bg-[#0077ed] active:scale-[0.98] transition-all shadow-sm"
           >
-            Enhance Photo Free →
+            Unlock Photo Enhancement →
           </Link>
-          <p className="mt-3 text-[12px] text-[#6e6e73]">Preview free · $4.99 to download · No subscription</p>
+          <p className="mt-3 text-[12px] text-[#6e6e73]">$4.99 once · Original-quality download · No subscription</p>
         </div>
 
         {/* Tags */}

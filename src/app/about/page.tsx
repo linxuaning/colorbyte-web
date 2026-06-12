@@ -35,8 +35,8 @@ export default function AboutPage() {
             but because restoration used to require expertise, money, and weeks of waiting.
           </p>
           <p className="mt-5 font-lora text-[18px] text-[#6b5344] max-w-2xl leading-[1.75]">
-            We changed that. Today, anyone with an old photograph can start with a free preview in 30 seconds,
-            then unlock the original-quality download for $4.99.
+            We changed that. Today, anyone with an old photograph can pay $4.99 once to unlock upload,
+            AI restoration, and the original-quality download.
           </p>
         </div>
       </header>
@@ -133,7 +133,7 @@ export default function AboutPage() {
               { title: "Photos deleted in 24 hours", desc: "All uploaded photos are automatically and permanently deleted from our servers within 24 hours of upload." },
               { title: "Never used for AI training", desc: "We never use your photos to train AI models. Your images are processed solely to generate your restored output." },
               { title: "Encrypted in transit", desc: "All photo uploads and downloads are protected by HTTPS/TLS encryption." },
-              { title: "No account required", desc: "Start with a free preview without creating an account. We only ask for an email when you unlock the original-quality download." },
+              { title: "Email-tied access", desc: "Your $4.99 unlock is tied to your email so you can return to process photos and access your original-quality download." },
             ].map((item) => (
               <div key={item.title} className="flex gap-4 rounded-xl border border-[#d4bc91]/50 bg-white p-6">
                 <div className="h-6 w-6 shrink-0 rounded-full bg-[#8B5E3C]/10 flex items-center justify-center mt-0.5">
@@ -158,14 +158,14 @@ export default function AboutPage() {
             Try it on your own photos.
           </h2>
           <p className="font-lora text-[16px] text-[#a8967e] mb-8 leading-[1.7]">
-            Start with a free preview. No subscription when you unlock. Results in 30 seconds.
+            Pay $4.99 once to unlock upload, AI restoration, and the original-quality download. No subscription.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/old-photo-restoration"
               className="inline-flex h-12 items-center justify-center rounded-full bg-[#D4A96A] px-8 font-lora text-[15px] font-600 text-[#2c2416] hover:bg-[#c49a5a] transition-colors shadow-lg"
             >
-              Start With a Free Preview
+              Unlock AI Restoration
             </Link>
             <Link
               href="/blog"

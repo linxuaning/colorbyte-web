@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ColorizeClient from "../photo-colorizer/colorize-client";
 import FloatingCTA from "@/components/FloatingCTA";
 import LiveActivity from "@/components/LiveActivity";
@@ -7,7 +8,7 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 export const metadata: Metadata = {
   title: "Old Photo Colorization Online | Add Realistic Color to B&W Photos | ArtImageHub",
   description:
-    "Colorize old black and white photos with AI in 30 seconds. Realistic skin tones, period-accurate colors, face-aware processing. Preview free, unlock HD download for $4.99.",
+    "Colorize old black and white photos with AI in 30 seconds. Realistic skin tones, period-accurate colors, face-aware processing. $4.99 one-time HD download unlock.",
   alternates: { canonical: "/old-photo-colorization" },
   keywords: [
     "old photo colorization",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Old Photo Colorization Online — ArtImageHub",
     description:
-      "AI colorization for old black and white photos. Realistic, period-accurate colors in 30 seconds. Preview free.",
+      "AI colorization for old black and white photos. Realistic, period-accurate colors in 30 seconds with a $4.99 one-time unlock.",
     type: "website",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Old black and white photo colorized with AI" }],
   },
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Old Photo Colorization Online — ArtImageHub",
     description:
-      "Colorize old black and white photos with AI. Realistic colors in 30 seconds. Preview free.",
+      "Colorize old black and white photos with AI. Realistic colors in 30 seconds with original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -47,7 +48,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 1,
       name: "Upload your old black and white photo",
-      text: "Click the upload area or drag and drop your black and white photo. Supports JPG, PNG, WEBP up to 20MB. No account needed to preview.",
+      text: "After unlocking, click the upload area or drag and drop your black and white photo. Supports JPG, PNG, WEBP up to 20MB.",
       image: "https://www.artimagehub.com/blog/before-1.jpg",
     },
     {
@@ -59,8 +60,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Review your free colorization preview",
-      text: "Compare the before and after. The preview is free with no watermark on screen. Take as long as you need.",
+      name: "Review your colorized result",
+      text: "Compare the before and after once processing is complete.",
     },
     {
       "@type": "HowToStep",
@@ -102,10 +103,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is the preview really free?",
+      name: "Is old photo colorization free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Uploading and viewing the colorized preview is free with no account required. If you want the original-quality file to download, print, or share, that costs $4.99 — a one-time payment, no subscription.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for old photo colorization and the original-quality download. No subscription.",
       },
     },
     {
@@ -146,7 +147,7 @@ const softwareSchema = {
     price: "4.99",
     priceCurrency: "USD",
     description:
-      "Free colorization preview. Unlock original-quality colorized download for $4.99. One-time payment, no subscription.",
+      "$4.99 one-time colorization unlock with original-quality download. No subscription.",
   },
 };
 
@@ -186,18 +187,18 @@ export default function OldPhotoColorizationPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview — No Signup Required
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Old Photo Colorization
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
             Add realistic, period-accurate color to old black and white photos in 30 seconds.
-            Preview free — unlock the HD download for $4.99 when you want to keep it.
+            Pay $4.99 once to colorize and download the HD original.
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
-              { icon: "✓", text: "Free preview — no account needed" },
+              { icon: "✓", text: "$4.99 one-time unlock" },
               { icon: "✓", text: "4.8★ average rating" },
               { icon: "✓", text: "Results in 30 seconds" },
             ].map((badge) => (
@@ -209,7 +210,7 @@ export default function OldPhotoColorizationPage() {
           </div>
           <div className="mx-auto mt-6 max-w-2xl rounded-3xl border border-[#d2d2d7]/70 bg-[#faf8f4] px-5 py-4 text-left shadow-sm">
             <div className="grid gap-2 text-[13px] text-[#6e6e73] sm:grid-cols-3">
-              <p>Preview colorization free. Pay $4.99 to download the HD original.</p>
+              <p>Pay $4.99 once to colorize and download the HD original.</p>
               <p>Uploads encrypted and deleted within 24 hours.</p>
               <p>Supports JPG, PNG, WEBP up to 20 MB.</p>
             </div>
@@ -243,7 +244,7 @@ export default function OldPhotoColorizationPage() {
               How AI Old Photo Colorization Works
             </h2>
             <p className="mt-3 text-[17px] text-[#6e6e73] max-w-xl mx-auto leading-[1.6]">
-              Upload once. Preview free. Download when you're ready.
+              Upload after unlocking. Download when processing is complete.
             </p>
           </div>
 
@@ -252,7 +253,7 @@ export default function OldPhotoColorizationPage() {
               {
                 step: "1",
                 title: "Upload your photo",
-                desc: "Drag and drop or click to browse. No account needed — the preview is always free.",
+                desc: "After unlocking, drag and drop or click to browse.",
               },
               {
                 step: "2",
@@ -262,7 +263,7 @@ export default function OldPhotoColorizationPage() {
               {
                 step: "3",
                 title: "Review the result",
-                desc: "Compare before and after in the slider. The preview is free to view — take as long as you need.",
+                desc: "Compare before and after in the slider once processing is complete.",
               },
               {
                 step: "4",
@@ -352,12 +353,12 @@ export default function OldPhotoColorizationPage() {
                 If your photo has scratches, tears, fading, or water damage, run it through
                 AI restoration first. Clean image data produces significantly better colorization results.
               </p>
-              <a
+              <Link
                 href="/old-photo-restoration"
                 className="inline-flex h-10 items-center gap-2 rounded-full bg-[#1d1d1f] px-6 text-[13px] font-semibold text-white hover:bg-[#2d2d2f] transition-colors"
               >
                 Repair Damage First →
-              </a>
+              </Link>
             </div>
 
             <div className="rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-8">
@@ -402,8 +403,8 @@ export default function OldPhotoColorizationPage() {
                 a: "Yes, for best results. If your photo has scratches, tears, fading, or water damage, run it through old photo restoration first. Colorization on a clean image produces significantly better results than colorizing a damaged one.",
               },
               {
-                q: "Is the preview really free?",
-                a: "Yes. Uploading and viewing the colorized preview is free with no account required. If you want the original-quality file to download, print, or share, that costs $4.99 — a one-time payment, no subscription.",
+                q: "Is old photo colorization free?",
+                a: "No. ArtImageHub uses a pay-first model: $4.99 one time for old photo colorization and the original-quality download. No subscription.",
               },
               {
                 q: "Are my old family photos kept private?",
@@ -448,10 +449,10 @@ export default function OldPhotoColorizationPage() {
               {
                 href: "/colorize-photos-free",
                 title: "Colorize Photos Free",
-                desc: "Same AI colorizer — free preview for any black and white photo, unlock HD download when you're ready.",
+                desc: "Same AI colorizer with a $4.99 one-time HD download unlock.",
               },
             ].map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="group block rounded-xl border border-[#d2d2d7]/60 bg-white p-6 hover:border-[#0071e3]/40 hover:shadow-sm transition-all duration-200"
@@ -460,7 +461,7 @@ export default function OldPhotoColorizationPage() {
                   {link.title}
                 </h3>
                 <p className="text-[13px] text-[#6e6e73] leading-[1.6]">{link.desc}</p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

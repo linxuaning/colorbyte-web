@@ -48,7 +48,7 @@ const config: BuyerGuideConfig = {
       position: 1,
       name: 'ArtImageHub',
       bestFor: 'Standalone photo restore',
-      pricing: 'Free preview + $4.99 unlock',
+      pricing: '$4.99 pay-first unlock',
       aiQuality: '★★★★★',
       aiQualityScore: '4.8/5',
       easeOfUse: '★★★★★',
@@ -114,12 +114,12 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is the right tool when your goal is photo restoration and nothing else. Its AI pipeline handles scratches, fading, water stains, color shifts, and torn corners in a single 20–30 second pass, with comparable face quality to MyHeritage and stronger results on heavy physical damage. There is no family-tree integration to learn and no recurring subscription to manage.',
-        'The pricing model is the headline difference: you preview the restored result for free, then pay $4.99 once for the original-quality download tied to your email. That covers the entire restoration project — there is no per-photo charge, no monthly renewal, and no upsell path. For a typical family album restoration covering 30–100 photos, the total cost is $4.99 vs roughly $129–299 for one year of MyHeritage Premium or Complete.',
+        'The pricing model is the headline difference: pay $4.99 once to unlock upload, AI processing, and the original-quality download tied to your email. That covers the restoration project — there is no monthly renewal and no subscription upsell path. For a typical family album restoration covering 30–100 photos, the total cost is $4.99 vs roughly $129–299 for one year of MyHeritage Premium or Complete.',
       ],
       pros: [
         'Whole-image restoration in 20–30 seconds',
         '$4.99 one-time unlock, no subscription',
-        'Free preview before you pay',
+        'Pay-first access before upload',
         'No genealogy bundle to wade through',
         'Web-based — any browser, any device',
         'Includes colorization, enhancement, upscaling',
@@ -134,7 +134,7 @@ const config: BuyerGuideConfig = {
         'Anyone restoring photos without needing genealogy features',
         'Cost-sensitive projects (one-time vs annual)',
         'Family album scanning + restoration projects',
-        'Users who want to preview before paying',
+        'Users who want simple one-time pricing',
         'People without an existing MyHeritage subscription',
       ],
     },
@@ -245,7 +245,7 @@ const config: BuyerGuideConfig = {
       number: 3,
       title: 'Test on Your Hardest Photo First',
       borderColor: 'green',
-      body: 'Pick the most damaged photo in your collection — the one with the worst water stain, deepest scratch, or most severe fading. Run it through ArtImageHub\'s free preview. If the result looks like something you would actually print or share, the $4.99 unlock buys the original-quality download. MyHeritage requires a paid plan before you see the same level of preview, which makes it harder to test fairly. Use the tool that lets you verify quality before committing.',
+      body: 'Pick the most damaged photo in your collection — the one with the worst water stain, deepest scratch, or most severe fading. ArtImageHub uses a $4.99 pay-first unlock for upload, AI processing, and original-quality download. MyHeritage requires a paid plan before you see the same level of output, which makes one-off projects harder to price fairly. Use the tool whose pricing matches your actual project shape.',
     },
     {
       number: 4,
@@ -297,8 +297,8 @@ const config: BuyerGuideConfig = {
   ],
 
   finalCtaHeading: 'Restore Your Family Photos Without the Genealogy Bundle',
-  finalCtaSubhead: 'Preview the workflow first. If the result looks worth keeping, unlock the original-quality download for $4.99 — once, with no subscription, no genealogy add-ons.',
-  finalCtaTagline: 'Free preview • $4.99 original-quality unlock • No subscription',
+  finalCtaSubhead: 'Pay $4.99 once to unlock upload, AI restoration, and the original-quality download — with no subscription and no genealogy add-ons.',
+  finalCtaTagline: 'Pay first • $4.99 original-quality unlock • No subscription',
 
   relatedHeading: 'Related Comparisons',
   relatedGuides: [

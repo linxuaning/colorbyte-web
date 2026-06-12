@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'AI Photo Restoration | Restore Old Photos with Artificial Intelligence',
-  description: 'AI photo restoration brings old, damaged photos back to life in seconds. Preview first, then unlock the original-quality download for $4.99.',
+  description: 'AI photo restoration brings old, damaged photos back to life in seconds. Pay $4.99 once for upload, AI processing, and original-quality download.',
   keywords: [
     'AI photo restoration',
     'artificial intelligence photo restoration',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/ai-photo-restoration' },
   openGraph: {
     title: 'AI Photo Restoration | Advanced Neural Network Restoration',
-    description: 'Restore old photos with AI. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Restore old photos with AI. One-time $4.99 unlock for upload, AI processing, and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'AI photo restoration before and after' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Photo Restoration - Neural Network Powered',
-    description: 'Advanced AI restores old photos in 30 seconds. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Advanced AI restores old photos in 30 seconds after a one-time $4.99 unlock.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -45,8 +45,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your photo",
-      text: "Upload any old, damaged, or faded photo. Our AI accepts JPG, PNG, and WebP formats up to 20MB.",
+      name: "Pay once to unlock access",
+      text: "Pay $4.99 once to unlock upload, AI processing, and original-quality download. Supports JPG, PNG, and WebP formats up to 20MB.",
     },
     {
       "@type": "HowToStep",
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download restored photo",
-      text: "Preview the AI restoration first. If you want the original-quality download, unlock it for $4.99.",
+      text: "Download the original-quality AI-restored photo after processing.",
     },
   ],
 };
@@ -70,7 +70,7 @@ const faqSchema = {
     { "@type": "Question", name: "What is AI photo restoration?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration uses artificial intelligence and neural networks to automatically repair and enhance old or damaged photographs. Unlike manual restoration that requires a skilled artist working hours per photo, AI can analyze damage patterns, reconstruct missing details, enhance faces, and restore colors in seconds." } },
     { "@type": "Question", name: "How does AI restore old photos?", acceptedAnswer: { "@type": "Answer", text: "AI photo restoration uses deep learning models trained on millions of images. The neural network learns what photos should look like, then applies that knowledge to identify and fix problems: removing scratches, filling torn areas, sharpening blurry faces, correcting faded colors, and even colorizing black and white photos." } },
     { "@type": "Question", name: "Is AI photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "For most photos, AI produces results comparable to professional restoration — often indistinguishable. AI excels at common issues: fading, scratches, blur, color correction. Professionals may still be better for severe damage requiring artistic judgment, like reconstructing large missing areas." } },
-    { "@type": "Question", name: "Is AI photo restoration free?", acceptedAnswer: { "@type": "Answer", text: "You can preview the AI restoration first at no cost. If you want the original-quality download, it is a one-time $4.99 unlock for that photo." } },
+    { "@type": "Question", name: "Do I need to pay before AI photo restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub uses a pay-first model. A one-time $4.99 payment unlocks upload, AI processing, and original-quality download." } },
     { "@type": "Question", name: "What types of damage can AI fix?", acceptedAnswer: { "@type": "Answer", text: "AI can fix: fading and color degradation, scratches and surface damage, small tears and creases, blur and low resolution, yellowing and age spots, water stains, and can colorize black and white photos. Limitations include large missing sections (over 30% of image) and severe chemical deterioration." } },
   ],
 };
@@ -83,9 +83,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time unlock for upload, AI processing, and original-quality download"
   },
 };
 
@@ -135,7 +135,7 @@ export default function AIPhotoRestorationPage() {
             <span className="text-violet-600">AI</span> Photo Restoration
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Advanced artificial intelligence restores old, damaged photos in 30 seconds. Neural networks trained on millions of images — <strong className="text-[#1d1d1f]">preview first, then unlock the original-quality download for $4.99.</strong>
+            Advanced artificial intelligence restores old, damaged photos in 30 seconds after checkout. Neural networks trained on millions of images — <strong className="text-[#1d1d1f]">$4.99 once for upload, AI processing, and original-quality download.</strong>
           </p>
 
           {/* AI capabilities */}
@@ -303,7 +303,7 @@ export default function AIPhotoRestorationPage() {
               <ul className="space-y-3">
                 {[
                   "30 seconds per photo",
-                  "Preview first, then $4.99 if you keep the photo",
+                  "$4.99 one-time unlock before upload",
                   "Consistent quality every time",
                   "Available 24/7 instantly",
                   "No shipping originals",
@@ -376,8 +376,8 @@ export default function AIPhotoRestorationPage() {
                 a: "AI handles: fading and color degradation, scratches and surface damage, small tears and creases, blur and low resolution, yellowing and age spots, water stains. It can also colorize B&W photos. Limitations: large missing sections (over 30%), severe chemical deterioration.",
               },
               {
-                q: "Is AI photo restoration free?",
-                a: "You can preview the AI restoration first at no cost. If you want the original-quality download, it is a one-time $4.99 unlock for that photo.",
+                q: "Do I need to pay before AI photo restoration?",
+                a: "Yes. ArtImageHub uses a pay-first model. A one-time $4.99 payment unlocks upload, AI processing, and original-quality download.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
@@ -396,16 +396,16 @@ export default function AIPhotoRestorationPage() {
             Let AI Restore Your Photos
           </h2>
           <p className="text-violet-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Neural networks trained on millions of images are ready to restore your memories. Start with a free preview, then unlock the original-quality photo for $4.99 if it is worth keeping.
+            Neural networks trained on millions of images are ready to restore your memories. Pay once to unlock upload, AI processing, and original-quality download.
           </p>
           <Link
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-violet-700 hover:bg-violet-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free AI Preview
+            Restore with AI for $4.99
           </Link>
           <p className="mt-4 text-violet-200 text-[13px]">
-            Free preview · No signup · $4.99 original-quality unlock
+            One-time payment · No subscription · Original-quality download
           </p>
         </div>
       </section>
@@ -449,7 +449,7 @@ export default function AIPhotoRestorationPage() {
                 Free Photo Restoration
               </h3>
               <p className="text-sm text-[#6b5344]">
-                Preview first, then unlock the original-quality file
+                Pay once to unlock the original-quality file
               </p>
             </Link>
           </div>

@@ -3,9 +3,9 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Remove Scratches from Photos Free — AI Repair in 30 Seconds",
+  title: "Remove Scratches from Photos — AI Repair in 30 Seconds",
   description:
-    "AI removes scratches, creases, and tears from old photos automatically. Upload a scan, see the clean result free. HD download $4.99. No Photoshop skills needed.",
+    "AI removes scratches, creases, and tears from old photos automatically. Pay $4.99 once, upload a scan, and download the repaired HD result. No Photoshop skills needed.",
   alternates: { canonical: "/remove-scratches-from-photos" },
   keywords: [
     "remove scratches from photos",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "photo scratch repair",
   ],
   openGraph: {
-    title: "Remove Scratches from Photos Free — AI Scratch Remover",
+    title: "Remove Scratches from Photos — AI Scratch Remover",
     description:
-      "AI removes scratches from old photos instantly. Preview the repaired result first, then unlock the original-quality download for $4.99.",
+      "AI removes scratches from old photos instantly with a $4.99 one-time unlock and original-quality download.",
     type: "website",
     images: [
       {
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Remove Scratches from Photos Free Online",
+    title: "Remove Scratches from Photos Online",
     description:
-      "AI photo scratch remover. Start with a free preview, then unlock the original-quality download for $4.99.",
+      "AI photo scratch remover with a $4.99 one-time unlock and original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Remove Scratches from Photos with AI",
   description:
-    "Remove scratches and damage from old photographs using AI — free, no signup required, results in 30 seconds.",
+    "Remove scratches and damage from old photographs using AI — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Scratch Remover" }],
   step: [
@@ -72,7 +72,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "Download your scratch-free photo",
-      text: "Preview the before/after comparison first. When you want the original-quality repaired photo, unlock the download for $4.99.",
+      text: "After payment, download your original-quality repaired photo when processing is complete.",
       image: "https://artimagehub.com/blog/after-1.webp",
     },
   ],
@@ -95,7 +95,7 @@ const faqSchema = {
       name: "Is the photo scratch remover free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. ArtImageHub lets you preview the repaired result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
+        text: "No. ArtImageHub uses a pay-first model: $4.99 one time for scratch removal and the original-quality download.",
       },
     },
     {
@@ -133,19 +133,19 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/remove-scratches-from-photos",
   description:
-    "AI-powered photo scratch remover. Remove scratches from old photos, fix damaged pictures, and preview the repaired result before unlocking the original-quality download for $4.99.",
+    "AI-powered photo scratch remover. Remove scratches from old photos, fix damaged pictures, and download the original-quality repaired result after a $4.99 one-time unlock.",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
-    description: "Free preview first, $4.99 original-quality download unlock",
+    description: "$4.99 one-time scratch removal unlock with original-quality download",
   },
   featureList: [
     "AI Scratch Detection & Removal",
     "Surface Damage Repair",
     "Face-Aware Processing",
-    "Free Preview Before Unlock",
+    "One-Time Unlock",
     "30-Second Processing",
     "Before/After Comparison",
   ],
@@ -187,15 +187,15 @@ export default function RemoveScratchesFromPhotosPage() {
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-18 text-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#d2d2d7] bg-white px-3.5 py-1.5 text-[13px] font-medium text-[#6e6e73] shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]" />
-            Free Preview — No Signup Required
+            $4.99 One-Time Unlock
           </div>
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
-            Remove Scratches from Photos Free
+            Remove Scratches from Photos
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-lg mx-auto">
             AI removes scratches from old photos instantly. Fix scratched
-            pictures, repair surface damage, and let users compare the preview
-            before unlocking the original-quality file for $4.99.
+            pictures, repair surface damage, and download the original-quality
+            repaired file after a $4.99 one-time unlock.
           </p>
         </div>
       </div>
@@ -424,7 +424,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "Is the photo scratch remover free?",
-                  a: "Yes. ArtImageHub lets you preview the repaired result for free with no signup required. When you want the original-quality download, unlock it for $4.99.",
+                  a: "No. ArtImageHub uses pay-first access: $4.99 unlocks upload, AI scratch repair, and the original-quality download with no subscription.",
                 },
                 {
                   q: "What types of scratches can AI remove?",

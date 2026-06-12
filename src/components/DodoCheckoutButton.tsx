@@ -43,6 +43,7 @@ type DodoCheckoutResponse = {
   session_id?: string;
   checkout_url?: string;
   amount?: string;
+  already_owned?: boolean;
 };
 
 type ValidDodoCheckoutResponse = DodoCheckoutResponse & {
@@ -61,6 +62,7 @@ type CheckoutErrorKind =
   | "http"
   | "missing_checkout_url"
   | "amount_mismatch"
+  | "already_owned"
   | "unknown";
 
 type CheckoutErrorState = {
@@ -183,7 +185,14 @@ export default function DodoCheckoutButton({
       throw new CheckoutStartError("http", `Payment API returned ${detail}.`);
     }
 
-    return validateCheckoutData((await response.json()) as DodoCheckoutResponse);
+    const data = (await response.json()) as DodoCheckoutResponse;
+    // T151 soft-prompt: backend skipped session creation because this email
+    // already owns the feature. Surface a friendly "already have access" state
+    // (not an error / not a charge) instead of trying to redirect.
+    if (data.already_owned) {
+      throw new CheckoutStartError("already_owned", "You already have access to this feature.");
+    }
+    return validateCheckoutData(data);
   }, [featureKey, normalizedCheckoutEmail, resumeTaskId]);
 
   const getOrCreateCheckout = async (
@@ -282,6 +291,12 @@ export default function DodoCheckoutButton({
           title: "Checkout request timed out. Your card was not charged.",
           detail: "The payment API stayed slow after a retry. Try again, or request a direct payment link.",
         };
+      } else if (err instanceof CheckoutStartError && err.kind === "already_owned") {
+        nextError = {
+          kind: "already_owned",
+          title: "You already have access ✓",
+          detail: "This purchase is already active on your email — no need to pay again.",
+        };
       } else if (err instanceof CheckoutStartError) {
         const title =
           err.kind === "http"
@@ -327,6 +342,24 @@ export default function DodoCheckoutButton({
     );
     window.location.href = `mailto:${manualSupportEmail}?subject=${subject}&body=${body}`;
   };
+
+  if (error && error.kind === "already_owned") {
+    // T151 soft-prompt: friendly "already have access" — NOT an error, no charge,
+    // no retry/payment-link CTA (those would re-trigger checkout).
+    return (
+      <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-center">
+        <p className="text-sm font-medium text-emerald-800">{error.title}</p>
+        <p className="mt-1 text-xs text-emerald-600">{error.detail}</p>
+        <button
+          type="button"
+          onClick={() => setError(null)}
+          className="mt-4 inline-flex items-center justify-center rounded-full bg-[#0071e3] px-4 py-2 text-sm font-medium text-white hover:bg-[#005bb5]"
+        >
+          Got it
+        </button>
+      </div>
+    );
+  }
 
   if (error) {
     return (

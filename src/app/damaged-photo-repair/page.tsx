@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Damaged Photo Repair Online | AI Fixes Torn & Scratched Photos',
-  description: 'Repair damaged photos online with AI. Preview the repair first, then unlock the original-quality download for $4.99. No subscription.',
+  description: 'Repair damaged photos online with AI. Pay $4.99 once for upload, AI repair, and original-quality download. No subscription.',
   keywords: [
     'damaged photo repair',
     'repair damaged photos',
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   alternates: { canonical: '/damaged-photo-repair' },
   openGraph: {
     title: 'Damaged Photo Repair | AI Fixes Torn & Scratched Photos',
-    description: 'Repair torn, scratched, and water-damaged photos with AI. Preview first, then unlock the original-quality download for $4.99.',
+    description: 'Repair torn, scratched, and water-damaged photos with AI after a one-time $4.99 unlock.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after damaged photo repair' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Damaged Photo Repair - AI Powered',
-    description: 'Preview the repair first, then unlock the original-quality download for $4.99.',
+    description: 'Pay $4.99 once for AI repair and original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,15 +38,15 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Repair Damaged Photos Online",
-  description: "Repair torn, scratched, and damaged photographs using AI. Preview the repair first, then unlock the original-quality download for $4.99.",
+  description: "Repair torn, scratched, and damaged photographs using AI after a one-time $4.99 unlock.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Damaged Photo Repair" }],
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Upload your damaged photo",
-      text: "Scan your damaged photo at high resolution (600 DPI+) and upload. AI works best with clean scans.",
+      name: "Pay once to unlock access",
+      text: "Pay $4.99 once, then scan your damaged photo at high resolution (600 DPI+) and upload. AI works best with clean scans.",
     },
     {
       "@type": "HowToStep",
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your repaired photo",
-      text: "Preview the repair first. If you want the clean original-quality repaired photo, unlock the download for $4.99.",
+      text: "Download the clean original-quality repaired photo after AI processing.",
     },
   ],
 };
@@ -73,7 +73,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time unlock for upload, AI repair, and original-quality download"
   },
 };
 
@@ -84,7 +84,7 @@ const faqSchema = {
     { "@type": "Question", name: "What types of photo damage can AI repair?", acceptedAnswer: { "@type": "Answer", text: "AI can repair: scratches, small tears, water stains, fading, yellowing, foxing spots, creases, and moderate physical damage. For photos with large missing sections (over 30% of image), results may be limited." } },
     { "@type": "Question", name: "Can AI repair a torn photo?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can repair torn photos if you scan both pieces together aligned properly. For clean tears, results are excellent. For tears with missing pieces, AI will attempt to reconstruct based on surrounding context." } },
     { "@type": "Question", name: "How should I scan a damaged photo?", acceptedAnswer: { "@type": "Answer", text: "Scan at 600 DPI minimum. For torn photos, align pieces as closely as possible on the scanner. Don't tape the original - tape damages photos. Just position the pieces carefully for scanning." } },
-    { "@type": "Question", name: "Is damaged photo repair free?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the repair first with no signup required. If you want the clean original-quality repaired photo, unlock the download for $4.99. No subscription." } },
+    { "@type": "Question", name: "Do I need to pay before damaged photo repair?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub uses a pay-first model. A one-time $4.99 payment unlocks upload, AI repair, and original-quality download. No subscription." } },
     { "@type": "Question", name: "Can AI repair water-damaged photos?", acceptedAnswer: { "@type": "Answer", text: "Yes, AI can remove water stains, reduce warping artifacts, and restore colors affected by water damage. Severe water damage with emulsion loss has limited repair options." } },
   ],
 };
@@ -135,7 +135,7 @@ export default function DamagedPhotoRepairPage() {
             <span className="text-rose-600">Damaged</span> Photo Repair
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            AI repairs torn, scratched, water-damaged, and faded photos in 30 seconds. Preview the repair first, then unlock the original-quality download for $4.99 if the result is worth keeping.
+            AI repairs torn, scratched, water-damaged, and faded photos in about 30 seconds after checkout. Pay $4.99 once for upload, AI repair, and original-quality download.
           </p>
 
           {/* Trust indicators */}
@@ -342,10 +342,10 @@ export default function DamagedPhotoRepairPage() {
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-rose-700 hover:bg-rose-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview
+            Repair a Photo for $4.99
           </Link>
           <p className="mt-4 text-rose-200 text-[13px]">
-            Free preview · $4.99 original-quality unlock · No subscription
+            One-time payment · Original-quality download · No subscription
           </p>
         </div>
       </section>

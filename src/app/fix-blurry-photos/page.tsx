@@ -5,8 +5,8 @@ import FloatingCTA from '@/components/FloatingCTA';
 import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
-  title: 'Fix Blurry Photos Online Free — AI Sharpens Faces & Details (2026)',
-  description: 'Fix blurry photos in 30 seconds with AI. Sharpens out-of-focus faces, fixes camera shake, enhances detail. See the result free — HD download $4.99. No signup.',
+  title: 'Fix Blurry Photos Online — AI Sharpens Faces & Details (2026)',
+  description: 'Fix blurry photos in 30 seconds with AI. Sharpens out-of-focus faces, fixes camera shake, and enhances detail with a $4.99 one-time HD download unlock.',
   keywords: [
     'fix blurry photos',
     'fix blurry pictures',
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/fix-blurry-photos' },
   openGraph: {
-    title: 'Fix Blurry Photos Online Free | AI Photo Sharpening',
-    description: 'Fix blurry photos instantly with AI. Preview the sharpened result first, then unlock the original-quality download for $4.99.',
+    title: 'Fix Blurry Photos Online | AI Photo Sharpening',
+    description: 'Fix blurry photos instantly with AI. $4.99 one-time unlock, original-quality download included.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Before and after fixing blurry photo' }],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fix Blurry Photos Online Free',
-    description: 'Sharpen blurry images with AI. Start with a free preview, then unlock the original-quality download for $4.99.',
+    title: 'Fix Blurry Photos Online',
+    description: 'Sharpen blurry images with AI. $4.99 one-time unlock with original-quality download.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Fix Blurry Photos Online",
-  description: "Fix blurry, out-of-focus, or motion-blurred photos using AI enhancement — free, no signup required, results in 30 seconds.",
+  description: "Fix blurry, out-of-focus, or motion-blurred photos using AI enhancement — $4.99 one-time unlock, results in 30 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancement" }],
   step: [
@@ -58,7 +58,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Download your sharp photo",
-      text: "Preview the before/after comparison first. When you want the original-quality sharpened photo, unlock the download for $4.99.",
+      text: "After payment, download your original-quality sharpened photo when processing is complete.",
     },
   ],
 };
@@ -71,9 +71,9 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "4.99",
     priceCurrency: "USD",
-    description: "Free preview first, $4.99 original-quality download unlock"
+    description: "$4.99 one-time blur-fix unlock with original-quality download"
   },
 };
 
@@ -83,7 +83,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Can AI really fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Modern AI can fix many types of blur including slight out-of-focus, camera shake, and motion blur. AI works best on photos with moderate blur where some detail is preserved. Extremely blurry photos (severe motion blur or completely out of focus) may have limited improvement." } },
     { "@type": "Question", name: "What types of blur can be fixed?", acceptedAnswer: { "@type": "Answer", text: "AI can fix: 1) Out-of-focus blur - when the camera focused on the wrong area, 2) Camera shake - slight blur from unsteady hands, 3) Motion blur - blur from moving subjects, 4) Low-light blur - softness from slow shutter speeds. Results vary based on blur severity." } },
-    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub lets you preview the sharpened result for free with no signup required. When you want the original-quality fixed photo, unlock the download for $4.99." } },
+    { "@type": "Question", name: "Is there a free way to fix blurry photos?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub uses a pay-first model: $4.99 one time for blur fixing and the original-quality download." } },
     { "@type": "Question", name: "Will fixing blur make my photo look fake?", acceptedAnswer: { "@type": "Answer", text: "Good AI enhancement preserves natural appearance while adding sharpness. Our AI is trained to avoid over-sharpening artifacts. Always compare before/after to ensure you're happy with the result." } },
     { "@type": "Question", name: "Can I fix blurry faces in photos?", acceptedAnswer: { "@type": "Answer", text: "Yes! Face enhancement is one of our AI's strongest features. It can sharpen blurry faces, restore facial detail, and enhance eyes and features while maintaining natural appearance." } },
   ],
@@ -121,7 +121,7 @@ export default function FixBlurryPhotosPage() {
             Fix Blurry Photos <span className="text-indigo-600">Instantly</span>
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Upload your blurry photo and let AI sharpen it in 30 seconds. Fix out-of-focus shots, motion blur, and soft images — <strong className="text-[#1d1d1f]">start with a free preview</strong>.
+            Upload your blurry photo and let AI sharpen it in 30 seconds. Fix out-of-focus shots, motion blur, and soft images with a <strong className="text-[#1d1d1f]">$4.99 one-time unlock</strong>.
           </p>
 
           {/* Trust indicators */}
@@ -132,7 +132,7 @@ export default function FixBlurryPhotosPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-indigo-600 font-bold">✓</span>
-              No signup required
+              No subscription
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-indigo-600 font-bold">✓</span>
@@ -219,7 +219,7 @@ export default function FixBlurryPhotosPage() {
           {/* Honesty note */}
           <div className="mt-8 p-5 bg-amber-50 border border-amber-200 rounded-xl">
             <p className="text-[14px] text-amber-900">
-              <strong>🔍 Realistic expectations:</strong> AI can significantly improve moderately blurry photos but can&apos;t perform miracles on extremely blurry images. The best results come from photos where some detail is still visible. Use the free preview to see what&apos;s possible before you unlock the final file.
+              <strong>🔍 Realistic expectations:</strong> AI can significantly improve moderately blurry photos but can&apos;t perform miracles on extremely blurry images. The best results come from photos where some detail is still visible.
             </p>
           </div>
         </div>
@@ -275,7 +275,7 @@ export default function FixBlurryPhotosPage() {
             {[
               {
                 q: "Can AI really fix blurry photos?",
-                a: "Yes! Modern AI can fix many types of blur including slight out-of-focus, camera shake, and motion blur. AI works best on photos with moderate blur where some detail is preserved. Extremely blurry photos may have limited improvement — but it's free to try.",
+                a: "Yes! Modern AI can fix many types of blur including slight out-of-focus, camera shake, and motion blur. AI works best on photos with moderate blur where some detail is preserved. Extremely blurry photos may have limited improvement.",
               },
               {
                 q: "What types of blur work best?",
@@ -287,7 +287,7 @@ export default function FixBlurryPhotosPage() {
               },
               {
                 q: "Is fixing blurry photos free?",
-                a: "Yes. ArtImageHub lets you preview the sharpened result for free with no signup required. When you want the original-quality fixed photo, unlock the download for $4.99.",
+                a: "No. ArtImageHub uses a pay-first model: $4.99 one time for blur fixing and the original-quality download.",
               },
               {
                 q: "Will the fixed photo look fake or over-processed?",
@@ -314,16 +314,16 @@ export default function FixBlurryPhotosPage() {
             Ready to Fix Your Blurry Photos?
           </h2>
           <p className="text-indigo-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Upload your photo and see the AI sharpen it in 30 seconds. No signup, no credit card. Unlock the original-quality file only if the result is worth keeping.
+            Upload your photo and let AI sharpen it in 30 seconds. Pay $4.99 once for the original-quality fixed file.
           </p>
           <Link
             href="#upload"
             className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 text-[17px] font-bold text-indigo-700 hover:bg-indigo-50 active:scale-[0.98] transition-all shadow-xl"
           >
-            Start Free Preview — Try Now
+            Fix Blurry Photo
           </Link>
           <p className="mt-4 text-indigo-200 text-[13px]">
-            Free preview · No signup · Results in 30 seconds
+            $4.99 one-time unlock · Original-quality download · Results in 30 seconds
           </p>
         </div>
       </section>
