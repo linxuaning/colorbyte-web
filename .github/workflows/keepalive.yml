@@ -16,6 +16,7 @@ jobs:
             || echo "Backend unreachable (cold start in progress)"
       - name: Ping payment backend health
         run: |
-          curl -sf --max-time 55 https://colorbyte-api.onrender.com/health \
+          curl -sf --max-time 55 https://api.artimagehub.com/health \
             && echo "payment backend awake" \
             || echo "payment backend cold"
+
