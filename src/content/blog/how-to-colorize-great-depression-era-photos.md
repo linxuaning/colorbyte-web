@@ -137,3 +137,17 @@ For a typical family Depression-era snapshot — a farmyard scene, a family on a
 - [Colorize 1940s Wartime Photos](/blog/colorize-1940s-wartime-photos)
 - [AI Photo Colorization Accuracy](/blog/ai-photo-colorization-accuracy)
 - [Old Photo Restoration by Decade](/blog/old-photo-restoration-by-decade-complete-index)
+
+## Frequently Asked Questions
+
+**Can AI accurately colorize Great Depression photographs from the 1930s?**
+
+AI colorization of 1930s Depression-era photographs produces historically plausible results, though with some inherent uncertainty that you should understand going in. The model identifies sky, skin, wood, fabric, soil, and other elements, then assigns colors from its training data. For family history use, the colorized result is meaningful. For publication in historical contexts, label it as AI-assisted colorization.
+
+**What makes 1930s Dust Bowl photos different from other historical photos to colorize?**
+
+Dust Bowl photographs often have a specific earth-tone environment: tan soil, gray weathered wood, bleached crops, and hard outdoor light. That relative color simplicity helps AI colorization, but faces and clothing still require interpretation. Restoration before colorization also matters because foxing, cracks, and faded contrast can mislead the color model.
+
+**How should I approach colorizing a family photo from the Great Depression versus a documentary photo?**
+
+For family photos, treat AI colorization as an emotionally useful interpretation and keep the original scan archived. For documentary or educational use, label the output clearly as colorized. Family snapshots often have ambiguous interiors, clothing, and lighting, while FSA-style documentary photos usually provide stronger outdoor context.

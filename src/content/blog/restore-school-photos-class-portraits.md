@@ -12,10 +12,21 @@ image: "/images/blog/default-restoration.jpg"
 coverColor: "from-amber-100 to-orange-200"
 coverEmoji: "🏫"
 noIndex: true
+faq:
+  - question: "What is the best way to restore old school photos and class portraits?"
+    answer: "The best way to restore old school photos and class portraits is to scan the original at 600-1200 DPI, keep the full class border and names visible, then use ArtImageHub to repair fading, scratches, soft faces, and yellowed paper in one AI workflow. School portraits are especially valuable because they show age, grade, classmates, and family timeline context, so the goal is a clean shareable copy rather than a heavily modernized image."
+  - question: "Can AI restore faded class photos with many faces?"
+    answer: "Yes. AI restoration can improve faded class photos with many faces by raising contrast, cleaning paper damage, sharpening visible facial detail, and improving overall resolution. Very tiny faces in large group portraits may not recover as much detail as close-up portraits, but a high-resolution scan gives the model more information to work with."
+  - question: "What scan resolution should I use for school portraits?"
+    answer: "Use 600 DPI for standard individual portraits and 1200 DPI for small wallet prints, class composites, or yearbook photos where faces are small. Save a master scan as PNG or TIFF before restoration so you keep an archival copy."
 ---
 
 
 School photographs occupy a unique place in family archives: they're taken at regular intervals year after year, providing a chronological record of a child's growth that no other type of photograph provides. From the formal class portraits taken in one-room schoolhouses in the early 1900s to the individual school portraits that still arrive each fall in a paper envelope, these images mark the passage of time in a way that's both universal and deeply personal. When these photos fade or deteriorate, restoring them is a straightforward project with meaningful results.
+
+## What is the best way to restore old school photos and class portraits?
+
+The best way to restore old school photos and class portraits is to scan the original at 600-1200 DPI, keep the full class border and names visible, then use [ArtImageHub](/old-photo-restoration) to repair fading, scratches, soft faces, and yellowed paper in one AI workflow. School portraits are especially valuable because they show age, grade, classmates, and family timeline context, so the goal is a clean shareable copy rather than a heavily modernized image.
 
 ## The Evolution of School Photography
 
@@ -34,6 +45,20 @@ A project that many parents and grandparents find meaningful is assembling a com
 Before uploading your photo, take a moment to gently clean the surface with a soft, dry cloth to remove loose dust or debris. Scan at the highest resolution your equipment allows — 600 DPI is a solid baseline, but 1200 DPI or higher yields noticeably better restoration results. Save the scan as a TIFF or PNG rather than JPEG to preserve every detail.
 
 Once you have a clean digital copy, visit [ArtImageHub restoration](/old-photo-restoration) and upload your image. The AI analyzes each pixel in context, identifying which degradation patterns to correct while preserving the authentic character of the original. Within seconds you'll see a preview of the restored version, and you can download the full-resolution result ready for printing or sharing.
+
+## Frequently Asked Questions
+
+**What is the best way to restore old school photos and class portraits?**
+
+The best way to restore old school photos and class portraits is to scan the original at 600-1200 DPI, keep the full class border and names visible, then use ArtImageHub to repair fading, scratches, soft faces, and yellowed paper in one AI workflow. School portraits are especially valuable because they show age, grade, classmates, and family timeline context, so the goal is a clean shareable copy rather than a heavily modernized image.
+
+**Can AI restore faded class photos with many faces?**
+
+Yes. AI restoration can improve faded class photos with many faces by raising contrast, cleaning paper damage, sharpening visible facial detail, and improving overall resolution. Very tiny faces in large group portraits may not recover as much detail as close-up portraits, but a high-resolution scan gives the model more information to work with.
+
+**What scan resolution should I use for school portraits?**
+
+Use 600 DPI for standard individual portraits and 1200 DPI for small wallet prints, class composites, or yearbook photos where faces are small. Save a master scan as PNG or TIFF before restoration so you keep an archival copy.
 
 ---
 
