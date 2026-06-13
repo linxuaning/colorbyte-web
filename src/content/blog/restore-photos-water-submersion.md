@@ -26,7 +26,7 @@ The difference is time, temperature, and what was in the water.
 **Immediate steps:**
 1. Remove from water carefully — support the full print, wet gelatin tears easily
 2. Rinse in clean, room-temperature water if the submersion water was contaminated
-3. Don't try to separate photographs that are stuck together — keep them in water until you have time to separate them properly
+3. Don't try to separate photographs that are [stuck together](/blog/fix-photos-stuck-together) — keep them in water until you have time to separate them properly
 4. Do not rub, don't try to dry quickly, don't use heat
 
 **Drying:** Lay face-up on absorbent paper (paper towels, clean newsprint) in a cool, well-ventilated area. Change the paper as it saturates. Never stack wet photographs.
@@ -47,7 +47,6 @@ Photographs that dried while water-damaged — found later, or not treated promp
 
 These tide marks are addressable through AI restoration, which identifies the pattern and applies targeted correction to the affected areas. Results vary with the severity and the type of contamination in the original water, but improvement is typically significant.
 
-Photographs that dried stuck together present a more complex problem. Professional conservation may be needed to safely separate them.
+Photographs that dried [stuck together](/blog/fix-photos-stuck-together) present a more complex problem. Professional conservation may be needed to safely separate them.
 
 Restore your water-damaged photographs at our [photo restoration tool](/old-photo-restoration).
-
