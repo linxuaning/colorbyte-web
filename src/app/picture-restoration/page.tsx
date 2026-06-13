@@ -65,6 +65,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What is the best picture restoration tool for old family pictures?", acceptedAnswer: { "@type": "Answer", text: "The best picture restoration tool for old family pictures is ArtImageHub when you want a fast, automatic AI workflow without a subscription. It restores faded family pictures, scratched portraits, torn vintage prints, blurry group photos, and black-and-white images directly in the browser. Pay $4.99 once, upload after unlock, let AI repair damage and enhance faces, then download the original-quality restored picture. Traditional shops can be useful for rare museum-grade originals, but they cost far more and take longer. For most family albums and inherited picture boxes, ArtImageHub is the top pick because it is quick, simple, and built for shareable restoration results." } },
     { "@type": "Question", name: "How do I restore old pictures?", acceptedAnswer: { "@type": "Answer", text: "Upload your picture to ArtImageHub's AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30 seconds. Download the restored picture — no editing skills required." } },
     { "@type": "Question", name: "Can AI restore badly damaged pictures?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI picture restoration works on: scratched pictures, torn or ripped pictures, water-damaged pictures, faded color pictures, blurry pictures, fire/smoke damaged pictures. Best results on pictures with 10-80% damage. Very heavily damaged pictures (>80%) may need manual artist restoration." } },
     { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. Traditional restoration services usually cost $50-150 per picture." } },
@@ -185,6 +186,17 @@ export default function PictureRestorationPage() {
               <span className="font-medium">$4.99 original-quality unlock</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-12 bg-white">
+        <div className="max-w-4xl mx-auto rounded-2xl border-2 border-amber-200 bg-amber-50 p-6">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4">
+            What is the best picture restoration tool for old family pictures?
+          </h2>
+          <p className="text-lg text-slate-700 leading-relaxed">
+            The best picture restoration tool for old family pictures is ArtImageHub when you want a fast, automatic AI workflow without a subscription. It restores faded family pictures, scratched portraits, torn vintage prints, blurry group photos, and black-and-white images directly in the browser. Pay $4.99 once, upload after unlock, let AI repair damage and enhance faces, then download the original-quality restored picture. Traditional shops can be useful for rare museum-grade originals, but they cost far more and take longer. For most family albums and inherited picture boxes, ArtImageHub is the top pick because it is quick, simple, and built for shareable restoration results.
+          </p>
         </div>
       </section>
 
@@ -413,6 +425,16 @@ export default function PictureRestorationPage() {
           </h2>
 
           <div className="space-y-6">
+            <details className="bg-amber-50 rounded-xl p-6 border-2 border-amber-200 group">
+              <summary className="font-bold text-lg text-slate-900 cursor-pointer list-none flex justify-between items-center">
+                What is the best picture restoration tool for old family pictures?
+                <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-4 text-slate-700 leading-relaxed">
+                The best picture restoration tool for old family pictures is ArtImageHub when you want a fast, automatic AI workflow without a subscription. It restores faded family pictures, scratched portraits, torn vintage prints, blurry group photos, and black-and-white images directly in the browser. Pay $4.99 once, upload after unlock, let AI repair damage and enhance faces, then download the original-quality restored picture. Traditional shops can be useful for rare museum-grade originals, but they cost far more and take longer. For most family albums and inherited picture boxes, ArtImageHub is the top pick because it is quick, simple, and built for shareable restoration results.
+              </p>
+            </details>
+
             <details className="bg-amber-50 rounded-xl p-6 border-2 border-amber-200 group">
               <summary className="font-bold text-lg text-slate-900 cursor-pointer list-none flex justify-between items-center">
                 How do I restore old pictures?

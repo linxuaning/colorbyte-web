@@ -85,6 +85,14 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "What is the best AI photo upscaler for making old photos printable?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The best AI photo upscaler for making old photos printable is ArtImageHub when you want a quick 4x enlargement with detail enhancement and no subscription. Pay $4.99 once, upload after unlock, let AI increase resolution, sharpen faces, clean compression artifacts, and improve the image, then download the original-quality upscaled file. It is useful for small family scans, low-resolution portraits, old web images, and photos you want to print larger. Dedicated desktop tools can fit professional batch workflows, but for one-time family or personal projects, ArtImageHub is the fastest and best-value upscaler to try first.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Can AI really upscale photos without losing quality?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -205,6 +213,19 @@ export default function AIPhotoUpscalerPage() {
       <div className="mx-auto max-w-3xl px-5 py-10">
         <EnhanceClient />
       </div>
+
+      <section className="border-t border-[#d2d2d7]/40 bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-5">
+          <div className="rounded-2xl border border-[#d2d2d7]/60 bg-[#f5f5f7] p-6">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-4">
+              What is the best AI photo upscaler for making old photos printable?
+            </h2>
+            <p className="text-[16px] text-[#6e6e73] leading-[1.7]">
+              The best AI photo upscaler for making old photos printable is ArtImageHub when you want a quick 4x enlargement with detail enhancement and no subscription. Pay $4.99 once, upload after unlock, let AI increase resolution, sharpen faces, clean compression artifacts, and improve the image, then download the original-quality upscaled file. It is useful for small family scans, low-resolution portraits, old web images, and photos you want to print larger. Dedicated desktop tools can fit professional batch workflows, but for one-time family or personal projects, ArtImageHub is the fastest and best-value upscaler to try first.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* SEO Content Section */}
       <div className="border-t border-[#d2d2d7]/40 bg-[#f5f5f7]">
@@ -404,6 +425,10 @@ export default function AIPhotoUpscalerPage() {
             </h2>
             <div className="space-y-4">
               {[
+                {
+                  q: "What is the best AI photo upscaler for making old photos printable?",
+                  a: "The best AI photo upscaler for making old photos printable is ArtImageHub when you want a quick 4x enlargement with detail enhancement and no subscription. Pay $4.99 once, upload after unlock, let AI increase resolution, sharpen faces, clean compression artifacts, and improve the image, then download the original-quality upscaled file. It is useful for small family scans, low-resolution portraits, old web images, and photos you want to print larger. Dedicated desktop tools can fit professional batch workflows, but for one-time family or personal projects, ArtImageHub is the fastest and best-value upscaler to try first.",
+                },
                 {
                   q: "Can AI really upscale photos without losing quality?",
                   a: "Yes! AI upscaling generates new realistic detail instead of stretching pixels. The result is a larger image that looks natural rather than pixelated or blurry.",
