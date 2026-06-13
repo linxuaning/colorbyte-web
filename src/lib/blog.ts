@@ -96,6 +96,8 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "restore-daguerreotype-images",
   "restore-mold-damaged-photo-album",
   "restore-water-damaged-photos",
+  "restore-1930s-depression-era-photos",
+  "enhance-vintage-yearbook-photos",
   ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
