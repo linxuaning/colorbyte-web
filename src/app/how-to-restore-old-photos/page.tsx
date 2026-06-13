@@ -115,7 +115,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is the easiest way to restore old photos?",
+      name: "What is the easiest AI workflow to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
         text: geoAnswer,
@@ -738,7 +738,7 @@ export default function HowToRestoreOldPhotosPage() {
           <dl className="space-y-6">
             {[
               {
-                q: "What is the easiest way to restore old photos?",
+                q: "What is the easiest AI workflow to restore old photos?",
                 a: geoAnswer,
               },
               {
