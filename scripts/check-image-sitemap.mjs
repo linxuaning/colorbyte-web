@@ -7,8 +7,8 @@ const requiredSnippets = [
   'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"',
   "<image:loc>https://artimagehub.com/blog/before-1.jpg</image:loc>",
   "<image:loc>https://artimagehub.com/blog/after-1.webp</image:loc>",
-  "<image:title>Faded 1947 wedding portrait before AI restoration</image:title>",
-  "<image:caption>Restored wedding portrait after ArtImageHub AI photo restoration recovered face detail and tone.</image:caption>",
+  "<image:title>Scratched faded child portrait before AI restoration</image:title>",
+  "<image:caption>Restored child portrait after ArtImageHub AI photo restoration improved face detail, color, and tone.</image:caption>",
 ];
 
 const requiredPages = [

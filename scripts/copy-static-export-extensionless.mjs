@@ -69,13 +69,13 @@ const defaultRestorationImages = [
 const beforeAfterImages = [
   {
     loc: "/blog/before-1.jpg",
-    title: "Faded 1947 wedding portrait before AI restoration",
-    caption: "Old wedding portrait with fading, torn edges, and soft faces before AI photo restoration.",
+    title: "Scratched faded child portrait before AI restoration",
+    caption: "Old child portrait with heavy scratches, fading, and surface damage before AI photo restoration.",
   },
   {
     loc: "/blog/after-1.webp",
-    title: "Restored 1947 wedding portrait after AI restoration",
-    caption: "Restored wedding portrait after ArtImageHub AI photo restoration recovered face detail and tone.",
+    title: "Restored child portrait after AI restoration",
+    caption: "Restored child portrait after ArtImageHub AI photo restoration improved face detail, color, and tone.",
   },
   {
     loc: "/blog/before-2.jpg",

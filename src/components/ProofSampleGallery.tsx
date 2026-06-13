@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const proofSamples = [
   {
-    title: "1947 wedding portrait",
-    damage: "Heavy fading, torn edges, and soft faces from an old print scan.",
-    outcome: "Recovered facial clarity, balanced tones, and cleaner texture for reprint.",
+    title: "Faded child portrait",
+    damage: "Heavy scratches, fading, and surface damage from an old portrait scan.",
+    outcome: "Improved face detail, color, and tone for a cleaner restored portrait.",
     beforeSrc: "/blog/before-1.webp",
     afterSrc: "/blog/after-1.jpg",
-    beforeAlt: "Faded 1947 wedding portrait before AI old photo restoration",
-    afterAlt: "Restored 1947 wedding portrait after AI old photo restoration",
+    beforeAlt: "Scratched faded child portrait before AI old photo restoration",
+    afterAlt: "Restored child portrait after AI old photo restoration",
   },
   {
     title: "Family snapshot with color loss",
