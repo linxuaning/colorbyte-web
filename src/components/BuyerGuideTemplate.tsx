@@ -191,10 +191,35 @@ export function buildFaqSchema(config: BuyerGuideConfig) {
   };
 }
 
+export function buildBeforeAfterImageSchema(config: BuyerGuideConfig) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    name: config.beforeAfterHeading ?? 'ArtImageHub before and after photo restoration examples',
+    description: 'Before and after examples showing old family photo restoration results from ArtImageHub.',
+    mainEntityOfPage: `https://artimagehub.com/${config.slug}`,
+    associatedMedia: [
+      {
+        '@type': 'ImageObject',
+        contentUrl: 'https://artimagehub.com/blog/before-1.jpg',
+        name: config.beforeAfterCaption1 ?? 'Damaged old print before AI restoration',
+        caption: config.beforeAfterCaption1 ?? 'Damaged old print before AI restoration',
+      },
+      {
+        '@type': 'ImageObject',
+        contentUrl: 'https://artimagehub.com/blog/after-1.webp',
+        name: config.beforeAfterCaption2 ?? 'Restored old print after AI restoration',
+        caption: config.beforeAfterCaption2 ?? 'Restored old print after AI restoration',
+      },
+    ],
+  };
+}
+
 export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfig }) {
   const landing = `/${config.slug}`;
   const itemListSchema = buildItemListSchema(config);
   const faqSchema = buildFaqSchema(config);
+  const beforeAfterImageSchema = config.showBeforeAfter ? buildBeforeAfterImageSchema(config) : null;
 
   return (
     <>
@@ -206,6 +231,12 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {beforeAfterImageSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(beforeAfterImageSchema) }}
+        />
+      )}
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-stone-50 to-amber-50">
         {/* Hero */}
@@ -562,29 +593,39 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <figure className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <div className="relative aspect-[4/3]">
-                    <Image src="/blog/before-1.jpg" alt="Damaged photo before restoration" fill className="object-cover" />
+                    <Image
+                      src="/blog/before-1.jpg"
+                      alt={config.beforeAfterCaption1 ?? 'Damaged old family photo before AI restoration'}
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-red-600 text-white text-sm font-bold rounded">
                       BEFORE
                     </div>
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-stone-600">{config.beforeAfterCaption1 ?? 'Damaged old print before AI restoration'}</p>
+                    <figcaption className="text-sm text-stone-600">{config.beforeAfterCaption1 ?? 'Damaged old print before AI restoration'}</figcaption>
                   </div>
-                </div>
+                </figure>
 
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <figure className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <div className="relative aspect-[4/3]">
-                    <Image src="/blog/after-1.webp" alt="Restored photo after AI restoration" fill className="object-cover" />
+                    <Image
+                      src="/blog/after-1.webp"
+                      alt={config.beforeAfterCaption2 ?? 'Restored old family photo after AI restoration'}
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-green-600 text-white text-sm font-bold rounded">
                       AFTER
                     </div>
                   </div>
                   <div className="p-4">
-                    <p className="text-sm text-stone-600">{config.beforeAfterCaption2 ?? 'Restored with ArtImageHub in 30 seconds'}</p>
+                    <figcaption className="text-sm text-stone-600">{config.beforeAfterCaption2 ?? 'Restored with ArtImageHub in 30 seconds'}</figcaption>
                   </div>
-                </div>
+                </figure>
               </div>
 
               <div className="text-center">

@@ -2,11 +2,13 @@ import Image from "next/image";
 
 const proofSamples = [
   {
-    title: "1947 wedding portrait",
-    damage: "Heavy fading, torn edges, and soft faces from an old print scan.",
-    outcome: "Recovered facial clarity, balanced tones, and cleaner texture for reprint.",
+    title: "Faded child portrait",
+    damage: "Heavy scratches, fading, and surface damage from an old portrait scan.",
+    outcome: "Improved face detail, color, and tone for a cleaner restored portrait.",
     beforeSrc: "/blog/before-1.webp",
     afterSrc: "/blog/after-1.jpg",
+    beforeAlt: "Scratched faded child portrait before AI old photo restoration",
+    afterAlt: "Restored child portrait after AI old photo restoration",
   },
   {
     title: "Family snapshot with color loss",
@@ -14,6 +16,8 @@ const proofSamples = [
     outcome: "Restored contrast, stronger subject separation, and more natural skin tone.",
     beforeSrc: "/blog/before-2.jpg",
     afterSrc: "/blog/after-2.jpg",
+    beforeAlt: "Yellowed family snapshot before AI photo restoration",
+    afterAlt: "Restored family snapshot after AI color and contrast repair",
   },
   {
     title: "Damaged keepsake portrait",
@@ -21,6 +25,8 @@ const proofSamples = [
     outcome: "Sharper facial features, cleaner background, and higher print-ready clarity.",
     beforeSrc: "/blog/before-3.jpg",
     afterSrc: "/blog/after-3.jpg",
+    beforeAlt: "Scratched keepsake portrait before AI photo repair",
+    afterAlt: "Restored keepsake portrait after AI scratch repair and enhancement",
   },
 ];
 
@@ -55,34 +61,36 @@ export default function ProofSampleGallery({
               className="overflow-hidden rounded-[28px] border border-[#d2d2d7]/70 bg-white shadow-[0_18px_50px_rgba(29,29,31,0.06)]"
             >
               <div className="grid grid-cols-2 border-b border-[#d2d2d7]/70 bg-[#faf8f4]">
-                <div className="border-r border-[#d2d2d7]/70 p-3">
+                <figure className="border-r border-[#d2d2d7]/70 p-3">
                   <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#8B5E3C]">
                     Before
                   </p>
                   <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#ece8df]">
                     <Image
                       src={sample.beforeSrc}
-                      alt={`${sample.title} before restoration`}
+                      alt={sample.beforeAlt}
                       fill
                       className="object-cover"
                       sizes="(min-width: 1024px) 20vw, 40vw"
                     />
                   </div>
-                </div>
-                <div className="p-3">
+                  <figcaption className="sr-only">{sample.damage}</figcaption>
+                </figure>
+                <figure className="p-3">
                   <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#0071e3]">
                     After
                   </p>
                   <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#ece8df]">
                     <Image
                       src={sample.afterSrc}
-                      alt={`${sample.title} after restoration`}
+                      alt={sample.afterAlt}
                       fill
                       className="object-cover"
                       sizes="(min-width: 1024px) 20vw, 40vw"
                     />
                   </div>
-                </div>
+                  <figcaption className="sr-only">{sample.outcome}</figcaption>
+                </figure>
               </div>
 
               <div className="p-6">
