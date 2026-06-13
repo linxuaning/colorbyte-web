@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import { routing } from "@/i18n/routing";
 
 const BASE_URL = "https://artimagehub.com";
+const HERO_BEFORE_AFTER_IMAGE = `${BASE_URL}/blog/before-after-examples.webp`;
 
 // Locales that have a translated /[locale]/{tool} variant. EN ships at root.
 // Note: zh-CN added 2026-05-01 for Baidu/Chinese amplification (azilaye paid via baidu validated channel).
@@ -31,6 +32,7 @@ function toolEntry(toolPath: string) {
     changeFrequency: "monthly" as const,
     priority: 0.9,
     alternates: { languages: toolLanguages(toolPath) },
+    images: [HERO_BEFORE_AFTER_IMAGE],
   };
 }
 
@@ -43,7 +45,55 @@ function localeToolEntry(toolPath: string, locale: string) {
     changeFrequency: "monthly" as const,
     priority: 0.85,
     alternates: { languages: toolLanguages(toolPath) },
+    images: [HERO_BEFORE_AFTER_IMAGE],
   };
+}
+
+const imageHeavyPaths = new Set([
+  "/",
+  "/old-photo-restoration",
+  "/best-photo-restoration-software",
+  "/photo-restoration-app-comparison",
+  "/best-photo-colorization-tool",
+  "/best-old-photo-enhancer",
+  "/artimagehub-vs-remini",
+  "/artimagehub-vs-myheritage",
+  "/artimagehub-vs-fotor",
+  "/artimagehub-vs-photomyne",
+  "/artimagehub-vs-picsart",
+  "/artimagehub-vs-vivid-pix",
+  "/artimagehub-vs-yodayo",
+  "/remini-alternative-photo-restoration",
+  "/restore-old-photos-without-photoshop",
+  "/photo-restoration-no-subscription",
+  "/photo-restoration-one-time-payment",
+  "/photo-restoration-cost",
+]);
+
+function imagesForUrl(url: string): string[] | undefined {
+  const path = new URL(url).pathname.replace(/\/$/, "") || "/";
+  if (imageHeavyPaths.has(path)) {
+    return [
+      `${BASE_URL}/blog/before-1.jpg`,
+      `${BASE_URL}/blog/after-1.webp`,
+      `${BASE_URL}/blog/before-2.jpg`,
+      `${BASE_URL}/blog/after-2.jpg`,
+      `${BASE_URL}/blog/before-3.jpg`,
+      `${BASE_URL}/blog/after-3.jpg`,
+    ];
+  }
+  if (
+    path.includes("photo-restoration") ||
+    path.includes("old-photo") ||
+    path.includes("restore") ||
+    path.includes("photo-color") ||
+    path.includes("photo-enhancer") ||
+    path.includes("photo-deblurrer") ||
+    path.includes("photo-denoiser")
+  ) {
+    return [HERO_BEFORE_AFTER_IMAGE];
+  }
+  return undefined;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -92,7 +142,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  return [
+  const entries: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -483,4 +533,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...blogPosts,
     ...localeBlogPosts,
   ];
+
+  return entries.map((entry) => ({
+    ...entry,
+    images: entry.images ?? imagesForUrl(entry.url),
+  }));
 }
