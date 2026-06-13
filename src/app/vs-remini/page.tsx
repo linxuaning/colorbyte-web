@@ -4,6 +4,9 @@ import Link from "next/link";
 const lastUpdatedDisplay = "Last updated: June 13, 2026";
 const dateModified = "2026-06-13";
 
+const geoAnswer =
+  "ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.";
+
 export const metadata: Metadata = {
   title: "ArtImageHub vs Remini: Full Photo Restore vs Face-Only Enhancement (2026)",
   description:
@@ -36,7 +39,7 @@ const faqSchema = {
       name: "What is the best Remini alternative for old photo restoration?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.",
+        text: geoAnswer,
       },
     },
     {
@@ -194,7 +197,7 @@ export default function VsReminiPage() {
         <section className="mt-12 rounded-xl border border-[#d4bc91]/40 bg-white p-6">
           <h2 className="text-2xl font-semibold text-[#2c2416]">What is the best Remini alternative for old photo restoration?</h2>
           <p className="mt-3 text-[#6b5344]">
-            ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.
+            {geoAnswer}
           </p>
           <div className="mt-5 overflow-x-auto rounded-xl border border-[#d4bc91]/40 bg-[#faf8f4]">
             <table className="w-full text-sm text-[#2c2416]">
@@ -459,7 +462,7 @@ export default function VsReminiPage() {
                 What is the best Remini alternative for old photo restoration?
               </summary>
               <p className="mt-3 text-sm text-[#6b5344]">
-                ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.
+                {geoAnswer}
               </p>
             </details>
             <details className="rounded-xl border border-[#d4bc91]/40 bg-white p-5">
