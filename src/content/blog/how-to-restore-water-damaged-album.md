@@ -31,7 +31,7 @@ faq:
 > **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 
 
-The album is, in some ways, a worse situation than loose photographs when water damage occurs. The album structure — pages, binding, covers — holds the photographs in sustained contact with moisture and with each other. Photographs that might have dried separately in loose storage are stuck together under the pressure of a swollen album.
+The album is, in some ways, a worse situation than loose photographs when water damage occurs. The album structure — pages, binding, covers — holds the photographs in sustained contact with moisture and with each other. Photographs that might have dried separately in loose storage are [stuck together](/blog/fix-photos-stuck-together) under the pressure of a swollen album.
 
 Here's the approach I recommend, step by step.
 

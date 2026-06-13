@@ -36,7 +36,7 @@ House fires damage photographs through three distinct mechanisms, and understand
 
 **Smoke and soot deposition** is the most common and most recoverable type of fire damage to photographs. Hot combustion gases carry fine carbon particles that deposit on every surface in the home, including photo surfaces. Soot creates a dark, semi-opaque film over the image. In rooms where the fire was distant or where photographs were protected by closed drawers or albums, soot may be the primary damage — and soot-damaged photos that have not been physically disturbed often contain nearly intact emulsions beneath the deposit.
 
-**Firefighting water damage** frequently compounds smoke damage. Wet photos are fragile — they can stick together, develop mold rapidly, and if improperly dried, warp permanently. Water damage to an intact emulsion is often more recoverable than it appears once the photo is dry and stable.
+**Firefighting water damage** frequently compounds smoke damage. Wet photos are fragile — they can [stick together](/blog/fix-photos-stuck-together), develop mold rapidly, and if improperly dried, warp permanently. Water damage to an intact emulsion is often more recoverable than it appears once the photo is dry and stable.
 
 **Direct heat and burn damage** represents the most severe category. Heat above approximately 150 degrees Fahrenheit begins to soften and distort photographic emulsion. Higher temperatures produce yellowing and browning of the paper base before actual combustion. Actual burning eliminates image data entirely in the consumed areas. Heat damage short of burning, however — the scorched, discolored, and emulsion-distorted effects of proximity heat — is often partially recoverable.
 
@@ -44,7 +44,7 @@ House fires damage photographs through three distinct mechanisms, and understand
 
 The critical priority in the immediate aftermath of a fire is stabilization. You are preventing the photos from deteriorating further while you organize the restoration process.
 
-Do not rush to separate wet photos. Wet photographic prints have softened emulsions that tear easily. If photos are stuck together or stuck to other surfaces, keep them wet and gently separate them using a stream of cool water rather than pulling them apart dry. Once separated, lay them face-up on clean white paper towels in a single layer and allow to air dry in a well-ventilated space at room temperature.
+Do not rush to separate wet photos. Wet photographic prints have softened emulsions that tear easily. If photos are [stuck together](/blog/fix-photos-stuck-together) or stuck to other surfaces, keep them wet and gently separate them using a stream of cool water rather than pulling them apart dry. Once separated, lay them face-up on clean white paper towels in a single layer and allow to air dry in a well-ventilated space at room temperature.
 
 Do not apply heat. Fan-forced dryers, hair dryers, and direct sunlight all dry photos too rapidly, creating differential shrinkage between the paper base and the emulsion that causes permanent curling and cracking. Room-temperature air drying is slower but prevents these additional damage modes.
 
