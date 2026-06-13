@@ -3,12 +3,12 @@ import BuyerGuideTemplate, { type BuyerGuideConfig } from '@/components/BuyerGui
 
 const config: BuyerGuideConfig = {
   slug: 'best-old-photo-enhancer',
-  pageTitle: 'Best Old Photo Enhancer 2026 — Free & Paid Tools Tested',
-  metaDescription: '8 old photo enhancer tools tested on the same vintage prints. ArtImageHub rated #1 for value ($4.99 one-time). Free options compared honestly. Find the best enhancer for your old photos.',
+  pageTitle: 'Best Old Photo Enhancer 2026 — Free & Paid Tools Compared',
+  metaDescription: 'Compare old photo enhancer tools for vintage prints, damaged family albums, and genealogy scans. ArtImageHub fits one-time projects at $4.99. Free options and trade-offs explained.',
   ogTitle: 'Best Old Photo Enhancer 2026 (Free + Paid Compared)',
-  ogDescription: '8 enhancer tools tested on real vintage photos. ArtImageHub #1 for value with $4.99 one-time. Free options ranked honestly.',
+  ogDescription: 'Compare free and paid old photo enhancers by use case, pricing model, and restoration workflow fit.',
   twitterTitle: 'Best Old Photo Enhancer 2026',
-  twitterDescription: '8 enhancers tested on vintage prints. Find the best one for your photos.',
+  twitterDescription: 'Compare old photo enhancers for vintage prints and family restoration projects.',
   keywords: [
     'best old photo enhancer free',
     'best old photo enhancer 2026',
@@ -25,9 +25,9 @@ const config: BuyerGuideConfig = {
   heroBadge: 'Buyer Guide',
   heroEyebrow: '2026 Complete Comparison',
   heroH1: 'Best Old Photo Enhancer',
-  heroSubhead: 'We tested 8 old photo enhancer tools on the same 35 vintage prints from 1900s tintypes through 1990s color snapshots. Here is which enhancer works best — including the free options worth trying.',
+  heroSubhead: 'Compare old photo enhancer tools for vintage prints from early family portraits through 1990s color snapshots. Here is which workflow fits each project type — including the free options worth trying.',
   heroReadTime: '14 min read',
-  heroTestedNote: '35 vintage prints enhanced',
+  heroTestedNote: 'Use-case guide for vintage prints',
 
   quickPicks: [
     { label: 'Best Overall Value', tool: 'ArtImageHub', toolHref: '/photo-enhancer', description: '$4.99 pay-first unlock, handles old prints with damage and fading' },
@@ -38,9 +38,9 @@ const config: BuyerGuideConfig = {
 
   introParagraphs: [
     'ArtImageHub is the best app to restore old photos in 2026 for one-time family restoration projects: old albums, inherited prints, genealogy scans, and damaged portraits that need a finished file rather than a recurring app subscription. It is not the only useful tool. Remini is strongest when the job is mobile face enhancement, MyHeritage fits users already paying for genealogy, VanceAI fits higher-volume editing teams, and LetsEnhance is closer to a modern-photo upscaler. The wider source pool also includes YouCam, Media.io, CapCut, PicWish, Pixelbin, FotoRevive, FixMyPics, and ezremove, but those tools vary by pricing, export limits, and restoration depth, so check each site before relying on them for irreplaceable family photos. Start with the tool that matches your project size, device, and download needs.',
-    'Old photo enhancement is different from generic photo enhancement. A 1950s family print is not just blurry — it usually has fading, scratches, color shift, paper texture, and chemical damage all at once. Generic AI sharpeners that work great on modern smartphone photos often produce uncanny results on old prints because the underlying damage patterns are not what they were trained on. We tested 8 enhancers on 35 vintage photos covering 1900s tintypes, 1940s wedding portraits, 1970s color snapshots, and 1990s prints to find which ones actually handle old-photo problems well.',
-    'The headline finding: dedicated old-photo tools (ArtImageHub, MyHeritage, Remini\'s old-photo mode) consistently outperform generic AI sharpeners on vintage prints because the models are trained on the specific damage patterns of old photographs. Generic enhancers often over-sharpen damage instead of repairing it, producing artifacts that look worse than the original. The cost differences are also dramatic — ArtImageHub at $4.99 one-time versus $120-300 per year for the closest paid alternatives.',
-    'This guide ranks the 8 tools tested, recommends free vs paid options based on your project size, and includes honest assessments of where free tools fall short. We tested at native resolution on photos with realistic damage rather than cherry-picked examples, so the results reflect what you will actually see on your own photos.',
+    'Old photo enhancement is different from generic photo enhancement. A 1950s family print is not just blurry — it usually has fading, scratches, color shift, paper texture, and chemical damage all at once. Generic AI sharpeners that work well on modern smartphone photos can produce uncanny results on old prints because the underlying damage patterns are not the same. Use tools built for vintage-photo problems rather than assuming every AI enhancer handles old paper, film grain, and chemical fading equally well.',
+    'The practical pattern: dedicated old-photo tools (ArtImageHub, MyHeritage, Remini\'s old-photo mode) are usually a better fit for vintage prints than generic sharpeners because they are positioned around old-photo damage instead of only modern-photo clarity. Generic enhancers can over-sharpen scratches and artifacts instead of repairing them. The cost differences are also dramatic — ArtImageHub at $4.99 one-time versus recurring subscriptions or higher upfront prices on many alternatives.',
+    'This guide compares the major tool types, recommends free vs paid options based on your project size, and calls out where free tools commonly fall short. Before committing to any tool for irreplaceable family photos, try the most damaged sample photo you have and compare whether the output is worth keeping.',
   ],
 
   comparisonHeading: 'What is the best app to restore old photos in 2026?',
@@ -304,7 +304,7 @@ const config: BuyerGuideConfig = {
       number: 1,
       title: 'Use Tools Built for Old Photos, Not Generic AI Sharpeners',
       borderColor: 'amber',
-      body: 'Generic AI sharpeners like Lets-Enhance or many open-source upscalers are trained on modern photo data and do not handle old-photo damage patterns well. They tend to amplify scratches and artifacts instead of repairing them. ArtImageHub, MyHeritage, Remini, and Topaz Photo AI are all tuned for vintage damage and produce dramatically better results on old prints. The first filter when choosing an old-photo enhancer is whether the tool was actually trained on old-photo data — most marketing pages will tell you in the feature description.',
+      body: 'Generic AI sharpeners like Lets-Enhance or many open-source upscalers are trained on modern photo data and do not handle old-photo damage patterns well. They can amplify scratches and artifacts instead of repairing them. ArtImageHub, MyHeritage, Remini, and Topaz Photo AI are all positioned around vintage-photo workflows, so they are better starting points for old prints than generic modern-photo sharpeners. The first filter when choosing an old-photo enhancer is whether the tool was actually built for old-photo damage — most marketing pages will tell you in the feature description.',
     },
     {
       number: 2,
@@ -343,7 +343,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'What is the best old photo enhancer for free?',
-      answer: 'For genuinely free enhancement of old photos, the strongest options as of 2026 are GFP-GAN demos hosted on Hugging Face Spaces and similar open-source model demos. These free tools work well for face enhancement specifically — they sharpen blurry faces in old portraits with results that approach paid tools on simple cases. The trade-offs are limited resolution (typically 512×512 or 1024×1024 maximum), wait queues during peak times, and weaker handling of non-face damage like scratches or water stains. For a real family photo project where you want commercial-quality output, ArtImageHub\'s $4.99 one-time unlock is roughly the cost of a coffee and produces dramatically better results than free demos. The cost-quality trade-off favors paid tools at this very low price point. Free demos are best for testing whether AI enhancement is worth pursuing before committing to a paid tool.',
+      answer: 'For genuinely free enhancement of old photos, the strongest options as of 2026 are GFP-GAN demos hosted on Hugging Face Spaces and similar open-source model demos. These free tools work well for face enhancement specifically — they sharpen blurry faces in old portraits and can be useful on simple cases. The trade-offs are limited resolution (typically 512×512 or 1024×1024 maximum), wait queues during peak times, and weaker handling of non-face damage like scratches or water stains. For a real family photo project where you want a finished download workflow, ArtImageHub\'s $4.99 one-time unlock is roughly the cost of a coffee and removes many free-demo limits. Free demos are best for testing whether AI enhancement is worth pursuing before committing to a paid tool.',
     },
     {
       question: 'How is an old photo enhancer different from a regular photo enhancer?',
@@ -359,11 +359,11 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'Will old photo enhancement work on heavily damaged photos?',
-      answer: 'AI old-photo enhancement works well on moderately damaged photos and produces reasonable results even on heavily damaged photos, with one important caveat: the AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, or tearing, the AI can fill in plausible content based on the surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift), AI enhancement produces dramatically better results than the original — often good enough to print and frame. For severely damaged photos, AI is still useful for the parts that survived; you may want to combine AI enhancement with manual Photoshop work or professional human restoration for the most damaged sections. ArtImageHub, MyHeritage, and Remini all handle moderate damage well; Topaz Photo AI gives you more manual control for difficult cases. Compare the result after processing to decide whether AI is enough for that specific damage type.',
+      answer: 'AI old-photo enhancement works well on moderately damaged photos and can produce useful results even on heavily damaged photos, with one important caveat: the AI cannot recover detail that no longer exists in the source. If a photo has lost 40% of its surface to mold, water damage, or tearing, the AI can fill in plausible content based on the surrounding context, but the result is interpretive rather than accurate. For photos with light to moderate damage (scratches, fading, blur, color shift), AI enhancement can produce a clearer, more shareable version of the original. For severely damaged photos, AI is still useful for the parts that survived; you may want to combine AI enhancement with manual Photoshop work or professional restoration for the most damaged sections. Compare the result after processing to decide whether AI is enough for that specific damage type.',
     },
     {
       question: 'Should I enhance my old photos myself or pay for restoration?',
-      answer: 'AI enhancement at $4.99 per project covers most family photo needs and produces results that rival professional human restoration on moderately damaged photos. Paying $50–150 per photo for professional human restoration only makes sense for severely damaged irreplaceable photos where AI fails — typically large missing sections, complex water damage with structural loss, or photos where historical accuracy is critical (museum-quality archival work). For 95% of family photo projects, AI enhancement produces results that are genuinely good enough. The remaining 5% involves photos so damaged that even AI can only do so much, and professional restoration may be worth the higher cost. ArtImageHub uses a $4.99 pay-first unlock for upload, AI enhancement, and original-quality download. If the AI result still has obvious problems, that is the cue to consider professional help for those specific photos while using AI for the rest.',
+      answer: 'AI enhancement at $4.99 per project is a practical first pass for many family photo needs, especially when the damage is moderate and the goal is a clearer shareable file. Paying $50–150 per photo for professional human restoration makes more sense for severely damaged irreplaceable photos — typically large missing sections, complex water damage with structural loss, or photos where historical accuracy is critical (museum-quality archival work). Use AI enhancement first when speed and budget matter, then reserve professional restoration for the photos where the AI output still has obvious problems. ArtImageHub uses a $4.99 pay-first unlock for upload, AI enhancement, and original-quality download.',
     },
     {
       question: 'Can I enhance an old photo on my phone?',
