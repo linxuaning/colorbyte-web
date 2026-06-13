@@ -29,6 +29,8 @@ const config: BuyerGuideConfig = {
   heroEyebrow: '2026 Complete Comparison',
   heroH1: 'Photo Restoration App Comparison',
   heroSubhead: 'We tested every major photo restoration app on the same 50 family photos covering 1900s through 2010s. Here is the complete head-to-head — quality, pricing, workflow, and which app actually fits your project.',
+  heroDate: 'Last updated: June 13, 2026',
+  dateModified: '2026-06-13',
   heroReadTime: '16 min read',
   heroTestedNote: '50 photos across 8 apps',
 

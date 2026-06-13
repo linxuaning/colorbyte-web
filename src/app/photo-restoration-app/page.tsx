@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const lastUpdatedDisplay = "Last updated: June 13, 2026";
+const dateModified = "2026-06-13";
+
 export const metadata: Metadata = {
   title: "Best Photo Restoration App — iOS, Android & Web Compared (2026)",
   description:
@@ -36,7 +39,7 @@ const articleSchema = {
   description: "Comprehensive comparison of the best photo restoration apps for mobile and web in 2026.",
   image: "https://artimagehub.com/blog/before-after-examples.jpg",
   datePublished: "2026-02-23",
-  dateModified: "2026-02-23",
+  dateModified,
   author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   publisher: {
     "@type": "Organization",
@@ -52,6 +55,9 @@ const geoAnswer =
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntity: [
     {
       "@type": "Question",
@@ -123,7 +129,7 @@ export default function PhotoRestorationAppPage() {
         <div className="relative z-10 mx-auto max-w-4xl px-5 py-16 sm:py-20">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-[13px] font-semibold text-[#D4A96A] border border-[#8B5E3C]/30">
             <span className="h-1.5 w-1.5 rounded-full bg-[#D4A96A] shadow-[0_0_8px_rgba(212,169,106,0.6)]" />
-            2026 Comparison · Updated Feb 23
+            2026 Comparison · {lastUpdatedDisplay}
           </div>
           <h1 className="font-playfair text-[40px] sm:text-[56px] lg:text-[64px] font-800 tracking-[-0.04em] leading-[1.05] text-[#faf8f4] mb-6">
             Best Photo Restoration
@@ -153,7 +159,7 @@ export default function PhotoRestorationAppPage() {
         <div className="mx-auto max-w-6xl px-5">
           <div className="text-center mb-10">
             <h2 className="font-playfair text-[32px] sm:text-[40px] font-800 text-[#2c2416] mb-3">Top 5 Apps Compared</h2>
-            <p className="text-[17px] text-[#6b5344] font-lora">Updated February 2026 with latest pricing and features</p>
+            <p className="text-[17px] text-[#6b5344] font-lora">{lastUpdatedDisplay} with latest pricing and features</p>
           </div>
 
           <div className="overflow-x-auto">

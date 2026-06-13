@@ -26,6 +26,8 @@ const config: BuyerGuideConfig = {
   heroEyebrow: 'Honest 2026 Head-to-Head',
   heroH1: 'ArtImageHub vs MyHeritage',
   heroSubhead: 'MyHeritage bundles photo restoration with a $129–299/year genealogy subscription. ArtImageHub charges $4.99 once for the original-quality unlock. Compare which workflow fits your family photo project.',
+  heroDate: 'Last updated: June 13, 2026',
+  dateModified: '2026-06-13',
   heroReadTime: '13 min read',
   heroTestedNote: 'Use-case comparison for family photos',
 

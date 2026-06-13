@@ -29,6 +29,8 @@ const config: BuyerGuideConfig = {
   heroEyebrow: '2026 Complete Comparison',
   heroH1: 'Best Photo Colorization Tool',
   heroSubhead: 'We tested 8 AI photo colorization tools on the same 30 black-and-white family photos covering 1900s through 1970s. Here is which colorizes best for your project — and which to avoid.',
+  heroDate: 'Last updated: June 13, 2026',
+  dateModified: '2026-06-13',
   heroReadTime: '14 min read',
   heroTestedNote: '30 B&W photos colorized',
 

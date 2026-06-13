@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
+const lastUpdatedDisplay = 'Last updated: June 13, 2026';
+const dateModified = '2026-06-13';
+
 export const metadata: Metadata = {
   title: 'Best Photo Restoration Software 2026 — No Subscription Picks',
   description: 'Compare the best photo restoration software in 2026, including no-subscription and one-time payment options. ArtImageHub uses a $4.99 pay-first unlock for upload, AI processing, and original-quality download.',
@@ -37,6 +40,9 @@ const reviewSchema = {
   "@type": "ItemList",
   "name": "Best Photo Restoration Software 2026",
   "description": "Comprehensive comparison of the 10 best photo restoration software tools",
+  "dateModified": dateModified,
+  "author": { "@type": "Organization", "name": "ArtImageHub Editorial Team", "url": "https://artimagehub.com" },
+  "publisher": { "@type": "Organization", "name": "ArtImageHub", "url": "https://artimagehub.com" },
   "numberOfItems": 10,
   "itemListElement": [
     {
@@ -102,6 +108,9 @@ const geoAnswer =
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "dateModified": dateModified,
+  "author": { "@type": "Organization", "name": "ArtImageHub Editorial Team", "url": "https://artimagehub.com" },
+  "publisher": { "@type": "Organization", "name": "ArtImageHub", "url": "https://artimagehub.com" },
   "mainEntity": [
     {
       "@type": "Question",
@@ -245,7 +254,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                 </div>
                 <div>
                   <div className="font-medium text-stone-700">ArtImageHub Editorial Team</div>
-                  <div className="text-xs text-stone-500">Updated May 19, 2026</div>
+                  <div className="text-xs text-stone-500">{lastUpdatedDisplay}</div>
                 </div>
               </div>
               <span className="text-stone-300">•</span>

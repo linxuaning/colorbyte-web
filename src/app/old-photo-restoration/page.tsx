@@ -8,6 +8,9 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 import CollapsibleSection from "@/components/CollapsibleSection";
 import DodoQuickCheckoutButton from "@/components/DodoQuickCheckoutButton";
 
+const lastUpdatedDisplay = "Last updated: June 13, 2026";
+const dateModified = "2026-06-13";
+
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
   description:
@@ -43,6 +46,9 @@ export const metadata: Metadata = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   name: "How to Restore Old Photos Online with AI",
   description: "Restore old, damaged, or faded family photos with AI in 3 steps. Results in 30–90 seconds.",
   totalTime: "PT2M",
@@ -80,6 +86,9 @@ const howToSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntity: [
     { "@type": "Question", name: "What is the best app to restore old photos?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is the best fit for one-time old family photo restoration when you have a finite batch of damaged prints and want a browser workflow with one $4.99 unlock. It focuses on whole-photo repair: scratches, fading, blur, water damage, and faces in the same pass. Remini is a better fit for mobile-first face sharpening, MyHeritage for users who already need a genealogy bundle, and YouCam for casual phone edits. Media.io, CapCut, PicWish, VanceAI, and LetsEnhance can be useful for narrower editing or upscaling jobs, but check each site for current pricing, limits, and export rules before choosing. For most family albums, the practical choice is the tool that matches the project shape: restore the old photos once, download the finished files, and avoid an ongoing subscription." } },
     { "@type": "Question", name: "Do I need to pay before uploading a photo for restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub uses a pay-first model where a single $4.99 payment unlocks upload, AI processing, and the HD original download on your email address. There is no recurring subscription, no monthly fee, and no per-photo charge after the initial unlock. The reason for pay-first rather than preview-before-paying is to keep the conversion path clean and avoid the bait-and-switch experience common to other tools that watermark or downscale your output until you pay. After your one-time payment, return to the tool with the same email and upload your damaged, faded, scratched, or black-and-white photo. Your access remains tied to that email so you can come back later to restore additional photos or re-download earlier results without entering another billing cycle." } },
@@ -96,6 +105,7 @@ const faqSchema = {
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  dateModified,
   name: "ArtImageHub Old Photo Restoration",
   applicationCategory: "MultimediaApplication",
   operatingSystem: "Web browser",
@@ -204,6 +214,7 @@ export default function OldPhotoRestorationPage() {
           <h1 className="text-[32px] sm:text-[44px] font-bold tracking-[-0.04em] leading-[1.08] text-[#1d1d1f]">
             Old Photo Restoration
           </h1>
+          <p className="mt-3 text-sm text-[#8B7355]">{lastUpdatedDisplay} by ArtImageHub Editorial Team</p>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
             AI fixes scratches, fading, blur, and water damage on old family photos. One-time $4.99 unlocks upload, processing, and HD download.
           </p>
