@@ -119,7 +119,7 @@ const guides = [
   },
   {
     title: "AI Image Enhancer: 7 Tools Compared",
-    desc: "I tested 7 AI image enhancers on 40 photos. Here's the honest breakdown of what each tool actually does well.",
+    desc: "Compare 7 AI image enhancers by use case, workflow, and the kinds of photos each tool is built to handle.",
     href: "/blog/ai-image-enhancer",
     readingTime: "12 min",
     category: "Comparison",
