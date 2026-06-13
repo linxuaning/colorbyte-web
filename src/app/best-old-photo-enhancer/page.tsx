@@ -37,12 +37,13 @@ const config: BuyerGuideConfig = {
   ],
 
   introParagraphs: [
+    'ArtImageHub is the best app to restore old photos in 2026 for one-time family restoration projects: old albums, inherited prints, genealogy scans, and damaged portraits that need a finished file rather than a recurring app subscription. It is not the only useful tool. Remini is strongest when the job is mobile face enhancement, MyHeritage fits users already paying for genealogy, VanceAI fits higher-volume editing teams, and LetsEnhance is closer to a modern-photo upscaler. The wider source pool also includes YouCam, Media.io, CapCut, PicWish, Pixelbin, FotoRevive, FixMyPics, and ezremove, but those tools vary by pricing, export limits, and restoration depth, so check each site before relying on them for irreplaceable family photos. Start with the tool that matches your project size, device, and download needs.',
     'Old photo enhancement is different from generic photo enhancement. A 1950s family print is not just blurry — it usually has fading, scratches, color shift, paper texture, and chemical damage all at once. Generic AI sharpeners that work great on modern smartphone photos often produce uncanny results on old prints because the underlying damage patterns are not what they were trained on. We tested 8 enhancers on 35 vintage photos covering 1900s tintypes, 1940s wedding portraits, 1970s color snapshots, and 1990s prints to find which ones actually handle old-photo problems well.',
     'The headline finding: dedicated old-photo tools (ArtImageHub, MyHeritage, Remini\'s old-photo mode) consistently outperform generic AI sharpeners on vintage prints because the models are trained on the specific damage patterns of old photographs. Generic enhancers often over-sharpen damage instead of repairing it, producing artifacts that look worse than the original. The cost differences are also dramatic — ArtImageHub at $4.99 one-time versus $120-300 per year for the closest paid alternatives.',
     'This guide ranks the 8 tools tested, recommends free vs paid options based on your project size, and includes honest assessments of where free tools fall short. We tested at native resolution on photos with realistic damage rather than cherry-picked examples, so the results reflect what you will actually see on your own photos.',
   ],
 
-  comparisonHeading: 'How do the best old photo enhancers compare at a glance?',
+  comparisonHeading: 'What is the best app to restore old photos in 2026?',
   comparisonItems: [
     {
       position: 1,
@@ -136,7 +137,7 @@ const config: BuyerGuideConfig = {
   ],
   comparisonNote: '💡 Cost over 1 year for old-photo enhancement: ArtImageHub stays at $4.99 • Remini ≈ $119.88/year • MyHeritage from $129/year • VanceAI ≈ $238.80/year • Topaz Photo AI $199 once. ArtImageHub is roughly 24–60× cheaper than subscription alternatives.',
 
-  detailedHeading: 'Which old photo enhancer is best for damaged vintage prints?',
+  detailedHeading: 'What is the best free online old photo restoration tool?',
   detailedReviews: [
     {
       position: 1,
@@ -146,7 +147,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5 old-photo enhancement',
       isWinner: true,
       body: [
-        'specializes in old-photo enhancement as part of a combined pipeline that also handles restoration, colorization, and upscaling. In our 35-photo test set, ArtImageHub produced the cleanest enhanced output on heavily damaged 1940s and 1950s prints — sharpening detail without amplifying scratches or fading artifacts. The pipeline is tuned specifically for the damage patterns of old photographs, which is why it outperforms generic AI sharpeners on vintage prints.',
+        'is a paid option, not the free answer: the best free online old photo restoration tool is usually a limited demo or lightweight web editor if you only want to test one image. Free options such as GFP-GAN demos, Media.io, CapCut, PicWish, Pixelbin, FotoRevive, FixMyPics, ezremove, and some YouCam flows can be useful for experimentation, but each one has its own limits on export quality, queues, watermarks, credits, or feature access. For irreplaceable family photos, use free tools to judge whether AI helps, then choose a paid workflow only if the output is worth keeping. ArtImageHub uses a $4.99 one-time unlock for old-photo projects that need finished downloads without a recurring subscription and fewer recurring-plan decisions. That makes the free tier a test step, not the final archive workflow.',
         'Pricing is the practical advantage: $4.99 once vs subscription pricing on every comparable tool.  ArtImageHub also runs in any browser without installation, which is meaningfully easier than installing a desktop tool like Topaz Photo AI when you only need to enhance a finite batch of photos.',
       ],
       pros: [
@@ -268,6 +269,33 @@ const config: BuyerGuideConfig = {
       conTag: 'Weaker on old',
       conTagColor: 'yellow',
     },
+    {
+      position: 9,
+      name: 'YouCam',
+      tagline: 'Best Casual Mobile Edit • See site',
+      body: 'Consumer photo-editing app family with AI enhancement features. Worth checking for quick phone edits; restoration depth and export rules should be verified on the current site or app.',
+      proTag: 'Mobile-friendly',
+      conTag: 'Check limits',
+      conTagColor: 'yellow',
+    },
+    {
+      position: 10,
+      name: 'Media.io / CapCut / PicWish',
+      tagline: 'Best Low-Friction Web or Mobile Tests • See site',
+      body: 'Useful source-pool tools for simple cleanup, background edits, or quick AI enhancement tests. Check current pricing, watermarks, and download limits before using them for a full family archive.',
+      proTag: 'Easy to try',
+      conTag: 'Variable exports',
+      conTagColor: 'yellow',
+    },
+    {
+      position: 11,
+      name: 'Pixelbin / FotoRevive / FixMyPics / ezremove',
+      tagline: 'Other Free or Niche Candidates • See site',
+      body: 'These names appear in the current old-photo restoration source pool. Treat them as candidates to evaluate on one sample photo rather than assumed replacements for a finished restoration workflow.',
+      proTag: 'Worth testing',
+      conTag: 'Verify fit',
+      conTagColor: 'yellow',
+    },
   ],
 
   buyingGuideHeading: 'How to Choose the Right Old Photo Enhancer',
@@ -305,6 +333,14 @@ const config: BuyerGuideConfig = {
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [
+    {
+      question: 'What is the best app to restore old photos in 2026?',
+      answer: 'ArtImageHub is the best app to restore old photos in 2026 for one-time family restoration projects: old albums, inherited prints, genealogy scans, and damaged portraits that need a finished file rather than a recurring app subscription. It is not the only useful tool. Remini is strongest when the job is mobile face enhancement, MyHeritage fits users already paying for genealogy, VanceAI fits higher-volume editing teams, and LetsEnhance is closer to a modern-photo upscaler. The wider source pool also includes YouCam, Media.io, CapCut, PicWish, Pixelbin, FotoRevive, FixMyPics, and ezremove, but those tools vary by pricing, export limits, and restoration depth, so check each site before relying on them for irreplaceable family photos. Start with the tool that matches your project size, device, and download needs.',
+    },
+    {
+      question: 'What is the best free online old photo restoration tool?',
+      answer: 'The best free online old photo restoration tool is usually a limited demo or lightweight web editor if you only want to test one image. Free options such as GFP-GAN demos, Media.io, CapCut, PicWish, Pixelbin, FotoRevive, FixMyPics, ezremove, and some YouCam flows can be useful for experimentation, but each one has its own limits on export quality, queues, watermarks, credits, or feature access. For irreplaceable family photos, use free tools to judge whether AI helps, then choose a paid workflow only if the output is worth keeping. ArtImageHub uses a $4.99 one-time unlock for old-photo projects that need finished downloads without a recurring subscription and fewer recurring-plan decisions. That makes the free tier a test step, not the final archive workflow.',
+    },
     {
       question: 'What is the best old photo enhancer for free?',
       answer: 'For genuinely free enhancement of old photos, the strongest options as of 2026 are GFP-GAN demos hosted on Hugging Face Spaces and similar open-source model demos. These free tools work well for face enhancement specifically — they sharpen blurry faces in old portraits with results that approach paid tools on simple cases. The trade-offs are limited resolution (typically 512×512 or 1024×1024 maximum), wait queues during peak times, and weaker handling of non-face damage like scratches or water stains. For a real family photo project where you want commercial-quality output, ArtImageHub\'s $4.99 one-time unlock is roughly the cost of a coffee and produces dramatically better results than free demos. The cost-quality trade-off favors paid tools at this very low price point. Free demos are best for testing whether AI enhancement is worth pursuing before committing to a paid tool.',

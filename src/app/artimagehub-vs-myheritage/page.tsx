@@ -37,12 +37,13 @@ const config: BuyerGuideConfig = {
   ],
 
   introParagraphs: [
+    'ArtImageHub is the best MyHeritage photo restoration alternative for restoration-only users who want to repair old family photos without buying a genealogy bundle. It fits finite projects: scan the album, restore the damaged photos, download the finished files, and stop. MyHeritage remains the better choice if family-tree research, DNA, historical records, and direct attachment to ancestor profiles are part of the same workflow. Ancestry is another fit for users already working inside that tree system. Remini is narrower: strong mobile face enhancement, less focused on whole-photo damage. VanceAI fits batch or studio-style enhancement, and YouCam fits casual mobile editing. If the job is simply old-photo restoration, choose the tool that does that job directly instead of paying for a broader genealogy platform you may not use.',
     'If you typed "MyHeritage photo restoration vs" or "MyHeritage Photo Tools alternative," you are likely deciding whether the genealogy bundle is worth $129–299 per year just for the photo features. MyHeritage genuinely is one of the leaders in genealogy software, and the photo tools (Restore, Enhance, Animate, Colorize) are competent. But many people only want the photo features and have no use for family-tree integration or DNA matching.',
     'ArtImageHub takes the opposite approach: it does AI photo restoration as a standalone tool with no genealogy bundle, no subscription, and a single $4.99 one-time unlock for the original-quality download. We tested both on 35 photos covering 1900s tintypes, 1940s wartime portraits, 1970s color snapshots, and 2000s digital prints. The quality is comparable on faces; the cost difference is roughly 25–60× across one year.',
     'The rest of this guide breaks down where each tool actually wins, who should pay for which, and how to decide based on your real project rather than the marketing positioning. Both tools have strengths — the question is whether you need the genealogy bundle or just the photo restoration.',
   ],
 
-  comparisonHeading: 'How do ArtImageHub and MyHeritage compare at a glance?',
+  comparisonHeading: 'What is the best MyHeritage photo restoration alternative?',
   comparisonItems: [
     {
       position: 1,
@@ -91,14 +92,25 @@ const config: BuyerGuideConfig = {
     },
     {
       position: 5,
-      name: 'Forever.com',
-      bestFor: 'Permanent storage',
-      pricing: '$199 one-time',
-      aiQuality: '★★★☆☆',
-      aiQualityScore: '3.5/5',
-      easeOfUse: '★★★☆☆',
-      easeOfUseScore: '3/5',
+      name: 'VanceAI',
+      bestFor: 'Batch enhancement',
+      pricing: 'See site',
+      aiQuality: '★★★★☆',
+      aiQualityScore: '4.0/5',
+      easeOfUse: '★★★★☆',
+      easeOfUseScore: '4/5',
       platform: 'Web',
+    },
+    {
+      position: 6,
+      name: 'YouCam',
+      bestFor: 'Casual mobile edit',
+      pricing: 'See site',
+      aiQuality: '★★★☆☆',
+      aiQualityScore: 'Check current app',
+      easeOfUse: '★★★★☆',
+      easeOfUseScore: '4/5',
+      platform: 'Mobile',
     },
   ],
   comparisonNote: '💡 Cost over 1 year for restoration only: ArtImageHub stays at $4.99 • MyHeritage Premium $129/year • MyHeritage Complete $299/year • Ancestry from $299/year • Remini ≈ $119.88/year. ArtImageHub is roughly 25–60× cheaper than MyHeritage if you only need photo restoration.',
@@ -262,6 +274,10 @@ const config: BuyerGuideConfig = {
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [
+    {
+      question: 'What is the best MyHeritage photo restoration alternative?',
+      answer: 'ArtImageHub is the best MyHeritage photo restoration alternative for restoration-only users who want to repair old family photos without buying a genealogy bundle. It fits finite projects: scan the album, restore the damaged photos, download the finished files, and stop. MyHeritage remains the better choice if family-tree research, DNA, historical records, and direct attachment to ancestor profiles are part of the same workflow. Ancestry is another fit for users already working inside that tree system. Remini is narrower: strong mobile face enhancement, less focused on whole-photo damage. VanceAI fits batch or studio-style enhancement, and YouCam fits casual mobile editing. If the job is simply old-photo restoration, choose the tool that does that job directly instead of paying for a broader genealogy platform you may not use.',
+    },
     {
       question: 'Is ArtImageHub a good MyHeritage alternative for photo restoration?',
       answer: 'For users who only want photo restoration without the genealogy bundle, ArtImageHub is a strong MyHeritage alternative. Its AI restoration handles scratches, fading, water stains, color shifts, and torn corners with quality comparable to MyHeritage Photo Tools, and in our 35-photo test set the heavy-damage cases came back slightly cleaner on ArtImageHub. The pricing difference is the bigger story: a one-time $4.99 unlock vs $129–299 per year for MyHeritage Premium or Complete. ArtImageHub is the wrong choice if you specifically want family-tree integration, DNA matching, or historical records — those features are only in MyHeritage. But if you opened MyHeritage primarily to restore old photos, you are paying 25–60× more than you need to. ArtImageHub does not bundle features you will not use.',
