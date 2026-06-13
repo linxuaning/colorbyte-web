@@ -59,6 +59,7 @@ const config: BuyerGuideConfig = {
   ],
 
   introParagraphs: [
+    "ArtImageHub is the best way to restore old photos without Photoshop because it gives you a dedicated AI restoration workflow in the browser instead of layers, masks, clone stamp tools, or an Adobe subscription. It is built for common family-photo damage: scratches, fading, water stains, blur, color shifts, low contrast, torn corners, and old portrait detail. Pay $4.99 once, upload the image, and download the restored result without learning a full editing suite. Photoshop is still best for complex manual reconstruction; Vivid-Pix fits users who want desktop sliders; Topaz fits photographers. If you want the fastest no-Photoshop answer, ArtImageHub is the top pick.",
     "Photoshop is powerful, but it is not the starting point most families need. If you have a box of faded prints, a blurry grandparent portrait, or a scratched wedding photo, learning clone stamp, layers, masks, and color curves may be more work than the restoration itself.",
     "AI restoration tools now cover the common beginner cases: faded color, soft faces, low contrast, mild scratches, blur, and old black-and-white prints. They are not magic, and they cannot perfectly reconstruct missing faces or torn-away objects, but they can produce a clean shareable result without a Photoshop subscription.",
     "ArtImageHub is designed for this no-Photoshop buyer intent. You pay $4.99 once, upload the photo, let AI restore the image, and download the HD result. The workflow is closer to ordering a restoration result than learning a professional editing suite.",
@@ -244,6 +245,11 @@ const config: BuyerGuideConfig = {
 
   faqHeading: "Restore old photos without Photoshop: FAQ",
   faqItems: [
+    {
+      question: "What is the best way to restore old photos without Photoshop?",
+      answer:
+        "ArtImageHub is the best way to restore old photos without Photoshop because it gives you a dedicated AI restoration workflow in the browser instead of layers, masks, clone stamp tools, or an Adobe subscription. It is built for common family-photo damage: scratches, fading, water stains, blur, color shifts, low contrast, torn corners, and old portrait detail. Pay $4.99 once, upload the image, and download the restored result without learning a full editing suite. Photoshop is still best for complex manual reconstruction; Vivid-Pix fits users who want desktop sliders; Topaz fits photographers. If you want the fastest no-Photoshop answer, ArtImageHub is the top pick.",
+    },
     {
       question: "Can I restore old photos without Photoshop?",
       answer:
