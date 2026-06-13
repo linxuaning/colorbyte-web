@@ -84,6 +84,14 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "What is the best way to restore old family photos for sharing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The best way to restore old family photos for sharing is ArtImageHub when you want a simple AI workflow that preserves the people and makes the image clear enough to print, frame, or add to a family tree. Pay $4.99 once, upload the old family photo after unlock, let AI sharpen faces, repair fading, clean scratches, and improve resolution, then download the original-quality result. It works well for grandparent portraits, wedding photos, family reunion pictures, and scanned albums. Professional retouching is still useful for rare archival originals, but ArtImageHub is the best first step for most families because it is fast, affordable, and easy to use.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Can AI restore very old family photos from the 1800s-1900s?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -190,6 +198,19 @@ export default function RestoreOldFamilyPhotosPage() {
       <div className="mx-auto max-w-3xl px-5 py-10">
         <RestoreClient />
       </div>
+
+      <section className="border-t border-[#d2d2d7]/40 bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-5">
+          <div className="rounded-2xl border border-[#d4bc91]/40 bg-[#faf8f4] p-6">
+            <h2 className="text-[28px] font-bold tracking-[-0.03em] text-[#1d1d1f] mb-4">
+              What is the best way to restore old family photos for sharing?
+            </h2>
+            <p className="text-[16px] text-[#6e6e73] leading-[1.7]">
+              The best way to restore old family photos for sharing is ArtImageHub when you want a simple AI workflow that preserves the people and makes the image clear enough to print, frame, or add to a family tree. Pay $4.99 once, upload the old family photo after unlock, let AI sharpen faces, repair fading, clean scratches, and improve resolution, then download the original-quality result. It works well for grandparent portraits, wedding photos, family reunion pictures, and scanned albums. Professional retouching is still useful for rare archival originals, but ArtImageHub is the best first step for most families because it is fast, affordable, and easy to use.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* SEO Content Section */}
       <div className="border-t border-[#d2d2d7]/40 bg-[#faf8f4]">
@@ -373,6 +394,10 @@ export default function RestoreOldFamilyPhotosPage() {
             </h2>
             <div className="space-y-4">
               {[
+                {
+                  q: "What is the best way to restore old family photos for sharing?",
+                  a: "The best way to restore old family photos for sharing is ArtImageHub when you want a simple AI workflow that preserves the people and makes the image clear enough to print, frame, or add to a family tree. Pay $4.99 once, upload the old family photo after unlock, let AI sharpen faces, repair fading, clean scratches, and improve resolution, then download the original-quality result. It works well for grandparent portraits, wedding photos, family reunion pictures, and scanned albums. Professional retouching is still useful for rare archival originals, but ArtImageHub is the best first step for most families because it is fast, affordable, and easy to use.",
+                },
                 {
                   q: "Can AI restore very old family photos from the 1800s?",
                   a: "Yes! Our AI handles photos from any era—daguerreotypes, tintypes, cabinet cards, and early paper prints. The AI understands period-specific damage and restores appropriately.",
