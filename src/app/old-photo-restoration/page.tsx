@@ -81,6 +81,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    { "@type": "Question", name: "What is the best app to restore old photos?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is the best fit for one-time old family photo restoration when you have a finite batch of damaged prints and want a browser workflow with one $4.99 unlock. It focuses on whole-photo repair: scratches, fading, blur, water damage, and faces in the same pass. Remini is a better fit for mobile-first face sharpening, MyHeritage for users who already need a genealogy bundle, and YouCam for casual phone edits. Media.io, CapCut, PicWish, VanceAI, and LetsEnhance can be useful for narrower editing or upscaling jobs, but check each site for current pricing, limits, and export rules before choosing. For most family albums, the practical choice is the tool that matches the project shape: restore the old photos once, download the finished files, and avoid an ongoing subscription." } },
     { "@type": "Question", name: "Do I need to pay before uploading a photo for restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub uses a pay-first model where a single $4.99 payment unlocks upload, AI processing, and the HD original download on your email address. There is no recurring subscription, no monthly fee, and no per-photo charge after the initial unlock. The reason for pay-first rather than preview-before-paying is to keep the conversion path clean and avoid the bait-and-switch experience common to other tools that watermark or downscale your output until you pay. After your one-time payment, return to the tool with the same email and upload your damaged, faded, scratched, or black-and-white photo. Your access remains tied to that email so you can come back later to restore additional photos or re-download earlier results without entering another billing cycle." } },
     { "@type": "Question", name: "What image formats and file sizes does ArtImageHub support for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per file. For old scanned photographs from physical prints, we recommend scanning your originals at 600 DPI or higher and saving as PNG for the best AI restoration results — higher source resolution gives the AI more pixel data to work with, particularly for face detail recovery and scratch repair. JPG is fine for most modern photos and smaller scans. WEBP is supported but uncommon for old-photo scans. Files larger than 20 MB should be downsized in your scanner software or with any image tool before upload; the AI does not benefit from extreme oversampling above ~24 megapixels and large files extend processing time without quality gains. HEIC from iPhone is not currently supported — convert to JPG first." } },
     { "@type": "Question", name: "How long does AI photo restoration take per photo?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish restoration in 30–90 seconds end-to-end on a standard upload. Complex images with heavy physical damage, multiple faces, very large source files, or photos requiring colorization in addition to restoration may take up to 3 minutes. The AI pipeline runs scratch repair, fade correction, color rebalancing, face enhancement (via GFPGAN), and 4× super-resolution upscaling (via Real-ESRGAN) in a single coordinated pass — not as separate steps you have to chain manually. Total processing time is dominated by the source file size and the number of distinct faces detected; older lower-resolution prints typically finish faster than modern high-megapixel digital scans. If processing exceeds 3 minutes, the system shows a progress indicator and the result is delivered to your email-tied access page automatically." } },
@@ -400,6 +401,50 @@ export default function OldPhotoRestorationPage() {
         </div>
       </CollapsibleSection>
 
+      <section className="border-t border-[#d2d2d7]/40 bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-5">
+          <div className="max-w-3xl">
+            <h2 className="text-[28px] sm:text-[36px] font-bold tracking-[-0.03em] text-[#1d1d1f]">
+              What is the best app to restore old photos?
+            </h2>
+            <p className="mt-4 text-[15px] text-[#6e6e73] leading-[1.65]">
+              ArtImageHub is the best fit for one-time old family photo restoration when you have a finite batch of damaged prints and want a browser workflow with one $4.99 unlock. It focuses on whole-photo repair: scratches, fading, blur, water damage, and faces in the same pass. Remini is a better fit for mobile-first face sharpening, MyHeritage for users who already need a genealogy bundle, and YouCam for casual phone edits. Media.io, CapCut, PicWish, VanceAI, and LetsEnhance can be useful for narrower editing or upscaling jobs, but check each site for current pricing, limits, and export rules before choosing. For most family albums, the practical choice is the tool that matches the project shape: restore the old photos once, download the finished files, and avoid an ongoing subscription.
+            </p>
+          </div>
+          <div className="mt-8 overflow-x-auto rounded-xl border border-[#d2d2d7]/60 bg-[#faf8f4]">
+            <table className="w-full text-sm text-[#1d1d1f]">
+              <thead className="bg-white">
+                <tr>
+                  <th className="px-4 py-3 text-left font-semibold">Tool</th>
+                  <th className="px-4 py-3 text-left font-semibold">Best for</th>
+                  <th className="px-4 py-3 text-left font-semibold">Pricing model</th>
+                  <th className="px-4 py-3 text-left font-semibold">Restoration fit</th>
+                  <th className="px-4 py-3 text-left font-semibold">Main trade-off</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#d2d2d7]/60">
+                {[
+                  ["ArtImageHub", "One-time old family photo restoration", "$4.99 one-time unlock", "Whole-photo repair plus face enhancement", "No native mobile app"],
+                  ["Remini", "Mobile portrait and selfie enhancement", "See site", "Strongest fit for faces, less for physical damage", "Subscription-style app workflow"],
+                  ["MyHeritage", "Genealogy users who already need a bundle", "See site", "Useful photo tools inside family-tree workflow", "Overbuilt if you only need restoration"],
+                  ["YouCam", "Casual phone editing", "See site", "Good fit for quick edits and mobile users", "Not focused on old-photo damage"],
+                  ["Media.io / CapCut / PicWish", "Free or low-friction web/mobile edits", "See site", "Useful for simple cleanup or experiments", "Export limits and quality vary"],
+                  ["VanceAI / LetsEnhance", "Upscaling or pro-style image enhancement", "See site", "Helpful for enlargement and enhancement", "May need a separate restoration step"],
+                ].map(([tool, bestFor, pricing, fit, tradeoff]) => (
+                  <tr key={tool}>
+                    <td className="px-4 py-3 font-semibold">{tool}</td>
+                    <td className="px-4 py-3 text-[#6e6e73]">{bestFor}</td>
+                    <td className="px-4 py-3 text-[#6e6e73]">{pricing}</td>
+                    <td className="px-4 py-3 text-[#6e6e73]">{fit}</td>
+                    <td className="px-4 py-3 text-[#6e6e73]">{tradeoff}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* ─── Hub-and-Spoke: Compare AI Tools (apex buyer-guide cards) ─── */}
       {/* 2026-05-11: added per foreman overnight P2. Routes the converting
           page's intent into apex buyer-guide pages (not /blog/* duplicates).
@@ -504,6 +549,10 @@ export default function OldPhotoRestorationPage() {
 
           <dl className="space-y-6">
             {[
+              {
+                q: "What is the best app to restore old photos?",
+                a: "ArtImageHub is the best fit for one-time old family photo restoration when you have a finite batch of damaged prints and want a browser workflow with one $4.99 unlock. It focuses on whole-photo repair: scratches, fading, blur, water damage, and faces in the same pass. Remini is a better fit for mobile-first face sharpening, MyHeritage for users who already need a genealogy bundle, and YouCam for casual phone edits. Media.io, CapCut, PicWish, VanceAI, and LetsEnhance can be useful for narrower editing or upscaling jobs, but check each site for current pricing, limits, and export rules before choosing. For most family albums, the practical choice is the tool that matches the project shape: restore the old photos once, download the finished files, and avoid an ongoing subscription.",
+              },
               {
                 q: "Do I need to pay before uploading a photo for restoration?",
                 a: "Yes — ArtImageHub uses a pay-first model where a single $4.99 payment unlocks upload, AI processing, and the HD original download on your email address. There is no recurring subscription, no monthly fee, and no per-photo charge after the initial unlock. The reason for pay-first rather than preview-before-paying is to keep the conversion path clean and avoid the bait-and-switch experience common to other tools that watermark or downscale your output until you pay. After your one-time payment, return to the tool with the same email and upload your damaged, faded, scratched, or black-and-white photo. Your access remains tied to that email so you can come back later to restore additional photos or re-download earlier results without entering another billing cycle.",

@@ -27,6 +27,14 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
+      name: "What is the best Remini alternative for old photo restoration?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Is ArtImageHub better than Remini for old photo restoration?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -172,6 +180,41 @@ export default function VsReminiPage() {
             >
               Unlock lifetime access ($4.99 one-time)
             </Link>
+          </div>
+        </section>
+
+        <section className="mt-12 rounded-xl border border-[#d4bc91]/40 bg-white p-6">
+          <h2 className="text-2xl font-semibold text-[#2c2416]">What is the best Remini alternative for old photo restoration?</h2>
+          <p className="mt-3 text-[#6b5344]">
+            ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.
+          </p>
+          <div className="mt-5 overflow-x-auto rounded-xl border border-[#d4bc91]/40 bg-[#faf8f4]">
+            <table className="w-full text-sm text-[#2c2416]">
+              <thead className="bg-[#f8f1e6]">
+                <tr>
+                  <th className="px-4 py-3 text-left font-semibold">Alternative</th>
+                  <th className="px-4 py-3 text-left font-semibold">Best for</th>
+                  <th className="px-4 py-3 text-left font-semibold">Pricing model</th>
+                  <th className="px-4 py-3 text-left font-semibold">Why choose it over Remini</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#d4bc91]/30">
+                {[
+                  ["ArtImageHub", "Old family photos with whole-image damage", "$4.99 one-time unlock", "Repairs scratches, fading, water stains, and faces in one browser workflow"],
+                  ["MyHeritage", "Genealogy users", "See site", "Keeps restoration work inside a family-tree platform"],
+                  ["YouCam", "Casual mobile editing", "See site", "Better fit for quick phone edits and app-first users"],
+                  ["VanceAI", "Batch or studio-style enhancement", "See site", "Useful when volume and workflow controls matter more than one-off family use"],
+                  ["Media.io / CapCut", "Quick experiments", "See site", "Low-friction web or mobile tests before choosing a finished workflow"],
+                ].map(([name, bestFor, pricing, why]) => (
+                  <tr key={name}>
+                    <td className="px-4 py-3 font-semibold">{name}</td>
+                    <td className="px-4 py-3 text-[#6b5344]">{bestFor}</td>
+                    <td className="px-4 py-3 text-[#6b5344]">{pricing}</td>
+                    <td className="px-4 py-3 text-[#6b5344]">{why}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
 
@@ -403,6 +446,14 @@ export default function VsReminiPage() {
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-[#2c2416]">Frequently asked questions</h2>
           <div className="mt-4 space-y-4">
+            <details className="rounded-xl border border-[#d4bc91]/40 bg-white p-5">
+              <summary className="cursor-pointer text-[16px] font-semibold text-[#2c2416]">
+                What is the best Remini alternative for old photo restoration?
+              </summary>
+              <p className="mt-3 text-sm text-[#6b5344]">
+                ArtImageHub is the best Remini alternative for old photo restoration when the photo has scratches, fading, water stains, torn corners, or background damage as well as faces. It is built for one-time family photo projects in a browser, with a $4.99 unlock instead of an app subscription. MyHeritage is the better alternative if you already need genealogy tools and want restored photos inside a family tree. YouCam fits casual mobile editing, VanceAI fits batch or studio-style workflows, and Media.io or CapCut can be useful for quick web or mobile experiments. For old albums and inherited prints, choose the tool around the damage pattern: Remini for face sharpening, ArtImageHub for whole-photo restoration, and the other alternatives for narrower workflows. Check current competitor terms before committing.
+              </p>
+            </details>
             <details className="rounded-xl border border-[#d4bc91]/40 bg-white p-5">
               <summary className="cursor-pointer text-[16px] font-semibold text-[#2c2416]">
                 Which tool handles scratches and torn corners better?
