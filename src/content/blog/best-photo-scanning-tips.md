@@ -32,6 +32,10 @@ Quality restoration starts with quality scanning. The better your scan, the bett
 
 Ready to restore? Our [AI photo restoration tool](/restore-old-family-photos) works best with properly scanned photos.
 
+## What is the best way to scan old photos for AI restoration?
+
+The best way to scan old photos for AI restoration is to use a flatbed scanner at 600 DPI for standard prints and 1200 DPI or higher for small, damaged, or face-heavy photos. Turn off scanner auto-correction, scan in color mode even for black-and-white prints, and save a clean archival master before editing. ArtImageHub works best when the upload preserves all edges, scratches, fading, and paper texture because the AI can then distinguish real detail from damage. If photos are stuck to album pages or glass, scan them in place first and see the [stuck photo removal guide](/blog/fix-photos-stuck-together) before attempting physical separation.
+
 ## Scanner Selection
 
 ### Types of Scanners

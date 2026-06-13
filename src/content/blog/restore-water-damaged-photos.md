@@ -46,6 +46,10 @@ Water-damaged photos can often be saved. The key is acting quickly, drying corre
 
 This guide covers the complete recovery process, from the moment you find the wet photos to the final AI-restored digital archive.
 
+## What is the best way to restore water damaged photos?
+
+The best way to restore water damaged photos is to stabilize and dry the physical prints first, scan them after they are safe to handle, then use AI restoration on the digital copies. Do not force wet photos apart, do not dry them in direct heat, and do not start digital restoration until the physical emergency is under control. Once scanned, [ArtImageHub](/old-photo-restoration) can reduce stains, fading, blur, mold marks, and surface damage in a fast browser workflow. If water damage left photos stuck together, follow the [stuck photos guide](/blog/fix-photos-stuck-together) before separating them.
+
 <h2 id="act-fast">Act Fast: The First 24–48 Hours Are Critical</h2>
 
 Water damage to photos is a race against time. Here's why:
@@ -233,7 +237,7 @@ Most water-damaged photos can be successfully handled at home following the step
 
 Find a conservator through the **American Institute for Conservation (AIC)** at culturalheritage.org — they have a free "Find a Conservator" tool.
 
-<h2 id="faq">Frequently Asked Questions</h2>
+## Frequently Asked Questions
 
 <h3>My photos dried stuck together. Can I separate them?</h3>
 
