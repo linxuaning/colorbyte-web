@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const lastUpdatedDisplay = "Last updated: June 13, 2026";
+const dateModified = "2026-06-13";
+
 export const metadata: Metadata = {
   title: "ArtImageHub vs Remini: Full Photo Restore vs Face-Only Enhancement (2026)",
   description:
@@ -24,6 +27,9 @@ export const metadata: Metadata = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntity: [
     {
       "@type": "Question",
@@ -107,8 +113,9 @@ const articleSchema = {
   description:
     "Honest comparison of ArtImageHub and Remini for old photo restoration — quality, pricing, workflow, and use case fit.",
   datePublished: "2026-03-04",
-  dateModified: "2026-04-23",
-  author: { "@type": "Organization", name: "ArtImageHub" },
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://artimagehub.com/vs-remini" },
 };
 
@@ -135,6 +142,7 @@ export default function VsReminiPage() {
       <div className="mx-auto max-w-4xl px-5 py-14">
         {/* Hero */}
         <h1 className="text-4xl font-bold text-[#2c2416]">ArtImageHub vs Remini (2026)</h1>
+        <p className="mt-3 text-sm text-[#8B7355]">{lastUpdatedDisplay} by ArtImageHub Editorial Team</p>
         <p className="mt-4 text-[#6b5344] text-lg">
           Remini is great at sharpening faces. ArtImageHub restores the whole photo — scratches, fading, torn
           corners, water damage, and faces in one pass. This comparison is for people who want honest guidance

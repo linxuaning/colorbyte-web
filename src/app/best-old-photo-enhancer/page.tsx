@@ -26,6 +26,8 @@ const config: BuyerGuideConfig = {
   heroEyebrow: '2026 Complete Comparison',
   heroH1: 'Best Old Photo Enhancer',
   heroSubhead: 'Compare old photo enhancer tools for vintage prints from early family portraits through 1990s color snapshots. Here is which workflow fits each project type — including the free options worth trying.',
+  heroDate: 'Last updated: June 13, 2026',
+  dateModified: '2026-06-13',
   heroReadTime: '14 min read',
   heroTestedNote: 'Use-case guide for vintage prints',
 

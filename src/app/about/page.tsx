@@ -122,6 +122,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Business transparency */}
+      <section className="border-t border-[#d4bc91]/50 bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-10">
+          <h2 className="font-playfair text-[32px] font-800 text-[#2c2416] leading-[1.15] tracking-[-0.02em] mb-6">
+            Business transparency
+          </h2>
+          <p className="font-lora text-[16px] text-[#6b5344] leading-[1.75] mb-8 max-w-3xl">
+            ArtImageHub is an online AI photo restoration service. The site is operated at artimagehub.com, support is handled by email, and pricing is shown before upload: $4.99 one-time access for upload, AI processing, and the original-quality download.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              { label: "Service", value: "AI old-photo restoration, enhancement, and colorization" },
+              { label: "Pricing model", value: "$4.99 one-time access; no subscription" },
+              { label: "Support", value: "support@artimagehub.com" },
+              { label: "Data handling", value: "Customer photos are processed for restoration and are not used to train AI models" },
+            ].map((item) => (
+              <div key={item.label} className="rounded-xl border border-[#d4bc91]/50 bg-[#faf8f4] p-6">
+                <div className="font-lora text-[12px] font-600 text-[#8B5E3C] uppercase tracking-[0.08em] mb-2">{item.label}</div>
+                <div className="font-lora text-[15px] text-[#2c2416] leading-[1.6]">{item.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Trust signals */}
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">

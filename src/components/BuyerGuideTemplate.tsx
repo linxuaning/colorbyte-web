@@ -75,6 +75,7 @@ export type BuyerGuideConfig = {
   heroSubhead: string;
   heroAuthor?: string;
   heroDate?: string;
+  dateModified?: string;
   heroReadTime?: string;
   heroTestedNote?: string;
 
@@ -152,6 +153,9 @@ export function buildItemListSchema(config: BuyerGuideConfig) {
     '@type': 'ItemList',
     name: config.schemaName,
     description: config.schemaDescription,
+    dateModified: config.dateModified,
+    author: { '@type': 'Organization', name: config.heroAuthor ?? 'ArtImageHub Editorial Team' },
+    publisher: { '@type': 'Organization', name: 'ArtImageHub', url: 'https://artimagehub.com' },
     numberOfItems: config.comparisonItems.length,
     itemListElement: config.comparisonItems.slice(0, 5).map((item, idx) => ({
       '@type': 'ListItem',
@@ -176,6 +180,9 @@ export function buildFaqSchema(config: BuyerGuideConfig) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    dateModified: config.dateModified,
+    author: { '@type': 'Organization', name: config.heroAuthor ?? 'ArtImageHub Editorial Team' },
+    publisher: { '@type': 'Organization', name: 'ArtImageHub', url: 'https://artimagehub.com' },
     mainEntity: config.faqItems.map((f) => ({
       '@type': 'Question',
       name: f.question,
@@ -252,7 +259,7 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
                 </div>
                 <div>
                   <div className="font-medium text-stone-700">{config.heroAuthor ?? 'ArtImageHub Editorial Team'}</div>
-                  <div className="text-xs text-stone-500">{config.heroDate ?? 'Updated May 2026'}</div>
+                  <div className="text-xs text-stone-500">{config.heroDate ?? 'Last updated: June 13, 2026'}</div>
                 </div>
               </div>
               <span className="text-stone-300">•</span>

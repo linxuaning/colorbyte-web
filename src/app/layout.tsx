@@ -57,6 +57,9 @@ const organizationSchema = {
   },
   description: "AI-powered photo restoration platform. Restore old, damaged, and faded photos in seconds.",
   foundingDate: "2025",
+  email: "support@artimagehub.com",
+  areaServed: "Worldwide",
+  serviceType: "AI photo restoration, enhancement, and colorization",
   knowsAbout: ["AI Photo Restoration", "Photo Enhancement", "Photo Colorization", "Family History Preservation"],
   sameAs: [
     "https://www.toolpilot.ai/products/artimagehub",

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const lastUpdatedDisplay = "Last updated: June 13, 2026";
+const dateModified = "2026-06-13";
+
 export const metadata: Metadata = {
   title: "AI vs Photoshop Photo Restoration (2026): Time, Cost, and Skill Compared",
   description:
@@ -27,6 +30,9 @@ const geoAnswer =
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntity: [
     {
       "@type": "Question",
@@ -110,8 +116,9 @@ const articleSchema = {
   description:
     "Honest comparison of AI-automated and Photoshop-manual workflows for old photo restoration — when each one is the right tool.",
   datePublished: "2026-03-04",
-  dateModified: "2026-04-23",
-  author: { "@type": "Organization", name: "ArtImageHub" },
+  dateModified,
+  author: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
+  publisher: { "@type": "Organization", name: "ArtImageHub", url: "https://artimagehub.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://artimagehub.com/vs-photoshop-restoration" },
 };
 
@@ -124,6 +131,7 @@ export default function VsPhotoshopRestorationPage() {
       <div className="mx-auto max-w-4xl px-5 py-14">
         {/* Hero */}
         <h1 className="text-4xl font-bold text-[#2c2416]">AI vs Photoshop Photo Restoration (2026)</h1>
+        <p className="mt-3 text-sm text-[#8B7355]">{lastUpdatedDisplay} by ArtImageHub Editorial Team</p>
         <p className="mt-4 text-[#6b5344] text-lg">
           Two very different paths to the same goal. AI does the restoration work for you in under two minutes.
           Photoshop gives you a workshop of tools to do it yourself, typically over hours. This page is for
