@@ -19,7 +19,7 @@ A burst pipe, a flooded basement, or a roof leak can leave family photographs fu
 
 ## The Emergency Response Window
 
-The first 24–48 hours after water exposure are the critical window. Photos should be kept wet rather than allowed to dry while stuck together — this sounds counterintuitive, but a wet photo is much easier to separate from another wet photo than two that have dried and bonded. If you can't process all the photos immediately, store them in clean water in a cool location (add a splash of white vinegar to inhibit mold growth). Do not freeze wet photos unless you're confident they're clean — dirt and debris trapped during freezing can cause abrasion damage during thawing.
+The first 24–48 hours after water exposure are the critical window. Photos should be kept wet rather than allowed to dry while [stuck together](/blog/fix-photos-stuck-together) — this sounds counterintuitive, but a wet photo is much easier to separate from another wet photo than two that have dried and bonded. If you can't process all the photos immediately, store them in clean water in a cool location (add a splash of white vinegar to inhibit mold growth). Do not freeze wet photos unless you're confident they're clean — dirt and debris trapped during freezing can cause abrasion damage during thawing.
 
 ## Physical Separation and Air Drying
 

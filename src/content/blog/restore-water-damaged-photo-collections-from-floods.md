@@ -87,7 +87,7 @@ Process:
 2. Lay each photo face-up on absorbent surface
 3. Don't stack photos until completely dry
 4. Run fans for air circulation
-5. If photos are stuck together, soak the stuck pile in clean cool water for 30-60 minutes; many will separate on their own
+5. If photos are [stuck together](/blog/fix-photos-stuck-together), soak the stuck pile in clean cool water for 30-60 minutes; many will separate on their own
 6. Photos typically dry in 24-48 hours under good conditions
 
 **Important**: Don't use direct heat (hair dryers, ovens, heaters). Heat warps prints and can melt emulsion. Air circulation at room temperature is correct.

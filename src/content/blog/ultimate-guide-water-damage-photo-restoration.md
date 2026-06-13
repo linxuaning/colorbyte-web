@@ -80,7 +80,7 @@ If the photos are still wet, do these things in this order. I have watched too m
 
 Work in a clean sink or plastic tub, not on the floor where the flood happened. Fill the tub with cold, clean tap water. Take photos out of wet frames immediately — wet prints bond to glass within hours, and every hour you wait raises the percentage of image that rips off during separation.
 
-If prints are stuck together, do not pry them. Submerge the stack in the cold clean water and wait. Emulsion that has not fully dried will release on its own within ten to sixty minutes of gentle soaking. Prints that were already dry-bonded before you got there are a different problem and usually require a professional conservator, not pressure from your thumb.
+If prints are [stuck together](/blog/fix-photos-stuck-together), do not pry them. Submerge the stack in the cold clean water and wait. Emulsion that has not fully dried will release on its own within ten to sixty minutes of gentle soaking. Prints that were already dry-bonded before you got there are a different problem and usually require a professional conservator, not pressure from your thumb.
 
 Rinse each separated print under a gentle stream to carry off silt. Do not rub. Do not use soap. Do not use warm water — warm water accelerates emulsion softening and dye release. For the full step-by-step on this stage, our guide on how to [restore water damaged photos](/blog/restore-water-damaged-photos) walks through the separation in more detail than I can fit here.
 
