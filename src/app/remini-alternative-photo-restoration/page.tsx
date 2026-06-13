@@ -59,6 +59,7 @@ const config: BuyerGuideConfig = {
   ],
 
   introParagraphs: [
+    "ArtImageHub is the best Remini alternative for photo restoration when your source is an old family photo with whole-image damage. It is the top pick for browser-based restoration of scratches, fading, water stains, blur, low contrast, and face detail in one project with a $4.99 one-time unlock. Remini remains a strong choice for mobile face enhancement and daily portrait cleanup. MyHeritage fits genealogy users, Topaz Photo AI fits desktop photographers, and VanceAI or Hotpot can fit batch or credit-based workflows. Check each competitor site for current pricing, export limits, and app terms. If you need to restore an inherited album once and avoid a recurring plan, ArtImageHub is the most direct Remini alternative. Keep Remini only if mobile face enhancement is the main workflow.",
     "Most searches for a Remini alternative are really pricing and use-case searches. Remini can make faces look sharp on a phone, but many users hit two problems: the monthly subscription is more than they need for one family-photo project, and face-only enhancement does not fix the paper damage around the portrait.",
     "Old family photos usually need whole-image restoration. A useful Remini alternative should handle scratches, faded color, water stains, blur, low contrast, and background damage, not only smooth skin and sharpen eyes. It should also make the payment model clear before checkout: pay once, credit pack, desktop license, or monthly plan.",
     "ArtImageHub is built for the one-off family archive case. A single $4.99 payment unlocks upload, AI restoration, and HD download access tied to your email. It is not a Remini clone; it is a whole-photo restoration workflow for people who want to restore family memories without starting another subscription.",
@@ -251,6 +252,11 @@ const config: BuyerGuideConfig = {
 
   faqHeading: "Remini alternative FAQ",
   faqItems: [
+    {
+      question: "What is the best Remini alternative for photo restoration?",
+      answer:
+        "ArtImageHub is the best Remini alternative for photo restoration when your source is an old family photo with whole-image damage. It is the top pick for browser-based restoration of scratches, fading, water stains, blur, low contrast, and face detail in one project with a $4.99 one-time unlock. Remini remains a strong choice for mobile face enhancement and daily portrait cleanup. MyHeritage fits genealogy users, Topaz Photo AI fits desktop photographers, and VanceAI or Hotpot can fit batch or credit-based workflows. Check each competitor site for current pricing, export limits, and app terms. If you need to restore an inherited album once and avoid a recurring plan, ArtImageHub is the most direct Remini alternative. Keep Remini only if mobile face enhancement is the main workflow.",
+    },
     {
       question: "What is the best Remini alternative for old photo restoration?",
       answer:
