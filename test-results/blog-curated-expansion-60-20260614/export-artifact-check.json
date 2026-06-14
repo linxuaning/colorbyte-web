@@ -1,0 +1,422 @@
+[
+  {
+    "slug": "restore-military-service-photos",
+    "html": "out/blog/restore-military-service-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-military-service-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-blurry-old-photos",
+    "html": "out/blog/fix-blurry-old-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-blurry-old-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "ai-vs-manual-restoration",
+    "html": "out/blog/ai-vs-manual-restoration.html",
+    "htmlExists": true,
+    "index": "out/blog/ai-vs-manual-restoration/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-restoration-cost-comparison",
+    "html": "out/blog/photo-restoration-cost-comparison.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-restoration-cost-comparison/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-sepia-photographs-online",
+    "html": "out/blog/restore-sepia-photographs-online.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-sepia-photographs-online/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-black-white-photos-online",
+    "html": "out/blog/restore-black-white-photos-online.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-black-white-photos-online/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-enhancement-vs-restoration",
+    "html": "out/blog/photo-enhancement-vs-restoration.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-enhancement-vs-restoration/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-restoration-app-comparison",
+    "html": "out/blog/photo-restoration-app-comparison.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-restoration-app-comparison/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-restoration-software-review-2026",
+    "html": "out/blog/photo-restoration-software-review-2026.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-restoration-software-review-2026/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-restoration-no-account-required",
+    "html": "out/blog/photo-restoration-no-account-required.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-restoration-no-account-required/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-old-photos-free-online",
+    "html": "out/blog/restore-old-photos-free-online.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-old-photos-free-online/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "best-free-old-photo-restoration-tool",
+    "html": "out/blog/best-free-old-photo-restoration-tool.html",
+    "htmlExists": true,
+    "index": "out/blog/best-free-old-photo-restoration-tool/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-old-photos-online",
+    "html": "out/blog/fix-old-photos-online.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-old-photos-online/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "how-to-identify-old-photo-formats",
+    "html": "out/blog/how-to-identify-old-photo-formats.html",
+    "htmlExists": true,
+    "index": "out/blog/how-to-identify-old-photo-formats/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "how-to-improve-photo-scan-quality",
+    "html": "out/blog/how-to-improve-photo-scan-quality.html",
+    "htmlExists": true,
+    "index": "out/blog/how-to-improve-photo-scan-quality/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "how-to-restore-old-photos-at-home",
+    "html": "out/blog/how-to-restore-old-photos-at-home.html",
+    "htmlExists": true,
+    "index": "out/blog/how-to-restore-old-photos-at-home/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "ultimate-guide-water-damage-photo-restoration",
+    "html": "out/blog/ultimate-guide-water-damage-photo-restoration.html",
+    "htmlExists": true,
+    "index": "out/blog/ultimate-guide-water-damage-photo-restoration/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-victorian-photos-complete-guide",
+    "html": "out/blog/restore-victorian-photos-complete-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-victorian-photos-complete-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-historical-photographs",
+    "html": "out/blog/restore-historical-photographs.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-historical-photographs/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "genealogy-photo-restoration-complete-guide",
+    "html": "out/blog/genealogy-photo-restoration-complete-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/genealogy-photo-restoration-complete-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-sports-photos",
+    "html": "out/blog/enhance-old-sports-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-sports-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-family-portraits",
+    "html": "out/blog/enhance-old-family-portraits.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-family-portraits/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-1980s-neon-photos",
+    "html": "out/blog/restore-1980s-neon-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-1980s-neon-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-brittle-photo-paper",
+    "html": "out/blog/fix-brittle-photo-paper.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-brittle-photo-paper/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-baby-photos",
+    "html": "out/blog/enhance-old-baby-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-baby-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-fungus-damaged-photos-guide",
+    "html": "out/blog/fix-fungus-damaged-photos-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-fungus-damaged-photos-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "wedding-photo-restoration",
+    "html": "out/blog/wedding-photo-restoration.html",
+    "htmlExists": true,
+    "index": "out/blog/wedding-photo-restoration/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-red-eye-in-old-photos",
+    "html": "out/blog/fix-red-eye-in-old-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-red-eye-in-old-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "how-to-scan-old-photos-properly",
+    "html": "out/blog/how-to-scan-old-photos-properly.html",
+    "htmlExists": true,
+    "index": "out/blog/how-to-scan-old-photos-properly/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-damaged-old-photos",
+    "html": "out/blog/restore-damaged-old-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-damaged-old-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "vintage-photo-repair-techniques",
+    "html": "out/blog/vintage-photo-repair-techniques.html",
+    "htmlExists": true,
+    "index": "out/blog/vintage-photo-repair-techniques/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-color-shift-in-old-photos",
+    "html": "out/blog/fix-color-shift-in-old-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-color-shift-in-old-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "old-photo-restoration-guide",
+    "html": "out/blog/old-photo-restoration-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/old-photo-restoration-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-antique-family-portraits",
+    "html": "out/blog/restore-antique-family-portraits.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-antique-family-portraits/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-army-uniform-photos",
+    "html": "out/blog/restore-army-uniform-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-army-uniform-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-color-faded-pictures",
+    "html": "out/blog/fix-color-faded-pictures.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-color-faded-pictures/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-1980s-photos-complete-guide",
+    "html": "out/blog/restore-1980s-photos-complete-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-1980s-photos-complete-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-sports-team-photos",
+    "html": "out/blog/enhance-old-sports-team-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-sports-team-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-ancestor-photographs",
+    "html": "out/blog/restore-ancestor-photographs.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-ancestor-photographs/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-brittle-old-photographs-guide",
+    "html": "out/blog/fix-brittle-old-photographs-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-brittle-old-photographs-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-grainy-old-pictures",
+    "html": "out/blog/enhance-grainy-old-pictures.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-grainy-old-pictures/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "photo-digitization-guide",
+    "html": "out/blog/photo-digitization-guide.html",
+    "htmlExists": true,
+    "index": "out/blog/photo-digitization-guide/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "colorize-black-white-photos",
+    "html": "out/blog/colorize-black-white-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/colorize-black-white-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-id-card-photos",
+    "html": "out/blog/enhance-old-id-card-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-id-card-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-1940s-wartime-photos",
+    "html": "out/blog/restore-1940s-wartime-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-1940s-wartime-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-water-spots-on-photos",
+    "html": "out/blog/fix-water-spots-on-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-water-spots-on-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-creased-family-photos",
+    "html": "out/blog/fix-creased-family-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-creased-family-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-baby-pictures",
+    "html": "out/blog/enhance-old-baby-pictures.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-baby-pictures/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-portrait-photos",
+    "html": "out/blog/enhance-old-portrait-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-portrait-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-water-damaged-photographs-at-home",
+    "html": "out/blog/restore-water-damaged-photographs-at-home.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-water-damaged-photographs-at-home/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-mold-damage-pictures",
+    "html": "out/blog/fix-mold-damage-pictures.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-mold-damage-pictures/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "enhance-old-military-photos",
+    "html": "out/blog/enhance-old-military-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/enhance-old-military-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-old-photos-free-online-2026",
+    "html": "out/blog/restore-old-photos-free-online-2026.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-old-photos-free-online-2026/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-old-military-service-photos",
+    "html": "out/blog/restore-old-military-service-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-old-military-service-photos/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "fix-blurry-photo-ai",
+    "html": "out/blog/fix-blurry-photo-ai.html",
+    "htmlExists": true,
+    "index": "out/blog/fix-blurry-photo-ai/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "how-to-restore-old-photos-for-free",
+    "html": "out/blog/how-to-restore-old-photos-for-free.html",
+    "htmlExists": true,
+    "index": "out/blog/how-to-restore-old-photos-for-free/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "artimagehub-vs-snapseed",
+    "html": "out/blog/artimagehub-vs-snapseed.html",
+    "htmlExists": true,
+    "index": "out/blog/artimagehub-vs-snapseed/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "artimagehub-vs-adobe-enhance",
+    "html": "out/blog/artimagehub-vs-adobe-enhance.html",
+    "htmlExists": true,
+    "index": "out/blog/artimagehub-vs-adobe-enhance/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-autochrome-images",
+    "html": "out/blog/restore-autochrome-images.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-autochrome-images/index.html",
+    "indexExists": true
+  },
+  {
+    "slug": "restore-ambrotype-photos",
+    "html": "out/blog/restore-ambrotype-photos.html",
+    "htmlExists": true,
+    "index": "out/blog/restore-ambrotype-photos/index.html",
+    "indexExists": true
+  }
+]
