@@ -17,7 +17,7 @@ import {
 } from "@/lib/payment-funnel";
 import { fetchCheckoutWithFallback } from "@/lib/checkout-request";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "https://colorbyte-api.onrender.com";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL?.trim() || "https://api.artimagehub.com";
 const parsedPrice = Number.parseFloat(
   process.env.NEXT_PUBLIC_PRO_PRICE_USD?.trim() || "4.99"
 );
