@@ -3,7 +3,7 @@ export const dynamic = "force-dynamic";
 const API_BASE = (
   process.env.NEXT_PUBLIC_API_URL ||
   process.env.PAYMENT_API_URL ||
-  "https://colorbyte-api.onrender.com"
+  "https://api.artimagehub.com"
 ).trim();
 
 export async function POST(request: Request) {

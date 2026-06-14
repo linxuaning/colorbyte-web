@@ -114,8 +114,8 @@ export default function RootLayout({
         {/* Preconnect to the API origin so the subscription-check / upload
             handshakes start their DNS + TLS before the JS that triggers them
             loads. Cuts LCP on the tool pages by ~300-500ms. */}
-        <link rel="preconnect" href="https://colorbyte-api.onrender.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://colorbyte-api.onrender.com" />
+        <link rel="preconnect" href="https://api.artimagehub.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.artimagehub.com" />
         <link rel="preconnect" href="https://checkout.dodopayments.com" />
         <link rel="dns-prefetch" href="https://checkout.dodopayments.com" />
         <link rel="preconnect" href="https://sdk.hs.dodopayments.com" />
