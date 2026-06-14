@@ -67,7 +67,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for processing",
-      text: "The AI processes your photo with intelligent upscaling and detail enhancement. Most images are upscaled in 15-30 seconds.",
+      text: "The AI processes your photo with intelligent upscaling and detail enhancement. Most images are upscaled in 30-90 seconds.",
     },
     {
       "@type": "HowToStep",

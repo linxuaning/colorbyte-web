@@ -70,7 +70,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for repair",
-      text: "The AI processes your photo, removing water damage while restoring colors and detail. Most water damage repairs complete in 15-30 seconds.",
+      text: "The AI processes your photo, removing water damage while restoring colors and detail. Most water damage repairs complete in 30-90 seconds.",
     },
     {
       "@type": "HowToStep",
