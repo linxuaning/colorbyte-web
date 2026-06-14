@@ -50,7 +50,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores automatically online",
-      text: "Our online AI analyzes and repairs damage, enhances faces, and removes scratches automatically. Processing happens in the cloud in 15-30 seconds.",
+      text: "Our online AI analyzes and repairs damage, enhances faces, and removes scratches automatically. Processing happens in the cloud in 30–90 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -73,7 +73,7 @@ const faqSchema = {
     { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks." } },
     { "@type": "Question", name: "Do I need to download software to restore photos online?", acceptedAnswer: { "@type": "Answer", text: "No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30 seconds." } },
     { "@type": "Question", name: "Do I need to pay before restoring photos online?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub uses a pay-first model. A $4.99 one-time payment unlocks online upload, AI processing, and original-quality download." } },
-    { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
+    { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 30–90 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes in under two minutes, and you download." } },
     { "@type": "Question", name: "Is my photo safe when restoring online?", acceptedAnswer: { "@type": "Answer", text: "Yes! Photos are encrypted during upload, processed securely in the cloud, and automatically deleted within 24 hours. We never use your photos for AI training or share them with third parties." } },
     { "@type": "Question", name: "What types of damage can online restoration fix?", acceptedAnswer: { "@type": "Answer", text: "Online AI restoration fixes: scratches and tears, fading and discoloration, blurry faces, water damage stains, creases and cracks, low resolution (upscales to 4K), black & white colorization. It works on 90% of common photo damage types." } },
     { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub costs $4.99 once for upload, AI processing, and original-quality download. Traditional mail-in services usually cost $50-150 per photo, and many online tools push monthly subscriptions." } },
@@ -218,7 +218,7 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-xl font-black text-slate-900 mb-3">Instant Results</h3>
               <p className="text-slate-600 mb-4">
-                30-second AI processing vs 2-4 weeks for mail-in services. Upload and download in under a minute.
+                Under-two-minute AI processing vs 2-4 weeks for mail-in services. Upload and download in a minute or two.
               </p>
               <div className="text-sm text-cyan-600 font-semibold">
                 Traditional: 2-4 weeks<br />
@@ -295,7 +295,7 @@ export default function RestorePhotosOnlinePage() {
               <div>
                 <h3 className="text-2xl font-black mb-3">AI Restores Automatically</h3>
                 <p className="text-cyan-100/80 text-lg leading-relaxed">
-                  Cloud-based AI analyzes your photo and applies: scratch/tear removal, face enhancement, super-resolution upscaling, color restoration, damage repair. Processing takes 15-30 seconds online.
+                  Cloud-based AI analyzes your photo and applies: scratch/tear removal, face enhancement, super-resolution upscaling, color restoration, damage repair. Processing takes 30–90 seconds online.
                 </p>
               </div>
             </div>
@@ -505,7 +505,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute.
+                Online restoration with ArtImageHub takes 30–90 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes in under two minutes, and you download.
               </p>
             </details>
 

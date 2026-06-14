@@ -54,7 +54,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores automatically",
-      text: "AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 15-30 seconds.",
+      text: "AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 30–90 seconds.",
     },
     {
       "@type": "HowToStep",

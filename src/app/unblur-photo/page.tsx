@@ -68,7 +68,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for processing",
-      text: "The AI processes your photo with face-aware enhancement and super resolution upscaling to fix blur and restore clarity. Most images are unblurred in 15-30 seconds.",
+      text: "The AI processes your photo with face-aware enhancement and super resolution upscaling to fix blur and restore clarity. Most images are unblurred in about 15–30 seconds; very large images can take up to 60 seconds.",
     },
     {
       "@type": "HowToStep",

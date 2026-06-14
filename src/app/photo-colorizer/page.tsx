@@ -78,7 +78,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for colorization",
-      text: "The AI processes your photo and applies natural-looking colors. Most colorizations complete in 15–30 seconds.",
+      text: "The AI processes your photo and applies natural-looking colors. Most colorizations complete in about 15–30 seconds; very large 50+ MP scans can take up to 60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -203,7 +203,7 @@ export default function PhotoColorizerPage() {
             AI photo colorization is the process of automatically adding realistic color to black-and-white or grayscale photographs using deep learning models. The model learns statistical associations between image content — textures, subject type, and contextual patterns — and plausible color values: skin tones, sky, foliage, fabric, and architectural materials.
           </p>
           <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
-            ArtImageHub&rsquo;s Photo Colorizer applies this pipeline in a single upload pass, completing colorization in 15–30 seconds. AI processing and HD download are included in the one-time $4.99 unlock. Supported formats: JPG, PNG, WEBP up to 20MB.
+            ArtImageHub&rsquo;s Photo Colorizer applies this pipeline in a single upload pass, completing colorization in about 15–30 seconds (up to 60 seconds for very large 50+ MP scans). AI processing and HD download are included in the one-time $4.99 unlock. Supported formats: JPG, PNG, WEBP up to 20MB.
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
             <strong>Accuracy note:</strong> AI colorization produces plausible results — not historically accurate ones. For subjects with recognizable color patterns (skin tones, blue sky, green foliage), results are consistently natural-looking. For historically specific objects (period uniforms, brand colors, specific clothing), the AI predicts based on training data. Results should be reviewed alongside the original before archival or publication use.
