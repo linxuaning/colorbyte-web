@@ -50,7 +50,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores picture automatically",
-      text: "AI analyzes damage and applies restoration: removes scratches, enhances faces, restores colors, repairs tears. Takes 15-30 seconds.",
+      text: "AI analyzes damage and applies restoration: removes scratches, enhances faces, restores colors, repairs tears. Takes 30–90 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -70,7 +70,7 @@ const faqSchema = {
     { "@type": "Question", name: "Can AI restore badly damaged pictures?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI picture restoration works on: scratched pictures, torn or ripped pictures, water-damaged pictures, faded color pictures, blurry pictures, fire/smoke damaged pictures. Best results on pictures with 10-80% damage. Very heavily damaged pictures (>80%) may need manual artist restoration." } },
     { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. Traditional restoration services usually cost $50-150 per picture." } },
     { "@type": "Question", name: "What's the difference between photo and picture restoration?", acceptedAnswer: { "@type": "Answer", text: "No technical difference — 'photo restoration' and 'picture restoration' mean the same thing. Some people search 'photo', others search 'picture'. ArtImageHub restores both equally well using the same AI technology." } },
-    { "@type": "Question", name: "How long does picture restoration take?", acceptedAnswer: { "@type": "Answer", text: "AI picture restoration takes 15-30 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
+    { "@type": "Question", name: "How long does picture restoration take?", acceptedAnswer: { "@type": "Answer", text: "AI picture restoration takes 30–90 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes in under two minutes, and you download." } },
     { "@type": "Question", name: "Can I restore family pictures for free?", acceptedAnswer: { "@type": "Answer", text: "No. ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download." } },
     { "@type": "Question", name: "What types of pictures can AI restore?", acceptedAnswer: { "@type": "Answer", text: "AI restores: family pictures (portraits, group photos), vintage pictures (1800s-1990s), black & white pictures, color pictures, Polaroid pictures, scanned pictures, damaged pictures (scratches, tears, fading), blurry pictures. Works on any picture type." } },
     { "@type": "Question", name: "Is picture restoration worth the cost?", acceptedAnswer: { "@type": "Answer", text: "Yes, especially for irreplaceable family memories. The $4.99 one-time unlock is still far below the $50-150 that traditional restoration shops usually charge." } },
@@ -366,7 +366,7 @@ export default function PictureRestorationPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Automatic Restoration (30 sec)</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  AI restores your picture: removes scratches, repairs tears, restores faded colors, sharpens faces, fixes damage. All fixes happen automatically in 15-30 seconds. No editing skills required.
+                  AI restores your picture: removes scratches, repairs tears, restores faded colors, sharpens faces, fixes damage. All fixes happen automatically in 30–90 seconds. No editing skills required.
                 </p>
               </div>
             </div>
@@ -481,7 +481,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                AI picture restoration takes 15-30 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute.
+                AI picture restoration takes 30–90 seconds per picture. Traditional mail-in services take 2-4 weeks. You upload, AI processes in under two minutes, and you download.
               </p>
             </details>
 

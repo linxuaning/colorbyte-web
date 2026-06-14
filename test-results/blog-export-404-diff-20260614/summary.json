@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-06-13T18:41:57.258Z",
+  "exportCommand": "node scripts/build-static-export.mjs",
+  "repoMarkdownCount": 2925,
+  "uniqueEmittedBlogUrlCount": 1136,
+  "repoMarkdownEmittedCount": 1012,
+  "repoMarkdownNotEmittedCount": 1913,
+  "missingByLocale": {
+    "en": 1616,
+    "de": 84,
+    "es": 41,
+    "fr": 42,
+    "ja": 85,
+    "ko": 45
+  },
+  "emittedByLocale": {
+    "en": 301,
+    "de": 120,
+    "es": 120,
+    "fr": 120,
+    "ja": 120,
+    "ko": 120,
+    "pt-BR": 111
+  },
+  "noIndexMissingCount": 822,
+  "indexableMissingCount": 1091
+}

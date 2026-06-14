@@ -68,7 +68,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for processing",
-      text: "The AI processes your photo, removing scratches while preserving important details. Most scratch removal completes in 15-30 seconds.",
+      text: "The AI processes your photo, removing scratches while preserving important details. Most scratch removal completes in 30–90 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -461,7 +461,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "How long does scratch removal take?",
-                  a: "Most photos are processed in 15-30 seconds. The AI analyzes the entire image and removes all detected scratches in one pass.",
+                  a: "Most photos are processed in 30–90 seconds. The AI analyzes the entire image and removes all detected scratches in one pass.",
                 },
               ].map((item) => (
                 <details
