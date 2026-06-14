@@ -67,7 +67,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for enhancement",
-      text: "The AI processes your old photo with face enhancement, super resolution, and quality improvement. Most photos are enhanced in 15-30 seconds.",
+      text: "The AI processes your old photo with face enhancement, super resolution, and quality improvement. Most photos are enhanced in 30-90 seconds.",
     },
     {
       "@type": "HowToStep",

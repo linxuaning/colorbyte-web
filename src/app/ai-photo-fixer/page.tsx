@@ -320,7 +320,7 @@ export default function AIPhotoFixerPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Automatic Fixing (30 sec)</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  AI applies targeted fixes: fills scratches using surrounding context, sharpens faces and important details, restores natural colors, removes stains and damage, upscales to 4K resolution. All fixes happen automatically in 15-30 seconds.
+                  AI applies targeted fixes: fills scratches using surrounding context, sharpens faces and important details, restores natural colors, removes stains and damage, upscales to 4K resolution. All fixes happen automatically in 30-90 seconds.
                 </p>
               </div>
             </div>

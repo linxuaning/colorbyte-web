@@ -67,7 +67,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for colorization",
-      text: "The AI processes your photo and applies natural-looking colors. Most photos are colorized in 15-30 seconds.",
+      text: "The AI processes your photo and applies natural-looking colors. Most photos are colorized in 30-90 seconds.",
     },
     {
       "@type": "HowToStep",

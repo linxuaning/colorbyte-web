@@ -54,7 +54,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI fixes the blur",
-      text: "Our AI analyzes and corrects blur patterns — including motion blur, out-of-focus blur, and camera shake. Processing takes 15-30 seconds.",
+      text: "Our AI analyzes and corrects blur patterns — including motion blur, out-of-focus blur, and camera shake. Processing takes 30-90 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -313,7 +313,7 @@ export default function FixBlurryPhotosPage() {
               },
               {
                 q: "How long does it take to fix a blurry photo?",
-                a: "Most photos are processed in 15-30 seconds. Complex images with multiple faces or severe blur may take up to 60 seconds.",
+                a: "Most photos are processed in 30-90 seconds; complex images with multiple faces or severe blur sit at the upper end.",
               },
             ].map((item) => (
               <div key={item.q} className="rounded-xl border border-[#d2d2d7]/60 bg-white p-6">

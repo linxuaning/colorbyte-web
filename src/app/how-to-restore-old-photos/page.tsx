@@ -174,7 +174,7 @@ const faqSchema = {
       name: "How long does it take to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI restoration takes 15-30 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
+        text: "AI restoration takes 30-90 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
       },
     },
     {
@@ -462,7 +462,7 @@ export default function HowToRestoreOldPhotosPage() {
                 step: "3",
                 title: "Let AI restore your photo automatically",
                 description:
-                  "The AI analyzes your photo and automatically removes scratches, repairs tears, enhances blurry faces, increases resolution, and corrects fading. This takes 15-30 seconds for most photos.",
+                  "The AI analyzes your photo and automatically removes scratches, repairs tears, enhances blurry faces, increases resolution, and corrects fading. This takes 30-90 seconds for most photos.",
                 tips: [
                   "AI works best on photos with moderate damage",
                   "Face enhancement models preserve facial identity",
@@ -767,7 +767,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "How long does it take to restore old photos?",
-                a: "AI restoration takes 15-30 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
+                a: "AI restoration takes 30-90 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
               },
               {
                 q: "Will AI photo restoration change how people look?",
