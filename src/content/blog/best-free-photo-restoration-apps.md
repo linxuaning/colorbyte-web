@@ -26,7 +26,7 @@ faq:
 
 Photo restoration no longer requires expensive software or professional expertise, thanks to the emergence of powerful free photo restoration apps. Whether you're looking to repair grandparents' wedding photos, restore faded family portraits, or recover damaged historical images, several excellent free options can deliver impressive results without costing a penny.
 
-> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+> **⚡ Quick path**: Free apps cap you (Remini allows ~5/day) or watermark exports. To skip the limits, [ArtImageHub](/old-photo-restoration) restores your photo in about a minute for a **one-time $4.99 — no subscription, no daily caps, no watermark on the HD download** (vs $9.99/mo subscriptions like Remini). The detailed free-app workflow follows below.
 
 I've tested every free photo restoration app I could find in 2026. Here's an honest look at what each one does well, where they fall short, and which ones are actually worth your time. If you're specifically comparing Remini, see our [ArtImageHub vs Remini](/vs-remini) breakdown. For a broader app roundup, check our [best photo restoration app](/photo-restoration-app) guide.
 

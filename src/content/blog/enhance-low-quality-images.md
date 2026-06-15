@@ -43,7 +43,7 @@ howTo:
 
 We've all been there: you find an important photograph only to discover it's low quality—pixelated, blurry, poorly compressed, or frustratingly small. Last month, a client sent me the only photo of her late grandmother—a tiny 200x300 pixel image saved from a 2004 email. She wanted it printed at 8x10 for a memorial. I honestly thought it was a lost cause, but after running it through a few tools I'll cover here, we got a printable result that made her cry happy tears.
 
-> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+> **⚡ Quick path**: For most users, [ArtImageHub](/photo-enhancer) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 
 Whether it's a screenshot from social media, an old web image, a compressed email attachment, or a low-res scan, there's a lot you can do to improve low quality images today. I'll walk you through AI upscaling, sharpening methods, noise reduction, and hands-on techniques that can turn unusable images into genuinely good photographs.
 
