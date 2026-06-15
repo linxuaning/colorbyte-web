@@ -79,7 +79,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Wait 30 seconds for processing",
-      text: "The AI enhances your photo with face-aware processing and 4× super resolution. Most enhancements complete in 15–30 seconds.",
+      text: "The AI enhances your photo with face-aware processing and 4× super resolution. Most enhancements complete in about 15–30 seconds; very large 50+ MP scans can take up to 60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -205,7 +205,7 @@ export default function PhotoEnhancerPage() {
             AI photo enhancement applies machine learning models to improve the technical quality of a photograph — automatically, without manual editing. It covers four operations: (1) face-aware reconstruction using <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021), which sharpens facial detail while preserving identity; (2) super-resolution upscaling up to 4× using <strong>Real-ESRGAN</strong> (Wang et al., 2021); (3) automatic noise reduction; and (4) contrast and color correction.
           </p>
           <p className="text-[16px] text-[#444] leading-[1.7] mb-5">
-            ArtImageHub&rsquo;s Photo Enhancer runs this full pipeline in a single upload pass — no manual step selection required. Processing takes 15–30 seconds. AI processing and HD download are included in the one-time $4.99 unlock.
+            ArtImageHub&rsquo;s Photo Enhancer runs this full pipeline in a single upload pass — no manual step selection required. Processing takes about 15–30 seconds (up to 60 seconds for very large 50+ MP scans). AI processing and HD download are included in the one-time $4.99 unlock.
           </p>
           <p className="text-[15px] text-[#6e6e73] leading-[1.6]">
             <strong>Resolution output:</strong> Real-ESRGAN upscales up to 4× original dimensions. A 500×500px photo becomes 2000×2000px using learned detail patterns rather than pixel interpolation — producing sharp output rather than blurry enlargement. A 300 DPI scan at 4×4 inches can become print-ready at 8×8 inches after upscaling.
