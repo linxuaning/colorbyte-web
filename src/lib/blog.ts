@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 440;
+const EMERGENCY_STATIC_POST_LIMIT = 442;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -228,6 +228,8 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "artimagehub-vs-topaz-denoise-ai",
   "best-photo-enhancer-ai-2026",
   "restore-damaged-polaroids",
+  "photo-colorization-tutorial",
+  "photo-restoration-before-after",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
