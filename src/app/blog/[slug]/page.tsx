@@ -90,6 +90,10 @@ const checkoutCtaBySlug = {
   },
 } as const;
 
+const toolCtaBySlug = {
+  "photo-colorization-tutorial": "/photo-colorizer?entry_variant=blog_tool_cta",
+} as const;
+
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({
@@ -159,6 +163,8 @@ export default async function BlogPostPage({ params }: Props) {
     checkoutCta
       ? "/old-photo-restoration?cta_slot=blog_preview_restore&entry_variant=blog_template"
       : "/old-photo-restoration?cta_slot=blog_primary_restore&entry_variant=blog_template";
+  const bottomCtaHref =
+    toolCtaBySlug[slug as keyof typeof toolCtaBySlug] || restoreCtaHref;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -542,7 +548,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </Link>
                   )}
                   <Link
-                    href={restoreCtaHref}
+                    href={bottomCtaHref}
                     className={`inline-flex items-center gap-2 rounded-lg px-8 py-3 font-semibold transition-colors ${
                       checkoutCta
                         ? "border border-white/30 bg-white/10 text-white hover:bg-white/20"

@@ -26,7 +26,7 @@ faq:
 
 Colorizing black and white photographs breathes new life into vintage family photos, making historical moments feel immediate and relatable. What once seemed distant and removed suddenly becomes vivid and real when you add color. Modern technology's made colorization accessible to everyone, from AI-powered automatic tools to detailed manual techniques.
 
-> **⚡ Quick path**: For most users, [ArtImageHub](/old-photo-restoration) handles this automatically in 60 seconds — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
+> **⚡ Quick path**: For most users, [ArtImageHub](/photo-colorizer) handles this automatically in about a minute — **$4.99 one-time, no subscription, no watermark on HD download**. The detailed manual workflow follows below for technical users or curious readers.
 
 This tutorial covers everything you need to know about photo colorization, including automatic AI methods, manual Photoshop techniques, historical research for accuracy, and best practices for natural-looking results.
 
