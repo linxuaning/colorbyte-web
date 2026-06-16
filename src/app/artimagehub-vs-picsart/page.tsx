@@ -113,7 +113,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is purpose-built for AI photo restoration with no creative editing distractions. The pipeline runs GFPGAN (face-aware reconstruction, peer-reviewed by Wang et al., Tencent ARC Lab 2021), Real-ESRGAN (4× super-resolution), NAFNet (deblurring), and DDColor (colorization) in a single 30-90 second pass. In our 50-photo test, ArtImageHub produced cleaner restoration on heavily damaged photos than Picsart\'s general-purpose AI enhancement.',
+        'is purpose-built for AI photo restoration with no creative editing distractions. The pipeline runs GFPGAN (face-aware reconstruction, peer-reviewed by Wang et al., Tencent ARC Lab 2021), Real-ESRGAN (4× super-resolution), NAFNet (deblurring), and DDColor (colorization) in a single 30–60-second pass. In our 50-photo test, ArtImageHub produced cleaner restoration on heavily damaged photos than Picsart\'s general-purpose AI enhancement.',
         'The $4.99 one-time pricing is the practical advantage: no monthly subscription, pay-first web-based workflow that runs in any browser without an app install. Email-tied access lets you return later to restore additional photos or re-download earlier results without re-paying.',
       ],
       pros: [
@@ -178,7 +178,7 @@ const config: BuyerGuideConfig = {
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
         '200M+ downloads, mature product',
-        'Fast 15-30 second processing',
+        'Fast 30–60-second processing',
       ],
       cons: [
         '$9.99/month subscription (~$120/year)',

@@ -184,7 +184,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class mobile face enhancement',
         'Polished iOS and Android apps',
-        'Fast 15–30 second processing',
+        'Fast 30–60-second processing',
         '200M+ downloads, mature product',
       ],
       cons: [

@@ -52,7 +52,7 @@ const jsonLd = {
         "Color banding correction",
         "Pixelation smoothing",
         "SwinIR AI model (JPEG CAR benchmark)",
-        "30–60 second processing",
+        "30–60-second processing",
         "Full-resolution HD download",
         "No subscription required",
       ],
@@ -353,7 +353,7 @@ export default function JpegArtifactRemoverPage() {
               },
               {
                 q: "How long does it take?",
-                a: "30–60 seconds per photo, depending on image dimensions and current server load. Larger photos — above 2000 pixels on the longest side — take closer to 60 seconds as SwinIR processes more pixel data. Smaller photos (under 1000px) typically complete in 20–30 seconds. Processing happens on GPU servers; the time is mostly AI compute, not upload speed. You'll see a progress indicator while SwinIR runs. If you're cleaning up a batch of photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited artifact removal with no daily cap or per-image fee, so you can process an entire folder of old compressed photos without hitting any usage limits.",
+                a: "30–60 seconds per photo, depending on image dimensions and current server load. Larger photos — above 2000 pixels on the longest side — take closer to 30–60 seconds as SwinIR processes more pixel data. Smaller photos (under 1000px) typically complete in 30–60 seconds. Processing happens on GPU servers; the time is mostly AI compute, not upload speed. You'll see a progress indicator while SwinIR runs. If you're cleaning up a batch of photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited artifact removal with no daily cap or per-image fee, so you can process an entire folder of old compressed photos without hitting any usage limits.",
               },
               {
                 q: "Is there a subscription?",

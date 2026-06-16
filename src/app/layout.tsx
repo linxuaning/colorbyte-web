@@ -33,7 +33,7 @@ const websiteSchema = {
   name: "ArtImageHub",
   url: "https://artimagehub.com",
   description:
-    "AI-powered photo restoration, enhancement, and colorization. One-time $4.99 payment unlocks upload, AI processing, and HD download. Results in 30–90 seconds.",
+    "AI-powered photo restoration, enhancement, and colorization. One-time $4.99 payment unlocks upload, AI processing, and HD download. Results in 30–60 seconds.",
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     template: "%s | ArtImageHub",
   },
   description:
-    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds. No subscription.",
+    "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–60 seconds. No subscription.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     siteName: "ArtImageHub",
     title: "ArtImageHub — AI Photo Restoration",
     description:
-      "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–90 seconds.",
+      "Restore old photos, enhance image quality, and colorize black and white pictures with ArtImageHub. One-time $4.99 payment. Results in 30–60 seconds.",
   },
   twitter: { card: "summary_large_image" },
 };
@@ -126,7 +126,7 @@ export default function RootLayout({
         {/* WebMCP — expose site tools to AI agents via browser modelContext API */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){if(typeof navigator==='undefined'||!navigator.modelContext)return;navigator.modelContext.provideContext({tools:[{name:'restore_photo',description:'Restore old, damaged, and faded photographs using AI. Results in 30-90 seconds.',inputSchema:{type:'object',properties:{action:{type:'string',const:'restore'}},required:['action']},execute:async function(){window.location.href='/old-photo-restoration';return{success:true};}},{name:'colorize_photo',description:'Colorize black-and-white photographs using AI with historically accurate colors.',inputSchema:{type:'object',properties:{action:{type:'string',const:'colorize'}},required:['action']},execute:async function(){window.location.href='/photo-colorizer';return{success:true};}},{name:'enhance_photo',description:'Enhance photo resolution and clarity using AI upscaling up to 4x.',inputSchema:{type:'object',properties:{action:{type:'string',const:'enhance'}},required:['action']},execute:async function(){window.location.href='/photo-enhancer';return{success:true};}}]});})();`,
+            __html: `(function(){if(typeof navigator==='undefined'||!navigator.modelContext)return;navigator.modelContext.provideContext({tools:[{name:'restore_photo',description:'Restore old, damaged, and faded photographs using AI. Results in 30–60 seconds.',inputSchema:{type:'object',properties:{action:{type:'string',const:'restore'}},required:['action']},execute:async function(){window.location.href='/old-photo-restoration';return{success:true};}},{name:'colorize_photo',description:'Colorize black-and-white photographs using AI with historically accurate colors.',inputSchema:{type:'object',properties:{action:{type:'string',const:'colorize'}},required:['action']},execute:async function(){window.location.href='/photo-colorizer';return{success:true};}},{name:'enhance_photo',description:'Enhance photo resolution and clarity using AI upscaling up to 4x.',inputSchema:{type:'object',properties:{action:{type:'string',const:'enhance'}},required:['action']},execute:async function(){window.location.href='/photo-enhancer';return{success:true};}}]});})();`,
           }}
         />
         <script

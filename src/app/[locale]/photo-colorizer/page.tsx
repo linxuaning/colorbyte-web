@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: d?.title ?? "Photo Colorizer: Colorize Black and White Photos with AI",
     description:
       d?.description ??
-      "Best AI photo colorizer to colorize black and white photos online. Turn old family photos into vivid color in 30 seconds.",
+      "Best AI photo colorizer to colorize black and white photos online. Turn old family photos into vivid color in 30–60 seconds.",
     keywords: (d?.keywords as string[] | undefined) ?? [
       "photo colorizer",
       "colorize black and white photos",
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const DEFAULT_HOW_TO_STEPS: readonly HowToStep[] = [
   { name: "Upload your black and white photo", text: "Upload any black and white or grayscale photo. Supported formats: JPG, PNG, WEBP up to 20MB. No signup required." },
-  { name: "AI colorizes your photo in seconds", text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30 seconds." },
+  { name: "AI colorizes your photo in seconds", text: "AI automatically adds realistic, natural color to your photo. Results are ready in 30–60 seconds." },
   { name: "Unlock colorization and download HD", text: "Pro Lifetime Access ($4.99 one-time) unlocks AI colorization and the original-quality HD download on your email." },
 ];
 
@@ -107,7 +107,7 @@ const softwareSchema = {
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
   { q: "Do I need to pay before using the photo colorizer?", a: "Yes — ArtImageHub uses a pay-first model. Pro Lifetime Access is a one-time $4.99 payment that unlocks AI colorization and the original-quality download on your email. No subscription." },
-  { q: "How long does AI photo colorization take?", a: "Most photos are colorized in 30 seconds. Complex images may take up to 90 seconds." },
+  { q: "How long does AI photo colorization take?", a: "Most photos are colorized in 30–60 seconds. Complex images may take up to 30–60 seconds." },
   { q: "Are my photos kept private?", a: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos." },
 ];
 
@@ -168,7 +168,7 @@ export default async function LocalePhotoColorizerPage({ params }: Props) {
             {[
               { icon: "✓", text: "10,000+ photos colorized" },
               { icon: "✓", text: "4.8★ average rating" },
-              { icon: "✓", text: "Results in 30 seconds" },
+              { icon: "✓", text: "Results in 30–60 seconds" },
             ].map((item) => (
               <span key={item.text} className="flex items-center gap-1.5">
                 <span className="text-green-600 font-bold">{item.icon}</span>

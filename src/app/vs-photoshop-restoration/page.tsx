@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI vs Photoshop Photo Restoration (2026): Time, Cost, and Skill Compared",
   description:
-    "Honest comparison of AI photo restoration and Photoshop for old damaged photos. 30 seconds vs several hours per photo. One-time $4.99 vs Adobe subscription. Which fits your use case?",
+    "Honest comparison of AI photo restoration and Photoshop for old damaged photos. 30–60 seconds vs several hours per photo. One-time $4.99 vs Adobe subscription. Which fits your use case?",
   alternates: { canonical: "/vs-photoshop-restoration" },
   openGraph: {
     title: "AI vs Photoshop Photo Restoration (2026)",
@@ -46,7 +46,7 @@ const faqSchema = {
       name: "How much time does each workflow take per photo?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ArtImageHub's AI restoration typically finishes in 30-90 seconds from upload to downloadable result. A skilled Photoshop retoucher usually spends 30 minutes to several hours per damaged photo depending on severity — scratch removal, healing brush passes, color correction, and face sharpening each take their own time. For a box of 50 photos, that's a few hours of AI vs weeks of Photoshop.",
+        text: "ArtImageHub's AI restoration typically finishes in 30–60 seconds from upload to downloadable result. A skilled Photoshop retoucher usually spends 30 minutes to several hours per damaged photo depending on severity — scratch removal, healing brush passes, color correction, and face sharpening each take their own time. For a box of 50 photos, that's a few hours of AI vs weeks of Photoshop.",
       },
     },
     {
@@ -124,7 +124,7 @@ export default function VsPhotoshopRestorationPage() {
           <h2 className="text-xl font-semibold text-[#2c2416]">Two-line verdict</h2>
           <p className="mt-3 text-[#6b5344]">
             <strong className="text-[#2c2416]">Restoring family photos, no editing experience, want results this weekend:</strong> AI
-            restoration — ArtImageHub. $4.99 one-time, 30-90 seconds per photo.
+            restoration — ArtImageHub. $4.99 one-time, 30–60 seconds per photo.
           </p>
           <p className="mt-2 text-[#6b5344]">
             <strong className="text-[#2c2416]">Professional archival work, client deliverables, existing Photoshop skill:</strong> Photoshop.
@@ -178,7 +178,7 @@ export default function VsPhotoshopRestorationPage() {
               <tbody className="divide-y divide-[#d4bc91]/30">
                 <tr>
                   <td className="px-4 py-3 font-medium">Time per photo</td>
-                  <td className="px-4 py-3">30-90 seconds automated</td>
+                  <td className="px-4 py-3">30–60 seconds automated</td>
                   <td className="px-4 py-3">30 minutes to several hours, manual</td>
                 </tr>
                 <tr>

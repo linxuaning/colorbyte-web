@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How to Restore Old Photos — 3 Methods Compared, AI Wins (2026)",
   description:
-    "Step-by-step guide: restore old photos with AI in 30 seconds, Photoshop, or pro services. 12,400+ photos restored. $4.99 one-time AI restoration unlock — no subscription.",
+    "Step-by-step guide: restore old photos with AI in 30–60 seconds, Photoshop, or pro services. 12,400+ photos restored. $4.99 one-time AI restoration unlock — no subscription.",
   alternates: { canonical: "/how-to-restore-old-photos" },
   keywords: [
     "how to restore old photos",
@@ -66,7 +66,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Upload to AI restoration tool",
-      text: "Upload your scanned photo to an AI restoration tool like ArtImageHub. The AI automatically removes scratches, enhances faces, and improves resolution in 30 seconds.",
+      text: "Upload your scanned photo to an AI restoration tool like ArtImageHub. The AI automatically removes scratches, enhances faces, and improves resolution in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -116,7 +116,7 @@ const faqSchema = {
       name: "What is the easiest way to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
+        text: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30–60 seconds. No technical skills required.",
       },
     },
     {
@@ -132,7 +132,7 @@ const faqSchema = {
       name: "Is AI better than Photoshop for photo restoration?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI is faster and easier (30 seconds vs hours), requires no technical skills, and produces excellent results for most old photos. Photoshop offers more control for complex restorations but requires expertise and time. For 95% of old photos, AI restoration is the better choice.",
+        text: "AI is faster and easier (30–60 seconds vs hours), requires no technical skills, and produces excellent results for most old photos. Photoshop offers more control for complex restorations but requires expertise and time. For 95% of old photos, AI restoration is the better choice.",
       },
     },
     {
@@ -164,7 +164,7 @@ const faqSchema = {
       name: "How long does it take to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI restoration takes 15-30 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
+        text: "AI restoration takes 30–60 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
       },
     },
     {
@@ -247,7 +247,7 @@ export default function HowToRestoreOldPhotosPage() {
               </svg>
             </Link>
             <div className="text-[14px] text-[#faf8f4]/60 font-lora">
-              $4.99 one-time · No subscription · 30-second results
+              $4.99 one-time · No subscription · 30–60-second results
             </div>
           </div>
         </div>
@@ -269,14 +269,14 @@ export default function HowToRestoreOldPhotosPage() {
               <Link href="/old-photo-restoration" className="text-[#8B5E3C] hover:underline font-semibold">
                 ArtImageHub
               </Link>
-              , and the AI automatically removes scratches, enhances faces, and improves resolution in 30 seconds. No
+              , and the AI automatically removes scratches, enhances faces, and improves resolution in 30–60 seconds. No
               technical skills required.
             </p>
             <div className="mt-6 grid sm:grid-cols-3 gap-4 text-[15px] font-lora">
               <div className="flex items-baseline gap-2">
                 <span className="text-[#8B5E3C] font-bold">✓</span>
                 <span className="text-[#6b5344]">
-                  <strong className="text-[#2c2416]">30 seconds</strong> per photo
+                  <strong className="text-[#2c2416]">30–60 seconds</strong> per photo
                 </span>
               </div>
               <div className="flex items-baseline gap-2">
@@ -334,7 +334,7 @@ export default function HowToRestoreOldPhotosPage() {
                     <div className="text-[13px] text-[#6b5344] mt-1">Pay first, then process</div>
                   </td>
                   <td className="py-5 px-4">
-                    <div className="font-semibold text-[#2c2416]">30 seconds</div>
+                    <div className="font-semibold text-[#2c2416]">30–60 seconds</div>
                     <div className="text-[13px] text-[#6b5344] mt-1">Instant</div>
                   </td>
                   <td className="py-5 px-4">
@@ -419,7 +419,7 @@ export default function HowToRestoreOldPhotosPage() {
               Method 1: AI Photo Restoration
             </h2>
             <p className="text-[18px] text-[#6b5344] font-lora leading-[1.7] max-w-2xl">
-              The fastest, easiest, and most affordable method. No technical skills required. Results in 30 seconds.
+              The fastest, easiest, and most affordable method. No technical skills required. Results in 30–60 seconds.
             </p>
           </div>
 
@@ -451,7 +451,7 @@ export default function HowToRestoreOldPhotosPage() {
                 step: "3",
                 title: "Let AI restore your photo automatically",
                 description:
-                  "The AI analyzes your photo and automatically removes scratches, repairs tears, enhances blurry faces, increases resolution, and corrects fading. This takes 15-30 seconds for most photos.",
+                  "The AI analyzes your photo and automatically removes scratches, repairs tears, enhances blurry faces, increases resolution, and corrects fading. This takes 30–60 seconds for most photos.",
                 tips: [
                   "AI works best on photos with moderate damage",
                   "Face enhancement models preserve facial identity",
@@ -702,7 +702,7 @@ export default function HowToRestoreOldPhotosPage() {
 
           <div className="mt-12 text-center">
             <p className="text-[15px] text-[#6b5344] font-lora mb-4">
-              All examples restored using AI in under 30 seconds
+              All examples restored using AI typically in 30–60 seconds
             </p>
             <Link
               href="/old-photo-restoration"
@@ -728,7 +728,7 @@ export default function HowToRestoreOldPhotosPage() {
             {[
               {
                 q: "What is the easiest way to restore old photos?",
-                a: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
+                a: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30–60 seconds. No technical skills required.",
               },
               {
                 q: "Can I restore old photos for free?",
@@ -736,7 +736,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "Is AI better than Photoshop for photo restoration?",
-                a: "AI is faster and easier (30 seconds vs hours), requires no technical skills, and produces excellent results for most old photos. Photoshop offers more control for complex restorations but requires expertise and time. For 95% of old photos, AI restoration is the better choice.",
+                a: "AI is faster and easier (30–60 seconds vs hours), requires no technical skills, and produces excellent results for most old photos. Photoshop offers more control for complex restorations but requires expertise and time. For 95% of old photos, AI restoration is the better choice.",
               },
               {
                 q: "How much does professional photo restoration cost?",
@@ -752,7 +752,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "How long does it take to restore old photos?",
-                a: "AI restoration takes 15-30 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
+                a: "AI restoration takes 30–60 seconds per photo. Photoshop editing takes 1-3 hours per photo (depending on damage and skill level). Professional restoration takes 1-2 weeks turnaround. AI is the fastest method.",
               },
               {
                 q: "Will AI photo restoration change how people look?",
@@ -790,7 +790,7 @@ export default function HowToRestoreOldPhotosPage() {
             </svg>
           </Link>
           <p className="mt-4 text-[14px] text-[#6b5344]/80 font-lora">
-            Secure checkout · No subscription · 30-second results
+            Secure checkout · No subscription · 30–60-second results
           </p>
         </div>
       </section>

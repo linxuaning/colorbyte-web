@@ -208,7 +208,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class mobile workflow',
         'Strong face colorization',
-        'Fast 15–30 second processing',
+        'Fast 30–60-second processing',
         '200M+ downloads, mature product',
       ],
       cons: [

@@ -52,7 +52,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores your photo",
-      text: "Professional-grade AI analyzes and restores your photo in 30 seconds — fixing damage, enhancing faces, restoring colors.",
+      text: "Professional-grade AI analyzes and restores your photo in 30–60 seconds — fixing damage, enhancing faces, restoring colors.",
     },
     {
       "@type": "HowToStep",
@@ -225,7 +225,7 @@ export default function PhotoRestorationServicePage() {
               <tbody className="divide-y divide-[#d2d2d7]/40">
                 <tr>
                   <td className="p-4 text-[14px] text-[#1d1d1f]">Turnaround Time</td>
-                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">30 seconds</td>
+                  <td className="p-4 text-center text-[14px] text-emerald-700 font-semibold bg-emerald-50/50">30–60 seconds</td>
                   <td className="p-4 text-center text-[14px] text-[#6e6e73]">1-2 weeks</td>
                 </tr>
                 <tr>
@@ -365,7 +365,7 @@ export default function PhotoRestorationServicePage() {
             {[
               {
                 q: "How does AI photo restoration compare to traditional services?",
-                a: "AI delivers professional-quality results in 30 seconds instead of 1-2 weeks. ArtImageHub is a $4.99 one-time unlock with original-quality download included, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away.",
+                a: "AI delivers professional-quality results in 30–60 seconds instead of 1-2 weeks. ArtImageHub is a $4.99 one-time unlock with original-quality download included, versus $25-100+ per photo from many traditional services. You also keep your originals at home instead of mailing them away.",
               },
               {
                 q: "Is this a real photo restoration service?",
@@ -423,7 +423,7 @@ export default function PhotoRestorationServicePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Photos Online</h3>
-              <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
+              <p className="text-sm text-[#6b5344]">Web-based restoration in 30–60 seconds</p>
             </Link>
             <Link href="/restore-old-photos-free" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Free Photo Restoration</h3>

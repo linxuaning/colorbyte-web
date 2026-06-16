@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AI Photo Restoration - Neural Network Powered',
-    description: 'Advanced AI restores old photos in 30 seconds after a one-time $4.99 unlock.',
+    description: 'Advanced AI restores old photos in 30–60 seconds after a one-time $4.99 unlock.',
     images: ['/blog/before-after-examples.webp'],
   },
 };
@@ -52,7 +52,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI analyzes and restores",
-      text: "Advanced neural networks analyze your photo, identify damage, enhance faces, restore colors, and repair imperfections — all in about 30 seconds.",
+      text: "Advanced neural networks analyze your photo, identify damage, enhance faces, restore colors, and repair imperfections — all in about 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -135,7 +135,7 @@ export default function AIPhotoRestorationPage() {
             <span className="text-violet-600">AI</span> Photo Restoration
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Advanced artificial intelligence restores old, damaged photos in 30 seconds after checkout. Neural networks trained on millions of images — <strong className="text-[#1d1d1f]">$4.99 once for upload, AI processing, and original-quality download.</strong>
+            Advanced artificial intelligence restores old, damaged photos in 30–60 seconds after checkout. Neural networks trained on millions of images — <strong className="text-[#1d1d1f]">$4.99 once for upload, AI processing, and original-quality download.</strong>
           </p>
 
           {/* AI capabilities */}
@@ -163,7 +163,7 @@ export default function AIPhotoRestorationPage() {
           {[
             { icon: "✓", text: "100,000+ AI restorations" },
             { icon: "✓", text: "4.8★ user rating" },
-            { icon: "✓", text: "30-second processing" },
+            { icon: "✓", text: "30–60-second processing" },
           ].map((badge) => (
             <span key={badge.text} className="flex items-center gap-1.5">
               <span className="text-violet-600 font-bold">{badge.icon}</span>
@@ -302,7 +302,7 @@ export default function AIPhotoRestorationPage() {
               </div>
               <ul className="space-y-3">
                 {[
-                  "30 seconds per photo",
+                  "30–60 seconds per photo",
                   "$4.99 one-time unlock before upload",
                   "Consistent quality every time",
                   "Available 24/7 instantly",
@@ -425,7 +425,7 @@ export default function AIPhotoRestorationPage() {
                 Restore Photos Online
               </h3>
               <p className="text-sm text-[#6b5344]">
-                Web-based restoration in 30 seconds
+                Web-based restoration in 30–60 seconds
               </p>
             </Link>
 

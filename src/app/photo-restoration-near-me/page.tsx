@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Photo Restoration Near Me — Save 80% vs Local Shops (2026)',
-  description: 'Skip the $75–$200 local photo restoration quote. AI restores old photos in 30 seconds online — same quality, $4.99 one-time. 12,400+ photos restored. No appointment needed.',
+  description: 'Skip the $75–$200 local photo restoration quote. AI restores old photos in 30–60 seconds online — same quality, $4.99 one-time. 12,400+ photos restored. No appointment needed.',
   keywords: 'photo restoration near me, photo restoration services, local photo restoration, old photo repair near me, vintage photo restoration',
   alternates: { canonical: '/photo-restoration-near-me' },
   openGraph: {
@@ -32,10 +32,10 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Is online photo restoration as good as a local shop?', acceptedAnswer: { '@type': 'Answer', text: 'For the vast majority of damaged, faded, scratched, or torn family photos, modern AI restoration matches or exceeds local-shop quality and finishes in 30–90 seconds instead of 1–3 weeks. Severe physical damage (mold, fragmentation, missing chunks larger than ~15% of the image) still benefits from a human conservator — for everything else, AI is faster and 80% cheaper.' } },
+    { '@type': 'Question', name: 'Is online photo restoration as good as a local shop?', acceptedAnswer: { '@type': 'Answer', text: 'For the vast majority of damaged, faded, scratched, or torn family photos, modern AI restoration matches or exceeds local-shop quality and finishes in 30–60 seconds instead of 1–3 weeks. Severe physical damage (mold, fragmentation, missing chunks larger than ~15% of the image) still benefits from a human conservator — for everything else, AI is faster and 80% cheaper.' } },
     { '@type': 'Question', name: 'How much do local photo restoration shops charge?', acceptedAnswer: { '@type': 'Answer', text: 'Local shops typically charge $35–$200 per photo depending on damage severity, size, and turnaround time. Hand-retouched conservation work runs $150–$500. ArtImageHub is a one-time $4.99 unlock for unlimited online restorations.' } },
     { '@type': 'Question', name: 'Do I need to drop my photos off in person?', acceptedAnswer: { '@type': 'Answer', text: 'No. Online AI restoration is fully remote — upload from phone or computer, get the result in seconds, no shipping or in-person appointment. If your photo is irreplaceable and physically fragile, scan it at 600 DPI before uploading.' } },
-    { '@type': 'Question', name: 'How long does online photo restoration take vs a local shop?', acceptedAnswer: { '@type': 'Answer', text: 'Online AI restoration completes in 30–90 seconds. Local shops typically take 1–3 weeks for normal restoration jobs and 4–8 weeks for hand-retouched conservation work.' } },
+    { '@type': 'Question', name: 'How long does online photo restoration take vs a local shop?', acceptedAnswer: { '@type': 'Answer', text: 'Online AI restoration completes in 30–60 seconds. Local shops typically take 1–3 weeks for normal restoration jobs and 4–8 weeks for hand-retouched conservation work.' } },
     { '@type': 'Question', name: 'Can AI restoration handle the same damage types as a local restorer?', acceptedAnswer: { '@type': 'Answer', text: 'Yes for fading, color shift, light scratches, surface damage, blur, and most water damage. AI is faster and cheaper on these. Severe physical damage — mold, missing chunks, fragmentation — still benefits from a human conservator. For 80–90% of family photo restoration jobs, AI online is the right fit.' } },
   ],
 };
@@ -196,7 +196,7 @@ export default function PhotoRestorationNearMePage() {
                 </div>
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Processing Time</div>
-                  <div className="text-xl font-bold text-amber-600">30 seconds</div>
+                  <div className="text-xl font-bold text-amber-600">30–60 seconds</div>
                 </div>
                 <div>
                   <div className="text-sm text-slate-500 mb-1">Convenience</div>
@@ -436,7 +436,7 @@ export default function PhotoRestorationNearMePage() {
               },
               {
                 q: 'How long does photo restoration take at local shops?',
-                a: 'Local shops typically take 1-4 weeks for restoration. Some offer rush service (3-7 days) for an additional fee. Online AI restoration completes in 30 seconds.',
+                a: 'Local shops typically take 1-4 weeks for restoration. Some offer rush service (3-7 days) for an additional fee. Online AI restoration completes in 30–60 seconds.',
               },
               {
                 q: 'Do I need an appointment for local photo restoration?',
@@ -487,7 +487,7 @@ export default function PhotoRestorationNearMePage() {
             Restore Photos Online Now →
           </Link>
           <p className="text-sm text-amber-100 mt-6">
-            $4.99 one-time unlock • 30-second results • Original-quality download
+            $4.99 one-time unlock • 30–60-second results • Original-quality download
           </p>
         </div>
       </section>

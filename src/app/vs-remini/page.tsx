@@ -373,7 +373,7 @@ export default function VsReminiPage() {
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-[#2c2416]">Speed and workflow differences</h2>
           <p className="mt-3 text-[#6b5344]">
-            ArtImageHub's typical restore time is 30 to 90 seconds per photo from upload to download. The web
+            ArtImageHub's typical restore time is 30–60 seconds per photo from upload to download. The web
             interface works identically on desktop and mobile browsers, so you can scan a batch of photos on a
             desktop scanner and process them on the same machine. The workflow is: pay once, upload, process,
             download — no install, no subscription management.

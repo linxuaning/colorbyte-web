@@ -3,9 +3,9 @@ import Link from "next/link";
 import EnhanceClient from "../photo-enhancer/enhance-client";
 
 export const metadata: Metadata = {
-  title: "AI Unblur Photo — Fix Blurry Images in 30 Seconds",
+  title: "AI Unblur Photo — Fix Blurry Images in 30–60 seconds",
   description:
-    "Upload a blurry photo, AI sharpens it in 30 seconds. Fix camera shake, out-of-focus, and motion blur with a $4.99 one-time HD download unlock.",
+    "Upload a blurry photo, AI sharpens it in 30–60 seconds. Fix camera shake, out-of-focus, and motion blur with a $4.99 one-time HD download unlock.",
   alternates: { canonical: "/unblur-photo" },
   keywords: [
     "unblur photo",
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Unblur Photos Online",
   description:
-    "Fix blurry photos and sharpen images using AI — $4.99 one-time unlock, results in 30 seconds.",
+    "Fix blurry photos and sharpen images using AI — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Unblur Tool" }],
   step: [
@@ -65,8 +65,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for processing",
-      text: "The AI processes your photo with face-aware enhancement and super resolution upscaling to fix blur and restore clarity. Most images are unblurred in 15-30 seconds.",
+      name: "Wait 30–60 seconds for processing",
+      text: "The AI processes your photo with face-aware enhancement and super resolution upscaling to fix blur and restore clarity. Most images are unblurred in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -133,7 +133,7 @@ const softwareSchema = {
   operatingSystem: "Web",
   url: "https://artimagehub.com/unblur-photo",
   description:
-    "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30 seconds. $4.99 one-time unlock with original-quality download.",
+    "AI-powered photo unblur tool that fixes blurry pictures, sharpens images, and restores clarity in 30–60 seconds. $4.99 one-time unlock with original-quality download.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -147,7 +147,7 @@ const softwareSchema = {
     "Fix Soft Focus",
     "Face-Aware Sharpening",
     "4× Super Resolution",
-    "30-Second Processing",
+    "30–60-second Processing",
   ],
 };
 
@@ -444,7 +444,7 @@ export default function UnblurPhotoPage() {
                 },
                 {
                   q: "How long does unblurring take?",
-                  a: "Most photos are unblurred in 15-30 seconds. Very large images may take up to 60 seconds.",
+                  a: "Most photos are unblurred in 30–60 seconds. Very large images may take up to 30–60 seconds.",
                 },
               ].map((item) => (
                 <details

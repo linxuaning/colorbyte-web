@@ -11,7 +11,7 @@ import DodoQuickCheckoutButton from "@/components/DodoQuickCheckoutButton";
 export const metadata: Metadata = {
   title: "AI Old Photo Restoration Online — $4.99 One-Time · No Subscription",
   description:
-    "Restore old, damaged, or faded photos with AI in 30–90 seconds. One-time $4.99 payment. Fixes scratches, fading, blur, and water damage. HD original download included.",
+    "Restore old, damaged, or faded photos with AI in 30–60 seconds. One-time $4.99 payment. Fixes scratches, fading, blur, and water damage. HD original download included.",
   alternates: {
     canonical: "/old-photo-restoration",
     languages: {
@@ -44,7 +44,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Old Photos Online with AI",
-  description: "Restore old, damaged, or faded family photos with AI in 3 steps. Results in 30–90 seconds.",
+  description: "Restore old, damaged, or faded family photos with AI in 3 steps. Results in 30–60 seconds.",
   totalTime: "PT2M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
   step: [
@@ -65,7 +65,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "AI restores your photo in seconds",
-      text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–90 seconds.",
+      text: "AI automatically fixes scratches, fading, blur, and damage. Face enhancement is applied to portraits. Usually 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -83,7 +83,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Do I need to pay before uploading a photo for restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes — ArtImageHub uses a pay-first model where a single $4.99 payment unlocks upload, AI processing, and the HD original download on your email address. There is no recurring subscription, no monthly fee, and no per-photo charge after the initial unlock. The reason for pay-first rather than preview-before-paying is to keep the conversion path clean and avoid the bait-and-switch experience common to other tools that watermark or downscale your output until you pay. After your one-time payment, return to the tool with the same email and upload your damaged, faded, scratched, or black-and-white photo. Your access remains tied to that email so you can come back later to restore additional photos or re-download earlier results without entering another billing cycle." } },
     { "@type": "Question", name: "What image formats and file sizes does ArtImageHub support for photo restoration?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub accepts JPG, JPEG, PNG, and WEBP formats up to 20 MB per file. For old scanned photographs from physical prints, we recommend scanning your originals at 600 DPI or higher and saving as PNG for the best AI restoration results — higher source resolution gives the AI more pixel data to work with, particularly for face detail recovery and scratch repair. JPG is fine for most modern photos and smaller scans. WEBP is supported but uncommon for old-photo scans. Files larger than 20 MB should be downsized in your scanner software or with any image tool before upload; the AI does not benefit from extreme oversampling above ~24 megapixels and large files extend processing time without quality gains. HEIC from iPhone is not currently supported — convert to JPG first." } },
-    { "@type": "Question", name: "How long does AI photo restoration take per photo?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish restoration in 30–90 seconds end-to-end on a standard upload. Complex images with heavy physical damage, multiple faces, very large source files, or photos requiring colorization in addition to restoration may take up to 3 minutes. The AI pipeline runs scratch repair, fade correction, color rebalancing, face enhancement (via GFPGAN), and 4× super-resolution upscaling (via Real-ESRGAN) in a single coordinated pass — not as separate steps you have to chain manually. Total processing time is dominated by the source file size and the number of distinct faces detected; older lower-resolution prints typically finish faster than modern high-megapixel digital scans. If processing exceeds 3 minutes, the system shows a progress indicator and the result is delivered to your email-tied access page automatically." } },
+    { "@type": "Question", name: "How long does AI photo restoration take per photo?", acceptedAnswer: { "@type": "Answer", text: "Most photos finish restoration in 30–60 seconds end-to-end on a standard upload. Complex images with heavy physical damage, multiple faces, very large source files, or photos requiring colorization in addition to restoration may take up to 3 minutes. The AI pipeline runs scratch repair, fade correction, color rebalancing, face enhancement (via GFPGAN), and 4× super-resolution upscaling (via Real-ESRGAN) in a single coordinated pass — not as separate steps you have to chain manually. Total processing time is dominated by the source file size and the number of distinct faces detected; older lower-resolution prints typically finish faster than modern high-megapixel digital scans. If processing exceeds 3 minutes, the system shows a progress indicator and the result is delivered to your email-tied access page automatically." } },
     { "@type": "Question", name: "Are my photos kept private and secure during AI restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes. Photos are transmitted over encrypted HTTPS connections during upload, processing, and download. We do not sell customer photos, share them with data brokers, or train AI models on uploaded images. The restoration models are pre-trained open-source models; we do not fine-tune them on customer uploads. Files may be retained only as needed to deliver downloads, support paid access, troubleshoot failed jobs, or meet legal and operational requirements." } },
     { "@type": "Question", name: "Can AI restore a very badly damaged or torn photo?", acceptedAnswer: { "@type": "Answer", text: "AI restoration works best when there is some underlying image information left for the model to reconstruct from. Photos with moderate damage — fading, scratches, water stains, mild creasing, color shift, slight tearing along an edge — typically restore with excellent quality because the AI has signal to work with. Severe physical damage like large missing sections, heavy mold growth, photographs torn through the face, or chemical damage that destroyed the silver layer fundamentally limits what AI can recover, since the model cannot invent detail that no longer exists in the source. For these severe cases, AI handles the surrounding undamaged areas well but the most damaged section may need manual touch-up in Photoshop or professional restoration after the AI pass. Pay once, upload the photo, and review the restored output before downloading the HD file." } },
     { "@type": "Question", name: "Does AI restoration change how people look in old family photos?", acceptedAnswer: { "@type": "Answer", text: "Our face enhancement model (GFPGAN, Wang et al., Tencent ARC Lab, 2021) is specifically trained to preserve identity — it recovers sharpness and missing detail while keeping each person's facial features, expression, and bone structure as they originally appeared. Results match the original identity in over 95% of test cases per the published model evaluation, with the small failure rate concentrated on photos where the original face was so degraded that the AI had to reconstruct from limited information. We always recommend comparing the AI output to the original, especially for severely damaged faces or for genealogy work where exact likeness preservation matters. If a particular face came back over-smoothed or with subtly different features, you can re-run the restoration without colorization or use a less aggressive enhancement preset to preserve more of the original character." } },
@@ -100,7 +100,7 @@ const softwareSchema = {
   operatingSystem: "Web browser",
   url: "https://artimagehub.com/old-photo-restoration",
   description:
-    "AI photo restoration tool that repairs old, damaged, faded, and water-damaged photographs in 30-90 seconds. One-time $4.99 payment for unlimited restorations.",
+    "AI photo restoration tool that repairs old, damaged, faded, and water-damaged photographs in 30–60 seconds. One-time $4.99 payment for unlimited restorations.",
   offers: {
     "@type": "Offer",
     price: "4.99",
@@ -210,7 +210,7 @@ export default function OldPhotoRestorationPage() {
             {[
               { icon: "✓", text: "12,400+ photos restored" },
               { icon: "✓", text: "4.8★ average rating" },
-              { icon: "✓", text: "Results in 30–90 seconds" },
+              { icon: "✓", text: "Results in 30–60 seconds" },
             ].map((badge) => (
               <span key={badge.text} className="flex items-center gap-1.5">
                 <span className="text-green-600 font-bold">{badge.icon}</span>
@@ -337,7 +337,7 @@ export default function OldPhotoRestorationPage() {
           </div>
 
           <p className="text-[15px] text-[#6e6e73] leading-[1.65] max-w-2xl mx-auto mb-10 text-center">
-            ArtImageHub uses <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021) for face-aware reconstruction and <strong>Real-ESRGAN</strong> (Wang et al., 2021) for 4× super-resolution upscaling — the same peer-reviewed models used across academic and commercial photo restoration pipelines. Processing completes in 30–90 seconds on a standard upload.
+            ArtImageHub uses <strong>GFPGAN</strong> (Wang et al., Tencent ARC Lab, 2021) for face-aware reconstruction and <strong>Real-ESRGAN</strong> (Wang et al., 2021) for 4× super-resolution upscaling — the same peer-reviewed models used across academic and commercial photo restoration pipelines. Processing completes in 30–60 seconds on a standard upload.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-8">
@@ -355,7 +355,7 @@ export default function OldPhotoRestorationPage() {
               {
                 step: "3",
                 title: "Download your HD restore",
-                desc: "AI repairs scratches, fading, blur, and damage. Results in 30–90 seconds. Your paid email unlocks HD download.",
+                desc: "AI repairs scratches, fading, blur, and damage. Results in 30–60 seconds. Your paid email unlocks HD download.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -514,7 +514,7 @@ export default function OldPhotoRestorationPage() {
               },
               {
                 q: "How long does AI photo restoration take per photo?",
-                a: "Most photos finish restoration in 30–90 seconds end-to-end on a standard upload. Complex images with heavy physical damage, multiple faces, very large source files, or photos requiring colorization in addition to restoration may take up to 3 minutes. The AI pipeline runs scratch repair, fade correction, color rebalancing, face enhancement (via GFPGAN), and 4× super-resolution upscaling (via Real-ESRGAN) in a single coordinated pass — not as separate steps you have to chain manually. Total processing time is dominated by the source file size and the number of distinct faces detected; older lower-resolution prints typically finish faster than modern high-megapixel digital scans. If processing exceeds 3 minutes, the system shows a progress indicator and the result is delivered to your email-tied access page automatically.",
+                a: "Most photos finish restoration in 30–60 seconds end-to-end on a standard upload. Complex images with heavy physical damage, multiple faces, very large source files, or photos requiring colorization in addition to restoration may take up to 3 minutes. The AI pipeline runs scratch repair, fade correction, color rebalancing, face enhancement (via GFPGAN), and 4× super-resolution upscaling (via Real-ESRGAN) in a single coordinated pass — not as separate steps you have to chain manually. Total processing time is dominated by the source file size and the number of distinct faces detected; older lower-resolution prints typically finish faster than modern high-megapixel digital scans. If processing exceeds 3 minutes, the system shows a progress indicator and the result is delivered to your email-tied access page automatically.",
               },
               {
                 q: "Are my photos kept private and secure during AI restoration?",

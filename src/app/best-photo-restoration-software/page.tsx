@@ -562,7 +562,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
-                      <span>Extremely easy to use (30 seconds per photo)</span>
+                      <span>Extremely easy to use (30–60 seconds per photo)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-600 mt-1">✓</span>
@@ -638,7 +638,7 @@ export default function BestPhotoRestorationSoftwarePage() {
 
               <div className="prose prose-stone max-w-none mb-6">
                 <p className="text-stone-700 leading-relaxed">
-                  Remini is the most popular mobile photo restoration app with over 100 million downloads. It excels at face enhancement and works incredibly well on portrait photos. The mobile interface is intuitive and processing is fast (15-30 seconds per photo).
+                  Remini is the most popular mobile photo restoration app with over 100 million downloads. It excels at face enhancement and works incredibly well on portrait photos. The mobile interface is intuitive and processing is fast (30–60 seconds per photo).
                 </p>
                 <p className="text-stone-700 leading-relaxed">
                   However, Remini requires a $9.99/month subscription ($119.88/year), which becomes expensive for long-term use. It&apos;s best for users who primarily work on mobile and need quick face enhancement.
@@ -909,7 +909,7 @@ export default function BestPhotoRestorationSoftwarePage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <p className="text-sm text-stone-600">Restored with ArtImageHub in 30 seconds</p>
+                  <p className="text-sm text-stone-600">Restored with ArtImageHub in 30–60 seconds</p>
                 </div>
               </div>
             </div>
@@ -1070,7 +1070,7 @@ export default function BestPhotoRestorationSoftwarePage() {
             <div className="grid md:grid-cols-3 gap-6">
               <Link href="/restore-photos-online" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
                 <h4 className="font-bold text-stone-900 mb-2">Restore Photos Online</h4>
-                <p className="text-sm text-stone-600">Web-based restoration in 30 seconds</p>
+                <p className="text-sm text-stone-600">Web-based restoration in 30–60 seconds</p>
               </Link>
               <Link href="/ai-photo-restoration" className="block p-6 bg-white rounded-lg border border-stone-200 hover:border-amber-500 hover:shadow-lg transition-all">
                 <h4 className="font-bold text-stone-900 mb-2">AI Photo Restoration</h4>

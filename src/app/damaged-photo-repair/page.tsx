@@ -135,7 +135,7 @@ export default function DamagedPhotoRepairPage() {
             <span className="text-rose-600">Damaged</span> Photo Repair
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            AI repairs torn, scratched, water-damaged, and faded photos in about 30 seconds after checkout. Pay $4.99 once for upload, AI repair, and original-quality download.
+            AI repairs torn, scratched, water-damaged, and faded photos in about 30–60 seconds after checkout. Pay $4.99 once for upload, AI repair, and original-quality download.
           </p>
 
           {/* Trust indicators */}
@@ -336,7 +336,7 @@ export default function DamagedPhotoRepairPage() {
 	            Don&apos;t Let Damage Destroy Your Memories
 	          </h2>
           <p className="text-rose-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Every damaged photo is a memory at risk. Repair yours in 30 seconds — before more detail is lost.
+            Every damaged photo is a memory at risk. Repair yours in 30–60 seconds — before more detail is lost.
           </p>
           <Link
             href="#upload"

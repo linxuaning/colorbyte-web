@@ -8,7 +8,7 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 export const metadata: Metadata = {
   title: "Old Photo Colorization Online | Add Realistic Color to B&W Photos | ArtImageHub",
   description:
-    "Colorize old black and white photos with AI in 30 seconds. Realistic skin tones, period-accurate colors, face-aware processing. $4.99 one-time HD download unlock.",
+    "Colorize old black and white photos with AI in 30–60 seconds. Realistic skin tones, period-accurate colors, face-aware processing. $4.99 one-time HD download unlock.",
   alternates: { canonical: "/old-photo-colorization" },
   keywords: [
     "old photo colorization",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Old Photo Colorization Online — ArtImageHub",
     description:
-      "AI colorization for old black and white photos. Realistic, period-accurate colors in 30 seconds with a $4.99 one-time unlock.",
+      "AI colorization for old black and white photos. Realistic, period-accurate colors in 30–60 seconds with a $4.99 one-time unlock.",
     type: "website",
     images: [{ url: "/blog/before-after-examples.webp", width: 1200, height: 630, alt: "Old black and white photo colorized with AI" }],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Old Photo Colorization Online — ArtImageHub",
     description:
-      "Colorize old black and white photos with AI. Realistic colors in 30 seconds with original-quality download.",
+      "Colorize old black and white photos with AI. Realistic colors in 30–60 seconds with original-quality download.",
     images: ["/blog/before-after-examples.webp"],
   },
 };
@@ -122,7 +122,7 @@ const faqSchema = {
       name: "How long does old photo colorization take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most photos are colorized in 15–30 seconds. Complex images with many fine details may take up to 60 seconds. You'll see the result as soon as processing completes.",
+        text: "Most photos are colorized in 30–60 seconds. Complex images with many fine details may take up to 30–60 seconds. You'll see the result as soon as processing completes.",
       },
     },
     {
@@ -193,14 +193,14 @@ export default function OldPhotoColorizationPage() {
             Old Photo Colorization
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            Add realistic, period-accurate color to old black and white photos in 30 seconds.
+            Add realistic, period-accurate color to old black and white photos in 30–60 seconds.
             Pay $4.99 once to colorize and download the HD original.
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
               { icon: "✓", text: "$4.99 one-time unlock" },
               { icon: "✓", text: "4.8★ average rating" },
-              { icon: "✓", text: "Results in 30 seconds" },
+              { icon: "✓", text: "Results in 30–60 seconds" },
             ].map((badge) => (
               <span key={badge.text} className="flex items-center gap-1.5">
                 <span className="text-green-600 font-bold">{badge.icon}</span>
@@ -412,7 +412,7 @@ export default function OldPhotoColorizationPage() {
               },
               {
                 q: "How long does old photo colorization take?",
-                a: "Most photos are colorized in 15–30 seconds. Complex images with many fine details may take up to 60 seconds.",
+                a: "Most photos are colorized in 30–60 seconds. Complex images with many fine details may take up to 30–60 seconds.",
               },
               {
                 q: "Can AI colorize a photo that is also damaged or faded?",

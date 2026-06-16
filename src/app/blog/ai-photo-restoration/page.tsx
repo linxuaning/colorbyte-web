@@ -115,7 +115,7 @@ export default function AiPhotoRestorationPage() {
         <div className="prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:text-[#1d1d1f] prose-p:text-[#3d3d3f] prose-p:leading-relaxed prose-a:text-[#0071e3] prose-a:no-underline hover:prose-a:underline">
 
           <p>
-            Ten years ago, restoring a damaged old photo meant hiring a professional retoucher, learning Photoshop's clone stamp tool, or accepting the damage. AI photo restoration has changed that equation entirely. Today you can upload a faded, scratched, or torn photo and get a professionally restored version back in under 60 seconds — no skills, no software, no waiting.
+            Ten years ago, restoring a damaged old photo meant hiring a professional retoucher, learning Photoshop's clone stamp tool, or accepting the damage. AI photo restoration has changed that equation entirely. Today you can upload a faded, scratched, or torn photo and get a professionally restored version back typically in 30–60 seconds — no skills, no software, no waiting.
           </p>
 
           <p>

@@ -114,7 +114,7 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is our top pick when the goal is restoring old family photos with real damage. Its pipeline addresses scratches, water stains, fading, color shifts, torn corners, and blur in a single pass — not just the face. On the 1947 wedding print in our test set, the bride\'s lace and the corner damage came back together; on a 1970s Kodachrome, faded skin tones recovered without leaving the dress washed out.',
-        'Workflow is intentionally short. Pay $4.99, upload the photo, wait 20-30 seconds for AI restoration, and download the original-quality result. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
+        'Workflow is intentionally short. Pay $4.99, upload the photo, wait 30–60 seconds for AI restoration, and download the original-quality result. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
       ],
       pros: [
         'Whole-image restoration — fixes the entire photo, not just faces',
@@ -145,13 +145,13 @@ const config: BuyerGuideConfig = {
       rating: '★★★★★',
       reviewCount: '4.6/5 (200M+ downloads)',
       body: [
-        'Remini is the most popular mobile photo enhancer in the world, and the rating reflects what it does best: face sharpening. On a blurry selfie or a portrait shot in poor light, Remini renders eye detail and skin texture that looks natural. Its mobile UX is among the cleanest in the category — pick a photo, wait 15–30 seconds, save the result. For day-to-day phone use, it is hard to beat.',
+        'Remini is the most popular mobile photo enhancer in the world, and the rating reflects what it does best: face sharpening. On a blurry selfie or a portrait shot in poor light, Remini renders eye detail and skin texture that looks natural. Its mobile UX is among the cleanest in the category — pick a photo, wait 30–60 seconds, save the result. For day-to-day phone use, it is hard to beat.',
         'The trade-offs show up on old photos with physical damage. Because Remini\'s models are tuned around facial detail, scratches and torn corners often pass through untouched. On our 1947 wedding photo, the bride\'s face came back gorgeous, but the water stain across the bottom-right was still there. The pricing is the second consideration — $9.99 per month adds up to roughly $120 per year, which is a lot if you only need to restore a handful of photos.',
       ],
       pros: [
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
-        'Fast processing (15–30 seconds)',
+        'Fast processing (30–60 seconds)',
         '200M+ downloads, mature product',
         'Strong on selfies and modern portraits',
       ],
@@ -222,7 +222,7 @@ const config: BuyerGuideConfig = {
       position: 6,
       name: 'GIMP (free, manual)',
       tagline: 'Best Free Manual Option • $0',
-      body: 'Open-source desktop editor, completely free. Powerful but no AI — every restoration is manual healing-brush work. Realistically takes 30–90 minutes per damaged photo, vs 30 seconds in ArtImageHub.',
+      body: 'Open-source desktop editor, completely free. Powerful but no AI — every restoration is manual healing-brush work. Realistically takes 30–90 minutes per damaged photo, vs 30–60 seconds in ArtImageHub.',
       proTag: 'Free forever',
       conTag: 'Manual only',
     },
@@ -259,7 +259,7 @@ const config: BuyerGuideConfig = {
   showBeforeAfter: true,
   beforeAfterHeading: 'What do real before/after results show on the same photo?',
   beforeAfterCaption1: '1947 wedding photo with water damage and scratches — the test image used for both tools',
-  beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30 seconds',
+  beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30–60 seconds',
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [

@@ -113,7 +113,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is web-first AI photo restoration with no install step. You pay $4.99 first, upload a scan, the AI processes it in 20-30 seconds, and the unlock buys the original-quality download tied to your email — no subscription, no per-photo metering, and no software to install on a specific computer.',
+        'is web-first AI photo restoration with no install step. You pay $4.99 first, upload a scan, the AI processes it in 30–60 seconds, and the unlock buys the original-quality download tied to your email — no subscription, no per-photo metering, and no software to install on a specific computer.',
         'In our scan tests covering 1950s prints, 1970s slides, and modern document scans, ArtImageHub matched or exceeded Vivid-Pix on most photos and was substantially stronger on heavily faded images. The web-based workflow also means you can scan on one machine and restore on another — useful if you scan with a flatbed at home but edit on a laptop while traveling. Output is standard JPG/PNG that drops into any photo library or family-tree application.',
       ],
       pros: [
@@ -177,7 +177,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
-        'Fast 15–30 second processing',
+        'Fast 30–60-second processing',
         'Strong on selfies and modern portraits',
       ],
       cons: [
@@ -222,7 +222,7 @@ const config: BuyerGuideConfig = {
       position: 6,
       name: 'GIMP (free, manual)',
       tagline: 'Best Free Manual Option • $0',
-      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI — each photo can take 30–90 minutes vs 30 seconds in ArtImageHub.',
+      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI — each photo can take 30–90 minutes vs 30–60 seconds in ArtImageHub.',
       proTag: 'Free forever',
       conTag: 'Manual only',
     },
@@ -259,7 +259,7 @@ const config: BuyerGuideConfig = {
   showBeforeAfter: true,
   beforeAfterHeading: 'What do real before/after results show on the same scan?',
   beforeAfterCaption1: '1956 35mm slide with severe color fade and emulsion damage',
-  beforeAfterCaption2: 'Restored with ArtImageHub in 32 seconds — color and detail recovered',
+  beforeAfterCaption2: 'Restored with ArtImageHub in 30–60 seconds — color and detail recovered',
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [

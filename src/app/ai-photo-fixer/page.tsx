@@ -3,7 +3,7 @@ import Link from 'next/link';
 import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
-  title: 'AI Photo Fixer | Fix Photos Automatically in 30 Seconds',
+  title: 'AI Photo Fixer | Fix Photos Automatically in 30–60 seconds',
   description: 'Fix old photos automatically with AI. Remove scratches, enhance blurry faces, restore colors, and download the original-quality result after a $4.99 one-time unlock.',
   keywords: [
     'ai photo fixer',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/ai-photo-fixer' },
   openGraph: {
-    title: 'AI Photo Fixer | Fix Photos Automatically in 30 Seconds',
+    title: 'AI Photo Fixer | Fix Photos Automatically in 30–60 seconds',
     description: 'Fix old photos automatically with AI. $4.99 one-time unlock, original-quality download included.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'AI photo fixer before and after' }],
     type: 'website',
@@ -50,7 +50,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI analyzes and fixes automatically",
-      text: "AI detects all issues (scratches, blur, fading, tears) and fixes them automatically in 30 seconds. No manual editing needed.",
+      text: "AI detects all issues (scratches, blur, fading, tears) and fixes them automatically in 30–60 seconds. No manual editing needed.",
     },
     {
       "@type": "HowToStep",
@@ -65,7 +65,7 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How does AI photo fixer work?", acceptedAnswer: { "@type": "Answer", text: "AI photo fixer uses machine learning trained on millions of photos to automatically detect and repair damage. It identifies scratches, fading, blur, tears, and color issues, then applies targeted fixes — all in 30 seconds without manual editing." } },
+    { "@type": "Question", name: "How does AI photo fixer work?", acceptedAnswer: { "@type": "Answer", text: "AI photo fixer uses machine learning trained on millions of photos to automatically detect and repair damage. It identifies scratches, fading, blur, tears, and color issues, then applies targeted fixes — all in 30–60 seconds without manual editing." } },
     { "@type": "Question", name: "What photo problems can AI fix?", acceptedAnswer: { "@type": "Answer", text: "AI photo fixer handles: scratches and tears, blurry or out-of-focus shots, faded colors and discoloration, water/fire damage stains, creases and cracks, low resolution (upscales to 4K), missing color (colorizes B&W), underexposure/overexposure, red-eye and glare." } },
     { "@type": "Question", name: "Is AI photo fixing as good as manual Photoshop editing?", acceptedAnswer: { "@type": "Answer", text: "For 90% of common photo issues (scratches, fading, blur), AI photo fixer delivers professional results instantly. Manual Photoshop editing is still better for: complex artistic retouching, removing large objects from scenes, precise color grading for print. But AI is 100x faster and doesn't require Photoshop skills." } },
     { "@type": "Question", name: "Can I fix multiple photos at once with AI?", acceptedAnswer: { "@type": "Answer", text: "You can process photos one at a time after unlocking. The $4.99 one-time unlock is tied to the same email for the original-quality fixed photo." } },
@@ -134,7 +134,7 @@ export default function AIPhotoFixerPage() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-700 mb-10 max-w-3xl leading-relaxed">
-            No Photoshop skills required. Upload damaged, blurry, or faded photos — AI detects and fixes all issues in <span className="font-bold text-indigo-600">30 seconds</span>. Scratches, tears, color fading, blur, resolution — all handled automatically.
+            No Photoshop skills required. Upload damaged, blurry, or faded photos — AI detects and fixes all issues in <span className="font-bold text-indigo-600">30–60 seconds</span>. Scratches, tears, color fading, blur, resolution — all handled automatically.
           </p>
 
           {/* CTA Buttons */}
@@ -165,7 +165,7 @@ export default function AIPhotoFixerPage() {
               <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">30-second automatic fixing</span>
+              <span className="font-medium">30–60-second automatic fixing</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
@@ -307,7 +307,7 @@ export default function AIPhotoFixerPage() {
               <div>
                 <h3 className="text-2xl font-black text-slate-900 mb-3">Automatic Fixing (30 sec)</h3>
                 <p className="text-lg text-slate-700 leading-relaxed">
-                  AI applies targeted fixes: fills scratches using surrounding context, sharpens faces and important details, restores natural colors, removes stains and damage, upscales to 4K resolution. All fixes happen automatically in 15-30 seconds.
+                  AI applies targeted fixes: fills scratches using surrounding context, sharpens faces and important details, restores natural colors, removes stains and damage, upscales to 4K resolution. All fixes happen automatically in 30–60 seconds.
                 </p>
               </div>
             </div>
@@ -359,7 +359,7 @@ export default function AIPhotoFixerPage() {
               <tbody className="divide-y divide-slate-200">
                 <tr className="hover:bg-indigo-50">
                   <td className="px-6 py-4 font-semibold text-slate-900">Processing Time</td>
-                  <td className="px-6 py-4 font-bold text-indigo-900">30 seconds (automatic)</td>
+                  <td className="px-6 py-4 font-bold text-indigo-900">30–60 seconds (automatic)</td>
                   <td className="px-6 py-4 text-slate-600">2-8 hours (manual work)</td>
                 </tr>
                 <tr className="hover:bg-indigo-50">
@@ -416,7 +416,7 @@ export default function AIPhotoFixerPage() {
               Start AI Photo Fixer
             </h2>
             <p className="text-xl text-slate-700">
-              Upload a photo and see AI fix it automatically in 30 seconds before deciding on the original-quality download
+              Upload a photo and see AI fix it automatically in 30–60 seconds before deciding on the original-quality download
             </p>
           </div>
 
@@ -453,7 +453,7 @@ export default function AIPhotoFixerPage() {
                 <span className="text-indigo-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                AI photo fixer uses machine learning trained on millions of photos to automatically detect and repair damage. It identifies scratches, fading, blur, tears, and color issues, then applies targeted fixes — all in 30 seconds without manual editing.
+                AI photo fixer uses machine learning trained on millions of photos to automatically detect and repair damage. It identifies scratches, fading, blur, tears, and color issues, then applies targeted fixes — all in 30–60 seconds without manual editing.
               </p>
             </details>
 
@@ -537,7 +537,7 @@ export default function AIPhotoFixerPage() {
             Ready to Fix Your Photos with AI?
           </h2>
           <p className="text-xl text-indigo-100 mb-10 max-w-2xl mx-auto">
-            No Photoshop skills, no manual editing, no hours of work. Just upload and let AI fix everything automatically in 30 seconds.
+            No Photoshop skills, no manual editing, no hours of work. Just upload and let AI fix everything automatically in 30–60 seconds.
           </p>
 
           <Link
