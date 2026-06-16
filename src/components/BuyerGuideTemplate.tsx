@@ -207,7 +207,10 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
   const landing = `/${config.slug}`;
   const itemListSchema = buildItemListSchema(config);
   const faqSchema = buildFaqSchema(config);
-  const howToSchema = buildHowToSchema(config);
+  // Guard against sparse configs: a HowTo with <2 steps is low-value/spammy
+  // schema. All current configs have 4 steps; this only protects future ones.
+  const howToSchema =
+    config.buyingGuideSteps.length >= 2 ? buildHowToSchema(config) : null;
 
   return (
     <>
@@ -219,10 +222,12 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-stone-50 to-amber-50">
         {/* Hero */}
