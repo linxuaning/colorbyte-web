@@ -184,10 +184,33 @@ export function buildFaqSchema(config: BuyerGuideConfig) {
   };
 }
 
+// HowTo schema is emitted for AI/GEO parsers (ChatGPT, Perplexity, AI Overviews)
+// to understand the "how to choose" decision steps, not for Google rich results
+// (Google retired HowTo rich results in 2023). Steps map directly from the
+// existing buyingGuideSteps, which are genuine actionable decision steps.
+export function buildHowToSchema(config: BuyerGuideConfig) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: config.buyingGuideHeading,
+    description: config.schemaDescription,
+    step: config.buyingGuideSteps.map((s) => ({
+      '@type': 'HowToStep',
+      position: s.number,
+      name: s.title,
+      text: s.body,
+    })),
+  };
+}
+
 export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfig }) {
   const landing = `/${config.slug}`;
   const itemListSchema = buildItemListSchema(config);
   const faqSchema = buildFaqSchema(config);
+  // Guard against sparse configs: a HowTo with <2 steps is low-value/spammy
+  // schema. All current configs have 4 steps; this only protects future ones.
+  const howToSchema =
+    config.buyingGuideSteps.length >= 2 ? buildHowToSchema(config) : null;
 
   return (
     <>
@@ -199,6 +222,12 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-stone-50 to-amber-50">
         {/* Hero */}
