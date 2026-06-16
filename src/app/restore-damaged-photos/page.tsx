@@ -7,7 +7,7 @@ import ProofSampleGallery from "@/components/ProofSampleGallery";
 export const metadata: Metadata = {
   title: "Restore Damaged Photos Online — AI Fixes Scratches & Tears (2026)",
   description:
-    "Upload a damaged photo, AI repairs scratches, tears, fading, and water damage in 30 seconds. 12,400+ photos restored. $4.99 one-time — no Photoshop needed.",
+    "Upload a damaged photo, AI repairs scratches, tears, fading, and water damage in 30–60 seconds. 12,400+ photos restored. $4.99 one-time — no Photoshop needed.",
   alternates: { canonical: "/restore-damaged-photos" },
   keywords: [
     "restore damaged photos",
@@ -39,7 +39,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Restore Damaged Photos Online with AI",
   description:
-    "Restore damaged, torn, faded, or scratched photos with AI in under 60 seconds using ArtImageHub.",
+    "Restore damaged, torn, faded, or scratched photos with AI in under 30–60 seconds using ArtImageHub.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
   step: [
@@ -192,14 +192,14 @@ export default function RestoreDamagedPhotosPage() {
             Restore Damaged Photos
           </h1>
           <p className="mt-4 text-[17px] text-[#6e6e73] leading-[1.6] max-w-md mx-auto">
-            AI repairs scratches, tears, fading, and water damage in under 60 seconds.
+            AI repairs scratches, tears, fading, and water damage in under 30–60 seconds.
             Upload once, get a print-ready result back — no Photoshop skills needed.
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
               { icon: "✓", text: "10,000+ photos restored" },
               { icon: "✓", text: "4.8★ average rating" },
-              { icon: "✓", text: "Results in under 60 seconds" },
+              { icon: "✓", text: "Results in under 30–60 seconds" },
             ].map((badge) => (
               <span key={badge.text} className="flex items-center gap-1.5">
                 <span className="text-green-600 font-bold">{badge.icon}</span>

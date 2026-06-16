@@ -38,7 +38,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Old Photos Online",
-  description: "Restore damaged, faded, or old photographs with a $4.99 one-time AI restoration unlock and results in 30 seconds.",
+  description: "Restore damaged, faded, or old photographs with a $4.99 one-time AI restoration unlock and results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Restoration" }],
   step: [
@@ -52,7 +52,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores automatically",
-      text: "AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 15-30 seconds.",
+      text: "AI analyzes damage and applies face enhancement, super-resolution, and scratch removal. Takes 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -150,7 +150,7 @@ export default function RestoreOldPhotosFreePage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-green-600 font-bold">✓</span>
-              Results in 30 seconds
+              Results in 30–60 seconds
             </span>
           </div>
         </div>
@@ -373,7 +373,7 @@ export default function RestoreOldPhotosFreePage() {
             Restore a Photo for $4.99
           </h2>
           <p className="text-green-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Pay once, upload your photo, and let the AI restore it in about 30 seconds. Original-quality download is included.
+            Pay once, upload your photo, and let the AI restore it in about 30–60 seconds. Original-quality download is included.
           </p>
           <Link
             href="#upload"
@@ -382,7 +382,7 @@ export default function RestoreOldPhotosFreePage() {
             Restore a Photo for $4.99
           </Link>
           <p className="mt-4 text-green-200 text-[13px]">
-            Scroll up to start checkout · Results in about 30 seconds after upload
+            Scroll up to start checkout · Results in about 30–60 seconds after upload
           </p>
         </div>
       </section>

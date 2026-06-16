@@ -178,7 +178,7 @@ const config: BuyerGuideConfig = {
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
         '200M+ downloads, mature product',
-        'Fast 15-30 second processing',
+        'Fast 30–60 seconds processing',
       ],
       cons: [
         '$9.99/month subscription (~$120/year)',

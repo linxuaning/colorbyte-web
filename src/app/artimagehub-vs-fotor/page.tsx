@@ -179,7 +179,7 @@ const config: BuyerGuideConfig = {
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
         '200M+ downloads, mature product',
-        'Fast 15-30 second processing',
+        'Fast 30–60 seconds processing',
       ],
       cons: [
         '$9.99/month subscription (~$120/year)',
@@ -224,7 +224,7 @@ const config: BuyerGuideConfig = {
       position: 6,
       name: 'GIMP (free, manual)',
       tagline: 'Best Free Manual Option • $0',
-      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI — each photo can take 30–90 minutes vs 30 seconds in ArtImageHub.',
+      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI — each photo can take 30–90 minutes vs 30–60 seconds in ArtImageHub.',
       proTag: 'Free forever',
       conTag: 'Manual only',
     },

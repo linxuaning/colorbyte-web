@@ -3,7 +3,7 @@ import Link from 'next/link';
 import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
-  title: 'Restore Photos Online | $4.99 AI Photo Restoration in 30 Seconds',
+  title: 'Restore Photos Online | $4.99 AI Photo Restoration in 30–60 seconds',
   description: 'Restore old photos online instantly with AI. No download, no shipping photos. Pay $4.99 once for upload, AI processing, and original-quality download.',
   keywords: [
     'restore photos online',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/restore-photos-online' },
   openGraph: {
-    title: 'Restore Photos Online | AI Restoration in 30 Seconds',
+    title: 'Restore Photos Online | AI Restoration in 30–60 seconds',
     description: 'Restore old photos online instantly. Pay $4.99 once for upload, AI processing, and original-quality download.',
     images: [{ url: '/blog/before-after-examples.webp', width: 1200, height: 630, alt: 'Online photo restoration before and after' }],
     type: 'website',
@@ -36,7 +36,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Photos Online with AI",
-  description: "Restore old, damaged photos online using AI — no download, no shipping, instant results in 30 seconds.",
+  description: "Restore old, damaged photos online using AI — no download, no shipping, instant results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Online Photo Restoration" }],
   step: [
@@ -50,7 +50,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores automatically online",
-      text: "Our online AI analyzes and repairs damage, enhances faces, and removes scratches automatically. Processing happens in the cloud in 15-30 seconds.",
+      text: "Our online AI analyzes and repairs damage, enhances faces, and removes scratches automatically. Processing happens in the cloud in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -65,11 +65,11 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "How do I restore photos online?", acceptedAnswer: { "@type": "Answer", text: "Upload your photo to ArtImageHub's online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required." } },
-    { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks." } },
-    { "@type": "Question", name: "Do I need to download software to restore photos online?", acceptedAnswer: { "@type": "Answer", text: "No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30 seconds." } },
+    { "@type": "Question", name: "How do I restore photos online?", acceptedAnswer: { "@type": "Answer", text: "Upload your photo to ArtImageHub's online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30–60 seconds. Download your restored photo instantly — no software installation required." } },
+    { "@type": "Question", name: "Is online photo restoration as good as professional restoration?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30–60 seconds instead of 2-4 weeks." } },
+    { "@type": "Question", name: "Do I need to download software to restore photos online?", acceptedAnswer: { "@type": "Answer", text: "No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30–60 seconds." } },
     { "@type": "Question", name: "Do I need to pay before restoring photos online?", acceptedAnswer: { "@type": "Answer", text: "Yes. ArtImageHub uses a pay-first model. A $4.99 one-time payment unlocks online upload, AI processing, and original-quality download." } },
-    { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
+    { "@type": "Question", name: "How long does online photo restoration take?", acceptedAnswer: { "@type": "Answer", text: "Online restoration with ArtImageHub takes 30–60 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute." } },
     { "@type": "Question", name: "Is my photo safe when restoring online?", acceptedAnswer: { "@type": "Answer", text: "Yes! Photos are encrypted during upload, processed securely in the cloud, and automatically deleted within 24 hours. We never use your photos for AI training or share them with third parties." } },
     { "@type": "Question", name: "What types of damage can online restoration fix?", acceptedAnswer: { "@type": "Answer", text: "Online AI restoration fixes: scratches and tears, fading and discoloration, blurry faces, water damage stains, creases and cracks, low resolution (upscales to 4K), black & white colorization. It works on 90% of common photo damage types." } },
     { "@type": "Question", name: "How much does online photo restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub costs $4.99 once for upload, AI processing, and original-quality download. Traditional mail-in services usually cost $50-150 per photo, and many online tools push monthly subscriptions." } },
@@ -136,7 +136,7 @@ export default function RestorePhotosOnlinePage() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
             Restore Photos Online<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
-              in 30 Seconds
+              in 30–60 seconds
             </span>
           </h1>
 
@@ -173,7 +173,7 @@ export default function RestorePhotosOnlinePage() {
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="font-medium">30-second results</span>
+              <span className="font-medium">30–60-second results</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
@@ -203,11 +203,11 @@ export default function RestorePhotosOnlinePage() {
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-xl font-black text-slate-900 mb-3">Instant Results</h3>
               <p className="text-slate-600 mb-4">
-                30-second AI processing vs 2-4 weeks for mail-in services. Upload and download in under a minute.
+                30–60-second AI processing vs 2-4 weeks for mail-in services. Upload and download in under a minute.
               </p>
               <div className="text-sm text-cyan-600 font-semibold">
                 Traditional: 2-4 weeks<br />
-                Online: 30 seconds
+                Online: 30–60 seconds
               </div>
             </div>
 
@@ -280,7 +280,7 @@ export default function RestorePhotosOnlinePage() {
               <div>
                 <h3 className="text-2xl font-black mb-3">AI Restores Automatically</h3>
                 <p className="text-cyan-100/80 text-lg leading-relaxed">
-                  Cloud-based AI analyzes your photo and applies: scratch/tear removal, face enhancement, super-resolution upscaling, color restoration, damage repair. Processing takes 15-30 seconds online.
+                  Cloud-based AI analyzes your photo and applies: scratch/tear removal, face enhancement, super-resolution upscaling, color restoration, damage repair. Processing takes 30–60 seconds online.
                 </p>
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function RestorePhotosOnlinePage() {
               <tbody className="divide-y divide-slate-200">
                 <tr className="hover:bg-slate-50">
                   <td className="px-6 py-4 font-semibold text-slate-900">Processing Time</td>
-                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">30 seconds ⚡</td>
+                  <td className="px-6 py-4 bg-cyan-50 font-bold text-cyan-900">30–60 seconds ⚡</td>
                   <td className="px-6 py-4 text-slate-600">2-4 weeks</td>
                 </tr>
                 <tr className="hover:bg-slate-50">
@@ -403,7 +403,7 @@ export default function RestorePhotosOnlinePage() {
               Restore Online for $4.99
             </h2>
             <p className="text-xl text-slate-600">
-              Pay once, upload your photo, and see results in about 30 seconds.
+              Pay once, upload your photo, and see results in about 30–60 seconds.
             </p>
           </div>
 
@@ -440,7 +440,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Upload your photo to ArtImageHub&apos;s online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30 seconds. Download your restored photo instantly — no software installation required.
+                Upload your photo to ArtImageHub&apos;s online restoration tool. The AI automatically removes scratches, enhances faces, and repairs damage in 30–60 seconds. Download your restored photo instantly — no software installation required.
               </p>
             </details>
 
@@ -450,7 +450,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30 seconds instead of 2-4 weeks.
+                Yes! AI-powered online restoration uses advanced machine learning trained on millions of photos. It handles 90% of common damage (scratches, fading, blur) as well as professional services, but costs 95% less ($4.99 vs $50-150/photo) and delivers results in 30–60 seconds instead of 2-4 weeks.
               </p>
             </details>
 
@@ -460,7 +460,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30 seconds.
+                No! ArtImageHub works entirely in your web browser. No download, no installation, no software required. Just visit the website, upload your photo, and get your restored image in 30–60 seconds.
               </p>
             </details>
 
@@ -480,7 +480,7 @@ export default function RestorePhotosOnlinePage() {
                 <span className="text-cyan-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-600 leading-relaxed">
-                Online restoration with ArtImageHub takes 15-30 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute.
+                Online restoration with ArtImageHub takes 30–60 seconds per photo. Traditional mail-in services take 2-4 weeks. You upload, AI processes instantly, and you download — all in under a minute.
               </p>
             </details>
 

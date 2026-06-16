@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How to Remove Scratches from Old Photos | AI Scratch Repair Guide | ArtImageHub",
   description:
-    "Remove scratches from old photos with AI in under 60 seconds. Learn how AI scratch detection works, what types of scratches it fixes, and how to get the best result.",
+    "Remove scratches from old photos with AI in under 30–60 seconds. Learn how AI scratch detection works, what types of scratches it fixes, and how to get the best result.",
   alternates: { canonical: "/blog/remove-scratches-from-old-photos" },
   keywords: [
     "remove scratches from old photos",
@@ -125,7 +125,7 @@ export default function RemoveScratchesFromOldPhotosPage() {
 
           {/* CTA 1 */}
           <div className="not-prose my-8 rounded-2xl border border-[#0071e3]/20 bg-[#f0f6ff] p-6">
-            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Remove scratches in under 60 seconds</p>
+            <p className="text-[15px] font-semibold text-[#1d1d1f] mb-2">Remove scratches in under 30–60 seconds</p>
             <p className="text-[14px] text-[#6e6e73] mb-4 leading-relaxed">
               Pay $4.99 once to unlock upload, AI scratch repair, and the original-quality download. No subscription.
             </p>

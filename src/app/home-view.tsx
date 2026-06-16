@@ -114,7 +114,7 @@ export default function HomeView({ content }: { content: HomePageContent }) {
       "4× Super Resolution",
       "Black & White Colorization",
       "Scratch & Damage Repair",
-      "Instant Results in 30 Seconds",
+      "Instant Results in 30–60 seconds",
     ],
   };
 
@@ -125,7 +125,7 @@ export default function HomeView({ content }: { content: HomePageContent }) {
     url: "https://artimagehub.com",
     logo: "https://artimagehub.com/logo.png",
     description:
-      "AI-powered photo restoration, colorization, and enhancement tool. Restore old, damaged, faded, and black-and-white photographs in 15-30 seconds.",
+      "AI-powered photo restoration, colorization, and enhancement tool. Restore old, damaged, faded, and black-and-white photographs in 30–60 seconds.",
     sameAs: ["https://artimagehub.com/about"],
   };
 

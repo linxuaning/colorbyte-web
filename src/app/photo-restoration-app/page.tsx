@@ -311,7 +311,7 @@ export default function PhotoRestorationAppPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>
-                      <span>Fast results (30 seconds per photo)</span>
+                      <span>Fast results (30–60 seconds per photo)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-[#8B5E3C] mt-0.5">✓</span>

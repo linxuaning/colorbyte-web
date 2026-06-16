@@ -5,7 +5,7 @@ import ColorizeClient from "../photo-colorizer/colorize-client";
 export const metadata: Metadata = {
   title: "Colorize Black and White Photos Free — AI Adds Realistic Color (2026)",
   description:
-    "Turn B&W photos to color in 30 seconds with AI. Realistic skin tones, period-accurate colors. $4.99 one-time HD download unlock.",
+    "Turn B&W photos to color in 30–60 seconds with AI. Realistic skin tones, period-accurate colors. $4.99 one-time HD download unlock.",
   alternates: { canonical: "/colorize-photos-free" },
   keywords: [
     "colorize black and white photos free",
@@ -64,8 +64,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for colorization",
-      text: "The AI processes your photo and applies natural-looking colors. Most photos are colorized in 15-30 seconds.",
+      name: "Wait 30–60 seconds for colorization",
+      text: "The AI processes your photo and applies natural-looking colors. Most photos are colorized in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -145,7 +145,7 @@ const softwareSchema = {
     "AI-Powered Realistic Colors",
     "No Subscription",
     "Face-Aware Colorization",
-    "30-Second Processing",
+    "30–60-second Processing",
     "Before/After Comparison",
   ],
 };
