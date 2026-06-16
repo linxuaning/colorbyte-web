@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "AI vs Photoshop Photo Restoration (2026): Time, Cost, and Skill Compared",
   description:
-    "Honest comparison of AI photo restoration and Photoshop for old damaged photos. 30 seconds vs several hours per photo. One-time $4.99 vs Adobe subscription. Which fits your use case?",
+    "Honest comparison of AI photo restoration and Photoshop for old damaged photos. 30–60 seconds vs several hours per photo. One-time $4.99 vs Adobe subscription. Which fits your use case?",
   alternates: { canonical: "/vs-photoshop-restoration" },
   openGraph: {
     title: "AI vs Photoshop Photo Restoration (2026)",

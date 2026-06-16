@@ -113,7 +113,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is a dedicated AI photo restoration tool — its job is taking real photos with damage and producing restored versions. The pipeline handles scratches, fading, water stains, color shifts, blur, and torn corners in a single 20–30 second pass. Unlike Yodayo, it is not generating new images; it is repairing damage on the original photo while preserving the people, clothing, and scene exactly as they were.',
+        'is a dedicated AI photo restoration tool — its job is taking real photos with damage and producing restored versions. The pipeline handles scratches, fading, water stains, color shifts, blur, and torn corners in a single 30–60-second pass. Unlike Yodayo, it is not generating new images; it is repairing damage on the original photo while preserving the people, clothing, and scene exactly as they were.',
         'Pricing is intentionally simple: pay $4.99 once to unlock upload, AI restoration, and the original-quality download tied to your email. No subscription, no per-photo metering, no anime-style customization steps. The web interface runs in any browser on any device. For users who arrived from a Yodayo search expecting photo restoration, this is the tool that matches that intent.',
       ],
       pros: [
@@ -152,7 +152,7 @@ const config: BuyerGuideConfig = {
         'Best-in-class mobile face sharpening',
         'Real photo enhancement (not anime generation)',
         'Polished iOS and Android apps',
-        'Fast 15–30 second processing',
+        'Fast 30–60 seconds processing',
       ],
       cons: [
         '$9.99/month subscription (~$120/year)',

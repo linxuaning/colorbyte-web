@@ -3,7 +3,7 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Remove Scratches from Photos — AI Repair in 30 Seconds",
+  title: "Remove Scratches from Photos — AI Repair in 30–60 seconds",
   description:
     "AI removes scratches, creases, and tears from old photos automatically. Pay $4.99 once, upload a scan, and download the repaired HD result. No Photoshop skills needed.",
   alternates: { canonical: "/remove-scratches-from-photos" },
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Remove Scratches from Photos with AI",
   description:
-    "Remove scratches and damage from old photographs using AI — $4.99 one-time unlock, results in 30 seconds.",
+    "Remove scratches and damage from old photographs using AI — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Photo Scratch Remover" }],
   step: [
@@ -65,8 +65,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for processing",
-      text: "The AI processes your photo, removing scratches while preserving important details. Most scratch removal completes in 15-30 seconds.",
+      name: "Wait 30–60 seconds for processing",
+      text: "The AI processes your photo, removing scratches while preserving important details. Most scratch removal completes in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -146,7 +146,7 @@ const softwareSchema = {
     "Surface Damage Repair",
     "Face-Aware Processing",
     "One-Time Unlock",
-    "30-Second Processing",
+    "30–60-second Processing",
     "Before/After Comparison",
   ],
 };
@@ -436,7 +436,7 @@ export default function RemoveScratchesFromPhotosPage() {
                 },
                 {
                   q: "How long does scratch removal take?",
-                  a: "Most photos are processed in 15-30 seconds. The AI analyzes the entire image and removes all detected scratches in one pass.",
+                  a: "Most photos are processed in 30–60 seconds. The AI analyzes the entire image and removes all detected scratches in one pass.",
                 },
               ].map((item) => (
                 <details

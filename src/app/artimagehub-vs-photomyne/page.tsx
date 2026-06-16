@@ -113,7 +113,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is built for one job: AI photo restoration. The pipeline addresses scratches, fading, water stains, color shifts, blur, and torn corners in a single 20–30 second pass. In our test set of 40 album photos digitized through Photomyne and Google PhotoScan, ArtImageHub consistently produced cleaner restored output than Photomyne\'s built-in restore feature, particularly on heavily damaged 1940s and 1950s prints.',
+        'is built for one job: AI photo restoration. The pipeline addresses scratches, fading, water stains, color shifts, blur, and torn corners in a single 30–60-second pass. In our test set of 40 album photos digitized through Photomyne and Google PhotoScan, ArtImageHub consistently produced cleaner restored output than Photomyne\'s built-in restore feature, particularly on heavily damaged 1940s and 1950s prints.',
         'ArtImageHub does not include scanning — you upload an already-digitized file from your phone, scanner, or any other source. The recommended workflow for album work is to scan with whatever tool fits your phone (Photomyne for paid speed, Google PhotoScan for free) and then run the resulting files through ArtImageHub for restoration. The $4.99 one-time unlock keeps total cost low even when paired with a paid scanning app.',
       ],
       pros: [

@@ -5,7 +5,7 @@ import RestoreClient from "../old-photo-restoration/restore-client";
 export const metadata: Metadata = {
   title: "Enhance Old Photos — AI Sharpens Faces & Upscales 4x (2026)",
   description:
-    "AI enhances old photos in 30 seconds: sharpens blurry faces, upscales to 4x resolution, fixes fading. $4.99 one-time HD download unlock. No subscription.",
+    "AI enhances old photos in 30–60 seconds: sharpens blurry faces, upscales to 4x resolution, fixes fading. $4.99 one-time HD download unlock. No subscription.",
   alternates: { canonical: "/enhance-old-photos" },
   keywords: [
     "enhance old photos",
@@ -46,7 +46,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Enhance Old Photos with AI",
   description:
-    "Improve quality of old photographs using AI enhancement — $4.99 one-time unlock, results in 30 seconds.",
+    "Improve quality of old photographs using AI enhancement — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Old Photo Enhancer" }],
   step: [
@@ -66,8 +66,8 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for enhancement",
-      text: "The AI processes your old photo with face enhancement, super resolution, and quality improvement. Most photos are enhanced in 15-30 seconds.",
+      name: "Wait 30–60 seconds for enhancement",
+      text: "The AI processes your old photo with face enhancement, super resolution, and quality improvement. Most photos are enhanced in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",

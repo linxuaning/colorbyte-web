@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How to Restore Old Photos Online Free | AI Photo Repair Guide 2026",
   description:
-    "Learn how to restore old photos online free with AI — fix fading, scratches, and water damage in under 60 seconds. Compare free vs. paid options and get the best results.",
+    "Learn how to restore old photos online free with AI — fix fading, scratches, and water damage in under 30–60 seconds. Compare free vs. paid options and get the best results.",
   alternates: { canonical: "/blog/restore-old-photos-online-free" },
   keywords: [
     "restore old photos online free",
@@ -34,7 +34,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "How to Restore Old Photos Online Free",
   description:
-    "Learn how to restore old photos online free with AI — fix fading, scratches, and water damage in under 60 seconds.",
+    "Learn how to restore old photos online free with AI — fix fading, scratches, and water damage in under 30–60 seconds.",
   datePublished: "2026-04-12",
   dateModified: "2026-04-12",
   author: { "@type": "Person", name: "Sarah Chen", jobTitle: "Photo Restoration Specialist" },

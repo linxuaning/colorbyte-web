@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const tools = [
   {
     name: "AI Photo Restoration Tool",
-    desc: "Restore old, damaged, faded photos in 30 seconds. Pay $4.99 once to unlock upload, AI processing, and original-quality download.",
+    desc: "Restore old, damaged, faded photos in 30–60 seconds. Pay $4.99 once to unlock upload, AI processing, and original-quality download.",
     href: "/old-photo-restoration",
     badge: "$4.99 one-time",
     badgeColor: "bg-amber-100 text-amber-700",

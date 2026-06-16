@@ -146,7 +146,7 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is the strongest combination of quality and price for most photo restoration projects. The AI pipeline addresses scratches, fading, water stains, color shifts, blur, and torn corners in a single 20–30 second pass — the whole-photo repair that competing apps either bundle into expensive subscriptions or split across multiple separate features. In our 50-photo test, ArtImageHub produced the cleanest output on heavily damaged photos and matched the best paid tools on lightly damaged photos.',
+        'is the strongest combination of quality and price for most photo restoration projects. The AI pipeline addresses scratches, fading, water stains, color shifts, blur, and torn corners in a single 30–60 seconds pass — the whole-photo repair that competing apps either bundle into expensive subscriptions or split across multiple separate features. In our 50-photo test, ArtImageHub produced the cleanest output on heavily damaged photos and matched the best paid tools on lightly damaged photos.',
         'Pricing is the practical differentiator: $4.99 once vs $120-300/year for the closest paid competitors. The pay-first unlock covers upload, AI restoration, and original-quality download for the entire restoration project rather than a single photo. ArtImageHub also runs in any browser without an install, which means the same workflow works on your phone, laptop, or any borrowed computer — a real advantage over apps that require a specific platform install.',
       ],
       pros: [
@@ -184,7 +184,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class mobile face enhancement',
         'Polished iOS and Android apps',
-        'Fast 15–30 second processing',
+        'Fast 30–60 seconds processing',
         '200M+ downloads, mature product',
       ],
       cons: [
@@ -319,7 +319,7 @@ const config: BuyerGuideConfig = {
     },
     {
       question: 'How long does AI photo restoration take per photo?',
-      answer: 'Most modern AI restoration apps process a single photo in 20–45 seconds. ArtImageHub typically completes a full pass (restoration + colorization + enhancement) in 20–30 seconds depending on the source photo size. Remini processes faces in 15–30 seconds. MyHeritage takes 30–60 seconds for the combined Restore + Enhance + Colorize workflow. VanceAI varies based on which models you apply but is in the same range. Compared to manual restoration in Photoshop or GIMP, which takes 30–90 minutes per photo, AI restoration is roughly 100× faster. For a typical family album with 50 photos, manual restoration would take 25–75 hours of work; AI restoration takes 30–45 minutes total including upload and review time. The speed advantage is one of the main reasons AI restoration has become the default for family photo projects, even when manual restoration would produce slightly better results on the most damaged photos.',
+      answer: 'Most modern AI restoration apps process a single photo in 20–45 seconds. ArtImageHub typically completes a full pass (restoration + colorization + enhancement) in 30–60 seconds depending on the source photo size. Remini processes faces in 15–30 seconds. MyHeritage takes 30–60 seconds for the combined Restore + Enhance + Colorize workflow. VanceAI varies based on which models you apply but is in the same range. Compared to manual restoration in Photoshop or GIMP, which takes 30–90 minutes per photo, AI restoration is roughly 100× faster. For a typical family album with 50 photos, manual restoration would take 25–75 hours of work; AI restoration takes 30–45 minutes total including upload and review time. The speed advantage is one of the main reasons AI restoration has become the default for family photo projects, even when manual restoration would produce slightly better results on the most damaged photos.',
     },
     {
       question: 'Do photo restoration apps work on mobile phones?',
