@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://artimagehub.com",
+  "about": "ArtImageHub AI photo restoration",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is ArtImageHub free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ArtImageHub charges a one-time US$4.99 unlock for unlimited photo restorations and HD downloads. There is no free tier and no subscription. The price covers ongoing AI inference costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does photo restoration take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Typical processing time is 30-90 seconds per photo, depending on image size and damage level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPG, PNG, and WEBP, up to 20 MB per upload."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my photos kept private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Uploaded photos are deleted within 24 hours and are never used to train AI models or shared externally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No account required. Email is collected only at payment for receipt and access recovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What languages does ArtImageHub support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "English, Spanish, Portuguese (Brazil), French, German, Japanese, Korean, and Simplified Chinese."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a refund policy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Refunds are available within 30 days, no questions asked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What AI models power ArtImageHub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ArtImageHub uses an open-source pipeline combining GFPGAN for face enhancement (arXiv:2101.04061), Real-ESRGAN for super-resolution up to 4x (arXiv:2107.10833), and a colorization model for black-and-white photos."
+      }
+    }
+  ]
+}

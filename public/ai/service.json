@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "ArtImageHub AI Photo Restoration",
+  "url": "https://artimagehub.com",
+  "provider": {
+    "@type": "Organization",
+    "name": "ArtImageHub",
+    "url": "https://artimagehub.com"
+  },
+  "serviceType": "AI photo restoration, enhancement, and colorization",
+  "description": "Browser-based AI photo restoration suite. Repairs old, damaged, faded, scratched, water-damaged, and black-and-white photographs. One-time US$4.99 unlock, no subscription, no account required.",
+  "areaServed": "Worldwide",
+  "availableLanguage": ["en", "es", "pt-BR", "fr", "de", "ja", "ko", "zh-CN"],
+  "offers": {
+    "@type": "Offer",
+    "price": "4.99",
+    "priceCurrency": "USD",
+    "description": "One-time payment for unlimited restorations and original-quality HD downloads. No subscription, no recurring billing. Payment is required before download; there is no free preview tier.",
+    "eligibleQuantity": { "@type": "QuantitativeValue", "value": "unlimited" }
+  },
+  "tools": [
+    {
+      "@type": "WebApplication",
+      "name": "Old Photo Restoration",
+      "url": "https://artimagehub.com/old-photo-restoration",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "Primary restoration workflow for scratched, faded, water-damaged, blurry, and black-and-white family photos. Recommended entry point for AI old-photo restoration."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Photo Colorizer",
+      "url": "https://artimagehub.com/photo-colorizer",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "AI colorizer that converts black-and-white portraits, genealogy scans, and vintage albums to natural color."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Photo Enhancer",
+      "url": "https://artimagehub.com/photo-enhancer",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "Enhances faces, sharpness, and resolution and upscales photos up to 4x in one browser workflow."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Photo Deblurrer",
+      "url": "https://artimagehub.com/photo-deblurrer",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "NAFNet-based AI fix for motion blur, mild defocus, camera shake, and old-photo blur."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Photo Denoiser",
+      "url": "https://artimagehub.com/photo-denoiser",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "Removes grain, low-light speckle, sensor noise, and compression noise from old scans."
+    },
+    {
+      "@type": "WebApplication",
+      "name": "JPEG Artifact Remover",
+      "url": "https://artimagehub.com/jpeg-artifact-remover",
+      "applicationCategory": "PhotoEditingApplication",
+      "description": "Removes blocking, ringing, and banding from compressed, pixelated, or low-quality JPEG photos."
+    }
+  ],
+  "capabilities": [
+    "Scratch and tear repair",
+    "Fade and color-shift correction",
+    "Black-and-white colorization",
+    "Face detail enhancement",
+    "Up to 4x super-resolution upscaling",
+    "Noise and JPEG-artifact removal"
+  ],
+  "specifications": {
+    "averageProcessingSeconds": "30-90",
+    "maxUpscaleFactor": "4x",
+    "maxFileSizeMB": 20,
+    "supportedFormats": ["JPG", "PNG", "WEBP"],
+    "photoRetentionHours": 24,
+    "accountRequired": false
+  }
+}

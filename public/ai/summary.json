@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ArtImageHub",
+  "alternateName": "ArtImageHub AI Photo Restoration",
+  "url": "https://artimagehub.com",
+  "description": "ArtImageHub is an AI-powered photo restoration platform that repairs old, damaged, faded, scratched, water-damaged, and black-and-white photographs in 30-90 seconds. One-time US$4.99 payment, no subscription, no account required.",
+  "inLanguage": ["en", "es", "pt-BR", "fr", "de", "ja", "ko", "zh-CN"],
+  "keyFacts": {
+    "pricingModel": "one-time payment",
+    "price": "US$4.99",
+    "subscription": false,
+    "accountRequired": false,
+    "freePreviewTier": false,
+    "paymentBeforeDownload": true,
+    "averageProcessingSeconds": "30-90",
+    "maxUpscaleFactor": "4x",
+    "maxFileSizeMB": 20,
+    "supportedFormats": ["JPG", "PNG", "WEBP"],
+    "photoRetentionHours": 24,
+    "trainsOnUserPhotos": false,
+    "refundWindowDays": 30,
+    "models": ["GFPGAN", "Real-ESRGAN", "Colorization"]
+  },
+  "primaryEntryPoint": "https://artimagehub.com/old-photo-restoration",
+  "machineReadableReferences": {
+    "llmsTxt": "https://artimagehub.com/llms.txt",
+    "fullReference": "https://artimagehub.com/llms-full.txt",
+    "faq": "https://artimagehub.com/ai/faq.json",
+    "service": "https://artimagehub.com/ai/service.json"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@artimagehub.com",
+    "availableLanguage": "English"
+  }
+}
