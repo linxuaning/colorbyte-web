@@ -62,7 +62,8 @@ const organizationSchema = {
   serviceType: "AI photo restoration, enhancement, and colorization",
   knowsAbout: ["AI Photo Restoration", "Photo Enhancement", "Photo Colorization", "Family History Preservation"],
   sameAs: [
-    "https://www.toolpilot.ai/products/artimagehub",
+    "https://www.saashub.com/artimagehub",
+    "https://toolwise.ai/tools/artimagehub",
   ],
   contactPoint: {
     "@type": "ContactPoint",
