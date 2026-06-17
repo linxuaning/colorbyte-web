@@ -341,7 +341,7 @@ export default function PhotoDeblurrerPage() {
               },
               {
                 q: "How long does it take?",
-                a: "30–60 seconds per photo, depending on image dimensions and current server load. Larger photos — above 2000 pixels on the longest side — take closer to 60 seconds because NAFNet processes more pixel data. Smaller photos (under 1000px) typically complete in 20–30 seconds. Processing happens on GPU servers; the time is mostly AI compute, not your upload speed. You'll see a progress indicator while the model runs. If you're processing multiple photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited deblurring with no daily cap or per-image fee, so you can clean up an entire album without hitting any limits.",
+                a: "30–60 seconds per photo, depending mostly on current server load and damage complexity rather than image size — the AI works at a standardized internal resolution, so a phone photo and a high-resolution scan take about the same time. Processing happens on GPU servers; the time is mostly AI compute, not your upload speed. You'll see a progress indicator while the model runs. If you're processing multiple photos, handle them one at a time — upload, wait for the result, download it, then start the next. Your $4.99 one-time payment covers unlimited deblurring with no daily cap or per-image fee, so you can clean up an entire album without hitting any limits.",
               },
               {
                 q: "Is there a subscription?",
