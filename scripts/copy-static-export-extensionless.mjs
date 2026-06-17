@@ -207,6 +207,7 @@ await Promise.all(
     const fileName = path.basename(entry);
     if (
       entry.startsWith("llms") ||
+      entry.startsWith(".well-known/") ||
       preserveTextFiles.has(fileName) ||
       indexNowKeyPattern.test(fileName) ||
       !entry.endsWith(".txt")
