@@ -126,7 +126,10 @@ export default function HomeView({ content }: { content: HomePageContent }) {
     logo: "https://artimagehub.com/logo.png",
     description:
       "AI-powered photo restoration, colorization, and enhancement tool. Restore old, damaged, faded, and black-and-white photographs in 30-90 seconds.",
-    sameAs: ["https://artimagehub.com/about"],
+    sameAs: [
+      "https://www.saashub.com/artimagehub",
+      "https://toolwise.ai/tools/artimagehub",
+    ],
   };
 
   const websiteSchema = {
