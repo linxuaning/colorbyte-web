@@ -6,7 +6,7 @@ import LiveActivity from '@/components/LiveActivity';
 
 export const metadata: Metadata = {
   title: 'Fix Blurry Photos Online — AI Sharpens Faces & Details (2026)',
-  description: 'Fix blurry photos in 30 seconds with AI. Sharpens out-of-focus faces, fixes camera shake, and enhances detail with a $4.99 one-time HD download unlock.',
+  description: 'Fix blurry photos in 30–60 seconds with AI. Sharpens out-of-focus faces, fixes camera shake, and enhances detail with a $4.99 one-time HD download unlock.',
   keywords: [
     'fix blurry photos',
     'fix blurry pictures',
@@ -40,7 +40,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Fix Blurry Photos Online",
-  description: "Fix blurry, out-of-focus, or motion-blurred photos using AI enhancement — $4.99 one-time unlock, results in 30 seconds.",
+  description: "Fix blurry, out-of-focus, or motion-blurred photos using AI enhancement — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Enhancement" }],
   step: [
@@ -124,7 +124,7 @@ export default function FixBlurryPhotosPage() {
             Fix Blurry Photos <span className="text-indigo-600">Instantly</span>
           </h1>
           <p className="mt-4 text-[17px] sm:text-[19px] text-[#6e6e73] leading-[1.6] max-w-xl mx-auto">
-            Upload your blurry photo and let AI sharpen it in 30 seconds. Fix out-of-focus shots, motion blur, and soft images with a <strong className="text-[#1d1d1f]">$4.99 one-time unlock</strong>.
+            Upload your blurry photo and let AI sharpen it in 30–60 seconds. Fix out-of-focus shots, motion blur, and soft images with a <strong className="text-[#1d1d1f]">$4.99 one-time unlock</strong>.
           </p>
 
           {/* Trust indicators */}
@@ -139,7 +139,7 @@ export default function FixBlurryPhotosPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-indigo-600 font-bold">✓</span>
-              Results in 30 seconds
+              Results in 30–60 seconds
             </span>
           </div>
         </div>
@@ -332,7 +332,7 @@ export default function FixBlurryPhotosPage() {
             Ready to Fix Your Blurry Photos?
           </h2>
           <p className="text-indigo-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Upload your photo and let AI sharpen it in 30 seconds. Pay $4.99 once for the original-quality fixed file.
+            Upload your photo and let AI sharpen it in 30–60 seconds. Pay $4.99 once for the original-quality fixed file.
           </p>
           <Link
             href="#upload"
@@ -341,7 +341,7 @@ export default function FixBlurryPhotosPage() {
             Fix Blurry Photo
           </Link>
           <p className="mt-4 text-indigo-200 text-[13px]">
-            $4.99 one-time unlock · Original-quality download · Results in 30 seconds
+            $4.99 one-time unlock · Original-quality download · Results in 30–60 seconds
           </p>
         </div>
       </section>
@@ -355,7 +355,7 @@ export default function FixBlurryPhotosPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Photos Online</h3>
-              <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
+              <p className="text-sm text-[#6b5344]">Web-based restoration in 30–60 seconds</p>
             </Link>
             <Link href="/ai-photo-fixer" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">AI Photo Fixer</h3>

@@ -127,11 +127,11 @@ const config: BuyerGuideConfig = {
       reviewCount: '4.8/5',
       isWinner: true,
       body: [
-        'is the right tool when your goal is photo restoration and nothing else. Its AI pipeline handles scratches, fading, water stains, color shifts, and torn corners in a single 20–30 second pass, with comparable face quality to MyHeritage and stronger results on heavy physical damage. There is no family-tree integration to learn and no recurring subscription to manage.',
+        'is the right tool when your goal is photo restoration and nothing else. Its AI pipeline handles scratches, fading, water stains, color shifts, and torn corners in a single 30–60-second pass, with comparable face quality to MyHeritage and stronger results on heavy physical damage. There is no family-tree integration to learn and no recurring subscription to manage.',
         'The pricing model is the headline difference: pay $4.99 once to unlock upload, AI processing, and the original-quality download tied to your email. That covers the restoration project — there is no monthly renewal and no subscription upsell path. For a typical family album restoration covering 30–100 photos, the total cost is $4.99 vs roughly $129–299 for one year of MyHeritage Premium or Complete.',
       ],
       pros: [
-        'Whole-image restoration in 20–30 seconds',
+        'Whole-image restoration in 30–60 seconds',
         '$4.99 one-time unlock, no subscription',
         'Pay-first access before upload',
         'No genealogy bundle to wade through',
@@ -235,7 +235,7 @@ const config: BuyerGuideConfig = {
       position: 6,
       name: 'GIMP (free, manual)',
       tagline: 'Best Free Manual Option • $0',
-      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI, so each photo can take 30–90 minutes of careful work compared to 30 seconds of AI processing.',
+      body: 'Open-source desktop editor with manual healing-brush restoration. Powerful but no AI, so each photo can take 30–90 minutes of careful work compared to 30–60 seconds of AI processing.',
       proTag: 'Free forever',
       conTag: 'Manual only',
     },
@@ -272,7 +272,7 @@ const config: BuyerGuideConfig = {
   showBeforeAfter: true,
   beforeAfterHeading: 'What do real before/after results show on the same photo?',
   beforeAfterCaption1: '1942 wartime portrait with severe scratches and fading',
-  beforeAfterCaption2: 'Restored with ArtImageHub in 28 seconds — face + uniform detail recovered',
+  beforeAfterCaption2: 'Restored with ArtImageHub in 30–60 seconds — face + uniform detail recovered',
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [

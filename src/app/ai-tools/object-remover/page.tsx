@@ -54,7 +54,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Remove Objects from Photos with AI",
   description:
-    "Remove unwanted objects, people, or watermarks from any photo in 4 steps. Results in 5–15 seconds.",
+    "Remove unwanted objects, people, or watermarks from any photo in 4 steps. Results in 30–60 seconds.",
   totalTime: "PT2M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Object Remover" }],
   step: [
@@ -80,7 +80,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 4,
       name: "AI fills the gap and you download",
-      text: "Click Remove. The LaMa AI model fills the area naturally based on surrounding context, usually in 5–15 seconds. Download the HD result.",
+      text: "Click Remove. The LaMa AI model fills the area naturally based on surrounding context, usually in 30–60 seconds. Download the HD result.",
     },
   ],
 };
@@ -118,7 +118,7 @@ const faqSchema = {
       name: "How long does object removal take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most photos process in 5–15 seconds. Larger images or heavy network conditions may take up to 60 seconds.",
+        text: "Most photos process in 30–60 seconds. Larger images or heavy network conditions may take up to 60 seconds.",
       },
     },
     {
@@ -222,7 +222,7 @@ export default function ObjectRemoverPage() {
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-[#6e6e73]">
             {[
-              { icon: "✓", text: "Results in 5–15 seconds" },
+              { icon: "✓", text: "Results in 30–60 seconds" },
               { icon: "✓", text: "No subscription" },
               { icon: "✓", text: "HD original download" },
             ].map((badge) => (
@@ -285,7 +285,7 @@ export default function ObjectRemoverPage() {
               {
                 step: "4",
                 title: "AI fills the gap",
-                desc: "LaMa inpainting reconstructs the area in 5–15 seconds. Download the HD result.",
+                desc: "LaMa inpainting reconstructs the area in 30–60 seconds. Download the HD result.",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">

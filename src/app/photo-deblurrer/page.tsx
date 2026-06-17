@@ -4,7 +4,7 @@ import Link from "next/link";
 import DeblurClient from "./deblur-client";
 
 export const metadata: Metadata = {
-  title: "Unblur Image Online Free: AI Photo Deblurrer — Fix Blurry Photos in 30 Seconds",
+  title: "Unblur Image Online Free: AI Photo Deblurrer — Fix Blurry Photos in 30–60 seconds",
   description:
     "Fix blurry, out-of-focus, and motion-blurred photos with AI. NAFNet deblurring model recovers sharp details from blurry portraits, wedding photos, and old pictures. $4.99 one-time, no subscription.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "AI photo sharpener",
   ],
   openGraph: {
-    title: "AI Photo Deblurrer — Fix Blurry Photos in 30 Seconds",
+    title: "AI Photo Deblurrer — Fix Blurry Photos in 30–60 seconds",
     description:
       "Recover sharp details from blurry, out-of-focus, or motion-blurred photos using NAFNet AI. $4.99 one-time — no subscription, no app install.",
     url: "https://artimagehub.com/photo-deblurrer",

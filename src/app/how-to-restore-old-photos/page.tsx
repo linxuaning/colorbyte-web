@@ -68,7 +68,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Upload to AI restoration tool",
-      text: "Upload your scanned photo to an AI restoration tool like ArtImageHub. The AI automatically removes scratches, enhances faces, and improves resolution in 30 seconds.",
+      text: "Upload your scanned photo to an AI restoration tool like ArtImageHub. The AI automatically removes scratches, enhances faces, and improves resolution in 30–60 seconds.",
     },
     {
       "@type": "HowToStep",
@@ -126,7 +126,7 @@ const faqSchema = {
       name: "What is the easiest way to restore old photos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
+        text: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30–60 seconds. No technical skills required.",
       },
     },
     {
@@ -257,7 +257,7 @@ export default function HowToRestoreOldPhotosPage() {
               </svg>
             </Link>
             <div className="text-[14px] text-[#faf8f4]/60 font-lora">
-              $4.99 one-time · No subscription · 30-second results
+              $4.99 one-time · No subscription · 30–60-second results
             </div>
           </div>
         </div>
@@ -279,7 +279,7 @@ export default function HowToRestoreOldPhotosPage() {
               <Link href="/old-photo-restoration" className="text-[#8B5E3C] hover:underline font-semibold">
                 ArtImageHub
               </Link>
-              , and the AI automatically removes scratches, enhances faces, and improves resolution in 30 seconds. No
+              , and the AI automatically removes scratches, enhances faces, and improves resolution in 30–60 seconds. No
               technical skills required.
             </p>
             <p className="mt-4 text-[17px] text-[#6b5344] leading-[1.7] font-lora">{geoAnswer}</p>
@@ -287,7 +287,7 @@ export default function HowToRestoreOldPhotosPage() {
               <div className="flex items-baseline gap-2">
                 <span className="text-[#8B5E3C] font-bold">✓</span>
                 <span className="text-[#6b5344]">
-                  <strong className="text-[#2c2416]">30 seconds</strong> per photo
+                  <strong className="text-[#2c2416]">30–60 seconds</strong> per photo
                 </span>
               </div>
               <div className="flex items-baseline gap-2">
@@ -345,7 +345,7 @@ export default function HowToRestoreOldPhotosPage() {
                     <div className="text-[13px] text-[#6b5344] mt-1">Pay first, then process</div>
                   </td>
                   <td className="py-5 px-4">
-                    <div className="font-semibold text-[#2c2416]">30 seconds</div>
+                    <div className="font-semibold text-[#2c2416]">30–60 seconds</div>
                     <div className="text-[13px] text-[#6b5344] mt-1">Instant</div>
                   </td>
                   <td className="py-5 px-4">
@@ -430,7 +430,7 @@ export default function HowToRestoreOldPhotosPage() {
               Method 1: AI Photo Restoration
             </h2>
             <p className="text-[18px] text-[#6b5344] font-lora leading-[1.7] max-w-2xl">
-              The fastest, easiest, and most affordable method. No technical skills required. Results in 30 seconds.
+              The fastest, easiest, and most affordable method. No technical skills required. Results in 30–60 seconds.
             </p>
           </div>
 
@@ -713,7 +713,7 @@ export default function HowToRestoreOldPhotosPage() {
 
           <div className="mt-12 text-center">
             <p className="text-[15px] text-[#6b5344] font-lora mb-4">
-              All examples restored using AI in under 30 seconds
+              All examples restored using AI typically in 30–60 seconds
             </p>
             <Link
               href="/old-photo-restoration"
@@ -743,7 +743,7 @@ export default function HowToRestoreOldPhotosPage() {
               },
               {
                 q: "What is the easiest way to restore old photos?",
-                a: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30 seconds. No technical skills required.",
+                a: "AI photo restoration is the easiest method. With ArtImageHub, a one-time $4.99 payment unlocks upload, AI processing, and the original-quality download. The AI automatically removes damage, enhances faces, and improves resolution in about 30–60 seconds. No technical skills required.",
               },
               {
                 q: "Can I restore old photos for free?",
@@ -805,7 +805,7 @@ export default function HowToRestoreOldPhotosPage() {
             </svg>
           </Link>
           <p className="mt-4 text-[14px] text-[#6b5344]/80 font-lora">
-            Secure checkout · No subscription · 30-second results
+            Secure checkout · No subscription · 30–60-second results
           </p>
         </div>
       </section>

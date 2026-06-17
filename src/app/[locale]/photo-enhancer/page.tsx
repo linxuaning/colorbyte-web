@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: d?.title ?? "AI Photo Enhancer: Enhance Photo Quality Online in Seconds",
     description:
       d?.description ??
-      "Best AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces in 30 seconds.",
+      "Best AI photo enhancer to improve photo quality online. Fix blurry photos, 4x upscale resolution, enhance faces in 30–60 seconds.",
     keywords: (d?.keywords as string[] | undefined) ?? [
       "AI photo enhancer",
       "photo enhancer free",
@@ -107,7 +107,7 @@ const softwareSchema = {
 
 const DEFAULT_FAQ_ITEMS: readonly FaqItem[] = [
   { q: "Do I need to pay before using the photo enhancer?", a: "Yes — ArtImageHub uses a pay-first model. Pro Lifetime Access is a one-time $4.99 payment that unlocks AI enhancement and the original-quality download on your email. No subscription." },
-  { q: "How long does AI photo enhancement take?", a: "Most photos are enhanced in 30 seconds. Complex images may take up to 90 seconds." },
+  { q: "How long does AI photo enhancement take?", a: "Most photos are enhanced in 30–60 seconds. Complex images may take up to 90 seconds." },
   { q: "Are my photos kept private?", a: "Yes. All photos are transmitted over encrypted HTTPS and permanently deleted from our servers within 24 hours. We never share or train on your photos." },
 ];
 
@@ -168,7 +168,7 @@ export default async function LocalePhotoEnhancerPage({ params }: Props) {
             {[
               { icon: "✓", text: "10,000+ photos enhanced" },
               { icon: "✓", text: "4.8★ average rating" },
-              { icon: "✓", text: "Results in 30 seconds" },
+              { icon: "✓", text: "Results in 30–60 seconds" },
             ].map((item) => (
               <span key={item.text} className="flex items-center gap-1.5">
                 <span className="text-green-600 font-bold">{item.icon}</span>
