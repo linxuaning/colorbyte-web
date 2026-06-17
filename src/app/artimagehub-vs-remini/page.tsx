@@ -115,7 +115,7 @@ const config: BuyerGuideConfig = {
       isWinner: true,
       body: [
         'is our top pick when the goal is restoring old family photos with real damage. Its pipeline addresses scratches, water stains, fading, color shifts, torn corners, and blur in a single pass — not just the face. On the 1947 wedding print in our test set, the bride\'s lace and the corner damage came back together; on a 1970s Kodachrome, faded skin tones recovered without leaving the dress washed out.',
-        'Workflow is intentionally short. Pay $4.99, upload the photo, wait 20-30 seconds for AI restoration, and download the original-quality result. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
+        'Workflow is intentionally short. Pay $4.99, upload the photo, wait 30–60 seconds for AI restoration, and download the original-quality result. There is no subscription, no recurring charge, and no app install — it runs in any browser on phone, tablet, or desktop. After payment, your access is tied to your email so you can return later to download the file again.',
       ],
       pros: [
         'Whole-image restoration — fixes the entire photo, not just faces',
@@ -152,7 +152,7 @@ const config: BuyerGuideConfig = {
       pros: [
         'Best-in-class mobile face sharpening',
         'Polished iOS and Android apps',
-        'Fast processing (15–30 seconds)',
+        'Fast processing (30–60 seconds)',
         '200M+ downloads, mature product',
         'Strong on selfies and modern portraits',
       ],
@@ -223,7 +223,7 @@ const config: BuyerGuideConfig = {
       position: 6,
       name: 'GIMP (free, manual)',
       tagline: 'Best Free Manual Option • $0',
-      body: 'Open-source desktop editor, completely free. Powerful but no AI — every restoration is manual healing-brush work. Realistically takes 30–90 minutes per damaged photo, vs 30 seconds in ArtImageHub.',
+      body: 'Open-source desktop editor, completely free. Powerful but no AI — every restoration is manual healing-brush work. Realistically takes 30–90 minutes per damaged photo, vs 30–60 seconds in ArtImageHub.',
       proTag: 'Free forever',
       conTag: 'Manual only',
     },
@@ -260,7 +260,7 @@ const config: BuyerGuideConfig = {
   showBeforeAfter: true,
   beforeAfterHeading: 'What do real before/after results show on the same photo?',
   beforeAfterCaption1: '1947 wedding photo with water damage and scratches — the test image used for both tools',
-  beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30 seconds',
+  beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30–60 seconds',
 
   faqHeading: 'Frequently Asked Questions',
   faqItems: [

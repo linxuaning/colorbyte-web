@@ -417,7 +417,7 @@ export default function RestoreFadedPhotosPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Photos Online</h3>
-              <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
+              <p className="text-sm text-[#6b5344]">Web-based restoration in 30–60 seconds</p>
             </Link>
             <Link href="/vintage-photo-restoration" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Vintage Photo Restoration</h3>

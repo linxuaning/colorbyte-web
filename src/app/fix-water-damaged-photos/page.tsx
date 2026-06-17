@@ -69,7 +69,7 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for repair",
+      name: "Wait 30–60 seconds for repair",
       text: "The AI processes your photo, removing water damage while restoring colors and detail. Most water damage repairs complete in 30-90 seconds.",
     },
     {
@@ -159,7 +159,7 @@ const softwareSchema = {
     "Mold/Mildew Stain Repair",
     "Flood Damage Restoration",
     "$4.99 One-Time Unlock",
-    "30-Second Processing",
+    "30–60-second Processing",
   ],
 };
 

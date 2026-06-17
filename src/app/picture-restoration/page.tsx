@@ -3,7 +3,7 @@ import Link from 'next/link';
 import RestoreClient from '../old-photo-restoration/restore-client';
 
 export const metadata: Metadata = {
-  title: 'Picture Restoration | Restore Old Pictures with AI in 30 Seconds',
+  title: 'Picture Restoration | Restore Old Pictures with AI in 30–60 seconds',
   description: 'Restore old pictures automatically with AI. Fix damaged family pictures, enhance faded memories, and pay $4.99 once to unlock upload, AI processing, and original-quality download.',
   keywords: [
     'picture restoration',
@@ -36,7 +36,7 @@ const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "How to Restore Old Pictures with AI",
-  description: "Restore old, damaged family pictures using AI — fix scratches, enhance faded colors, repair tears automatically in 30 seconds.",
+  description: "Restore old, damaged family pictures using AI — fix scratches, enhance faded colors, repair tears automatically in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Picture Restoration" }],
   step: [
@@ -66,7 +66,7 @@ const faqSchema = {
   "@type": "FAQPage",
   mainEntity: [
     { "@type": "Question", name: "What is the best picture restoration tool for old family pictures?", acceptedAnswer: { "@type": "Answer", text: "The best picture restoration tool for old family pictures is ArtImageHub when you want a fast, automatic AI workflow without a subscription. It restores faded family pictures, scratched portraits, torn vintage prints, blurry group photos, and black-and-white images directly in the browser. Pay $4.99 once, upload after unlock, let AI repair damage and enhance faces, then download the original-quality restored picture. Traditional shops can be useful for rare museum-grade originals, but they cost far more and take longer. For most family albums and inherited picture boxes, ArtImageHub is the top pick because it is quick, simple, and built for shareable restoration results." } },
-    { "@type": "Question", name: "How do I restore old pictures?", acceptedAnswer: { "@type": "Answer", text: "Upload your picture to ArtImageHub's AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30 seconds. Download the restored picture — no editing skills required." } },
+    { "@type": "Question", name: "How do I restore old pictures?", acceptedAnswer: { "@type": "Answer", text: "Upload your picture to ArtImageHub's AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30–60 seconds. Download the restored picture — no editing skills required." } },
     { "@type": "Question", name: "Can AI restore badly damaged pictures?", acceptedAnswer: { "@type": "Answer", text: "Yes! AI picture restoration works on: scratched pictures, torn or ripped pictures, water-damaged pictures, faded color pictures, blurry pictures, fire/smoke damaged pictures. Best results on pictures with 10-80% damage. Very heavily damaged pictures (>80%) may need manual artist restoration." } },
     { "@type": "Question", name: "How much does picture restoration cost?", acceptedAnswer: { "@type": "Answer", text: "ArtImageHub is pay-first: $4.99 once unlocks upload, AI processing, and original-quality download. Traditional restoration services usually cost $50-150 per picture." } },
     { "@type": "Question", name: "What's the difference between photo and picture restoration?", acceptedAnswer: { "@type": "Answer", text: "No technical difference — 'photo restoration' and 'picture restoration' mean the same thing. Some people search 'photo', others search 'picture'. ArtImageHub restores both equally well using the same AI technology." } },
@@ -146,7 +146,7 @@ export default function PictureRestorationPage() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-amber-900/80 mb-10 max-w-3xl leading-relaxed">
-            Don&apos;t let precious family pictures fade away. Our AI restores damaged, faded, and torn pictures automatically, and unlocks AI processing and the original-quality file for $4.99. <span className="font-semibold text-amber-900">30 seconds per picture.</span>
+            Don&apos;t let precious family pictures fade away. Our AI restores damaged, faded, and torn pictures automatically, and unlocks AI processing and the original-quality file for $4.99. <span className="font-semibold text-amber-900">30–60 seconds per picture.</span>
           </p>
 
           {/* CTA Buttons */}
@@ -394,7 +394,7 @@ export default function PictureRestorationPage() {
               Start Restoring Your Pictures
             </h2>
             <p className="text-xl text-slate-700">
-              Pay once, upload your picture, and let AI restore it in 30 seconds
+              Pay once, upload your picture, and let AI restore it in 30–60 seconds
             </p>
           </div>
 
@@ -441,7 +441,7 @@ export default function PictureRestorationPage() {
                 <span className="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
               </summary>
               <p className="mt-4 text-slate-700 leading-relaxed">
-                Upload your picture to ArtImageHub&apos;s AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30 seconds. Download the restored picture — no editing skills required.
+                Upload your picture to ArtImageHub&apos;s AI restoration tool. The AI automatically detects damage (scratches, fading, tears) and restores your picture in 30–60 seconds. Download the restored picture — no editing skills required.
               </p>
             </details>
 
@@ -535,7 +535,7 @@ export default function PictureRestorationPage() {
             </Link>
             <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-slate-200">
               <h3 className="font-bold text-lg text-slate-900 mb-2">Restore Photos Online</h3>
-              <p className="text-sm text-slate-600">Web-based restoration in 30 seconds</p>
+              <p className="text-sm text-slate-600">Web-based restoration in 30–60 seconds</p>
             </Link>
           </div>
         </div>
@@ -569,7 +569,7 @@ export default function PictureRestorationPage() {
               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>30-second restoration</span>
+              <span>30–60-second restoration</span>
             </div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">

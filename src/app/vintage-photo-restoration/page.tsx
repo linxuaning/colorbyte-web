@@ -353,7 +353,7 @@ export default function VintagePhotoRestorationPage() {
             Preserve Your Family History
           </h2>
           <p className="text-amber-100 text-[17px] mb-8 max-w-lg mx-auto">
-            Every vintage photo tells a story. Restore yours in 30 seconds — before more detail is lost to time.
+            Every vintage photo tells a story. Restore yours in 30–60 seconds — before more detail is lost to time.
           </p>
           <Link
             href="#upload"
@@ -376,7 +376,7 @@ export default function VintagePhotoRestorationPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/restore-photos-online" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Restore Photos Online</h3>
-              <p className="text-sm text-[#6b5344]">Web-based restoration in 30 seconds</p>
+              <p className="text-sm text-[#6b5344]">Web-based restoration in 30–60 seconds</p>
             </Link>
             <Link href="/restore-old-photos-free" className="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow border border-[#d2d2d7]/40">
               <h3 className="font-semibold text-lg text-[#2c2416] mb-2">Photo Restoration</h3>

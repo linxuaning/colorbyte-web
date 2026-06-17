@@ -54,7 +54,7 @@ const howToSchema = {
       "@type": "HowToStep",
       position: 2,
       name: "AI restores your photo instantly",
-      text: "Our AI analyzes and restores your photo in about 30 seconds — fixing damage, enhancing faces, restoring colors.",
+      text: "Our AI analyzes and restores your photo in about 30–60 seconds — fixing damage, enhancing faces, restoring colors.",
     },
     {
       "@type": "HowToStep",
@@ -384,7 +384,7 @@ export default function FreePhotoRestorationPage() {
             Start One-Time Access — Upload Now
           </Link>
           <p className="mt-4 text-green-200 text-[13px]">
-            One-time payment · No subscription · Results in 30 seconds
+            One-time payment · No subscription · Results in 30–60 seconds
           </p>
         </div>
       </section>

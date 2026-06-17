@@ -46,7 +46,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Upscale Photos to 4K with AI",
   description:
-    "Enlarge photos and increase image resolution using AI upscaling — $4.99 one-time unlock, results in 30 seconds.",
+    "Enlarge photos and increase image resolution using AI upscaling — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub AI Photo Upscaler" }],
   step: [
@@ -66,7 +66,7 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for processing",
+      name: "Wait 30–60 seconds for processing",
       text: "The AI processes your photo with intelligent upscaling and detail enhancement. Most images are upscaled in 30-90 seconds.",
     },
     {
@@ -159,7 +159,7 @@ const softwareSchema = {
     "Detail Enhancement",
     "One-Time Unlock",
     "No Quality Loss",
-    "30-Second Processing",
+    "30–60-second Processing",
   ],
 };
 

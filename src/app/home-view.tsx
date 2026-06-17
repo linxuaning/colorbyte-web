@@ -114,7 +114,7 @@ export default function HomeView({ content }: { content: HomePageContent }) {
       "4× Super Resolution",
       "Black & White Colorization",
       "Scratch & Damage Repair",
-      "Instant Results in 30 Seconds",
+      "Instant Results in 30–60 seconds",
     ],
   };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import RestoreClient from "../old-photo-restoration/restore-client";
 
 export const metadata: Metadata = {
-  title: "Restore Old Family Photos Online — AI Results in 30 Seconds",
+  title: "Restore Old Family Photos Online — AI Results in 30–60 seconds",
   description:
     "Restore grandparent photos, wedding portraits, and faded family pictures with AI. $4.99 one-time HD download unlock. No subscription needed.",
   alternates: { canonical: "/restore-old-family-photos" },
@@ -45,7 +45,7 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How to Restore Old Family Photos Online",
   description:
-    "Restore damaged, faded old family photographs using AI — $4.99 one-time unlock, results in 30 seconds.",
+    "Restore damaged, faded old family photographs using AI — $4.99 one-time unlock, results in 30–60 seconds.",
   totalTime: "PT1M",
   tool: [{ "@type": "HowToTool", name: "ArtImageHub Family Photo Restoration" }],
   step: [
@@ -65,7 +65,7 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Wait 30 seconds for restoration",
+      name: "Wait 30–60 seconds for restoration",
       text: "The AI processes your family photo with face-aware enhancement and damage repair. Most restorations complete in 30–90 seconds.",
     },
     {
@@ -130,7 +130,7 @@ const faqSchema = {
       name: "Can I restore multiple family photos at once?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Currently, photos are restored one at a time. For large family photo collections, the process is still quick because each photo usually finishes in about 30 seconds after payment.",
+        text: "Currently, photos are restored one at a time. For large family photo collections, the process is still quick because each photo usually finishes in about 30–60 seconds after payment.",
       },
     },
   ],
