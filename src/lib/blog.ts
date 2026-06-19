@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 693;
+const EMERGENCY_STATIC_POST_LIMIT = 730;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -713,6 +713,44 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "fix-tiktok-photo-quality",
   "how-to-colorize-black-and-white-photos",
   "unblur-photo-of-text",
+  // --- batch-4 (T163 follow-up 2026-06-19): +37 quality pages, cap 693->730 ---
+  "how-to-restore-old-photos-from-italy",
+  "how-to-restore-old-photos-from-ukraine",
+  "how-to-restore-old-photos-from-korea",
+  "how-to-restore-old-photos-from-ireland",
+  "how-to-restore-old-photos-with-mold-damage",
+  "how-to-restore-old-photos-with-creases-and-folds",
+  "how-to-restore-old-photos-of-deceased-relatives",
+  "how-to-restore-old-photos-with-missing-corners",
+  "how-to-restore-old-photos-without-photoshop",
+  "artimagehub-vs-imagecolorizer",
+  "artimagehub-vs-picwish",
+  "artimagehub-vs-topaz-photo-ai",
+  "how-to-restore-photos-from-the-victorian-era",
+  "how-to-restore-photos-for-display",
+  "how-to-fix-blurry-photos-iphone-14",
+  "how-to-restore-photos-for-video",
+  "how-to-restore-photos-from-the-korean-war-era",
+  "how-to-restore-photos-from-the-great-depression",
+  "how-to-restore-photos-from-old-film-negatives",
+  "how-to-restore-photos-for-social-media",
+  "how-to-restore-photos-for-a-book",
+  "how-to-fix-blurry-photos-for-printing",
+  "artimagehub-vs-photoleap",
+  "how-to-fix-blurry-ipad-photos",
+  "how-to-restore-1960s-photos",
+  "how-to-restore-1940s-photos",
+  "how-to-restore-1930s-photos",
+  "how-to-restore-1920s-photos",
+  "how-to-fix-blurry-selfies-from-old-phones",
+  "how-to-enhance-photos-for-book-publishing",
+  "how-to-colorize-photos-from-1950s-suburbia",
+  "how-to-colorize-photos-from-the-edwardian-era",
+  "how-to-colorize-photos-from-the-korean-war-era",
+  "how-to-colorize-photos-from-the-spanish-civil-war",
+  "how-to-enhance-photos-for-wikipedia",
+  "how-to-enhance-photos-for-obituaries",
+  "how-to-enhance-photos-for-memorial-services",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
