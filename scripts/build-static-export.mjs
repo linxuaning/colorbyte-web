@@ -66,6 +66,7 @@ try {
   relocateOut();
   run("npx next build");
   run("node scripts/copy-static-export-extensionless.mjs");
+  run("node scripts/generate-rss.mjs");
   console.log("\n✓ static export complete -> ./out");
 } catch (err) {
   failed = true;

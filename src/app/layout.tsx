@@ -127,6 +127,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://checkout.dodopayments.com" />
         <link rel="preconnect" href="https://sdk.hs.dodopayments.com" />
         <link rel="dns-prefetch" href="https://sdk.hs.dodopayments.com" />
+        {/* RSS feed — AI-discovery + reader subscription signal (generated post-build to out/feed.xml). */}
+        <link rel="alternate" type="application/rss+xml" title="ArtImageHub Journal" href="/feed.xml" />
       </head>
       <body
         className={`${playfair.variable} ${lora.variable} font-lora antialiased bg-[#faf8f4] text-[#2c2416]`}
