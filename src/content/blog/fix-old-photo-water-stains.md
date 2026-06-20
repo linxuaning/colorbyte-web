@@ -2,7 +2,7 @@
 title: "How to Fix Water Stains on Old Photos: Remove Water Damage from Vintage Prints"
 description: "Paper conservation specialist guide to identifying water damage types on old photos, physical stabilization before scanning, and step-by-step AI digital restoration — what AI can and cannot fix."
 publishedAt: "2026-05-07"
-updatedAt: "2026-05-07"
+updatedAt: "2026-06-20"
 author: "Sarah Nakamura"
 authorRole: "Paper Conservation Specialist"
 authorBio: "Sarah Nakamura works in paper and photograph conservation, advising archives, historical societies, and private collectors on stabilizing and digitizing water-damaged photographic materials. She has handled flood-recovery collections and estate archives across the Pacific Northwest."
@@ -27,6 +27,8 @@ faq:
 > **Tools used in this guide**: [Old Photo Restoration](/old-photo-restoration) — the primary tool for water-damaged vintage prints. Additional tools useful for water-damaged scans: [Photo Denoiser](/photo-denoiser) for grain, [JPEG Artifact Remover](/jpeg-artifact-remover) for compressed scans, [Photo Enhancer](/photo-enhancer) for upscaling. Also available: [Photo Deblurrer](/photo-deblurrer) · [Photo Colorizer](/photo-colorizer). Each tool: $4.99 one-time.
 
 ---
+
+> **TL;DR — How to fix water stains on old photos:** Water damage shows up as brown tide-mark rings, uneven discoloration, silver mirroring, and paper warping. First stabilize the physical print — never peel apart wet photos, air-dry them flat for 24–48 hours, and never use heat. Then scan at 600–1200 DPI and save as TIFF or PNG, not JPEG. For the digital repair, AI restoration reconstructs tonal balance and reduces tide marks wherever the emulsion survived: ArtImageHub's [Old Photo Restoration](/old-photo-restoration) runs GFPGAN (face detail), Real-ESRGAN (up to 4× resolution), and NAFNet (denoising) in a single pass, typically in 30–90 seconds for a one-time $4.99 with no subscription. What AI cannot do is invent image data the water permanently destroyed — if the emulsion dissolved, that detail is gone.
 
 Water is one of the most destructive forces a photographic print can encounter — and also one of the most common. Flooded basements, burst pipes, leaking attic roofs, and decades in humid storage all leave the same calling card: brown tide marks, discoloration, and sometimes complete loss of image areas. Understanding what water actually does to photographic paper helps you decide what to attempt physically and what to hand off to digital restoration.
 

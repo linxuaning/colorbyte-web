@@ -2,7 +2,7 @@
 title: "How to Fix Old Photos with Red Eye (and Restore Everything Else Too)"
 description: "Red-eye in old print photos is one problem among many — here is how AI tools handle red-eye correction alongside the scratches, fading, and grain that old photos accumulate over decades."
 publishedAt: "2026-05-08"
-updatedAt: "2026-05-08"
+updatedAt: "2026-06-20"
 author: "Maya Chen"
 authorRole: "Photo Restoration Specialist"
 authorBio: "Maya has spent 8 years helping families recover damaged and faded photographs using the latest AI restoration technology."
@@ -23,6 +23,8 @@ faq:
   - question: "Can red-eye be fixed in group photos where some people are affected and others are not?"
     answer: "Yes. GFPGAN and similar face reconstruction models process each detected face region independently within a single image. In a group photo where two of six people have red-eye and the others have natural eye color, the model applies face reconstruction to all detected faces but only produces visible correction in the regions where damage actually exists. The faces with natural eye color do not get artificially altered — the model's reference set includes natural eye coloring, so it recovers that rather than replacing it. In practice, group photos from the flash photography era often show a gradient of red-eye severity depending on each person's distance from the flash and the angle of their gaze relative to the lens, and AI correction handles this variability naturally without requiring manual selection of affected faces."
 ---
+
+> **TL;DR — How to fix red-eye in old photos:** Red-eye in old flash photos happens when flash light reflects off the retina through a dilated pupil — common with 1970s–1990s consumer cameras that had no pre-flash. To fix it, scan the print at 600–1200 DPI, then run AI restoration, which corrects red-eye as part of face reconstruction rather than a crude red-pixel swap. ArtImageHub's [Old Photo Restoration](/old-photo-restoration) uses GFPGAN to rebuild the eye region with a natural pupil and iris tone, alongside Real-ESRGAN upscaling and NAFNet denoising, typically in 30–90 seconds for a one-time $4.99 with no subscription. Because red-eye is rarely the only problem on a decades-old print — fading, grain, and scratches usually come with it — a single full restoration pass fixes everything at once and beats a standalone red-eye tool.
 
 Red-eye in old photos is one of the most immediately recognizable signs of the flash photography era — birthday parties, holiday gatherings, and indoor events from the 1970s through the 1990s are full of photos where every face in the room looks like it belongs in a horror film. The good news is that AI restoration handles red-eye effectively. The better news is that red-eye is rarely the only thing wrong with these photos, and modern AI tools correct it as part of a comprehensive restoration that also addresses everything else that three or four decades of aging has done to the print.
 
