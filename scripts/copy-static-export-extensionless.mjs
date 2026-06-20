@@ -1,5 +1,6 @@
 import { copyFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { generateRssFeed } from "./generate-rss.mjs";
 
 const outDir = path.resolve("out");
 const baseUrl = "https://artimagehub.com";
@@ -219,3 +220,7 @@ await Promise.all(
     }
   }),
 );
+
+// RSS feed (out/feed.xml) — generated here because the live Render buildCommand
+// runs THIS script directly and never invokes build-static-export.mjs.
+generateRssFeed();

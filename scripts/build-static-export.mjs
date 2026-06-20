@@ -15,7 +15,7 @@
 // /api/payment/dodo-create-checkout route has no runtime effect.
 
 import { execSync } from "node:child_process";
-import { renameSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { renameSync, existsSync, mkdirSync, rmSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
@@ -65,27 +65,10 @@ let failed = false;
 try {
   relocateOut();
   run("npx next build");
+  // copy-static-export-extensionless.mjs also generates out/feed.xml (RSS), so
+  // both this path and the live Render buildCommand (which runs that script
+  // directly) produce the feed.
   run("node scripts/copy-static-export-extensionless.mjs");
-  // DIAGNOSTIC (T167 feed.xml 404): Render retains no build logs, so capture
-  // generate-rss's full stdout/stderr into the published out/ dir (proven to
-  // publish — sitemap.xml lands here) as feed-build.log. Do NOT fail the build,
-  // so the artifact + feed-debug.json always publish and can be curl'd.
-  try {
-    const rssOut = execSync("node scripts/generate-rss.mjs 2>&1", {
-      encoding: "utf8",
-      env: { ...process.env, NEXT_OUTPUT_EXPORT: "1", NEXT_TELEMETRY_DISABLED: "1" },
-    });
-    console.log(rssOut);
-    writeFileSync(path.join(ROOT, "out", "feed-build.log"), rssOut, "utf8");
-  } catch (e) {
-    const captured = `${e.stdout || ""}${e.stderr || ""}\n[exit] ${e.message || e}`;
-    console.error(captured);
-    try {
-      writeFileSync(path.join(ROOT, "out", "feed-build.log"), captured, "utf8");
-    } catch (writeErr) {
-      console.error("[rss] could not write feed-build.log:", writeErr?.message || writeErr);
-    }
-  }
   console.log("\n✓ static export complete -> ./out");
 } catch (err) {
   failed = true;
