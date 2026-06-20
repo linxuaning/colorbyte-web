@@ -26,12 +26,18 @@ const lora = Lora({
   display: "swap",
 });
 
+// Build-time freshness signal for AI search engines (Perplexity / Google AI
+// reward a dateModified). Evaluated once at static-export build, so it reflects
+// the actual deploy date and auto-refreshes on every ship — no manual bumping.
+const lastModifiedISO = new Date().toISOString().split("T")[0];
+
 // Root-level structured data for Google Knowledge Panel + Sitelinks
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "ArtImageHub",
   url: "https://artimagehub.com",
+  dateModified: lastModifiedISO,
   description:
     "AI-powered photo restoration, enhancement, and colorization. One-time $4.99 payment unlocks upload, AI processing, and HD download. Results in 30–90 seconds.",
   potentialAction: {

@@ -137,6 +137,8 @@ export default function HomeView({ content }: { content: HomePageContent }) {
     "@type": "WebSite",
     name: "ArtImageHub",
     url: "https://artimagehub.com",
+    // Build-time freshness signal — auto-refreshes each static-export deploy.
+    dateModified: new Date().toISOString().split("T")[0],
     potentialAction: {
       "@type": "SearchAction",
       target: {
