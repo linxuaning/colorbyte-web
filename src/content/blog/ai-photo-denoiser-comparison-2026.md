@@ -25,6 +25,8 @@ faq:
 
 Noise reduction used to mean dragging a single luminance slider and hoping for the best. By 2026, AI-powered denoising has matured into a crowded, genuinely excellent category — and the differences between tools have become more about *workflow fit* than raw quality gaps. This comparison covers the four most-discussed AI denoisers this year: **Topaz DeNoise AI**, **DxO PureRAW**, **Adobe Lightroom AI Denoise**, and **ArtImageHub's NAFNet-powered Photo Denoiser**.
 
+One quick caveat before the tools: if the photo you're cleaning up is an old or scanned print, noise is usually only part of the problem — grain tends to arrive alongside fading, scratches, and color loss. In that case a dedicated [old photo restoration pass](/old-photo-restoration) fixes the noise *and* the rest of the damage in a single step, which is often a better fit than a standalone denoiser. For modern high-ISO or JPEG noise on otherwise clean images, the tools below are the right call.
+
 ## How Were These Tools Tested?
 
 I evaluated each tool across three input categories: RAW files from a full-frame mirrorless camera at ISO 3200, 12800, and 51200; JPEG exports from the same camera at equivalent ISOs; and smartphone JPEG photos from an iPhone 15 Pro. All outputs were compared at 100% on a calibrated monitor, then exported and examined as prints at A4 size.
