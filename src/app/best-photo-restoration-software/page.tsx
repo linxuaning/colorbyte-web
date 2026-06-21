@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const lastUpdatedDisplay = 'Last updated: June 13, 2026';
-const dateModified = '2026-06-13';
+const dateModified = '2026-06-21';
 
 export const metadata: Metadata = {
   title: 'Best Photo Restoration Software 2026 — No Subscription Picks',
@@ -182,6 +182,22 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, most modern photo restoration software includes AI colorization. ArtImageHub, Remini, VanceAI, and MyHeritage all offer colorization. Results vary: well-lit portraits colorize accurately, while indoor/low-light photos may have less accurate colors. Colorization is best used for display purposes, not historical accuracy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cheapest photo restoration software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a one-off project, ArtImageHub is among the cheapest options: a single $4.99 payment unlocks upload, AI processing, and original-quality download, with no subscription. Over a year that is far less than subscription tools — Remini is $119.88/year and VanceAI $238.80/year — so for a finite family-photo project the one-time $4.99 path is the lowest total cost. Free tools like GIMP exist but require manual editing skill rather than automatic AI restoration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is ArtImageHub worth it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most people restoring old family photos, ArtImageHub is worth it: $4.99 once unlocks AI restoration — face detail via GFPGAN, up to 4x upscaling via Real-ESRGAN, and denoising via NAFNet — typically finishing in 30-90 seconds, with no subscription. It is the right fit when you have a finite set of photos and want automatic results without learning Photoshop or paying a monthly fee. It is less suited to users who need ongoing professional-volume editing, where a subscription tool may be a better match."
       }
     }
   ]
@@ -1055,6 +1071,26 @@ export default function BestPhotoRestorationSoftwarePage() {
                 </summary>
                 <p className="mt-4 text-stone-700 leading-relaxed">
                   Yes, most modern photo restoration software includes AI colorization. <Link href="/" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link>, Remini, VanceAI, and MyHeritage all offer colorization. Results vary: well-lit portraits colorize accurately, while indoor/low-light photos may have less accurate colors. Colorization is best used for display purposes, not historical accuracy.
+                </p>
+              </details>
+
+              <details className="bg-white rounded-lg shadow-md p-6 border border-stone-200 group">
+                <summary className="font-bold text-stone-900 cursor-pointer flex items-center justify-between">
+                  What is the cheapest photo restoration software?
+                  <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="mt-4 text-stone-700 leading-relaxed">
+                  For a one-off project, <Link href="/old-photo-restoration" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is among the cheapest options: a single $4.99 payment unlocks upload, AI processing, and original-quality download, with no subscription. Over a year that is far less than subscription tools — Remini is $119.88/year and VanceAI $238.80/year — so for a finite family-photo project the one-time $4.99 path is the lowest total cost. Free tools like GIMP exist but require manual editing skill rather than automatic AI restoration.
+                </p>
+              </details>
+
+              <details className="bg-white rounded-lg shadow-md p-6 border border-stone-200 group">
+                <summary className="font-bold text-stone-900 cursor-pointer flex items-center justify-between">
+                  Is ArtImageHub worth it?
+                  <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="mt-4 text-stone-700 leading-relaxed">
+                  For most people restoring old family photos, <Link href="/old-photo-restoration" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is worth it: $4.99 once unlocks AI restoration — face detail via GFPGAN, up to 4&times; upscaling via Real-ESRGAN, and denoising via NAFNet — typically finishing in 30&ndash;90 seconds, with no subscription. It is the right fit when you have a finite set of photos and want automatic results without learning Photoshop or paying a monthly fee. It is less suited to users who need ongoing professional-volume editing, where a subscription tool may be a better match.
                 </p>
               </details>
             </div>

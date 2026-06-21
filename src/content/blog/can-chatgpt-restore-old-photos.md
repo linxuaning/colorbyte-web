@@ -2,7 +2,7 @@
 title: "Can ChatGPT Restore Old Photos? (Honest Answer + What Actually Works)"
 description: "Can ChatGPT fix old, faded, or damaged family photos? Honest answer: no — and here's why. Plus what AI actually does restore old photographs in 2026."
 publishedAt: "2026-04-14"
-updatedAt: "2026-05-04"
+updatedAt: "2026-06-21"
 author: "Thomas Hale"
 authorRole: "AI Tools Researcher"
 authorBio: "Thomas writes about practical AI applications for everyday users — cutting through the hype to explain what tools actually do what they claim."
@@ -22,6 +22,10 @@ faq:
     answer: "AI restoration: 30-90 seconds per photo. Manual workflow: 30 min to several hours per photo depending on damage and skill. Professional retoucher: 3-7 days turnaround. For finite family-history projects (50-300 photos), AI is the only path that completes in reasonable time."
   - question: "When should I seek professional conservation?"
     answer: "For irreplaceable historical artifacts (museum-grade items, daguerreotypes, photos with verified monetary value above ~$500), professional conservation is recommended. For most family photos with typical age-related damage, AI restoration produces results equivalent to or better than $150-300 professional retouching at a fraction of the cost."
+  - question: "What is the cheapest way to restore old photos if ChatGPT can't?"
+    answer: "Since ChatGPT cannot reliably restore photographs, the cheapest practical path is a dedicated AI restoration tool. ArtImageHub charges $4.99 once to unlock upload, AI processing, and original-quality download — with no subscription. That is far cheaper over time than subscription apps like Remini ($119.88/year) or professional retouching ($50-300 per photo), and unlike ChatGPT it actually performs the restoration: GFPGAN for face detail, Real-ESRGAN for upscaling, and NAFNet for denoising, typically in 30-90 seconds per photo."
+  - question: "Is there a photo restoration tool without a subscription?"
+    answer: "Yes. While many AI photo apps lock restoration behind a monthly subscription, ArtImageHub uses a one-time $4.99 unlock with no recurring charge — useful when you have a finite set of old photos to fix rather than an ongoing need. You upload, the AI processes the image (face detail via GFPGAN, upscaling via Real-ESRGAN, denoising via NAFNet) in about 30-90 seconds, and you download the original-quality result."
 ---
 
 > **Editorial trust notice**: This guide is published by [ArtImageHub](/about), an AI photo restoration service charging $4.99 one-time. Technical claims rest on peer-reviewed research: face restoration via [GFPGAN](https://arxiv.org/abs/2101.04061) (Wang et al., Tencent ARC Lab 2021); upscaling via [Real-ESRGAN](https://arxiv.org/abs/2107.10833) (Wang et al. 2021).
