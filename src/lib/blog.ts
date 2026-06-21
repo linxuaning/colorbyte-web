@@ -15,6 +15,8 @@ const EMERGENCY_STATIC_POST_LIMIT = 730;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
+  // T171 #3: new decade-sibling page (1950s-family exists; 1960s-family was the gap).
+  "colorize-1960s-family-photos",
   "best-photo-enhancement-apps-2026",
   "best-free-photo-restoration-apps",
   "can-gemini-restore-old-photos",
