@@ -217,8 +217,9 @@ export default function DenoiseClient() {
             });
 
             if (!res.ok) {
-              const data = await res.json().catch(() => null);
-              throw new Error(data?.detail || `Upload failed (${res.status})`);
+              // T174: drain body but never surface backend detail / HTTP code.
+              await res.json().catch(() => null);
+              throw new Error("Upload failed");
             }
 
             const data = await res.json();
@@ -235,7 +236,7 @@ export default function DenoiseClient() {
         }
         if (lastError) throw lastError;
       } catch (err: unknown) {
-        setErrorMsg(err instanceof Error ? err.message : "Upload failed");
+        setErrorMsg("Upload failed"); // T174: never show raw err.message
         setStage("error");
       }
     },
@@ -279,7 +280,8 @@ export default function DenoiseClient() {
             break;
           }
           if (data.status === "failed") {
-            setErrorMsg(data.error || "Denoising failed. Please try again.");
+            console.warn("[denoise] task failed", { error: data.error });
+            setErrorMsg("Denoising failed. Please try again.");
             setStage("error");
             break;
           }

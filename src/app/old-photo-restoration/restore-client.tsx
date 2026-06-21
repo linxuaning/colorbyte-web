@@ -484,8 +484,9 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             clearTimeout(timeoutId);
 
             if (!res.ok) {
-              const data = await res.json().catch(() => null);
-              throw new Error(data?.detail || `${t.errorUploadFailed} (${res.status})`);
+              // T174: drain the body but never surface backend detail / HTTP code.
+              await res.json().catch(() => null);
+              throw new Error(t.errorUploadFailed);
             }
 
             const data = await res.json();
@@ -504,12 +505,16 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
               lastError = new Error(t.errorUploadTimeout);
               break; // Don't retry on timeout
             }
-            lastError = err instanceof Error ? err : new Error(t.errorUploadFailed);
+            // T174: never carry a raw network/exception message into the UI.
+            lastError = new Error(t.errorUploadFailed);
           }
         }
 
         if (lastError) throw lastError;
       } catch (err: unknown) {
+        // T174: `err` here is always the friendly Error thrown above
+        // (t.errorUploadTimeout / t.errorUploadFailed) — raw network/exception
+        // text is never carried into lastError, so this never shows raw to users.
         setErrorMsg(err instanceof Error ? err.message : t.errorUploadFailed);
         setStage("error");
       }
@@ -555,13 +560,15 @@ export default function RestoreClient({ landingPage }: RestoreClientProps) {
             break;
           }
           if (data.status === "failed") {
-            const details = [
-              `Task: ${taskId}`,
-              data.error ? `Error: ${data.error}` : null,
-              data.provider_used ? `Provider: ${data.provider_used}` : null,
-              data.provider_backend ? `Backend: ${data.provider_backend}` : null,
-            ].filter(Boolean);
-            setErrorMsg(details.join(" · "));
+            // T174: never render backend error text / provider internals to the
+            // user. Keep diagnostics in the console only; show safe copy.
+            console.warn("[restore] task failed", {
+              taskId,
+              error: data.error,
+              provider: data.provider_used,
+              backend: data.provider_backend,
+            });
+            setErrorMsg(t.errorProcessingFailed);
             setIsHighUsageError(true);
             setStage("error");
             break;
