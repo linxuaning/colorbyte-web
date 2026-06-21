@@ -203,8 +203,9 @@ export default function JpegClient() {
           try {
             const res = await fetch(`${API_BASE}/api/upload`, { method: "POST", body: form });
             if (!res.ok) {
-              const data = await res.json().catch(() => null);
-              throw new Error(data?.detail || `Upload failed (${res.status})`);
+              // T174: drain body but never surface backend detail / HTTP code.
+              await res.json().catch(() => null);
+              throw new Error("Upload failed");
             }
             const data = await res.json();
             setTaskId(data.task_id);
@@ -220,7 +221,7 @@ export default function JpegClient() {
         }
         if (lastError) throw lastError;
       } catch (err: unknown) {
-        setErrorMsg(err instanceof Error ? err.message : "Upload failed");
+        setErrorMsg("Upload failed"); // T174: never show raw err.message
         setStage("error");
       }
     },
@@ -262,7 +263,8 @@ export default function JpegClient() {
             break;
           }
           if (data.status === "failed") {
-            setErrorMsg(data.error || "Processing failed. Please try again.");
+            console.warn("[jpeg] task failed", { error: data.error });
+            setErrorMsg("Processing failed. Please try again.");
             setStage("error");
             break;
           }

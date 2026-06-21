@@ -235,8 +235,9 @@ export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}
             });
 
             if (!res.ok) {
-              const data = await res.json().catch(() => null);
-              throw new Error(data?.detail || `${t.errorUploadFailed} (${res.status})`);
+              // T174: drain body but never surface backend detail / HTTP code.
+              await res.json().catch(() => null);
+              throw new Error(t.errorUploadFailed);
             }
 
             const data = await res.json();
@@ -257,7 +258,7 @@ export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}
 
         if (lastError) throw lastError;
       } catch (err: unknown) {
-        setErrorMsg(err instanceof Error ? err.message : t.errorUploadFailed);
+        setErrorMsg(t.errorUploadFailed); // T174: never show raw err.message
         setStage("error");
       }
     },
@@ -302,7 +303,8 @@ export default function ColorizeClient({ landingPage }: ColorizeClientProps = {}
             break;
           }
           if (data.status === "failed") {
-            setErrorMsg(data.error || t.errorProcessingFailed);
+            console.warn("[colorize] task failed", { error: data.error });
+            setErrorMsg(t.errorProcessingFailed);
             setStage("error");
             break;
           }
