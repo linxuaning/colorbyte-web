@@ -11,12 +11,56 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 730;
+const EMERGENCY_STATIC_POST_LIMIT = 770;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
   // T171 #3: new decade-sibling page (1950s-family exists; 1960s-family was the gap).
   "colorize-1960s-family-photos",
+  // Quality batch 2026-06-21 (additive; cap 730->770, zero unpin/displacement).
+  // Selected from unpinned pool passing hard gates (>=900w/>=5 H2/meta/buyer-intent);
+  // near-dup (H2-Jaccard>=0.5) clusters capped at 4; URL-pattern soft-cap 10 so no
+  // single pattern floods the batch; 15 distinct how-to-restore-photos-from-* queued
+  // for the next batch. Audit table: docs/quality-batch-2026-06-21.md.
+  "how-to-restore-old-photos-from-germany",
+  "how-to-restore-old-photos-from-india",
+  "how-to-restore-old-photos-from-mexico",
+  "how-to-restore-old-photos-from-the-philippines",
+  "how-to-restore-old-photos-from-contact-sheets",
+  "how-to-restore-old-photos-from-slides",
+  "how-to-restore-old-photos-from-microfilm",
+  "how-to-restore-old-photos-with-water-stains",
+  "how-to-restore-old-photos-without-photoshop-skills",
+  "how-to-restore-photos-from-the-civil-war-era",
+  "how-to-restore-photos-from-the-edwardian-era",
+  "how-to-restore-photos-from-floods",
+  "how-to-restore-photos-from-fires",
+  "how-to-restore-photos-from-self-developing-cameras",
+  "how-to-restore-photos-for-a-documentary",
+  "how-to-restore-photos-from-old-film-canisters",
+  "how-to-restore-photos-from-house-fires",
+  "how-to-restore-photos-from-damaged-smartphones",
+  "how-to-restore-photos-from-icloud",
+  "how-to-restore-photos-from-google-drive",
+  "how-to-restore-photos-for-veterans-tribute",
+  "how-to-restore-photos-for-immigration-family-history",
+  "how-to-restore-photos-for-family-reunion",
+  "how-to-restore-photos-for-veterans-day",
+  "artimagehub-vs-imageupscaler",
+  "artimagehub-vs-lightroom-ai-denoise",
+  "artimagehub-vs-canva",
+  "artimagehub-vs-restore-photos",
+  "artimagehub-vs-upscayl",
+  "artimagehub-vs-adobe-photoshop-neural-filters",
+  "artimagehub-vs-bigjpg",
+  "artimagehub-vs-photoroom-2026",
+  "how-to-colorize-photos-from-the-1939-worlds-fair",
+  "artimagehub-vs-luminar-ai",
+  "how-to-colorize-photos-from-the-cold-war-era",
+  "how-to-colorize-photos-from-the-dust-bowl-era",
+  "how-to-colorize-photos-from-the-vietnam-war",
+  "artimagehub-vs-pixelup",
+  "how-to-colorize-photos-from-world-war-one",
   "best-photo-enhancement-apps-2026",
   "best-free-photo-restoration-apps",
   "can-gemini-restore-old-photos",
