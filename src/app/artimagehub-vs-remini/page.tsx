@@ -300,6 +300,10 @@ const config: BuyerGuideConfig = {
       question: 'How do I switch from Remini to ArtImageHub without losing my work?',
       answer: 'There is no migration step — your Remini photos are saved to your phone\'s camera roll, and you can upload them directly to ArtImageHub the same way you would upload any photo. If you have unrestored originals, run them through ArtImageHub instead of Remini going forward; if you have already-Remini-enhanced photos and want whole-image repair, you can run them through ArtImageHub a second time, though we recommend starting from the original scan when possible because each AI pass introduces small artifacts. Cancel your Remini subscription from the iOS or Android subscription settings (not from inside the Remini app) to stop future charges. ArtImageHub does not require you to uninstall anything — you can keep Remini for selfie cleanup if you want and use ArtImageHub for old photos.',
     },
+    {
+      question: 'Is there a free Remini alternative for restoring old photos?',
+      answer: 'If you mean completely free with no payment at all, the honest option is an open-source editor like GIMP, which can repair old photos but requires manual masking and retouching skill plus a significant time investment. Most AI-based Remini alternatives — including Remini itself — are paid once you want a full-resolution, watermark-free result. ArtImageHub sits in between: you can upload and preview the AI restoration for free to see the result before paying anything, then unlock the full-resolution download with no watermark for a flat $4.99 one-time payment and no subscription. So the closest thing to a free Remini alternative is ArtImageHub\'s free preview, which lets you judge the result at zero cost first, while a truly $0 finished file means hand-editing in GIMP.',
+    },
   ],
 
   finalCtaHeading: 'Ready to Restore Your Family Photos?',
