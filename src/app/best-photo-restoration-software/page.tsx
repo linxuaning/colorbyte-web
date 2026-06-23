@@ -199,6 +199,14 @@ const faqSchema = {
         "@type": "Answer",
         "text": "For most people restoring old family photos, ArtImageHub is worth it: $4.99 once unlocks AI restoration — face detail via GFPGAN, up to 4x upscaling via Real-ESRGAN, and denoising via NAFNet — typically finishing in 30-90 seconds, with no subscription. It is the right fit when you have a finite set of photos and want automatic results without learning Photoshop or paying a monthly fee. It is less suited to users who need ongoing professional-volume editing, where a subscription tool may be a better match."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there photo restoration software without a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ArtImageHub is photo restoration software with no subscription — a single $4.99 payment unlocks upload, AI restoration, and the original-quality download, tied to your email so you can return later without any recurring plan. Most AI-based alternatives like Remini and VanceAI run on monthly subscriptions instead. The only fully subscription-free $0 route is open-source software such as GIMP, which works but requires manual editing skill rather than automatic AI restoration."
+      }
     }
   ]
 };
@@ -1091,6 +1099,16 @@ export default function BestPhotoRestorationSoftwarePage() {
                 </summary>
                 <p className="mt-4 text-stone-700 leading-relaxed">
                   For most people restoring old family photos, <Link href="/old-photo-restoration" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is worth it: $4.99 once unlocks AI restoration — face detail via GFPGAN, up to 4&times; upscaling via Real-ESRGAN, and denoising via NAFNet — typically finishing in 30&ndash;90 seconds, with no subscription. It is the right fit when you have a finite set of photos and want automatic results without learning Photoshop or paying a monthly fee. It is less suited to users who need ongoing professional-volume editing, where a subscription tool may be a better match.
+                </p>
+              </details>
+
+              <details className="bg-white rounded-lg shadow-md p-6 border border-stone-200 group">
+                <summary className="font-bold text-stone-900 cursor-pointer flex items-center justify-between">
+                  Is there photo restoration software without a subscription?
+                  <span className="text-stone-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <p className="mt-4 text-stone-700 leading-relaxed">
+                  Yes. <Link href="/old-photo-restoration" className="text-amber-700 hover:text-amber-800 font-medium underline">ArtImageHub</Link> is photo restoration software with no subscription — a single $4.99 payment unlocks upload, AI restoration, and the original-quality download, tied to your email so you can return later without any recurring plan. Most AI-based alternatives like Remini and VanceAI run on monthly subscriptions instead. The only fully subscription-free $0 route is open-source software such as GIMP, which works but requires manual editing skill rather than automatic AI restoration.
                 </p>
               </details>
             </div>
