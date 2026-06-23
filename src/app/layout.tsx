@@ -14,14 +14,18 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["700", "800", "900"],
-  style: ["normal", "italic"],
+  // Playfair italic has zero usages site-wide (audited) — dropping it removes
+  // one auto-preloaded woff2 from every page's critical path. Headings stay.
+  style: ["normal"],
   display: "swap",
 });
 
 const lora = Lora({
   variable: "--font-lora",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  // Lora weight 700 has zero usages site-wide (audited); 400/500/600 + italic
+  // (incl. the above-fold hero italic) are kept — body text is the text-LCP path.
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
 });
