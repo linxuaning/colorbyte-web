@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 770;
+const EMERGENCY_STATIC_POST_LIMIT = 778;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -61,6 +61,18 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "how-to-colorize-photos-from-the-vietnam-war",
   "artimagehub-vs-pixelup",
   "how-to-colorize-photos-from-world-war-one",
+  // T184 2026-06-23 (additive; cap 770->778, zero unpin/displacement).
+  // Ranked-but-unshipped: these 8 pages have GSC impressions (existing demand)
+  // but were 404 on production (outside the static-export cap). All have source
+  // .md files; pinning ships them. High-intent comparison/explainer cluster.
+  "artimagehub-vs-vanceai",
+  "artimagehub-vs-remini-app",
+  "how-does-ai-photo-restoration-work",
+  "ai-photo-restoration-for-beginners",
+  "ai-photo-restoration-for-church-directories",
+  "how-accurate-is-ai-photo-colorization",
+  "how-to-remove-background-vintage-photos",
+  "how-to-restore-photos-from-old-negatives",
   "best-photo-enhancement-apps-2026",
   "best-free-photo-restoration-apps",
   "can-gemini-restore-old-photos",
