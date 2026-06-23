@@ -261,6 +261,10 @@ function Footer() {
                   src="https://www.toolpilot.ai/cdn/shop/files/f-w_690x151_crop_center.png?v=1695883028"
                   alt="Featured on ToolPilot"
                   className="h-7 w-auto"
+                  loading="lazy"
+                  decoding="async"
+                  width={690}
+                  height={151}
                 />
               </a>
             </div>
