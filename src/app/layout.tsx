@@ -74,6 +74,8 @@ const organizationSchema = {
   sameAs: [
     "https://www.saashub.com/artimagehub",
     "https://toolwise.ai/tools/artimagehub",
+    // Verified-live (200) merged listing; README mentions ArtImageHub.
+    "https://github.com/Rvelamen/Awesome-AI-Tools",
   ],
   contactPoint: {
     "@type": "ContactPoint",
