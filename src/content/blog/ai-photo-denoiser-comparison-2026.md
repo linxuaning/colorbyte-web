@@ -19,6 +19,8 @@ faq:
     answer: "Lightroom AI Denoise and Topaz DeNoise AI are closely matched on RAW files, with most side-by-side comparisons showing Topaz slightly ahead on maximum detail recovery at extreme ISO values (25,600 and above). For the vast majority of photographers shooting at ISO 800 to 6400, the quality gap is almost imperceptible in a final print or screen export. The bigger differentiator is workflow. Lightroom AI Denoise sits inside your existing catalog workflow with one click, while Topaz requires an export step. Topaz, however, offers more granular controls and works as a plugin across multiple host applications. Topaz also wins for JPEG and TIFF inputs, where Lightroom AI Denoise is not available — it processes only RAW files. If you're outside the Adobe ecosystem entirely, Topaz or a web-based tool like ArtImageHub's Photo Denoiser are your strongest options."
   - question: "What is NAFNet and why does ArtImageHub use it for denoising?"
     answer: "NAFNet stands for Nonlinear Activation Free Network, a neural architecture developed by researchers at Megvii Technology and published in 2022. It achieved state-of-the-art results on the SIDD benchmark (a real-world smartphone noise dataset) while being significantly faster than prior architectures. ArtImageHub selected NAFNet for its Photo Denoiser because it excels precisely on the type of images most users upload: JPEG exports from smartphone cameras and consumer lenses, not RAW files from studio cameras. NAFNet's design strips away unnecessary complexity, making it efficient enough to run as a web service without sacrificing output quality. For users who need quick, high-quality noise reduction on JPEG photos without downloading desktop software or paying for annual subscriptions, NAFNet's performance profile is an excellent match. You can try it directly at ArtImageHub's Photo Denoiser for a one-time $4.99 fee with no recurring charges."
+  - question: "How do I remove noise and grain from old scanned photos?"
+    answer: "Scan the print at 600 DPI or higher, then run it through an AI restorer tuned for processed images (JPEGs and scans) rather than RAW sensor files. ArtImageHub's NAFNet denoiser is built for exactly this case: it reduces film grain, paper texture, and scanner noise, while a paired GFPGAN face step keeps faces from going waxy — a common failure when a RAW-focused denoiser over-smooths a scanned portrait. Preview the cleaned result against the original at 100% before downloading to confirm grain is gone without skin or texture turning plastic. For a finite set of scanned family photos, ArtImageHub covers denoising, upscaling, and color repair in one pass for a $4.99 one-time payment with no subscription."
 ---
 
 > **ArtImageHub tools referenced in this post:** [Photo Denoiser](/photo-denoiser) · [Photo Deblurrer](/photo-deblurrer) · [JPEG Artifact Remover](/jpeg-artifact-remover) · [Photo Enhancer](/photo-enhancer)
@@ -71,6 +73,19 @@ The pricing gap is significant. DxO and Topaz are annual subscriptions aimed at 
 ## Does Combining AI Denoising with Upscaling Help?
 
 Often, yes. After denoising, running the result through an upscaling pass with a tool like the [Photo Enhancer](/photo-enhancer) can recover perceived sharpness lost during aggressive noise reduction. This is especially effective on smartphone photos intended for large-format printing. The key is order of operations: denoise first, then upscale. Running it in reverse typically bakes noise artifacts into the upscaled result.
+
+## How to Remove Noise and Grain from Old Scanned Photos
+
+Old scanned photos carry a different kind of noise than high-ISO digital captures. When you scan a decades-old print, you pick up film grain baked into the original emulsion, paper texture, dust, and scanner sensor noise all at once. The RAW-oriented denoisers above (Topaz, DxO) are tuned for digital sensor noise and can over-smooth that organic grain into a waxy, artificial look — especially on faces. For an old scanned photo, the goal is to reduce noise and grain while preserving real detail like facial features, fabric texture, and any text.
+
+A simple workflow that works for most scanned prints:
+
+1. **Scan at high resolution** (600 DPI or higher) so the denoiser has real detail to work with rather than an already-soft image.
+2. **Use a JPEG-oriented AI restorer**, not a RAW denoiser. ArtImageHub's NAFNet denoising is tuned for already-processed images like scans and phone photos rather than RAW sensor data.
+3. **Denoise and reconstruct together.** On a scanned portrait, denoising alone can flatten the face, so a pipeline that pairs NAFNet denoising with GFPGAN face reconstruction keeps facial detail natural while clearing grain.
+4. **Preview at 100% before you commit** — compare the cleaned result against the original scan to confirm grain is gone without skin or texture turning plastic.
+
+For a one-off batch of scanned family photos, ArtImageHub handles this end to end for a $4.99 one-time unlock with no subscription, and the denoising step runs alongside upscaling and color repair in the same pass.
 
 ## Final Verdict
 
