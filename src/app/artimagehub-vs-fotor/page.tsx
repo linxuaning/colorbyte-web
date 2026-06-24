@@ -265,6 +265,7 @@ const config: BuyerGuideConfig = {
   beforeAfterCaption2: 'Restored with ArtImageHub — face detail, dress fabric, and color recovered',
 
   faqHeading: 'Frequently Asked Questions',
+  alternativeCompetitor: 'Fotor',
   faqItems: [
     {
       question: 'What is the best Fotor alternative for old photo restoration?',
@@ -301,6 +302,22 @@ const config: BuyerGuideConfig = {
     {
       question: 'Does Fotor\'s restoration work on very old photos like 1920s or earlier?',
       answer: 'Fotor\'s general-purpose AI enhancer handles 1920s-era photos with mixed results. Lightly damaged early photos often look acceptable after Fotor processing. Heavily damaged or very early photos (1900s tintypes, daguerreotypes, severely chemical-damaged prints) typically lose detail in Fotor because the AI was not specifically trained on these damage patterns. ArtImageHub\'s specialized pipeline includes models trained on pre-1940 photographs and handles silver tarnish, chemical fading, paper texture, and the kind of degradation specific to early photographic processes. For users restoring a family archive that spans multiple eras (1900s-1990s), ArtImageHub\'s broader era coverage is meaningful. For users restoring only modern-ish photos (1980s+), the difference is smaller. Test your hardest, oldest photo through both tools\' previews to see which produces better results on your specific content.',
+    },
+    {
+      question: 'Is there a free alternative to Fotor for restoring old photos?',
+      answer: 'ArtImageHub lets you upload an old photo and preview the fully restored result for free — you only pay $4.99 to download the final high-resolution image. There is no subscription and no account required to try it, so you can see the restoration quality before deciding whether to download.',
+    },
+    {
+      question: 'What is the cheapest Fotor alternative without a subscription?',
+      answer: 'ArtImageHub uses one-time pricing instead of a monthly plan: $4.99 per restored photo download, with a free preview first. For someone restoring a handful of family photos rather than editing professionally every month, a pay-per-photo alternative is usually cheaper than an ongoing subscription.',
+    },
+    {
+      question: 'Is there a Fotor alternative without a watermark?',
+      answer: 'Yes. ArtImageHub does not place a watermark on the restored image you download. You preview the result for free and the $4.99 download is the clean, full-resolution restored photo.',
+    },
+    {
+      question: 'What is the best Fotor alternative for damaged or old photos?',
+      answer: 'The best alternative depends on what you need: ArtImageHub focuses specifically on old-photo damage — scratches, tears, creases, water stains, fading, blur, and faded faces — with a one-time price and free preview, which suits one-off family photo restoration rather than ongoing professional editing.',
     },
   ],
 

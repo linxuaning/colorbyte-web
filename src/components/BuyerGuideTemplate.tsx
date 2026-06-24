@@ -108,6 +108,11 @@ export type BuyerGuideConfig = {
   beforeAfterCaption1?: string;
   beforeAfterCaption2?: string;
 
+  // Optional "[X] alternative" citable section (additive; renders before FAQ).
+  // Set to the competitor display name (e.g. "Remini") to emit the canonical
+  // alternative passage with an internal link to the restoration money page.
+  alternativeCompetitor?: string;
+
   // FAQ
   faqHeading: string;
   faqItems: FAQItem[];
@@ -665,6 +670,37 @@ export default function BuyerGuideTemplate({ config }: { config: BuyerGuideConfi
                   See More Before/After Examples →
                 </Link>
               </div>
+            </div>
+          </section>
+        )}
+
+        {/* "[X] alternative" citable section (additive) */}
+        {config.alternativeCompetitor && (
+          <section className="pb-4 px-6 bg-white" aria-labelledby="alternative-heading">
+            <div className="max-w-4xl mx-auto pt-12">
+              <h2 id="alternative-heading" className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
+                Best {config.alternativeCompetitor} Alternative for Old Photo Restoration
+              </h2>
+              <p className="text-stone-700 leading-relaxed">
+                Looking for a {config.alternativeCompetitor} alternative to restore old or damaged
+                photos? ArtImageHub is a{' '}
+                <Link
+                  href="/old-photo-restoration"
+                  className="text-amber-700 hover:text-amber-800 font-medium underline"
+                >
+                  browser-based AI photo restoration tool
+                </Link>{' '}
+                built specifically for old prints — it repairs scratches, tears, creases, water
+                stains, fading, and blur, sharpens soft faces, and can colorize black-and-white
+                photos, all in one upload. Unlike subscription-first tools, ArtImageHub uses one-time
+                pricing: you preview the restored result for free and pay $4.99 only to download the
+                full-resolution image — no monthly plan, no account required to start, and no
+                watermark on the final file. There is nothing to install; it runs in any browser on
+                phone or desktop. For people who want a fast, no-subscription way to bring a single
+                old family photo back to life without learning Photoshop, ArtImageHub is a
+                straightforward {config.alternativeCompetitor} alternative focused on restoration
+                quality over editing complexity.
+              </p>
             </div>
           </section>
         )}

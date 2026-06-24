@@ -275,6 +275,7 @@ const config: BuyerGuideConfig = {
   beforeAfterCaption2: 'Restored with ArtImageHub in 30–60 seconds — face + uniform detail recovered',
 
   faqHeading: 'Frequently Asked Questions',
+  alternativeCompetitor: 'MyHeritage',
   faqItems: [
     {
       question: 'What is the best MyHeritage photo restoration alternative?',
@@ -311,6 +312,22 @@ const config: BuyerGuideConfig = {
     {
       question: 'How do I move my MyHeritage restored photos to ArtImageHub?',
       answer: 'There is no automatic migration because the two tools store files differently — MyHeritage keeps restored photos in your account cloud, while ArtImageHub returns the restored file directly for you to download to your own storage. To migrate, log into MyHeritage and download every restored photo you want to keep to your local computer or a personal cloud (Google Photos, iCloud, Dropbox, OneDrive). Once you have local copies, you no longer need an active MyHeritage subscription to access them. From that point forward, run new restorations through ArtImageHub by uploading the original scan and unlocking the result for $4.99. If you only have MyHeritage-restored versions and want to re-restore them through ArtImageHub for a different look, you can — though we recommend starting from the original scan whenever possible because each AI pass introduces small artifacts that compound when chained.',
+    },
+    {
+      question: 'Is there a free alternative to MyHeritage for restoring old photos?',
+      answer: 'ArtImageHub lets you upload an old photo and preview the fully restored result for free — you only pay $4.99 to download the final high-resolution image. There is no subscription and no account required to try it, so you can see the restoration quality before deciding whether to download.',
+    },
+    {
+      question: 'What is the cheapest MyHeritage alternative without a subscription?',
+      answer: 'ArtImageHub uses one-time pricing instead of a monthly plan: $4.99 per restored photo download, with a free preview first. For someone restoring a handful of family photos rather than editing professionally every month, a pay-per-photo alternative is usually cheaper than an ongoing subscription.',
+    },
+    {
+      question: 'Is there a MyHeritage alternative without a watermark?',
+      answer: 'Yes. ArtImageHub does not place a watermark on the restored image you download. You preview the result for free and the $4.99 download is the clean, full-resolution restored photo.',
+    },
+    {
+      question: 'What is the best MyHeritage alternative for damaged or old photos?',
+      answer: 'The best alternative depends on what you need: ArtImageHub focuses specifically on old-photo damage — scratches, tears, creases, water stains, fading, blur, and faded faces — with a one-time price and free preview, which suits one-off family photo restoration rather than ongoing professional editing.',
     },
   ],
 
