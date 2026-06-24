@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 778;
+const EMERGENCY_STATIC_POST_LIMIT = 781;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -809,6 +809,12 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "how-to-enhance-photos-for-wikipedia",
   "how-to-enhance-photos-for-obituaries",
   "how-to-enhance-photos-for-memorial-services",
+  // T190 GEO engine B (additive; cap 778->781, zero unpin/displacement).
+  // 3 new damage-repair pages; pinned because the cap is pin-saturated so
+  // newest-dated unpinned posts would otherwise be squeezed out.
+  "repair-torn-photos",
+  "fix-faded-old-photos",
+  "fix-creased-photos",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
