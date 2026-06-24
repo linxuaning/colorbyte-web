@@ -263,6 +263,7 @@ const config: BuyerGuideConfig = {
   beforeAfterCaption2: 'ArtImageHub restored the entire photo (face + dress + corner damage) in 30–60 seconds',
 
   faqHeading: 'Frequently Asked Questions',
+  alternativeCompetitor: 'Remini',
   faqItems: [
     {
       question: 'What is the best Remini alternative for old photo restoration?',
@@ -303,6 +304,18 @@ const config: BuyerGuideConfig = {
     {
       question: 'Is there a free Remini alternative for restoring old photos?',
       answer: 'If you mean completely free with no payment at all, the honest option is an open-source editor like GIMP, which can repair old photos but requires manual masking and retouching skill plus a significant time investment. Most AI-based Remini alternatives — including Remini itself — are paid once you want a full-resolution, watermark-free result. ArtImageHub sits in between: you can upload and preview the AI restoration for free to see the result before paying anything, then unlock the full-resolution download with no watermark for a flat $4.99 one-time payment and no subscription. So the closest thing to a free Remini alternative is ArtImageHub\'s free preview, which lets you judge the result at zero cost first, while a truly $0 finished file means hand-editing in GIMP.',
+    },
+    {
+      question: 'What is the cheapest Remini alternative without a subscription?',
+      answer: 'ArtImageHub uses one-time pricing instead of a monthly plan: $4.99 per restored photo download, with a free preview first. For someone restoring a handful of family photos rather than editing professionally every month, a pay-per-photo alternative is usually cheaper than an ongoing subscription.',
+    },
+    {
+      question: 'Is there a Remini alternative without a watermark?',
+      answer: 'Yes. ArtImageHub does not place a watermark on the restored image you download. You preview the result for free and the $4.99 download is the clean, full-resolution restored photo.',
+    },
+    {
+      question: 'What is the best Remini alternative for damaged or old photos?',
+      answer: 'The best alternative depends on what you need: ArtImageHub focuses specifically on old-photo damage — scratches, tears, creases, water stains, fading, blur, and faded faces — with a one-time price and free preview, which suits one-off family photo restoration rather than ongoing professional editing.',
     },
   ],
 
