@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 781;
+const EMERGENCY_STATIC_POST_LIMIT = 828;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -815,6 +815,57 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "repair-torn-photos",
   "fix-faded-old-photos",
   "fix-creased-photos",
+  // T192 Bing-winner pin batch (additive; cap 781->828, zero unpin/displacement).
+  // Existing how-to/fix troubleshooting + free-buyer pages that pass the quality gate
+  // but were squeezed out of the static export. Bing rewards these page types (real
+  // traffic engine). 47 slugs, growth-expert per-post quality+family-cap vetted.
+  "remove-scratches-from-old-photos",
+  "how-to-fix-color-cast-in-old-photos",
+  "how-to-fix-washed-out-overexposed-old-photos",
+  "fix-hazy-cloudy-old-photos",
+  "remove-dust-spots-old-photos",
+  "remove-fingerprints-old-photographs",
+  "fix-photos-damaged-by-mold",
+  "how-to-remove-mold-from-old-photographs",
+  "remove-glue-residue-album-photos",
+  "how-to-fix-blurry-iphone-photos",
+  "how-to-remove-grain-from-scanned-photos",
+  "how-to-fix-grainy-wedding-photos",
+  "how-to-fix-grainy-night-photos",
+  "fix-grainy-photos-from-old-camcorder",
+  "photo-grain-remover",
+  "how-to-fix-blown-out-highlights-in-photos",
+  "how-to-clean-photo-before-scanning",
+  "how-to-improve-scanned-photo-quality",
+  "how-to-digitize-large-photo-collection",
+  "digitize-old-photos",
+  "restore-flood-water-damaged-photos-guide",
+  "fix-photos-from-waterlogged-smartphone",
+  "how-to-restore-photos-from-flooded-storage-unit",
+  "how-to-restore-photos-from-old-hard-drive",
+  "how-to-restore-photos-from-old-usb-drives",
+  "how-to-restore-photos-from-old-memory-cards",
+  "how-to-restore-photos-from-vhs-tapes",
+  "how-to-restore-photos-from-old-dvds-and-cds",
+  "restore-photos-from-old-flip-phone",
+  "how-to-restore-photos-from-old-scrapbooks",
+  "how-to-restore-photos-from-old-wallets-and-purses",
+  "restore-photos-from-box-of-slides",
+  "restore-photos-from-disposable-cameras",
+  "how-to-restore-photos-from-old-slides",
+  "how-to-restore-damaged-polaroid-photos",
+  "restore-damaged-baby-photos",
+  "restore-damaged-graduation-photos",
+  "restore-photos-of-deceased-parents",
+  "how-to-restore-old-yearbook-photos",
+  "how-to-give-restored-photos-as-gift",
+  "photo-book-with-restored-photos",
+  "how-to-colorize-photos-of-grandparents",
+  "how-to-colorize-military-photos",
+  "can-remini-restore-old-photos",
+  "restore-photos-free-tools-vs-paid",
+  "how-to-restore-photos-from-the-1950s",
+  "how-to-restore-photos-from-the-1980s",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
