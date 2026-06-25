@@ -91,3 +91,5 @@ Once you have your restored photos from [ArtImageHub](https://artimagehub.com), 
 **Store in acid-free sleeves.** If you want to keep the physical prints rather than just the digital files, store them in acid-free polyester sleeves in a cool, dark location. Avoid PVC album pages, which off-gas chemicals that accelerate dye decay.
 
 At $4.99 per photo at [ArtImageHub](https://artimagehub.com), restoring a full box of fifty 1950s family prints costs around $250 — a fraction of what a professional retoucher would charge, and a project you can complete in an afternoon rather than waiting months for turnaround. The AI pipeline covers Real-ESRGAN upscaling, GFPGAN face restoration, DDColor colorization, and NAFNet noise reduction in a single upload.
+
+To handle the restoration itself, upload each scanned 1950s print to the [AI photo restoration tool](/old-photo-restoration) and preview the result on your own image first.

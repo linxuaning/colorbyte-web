@@ -73,3 +73,5 @@ Each ArtImageHub tool costs $4.99 as a one-time purchase — no monthly subscrip
 ---
 
 Stop letting the technical limitations of 1990s hardware keep your family memories looking like noise. Start with the [Photo Denoiser](/photo-denoiser) and recover what the camcorder captured.
+
+For grainy still frames pulled from old tape, the [Old Photo Restoration](/old-photo-restoration) tool cleans noise while sharpening faces and detail in a single pass.

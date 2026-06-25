@@ -89,3 +89,5 @@ The general rule: denoise and deblur before enhancement. Clean pixel data gives 
 ---
 
 Blown highlights are frustrating but not always fatal. With AI-powered highlight recovery available for a one-time $4.99 payment, salvaging that overexposed shot is a matter of minutes. Try the [Photo Enhancer](/photo-enhancer) on your most challenging overexposed photos — the results may surprise you.
+
+For older prints with blown highlights, you can also [restore the photo](/old-photo-restoration) in one pass, which recovers tone alongside sharpening and noise cleanup.

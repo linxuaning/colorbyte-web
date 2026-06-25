@@ -121,3 +121,5 @@ The grain was always there. High-resolution scanning just makes it visible. This
 </ol>
 
 <p>Scanning and grain removal done right turns a box of deteriorating prints into a clean digital archive that will last longer than any physical print.</p>
+
+For aged prints and scans specifically, the [Old Photo Restoration](/old-photo-restoration) tool pairs grain removal with sharpening and fading repair in one upload.

@@ -79,3 +79,5 @@ The preview-before-payment workflow at [ArtImageHub](https://artimagehub.com) is
 ---
 
 Overexposed old photographs are not a single problem with a single solution. They are a category of photographs where the specific cause of the overexposure determines what is recoverable — and where the combination of manual tonal correction and AI detail synthesis through [ArtImageHub](https://artimagehub.com) consistently outperforms either approach used alone.
+
+To run the AI detail-synthesis step in one place, upload the overexposed print to [Old Photo Restoration](/old-photo-restoration) and preview the recovered tonal range on your own image.

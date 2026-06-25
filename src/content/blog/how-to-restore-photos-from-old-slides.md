@@ -92,3 +92,5 @@ Once you have high-quality restored versions of your slides, store them in at le
 Consider organizing by decade or occasion, and include the original unrestored scan alongside the restored version. Future AI models will likely be even better than today's, and having the unprocessed original means you can always re-run restoration on new tools without re-scanning.
 
 The 35mm slides sitting in a carousel in your parents' basement are not lost. They just need the right tools to come back to life.
+
+After scanning each slide, run it through [Old Photo Restoration](/old-photo-restoration) to remove dust and grain, correct faded color, and sharpen detail in a single pass.
