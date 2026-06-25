@@ -99,3 +99,5 @@ There are limits to what restoration achieves with recovered digital photos:
 **Intentionally deleted photos.** Deleted photos sit in unallocated sectors until something else is written there. If the card was kept with no additional writes after deletion, recovery is often possible. If it was used again, the chance decreases with every additional write.
 
 Early digital camera photos have a particular quality: they document years of family life that happened to fall in the window between film and smartphones, a period that sometimes gets overlooked precisely because it was digital and seemed like it would be accessible forever. Getting those photos off old cards is worth the effort. Getting them into a form that actually looks good on a modern screen is a separate step — and one where AI enhancement produces results that were not possible the last time most people looked at those images.
+
+After the files are recovered, [Old Photo Restoration](/old-photo-restoration) brings those early-digital photos up to modern screen quality in a single pass.

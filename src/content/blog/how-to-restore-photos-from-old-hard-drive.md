@@ -85,3 +85,5 @@ Photos with extreme problems — files corrupted enough to have visible glitches
 This workflow prioritizes the photos that matter most rather than trying to enhance every file on a drive that may contain hundreds or thousands of images. The free preview makes it easy to triage — you see the improvement before you pay for anything.
 
 The photos on that old hard drive have been waiting for years. The tools to make them worth keeping again are better now than they have ever been.
+
+Once the images are off the drive, run them through [Old Photo Restoration](/old-photo-restoration) to sharpen, denoise, and repair color before you archive them.

@@ -174,3 +174,5 @@ Lightroom AI Denoise — you're already paying for it. Use it for RAW files. For
 </ul>
 
 <p>The wedding photos? The best 50 went to print at 8×12 inches. They looked great. The couple didn't mention the grain — which is exactly the result I wanted.</p>
+
+For grain on older or scanned prints, the [Old Photo Restoration](/old-photo-restoration) tool removes noise while repairing fading and sharpening detail in one step.

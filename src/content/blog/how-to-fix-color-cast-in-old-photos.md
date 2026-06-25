@@ -101,3 +101,5 @@ Scan at 1200-2400 DPI on a dedicated slide scanner. Apply Lightroom warm white b
 Scan at 600 DPI. Upload directly to ArtImageHub. No pre-correction required. Preview and download for $4.99.
 
 The era-by-era color cast patterns are predictable, and the AI pipeline at ArtImageHub is built to handle all of them. The preview-first workflow means you evaluate the specific correction on your specific photograph before any payment — and for color correction more than any other restoration type, seeing the actual result on your actual image is the only reliable quality check.
+
+For a single-pass fix, run a color-cast print through the [Old Photo Restoration](/old-photo-restoration) tool, which corrects color alongside sharpening and noise cleanup.

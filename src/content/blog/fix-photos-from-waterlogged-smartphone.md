@@ -129,3 +129,5 @@ For photos already recovered from a past water damage event, [ArtImageHub's Phot
 ---
 
 *Recovery process and AI enhancement capabilities reflect tools available as of May 2026. Data recovery service pricing and availability varies by location.*
+
+Once the files are recovered, [restore the photo](/old-photo-restoration) to clean up the water-related staining, blur, and color shifts in a single upload.

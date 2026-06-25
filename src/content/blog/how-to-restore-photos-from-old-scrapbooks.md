@@ -102,3 +102,5 @@ The restored digital version, properly backed up, is the best guarantee that the
 ---
 
 Scrapbook photographs carry decades of family and social history, and the chemical hostility of their storage environment does not diminish their importance. AI restoration in 2026 can recover a remarkable amount of what scrapbook adhesives and acids have taken from these images, often producing results that are better than what the original photographs looked like after years of mounted storage. The workflow is accessible, the cost is manageable at $4.99 one-time per tool at [ArtImageHub](https://artimagehub.com), and the results are genuinely worth the effort.
+
+Once a scrapbook print is scanned, [Old Photo Restoration](/old-photo-restoration) repairs the adhesive and acid damage while sharpening and restoring color in one upload.

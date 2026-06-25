@@ -123,3 +123,5 @@ Stars are points of light — they look similar to noise at low magnification. A
 ---
 
 **Clean up your night photos now →** [Photo Denoiser](/photo-denoiser) — $4.99 one-time
+
+If the grainy shot is an older print rather than a recent capture, use the [AI photo restoration tool](/old-photo-restoration) instead — it is tuned for aged photographs.

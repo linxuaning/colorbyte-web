@@ -128,3 +128,5 @@ Honest expectations prevent disappointment:
 - **Matching film photograph quality**: A 35mm negative scanned at 4000 DPI contains roughly 30–50x more information than an NTSC VHS frame. AI narrows this gap but does not close it.
 
 For the moments that exist only on VHS — the birthday parties, the school plays, the holiday gatherings that were never separately photographed — [ArtImageHub](https://artimagehub.com) offers the best available path from degraded analog capture to a dignified, printable memory.
+
+For the extracted still frames, the [Old Photo Restoration](/old-photo-restoration) tool denoises and sharpens each capture so the moment is worth printing.
