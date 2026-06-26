@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 829;
+const EMERGENCY_STATIC_POST_LIMIT = 832;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -869,6 +869,12 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   // T193 Bing-gap new page (additive; cap 828->829, zero unpin/displacement).
   // "no scanner / phone capture" angle — distinct from how-to-scan-old-photos-properly.
   "scan-old-photos-without-scanner",
+  // T198 can-X Google long-tail pins (additive; cap 829->832, zero unpin/displacement).
+  // Ultra-niche zero-competition "can [AI tool] restore old photos" page type —
+  // proven to reach Google page 1 (can-claude pos ~9.5). Files already in tree.
+  "can-grok-restore-old-photos",
+  "can-meta-ai-restore-old-photos",
+  "can-perplexity-restore-old-photos",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
