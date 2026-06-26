@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 832;
+const EMERGENCY_STATIC_POST_LIMIT = 839;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -875,6 +875,15 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "can-grok-restore-old-photos",
   "can-meta-ai-restore-old-photos",
   "can-perplexity-restore-old-photos",
+  // T198 part 2 can-X write batch (additive; cap 832->839, zero unpin/displacement).
+  // 7 new ultra-niche "can [tool] restore old photos" pages (Google zero-competition long-tail).
+  "can-apple-photos-restore-old-photos",
+  "can-samsung-gallery-restore-old-photos",
+  "can-deepseek-restore-old-photos",
+  "can-snapseed-restore-old-photos",
+  "can-lightroom-restore-old-photos",
+  "can-picsart-restore-old-photos",
+  "can-canva-restore-old-photos",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
