@@ -88,7 +88,7 @@ The integration is invisible to users — upload, wait 90 seconds, download. The
 
 ## Related
 
-- [How Does AI Photo Restoration Work?](/blog/how-does-ai-photo-restoration-work) — full pipeline explainer
+- [How Does AI Photo Restoration Work?](/blog/how-ai-photo-restoration-works) — full pipeline explainer
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool ranked comparison
 - [Old Photo Restoration Before and After](/blog/old-photo-restoration-before-after) — what to expect
 - [How to Restore Black and White Photos](/blog/how-to-restore-black-and-white-photos) — practical guide

@@ -105,6 +105,6 @@ Fotos antigas frequentemente contêm rostos de familiares vivos. O reconheciment
 
 ## Conteúdo Relacionado
 
-- [Como Funciona a Restauração de Fotos com IA?](/blog/how-does-ai-photo-restoration-work) — explicação técnica
+- [Como Funciona a Restauração de Fotos com IA?](/blog/how-ai-photo-restoration-works) — explicação técnica
 - [Melhores Ferramentas de IA para Restauração de Fotos Antigas em 2026](/blog/best-ai-old-photo-restoration-tools-2026) — comparação ranqueada de 7 ferramentas
 - [Guia de Custos de Restauração de Fotos](/blog/photo-restoration-cost-guide) — visão geral de preços

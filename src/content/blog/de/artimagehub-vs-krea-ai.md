@@ -72,5 +72,5 @@ Für kreative KI-Arbeiten ist Krea wirklich innovativ. Speziell für die Restaur
 
 - [ArtImageHub vs Magnific AI](/blog/artimagehub-vs-magnific-ai) — Vergleich ähnlicher generativer Verbesserung
 - [ArtImageHub vs Leonardo AI](/blog/artimagehub-vs-leonardo-ai) — Vergleich von KI-Plattformen
-- [Wie funktioniert KI-Fotorestaurierung?](/blog/how-does-ai-photo-restoration-work) — technische Erläuterung
+- [Wie funktioniert KI-Fotorestaurierung?](/blog/how-ai-photo-restoration-works) — technische Erläuterung
 - [Die besten KI-Tools zur Restaurierung alter Fotos im Jahr 2026](/blog/best-ai-old-photo-restoration-tools-2026) — Ranking-Vergleich

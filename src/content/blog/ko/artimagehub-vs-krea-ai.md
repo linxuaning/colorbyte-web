@@ -72,5 +72,5 @@ Krea의 업스케일러/인핸서는 생성형 향상을 적용합니다 — 접
 
 - [ArtImageHub vs Magnific AI](/blog/artimagehub-vs-magnific-ai) — 유사한 생성형 향상 비교
 - [ArtImageHub vs Leonardo AI](/blog/artimagehub-vs-leonardo-ai) — AI 플랫폼 비교
-- [AI 사진 복원은 어떻게 작동하나요?](/blog/how-does-ai-photo-restoration-work) — 기술적 설명
+- [AI 사진 복원은 어떻게 작동하나요?](/blog/how-ai-photo-restoration-works) — 기술적 설명
 - [2026년 최고의 오래된 사진 복원 AI 도구](/blog/best-ai-old-photo-restoration-tools-2026) — 순위 비교

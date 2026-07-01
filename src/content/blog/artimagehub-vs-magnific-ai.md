@@ -109,7 +109,7 @@ For old photo restoration specifically, ArtImageHub's specialized pipeline produ
 
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling comparison
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — AI upscaling comparison
-- [How Does AI Photo Restoration Work?](/blog/how-does-ai-photo-restoration-work) — technical explainer
+- [How Does AI Photo Restoration Work?](/blog/how-ai-photo-restoration-works) — technical explainer
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool ranked comparison
 
 ## Quick method comparison: AI vs DIY vs Professional

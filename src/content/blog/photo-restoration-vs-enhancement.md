@@ -124,7 +124,7 @@ Many tools marketed as "photo restoration" are actually running general AI enhan
 
 ## Related
 
-- [How Does AI Photo Restoration Work?](/blog/how-does-ai-photo-restoration-work) — technical explainer
+- [How Does AI Photo Restoration Work?](/blog/how-ai-photo-restoration-works) — technical explainer
 - [Old Photo Restoration Before and After](/blog/old-photo-restoration-before-after) — what to expect
 - [Photo Restoration Tips](/blog/photo-restoration-tips) — practical guide
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool comparison

@@ -10,6 +10,10 @@ tags: ["AI Photo Restoration", "GFPGAN", "Real-ESRGAN", "How AI Works"]
 image: "/blog/ai-restoration-technology.jpg"
 coverColor: "from-violet-500 via-purple-600 to-indigo-700"
 coverEmoji: "🧠"
+# T199: consolidated into how-ai-photo-restoration-works (canonical hub, 827 inlinks).
+# noIndex removes this near-duplicate from the sitemap/index; a 301 (render.yaml)
+# redirects visitors to the hub. Kept as a 200 fallback so no URL variant 404s.
+noIndex: true
 ---
 
 When you upload a faded, scratched family photograph to an AI restoration tool and receive a sharp, vibrant image thirty seconds later, it looks like magic. It is not magic — it is the product of years of neural network research, trained on millions of image pairs, executing a precisely orchestrated pipeline the moment you click "restore." Understanding what happens under the hood gives you a much clearer sense of what AI can fix brilliantly, what it struggles with, and why results sometimes look uncanny.
