@@ -144,7 +144,7 @@ ArtImageHub combines upscaling with the full restoration pipeline needed for old
 ## Related Comparisons
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — full manual restoration workflow vs AI
-- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) — complete feature comparison
+- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-lightroom) — complete feature comparison
 - [ArtImageHub vs Adobe Express](/blog/artimagehub-vs-adobe-express) — simplified editing vs dedicated restoration
 - [ArtImageHub vs Let's Enhance](/blog/artimagehub-vs-lets-enhance) — AI upscaling tools compared
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-gigapixel-ai) — professional upscaling vs restoration focus

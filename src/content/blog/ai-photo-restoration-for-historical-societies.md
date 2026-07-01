@@ -96,6 +96,6 @@ The photographs in your collection are deteriorating right now. For the cost of 
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare 5 leading AI photo restoration apps →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Adobe Lightroom for archival workflows →](/blog/artimagehub-vs-adobe-lightroom)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Adobe Lightroom for archival workflows →](/blog/artimagehub-vs-lightroom)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

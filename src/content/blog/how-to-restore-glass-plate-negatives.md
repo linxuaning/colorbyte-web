@@ -83,6 +83,6 @@ The $4.99 one-time fee applies only after you have reviewed the restored preview
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Read the in-depth photo restoration tool comparison →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Adobe Lightroom for archival negatives →](/blog/artimagehub-vs-adobe-lightroom)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Adobe Lightroom for archival negatives →](/blog/artimagehub-vs-lightroom)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->

@@ -50,7 +50,7 @@ Color prints from the 1950s should be scanned in full color even if they appear 
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare professional vs consumer restoration tools →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Adobe Lightroom for mid-century photos →](/blog/artimagehub-vs-adobe-lightroom)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Adobe Lightroom for mid-century photos →](/blog/artimagehub-vs-lightroom)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 
