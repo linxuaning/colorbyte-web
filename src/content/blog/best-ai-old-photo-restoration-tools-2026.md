@@ -206,7 +206,7 @@ Remini is the best alternative for portrait-only use without physical damage. Ph
 - [ArtImageHub vs VanceAI](/blog/artimagehub-vs-vanceai) — credits vs one-time
 - [ArtImageHub vs Fotor](/blog/artimagehub-vs-fotor) — full editor vs restoration tool
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — Neural Filters vs AI pipeline
-- [ArtImageHub vs Photoshop Neural Filters](/blog/artimagehub-vs-photoshop-neural-filters) — built-in AI filters compared
+- [ArtImageHub vs Photoshop Neural Filters](/blog/artimagehub-vs-adobe-photoshop) — built-in AI filters compared
 - [ArtImageHub vs Lightroom](/blog/artimagehub-vs-lightroom) — modern photo editor vs restoration tool
 - [ArtImageHub vs Topaz Gigapixel AI](/blog/artimagehub-vs-topaz-gigapixel) — professional upscaling vs damage repair
 

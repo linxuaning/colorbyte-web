@@ -137,6 +137,6 @@ Results in 30-90 seconds. HD download. No Photoshop skills required.
 ## Related
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) -- full workflow comparison
-- [ArtImageHub vs Photoshop Neural Filters](/blog/artimagehub-vs-photoshop-neural-filters) -- AI tools inside Photoshop
+- [ArtImageHub vs Photoshop Neural Filters](/blog/artimagehub-vs-adobe-photoshop) -- AI tools inside Photoshop
 - [How to Restore Old Photos Without Photoshop](/blog/how-to-restore-old-photos-without-photoshop) -- beginner workflow
 - [Can Remini Restore Old Photos?](/blog/can-remini-restore-old-photos) -- mobile enhancement vs restoration

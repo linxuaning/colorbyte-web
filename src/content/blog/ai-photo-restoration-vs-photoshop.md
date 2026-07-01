@@ -90,7 +90,7 @@ Try [ArtImageHub](/old-photo-restoration) directly — $4.99 one-time for unlimi
 Choosing the right tool depends on your photos, your budget, and how much DIY work you want to do.
 
 - **[Compare AI photo tools by face, color, and sharpness →](/best-photo-restoration-software)** — independent ranking of 17 AI photo restoration tools tested in 2026, with pricing, success rates by damage type, and recommendations by user level.
-- **[ArtImageHub vs Photoshop Neural Filters — pure AI comparison →](/blog/artimagehub-vs-adobe-photoshop-neural-filters)** — feature-by-feature breakdown for this specific use case.
+- **[ArtImageHub vs Photoshop Neural Filters — pure AI comparison →](/blog/artimagehub-vs-adobe-photoshop)** — feature-by-feature breakdown for this specific use case.
 
 <!-- buyer-guide-internal-link-injected -->
 

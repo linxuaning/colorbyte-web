@@ -131,7 +131,7 @@ ArtImageHub 的 CodeFormer 环节在人脸重建上优于 Photoshop 的 Neural F
 ## 相关阅读
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) —— 完整的 Photoshop 对比
-- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) —— Lightroom 对比
+- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-lightroom) —— Lightroom 对比
 - [ArtImageHub vs Adobe Express](/blog/artimagehub-vs-adobe-express) —— Adobe Express 对比
 - [2026 年最佳老照片修复 AI 工具](/blog/best-ai-old-photo-restoration-tools-2026) —— 7 款工具排名对比
 

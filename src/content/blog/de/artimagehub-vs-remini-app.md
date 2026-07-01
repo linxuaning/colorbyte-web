@@ -138,4 +138,4 @@ Für die spezifische Aufgabe, um die es in diesem Artikel geht – die Restaurie
 - [ArtImageHub vs. Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — automatisierte KI vs. manuelle professionelle Bearbeitung
 - [ArtImageHub vs. MyHeritage Photo Enhancer](/artimagehub-vs-myheritage) — Gesichtsverbesserung und Kolorierung im Vergleich
 - [ArtImageHub vs. Fotor](/blog/artimagehub-vs-fotor) — vollständiger Fotoeditor vs. fokussiertes Restaurierungstool
-- [ArtImageHub vs. Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) — RAW-Bearbeitungsworkflow vs. KI-Restaurierung
+- [ArtImageHub vs. Adobe Lightroom](/blog/artimagehub-vs-lightroom) — RAW-Bearbeitungsworkflow vs. KI-Restaurierung

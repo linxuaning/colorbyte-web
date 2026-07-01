@@ -131,7 +131,7 @@ A etapa do CodeFormer no ArtImageHub produz uma reconstrução facial melhor do 
 ## Relacionados
 
 - [ArtImageHub vs Adobe Photoshop](/blog/artimagehub-vs-adobe-photoshop) — comparação completa com o Photoshop
-- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-adobe-lightroom) — comparação com o Lightroom
+- [ArtImageHub vs Adobe Lightroom](/blog/artimagehub-vs-lightroom) — comparação com o Lightroom
 - [ArtImageHub vs Adobe Express](/blog/artimagehub-vs-adobe-express) — comparação com o Adobe Express
 - [Melhores ferramentas de IA para restauração de fotos antigas em 2026](/blog/best-ai-old-photo-restoration-tools-2026) — comparação ranqueada de 7 ferramentas
 
