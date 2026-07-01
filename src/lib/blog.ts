@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 843;
+const EMERGENCY_STATIC_POST_LIMIT = 861;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -892,6 +892,27 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "what-is-digital-noise-in-photography",
   "ai-colorization-accuracy-2026",
   "photo-restoration-tips",
+  // T199 bulk-pin batch-1: recover highest-inlink index-intent pages that were
+  // cap-culled to 404 (leaked internal-link equity). Additive: cap 843->861,
+  // zero unpin/displacement. 6 pillar/info + 2 local + top-10 artimagehub-vs-X.
+  "ai-photo-enhancement-guide",
+  "ai-photo-restoration-limitations",
+  "ai-photo-colorization-accuracy",
+  "ai-face-enhancement-accuracy",
+  "ai-vs-professional-photo-restoration",
+  "is-ai-photo-restoration-worth-it-2026",
+  "walgreens-photo-restoration",
+  "mothers-day-photo-restoration-gift",
+  "artimagehub-vs-fotor",
+  "artimagehub-vs-imagelarger",
+  "artimagehub-vs-hotpot-ai",
+  "artimagehub-vs-leonardo-ai",
+  "artimagehub-vs-cleanup-pictures",
+  "artimagehub-vs-adobe-lightroom",
+  "artimagehub-vs-adobe-express",
+  "artimagehub-vs-gimp",
+  "artimagehub-vs-media-io",
+  "artimagehub-vs-magnific-ai",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
