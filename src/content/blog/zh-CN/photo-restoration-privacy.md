@@ -105,6 +105,6 @@ ArtImageHub 采用以下实践：
 
 ## 相关阅读
 
-- [AI 照片修复是如何工作的？](/blog/how-does-ai-photo-restoration-work) — 技术原理详解
+- [AI 照片修复是如何工作的？](/blog/how-ai-photo-restoration-works) — 技术原理详解
 - [2026 年最佳 AI 老照片修复工具](/blog/best-ai-old-photo-restoration-tools-2026) — 7 款工具排名对比
 - [照片修复价格指南](/blog/photo-restoration-cost-guide) — 价格概览

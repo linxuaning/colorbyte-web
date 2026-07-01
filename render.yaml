@@ -23,6 +23,14 @@ services:
       - type: redirect
         source: /pricing
         destination: /#pricing
+      # T199 cannibalization consolidation: how-does -> how-ai (827-inlink pillar).
+      # 301 passes ranking history to the canonical hub. Both URL variants covered.
+      - type: redirect
+        source: /blog/how-does-ai-photo-restoration-work
+        destination: /blog/how-ai-photo-restoration-works
+      - type: redirect
+        source: /blog/how-does-ai-photo-restoration-work/
+        destination: /blog/how-ai-photo-restoration-works
       # NOTE: no catch-all rewrite — Render static sites auto-serve 404.html for
       # unmatched paths. A `/* -> /404.html` rewrite would 404 the whole site.
 

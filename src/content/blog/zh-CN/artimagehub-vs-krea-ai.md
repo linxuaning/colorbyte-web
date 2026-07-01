@@ -89,7 +89,7 @@ Krea 的高清放大/增强工具采用的是生成式增强——思路与 Magn
 
 - [ArtImageHub vs Magnific AI](/blog/artimagehub-vs-magnific-ai)——同类生成式增强工具对比
 - [ArtImageHub vs Leonardo AI](/blog/artimagehub-vs-leonardo-ai)——AI 平台对比
-- [AI 照片修复是怎么实现的？](/blog/how-does-ai-photo-restoration-work)——技术解读
+- [AI 照片修复是怎么实现的？](/blog/how-ai-photo-restoration-works)——技术解读
 - [2026 年最佳老照片 AI 修复工具](/blog/best-ai-old-photo-restoration-tools-2026)——榜单对比
 
 ## 各种修复方式快速对比：AI vs DIY vs 专业人工

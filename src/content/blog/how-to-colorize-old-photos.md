@@ -132,7 +132,7 @@ For most family photo projects, AI colorization at $4.99 per photo produces emot
 
 - [How to Restore Black and White Photos with AI](/blog/how-to-restore-black-and-white-photos) — restoration guide
 - [Old Photo Restoration for Genealogy](/blog/old-photo-restoration-for-genealogy) — genealogy use case
-- [How Does AI Photo Restoration Work?](/blog/how-does-ai-photo-restoration-work) — technical explainer
+- [How Does AI Photo Restoration Work?](/blog/how-ai-photo-restoration-works) — technical explainer
 - [Best AI Tools for Old Photo Restoration in 2026](/blog/best-ai-old-photo-restoration-tools-2026) — 7-tool comparison
 
 ## Quick method comparison: AI vs DIY vs Professional
