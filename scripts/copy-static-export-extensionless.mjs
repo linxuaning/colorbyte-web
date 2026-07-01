@@ -1,4 +1,4 @@
-import { copyFile, readdir, rm, stat, writeFile } from "node:fs/promises";
+import { copyFile, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { generateRssFeed } from "./generate-rss.mjs";
 
@@ -152,7 +152,16 @@ async function collectStaticUrls(dir) {
       if (indexStat.isFile()) {
         const relativeDir = path.relative(outDir, childDir);
         if (relativeDir && !relativeDir.startsWith("_") && relativeDir !== "404") {
-          urls.push(`/${relativeDir.replaceAll(path.sep, "/")}/`);
+          // Exclude noindex pages from the sitemap. A page carrying
+          // <meta name="robots" content="noindex,..."> must not be advertised
+          // as important via the sitemap — that contradiction is exactly what
+          // Bing flags as "important page with noindex" (T199).
+          const html = await readFile(indexHtml, "utf8");
+          const isNoindex =
+            /<meta[^>]+name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html);
+          if (!isNoindex) {
+            urls.push(`/${relativeDir.replaceAll(path.sep, "/")}/`);
+          }
         }
       }
     } catch (err) {
