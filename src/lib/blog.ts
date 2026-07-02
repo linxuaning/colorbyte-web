@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 861;
+const EMERGENCY_STATIC_POST_LIMIT = 864;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -913,6 +913,10 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "artimagehub-vs-gimp",
   "artimagehub-vs-media-io",
   "artimagehub-vs-magnific-ai",
+  // T207: Bing winner pattern batch-1 — 3 specific-problem pins (distinct sub-intents verified; 4 noIndex thin pages deferred to content-expansion task)
+  "dpi-resolution-guide-for-photos",
+  "improve-scanned-document-photo-quality",
+  "fix-facebook-photo-quality",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
