@@ -89,6 +89,7 @@ The full chain for a severely degraded old family photo on Facebook: Deblur (if 
 ---
 
 **Related reading:**
+- [Why Are My Photos Blurry on Facebook — and How to Fix It](/blog/why-are-my-photos-blurry-on-facebook)
 - [JPEG Artifact Remover: How AI Fixes Compression Damage](/jpeg-artifact-remover)
 - [Photo Enhancer: AI Upscaling and Sharpening](/photo-enhancer)
 - [How to Fix Blurry Photos](/blog/ai-photo-enhancement-guide)
