@@ -11,7 +11,7 @@ const fallbackBlogImage = "/blog/before-after-examples.webp";
 const SUPPORTED_LOCALES = ["en", "es", "pt-BR", "fr", "de", "ja", "ko"] as const;
 export type BlogLocale = (typeof SUPPORTED_LOCALES)[number];
 const EMERGENCY_STATIC_EXPORT = process.env.NEXT_OUTPUT_EXPORT === "1";
-const EMERGENCY_STATIC_POST_LIMIT = 868;
+const EMERGENCY_STATIC_POST_LIMIT = 869;
 const EMERGENCY_LOCALE_STATIC_POST_LIMIT = 120;
 const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>> = {
   en: new Set([
@@ -922,6 +922,8 @@ const EMERGENCY_STATIC_SLUGS_BY_LOCALE: Partial<Record<BlogLocale, Set<string>>>
   "restore-photos-flatbed-scanner-guide",
   "restore-1970s-polaroid-sx70-photos",
   "restore-photos-from-plastic-magnetic-albums",
+  // T207 Batch A — new page for top-CTR Bing gap query (2c/2i, ektachrome zero library coverage)
+  "digitize-ektachrome-mounted-color-slides",
 ]),
   de: new Set(["fix-photos-stuck-together"]),
   es: new Set([
