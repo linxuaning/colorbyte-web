@@ -7,6 +7,17 @@ author: "Daniel Marsh"
 authorRole: "Photography and Imaging Reviewer"
 tags: ["Fix Blurry Photo", "Photo Deblurrer", "AI Image Sharpening", "NAFNet", "Topaz Sharpen AI", "Motion Blur Fix"]
 readingTime: "10 min"
+faq:
+  - q: "Is AI deblurring the same as AI upscaling?"
+    a: "No. AI upscaling (Real-ESRGAN, etc.) increases image size and sharpens during the process — it adds pixels. AI deblurring works on the existing pixels, trying to reverse blur that spread detail across them. You can combine both: deblur first, then upscale."
+  - q: "How blurry is too blurry?"
+    a: "If you can still make out the basic subject (face shape, object outline), AI deblurring will recover meaningful detail. If the image is a uniform smear with no recognizable features, the information isn't there to recover. A practical threshold: if the image looks usable but soft, AI deblurring will make it clearly better; if it looks completely unusable, expectations should be modest."
+  - q: "Does AI deblurring work on old photos?"
+    a: "Yes, and this is one of the best use cases. Early photography required long exposure times (seconds to minutes for daguerreotypes), causing significant blur from subject movement or camera shake. NAFNet's GoPro-trained model handles motion blur regardless of the photo's age."
+  - q: "Can I fix both blur and noise in one step?"
+    a: "Not in one step, but you can run both tools. ArtImageHub's Photo Denoiser (for noise/grain) and Photo Deblurrer (for blur) are separate tools. Run denoising first to clean random noise, then deblurring on the clean image. The sequence matters — deblurring on a noisy image can amplify the noise."
+  - q: "How much does AI photo deblurring cost?"
+    a: "ArtImageHub is $4.99 one-time per tool (no subscription). Topaz Sharpen AI is $99–199/year or a $199 one-time purchase. Adobe Photoshop (with Smart Sharpen) is $22.99/month as part of Creative Cloud."
 ---
 
 Blurry photos are one of the most common complaints in photography — and one of the hardest to fix. Unlike noise or color, blur represents genuinely lost information. But AI has changed what's recoverable.
